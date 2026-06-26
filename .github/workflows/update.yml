@@ -18,10 +18,51 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Scrapear blog y regenerar sitio
-        run: npm run update
+      - name: Scrapear el blog
+        run: npm run scrape
 
-      - name: Commitear cambios si hay episodios nuevos
+      - name: Comprobar si hay episodios nuevos
+        id: check
+        run: |
+          if git diff --quiet -- episodes.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Episodios nuevos detectados."
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Instalar dependencias (solo si hay episodios nuevos)
+        if: steps.check.outputs.changed == 'true'
+        run: npm install
+
+      - name: Instalar Chromium para Playwright (solo si hay episodios nuevos)
+        if: steps.check.outputs.changed == 'true'
+        run: npx playwright install --with-deps chromium
+
+      - name: Buscar enlace exacto en iVoox
+        if: steps.check.outputs.changed == 'true'
+        run: npm run links:ivoox
+        continue-on-error: true
+
+      - name: Buscar enlace exacto en Apple Podcasts
+        if: steps.check.outputs.changed == 'true'
+        run: npm run links:apple
+        continue-on-error: true
+
+      - name: Buscar enlace exacto en Amazon Music
+        if: steps.check.outputs.changed == 'true'
+        run: npm run links:amazon
+        continue-on-error: true
+
+      - name: Buscar enlace exacto en Spotify
+        if: steps.check.outputs.changed == 'true'
+        run: npm run links:spotify
+        continue-on-error: true
+
+      - name: Regenerar el sitio
+        run: npm run build
+
+      - name: Commitear cambios si los hay
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -29,6 +70,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Sin cambios, nada que publicar."
           else
-            git commit -m "Actualizar episodios automáticamente"
+            git commit -m "Actualizar episodios y enlaces automaticamente"
             git push
           fi
