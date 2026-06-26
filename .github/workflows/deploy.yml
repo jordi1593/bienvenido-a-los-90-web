@@ -31,7 +31,7 @@ jobs:
       - name: Ensamblar carpeta pública
         run: |
           mkdir -p dist
-          cp index.html 404.html styles.css app.js nav.js dist/
+          cp index.html 404.html privacidad.html styles.css app.js nav.js dist/
           cp CNAME dist/ 2>/dev/null || true
           cp -r images dist/
           cp -r episodios dist/
