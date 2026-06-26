@@ -5,5 +5,6 @@ node_modules/
 # directamente en cada ejecución del workflow, no se versionan.
 /episodios/
 /episodes-list.json
+/data/
 /sitemap.xml
 /robots.txt

@@ -328,10 +328,27 @@ function main() {
   // que solo usan las páginas estáticas de /episodios generadas arriba. La
   // portada (app.js) solo necesita los datos de listado/tarjeta, así que le
   // damos una copia sin ese campo para no descargar ~1.3MB de más.
+  //
+  // Además la partimos en bloques (el primero con los más recientes) para
+  // que la portada pueda pintar las primeras tarjetas en cuanto llega el
+  // primer bloque, sin esperar a que se descargue todo el catálogo.
   const episodesList = episodes.map(({ paragraphs, ...rest }) => rest);
-  fs.writeFileSync("episodes-list.json", JSON.stringify(episodesList), "utf-8");
+  const CHUNK_SIZE = 200;
+  fs.mkdirSync("data", { recursive: true });
+  const chunks = [];
+  for (let i = 0; i < episodesList.length; i += CHUNK_SIZE) {
+    chunks.push(episodesList.slice(i, i + CHUNK_SIZE));
+  }
+  chunks.forEach((chunk, i) => {
+    fs.writeFileSync(`data/episodes-${i}.json`, JSON.stringify(chunk), "utf-8");
+  });
+  fs.writeFileSync(
+    "data/episodes-meta.json",
+    JSON.stringify({ total: episodesList.length, chunkCount: chunks.length }),
+    "utf-8"
+  );
 
-  console.log(`Generadas ${episodes.length} páginas en /${OUT_DIR}, sitemap.xml, robots.txt y episodes-list.json (SITE_URL=${SITE_URL}).`);
+  console.log(`Generadas ${episodes.length} páginas en /${OUT_DIR}, sitemap.xml, robots.txt y ${chunks.length} bloques en /data (SITE_URL=${SITE_URL}).`);
 }
 
 main();

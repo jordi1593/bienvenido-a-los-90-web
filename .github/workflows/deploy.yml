@@ -34,7 +34,8 @@ jobs:
           cp CNAME dist/ 2>/dev/null || true
           cp -r images dist/
           cp -r episodios dist/
-          cp episodes-list.json sitemap.xml robots.txt dist/
+          cp -r data dist/
+          cp sitemap.xml robots.txt dist/
 
       - uses: actions/configure-pages@v5
 

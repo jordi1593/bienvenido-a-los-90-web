@@ -333,9 +333,28 @@ function renderArchive(episodes) {
   if (el) el.innerHTML = buildArchiveTree(episodes);
 }
 
+// Los episodios se sirven en bloques (el primero con los más recientes) para
+// poder pintar las primeras tarjetas sin esperar a descargar todo el
+// catálogo. El buscador, el desplegable de etiquetas y el archivo necesitan
+// el catálogo completo, así que esos se activan en cuanto termina de llegar
+// el último bloque.
+async function loadEpisodesProgressively(onFirstChunk) {
+  const meta = await (await fetch("data/episodes-meta.json")).json();
+  const chunks = [];
+  for (let i = 0; i < meta.chunkCount; i++) {
+    const chunk = await (await fetch(`data/episodes-${i}.json`)).json();
+    chunks.push(chunk);
+    if (i === 0) onFirstChunk(chunk);
+  }
+  return chunks.flat();
+}
+
 async function init() {
-  const res = await fetch("episodes-list.json");
-  const episodes = await res.json();
+  const episodes = await loadEpisodesProgressively((firstChunk) => {
+    state.all = firstChunk;
+    applyFilters();
+  });
+
   state.all = episodes;
   state.specialFilters = new Map(
     SPECIAL_FILTERS.map((filter) => [
