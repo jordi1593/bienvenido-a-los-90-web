@@ -23,6 +23,7 @@
   --bluesky: #1185fe;
   --whatsapp: #25d366;
   --linktree: #43e660;
+  --substack: #ff6719;
   --font-display: "Anton", sans-serif;
   --font-body: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -918,6 +919,9 @@ body {
 
 .social-btn.icon-linktree { color: var(--linktree); border-color: var(--linktree); }
 .social-btn.icon-linktree:hover { background: var(--linktree); border-color: var(--linktree); color: #fff; }
+
+.social-btn.icon-substack { color: var(--substack); border-color: var(--substack); }
+.social-btn.icon-substack:hover { background: var(--substack); border-color: var(--substack); color: #fff; }
 
 .footer-tagline {
   margin-top: 2rem;
