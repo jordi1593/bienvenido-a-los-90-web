@@ -160,6 +160,8 @@ function episodePage(ep, { prev, next, related }) {
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>${escapeHtml(ep.title)} — Bienvenido a los 90</title>
+<link rel="icon" type="image/jpeg" href="../images/b90-logo-new.jpg" />
+<link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
 <meta name="description" content="${description}" />
 <link rel="canonical" href="${canonical}" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
