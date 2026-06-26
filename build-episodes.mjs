@@ -194,6 +194,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
         <a href="../index.html#episodios">Episodios</a>
         <a href="../index.html#escuchanos">Escúchanos</a>
         <a href="../index.html#sigue">Síguenos</a>
+        <a href="#" id="randomEpisodeBtn">🎲 Episodio aleatorio</a>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -275,7 +276,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
     </div>
   </footer>
 
-  <script src="../nav.js"></script>
+  <script src="../nav.js?v=2" defer></script>
 </body>
 </html>
 `;
@@ -355,6 +356,14 @@ function main() {
   fs.writeFileSync(
     "data/episodes-meta.json",
     JSON.stringify({ total: episodesList.length, chunkCount: chunks.length }),
+    "utf-8"
+  );
+
+  // Lista ligera de slugs para el botón "Episodio aleatorio" (sin tener que
+  // descargar todos los bloques de episodes-N.json para elegir uno al azar).
+  fs.writeFileSync(
+    "data/episode-slugs.json",
+    JSON.stringify(episodesList.map((ep) => ep.slug)),
     "utf-8"
   );
 

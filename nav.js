@@ -16,3 +16,23 @@
     });
   });
 })();
+
+// Botón "Episodio aleatorio", compartido por la home, las páginas de episodio y el 404.
+(function () {
+  const randomBtn = document.getElementById("randomEpisodeBtn");
+  if (!randomBtn) return;
+
+  const inEpisode = location.pathname.includes("/episodios/");
+  const dataUrl = inEpisode ? "../data/episode-slugs.json" : "data/episode-slugs.json";
+
+  randomBtn.addEventListener("click", async (e) => {
+    e.preventDefault();
+    try {
+      const slugs = await (await fetch(dataUrl)).json();
+      const slug = slugs[Math.floor(Math.random() * slugs.length)];
+      location.href = inEpisode ? `${slug}.html` : `episodios/${slug}.html`;
+    } catch (err) {
+      console.error("No se pudo cargar un episodio aleatorio", err);
+    }
+  });
+})();
