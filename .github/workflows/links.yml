@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   links:
@@ -54,3 +55,34 @@ jobs:
             git commit -m "Actualizar enlaces de plataformas automáticamente"
             git push
           fi
+
+      - name: Avisar si algo ha fallado
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "⚠️ Falló el workflow 'Actualizar enlaces de plataformas'";
+            const body = `La ejecución [${context.runId}](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}) ha fallado. Revisa los logs.`;
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              labels: "workflow-failure",
+            });
+            const existing = issues.find((i) => i.title === title);
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ["workflow-failure"],
+              });
+            }
