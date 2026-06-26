@@ -1,0 +1,18 @@
+{
+  "name": "bienvenido-a-los-90-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scrape": "node scrape.mjs",
+    "build": "node build-episodes.mjs",
+    "update": "npm run scrape && npm run build",
+    "links:apple": "node fetch-apple-links.mjs",
+    "links:ivoox": "node fetch-ivoox-links.mjs && node fetch-ivoox-titles.mjs && node match-ivoox-titles.mjs",
+    "links:amazon": "node fetch-amazon-links.mjs && node match-amazon-links.mjs",
+    "links:spotify": "node fetch-spotify-links.mjs && node match-spotify-links.mjs",
+    "serve": "python -m http.server 8765"
+  },
+  "dependencies": {
+    "playwright": "^1.61.1"
+  }
+}

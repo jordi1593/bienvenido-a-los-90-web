@@ -1,0 +1,337 @@
+// Genera una página HTML estática por episodio en /episodios/, optimizada
+// para SEO: meta description, Open Graph, canonical a esta misma página
+// (esta web compite por su propio posicionamiento, no apunta al blog
+// original) y JSON-LD PodcastEpisode. También genera sitemap.xml y robots.txt.
+
+import fs from "fs";
+import path from "path";
+
+const SITE_URL = process.env.SITE_URL || "https://bienvenidoalos90.com";
+const OUT_DIR = "episodios";
+
+const PLATFORM_SHOW_LINKS = {
+  spotify: "https://open.spotify.com/show/5c1ikDBBLMlls8ZTvcu14N",
+  apple: "https://podcasts.apple.com/es/podcast/bienvenido-a-los-90/id1369150482",
+  amazon: "https://music.amazon.es/podcasts/5778f981-68a5-405e-aa21-b7ef2c972412/bienvenido-a-los-90?refMarker=null",
+};
+
+const PLATFORM_ICONS = {
+  ivoox: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13v-1a7 7 0 0 1 14 0v1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><rect x="3.2" y="13" width="4" height="6" rx="1.6" fill="currentColor"/><rect x="16.8" y="13" width="4" height="6" rx="1.6" fill="currentColor"/></svg>',
+  apple: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg>',
+  spotify: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.6"/><path d="M7 10.5c3.2-1 7-.7 9.7 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M7.6 13.3c2.6-.8 5.6-.6 7.8.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8.3 16c2-.6 4.3-.5 6 .5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
+  amazon: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 14.5c3.6 2.6 7.4 2.6 11 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M16 14.2l1.6.4-.6 1.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+};
+
+function ivooxEpisodeId(ep) {
+  const link = ep.ivooxLink || ep.downloadLink;
+  if (!link) return null;
+  const m = link.match(/rf[_/](\d+)/);
+  return m ? m[1] : null;
+}
+
+function platformLinks(ep) {
+  const links = [];
+  const ivoox = ep.ivooxLink || ep.downloadLink;
+  if (ivoox) links.push({ label: "Escuchar en iVoox", url: ivoox, exact: true, icon: "ivoox" });
+  links.push({
+    label: ep.spotifyLink ? "Escuchar en Spotify" : "Spotify (programa)",
+    url: ep.spotifyLink || PLATFORM_SHOW_LINKS.spotify,
+    exact: !!ep.spotifyLink,
+    icon: "spotify",
+  });
+  links.push({
+    label: ep.appleLink ? "Escuchar en Apple Podcasts" : "Apple Podcasts (programa)",
+    url: ep.appleLink || PLATFORM_SHOW_LINKS.apple,
+    exact: !!ep.appleLink,
+    icon: "apple",
+  });
+  links.push({
+    label: ep.amazonLink ? "Escuchar en Amazon Music" : "Amazon Music (programa)",
+    url: ep.amazonLink || PLATFORM_SHOW_LINKS.amazon,
+    exact: !!ep.amazonLink,
+    icon: "amazon",
+  });
+  return links;
+}
+
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  }[c]));
+}
+
+// Convierte las URLs sueltas que aparecen en el texto (ya escapado) en
+// enlaces clicables, p.ej. "+ info - https://linktr.ee/b90podcast".
+function linkifyText(escapedText) {
+  return escapedText.replace(
+    /(https?:\/\/[^\s<]+)/g,
+    (url) => `<a href="${url}" target="_blank" rel="noopener">${url}</a>`
+  );
+}
+
+function formatDateLong(iso) {
+  return new Date(iso).toLocaleDateString("es-ES", { day: "numeric", month: "long", year: "numeric" });
+}
+
+function metaDescription(paragraphs) {
+  const text = paragraphs.find((p) => !/^espacio patrocinado por/i.test(p)) || "";
+  return text.length > 160 ? text.slice(0, 157).trimEnd() + "…" : text;
+}
+
+function bigThumbnail(thumb) {
+  return thumb ? thumb.replace("/s72-c/", "/s640/") : null;
+}
+
+// Variantes del nombre del programa que no aportan información temática
+// para relacionar episodios entre sí.
+const GENERIC_LABEL_KEYS = new Set([
+  "bienvenido a lo 90",
+  "bienvenido a los 90",
+  "bienvenido  a los 90",
+  "bienvenidoalos90",
+  "bienvenidoalo 90",
+]);
+
+function labelKey(label) {
+  return label.trim().toLowerCase().replace(/\s+/g, " ");
+}
+
+// Episodios relacionados: prioriza los que comparten etiquetas temáticas
+// (artista, banda, tema) y completa con los cronológicamente más cercanos
+// si no hay suficientes coincidencias.
+function getRelatedEpisodes(ep, allEpisodes) {
+  const epKeys = new Set(ep.labels.map(labelKey).filter((k) => !GENERIC_LABEL_KEYS.has(k)));
+  const epTime = new Date(ep.published).getTime();
+
+  const scored = allEpisodes
+    .filter((other) => other.slug !== ep.slug)
+    .map((other) => {
+      const otherKeys = other.labels.map(labelKey).filter((k) => !GENERIC_LABEL_KEYS.has(k));
+      const shared = otherKeys.filter((k) => epKeys.has(k)).length;
+      return { ep: other, shared, timeDiff: Math.abs(new Date(other.published).getTime() - epTime) };
+    });
+
+  scored.sort((a, b) => {
+    if (b.shared !== a.shared) return b.shared - a.shared;
+    return a.timeDiff - b.timeDiff;
+  });
+
+  return scored.slice(0, 3).map((s) => s.ep);
+}
+
+function episodePage(ep, { prev, next, related }) {
+  const description = escapeHtml(metaDescription(ep.paragraphs));
+  const image = bigThumbnail(ep.thumbnail);
+  const pageUrl = `${SITE_URL}/episodios/${ep.slug}.html`;
+  const canonical = pageUrl;
+  const ivooxId = ivooxEpisodeId(ep);
+
+  const bodyParagraphs = ep.paragraphs
+    .map((p) => `<p>${linkifyText(escapeHtml(p))}</p>`)
+    .join("\n      ");
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "PodcastEpisode",
+    name: ep.title,
+    datePublished: ep.published,
+    url: pageUrl,
+    description: metaDescription(ep.paragraphs),
+    ...(image ? { image } : {}),
+    partOfSeries: {
+      "@type": "PodcastSeries",
+      name: "Bienvenido a los 90",
+      url: SITE_URL,
+    },
+    ...(ep.ivooxLink || ep.downloadLink ? {
+      associatedMedia: {
+        "@type": "MediaObject",
+        contentUrl: ep.ivooxLink || ep.downloadLink,
+      },
+    } : {}),
+  };
+
+  return `<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>${escapeHtml(ep.title)} — Bienvenido a los 90</title>
+<meta name="description" content="${description}" />
+<link rel="canonical" href="${canonical}" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css?v=13" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="${escapeHtml(ep.title)}" />
+<meta property="og:description" content="${description}" />
+<meta property="og:url" content="${pageUrl}" />
+${image ? `<meta property="og:image" content="${image}" />` : ""}
+<meta property="article:published_time" content="${ep.published}" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="${escapeHtml(ep.title)}" />
+<meta name="twitter:description" content="${description}" />
+${image ? `<meta name="twitter:image" content="${image}" />` : ""}
+
+<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
+</head>
+<body>
+  <nav class="topnav">
+    <div class="container topnav-inner">
+      <a class="brand" href="../index.html" aria-label="Bienvenido a los 90">
+        <img class="brand-logo" src="../images/b90-logo-new.jpg" alt="B" />
+        <span>ienvenido a los 90</span>
+      </a>
+      <div class="topnav-links">
+        <a href="../index.html#episodios">Episodios</a>
+        <a href="../index.html#escuchanos">Escúchanos</a>
+        <a href="../index.html#sigue">Síguenos</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="container episode-page">
+    <nav class="breadcrumbs"><a href="../index.html">Episodios</a> / <span>${ep.number ? `#${ep.number}` : ""}</span></nav>
+
+    <div class="episode-page-layout">
+    <article>
+      <h1>${escapeHtml(ep.title)}</h1>
+      <p class="episode-meta">${formatDateLong(ep.published)} · ${ep.comments} comentario${ep.comments === 1 ? "" : "s"}</p>
+      ${typeof ep.likes === "number" ? `<p class="episode-likes"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 20.5s-7.5-4.6-9.8-9.2C.5 7.8 2.3 4.5 5.8 4c2.1-.3 4.1.7 6.2 3 2.1-2.3 4.1-3.3 6.2-3 3.5.5 5.3 3.8 3.6 7.3-2.3 4.6-9.8 9.2-9.8 9.2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg> ${ep.likes}</p>` : ""}
+
+      ${ivooxId ? `<div class="ivoox-player"><iframe frameborder="0" allowfullscreen scrolling="no" height="200" style="width:100%;" src="https://www.ivoox.com/player_ej_${ivooxId}_4_1.html?c1=ed285e" loading="lazy" title="Reproductor de iVoox"></iframe></div>` : ""}
+
+      ${!ivooxId && image ? `<img class="episode-cover" src="${image}" alt="${escapeHtml(ep.title)}" loading="lazy" />` : ""}
+
+      <div class="episode-actions">
+        <a class="primary" href="${ep.url}" target="_blank" rel="noopener">Ver en el blog original</a>
+      </div>
+
+      <div class="platform-row">
+        <span class="platform-row-label">Escúchalo en:</span>
+        ${platformLinks(ep).map((p) => `<a class="icon-${p.icon}" href="${p.url}" target="_blank" rel="noopener" title="${escapeHtml(p.label)}" aria-label="${escapeHtml(p.label)}">${PLATFORM_ICONS[p.icon]}</a>`).join("")}
+      </div>
+
+      <div class="episode-content">
+      ${bodyParagraphs}
+      </div>
+
+      ${ep.labels.length ? `<div class="episode-tags">${ep.labels.map((l) => `<span>${escapeHtml(l)}</span>`).join("")}</div>` : ""}
+    </article>
+
+    <aside class="related-episodes">
+      <h3>Relacionados</h3>
+      ${related.map((r) => {
+        const relImage = bigThumbnail(r.thumbnail);
+        const relBadge = r.number ? `#${r.number}` : "";
+        return `
+        <a class="related-card" href="${r.slug}.html">
+          <span class="episode-cover-link related-cover-link">
+            ${relImage ? `<img class="episode-cover-img" src="${relImage}" alt="" loading="lazy" />` : `<div class="episode-cover-img"></div>`}
+            ${relBadge ? `<span class="episode-badge">${relBadge}</span>` : ""}
+          </span>
+          <span class="related-card-title">${escapeHtml(r.title)}</span>
+        </a>`;
+      }).join("")}
+    </aside>
+    </div>
+
+    <nav class="episode-pager">
+      ${prev ? `<a href="${prev.slug}.html">← ${escapeHtml(prev.title)}</a>` : "<span></span>"}
+      ${next ? `<a href="${next.slug}.html">${escapeHtml(next.title)} →</a>` : "<span></span>"}
+    </nav>
+
+    <p class="back-link"><a href="../index.html">← Volver al listado completo de episodios</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <h3>Encuéntranos en</h3>
+      <div class="social-row">
+        <a class="social-btn icon-instagram" href="https://instagram.com/b90podcast" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg></a>
+        <a class="social-btn icon-facebook" href="https://www.facebook.com/bienvenidoalo90" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.6"/><path d="M13.5 9.2h1.8V7H13.2c-1.5 0-2.4 1-2.4 2.5v1.3H9.4v2h1.4V17h2.1v-4.2h1.7l.3-2h-2V9.6c0-.3.2-.4.6-.4z" fill="currentColor"/></svg></a>
+        <a class="social-btn icon-x" href="https://x.com/Rockisroll" target="_blank" rel="noopener" title="X" aria-label="X"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 7.5l9 9M16.5 7.5l-9 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+        <a class="social-btn icon-tiktok" href="https://tiktok.com/@b90podcast" target="_blank" rel="noopener" title="TikTok" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 4c.3 2 1.8 3.6 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></a>
+        <a class="social-btn icon-twitch" href="https://www.twitch.tv/bienvenidoalos90" target="_blank" rel="noopener" title="Twitch" aria-label="Twitch"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 4h14v10l-3.5 3.5H12l-2 2H8v-2H5V4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M11 8v3.5M15 8v3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+        <a class="social-btn icon-telegram" href="https://t.me/bienvenidoalosnoventa" target="_blank" rel="noopener" title="Telegram" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.6"/><path d="M7 12.3l9-4.3-3 9-2.1-3.3-3.4 2 .5-3.4z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg></a>
+        <a class="social-btn icon-bluesky" href="https://bsky.app/profile/bienvenidoalos90.bsky.social" target="_blank" rel="noopener" title="Bluesky" aria-label="Bluesky"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 8.5c-1-2.3-3.6-4-5.8-3-1.3.6-1 2.6.1 3.7 1 1 2.7 1.6 4 1.7-1.3.2-3 .8-4 1.8-1.1 1.1-1.4 3.1-.1 3.7 2.2 1 4.8-.7 5.8-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 8.5c1-2.3 3.6-4 5.8-3 1.3.6 1 2.6-.1 3.7-1 1-2.7 1.6-4 1.7 1.3.2 3 .8 4 1.8 1.1 1.1 1.4 3.1.1 3.7-2.2 1-4.8-.7-5.8-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="social-btn icon-whatsapp" href="https://www.whatsapp.com/channel/0029VaASqFALY6d2gMeB771N" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.8L4 20.5l4.3-1.1A8.5 8.5 0 1 0 12 3.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 9.8c.1-.8.6-.9 1-.9s.7 0 .9.5c.2.5.6 1.5.6 1.7s0 .4-.2.6c-.2.3-.4.4-.2.7.2.3 1 1.3 2.2 1.8.3.1.5.1.7-.1.2-.2.6-.7.8-.9.2-.2.3-.2.6-.1.3.1 1.6.8 1.9 1 .3.1.4.2.5.3.1.2.1.9-.2 1.3-.3.4-1.3 1-2.4.7-1.1-.3-2.9-1.1-4.4-2.7-1.2-1.3-1.9-2.7-2.1-3.2-.2-.5-.4-1.2-.3-1.7z" fill="currentColor"/></svg></a>
+        <a class="social-btn icon-email" href="mailto:bienvenidoalosnoventa@gmail.com" title="Email" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 6.5l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="social-btn icon-linktree" href="https://linktr.ee/b90podcast" target="_blank" rel="noopener" title="Linktree" aria-label="Linktree"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v18M12 9L6 5M12 9l6-4M12 14L6 10M12 14l6-4M9 18l3 3 3-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <p class="footer-tagline">Bienvenido a los 90 · Podcast independiente de música · Conectando personas desde 2012</p>
+    </div>
+  </footer>
+
+  <script src="../nav.js"></script>
+</body>
+</html>
+`;
+}
+
+function buildSitemap(episodes) {
+  const urls = [
+    { loc: `${SITE_URL}/index.html`, priority: "1.0" },
+    ...episodes.map((ep) => ({
+      loc: `${SITE_URL}/episodios/${ep.slug}.html`,
+      lastmod: ep.published.slice(0, 10),
+      priority: "0.7",
+    })),
+  ];
+
+  const body = urls.map((u) => `  <url>
+    <loc>${u.loc}</loc>
+    ${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ""}
+    <priority>${u.priority}</priority>
+  </url>`).join("\n");
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${body}
+</urlset>
+`;
+}
+
+function buildRobots() {
+  return `User-agent: *
+Allow: /
+
+Sitemap: ${SITE_URL}/sitemap.xml
+`;
+}
+
+function main() {
+  const episodes = JSON.parse(fs.readFileSync("episodes.json", "utf-8"));
+  // Orden cronológico ascendente para la navegación prev/next entre episodios
+  const chronological = [...episodes].sort((a, b) => new Date(a.published) - new Date(b.published));
+
+  fs.mkdirSync(OUT_DIR, { recursive: true });
+
+  chronological.forEach((ep, i) => {
+    const prev = i > 0 ? chronological[i - 1] : null;
+    const next = i < chronological.length - 1 ? chronological[i + 1] : null;
+    const related = getRelatedEpisodes(ep, episodes);
+    const html = episodePage(ep, { prev, next, related });
+    fs.writeFileSync(path.join(OUT_DIR, `${ep.slug}.html`), html, "utf-8");
+  });
+
+  fs.writeFileSync("sitemap.xml", buildSitemap(episodes), "utf-8");
+  fs.writeFileSync("robots.txt", buildRobots(), "utf-8");
+
+  // episodes.json incluye "paragraphs" (el cuerpo completo de cada episodio),
+  // que solo usan las páginas estáticas de /episodios generadas arriba. La
+  // portada (app.js) solo necesita los datos de listado/tarjeta, así que le
+  // damos una copia sin ese campo para no descargar ~1.3MB de más.
+  const episodesList = episodes.map(({ paragraphs, ...rest }) => rest);
+  fs.writeFileSync("episodes-list.json", JSON.stringify(episodesList), "utf-8");
+
+  console.log(`Generadas ${episodes.length} páginas en /${OUT_DIR}, sitemap.xml, robots.txt y episodes-list.json (SITE_URL=${SITE_URL}).`);
+}
+
+main();
