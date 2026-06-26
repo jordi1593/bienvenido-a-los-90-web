@@ -29,10 +29,7 @@ const state = {
   shown: 0,
   search: "",
   label: "",
-  topListenedSlugs: new Set(),
-  topCommentedSlugs: new Set(),
-  topRatedSlugs: new Set(),
-  supernovaSlugs: new Set(),
+  specialFilters: new Map(),
 };
 
 const els = {
@@ -105,15 +102,6 @@ function normalizeLabel(label) {
   return titleCase(label);
 }
 
-const TOP_LISTENED_VALUE = "__top_escuchados__";
-const TOP_COMMENTED_VALUE = "__top_comentados__";
-const TOP_RATED_VALUE = "__top_valorados__";
-const SUPERNOVA_VALUE = "__b90_supernova__";
-const MARATON_1994_VALUE = "__maraton_1994__";
-const ESENCIALES_VALUE = "__esenciales__";
-const MARATON_1995_VALUE = "__maraton_1995__";
-const DISCOS_HOMENAJE_VALUE = "__discos_homenaje__";
-
 function getSupernovaSlugs(episodes) {
   return new Set(
     episodes.filter((ep) => /b90 classic|b90 supernova/i.test(ep.title)).map((ep) => ep.slug)
@@ -175,59 +163,81 @@ const DISCOS_HOMENAJE_SLUGS = new Set([
   "1089-homenaje-a-foo-fighters-1995",
 ]);
 
-function getTopListenedSlugs(episodes) {
-  const withPlays = episodes.filter((ep) => typeof ep.plays === "number");
-  withPlays.sort((a, b) => b.plays - a.plays);
-  return new Set(withPlays.slice(0, 20).map((ep) => ep.slug));
+function topSlugsBy(episodes, key, { requireRealStats = false } = {}) {
+  const candidates = requireRealStats
+    ? episodes.filter((ep) => ep.likes !== undefined && ep.likes !== null)
+    : episodes.filter((ep) => typeof ep[key] === "number");
+  const sorted = [...candidates].sort((a, b) => b[key] - a[key]);
+  return new Set(sorted.slice(0, 20).map((ep) => ep.slug));
 }
 
-function getTopCommentedSlugs(episodes) {
-  // Solo episodios con estadísticas reales de iVoox (ep.likes definido); el
-  // resto usa el contador de comentarios del blog, que no es comparable.
-  const withRealStats = episodes.filter((ep) => ep.likes !== undefined && ep.likes !== null);
-  withRealStats.sort((a, b) => b.comments - a.comments);
-  return new Set(withRealStats.slice(0, 20).map((ep) => ep.slug));
-}
-
-function getTopRatedSlugs(episodes) {
-  const withRealStats = episodes.filter((ep) => ep.likes !== undefined && ep.likes !== null);
-  withRealStats.sort((a, b) => b.likes - a.likes);
-  return new Set(withRealStats.slice(0, 20).map((ep) => ep.slug));
-}
+// Cada filtro especial del desplegable de etiquetas se define una sola vez
+// aquí: su texto, cómo obtener sus episodios (lista curada de slugs o
+// calculada a partir de los datos) y, si aplica, cómo ordenar el resultado.
+const SPECIAL_FILTERS = [
+  {
+    value: "__top_escuchados__",
+    label: "Lo más escuchado",
+    getSlugs: (episodes) => topSlugsBy(episodes, "plays"),
+    sort: (a, b) => b.plays - a.plays,
+  },
+  {
+    value: "__top_comentados__",
+    label: "Lo más comentado",
+    // Solo episodios con estadísticas reales de iVoox (ep.likes definido);
+    // el resto usa el contador de comentarios del blog, que no es comparable.
+    getSlugs: (episodes) => topSlugsBy(episodes, "comments", { requireRealStats: true }),
+    sort: (a, b) => b.comments - a.comments,
+  },
+  {
+    value: "__top_valorados__",
+    label: "Lo más valorado",
+    getSlugs: (episodes) => topSlugsBy(episodes, "likes", { requireRealStats: true }),
+    sort: (a, b) => b.likes - a.likes,
+  },
+  {
+    value: "__b90_supernova__",
+    label: "B90 Supernova",
+    getSlugs: getSupernovaSlugs,
+  },
+  {
+    value: "__maraton_1994__",
+    label: "Maratón 1994",
+    slugs: MARATON_1994_SLUGS,
+  },
+  {
+    value: "__maraton_1995__",
+    label: "Maratón 1995",
+    slugs: MARATON_1995_SLUGS,
+  },
+  {
+    value: "__esenciales__",
+    label: "Esenciales",
+    slugs: ESENCIALES_SLUGS,
+  },
+  {
+    value: "__discos_homenaje__",
+    label: "Discos Homenaje",
+    slugs: DISCOS_HOMENAJE_SLUGS,
+  },
+];
 
 function applyFilters() {
   const q = state.search.trim().toLowerCase();
+  const activeFilter = state.specialFilters.get(state.label);
   state.filtered = state.all.filter((ep) => {
     const matchesSearch = !q ||
       ep.title.toLowerCase().includes(q) ||
       ep.summary.toLowerCase().includes(q) ||
       ep.labels.some((l) => l.toLowerCase().includes(q));
     const matchesLabel = !state.label ||
-      (state.label === TOP_LISTENED_VALUE
-        ? state.topListenedSlugs.has(ep.slug)
-        : state.label === TOP_COMMENTED_VALUE
-        ? state.topCommentedSlugs.has(ep.slug)
-        : state.label === TOP_RATED_VALUE
-        ? state.topRatedSlugs.has(ep.slug)
-        : state.label === SUPERNOVA_VALUE
-        ? state.supernovaSlugs.has(ep.slug)
-        : state.label === MARATON_1994_VALUE
-        ? MARATON_1994_SLUGS.has(ep.slug)
-        : state.label === ESENCIALES_VALUE
-        ? ESENCIALES_SLUGS.has(ep.slug)
-        : state.label === MARATON_1995_VALUE
-        ? MARATON_1995_SLUGS.has(ep.slug)
-        : state.label === DISCOS_HOMENAJE_VALUE
-        ? DISCOS_HOMENAJE_SLUGS.has(ep.slug)
+      (activeFilter
+        ? activeFilter.slugs.has(ep.slug)
         : ep.labels.some((l) => normalizeLabel(l) === state.label));
     return matchesSearch && matchesLabel;
   });
-  if (state.label === TOP_LISTENED_VALUE) {
-    state.filtered.sort((a, b) => b.plays - a.plays);
-  } else if (state.label === TOP_COMMENTED_VALUE) {
-    state.filtered.sort((a, b) => b.comments - a.comments);
-  } else if (state.label === TOP_RATED_VALUE) {
-    state.filtered.sort((a, b) => b.likes - a.likes);
+  if (activeFilter?.sort) {
+    state.filtered.sort(activeFilter.sort);
   }
   state.shown = 0;
   els.list.innerHTML = "";
@@ -243,45 +253,12 @@ function renderNextPage() {
 }
 
 function populateLabelFilter(episodes) {
-  const topOpt = document.createElement("option");
-  topOpt.value = TOP_LISTENED_VALUE;
-  topOpt.textContent = "Lo más escuchado";
-  els.labelFilter.appendChild(topOpt);
-
-  const topCommentedOpt = document.createElement("option");
-  topCommentedOpt.value = TOP_COMMENTED_VALUE;
-  topCommentedOpt.textContent = "Lo más comentado";
-  els.labelFilter.appendChild(topCommentedOpt);
-
-  const topRatedOpt = document.createElement("option");
-  topRatedOpt.value = TOP_RATED_VALUE;
-  topRatedOpt.textContent = "Lo más valorado";
-  els.labelFilter.appendChild(topRatedOpt);
-
-  const supernovaOpt = document.createElement("option");
-  supernovaOpt.value = SUPERNOVA_VALUE;
-  supernovaOpt.textContent = "B90 Supernova";
-  els.labelFilter.appendChild(supernovaOpt);
-
-  const maraton1994Opt = document.createElement("option");
-  maraton1994Opt.value = MARATON_1994_VALUE;
-  maraton1994Opt.textContent = "Maratón 1994";
-  els.labelFilter.appendChild(maraton1994Opt);
-
-  const maraton1995Opt = document.createElement("option");
-  maraton1995Opt.value = MARATON_1995_VALUE;
-  maraton1995Opt.textContent = "Maratón 1995";
-  els.labelFilter.appendChild(maraton1995Opt);
-
-  const esencialesOpt = document.createElement("option");
-  esencialesOpt.value = ESENCIALES_VALUE;
-  esencialesOpt.textContent = "Esenciales";
-  els.labelFilter.appendChild(esencialesOpt);
-
-  const discosHomenajeOpt = document.createElement("option");
-  discosHomenajeOpt.value = DISCOS_HOMENAJE_VALUE;
-  discosHomenajeOpt.textContent = "Discos Homenaje";
-  els.labelFilter.appendChild(discosHomenajeOpt);
+  SPECIAL_FILTERS.forEach((filter) => {
+    const opt = document.createElement("option");
+    opt.value = filter.value;
+    opt.textContent = filter.label;
+    els.labelFilter.appendChild(opt);
+  });
 
   const EXCLUDED_LABELS = new Set([
     "podcast", "podcast en español", "radio", "radio utopia", "radio utopía",
@@ -360,10 +337,12 @@ async function init() {
   const res = await fetch("episodes-list.json");
   const episodes = await res.json();
   state.all = episodes;
-  state.topListenedSlugs = getTopListenedSlugs(episodes);
-  state.topCommentedSlugs = getTopCommentedSlugs(episodes);
-  state.topRatedSlugs = getTopRatedSlugs(episodes);
-  state.supernovaSlugs = getSupernovaSlugs(episodes);
+  state.specialFilters = new Map(
+    SPECIAL_FILTERS.map((filter) => [
+      filter.value,
+      { ...filter, slugs: filter.slugs ?? filter.getSlugs(episodes) },
+    ])
+  );
   populateLabelFilter(episodes);
   renderArchive(episodes);
   applyFilters();
