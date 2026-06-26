@@ -280,11 +280,14 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 
 function buildSitemap(episodes) {
   const urls = [
-    { loc: `${SITE_URL}/index.html`, priority: "1.0" },
+    { loc: `${SITE_URL}/index.html`, priority: "1.0", image: `${SITE_URL}/images/b90-logo-new.jpg` },
     ...episodes.map((ep) => ({
       loc: `${SITE_URL}/episodios/${ep.slug}.html`,
       lastmod: ep.published.slice(0, 10),
       priority: "0.7",
+      // Mismo respaldo que el og:image: si el episodio no tiene miniatura
+      // propia, anunciamos el logo del podcast para esa página.
+      image: bigThumbnail(ep.thumbnail) || `${SITE_URL}/images/b90-logo-new.jpg`,
     })),
   ];
 
@@ -292,10 +295,11 @@ function buildSitemap(episodes) {
     <loc>${u.loc}</loc>
     ${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ""}
     <priority>${u.priority}</priority>
+    ${u.image ? `<image:image><image:loc>${u.image}</image:loc></image:image>` : ""}
   </url>`).join("\n");
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${body}
 </urlset>
 `;
