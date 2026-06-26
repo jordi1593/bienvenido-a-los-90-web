@@ -1,2 +1,9 @@
 node_modules/
 *.log
+
+# Archivos generados por build-episodes.mjs: se reconstruyen y se despliegan
+# directamente en cada ejecución del workflow, no se versionan.
+/episodios/
+/episodes-list.json
+/sitemap.xml
+/robots.txt
