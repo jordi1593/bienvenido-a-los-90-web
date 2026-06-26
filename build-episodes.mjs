@@ -121,7 +121,10 @@ function getRelatedEpisodes(ep, allEpisodes) {
 
 function episodePage(ep, { prev, next, related }) {
   const description = escapeHtml(metaDescription(ep.paragraphs));
-  const image = bigThumbnail(ep.thumbnail);
+  // Algunos episodios muy antiguos no tienen miniatura propia; usamos el
+  // logo del podcast como respaldo para que la vista previa al compartir
+  // nunca quede sin imagen.
+  const image = bigThumbnail(ep.thumbnail) || `${SITE_URL}/images/b90-logo-new.jpg`;
   const pageUrl = `${SITE_URL}/episodios/${ep.slug}.html`;
   const canonical = pageUrl;
   const ivooxId = ivooxEpisodeId(ep);
