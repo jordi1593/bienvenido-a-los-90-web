@@ -578,6 +578,13 @@ body {
   color: #fff;
 }
 
+.search-highlight {
+  background: rgba(237, 40, 94, 0.22);
+  color: var(--text);
+  border-radius: 2px;
+  padding: 0 0.05em;
+}
+
 /* Listado de episodios: carátula cuadrada + texto al lado */
 
 .episode-list {

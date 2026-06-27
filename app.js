@@ -53,12 +53,19 @@ function escapeHtml(str) {
   }[c]));
 }
 
+function highlightMatch(escapedText, query) {
+  if (!query) return escapedText;
+  const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return escapedText.replace(new RegExp(escapedQuery, "gi"), (m) => `<mark class="search-highlight">${m}</mark>`);
+}
+
 function episodeCardHtml(ep) {
   const cover = ep.thumbnail
     ? ep.thumbnail.replace("/s72-c/", "/s600/")
     : "";
   const numBadge = ep.number ? `#${ep.number}` : "";
   const pageUrl = `episodios/${ep.slug}.html`;
+  const query = state.search.trim();
   return `
     <article class="episode-card">
       <a class="episode-cover-link" href="${pageUrl}">
@@ -67,7 +74,7 @@ function episodeCardHtml(ep) {
         <span class="episode-cover-overlay"></span>
       </a>
       <div class="episode-body">
-        <h2><a href="${pageUrl}">${escapeHtml(ep.title)}</a></h2>
+        <h2><a href="${pageUrl}">${highlightMatch(escapeHtml(ep.title), query)}</a></h2>
         <div class="episode-meta">${formatDate(ep.published)} · ${ep.comments} comentario${ep.comments === 1 ? "" : "s"}</div>
         ${typeof ep.likes === "number" ? `<div class="episode-likes"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 20.5s-7.5-4.6-9.8-9.2C.5 7.8 2.3 4.5 5.8 4c2.1-.3 4.1.7 6.2 3 2.1-2.3 4.1-3.3 6.2-3 3.5.5 5.3 3.8 3.6 7.3-2.3 4.6-9.8 9.2-9.8 9.2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg> ${ep.likes}</div>` : ""}
         <div class="episode-actions">
