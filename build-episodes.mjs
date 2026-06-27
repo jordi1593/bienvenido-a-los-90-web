@@ -96,23 +96,48 @@ function labelKey(label) {
   return label.trim().toLowerCase().replace(/\s+/g, " ");
 }
 
+// Palabras demasiado genéricas en los títulos (nombre del programa, conectores,
+// numeración...) que no aportan señal real de temática compartida.
+const TITLE_STOPWORDS = new Set([
+  "bienvenido", "los", "90", "90s", "programa", "especial", "parte", "p",
+  "el", "la", "las", "un", "una", "unos", "unas", "de", "del", "en", "y",
+  "o", "a", "con", "sin", "su", "sus", "que", "se", "lo", "al", "por",
+  "para", "como", "más", "mas", "este", "esta", "estos", "estas",
+]);
+
+function titleKeywords(title) {
+  return new Set(
+    title
+      .toLowerCase()
+      .normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .replace(/[^a-z0-9\s]/g, " ")
+      .split(/\s+/)
+      .filter((w) => w.length > 2 && !TITLE_STOPWORDS.has(w))
+  );
+}
+
 // Episodios relacionados: prioriza los que comparten etiquetas temáticas
-// (artista, banda, tema) y completa con los cronológicamente más cercanos
-// si no hay suficientes coincidencias.
+// (artista, banda, tema), suma puntos si comparten palabras clave en el
+// título (p.ej. el nombre de un artista que no esté etiquetado), y completa
+// con los cronológicamente más cercanos si no hay suficientes coincidencias.
 function getRelatedEpisodes(ep, allEpisodes) {
   const epKeys = new Set(ep.labels.map(labelKey).filter((k) => !GENERIC_LABEL_KEYS.has(k)));
+  const epTitleWords = titleKeywords(ep.title);
   const epTime = new Date(ep.published).getTime();
 
   const scored = allEpisodes
     .filter((other) => other.slug !== ep.slug)
     .map((other) => {
       const otherKeys = other.labels.map(labelKey).filter((k) => !GENERIC_LABEL_KEYS.has(k));
-      const shared = otherKeys.filter((k) => epKeys.has(k)).length;
-      return { ep: other, shared, timeDiff: Math.abs(new Date(other.published).getTime() - epTime) };
+      const sharedLabels = otherKeys.filter((k) => epKeys.has(k)).length;
+      const otherTitleWords = titleKeywords(other.title);
+      const sharedTitleWords = [...epTitleWords].filter((w) => otherTitleWords.has(w)).length;
+      const score = sharedLabels * 3 + sharedTitleWords;
+      return { ep: other, score, timeDiff: Math.abs(new Date(other.published).getTime() - epTime) };
     });
 
   scored.sort((a, b) => {
-    if (b.shared !== a.shared) return b.shared - a.shared;
+    if (b.score !== a.score) return b.score - a.score;
     return a.timeDiff - b.timeDiff;
   });
 
