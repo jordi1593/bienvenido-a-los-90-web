@@ -200,7 +200,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo" src="../images/b90-logo-new.jpg" alt="B" />
+        <img class="brand-logo" src="../images/b90-logo-transparent.png" alt="B" />
         <span>ienvenido a los 90</span>
       </a>
       <div class="topnav-links">
