@@ -82,14 +82,31 @@ function bigThumbnail(thumb) {
   return thumb ? thumb.replace("/s72-c/", "/s640/") : null;
 }
 
-// Variantes del nombre del programa que no aportan información temática
-// para relacionar episodios entre sí.
+// Variantes del nombre del programa y etiquetas de segmentos/colaboradores
+// recurrentes que no aportan información temática para relacionar episodios
+// entre sí (coinciden porque comparten un segmento fijo del programa, no un tema).
 const GENERIC_LABEL_KEYS = new Set([
   "bienvenido a lo 90",
   "bienvenido a los 90",
   "bienvenido  a los 90",
   "bienvenidoalos90",
   "bienvenidoalo 90",
+  "podcast",
+  "podcast en español",
+  "radio",
+  "radio utopia",
+  "radio utopía",
+  "subterfuge radio",
+  "madrid",
+  "ivoox",
+  "darwinians radio bike",
+  "darwinians raido bike",
+  "darwiniansradiobike",
+  "b90 supernova",
+  "especial",
+  "radioutopia",
+  "castellano",
+  "descarga",
 ]);
 
 function labelKey(label) {
