@@ -532,6 +532,53 @@ body {
   border: 2px solid var(--border);
 }
 
+.skeleton-cover {
+  flex: 0 0 140px;
+  width: 140px;
+  height: 140px;
+  border-radius: var(--radius);
+}
+
+.skeleton-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-top: 0.4rem;
+}
+
+.skeleton-line {
+  border-radius: var(--radius);
+}
+
+.skeleton-title {
+  height: 1.1rem;
+  width: 90%;
+}
+
+.skeleton-meta {
+  height: 0.8rem;
+  width: 55%;
+}
+
+.skeleton-actions {
+  height: 1.8rem;
+  width: 40%;
+  margin-top: 0.4rem;
+}
+
+.skeleton-cover,
+.skeleton-line {
+  background: linear-gradient(90deg, var(--bg-card) 25%, rgba(0, 0, 0, 0.06) 50%, var(--bg-card) 75%);
+  background-size: 200% 100%;
+  animation: skeleton-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes skeleton-pulse {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
 .episode-cover-img {
   width: 100%;
   height: 100%;
