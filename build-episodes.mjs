@@ -82,6 +82,14 @@ function bigThumbnail(thumb) {
   return thumb ? thumb.replace("/s72-c/", "/s640/") : null;
 }
 
+// Recorte cuadrado de tamaño fijo (a diferencia de bigThumbnail, que respeta
+// el ratio original) para poder declarar siempre las mismas dimensiones en
+// las meta etiquetas og:image, lo que agiliza la vista previa al compartir
+// en redes sociales y WhatsApp.
+function ogThumbnail(thumb) {
+  return thumb ? thumb.replace("/s72-c/", "/s1200-c/") : null;
+}
+
 // Variantes del nombre del programa y etiquetas de segmentos/colaboradores
 // recurrentes que no aportan información temática para relacionar episodios
 // entre sí (coinciden porque comparten un segmento fijo del programa, no un tema).
@@ -215,7 +223,9 @@ function episodePage(ep, { prev, next, related, series }) {
   // Algunos episodios muy antiguos no tienen miniatura propia; usamos el
   // logo del podcast como respaldo para que la vista previa al compartir
   // nunca quede sin imagen.
-  const image = bigThumbnail(ep.thumbnail) || `${SITE_URL}/images/b90-logo-new.jpg`;
+  const ogThumb = ogThumbnail(ep.thumbnail);
+  const image = ogThumb || `${SITE_URL}/images/b90-logo-new.jpg`;
+  const imageSize = ogThumb ? 1200 : 735;
   const pageUrl = `${SITE_URL}/episodios/${ep.slug}.html`;
   const canonical = pageUrl;
   const ivooxId = ivooxEpisodeId(ep);
@@ -276,7 +286,9 @@ function episodePage(ep, { prev, next, related, series }) {
 <meta property="og:title" content="${escapeHtml(ep.title)}" />
 <meta property="og:description" content="${description}" />
 <meta property="og:url" content="${pageUrl}" />
-${image ? `<meta property="og:image" content="${image}" />` : ""}
+${image ? `<meta property="og:image" content="${image}" />
+<meta property="og:image:width" content="${imageSize}" />
+<meta property="og:image:height" content="${imageSize}" />` : ""}
 <meta property="article:published_time" content="${ep.published}" />
 
 <meta name="twitter:card" content="summary_large_image" />
