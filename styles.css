@@ -985,6 +985,10 @@ body {
   margin: 0 0 0.75rem;
 }
 
+[data-theme="dark"] .about-subtitle {
+  color: var(--text);
+}
+
 .about-section p {
   max-width: 760px;
   line-height: 1.7;
