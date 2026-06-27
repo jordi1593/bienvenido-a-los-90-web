@@ -226,6 +226,9 @@ function episodePage(ep, { prev, next, related, series }) {
   const ogThumb = ogThumbnail(ep.thumbnail);
   const image = ogThumb || `${SITE_URL}/images/b90-logo-new.jpg`;
   const imageSize = ogThumb ? 1200 : 735;
+  // La cabecera visible de la página usa una versión más ligera (no el
+  // recorte de 1200px reservado para las meta etiquetas og:image).
+  const coverImage = bigThumbnail(ep.thumbnail) || `${SITE_URL}/images/b90-logo-new.jpg`;
   const pageUrl = `${SITE_URL}/episodios/${ep.slug}.html`;
   const canonical = pageUrl;
   const ivooxId = ivooxEpisodeId(ep);
@@ -334,7 +337,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 
       ${ivooxId ? `<div class="ivoox-player"><iframe frameborder="0" allowfullscreen scrolling="no" height="200" style="width:100%;" src="https://www.ivoox.com/player_ej_${ivooxId}_4_1.html?c1=ed285e" loading="lazy" title="Reproductor de iVoox"></iframe></div>` : ""}
 
-      ${!ivooxId && image ? `<img class="episode-cover" src="${image}" alt="${escapeHtml(ep.title)}" loading="lazy" />` : ""}
+      ${!ivooxId && coverImage ? `<img class="episode-cover" src="${coverImage}" alt="${escapeHtml(ep.title)}" loading="lazy" />` : ""}
 
       <div class="episode-actions">
         <a class="primary" href="${ep.url}" target="_blank" rel="noopener">Ver en el blog original</a>
