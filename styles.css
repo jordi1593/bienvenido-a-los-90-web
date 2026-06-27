@@ -1089,6 +1089,11 @@ body {
 .social-btn.icon-substack { color: var(--substack); border-color: var(--substack); }
 .social-btn.icon-substack:hover { background: var(--substack); border-color: var(--substack); color: #fff; }
 
+[data-theme="dark"] .social-btn {
+  color: var(--text-dim);
+  border-color: var(--border);
+}
+
 .footer-tagline {
   margin-top: 2rem;
   font-size: 0.8rem;
