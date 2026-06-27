@@ -1322,13 +1322,20 @@ body {
   margin: 1.75rem 0;
 }
 
-.episode-tags span {
+.episode-tags a {
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
   color: var(--text);
   border: 1px solid var(--border);
   padding: 0.3rem 0.7rem;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.episode-tags a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .series-box {

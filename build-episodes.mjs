@@ -322,7 +322,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
       ${bodyParagraphs}
       </div>
 
-      ${ep.labels.length ? `<div class="episode-tags">${ep.labels.map((l) => `<span>${escapeHtml(l)}</span>`).join("")}</div>` : ""}
+      ${ep.labels.length ? `<div class="episode-tags">${ep.labels.map((l) => `<a href="../?label=${encodeURIComponent(l)}#episodios">${escapeHtml(l)}</a>`).join("")}</div>` : ""}
 
       ${series ? `
       <div class="series-box">

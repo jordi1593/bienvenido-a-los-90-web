@@ -373,6 +373,12 @@ async function init() {
   );
   populateLabelFilter(episodes);
   renderArchive(episodes);
+
+  const labelParam = new URLSearchParams(location.search).get("label");
+  if (labelParam) {
+    state.label = normalizeLabel(labelParam);
+    els.labelFilter.value = state.label;
+  }
   applyFilters();
 
   els.search.addEventListener("input", (e) => {
