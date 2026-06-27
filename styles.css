@@ -1105,6 +1105,50 @@ body {
   color: var(--accent);
 }
 
+.share-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.share-row-label {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-right: 0.3rem;
+}
+
+.share-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: var(--text);
+  background: none;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.share-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.share-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.share-btn.icon-copy.copied {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .episode-content {
   margin-top: 1.5rem;
   font-size: 1.02rem;

@@ -36,3 +36,26 @@
     }
   });
 })();
+
+// Botón "Copiar enlace" en la fila de compartir de cada episodio.
+(function () {
+  const copyBtn = document.querySelector(".icon-copy");
+  if (!copyBtn) return;
+
+  const url = copyBtn.dataset.copyUrl;
+  const originalTitle = copyBtn.getAttribute("title");
+
+  copyBtn.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(url);
+      copyBtn.classList.add("copied");
+      copyBtn.setAttribute("title", "¡Enlace copiado!");
+      setTimeout(() => {
+        copyBtn.classList.remove("copied");
+        copyBtn.setAttribute("title", originalTitle);
+      }, 2000);
+    } catch (err) {
+      console.error("No se pudo copiar el enlace", err);
+    }
+  });
+})();

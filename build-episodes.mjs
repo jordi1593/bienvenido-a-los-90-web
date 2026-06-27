@@ -167,7 +167,7 @@ function episodePage(ep, { prev, next, related }) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../styles.css?v=18" />
+<link rel="stylesheet" href="../styles.css?v=19" />
 
 <meta property="og:type" content="article" />
 <meta property="og:title" content="${escapeHtml(ep.title)}" />
@@ -224,6 +224,13 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
         ${platformLinks(ep).map((p) => `<a class="icon-${p.icon}" href="${p.url}" target="_blank" rel="noopener" title="${escapeHtml(p.label)}" aria-label="${escapeHtml(p.label)}">${PLATFORM_ICONS[p.icon]}</a>`).join("")}
       </div>
 
+      <div class="share-row">
+        <span class="share-row-label">Compartir:</span>
+        <a class="share-btn icon-whatsapp" href="https://wa.me/?text=${encodeURIComponent(`${ep.title} ${pageUrl}`)}" target="_blank" rel="noopener" title="Compartir en WhatsApp" aria-label="Compartir en WhatsApp"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.8L4 20.5l4.3-1.1A8.5 8.5 0 1 0 12 3.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 9.8c.1-.8.6-.9 1-.9s.7 0 .9.5c.2.5.6 1.5.6 1.7s0 .4-.2.6c-.2.3-.4.4-.2.7.2.3 1 1.3 2.2 1.8.3.1.5.1.7-.1.2-.2.6-.7.8-.9.2-.2.3-.2.6-.1.3.1 1.6.8 1.9 1 .3.1.4.2.5.3.1.2.1.9-.2 1.3-.3.4-1.3 1-2.4.7-1.1-.3-2.9-1.1-4.4-2.7-1.2-1.3-1.9-2.7-2.1-3.2-.2-.5-.4-1.2-.3-1.7z" fill="currentColor"/></svg></a>
+        <a class="share-btn icon-x" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(ep.title)}&url=${encodeURIComponent(pageUrl)}" target="_blank" rel="noopener" title="Compartir en X" aria-label="Compartir en X"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 7.5l9 9M16.5 7.5l-9 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+        <button class="share-btn icon-copy" type="button" data-copy-url="${pageUrl}" title="Copiar enlace" aria-label="Copiar enlace"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 9V6a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-3" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><rect x="4" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.6"/></svg></button>
+      </div>
+
       <div class="episode-content">
       ${bodyParagraphs}
       </div>
@@ -276,7 +283,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
     </div>
   </footer>
 
-  <script src="../nav.js?v=2" defer></script>
+  <script src="../nav.js?v=3" defer></script>
 </body>
 </html>
 `;
