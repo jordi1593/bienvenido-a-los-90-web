@@ -60,8 +60,10 @@ function highlightMatch(escapedText, query) {
 }
 
 function episodeCardHtml(ep) {
+  // Las tarjetas muestran la miniatura en una caja de 140px; 320px da
+  // margen de sobra para pantallas retina sin pedir una imagen sobredimensionada.
   const cover = ep.thumbnail
-    ? ep.thumbnail.replace("/s72-c/", "/s600/")
+    ? ep.thumbnail.replace("/s72-c/", "/s320/")
     : "";
   const numBadge = ep.number ? `#${ep.number}` : "";
   const pageUrl = `episodios/${ep.slug}.html`;

@@ -82,6 +82,13 @@ function bigThumbnail(thumb) {
   return thumb ? thumb.replace("/s72-c/", "/s640/") : null;
 }
 
+// Las tarjetas de "relacionados" muestran la miniatura en una caja de
+// 140px; 320px da margen de sobra para pantallas retina sin pedir una
+// imagen sobredimensionada como hacía bigThumbnail (640px).
+function cardThumbnail(thumb) {
+  return thumb ? thumb.replace("/s72-c/", "/s320/") : null;
+}
+
 // Recorte cuadrado de tamaño fijo (a diferencia de bigThumbnail, que respeta
 // el ratio original) para poder declarar siempre las mismas dimensiones en
 // las meta etiquetas og:image, lo que agiliza la vista previa al compartir
@@ -378,7 +385,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
     <aside class="related-episodes">
       <h3>Relacionados</h3>
       ${related.map((r) => {
-        const relImage = bigThumbnail(r.thumbnail);
+        const relImage = cardThumbnail(r.thumbnail);
         const relBadge = r.number ? `#${r.number}` : "";
         return `
         <a class="related-card" href="${r.slug}.html">
