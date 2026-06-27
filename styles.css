@@ -227,6 +227,15 @@ body {
   object-fit: cover;
 }
 
+[data-theme="dark"] .header-banner-wrap {
+  padding: 2rem 1rem;
+}
+
+[data-theme="dark"] .header-banner {
+  border-radius: 14px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.55);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
