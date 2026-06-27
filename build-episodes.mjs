@@ -107,6 +107,11 @@ const GENERIC_LABEL_KEYS = new Set([
   "radioutopia",
   "castellano",
   "descarga",
+  "radio 3",
+  "felipe couselo",
+  "paco perez bryan",
+  "paco pérez bryan",
+  "julio ruiz",
 ]);
 
 function labelKey(label) {
