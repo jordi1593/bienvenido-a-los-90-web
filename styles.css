@@ -37,6 +37,8 @@
   --text-dim: #b9b2c0;
   --accent-2: #ffffff;
   --border: rgba(255, 255, 255, 0.15);
+  --x: #ffffff;
+  --tiktok: #ffffff;
 }
 
 .font-brand {
@@ -1052,10 +1054,10 @@ body {
 .social-btn.icon-facebook:hover { background: var(--facebook); border-color: var(--facebook); color: #fff; }
 
 .social-btn.icon-x { color: var(--x); border-color: var(--x); }
-.social-btn.icon-x:hover { background: var(--x); border-color: var(--x); color: #fff; }
+.social-btn.icon-x:hover { background: var(--x); border-color: var(--x); color: var(--bg); }
 
 .social-btn.icon-tiktok { color: var(--tiktok); border-color: var(--tiktok); }
-.social-btn.icon-tiktok:hover { background: var(--tiktok); border-color: var(--tiktok); color: #fff; }
+.social-btn.icon-tiktok:hover { background: var(--tiktok); border-color: var(--tiktok); color: var(--bg); }
 
 .social-btn.icon-twitch { color: var(--twitch); border-color: var(--twitch); }
 .social-btn.icon-twitch:hover { background: var(--twitch); border-color: var(--twitch); color: #fff; }
