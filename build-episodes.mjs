@@ -187,14 +187,14 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 <body>
   <nav class="topnav">
     <div class="container topnav-inner">
-      <a class="brand" href="../index.html" aria-label="Bienvenido a los 90">
+      <a class="brand" href="../" aria-label="Bienvenido a los 90">
         <img class="brand-logo" src="../images/b90-logo-new.jpg" alt="B" />
         <span>ienvenido a los 90</span>
       </a>
       <div class="topnav-links">
-        <a href="../index.html#episodios">Episodios</a>
-        <a href="../index.html#escuchanos">Escúchanos</a>
-        <a href="../index.html#sigue">Síguenos</a>
+        <a href="../#episodios">Episodios</a>
+        <a href="../#escuchanos">Escúchanos</a>
+        <a href="../#sigue">Síguenos</a>
         <a href="#" id="randomEpisodeBtn">🎲 Episodio aleatorio</a>
       </div>
       <button class="theme-toggle" id="themeToggle" type="button" title="Cambiar tema" aria-label="Cambiar tema claro/oscuro">
@@ -208,7 +208,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
   </nav>
 
   <main class="container episode-page">
-    <nav class="breadcrumbs"><a href="../index.html">Episodios</a> / <span>${ep.number ? `#${ep.number}` : ""}</span></nav>
+    <nav class="breadcrumbs"><a href="../">Episodios</a> / <span>${ep.number ? `#${ep.number}` : ""}</span></nav>
 
     <div class="episode-page-layout">
     <article>
@@ -265,7 +265,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
       ${next ? `<a href="${next.slug}.html">${escapeHtml(next.title)} →</a>` : "<span></span>"}
     </nav>
 
-    <p class="back-link"><a href="../index.html">← Volver al listado completo de episodios</a></p>
+    <p class="back-link"><a href="../">← Volver al listado completo de episodios</a></p>
   </main>
 
   <footer class="site-footer">
@@ -296,7 +296,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 
 function buildSitemap(episodes) {
   const urls = [
-    { loc: `${SITE_URL}/index.html`, priority: "1.0", image: `${SITE_URL}/images/b90-logo-new.jpg` },
+    { loc: `${SITE_URL}/`, priority: "1.0", image: `${SITE_URL}/images/b90-logo-new.jpg` },
     ...episodes.map((ep) => ({
       loc: `${SITE_URL}/episodios/${ep.slug}.html`,
       lastmod: ep.published.slice(0, 10),
