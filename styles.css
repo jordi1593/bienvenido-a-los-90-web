@@ -137,6 +137,18 @@ body {
   margin-right: -0.35em;
 }
 
+.logo-dark {
+  display: none;
+}
+
+[data-theme="dark"] .logo-light {
+  display: none;
+}
+
+[data-theme="dark"] .logo-dark {
+  display: block;
+}
+
 
 .topnav-links {
   display: flex;

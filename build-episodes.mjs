@@ -179,7 +179,7 @@ function episodePage(ep, { prev, next, related }) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../styles.css?v=26" />
+<link rel="stylesheet" href="../styles.css?v=27" />
 
 <meta property="og:type" content="article" />
 <meta property="og:title" content="${escapeHtml(ep.title)}" />
@@ -200,7 +200,8 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo" src="../images/b90-logo-transparent.png" alt="B" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark.png" alt="B" />
         <span>ienvenido a los 90</span>
       </a>
       <div class="topnav-links">
