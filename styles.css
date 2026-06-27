@@ -118,7 +118,7 @@ body {
 .brand {
   display: flex;
   align-items: center;
-  color: #111;
+  color: var(--text);
   text-decoration: none;
   font-family: var(--font-display);
   font-size: 1rem;
@@ -144,7 +144,7 @@ body {
 }
 
 .topnav-links a {
-  color: #111;
+  color: var(--text);
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 700;
@@ -164,7 +164,7 @@ body {
   height: 40px;
   border: none;
   background: transparent;
-  color: #111;
+  color: var(--text);
   cursor: pointer;
   padding: 0;
 }
