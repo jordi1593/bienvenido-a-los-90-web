@@ -154,6 +154,16 @@ function episodePage(ep, { prev, next, related }) {
     } : {}),
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Episodios", item: `${SITE_URL}/#episodios` },
+      { "@type": "ListItem", position: 3, name: ep.title, item: pageUrl },
+    ],
+  };
+
   return `<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -183,6 +193,7 @@ ${image ? `<meta property="og:image" content="${image}" />` : ""}
 ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 
 <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
+<script type="application/ld+json">${JSON.stringify(breadcrumbJsonLd)}</script>
 </head>
 <body>
   <nav class="topnav">
