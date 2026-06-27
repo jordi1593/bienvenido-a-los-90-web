@@ -1094,6 +1094,11 @@ body {
   border-color: var(--border);
 }
 
+html:not([data-theme="dark"]) .social-btn {
+  color: #000;
+  border-color: var(--border);
+}
+
 .footer-tagline {
   margin-top: 2rem;
   font-size: 0.8rem;
