@@ -508,6 +508,29 @@ body {
   white-space: nowrap;
 }
 
+.result-count strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.clear-filters {
+  background: none;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: var(--radius);
+  padding: 0.45rem 0.9rem;
+  font-size: 0.8rem;
+  font-family: var(--font-body);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.clear-filters:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
 /* Listado de episodios: carátula cuadrada + texto al lado */
 
 .episode-list {

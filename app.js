@@ -37,6 +37,7 @@ const els = {
   search: document.getElementById("search"),
   labelFilter: document.getElementById("labelFilter"),
   resultCount: document.getElementById("resultCount"),
+  clearFilters: document.getElementById("clearFilters"),
   loadMore: document.getElementById("loadMore"),
   loadMoreWrap: document.getElementById("loadMoreWrap"),
 };
@@ -248,8 +249,9 @@ function renderNextPage() {
   const next = state.filtered.slice(state.shown, state.shown + PAGE_SIZE);
   els.list.insertAdjacentHTML("beforeend", next.map(episodeCardHtml).join(""));
   state.shown += next.length;
-  els.resultCount.textContent = `${state.filtered.length} episodio${state.filtered.length === 1 ? "" : "s"}`;
+  els.resultCount.innerHTML = `<strong>${state.filtered.length}</strong> episodio${state.filtered.length === 1 ? "" : "s"}`;
   els.loadMoreWrap.style.display = state.shown < state.filtered.length ? "block" : "none";
+  els.clearFilters.hidden = !state.search && !state.label;
 }
 
 function populateLabelFilter(episodes) {
@@ -377,6 +379,14 @@ async function init() {
   });
 
   els.loadMore.addEventListener("click", renderNextPage);
+
+  els.clearFilters.addEventListener("click", () => {
+    state.search = "";
+    state.label = "";
+    els.search.value = "";
+    els.labelFilter.value = "";
+    applyFilters();
+  });
 }
 
 init();
