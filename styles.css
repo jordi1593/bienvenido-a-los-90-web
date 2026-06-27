@@ -1331,6 +1331,44 @@ body {
   padding: 0.3rem 0.7rem;
 }
 
+.series-box {
+  margin: 1.75rem 0;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.series-box h3 {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.series-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.series-list a {
+  color: var(--text-dim);
+  text-decoration: none;
+}
+
+.series-list a:hover {
+  color: var(--accent);
+}
+
+.series-list .series-current span {
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .episode-pager {
   display: flex;
   justify-content: space-between;

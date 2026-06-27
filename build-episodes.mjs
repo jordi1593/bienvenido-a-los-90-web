@@ -119,7 +119,51 @@ function getRelatedEpisodes(ep, allEpisodes) {
   return scored.slice(0, 3).map((s) => s.ep);
 }
 
-function episodePage(ep, { prev, next, related }) {
+// Detecta especiales multi-parte por el título (p.ej. "... (Parte 2)") y
+// agrupa los episodios que pertenecen a la misma serie, para poder
+// enlazarlos explícitamente entre sí en cada página.
+function stripNumberPrefix(title) {
+  let s = title;
+  let prev;
+  do {
+    prev = s;
+    s = s.replace(/^(?:bienvenido a los 90\s*-\s*|programa\s*\d+\s*-\s*|p\.?\s*\d+\s*-?\s*|\d+\s*-\s*)/i, "").trim();
+  } while (s !== prev);
+  return s;
+}
+
+function detectSeriesPart(title) {
+  const m = title.match(/^(.*?)[\s,(]*parte\s*(\d+)\)?\s*:?\s*(.*)$/i);
+  if (!m) return null;
+  let base = m[1].trim().replace(/[,(:-]+$/, "").trim();
+  base = stripNumberPrefix(base);
+  base = base.replace(/\s*["“][^"”]+["”]\s*$/, "").trim();
+  if (!base) return null;
+  return { key: base.toLowerCase(), partNum: parseInt(m[2], 10) };
+}
+
+function buildSeriesMap(allEpisodes) {
+  const groups = new Map();
+  for (const ep of allEpisodes) {
+    const detected = detectSeriesPart(ep.title);
+    if (!detected) continue;
+    if (!groups.has(detected.key)) groups.set(detected.key, []);
+    groups.get(detected.key).push({ ep, partNum: detected.partNum });
+  }
+
+  const seriesBySlug = new Map();
+  for (const items of groups.values()) {
+    if (items.length < 2) continue;
+    items.sort((a, b) => a.partNum - b.partNum);
+    const parts = items.map((i) => ({ slug: i.ep.slug, title: i.ep.title, partNum: i.partNum }));
+    for (const item of items) {
+      seriesBySlug.set(item.ep.slug, parts);
+    }
+  }
+  return seriesBySlug;
+}
+
+function episodePage(ep, { prev, next, related, series }) {
   const description = escapeHtml(metaDescription(ep.paragraphs));
   // Algunos episodios muy antiguos no tienen miniatura propia; usamos el
   // logo del podcast como respaldo para que la vista previa al compartir
@@ -179,7 +223,7 @@ function episodePage(ep, { prev, next, related }) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../styles.css?v=28" />
+<link rel="stylesheet" href="../styles.css?v=29" />
 
 <meta property="og:type" content="article" />
 <meta property="og:title" content="${escapeHtml(ep.title)}" />
@@ -254,6 +298,19 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
       </div>
 
       ${ep.labels.length ? `<div class="episode-tags">${ep.labels.map((l) => `<span>${escapeHtml(l)}</span>`).join("")}</div>` : ""}
+
+      ${series ? `
+      <div class="series-box">
+        <h3>Especial en varias partes</h3>
+        <ol class="series-list">
+          ${series.map((s) => `
+          <li class="${s.slug === ep.slug ? "series-current" : ""}">
+            ${s.slug === ep.slug
+              ? `<span>Parte ${s.partNum}: ${escapeHtml(s.title)}</span>`
+              : `<a href="${s.slug}.html">Parte ${s.partNum}: ${escapeHtml(s.title)}</a>`}
+          </li>`).join("")}
+        </ol>
+      </div>` : ""}
     </article>
 
     <aside class="related-episodes">
@@ -349,11 +406,14 @@ function main() {
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
+  const seriesBySlug = buildSeriesMap(episodes);
+
   chronological.forEach((ep, i) => {
     const prev = i > 0 ? chronological[i - 1] : null;
     const next = i < chronological.length - 1 ? chronological[i + 1] : null;
     const related = getRelatedEpisodes(ep, episodes);
-    const html = episodePage(ep, { prev, next, related });
+    const series = seriesBySlug.get(ep.slug) || null;
+    const html = episodePage(ep, { prev, next, related, series });
     fs.writeFileSync(path.join(OUT_DIR, `${ep.slug}.html`), html, "utf-8");
   });
 
