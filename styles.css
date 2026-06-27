@@ -216,15 +216,16 @@ body {
 }
 
 .header-banner-wrap {
-  padding: 0;
+  padding: 1.5rem 1rem;
+  text-align: center;
 }
 
 .header-banner {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
   height: auto;
   max-height: 420px;
-  object-fit: cover;
 }
 
 [data-theme="dark"] .header-banner-wrap {
