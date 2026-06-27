@@ -29,9 +29,55 @@
   --font-brand: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+[data-theme="dark"] {
+  --bg: #16131a;
+  --bg-flat: #16131a;
+  --bg-card: #221d29;
+  --text: #f5f3f6;
+  --text-dim: #b9b2c0;
+  --accent-2: #ffffff;
+  --border: rgba(255, 255, 255, 0.15);
+}
+
 .font-brand {
   font-family: var(--font-brand);
   font-weight: 800;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: none;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.theme-toggle .icon-moon {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle .icon-sun {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle .icon-moon {
+  display: block;
 }
 
 * { box-sizing: border-box; }
@@ -44,6 +90,7 @@ body {
   background: var(--bg-flat);
   color: var(--text);
   line-height: 1.5;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .container {
@@ -55,7 +102,7 @@ body {
 /* Nav superior */
 
 .topnav {
-  background: #ffffff;
+  background: var(--bg-flat);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -135,7 +182,7 @@ body {
     right: 0;
     flex-direction: column;
     gap: 0;
-    background: #ffffff;
+    background: var(--bg-flat);
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
     max-height: 0;
@@ -165,7 +212,7 @@ body {
 
 .site-header {
   position: relative;
-  background: #ffffff;
+  background: var(--bg-flat);
 }
 
 .header-banner-wrap {

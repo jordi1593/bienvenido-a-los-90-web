@@ -37,6 +37,23 @@
   });
 })();
 
+// Botón de modo oscuro/claro, compartido por todas las páginas.
+(function () {
+  const toggle = document.getElementById("themeToggle");
+  if (!toggle) return;
+
+  toggle.addEventListener("click", () => {
+    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+    if (isDark) {
+      document.documentElement.removeAttribute("data-theme");
+      localStorage.setItem("theme", "light");
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+    }
+  });
+})();
+
 // Botón "Copiar enlace" en la fila de compartir de cada episodio.
 (function () {
   const copyBtn = document.querySelector(".icon-copy");

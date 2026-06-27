@@ -159,6 +159,7 @@ function episodePage(ep, { prev, next, related }) {
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
 <title>${escapeHtml(ep.title)} — Bienvenido a los 90</title>
 <link rel="icon" type="image/jpeg" href="../images/b90-logo-new.jpg" />
 <link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
@@ -167,7 +168,7 @@ function episodePage(ep, { prev, next, related }) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../styles.css?v=21" />
+<link rel="stylesheet" href="../styles.css?v=22" />
 
 <meta property="og:type" content="article" />
 <meta property="og:title" content="${escapeHtml(ep.title)}" />
@@ -196,6 +197,10 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
         <a href="../index.html#sigue">Síguenos</a>
         <a href="#" id="randomEpisodeBtn">🎲 Episodio aleatorio</a>
       </div>
+      <button class="theme-toggle" id="themeToggle" type="button" title="Cambiar tema" aria-label="Cambiar tema claro/oscuro">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8L6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
@@ -283,7 +288,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
     </div>
   </footer>
 
-  <script src="../nav.js?v=3" defer></script>
+  <script src="../nav.js?v=4" defer></script>
 </body>
 </html>
 `;
