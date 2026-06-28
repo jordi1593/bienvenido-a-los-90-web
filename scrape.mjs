@@ -176,10 +176,15 @@ async function main() {
 
   dedupeSlugs(episodes);
 
-  episodes.sort((a, b) => new Date(b.published) - new Date(a.published));
+  const excludedSlugs = new Set(
+    JSON.parse(fs.readFileSync("excluded-episodes.json", "utf-8"))
+  );
+  const filtered = episodes.filter((ep) => !excludedSlugs.has(ep.slug));
 
-  fs.writeFileSync("episodes.json", JSON.stringify(episodes, null, 2), "utf-8");
-  console.log(`episodes.json generado con ${episodes.length} episodios.`);
+  filtered.sort((a, b) => new Date(b.published) - new Date(a.published));
+
+  fs.writeFileSync("episodes.json", JSON.stringify(filtered, null, 2), "utf-8");
+  console.log(`episodes.json generado con ${filtered.length} episodios.`);
 }
 
 main().catch((err) => {
