@@ -133,11 +133,20 @@ const MARATON_1994_SLUGS = new Set([
   "p-981-especial-1994-parte-1-mark-lanegan-king-s-x-alice-in-chains-meat-puppets-d",
 ]);
 
-// Episodios listados en
-// https://www.ivoox.com/esenciales-b90_bk_list_6192164_1.html
-const ESENCIALES_SLUGS = new Set([
-  "p-814-homenaje-a-1991-el-ano-que-cambio-la-musica","p-810-especial-gentlemen-de-the-afghan-whigs","p-807-charlando-con-beavis-y-butt-head","p-804-michael-azerrad-y-el-fenomeno-nirvana","p-802-john-squire-de-the-stone-roses-a-the-seahorses","p-801-un-repaso-al-libro-de-dave-grohl-the-storyteller-tales-of-life-and-music","p-797-que-demonios-paso-el-24-de-septiembre-de-1991","p-796-canciones-imbatibles-que-abren-disco","p-792-el-repaso-definitivo-a-1991","p-787-the-strokes-is-this-it","p-777-cuando-dave-conocio-a-david","p-774-yann-tiersen-y-el-fabuloso-destino-de-amelie-poulain","p-769-extremoduro-agila-1996","p-768-my-bloody-valentine-loveless-1991","p-763-especial-deluxe-xoel-lopez","p-762-el-disco-perdido-de-crispian-mills-kula-shaker-the-jeevas","p-761-especial-the-jeevas","p-760-hablamos-del-nuevo-libro-de-dave-grohl","p-759-the-prodigy-the-fat-of-the-land","p-754-la-amargura-sonora-de-codeine","p-752-jerry-cantrell","p-749-ray-loriga-heroes","p-747-el-misterio-de-where-did-you-sleep-last-night","p-744-el-fenomeno-oasis-en-la-radio-musical-espanola-de-los-90","p-741-courtney-love-renaciendo-de-las-cenizas","p-739-the-smashing-pumpkins-madrid-1998-la-intrahistoria","p-736-la-entrevista-perdida-a-noel-gallagher-1997","p-735-axl-rose-vs-kurt-cobain","p-732-visitamos-el-crocodile-de-seattle","p-730-recordamos-magnolia-loto-de-rufus-t-firefly","p-727-sintiendo-caer-la-mierda-sobre-mi-canciones-para-el-blue-monday-vol-1","p-726-the-5-6-7-8-s-la-banda-que-enamoro-a-tarantino","p-725-the-chemical-brothers-dig-your-own-hole","p-723-visitamos-la-unica-fabrica-de-vinilos-de-madrid-mad-vinyl-music","p-720-despedimos-el-ano-con-paco-perez-bryan","p-714-homenaje-a-los-25-anos-del-mellon-collie-and-the-infinite-sadness","p-713-querido-john","p-710-mis-canciones-favoritas-de-radiohead-que-no-estan-en-sus-discos","p-704-canciones-que-vivieron-una-segunda-juventud-en-los-anos-90-parte-1","p-703-no-doubt-tragic-kingdom-1995","p-702-especial-pj-harvey-parte-1","p-695-especial-heroes-del-silencio","p-694-el-latido-de-portishead","p-693-the-smashing-pumpkins-pisces-iscariot","p-691-recordando-a-shannon-hoon-blind-melon","p-690-placebo-black-market-music-cumple-20-anos","p-688-lily-cornell-silver-entrevista-a-eddie-vedder","p-687-una-masterclass-noventera-con-alain-johannes","p-683-homenaje-a-alain-johannes","programa-375-libros-musicales-y-dali","programa-431-in-utero-25","p-678-vive-rapido-muere-joven-y-deja-un-bonito-cadaver-elastica","p-675-offspring-smash-el-disco-independiente-mas-vendido-de-la-historia","p-670-the-smashing-pumpkins-la-historia-de-machina-the-machines-of-god","p-668-la-cara-oculta-de-dave-grohl","p-666-marilyn-manson-antichrist-superstar","p-664-mark-lanegan-sing-backwards-and-weep","p-642-canciones-que-si-pero-discos-que-no","p-644-the-rocket-la-revista-local-de-seattle","p-645-smashing-pumpkins-especial-gish","p-646-radiohead-especial-the-bends","p-647-especial-odelay-de-beck","p-648-the-cardigans-gran-turismo","p-649-la-historia-de-veruca-salt","p-650-mad-season-above","mark-lanegan-caminando-al-filo-del-abismo","p-653-radiohead-amnesiac","p-656-la-historia-de-mark-sandman-y-morphine","p-657-bandas-sonoras-vol-1","p-627-especial-the-gits-mia-zapata","p-633-la-historia-de-dave-abbruzzese-pearl-jam","p-639-smashing-pumpkins-especial-siamese-dream-parte-2","p-638-smashing-pumpkins-especial-siamese-dream-parte-1","p-603-richey-james-edwards-manic-street-preachers","p-607-especial-the-dark-side-of-the-moon-de-pink-floyd","p-608-chris-cornell-poncier","p-611-susan-silver-la-manager-del-grunge-soundgarden-alice-in-chains-screaming-t","p-613-days-of-the-new","p-616-mi-reproductor-de-musica-favorito-el-ipod","p-584-el-fatidico-8-de-diciembre-john-lennon","p-595-danny-goldberg-serving-the-servant-recordando-a-kurt-cobain","p-597-especial-sperm","p-600-desde-furinyaki-records-studio-con-gyoza-y-james-vieco-band","p-576-road-trip-podcast-en-busca-de-mark-lanegan-segunda-parte","p-575-road-trip-podcast-en-busca-de-mark-lanegan-primera-parte","programa-566-una-agradable-charla-con-alain-johannes","p-577-dave-grohl-mis-beatles","p-581-r-e-m-monster-cumple-25-anos","programa-546-cuando-y-por-que-dejaron-de-molar-los-foo-fighters","programa-549-bob-dylan-highway-61-revisited","programa-534-nirvana-y-su-identidad-visual","programa-536-radiohead-ok-minidisc","programa-538-construyendo-el-sonido-de-los-90","programa-505-mis-10-documentales-musicales-favoritos-de-los-90","programa-509-los-ultimos-dias-de-kurt-cobain","programa-511-nirvana-heavier-than-heaven-charles-cross-2019","programa-515-hole-live-through-this-1994","programa-521-el-cassette-que-sirvio-para-enamorarme-de-ti","programa-490-the-smashing-pumpkins-twilight-to-starlight","programa-489-the-smashing-pumpkins-dawn-to-dusk","programa-496-la-ultima-entrevista-real-a-kurt-cobain","programa-501-zach-de-la-rocha","programa-469-manic-street-preachers-this-is-my-truth-tell-me-yours-cumple-20-ano","programa-470-nirvana-live-and-loud-pier-48","programa-482-wild-dog-the-last-days-2018","programa-483-sonic-youth-su-ultimo-concierto-en-nueva-york","programa-447-sexy-sadie-it-s-beautiful-it-s-love-1998-2018","programa-451-gracias-pasajero","programa-458-music-radar-clan","programa-432-musica-para-viajar","programa-437-diez-anos-buscando-cintas","programa-439-un-paseo-por-tokio","programa-442-sonic-youth-daydream-nation","programa-446-john-lennon-imagine-el-libro","programa-isaac-gracie","programa-427-radiohead-kid-a","programa-429-la-banda-sonora-del-fin-del-milenio","programa-430-kristen-pfaff","programa-392-truly","programa-409-entrevista-no-dogs","programa-388-roger-waters","programa-337-alain-johannes-unfinished-plan","programa-338-singles-deluxe","programa-342-daniel-arias-pasajero-zoo-nuevenoventaicinco","programa-319-nirvana-iv","programa-304-eddie-vedder-the-beatles","programa-282-radiohead-ok-computer","programa-291-nirvana-visita-espana-1992","programa-253-1991-the-year-punk-broke","programa-202-adios-bowie","programa-180-entrevista-charles-cross","programa-161-un-paseo-por-seattle","programa-166-adios-standstill","programa-171-the-beatles-en-madrid","programa-146-pearl-jam-self-pollution-radio-1995","programa-127-seattle-en-los-90","programa-157-the-sunday-drivers-little-heart-attacks-con-virginia-diaz","programa-130-entrevista-a-charles-r-cross","programa-109-20-anos-nirvana","b90-una-hora-con-standstill","b90-programa-77-el-cuervo","programa-58-especial-cara-b"
-]);
+// El listado de "Esenciales" se sincroniza semanalmente desde
+// https://www.ivoox.com/esenciales-b90_bk_list_6192164_1.html mediante
+// fetch-esenciales.mjs, que genera data/esenciales.json en cada build.
+// Aquí solo guardamos el Set ya cargado (ver loadEsencialesSlugs).
+let esencialesSlugs = new Set();
+
+async function loadEsencialesSlugs() {
+  try {
+    const slugs = await (await fetch("data/esenciales.json")).json();
+    esencialesSlugs = new Set(slugs);
+  } catch {
+    esencialesSlugs = new Set();
+  }
+}
 
 // Episodios del maratón "Especial 1995" listado en
 // https://www.ivoox.com/especial-1995_bk_list_11365213_1.html
@@ -210,7 +219,7 @@ const SPECIAL_FILTERS = [
     value: "__esenciales__",
     label: "Esenciales",
     pinned: true,
-    slugs: ESENCIALES_SLUGS,
+    getSlugs: () => esencialesSlugs,
   },
   {
     value: "__b90_supernova__",
@@ -388,6 +397,7 @@ async function init() {
   });
 
   state.all = episodes;
+  await loadEsencialesSlugs();
   state.specialFilters = new Map(
     SPECIAL_FILTERS.map((filter) => [
       filter.value,

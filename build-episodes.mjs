@@ -580,6 +580,13 @@ function main() {
     "utf-8"
   );
 
+  // Slugs de "Esenciales", sincronizados semanalmente desde el listado
+  // oficial de iVoox por fetch-esenciales.mjs (ver esenciales-slugs.json).
+  const esencialesSlugs = fs.existsSync("esenciales-slugs.json")
+    ? JSON.parse(fs.readFileSync("esenciales-slugs.json", "utf-8"))
+    : [];
+  fs.writeFileSync("data/esenciales.json", JSON.stringify(esencialesSlugs), "utf-8");
+
   console.log(`Generadas ${episodes.length} páginas en /${OUT_DIR}, sitemap.xml, robots.txt y ${chunks.length} bloques en /data (SITE_URL=${SITE_URL}).`);
 }
 

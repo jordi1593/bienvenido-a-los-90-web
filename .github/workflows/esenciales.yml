@@ -1,0 +1,72 @@
+name: Sincronizar listado de Esenciales
+
+on:
+  schedule:
+    - cron: "0 5 * * 1" # cada lunes a las 5:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  esenciales:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Sincronizar Esenciales desde iVoox
+        run: node fetch-esenciales.mjs
+
+      - name: Regenerar páginas con el listado actualizado
+        run: npm run build
+
+      - name: Commitear cambios si hay novedades
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Sin cambios, nada que publicar."
+          else
+            git commit -m "Sincronizar listado de Esenciales desde iVoox"
+            git push
+          fi
+
+      - name: Avisar si algo ha fallado
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "⚠️ Falló el workflow 'Sincronizar listado de Esenciales'";
+            const body = `La ejecución [${context.runId}](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}) ha fallado. Revisa los logs.`;
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              labels: "workflow-failure",
+            });
+            const existing = issues.find((i) => i.title === title);
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ["workflow-failure"],
+              });
+            }
