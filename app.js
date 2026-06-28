@@ -279,6 +279,12 @@ function populateLabelFilter(episodes) {
     "darwinians radio bike", "darwinians raido bike", "darwiniansradiobike",
     "b90 supernova", "especial", "radioutopia", "mike mccready", "pearljam",
     "ringo starr", "seattle", "castellano", "descarga",
+    "61 garage", "rufus t. firefly",
+  ]);
+  // Etiquetas que se incluyen siempre en el desplegable aunque no estén
+  // entre las más frecuentes, por petición explícita.
+  const FORCED_LABELS = new Set([
+    "sub pop", "portishead", "the breeders", "sexy sadie", "blind melon", "pasajero",
   ]);
   const counts = new Map();
   episodes.forEach((ep) => ep.labels.forEach((l) => {
@@ -287,10 +293,15 @@ function populateLabelFilter(episodes) {
     if (label === "Bienvenido a los 90") return;
     counts.set(label, (counts.get(label) || 0) + 1);
   }));
-  const topLabels = [...counts.entries()]
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 50)
-    .map(([label]) => ({ value: label, label }));
+  const sortedLabels = [...counts.entries()].sort((a, b) => b[1] - a[1]);
+  const topLabels = sortedLabels.slice(0, 50).map(([label]) => ({ value: label, label }));
+  const topLabelSet = new Set(topLabels.map((l) => l.label));
+  sortedLabels.forEach(([label]) => {
+    if (FORCED_LABELS.has(label.trim().toLowerCase()) && !topLabelSet.has(label)) {
+      topLabels.push({ value: label, label });
+      topLabelSet.add(label);
+    }
+  });
 
   const unpinnedFilters = SPECIAL_FILTERS.filter((filter) => !filter.pinned)
     .map((filter) => ({ value: filter.value, label: filter.label }));
