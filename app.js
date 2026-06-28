@@ -65,14 +65,12 @@ function episodeCardHtml(ep) {
   const cover = ep.thumbnail
     ? ep.thumbnail.replace("/s72-c/", "/s320/")
     : "";
-  const numBadge = ep.number ? `#${ep.number}` : "";
   const pageUrl = `episodios/${ep.slug}.html`;
   const query = state.search.trim();
   return `
     <article class="episode-card">
       <a class="episode-cover-link" href="${pageUrl}">
         ${cover ? `<img class="episode-cover-img" src="${cover}" alt="" loading="lazy" />` : `<div class="episode-cover-img"></div>`}
-        ${numBadge ? `<span class="episode-badge">${numBadge}</span>` : ""}
         <span class="episode-cover-overlay"></span>
       </a>
       <div class="episode-body">

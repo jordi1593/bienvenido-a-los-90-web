@@ -275,7 +275,7 @@ function episodePage(ep, { prev, next, related, series }) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../styles.css?v=38" />
+<link rel="stylesheet" href="../styles.css?v=40" />
 
 <meta property="og:type" content="article" />
 <meta property="og:title" content="${escapeHtml(ep.title)}" />
@@ -371,12 +371,10 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
       <h3>Relacionados</h3>
       ${related.map((r) => {
         const relImage = cardThumbnail(r.thumbnail);
-        const relBadge = r.number ? `#${r.number}` : "";
         return `
         <a class="related-card" href="${r.slug}.html">
           <span class="episode-cover-link related-cover-link">
             ${relImage ? `<img class="episode-cover-img" src="${relImage}" alt="" loading="lazy" />` : `<div class="episode-cover-img"></div>`}
-            ${relBadge ? `<span class="episode-badge">${relBadge}</span>` : ""}
           </span>
           <span class="related-card-title">${escapeHtml(r.title)}</span>
         </a>`;
