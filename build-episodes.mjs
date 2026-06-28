@@ -9,12 +9,6 @@ import path from "path";
 const SITE_URL = process.env.SITE_URL || "https://bienvenidoalos90.com";
 const OUT_DIR = "episodios";
 
-const PLATFORM_SHOW_LINKS = {
-  spotify: "https://open.spotify.com/show/5c1ikDBBLMlls8ZTvcu14N",
-  apple: "https://podcasts.apple.com/es/podcast/bienvenido-a-los-90/id1369150482",
-  amazon: "https://music.amazon.es/podcasts/5778f981-68a5-405e-aa21-b7ef2c972412/bienvenido-a-los-90?refMarker=null",
-};
-
 const PLATFORM_ICONS = {
   ivoox: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13v-1a7 7 0 0 1 14 0v1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><rect x="3.2" y="13" width="4" height="6" rx="1.6" fill="currentColor"/><rect x="16.8" y="13" width="4" height="6" rx="1.6" fill="currentColor"/></svg>',
   apple: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg>',
@@ -33,24 +27,15 @@ function platformLinks(ep) {
   const links = [];
   const ivoox = ep.ivooxLink || ep.downloadLink;
   if (ivoox) links.push({ label: "Escuchar en iVoox", url: ivoox, exact: true, icon: "ivoox" });
-  links.push({
-    label: ep.spotifyLink ? "Escuchar en Spotify" : "Spotify (programa)",
-    url: ep.spotifyLink || PLATFORM_SHOW_LINKS.spotify,
-    exact: !!ep.spotifyLink,
-    icon: "spotify",
-  });
-  links.push({
-    label: ep.appleLink ? "Escuchar en Apple Podcasts" : "Apple Podcasts (programa)",
-    url: ep.appleLink || PLATFORM_SHOW_LINKS.apple,
-    exact: !!ep.appleLink,
-    icon: "apple",
-  });
-  links.push({
-    label: ep.amazonLink ? "Escuchar en Amazon Music" : "Amazon Music (programa)",
-    url: ep.amazonLink || PLATFORM_SHOW_LINKS.amazon,
-    exact: !!ep.amazonLink,
-    icon: "amazon",
-  });
+  if (ep.spotifyLink) {
+    links.push({ label: "Escuchar en Spotify", url: ep.spotifyLink, exact: true, icon: "spotify" });
+  }
+  if (ep.appleLink) {
+    links.push({ label: "Escuchar en Apple Podcasts", url: ep.appleLink, exact: true, icon: "apple" });
+  }
+  if (ep.amazonLink) {
+    links.push({ label: "Escuchar en Amazon Music", url: ep.amazonLink, exact: true, icon: "amazon" });
+  }
   return links;
 }
 
