@@ -188,12 +188,14 @@ const SPECIAL_FILTERS = [
   {
     value: "__top_escuchados__",
     label: "Lo más escuchado",
+    pinned: true,
     getSlugs: (episodes) => topSlugsBy(episodes, "plays"),
     sort: (a, b) => b.plays - a.plays,
   },
   {
     value: "__top_comentados__",
     label: "Lo más comentado",
+    pinned: true,
     // Solo episodios con estadísticas reales de iVoox (ep.likes definido);
     // el resto usa el contador de comentarios del blog, que no es comparable.
     getSlugs: (episodes) => topSlugsBy(episodes, "comments", { requireRealStats: true }),
@@ -202,12 +204,14 @@ const SPECIAL_FILTERS = [
   {
     value: "__top_valorados__",
     label: "Lo más valorado",
+    pinned: true,
     getSlugs: (episodes) => topSlugsBy(episodes, "likes", { requireRealStats: true }),
     sort: (a, b) => b.likes - a.likes,
   },
   {
     value: "__esenciales__",
     label: "Esenciales",
+    pinned: true,
     slugs: ESENCIALES_SLUGS,
   },
   {
@@ -264,7 +268,7 @@ function renderNextPage() {
 }
 
 function populateLabelFilter(episodes) {
-  SPECIAL_FILTERS.forEach((filter) => {
+  SPECIAL_FILTERS.filter((filter) => filter.pinned).forEach((filter) => {
     const opt = document.createElement("option");
     opt.value = filter.value;
     opt.textContent = filter.label;
@@ -288,11 +292,17 @@ function populateLabelFilter(episodes) {
   const topLabels = [...counts.entries()]
     .sort((a, b) => b[1] - a[1])
     .slice(0, 40)
-    .map(([label]) => label);
-  topLabels.sort((a, b) => a.localeCompare(b, "es"));
-  topLabels.forEach((label) => {
+    .map(([label]) => ({ value: label, label }));
+
+  const unpinnedFilters = SPECIAL_FILTERS.filter((filter) => !filter.pinned)
+    .map((filter) => ({ value: filter.value, label: filter.label }));
+
+  const mixed = [...topLabels, ...unpinnedFilters].sort((a, b) =>
+    a.label.localeCompare(b.label, "es")
+  );
+  mixed.forEach(({ value, label }) => {
     const opt = document.createElement("option");
-    opt.value = label;
+    opt.value = value;
     opt.textContent = label;
     els.labelFilter.appendChild(opt);
   });
