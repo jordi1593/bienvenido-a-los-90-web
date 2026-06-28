@@ -25,7 +25,7 @@ const PLATFORM_ICONS = {
 function ivooxEpisodeId(ep) {
   const link = ep.ivooxLink || ep.downloadLink;
   if (!link) return null;
-  const m = link.match(/rf[_/](\d+)/);
+  const m = link.match(/rf[_/](\d+)/) || link.match(/ivoox\.com\/(\d+)$/);
   return m ? m[1] : null;
 }
 
