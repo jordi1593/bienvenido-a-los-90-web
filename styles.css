@@ -233,15 +233,6 @@ body {
 .header-banner-wrap {
   padding: 1.5rem 1rem;
   text-align: center;
-  position: relative;
-}
-
-.header-banner-wrap::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse 55% 65% at 50% 50%, rgba(237, 40, 94, 0.1), transparent 70%);
-  pointer-events: none;
 }
 
 .header-banner {
@@ -250,8 +241,6 @@ body {
   max-width: 100%;
   height: auto;
   max-height: 420px;
-  position: relative;
-  filter: drop-shadow(0 14px 32px rgba(0, 0, 0, 0.18)) drop-shadow(0 0 18px rgba(237, 40, 94, 0.1));
 }
 
 [data-theme="dark"] .header-banner-wrap {
