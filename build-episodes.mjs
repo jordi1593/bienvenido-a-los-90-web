@@ -118,6 +118,80 @@ function labelKey(label) {
   return label.trim().toLowerCase().replace(/\s+/g, " ");
 }
 
+// Algunas etiquetas del blog representan el mismo concepto pero con grafías
+// distintas (p.ej. "Foo Fighters" / "Foofighters", o con/sin tilde), porque
+// con los años se escribieron de forma inconsistente. Esta clave "laxa"
+// (sin espacios, sin tildes, sin "the " inicial) agrupa esas variantes para
+// poder fusionarlas en una sola etiqueta canónica antes de mostrarlas.
+function looseLabelKey(label) {
+  return label
+    .toLowerCase()
+    .normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/^the\s+/, "")
+    .replace(/[^a-z0-9]/g, "");
+}
+
+function titleCaseLabel(label) {
+  return label
+    .trim()
+    .replace(/\s+/g, " ")
+    .split(" ")
+    .map((w) => (w ? w.charAt(0).toUpperCase() + w.slice(1) : w))
+    .join(" ");
+}
+
+// Construye, a partir de todo el corpus, un mapa "etiqueta tal cual aparece
+// en el blog" -> "etiqueta canónica a mostrar", fusionando las variantes
+// detectadas por looseLabelKey. Dentro de cada grupo se elige como canónica
+// la grafía con espacios más frecuente (si existe alguna); si todas las
+// variantes son "una sola palabra pegada", se usa la más frecuente tal cual.
+function buildLabelAliasMap(episodes) {
+  const counts = new Map(); // label tal cual (trim) -> nº de apariciones
+  episodes.forEach((ep) => {
+    ep.labels.forEach((raw) => {
+      const label = raw.trim().replace(/\s+/g, " ");
+      if (!label) return;
+      counts.set(label, (counts.get(label) || 0) + 1);
+    });
+  });
+
+  const groups = new Map(); // looseKey -> [[label, count], ...]
+  for (const [label, count] of counts) {
+    const key = looseLabelKey(label);
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push([label, count]);
+  }
+
+  const aliasMap = new Map(); // label original -> etiqueta canonica
+  for (const variants of groups.values()) {
+    if (variants.length === 1) continue;
+    const withSpaces = variants.filter(([label]) => label.includes(" "));
+    const pool = withSpaces.length ? withSpaces : variants;
+    const canonical = pool.sort((a, b) => b[1] - a[1])[0][0];
+    variants.forEach(([label]) => aliasMap.set(label, titleCaseLabel(canonical)));
+  }
+  return aliasMap;
+}
+
+// Aplica el mapa de alias a las etiquetas de cada episodio, fusionando
+// variantes y eliminando duplicados resultantes dentro de un mismo episodio.
+function canonicalizeLabels(episodes) {
+  const aliasMap = buildLabelAliasMap(episodes);
+  episodes.forEach((ep) => {
+    const seen = new Set();
+    ep.labels = ep.labels
+      .map((raw) => {
+        const label = raw.trim().replace(/\s+/g, " ");
+        return aliasMap.get(label) || titleCaseLabel(label);
+      })
+      .filter((label) => {
+        if (seen.has(label)) return false;
+        seen.add(label);
+        return true;
+      });
+  });
+}
+
 // Palabras demasiado genéricas en los títulos (nombre del programa, conectores,
 // numeración...) que no aportan señal real de temática compartida.
 const TITLE_STOPWORDS = new Set([
@@ -454,6 +528,7 @@ Sitemap: ${SITE_URL}/sitemap.xml
 
 function main() {
   const episodes = JSON.parse(fs.readFileSync("episodes.json", "utf-8"));
+  canonicalizeLabels(episodes);
   // Orden cronológico ascendente para la navegación prev/next entre episodios
   const chronological = [...episodes].sort((a, b) => new Date(a.published) - new Date(b.published));
 
