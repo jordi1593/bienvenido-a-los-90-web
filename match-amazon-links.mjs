@@ -3,8 +3,16 @@ import fs from "fs";
 function numFromTitle(title) {
   let m = title.match(/^(\d+)\s*-/);
   if (m) return parseInt(m[1], 10);
-  m = title.match(/^Programa\s+(\d+)/i);
+  m = title.match(/^P\.?\s*(\d+)\b/i);
   if (m) return parseInt(m[1], 10);
+  m = title.match(/^Programa\s*#?\s*(\d+)/i);
+  if (m) return parseInt(m[1], 10);
+  m = title.match(/Programa\s*#?\s*(\d+)/i);
+  if (m) return parseInt(m[1], 10);
+  m = title.match(/^B90\s*Supernova\s*(\d+)/i);
+  if (m) return `supernova-${m[1]}`;
+  m = title.match(/^B90\s*Classic\s*(\d+)/i);
+  if (m) return `classic-${m[1]}`;
   return null;
 }
 
@@ -49,8 +57,9 @@ function main() {
 
   episodes.forEach((ep) => {
     let match = null;
-    if (ep.number !== null && byNumber.has(ep.number)) {
-      match = byNumber.get(ep.number);
+    const epNum = ep.number !== null ? ep.number : numFromTitle(ep.title);
+    if (epNum !== null && byNumber.has(epNum)) {
+      match = byNumber.get(epNum);
       matchedByNumber++;
     } else {
       const key = normalize(ep.title);
