@@ -268,7 +268,7 @@ function episodePage(ep, { prev, next, related, series }) {
 <script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
 <title>${escapeHtml(ep.title)} — Bienvenido a los 90</title>
 <link rel="icon" type="image/jpeg" href="../images/b90-logo-new.jpg" media="(prefers-color-scheme: light)" />
-<link rel="icon" type="image/png" href="../images/b90-logo-dark.png" media="(prefers-color-scheme: dark)" />
+<link rel="icon" type="image/png" href="../images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
 <link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
 <meta name="description" content="${description}" />
 <link rel="canonical" href="${canonical}" />
@@ -299,7 +299,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
         <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark.png" alt="B" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" />
         <span>ienvenido a los 90</span>
       </a>
       <div class="topnav-links">
