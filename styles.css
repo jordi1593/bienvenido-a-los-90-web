@@ -243,6 +243,18 @@ body {
   max-height: 420px;
 }
 
+.header-banner.logo-dark {
+  display: none;
+}
+
+[data-theme="dark"] .header-banner.logo-light {
+  display: none;
+}
+
+[data-theme="dark"] .header-banner.logo-dark {
+  display: inline-block;
+}
+
 [data-theme="dark"] .header-banner-wrap {
   padding: 2rem 1rem;
   position: relative;
