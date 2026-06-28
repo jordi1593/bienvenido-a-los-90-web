@@ -268,7 +268,7 @@ function episodePage(ep, { prev, next, related, series }) {
 <script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
 <title>${escapeHtml(ep.title)} — Bienvenido a los 90</title>
 <link rel="icon" type="image/jpeg" href="../images/b90-logo-new.jpg" media="(prefers-color-scheme: light)" />
-<link rel="icon" type="image/png" href="../images/b90-logo-transparent.png" media="(prefers-color-scheme: dark)" />
+<link rel="icon" type="image/png" href="../images/b90-logo-dark.png" media="(prefers-color-scheme: dark)" />
 <link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
 <meta name="description" content="${description}" />
 <link rel="canonical" href="${canonical}" />
