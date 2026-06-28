@@ -289,7 +289,7 @@ function populateLabelFilter(episodes) {
   }));
   const topLabels = [...counts.entries()]
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 40)
+    .slice(0, 50)
     .map(([label]) => ({ value: label, label }));
 
   const unpinnedFilters = SPECIAL_FILTERS.filter((filter) => !filter.pinned)
