@@ -280,11 +280,13 @@ function populateLabelFilter(episodes) {
     "b90 supernova", "especial", "radioutopia", "mike mccready", "pearljam",
     "ringo starr", "seattle", "castellano", "descarga",
     "61 garage", "rufus t. firefly",
+    "james iha", "jeff ament", "krist novoselic", "stone gossard",
   ]);
   // Etiquetas que se incluyen siempre en el desplegable aunque no estén
   // entre las más frecuentes, por petición explícita.
   const FORCED_LABELS = new Set([
     "sub pop", "portishead", "the breeders", "sexy sadie", "blind melon", "pasajero",
+    "l7", "rage against the machine", "beck", "veruca salt",
   ]);
   const counts = new Map();
   episodes.forEach((ep) => ep.labels.forEach((l) => {
