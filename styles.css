@@ -245,10 +245,20 @@ body {
 
 [data-theme="dark"] .header-banner-wrap {
   padding: 2rem 1rem;
+  position: relative;
+}
+
+[data-theme="dark"] .header-banner-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 55% 65% at 50% 50%, rgba(255, 93, 133, 0.16), transparent 70%);
+  pointer-events: none;
 }
 
 [data-theme="dark"] .header-banner {
-  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.6));
+  position: relative;
+  filter: drop-shadow(0 14px 32px rgba(0, 0, 0, 0.65)) drop-shadow(0 0 18px rgba(255, 93, 133, 0.12));
 }
 
 .sr-only {
