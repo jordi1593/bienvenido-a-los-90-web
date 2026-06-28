@@ -206,6 +206,11 @@ const SPECIAL_FILTERS = [
     sort: (a, b) => b.likes - a.likes,
   },
   {
+    value: "__esenciales__",
+    label: "Esenciales",
+    slugs: ESENCIALES_SLUGS,
+  },
+  {
     value: "__b90_supernova__",
     label: "B90 Supernova",
     getSlugs: getSupernovaSlugs,
@@ -219,11 +224,6 @@ const SPECIAL_FILTERS = [
     value: "__maraton_1995__",
     label: "Maratón 1995",
     slugs: MARATON_1995_SLUGS,
-  },
-  {
-    value: "__esenciales__",
-    label: "Esenciales",
-    slugs: ESENCIALES_SLUGS,
   },
   {
     value: "__discos_homenaje__",
