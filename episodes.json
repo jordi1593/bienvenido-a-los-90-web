@@ -4188,7 +4188,8 @@
       "paul mccartney",
       "the beatles",
       "wizink center"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=g8AYljB_bp0"
   },
   {
     "number": 1021,
@@ -4386,7 +4387,8 @@
       "portishead",
       "sebadoh",
       "The Jesus and Mary Chain"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=VOt7pbezNVU"
   },
   {
     "number": null,
@@ -4478,7 +4480,8 @@
       "prodigy",
       "The Reverend Horton Heat",
       "the rolling stones"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=IjZwgIk-9yY"
   },
   {
     "number": null,
@@ -4510,7 +4513,8 @@
       "leon",
       "Santa Colomba de Somoza",
       "ZABRISKIE"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=wed3pJl-iJA"
   },
   {
     "number": null,
@@ -4666,7 +4670,8 @@
       "carlos hernadez nombela",
       "conspire",
       "driive"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=5e6RsrqzW-k"
   },
   {
     "number": null,
@@ -4730,7 +4735,8 @@
       "el cuervo",
       "the crow",
       "the crow show"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=Zg3u4LvKqSg"
   },
   {
     "number": null,
@@ -4854,7 +4860,8 @@
       "kurt cobain",
       "nirvana",
       "the buzz lovers"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=TRmOikPkZnA"
   },
   {
     "number": null,
@@ -5034,7 +5041,8 @@
       "la casa murada",
       "radio75",
       "SCREAMING OUT"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=UtHvvnXyN4I"
   },
   {
     "number": null,
@@ -5072,7 +5080,8 @@
       "la alcoba",
       "Lost Satellite",
       "madrid"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=i9nSlWH3-Qg"
   },
   {
     "number": null,
@@ -5164,6 +5173,10 @@
       "arturo paniagua",
       "daniel arias",
       "pasajero"
+    ],
+    "youtubeLink": [
+      "https://www.youtube.com/watch?v=mTvSrd37Q1M",
+      "https://www.youtube.com/watch?v=71Skjk9OPNM"
     ]
   },
   {
@@ -5192,7 +5205,8 @@
       "mano negra",
       "manu chao",
       "oscar tramor"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=r6xwz3pjLlc"
   },
   {
     "number": null,
@@ -5280,7 +5294,8 @@
       "radio 3",
       "subterfuge radio",
       "todos los discos son grandes"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=G-IgbiRzdb8"
   },
   {
     "number": null,
@@ -5376,7 +5391,8 @@
       "mark arm",
       "mudhoney",
       "seattle"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=9WjBY1xJm7M"
   },
   {
     "number": null,
@@ -5405,7 +5421,8 @@
       "chicle",
       "pignoise",
       "real madrid"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=GIRy9UQx1Uo"
   },
   {
     "number": null,
@@ -5504,7 +5521,8 @@
       "james iha",
       "jimmy chamberlin",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=ifcahXdWZZ8"
   },
   {
     "number": null,
@@ -5532,7 +5550,8 @@
       "alain johannes",
       "eleven",
       "Lost Satellite"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=-WYCv99tfgU"
   },
   {
     "number": null,
@@ -5586,7 +5605,8 @@
       "BEATLEFEAST",
       "hey bulldogs",
       "the beatles"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=nTLntpLOMwE"
   },
   {
     "number": null,
@@ -5772,7 +5792,8 @@
       "Alphawaves",
       "nirvana",
       "Oasis"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=V5_LjOgk8ys"
   },
   {
     "number": null,
@@ -5840,7 +5861,8 @@
       "Surfin' Bichos",
       "The Smashing Pumpkins",
       "zayn"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=CfXbnq__Z0Q"
   },
   {
     "number": null,
@@ -5904,7 +5926,8 @@
       "mark lanegan",
       "meat puppets",
       "Tori Amos"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=4poYVNz3mFM"
   },
   {
     "number": null,
@@ -5930,7 +5953,8 @@
     "labels": [
       "KrazarK",
       "stone giant"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=JgsZHc2lHMA"
   },
   {
     "number": null,
@@ -5987,7 +6011,8 @@
     "labels": [
       "las nubes",
       "tormentas malsanas"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=Fs9uXfdhyUQ"
   },
   {
     "number": null,
@@ -6077,7 +6102,8 @@
       "bocangel",
       "Cuatro Cuentos de Ficción",
       "siroco"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=_nsPtoJhj4M"
   },
   {
     "number": null,
@@ -6107,7 +6133,8 @@
       "abel guzman",
       "diary",
       "sunny day real estate"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=7ThsaPXLuNs"
   },
   {
     "number": null,
@@ -6140,7 +6167,8 @@
       "tad",
       "the breeders",
       "urge overkill"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=1Hs-gGelg20"
   },
   {
     "number": null,
@@ -6197,7 +6225,8 @@
       "dover",
       "foo fighters",
       "nirvana"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=t8nAXbjVmDg"
   },
   {
     "number": null,
@@ -6263,7 +6292,8 @@
       "seattle",
       "Soundgarden",
       "temple of the dog"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=_xUqbpc18Ag"
   },
   {
     "number": null,
@@ -6293,7 +6323,8 @@
       "dover",
       "julio ruiz",
       "paco perez bryan"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=0vWChz95hfg"
   },
   {
     "number": null,
@@ -6364,7 +6395,8 @@
       "Krazarck",
       "land of the sun",
       "stone giant"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=0LdfRO0ui3E"
   },
   {
     "number": null,
@@ -6453,7 +6485,8 @@
       "nirvana",
       "pixies",
       "Youri Lenquette"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=RTBPsWgT5nQ"
   },
   {
     "number": null,
@@ -6481,7 +6514,8 @@
       "Louise Post",
       "veruca salt",
       "veyls"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=WcNut4d1Wyk"
   },
   {
     "number": null,
@@ -6510,7 +6544,8 @@
       "el amigo americano",
       "mark lanegan",
       "Scott McCloud y Pete Simonelli"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=X7-DOmrU164"
   },
   {
     "number": null,
@@ -6616,7 +6651,8 @@
       "Southern Acts Society",
       "sr chinarro",
       "strange fruit"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=7WYamhNBcLQ"
   },
   {
     "number": null,
@@ -6657,7 +6693,8 @@
     "labels": [
       "alain johannes",
       "Lost Satellite"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=YVSclISMLFo"
   },
   {
     "number": null,
@@ -6688,7 +6725,8 @@
       "mudhoney",
       "nirvana",
       "seattle"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=-9B4pVisx6M"
   },
   {
     "number": null,
@@ -27811,7 +27849,8 @@
       "music radar clan",
       "Pavement",
       "victor"
-    ]
+    ],
+    "youtubeLink": "https://www.youtube.com/watch?v=4-ljNYqMPOc"
   },
   {
     "number": null,

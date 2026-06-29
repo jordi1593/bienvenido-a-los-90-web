@@ -103,6 +103,7 @@ function loadPreviousEnrichment() {
         appleLink: ep.appleLink,
         amazonLink: ep.amazonLink,
         spotifyLink: ep.spotifyLink,
+        youtubeLink: ep.youtubeLink,
         ivooxComments: ep.likes !== undefined ? ep.comments : undefined,
         likes: ep.likes,
         plays: ep.plays,
@@ -163,6 +164,7 @@ async function main() {
       appleLink: previous?.appleLink ?? null,
       amazonLink: previous?.amazonLink ?? null,
       spotifyLink: previous?.spotifyLink ?? null,
+      youtubeLink: previous?.youtubeLink ?? undefined,
       summary: stripHtml(contentHtml).slice(0, 400),
       paragraphs,
       // Si ya teníamos estadísticas reales de iVoox (likes definido), las
