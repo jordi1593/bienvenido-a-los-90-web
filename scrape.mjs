@@ -92,9 +92,27 @@ async function fetchPage(startIndex) {
   return res.json();
 }
 
-function loadPreviousEnrichment() {
-  if (!fs.existsSync("episodes.json")) return new Map();
-  const previous = JSON.parse(fs.readFileSync("episodes.json", "utf-8"));
+// Cuenta cuántos episodios tienen cada enlace curado a mano (no derivable
+// del blog: youtube, ivoox, apple, amazon, spotify). Se usa como red de
+// seguridad: si tras un scrape el recuento de alguno de estos campos baja
+// respecto a la version anterior de episodes.json, algo se ha perdido y no
+// debemos sobrescribir el fichero.
+function countCuratedLinks(episodes) {
+  const hasValue = (v) => (Array.isArray(v) ? v.length > 0 : !!v);
+  const fields = ["youtubeLink", "ivooxLink", "appleLink", "amazonLink", "spotifyLink"];
+  const counts = {};
+  fields.forEach((field) => {
+    counts[field] = episodes.filter((ep) => hasValue(ep[field])).length;
+  });
+  return counts;
+}
+
+function loadPreviousEpisodes() {
+  if (!fs.existsSync("episodes.json")) return [];
+  return JSON.parse(fs.readFileSync("episodes.json", "utf-8"));
+}
+
+function loadPreviousEnrichment(previous) {
   const byUrl = new Map();
   previous.forEach((ep) => {
     if (ep.url) {
@@ -111,6 +129,28 @@ function loadPreviousEnrichment() {
     }
   });
   return byUrl;
+}
+
+// Algunas entradas del blog agrupan varios episodios en un solo post (p.ej.
+// "una semana de emisiones" con los programas 364-368): se separaron a mano
+// en episodios.json en varias entradas que comparten la misma url. El feed
+// de Blogger solo nos da UNA entrada para esa url, así que si no hiciéramos
+// nada aquí, cada scrape colapsaría esos episodios de vuelta a uno solo y
+// perderíamos sus enlaces individuales. Por eso identificamos estos grupos
+// en la versión anterior de episodes.json y los preservamos tal cual,
+// descartando la entrada única que generaría el feed para esa misma url.
+function loadManualSplitGroups(previous) {
+  const byUrl = new Map();
+  previous.forEach((ep) => {
+    if (!ep.url) return;
+    if (!byUrl.has(ep.url)) byUrl.set(ep.url, []);
+    byUrl.get(ep.url).push(ep);
+  });
+  const groups = new Map();
+  byUrl.forEach((eps, url) => {
+    if (eps.length > 1) groups.set(url, eps);
+  });
+  return groups;
 }
 
 async function main() {
@@ -132,7 +172,9 @@ async function main() {
 
   console.log(`Descargadas ${allEntries.length} entradas. Procesando...`);
 
-  const previousEnrichment = loadPreviousEnrichment();
+  const previousEpisodes = loadPreviousEpisodes();
+  const previousEnrichment = loadPreviousEnrichment(previousEpisodes);
+  const manualSplitGroups = loadManualSplitGroups(previousEpisodes);
 
   const episodes = allEntries.map((entry) => {
     const title = entry.title["$t"];
@@ -178,12 +220,31 @@ async function main() {
 
   dedupeSlugs(episodes);
 
+  // Descartamos las entradas que el feed generaría para urls que en realidad
+  // corresponden a un grupo de episodios separado a mano, y reinsertamos ese
+  // grupo preservado intacto (ver loadManualSplitGroups).
+  const withoutSplitUrls = episodes.filter((ep) => !manualSplitGroups.has(ep.url));
+  const preservedGroupEpisodes = [...manualSplitGroups.values()].flat();
+  const episodesWithGroups = [...withoutSplitUrls, ...preservedGroupEpisodes];
+
   const excludedSlugs = new Set(
     JSON.parse(fs.readFileSync("excluded-episodes.json", "utf-8"))
   );
-  const filtered = episodes.filter((ep) => !excludedSlugs.has(ep.slug));
+  const filtered = episodesWithGroups.filter((ep) => !excludedSlugs.has(ep.slug));
 
   filtered.sort((a, b) => new Date(b.published) - new Date(a.published));
+
+  if (previousEpisodes.length > 0) {
+    const before = countCuratedLinks(previousEpisodes);
+    const after = countCuratedLinks(filtered);
+    const regressions = Object.keys(before).filter((field) => after[field] < before[field]);
+    if (regressions.length > 0) {
+      const details = regressions.map((f) => `${f}: ${before[f]} -> ${after[f]}`).join(", ");
+      throw new Error(
+        `Abortado: el nuevo episodes.json pierde enlaces curados respecto al actual (${details}). No se sobrescribe el fichero.`
+      );
+    }
+  }
 
   fs.writeFileSync("episodes.json", JSON.stringify(filtered, null, 2), "utf-8");
   console.log(`episodes.json generado con ${filtered.length} episodios.`);
