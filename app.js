@@ -227,6 +227,13 @@ const SPECIAL_FILTERS = [
     getSlugs: () => esencialesSlugs,
   },
   {
+    value: "__videos__",
+    label: "Vídeos",
+    pinned: true,
+    getSlugs: (episodes) =>
+      new Set(episodes.filter((ep) => ep.youtubeLink && (!Array.isArray(ep.youtubeLink) || ep.youtubeLink.length)).map((ep) => ep.slug)),
+  },
+  {
     value: "__b90_supernova__",
     label: "B90 Supernova",
     getSlugs: getSupernovaSlugs,
