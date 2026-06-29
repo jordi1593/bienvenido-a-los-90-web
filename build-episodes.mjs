@@ -37,9 +37,10 @@ function platformLinks(ep) {
   if (ep.amazonLink) {
     links.push({ label: "Escuchar en Amazon Music", url: ep.amazonLink, exact: true, icon: "amazon" });
   }
-  if (ep.youtubeLink) {
-    links.push({ label: "Ver en YouTube", url: ep.youtubeLink, exact: true, icon: "youtube" });
-  }
+  const youtubeLinks = Array.isArray(ep.youtubeLink) ? ep.youtubeLink : ep.youtubeLink ? [ep.youtubeLink] : [];
+  youtubeLinks.forEach((url, i) => {
+    links.push({ label: youtubeLinks.length > 1 ? `Ver en YouTube ${i + 1}` : "Ver en YouTube", url, exact: true, icon: "youtube" });
+  });
   return links;
 }
 
