@@ -663,9 +663,12 @@ function buildFotosPage(episodesBySlug) {
       ? `<div class="platform-links">${links.map((p) => `<a class="icon-${p.icon}" href="${p.url}" target="_blank" rel="noopener" title="${escapeHtml(p.label)}" aria-label="${escapeHtml(p.label)}">${PLATFORM_ICONS[p.icon]}</a>`).join("")}</div>`
       : "";
     const groupDate = group.photos.find((p) => p.date)?.date;
+    // Quitamos prefijos de serie (p.ej. "B90 - ") para que todos los
+    // títulos de grupo de la galería sigan el mismo formato "Programa N - ...".
+    const groupTitle = ep ? ep.title.replace(/^B90\s*-\s*/i, "") : group.episodeSlug;
     const titleHtml = (ep
-      ? `<a href="episodios/${ep.slug}.html">${escapeHtml(ep.title)}</a>`
-      : escapeHtml(group.episodeSlug)) + (groupDate ? ` <span class="photo-group-date">— emitido el ${escapeHtml(groupDate)}</span>` : "");
+      ? `<a href="episodios/${ep.slug}.html">${escapeHtml(groupTitle)}</a>`
+      : escapeHtml(groupTitle)) + (groupDate ? ` <span class="photo-group-date">— emitido el ${escapeHtml(groupDate)}</span>` : "");
     const cards = group.photos.map((photo) => `
       <figure class="photo-card">
         <img src="${escapeHtml(photo.image)}" alt="${escapeHtml(photo.caption)}" loading="lazy" />
