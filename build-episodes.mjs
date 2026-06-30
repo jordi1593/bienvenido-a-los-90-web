@@ -635,22 +635,50 @@ function buildFotosPage(episodesBySlug) {
     ? JSON.parse(fs.readFileSync(photosPath, "utf-8"))
     : [];
 
-  const cards = photos.map((photo) => {
-    const ep = episodesBySlug.get(photo.episodeSlug);
+  // Agrupamos las fotos por episodio para que la galería se navegue por
+  // programa (con su título y enlaces de plataforma una sola vez) en vez de
+  // mostrarlas todas sueltas en una única rejilla.
+  const groups = [];
+  const groupBySlug = new Map();
+  photos.forEach((photo) => {
+    let group = groupBySlug.get(photo.episodeSlug);
+    if (!group) {
+      group = { episodeSlug: photo.episodeSlug, ep: episodesBySlug.get(photo.episodeSlug), photos: [] };
+      groupBySlug.set(photo.episodeSlug, group);
+      groups.push(group);
+    }
+    group.photos.push(photo);
+  });
+  // Programas más recientes primero (los sin episodio asociado, al final).
+  groups.sort((a, b) => {
+    if (!a.ep) return 1;
+    if (!b.ep) return -1;
+    return new Date(b.ep.published) - new Date(a.ep.published);
+  });
+
+  const groupsHtml = groups.map((group) => {
+    const { ep } = group;
     const links = ep ? platformLinks(ep) : [];
     const linksHtml = links.length
       ? `<div class="platform-links">${links.map((p) => `<a class="icon-${p.icon}" href="${p.url}" target="_blank" rel="noopener" title="${escapeHtml(p.label)}" aria-label="${escapeHtml(p.label)}">${PLATFORM_ICONS[p.icon]}</a>`).join("")}</div>`
       : "";
-    const episodeLink = ep ? `<a class="photo-episode-link" href="episodios/${ep.slug}.html">${escapeHtml(ep.title)}</a>` : "";
-    return `
+    const titleHtml = ep
+      ? `<a href="episodios/${ep.slug}.html">${escapeHtml(ep.title)}</a>`
+      : escapeHtml(group.episodeSlug);
+    const cards = group.photos.map((photo) => `
       <figure class="photo-card">
         <img src="${escapeHtml(photo.image)}" alt="${escapeHtml(photo.caption)}" loading="lazy" />
         <figcaption>
           <p class="photo-caption">${escapeHtml(photo.caption)}</p>
-          ${episodeLink}
-          ${linksHtml}
         </figcaption>
-      </figure>`;
+      </figure>`).join("");
+    return `
+    <section class="photo-group">
+      <h2 class="photo-group-title">${titleHtml}</h2>
+      ${linksHtml}
+      <div class="photos-grid">${cards}
+      </div>
+    </section>`;
   }).join("");
 
   return `<!DOCTYPE html>
@@ -712,8 +740,7 @@ function buildFotosPage(episodesBySlug) {
   <main class="container">
     <h1 class="section-title font-brand">Fotos</h1>
     <p class="photos-intro">Instantáneas de programas emblemáticos de Bienvenido a los 90.</p>
-    <div class="photos-grid">${cards}
-    </div>
+    ${groupsHtml}
   </main>
 
   <footer class="site-footer">

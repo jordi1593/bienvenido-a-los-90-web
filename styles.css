@@ -1531,11 +1531,32 @@ html:not([data-theme="dark"]) .social-btn {
   margin: 0 auto 2rem;
 }
 
+.photo-group {
+  margin-bottom: 3rem;
+}
+
+.photo-group-title {
+  font-size: 1.2rem;
+  margin: 0 0 0.75rem;
+}
+
+.photo-group-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.photo-group-title a:hover {
+  color: var(--accent);
+}
+
+.photo-group > .platform-links {
+  margin-bottom: 1.25rem;
+}
+
 .photos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
-  padding-bottom: 3rem;
 }
 
 .photo-card {
@@ -1563,17 +1584,3 @@ html:not([data-theme="dark"]) .social-btn {
   line-height: 1.4;
 }
 
-.photo-episode-link {
-  display: block;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: var(--accent-2);
-  text-decoration: none;
-  margin-bottom: 0.75rem;
-}
-
-.photo-episode-link:hover {
-  color: var(--accent);
-}
