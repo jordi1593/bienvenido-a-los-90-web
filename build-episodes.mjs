@@ -662,9 +662,10 @@ function buildFotosPage(episodesBySlug) {
     const linksHtml = links.length
       ? `<div class="platform-links">${links.map((p) => `<a class="icon-${p.icon}" href="${p.url}" target="_blank" rel="noopener" title="${escapeHtml(p.label)}" aria-label="${escapeHtml(p.label)}">${PLATFORM_ICONS[p.icon]}</a>`).join("")}</div>`
       : "";
-    const titleHtml = ep
+    const groupDate = group.photos.find((p) => p.date)?.date;
+    const titleHtml = (ep
       ? `<a href="episodios/${ep.slug}.html">${escapeHtml(ep.title)}</a>`
-      : escapeHtml(group.episodeSlug);
+      : escapeHtml(group.episodeSlug)) + (groupDate ? ` <span class="photo-group-date">— emitido el ${escapeHtml(groupDate)}</span>` : "");
     const cards = group.photos.map((photo) => `
       <figure class="photo-card">
         <img src="${escapeHtml(photo.image)}" alt="${escapeHtml(photo.caption)}" loading="lazy" />
