@@ -24,7 +24,7 @@
   --whatsapp: #25d366;
   --linktree: #43e660;
   --substack: #ff6719;
-  --font-display: "Anton", sans-serif;
+  --font-display: "Special Elite", monospace;
   --font-body: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-brand: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -124,6 +124,7 @@ body {
   color: var(--text);
   text-decoration: none;
   font-family: var(--font-display);
+  font-weight: 400;
   font-size: 1rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -305,6 +306,7 @@ body {
 .listen-section h2 {
   margin: 0 0 1.25rem;
   font-family: var(--font-display);
+  font-weight: 400;
   font-size: 1.8rem;
   letter-spacing: 0.01em;
   text-transform: uppercase;
@@ -437,6 +439,7 @@ html:not([data-theme="dark"]) .platform-btn {
 
 .section-title {
   font-family: var(--font-display);
+  font-weight: 400;
   font-size: 1.8rem;
   text-transform: uppercase;
   margin: 2.5rem 0 1.25rem;
@@ -966,6 +969,7 @@ html:not([data-theme="dark"]) .platform-btn {
 
 .about-subtitle {
   font-family: var(--font-display);
+  font-weight: 400;
   font-size: 1.1rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -993,6 +997,7 @@ html:not([data-theme="dark"]) .platform-btn {
 
 .site-footer h3 {
   font-family: var(--font-display);
+  font-weight: 400;
   font-size: 1.8rem;
   letter-spacing: 0.03em;
   color: var(--text);
@@ -1428,6 +1433,7 @@ html:not([data-theme="dark"]) .social-btn {
 
 .not-found-code {
   font-family: var(--font-display);
+  font-weight: 400;
   font-size: 6rem;
   line-height: 1;
   margin: 0;
