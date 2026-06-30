@@ -945,6 +945,20 @@ html:not([data-theme="dark"]) .platform-btn {
   min-width: 0;
 }
 
+.about-portrait {
+  display: block;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.5rem;
+  border: 1px solid var(--border);
+}
+
+.about-text .about-logos {
+  margin-top: 2rem;
+}
+
 .about-section .section-title {
   margin-top: 0;
 }
