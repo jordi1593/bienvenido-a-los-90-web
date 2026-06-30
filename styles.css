@@ -344,25 +344,15 @@ body {
   color: #fff;
 }
 
-.platform-btn.icon-apple {
-  color: var(--apple);
-  border-color: var(--apple);
-}
-
 .platform-btn.icon-apple:hover {
   background: var(--apple);
   border-color: var(--apple);
   color: #fff;
 }
 
-/* Colores de marca para los iconos de plataforma (botones, tarjetas y página de episodio) */
-
-.platform-btn.icon-spotify,
-.platform-links a.icon-spotify,
-.platform-row a.icon-spotify {
-  color: var(--spotify);
-  border-color: var(--spotify);
-}
+/* Colores de marca para los iconos de plataforma: solo se muestran al pasar
+   el ratón, en reposo todos los iconos son monocromos (ver estilos base de
+   .platform-btn, .platform-links a y .platform-row a). */
 
 .platform-btn.icon-spotify:hover,
 .platform-links a.icon-spotify:hover,
@@ -370,13 +360,6 @@ body {
   background: var(--spotify);
   border-color: var(--spotify);
   color: #fff;
-}
-
-.platform-btn.icon-ivoox,
-.platform-links a.icon-ivoox,
-.platform-row a.icon-ivoox {
-  color: var(--ivoox);
-  border-color: var(--ivoox);
 }
 
 .platform-btn.icon-ivoox:hover,
@@ -387,13 +370,6 @@ body {
   color: #fff;
 }
 
-.platform-btn.icon-youtube,
-.platform-links a.icon-youtube,
-.platform-row a.icon-youtube {
-  color: var(--youtube);
-  border-color: var(--youtube);
-}
-
 .platform-btn.icon-youtube:hover,
 .platform-links a.icon-youtube:hover,
 .platform-row a.icon-youtube:hover {
@@ -402,24 +378,12 @@ body {
   color: #fff;
 }
 
-.platform-btn.icon-amazon,
-.platform-links a.icon-amazon,
-.platform-row a.icon-amazon {
-  color: var(--amazon);
-  border-color: var(--amazon);
-}
-
 .platform-btn.icon-amazon:hover,
 .platform-links a.icon-amazon:hover,
 .platform-row a.icon-amazon:hover {
   background: var(--amazon);
   border-color: var(--amazon);
   color: #fff;
-}
-
-.platform-btn.icon-bandcamp {
-  color: var(--bandcamp);
-  border-color: var(--bandcamp);
 }
 
 .platform-btn.icon-bandcamp:hover {
@@ -837,12 +801,6 @@ html:not([data-theme="dark"]) .platform-btn {
   border-color: var(--accent);
 }
 
-.platform-links a.icon-apple,
-.platform-row a.icon-apple {
-  color: var(--apple);
-  border-color: var(--apple);
-}
-
 .platform-links a.icon-apple:hover,
 .platform-row a.icon-apple:hover {
   background: var(--apple);
@@ -1086,37 +1044,16 @@ html:not([data-theme="dark"]) .platform-btn {
   height: 20px;
 }
 
-.social-btn.icon-instagram { color: var(--instagram); border-color: var(--instagram); }
 .social-btn.icon-instagram:hover { background: var(--instagram); border-color: var(--instagram); color: #fff; }
-
-.social-btn.icon-facebook { color: var(--facebook); border-color: var(--facebook); }
 .social-btn.icon-facebook:hover { background: var(--facebook); border-color: var(--facebook); color: #fff; }
-
-.social-btn.icon-x { color: var(--x); border-color: var(--x); }
 .social-btn.icon-x:hover { background: var(--x); border-color: var(--x); color: var(--bg); }
-
-.social-btn.icon-tiktok { color: var(--tiktok); border-color: var(--tiktok); }
 .social-btn.icon-tiktok:hover { background: var(--tiktok); border-color: var(--tiktok); color: var(--bg); }
-
-.social-btn.icon-twitch { color: var(--twitch); border-color: var(--twitch); }
 .social-btn.icon-twitch:hover { background: var(--twitch); border-color: var(--twitch); color: #fff; }
-
-.social-btn.icon-telegram { color: var(--telegram); border-color: var(--telegram); }
 .social-btn.icon-telegram:hover { background: var(--telegram); border-color: var(--telegram); color: #fff; }
-
-.social-btn.icon-bluesky { color: var(--bluesky); border-color: var(--bluesky); }
 .social-btn.icon-bluesky:hover { background: var(--bluesky); border-color: var(--bluesky); color: #fff; }
-
-.social-btn.icon-whatsapp { color: var(--whatsapp); border-color: var(--whatsapp); }
 .social-btn.icon-whatsapp:hover { background: var(--whatsapp); border-color: var(--whatsapp); color: #fff; }
-
-.social-btn.icon-email { color: var(--text); border-color: var(--border); }
 .social-btn.icon-email:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
-
-.social-btn.icon-linktree { color: var(--linktree); border-color: var(--linktree); }
 .social-btn.icon-linktree:hover { background: var(--linktree); border-color: var(--linktree); color: #fff; }
-
-.social-btn.icon-substack { color: var(--substack); border-color: var(--substack); }
 .social-btn.icon-substack:hover { background: var(--substack); border-color: var(--substack); color: #fff; }
 
 [data-theme="dark"] .social-btn {
