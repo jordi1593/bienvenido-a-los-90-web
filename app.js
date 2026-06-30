@@ -83,9 +83,6 @@ function episodeCardHtml(ep) {
         <h2><a href="${pageUrl}">${highlightMatch(escapeHtml(ep.title), query)}</a></h2>
         <div class="episode-meta">${formatDate(ep.published)} · ${ep.comments} comentario${ep.comments === 1 ? "" : "s"}</div>
         ${typeof ep.likes === "number" ? `<div class="episode-likes"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 20.5s-7.5-4.6-9.8-9.2C.5 7.8 2.3 4.5 5.8 4c2.1-.3 4.1.7 6.2 3 2.1-2.3 4.1-3.3 6.2-3 3.5.5 5.3 3.8 3.6 7.3-2.3 4.6-9.8 9.2-9.8 9.2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg> ${ep.likes}</div>` : ""}
-        <div class="episode-actions">
-          <a class="primary" href="${pageUrl}">Ver episodio</a>
-        </div>
         <div class="platform-links">
           ${platformLinks(ep).map((p) => `<a class="icon-${p.icon}" href="${p.url}" target="_blank" rel="noopener" title="${p.label}" aria-label="${p.label}">${PLATFORM_ICONS[p.icon]}</a>`).join("")}
         </div>
