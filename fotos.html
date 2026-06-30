@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&family=Special+Elite&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=61" />
+<link rel="stylesheet" href="styles.css?v=62" />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Fotos — Bienvenido a los 90" />
@@ -200,7 +200,9 @@
 
   <div id="lightbox" class="lightbox" hidden>
     <button class="lightbox-close" type="button" aria-label="Cerrar">&times;</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Foto anterior">&#8249;</button>
     <img id="lightboxImg" src="" alt="" />
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Foto siguiente">&#8250;</button>
     <p id="lightboxCaption" class="lightbox-caption"></p>
   </div>
 
@@ -230,7 +232,11 @@
       var lightbox = document.getElementById("lightbox");
       var lightboxImg = document.getElementById("lightboxImg");
       var lightboxCaption = document.getElementById("lightboxCaption");
-      function openLightbox(img) {
+      var allPhotos = Array.prototype.slice.call(document.querySelectorAll(".photo-card img"));
+      var currentIndex = -1;
+      function showIndex(index) {
+        currentIndex = (index + allPhotos.length) % allPhotos.length;
+        var img = allPhotos[currentIndex];
         lightboxImg.src = img.src;
         lightboxImg.alt = img.alt;
         lightboxCaption.textContent = img.alt;
@@ -240,14 +246,19 @@
         lightbox.hidden = true;
         lightboxImg.src = "";
       }
-      document.querySelectorAll(".photo-card img").forEach(function (img) {
-        img.addEventListener("click", function () { openLightbox(img); });
+      allPhotos.forEach(function (img, index) {
+        img.addEventListener("click", function () { showIndex(index); });
       });
       lightbox.addEventListener("click", function (e) {
         if (e.target === lightbox || e.target.classList.contains("lightbox-close")) closeLightbox();
+        if (e.target.classList.contains("lightbox-prev")) showIndex(currentIndex - 1);
+        if (e.target.classList.contains("lightbox-next")) showIndex(currentIndex + 1);
       });
       document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape" && !lightbox.hidden) closeLightbox();
+        if (lightbox.hidden) return;
+        if (e.key === "Escape") closeLightbox();
+        if (e.key === "ArrowLeft") showIndex(currentIndex - 1);
+        if (e.key === "ArrowRight") showIndex(currentIndex + 1);
       });
     })();
   </script>
