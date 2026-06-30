@@ -811,7 +811,8 @@ html:not([data-theme="dark"]) .platform-btn {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
-  margin-top: 0.6rem;
+  margin-top: auto;
+  padding-top: 0.75rem;
 }
 
 .platform-links a {
