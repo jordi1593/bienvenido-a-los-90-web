@@ -35,6 +35,7 @@ const state = {
   search: "",
   label: "",
   specialFilters: new Map(),
+  fullyLoaded: false,
 };
 
 const els = {
@@ -281,7 +282,9 @@ function renderNextPage() {
   const next = state.filtered.slice(state.shown, state.shown + PAGE_SIZE);
   els.list.insertAdjacentHTML("beforeend", next.map(episodeCardHtml).join(""));
   state.shown += next.length;
-  els.resultCount.innerHTML = `<strong>${state.filtered.length}</strong> episodio${state.filtered.length === 1 ? "" : "s"}`;
+  els.resultCount.innerHTML = state.fullyLoaded
+    ? `<strong>${state.filtered.length}</strong> episodio${state.filtered.length === 1 ? "" : "s"}`
+    : "Cargando episodios…";
   els.loadMoreWrap.style.display = state.shown < state.filtered.length ? "block" : "none";
   els.clearFilters.hidden = !state.search && !state.label;
 }
@@ -409,6 +412,7 @@ async function init() {
   });
 
   state.all = episodes;
+  state.fullyLoaded = true;
   await loadEsencialesSlugs();
   state.specialFilters = new Map(
     SPECIAL_FILTERS.map((filter) => [
