@@ -207,6 +207,12 @@ const LABEL_TYPO_FIXES = new Map([
   ["darwinians raido bike", "darwinians radio bike"],
   ["pacoprezbryan", "paco perez bryan"],
   ["roayal bustards", "royal bustards"],
+  ["podcats", "podcast"],
+  ["podctas", "podcast"],
+  ["podcasy", "podcast"],
+  ["podcas", "podcast"],
+  ["podvast", "podcast"],
+  ["planetas", "los planetas"],
 ]);
 
 function looseLabelKey(label) {
