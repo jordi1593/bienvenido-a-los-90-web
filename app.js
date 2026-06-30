@@ -228,7 +228,7 @@ const SPECIAL_FILTERS = [
   },
   {
     value: "__videos__",
-    label: "Programa con vídeo",
+    label: "Programas con vídeo",
     pinned: true,
     getSlugs: (episodes) =>
       new Set(episodes.filter((ep) => ep.youtubeLink && (!Array.isArray(ep.youtubeLink) || ep.youtubeLink.length)).map((ep) => ep.slug)),
