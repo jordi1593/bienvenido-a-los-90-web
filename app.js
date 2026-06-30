@@ -142,9 +142,14 @@ const MARATON_1994_SLUGS = new Set([
 // Aquí solo guardamos el Set ya cargado (ver loadEsencialesSlugs).
 let esencialesSlugs = new Set();
 
+// Sello de tiempo único por carga de página: se añade como parámetro a las
+// peticiones de data/*.json para que el navegador siempre pida la versión
+// actual en vez de servir una copia en caché desde una visita anterior.
+const DATA_CACHE_BUST = Date.now();
+
 async function loadEsencialesSlugs() {
   try {
-    const slugs = await (await fetch("data/esenciales.json")).json();
+    const slugs = await (await fetch(`data/esenciales.json?t=${DATA_CACHE_BUST}`)).json();
     esencialesSlugs = new Set(slugs);
   } catch {
     esencialesSlugs = new Set();
@@ -392,10 +397,10 @@ function renderArchive(episodes) {
 // el catálogo completo, así que esos se activan en cuanto termina de llegar
 // el último bloque.
 async function loadEpisodesProgressively(onFirstChunk) {
-  const meta = await (await fetch("data/episodes-meta.json")).json();
+  const meta = await (await fetch(`data/episodes-meta.json?t=${DATA_CACHE_BUST}`)).json();
   const chunks = [];
   for (let i = 0; i < meta.chunkCount; i++) {
-    const chunk = await (await fetch(`data/episodes-${i}.json`)).json();
+    const chunk = await (await fetch(`data/episodes-${i}.json?t=${DATA_CACHE_BUST}`)).json();
     chunks.push(chunk);
     if (i === 0) onFirstChunk(chunk);
   }
