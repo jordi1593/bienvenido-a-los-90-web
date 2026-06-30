@@ -128,6 +128,87 @@ function labelKey(label) {
 // con los años se escribieron de forma inconsistente. Esta clave "laxa"
 // (sin espacios, sin tildes, sin "the " inicial) agrupa esas variantes para
 // poder fusionarlas en una sola etiqueta canónica antes de mostrarlas.
+// Erratas conocidas en las etiquetas del blog que looseLabelKey no puede
+// fusionar por sí solo (no son solo diferencia de espacios/acentos/mayúsculas,
+// sino errores de tecleo reales). El scraper recoge las etiquetas tal cual
+// están en el blog en cada ejecución, así que esta tabla debe vivir aquí
+// (se aplica en cada build) y no como una edición puntual de episodes.json,
+// que el siguiente scrape automático revertiría.
+const LABEL_TYPO_FIXES = new Map([
+  ["grudge", "grunge"],
+  ["seatlle", "seattle"],
+  ["the smashing pumkins", "the smashing pumpkins"],
+  ["smashing pumkins", "smashing pumpkins"],
+  ["pegadeth", "megadeth"],
+  ["dave ghrol", "dave grohl"],
+  ["foo fighteres", "foo fighters"],
+  ["alian johannes", "alain johannes"],
+  ["screming trees", "screaming trees"],
+  ["noel gallaghers", "noel gallagher"],
+  ["okotok", "oknotok"],
+  ["manu cabezali", "manuel cabezali"],
+  ["peral jam", "pearl jam"],
+  ["blidmelon", "blind melon"],
+  ["ringostar", "ringo starr"],
+  ["quuen", "queen"],
+  ["ruce springsteen", "bruce springsteen"],
+  ["bruce springteen", "bruce springsteen"],
+  ["nailyoung", "neil young"],
+  ["piinkfloyd", "pink floyd"],
+  ["silvercjair", "silverchair"],
+  ["rock botton magazine", "rock bottom magazine"],
+  ["mauel pinazo", "manuel pinazo"],
+  ["gunsandroses", "guns n roses"],
+  ["jean-benoît dunckel", "jean benoit duncke"],
+  ["kurt cobian", "kurt cobain"],
+  ["jurt cobain", "kurt cobain"],
+  ["kurt obain", "kurt cobain"],
+  ["rock'n'roll animal", "rock and roll animal"],
+  ["rage againt the machine", "rage against the machine"],
+  ["om morello", "tom morello"],
+  ["zac de la rocha", "zack de la rocha"],
+  ["the cramberries", "the cranberries"],
+  ["rolling stone", "rolling stones"],
+  ["j macis", "j mascis"],
+  ["danielarias", "daniel arias"],
+  ["dani arias", "daniel arias"],
+  ["gisco grande", "disco grande"],
+  ["zahra", "zahara"],
+  ["messura", "mesura"],
+  ["sandford music factory", "sanford music factory"],
+  ["sandfrodmusicfactory", "sanford music factory"],
+  ["bleacj", "bleach"],
+  ["vlack maracas", "black maracas"],
+  ["primaversa sound", "primavera sound"],
+  ["lost in traslation", "lost in translation"],
+  ["artic monkeys", "arctic monkeys"],
+  ["diwaway", "dieaway"],
+  ["rkdrano", "rkadrano"],
+  ["thustrston moore", "thurston moore"],
+  ["the last internacionales", "the last internationale"],
+  ["kings os leon", "kings of leon"],
+  ["robert jhonson", "robert johnson"],
+  ["brass againts", "brass against"],
+  ["los concierto de radio 3", "los conciertos de radio 3"],
+  ["love baterry", "love battery"],
+  ["charlescross", "charles cross"],
+  ["charles r. cross", "charles cross"],
+  ["stiltsjin", "stiltskin"],
+  ["joy divion", "joy division"],
+  ["jack iron", "jack irons"],
+  ["copper", "cooper"],
+  ["citidendick", "citizen dick"],
+  ["nowonder", "new order"],
+  ["smokerdieyoung", "smokers die young"],
+  ["tom cabin", "tom´s cabin"],
+  ["delila paz", "delaila paz"],
+  ["gaz commbes", "gaz coombes"],
+  ["counting creows", "counting crows"],
+  ["darwinians raido bike", "darwinians radio bike"],
+  ["pacoprezbryan", "paco perez bryan"],
+  ["roayal bustards", "royal bustards"],
+]);
+
 function looseLabelKey(label) {
   return label
     .toLowerCase()
@@ -150,11 +231,16 @@ function titleCaseLabel(label) {
 // detectadas por looseLabelKey. Dentro de cada grupo se elige como canónica
 // la grafía con espacios más frecuente (si existe alguna); si todas las
 // variantes son "una sola palabra pegada", se usa la más frecuente tal cual.
+function fixLabelTypo(label) {
+  const fixed = LABEL_TYPO_FIXES.get(label.toLowerCase());
+  return fixed ?? label;
+}
+
 function buildLabelAliasMap(episodes) {
   const counts = new Map(); // label tal cual (trim) -> nº de apariciones
   episodes.forEach((ep) => {
     ep.labels.forEach((raw) => {
-      const label = raw.trim().replace(/\s+/g, " ");
+      const label = fixLabelTypo(raw.trim().replace(/\s+/g, " "));
       if (!label) return;
       counts.set(label, (counts.get(label) || 0) + 1);
     });
@@ -186,7 +272,7 @@ function canonicalizeLabels(episodes) {
     const seen = new Set();
     ep.labels = ep.labels
       .map((raw) => {
-        const label = raw.trim().replace(/\s+/g, " ");
+        const label = fixLabelTypo(raw.trim().replace(/\s+/g, " "));
         return aliasMap.get(label) || titleCaseLabel(label);
       })
       .filter((label) => {
