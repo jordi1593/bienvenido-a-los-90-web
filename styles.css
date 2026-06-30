@@ -104,6 +104,15 @@ body {
 
 /* Nav superior */
 
+/* Offset para anclas del menú: evita que la barra de navegación fija tape
+   el título de cada sección al hacer scroll con los enlaces del menú. */
+#episodios,
+#escuchanos,
+#sobre-nosotros,
+#sigue {
+  scroll-margin-top: 72px;
+}
+
 .topnav {
   background: var(--bg-flat);
   position: sticky;
