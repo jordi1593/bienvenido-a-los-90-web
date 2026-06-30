@@ -477,6 +477,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
         <a href="../#episodios">Episodios</a>
         <a href="../#escuchanos">Escúchanos</a>
         <a href="../#sigue">Síguenos</a>
+        <a href="../fotos.html">Fotos</a>
         <a href="#" id="randomEpisodeBtn">🎲 Episodio aleatorio</a>
       </div>
       <button class="theme-toggle" id="themeToggle" type="button" title="Cambiar tema" aria-label="Cambiar tema claro/oscuro">
@@ -591,6 +592,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 function buildSitemap(episodes) {
   const urls = [
     { loc: `${SITE_URL}/`, priority: "1.0", image: `${SITE_URL}/images/b90-logo-new.jpg` },
+    { loc: `${SITE_URL}/fotos.html`, priority: "0.5", image: `${SITE_URL}/images/og-home.png` },
     ...episodes.map((ep) => ({
       loc: `${SITE_URL}/episodios/${ep.slug}.html`,
       lastmod: ep.published.slice(0, 10),
@@ -623,6 +625,124 @@ Sitemap: ${SITE_URL}/sitemap.xml
 `;
 }
 
+// Página "Fotos": una galería con instantáneas de programas emblemáticos,
+// curada a mano en photos.json (imagen + pie de foto + episodio al que
+// pertenece). Cada foto enlaza a las plataformas del episodio asociado,
+// resueltas desde episodes.json en cada build para que no se desactualicen.
+function buildFotosPage(episodesBySlug) {
+  const photosPath = "photos.json";
+  const photos = fs.existsSync(photosPath)
+    ? JSON.parse(fs.readFileSync(photosPath, "utf-8"))
+    : [];
+
+  const cards = photos.map((photo) => {
+    const ep = episodesBySlug.get(photo.episodeSlug);
+    const links = ep ? platformLinks(ep) : [];
+    const linksHtml = links.length
+      ? `<div class="platform-links">${links.map((p) => `<a class="icon-${p.icon}" href="${p.url}" target="_blank" rel="noopener" title="${escapeHtml(p.label)}" aria-label="${escapeHtml(p.label)}">${PLATFORM_ICONS[p.icon]}</a>`).join("")}</div>`
+      : "";
+    const episodeLink = ep ? `<a class="photo-episode-link" href="episodios/${ep.slug}.html">${escapeHtml(ep.title)}</a>` : "";
+    return `
+      <figure class="photo-card">
+        <img src="${escapeHtml(photo.image)}" alt="${escapeHtml(photo.caption)}" loading="lazy" />
+        <figcaption>
+          <p class="photo-caption">${escapeHtml(photo.caption)}</p>
+          ${episodeLink}
+          ${linksHtml}
+        </figcaption>
+      </figure>`;
+  }).join("");
+
+  return `<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<title>Fotos — Bienvenido a los 90</title>
+<meta name="description" content="Galería de fotos de programas emblemáticos de Bienvenido a los 90, el podcast de música de los años 90." />
+<link rel="canonical" href="${SITE_URL}/fotos.html" />
+<link rel="icon" type="image/jpeg" href="images/b90-logo-new.jpg" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" href="images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
+<link rel="apple-touch-icon" href="images/b90-logo-new.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=57" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Fotos — Bienvenido a los 90" />
+<meta property="og:description" content="Galería de fotos de programas emblemáticos de Bienvenido a los 90." />
+<meta property="og:url" content="${SITE_URL}/fotos.html" />
+<meta property="og:image" content="${SITE_URL}/images/og-home.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Fotos — Bienvenido a los 90" />
+<meta name="twitter:description" content="Galería de fotos de programas emblemáticos de Bienvenido a los 90." />
+<meta name="twitter:image" content="${SITE_URL}/images/og-home.png" />
+</head>
+<body>
+  <nav class="topnav">
+    <div class="container topnav-inner">
+      <a class="brand" href="/" aria-label="Bienvenido a los 90">
+        <img class="brand-logo logo-light" src="images/b90-logo-transparent.png" alt="B" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="images/b90-logo-dark-icon.png" alt="B" width="128" height="128" />
+        <span>ienvenido a los 90</span>
+      </a>
+      <div class="topnav-links">
+        <a href="/#episodios">Episodios</a>
+        <a href="/#escuchanos">Escúchanos</a>
+        <a href="/#sobre-nosotros">Sobre Nosotros</a>
+        <a href="/#sigue">Síguenos</a>
+        <a href="fotos.html">Fotos</a>
+        <a href="/#" id="randomEpisodeBtn">🎲 Episodio aleatorio</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" title="Cambiar tema" aria-label="Cambiar tema claro/oscuro">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8L6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1 class="section-title font-brand">Fotos</h1>
+    <p class="photos-intro">Instantáneas de programas emblemáticos de Bienvenido a los 90.</p>
+    <div class="photos-grid">${cards}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <h3 class="font-brand">Encuéntranos</h3>
+      <div class="social-row">
+        <a class="social-btn icon-instagram" href="https://instagram.com/b90podcast" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg></a>
+        <a class="social-btn icon-substack" href="https://bienvenidoalos90.substack.com/" target="_blank" rel="noopener" title="Substack" aria-label="Substack"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="5" width="16" height="2.2" fill="currentColor"/><rect x="4" y="9" width="16" height="2.2" fill="currentColor"/><path d="M4 13.5h16L12 20.5z" fill="currentColor"/></svg></a>
+        <a class="social-btn icon-facebook" href="https://www.facebook.com/bienvenidoalo90" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.6"/><path d="M13.5 9.2h1.8V7H13.2c-1.5 0-2.4 1-2.4 2.5v1.3H9.4v2h1.4V17h2.1v-4.2h1.7l.3-2h-2V9.6c0-.3.2-.4.6-.4z" fill="currentColor"/></svg></a>
+        <a class="social-btn icon-x" href="https://x.com/Rockisroll" target="_blank" rel="noopener" title="X" aria-label="X"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 7.5l9 9M16.5 7.5l-9 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+        <a class="social-btn icon-tiktok" href="https://tiktok.com/@b90podcast" target="_blank" rel="noopener" title="TikTok" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 4c.3 2 1.8 3.6 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></a>
+        <a class="social-btn icon-twitch" href="https://www.twitch.tv/bienvenidoalos90" target="_blank" rel="noopener" title="Twitch" aria-label="Twitch"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 4h14v10l-3.5 3.5H12l-2 2H8v-2H5V4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M11 8v3.5M15 8v3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+        <a class="social-btn icon-telegram" href="https://t.me/bienvenidoalosnoventa" target="_blank" rel="noopener" title="Telegram" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 2L11 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2L15 22 11 13 2 9 22 2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+        <a class="social-btn icon-bluesky" href="https://bsky.app/profile/bienvenidoalos90.bsky.social" target="_blank" rel="noopener" title="Bluesky" aria-label="Bluesky"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 8.5c-1-2.3-3.6-4-5.8-3-1.3.6-1 2.6.1 3.7 1 1 2.7 1.6 4 1.7-1.3.2-3 .8-4 1.8-1.1 1.1-1.4 3.1-.1 3.7 2.2 1 4.8-.7 5.8-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 8.5c1-2.3 3.6-4 5.8-3 1.3.6 1 2.6-.1 3.7-1 1-2.7 1.6-4 1.7 1.3.2 3 .8 4 1.8 1.1 1.1 1.4 3.1.1 3.7-2.2 1-4.8-.7-5.8-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="social-btn icon-whatsapp" href="https://www.whatsapp.com/channel/0029VaASqFALY6d2gMeB771N" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.8L4 20.5l4.3-1.1A8.5 8.5 0 1 0 12 3.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 9.8c.1-.8.6-.9 1-.9s.7 0 .9.5c.2.5.6 1.5.6 1.7s0 .4-.2.6c-.2.3-.4.4-.2.7.2.3 1 1.3 2.2 1.8.3.1.5.1.7-.1.2-.2.6-.7.8-.9.2-.2.3-.2.6-.1.3.1 1.6.8 1.9 1 .3.1.4.2.5.3.1.2.1.9-.2 1.3-.3.4-1.3 1-2.4.7-1.1-.3-2.9-1.1-4.4-2.7-1.2-1.3-1.9-2.7-2.1-3.2-.2-.5-.4-1.2-.3-1.7z" fill="currentColor"/></svg></a>
+        <a class="social-btn icon-email" href="mailto:bienvenidoalosnoventa@gmail.com" title="Email" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 6.5l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="social-btn icon-linktree" href="https://linktr.ee/b90podcast" target="_blank" rel="noopener" title="Linktree" aria-label="Linktree"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v18M12 9L6 5M12 9l6-4M12 14L6 10M12 14l6-4M9 18l3 3 3-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <p class="footer-tagline">Bienvenido a los 90 · Podcast independiente de música · Conectando personas desde 2012 · <a href="/privacidad.html">Privacidad y cookies</a></p>
+    </div>
+  </footer>
+
+  <script src="nav.js?v=4" defer></script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c082acebb6434c21b4d7bc2ac95019c3"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
+`;
+}
+
 function main() {
   const episodes = JSON.parse(fs.readFileSync("episodes.json", "utf-8"));
   canonicalizeLabels(episodes);
@@ -630,6 +750,9 @@ function main() {
   const chronological = [...episodes].sort((a, b) => new Date(a.published) - new Date(b.published));
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
+
+  const episodesBySlug = new Map(episodes.map((ep) => [ep.slug, ep]));
+  fs.writeFileSync("fotos.html", buildFotosPage(episodesBySlug), "utf-8");
 
   const seriesBySlug = buildSeriesMap(episodes);
 
