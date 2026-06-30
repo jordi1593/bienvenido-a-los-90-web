@@ -1589,6 +1589,7 @@ html:not([data-theme="dark"]) .social-btn {
 
 .photo-caption {
   margin: 0 0 0.5rem;
+  font-family: "Special Elite", monospace;
   font-size: 0.9rem;
   line-height: 1.4;
 }
