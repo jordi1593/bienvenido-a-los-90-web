@@ -629,6 +629,13 @@ Sitemap: ${SITE_URL}/sitemap.xml
 // curada a mano en photos.json (imagen + pie de foto + episodio al que
 // pertenece). Cada foto enlaza a las plataformas del episodio asociado,
 // resueltas desde episodes.json en cada build para que no se desactualicen.
+// Títulos de grupo personalizados para la galería de fotos, distintos del
+// título real del episodio (que no se toca: sigue igual en su propia
+// página, el listado y el SEO). Clave: slug del episodio.
+const PHOTO_GROUP_TITLE_OVERRIDES = new Map([
+  ["programa-97-hora-y-media-con-le-traste", "Programa 97 - LE TRASTE"],
+]);
+
 function buildFotosPage(episodesBySlug) {
   const photosPath = "photos.json";
   const photos = fs.existsSync(photosPath)
@@ -665,7 +672,8 @@ function buildFotosPage(episodesBySlug) {
     const groupDate = group.photos.find((p) => p.date)?.date;
     // Quitamos prefijos de serie (p.ej. "B90 - ") para que todos los
     // títulos de grupo de la galería sigan el mismo formato "Programa N - ...".
-    const groupTitle = ep ? ep.title.replace(/^B90\s*-\s*/i, "") : group.episodeSlug;
+    const groupTitle = PHOTO_GROUP_TITLE_OVERRIDES.get(group.episodeSlug)
+      || (ep ? ep.title.replace(/^B90\s*-\s*/i, "") : group.episodeSlug);
     const titleHtml = (ep
       ? `<a href="episodios/${ep.slug}.html">${escapeHtml(groupTitle)}</a>`
       : escapeHtml(groupTitle)) + (groupDate ? ` <span class="photo-group-date">— emitido el ${escapeHtml(groupDate)}</span>` : "");
