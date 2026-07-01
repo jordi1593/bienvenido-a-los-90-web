@@ -190,5 +190,23 @@
     "caption": "The Beatles en Madrid",
     "episodeSlug": "programa-171-the-beatles-en-madrid",
     "date": "02/07/2015"
+  },
+  {
+    "image": "fotos/193-juanjo-andres.jpg",
+    "caption": "Juanjo y Andrés",
+    "episodeSlug": "programa-193-especial-popular-1-con-bertha-m-yebra",
+    "date": "20/11/2015"
+  },
+  {
+    "image": "fotos/193-roberto-controles.jpg",
+    "caption": "Roberto a los controles",
+    "episodeSlug": "programa-193-especial-popular-1-con-bertha-m-yebra",
+    "date": "20/11/2015"
+  },
+  {
+    "image": "fotos/193-radio-palatolls.jpg",
+    "caption": "Radio Palatolls",
+    "episodeSlug": "programa-193-especial-popular-1-con-bertha-m-yebra",
+    "date": "20/11/2015"
   }
 ]
