@@ -267,13 +267,11 @@ function syncQuickTags() {
 }
 
 function applyFilters() {
-  const q = state.search.trim().toLowerCase();
+  const terms = state.search.trim().toLowerCase().split(/\s+/).filter(Boolean);
   const activeFilter = state.specialFilters.get(state.label);
   state.filtered = state.all.filter((ep) => {
-    const matchesSearch = !q ||
-      ep.title.toLowerCase().includes(q) ||
-      ep.summary.toLowerCase().includes(q) ||
-      ep.labels.some((l) => l.toLowerCase().includes(q));
+    const haystack = [ep.title, ep.summary, ...ep.labels].join(" ").toLowerCase();
+    const matchesSearch = terms.length === 0 || terms.every((t) => haystack.includes(t));
     const matchesLabel = !state.label ||
       (activeFilter
         ? activeFilter.slugs.has(ep.slug)
