@@ -35,7 +35,7 @@ function extractParagraphs(html) {
   return text
     .split("\n")
     .map((p) => p.replace(/\s+/g, " ").trim())
-    .filter((p) => p.length > 0 && !/^DESCARGA EL PROGRAMA$/i.test(p));
+    .filter((p) => p.length > 0 && !/^(DESCARGA|ESCUCHA)\s+EL\s+PROGRAMA/i.test(p));
 }
 
 function extractEpisodeNumber(title) {
