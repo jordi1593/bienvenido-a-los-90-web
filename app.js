@@ -42,6 +42,7 @@ const els = {
   list: document.getElementById("episodeList"),
   search: document.getElementById("search"),
   labelFilter: document.getElementById("labelFilter"),
+  quickTags: document.getElementById("quickTags"),
   resultCount: document.getElementById("resultCount"),
   clearFilters: document.getElementById("clearFilters"),
   loadMore: document.getElementById("loadMore"),
@@ -258,6 +259,13 @@ const SPECIAL_FILTERS = [
   },
 ];
 
+function syncQuickTags() {
+  if (!els.quickTags) return;
+  els.quickTags.querySelectorAll(".quick-tag[data-label]").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.label === state.label);
+  });
+}
+
 function applyFilters() {
   const q = state.search.trim().toLowerCase();
   const activeFilter = state.specialFilters.get(state.label);
@@ -275,6 +283,7 @@ function applyFilters() {
   if (activeFilter?.sort) {
     state.filtered.sort(activeFilter.sort);
   }
+  syncQuickTags();
   state.shown = 0;
   els.list.innerHTML = "";
   renderNextPage();
@@ -441,6 +450,18 @@ async function init() {
     state.label = e.target.value;
     applyFilters();
   });
+
+  if (els.quickTags) {
+    els.quickTags.querySelectorAll(".quick-tag[data-label]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        state.label = btn.dataset.label;
+        els.labelFilter.value = state.label;
+        applyFilters();
+      });
+    });
+    const moreBtn = document.getElementById("quickTagsMore");
+    if (moreBtn) moreBtn.addEventListener("click", () => els.labelFilter.focus());
+  }
 
   els.loadMore.addEventListener("click", renderNextPage);
 

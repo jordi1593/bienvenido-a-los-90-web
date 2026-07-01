@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=64" />
+<link rel="stylesheet" href="styles.css?v=65" />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Bienvenido a los 90 — Podcast de música de los 90" />
@@ -117,6 +117,15 @@
           <select id="labelFilter">
             <option value="">Todas las etiquetas</option>
           </select>
+          <div class="quick-tags" id="quickTags">
+            <button class="quick-tag active" data-label="" type="button">Todos los programas</button>
+            <button class="quick-tag" data-label="Rock alternativo" type="button">Rock alternativo</button>
+            <button class="quick-tag" data-label="Grunge" type="button">Grunge</button>
+            <button class="quick-tag" data-label="Britpop" type="button">Britpop</button>
+            <button class="quick-tag" data-label="Los Planetas" type="button">Los Planetas</button>
+            <button class="quick-tag" data-label="__videos__" type="button">Programas con vídeo</button>
+            <button class="quick-tag quick-tag-more" id="quickTagsMore" type="button">+ ver todas las etiquetas ▾</button>
+          </div>
           <span id="resultCount" class="result-count"></span>
           <button id="clearFilters" class="clear-filters" type="button" hidden>✕ Quitar filtros</button>
         </section>
@@ -204,7 +213,7 @@
   </footer>
 
   <script src="nav.js?v=4" defer></script>
-  <script src="app.js?v=55" defer></script>
+  <script src="app.js?v=56" defer></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c082acebb6434c21b4d7bc2ac95019c3"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

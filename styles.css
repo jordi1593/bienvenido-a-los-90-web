@@ -563,6 +563,54 @@ html:not([data-theme="dark"]) .platform-btn {
   align-items: center;
 }
 
+.quick-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: -0.25rem;
+}
+
+.quick-tag {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  border-radius: 99px;
+  border: 1.5px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-dim);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.quick-tag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.quick-tag.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.quick-tag-more {
+  color: var(--text-dim);
+  border-style: dashed;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.quick-tag-more:hover {
+  color: var(--text);
+  border-color: var(--border);
+  border-style: dashed;
+  background: var(--bg-card);
+}
+
 #search {
   flex: 1 1 280px;
   padding: 0.65rem 1rem;
