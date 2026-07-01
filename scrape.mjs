@@ -176,8 +176,15 @@ async function main() {
   const previousEnrichment = loadPreviousEnrichment(previousEpisodes);
   const manualSplitGroups = loadManualSplitGroups(previousEpisodes);
 
+  // Erratas conocidas en títulos del blog que no se pueden corregir en la
+  // fuente y que el scraper revertería si no se corrigen aquí.
+  const TITLE_FIXES = new Map([
+    ["rograma 348 - Nada Surf - Teatro Barceló (Madrid Feb 2018)", "Programa 348 - Nada Surf - Teatro Barceló (Madrid Feb 2018)"],
+  ]);
+
   const episodes = allEntries.map((entry) => {
-    const title = entry.title["$t"];
+    const rawTitle = entry.title["$t"];
+    const title = TITLE_FIXES.get(rawTitle) ?? rawTitle;
     const contentHtml = entry.content ? entry.content["$t"] : "";
     const altLink = (entry.link || []).find((l) => l.rel === "alternate");
     const numComments = entry["thr$total"] ? parseInt(entry["thr$total"]["$t"], 10) : 0;
