@@ -64,16 +64,31 @@ jobs:
         run: npm run build
 
       - name: Commitear cambios si los hay
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then
             echo "Sin cambios, nada que publicar."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Actualizar episodios y enlaces automaticamente"
             git push
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Desplegar web
+        if: steps.commit.outputs.pushed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: "deploy.yml",
+              ref: "main",
+            });
 
       - name: Avisar si algo ha fallado
         if: failure()
