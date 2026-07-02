@@ -1690,6 +1690,30 @@ html:not([data-theme="dark"]) .social-btn {
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 0.75rem;
   }
+
+  /* Punto 1: área táctil mínima 44px en botones de plataforma */
+  .platform-links a,
+  .ep-card .platform-links a {
+    width: 44px;
+    height: 44px;
+  }
+  .platform-links a svg,
+  .ep-card .platform-links a svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Punto 3: reproductor iVoox no desborda en pantallas estrechas */
+  .ivoox-player {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+  .ivoox-player iframe {
+    width: 100% !important;
+  }
 }
 
 .lightbox {
@@ -1765,8 +1789,7 @@ html:not([data-theme="dark"]) .social-btn {
 
 @media (max-width: 640px) {
   .lightbox-nav {
-    font-size: 1.8rem;
-    padding: 0.4rem 0.7rem;
+    display: none;
   }
 }
 
