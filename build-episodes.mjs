@@ -467,6 +467,7 @@ ${image ? `<meta property="og:image" content="${image}" />
 <meta name="twitter:description" content="${description}" />
 ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 
+<link rel="preload" as="image" href="${coverImage}" />
 <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 <script type="application/ld+json">${JSON.stringify(breadcrumbJsonLd)}</script>
 </head>
@@ -506,7 +507,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 
       ${ivooxId ? `<div class="ivoox-player"><iframe frameborder="0" allowfullscreen scrolling="no" height="200" style="width:100%;" src="https://www.ivoox.com/player_ej_${ivooxId}_4_1.html?c1=ed285e" loading="lazy" title="Reproductor de iVoox"></iframe></div>` : ""}
 
-      ${!ivooxId && coverImage ? `<img class="episode-cover" src="${coverImage}" alt="${escapeHtml(ep.title)}" loading="lazy" width="320" height="213" />` : ""}
+      ${!ivooxId && coverImage ? `<img class="episode-cover" src="${coverImage}" alt="${escapeHtml(ep.title)}" width="320" height="213" />` : ""}
 
       <div class="episode-actions">
         <a class="primary" href="${ep.url}" target="_blank" rel="noopener">Ver en el blog original</a>
