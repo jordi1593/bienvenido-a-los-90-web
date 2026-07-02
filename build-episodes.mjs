@@ -634,6 +634,7 @@ Sitemap: ${SITE_URL}/sitemap.xml
 // página, el listado y el SEO). Clave: slug del episodio.
 const PHOTO_GROUP_TITLE_OVERRIDES = new Map([
   ["programa-97-hora-y-media-con-le-traste", "Programa 97 - LE TRASTE"],
+  ["programa-188-oasis-this-is-history-capitulo-1-the-rain-1990-glastonbury-1995", "Programa 188 - Oasis \"This is history\""],
   ["programa-271-entrevista-new-day-los-planetas", "Programa 271 - Entrevista a New Day"],
 ]);
 
