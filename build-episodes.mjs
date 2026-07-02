@@ -689,7 +689,7 @@ function buildFotosPage(episodesBySlug) {
     return `
     <article class="ep-card">
       <button class="ep-cover-btn" type="button" data-start="${startIndex}" aria-label="Ver ${countLabel} de ${escapeHtml(groupTitle)}">
-        <img src="${escapeHtml(cover.image)}" alt="${escapeHtml(cover.caption)}" loading="lazy" />
+        <img src="${escapeHtml(cover.image)}" alt="${escapeHtml(cover.caption)}" loading="lazy"${cover.focalPoint ? ` style="object-position:${escapeHtml(cover.focalPoint)}"` : ""} />
         ${group.photos.length > 1 ? `<span class="ep-photo-count">${countLabel}</span>` : ""}
       </button>
       <div class="ep-body">
@@ -716,7 +716,7 @@ function buildFotosPage(episodesBySlug) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&family=Special+Elite&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=67" />
+<link rel="stylesheet" href="styles.css?v=68" />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Fotos — Bienvenido a los 90" />

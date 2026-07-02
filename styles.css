@@ -1632,6 +1632,7 @@ html:not([data-theme="dark"]) .social-btn {
   width: 100%;
   aspect-ratio: 3 / 2;
   object-fit: cover;
+  object-position: top center;
   transition: transform 0.2s ease;
 }
 
