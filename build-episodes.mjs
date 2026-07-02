@@ -474,8 +474,8 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" />
         <span>ienvenido a los 90</span>
       </a>
       <div class="topnav-links">
@@ -506,7 +506,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 
       ${ivooxId ? `<div class="ivoox-player"><iframe frameborder="0" allowfullscreen scrolling="no" height="200" style="width:100%;" src="https://www.ivoox.com/player_ej_${ivooxId}_4_1.html?c1=ed285e" loading="lazy" title="Reproductor de iVoox"></iframe></div>` : ""}
 
-      ${!ivooxId && coverImage ? `<img class="episode-cover" src="${coverImage}" alt="${escapeHtml(ep.title)}" loading="lazy" />` : ""}
+      ${!ivooxId && coverImage ? `<img class="episode-cover" src="${coverImage}" alt="${escapeHtml(ep.title)}" loading="lazy" width="320" height="213" />` : ""}
 
       <div class="episode-actions">
         <a class="primary" href="${ep.url}" target="_blank" rel="noopener">Ver en el blog original</a>
@@ -558,7 +558,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
         return `
         <a class="related-card" href="${r.slug}.html">
           <span class="episode-cover-link related-cover-link">
-            ${relImage ? `<img class="episode-cover-img" src="${relImage}" alt="" loading="lazy" />` : `<div class="episode-cover-img"></div>`}
+            ${relImage ? `<img class="episode-cover-img" src="${relImage}" alt="" loading="lazy" width="320" height="213" />` : `<div class="episode-cover-img"></div>`}
           </span>
           <span class="related-card-title">${escapeHtml(r.title)}</span>
         </a>`;
@@ -667,7 +667,7 @@ function buildEtiquetasPages(episodes) {
       const date = ep.published ? new Date(ep.published).toLocaleDateString("es-ES", { year: "numeric", month: "long", day: "numeric" }) : "";
       return `<article class="episode-card">
         <a class="episode-cover-link" href="../episodios/${ep.slug}.html" tabindex="-1" aria-hidden="true">
-          ${thumb ? `<img class="episode-cover-img" src="${escapeHtml(thumb)}" alt="" loading="lazy" />` : `<div class="episode-cover-img"></div>`}
+          ${thumb ? `<img class="episode-cover-img" src="${escapeHtml(thumb)}" alt="" loading="lazy" width="320" height="213" />` : `<div class="episode-cover-img"></div>`}
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/${ep.slug}.html">${escapeHtml(ep.title.replace(/^B90\s*-\s*/i, ""))}</a></h2>
@@ -912,12 +912,12 @@ function buildFotosPage(episodesBySlug) {
     const cover = group.photos[0];
     const countLabel = group.photos.length === 1 ? "1 foto" : `${group.photos.length} fotos`;
     const hiddenPhotos = group.photos.map((p) =>
-      `<img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.caption)}" />`).join("");
+      `<img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.caption)}" width="600" height="400" />`).join("");
 
     return `
     <article class="ep-card">
       <button class="ep-cover-btn" type="button" data-start="${startIndex}" aria-label="Ver ${countLabel} de ${escapeHtml(groupTitle)}">
-        <img src="${escapeHtml(cover.image)}" alt="${escapeHtml(cover.caption)}" loading="lazy"${cover.focalPoint ? ` style="object-position:${escapeHtml(cover.focalPoint)}"` : ""} />
+        <img src="${escapeHtml(cover.image)}" alt="${escapeHtml(cover.caption)}" loading="lazy" width="600" height="400"${cover.focalPoint ? ` style="object-position:${escapeHtml(cover.focalPoint)}"` : ""} />
         ${group.photos.length > 1 ? `<span class="ep-photo-count">${countLabel}</span>` : ""}
       </button>
       <div class="ep-body">

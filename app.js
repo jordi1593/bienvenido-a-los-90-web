@@ -76,7 +76,7 @@ function episodeCardHtml(ep) {
   return `
     <article class="episode-card">
       <a class="episode-cover-link" href="${pageUrl}">
-        ${cover ? `<img class="episode-cover-img" src="${cover}" alt="" loading="lazy" />` : `<div class="episode-cover-img"></div>`}
+        ${cover ? `<img class="episode-cover-img" src="${cover}" alt="" loading="lazy" width="320" height="213" />` : `<div class="episode-cover-img"></div>`}
         <span class="episode-cover-overlay"></span>
       </a>
       <div class="episode-body">
