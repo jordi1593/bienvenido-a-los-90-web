@@ -1,0 +1,860 @@
+Total episodios con iVoox: 1238
+[0%] 1 ok, 4 skip, 1 fail — b90-supernova-92-presentacion-en-la-libreria-crazy-mary-de-r
+[1%] 2 ok, 4 skip, 1 fail — 1125-the-smashing-pumpkins-melancolia-sinfonica-el-funeral-d
+[1%] 3 ok, 4 skip, 2 fail — 1123-especial-megadeth-youthanasia-parte-4
+[1%] 4 ok, 4 skip, 2 fail — 1122-programa-en-directo-desde-valencia-el-proximo-16-de-may
+[1%] 5 ok, 4 skip, 3 fail — b90-supernova-91-radiohead-no-compuso-street-spirit-fade-out
+[1%] 6 ok, 4 skip, 4 fail — 1119-la-energia-cruda-de-southie-y-su-album-debut-collision
+[1%] 7 ok, 4 skip, 7 fail — 1115-especial-30-anos-del-moseley-shoals-ocean-colour-scene
+[2%] 8 ok, 4 skip, 7 fail — b90-supernova-90-la-historia-detras-de-parklife-de-blur-y-la
+[2%] 9 ok, 4 skip, 7 fail — 1114-especial-galan-fest-2025
+[2%] 10 ok, 4 skip, 7 fail — 1113-entrevista-a-sincorazon
+[2%] 11 ok, 4 skip, 8 fail — 1111-novedades-le-mur-kim-gordon-puma-blue-social-distortion
+[2%] 12 ok, 4 skip, 8 fail — 1110-programa-en-directo-con-the-wasted-garage-en-valencia
+[2%] 13 ok, 4 skip, 10 fail — 1107-especial-megadeth-countdown-to-extinction-parte-3
+[2%] 14 ok, 4 skip, 10 fail — 1106-20-anos-de-trayectoria-la-historia-de-red-apple
+[2%] 15 ok, 4 skip, 10 fail — 1105-manuel-cabezali-producciones-2025
+[2%] 16 ok, 4 skip, 10 fail — 1104-mi-nueva-banda-favorita-alphawhores
+[sin transcript] 1103-el-dia-que-mike-mccready-pearl-jam-se-paseo-por-lavapie
+[3%] 17 ok, 4 skip, 11 fail — 1102-una-hora-de-grunge-sin-casi-pausas
+[3%] 18 ok, 4 skip, 12 fail — 1101-especial-megadeth-rust-in-peace-parte-2
+[3%] 19 ok, 4 skip, 13 fail — 1099-arranca-el-ano-14-de-bienvenido-a-los-90
+[3%] 20 ok, 4 skip, 13 fail — 1098-especial-megadeth-parte-1
+[3%] 21 ok, 4 skip, 13 fail — b90-supernova-88-blind-melon-la-historia-de-no-rain
+[3%] 22 ok, 4 skip, 14 fail — 1096-especial-the-beatles-anthology-4-con-javier-polo
+[3%] 23 ok, 4 skip, 14 fail — 1095-especial-1995-5-5-rocket-from-the-crypt-alice-in-chains
+[3%] 24 ok, 4 skip, 14 fail — b90-supernova-87-drink-the-sea-madrid-06-12-2025
+[3%] 25 ok, 4 skip, 14 fail — 1094-una-seleccion-musical-exquisita-vol-3
+[4%] 26 ok, 4 skip, 14 fail — 1093-especial-1995-4-5-ramones-garbage-blind-melon-rancid-oa
+[4%] 27 ok, 4 skip, 15 fail — 1091-especial-1995-3-5-smashing-pumpkins-primus-bjork-alanis
+[4%] 28 ok, 4 skip, 17 fail — 1088-especial-1995-2-5-monster-magnet-morphine-silverchair-w
+[4%] 29 ok, 4 skip, 17 fail — b90-supernova-86-the-offspring-madrid-26-09-2025
+[4%] 30 ok, 4 skip, 17 fail — 1087-sarajevo-84-presentan-the-after-party
+[4%] 31 ok, 4 skip, 17 fail — 1086-especial-1995-1-5-radiohead-pj-harvey-mad-season-the-ja
+[4%] 32 ok, 4 skip, 17 fail — 1085-producciones-cabezali-2024
+[4%] 33 ok, 4 skip, 17 fail — 1084-especial-escena-alternativa-canaria
+[4%] 34 ok, 4 skip, 17 fail — 1083-os-presento-el-club-de-los-podcast-musicales
+[5%] 35 ok, 4 skip, 24 fail — 1077-especial-bruce-springsteen-deliver-me-from-nowhere
+[5%] 36 ok, 4 skip, 24 fail — 1076-os-presento-a-la-persona-que-me-descubrio-otra-musica
+[5%] 37 ok, 4 skip, 24 fail — 1075-entrevista-a-drink-the-sea
+[5%] 38 ok, 4 skip, 24 fail — b90-supernova-84-the-lemonheads-madrid-2025
+[5%] 39 ok, 4 skip, 24 fail — 1074-the-lemonheads-arte-o-timo
+[6%] 40 ok, 4 skip, 25 fail — 1072-inicio-de-la-nueva-temporada
+[6%] 41 ok, 4 skip, 25 fail — 1071-hablando-con-manuel-pinazo-de-muzikalia-final-de-tempor
+[6%] 42 ok, 4 skip, 25 fail — b90-supernova-83-placebo-y-david-bowie
+[7%] 43 ok, 4 skip, 34 fail — 1061-especial-oasis-en-londres-1
+[7%] 44 ok, 4 skip, 34 fail — 1060-especial-buenas-noches-rose
+[7%] 45 ok, 4 skip, 34 fail — 1059-alanis-morissette-en-madrid-2025
+[7%] 46 ok, 4 skip, 34 fail — b90-supernova-82-beth-gibbons-noches-del-botanico-madrid
+[7%] 47 ok, 4 skip, 35 fail — 1057-matt-cameron-se-despide-de-pearl-jam
+[7%] 48 ok, 4 skip, 35 fail — 1056-el-regreso-de-oasis-a-manchester
+[7%] 49 ok, 4 skip, 36 fail — 1054-especial-regreso-de-oasis
+[7%] 50 ok, 4 skip, 36 fail — b90-supernova-81-air-noches-del-botanico-madrid
+[7%] 51 ok, 4 skip, 36 fail — 1053-oasis-cronica-desde-cardiff
+[7%] 52 ok, 4 skip, 36 fail — 1052-la-apoteoasis-la-historia-del-regreso-de-oasis-2
+[8%] 53 ok, 4 skip, 36 fail — 1051-la-apoteoasis-la-historia-del-regreso-de-oasis-1
+[8%] 54 ok, 4 skip, 37 fail — 1049-maud-the-moth-presenta-the-distaff
+[8%] 55 ok, 4 skip, 39 fail — 1047-especial-nirvana-su-historia-desde-enero-a-junio-de-199
+[8%] 56 ok, 4 skip, 39 fail — 1046-break-the-senses-nos-presentan-the-rebels
+[8%] 57 ok, 4 skip, 39 fail — 1045-celebrando-los-10-000-suscriptores
+[8%] 58 ok, 4 skip, 39 fail — 1044-j-f-leon-asi-fueron-mis-90-s
+[8%] 59 ok, 4 skip, 40 fail — b90-supernova-79-recordando-a-the-magnificent-bastards
+[8%] 60 ok, 4 skip, 40 fail — 1042-mi-viaje-a-manchester-para-ver-a-noel-gallagher
+[8%] 61 ok, 4 skip, 40 fail — 1041-the-elven-nos-presentan-solstice
+[9%] 62 ok, 4 skip, 40 fail — 1040-rage-against-the-machine-live-on-tour-1993
+[9%] 63 ok, 4 skip, 40 fail — 1039-the-beatles-help-1965-cap-6
+[9%] 64 ok, 4 skip, 41 fail — 1038-me-voy-al-gent-jazz-festival-para-ver-a-air
+[9%] 65 ok, 4 skip, 43 fail — b90-supernova-77-the-dylans-y-el-grudge
+[9%] 66 ok, 4 skip, 44 fail — 1034-especial-libros-musicales-desde-barcelona
+[9%] 67 ok, 4 skip, 46 fail — b90-supernova-76-kim-gordon-y-kim-deal
+[10%] 68 ok, 4 skip, 49 fail — b90-supernova-75-el-motivo-por-el-que-no-estamos-en-spotify
+[10%] 69 ok, 4 skip, 49 fail — 1028-especial-load-reload-de-metallica
+[10%] 70 ok, 4 skip, 49 fail — 1027-hablamos-de-la-primera-monkey-party
+[10%] 71 ok, 4 skip, 49 fail — 1026-especial-the-black-crowes-parte2
+[10%] 72 ok, 4 skip, 49 fail — 1025-especial-the-black-crowes-parte1
+[10%] 73 ok, 4 skip, 49 fail — b90-supernova-74-la-intrahistoria-del-homenaje-a-dover
+[10%] 74 ok, 4 skip, 50 fail — 1023-el-impacto-de-nirvana-en-la-juventud-actual
+[10%] 75 ok, 4 skip, 50 fail — b90-supernova-73-bulls-on-parade-de-rage-against-the-machine
+[11%] 76 ok, 4 skip, 51 fail — 1021-especial-1994-12-the-beatles-the-stone-roses-bush-pearl
+[11%] 77 ok, 4 skip, 51 fail — 1020-especial-1994-11-the-black-crowes-nirvana-tom-petty-woo
+[sin transcript] 1019-especial-1994-10-the-cranberries-the-smashing-pumpkins-
+[11%] 78 ok, 4 skip, 55 fail — p-1016-una-seleccion-musical-exquisita-vol-2
+[11%] 79 ok, 4 skip, 56 fail — p-1015-especial-1994-parte-7-prodigy-neil-young-l7-rolling-s
+[11%] 80 ok, 4 skip, 56 fail — p-1014-desde-la-fundacion-club-45-con-alex-cooper
+[11%] 81 ok, 4 skip, 56 fail — p-1013-especial-1994-parte-6-nirvana-stone-temple-pilots-mas
+[12%] 82 ok, 4 skip, 57 fail — p-1011-novedades-hermana-furia-kim-deal-birdmask-8ad-julie
+[12%] 83 ok, 4 skip, 57 fail — b90-supernova-70-alain-johannes-radio75-madrid-15-11-24
+[12%] 84 ok, 4 skip, 59 fail — p-1008-el-cuervo-1994-2024
+[12%] 85 ok, 4 skip, 59 fail — p-1007-especial-spinda-records
+[12%] 86 ok, 4 skip, 62 fail — p-1004-especial-1994-parte-5-johnny-cash-mark-lanegan-kyuss-
+[12%] 87 ok, 4 skip, 63 fail — sobre-los-premios-ivoox-2024
+[13%] 88 ok, 4 skip, 63 fail — b90-supernova-68-veyls-un-proyecto-con-louise-post
+[13%] 89 ok, 4 skip, 66 fail — p-999-especial-galan-fest-2024
+[13%] 90 ok, 4 skip, 66 fail — b90-supernova-67-cuando-patti-smith-recordo-a-kurt-cobain
+[13%] 91 ok, 4 skip, 66 fail — p-998-entrevista-a-pasajero-y-arturo-paniagua
+[13%] 92 ok, 4 skip, 69 fail — p-995-recordando-las-sintonias-de-disco-grande-con-julio-rui
+[14%] 93 ok, 4 skip, 74 fail — b90-supernova-64-pearl-jam-en-barcelona-08-07-24
+[14%] 94 ok, 4 skip, 74 fail — p-990-especial-the-smashing-pumpkins-aghori-mhori-mei
+[14%] 95 ok, 4 skip, 74 fail — p-989-10-recuerdos-de-la-gira-de-alain-johannes-y-lost-satel
+[14%] 96 ok, 4 skip, 74 fail — b90-supernova-63-pearl-jam-en-barcelona-06-07-24
+[14%] 97 ok, 4 skip, 74 fail — p-988-hablando-de-los-beatles-y-las-bandas-tributo-con-hey-b
+[14%] 98 ok, 4 skip, 74 fail — p-987-especial-1994-parte-3-nine-inch-nails-soundgarden-offs
+[14%] 99 ok, 4 skip, 75 fail — cronica-del-mad-cool-2024
+[14%] 100 ok, 4 skip, 75 fail — p-985-los-mejores-momentos-de-coldplay-en-el-glastonbury-202
+[15%] 101 ok, 4 skip, 75 fail — b90-supernova-62-concierto-de-l7-en-madrid-23-06-2024
+[15%] 102 ok, 4 skip, 75 fail — p-984-alphawaves-el-britpop-con-gotitas-del-grunge
+[15%] 103 ok, 4 skip, 76 fail — p-982-la-importancia-de-la-musica-en-las-diferentes-generaci
+[15%] 104 ok, 4 skip, 76 fail — b90-supernova-61-la-historia-de-creep-radiohead
+[15%] 105 ok, 4 skip, 78 fail — p-979-especial-anos-90-rock-botton-magazine
+[15%] 106 ok, 4 skip, 80 fail — b90-supernova-60-el-segundo-concierto-de-pearl-jam-en-2024
+[15%] 107 ok, 4 skip, 80 fail — p-976-bocangel-presentan-cuatro-cuentos-de-ficcion
+[16%] 108 ok, 4 skip, 80 fail — p-975-especial-diary-sunny-day-real-estate
+[16%] 109 ok, 4 skip, 80 fail — p-974-recordando-a-steve-albini
+[16%] 110 ok, 4 skip, 82 fail — p-972-thom-yorke-confidenza
+[16%] 111 ok, 4 skip, 83 fail — b90-supernova-58-presentacion-y-charla-de-bienvenidos-a-la-r
+[16%] 112 ok, 4 skip, 83 fail — p-970-diez-canciones-que-me-cambiaron-la-vida
+[16%] 113 ok, 4 skip, 86 fail — p-967-hablando-con-youri-lenquette-de-nirvana-mano-negra-pix
+[17%] 114 ok, 4 skip, 88 fail — b90-supernova-56-la-carta-de-kurt-cobain-en-incesticide
+[17%] 115 ok, 4 skip, 91 fail — p-961-entrevista-con-charles-peterson-el-fotografo-del-grung
+[17%] 116 ok, 4 skip, 95 fail — b90-supernova-54-la-historia-de-no-way-sis
+[17%] 117 ok, 4 skip, 95 fail — p-957-entrevista-con-da-igual
+[18%] 118 ok, 4 skip, 95 fail — p-956-especial-the-rolling-stones
+[18%] 119 ok, 4 skip, 97 fail — p-953-todo-lo-que-necesitas-saber-sobre-dark-matter-de-pearl
+[18%] 120 ok, 4 skip, 102 fail — p-948-de-radiohead-a-the-smile
+[19%] 121 ok, 4 skip, 107 fail — p-943-maddening-flames-presentan-nuevo-disco
+[19%] 122 ok, 4 skip, 114 fail — p-937-recordando-a-john-lennon
+[19%] 123 ok, 4 skip, 114 fail — p-936-especial-absolution-de-muse
+[20%] 124 ok, 4 skip, 114 fail — p-935-saturna-presentan-the-reset
+[20%] 125 ok, 4 skip, 115 fail — p-933-the-manana-culture-presentan-bravado
+[20%] 126 ok, 4 skip, 116 fail — p-931-the-beatles-y-la-inteligencia-artificial
+[20%] 127 ok, 4 skip, 116 fail — b90-supernova-48-el-ultimo-concierto-de-pink-floyd
+[20%] 128 ok, 4 skip, 118 fail — b90-supernova-47-estar-en-el-lugar-adecuado-en-el-momento-ad
+[20%] 129 ok, 4 skip, 118 fail — p-928-entrevista-a-gustavo-iglesias-radio-3
+[21%] 130 ok, 4 skip, 120 fail — p-925-pearl-jam-celebrando-los-30-anos-de-vs
+[21%] 131 ok, 4 skip, 120 fail — b90-supernova-46-el-misterio-de-sappy-nirvana
+[21%] 132 ok, 4 skip, 121 fail — p-923-el-ultimo-programa-de-la-temporada-11
+[21%] 133 ok, 4 skip, 127 fail — b90-supernova-44-asi-se-gesto-black-hole-sun
+[21%] 134 ok, 4 skip, 127 fail — p-917-black-maracas-la-banda-revelacion-de-mad-cool
+[21%] 135 ok, 4 skip, 127 fail — p-916-novedades-miles-kane-alphawaves-cucamaras-ajeeb-murmur
+[22%] 136 ok, 4 skip, 127 fail — p-915-entrevista-con-margaritas-podridas
+[22%] 137 ok, 4 skip, 127 fail — b90-supernova-43-recordando-a-sinead-o-connor
+[22%] 138 ok, 4 skip, 127 fail — p-914-paul-mccartney-eyes-of-the-storm-1964
+[22%] 139 ok, 4 skip, 127 fail — p-913-especial-libros-y-musica
+[22%] 140 ok, 4 skip, 127 fail — b90-supernova-42-el-dia-que-conoci-a-patti-smith
+[22%] 141 ok, 4 skip, 127 fail — p-912-especial-mad-cool-2023
+[22%] 142 ok, 4 skip, 127 fail — p-911-the-beatles-a-hard-day-s-night-1964-cap-4
+[22%] 143 ok, 4 skip, 127 fail — b90-supernova-41-asi-sonaran-red-hot-chili-peppers-en-mad-co
+[22%] 144 ok, 4 skip, 127 fail — p-910-especial-azkena-rock-festival
+[22%] 145 ok, 4 skip, 127 fail — b90-supernova-40-foo-fighters-glastonbury-2023
+[22%] 146 ok, 4 skip, 127 fail — p-909-especial-but-here-we-are-foo-fighters
+[22%] 147 ok, 4 skip, 127 fail — p-908-especial-council-skies-noel-gallagher
+[23%] 148 ok, 4 skip, 127 fail — p-907-especial-give-way-de-pearl-jam
+[23%] 149 ok, 4 skip, 127 fail — b90-supernova-39-nos-colamos-en-el-concierto-de-blur-del-pri
+[23%] 150 ok, 4 skip, 127 fail — p-906-conoce-a-josh-freese-nuevo-baterista-de-foo-fighters
+[23%] 151 ok, 4 skip, 127 fail — p-905-lo-que-nadie-cuenta-de-atum-the-smashing-pumpkins
+[23%] 152 ok, 4 skip, 127 fail — p-904-recordando-la-figura-de-alfonso-eduardo-perez-orozco-c
+[23%] 153 ok, 4 skip, 127 fail — b90-supernova-38-el-cierre-perfecto-champagne-supernova
+[23%] 154 ok, 4 skip, 127 fail — p-903-entrevista-alain-johannes-lost-satellite-en-sevilla
+[23%] 155 ok, 4 skip, 127 fail — p-902-novedades-the-heavy-metallica-foo-fighters-brad-garbag
+[23%] 156 ok, 4 skip, 127 fail — p-901-rem-especial-new-adventures-in-hi-fi
+[23%] 157 ok, 4 skip, 127 fail — p-900-gracias-por-estar-al-otro-lado
+[23%] 158 ok, 4 skip, 128 fail — p-898-musica-y-podcast-el-eterno-problema
+[24%] 159 ok, 4 skip, 128 fail — p-897-the-verve-la-cara-oculta-de-urban-hymns
+[24%] 160 ok, 4 skip, 128 fail — p-896-la-radio-musical-tal-y-como-nos-gusta
+[24%] 161 ok, 4 skip, 128 fail — p-895-angel-apricot-the-pink-sunset-over-you
+[24%] 162 ok, 4 skip, 128 fail — p-894-le-mur-presentan-caelum-invictus
+[24%] 163 ok, 4 skip, 128 fail — p-893-recordando-a-mark-lanegan-vol-1
+[24%] 164 ok, 4 skip, 128 fail — p-892-el-repaso-definitivo-al-blackstar-de-bowie
+[24%] 165 ok, 4 skip, 128 fail — p-891-el-regreso-de-louise-post-veruca-salt
+[24%] 166 ok, 4 skip, 128 fail — p-890-charlando-con-enric-montefusco
+[24%] 167 ok, 4 skip, 128 fail — p-889-buscando-versiones-de-los-beatles-con-celestino-martin
+[24%] 168 ok, 4 skip, 128 fail — b90-supernova-37-efecto-lucifer-en-directo
+[24%] 169 ok, 4 skip, 128 fail — p-888-noel-y-liam-gallagher-vivian-en-una-vpo
+[24%] 170 ok, 4 skip, 128 fail — b90-supernova-36-especial-beatlefeast
+[24%] 171 ok, 4 skip, 128 fail — b90-supernova-35-nikolai-petrovsky-el-kurt-cobain-ruso
+[25%] 172 ok, 4 skip, 128 fail — p-887-charlando-con-juanma-ortega
+[25%] 173 ok, 4 skip, 128 fail — p-886-homenaje-a-havalina
+[25%] 174 ok, 4 skip, 128 fail — p-885-canciones-divertidas-para-una-navidad-alternativa
+[25%] 175 ok, 4 skip, 128 fail — b90-supernova-34-un-repaso-a-los-festivales-del-2023
+[25%] 176 ok, 4 skip, 128 fail — p-884-bienvenidos-a-la-radio-un-largometraje-documental
+[25%] 177 ok, 4 skip, 129 fail — p-882-mi-grupo-favorito-me-ha-vuelto-a-decepcionar
+[25%] 178 ok, 4 skip, 129 fail — p-881-el-disco-del-decimo-aniversario-del-programa
+[25%] 179 ok, 4 skip, 129 fail — b90-supernova-33-smashing-pumpkins-dusseldorf-1996
+[25%] 180 ok, 4 skip, 129 fail — p-880-cuando-los-beatles-resucitaron-en-los-90
+[25%] 181 ok, 4 skip, 129 fail — p-879-dhani-harrison-ser-hijo-de-un-beatle
+[25%] 182 ok, 4 skip, 129 fail — b90-supernova-32-smashing-pumpkins-live-at-the-viper-room-19
+[26%] 183 ok, 4 skip, 129 fail — b90-supernova-31-puede-curar-la-musica
+[26%] 184 ok, 4 skip, 129 fail — p-878-un-repaso-a-toda-la-gira-de-pearl-jam-en-2022
+[26%] 185 ok, 4 skip, 129 fail — p-877-la-cruda-homestidad-de-bubble-bones
+[26%] 186 ok, 4 skip, 129 fail — p-876-la-historia-de-d-arcy-wretzky-smashing-pumpkins
+[26%] 187 ok, 4 skip, 129 fail — p-875-bones-of-minerva-presentan-embers
+[26%] 188 ok, 4 skip, 131 fail — p-872-recordando-a-mark-lanegan-con-elvira-asensi
+[26%] 189 ok, 4 skip, 131 fail — p-871-road-trip-kula-shaker-en-octubre-tambien-llueve
+[26%] 190 ok, 4 skip, 131 fail — p-870-os-cuento-mi-viaje-a-berlin
+[26%] 191 ok, 4 skip, 131 fail — p-869-especial-redes-sociales-y-plataformas
+[26%] 192 ok, 4 skip, 131 fail — b90-supernova-30-portishead-regresan-al-escenario
+[26%] 193 ok, 4 skip, 131 fail — p-867-megan-jasper-de-recepcionista-a-jefa-de-sub-pop
+[27%] 194 ok, 4 skip, 131 fail — b90-supernova-29-julian-ruiz-los-vinilos-de-plasticos-y-deci
+[27%] 195 ok, 4 skip, 131 fail — p-866-hablando-de-la-vida-y-el-grunge-con-mariano-rupil-en-e
+[27%] 196 ok, 4 skip, 131 fail — p-865-especial-dirty-de-sonic-youth
+[27%] 197 ok, 4 skip, 132 fail — p-863-celebrando-los-10-anos-de-delia-records
+[27%] 198 ok, 4 skip, 132 fail — p-862-la-historia-de-mudhoney-en-los-90-s
+[27%] 199 ok, 4 skip, 132 fail — p-861-lo-mejor-del-concierto-tributo-a-taylor-hawkins-wemble
+[27%] 200 ok, 4 skip, 132 fail — p-860-dave-grohl-contra-la-espada-y-la-pared-the-colour-and-
+[27%] 201 ok, 4 skip, 132 fail — p-859-muse-presentan-su-vision-del-mundo-will-of-the-people
+[27%] 202 ok, 4 skip, 132 fail — p858-el-salto-al-vacio-de-coldplay-a-rush-of-blood-to-the-he
+[27%] 203 ok, 4 skip, 132 fail — p-857-novedades-louise-post-3rd-secret-paralyzed-fuzz-forwar
+[27%] 204 ok, 4 skip, 132 fail — b90-classic-28-sonic-youth-en-el-santirock-2000
+[28%] 205 ok, 4 skip, 132 fail — p-856-elvis-la-construccion-del-mito-la-destruccion-del-homb
+[28%] 206 ok, 4 skip, 132 fail — b90-classic-27-especial-24h-con-j-f-leon
+[28%] 207 ok, 4 skip, 132 fail — p-855-billy-corgan-together-and-together-again
+[28%] 208 ok, 4 skip, 132 fail — p-854-noel-gallagher-glastonbury-2022
+[28%] 209 ok, 4 skip, 132 fail — b90-classic-26-dover-doctor-music-1997
+[28%] 210 ok, 4 skip, 132 fail — p-853-the-beatles-with-the-beatles-1963-cap-3
+[28%] 211 ok, 4 skip, 132 fail — b90-classic-25-the-last-internationale-hellfest-2022
+[28%] 212 ok, 4 skip, 132 fail — p-852-30-anos-despues-del-primer-concierto-de-nirvana-en-esp
+[28%] 213 ok, 4 skip, 132 fail — p-851-asi-vivi-el-mad-cool-2022
+[28%] 214 ok, 4 skip, 132 fail — p-850-radio75-presentan-mandatory
+[29%] 215 ok, 4 skip, 134 fail — b90-classic-24-paul-mccartney-glastonbury-2022
+[29%] 216 ok, 4 skip, 134 fail — p-847-veronica-underluxe-presentan-anima-machina
+[29%] 217 ok, 4 skip, 134 fail — p-846-entrevista-a-maximo-pradera
+[29%] 218 ok, 4 skip, 134 fail — b90-classic-23-la-historia-de-bohemian-rhapsody-queen
+[29%] 219 ok, 4 skip, 134 fail — p-845-efecto-lucifer-presentan-coraje
+[29%] 220 ok, 4 skip, 134 fail — p-844-he-vuelto-a-grabar-el-primer-programa-de-b90-kurt-tuvo
+[29%] 221 ok, 4 skip, 134 fail — p-843-hickeys-la-alternativa-real
+[29%] 222 ok, 4 skip, 134 fail — p-842-mi-viaje-a-knebworth-para-ver-a-liam-gallagher
+[29%] 223 ok, 4 skip, 134 fail — p-841-the-verve-urban-hymns-el-adios-del-britpop
+[29%] 224 ok, 4 skip, 134 fail — b90-classic-22-cuando-kurt-cobain-conocio-a-william-burrough
+[29%] 225 ok, 4 skip, 134 fail — p-840-cuando-bjork-se-hizo-enorme-homogenic
+[29%] 226 ok, 4 skip, 134 fail — p-839-especial-dover-redescubriendo-sister
+[sin transcript] p-838-soundgarden-especial-down-on-the-upside
+[30%] 227 ok, 4 skip, 135 fail — b90-classic-21-the-smile-a-light-for-attracting-attention-20
+[30%] 228 ok, 4 skip, 135 fail — p-837-homenaje-a-felipe-couselo-cap-1
+[sin transcript] p-836-maud-the-moth-en-directo-aula-de-musica-uah-19-03-2022
+[30%] 229 ok, 4 skip, 136 fail — p-835-matt-cameron-de-san-diego-a-seattle-cap-2
+[30%] 230 ok, 4 skip, 136 fail — p-834-matt-cameron-de-san-diego-a-seattle-cap-1
+[sin transcript] p-833-escuchando-el-debut-de-reme-con-daniel-ruiz
+[30%] 231 ok, 4 skip, 137 fail — p-832-tom-morello-en-sus-propias-palabras-cap-2
+[30%] 232 ok, 4 skip, 137 fail — p-831-charlando-con-ivan-muniz-sobre-una-orquesta-armada
+[30%] 233 ok, 4 skip, 137 fail — p-830-taylor-hawkins-1972-2022
+[30%] 234 ok, 4 skip, 137 fail — p-829-tom-morello-en-sus-propias-palabras-cap-1
+[30%] 235 ok, 4 skip, 137 fail — p-828-12-temazos-de-stereophonics
+[30%] 236 ok, 4 skip, 137 fail — b90-classic-19-la-ultima-conversacion-entre-mark-lanegan-y-g
+[31%] 237 ok, 4 skip, 137 fail — p-827-recordando-el-legado-de-andy-yorke-unbelievable-truth
+[31%] 238 ok, 4 skip, 137 fail — p-826-especial-the-beatles-su-primer-disco-please-please-me-
+[31%] 239 ok, 4 skip, 137 fail — b90-classic-18-mark-lanegan-en-directo-desde-elche-25-10-201
+[31%] 240 ok, 4 skip, 137 fail — p-825-mark-lanegan-devil-in-a-coma
+[31%] 241 ok, 4 skip, 137 fail — bienvenido-a-los-90-dj-set-session-7
+[31%] 242 ok, 4 skip, 137 fail — p-824-blur-1997-el-adios-al-britpop
+[31%] 243 ok, 4 skip, 137 fail — p-823-novedade-madrugada-pinpilinpussies-andy-bell-diecisiet
+[31%] 244 ok, 4 skip, 137 fail — b90-classic-17-asi-suenan-the-smile-en-directo
+[31%] 245 ok, 4 skip, 137 fail — p-822-the-smashing-pumpkins-la-gira-de-adore
+[31%] 246 ok, 4 skip, 137 fail — p-821-the-smashing-pumpkins-asi-grabaron-adore
+[31%] 247 ok, 4 skip, 137 fail — p-820-the-smashing-pumpkins-adore-track-by-track-1998
+[31%] 248 ok, 4 skip, 137 fail — p-819-manuel-cabezali-producciones-2021
+[32%] 249 ok, 4 skip, 137 fail — p-818-veronica-underluxe-presentan-anima-machina
+[32%] 250 ok, 4 skip, 137 fail — b90-classic-16-tus-entradas-para-el-ohana-festival-2021
+[32%] 251 ok, 4 skip, 137 fail — p-817-especial-brad-en-memoria-de-shawn-smith
+[32%] 252 ok, 4 skip, 137 fail — p-816-mesa-redonda-sobre-el-podcast-musical-en-espana
+[32%] 253 ok, 4 skip, 137 fail — p-815-linda-perry-la-crudeza-de-la-honestidad
+[32%] 254 ok, 4 skip, 137 fail — b90-classic-15-cuando-decca-rechazo-a-los-beatles
+[32%] 255 ok, 4 skip, 137 fail — p-814-homenaje-a-1991-el-ano-que-cambio-la-musica
+[32%] 256 ok, 4 skip, 137 fail — p-813-especial-vanity-rose-acustico
+[32%] 257 ok, 4 skip, 137 fail — p-812-los-recuerdos-de-paul-mccartney-en-the-lyrics-parte-1
+[32%] 258 ok, 4 skip, 137 fail — p-811-especial-the-beatles-los-inicios-y-sus-influencias-cap
+[32%] 259 ok, 4 skip, 137 fail — b90-classic-14-billy-preston
+[32%] 260 ok, 4 skip, 137 fail — p-810-especial-gentlemen-de-the-afghan-whigs
+[32%] 261 ok, 4 skip, 137 fail — p-809-novedades-lost-satellite-vanity-rose-yoko-factor-radio
+[33%] 262 ok, 4 skip, 137 fail — p-808-en-el-estudio-con-paco-loco
+[33%] 263 ok, 4 skip, 137 fail — p-807-charlando-con-beavis-y-butt-head
+[33%] 264 ok, 4 skip, 137 fail — p-806-recordando-el-unplugged-de-pearl-jam-alice-in-chains-y
+[33%] 265 ok, 4 skip, 139 fail — p-803-se-publica-el-libro-get-back-de-the-beatles
+[33%] 266 ok, 4 skip, 139 fail — p-802-john-squire-de-the-stone-roses-a-the-seahorses
+[33%] 267 ok, 4 skip, 139 fail — b90-classic-13-los-sonidos-sugerentes-de-the-courettes
+[33%] 268 ok, 4 skip, 139 fail — p-801-un-repaso-al-libro-de-dave-grohl-the-storyteller-tales
+[sin transcript] p-800-en-directo-desde-siroco-celebrando-los-30-anos-de-neve
+[33%] 269 ok, 4 skip, 140 fail — p-799-especial-oasis-knebworth-1996
+[33%] 270 ok, 4 skip, 140 fail — p-798-con-jane-s-addiction-empezo-todo
+[34%] 271 ok, 4 skip, 140 fail — b90-classic-12-la-historia-completa-de-bittersweet-symphony
+[34%] 272 ok, 4 skip, 140 fail — p-797-que-demonios-paso-el-24-de-septiembre-de-1991
+[34%] 273 ok, 4 skip, 140 fail — p-796-canciones-imbatibles-que-abren-disco
+[34%] 274 ok, 4 skip, 140 fail — the-cult-zeleste-barcelona-11-07-1994
+[34%] 275 ok, 4 skip, 140 fail — green-day-garatge-club-barcelona-05-06-1994
+[34%] 276 ok, 4 skip, 140 fail — sonic-youth-la-riviera-madrid-27-03-1996
+[34%] 277 ok, 4 skip, 140 fail — primal-scream-kgb-barcelona-07-02-1990
+[34%] 278 ok, 4 skip, 140 fail — pixies-universal-sur-madrid-17-09-1990
+[34%] 279 ok, 4 skip, 140 fail — sepultura-doctor-music-festival-lleida-12-07-1996
+[34%] 280 ok, 4 skip, 140 fail — nirvana-palacio-de-los-deportes-de-la-comunidad-de-madrid-03
+[34%] 281 ok, 4 skip, 140 fail — jane-s-addiction-universal-sur-madrid-07-04-91
+[34%] 282 ok, 4 skip, 140 fail — beck-zeleste-barcelona-25-05-1998
+[34%] 283 ok, 4 skip, 140 fail — the-cranberries-la-riviera-madrid-22-04-1999
+[35%] 284 ok, 4 skip, 140 fail — morphine-festimad-madrid-03-05-1997
+[35%] 285 ok, 4 skip, 140 fail — p-795-10-discos-lanzados-fuera-de-epoca
+[35%] 286 ok, 4 skip, 140 fail — p-794-novedades-jerry-cantrell-metz-vial-brainiac-the-blinde
+[35%] 287 ok, 4 skip, 140 fail — b90-classic-11-el-regreso-de-saturno-y-el-club-de-los-27
+[35%] 288 ok, 4 skip, 140 fail — p-793-buscando-versiones-de-los-beatles-con-felipe-couselo
+[35%] 289 ok, 4 skip, 140 fail — p-792-el-repaso-definitivo-a-1991
+[35%] 290 ok, 4 skip, 140 fail — p-791-diez-canciones-feministas-de-los-90-s
+[35%] 291 ok, 4 skip, 140 fail — p-790-noel-gallagher-todos-los-caminos-son-buenos-si-no-sabe
+[35%] 292 ok, 4 skip, 140 fail — p-789-matt-bellamy-de-muse-lanza-cryosleep
+[35%] 293 ok, 4 skip, 140 fail — p-788-novedades-tom-morello-surfer-comadreja-birds-of-maya-d
+[35%] 294 ok, 4 skip, 140 fail — b90-classic-10-the-jury-kurt-cobain-y-mark-lanegan
+[35%] 295 ok, 4 skip, 140 fail — p-787-the-strokes-is-this-it
+[36%] 296 ok, 4 skip, 140 fail — p-786-cuando-green-day-no-eran-famosos
+[36%] 297 ok, 4 skip, 140 fail — p-785-entrevista-a-julio-ruiz
+[36%] 298 ok, 4 skip, 140 fail — p-784-sexy-sadie-butterflies-2021
+[36%] 299 ok, 4 skip, 140 fail — p-783-alguien-recuerda-a-terrorvision
+[36%] 300 ok, 4 skip, 140 fail — p-782-el-magnetismo-de-damon-albarn
+[36%] 301 ok, 4 skip, 140 fail — p-781-maud-the-moth-al-filo-del-abismo
+[36%] 302 ok, 4 skip, 140 fail — p-780-the-best-of-pixies-vol-1
+[36%] 303 ok, 4 skip, 140 fail — p-779-spinda-records-grados-minutos-segundos
+[36%] 304 ok, 4 skip, 140 fail — p-778-20-anos-del-origin-of-symmetry-muse
+[36%] 305 ok, 4 skip, 140 fail — p-777-cuando-dave-conocio-a-david
+[36%] 306 ok, 4 skip, 140 fail — p-776-noel-gallagher-s-high-flying-birds-back-the-way-we-cam
+[36%] 307 ok, 4 skip, 140 fail — b90-classic-9-tomorrow-never-knows-sigue-siendo-un-misterio
+[37%] 308 ok, 4 skip, 140 fail — p-775-r-e-m-up-1998
+[37%] 309 ok, 4 skip, 140 fail — p-774-yann-tiersen-y-el-fabuloso-destino-de-amelie-poulain
+[37%] 310 ok, 4 skip, 140 fail — p-773-diez-temazos-de-maika-makovski
+[37%] 311 ok, 4 skip, 140 fail — p-772-novedades-el-docu-de-dover-radio75-hickeys-musgo-the-c
+[37%] 312 ok, 4 skip, 140 fail — p-771-the-smile-thom-yorke-y-jonny-grennwood
+[37%] 313 ok, 4 skip, 140 fail — p-770-otro-oasis-fue-posible-andy-bell-y-gem-archer
+[37%] 314 ok, 4 skip, 140 fail — b90-classic-8-un-disparo-una-maldicion-una-leyenda-y-un-cuer
+[37%] 315 ok, 4 skip, 140 fail — p-769-extremoduro-agila-1996
+[37%] 316 ok, 4 skip, 140 fail — p-768-my-bloody-valentine-loveless-1991
+[37%] 317 ok, 4 skip, 140 fail — p-767-novedades-sprints-warish-keloidrop-giant-love-black-pi
+[37%] 318 ok, 4 skip, 140 fail — p-766-especial-later-with-jools-holland
+[37%] 319 ok, 4 skip, 140 fail — p-765-la-cara-b-de-los-90-parte-1
+[37%] 320 ok, 4 skip, 140 fail — p-764-canciones-que-haran-mejorar-tu-dia
+[38%] 321 ok, 4 skip, 140 fail — b90-classic-7-el-diablo-y-robert-johnson
+[38%] 322 ok, 4 skip, 140 fail — p-763-especial-deluxe-xoel-lopez
+[38%] 323 ok, 4 skip, 140 fail — p-762-el-disco-perdido-de-crispian-mills-kula-shaker-the-jee
+[38%] 324 ok, 4 skip, 140 fail — p-761-especial-the-jeevas
+[38%] 325 ok, 5 skip, 140 fail — p-759-the-prodigy-the-fat-of-the-land
+[38%] 326 ok, 5 skip, 140 fail — p-758-eric-s-trip-el-eterno-amor-adolescente
+[sin transcript] p-757-brass-against-the-machine
+[38%] 327 ok, 5 skip, 141 fail — p-756-buscando-versiones-de-los-beatles-con-j-f-leon
+[38%] 328 ok, 5 skip, 141 fail — b90-classic-6-la-primera-y-unica-vez-que-kurt-y-courtney-act
+[38%] 329 ok, 5 skip, 141 fail — p-755-red-moskito-una-de-las-mejores-bandas-tributo-a-pearl-
+[38%] 330 ok, 5 skip, 141 fail — p-754-la-amargura-sonora-de-codeine
+[39%] 331 ok, 5 skip, 143 fail — p-751-glitterhouse-records-el-sub-pop-europeo
+[39%] 332 ok, 5 skip, 143 fail — p-750-nadie-hace-versiones-como-nirvana
+[sin transcript] p-749-ray-loriga-heroes
+[sin transcript] p-746-mark-oliver-everett-eels-pincha-sus-canciones-favorita
+[sin transcript] p-745-manuel-cabezali-producciones-2020
+[sin transcript] p-743-the-wax-presentan-l-euforia
+[sin transcript] b90-classic-4-cuando-los-beatles-se-subieron-a-la-azotea
+[sin transcript] p-742-algunos-conciertos-inolvidables
+[sin transcript] p-741-courtney-love-renaciendo-de-las-cenizas
+[sin transcript] p-740-novedades-hermana-furia-bala-rheia-gorecki-astrobahn-b
+[sin transcript] p-739-the-smashing-pumpkins-madrid-1998-la-intrahistoria
+[sin transcript] p-738-especial-radio-3-parte-2
+[sin transcript] p-737-una-charla-muy-agradable-con-baits
+[sin transcript] p-736-la-entrevista-perdida-a-noel-gallagher-1997
+[sin transcript] p-735-axl-rose-vs-kurt-cobain
+[sin transcript] p-734-the-smashing-pumpkins-madrid-8-10-2000
+[sin transcript] p-733-especial-radio-3-parte-1
+[sin transcript] p-732-visitamos-el-crocodile-de-seattle
+[sin transcript] p-731-pagoda-michael-pitt-tras-el-eco-de-kurt-cobain
+[sin transcript] p-730-recordamos-magnolia-loto-de-rufus-t-firefly
+[sin transcript] p-728-pavement-para-dummies
+[sin transcript] p-727-sintiendo-caer-la-mierda-sobre-mi-canciones-para-el-bl
+[sin transcript] p-726-the-5-6-7-8-s-la-banda-que-enamoro-a-tarantino
+[sin transcript] p-725-the-chemical-brothers-dig-your-own-hole
+[sin transcript] p-724-especial-cyr-lo-ultimo-de-los-smashing-pumpkins
+[sin transcript] b90-classic-3-mis-covers-favoritos
+[sin transcript] p-723-visitamos-la-unica-fabrica-de-vinilos-de-madrid-mad-vi
+[sin transcript] p-722-recordando-el-get-born-de-jet
+[sin transcript] p-721-repasamos-el-kroq-almost-acoustic-christmas-festival-d
+[sin transcript] p-720-despedimos-el-ano-con-paco-perez-bryan
+[sin transcript] p-719-le-traste-presentan-cuadratura-vol-2-para-sembrar-lo-i
+[sin transcript] p-718-viajamos-hasta-seattle-para-hablar-con-tres-leches
+[sin transcript] p-717-spain-the-blue-moods-of-spain-1995
+[sin transcript] p-716-mark-lanegan-dark-mark-does-christmas-2020
+[sin transcript] p-683-homenaje-a-alain-johannes
+[sin transcript] programa-487-birkins-rinden-homenaje-a-ziggy-stardust
+[sin transcript] programa-486-entrevista-a-driive-y-the-crazy-nineties
+[sin transcript] programa-485-chris-cornell-i-am-the-highway-concierto-tribut
+[sin transcript] programa-484-soundgarden-showbox-seattle-2010
+[sin transcript] programa-483-sonic-youth-su-ultimo-concierto-en-nueva-york
+[sin transcript] programa-482-wild-dog-the-last-days-2018
+[sin transcript] prograna-481-the-last-internationale-soul-on-fire-2018
+[sin transcript] programa-480-tony-iommi-2000
+[sin transcript] programa-479-el-matinal-2-con-juan-de-pablos-the-special-cas
+[sin transcript] programa-478-los-mejores-solos-de-guitarra-de-los-anos-90
+[sin transcript] programa-477-fin-de-ano-con-paco-perez-bryan-y-los-beatles
+[sin transcript] programa-476-manuel-cabezali-producciones-2018
+[sin transcript] programa-475-la-navidad-y-el-rock-roll
+[sin transcript] programa-474-coldplay-a-head-full-of-dreams-el-documental
+[sin transcript] programa-473-el-matinal-1
+[sin transcript] programa-472-novedades-musicales-diciembre-2018
+[sin transcript] programa-471-jorge-vileilla-nos-explica-el-fenomeno-rock-fm
+[sin transcript] programa-470-nirvana-live-and-loud-pier-48
+[sin transcript] programa-469-manic-street-preachers-this-is-my-truth-tell-me
+[sin transcript] programa-468-veronica-underluxe-presentan-radio-terror
+[sin transcript] programa-467-gaz-coombes-supergrass
+[sin transcript] programa-466-especial-queen-parte-2
+[sin transcript] programa-465-lo-que-nadie-dice-del-ultimo-disco-de-smashing-
+[sin transcript] programa-462-con-javi-navarro-de-alt
+[sin transcript] programa-461-the-last-internationale-prepara-soul-on-fire
+[sin transcript] programa-460-novedades-nov-2018
+[sin transcript] programa-459-chris-cornell-la-caja-2018
+[sin transcript] programa-458-music-radar-clan
+[sin transcript] programa-454-oasis-this-is-history-6-don-t-believe-the-truth
+[sin transcript] programa-453-muse-simulation-theory-2018
+[sin transcript] programa-452-paul-mccartney-austin-city-limits-music-festiva
+[sin transcript] programa-451-gracias-pasajero
+[sin transcript] programa-450-julieta-jones-presenta-parkour-nights
+[sin transcript] programa-449-pill
+[sin transcript] programa-448-pat-smear
+[sin transcript] programa-447-sexy-sadie-it-s-beautiful-it-s-love-1998-2018
+[sin transcript] programa-446-john-lennon-imagine-el-libro
+[sin transcript] programa-445-pearl-jam-vs-25-anos
+[sin transcript] programa-444-thom-yorke-suspiria
+[sin transcript] programa-443-richard-ashcroft-natural-rebel
+[sin transcript] programa-442-sonic-youth-daydream-nation
+[sin transcript] programa-441-nirvana-cal-jam-fest
+[sin transcript] programa-440-paul-weller-true-meanings
+[sin transcript] programa-439-un-paseo-por-tokio
+[sin transcript] programa-438-john-lennon-imagine-the-ultimate-collection-201
+[sin transcript] programa-437-diez-anos-buscando-cintas
+[sin transcript] programa-436-homenaje-a-mad-season
+[sin transcript] programa-435-the-best-of-blur
+[sin transcript] programa-434-mudhoney-digital-garbage
+[sin transcript] programa-433-the-smashing-pumpkins-seattle-24-08-2018
+[sin transcript] programa-432-musica-para-viajar
+[sin transcript] los-conciertos-de-bienvenido-a-los-90
+[sin transcript] programa-430-kristen-pfaff
+[sin transcript] programa-429-la-banda-sonora-del-fin-del-milenio
+[sin transcript] programa-428-alice-in-chains-rainier-fog-2018
+[sin transcript] programa-427-radiohead-kid-a
+[sin transcript] programa-426-adios-aretha
+[sin transcript] programa-425-fantastic-negrito
+[sin transcript] programa-424-giants-in-the-trees-krist-novoselic
+[sin transcript] programa-423-dave-grohl-play
+[sin transcript] programa-isaac-gracie
+[sin transcript] programa-421-musica-del-subsuelo-espanol-2
+[sin transcript] programa-420-greta-van-fleet
+[sin transcript] programa-419-miles-kane
+[sin transcript] programa-418-sara-navarro
+[sin transcript] programa-417-virginia-diaz
+[sin transcript] programa-416-pinkpop-2018
+[sin transcript] programa-415-ricky-lavado
+[sin transcript] programa-414-talk-to-him
+[sin transcript] programa-413-resumen-del-mad-cool-2018
+[sin transcript] programa-412-pearl-jam-en-espana-2018
+[sin transcript] programa-411-the-last-internationale-live-2018
+[sin transcript] programa-410-nine-inch-nails-bad-witch-2018
+[sin transcript] programa-409-entrevista-no-dogs
+[sin transcript] programa-408-el-unico-concierto-de-jimi-hendrix-en-espana
+[sin transcript] programa-407-alice-in-chains-en-directo-2018
+[sin transcript] programa-406-mad-cool-2018-escenario-b90
+[sin transcript] programa-405-mad-cool-2018-sabado
+[sin transcript] programa-404-mad-cool-2018-viernes
+[sin transcript] programa-403-mad-cool-2018-jueves
+[sin transcript] programa-402-the-rebels-red-fox-music-y-el-underground
+[sin transcript] programa-401-thomas-andrew-doyle
+[sin transcript] programa-400-con-paco-perez-bryan
+[sin transcript] programa-399-simone
+[sin transcript] programa-398-lounge-grunge-music
+[sin transcript] programa-397-en-que-andan-metidos-muse
+[sin transcript] programa-396-el-directo-de-arctic-monkeys-en-2018
+[sin transcript] programa-395-furinyaki-records-studio
+[sin transcript] programa-394-chris-cornell-presenta-euphoria-mourning
+[sin transcript] programa-393-maria-rodes-2018
+[sin transcript] programa-392-truly
+[sin transcript] programa-391-liam-vs-noel
+[sin transcript] programa-390-billy-corgan-berlin-2017
+[sin transcript] programa-389-roger-waters-desert-trip-2016
+[sin transcript] programa-388-roger-waters
+[sin transcript] programa-387-musica-del-subsuelo-espanol-1
+[sin transcript] programa-386-un-ano-sin-chris-cornell
+[sin transcript] programa-385-las-camisetas-de-kurt-cobain
+[sin transcript] programa-384-novedades-de-jeff-ament-reef-th-booty-hunters
+[sin transcript] programa-383-inger-lorre
+[sin transcript] programa-382-arctic-monkeys-tranquility-base-hotel-casino-20
+[sin transcript] programa-381-kerouac-gut-derby
+[sin transcript] programa-380-el-underground-en-espana-en-los-90
+[sin transcript] programa-379-el-regreso-de-belly-melvins-y-rufus-t-firefly
+[sin transcript] programa-378-asi-conoci-a-las-estrellas-de-rock-malparaiso
+[sin transcript] programa-377-los-conciertos-de-radio-3-cumplen-20-anos
+[sin transcript] programa-376-post-grunge
+[sin transcript] programa-375-libros-musicales-y-dali
+[sin transcript] programa-374-eric-gales
+[sin transcript] programa-373-isaac-gracie-melancolia-infinita
+[sin transcript] programa-372-eels-presenta-the-deconstruction
+[sin transcript] programa-371-rufus-t-firefly-y-havalina-presentan-bandada
+[sin transcript] programa-370-entrevista-carlos-galan-subterfuge-records
+[sin transcript] programa-369-jean-benoit-dunckel-air
+[sin transcript] bienvenido-a-los-90-presenta-una-semana-en-el-motor-de-un-au
+[sin transcript] programa-364-los-planetas-una-semana-en-el-motor-de-un-autob
+[sin transcript] programa-365-los-planetas-una-semana-en-el-motor-de-un-autob
+[sin transcript] programa-366-los-planetas-una-semana-en-el-motor-de-un-autob
+[sin transcript] programa-367-los-planetas-una-semana-en-el-motor-de-un-autob
+[sin transcript] programa-368-los-planetas-una-semana-en-el-motor-de-un-autob
+[sin transcript] programa-363-jack-white-live-2018
+[sin transcript] programa-362-entrevista-a-pasajero
+[sin transcript] programa-361-entrevista-a-julio-ruiz-disco-grande-radio-3
+[sin transcript] programa-360-pearl-jam-vivir-de-las-rentas-de-seattle
+[sin transcript] programa-359-nirvana-en-busca-del-nevermind
+[sin transcript] programa-358-liam-gallagher-cigarrillos-y-alcohol
+[sin transcript] programa-357-jack-white-boarding-house-reach
+[sin transcript] los-conciertos-de-b90-rondo-y-victor-tarin
+[sin transcript] programa-355-entrevista-a-mordem
+[sin transcript] programa-354-metallica-en-espana-2018
+[sin transcript] programa-353-entrevista-a-lazaro
+[sin transcript] programa-352-the-sonics-22-feb-joy-eslava
+[sin transcript] programa-351-mike-mccready-of-potato-heads-and-polaroids
+[sin transcript] programa-350-the-breeders-all-nerve-2018
+[sin transcript] programa-349-alice-wonder-veronica-underluxe
+[sin transcript] programa-348-nada-surf-teatro-barcelo-madrid-feb-2018
+[sin transcript] programa-347-los-piratas-vigo
+[sin transcript] programa-346-sala-clamores
+[sin transcript] programa-345-jason-everman-nirvana-soundgarden-o-l-d-mind-fu
+[sin transcript] programa-344-vidal
+[sin transcript] programa-343-holy-bouncer
+[sin transcript] programa-342-daniel-arias-pasajero-zoo-nuevenoventaicinco
+[sin transcript] programa-341-el-regreso-de-the-smashing-pumpkins
+[sin transcript] programa-340-jeff-ament-de-montana-a-seattle
+[sin transcript] programa-339-metallica-wizink-center-madrid-3-febrero-2018
+[sin transcript] programa-338-singles-deluxe
+[sin transcript] programa-337-alain-johannes-unfinished-plan
+[sin transcript] programa-336-entrevista-a-lejoule
+[sin transcript] programa-335-metallica-en-los-90
+[sin transcript] programa-334-entrevista-a-psychodrome
+[sin transcript] programa-333-cronica-new-day-madrid-6-enero-2018
+[sin transcript] programa-332-elizabeth-cotten
+[sin transcript] programa-331-vinilos-rock-historia-subjetiva-del-rock
+[sin transcript] programa-329-mad-season-sonic-evolution
+[sin transcript] programa-330-lo-mejor-del-2017-tributo-a-john-lennon
+[sin transcript] programa-328-manu-cabezali-producciones-2017
+[sin transcript] programa-327-actualidad-musical-enero-2018
+[sin transcript] programa-326-lo-mejor-del-2017-ok-computer-revisited
+[sin transcript] programa-325-emision-desde-el-invernadero-con-brian-hunt
+[sin transcript] programa-324-mad-cool-2018
+[sin transcript] programa-323-adios-dolores-o-riordan
+[sin transcript] programa-322-jim-vieco-one
+[sin transcript] programa-321-automatics-amphetamine-discharge
+[sin transcript] programa-320-actualidad-musical-enero-2018
+[sin transcript] programa-319-nirvana-iv
+[sin transcript] programa-318-el-regreso-de-the-smashing-pumpkins-en-2018
+[sin transcript] programa-317-big-black-delta
+[sin transcript] programa-316-especial-magical-mystery-tour-con-paco-perez-br
+[sin transcript] programa-315-carlos-pina
+[sin transcript] programa-314-homenaje-a-radiohead-en-directo
+[sin transcript] programa-313-un-paseo-por-el-pop-el-folk-y-las-raices-de-mos
+[sin transcript] programa-312-tributo-a-john-lennon
+[sin transcript] programa-311-gallagher-vs-gallagher
+[sin transcript] programa-310-thurston-moore-en-madrid-homenaje-a-jeff-buckle
+[sin transcript] programa-309-noel-gallagher-who-built-the-moon
+[sin transcript] programa-308-25-anos-de-automatic-for-the-people-r-e-m
+[sin transcript] programa-307-incesticide-cumple-25-anos
+[sin transcript] programa-306-rondo-los-suspiros-de-ramallah
+[sin transcript] programa-305-kids-1995
+[sin transcript] programa-304-eddie-vedder-the-beatles
+[sin transcript] programa-303-smokers-die-young-the-rebels-bluestain
+[sin transcript] programa-300-con-paco-perez-bryan
+[sin transcript] programa-299-tom-petty
+[sin transcript] especial-liam-gallagher-as-you-were
+[sin transcript] programa-298-paco-soto
+[sin transcript] programa-297-el-fenomeno-fan-2-0
+[sin transcript] programa-296-dali-y-la-musica
+[sin transcript] programa-295-inicio-de-temporada-con-new-day
+[sin transcript] programa-294-foo-fighters-concrete-and-gold
+[sin transcript] programa-293-screaming-trees-mark-lanegan
+[sin transcript] programa-292-blind-melon-u2-the-gits-afghan-whigs-nin
+[sin transcript] programa-291-nirvana-visita-espana-1992
+[sin transcript] programa-290-en-las-tripas-de-ok-computer
+[sin transcript] programa-289-foo-fighters-madrid-2017
+[sin transcript] programa-288-moses-rubin-glastonbury-2017
+[sin transcript] programa-287-ok-computer-revisited
+[sin transcript] programa-286-la-cara-oculta-de-ok-computer
+[sin transcript] programa-285-el-grunge-en-2017
+[sin transcript] programa-284-un-mes-sin-chris-cornell
+[sin transcript] programa-283-radiohead-ok-computer-construyendo-un-mito
+[sin transcript] programa-282-radiohead-ok-computer
+[sin transcript] programa-281-eddie-vedder-amsterdam-2017
+[sin transcript] programa-280-jeff-buckley-chris-conell-eddie-vedder
+[sin transcript] programa-279-especial-chris-cornell
+[sin transcript] programa-278-chris-cornell
+[sin transcript] programa-277-especial-sigur-ros
+[sin transcript] programa-276-star-wars-40-anos
+[sin transcript] programa-275-dookie-vs-smash
+[sin transcript] programa-274-rufus-t-firefly-greatest-hits
+[sin transcript] programa-273-pearl-jam-entran-en-el-rock-roll-hall-of-fame
+[sin transcript] programa-272-pearl-jam-61-garage-mikelvas-the-hipsbreakers
+[sin transcript] programa-271-entrevista-new-day-los-planetas
+[sin transcript] programa-270-javier-alvarez-joan-queralt-the-seasicks
+[sin transcript] programa-269-depeche-mode
+[sin transcript] programa-268-cigar-box-guitars-spain
+[sin transcript] programa-267-20-anos-del-devil-came-to-me
+[sin transcript] programa-266-la-escena-indie-de-los-90-con-victor-calderon
+[sin transcript] programa-265-red-rocket-7-mike-allred
+[sin transcript] programa-264-pulp-fiction-b-s-o
+[sin transcript] programa-263-los-50-discos-favoritos-de-kurt-cobain
+[79%] 333 ok, 5 skip, 634 fail — programa-262-manuel-cabezali
+[sin transcript] programa-261-5-anos-de-emisiones
+[sin transcript] programa-260-the-beatles-sgt-pepper-s-lonely-hearts-club-ban
+[sin transcript] programa-259-bowie-en-los-90
+[sin transcript] programa-258-discos-que-en-2017-cumpliran-20-anos
+[sin transcript] programa-257-virginia-diaz-y-paco-perez-bryan
+[sin transcript] programa-256-arida-61-garage
+[sin transcript] programa-255-navidades-rock
+[79%] 334 ok, 5 skip, 641 fail — programa-254-john-lennon
+[sin transcript] programa-253-1991-the-year-punk-broke
+[sin transcript] programa-252-festimad-1996
+[sin transcript] programa-251-y-el-grunge-llego-a-europa-1989
+[sin transcript] programa-250-eterno-leonard-cohen
+[sin transcript] programa-249-temple-of-the-dog-live-2016
+[sin transcript] programa-248-james-bond-en-los-90
+[sin transcript] programa-247-omega-20-anos
+[sin transcript] programa-246-reedicion-be-here-now-oasis
+[sin transcript] programa-245-canciones-ocultas
+[sin transcript] programa-244-antes-del-britpop-the-verve
+[sin transcript] programa-243-temple-of-the-dog-25-anos
+[sin transcript] programa-242-drogas-y-rock-roll
+[sin transcript] programa-241-nevermind-25-anos
+[sin transcript] programa-240-de-4-a-3-cumple-25-anos
+[sin transcript] programa-239-inicio-nueva-temporada
+[sin transcript] programa-238-the-beatles-revolver-50-anos
+[sin transcript] programa-237-los-90-s-rinden-tributo
+[sin transcript] programa-236-riot-girls
+[sin transcript] programa-235-el-sonido-crudo-del-directo-de-radiohead-en-201
+[sin transcript] programa-234-patti-smith-en-madrid-dani-cabezas-implosiones
+[sin transcript] programa-233-the-sunday-drivers-por-dentro
+[sin transcript] programa-232-glastonbury-2016
+[sin transcript] programa-230-insitu-festival-2016
+[sin transcript] programa-231-neil-young-mad-cool-festival
+[sin transcript] programa-229-pearl-jam-vs
+[sin transcript] programa-228-brian-hunt-love-unlove
+[sin transcript] programa-227-radiohad-a-moon-shaped-pool-deluxe
+[sin transcript] programa-226-richard-ashcroft-paul-mccartney
+[sin transcript] programa-225-oasis-this-is-history-5-heathen-chemistry
+[82%] 335 ok, 5 skip, 670 fail — programa-224-oasis-this-is-history-4
+[sin transcript] programa-223-trainspotting-terminator-2-el-dia-de-la-marmota
+[82%] 336 ok, 5 skip, 671 fail — programa-222-muse-conquista-espana
+[sin transcript] programa-221-el-noveno-disco-de-radiohead
+[sin transcript] programa-220-veronica-underluxe
+[82%] 337 ok, 5 skip, 673 fail — programa-219-ratm-pj-harvey-richard-ashcroft-prince-candlebo
+[82%] 338 ok, 5 skip, 673 fail — programa-218-noel-gallagher-david-bowie
+[82%] 339 ok, 5 skip, 673 fail — programa-217-noel-gallagher-en-espana
+[82%] 340 ok, 5 skip, 673 fail — programa-216-nirvana-vs-guns-n-roses
+[82%] 341 ok, 5 skip, 673 fail — programa-215-venus-no-es
+[82%] 342 ok, 5 skip, 673 fail — programa-214-jeff-ament
+[sin transcript] programa-213-deep-six-c-z-records
+[sin transcript] programa-212-dia-internacional-de-la-mujer-george-martin
+[83%] 343 ok, 5 skip, 675 fail — programa-211-pearl-jam-vitalogy-1994
+[83%] 344 ok, 5 skip, 675 fail — programa-210-oasis-this-is-history-capitulo-3-be-here-now-19
+[83%] 345 ok, 5 skip, 675 fail — programa-209-kula-shaker-paradiso-2016
+[sin transcript] programa-208-kula-shaker-worthing-2016
+[83%] 346 ok, 5 skip, 676 fail — programa-207-kula-shaker-peasants-pigs-astronauts
+[sin transcript] programa-206-kula-shaker-k-2-0
+[sin transcript] programa-205-kula-shaker-los-inicios-hasta-k
+[sin transcript] programa-204-expediente-x-mad-cool-festival-penny-necklace
+[sin transcript] programa-203-ruido-nacional
+[sin transcript] programa-202-adios-bowie
+[sin transcript] programa-201-oasis-this-is-history-2-glastonbury-1995-be-her
+[84%] 347 ok, 5 skip, 682 fail — programa-200-fin-de-ano-con-paco-perez-bryan
+[sin transcript] programa-199-50-anos-de-pink-floyd
+[84%] 348 ok, 5 skip, 683 fail — programa-198-manuel-cabezali
+[84%] 349 ok, 5 skip, 683 fail — programa-197-scott-weiland
+[sin transcript] programa-196-sonic-youth-sao-paulo-14-nov-2011
+[sin transcript] programa-195-foo-fighters-canciller-1997
+[sin transcript] programa-194-jaime-g-soriano-caido-del-cielo
+[sin transcript] programa-193-especial-popular-1-con-bertha-m-yebra
+[84%] 350 ok, 5 skip, 687 fail — programa-192-la-musica-es-un-arma-de-conciliacion-masiva
+[sin transcript] programa-191-kurt-cobain-montage-of-heck-the-home-recordings
+[sin transcript] programa-190-joan-queralt-virgen
+[sin transcript] programa-189-especial-foo-fighters
+[sin transcript] programa-188-oasis-this-is-history-capitulo-1-the-rain-1990-
+[sin transcript] programa-187-r-e-m-en-los-90
+[sin transcript] programa-186-fiesta-de-rip-magazine-1991-carbono-14
+[sin transcript] programa-185-ocean-colour-scene
+[sin transcript] programa-183-mercromina
+[sin transcript] programa-182-eddie-vedder
+[sin transcript] programa-181-akira
+[sin transcript] programa-180-entrevista-charles-cross
+[sin transcript] programa-179-all-we-are-nirvana
+[sin transcript] programa-178-no-dogs-go-on
+[sin transcript] programa-177-especial-faith-no-more
+[sin transcript] programa-176-nirvana-mixes-demos-2015
+[sin transcript] programa-175-bruce-springsteen-en-los-90-parte2
+[sin transcript] programa-174-blur-en-benicassim-2015
+[sin transcript] programa-173-edi-clavo-electricidad-revisitada
+[sin transcript] programa-172-the-doors-50-anos
+[sin transcript] programa-171-the-beatles-en-madrid
+[sin transcript] programa-170-yay-insitu-festival
+[sin transcript] programa-169-neil-young-carbono-14
+[sin transcript] programa-168-the-beatles-white-album-parte2
+[sin transcript] programa-167-the-beatles-white-album-parte-1
+[sin transcript] programa-166-adios-standstill
+[sin transcript] programa-165-entrevista-a-rafa-cervera
+[sin transcript] programa-164-especial-acdc-con-paco-perez-bryan
+[sin transcript] programa-163-entrevista-a-loser
+[sin transcript] programa-162-neil-young-shakey
+[sin transcript] programa-161-un-paseo-por-seattle
+[sin transcript] programa-160-asesinos-natos-sweet-home-y-singles-con-angel-a
+[sin transcript] especial-alice-in-chains
+[sin transcript] especial-the-afghan-whigs
+[sin transcript] programa-159-bruce-springsteen-en-los-90-parte1
+[sin transcript] programa-especial-kurt-cobain-montage-of-heck
+[sin transcript] programa-158-montage-of-heck-y-cool
+[sin transcript] programa-157-the-sunday-drivers-little-heart-attacks-con-vir
+[sin transcript] programa-156-kurt-cobain
+[sin transcript] programa-155-air-moon-safari
+[sin transcript] programa-154-entrevista-a-felipe-sanz-de-la-rosa
+[sin transcript] programa-153-jeff-buckley
+[sin transcript] programa-152-entrevista-a-rafa-cervera
+[sin transcript] programa-151-kim-gordon-la-chica-del-grupo
+[sin transcript] programa-150-noel-gallagher-chasing-yesterday
+[sin transcript] programa-149-kurt-cobain-cumple-48-anos
+[sin transcript] programa-148-metropol-sorry-all-over-the-place
+[sin transcript] programa-147-pasajero-nos-presentan-parque-de-atracciones
+[sin transcript] programa-146-pearl-jam-self-pollution-radio-1995
+[sin transcript] programa-145-especial-adore-the-smashing-pumpkins
+[sin transcript] programa-144-pearl-jam-moline-2014
+[sin transcript] programa-143-entrevista-a-virginia-diaz
+[sin transcript] programa-142-paco-perez-bryan
+[sin transcript] programa-141-le-traste-royal-bustards
+[sin transcript] programa-140-las-navidades-de-pearl-jam
+[sin transcript] programa-139-el-cine-de-los-90-con-angel-agudo
+[sin transcript] programa-138-h-y-las-rocanrol-viejas
+[sin transcript] programa-137-joaquin-luqui-y-nirvana
+[sin transcript] programa-136-foo-fighters-sonic-highways
+[sin transcript] programa-135-the-magic-numbers
+[sin transcript] programa-134-oasis-what-s-the-story-morning-glory
+[sin transcript] programa-133-krist-novoselic
+[sin transcript] programa-132-mike-watt-ball-hog-or-tugboat
+[sin transcript] programa-131-neil-young-pearl-jam-mirror-ball
+[sin transcript] programa-130-entrevista-a-charles-r-cross
+[sin transcript] programa-129-oasis-definitely-maybe
+[sin transcript] programa-128-el-sonido-seattle-en-2014
+[sin transcript] programa-127-seattle-en-los-90
+[sin transcript] programa-125-morir-a-los-27
+[sin transcript] programa-124-portishead-18-de-julio-2014-madrid
+[sin transcript] programa-123-manic-street-preachers
+[sin transcript] programa-122-eels-en-madrid-y-glastonbury-2014
+[sin transcript] programa-121-michael-jackson-vicente-calderon-23-septiembre-
+[sin transcript] programa-120-pearl-jam-gira-europea-2014
+[sin transcript] programa-119-primavera-sound-2014-con-felipe-couselo
+[sin transcript] programa-118-paco-perez-bryan-the-rolling-stones-y-glastonbu
+[sin transcript] programa-117-entrevista-con-arida-jack-white-kasabian-nirvan
+[sin transcript] programa-116-yield-pearl-jam
+[sin transcript] programa-115-coldplay-parachutes-era
+[sin transcript] programa-114-especial-rolling-stones
+[sin transcript] programa-113-entrevista-con-parker
+[sin transcript] programa-112-especial-coachella-2014
+[sin transcript] programa-111-chris-barron-rick-vera
+[sin transcript] programa-110-layne-staley-jonathan-wilson-bush-the-birds-of-
+[sin transcript] programa-109-20-anos-nirvana
+[sin transcript] programa-108-expediente-x-doctor-en-alaska-y-es-mi-vida
+[sin transcript] programa-107-soundgarden-alice-in-chains-nirvana-61-garage-y
+[sin transcript] programa-106-mae
+[sin transcript] programa-105-los-planetas-una-semana-en-el-motor-de-un-autob
+[sin transcript] programa-104-the-doors-en-los-90
+[sin transcript] programa-103-61-garage-maika-makovski-no-dogs
+[sin transcript] programa-102-el-regreso-de-sexy-sadie-entrevista-con-johnny-
+[sin transcript] programa-101-nirvana-brazil-1993
+[sin transcript] programa-100-con-paco-perez-bryan
+[sin transcript] programa-99-no-dogs-beck-damon-albarn-foo-fighteres-eels-dew
+[sin transcript] programa-98-sucio-y-rapido-nirvana-sub-pop-sessions
+[sin transcript] programa-97-hora-y-media-con-le-traste
+[sin transcript] programa-96-lo-mejor-del-2013
+[sin transcript] b90-programa-95-the-smashing-pumpkins-mellon-collie-and-the-
+[sin transcript] programa-especial-the-beatles-ringo-starr
+[sin transcript] b90-programa-93-especial-paul-mccartney
+[sin transcript] programa-especial-the-beatles-george-harrison
+[sin transcript] programa-especial-the-beatles-john-lennon
+[sin transcript] b90-programa-90-foo-fighters-the-colour-and-the-shape
+[sin transcript] b90-programa-89-el-mapa-sonoro-de-una-generacion
+[sin transcript] b90-programa-88-pixies-en-madrid
+[sin transcript] programa-87-havalina-y-61-garage-half-records
+[sin transcript] b90-programa-86-felipe-couselo-the-smashing-pumpkins
+[sin transcript] b90-programa-85-metropol-y-tom-s-cabin
+[sin transcript] b90-programa-84-pearl-jam-lightning-bolt
+[sin transcript] b90-programa-83-pearl-jam-moby-the-chemical-brother-kings-of
+[sin transcript] b90-programa-82-diecisiete
+[93%] 351 ok, 5 skip, 799 fail — b90-programa-81-pearl-jam-desvela-sus-cartas
+[93%] 352 ok, 5 skip, 799 fail — b90-programa-80-final-de-temporada-2
+[sin transcript] b90-programa-79-vinilos-de-los-90
+[94%] 353 ok, 5 skip, 800 fail — b90-programa-78-tibetan-freedon-concert
+[sin transcript] b90-programa-77-el-cuervo
+[sin transcript] b90-programa-76-nirvana-in-utero-20th-anniversary
+[sin transcript] b90-programa-75
+[sin transcript] programa-74-creation-records
+[94%] 354 ok, 5 skip, 804 fail — programa-73-glastonbury-2013
+[94%] 355 ok, 5 skip, 804 fail — programa-72-especial-dover
+[94%] 356 ok, 5 skip, 804 fail — programa-71-especial-green-day
+[sin transcript] programa-70-canciones-olvidadas-de-los-90
+[94%] 357 ok, 5 skip, 805 fail — programa-69-green-day-offspring-weezer-fugazi-alice-in-chain
+[94%] 358 ok, 5 skip, 805 fail — b90-programa-68-optimus-primavera-sound-2013
+[sin transcript] b90-una-hora-con-standstill
+[sin transcript] programa-66-the-doors-stone-temple-pilots-qotsa-primal-screa
+[sin transcript] programa-65-especial-the-bleach
+[sin transcript] programa-64-rem-standstill-rodriguez-blur-dead-can-dance
+[sin transcript] programa-63-muse-beady-eye-nirvana-rhcp-standstill
+[sin transcript] programa-62-eels-beck-radiohead-eddie-vedder
+[sin transcript] programa-61-especial-julieta-jones
+[sin transcript] programa-60-eels-the-flaming-lips-julieta-jones-oasis-jeff-b
+[sin transcript] un-viaje-a-urano
+[sin transcript] programa-59-bush-nirvana-no-doubt-pearl-jam-the-smashing-pum
+[95%] 359 ok, 5 skip, 815 fail — programa-58-especial-cara-b
+[95%] 360 ok, 5 skip, 815 fail — programa-57-bruce-frederick-joseph-springsteen
+[95%] 361 ok, 5 skip, 815 fail — programa-56-la-musica-de-juanjo
+[sin transcript] programa-55-madchester
+[sin transcript] programa-54-rage-against-the-machine
+[sin transcript] programa-53-rodriguez-sugar-man
+[sin transcript] programa-52-atoms-for-peace-amok
+[sin transcript] programa-51-las-leyendas-nunca-mueren
+[sin transcript] programa-50-la-cocina-de-los-90
+[sin transcript] programa-49-the-matrix
+[96%] 362 ok, 5 skip, 822 fail — programa-48-pearl-jam-no-code
+[sin transcript] bienvenido-a-los-90-programa-47
+[96%] 363 ok, 5 skip, 823 fail — programa-46-12-12-12-concierto-para-los-afectados-de-sandy
+[sin transcript] programa-45-cuando-bowie-cumplio-los-50
+[sin transcript] programa-44-ultimo-programa-del-2012
+[sin transcript] programa-43-el-sonido-de-la-cocina-saludable
+[sin transcript] programa-42-john-lennon-parte2
+[sin transcript] programa-41-john-lennon-parte1
+[sin transcript] bienvenido-a-los-90-programa-40-vidal-the-singer-not-the-son
+[sin transcript] bienvenido-a-los-90-programa-39-coldplay-live-2012
+[sin transcript] bienvenido-a-los-90-programa-38-soundgarden-king-animal
+[sin transcript] bienvenido-a-los-90-programa-37-nirvana-mtv-unplugged-19-ano
+[sin transcript] bienvenido-a-los-90-programa-36-sub-pop-200
+[sin transcript] bienvenido-a-los-90-programa-35-muse-palacio-de-los-deporte-
+[sin transcript] programa-34-noel-gallagher-international-magic-live-at-the-o
+[sin transcript] bienvenido-a-los-90-programa-33-entrevista-a-felipe-couselo
+[sin transcript] bienvenido-a-los-90-programa-32-especial-the-verve
+[sin transcript] bienvenido-a-los-90-programa-31-48-horas-en-boimorto
+[sin transcript] bienvenido-a-los-90-programa-30-inicio-de-la-segunda-tempora
+[sin transcript] bienvenido-a-los-90-programa-29-fin-de-fiesta-con-rkdrano
+[sin transcript] bienvenido-a-los-90-programa-28-oasis-be-here-now-cumple-15-
+[sin transcript] bienvenido-a-los-90-programa-27-glastonbury
+[sin transcript] bienvenido-a-los-90-programa-26-indie-nacional
+[sin transcript] bienvenido-a-los-90-programa-25-especial-the-smashing-pumpki
+[sin transcript] bienvenido-a-los-90-programa-24-paco-perez-bryan
+[sin transcript] bienvenido-a-los-90-programa-23-tarantino-en-los-90-parte2
+[sin transcript] bienvenido-a-los-90-programa-22-la-importancia-de-llamarse-b
+[sin transcript] bienvenido-a-los-90-programa-21-mtv-unplugged
+[sin transcript] bienvenido-a-los-90-programa-20-con-quique-esteban-agusti
+[sin transcript] bienvenido-a-los-90-programa-19-el-oceano-pumpkins
+[sin transcript] bienvenido-a-los-90-programa-18-tarantino-en-los-90-parte1
+[sin transcript] bienvenido-a-los-90-programa-17-despedida-de-soltera
+[sin transcript] bienvenido-a-los-90-programa-16-yo-soy-la-morsa
+[sin transcript] bienvenido-a-los-90-programa-15-especial-pearl-jam
+[sin transcript] el-grito-de-chris-cornell
+[sin transcript] bienvenido-a-los-90-programa-14-los-hermanos-guerrero
+[sin transcript] bienvenido-a-los-90-programa-13-especial-nirvana
+[sin transcript] bienvenido-a-los-90-programa-12-hay-un-medico-en-la-sala
+[sin transcript] bienvenido-a-los-90-programa-11-el-fatidico-5-de-abril
+[sin transcript] bienvenido-a-los-90-programa-10-la-cancion-protesta
+[sin transcript] bienvenido-a-los-90-9-especial-radiohead
+[sin transcript] bienvenido-a-los-90-programa-8-entrevista-con-dear-prudence
+[sin transcript] bienvenido-a-los-90-7-el-efecto-stipe
+[sin transcript] bienvenido-a-los-90-6-especial-britpop
+[sin transcript] bienvenido-a-los-90-programa-5-entrevista-con-jaime-garcia-s
+[sin transcript] bienvenido-a-los-90-programa-4-la-inspiracion-de-mr-e
+[sin transcript] bienvenido-a-los-90-3-especial-foo-fighters
+[sin transcript] bienvenido-a-los-90-programa-2-richard-ashcroft-el-gentleman
+[sin transcript] bienvenido-a-los-90-programa-1-kurt-tuvo-la-culpa
+
+Fin: 363 descargadas, 5 ya existían, 870 sin transcript

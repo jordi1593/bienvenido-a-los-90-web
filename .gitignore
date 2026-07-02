@@ -6,5 +6,7 @@ node_modules/
 /episodios/
 /episodes-list.json
 /data/
+!/data/transcriptions/
 /sitemap.xml
 /robots.txt
+

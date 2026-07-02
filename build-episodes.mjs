@@ -396,6 +396,11 @@ function episodePage(ep, { prev, next, related, series }) {
   const canonical = pageUrl;
   const ivooxId = ivooxEpisodeId(ep);
 
+  const transcriptFile = ivooxId ? `data/transcriptions/${ivooxId}.txt` : null;
+  const transcriptText = transcriptFile && fs.existsSync(transcriptFile)
+    ? fs.readFileSync(transcriptFile, "utf8").trim()
+    : null;
+
   const bodyParagraphs = ep.paragraphs
     .map((p) => `<p>${linkifyText(escapeHtml(p))}</p>`)
     .join("\n      ");
@@ -446,7 +451,7 @@ function episodePage(ep, { prev, next, related, series }) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../styles.css?v=72" />
+<link rel="stylesheet" href="../styles.css?v=73" />
 
 <meta property="og:type" content="article" />
 <meta property="og:title" content="${escapeHtml(ep.title)}" />
@@ -522,6 +527,13 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
       <div class="episode-content">
       ${bodyParagraphs}
       </div>
+
+      ${transcriptText ? `
+      <details class="transcript-box">
+        <summary>Transcripción del audio</summary>
+        <p class="transcript-notice">Generada automáticamente por iVoox. Puede contener errores.</p>
+        <div class="transcript-text">${escapeHtml(transcriptText).replace(/\n\n/g, "</p><p>").replace(/\n/g, " ")}</div>
+      </details>` : ""}
 
       ${ep.labels.length ? `<div class="episode-tags">${ep.labels.map((l) => `<a href="../?label=${encodeURIComponent(l)}#episodios">${escapeHtml(l)}</a>`).join("")}</div>` : ""}
 
@@ -679,7 +691,7 @@ function buildEtiquetasPages(episodes) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../styles.css?v=72" />
+<link rel="stylesheet" href="../styles.css?v=73" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="${escapeHtml(title)}" />
 <meta property="og:description" content="${escapeHtml(description)}" />
@@ -753,7 +765,7 @@ ${footer}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../styles.css?v=72" />
+<link rel="stylesheet" href="../styles.css?v=73" />
 </head>
 <body>
   <nav class="topnav">
@@ -932,7 +944,7 @@ function buildFotosPage(episodesBySlug) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&family=Special+Elite&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=72" />
+<link rel="stylesheet" href="styles.css?v=73" />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Fotos — Bienvenido a los 90" />
