@@ -759,7 +759,7 @@ function buildFotosPage(episodesBySlug) {
 
   <main class="container">
     <h1 class="section-title font-brand">Fotos</h1>
-    <p class="photos-intro">Instantáneas de programas emblemáticos de Bienvenido a los 90.</p>
+    <p class="photos-intro">Instantáneas de algunos programas.</p>
     <div class="ep-grid">${groupsHtml}</div>
   </main>
 
