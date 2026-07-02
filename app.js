@@ -67,13 +67,34 @@ function highlightMatch(escapedText, query) {
 }
 
 function episodeCardHtml(ep) {
-  // Las tarjetas muestran la miniatura en una caja de 140px; 320px da
-  // margen de sobra para pantallas retina sin pedir una imagen sobredimensionada.
   const cover = ep.thumbnail
     ? ep.thumbnail.replace("/s72-c/", "/s320/")
     : "";
   const pageUrl = `episodios/${ep.slug}.html`;
   const query = state.search.trim();
+
+  if (ep.slug === "p-666-marilyn-manson-antichrist-superstar") {
+    return `
+      <article class="episode-card ep-card-cadillac">
+        <a class="ep-cadillac-top" href="${pageUrl}">
+          <span class="ep-cadillac-num">666</span>
+          <div class="ep-cadillac-circle-wrap">
+            <div class="ep-cadillac-circle">
+              ${cover ? `<img src="${cover}" alt="" loading="lazy" />` : ""}
+            </div>
+          </div>
+        </a>
+        <div class="episode-body">
+          <h2><a href="${pageUrl}">${highlightMatch(escapeHtml(ep.title), query)}</a></h2>
+          <div class="episode-meta">${formatDate(ep.published)}</div>
+          <div class="platform-links">
+            ${platformLinks(ep).map((p) => `<a class="icon-${p.icon}" href="${p.url}" target="_blank" rel="noopener" title="${p.label}" aria-label="${p.label}">${PLATFORM_ICONS[p.icon]}</a>`).join("")}
+          </div>
+        </div>
+      </article>
+    `;
+  }
+
   return `
     <article class="episode-card">
       <a class="episode-cover-link" href="${pageUrl}">
