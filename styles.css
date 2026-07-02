@@ -1487,6 +1487,48 @@ html:not([data-theme="dark"]) .social-btn {
     width: 110px;
     height: 110px;
   }
+
+  /* Punto 4: búsqueda y filtros compactos en móvil */
+  .controls {
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  #search {
+    flex: 1 1 100%;
+    font-size: 1rem;
+  }
+
+  #labelFilter {
+    flex: 1 1 100%;
+    font-size: 1rem;
+  }
+
+  .quick-tags {
+    gap: 0.4rem;
+  }
+
+  .quick-tag {
+    font-size: 0.78rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .result-count {
+    font-size: 0.8rem;
+  }
+
+  /* Punto 5: tipografía más legible en móvil */
+  body {
+    font-size: 1.05rem;
+  }
+
+  .episode-title {
+    font-size: 1rem;
+  }
+
+  .episode-meta {
+    font-size: 0.88rem;
+  }
 }
 
 .not-found {
