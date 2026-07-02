@@ -663,6 +663,7 @@ function buildFotosPage(episodesBySlug) {
     return new Date(b.ep.published) - new Date(a.ep.published);
   });
 
+  let globalPhotoIndex = 0;
   const groupsHtml = groups.map((group) => {
     const { ep } = group;
     const links = ep ? platformLinks(ep) : [];
@@ -670,27 +671,44 @@ function buildFotosPage(episodesBySlug) {
       ? `<div class="platform-links">${links.map((p) => `<a class="icon-${p.icon}" href="${p.url}" target="_blank" rel="noopener" title="${escapeHtml(p.label)}" aria-label="${escapeHtml(p.label)}">${PLATFORM_ICONS[p.icon]}</a>`).join("")}</div>`
       : "";
     const groupDate = group.photos.find((p) => p.date)?.date;
-    // Quitamos prefijos de serie (p.ej. "B90 - ") para que todos los
-    // títulos de grupo de la galería sigan el mismo formato "Programa N - ...".
     const groupTitle = PHOTO_GROUP_TITLE_OVERRIDES.get(group.episodeSlug)
       || (ep ? ep.title.replace(/^B90\s*-\s*/i, "") : group.episodeSlug);
     const titleHtml = (ep
       ? `<a href="episodios/${ep.slug}.html">${escapeHtml(groupTitle)}</a>`
-      : escapeHtml(groupTitle)) + (groupDate ? ` <span class="photo-group-date">— emitido el ${escapeHtml(groupDate)}</span>` : "");
-    const cards = group.photos.map((photo) => `
-      <figure class="photo-card">
-        <img src="${escapeHtml(photo.image)}" alt="${escapeHtml(photo.caption)}" loading="lazy" />
-        <figcaption>
-          <p class="photo-caption">${escapeHtml(photo.caption)}</p>
-        </figcaption>
-      </figure>`).join("");
+      : escapeHtml(groupTitle))
+      + (groupDate ? `<span class="stack-date"> — ${escapeHtml(groupDate)}</span>` : "");
+
+    const startIndex = globalPhotoIndex;
+    globalPhotoIndex += group.photos.length;
+
+    // Efecto pila: hasta 3 imágenes superpuestas (la primera foto queda encima)
+    const stackPhotos = group.photos.slice(0, 3);
+    const stackHtml = stackPhotos.slice().reverse().map((photo, i) => {
+      const cls = `stack-img stack-img-${stackPhotos.length - 1 - i}`;
+      const isBack = i < stackPhotos.length - 1;
+      return `<img class="${cls}" src="${escapeHtml(photo.image)}" alt="${isBack ? "" : escapeHtml(photo.caption)}"${isBack ? ' aria-hidden="true"' : ""} loading="lazy" />`;
+    }).join("\n      ");
+
+    const hiddenPhotos = group.photos.map((p) =>
+      `<img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.caption)}" />`).join("");
+
+    const countLabel = group.photos.length === 1 ? "1 foto" : `${group.photos.length} fotos`;
+
     return `
-    <section class="photo-group">
-      <h2 class="photo-group-title">${titleHtml}</h2>
-      ${linksHtml}
-      <div class="photos-grid">${cards}
+    <article class="stack-card">
+      <button class="stack-cover" type="button" data-start="${startIndex}" aria-label="Ver ${countLabel} de ${escapeHtml(groupTitle)}">
+        ${stackHtml}
+      </button>
+      <div class="stack-meta">
+        <h2 class="stack-title">${titleHtml}</h2>
+        ${linksHtml}
+        <div class="stack-footer">
+          <span class="stack-badge">${countLabel}</span>
+          <span class="stack-hint">Haz clic en la foto para ver</span>
+        </div>
       </div>
-    </section>`;
+      <div class="stack-photos" hidden>${hiddenPhotos}</div>
+    </article>`;
   }).join("");
 
   return `<!DOCTYPE html>
@@ -708,7 +726,7 @@ function buildFotosPage(episodesBySlug) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&family=Special+Elite&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=63" />
+<link rel="stylesheet" href="styles.css?v=66" />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Fotos — Bienvenido a los 90" />
@@ -752,7 +770,7 @@ function buildFotosPage(episodesBySlug) {
   <main class="container">
     <h1 class="section-title font-brand">Fotos</h1>
     <p class="photos-intro">Instantáneas de programas emblemáticos de Bienvenido a los 90.</p>
-    ${groupsHtml}
+    <div class="gallery-list">${groupsHtml}</div>
   </main>
 
   <div id="lightbox" class="lightbox" hidden>
@@ -789,7 +807,7 @@ function buildFotosPage(episodesBySlug) {
       var lightbox = document.getElementById("lightbox");
       var lightboxImg = document.getElementById("lightboxImg");
       var lightboxCaption = document.getElementById("lightboxCaption");
-      var allPhotos = Array.prototype.slice.call(document.querySelectorAll(".photo-card img"));
+      var allPhotos = Array.prototype.slice.call(document.querySelectorAll(".stack-photos img"));
       var currentIndex = -1;
       function showIndex(index) {
         currentIndex = (index + allPhotos.length) % allPhotos.length;
@@ -803,8 +821,10 @@ function buildFotosPage(episodesBySlug) {
         lightbox.hidden = true;
         lightboxImg.src = "";
       }
-      allPhotos.forEach(function (img, index) {
-        img.addEventListener("click", function () { showIndex(index); });
+      document.querySelectorAll(".stack-cover").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          showIndex(parseInt(btn.dataset.start, 10));
+        });
       });
       lightbox.addEventListener("click", function (e) {
         if (e.target === lightbox || e.target.classList.contains("lightbox-close")) closeLightbox();
