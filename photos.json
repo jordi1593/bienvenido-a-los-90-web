@@ -228,6 +228,24 @@
     "date": "20/11/2015"
   },
   {
+    "image": "fotos/271-amparo.jpg",
+    "caption": "Amparo",
+    "episodeSlug": "programa-271-entrevista-new-day-los-planetas",
+    "date": "30/03/2017"
+  },
+  {
+    "image": "fotos/271-new-day.jpg",
+    "caption": "New Day",
+    "episodeSlug": "programa-271-entrevista-new-day-los-planetas",
+    "date": "30/03/2017"
+  },
+  {
+    "image": "fotos/271-radio-utopia.jpg",
+    "caption": "Radio Utopía",
+    "episodeSlug": "programa-271-entrevista-new-day-los-planetas",
+    "date": "30/03/2017"
+  },
+  {
     "image": "fotos/284-craneon.jpg",
     "caption": "Craneón",
     "episodeSlug": "programa-284-un-mes-sin-chris-cornell",
