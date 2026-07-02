@@ -242,6 +242,17 @@ body {
   .nav-toggle {
     display: flex;
   }
+
+  /* Reordenar menú móvil: Escúchanos → Archivo Sonoro → Fotos → Aleatorio → Sobre Nosotros → Síguenos */
+  .topnav-links a[href="#escuchanos"]    { order: 1; }
+  .topnav-links a[href="#episodios"],
+  .topnav-links a[href="/#episodios"]    { order: 2; }
+  .topnav-links a[href="fotos.html"]     { order: 3; }
+  .topnav-links a[id="randomEpisodeBtn"] { order: 4; }
+  .topnav-links a[href="#sobre-nosotros"],
+  .topnav-links a[href="/#sobre-nosotros"] { order: 5; }
+  .topnav-links a[href="#sigue"],
+  .topnav-links a[href="/#sigue"]        { order: 6; }
 }
 
 /* Cabecera */
