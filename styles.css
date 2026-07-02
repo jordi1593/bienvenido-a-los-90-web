@@ -699,64 +699,6 @@ html:not([data-theme="dark"]) .platform-btn {
   gap: 1.25rem;
 }
 
-/* --- Tarjeta estilo Cadillac (prueba P.666) --- */
-.ep-card-cadillac {
-  flex-direction: column;
-  gap: 0;
-  overflow: hidden;
-  border-radius: 12px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-}
-.ep-cadillac-top {
-  display: block;
-  position: relative;
-  background: #1a0a0a;
-  padding: 1.25rem 1.25rem 0;
-  text-decoration: none;
-}
-.ep-cadillac-num {
-  position: absolute;
-  top: 0.25rem;
-  left: 0.75rem;
-  font-size: 5.5rem;
-  font-weight: 900;
-  font-style: italic;
-  line-height: 1;
-  color: rgba(255, 93, 133, 0.88);
-  letter-spacing: -0.04em;
-  z-index: 2;
-  pointer-events: none;
-  font-family: Georgia, serif;
-}
-.ep-cadillac-circle-wrap {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 1rem;
-  position: relative;
-  z-index: 1;
-}
-.ep-cadillac-circle {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 3px solid rgba(255, 93, 133, 0.3);
-  background: #2a0a1a;
-}
-.ep-cadillac-circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
-  filter: grayscale(30%) contrast(1.05);
-}
-.ep-cadillac-top:hover .ep-cadillac-circle img {
-  filter: grayscale(0%) contrast(1.1);
-}
-.ep-card-cadillac .episode-body {
-  padding: 0.9rem 1rem 1rem;
-}
 
 .episode-cover-link {
   position: relative;
