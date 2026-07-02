@@ -84,6 +84,8 @@
 }
 
 * { box-sizing: border-box; }
+:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 html { scroll-behavior: smooth; }
 
@@ -622,9 +624,8 @@ html:not([data-theme="dark"]) .platform-btn {
   font-family: var(--font-body);
 }
 
-#search:focus,
-#labelFilter:focus {
-  outline: none;
+#search:focus-visible,
+#labelFilter:focus-visible {
   border-color: var(--accent);
 }
 
