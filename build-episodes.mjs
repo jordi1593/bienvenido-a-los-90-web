@@ -589,16 +589,231 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 `;
 }
 
-function buildSitemap(episodes) {
+const ETIQUETAS_MIN_EPISODES = 5;
+const ETIQUETAS_DIR = "etiquetas";
+
+function labelSlug(label) {
+  return label.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+function buildEtiquetasPages(episodes) {
+  const EXCLUDED = new Set([
+    "podcast", "podcast en español", "radio", "radio utopia", "radio utopía",
+    "subterfuge radio", "madrid", "ivoox", "radioutopia", "bienvenido a los 90",
+    "bienvenido a lo 90", "bienvenidoalos90", "castellano", "descarga", "seattle",
+  ]);
+
+  const labelMap = new Map();
+  episodes.forEach((ep) => {
+    (ep.labels || []).forEach((label) => {
+      if (EXCLUDED.has(label.toLowerCase())) return;
+      if (!labelMap.has(label)) labelMap.set(label, []);
+      labelMap.get(label).push(ep);
+    });
+  });
+
+  const qualifying = [...labelMap.entries()]
+    .filter(([, eps]) => eps.length >= ETIQUETAS_MIN_EPISODES)
+    .sort((a, b) => b[1].length - a[1].length);
+
+  fs.mkdirSync(ETIQUETAS_DIR, { recursive: true });
+
+  const footer = `  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-tagline">Bienvenido a los 90 · Podcast independiente de música · Conectando personas desde 2012 · <a href="/privacidad.html">Privacidad y cookies</a></p>
+    </div>
+  </footer>`;
+
+  qualifying.forEach(([label, eps]) => {
+    const slug = labelSlug(label);
+    const pageUrl = `${SITE_URL}/etiquetas/${slug}.html`;
+    const title = `${label} — ${eps.length} episodios | Bienvenido a los 90`;
+    const description = `Todos los episodios del podcast Bienvenido a los 90 dedicados a ${label}: análisis, entrevistas y retrospectivas.`;
+    const sorted = [...eps].sort((a, b) => new Date(b.published) - new Date(a.published));
+
+    const jsonLd = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: title,
+      description,
+      url: pageUrl,
+      isPartOf: { "@type": "WebSite", name: "Bienvenido a los 90", url: SITE_URL },
+    });
+
+    const breadcrumbLd = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Inicio", item: `${SITE_URL}/` },
+        { "@type": "ListItem", position: 2, name: "Etiquetas", item: `${SITE_URL}/etiquetas/` },
+        { "@type": "ListItem", position: 3, name: label, item: pageUrl },
+      ],
+    });
+
+    const episodesHtml = sorted.map((ep) => {
+      const thumb = cardThumbnail(ep.thumbnail);
+      const date = ep.published ? new Date(ep.published).toLocaleDateString("es-ES", { year: "numeric", month: "long", day: "numeric" }) : "";
+      return `<article class="episode-card">
+        <a class="episode-cover-link" href="../episodios/${ep.slug}.html" tabindex="-1" aria-hidden="true">
+          ${thumb ? `<img class="episode-cover-img" src="${escapeHtml(thumb)}" alt="" loading="lazy" />` : `<div class="episode-cover-img"></div>`}
+        </a>
+        <div class="episode-body">
+          <h2 class="episode-title"><a href="../episodios/${ep.slug}.html">${escapeHtml(ep.title.replace(/^B90\s*-\s*/i, ""))}</a></h2>
+          ${date ? `<p class="episode-date">${date}</p>` : ""}
+        </div>
+      </article>`;
+    }).join("\n");
+
+    const html = `<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<title>${escapeHtml(title)}</title>
+<link rel="icon" type="image/jpeg" href="../images/b90-logo-new.jpg" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" href="../images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
+<link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
+<meta name="description" content="${escapeHtml(description)}" />
+<link rel="canonical" href="${pageUrl}" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css?v=72" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="${escapeHtml(title)}" />
+<meta property="og:description" content="${escapeHtml(description)}" />
+<meta property="og:url" content="${pageUrl}" />
+<meta property="og:image" content="${SITE_URL}/images/og-home.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="${escapeHtml(title)}" />
+<meta name="twitter:description" content="${escapeHtml(description)}" />
+<script type="application/ld+json">${jsonLd}</script>
+<script type="application/ld+json">${breadcrumbLd}</script>
+</head>
+<body>
+  <nav class="topnav">
+    <div class="container topnav-inner">
+      <a class="brand" href="/" aria-label="Bienvenido a los 90">
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" />
+        <span>ienvenido a los 90</span>
+      </a>
+      <div class="topnav-links">
+        <a href="/#episodios">Episodios</a>
+        <a href="/#escuchanos">Escúchanos</a>
+        <a href="/#sobre-nosotros">Sobre Nosotros</a>
+        <a href="/#sigue">Síguenos</a>
+        <a href="../fotos.html">Fotos</a>
+        <a href="/#" id="randomEpisodeBtn">🎲 Episodio aleatorio</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" title="Cambiar tema" aria-label="Cambiar tema claro/oscuro">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8L6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:2rem;padding-bottom:3rem">
+    <nav class="breadcrumb" aria-label="Ruta de navegación" style="font-size:0.82rem;color:var(--text-dim);margin-bottom:1.5rem">
+      <a href="/">Inicio</a> › <a href="/etiquetas/">Etiquetas</a> › <span>${escapeHtml(label)}</span>
+    </nav>
+    <h1 class="section-title font-brand">${escapeHtml(label)}</h1>
+    <p style="color:var(--text-dim);margin-bottom:2rem">${eps.length} episodio${eps.length === 1 ? "" : "s"}</p>
+    <section class="episode-list">
+      ${episodesHtml}
+    </section>
+    <p class="back-link" style="margin-top:2rem"><a href="/">← Volver al inicio</a></p>
+  </main>
+
+${footer}
+
+  <script src="../nav.js?v=4" defer></script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c082acebb6434c21b4d7bc2ac95019c3"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>`;
+
+    fs.writeFileSync(path.join(ETIQUETAS_DIR, `${slug}.html`), html, "utf-8");
+  });
+
+  const indexHtml = `<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<title>Etiquetas — Bienvenido a los 90</title>
+<link rel="icon" type="image/jpeg" href="../images/b90-logo-new.jpg" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" href="../images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
+<meta name="description" content="Explora los episodios de Bienvenido a los 90 por artista o temática: Nirvana, Oasis, Pearl Jam, grunge, britpop y mucho más." />
+<link rel="canonical" href="${SITE_URL}/etiquetas/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css?v=72" />
+</head>
+<body>
+  <nav class="topnav">
+    <div class="container topnav-inner">
+      <a class="brand" href="/" aria-label="Bienvenido a los 90">
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" />
+        <span>ienvenido a los 90</span>
+      </a>
+      <div class="topnav-links">
+        <a href="/#episodios">Episodios</a>
+        <a href="/#escuchanos">Escúchanos</a>
+        <a href="/#sobre-nosotros">Sobre Nosotros</a>
+        <a href="/#sigue">Síguenos</a>
+        <a href="../fotos.html">Fotos</a>
+        <a href="/#" id="randomEpisodeBtn">🎲 Episodio aleatorio</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" title="Cambiar tema" aria-label="Cambiar tema claro/oscuro">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8L6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:2rem;padding-bottom:3rem">
+    <h1 class="section-title font-brand">Etiquetas</h1>
+    <p style="color:var(--text-dim);margin-bottom:2rem">Explora los episodios por artista o temática.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:0.6rem">
+      ${qualifying.map(([label, eps]) => `<a href="/etiquetas/${labelSlug(label)}.html" class="quick-tag">${escapeHtml(label)} <span style="opacity:0.6;font-size:0.75em">${eps.length}</span></a>`).join("\n      ")}
+    </div>
+  </main>
+
+${footer}
+
+  <script src="../nav.js?v=4" defer></script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c082acebb6434c21b4d7bc2ac95019c3"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>`;
+
+  fs.writeFileSync(path.join(ETIQUETAS_DIR, "index.html"), indexHtml, "utf-8");
+
+  return qualifying;
+}
+
+function buildSitemap(episodes, etiquetas) {
   const urls = [
     { loc: `${SITE_URL}/`, priority: "1.0", image: `${SITE_URL}/images/b90-logo-new.jpg` },
     { loc: `${SITE_URL}/fotos.html`, priority: "0.5", image: `${SITE_URL}/images/og-home.png` },
+    { loc: `${SITE_URL}/etiquetas/`, priority: "0.6" },
+    ...etiquetas.map(([label]) => ({
+      loc: `${SITE_URL}/etiquetas/${labelSlug(label)}.html`,
+      priority: "0.6",
+    })),
     ...episodes.map((ep) => ({
       loc: `${SITE_URL}/episodios/${ep.slug}.html`,
       lastmod: ep.published.slice(0, 10),
       priority: "0.7",
-      // Mismo respaldo que el og:image: si el episodio no tiene miniatura
-      // propia, anunciamos el logo del podcast para esa página.
       image: bigThumbnail(ep.thumbnail) || `${SITE_URL}/images/b90-logo-new.jpg`,
     })),
   ];
@@ -870,7 +1085,8 @@ function main() {
     fs.writeFileSync(path.join(OUT_DIR, `${ep.slug}.html`), html, "utf-8");
   });
 
-  fs.writeFileSync("sitemap.xml", buildSitemap(episodes), "utf-8");
+  const etiquetas = buildEtiquetasPages(episodes);
+  fs.writeFileSync("sitemap.xml", buildSitemap(episodes, etiquetas), "utf-8");
   fs.writeFileSync("robots.txt", buildRobots(), "utf-8");
 
   // episodes.json incluye "paragraphs" (el cuerpo completo de cada episodio),

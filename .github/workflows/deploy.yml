@@ -37,6 +37,7 @@ jobs:
           cp -r fotos dist/
           cp -r episodios dist/
           cp -r data dist/
+          cp -r etiquetas dist/
           cp sitemap.xml robots.txt dist/
 
       - uses: actions/configure-pages@v5
