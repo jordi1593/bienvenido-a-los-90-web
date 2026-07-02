@@ -56,8 +56,24 @@ jobs:
       - id: deployment
         uses: actions/deploy-pages@v4
 
+  verify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Esperar propagación CDN
+        run: sleep 30
+
+      - name: Verificar web actualizada
+        run: |
+          HTTP=$(curl -s -o /dev/null -w "%{http_code}" https://bienvenidoalos90.com/fotos.html)
+          if [ "$HTTP" != "200" ]; then
+            echo "ERROR: fotos.html devolvió HTTP $HTTP"
+            exit 1
+          fi
+          echo "✅ Web accesible (HTTP 200)"
+
   notify-on-failure:
-    needs: [build, deploy]
+    needs: [build, deploy, verify]
     if: failure()
     runs-on: ubuntu-latest
     permissions:
