@@ -827,6 +827,14 @@ function buildFotosPage(episodesBySlug) {
         if (e.key === "ArrowLeft") showIndex(currentIndex - 1);
         if (e.key === "ArrowRight") showIndex(currentIndex + 1);
       });
+      var touchStartX = 0;
+      lightbox.addEventListener("touchstart", function (e) {
+        touchStartX = e.touches[0].clientX;
+      }, { passive: true });
+      lightbox.addEventListener("touchend", function (e) {
+        var dx = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(dx) > 40) showIndex(currentIndex + (dx < 0 ? 1 : -1));
+      }, { passive: true });
     })();
   </script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c082acebb6434c21b4d7bc2ac95019c3"}'></script><!-- End Cloudflare Web Analytics -->
