@@ -1041,8 +1041,42 @@ ${body}
 }
 
 function buildRobots() {
-  return `User-agent: *
-Allow: /
+  return `# robots.txt — Bienvenido a los 90
+# Estrategia: centrar el crawl budget en episodios y páginas de artistas.
+# El sitemap lista únicamente las URLs de valor; el resto se bloquea aquí.
+
+User-agent: *
+
+# Página legal sin valor SEO (ya lleva <meta name="robots" content="noindex">)
+Disallow: /privacidad.html
+
+# Archivos de texto de transcripciones: datos internos sin estructura HTML.
+# No aportan valor como páginas independientes y desperdician crawl budget.
+Disallow: /data/transcriptions/
+
+# Nota: /data/*.json queda accesible a propósito — Googlebot necesita
+# leer esos archivos para renderizar el JavaScript de la home y descubrir
+# los episodios. Están excluidos del sitemap, así que no se indexarán
+# como páginas, pero bloquearlos rompería el renderizado para Google.
+
+# Bots de IA que rastrean para entrenamiento (no aportan tráfico)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: peer39_crawler
+Disallow: /
 
 Sitemap: ${SITE_URL}/sitemap.xml
 `;
