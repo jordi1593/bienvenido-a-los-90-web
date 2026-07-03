@@ -537,7 +537,7 @@ function episodePage(ep, { prev, next, related, series, validEtiquetaLabels }) {
 <link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
 <meta name="description" content="${description}" />
 <link rel="canonical" href="${canonical}" />
-<link rel="stylesheet" href="../styles.css?v=75" />
+<link rel="stylesheet" href="../styles.css?v=76" />
 
 <meta property="og:type" content="article" />
 <meta property="og:title" content="${escapeHtml(ep.title)}" />
@@ -601,7 +601,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
       <p class="episode-meta">${formatDateLong(ep.published)} · ${ep.comments} comentario${ep.comments === 1 ? "" : "s"}</p>
       ${typeof ep.likes === "number" ? `<p class="episode-likes"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 20.5s-7.5-4.6-9.8-9.2C.5 7.8 2.3 4.5 5.8 4c2.1-.3 4.1.7 6.2 3 2.1-2.3 4.1-3.3 6.2-3 3.5.5 5.3 3.8 3.6 7.3-2.3 4.6-9.8 9.2-9.8 9.2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg> ${ep.likes}</p>` : ""}
 
-      ${ivooxId ? `<div class="ivoox-player"><iframe frameborder="0" allowfullscreen scrolling="no" height="200" style="width:100%;" src="https://www.ivoox.com/player_ej_${ivooxId}_4_1.html?c1=ed285e" loading="lazy" title="Reproductor de iVoox"></iframe></div>` : ""}
+      ${ivooxId ? `<div class="ivoox-player"><iframe frameborder="0" allowfullscreen scrolling="no" height="200" style="width:100%;" src="https://www.ivoox.com/player_ej_${ivooxId}_4_1.html?c1=ed285e" title="Reproductor de iVoox"></iframe></div>` : ""}
 
       ${!ivooxId && coverImage ? `<img class="episode-cover"
         src="${coverImage}"
@@ -927,7 +927,7 @@ function buildEtiquetasPages(episodes) {
 <link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
 <meta name="description" content="${escapeHtml(description)}" />
 <link rel="canonical" href="${pageUrl}" />
-<link rel="stylesheet" href="../styles.css?v=75" />
+<link rel="stylesheet" href="../styles.css?v=76" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="${escapeHtml(title)}" />
 <meta property="og:description" content="${escapeHtml(description)}" />
@@ -1001,7 +1001,7 @@ ${footer}
 <link rel="icon" type="image/png" href="../images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
 <meta name="description" content="Explora los episodios de Bienvenido a los 90 por artista o temática: Nirvana, Oasis, Pearl Jam, grunge, britpop y mucho más." />
 <link rel="canonical" href="${SITE_URL}/etiquetas/" />
-<link rel="stylesheet" href="../styles.css?v=75" />
+<link rel="stylesheet" href="../styles.css?v=76" />
 </head>
 <body>
   <nav class="topnav">
@@ -1244,7 +1244,8 @@ function buildFotosPage(episodesBySlug) {
 <link rel="icon" type="image/jpeg" href="images/b90-logo-new.jpg" media="(prefers-color-scheme: light)" />
 <link rel="icon" type="image/png" href="images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
 <link rel="apple-touch-icon" href="images/b90-logo-new.jpg" />
-<link rel="stylesheet" href="styles.css?v=75" />
+<link rel="stylesheet" href="styles.css?v=76" />
+<link rel="stylesheet" href="fotos.css?v=1" />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Fotos — Bienvenido a los 90" />
