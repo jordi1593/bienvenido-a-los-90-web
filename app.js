@@ -306,6 +306,9 @@ function applyFilters() {
     state.filtered.sort((a, b) => searchScore(b, terms) - searchScore(a, terms));
   } else if (activeFilter?.sort) {
     state.filtered.sort(activeFilter.sort);
+  } else if (state.label) {
+    const labelTerms = state.label.split(/[-\s]+/).filter(Boolean);
+    state.filtered.sort((a, b) => searchScore(b, labelTerms) - searchScore(a, labelTerms));
   }
   syncQuickTags();
   state.shown = 0;
