@@ -436,6 +436,31 @@ function episodePage(ep, { prev, next, related, series }) {
     ],
   };
 
+  const faqQuestions = [
+    {
+      q: `¿De qué trata el episodio "${ep.title}"?`,
+      a: metaDescription(ep.paragraphs),
+    },
+    ...(ep.ivooxLink ? [{
+      q: `¿Dónde puedo escuchar "${ep.title}"?`,
+      a: `Puedes escuchar este episodio en iVoox: ${ep.ivooxLink}`,
+    }] : []),
+    ...(ep.published ? [{
+      q: `¿Cuándo se emitió el episodio "${ep.title}"?`,
+      a: `Este episodio se emitió el ${formatDateLong(ep.published)}.`,
+    }] : []),
+  ];
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqQuestions.map(({ q, a }) => ({
+      "@type": "Question",
+      name: q,
+      acceptedAnswer: { "@type": "Answer", text: a },
+    })),
+  };
+
   return `<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -470,6 +495,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 <link rel="preload" as="image" href="${coverImage}" />
 <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 <script type="application/ld+json">${JSON.stringify(breadcrumbJsonLd)}</script>
+<script type="application/ld+json">${JSON.stringify(faqJsonLd)}</script>
 </head>
 <body>
   <nav class="topnav">
