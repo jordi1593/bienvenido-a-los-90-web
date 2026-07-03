@@ -1279,6 +1279,22 @@ html:not([data-theme="dark"]) .social-btn {
   margin-bottom: 1.5rem;
 }
 
+.breadcrumbs ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.breadcrumbs li + li::before {
+  content: "›";
+  margin-right: 0.25rem;
+  opacity: 0.5;
+}
+
 .breadcrumbs a {
   color: var(--text-dim);
   text-decoration: none;
@@ -1286,6 +1302,103 @@ html:not([data-theme="dark"]) .social-btn {
 
 .breadcrumbs a:hover {
   color: var(--accent);
+}
+
+.breadcrumbs [aria-current="page"] span {
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 30ch;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* ── Quizás también te interese ─────────────────────────────────────────── */
+.related-bottom {
+  margin: 3rem 0 2rem;
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+}
+
+.related-bottom-heading {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 1.25rem;
+}
+
+.related-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.related-bottom-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.18s, border-color 0.18s;
+}
+
+.related-bottom-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.related-bottom-card-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+}
+
+.related-bottom-card-img--placeholder {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: var(--surface-2, var(--bg));
+}
+
+.related-bottom-card-body {
+  padding: 0.75rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.related-bottom-card-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+.related-bottom-card-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.related-bottom-card:hover .related-bottom-card-title {
+  color: var(--accent);
+}
+
+.related-bottom-card-date {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .related-bottom-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .episode-page h1 {

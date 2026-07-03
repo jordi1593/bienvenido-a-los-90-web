@@ -400,7 +400,8 @@ function buildSeriesMap(allEpisodes) {
   return seriesBySlug;
 }
 
-function episodePage(ep, { prev, next, related, series }) {
+function episodePage(ep, { prev, next, related, series, validEtiquetaLabels }) {
+  const primaryLabel = ep.labels.find((l) => validEtiquetaLabels && validEtiquetaLabels.has(l)) || null;
   const description = escapeHtml(metaDescription(ep.paragraphs));
   // Algunos episodios muy antiguos no tienen miniatura propia; usamos el
   // logo del podcast como respaldo para que la vista previa al compartir
@@ -464,14 +465,17 @@ function episodePage(ep, { prev, next, related, series }) {
     } : {}),
   };
 
+  const breadcrumbItems = [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: `${SITE_URL}/` },
+    ...(primaryLabel
+      ? [{ "@type": "ListItem", position: 2, name: primaryLabel, item: `${SITE_URL}/etiquetas/${labelSlug(primaryLabel)}.html` }]
+      : [{ "@type": "ListItem", position: 2, name: "Episodios", item: `${SITE_URL}/#episodios` }]),
+    { "@type": "ListItem", position: 3, name: ep.title, item: pageUrl },
+  ];
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Inicio", item: `${SITE_URL}/` },
-      { "@type": "ListItem", position: 2, name: "Episodios", item: `${SITE_URL}/#episodios` },
-      { "@type": "ListItem", position: 3, name: ep.title, item: pageUrl },
-    ],
+    itemListElement: breadcrumbItems,
   };
 
   const faqQuestions = [
@@ -561,7 +565,15 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
   </nav>
 
   <main class="container episode-page">
-    <nav class="breadcrumbs"><a href="../">Episodios</a> / <span>${ep.number ? `#${ep.number}` : ""}</span></nav>
+    <nav class="breadcrumbs" aria-label="Ruta de navegación">
+      <ol>
+        <li><a href="../">Inicio</a></li>
+        ${primaryLabel
+          ? `<li><a href="../etiquetas/${labelSlug(primaryLabel)}.html">${escapeHtml(primaryLabel)}</a></li>`
+          : `<li><a href="../#episodios">Episodios</a></li>`}
+        <li aria-current="page"><span>${escapeHtml(ep.title)}</span></li>
+      </ol>
+    </nav>
 
     <div class="episode-page-layout">
     <article>
@@ -631,6 +643,28 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
       }).join("")}
     </aside>
     </div>
+
+    ${related.length ? `
+    <section class="related-bottom" aria-label="Episodios relacionados">
+      <h2 class="related-bottom-heading">Quizás también te interese escuchar…</h2>
+      <div class="related-bottom-grid">
+        ${related.map((r) => {
+          const relImage = cardThumbnail(r.thumbnail);
+          const relDate = r.published ? new Date(r.published).toLocaleDateString("es-ES", { year: "numeric", month: "long" }) : "";
+          const relLabel = r.labels && r.labels.find((l) => validEtiquetaLabels && validEtiquetaLabels.has(l));
+          return `<a class="related-bottom-card" href="${r.slug}.html">
+            ${relImage
+              ? `<img class="related-bottom-card-img" src="${relImage}" alt="" loading="lazy" width="320" height="213" />`
+              : `<div class="related-bottom-card-img related-bottom-card-img--placeholder"></div>`}
+            <div class="related-bottom-card-body">
+              ${relLabel ? `<span class="related-bottom-card-tag">${escapeHtml(relLabel)}</span>` : ""}
+              <p class="related-bottom-card-title">${escapeHtml(r.title)}</p>
+              ${relDate ? `<p class="related-bottom-card-date">${relDate}</p>` : ""}
+            </div>
+          </a>`;
+        }).join("")}
+      </div>
+    </section>` : ""}
 
     <nav class="episode-pager">
       ${prev ? `<a href="${prev.slug}.html">← ${escapeHtml(prev.title)}</a>` : "<span></span>"}
@@ -1311,12 +1345,32 @@ function main() {
 
   const seriesBySlug = buildSeriesMap(episodes);
 
+  // Labels con página de etiqueta propia (>= ETIQUETAS_MIN_EPISODES episodios)
+  // Necesario para que episodePage pueda construir breadcrumbs con enlace a la etiqueta.
+  const EXCLUDED_ETIQUETA = new Set([
+    "podcast", "podcast en español", "radio", "radio utopia", "radio utopía",
+    "subterfuge radio", "madrid", "ivoox", "radioutopia", "bienvenido a los 90",
+    "bienvenido a lo 90", "bienvenidoalos90", "castellano", "descarga", "seattle",
+  ]);
+  const labelCounts = new Map();
+  episodes.forEach((ep) => {
+    (ep.labels || []).forEach((label) => {
+      if (EXCLUDED_ETIQUETA.has(label.toLowerCase())) return;
+      labelCounts.set(label, (labelCounts.get(label) || 0) + 1);
+    });
+  });
+  const validEtiquetaLabels = new Set(
+    [...labelCounts.entries()]
+      .filter(([, c]) => c >= ETIQUETAS_MIN_EPISODES)
+      .map(([label]) => label)
+  );
+
   chronological.forEach((ep, i) => {
     const prev = i > 0 ? chronological[i - 1] : null;
     const next = i < chronological.length - 1 ? chronological[i + 1] : null;
     const related = getRelatedEpisodes(ep, episodes);
     const series = seriesBySlug.get(ep.slug) || null;
-    const html = episodePage(ep, { prev, next, related, series });
+    const html = episodePage(ep, { prev, next, related, series, validEtiquetaLabels });
     fs.writeFileSync(path.join(OUT_DIR, `${ep.slug}.html`), html, "utf-8");
   });
 
