@@ -87,24 +87,26 @@ function metaDescription(paragraphs) {
   return text;
 }
 
-function bigThumbnail(thumb) {
-  return thumb ? thumb.replace("/s72-c/", "/s640/") : null;
+// Reemplaza el parámetro de tamaño del CDN de Blogger (/sNNN/ o /sNNN-c/)
+// por el tamaño solicitado. crop=true añade el sufijo -c (recorte cuadrado).
+// El CDN sirve WebP automáticamente cuando el navegador lo anuncia en Accept.
+function thumbAtSize(thumb, size, crop = false) {
+  if (!thumb) return null;
+  const suffix = crop ? "-c" : "";
+  return thumb.replace(/\/s\d+(-c)?\//i, `/s${size}${suffix}/`);
 }
 
-// Las tarjetas de "relacionados" muestran la miniatura en una caja de
-// 140px; 320px da margen de sobra para pantallas retina sin pedir una
-// imagen sobredimensionada como hacía bigThumbnail (640px).
-function cardThumbnail(thumb) {
-  return thumb ? thumb.replace("/s72-c/", "/s320/") : null;
+// Genera el valor del atributo srcset para un conjunto de anchos (px).
+function imageSrcset(thumb, widths) {
+  if (!thumb) return null;
+  return widths.map((w) => `${thumbAtSize(thumb, w)} ${w}w`).join(", ");
 }
 
-// Recorte cuadrado de tamaño fijo (a diferencia de bigThumbnail, que respeta
-// el ratio original) para poder declarar siempre las mismas dimensiones en
-// las meta etiquetas og:image, lo que agiliza la vista previa al compartir
-// en redes sociales y WhatsApp.
-function ogThumbnail(thumb) {
-  return thumb ? thumb.replace("/s72-c/", "/s1200-c/") : null;
-}
+function bigThumbnail(thumb) { return thumbAtSize(thumb, 640); }
+function cardThumbnail(thumb) { return thumbAtSize(thumb, 320); }
+
+// Recorte cuadrado de tamaño fijo para og:image (vista previa en redes).
+function ogThumbnail(thumb) { return thumbAtSize(thumb, 1200, true); }
 
 // Variantes del nombre del programa y etiquetas de segmentos/colaboradores
 // recurrentes que no aportan información temática para relacionar episodios
@@ -583,7 +585,11 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 
       ${ivooxId ? `<div class="ivoox-player"><iframe frameborder="0" allowfullscreen scrolling="no" height="200" style="width:100%;" src="https://www.ivoox.com/player_ej_${ivooxId}_4_1.html?c1=ed285e" loading="lazy" title="Reproductor de iVoox"></iframe></div>` : ""}
 
-      ${!ivooxId && coverImage ? `<img class="episode-cover" src="${coverImage}" alt="${escapeHtml(ep.title)}" width="320" height="213" />` : ""}
+      ${!ivooxId && coverImage ? `<img class="episode-cover"
+        src="${coverImage}"
+        ${ep.thumbnail ? `srcset="${imageSrcset(ep.thumbnail, [320, 640, 960])}" sizes="(max-width: 680px) calc(100vw - 2rem), 640px"` : ""}
+        alt="${escapeHtml(ep.title)}"
+        width="640" height="427" />` : ""}
 
       <div class="episode-actions">
         <a class="primary" href="${ep.url}" target="_blank" rel="noopener">Ver en el blog original</a>
@@ -636,7 +642,14 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
         return `
         <a class="related-card" href="${r.slug}.html">
           <span class="episode-cover-link related-cover-link">
-            ${relImage ? `<img class="episode-cover-img" src="${relImage}" alt="" loading="lazy" width="320" height="213" />` : `<div class="episode-cover-img"></div>`}
+            ${relImage
+              ? `<img class="episode-cover-img"
+                  src="${relImage}"
+                  srcset="${imageSrcset(r.thumbnail, [160, 320, 480])}"
+                  sizes="(max-width: 480px) 45vw, 160px"
+                  alt="${escapeHtml(r.title)}"
+                  loading="lazy" width="320" height="213" />`
+              : `<div class="episode-cover-img"></div>`}
           </span>
           <span class="related-card-title">${escapeHtml(r.title)}</span>
         </a>`;
@@ -654,7 +667,12 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
           const relLabel = r.labels && r.labels.find((l) => validEtiquetaLabels && validEtiquetaLabels.has(l));
           return `<a class="related-bottom-card" href="${r.slug}.html">
             ${relImage
-              ? `<img class="related-bottom-card-img" src="${relImage}" alt="" loading="lazy" width="320" height="213" />`
+              ? `<img class="related-bottom-card-img"
+                  src="${relImage}"
+                  srcset="${imageSrcset(r.thumbnail, [320, 480, 640])}"
+                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  alt="${escapeHtml(r.title)}"
+                  loading="lazy" width="320" height="213" />`
               : `<div class="related-bottom-card-img related-bottom-card-img--placeholder"></div>`}
             <div class="related-bottom-card-body">
               ${relLabel ? `<span class="related-bottom-card-tag">${escapeHtml(relLabel)}</span>` : ""}
@@ -861,7 +879,14 @@ function buildEtiquetasPages(episodes) {
       const date = ep.published ? new Date(ep.published).toLocaleDateString("es-ES", { year: "numeric", month: "long", day: "numeric" }) : "";
       return `<article class="episode-card">
         <a class="episode-cover-link" href="../episodios/${ep.slug}.html" tabindex="-1" aria-hidden="true">
-          ${thumb ? `<img class="episode-cover-img" src="${escapeHtml(thumb)}" alt="" loading="lazy" width="320" height="213" />` : `<div class="episode-cover-img"></div>`}
+          ${thumb
+            ? `<img class="episode-cover-img"
+                src="${escapeHtml(thumb)}"
+                srcset="${imageSrcset(ep.thumbnail, [160, 320, 480])}"
+                sizes="(max-width: 480px) 45vw, 320px"
+                alt="${escapeHtml(ep.title.replace(/^B90\s*-\s*/i, ''))}"
+                loading="lazy" width="320" height="213" />`
+            : `<div class="episode-cover-img"></div>`}
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/${ep.slug}.html">${escapeHtml(ep.title.replace(/^B90\s*-\s*/i, ""))}</a></h2>
