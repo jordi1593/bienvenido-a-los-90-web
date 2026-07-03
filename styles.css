@@ -1392,6 +1392,17 @@ html:not([data-theme="dark"]) .social-btn {
   text-decoration: none;
 }
 
+.show-notes-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 1.5rem 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
 .artist-intro {
   font-size: 1rem;
   line-height: 1.75;

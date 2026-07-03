@@ -476,7 +476,7 @@ function episodePage(ep, { prev, next, related, series }) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../styles.css?v=74" />
+<link rel="stylesheet" href="../styles.css?v=75" />
 
 <meta property="og:type" content="article" />
 <meta property="og:title" content="${escapeHtml(ep.title)}" />
@@ -552,6 +552,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
       </div>
 
       <div class="episode-content">
+      ${ep.paragraphs.length > 1 ? `<h2 class="show-notes-heading">Notas del programa</h2>` : ""}
       ${bodyParagraphs}
       </div>
 
@@ -812,7 +813,7 @@ function buildEtiquetasPages(episodes) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../styles.css?v=74" />
+<link rel="stylesheet" href="../styles.css?v=75" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="${escapeHtml(title)}" />
 <meta property="og:description" content="${escapeHtml(description)}" />
@@ -888,7 +889,7 @@ ${footer}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../styles.css?v=74" />
+<link rel="stylesheet" href="../styles.css?v=75" />
 </head>
 <body>
   <nav class="topnav">
@@ -1067,7 +1068,7 @@ function buildFotosPage(episodesBySlug) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&family=Special+Elite&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=74" />
+<link rel="stylesheet" href="styles.css?v=75" />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Fotos — Bienvenido a los 90" />
