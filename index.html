@@ -43,7 +43,7 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
 .logo-dark{display:none}
 [data-theme="dark"] .logo-light{display:none}
 [data-theme="dark"] .logo-dark{display:block}
-.topnav-links{display:flex;gap:1.75rem}
+.topnav-links{display:flex;gap:1.75rem;list-style:none;margin:0;padding:0}
 .topnav-links a{color:var(--text);text-decoration:none;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;display:inline-flex;align-items:center;gap:.35em}
 .topnav-links a:hover{color:var(--accent)}
 .nav-toggle{display:none;align-items:center;justify-content:center;width:40px;height:40px;border:none;background:transparent;color:var(--text);cursor:pointer;padding:0}
@@ -60,8 +60,8 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
 [data-theme="dark"] .header-banner{position:relative;filter:drop-shadow(0 14px 32px rgba(0,0,0,0.65)) drop-shadow(0 0 18px rgba(255,93,133,0.12))}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 </style>
-<link rel="stylesheet" href="styles.css?v=80" media="print" onload="this.media='all'" />
-<noscript><link rel="stylesheet" href="styles.css?v=80" /></noscript>
+<link rel="stylesheet" href="styles.css?v=81" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="styles.css?v=81" /></noscript>
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Bienvenido a los 90 — Podcast de música de los 90 en español" />
@@ -103,21 +103,21 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
 </script>
 </head>
 <body>
-  <nav class="topnav">
+  <nav class="topnav" aria-label="Navegación principal">
     <div class="container topnav-inner">
-      <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+      <a class="brand" href="/" aria-label="Bienvenido a los 90 — Inicio">
+        <img class="brand-logo logo-light" src="images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
-      <div class="topnav-links">
-        <a href="#episodios">Episodios</a>
-        <a href="#escuchanos">Escúchanos</a>
-        <a href="#sobre-nosotros">Sobre Nosotros</a>
-        <a href="#sigue">Síguenos</a>
-        <a href="fotos.html">Fotos</a>
-        <a href="#" id="randomEpisodeBtn">🎲 Episodio aleatorio</a>
-      </div>
+      <ul class="topnav-links" role="list">
+        <li><a href="#episodios">Episodios</a></li>
+        <li><a href="#escuchanos">Escúchanos</a></li>
+        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+        <li><a href="#sigue">Síguenos</a></li>
+        <li><a href="fotos.html">Fotos</a></li>
+        <li><a href="#" id="randomEpisodeBtn" aria-label="Episodio aleatorio">🎲 <span aria-hidden="true">Episodio aleatorio</span></a></li>
+      </ul>
       <button class="theme-toggle" id="themeToggle" type="button" title="Cambiar tema" aria-label="Cambiar tema claro/oscuro">
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8L6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
@@ -159,7 +159,7 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
   <main id="episodios" class="container">
     <h2 class="section-title font-brand">Episodios</h2>
     <div class="episodes-layout">
-      <aside class="archive-widget">
+      <aside class="archive-widget" aria-label="Archivo Sonoro">
         <h3>Archivo Sonoro</h3>
         <div id="archiveTree"></div>
       </aside>
@@ -183,15 +183,15 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
           <button id="clearFilters" class="clear-filters" type="button" hidden>✕ Quitar filtros</button>
         </section>
 
-        <section id="episodeList" class="episode-list">
-          <article class="episode-card skeleton-card"><div class="skeleton-cover"></div><div class="skeleton-body"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-meta"></div><div class="skeleton-line skeleton-actions"></div></div></article>
-          <article class="episode-card skeleton-card"><div class="skeleton-cover"></div><div class="skeleton-body"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-meta"></div><div class="skeleton-line skeleton-actions"></div></div></article>
-          <article class="episode-card skeleton-card"><div class="skeleton-cover"></div><div class="skeleton-body"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-meta"></div><div class="skeleton-line skeleton-actions"></div></div></article>
-          <article class="episode-card skeleton-card"><div class="skeleton-cover"></div><div class="skeleton-body"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-meta"></div><div class="skeleton-line skeleton-actions"></div></div></article>
-          <article class="episode-card skeleton-card"><div class="skeleton-cover"></div><div class="skeleton-body"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-meta"></div><div class="skeleton-line skeleton-actions"></div></div></article>
-          <article class="episode-card skeleton-card"><div class="skeleton-cover"></div><div class="skeleton-body"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-meta"></div><div class="skeleton-line skeleton-actions"></div></div></article>
-          <article class="episode-card skeleton-card"><div class="skeleton-cover"></div><div class="skeleton-body"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-meta"></div><div class="skeleton-line skeleton-actions"></div></div></article>
-          <article class="episode-card skeleton-card"><div class="skeleton-cover"></div><div class="skeleton-body"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-meta"></div><div class="skeleton-line skeleton-actions"></div></div></article>
+        <section id="episodeList" class="episode-list" aria-label="Lista de episodios" aria-live="polite" aria-busy="true">
+          <article class="episode-card skeleton-card" aria-hidden="true"><div class="skeleton-cover"></div><div class="skeleton-body"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-meta"></div><div class="skeleton-line skeleton-actions"></div></div></article>
+          <article class="episode-card skeleton-card" aria-hidden="true"><div class="skeleton-cover"></div><div class="skeleton-body"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-meta"></div><div class="skeleton-line skeleton-actions"></div></div></article>
+          <article class="episode-card skeleton-card" aria-hidden="true"><div class="skeleton-cover"></div><div class="skeleton-body"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-meta"></div><div class="skeleton-line skeleton-actions"></div></div></article>
+          <article class="episode-card skeleton-card" aria-hidden="true"><div class="skeleton-cover"></div><div class="skeleton-body"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-meta"></div><div class="skeleton-line skeleton-actions"></div></div></article>
+          <article class="episode-card skeleton-card" aria-hidden="true"><div class="skeleton-cover"></div><div class="skeleton-body"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-meta"></div><div class="skeleton-line skeleton-actions"></div></div></article>
+          <article class="episode-card skeleton-card" aria-hidden="true"><div class="skeleton-cover"></div><div class="skeleton-body"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-meta"></div><div class="skeleton-line skeleton-actions"></div></div></article>
+          <article class="episode-card skeleton-card" aria-hidden="true"><div class="skeleton-cover"></div><div class="skeleton-body"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-meta"></div><div class="skeleton-line skeleton-actions"></div></div></article>
+          <article class="episode-card skeleton-card" aria-hidden="true"><div class="skeleton-cover"></div><div class="skeleton-body"><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-meta"></div><div class="skeleton-line skeleton-actions"></div></div></article>
         </section>
 
         <div id="loadMoreWrap" class="load-more-wrap">
@@ -270,7 +270,7 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
   </footer>
 
   <script src="nav.js?v=4" defer></script>
-  <script src="app.js?v=60" defer></script>
+  <script src="app.js?v=61" defer></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c082acebb6434c21b4d7bc2ac95019c3"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

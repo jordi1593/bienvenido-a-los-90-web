@@ -218,6 +218,9 @@ body {
 .topnav-links {
   display: flex;
   gap: 1.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .topnav-links a {
@@ -285,7 +288,7 @@ body {
     border-bottom: 1px solid var(--border);
   }
 
-  .topnav-links a:last-child {
+  .topnav-links li:last-child a {
     border-bottom: none;
   }
 
@@ -294,15 +297,15 @@ body {
   }
 
   /* Reordenar menú móvil: Escúchanos → Archivo Sonoro → Fotos → Aleatorio → Sobre Nosotros → Síguenos */
-  .topnav-links a[href="#escuchanos"]    { order: 1; }
-  .topnav-links a[href="#episodios"],
-  .topnav-links a[href="/#episodios"]    { order: 2; }
-  .topnav-links a[href="fotos.html"]     { order: 3; }
-  .topnav-links a[id="randomEpisodeBtn"] { order: 4; }
-  .topnav-links a[href="#sobre-nosotros"],
-  .topnav-links a[href="/#sobre-nosotros"] { order: 5; }
-  .topnav-links a[href="#sigue"],
-  .topnav-links a[href="/#sigue"]        { order: 6; }
+  .topnav-links li:has(a[href="#escuchanos"])    { order: 1; }
+  .topnav-links li:has(a[href="#episodios"]),
+  .topnav-links li:has(a[href="/#episodios"])    { order: 2; }
+  .topnav-links li:has(a[href="fotos.html"])     { order: 3; }
+  .topnav-links li:has(a[id="randomEpisodeBtn"]) { order: 4; }
+  .topnav-links li:has(a[href="#sobre-nosotros"]),
+  .topnav-links li:has(a[href="/#sobre-nosotros"]) { order: 5; }
+  .topnav-links li:has(a[href="#sigue"]),
+  .topnav-links li:has(a[href="/#sigue"])        { order: 6; }
 }
 
 /* Cabecera */

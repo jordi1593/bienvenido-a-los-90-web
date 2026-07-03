@@ -310,7 +310,9 @@ function applyFilters() {
   syncQuickTags();
   state.shown = 0;
   els.list.innerHTML = "";
+  els.list.setAttribute("aria-busy", "true");
   renderNextPage();
+  els.list.setAttribute("aria-busy", "false");
 }
 
 function renderNextPage() {
