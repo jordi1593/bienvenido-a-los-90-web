@@ -10,9 +10,10 @@ const SITE_URL = process.env.SITE_URL || "https://bienvenidoalos90.com";
 const OUT_DIR = "episodios";
 
 // Carga Google Fonts de forma asíncrona (no bloquea el renderizado).
-// El patrón preload+onload elimina el render-blocking que penaliza FCP/LCP.
+// media="print" hace que el navegador descargue la CSS sin aplicarla;
+// onload la activa al terminar. Más compatible que preload as="style".
 function fontAsync(href) {
-  return `<link rel="preload" href="${href}" as="style" onload="this.onload=null;this.rel='stylesheet'" />\n<noscript><link rel="stylesheet" href="${href}" /></noscript>`;
+  return `<link rel="stylesheet" href="${href}" media="print" onload="this.media='all';this.onload=null" />\n<noscript><link rel="stylesheet" href="${href}" /></noscript>`;
 }
 
 const PLATFORM_ICONS = {
@@ -544,7 +545,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
         <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <div class="topnav-links">
@@ -876,7 +877,7 @@ ${extraLd ? `<script type="application/ld+json">${extraLd}</script>` : ""}
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
         <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <div class="topnav-links">
@@ -941,7 +942,7 @@ ${fontAsync("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
         <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <div class="topnav-links">
