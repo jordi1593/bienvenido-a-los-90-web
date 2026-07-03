@@ -433,18 +433,34 @@ function episodePage(ep, { prev, next, related, series, validEtiquetaLabels }) {
       "bienvenido a los 90", "bienvenido a lo 90", "seattle"].includes(l.toLowerCase())
   );
 
+  // Número de episodio: campo explícito o extraído del slug (p.ej. "1131-...", "p-693-...", "programa-97-...")
+  const epNum = ep.number || (() => {
+    const m = ep.slug.match(/^(?:programa-|p-)?(\d{2,4})(?:-|$)/);
+    return m ? parseInt(m[1], 10) : null;
+  })();
+
   const episodeDesc = metaDescription(ep.paragraphs) ||
     "Episodio del podcast Bienvenido a los 90, música de los 90 en español.";
   const imageObject = ogThumb
     ? { "@type": "ImageObject", url: ogThumb, width: 1200, height: 1200 }
     : { "@type": "ImageObject", url: `${SITE_URL}/images/b90-logo-new.jpg`, width: 735, height: 735 };
 
+  // URLs de plataformas para sameAs (entity-linking entre plataformas)
+  const platformSameAs = [
+    ep.ivooxLink,
+    ep.spotifyLink,
+    ep.appleLink,
+    ep.amazonLink,
+  ].filter(Boolean);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "PodcastEpisode",
     name: ep.title,
+    ...(epNum != null ? { episodeNumber: epNum } : {}),
     datePublished: ep.published,
     url: pageUrl,
+    ...(platformSameAs.length ? { sameAs: platformSameAs } : {}),
     inLanguage: "es",
     description: episodeDesc,
     image: imageObject,
@@ -457,12 +473,14 @@ function episodePage(ep, { prev, next, related, series, validEtiquetaLabels }) {
       description: "Podcast de música de los años 90: pop, rock, dance y eurodance en español. Más de 1200 episodios desde 2012.",
       image: { "@type": "ImageObject", url: `${SITE_URL}/images/b90-logo-new.jpg`, width: 735, height: 735 },
       webFeed: "https://bienvenidoalos90.blogspot.com/feeds/posts/default",
+      creator: { "@type": "Person", name: "Roberto Martínez", url: "https://x.com/Rockisroll" },
     },
     ...(audioUrl ? {
       associatedMedia: {
         "@type": "AudioObject",
         contentUrl: audioUrl,
         encodingFormat: "audio/mpeg",
+        ...(transcriptText ? { transcript: transcriptText.slice(0, 500) } : {}),
       },
     } : {}),
   };
