@@ -968,17 +968,49 @@ ${footer}
 }
 
 function buildSitemap(episodes, etiquetas) {
+  const today = new Date().toISOString().slice(0, 10);
+  // El episodio más reciente marca el lastmod de la home y el índice de etiquetas
+  const latestEpisodeDate = episodes[0]?.published?.slice(0, 10) ?? today;
+
+  // Prioridad mayor para etiquetas de artistas conocidos (tienen intro curado)
+  const artistSlugs = new Set(Object.keys(ARTIST_DATA).map(labelSlug));
+
   const urls = [
-    { loc: `${SITE_URL}/`, priority: "1.0", image: `${SITE_URL}/images/b90-logo-new.jpg` },
-    { loc: `${SITE_URL}/fotos.html`, priority: "0.5", image: `${SITE_URL}/images/og-home.png` },
-    { loc: `${SITE_URL}/etiquetas/`, priority: "0.6" },
-    ...etiquetas.map(([label]) => ({
-      loc: `${SITE_URL}/etiquetas/${labelSlug(label)}.html`,
+    {
+      loc: `${SITE_URL}/`,
+      lastmod: latestEpisodeDate,
+      changefreq: "daily",
+      priority: "1.0",
+      image: `${SITE_URL}/images/b90-logo-new.jpg`,
+    },
+    {
+      loc: `${SITE_URL}/fotos.html`,
+      lastmod: today,
+      changefreq: "monthly",
+      priority: "0.5",
+      image: `${SITE_URL}/images/og-home.png`,
+    },
+    {
+      loc: `${SITE_URL}/etiquetas/`,
+      lastmod: latestEpisodeDate,
+      changefreq: "weekly",
       priority: "0.6",
-    })),
+    },
+    ...etiquetas.map(([label, eps]) => {
+      const slug = labelSlug(label);
+      const isArtist = artistSlugs.has(slug);
+      const newestEp = eps.sort((a, b) => new Date(b.published) - new Date(a.published))[0];
+      return {
+        loc: `${SITE_URL}/etiquetas/${slug}.html`,
+        lastmod: newestEp?.published?.slice(0, 10) ?? today,
+        changefreq: "weekly",
+        priority: isArtist ? "0.8" : "0.6",
+      };
+    }),
     ...episodes.map((ep) => ({
       loc: `${SITE_URL}/episodios/${ep.slug}.html`,
       lastmod: ep.published.slice(0, 10),
+      changefreq: "never",
       priority: "0.7",
       image: bigThumbnail(ep.thumbnail) || `${SITE_URL}/images/b90-logo-new.jpg`,
     })),
@@ -987,6 +1019,7 @@ function buildSitemap(episodes, etiquetas) {
   const body = urls.map((u) => `  <url>
     <loc>${u.loc}</loc>
     ${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ""}
+    <changefreq>${u.changefreq}</changefreq>
     <priority>${u.priority}</priority>
     ${u.image ? `<image:image><image:loc>${u.image}</image:loc></image:image>` : ""}
   </url>`).join("\n");
