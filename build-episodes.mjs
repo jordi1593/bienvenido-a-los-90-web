@@ -1009,8 +1009,8 @@ function buildSitemap(episodes, etiquetas) {
     }),
     ...episodes.map((ep) => ({
       loc: `${SITE_URL}/episodios/${ep.slug}.html`,
-      lastmod: ep.published.slice(0, 10),
-      changefreq: "never",
+      lastmod: (ep.updated || ep.published).slice(0, 10),
+      changefreq: "yearly",
       priority: "0.7",
       image: bigThumbnail(ep.thumbnail) || `${SITE_URL}/images/b90-logo-new.jpg`,
     })),

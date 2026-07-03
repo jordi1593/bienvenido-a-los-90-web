@@ -206,6 +206,7 @@ async function main() {
       slug,
       title,
       published: entry.published["$t"],
+      updated: entry.updated?.["$t"] ?? null,
       url,
       thumbnail: entry["media$thumbnail"] ? entry["media$thumbnail"].url : null,
       downloadLink: extractDownloadLink(contentHtml),
