@@ -66,17 +66,25 @@ function highlightMatch(escapedText, query) {
   return escapedText.replace(new RegExp(escapedQuery, "gi"), (m) => `<mark class="search-highlight">${m}</mark>`);
 }
 
+function thumbAtSize(thumb, size) {
+  return thumb.replace(/\/s\d+(-c)?\//i, `/s${size}/`);
+}
+
 function episodeCardHtml(ep) {
-  const cover = ep.thumbnail
-    ? ep.thumbnail.replace("/s72-c/", "/s320/")
-    : "";
   const pageUrl = `episodios/${ep.slug}.html`;
   const query = state.search.trim();
+  const thumb = ep.thumbnail ? ep.thumbnail.replace("/s72-c/", "/s320/") : "";
+  const coverImg = thumb
+    ? `<img class="episode-cover-img" src="${thumb}"
+        srcset="${thumbAtSize(thumb,160)} 160w, ${thumbAtSize(thumb,320)} 320w, ${thumbAtSize(thumb,480)} 480w"
+        sizes="(max-width:600px) 160px, 320px"
+        alt="" loading="lazy" width="320" height="213" />`
+    : `<div class="episode-cover-img"></div>`;
 
   return `
     <article class="episode-card">
       <a class="episode-cover-link" href="${pageUrl}">
-        ${cover ? `<img class="episode-cover-img" src="${cover}" alt="" loading="lazy" width="320" height="213" />` : `<div class="episode-cover-img"></div>`}
+        ${coverImg}
         <span class="episode-cover-overlay"></span>
       </a>
       <div class="episode-body">
