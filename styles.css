@@ -742,6 +742,8 @@ html:not([data-theme="dark"]) .platform-btn {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem 2rem;
+  min-height: 600px;
+  contain: layout;
 }
 
 .episode-card {
