@@ -405,23 +405,33 @@ function episodePage(ep, { prev, next, related, series }) {
     .map((p) => `<p>${linkifyText(escapeHtml(p))}</p>`)
     .join("\n      ");
 
+  const audioUrl = ivooxId ? `https://go.ivoox.com/rf/${ivooxId}` : ep.downloadLink;
+  const relevantLabels = (ep.labels || []).filter(l =>
+    !["podcast", "podcast en español", "radio", "radio utopia", "ivoox", "madrid",
+      "bienvenido a los 90", "bienvenido a lo 90", "seattle"].includes(l.toLowerCase())
+  );
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "PodcastEpisode",
     name: ep.title,
     datePublished: ep.published,
     url: pageUrl,
+    inLanguage: "es",
     description: metaDescription(ep.paragraphs),
     ...(image ? { image } : {}),
+    author: { "@type": "Person", name: "Roberto Martínez" },
+    ...(relevantLabels.length ? { keywords: relevantLabels.join(", ") } : {}),
     partOfSeries: {
       "@type": "PodcastSeries",
       name: "Bienvenido a los 90",
       url: SITE_URL,
     },
-    ...(ep.ivooxLink || ep.downloadLink ? {
+    ...(audioUrl ? {
       associatedMedia: {
-        "@type": "MediaObject",
-        contentUrl: ep.ivooxLink || ep.downloadLink,
+        "@type": "AudioObject",
+        contentUrl: audioUrl,
+        encodingFormat: "audio/mpeg",
       },
     } : {}),
   };
