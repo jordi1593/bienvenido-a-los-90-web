@@ -69,7 +69,8 @@
     "image": "fotos/97-le-traste-dani-cabezas.jpg",
     "caption": "Dani Cabezas",
     "episodeSlug": "programa-97-hora-y-media-con-le-traste",
-    "date": "09/01/2014"
+    "date": "09/01/2014",
+    "focalPoint": "65% 40%"
   },
   {
     "image": "fotos/97-le-traste-santi-talavera.jpg",
@@ -87,7 +88,8 @@
     "image": "fotos/102-johnny-card.jpg",
     "caption": "Johnny Card",
     "episodeSlug": "programa-102-el-regreso-de-sexy-sadie-entrevista-con-johnny-card-y-lovedivision",
-    "date": "13/02/2014"
+    "date": "13/02/2014",
+    "focalPoint": "35% 35%"
   },
   {
     "image": "fotos/102-love-division.jpg",
@@ -105,7 +107,8 @@
     "image": "fotos/128-sonido-seattle-aberdeen.jpg",
     "caption": "Aberdeen",
     "episodeSlug": "programa-128-el-sonido-seattle-en-2014",
-    "date": "18/09/2014"
+    "date": "18/09/2014",
+    "focalPoint": "65% 50%"
   },
   {
     "image": "fotos/128-sonido-seattle-presidents.jpg",
@@ -141,7 +144,8 @@
     "image": "fotos/147-pasajero-dani.webp",
     "caption": "Dani",
     "episodeSlug": "programa-147-pasajero-nos-presentan-parque-de-atracciones",
-    "date": "05/02/2015"
+    "date": "05/02/2015",
+    "focalPoint": "70% 35%"
   },
   {
     "image": "fotos/147-pasajero-edu.webp",
@@ -159,7 +163,8 @@
     "image": "fotos/161-paseo-seattle-singles.jpg",
     "caption": "Singles",
     "episodeSlug": "programa-161-un-paseo-por-seattle",
-    "date": "14/05/2015"
+    "date": "14/05/2015",
+    "focalPoint": "50% 65%"
   },
   {
     "image": "fotos/161-paseo-seattle-black-hole-sun.jpg",
@@ -195,7 +200,8 @@
     "image": "fotos/188-ernesto.jpg",
     "caption": "Ernesto y la mandanga",
     "episodeSlug": "programa-188-oasis-this-is-history-capitulo-1-the-rain-1990-glastonbury-1995",
-    "date": "24/10/2015"
+    "date": "24/10/2015",
+    "focalPoint": "75% 18%"
   },
   {
     "image": "fotos/188-morning-glory.jpg",
@@ -231,7 +237,8 @@
     "image": "fotos/270-joan-queralt-javier-alvarez-miriam.jpg",
     "caption": "Joan Queralt + Javier Álvarez + Miriam Faraj",
     "episodeSlug": "programa-270-javier-alvarez-joan-queralt-the-seasicks",
-    "date": "23/03/2017"
+    "date": "23/03/2017",
+    "focalPoint": "50% 40%"
   },
   {
     "image": "fotos/270-radio-utopia.jpg",
@@ -243,7 +250,8 @@
     "image": "fotos/271-amparo.jpg",
     "caption": "Amparo",
     "episodeSlug": "programa-271-entrevista-new-day-los-planetas",
-    "date": "30/03/2017"
+    "date": "30/03/2017",
+    "focalPoint": "55% 25%"
   },
   {
     "image": "fotos/271-new-day.jpg",
@@ -261,7 +269,8 @@
     "image": "fotos/284-craneon-seasons-chris-cornell.jpg",
     "caption": "Craneón - Seasons (Chris Cornell)",
     "episodeSlug": "programa-284-un-mes-sin-chris-cornell",
-    "date": "18/06/2017"
+    "date": "18/06/2017",
+    "focalPoint": "65% 28%"
   },
   {
     "image": "fotos/284-craneon.jpg",
