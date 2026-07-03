@@ -64,8 +64,22 @@ function formatDateLong(iso) {
 }
 
 function metaDescription(paragraphs) {
-  const text = paragraphs.find((p) => !/^espacio patrocinado por/i.test(p)) || "";
-  return text.length > 160 ? text.slice(0, 157).trimEnd() + "…" : text;
+  const SKIP = /^(espacio patrocinado|descarga el programa|escucha el programa|\+\s*info)/i;
+  const candidates = paragraphs.filter(p => !SKIP.test(p) && p.length > 20);
+  // Concatenar párrafos hasta alcanzar al menos 80 chars pero no más de 155
+  let text = "";
+  for (const p of candidates) {
+    const joined = text ? text + " " + p : p;
+    if (joined.length > 155) {
+      if (text.length >= 80) break;
+      text = joined.slice(0, 152).trimEnd() + "…";
+      break;
+    }
+    text = joined;
+    if (text.length >= 80) break;
+  }
+  if (text.length > 155) text = text.slice(0, 152).trimEnd() + "…";
+  return text;
 }
 
 function bigThumbnail(thumb) {
@@ -478,6 +492,8 @@ function episodePage(ep, { prev, next, related, series }) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
 <title>${escapeHtml(ep.title)} — Bienvenido a los 90</title>
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Roberto Martínez" />
 <link rel="icon" type="image/jpeg" href="../images/b90-logo-new.jpg" media="(prefers-color-scheme: light)" />
 <link rel="icon" type="image/png" href="../images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
 <link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
@@ -499,6 +515,7 @@ ${image ? `<meta property="og:image" content="${image}" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="${escapeHtml(ep.title)}" />
+<meta name="twitter:site" content="@Rockisroll" />
 <meta name="twitter:description" content="${description}" />
 ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 
@@ -815,6 +832,8 @@ function buildEtiquetasPages(episodes) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
 <title>${escapeHtml(title)}</title>
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Roberto Martínez" />
 <link rel="icon" type="image/jpeg" href="../images/b90-logo-new.jpg" media="(prefers-color-scheme: light)" />
 <link rel="icon" type="image/png" href="../images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
 <link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
@@ -830,6 +849,7 @@ function buildEtiquetasPages(episodes) {
 <meta property="og:url" content="${pageUrl}" />
 <meta property="og:image" content="${SITE_URL}/images/og-home.png" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Rockisroll" />
 <meta name="twitter:title" content="${escapeHtml(title)}" />
 <meta name="twitter:description" content="${escapeHtml(description)}" />
 <script type="application/ld+json">${jsonLd}</script>
