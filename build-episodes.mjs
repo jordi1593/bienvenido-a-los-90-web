@@ -425,6 +425,12 @@ function episodePage(ep, { prev, next, related, series }) {
       "bienvenido a los 90", "bienvenido a lo 90", "seattle"].includes(l.toLowerCase())
   );
 
+  const episodeDesc = metaDescription(ep.paragraphs) ||
+    "Episodio del podcast Bienvenido a los 90, música de los 90 en español.";
+  const imageObject = ogThumb
+    ? { "@type": "ImageObject", url: ogThumb, width: 1200, height: 1200 }
+    : { "@type": "ImageObject", url: `${SITE_URL}/images/b90-logo-new.jpg`, width: 735, height: 735 };
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "PodcastEpisode",
@@ -432,14 +438,17 @@ function episodePage(ep, { prev, next, related, series }) {
     datePublished: ep.published,
     url: pageUrl,
     inLanguage: "es",
-    description: metaDescription(ep.paragraphs),
-    ...(image ? { image } : {}),
+    description: episodeDesc,
+    image: imageObject,
     author: { "@type": "Person", name: "Roberto Martínez" },
     ...(relevantLabels.length ? { keywords: relevantLabels.join(", ") } : {}),
     partOfSeries: {
       "@type": "PodcastSeries",
       name: "Bienvenido a los 90",
       url: SITE_URL,
+      description: "Podcast de música de los años 90: pop, rock, dance y eurodance en español. Más de 1200 episodios desde 2012.",
+      image: { "@type": "ImageObject", url: `${SITE_URL}/images/b90-logo-new.jpg`, width: 735, height: 735 },
+      webFeed: "https://bienvenidoalos90.blogspot.com/feeds/posts/default",
     },
     ...(audioUrl ? {
       associatedMedia: {
