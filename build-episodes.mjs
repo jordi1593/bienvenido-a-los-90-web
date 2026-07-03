@@ -9,14 +9,10 @@ import path from "path";
 const SITE_URL = process.env.SITE_URL || "https://bienvenidoalos90.com";
 const OUT_DIR = "episodios";
 
-// Carga Google Fonts de forma asíncrona (no bloquea el renderizado).
-// media="print" hace que el navegador descargue la CSS sin aplicarla;
-// onload la activa al terminar. display=optional evita el font-swap que
-// generaba CLS: si la fuente no está en caché no hay intercambio visual.
-function fontAsync(href) {
-  const url = href.replace("display=swap", "display=optional");
-  return `<link rel="stylesheet" href="${url}" media="print" onload="this.media='all';this.onload=null" />\n<noscript><link rel="stylesheet" href="${url}" /></noscript>`;
-}
+// Fuentes auto-alojadas en /fonts/ — sin llamadas externas a Google Fonts.
+// Los @font-face están en styles.css; esta función ya no se usa pero se
+// conserva por si se necesita reintroducir fuentes externas en el futuro.
+function fontAsync(_href) { return ""; }
 
 const PLATFORM_ICONS = {
   ivoox: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13v-1a7 7 0 0 1 14 0v1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><rect x="3.2" y="13" width="4" height="6" rx="1.6" fill="currentColor"/><rect x="16.8" y="13" width="4" height="6" rx="1.6" fill="currentColor"/></svg>',
@@ -517,9 +513,6 @@ function episodePage(ep, { prev, next, related, series }) {
 <link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
 <meta name="description" content="${description}" />
 <link rel="canonical" href="${canonical}" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-${fontAsync("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap")}
 <link rel="stylesheet" href="../styles.css?v=75" />
 
 <meta property="og:type" content="article" />
@@ -857,9 +850,6 @@ function buildEtiquetasPages(episodes) {
 <link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
 <meta name="description" content="${escapeHtml(description)}" />
 <link rel="canonical" href="${pageUrl}" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-${fontAsync("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap")}
 <link rel="stylesheet" href="../styles.css?v=75" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="${escapeHtml(title)}" />
@@ -934,9 +924,6 @@ ${footer}
 <link rel="icon" type="image/png" href="../images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
 <meta name="description" content="Explora los episodios de Bienvenido a los 90 por artista o temática: Nirvana, Oasis, Pearl Jam, grunge, britpop y mucho más." />
 <link rel="canonical" href="${SITE_URL}/etiquetas/" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-${fontAsync("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap")}
 <link rel="stylesheet" href="../styles.css?v=75" />
 </head>
 <body>
@@ -1180,9 +1167,6 @@ function buildFotosPage(episodesBySlug) {
 <link rel="icon" type="image/jpeg" href="images/b90-logo-new.jpg" media="(prefers-color-scheme: light)" />
 <link rel="icon" type="image/png" href="images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
 <link rel="apple-touch-icon" href="images/b90-logo-new.jpg" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-${fontAsync("https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Space+Grotesk:wght@400;600;700&family=Special+Elite&display=swap")}
 <link rel="stylesheet" href="styles.css?v=75" />
 
 <meta property="og:type" content="website" />
