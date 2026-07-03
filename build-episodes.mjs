@@ -11,9 +11,11 @@ const OUT_DIR = "episodios";
 
 // Carga Google Fonts de forma asíncrona (no bloquea el renderizado).
 // media="print" hace que el navegador descargue la CSS sin aplicarla;
-// onload la activa al terminar. Más compatible que preload as="style".
+// onload la activa al terminar. display=optional evita el font-swap que
+// generaba CLS: si la fuente no está en caché no hay intercambio visual.
 function fontAsync(href) {
-  return `<link rel="stylesheet" href="${href}" media="print" onload="this.media='all';this.onload=null" />\n<noscript><link rel="stylesheet" href="${href}" /></noscript>`;
+  const url = href.replace("display=swap", "display=optional");
+  return `<link rel="stylesheet" href="${url}" media="print" onload="this.media='all';this.onload=null" />\n<noscript><link rel="stylesheet" href="${url}" /></noscript>`;
 }
 
 const PLATFORM_ICONS = {
