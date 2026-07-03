@@ -476,7 +476,7 @@ function episodePage(ep, { prev, next, related, series }) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../styles.css?v=73" />
+<link rel="stylesheet" href="../styles.css?v=74" />
 
 <meta property="og:type" content="article" />
 <meta property="og:title" content="${escapeHtml(ep.title)}" />
@@ -631,6 +631,82 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 const ETIQUETAS_MIN_EPISODES = 5;
 const ETIQUETAS_DIR = "etiquetas";
 
+// Datos curados para los artistas principales: intro SEO + sameAs Wikidata
+const ARTIST_DATA = {
+  "Nirvana": {
+    intro: "Nirvana fue la banda de grunge más influyente de los años 90. Formada en Aberdeen (Washington) en 1987 por Kurt Cobain, Krist Novoselic y Dave Grohl, revolucionaron el rock mundial con álbumes como Nevermind (1991) y In Utero (1993). En Bienvenido a los 90, el podcast de música de los 90 en español, dedicamos decenas de episodios a analizar su legado, sus discos y su impacto en la cultura popular.",
+    sameAs: "https://www.wikidata.org/wiki/Q11649",
+  },
+  "Pearl Jam": {
+    intro: "Pearl Jam es uno de los pilares del grunge y el rock alternativo de los 90. La banda de Seattle liderada por Eddie Vedder publicó Ten (1991), uno de los álbumes más vendidos de la década. En Bienvenido a los 90, el podcast de rock de los años 90 en español, analizamos en profundidad su discografía, sus directos y su trayectoria hasta hoy.",
+    sameAs: "https://www.wikidata.org/wiki/Q128736",
+  },
+  "Oasis": {
+    intro: "Oasis fue la banda de britpop más importante de los años 90. Los hermanos Gallagher —Liam y Noel— conquistaron el mundo con Definitely Maybe (1994) y (What's the Story) Morning Glory? (1995). En Bienvenido a los 90, el podcast de música de los 90 en español, dedicamos numerosos episodios a su historia, sus discos y la mítica rivalidad con Blur.",
+    sameAs: "https://www.wikidata.org/wiki/Q51752",
+  },
+  "The Smashing Pumpkins": {
+    intro: "The Smashing Pumpkins, liderados por Billy Corgan, definieron el rock alternativo de los 90 con discos como Siamese Dream (1993) y Mellon Collie and the Infinite Sadness (1995). En Bienvenido a los 90, el podcast de rock alternativo de los 90 en español, exploramos su sonido único que mezcla grunge, psicodelia y rock clásico.",
+    sameAs: "https://www.wikidata.org/wiki/Q27776",
+  },
+  "Radiohead": {
+    intro: "Radiohead es una de las bandas más aclamadas de los años 90 y del rock en general. Desde Pablo Honey (1993) hasta OK Computer (1997) y Kid A (2000), su evolución artística no tiene precedente. En Bienvenido a los 90, el podcast de música de los 90 en español, analizamos episodio a episodio la carrera de la banda de Oxford.",
+    sameAs: "https://www.wikidata.org/wiki/Q47565",
+  },
+  "Foo Fighters": {
+    intro: "Foo Fighters nació en 1994 cuando Dave Grohl, batería de Nirvana, decidió seguir adelante tras la muerte de Kurt Cobain. Con su debut homónimo y discos como The Colour and the Shape (1997), se convirtieron en una de las bandas de rock alternativo más grandes del mundo. En Bienvenido a los 90, el podcast de rock de los 90 en español, seguimos de cerca su historia.",
+    sameAs: "https://www.wikidata.org/wiki/Q106506",
+  },
+  "Soundgarden": {
+    intro: "Soundgarden fue una de las grandes bandas de grunge de Seattle. Con Chris Cornell al frente, publicaron obras maestras como Superunknown (1994) y Down on the Upside (1996). En Bienvenido a los 90, el podcast de música de los 90 en español, rendimos homenaje a su legado y analizamos su impacto en la historia del rock.",
+    sameAs: "https://www.wikidata.org/wiki/Q128917",
+  },
+  "The Beatles": {
+    intro: "The Beatles marcaron el siglo XX y su influencia sigue siendo omnipresente en la música de los años 90. En Bienvenido a los 90, el podcast de música de los 90 en español, abordamos su legado a través de los artistas y movimientos que inspiraron, así como los lanzamientos póstumos y las carreras en solitario de sus miembros.",
+    sameAs: "https://www.wikidata.org/wiki/Q1299",
+  },
+  "Kurt Cobain": {
+    intro: "Kurt Cobain, líder y compositor de Nirvana, es una de las figuras más icónicas de la música de los años 90. Su muerte en 1994 conmocionó al mundo y su legado sigue siendo estudiado y debatido décadas después. En Bienvenido a los 90, el podcast de rock de los 90 en español, dedicamos varios episodios a su vida, su obra y su impacto cultural.",
+    sameAs: "https://www.wikidata.org/wiki/Q2632",
+    type: "Person",
+  },
+  "Dave Grohl": {
+    intro: "Dave Grohl es uno de los músicos más queridos del rock: batería de Nirvana y fundador de Foo Fighters. Su carrera abarca más de tres décadas de rock alternativo. En Bienvenido a los 90, el podcast de música de los 90 en español, seguimos su trayectoria desde Seattle hasta convertirse en uno de los grandes del rock mundial.",
+    sameAs: "https://www.wikidata.org/wiki/Q44437",
+    type: "Person",
+  },
+  "Eddie Vedder": {
+    intro: "Eddie Vedder es la voz inconfundible de Pearl Jam y uno de los cantantes más emblemáticos del grunge y el rock de los 90. En Bienvenido a los 90, el podcast de música de los 90 en español, analizamos su carrera tanto con Pearl Jam como en solitario.",
+    sameAs: "https://www.wikidata.org/wiki/Q313013",
+    type: "Person",
+  },
+  "Noel Gallagher": {
+    intro: "Noel Gallagher, compositor y guitarrista de Oasis, es uno de los grandes autores del britpop y el rock de los 90. Sus canciones definieron una generación. En Bienvenido a los 90, el podcast de música de los 90 en español, seguimos tanto su etapa en Oasis como su carrera en solitario con High Flying Birds.",
+    sameAs: "https://www.wikidata.org/wiki/Q312783",
+    type: "Person",
+  },
+  "Liam Gallagher": {
+    intro: "Liam Gallagher, voz de Oasis, es uno de los frontmen más carismáticos del rock de los años 90. Su actitud, su voz y su imagen lo convirtieron en un icono del britpop. En Bienvenido a los 90, el podcast de música de los 90 en español, seguimos su trayectoria con Oasis, Beady Eye y en solitario.",
+    sameAs: "https://www.wikidata.org/wiki/Q312784",
+    type: "Person",
+  },
+  "Billy Corgan": {
+    intro: "Billy Corgan es el alma de The Smashing Pumpkins: compositor, guitarrista y líder de una de las bandas más influyentes del rock alternativo de los 90. En Bienvenido a los 90, el podcast de música de los 90 en español, exploramos su visión artística y el legado de la banda.",
+    sameAs: "https://www.wikidata.org/wiki/Q236909",
+    type: "Person",
+  },
+  "John Lennon": {
+    intro: "John Lennon, cofundador de The Beatles, sigue siendo una de las figuras más influyentes de la historia de la música. En Bienvenido a los 90, el podcast de música de los 90 en español, analizamos su influencia en los artistas y movimientos que definieron la década.",
+    sameAs: "https://www.wikidata.org/wiki/Q1203",
+    type: "Person",
+  },
+  "Paul Mccartney": {
+    intro: "Paul McCartney es uno de los compositores más prolíficos de la historia. Tras The Beatles, su carrera en solitario continuó en los años 90 con nuevos álbumes y giras memorables. En Bienvenido a los 90, el podcast de música de los 90 en español, cubrimos sus actuaciones y lanzamientos de esta época.",
+    sameAs: "https://www.wikidata.org/wiki/Q2599",
+    type: "Person",
+  },
+};
+
 function labelSlug(label) {
   return label.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
@@ -666,9 +742,27 @@ function buildEtiquetasPages(episodes) {
   qualifying.forEach(([label, eps]) => {
     const slug = labelSlug(label);
     const pageUrl = `${SITE_URL}/etiquetas/${slug}.html`;
-    const title = `${label} — ${eps.length} episodios | Bienvenido a los 90`;
-    const description = `Todos los episodios del podcast Bienvenido a los 90 dedicados a ${label}: análisis, entrevistas y retrospectivas.`;
+    const artistData = ARTIST_DATA[label] || null;
+    const title = artistData
+      ? `${label} — Podcast de música de los 90 en español | Bienvenido a los 90`
+      : `${label} — ${eps.length} episodios | Bienvenido a los 90`;
+    const description = artistData
+      ? `Escucha todos los episodios de Bienvenido a los 90 sobre ${label}. El podcast de música de los años 90 en español analiza su historia, discografía y legado.`
+      : `Todos los episodios del podcast Bienvenido a los 90 dedicados a ${label}: análisis, entrevistas y retrospectivas.`;
     const sorted = [...eps].sort((a, b) => new Date(b.published) - new Date(a.published));
+
+    const artistType = artistData?.type || "MusicGroup";
+    const extraLd = artistData ? JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": artistType,
+      name: label,
+      sameAs: artistData.sameAs,
+      subjectOf: {
+        "@type": "PodcastSeries",
+        name: "Bienvenido a los 90",
+        url: SITE_URL,
+      },
+    }) : null;
 
     const jsonLd = JSON.stringify({
       "@context": "https://schema.org",
@@ -718,7 +812,7 @@ function buildEtiquetasPages(episodes) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../styles.css?v=73" />
+<link rel="stylesheet" href="../styles.css?v=74" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="${escapeHtml(title)}" />
 <meta property="og:description" content="${escapeHtml(description)}" />
@@ -729,6 +823,7 @@ function buildEtiquetasPages(episodes) {
 <meta name="twitter:description" content="${escapeHtml(description)}" />
 <script type="application/ld+json">${jsonLd}</script>
 <script type="application/ld+json">${breadcrumbLd}</script>
+${extraLd ? `<script type="application/ld+json">${extraLd}</script>` : ""}
 </head>
 <body>
   <nav class="topnav">
@@ -761,6 +856,7 @@ function buildEtiquetasPages(episodes) {
       <a href="/">Inicio</a> › <a href="/etiquetas/">Etiquetas</a> › <span>${escapeHtml(label)}</span>
     </nav>
     <h1 class="section-title font-brand">${escapeHtml(label)}</h1>
+    ${artistData ? `<p class="artist-intro">${escapeHtml(artistData.intro)}</p>` : ""}
     <p style="color:var(--text-dim);margin-bottom:2rem">${eps.length} episodio${eps.length === 1 ? "" : "s"}</p>
     <section class="episode-list">
       ${episodesHtml}
@@ -792,7 +888,7 @@ ${footer}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../styles.css?v=73" />
+<link rel="stylesheet" href="../styles.css?v=74" />
 </head>
 <body>
   <nav class="topnav">
@@ -971,7 +1067,7 @@ function buildFotosPage(episodesBySlug) {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&family=Special+Elite&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=73" />
+<link rel="stylesheet" href="styles.css?v=74" />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Fotos — Bienvenido a los 90" />

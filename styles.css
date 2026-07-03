@@ -1392,6 +1392,16 @@ html:not([data-theme="dark"]) .social-btn {
   text-decoration: none;
 }
 
+.artist-intro {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-dim);
+  max-width: 72ch;
+  margin-bottom: 1.5rem;
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+}
+
 .transcript-box {
   margin: 1.75rem 0;
   border: 1px solid var(--border);
