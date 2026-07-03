@@ -1930,7 +1930,7 @@ html:not([data-theme="dark"]) .social-btn {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center center;
   transition: transform 0.2s ease;
 }
 
