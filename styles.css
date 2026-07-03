@@ -1266,16 +1266,20 @@ html:not([data-theme="dark"]) .social-btn {
   color: var(--accent);
 }
 
+/* Relacionados: sidebar en desktop, sección inferior en móvil */
+.related-bottom { display: none; }
 @media (max-width: 880px) {
   .episode-page-layout {
     grid-template-columns: 1fr;
   }
   .related-episodes {
     position: static;
+    display: none;
   }
   .related-episodes h3 {
     margin-top: 2rem;
   }
+  .related-bottom { display: block; }
 }
 
 .breadcrumbs {
