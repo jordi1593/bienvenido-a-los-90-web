@@ -273,11 +273,28 @@ function syncQuickTags() {
   });
 }
 
+function searchScore(ep, terms) {
+  if (!terms.length) return 0;
+  let score = 0;
+  const title = ep.title.toLowerCase();
+  const labels = ep.labels.map((l) => l.toLowerCase()).join(" ");
+  const summary = (ep.summary || "").toLowerCase();
+  terms.forEach((t) => {
+    if (title.includes(t)) score += 100;
+    if (labels.includes(t)) score += 10;
+    if (summary.includes(t)) score += 1;
+  });
+  return score;
+}
+
 function applyFilters() {
   const terms = state.search.trim().toLowerCase().split(/\s+/).filter(Boolean);
   const activeFilter = state.specialFilters.get(state.label);
   state.filtered = state.all.filter((ep) => {
-    const haystack = [ep.title, ep.summary, ...ep.labels].join(" ").toLowerCase();
+    const title = ep.title.toLowerCase();
+    const labels = ep.labels.map((l) => l.toLowerCase()).join(" ");
+    const summary = (ep.summary || "").toLowerCase();
+    const haystack = title + " " + labels + " " + summary;
     const matchesSearch = terms.length === 0 || terms.every((t) => haystack.includes(t));
     const matchesLabel = !state.label ||
       (activeFilter
@@ -285,7 +302,9 @@ function applyFilters() {
         : ep.labels.some((l) => normalizeLabel(l) === state.label));
     return matchesSearch && matchesLabel;
   });
-  if (activeFilter?.sort) {
+  if (terms.length) {
+    state.filtered.sort((a, b) => searchScore(b, terms) - searchScore(a, terms));
+  } else if (activeFilter?.sort) {
     state.filtered.sort(activeFilter.sort);
   }
   syncQuickTags();
