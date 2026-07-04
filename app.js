@@ -179,11 +179,9 @@ const MARATON_1995_SLUGS = new Set([
 const DISCOS_HOMENAJE_SLUGS = new Set([
   "p-814-homenaje-a-1991-el-ano-que-cambio-la-musica",
   "p-683-homenaje-a-alain-johannes",
-  "p-687-una-masterclass-noventera-con-alain-johannes",
   "1024-homenaje-a-dover",
   "b90-supernova-74-la-intrahistoria-del-homenaje-a-dover",
   "programa-528-homenaje-a-bob-dylan",
-  "p-600-desde-furinyaki-records-studio-con-gyoza-y-james-vieco-band",
   "p-886-homenaje-a-havalina",
   "programa-431-in-utero-25",
   "p-924-homenaje-a-mark-lanegan",
