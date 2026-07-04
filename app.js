@@ -336,12 +336,7 @@ function applyFilters() {
   } else if (activeFilter?.sort) {
     state.filtered.sort(activeFilter.sort);
   } else if (state.label) {
-    if (state.label === "Alice In Chains") {
-      state.filtered.sort((a, b) => labelScore(b, state.label) - labelScore(a, state.label));
-    } else {
-      const labelTerms = state.label.split(/[-\s]+/).filter(Boolean);
-      state.filtered.sort((a, b) => searchScore(b, labelTerms) - searchScore(a, labelTerms));
-    }
+    state.filtered.sort((a, b) => labelScore(b, state.label) - labelScore(a, state.label));
   }
   syncQuickTags();
   state.shown = 0;
