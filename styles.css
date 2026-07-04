@@ -1071,6 +1071,14 @@ html:not([data-theme="dark"]) .platform-btn {
   min-width: 0;
 }
 
+.about-short { display: none; }
+.about-long  { display: inline; }
+
+@media (max-width: 720px) {
+  .about-short { display: inline; }
+  .about-long  { display: none; }
+}
+
 .about-portrait {
   display: block;
   width: 160px;
