@@ -355,7 +355,7 @@ function getRelatedEpisodes(ep, allEpisodes) {
     return a.timeDiff - b.timeDiff;
   });
 
-  return scored.slice(0, 3).map((s) => s.ep);
+  return scored.slice(0, 6).map((s) => s.ep);
 }
 
 // Detecta especiales multi-parte por el título (p.ej. "... (Parte 2)") y
@@ -655,7 +655,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 
     <aside class="related-episodes">
       <h3>Relacionados</h3>
-      ${related.map((r) => {
+      ${related.slice(0, 3).map((r) => {
         const relImage = cardThumbnail(r.thumbnail);
         return `
         <a class="related-card" href="${r.slug}.html">
@@ -675,11 +675,11 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
     </aside>
     </div>
 
-    ${related.length ? `
+    ${related.length > 3 ? `
     <section class="related-bottom" aria-label="Episodios relacionados">
       <h2 class="related-bottom-heading">Quizás también te interese escuchar…</h2>
       <div class="related-bottom-grid">
-        ${related.map((r) => {
+        ${related.slice(3).map((r) => {
           const relImage = cardThumbnail(r.thumbnail);
           const relDate = r.published ? new Date(r.published).toLocaleDateString("es-ES", { year: "numeric", month: "long" }) : "";
           const relLabel = r.labels && r.labels.find((l) => validEtiquetaLabels && validEtiquetaLabels.has(l));
