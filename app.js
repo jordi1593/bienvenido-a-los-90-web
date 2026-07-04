@@ -302,6 +302,20 @@ function searchScore(ep, terms) {
   return score;
 }
 
+function labelScore(ep, label) {
+  const phrase = label.toLowerCase();
+  const title = ep.title.toLowerCase();
+  const summary = (ep.summary || "").toLowerCase();
+  let score = 0;
+  if (title.includes(phrase)) score += 500;
+  if (summary.includes(phrase)) score += 20;
+  // bonus por cada etiqueta del episodio que contenga la frase buscada
+  ep.labels.forEach((l) => {
+    if (l.toLowerCase().includes(phrase)) score += 50;
+  });
+  return score;
+}
+
 function applyFilters() {
   const terms = state.search.trim().toLowerCase().split(/\s+/).filter(Boolean);
   const activeFilter = state.specialFilters.get(state.label);
@@ -322,8 +336,12 @@ function applyFilters() {
   } else if (activeFilter?.sort) {
     state.filtered.sort(activeFilter.sort);
   } else if (state.label) {
-    const labelTerms = state.label.split(/[-\s]+/).filter(Boolean);
-    state.filtered.sort((a, b) => searchScore(b, labelTerms) - searchScore(a, labelTerms));
+    if (state.label === "Alice In Chains") {
+      state.filtered.sort((a, b) => labelScore(b, state.label) - labelScore(a, state.label));
+    } else {
+      const labelTerms = state.label.split(/[-\s]+/).filter(Boolean);
+      state.filtered.sort((a, b) => searchScore(b, labelTerms) - searchScore(a, labelTerms));
+    }
   }
   syncQuickTags();
   state.shown = 0;
