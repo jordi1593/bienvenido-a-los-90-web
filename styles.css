@@ -1275,8 +1275,9 @@ html:not([data-theme="dark"]) .social-btn {
   color: var(--accent);
 }
 
-/* Relacionados: sidebar en desktop, sección inferior en móvil */
-.related-bottom { display: none; }
+/* Relacionados: sidebar en desktop + sección inferior con episodios distintos.
+   En móvil solo se muestra la sección inferior. */
+.related-bottom { display: block; }
 @media (max-width: 880px) {
   .episode-page-layout {
     grid-template-columns: 1fr;
@@ -1288,7 +1289,6 @@ html:not([data-theme="dark"]) .social-btn {
   .related-episodes h3 {
     margin-top: 2rem;
   }
-  .related-bottom { display: block; }
 }
 
 .breadcrumbs {
