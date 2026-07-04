@@ -285,8 +285,28 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
     </div>
   </footer>
 
+  <div id="sticky-player" hidden role="region" aria-label="Reproductor">
+    <div id="sticky-progress" aria-hidden="true"></div>
+    <button id="sticky-play-btn" class="sticky-play-btn" aria-label="Pausar">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+    </button>
+    <div class="sticky-info">
+      <p id="sticky-title" class="sticky-title"></p>
+      <p id="sticky-sub" class="sticky-sub"></p>
+    </div>
+    <div class="sticky-controls">
+      <span id="sticky-time" class="sticky-time">0:00</span>
+      <input type="range" id="sticky-seek" class="sticky-seek" min="0" max="100" value="0" step="1" aria-label="Posición de reproducción">
+      <span id="sticky-dur" class="sticky-time">--:--</span>
+    </div>
+    <button id="sticky-close" class="sticky-close-btn" aria-label="Cerrar reproductor">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="16" height="16" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <audio id="sticky-audio" preload="none"></audio>
+  </div>
+
   <script src="nav.js?v=4" defer></script>
-  <script src="app.js?v=61" defer></script>
+  <script src="app.js?v=62" defer></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c082acebb6434c21b4d7bc2ac95019c3"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

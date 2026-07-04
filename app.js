@@ -70,10 +70,17 @@ function thumbAtSize(thumb, size) {
   return thumb.replace(/\/s\d+(-c)?\//i, `/s${size}/`);
 }
 
+function ivooxAudioUrl(ep) {
+  const link = ep.ivooxLink || ep.downloadLink || "";
+  const m = link.match(/rf[_/](\d+)/) || link.match(/ivoox\.com\/(\d+)$/);
+  return m ? `https://go.ivoox.com/rf/${m[1]}` : null;
+}
+
 function episodeCardHtml(ep) {
   const pageUrl = `episodios/${ep.slug}.html`;
   const query = state.search.trim();
   const thumb = ep.thumbnail ? ep.thumbnail.replace("/s72-c/", "/s320/") : "";
+  const audioUrl = ivooxAudioUrl(ep);
   const coverImg = thumb
     ? `<img class="episode-cover-img" src="${thumb}"
         srcset="${thumbAtSize(thumb,160)} 160w, ${thumbAtSize(thumb,320)} 320w, ${thumbAtSize(thumb,480)} 480w"
@@ -81,11 +88,21 @@ function episodeCardHtml(ep) {
         alt="" loading="lazy" width="320" height="213" />`
     : `<div class="episode-cover-img"></div>`;
 
+  const playBtn = audioUrl
+    ? `<button class="ep-play-btn" aria-label="Reproducir ${escapeHtml(ep.title)}"
+        data-audio="${audioUrl}"
+        data-title="${escapeHtml(ep.title)}"
+        data-meta="${escapeHtml(formatDate(ep.published))}">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M8 5.5l11 6.5-11 6.5z"/></svg>
+      </button>`
+    : "";
+
   return `
     <article class="episode-card">
       <a class="episode-cover-link" href="${pageUrl}">
         ${coverImg}
         <span class="episode-cover-overlay"></span>
+        ${playBtn}
       </a>
       <div class="episode-body">
         <h2><a href="${pageUrl}">${highlightMatch(escapeHtml(ep.title), query)}</a></h2>
@@ -502,3 +519,108 @@ async function init() {
 }
 
 init();
+
+// ── Sticky player ─────────────────────────────────────────────
+(function () {
+  const player  = document.getElementById("sticky-player");
+  const audio   = document.getElementById("sticky-audio");
+  const playBtn = document.getElementById("sticky-play-btn");
+  const closeBtn= document.getElementById("sticky-close");
+  const seek    = document.getElementById("sticky-seek");
+  const timeEl  = document.getElementById("sticky-time");
+  const durEl   = document.getElementById("sticky-dur");
+  const titleEl = document.getElementById("sticky-title");
+  const subEl   = document.getElementById("sticky-sub");
+  const progress= document.getElementById("sticky-progress");
+
+  const PLAY_ICON  = '<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M8 5.5l11 6.5-11 6.5z"/></svg>';
+  const PAUSE_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>';
+
+  let currentBtn = null;
+
+  function fmt(s) {
+    if (!isFinite(s)) return "--:--";
+    const m = Math.floor(s / 60);
+    const sec = Math.floor(s % 60);
+    return m + ":" + String(sec).padStart(2, "0");
+  }
+
+  function setPlayingCard(btn, isPlaying) {
+    if (currentBtn && currentBtn !== btn) {
+      currentBtn.classList.remove("playing");
+      currentBtn.setAttribute("aria-label", "Reproducir " + currentBtn.dataset.title);
+      currentBtn.innerHTML = PLAY_ICON.replace('width="18"','width="14"').replace('height="18"','height="14"').replace('M8 5.5l11 6.5-11 6.5z','M8 5.5l11 6.5-11 6.5z');
+    }
+    if (btn) {
+      btn.classList.toggle("playing", isPlaying);
+    }
+    currentBtn = isPlaying ? btn : null;
+  }
+
+  function updatePlayBtn() {
+    const paused = audio.paused;
+    playBtn.innerHTML = paused ? PLAY_ICON : PAUSE_ICON;
+    playBtn.setAttribute("aria-label", paused ? "Reproducir" : "Pausar");
+  }
+
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".ep-play-btn");
+    if (!btn) return;
+    e.preventDefault();
+
+    if (currentBtn === btn) {
+      audio.paused ? audio.play() : audio.pause();
+      return;
+    }
+
+    setPlayingCard(btn, true);
+    audio.src = btn.dataset.audio;
+    titleEl.textContent = btn.dataset.title;
+    subEl.textContent   = btn.dataset.meta;
+    player.hidden = false;
+    seek.value = 0;
+    progress.style.width = "0%";
+    timeEl.textContent = "0:00";
+    durEl.textContent  = "--:--";
+    audio.play().catch(() => {});
+  });
+
+  audio.addEventListener("play",  updatePlayBtn);
+  audio.addEventListener("pause", updatePlayBtn);
+
+  audio.addEventListener("loadedmetadata", () => {
+    durEl.textContent = fmt(audio.duration);
+    seek.max = Math.floor(audio.duration) || 100;
+  });
+
+  audio.addEventListener("timeupdate", () => {
+    if (!audio.duration) return;
+    const pct = (audio.currentTime / audio.duration) * 100;
+    seek.value = Math.floor(audio.currentTime);
+    progress.style.width = pct.toFixed(1) + "%";
+    timeEl.textContent = fmt(audio.currentTime);
+  });
+
+  audio.addEventListener("ended", () => {
+    setPlayingCard(null, false);
+    updatePlayBtn();
+    progress.style.width = "0%";
+  });
+
+  playBtn.addEventListener("click", () => {
+    audio.paused ? audio.play() : audio.pause();
+  });
+
+  seek.addEventListener("input", () => {
+    audio.currentTime = Number(seek.value);
+  });
+
+  closeBtn.addEventListener("click", () => {
+    audio.pause();
+    audio.src = "";
+    player.hidden = true;
+    setPlayingCard(null, false);
+    updatePlayBtn();
+    progress.style.width = "0%";
+  });
+})();
