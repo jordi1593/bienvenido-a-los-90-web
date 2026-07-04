@@ -300,6 +300,7 @@ body {
   .topnav-links li:has(a[href="#escuchanos"])    { order: 1; }
   .topnav-links li:has(a[href="#episodios"]),
   .topnav-links li:has(a[href="/#episodios"])    { order: 2; }
+
   .topnav-links li:has(a[href="fotos.html"])     { order: 3; }
   .topnav-links li:has(a[id="randomEpisodeBtn"]) { order: 4; }
   .topnav-links li:has(a[href="#sobre-nosotros"]),
