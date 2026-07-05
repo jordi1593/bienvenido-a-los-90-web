@@ -61,6 +61,8 @@
   --accent-2: #000000;
   --border: rgba(0, 0, 0, 0.15);
   --radius: 4px;
+  --radius-lg: 12px;
+  --radius-full: 999px;
   --spotify: #1db954;
   --ivoox: #ff6a13;
   --youtube: #ff0000;
@@ -411,7 +413,7 @@ body {
   gap: 0.65rem;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: var(--radius-lg);
   padding: 0.5rem 0.75rem 0.5rem 0.5rem;
   margin-bottom: 1.25rem;
   max-width: min(520px, 100%);
@@ -473,7 +475,7 @@ body {
   background: var(--accent);
   color: #fff;
   border: none;
-  border-radius: 99px;
+  border-radius: var(--radius-full);
   padding: 0.35rem 0.85rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -504,7 +506,7 @@ body {
   gap: 6px;
   background: var(--accent);
   color: #fff;
-  border-radius: 99px;
+  border-radius: var(--radius-full);
   padding: 0.65rem 1.5rem;
   font-size: 0.95rem;
   font-weight: 600;
@@ -667,20 +669,35 @@ html:not([data-theme="dark"]) .platform-btn {
 
 .extra-links a {
   display: inline-block;
-  color: #fff;
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   padding: 0.55rem 1.2rem;
-  border-radius: 999px;
-  background: var(--accent);
-  transition: background 0.15s ease, transform 0.15s ease;
+  border-radius: var(--radius-full);
+  transition: background 0.15s ease, transform 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
-.extra-links a:hover {
-  filter: brightness(1.15);
+.extra-links a:first-of-type {
+  background: var(--accent);
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.extra-links a:first-of-type:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+}
+
+.extra-links a:last-of-type {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.extra-links a:last-of-type:hover {
+  background: var(--accent-subtle);
   transform: translateY(-2px);
 }
 
@@ -820,7 +837,7 @@ html:not([data-theme="dark"]) .platform-btn {
   align-items: center;
   gap: 5px;
   padding: 0.38rem 0.9rem;
-  border-radius: 99px;
+  border-radius: var(--radius-full);
   border: none;
   background: var(--bg-card);
   color: var(--text);
@@ -1326,6 +1343,35 @@ html:not([data-theme="dark"]) .platform-btn {
   border: 1px solid var(--border);
 }
 
+@media (min-width: 721px) {
+  .about-inner {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .about-portrait {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 0.25rem 2rem 1rem 0;
+  }
+
+  .about-text::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .about-section p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-subtitle {
+    margin-top: 0;
+  }
+}
+
 .about-text .about-logos {
   margin-top: 2rem;
 }
@@ -1445,6 +1491,17 @@ html:not([data-theme="dark"]) .platform-btn {
 .social-btn.icon-email:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 .social-btn.icon-linktree:hover { background: var(--linktree); border-color: var(--linktree); color: #fff; }
 .social-btn.icon-substack:hover { background: var(--substack); border-color: var(--substack); color: #fff; }
+
+.social-btn--primary {
+  width: 52px;
+  height: 52px;
+  border-width: 1.5px;
+}
+
+.social-btn--primary svg {
+  width: 24px;
+  height: 24px;
+}
 
 [data-theme="dark"] .social-btn {
   color: var(--text-dim);
@@ -1594,7 +1651,7 @@ html:not([data-theme="dark"]) .social-btn {
   text-decoration: none;
   color: inherit;
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   transition: box-shadow 0.18s, border-color 0.18s;
 }
@@ -2220,7 +2277,7 @@ html:not([data-theme="dark"]) .social-btn {
   background: rgba(0,0,0,0.55);
   color: #fff;
   padding: 0.15rem 0.5rem;
-  border-radius: 99px;
+  border-radius: var(--radius-full);
   pointer-events: none;
 }
 
