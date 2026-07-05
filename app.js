@@ -1,4 +1,4 @@
-const PAGE_SIZE = window.innerWidth <= 720 ? 5 : 20;
+const PAGE_SIZE = () => window.innerWidth <= 720 ? 5 : 20;
 
 const PLATFORM_SHOW_LINKS = {
   spotify: "https://open.spotify.com/show/5c1ikDBBLMlls8ZTvcu14N",
@@ -347,7 +347,7 @@ function applyFilters() {
 }
 
 function renderNextPage() {
-  const next = state.filtered.slice(state.shown, state.shown + PAGE_SIZE);
+  const next = state.filtered.slice(state.shown, state.shown + PAGE_SIZE());
   els.list.insertAdjacentHTML("beforeend", next.map(episodeCardHtml).join(""));
   state.shown += next.length;
   els.resultCount.innerHTML = state.fullyLoaded
