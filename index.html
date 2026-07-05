@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Bienvenido a los 90 — Podcast de música de los 90 en español</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -36,6 +36,7 @@
 [data-theme="dark"] .theme-toggle .icon-moon{display:block}
 *{box-sizing:border-box}:focus{outline:none}:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 html{scroll-behavior:smooth}
+.no-transition,.no-transition *{transition:none !important}
 body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(--text);line-height:1.5;transition:background-color .2s ease,color .2s ease}
 .container{max-width:1180px;margin:0 auto;padding:0 1.5rem}
 #episodios,#escuchanos,#sobre-nosotros,#sigue{scroll-margin-top:72px}
@@ -143,7 +144,7 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
       <h1 class="sr-only">Bienvenido a los 90</h1>
       <p class="sr-only">Programa de radio musical especializado en la cultura alternativa de los años 90. Presentado por Roberto Martínez</p>
       <img class="header-banner logo-light" src="images/b90-header.webp" alt="Bienvenido a los 90 — Podcast presentado por Roberto Martínez" width="609" height="367" fetchpriority="high" />
-      <img class="header-banner logo-dark" src="images/b90-header-dark.webp" alt="Bienvenido a los 90 — Podcast presentado por Roberto Martínez" width="609" height="367" loading="lazy" />
+      <img class="header-banner logo-dark" src="images/b90-header-dark.webp" alt="Bienvenido a los 90 — Podcast presentado por Roberto Martínez" width="609" height="367" fetchpriority="high" />
       <p class="hero-tagline">El podcast de referencia del rock alternativo de los 90.</p>
       <div class="hero-stats" aria-label="Estadísticas del podcast">
         <div class="hero-stat"><strong>+1.200</strong><span>episodios</span></div>
