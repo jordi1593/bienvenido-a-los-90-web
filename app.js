@@ -479,10 +479,15 @@ function renderHeroLatest(episodes) {
   const wrap = document.getElementById("heroLatest");
   const titleEl = document.getElementById("heroLatestTitle");
   const dateEl = document.getElementById("heroLatestDate");
+  const coverEl = document.getElementById("heroLatestCover");
   if (!wrap || !titleEl) return;
-  if (dateEl) dateEl.textContent = formatDate(latest.published);
+  if (dateEl) dateEl.textContent = `Último · ${formatDate(latest.published)}`;
   titleEl.textContent = latest.title;
   titleEl.href = `episodios/${latest.slug}.html`;
+  if (coverEl && latest.thumbnail) {
+    coverEl.src = latest.thumbnail.replace("/s72-c/", "/s160/");
+    coverEl.alt = latest.title;
+  }
   wrap.hidden = false;
 }
 
