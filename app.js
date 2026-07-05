@@ -478,20 +478,11 @@ function renderHeroLatest(episodes) {
   if (!latest) return;
   const wrap = document.getElementById("heroLatest");
   const titleEl = document.getElementById("heroLatestTitle");
-  const playBtn = document.getElementById("heroLatestPlay");
   const dateEl = document.getElementById("heroLatestDate");
-  if (!wrap || !titleEl || !playBtn) return;
+  if (!wrap || !titleEl) return;
   if (dateEl) dateEl.textContent = formatDate(latest.published);
   titleEl.textContent = latest.title;
   titleEl.href = `episodios/${latest.slug}.html`;
-  const audioUrl = ivooxAudioUrl(latest);
-  if (audioUrl) {
-    playBtn.dataset.audio = audioUrl;
-    playBtn.dataset.title = latest.title;
-    playBtn.dataset.meta = formatDate(latest.published);
-  } else {
-    playBtn.hidden = true;
-  }
   wrap.hidden = false;
 }
 
