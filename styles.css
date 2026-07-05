@@ -441,6 +441,7 @@ body {
 .hero-latest-title:hover { color: var(--accent); }
 
 .hero-latest-btn {
+  position: static;
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -455,10 +456,12 @@ body {
   cursor: pointer;
   white-space: nowrap;
   flex-shrink: 0;
+  width: auto;
+  height: auto;
   opacity: 1 !important;
 }
 
-.hero-latest-btn:hover { background: #a01240; }
+.hero-latest-btn:hover { background: var(--accent-dark); opacity: 1 !important; }
 
 .hero-actions {
   display: flex;
