@@ -489,7 +489,8 @@ function renderHeroLatest(episodes) {
   if (!wrap || !titleEl) return;
   if (dateEl) dateEl.textContent = `Último · ${formatDate(latest.published)}`;
   titleEl.textContent = latest.title;
-  titleEl.href = `episodios/${latest.slug}.html`;
+  wrap.href = `episodios/${latest.slug}.html`;
+  wrap.setAttribute("aria-label", `Último episodio: ${latest.title}`);
   if (coverEl && latest.thumbnail) {
     coverEl.src = latest.thumbnail.replace("/s72-c/", "/s160/");
     coverEl.alt = latest.title;

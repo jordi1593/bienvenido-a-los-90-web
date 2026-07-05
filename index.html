@@ -71,8 +71,8 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
 html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border)}
 [data-theme="dark"] .platform-btn{color:var(--text-dim);border-color:var(--border)}
 </style>
-<link rel="stylesheet" href="styles.css?v=88" media="print" onload="this.media='all'" />
-<noscript><link rel="stylesheet" href="styles.css?v=88" /></noscript>
+<link rel="stylesheet" href="styles.css?v=89" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="styles.css?v=89" /></noscript>
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Bienvenido a los 90 — Podcast de música de los 90 en español" />
@@ -151,14 +151,14 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
         <div class="hero-stat"><strong>+11.000</strong><span>suscriptores</span></div>
         <div class="hero-stat"><strong>Desde 2012</strong><span>en antena</span></div>
       </div>
-      <div class="hero-latest" id="heroLatest" hidden>
+      <a class="hero-latest" id="heroLatest" href="#" hidden>
         <img class="hero-latest-cover" id="heroLatestCover" src="" alt="" width="44" height="44" loading="lazy" />
         <div class="hero-latest-body">
           <span class="hero-latest-label" id="heroLatestDate"></span>
-          <a class="hero-latest-title" id="heroLatestTitle" href="#"></a>
+          <span class="hero-latest-title" id="heroLatestTitle"></span>
         </div>
         <span class="hero-latest-arrow" aria-hidden="true">›</span>
-      </div>
+      </a>
       <div class="hero-actions">
         <a class="hero-cta" href="#episodios">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
@@ -344,7 +344,7 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
   </div>
 
   <script src="nav.js?v=4" defer></script>
-  <script src="app.js?v=74" defer></script>
+  <script src="app.js?v=75" defer></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c082acebb6434c21b4d7bc2ac95019c3"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

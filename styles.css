@@ -419,6 +419,13 @@ body {
   max-width: min(520px, 100%);
   text-align: left;
   text-decoration: none;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hero-latest:hover {
+  border-color: var(--accent-mid);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
 .hero-latest-cover {
@@ -467,28 +474,6 @@ body {
   line-height: 1;
 }
 
-.hero-latest-btn {
-  position: static;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: var(--radius-full);
-  padding: 0.35rem 0.85rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  font-family: var(--font-body);
-  cursor: pointer;
-  white-space: nowrap;
-  flex-shrink: 0;
-  width: auto;
-  height: auto;
-  opacity: 1 !important;
-}
-
-.hero-latest-btn:hover { background: var(--accent-dark); opacity: 1 !important; }
 
 .hero-actions {
   display: flex;
@@ -530,7 +515,7 @@ body {
   border-color: var(--text-dim);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .hero-tagline { font-size: 0.9rem; }
   .hero-stat { padding: 0 0.75rem; }
   .hero-stat strong { font-size: 1rem; }
@@ -1030,9 +1015,13 @@ html:not([data-theme="dark"]) .platform-btn {
 
 .skeleton-cover,
 .skeleton-line {
-  background: linear-gradient(90deg, var(--bg-card) 25%, rgba(0, 0, 0, 0.06) 50%, var(--bg-card) 75%);
+  background: linear-gradient(90deg, var(--bg-card) 25%, var(--skeleton-shimmer, rgba(0,0,0,0.06)) 50%, var(--bg-card) 75%);
   background-size: 200% 100%;
   animation: skeleton-pulse 1.4s ease-in-out infinite;
+}
+
+[data-theme="dark"] {
+  --skeleton-shimmer: rgba(255, 255, 255, 0.07);
 }
 
 @keyframes skeleton-pulse {
