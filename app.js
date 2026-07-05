@@ -479,7 +479,9 @@ function renderHeroLatest(episodes) {
   const wrap = document.getElementById("heroLatest");
   const titleEl = document.getElementById("heroLatestTitle");
   const playBtn = document.getElementById("heroLatestPlay");
+  const dateEl = document.getElementById("heroLatestDate");
   if (!wrap || !titleEl || !playBtn) return;
+  if (dateEl) dateEl.textContent = formatDate(latest.published);
   titleEl.textContent = latest.title;
   titleEl.href = `episodios/${latest.slug}.html`;
   const audioUrl = ivooxAudioUrl(latest);
