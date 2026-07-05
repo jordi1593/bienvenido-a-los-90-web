@@ -621,8 +621,9 @@ init();
 
   function updatePlayBtn() {
     const paused = audio.paused;
+    const title = titleEl.textContent;
     playBtn.innerHTML = paused ? PLAY_ICON : PAUSE_ICON;
-    playBtn.setAttribute("aria-label", paused ? "Reproducir" : "Pausar");
+    playBtn.setAttribute("aria-label", (paused ? "Reproducir" : "Pausar") + (title ? ": " + title : ""));
   }
 
   document.addEventListener("click", (e) => {
