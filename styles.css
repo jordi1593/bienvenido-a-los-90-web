@@ -999,6 +999,34 @@ html:not([data-theme="dark"]) .platform-btn {
   100% { background-position: -200% 0; }
 }
 
+@media (max-width: 720px) {
+  .skeleton-card {
+    flex-direction: column;
+    gap: 0;
+  }
+  .skeleton-cover {
+    flex: none;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+  .skeleton-body {
+    padding: 0.5rem 0.4rem;
+  }
+  .skeleton-actions {
+    display: none;
+  }
+}
+
+#heroLatest:not([hidden]) {
+  animation: heroFadeIn 0.2s ease;
+}
+
+@keyframes heroFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 .episode-cover-img {
   width: 100%;
   height: 100%;
