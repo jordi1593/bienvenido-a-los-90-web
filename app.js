@@ -1,4 +1,4 @@
-const PAGE_SIZE = () => window.innerWidth <= 720 ? 5 : 20;
+const PAGE_SIZE = () => window.innerWidth <= 720 ? 6 : 20;
 
 const PLATFORM_SHOW_LINKS = {
   spotify: "https://open.spotify.com/show/5c1ikDBBLMlls8ZTvcu14N",
