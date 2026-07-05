@@ -85,7 +85,7 @@ function episodeCardHtml(ep) {
   const coverImg = thumb
     ? `<img class="episode-cover-img" src="${thumb}"
         srcset="${thumbAtSize(thumb,160)} 160w, ${thumbAtSize(thumb,320)} 320w, ${thumbAtSize(thumb,480)} 480w"
-        sizes="(max-width:600px) 160px, 320px"
+        sizes="(max-width:720px) 160px, 320px"
         alt="" loading="lazy" width="320" height="213" />`
     : `<div class="episode-cover-img"></div>`;
 
@@ -171,7 +171,7 @@ let esencialesSlugs = new Set();
 // Sello de tiempo único por carga de página: se añade como parámetro a las
 // peticiones de data/*.json para que el navegador siempre pida la versión
 // actual en vez de servir una copia en caché desde una visita anterior.
-const DATA_CACHE_BUST = Date.now();
+const DATA_CACHE_BUST = Math.floor(Date.now() / 300000);
 
 async function loadEsencialesSlugs() {
   try {
@@ -564,6 +564,7 @@ async function init() {
     state.label = "";
     els.search.value = "";
     els.labelFilter.value = "";
+    if (els.searchClearBtn) els.searchClearBtn.hidden = true;
     applyFilters();
   });
 }
