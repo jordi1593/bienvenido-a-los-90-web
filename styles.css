@@ -55,6 +55,9 @@
   --text: #000000;
   --text-dim: #2b2b2b;
   --accent: #c41750;
+  --accent-dark: #9e1240;
+  --accent-mid: #d4527a;
+  --accent-subtle: rgba(196, 23, 80, 0.08);
   --accent-2: #000000;
   --border: rgba(0, 0, 0, 0.15);
   --radius: 4px;
@@ -86,6 +89,9 @@
   --text: #f5f3f6;
   --text-dim: #b9b2c0;
   --accent: #ff5d85;
+  --accent-dark: #e03d65;
+  --accent-mid: #ff8aa8;
+  --accent-subtle: rgba(255, 93, 133, 0.12);
   --accent-2: #ffffff;
   --border: rgba(255, 255, 255, 0.15);
   --x: #ffffff;
@@ -479,7 +485,7 @@ body {
   transition: background 0.15s;
 }
 
-.hero-cta:hover { background: #a01240; }
+.hero-cta:hover { background: var(--accent-dark); }
 
 .hero-cta-secondary {
   font-size: 0.85rem;
@@ -802,9 +808,9 @@ html:not([data-theme="dark"]) .platform-btn {
 .quick-tag svg { flex-shrink: 0; opacity: 0.65; }
 
 .quick-tag:hover {
-  box-shadow: inset 0 0 0 2px var(--accent);
-  color: var(--accent);
-  background: rgba(196, 23, 80, 0.06);
+  box-shadow: inset 0 0 0 2px var(--accent-mid);
+  color: var(--accent-dark);
+  background: var(--accent-subtle);
 }
 .quick-tag:hover svg { opacity: 1; }
 
@@ -842,7 +848,7 @@ html:not([data-theme="dark"]) .platform-btn {
 
 #search:focus-visible,
 #labelFilter:focus-visible {
-  border-color: var(--accent);
+  border-color: var(--accent-mid);
 }
 
 #labelFilter {
