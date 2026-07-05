@@ -431,7 +431,7 @@ body {
 .hero-latest-cover {
   width: 44px;
   height: 44px;
-  border-radius: 6px;
+  border-radius: var(--radius);
   object-fit: cover;
   flex-shrink: 0;
   background: var(--border);
@@ -1338,11 +1338,6 @@ html:not([data-theme="dark"]) .platform-btn {
 
 .about-section .section-title {
   margin-top: 0;
-}
-
-.about-section p {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media (max-width: 720px) {
