@@ -473,9 +473,30 @@ async function loadEpisodesProgressively(onFirstChunk) {
   return chunks.flat();
 }
 
+function renderHeroLatest(episodes) {
+  const latest = episodes[0];
+  if (!latest) return;
+  const wrap = document.getElementById("heroLatest");
+  const titleEl = document.getElementById("heroLatestTitle");
+  const playBtn = document.getElementById("heroLatestPlay");
+  if (!wrap || !titleEl || !playBtn) return;
+  titleEl.textContent = latest.title;
+  titleEl.href = `episodios/${latest.slug}.html`;
+  const audioUrl = ivooxAudioUrl(latest);
+  if (audioUrl) {
+    playBtn.dataset.audio = audioUrl;
+    playBtn.dataset.title = latest.title;
+    playBtn.dataset.meta = formatDate(latest.published);
+  } else {
+    playBtn.hidden = true;
+  }
+  wrap.hidden = false;
+}
+
 async function init() {
   const episodes = await loadEpisodesProgressively((firstChunk) => {
     state.all = firstChunk;
+    renderHeroLatest(firstChunk);
     applyFilters();
   });
 

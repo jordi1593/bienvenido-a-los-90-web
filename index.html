@@ -144,6 +144,27 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
       <p class="sr-only">Programa de radio musical especializado en la cultura alternativa de los años 90. Presentado por Roberto Martínez</p>
       <img class="header-banner logo-light" src="images/b90-header.webp" alt="Bienvenido a los 90 — Podcast presentado por Roberto Martínez" width="609" height="367" fetchpriority="high" />
       <img class="header-banner logo-dark" src="images/b90-header-dark.webp" alt="Bienvenido a los 90 — Podcast presentado por Roberto Martínez" width="609" height="367" loading="lazy" />
+      <p class="hero-tagline">Más de 1.200 episodios de rock alternativo de los 90.<br>Grunge, britpop y todo lo que importó.</p>
+      <div class="hero-stats" aria-label="Estadísticas del podcast">
+        <div class="hero-stat"><strong>+1.200</strong><span>episodios</span></div>
+        <div class="hero-stat"><strong>+11.000</strong><span>suscriptores</span></div>
+        <div class="hero-stat"><strong>Desde 2012</strong><span>en antena</span></div>
+      </div>
+      <div class="hero-latest" id="heroLatest" hidden>
+        <span class="hero-latest-label">Último episodio</span>
+        <a class="hero-latest-title" id="heroLatestTitle" href="#"></a>
+        <button class="hero-latest-btn ep-play-btn" id="heroLatestPlay" type="button" aria-label="Reproducir último episodio">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11" aria-hidden="true"><path d="M8 5.5l11 6.5-11 6.5z"/></svg>
+          Escuchar
+        </button>
+      </div>
+      <div class="hero-actions">
+        <a class="hero-cta" href="#episodios">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          Descubrir episodios
+        </a>
+        <a class="hero-cta-secondary" href="#sobre-nosotros">¿Qué es esto?</a>
+      </div>
     </div>
   </header>
 
@@ -318,7 +339,7 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
   </div>
 
   <script src="nav.js?v=4" defer></script>
-  <script src="app.js?v=67" defer></script>
+  <script src="app.js?v=68" defer></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c082acebb6434c21b4d7bc2ac95019c3"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
