@@ -1332,35 +1332,6 @@ html:not([data-theme="dark"]) .platform-btn {
   border: 1px solid var(--border);
 }
 
-@media (min-width: 721px) {
-  .about-inner {
-    text-align: left;
-    align-items: flex-start;
-  }
-
-  .about-portrait {
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin: 0.25rem 2rem 1rem 0;
-  }
-
-  .about-text::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .about-section p {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .about-subtitle {
-    margin-top: 0;
-  }
-}
-
 .about-text .about-logos {
   margin-top: 2rem;
 }
