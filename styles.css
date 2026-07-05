@@ -639,42 +639,50 @@ html:not([data-theme="dark"]) .platform-btn {
 }
 
 .quick-tag {
-  display: inline-block;
-  padding: 0.35rem 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.38rem 0.9rem;
   border-radius: 99px;
-  border: 1.5px solid var(--border);
+  border: none;
   background: var(--bg-card);
-  color: var(--text-dim);
+  color: var(--text);
   font-family: var(--font-body);
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
-  transition: border-color 0.15s, background 0.15s, color 0.15s;
+  box-shadow: inset 0 0 0 1.5px var(--border);
+  transition: box-shadow 0.15s, background 0.15s, color 0.15s;
   white-space: nowrap;
 }
 
+.quick-tag svg { flex-shrink: 0; opacity: 0.65; }
+
 .quick-tag:hover {
-  border-color: var(--accent);
+  box-shadow: inset 0 0 0 2px var(--accent);
   color: var(--accent);
+  background: rgba(196, 23, 80, 0.06);
 }
+.quick-tag:hover svg { opacity: 1; }
 
 .quick-tag.active {
   background: var(--accent);
-  border-color: var(--accent);
+  box-shadow: none;
   color: #fff;
+  font-weight: 600;
 }
+.quick-tag.active svg { opacity: 1; }
 
 .quick-tag-more {
   color: var(--text-dim);
-  border-style: dashed;
+  box-shadow: inset 0 0 0 1.5px var(--border);
   font-weight: 500;
   font-style: italic;
 }
 
 .quick-tag-more:hover {
   color: var(--text);
-  border-color: var(--border);
-  border-style: dashed;
+  box-shadow: inset 0 0 0 1.5px var(--border);
   background: var(--bg-card);
 }
 

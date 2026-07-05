@@ -183,10 +183,22 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
             <option value="">Todas las etiquetas</option>
           </select>
           <div class="quick-tags" id="quickTags">
-            <button class="quick-tag active" data-label="" type="button">Todos los programas</button>
-            <button class="quick-tag" data-label="__top_escuchados__" type="button">Lo más escuchado</button>
-            <button class="quick-tag" data-label="__esenciales__" type="button">Esenciales</button>
-            <button class="quick-tag" data-label="__discos_homenaje__" type="button">Discos Homenaje</button>
+            <button class="quick-tag active" data-label="" type="button">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+              Todos los programas
+            </button>
+            <button class="quick-tag" data-label="__top_escuchados__" type="button">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+              Lo más escuchado
+            </button>
+            <button class="quick-tag" data-label="__esenciales__" type="button">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              Esenciales
+            </button>
+            <button class="quick-tag" data-label="__discos_homenaje__" type="button">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2"/></svg>
+              Discos Homenaje
+            </button>
             <button class="quick-tag quick-tag-more" id="quickTagsMore" type="button">+ ver todas las etiquetas ▾</button>
           </div>
           <span id="resultCount" class="result-count"></span>
