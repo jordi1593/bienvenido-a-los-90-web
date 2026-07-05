@@ -70,8 +70,8 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
 html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border)}
 [data-theme="dark"] .platform-btn{color:var(--text-dim);border-color:var(--border)}
 </style>
-<link rel="stylesheet" href="styles.css?v=86" media="print" onload="this.media='all'" />
-<noscript><link rel="stylesheet" href="styles.css?v=86" /></noscript>
+<link rel="stylesheet" href="styles.css?v=87" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="styles.css?v=87" /></noscript>
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Bienvenido a los 90 — Podcast de música de los 90 en español" />
@@ -197,8 +197,13 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
 
       <div class="episodes-main">
         <section class="controls">
-          <label for="search" class="sr-only">Buscar episodios</label>
-          <input id="search" type="search" placeholder="Buscar por título, artista o tema..." />
+          <div class="search-wrap">
+            <label for="search" class="sr-only">Buscar episodios</label>
+            <input id="search" type="search" placeholder="Buscar por título, artista o tema..." />
+            <button class="search-clear-btn" id="searchClearBtn" type="button" aria-label="Limpiar búsqueda" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="14" height="14" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+          </div>
           <label for="labelFilter" class="sr-only">Filtrar por etiqueta</label>
           <select id="labelFilter">
             <option value="">Todas las etiquetas</option>
@@ -330,6 +335,7 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
       <input type="range" id="sticky-seek" class="sticky-seek" min="0" max="100" value="0" step="1" aria-label="Posición de reproducción">
       <span id="sticky-dur" class="sticky-time">--:--</span>
     </div>
+    <button id="sticky-speed" class="sticky-speed-btn" type="button" aria-label="Velocidad de reproducción: 1×">1×</button>
     <button id="sticky-close" class="sticky-close-btn" aria-label="Cerrar reproductor">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="16" height="16" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
     </button>
@@ -337,7 +343,7 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
   </div>
 
   <script src="nav.js?v=4" defer></script>
-  <script src="app.js?v=72" defer></script>
+  <script src="app.js?v=73" defer></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c082acebb6434c21b4d7bc2ac95019c3"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

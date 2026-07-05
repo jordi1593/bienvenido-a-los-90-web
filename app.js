@@ -45,6 +45,7 @@ const els = {
   quickTags: document.getElementById("quickTags"),
   resultCount: document.getElementById("resultCount"),
   clearFilters: document.getElementById("clearFilters"),
+  searchClearBtn: document.getElementById("searchClearBtn"),
   loadMore: document.getElementById("loadMore"),
   loadMoreWrap: document.getElementById("loadMoreWrap"),
 };
@@ -353,7 +354,12 @@ function renderNextPage() {
   els.resultCount.innerHTML = state.fullyLoaded
     ? `<strong>${state.filtered.length}</strong> episodio${state.filtered.length === 1 ? "" : "s"}`
     : "Cargando episodios…";
-  els.loadMoreWrap.style.display = state.shown < state.filtered.length ? "block" : "none";
+  const remaining = state.filtered.length - state.shown;
+  if (remaining > 0) {
+    const toLoad = Math.min(PAGE_SIZE(), remaining);
+    els.loadMore.textContent = `Cargar ${toLoad} episodios más`;
+  }
+  els.loadMoreWrap.style.display = remaining > 0 ? "block" : "none";
   els.clearFilters.hidden = !state.search && !state.label;
 }
 
@@ -519,8 +525,19 @@ async function init() {
 
   els.search.addEventListener("input", (e) => {
     state.search = e.target.value;
+    if (els.searchClearBtn) els.searchClearBtn.hidden = !e.target.value;
     applyFilters();
   });
+
+  if (els.searchClearBtn) {
+    els.searchClearBtn.addEventListener("click", () => {
+      state.search = "";
+      els.search.value = "";
+      els.searchClearBtn.hidden = true;
+      applyFilters();
+      els.search.focus();
+    });
+  }
 
   els.labelFilter.addEventListener("change", (e) => {
     state.label = e.target.value;
@@ -567,6 +584,19 @@ init();
 
   const PLAY_ICON  = '<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M8 5.5l11 6.5-11 6.5z"/></svg>';
   const PAUSE_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>';
+
+  const speedBtn = document.getElementById("sticky-speed");
+  const SPEEDS = [1, 1.5, 2];
+  let speedIdx = 0;
+  if (speedBtn) {
+    speedBtn.addEventListener("click", () => {
+      speedIdx = (speedIdx + 1) % SPEEDS.length;
+      audio.playbackRate = SPEEDS[speedIdx];
+      const label = SPEEDS[speedIdx] + "×";
+      speedBtn.textContent = label;
+      speedBtn.setAttribute("aria-label", `Velocidad de reproducción: ${label}`);
+    });
+  }
 
   let currentBtn = null;
 
