@@ -1900,17 +1900,37 @@ html:not([data-theme="dark"]) .social-btn {
 
 @media (max-width: 720px) {
   .episode-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem 0.75rem;
+  }
+
+  .episode-card {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .episode-cover-link {
+    flex: none;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .episode-card .platform-links {
+    display: none;
+  }
+
+  .episode-card .episode-body {
+    padding: 0.5rem 0.4rem 0;
+  }
+
+  .episode-body h2 {
+    font-size: 0.82rem;
+    margin-bottom: 0.3rem;
   }
 
   .topnav-links {
     gap: 1rem;
-  }
-
-  .episode-cover-link {
-    flex: 0 0 110px;
-    width: 110px;
-    height: 110px;
   }
 
   /* Punto 4: búsqueda y filtros compactos en móvil */
