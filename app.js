@@ -335,7 +335,7 @@ function applyFilters() {
     state.filtered.sort((a, b) => searchScore(b, terms) - searchScore(a, terms));
   } else if (activeFilter?.sort) {
     state.filtered.sort(activeFilter.sort);
-  } else if (state.label) {
+  } else if (state.label && !state.label.startsWith("__")) {
     state.filtered.sort((a, b) => labelScore(b, state.label) - labelScore(a, state.label));
   }
   syncQuickTags();
@@ -562,7 +562,7 @@ init();
     if (currentBtn && currentBtn !== btn) {
       currentBtn.classList.remove("playing");
       currentBtn.setAttribute("aria-label", "Reproducir " + currentBtn.dataset.title);
-      currentBtn.innerHTML = PLAY_ICON.replace('width="18"','width="14"').replace('height="18"','height="14"').replace('M8 5.5l11 6.5-11 6.5z','M8 5.5l11 6.5-11 6.5z');
+      currentBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M8 5.5l11 6.5-11 6.5z"/></svg>';
     }
     if (btn) {
       btn.classList.toggle("playing", isPlaying);
@@ -595,7 +595,12 @@ init();
     progress.style.width = "0%";
     timeEl.textContent = "0:00";
     durEl.textContent  = "--:--";
-    audio.play().catch(() => {});
+    audio.play().catch(() => {
+      player.hidden = true;
+      setPlayingCard(null, false);
+      updatePlayBtn();
+      alert("No se ha podido cargar el audio. Prueba a escucharlo directamente en iVoox.");
+    });
   });
 
   audio.addEventListener("play",  updatePlayBtn);
