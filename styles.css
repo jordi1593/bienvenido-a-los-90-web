@@ -2027,9 +2027,6 @@ html:not([data-theme="dark"]) .social-btn {
     margin-bottom: 0.3rem;
   }
 
-  .topnav-links {
-    gap: 1rem;
-  }
 
   /* Punto 4: búsqueda y filtros compactos en móvil */
   .controls {
