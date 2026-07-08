@@ -548,7 +548,12 @@ async function init() {
 
   els.labelFilter.addEventListener("change", (e) => {
     const val = e.target.value;
-    state.labels = new Set(val ? [val] : []);
+    if (!val) {
+      state.labels = new Set();
+    } else {
+      state.labels.has(val) ? state.labels.delete(val) : state.labels.add(val);
+      els.labelFilter.value = "";
+    }
     applyFilters();
   });
 
