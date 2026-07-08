@@ -346,7 +346,7 @@ function getRelatedEpisodes(ep, allEpisodes) {
       const sharedLabelKeys = otherKeys.filter((k) => epKeys.has(k));
       const otherTitleWords = titleKeywords(other.title);
       const sharedTitleWords = [...epTitleWords].filter((w) => otherTitleWords.has(w)).length;
-      const score = sharedLabelKeys.length * 3 + sharedTitleWords;
+      const score = sharedLabelKeys.length * 3 + sharedTitleWords * 3;
       return { ep: other, score, timeDiff: Math.abs(new Date(other.published).getTime() - epTime), sharedLabelKeys };
     });
 
