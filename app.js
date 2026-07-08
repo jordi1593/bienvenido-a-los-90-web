@@ -304,6 +304,15 @@ function syncQuickTags() {
   renderActiveLabels();
 }
 
+function termRegex(t) {
+  return /^\d+$/.test(t) ? new RegExp(`\\b${t}\\b`) : null;
+}
+
+function termMatches(haystack, t) {
+  const re = termRegex(t);
+  return re ? re.test(haystack) : haystack.includes(t);
+}
+
 function searchScore(ep, terms) {
   if (!terms.length) return 0;
   let score = 0;
@@ -311,9 +320,9 @@ function searchScore(ep, terms) {
   const labels = ep.labels.map((l) => l.toLowerCase()).join(" ");
   const summary = (ep.summary || "").toLowerCase();
   terms.forEach((t) => {
-    if (title.includes(t)) score += 100;
-    if (labels.includes(t)) score += 10;
-    if (summary.includes(t)) score += 1;
+    if (termMatches(title, t)) score += 100;
+    if (termMatches(labels, t)) score += 10;
+    if (termMatches(summary, t)) score += 1;
   });
   return score;
 }
@@ -339,7 +348,7 @@ function applyFilters() {
     const lbls = ep.labels.map((l) => l.toLowerCase()).join(" ");
     const summary = (ep.summary || "").toLowerCase();
     const haystack = title + " " + lbls + " " + summary;
-    const matchesSearch = terms.length === 0 || terms.every((t) => haystack.includes(t));
+    const matchesSearch = terms.length === 0 || terms.every((t) => termMatches(haystack, t));
     const matchesLabel = state.labels.size === 0 || [...state.labels].every((lbl) => {
       const af = state.specialFilters.get(lbl);
       return af ? af.slugs.has(ep.slug) : ep.labels.some((l) => normalizeLabel(l) === lbl);
