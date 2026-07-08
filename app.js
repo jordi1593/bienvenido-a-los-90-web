@@ -583,16 +583,12 @@ async function init() {
     els.quickTags.querySelectorAll(".quick-tag[data-label]").forEach((btn) => {
       btn.addEventListener("click", () => {
         const lbl = btn.dataset.label;
-        if (lbl === "") {
+        if (lbl === "" || state.labels.has(lbl)) {
           state.labels = new Set();
           els.labelFilter.value = "";
         } else {
-          if (state.labels.has(lbl)) {
-            state.labels.delete(lbl);
-          } else {
-            state.labels.add(lbl);
-          }
-          els.labelFilter.value = state.labels.size === 1 ? [...state.labels][0] : "";
+          state.labels = new Set([lbl]);
+          els.labelFilter.value = lbl;
         }
         applyFilters();
       });
