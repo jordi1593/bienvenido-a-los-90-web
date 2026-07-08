@@ -865,6 +865,34 @@ html:not([data-theme="dark"]) .platform-btn {
   background: var(--bg-card);
 }
 
+.active-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  width: 100%;
+}
+
+.active-label-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.65rem;
+  border-radius: var(--radius-full);
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.active-label-chip:hover {
+  background: var(--accent-dark);
+}
+
 .search-wrap {
   position: relative;
   flex: 1 1 280px;

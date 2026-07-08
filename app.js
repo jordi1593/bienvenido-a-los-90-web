@@ -283,12 +283,25 @@ const SPECIAL_FILTERS = [
   },
 ];
 
+function renderActiveLabels() {
+  const container = document.getElementById("activeLabels");
+  if (!container) return;
+  if (state.labels.size === 0) { container.hidden = true; container.innerHTML = ""; return; }
+  container.hidden = false;
+  container.innerHTML = [...state.labels].map((lbl) => {
+    const sf = SPECIAL_FILTERS.find((f) => f.value === lbl);
+    const name = sf ? sf.label : lbl;
+    return `<button class="active-label-chip" data-label="${escapeHtml(lbl)}" type="button">${escapeHtml(name)}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="11" height="11" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg></button>`;
+  }).join("");
+}
+
 function syncQuickTags() {
   if (!els.quickTags) return;
   els.quickTags.querySelectorAll(".quick-tag[data-label]").forEach((btn) => {
     const lbl = btn.dataset.label;
     btn.classList.toggle("active", lbl === "" ? state.labels.size === 0 : state.labels.has(lbl));
   });
+  renderActiveLabels();
 }
 
 function searchScore(ep, terms) {
@@ -587,6 +600,13 @@ async function init() {
     els.search.value = "";
     els.labelFilter.value = "";
     if (els.searchClearBtn) els.searchClearBtn.hidden = true;
+    applyFilters();
+  });
+
+  document.addEventListener("click", (e) => {
+    const chip = e.target.closest(".active-label-chip");
+    if (!chip) return;
+    state.labels.delete(chip.dataset.label);
     applyFilters();
   });
 }
