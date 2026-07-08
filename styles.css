@@ -876,21 +876,22 @@ html:not([data-theme="dark"]) .platform-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  padding: 0.28rem 0.65rem;
-  border-radius: var(--radius-full);
-  background: var(--accent);
-  color: #fff;
-  font-size: 0.78rem;
-  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius);
+  background: none;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 400;
   font-family: var(--font-body);
-  border: none;
+  border: 1px solid var(--accent);
   cursor: pointer;
   white-space: nowrap;
-  transition: background 0.15s;
+  transition: background 0.15s ease, color 0.15s ease;
 }
 
 .active-label-chip:hover {
-  background: var(--accent-dark);
+  background: var(--accent);
+  color: #fff;
 }
 
 .search-wrap {
