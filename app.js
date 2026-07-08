@@ -33,7 +33,7 @@ const state = {
   filtered: [],
   shown: 0,
   search: "",
-  label: "",
+  labels: new Set(),
   specialFilters: new Map(),
   fullyLoaded: false,
 };
@@ -286,7 +286,8 @@ const SPECIAL_FILTERS = [
 function syncQuickTags() {
   if (!els.quickTags) return;
   els.quickTags.querySelectorAll(".quick-tag[data-label]").forEach((btn) => {
-    btn.classList.toggle("active", btn.dataset.label === state.label);
+    const lbl = btn.dataset.label;
+    btn.classList.toggle("active", lbl === "" ? state.labels.size === 0 : state.labels.has(lbl));
   });
 }
 
@@ -320,25 +321,28 @@ function labelScore(ep, label) {
 
 function applyFilters() {
   const terms = state.search.trim().toLowerCase().split(/\s+/).filter(Boolean);
-  const activeFilter = state.specialFilters.get(state.label);
   state.filtered = state.all.filter((ep) => {
     const title = ep.title.toLowerCase();
-    const labels = ep.labels.map((l) => l.toLowerCase()).join(" ");
+    const lbls = ep.labels.map((l) => l.toLowerCase()).join(" ");
     const summary = (ep.summary || "").toLowerCase();
-    const haystack = title + " " + labels + " " + summary;
+    const haystack = title + " " + lbls + " " + summary;
     const matchesSearch = terms.length === 0 || terms.every((t) => haystack.includes(t));
-    const matchesLabel = !state.label ||
-      (activeFilter
-        ? activeFilter.slugs.has(ep.slug)
-        : ep.labels.some((l) => normalizeLabel(l) === state.label));
+    const matchesLabel = state.labels.size === 0 || [...state.labels].every((lbl) => {
+      const af = state.specialFilters.get(lbl);
+      return af ? af.slugs.has(ep.slug) : ep.labels.some((l) => normalizeLabel(l) === lbl);
+    });
     return matchesSearch && matchesLabel;
   });
   if (terms.length) {
     state.filtered.sort((a, b) => searchScore(b, terms) - searchScore(a, terms));
-  } else if (activeFilter?.sort) {
-    state.filtered.sort(activeFilter.sort);
-  } else if (state.label && !state.label.startsWith("__")) {
-    state.filtered.sort((a, b) => labelScore(b, state.label) - labelScore(a, state.label));
+  } else if (state.labels.size === 1) {
+    const onlyLabel = [...state.labels][0];
+    const af = state.specialFilters.get(onlyLabel);
+    if (af?.sort) {
+      state.filtered.sort(af.sort);
+    } else if (!onlyLabel.startsWith("__")) {
+      state.filtered.sort((a, b) => labelScore(b, onlyLabel) - labelScore(a, onlyLabel));
+    }
   }
   syncQuickTags();
   state.shown = 0;
@@ -361,7 +365,7 @@ function renderNextPage() {
     els.loadMore.textContent = `Cargar ${toLoad} episodios más`;
   }
   els.loadMoreWrap.style.display = remaining > 0 ? "block" : "none";
-  els.clearFilters.hidden = !state.search && !state.label;
+  els.clearFilters.hidden = !state.search && state.labels.size === 0;
 }
 
 function populateLabelFilter(episodes) {
@@ -520,8 +524,9 @@ async function init() {
 
   const labelParam = new URLSearchParams(location.search).get("label");
   if (labelParam) {
-    state.label = normalizeLabel(labelParam);
-    els.labelFilter.value = state.label;
+    const normalized = normalizeLabel(labelParam);
+    state.labels = new Set([normalized]);
+    els.labelFilter.value = normalized;
   }
   applyFilters();
 
@@ -542,15 +547,26 @@ async function init() {
   }
 
   els.labelFilter.addEventListener("change", (e) => {
-    state.label = e.target.value;
+    const val = e.target.value;
+    state.labels = new Set(val ? [val] : []);
     applyFilters();
   });
 
   if (els.quickTags) {
     els.quickTags.querySelectorAll(".quick-tag[data-label]").forEach((btn) => {
       btn.addEventListener("click", () => {
-        state.label = btn.dataset.label;
-        els.labelFilter.value = state.label;
+        const lbl = btn.dataset.label;
+        if (lbl === "") {
+          state.labels = new Set();
+          els.labelFilter.value = "";
+        } else {
+          if (state.labels.has(lbl)) {
+            state.labels.delete(lbl);
+          } else {
+            state.labels.add(lbl);
+          }
+          els.labelFilter.value = state.labels.size === 1 ? [...state.labels][0] : "";
+        }
         applyFilters();
       });
     });
@@ -562,7 +578,7 @@ async function init() {
 
   els.clearFilters.addEventListener("click", () => {
     state.search = "";
-    state.label = "";
+    state.labels = new Set();
     els.search.value = "";
     els.labelFilter.value = "";
     if (els.searchClearBtn) els.searchClearBtn.hidden = true;
