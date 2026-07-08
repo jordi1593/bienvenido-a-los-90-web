@@ -343,11 +343,11 @@ function getRelatedEpisodes(ep, allEpisodes) {
     .filter((other) => other.slug !== ep.slug)
     .map((other) => {
       const otherKeys = other.labels.map(labelKey).filter((k) => !GENERIC_LABEL_KEYS.has(k));
-      const sharedLabels = otherKeys.filter((k) => epKeys.has(k)).length;
+      const sharedLabelKeys = otherKeys.filter((k) => epKeys.has(k));
       const otherTitleWords = titleKeywords(other.title);
       const sharedTitleWords = [...epTitleWords].filter((w) => otherTitleWords.has(w)).length;
-      const score = sharedLabels * 3 + sharedTitleWords;
-      return { ep: other, score, timeDiff: Math.abs(new Date(other.published).getTime() - epTime) };
+      const score = sharedLabelKeys.length * 3 + sharedTitleWords;
+      return { ep: other, score, timeDiff: Math.abs(new Date(other.published).getTime() - epTime), sharedLabelKeys };
     });
 
   scored.sort((a, b) => {
@@ -355,7 +355,7 @@ function getRelatedEpisodes(ep, allEpisodes) {
     return a.timeDiff - b.timeDiff;
   });
 
-  return scored.slice(0, 6).map((s) => s.ep);
+  return scored.slice(0, 6).map((s) => ({ ...s.ep, sharedLabelKeys: s.sharedLabelKeys }));
 }
 
 // Detecta especiales multi-parte por el título (p.ej. "... (Parte 2)") y
@@ -682,7 +682,8 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
         ${related.slice(3).map((r) => {
           const relImage = cardThumbnail(r.thumbnail);
           const relDate = r.published ? new Date(r.published).toLocaleDateString("es-ES", { year: "numeric", month: "long" }) : "";
-          const relLabel = r.labels && r.labels.find((l) => validEtiquetaLabels && validEtiquetaLabels.has(l));
+          const sharedLabel = r.sharedLabelKeys && r.labels && r.labels.find((l) => r.sharedLabelKeys.includes(labelKey(l)));
+          const relLabel = sharedLabel || (r.labels && r.labels.find((l) => validEtiquetaLabels && validEtiquetaLabels.has(l)));
           return `<a class="related-bottom-card" href="${r.slug}.html">
             ${relImage
               ? `<img class="related-bottom-card-img"
