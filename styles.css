@@ -976,6 +976,7 @@ html:not([data-theme="dark"]) .platform-btn {
   overflow: hidden;
   background: var(--bg-card);
   border: 2px solid var(--border);
+  border-radius: var(--radius);
 }
 
 .skeleton-cover {

@@ -63,8 +63,9 @@ function escapeHtml(str) {
 
 function highlightMatch(escapedText, query) {
   if (!query) return escapedText;
-  const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  return escapedText.replace(new RegExp(escapedQuery, "gi"), (m) => `<mark class="search-highlight">${m}</mark>`);
+  const htmlEscapedQuery = escapeHtml(query);
+  const regexSource = htmlEscapedQuery.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return escapedText.replace(new RegExp(regexSource, "gi"), (m) => `<mark class="search-highlight">${m}</mark>`);
 }
 
 function thumbAtSize(thumb, size) {
