@@ -152,12 +152,16 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
         <div class="hero-stat"><strong>Desde 2012</strong><span>en antena</span></div>
       </div>
       <a class="hero-latest" id="heroLatest" href="#" hidden>
-        <img class="hero-latest-cover" id="heroLatestCover" alt="" width="44" height="44" loading="lazy" />
+        <img class="hero-latest-cover" id="heroLatestCover" alt="" loading="lazy" />
         <div class="hero-latest-body">
-          <span class="hero-latest-label" id="heroLatestDate"></span>
-          <span class="hero-latest-title" id="heroLatestTitle"></span>
+          <div class="hero-latest-text">
+            <span class="hero-latest-label" id="heroLatestDate"></span>
+            <span class="hero-latest-title" id="heroLatestTitle"></span>
+          </div>
+          <span class="hero-latest-play" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M8 5.5l11 6.5-11 6.5z"/></svg>
+          </span>
         </div>
-        <span class="hero-latest-arrow" aria-hidden="true">›</span>
       </a>
       <div class="hero-actions">
         <a class="hero-cta" href="#episodios">
