@@ -86,8 +86,8 @@ function episodeCardHtml(ep) {
   const coverImg = thumb
     ? `<img class="episode-cover-img" src="${thumb}"
         srcset="${thumbAtSize(thumb,160)} 160w, ${thumbAtSize(thumb,320)} 320w, ${thumbAtSize(thumb,480)} 480w"
-        sizes="(max-width:720px) 160px, 320px"
-        alt="" loading="lazy" width="320" height="213" />`
+        sizes="(max-width:480px) calc(50vw - 1rem), (max-width:880px) calc(50vw - 2rem), calc((100vw - 300px - 6rem) / 3)"
+        alt="" loading="lazy" width="320" height="320" />`
     : `<div class="episode-cover-img"></div>`;
 
   const playBtn = audioUrl

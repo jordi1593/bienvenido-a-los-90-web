@@ -984,35 +984,47 @@ html:not([data-theme="dark"]) .platform-btn {
 
 .episode-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
   min-height: 600px;
   contain: layout;
 }
 
 .episode-card {
   display: flex;
-  gap: 1.25rem;
+  flex-direction: column;
+  gap: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.episode-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 
 .episode-cover-link {
   position: relative;
   display: block;
-  flex: 0 0 140px;
-  width: 140px;
-  height: 140px;
+  flex: none;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   background: var(--bg-card);
-  border: 2px solid var(--border);
-  border-radius: var(--radius);
+  border: none;
+  border-radius: 0;
 }
 
 .skeleton-cover {
-  flex: 0 0 140px;
-  width: 140px;
-  height: 140px;
-  border-radius: var(--radius);
+  flex: none;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 0;
 }
 
 .skeleton-body {
@@ -1020,7 +1032,7 @@ html:not([data-theme="dark"]) .platform-btn {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  padding-top: 0.4rem;
+  padding: 0.65rem 0.75rem 0.75rem;
 }
 
 .skeleton-line {
@@ -1060,18 +1072,8 @@ html:not([data-theme="dark"]) .platform-btn {
 }
 
 @media (max-width: 720px) {
-  .skeleton-card {
-    flex-direction: column;
-    gap: 0;
-  }
-  .skeleton-cover {
-    flex: none;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-  }
   .skeleton-body {
-    padding: 0.5rem 0.4rem;
+    padding: 0.5rem 0.5rem 0.6rem;
   }
   .skeleton-actions {
     display: none;
@@ -1103,7 +1105,7 @@ html:not([data-theme="dark"]) .platform-btn {
   flex-direction: column;
   flex: 1;
   min-width: 0;
-  padding-top: 0.1rem;
+  padding: 0.65rem 0.75rem 0.75rem;
 }
 
 .episode-meta {
@@ -1130,10 +1132,10 @@ html:not([data-theme="dark"]) .platform-btn {
 }
 
 .episode-body h2 {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.4rem;
   font-family: var(--font-body);
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   line-height: 1.35;
   text-transform: none;
 }
@@ -2029,19 +2031,7 @@ html:not([data-theme="dark"]) .social-btn {
 @media (max-width: 720px) {
   .episode-list {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem 0.75rem;
-  }
-
-  .episode-card {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .episode-cover-link {
-    flex: none;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
+    gap: 0.75rem;
   }
 
   .episode-card .platform-links {
@@ -2049,12 +2039,12 @@ html:not([data-theme="dark"]) .social-btn {
   }
 
   .episode-card .episode-body {
-    padding: 0.5rem 0.4rem 0;
+    padding: 0.5rem 0.5rem 0.6rem;
   }
 
   .episode-body h2 {
-    font-size: 0.82rem;
-    margin-bottom: 0.3rem;
+    font-size: 0.78rem;
+    margin-bottom: 0.25rem;
   }
 
 
