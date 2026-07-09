@@ -408,83 +408,71 @@ body {
 }
 
 .hero-latest {
-  display: block;
-  position: relative;
-  width: 100%;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 1px solid var(--border);
-  text-decoration: none;
-  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
   background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-lg);
+  padding: 0.75rem 1rem 0.75rem 0.75rem;
+  margin-bottom: 1.25rem;
+  max-width: min(560px, 100%);
+  text-align: left;
+  text-decoration: none;
   cursor: pointer;
-  transition: opacity 0.15s ease;
+  transition: box-shadow 0.15s ease;
 }
 
-.hero-latest:hover { opacity: 0.9; }
-
-.hero-latest[hidden] {
-  display: block !important;
-  visibility: hidden;
+.hero-latest:hover {
+  box-shadow: 0 2px 14px rgba(0,0,0,0.10);
 }
 
 .hero-latest-cover {
-  display: block;
-  width: 100%;
-  height: 220px;
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius);
   object-fit: cover;
+  flex-shrink: 0;
   background: var(--border);
 }
 
 .hero-latest-body {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 2rem 1rem 1rem;
-  background: linear-gradient(transparent, rgba(0,0,0,0.80));
   display: flex;
-  align-items: flex-end;
-  gap: 0.75rem;
-}
-
-.hero-latest-text {
-  flex: 1;
+  flex-direction: column;
+  gap: 0.15rem;
   min-width: 0;
+  flex: 1;
 }
 
 .hero-latest-label {
-  display: block;
   font-size: 0.65rem;
-  color: rgba(255,255,255,0.65);
+  color: var(--text-dim);
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  margin-bottom: 0.2rem;
 }
 
 .hero-latest-title {
-  display: block;
-  font-size: 0.9rem;
-  color: #fff;
+  font-size: 0.88rem;
+  color: var(--text);
   font-weight: 500;
   line-height: 1.35;
-  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.hero-latest-play {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--accent);
+.hero-latest-cta {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  color: #fff;
-  transition: background 0.15s ease;
+  gap: 0.25rem;
+  font-size: 0.72rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-top: 0.15rem;
+  letter-spacing: 0.01em;
 }
-
-.hero-latest:hover .hero-latest-play { background: var(--accent-mid); }
 
 
 .hero-actions {
