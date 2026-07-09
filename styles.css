@@ -51,7 +51,7 @@
 :root {
   --bg: #ffffff;
   --bg-flat: #ffffff;
-  --bg-card: #fdeef3;
+  --bg-card: #f4f2f5;
   --text: #000000;
   --text-dim: #2b2b2b;
   --accent: #c41750;
@@ -716,6 +716,7 @@ html:not([data-theme="dark"]) .platform-btn {
   top: 1.5rem;
   background: var(--bg-card);
   border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
   border-radius: var(--radius);
   padding: 1.25rem;
   max-height: calc(100vh - 3rem);
