@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://bienvenidoalos90.com/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://bienvenidoalos90.com/images/b90-logo-new.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/fotos.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image><image:loc>https://bienvenidoalos90.com/images/og-home.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
@@ -729,6 +729,13 @@
     
   </url>
   <url>
+    <loc>https://bienvenidoalos90.com/etiquetas/queens-of-the-stone-age.html</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    
+  </url>
+  <url>
     <loc>https://bienvenidoalos90.com/etiquetas/le-traste.html</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -843,13 +850,6 @@
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/tom-morello.html</loc>
     <lastmod>2025-05-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    
-  </url>
-  <url>
-    <loc>https://bienvenidoalos90.com/etiquetas/queens-of-the-stone-age.html</loc>
-    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
@@ -2064,6 +2064,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
+  </url>
+  <url>
+    <loc>https://bienvenidoalos90.com/episodios/1132-especial-queens-of-the-stone-age-parte-1.html</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyrNtd7-1RFziCEMfE5SMq_PTJUZyICKZrsySGnj91TKsISLZ_uxr2Yd9nuwGsY12hdPMLvGwKoWQCh32Hr5E79mrH-kvoKi3VYtJmTwgBb-41Hoo9-GEFj81i3NvK13ddDiKE8MFSQVhGTrFJ_EwGUGmxpJ3D4PMAlopAiz_-q1mSwoce9aWrCVDz0aI/s640/B90_1132_2.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/episodios/1131-quieres-empezar-un-podcast-escucha-esto.html</loc>
