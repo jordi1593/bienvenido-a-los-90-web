@@ -519,7 +519,7 @@ function renderHeroLatest(episodes) {
   wrap.href = `episodios/${latest.slug}.html`;
   wrap.setAttribute("aria-label", `Último episodio: ${latest.title}`);
   if (coverEl && latest.thumbnail) {
-    coverEl.src = latest.thumbnail.replace("/s72-c/", "/s480/");
+    coverEl.src = latest.thumbnail.replace("/s72-c/", "/s160/");
     coverEl.alt = latest.title;
   }
   wrap.hidden = false;
