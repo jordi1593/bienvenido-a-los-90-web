@@ -557,7 +557,7 @@ body {
 
 .listen-section h2 {
   margin: 0 0 1.25rem;
-  font-family: Georgia, 'Book Antiqua', Palatino, serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-style: italic;
   font-weight: normal;
   font-size: 2rem;
@@ -706,7 +706,7 @@ html:not([data-theme="dark"]) .platform-btn {
 /* Controles de búsqueda */
 
 .section-title {
-  font-family: Georgia, 'Book Antiqua', Palatino, serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-style: italic;
   font-weight: normal;
   font-size: 2rem;
