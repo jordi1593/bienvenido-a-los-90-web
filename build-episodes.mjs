@@ -544,6 +544,7 @@ function episodePage(ep, { prev, next, related, series, validEtiquetaLabels }) {
 <link rel="stylesheet" href="../styles.css?v=80" />
 ${(() => { const c = EPISODE_COLORS[ep.slug]; return c ? `<style>:root{--accent:rgb(${c[0]},${c[1]},${c[2]}) !important;--accent-dark:rgb(${Math.round(c[0]*.8)},${Math.round(c[1]*.8)},${Math.round(c[2]*.8)}) !important;--accent-subtle:rgba(${c[0]},${c[1]},${c[2]},.08) !important}</style>` : ""; })()}
 ${epNum != null ? `<style>.ep-title-wrap{position:relative;overflow:visible}.ep-num-watermark{position:absolute;font-size:clamp(7rem,22vw,16rem);font-weight:900;line-height:1;top:-0.15em;left:-0.05em;color:var(--accent);opacity:0.07;pointer-events:none;user-select:none;letter-spacing:-0.04em;z-index:0}.ep-title-wrap h1,.ep-title-wrap .episode-meta,.ep-title-wrap .episode-likes{position:relative;z-index:1}</style>` : ""}
+<style>.ep-stats{display:flex;gap:0;margin:1.5rem 0;border:1px solid var(--border);border-radius:10px;overflow:hidden}.ep-stat{flex:1;display:flex;flex-direction:column;align-items:center;padding:0.5rem 0.25rem;gap:0.2rem;border-right:1px solid var(--border)}.ep-stat:last-child{border-right:none}.ep-stat-num{font-size:1rem;font-weight:700;line-height:1;color:var(--accent);letter-spacing:-0.02em;font-variant-numeric:tabular-nums}.ep-stat-icon{color:var(--text-muted);width:16px;height:16px}.ep-stat-label{font-size:0.62rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted)}</style>
 
 <meta property="og:type" content="article" />
 <meta property="og:title" content="${escapeHtml(ep.title)}" />
@@ -616,6 +617,12 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
         ${ep.thumbnail ? `srcset="${imageSrcset(ep.thumbnail, [320, 640, 960])}" sizes="(max-width: 680px) calc(100vw - 2rem), 640px"` : ""}
         alt="${escapeHtml(ep.title)}"
         width="640" height="427" />` : ""}
+
+      ${(typeof ep.plays === "number" || typeof ep.likes === "number" || ep.comments) ? `<div class="ep-stats" aria-label="Estadísticas del episodio">
+        ${typeof ep.plays === "number" ? `<div class="ep-stat"><svg class="ep-stat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/><path d="M9.5 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg><span class="ep-stat-num">${ep.plays >= 1000 ? (ep.plays/1000).toFixed(1)+'k' : ep.plays}</span><span class="ep-stat-label">Escuchas</span></div>` : ""}
+        ${typeof ep.likes === "number" ? `<div class="ep-stat"><svg class="ep-stat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.8-9.2C.5 7.8 2.3 4.5 5.8 4c2.1-.3 4.1.7 6.2 3 2.1-2.3 4.1-3.3 6.2-3 3.5.5 5.3 3.8 3.6 7.3-2.3 4.6-9.8 9.2-9.8 9.2z" stroke-linejoin="round"/></svg><span class="ep-stat-num">${ep.likes}</span><span class="ep-stat-label">Me gusta</span></div>` : ""}
+        ${ep.comments ? `<div class="ep-stat"><svg class="ep-stat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke-linejoin="round"/></svg><span class="ep-stat-num">${ep.comments}</span><span class="ep-stat-label">Comentarios</span></div>` : ""}
+      </div>` : ""}
 
       <div class="episode-actions">
         <a class="primary" href="${ep.url}" target="_blank" rel="noopener">Ver en el blog original</a>
