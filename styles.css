@@ -723,6 +723,12 @@ html:not([data-theme="dark"]) .platform-btn {
   overflow-y: auto;
 }
 
+.archive-count {
+  color: var(--accent);
+  font-size: 0.82em;
+  font-weight: 600;
+}
+
 .archive-widget h3 {
   margin: 0 0 0.75rem;
   font-size: 0.95rem;
@@ -1132,6 +1138,11 @@ html:not([data-theme="dark"]) .platform-btn {
   width: 1em;
   height: 1em;
   flex-shrink: 0;
+}
+
+.ep-num {
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .episode-body h2 {

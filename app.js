@@ -78,6 +78,10 @@ function ivooxAudioUrl(ep) {
   return m ? `https://go.ivoox.com/rf/${m[1]}` : null;
 }
 
+function wrapEpNum(html) {
+  return html.replace(/^(\d+\s*[-–]\s*)/, '<span class="ep-num">$1</span>');
+}
+
 function episodeCardHtml(ep) {
   const pageUrl = `episodios/${ep.slug}.html`;
   const query = state.search.trim();
@@ -107,7 +111,7 @@ function episodeCardHtml(ep) {
         ${playBtn}
       </a>
       <div class="episode-body">
-        <h2><a href="${pageUrl}">${highlightMatch(escapeHtml(ep.title), query)}</a></h2>
+        <h2><a href="${pageUrl}">${wrapEpNum(highlightMatch(escapeHtml(ep.title), query))}</a></h2>
         <div class="episode-meta">${formatDate(ep.published)}${typeof ep.comments === "number" ? ` · ${ep.comments} comentario${ep.comments === 1 ? "" : "s"}` : ""}</div>
         ${typeof ep.likes === "number" ? `<div class="episode-likes"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 20.5s-7.5-4.6-9.8-9.2C.5 7.8 2.3 4.5 5.8 4c2.1-.3 4.1.7 6.2 3 2.1-2.3 4.1-3.3 6.2-3 3.5.5 5.3 3.8 3.6 7.3-2.3 4.6-9.8 9.2-9.8 9.2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg> ${ep.likes}</div>` : ""}
         <div class="platform-links">
@@ -472,14 +476,14 @@ function buildArchiveTree(episodes) {
       const itemsHtml = eps.map((ep) => `<li><a href="episodios/${ep.slug}.html">${escapeHtml(ep.title)}</a></li>`).join("");
       return `
         <details class="archive-month">
-          <summary>${MONTH_NAMES[month]} (${eps.length})</summary>
+          <summary>${MONTH_NAMES[month]} <span class="archive-count">${eps.length}</span></summary>
           <ul class="archive-episode-list">${itemsHtml}</ul>
         </details>`;
     }).join("");
 
     return `
       <details class="archive-year">
-        <summary>${year} (${total})</summary>
+        <summary>${year} <span class="archive-count">${total}</span></summary>
         ${monthsHtml}
       </details>`;
   }).join("");
