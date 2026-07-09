@@ -6,6 +6,10 @@
 import fs from "fs";
 import path from "path";
 
+const EPISODE_COLORS = fs.existsSync("data/episode-colors.json")
+  ? JSON.parse(fs.readFileSync("data/episode-colors.json", "utf8"))
+  : {};
+
 const SITE_URL = process.env.SITE_URL || "https://bienvenidoalos90.com";
 const OUT_DIR = "episodios";
 
@@ -538,6 +542,8 @@ function episodePage(ep, { prev, next, related, series, validEtiquetaLabels }) {
 <meta name="description" content="${description}" />
 <link rel="canonical" href="${canonical}" />
 <link rel="stylesheet" href="../styles.css?v=80" />
+${(() => { const c = EPISODE_COLORS[ep.slug]; return c ? `<style>:root{--accent:rgb(${c[0]},${c[1]},${c[2]}) !important;--accent-dark:rgb(${Math.round(c[0]*.8)},${Math.round(c[1]*.8)},${Math.round(c[2]*.8)}) !important;--accent-subtle:rgba(${c[0]},${c[1]},${c[2]},.08) !important}</style>` : ""; })()}
+${epNum != null ? `<style>.ep-title-wrap{position:relative;overflow:visible}.ep-num-watermark{position:absolute;font-size:clamp(7rem,22vw,16rem);font-weight:900;line-height:1;top:-0.15em;left:-0.05em;color:var(--accent);opacity:0.07;pointer-events:none;user-select:none;letter-spacing:-0.04em;z-index:0}.ep-title-wrap h1,.ep-title-wrap .episode-meta,.ep-title-wrap .episode-likes{position:relative;z-index:1}</style>` : ""}
 
 <meta property="og:type" content="article" />
 <meta property="og:title" content="${escapeHtml(ep.title)}" />
@@ -597,9 +603,11 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 
     <div class="episode-page-layout">
     <article>
+      ${epNum != null ? `<div class="ep-title-wrap"><span class="ep-num-watermark" aria-hidden="true">${epNum}</span>` : ""}
       <h1>${escapeHtml(ep.title)}</h1>
       <p class="episode-meta">${formatDateLong(ep.published)} · ${ep.comments} comentario${ep.comments === 1 ? "" : "s"}</p>
       ${typeof ep.likes === "number" ? `<p class="episode-likes"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 20.5s-7.5-4.6-9.8-9.2C.5 7.8 2.3 4.5 5.8 4c2.1-.3 4.1.7 6.2 3 2.1-2.3 4.1-3.3 6.2-3 3.5.5 5.3 3.8 3.6 7.3-2.3 4.6-9.8 9.2-9.8 9.2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg> ${ep.likes}</p>` : ""}
+      ${epNum != null ? `</div>` : ""}
 
       ${ivooxId ? `<div class="ivoox-player"><iframe frameborder="0" allowfullscreen scrolling="no" height="200" style="width:100%;" src="https://www.ivoox.com/player_ej_${ivooxId}_4_1.html?c1=ed285e" title="Reproductor de iVoox"></iframe></div>` : ""}
 
