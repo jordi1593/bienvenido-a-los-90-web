@@ -54,14 +54,28 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
 .nav-toggle svg{width:24px;height:24px}
 @media(max-width:720px){.topnav-links{position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg-flat);border-top:1px solid var(--border);border-bottom:1px solid var(--border);max-height:0;overflow:hidden;transition:max-height .2s ease}.topnav-links.open{max-height:320px}.topnav-links a{padding:.9rem 1.5rem;border-bottom:1px solid var(--border)}.topnav-links a:last-child{border-bottom:none}.nav-toggle{display:flex}.topnav-links li:has(a[href="#escuchanos"]){order:1}.topnav-links li:has(a[href="#episodios"]),.topnav-links li:has(a[href="/#episodios"]){order:2}.topnav-links li:has(a[href="fotos.html"]){order:3}.topnav-links li:has(a[id="randomEpisodeBtn"]){order:4}.topnav-links li:has(a[href="#sobre-nosotros"]),.topnav-links li:has(a[href="/#sobre-nosotros"]){order:5}.topnav-links li:has(a[href="#sigue"]),.topnav-links li:has(a[href="/#sigue"]){order:6}}
 .site-header{position:relative;background:var(--bg-flat)}
-.header-banner-wrap{padding:1.5rem 1rem;text-align:center}
-.header-banner{display:inline-block;width:auto;max-width:100%;height:auto;max-height:420px}
+.header-banner-wrap{display:grid;grid-template-columns:1fr 280px;align-items:center;gap:2rem;padding:2rem 0}
+.hero-left{display:flex;flex-direction:column;align-items:flex-start;gap:.65rem;text-align:left}
+.hero-eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#c41750;margin:0}
+[data-theme="dark"] .hero-eyebrow{color:#ff5d85}
+.header-banner{display:block;width:auto;max-width:100%;height:auto;max-height:180px}
 .header-banner.logo-dark{display:none}
 [data-theme="dark"] .header-banner.logo-light{display:none}
 [data-theme="dark"] .header-banner.logo-dark{display:inline-block}
-[data-theme="dark"] .header-banner-wrap{padding:2rem 1rem;position:relative}
+[data-theme="dark"] .header-banner-wrap{padding:2rem 0;position:relative}
 [data-theme="dark"] .header-banner-wrap::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 55% 65% at 50% 50%,rgba(255,93,133,0.16),transparent 70%);pointer-events:none}
 [data-theme="dark"] .header-banner{position:relative;filter:drop-shadow(0 14px 32px rgba(0,0,0,0.65)) drop-shadow(0 0 18px rgba(255,93,133,0.12))}
+.hero-right{display:block;aspect-ratio:1;border-radius:12px;overflow:hidden;border:1px solid rgba(0,0,0,.15);text-decoration:none;position:relative;background:var(--bg-card,#fdeef3)}
+[data-theme="dark"] .hero-right{border-color:rgba(255,255,255,.15)}
+.hero-right[hidden]{display:block!important;visibility:hidden}
+.hero-right .hero-latest-cover{width:100%;height:100%;object-fit:cover;display:block}
+.hero-right .hero-latest-body{position:absolute;bottom:0;left:0;right:0;padding:.75rem 1rem;background:linear-gradient(transparent,rgba(0,0,0,.72))}
+.hero-right .hero-latest-label{display:block;font-size:.65rem;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.2rem}
+.hero-right .hero-latest-title{display:block;font-size:.82rem;font-weight:500;color:#fff;line-height:1.35}
+.hero-bar{border-top:1px solid rgba(0,0,0,.1);background:var(--bg-card,#fdeef3)}
+[data-theme="dark"] .hero-bar{border-color:rgba(255,255,255,.1);background:#221d29}
+.hero-bar-inner{display:flex;align-items:center;padding:.6rem 0}
+@media(max-width:720px){.header-banner-wrap{grid-template-columns:1fr;gap:1rem;padding:1.25rem 0}.hero-right{max-height:220px;aspect-ratio:auto}}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .listen-section{background:var(--bg-card);padding:2.5rem 0;border-top:1px solid var(--border)}
 .listen-section h2{margin:0 0 1.25rem;font-family:Georgia,'Book Antiqua',Palatino,serif;font-style:italic;font-weight:normal;font-size:2rem;letter-spacing:-.01em;text-transform:none;color:var(--text);text-align:center}
@@ -141,30 +155,36 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
 
   <header class="site-header">
     <div class="container header-banner-wrap">
-      <h1 class="sr-only">Bienvenido a los 90</h1>
-      <p class="sr-only">Programa de radio musical especializado en la cultura alternativa de los años 90. Presentado por Roberto Martínez</p>
-      <img class="header-banner logo-light" src="images/b90-header.webp" alt="Bienvenido a los 90 — Podcast presentado por Roberto Martínez" width="609" height="367" fetchpriority="high" />
-      <img class="header-banner logo-dark" src="images/b90-header-dark.webp" alt="Bienvenido a los 90 — Podcast presentado por Roberto Martínez" width="609" height="367" fetchpriority="high" />
-      <p class="hero-tagline">El podcast de referencia del rock alternativo de los 90.</p>
-      <div class="hero-stats" aria-label="Estadísticas del podcast">
-        <div class="hero-stat"><strong>+1.200</strong><span>episodios</span></div>
-        <div class="hero-stat"><strong>+11.000</strong><span>suscriptores</span></div>
-        <div class="hero-stat"><strong>Desde 2012</strong><span>en antena</span></div>
+      <div class="hero-left">
+        <h1 class="sr-only">Bienvenido a los 90</h1>
+        <p class="sr-only">Programa de radio musical especializado en la cultura alternativa de los años 90. Presentado por Roberto Martínez</p>
+        <p class="hero-eyebrow">Podcast de rock alternativo</p>
+        <img class="header-banner logo-light" src="images/b90-header.webp" alt="Bienvenido a los 90 — Podcast presentado por Roberto Martínez" width="609" height="367" fetchpriority="high" />
+        <img class="header-banner logo-dark" src="images/b90-header-dark.webp" alt="Bienvenido a los 90 — Podcast presentado por Roberto Martínez" width="609" height="367" fetchpriority="high" />
+        <p class="hero-tagline">El podcast de referencia del rock alternativo de los 90.</p>
+        <div class="hero-actions">
+          <a class="hero-cta" href="#episodios">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            Descubrir episodios
+          </a>
+          <a class="hero-cta-secondary" href="#sobre-nosotros">¿Qué es esto?</a>
+        </div>
       </div>
-      <a class="hero-latest" id="heroLatest" href="#" hidden>
-        <img class="hero-latest-cover" id="heroLatestCover" alt="" width="44" height="44" loading="lazy" />
+      <a class="hero-right" id="heroLatest" href="#" hidden>
+        <img class="hero-latest-cover" id="heroLatestCover" alt="" loading="lazy" />
         <div class="hero-latest-body">
           <span class="hero-latest-label" id="heroLatestDate"></span>
           <span class="hero-latest-title" id="heroLatestTitle"></span>
         </div>
-        <span class="hero-latest-arrow" aria-hidden="true">›</span>
       </a>
-      <div class="hero-actions">
-        <a class="hero-cta" href="#episodios">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-          Descubrir episodios
-        </a>
-        <a class="hero-cta-secondary" href="#sobre-nosotros">¿Qué es esto?</a>
+    </div>
+    <div class="hero-bar">
+      <div class="container hero-bar-inner">
+        <div class="hero-stats" aria-label="Estadísticas del podcast">
+          <div class="hero-stat"><strong>+1.200</strong><span>episodios</span></div>
+          <div class="hero-stat"><strong>+11.000</strong><span>suscriptores</span></div>
+          <div class="hero-stat"><strong>Desde 2012</strong><span>en antena</span></div>
+        </div>
       </div>
     </div>
   </header>
