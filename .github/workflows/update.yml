@@ -2,7 +2,7 @@ name: Actualizar episodios
 
 on:
   schedule:
-    - cron: "0 * * * *" # cada hora
+    - cron: "*/15 * * * *" # cada 15 minutos
   workflow_dispatch: {}
 
 permissions:
