@@ -6,9 +6,6 @@
 import fs from "fs";
 import path from "path";
 
-const EPISODE_COLORS = fs.existsSync("data/episode-colors.json")
-  ? JSON.parse(fs.readFileSync("data/episode-colors.json", "utf8"))
-  : {};
 
 const SITE_URL = process.env.SITE_URL || "https://bienvenidoalos90.com";
 const OUT_DIR = "episodios";
@@ -542,7 +539,6 @@ function episodePage(ep, { prev, next, related, series, validEtiquetaLabels }) {
 <meta name="description" content="${description}" />
 <link rel="canonical" href="${canonical}" />
 <link rel="stylesheet" href="../styles.css?v=80" />
-${(() => { const c = EPISODE_COLORS[ep.slug]; return c ? `<style>:root{--accent:rgb(${c[0]},${c[1]},${c[2]}) !important;--accent-dark:rgb(${Math.round(c[0]*.8)},${Math.round(c[1]*.8)},${Math.round(c[2]*.8)}) !important;--accent-subtle:rgba(${c[0]},${c[1]},${c[2]},.08) !important}</style>` : ""; })()}
 ${epNum != null ? `<style>.ep-title-wrap{position:relative;overflow:visible}.ep-num-watermark{position:absolute;font-size:clamp(7rem,22vw,16rem);font-weight:900;line-height:1;top:-0.15em;left:-0.05em;color:var(--accent);opacity:0.07;pointer-events:none;user-select:none;letter-spacing:-0.04em;z-index:0}.ep-title-wrap h1,.ep-title-wrap .episode-meta,.ep-title-wrap .episode-likes{position:relative;z-index:1}</style>` : ""}
 <style>.ep-stats{display:flex;gap:0;margin:1.5rem 0;border:1px solid var(--border);border-radius:10px;overflow:hidden}.ep-stat{flex:1;display:flex;flex-direction:column;align-items:center;padding:0.5rem 0.25rem;gap:0.2rem;border-right:1px solid var(--border)}.ep-stat:last-child{border-right:none}.ep-stat-num{font-size:1rem;font-weight:700;line-height:1;color:var(--accent);letter-spacing:-0.02em;font-variant-numeric:tabular-nums}.ep-stat-icon{color:var(--text-muted);width:16px;height:16px}.ep-stat-label{font-size:0.62rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted)}</style>
 
@@ -830,6 +826,10 @@ const ARTIST_DATA = {
     sameAs: "https://www.wikidata.org/wiki/Q2599",
     type: "Person",
   },
+  "Marilyn Manson": {
+    intro: "Marilyn Manson es uno de los artistas más provocadores y controvertidos de los años 90. Con álbumes como Antichrist Superstar (1996) y Mechanical Animals (1998), redefinió el rock industrial y el shock rock. En Bienvenido a los 90, el podcast de música de los 90 en español, dedicamos nuestro programa 666 y otros episodios a analizar su figura y su impacto cultural.",
+    sameAs: "https://www.wikidata.org/wiki/Q153723",
+  },
 };
 
 function labelSlug(label) {
@@ -987,9 +987,50 @@ ${extraLd ? `<script type="application/ld+json">${extraLd}</script>` : ""}
     <nav class="breadcrumb" aria-label="Ruta de navegación" style="font-size:0.82rem;color:var(--text-dim);margin-bottom:1.5rem">
       <a href="/">Inicio</a> › <a href="/etiquetas/">Etiquetas</a> › <span>${escapeHtml(label)}</span>
     </nav>
+
+    ${slug === 'marilyn-manson' ? (() => {
+      const heroEp = sorted.find(e => e.slug.includes('666')) || sorted[0];
+      const heroBg = heroEp?.thumbnail ? thumbAtSize(heroEp.thumbnail, 640) : null;
+      const featuredEp = heroEp;
+      const featThumb = featuredEp?.thumbnail ? thumbAtSize(featuredEp.thumbnail, 320) : null;
+      return `
+<style>
+.artist-hero{position:relative;overflow:hidden;border-radius:12px;margin-bottom:1.5rem;min-height:200px;display:flex;align-items:flex-end}
+.artist-hero-bg{position:absolute;inset:0;background-size:cover;background-position:center top;filter:blur(14px) brightness(0.3);transform:scale(1.12)}
+.artist-hero-content{position:relative;z-index:1;padding:1.5rem 1.75rem;color:#fff;width:100%}
+.artist-hero-count{font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;opacity:0.65;display:block;margin-bottom:0.4rem}
+.artist-hero-name{font-size:clamp(2rem,6vw,3.2rem);font-weight:900;line-height:1;margin:0 0 0.75rem;letter-spacing:-0.02em}
+.artist-hero-intro{font-size:0.85rem;line-height:1.65;opacity:0.8;max-width:58ch;margin:0}
+.artist-featured{display:flex;gap:1rem;align-items:center;padding:0.85rem 1rem;border:1px solid var(--border);border-radius:10px;margin-bottom:2rem;text-decoration:none;color:inherit;transition:border-color 0.15s}
+.artist-featured:hover{border-color:var(--accent)}
+.artist-featured-cover{width:72px;height:72px;object-fit:cover;border-radius:8px;flex-shrink:0}
+.artist-featured-body{min-width:0}
+.artist-featured-label{font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);font-weight:600;display:block;margin-bottom:0.25rem}
+.artist-featured-title{font-size:0.95rem;font-weight:500;line-height:1.3;margin:0 0 0.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.artist-featured-date{font-size:0.75rem;color:var(--text-muted)}
+</style>
+<div class="artist-hero">
+  ${heroBg ? `<div class="artist-hero-bg" style="background-image:url('${heroBg}')"></div>` : ""}
+  <div class="artist-hero-content">
+    <span class="artist-hero-count">${eps.length} episodios en el podcast</span>
+    <h1 class="artist-hero-name">${escapeHtml(label)}</h1>
+    <p class="artist-hero-intro">${escapeHtml(artistData.intro)}</p>
+  </div>
+</div>
+${featuredEp ? `<a class="artist-featured" href="../episodios/${featuredEp.slug}.html">
+  ${featThumb ? `<img class="artist-featured-cover" src="${escapeHtml(featThumb)}" alt="${escapeHtml(featuredEp.title)}" loading="lazy" />` : ""}
+  <div class="artist-featured-body">
+    <span class="artist-featured-label">Episodio destacado</span>
+    <p class="artist-featured-title">${escapeHtml(featuredEp.title)}</p>
+    <span class="artist-featured-date">${featuredEp.published ? new Date(featuredEp.published).toLocaleDateString("es-ES", {day:"numeric",month:"long",year:"numeric"}) : ""}</span>
+  </div>
+</a>` : ""}
+<p style="color:var(--text-muted);font-size:0.82rem;margin-bottom:1.5rem">${eps.length} episodio${eps.length === 1 ? "" : "s"}</p>`;
+    })() : `
     <h1 class="section-title font-brand">${escapeHtml(label)}</h1>
     ${artistData ? `<p class="artist-intro">${escapeHtml(artistData.intro)}</p>` : ""}
-    <p style="color:var(--text-dim);margin-bottom:2rem">${eps.length} episodio${eps.length === 1 ? "" : "s"}</p>
+    <p style="color:var(--text-dim);margin-bottom:2rem">${eps.length} episodio${eps.length === 1 ? "" : "s"}</p>`}
+
     <section class="episode-list">
       ${episodesHtml}
     </section>
