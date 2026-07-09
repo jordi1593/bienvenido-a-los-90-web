@@ -1067,18 +1067,18 @@ html:not([data-theme="dark"]) .platform-btn {
 
 .skeleton-cover,
 .skeleton-line {
-  background: linear-gradient(90deg, var(--bg-card) 25%, var(--skeleton-shimmer, rgba(0,0,0,0.06)) 50%, var(--bg-card) 75%);
-  background-size: 200% 100%;
+  background: linear-gradient(90deg, var(--bg-card) 25%, var(--skeleton-shimmer, rgba(0,0,0,0.09)) 50%, var(--bg-card) 75%);
+  background-size: 800px 100%;
   animation: skeleton-pulse 1.4s ease-in-out infinite;
 }
 
 [data-theme="dark"] {
-  --skeleton-shimmer: rgba(255, 255, 255, 0.07);
+  --skeleton-shimmer: rgba(255, 255, 255, 0.11);
 }
 
 @keyframes skeleton-pulse {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+  0%   { background-position: -800px 0; }
+  100% { background-position:  800px 0; }
 }
 
 @media (max-width: 720px) {
