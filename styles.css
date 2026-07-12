@@ -545,12 +545,12 @@ body {
 
 .listen-section h3 {
   margin: 0 0 1.25rem;
-  font-family: 'Playfair Display', Georgia, serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 2rem;
-  letter-spacing: -0.01em;
-  text-transform: none;
+  font-family: var(--font-display) !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--text);
   text-align: center;
 }
