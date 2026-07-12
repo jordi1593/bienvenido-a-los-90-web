@@ -6,19 +6,39 @@
 import fs from "fs";
 
 const LIST_BASE = "https://www.ivoox.com/podcast-bienvenido-a-90_sq_f132699_";
-const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36";
-const DELAY_MS = 400;
+const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36";
+const DELAY_MS = 1200;
 const MAX_PAGES = 100;
+const MAX_RETRIES = 3;
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 async function fetchListPage(page) {
-  const res = await fetch(`${LIST_BASE}${page}.html`, { headers: { "User-Agent": UA } });
-  if (res.status === 404) return null;
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  return res.text();
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    const res = await fetch(`${LIST_BASE}${page}.html`, {
+      headers: {
+        "User-Agent": UA,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+        "Referer": "https://www.ivoox.com/",
+      },
+    });
+    if (res.status === 404) return null;
+    if (res.status === 429 || res.status === 503 || res.status === 500) {
+      const wait = attempt * 5000;
+      console.log(`  HTTP ${res.status} en página ${page}, reintento ${attempt}/${MAX_RETRIES} en ${wait/1000}s...`);
+      await sleep(wait);
+      continue;
+    }
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return res.text();
+  }
+  throw new Error(`HTTP 500 tras ${MAX_RETRIES} reintentos en página ${page}`);
 }
 
 // iVoox abrevia cifras grandes como "1.1k" o "2.3m" en vez del número exacto.
