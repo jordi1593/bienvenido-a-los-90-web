@@ -425,9 +425,11 @@ body {
 }
 .hero-press-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 0.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
 }
 .hero-press-name {
   font-size: 0.7rem;
