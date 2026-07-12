@@ -417,6 +417,13 @@ body {
   border-top: 1px solid var(--border);
   margin-top: 0.75rem;
 }
+.hero-press-label {
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
 .hero-press-name {
   font-size: 0.7rem;
   font-weight: 700;
