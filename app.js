@@ -388,7 +388,7 @@ function renderNextPage() {
   const remaining = state.filtered.length - state.shown;
   if (remaining > 0) {
     const toLoad = Math.min(PAGE_SIZE(), remaining);
-    els.loadMore.textContent = `Cargar ${toLoad} episodios más`;
+    els.loadMore.textContent = 'Cargar más episodios';
   }
   els.loadMoreWrap.style.display = remaining > 0 ? "block" : "none";
   els.clearFilters.hidden = !state.search;
