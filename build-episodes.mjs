@@ -1014,7 +1014,14 @@ ${extraLd ? `<script type="application/ld+json">${extraLd}</script>` : ""}
   <div class="artist-hero-content">
     <span class="artist-hero-count">${eps.length} episodios en el podcast</span>
     <h1 class="artist-hero-name">${escapeHtml(label)}</h1>
-    <p class="artist-hero-intro">${escapeHtml(artistData.intro)}</p>
+    <p class="artist-hero-intro">${(() => {
+      const byDate = [...eps].sort((a,b) => new Date(a.published) - new Date(b.published));
+      const first = byDate[0];
+      const last = byDate[byDate.length - 1];
+      const fmt = d => new Date(d).toLocaleDateString("es-ES", { month: "long", year: "numeric" });
+      const featTitle = escapeHtml(featuredEp.title.replace(/^[^-–]+-\s*/,"").trim());
+      return `Hemos publicado ${eps.length} programas sobre ${escapeHtml(label)} desde ${fmt(first.published)} hasta ${fmt(last.published)}. El programa destacado es "${featTitle}".`;
+    })()}</p>
   </div>
 </div>
 ${featuredEp ? `<a class="artist-featured" href="../episodios/${featuredEp.slug}.html">
