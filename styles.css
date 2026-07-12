@@ -409,10 +409,9 @@ body {
 
 .hero-press {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 0.45rem;
-  flex-wrap: wrap;
+  gap: 0.35rem;
   padding: 0.85rem 1rem;
   border-top: 1px solid var(--border);
   margin-top: 0.75rem;
@@ -422,7 +421,13 @@ body {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-dim);
-  white-space: nowrap;
+  margin-bottom: 0.25rem;
+}
+.hero-press-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
 }
 .hero-press-name {
   font-size: 0.7rem;
@@ -432,9 +437,10 @@ body {
   color: var(--text-dim);
 }
 .hero-press-sep {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   color: var(--border);
   user-select: none;
+  line-height: 1;
 }
 
 .hero-latest {
