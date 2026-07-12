@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://bienvenidoalos90.com/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://bienvenidoalos90.com/images/b90-logo-new.jpg</image:loc></image:image>
@@ -16,7 +16,7 @@
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
@@ -1114,6 +1114,13 @@
     
   </url>
   <url>
+    <loc>https://bienvenidoalos90.com/etiquetas/sunny-day-real-estate.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    
+  </url>
+  <url>
     <loc>https://bienvenidoalos90.com/etiquetas/le-mur.html</loc>
     <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -1382,13 +1389,6 @@
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/galan-fest.html</loc>
     <lastmod>2026-04-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    
-  </url>
-  <url>
-    <loc>https://bienvenidoalos90.com/etiquetas/sunny-day-real-estate.html</loc>
-    <lastmod>2025-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
@@ -2064,6 +2064,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
+  </url>
+  <url>
+    <loc>https://bienvenidoalos90.com/episodios/1133-tres-tristes-tipos-haciendo-emo-hablamos-con-un-lugar-tranquilo.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3pTbtS_VHlvsTHL3ht6_cbPnblQ67dXtr82CzgwbtS5UgOt0RHKQ26DZcEsEHZf6SQQPtPqEbchTJBc1damBemQvl9fTmiq9kIOM7D5hgQ8wQJPYRA47YKYevQ4NJo6ePt9yNa1x1FwZzbI9HnPJsOX_yeL50TdoAwKZ8qdwmq8xCNNXd3xGz4lVlVtI/s640/B90_1133.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/episodios/1132-especial-queens-of-the-stone-age-parte-1.html</loc>
