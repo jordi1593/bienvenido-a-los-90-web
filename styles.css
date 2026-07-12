@@ -545,14 +545,23 @@ body {
 
 .listen-section h3 {
   margin: 0 0 1.25rem;
-  font-family: var(--font-display) !important;
+  font-family: var(--font-display);
   font-style: normal;
-  font-weight: 700;
-  font-size: 1.8rem;
-  letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--text);
-  text-align: center;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.listen-section h3::before,
+.listen-section h3::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
 }
 
 .platform-grid {
@@ -694,14 +703,25 @@ html:not([data-theme="dark"]) .platform-btn {
 /* Controles de búsqueda */
 
 .section-title {
-  font-family: var(--font-display) !important;
+  font-family: var(--font-display);
   font-style: normal;
-  font-weight: 700;
-  font-size: 1.8rem;
+  font-weight: 800;
+  font-size: 1rem;
   text-transform: uppercase;
+  letter-spacing: 0.35em;
+  color: var(--text);
   margin: 2.5rem 0 1.25rem;
-  letter-spacing: 0.03em;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  white-space: nowrap;
+}
+.section-title::before,
+.section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
 }
 
 .episodes-layout {
@@ -1430,12 +1450,22 @@ html:not([data-theme="dark"]) .platform-btn {
 
 .site-footer h3 {
   font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.8rem;
-  letter-spacing: 0.03em;
-  color: var(--text);
-  margin: 1.5rem 0 0.9rem;
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  color: var(--text-dim);
+  margin: 2rem 0 1rem;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.site-footer h3::before,
+.site-footer h3::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
 }
 
 .site-footer h3:first-of-type {
