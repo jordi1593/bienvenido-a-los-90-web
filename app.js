@@ -453,7 +453,10 @@ const MONTH_NAMES = [
   "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre",
 ];
 
-function buildArchiveTree(episodes) {
+function renderArchive(episodes) {
+  const container = document.getElementById("archiveTree");
+  if (!container) return;
+
   const byYear = new Map();
   episodes.forEach((ep) => {
     const d = new Date(ep.published);
@@ -466,32 +469,51 @@ function buildArchiveTree(episodes) {
   });
 
   const years = [...byYear.keys()].sort((a, b) => b - a);
+  let selYear = years[0];
+  let selMonth = null;
 
-  return years.map((year) => {
-    const byMonth = byYear.get(year);
-    const months = [...byMonth.keys()].sort((a, b) => b - a);
-    const total = months.reduce((sum, m) => sum + byMonth.get(m).length, 0);
-    const monthsHtml = months.map((month) => {
-      const eps = byMonth.get(month).sort((a, b) => new Date(b.published) - new Date(a.published));
-      const itemsHtml = eps.map((ep) => `<li><a href="episodios/${ep.slug}.html">${escapeHtml(ep.title)}</a></li>`).join("");
-      return `
-        <details class="archive-month">
-          <summary>${MONTH_NAMES[month]} <span class="archive-count">${eps.length}</span></summary>
-          <ul class="archive-episode-list">${itemsHtml}</ul>
-        </details>`;
-    }).join("");
+  function build() {
+    container.innerHTML = "";
 
-    return `
-      <details class="archive-year">
-        <summary>${year} <span class="archive-count">${total}</span></summary>
-        ${monthsHtml}
-      </details>`;
-  }).join("");
-}
+    const yearsRow = document.createElement("div");
+    yearsRow.className = "arch-years";
+    years.forEach((y) => {
+      const b = document.createElement("button");
+      b.className = "arch-yr" + (y === selYear ? " active" : "");
+      b.textContent = y;
+      b.onclick = () => { selYear = y; selMonth = null; build(); };
+      yearsRow.appendChild(b);
+    });
+    container.appendChild(yearsRow);
 
-function renderArchive(episodes) {
-  const el = document.getElementById("archiveTree");
-  if (el) el.innerHTML = buildArchiveTree(episodes);
+    const byMonth = byYear.get(selYear);
+    const monthsGrid = document.createElement("div");
+    monthsGrid.className = "arch-months";
+    for (let m = 0; m < 12; m++) {
+      const eps = byMonth.get(m) || [];
+      const b = document.createElement("button");
+      b.className = "arch-mo" + (m === selMonth ? " active" : "") + (eps.length === 0 ? " empty" : "");
+      b.disabled = eps.length === 0;
+      b.innerHTML = `${MONTH_NAMES[m].slice(0, 3)}<span>${eps.length || "—"}</span>`;
+      if (eps.length) b.onclick = () => { selMonth = m; build(); };
+      monthsGrid.appendChild(b);
+    }
+    container.appendChild(monthsGrid);
+
+    if (selMonth !== null) {
+      const eps = (byMonth.get(selMonth) || []).sort((a, b) => new Date(b.published) - new Date(a.published));
+      const list = document.createElement("ul");
+      list.className = "arch-ep-list";
+      eps.forEach((ep) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<a href="episodios/${ep.slug}.html">${escapeHtml(ep.title)}</a>`;
+        list.appendChild(li);
+      });
+      container.appendChild(list);
+    }
+  }
+
+  build();
 }
 
 // Los episodios se sirven en bloques (el primero con los más recientes) para
