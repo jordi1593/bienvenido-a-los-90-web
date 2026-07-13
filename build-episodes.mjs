@@ -1442,6 +1442,9 @@ function buildFotosPage(episodesBySlug) {
 function main() {
   const episodes = JSON.parse(fs.readFileSync("episodes.json", "utf-8"));
   canonicalizeLabels(episodes);
+  const relatedOverrides = fs.existsSync("related-overrides.json")
+    ? JSON.parse(fs.readFileSync("related-overrides.json", "utf-8"))
+    : {};
   // Orden cronológico ascendente para la navegación prev/next entre episodios
   const chronological = [...episodes].sort((a, b) => new Date(a.published) - new Date(b.published));
 
@@ -1475,7 +1478,12 @@ function main() {
   chronological.forEach((ep, i) => {
     const prev = i > 0 ? chronological[i - 1] : null;
     const next = i < chronological.length - 1 ? chronological[i + 1] : null;
-    const related = getRelatedEpisodes(ep, episodes);
+    const overrideSlugs = relatedOverrides[ep.slug];
+    const related = overrideSlugs
+      ? overrideSlugs.map((s) => episodesBySlug.get(s)).filter(Boolean).concat(
+          getRelatedEpisodes(ep, episodes).filter((r) => !overrideSlugs.includes(r.slug))
+        ).slice(0, 6)
+      : getRelatedEpisodes(ep, episodes);
     const series = seriesBySlug.get(ep.slug) || null;
     const html = episodePage(ep, { prev, next, related, series, validEtiquetaLabels });
     fs.writeFileSync(path.join(OUT_DIR, `${ep.slug}.html`), html, "utf-8");
