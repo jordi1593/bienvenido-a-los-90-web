@@ -538,7 +538,7 @@ function episodePage(ep, { prev, next, related, series, validEtiquetaLabels }) {
 <link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
 <meta name="description" content="${description}" />
 <link rel="canonical" href="${canonical}" />
-<link rel="stylesheet" href="../styles.css?v=80" />
+<link rel="stylesheet" href="../styles.css?v=93" />
 ${epNum != null ? `<style>.ep-title-wrap{position:relative;overflow:visible}.ep-num-watermark{position:absolute;font-size:clamp(7rem,22vw,16rem);font-weight:900;line-height:1;top:-0.15em;left:-0.05em;color:var(--accent);opacity:0.07;pointer-events:none;user-select:none;letter-spacing:-0.04em;z-index:0}.ep-title-wrap h1,.ep-title-wrap .episode-meta,.ep-title-wrap .episode-likes{position:relative;z-index:1}</style>` : ""}
 <style>.ep-stats{display:flex;gap:0;margin:1.5rem 0;border:1px solid var(--border);border-radius:10px;overflow:hidden}.ep-stat{flex:1;display:flex;flex-direction:column;align-items:center;padding:0.5rem 0.25rem;gap:0.2rem;border-right:1px solid var(--border)}.ep-stat:last-child{border-right:none}.ep-stat-num{font-size:1rem;font-weight:700;line-height:1;color:var(--accent);letter-spacing:-0.02em;font-variant-numeric:tabular-nums}.ep-stat-icon{color:var(--text-muted);width:16px;height:16px}.ep-stat-label{font-size:0.62rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted)}</style>
 
@@ -943,7 +943,7 @@ function buildEtiquetasPages(episodes) {
 <link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
 <meta name="description" content="${escapeHtml(description)}" />
 <link rel="canonical" href="${pageUrl}" />
-<link rel="stylesheet" href="../styles.css?v=80" />
+<link rel="stylesheet" href="../styles.css?v=93" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="${escapeHtml(title)}" />
 <meta property="og:description" content="${escapeHtml(description)}" />
@@ -1065,7 +1065,7 @@ ${footer}
 <link rel="icon" type="image/png" href="../images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
 <meta name="description" content="Explora los episodios de Bienvenido a los 90 por artista o temática: Nirvana, Oasis, Pearl Jam, grunge, britpop y mucho más." />
 <link rel="canonical" href="${SITE_URL}/etiquetas/" />
-<link rel="stylesheet" href="../styles.css?v=80" />
+<link rel="stylesheet" href="../styles.css?v=93" />
 </head>
 <body>
   <nav class="topnav">
@@ -1308,7 +1308,7 @@ function buildFotosPage(episodesBySlug) {
 <link rel="icon" type="image/jpeg" href="images/b90-logo-new.jpg" media="(prefers-color-scheme: light)" />
 <link rel="icon" type="image/png" href="images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
 <link rel="apple-touch-icon" href="images/b90-logo-new.jpg" />
-<link rel="stylesheet" href="styles.css?v=80" />
+<link rel="stylesheet" href="styles.css?v=93" />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Fotos — Bienvenido a los 90" />
