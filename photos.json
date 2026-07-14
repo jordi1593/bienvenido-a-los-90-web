@@ -1,5 +1,23 @@
 [
   {
+    "image": "fotos/1024-jesus-roberto.jpg",
+    "caption": "Jesús y Roberto",
+    "episodeSlug": "1024-homenaje-a-dover",
+    "date": "14/07/2026"
+  },
+  {
+    "image": "fotos/1024-portada-disco-homenaje.jpg",
+    "caption": "La portada de nuestro disco homenaje",
+    "episodeSlug": "1024-homenaje-a-dover",
+    "date": "14/07/2026"
+  },
+  {
+    "image": "fotos/1024-so-90s.jpg",
+    "caption": "So 90's!",
+    "episodeSlug": "1024-homenaje-a-dover",
+    "date": "14/07/2026"
+  },
+  {
     "image": "fotos/575-me-firmas.webp",
     "caption": "¿Me firmas?",
     "episodeSlug": "p-575-road-trip-podcast-en-busca-de-mark-lanegan-primera-parte",
