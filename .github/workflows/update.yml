@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "0 1 * * *" # cada día a la 01:00 UTC
   workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths-ignore:
+      - "episodios/**"
+      - "data/**"
+      - "etiquetas/**"
 
 permissions:
   contents: write
@@ -88,7 +94,7 @@ jobs:
           fi
 
       - name: Ensamblar carpeta pública
-        if: steps.commit.outputs.pushed == 'true'
+        if: steps.commit.outputs.pushed == 'true' || github.event_name == 'push'
         run: |
           mkdir -p dist
           cp index.html 404.html privacidad.html fotos.html directo.html styles.css app.js nav.js dist/
@@ -104,16 +110,16 @@ jobs:
           cp sitemap.xml robots.txt dist/
 
       - uses: actions/configure-pages@v5
-        if: steps.commit.outputs.pushed == 'true'
+        if: steps.commit.outputs.pushed == 'true' || github.event_name == 'push'
 
       - uses: actions/upload-pages-artifact@v3
-        if: steps.commit.outputs.pushed == 'true'
+        if: steps.commit.outputs.pushed == 'true' || github.event_name == 'push'
         with:
           path: dist
 
   deploy:
     needs: update
-    if: needs.update.outputs.pushed == 'true'
+    if: needs.update.outputs.pushed == 'true' || github.event_name == 'push'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
