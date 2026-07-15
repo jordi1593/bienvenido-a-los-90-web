@@ -91,7 +91,7 @@ jobs:
         if: steps.commit.outputs.pushed == 'true'
         run: |
           mkdir -p dist
-          cp index.html 404.html privacidad.html fotos.html styles.css app.js nav.js dist/
+          cp index.html 404.html privacidad.html fotos.html directo.html styles.css app.js nav.js dist/
           cp CNAME dist/ 2>/dev/null || true
           cp -r fonts dist/
           cp -r images dist/
@@ -99,6 +99,8 @@ jobs:
           cp -r episodios dist/
           cp -r data dist/
           cp -r etiquetas dist/
+          cp directo.json dist/
+          cp -r directo dist/
           cp sitemap.xml robots.txt dist/
 
       - uses: actions/configure-pages@v5

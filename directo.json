@@ -1,0 +1,30 @@
+[
+  {
+    "ciudad": "Madrid",
+    "lat": 40.4168,
+    "lng": -3.7038,
+    "eventos": [
+      {
+        "titulo": "Radio Bleach — 30 años de Nevermind",
+        "lugar": "Sala Siroco",
+        "fecha": "9 de octubre de 2021",
+        "cartel": "directo/madrid-siroco-2021.jpg",
+        "episodioSlug": "p-800-en-directo-desde-siroco-celebrando-los-30-anos-de-nevermind"
+      }
+    ]
+  },
+  {
+    "ciudad": "Barcelona",
+    "lat": 41.3851,
+    "lng": 2.1734,
+    "eventos": [
+      {
+        "titulo": "Especial Libros Musicales con El Ecualizador",
+        "lugar": "Llibreria Sonora",
+        "fecha": "18 de marzo de 2025",
+        "cartel": "directo/barcelona-sonora-2025.jpg",
+        "episodioSlug": "1034-especial-libros-musicales-desde-barcelona"
+      }
+    ]
+  }
+]
