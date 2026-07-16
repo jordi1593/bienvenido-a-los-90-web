@@ -379,6 +379,8 @@ a.episode-card:hover h2{color:var(--accent)}
     if (!fecha) return Infinity;
     const m = fecha.match(/(\d+)\s+de\s+(\w+)\s+de\s+(\d+)/);
     if (!m) {
+      const my = fecha.match(/(\w+)\s+de\s+(\d{4})/);
+      if (my) return new Date(+my[2], (MESES[my[1].toLowerCase()] || 1) - 1, 1).getTime();
       const y = fecha.match(/^(\d{4})$/);
       return y ? new Date(+y[1], 0, 1).getTime() : Infinity;
     }
