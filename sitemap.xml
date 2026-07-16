@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://bienvenidoalos90.com/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://bienvenidoalos90.com/images/b90-logo-new.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/fotos.html</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image><image:loc>https://bienvenidoalos90.com/images/og-home.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
@@ -78,17 +78,17 @@
     
   </url>
   <url>
+    <loc>https://bienvenidoalos90.com/etiquetas/foo-fighters.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    
+  </url>
+  <url>
     <loc>https://bienvenidoalos90.com/etiquetas/darwinians-radio-bike.html</loc>
     <lastmod>2018-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    
-  </url>
-  <url>
-    <loc>https://bienvenidoalos90.com/etiquetas/foo-fighters.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
     
   </url>
   <url>
@@ -183,15 +183,15 @@
     
   </url>
   <url>
-    <loc>https://bienvenidoalos90.com/etiquetas/george-harrison.html</loc>
-    <lastmod>2026-01-14</lastmod>
+    <loc>https://bienvenidoalos90.com/etiquetas/mad-cool.html</loc>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
   </url>
   <url>
-    <loc>https://bienvenidoalos90.com/etiquetas/mad-cool.html</loc>
-    <lastmod>2025-08-12</lastmod>
+    <loc>https://bienvenidoalos90.com/etiquetas/george-harrison.html</loc>
+    <lastmod>2026-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
@@ -232,6 +232,13 @@
     
   </url>
   <url>
+    <loc>https://bienvenidoalos90.com/etiquetas/pixies.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    
+  </url>
+  <url>
     <loc>https://bienvenidoalos90.com/etiquetas/alain-johannes.html</loc>
     <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -241,13 +248,6 @@
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/blur.html</loc>
     <lastmod>2026-04-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    
-  </url>
-  <url>
-    <loc>https://bienvenidoalos90.com/etiquetas/pixies.html</loc>
-    <lastmod>2025-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
@@ -2064,6 +2064,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
+  </url>
+  <url>
+    <loc>https://bienvenidoalos90.com/episodios/1134-me-he-perdido-el-mad-cool-2026.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uttq2DC2H_qXVfvCyQaADN5zQgb8p2kuxh3shwjY6LPHde_cdJ1XZXrcU9UCarhXtBDPyyhClrB9mpLdua5fLd9sLrksv9-9fbTf96ZUT8rJcFMIF6b7BcBeGNfDxunV-SZuvBozaCzRlPThnFkZEW0LYsD4sg_VSUQ7fuqMqfHoKV9WlIdLyRB61-g/s640/B90_1134.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/episodios/1133-tres-tristes-tipos-haciendo-emo-hablamos-con-un-lugar-tranquilo.html</loc>
