@@ -378,7 +378,10 @@ a.episode-card:hover h2{color:var(--accent)}
   function parseFecha(fecha) {
     if (!fecha) return Infinity;
     const m = fecha.match(/(\d+)\s+de\s+(\w+)\s+de\s+(\d+)/);
-    if (!m) return Infinity;
+    if (!m) {
+      const y = fecha.match(/^(\d{4})$/);
+      return y ? new Date(+y[1], 0, 1).getTime() : Infinity;
+    }
     return new Date(+m[3], (MESES[m[2].toLowerCase()] || 0) - 1, +m[1]).getTime();
   }
 
