@@ -81,13 +81,13 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
 
 /* City markers */
 .city-marker{cursor:pointer}
-.city-marker circle.pulse{fill:var(--accent);opacity:.25;transform-origin:center;animation:pulse 2s ease-in-out infinite}
-.city-marker circle.dot{fill:var(--accent);transition:r .15s ease}
-.city-marker:hover circle.dot{r:10}
+.city-marker circle.pulse{fill:var(--accent);opacity:.25;animation:pulse 2s ease-in-out infinite}
+.city-marker circle.dot{fill:var(--accent);transition:transform .15s ease}
+.city-marker:hover circle.dot{transform:scale(1.5)}
 .city-marker:hover circle.pulse{animation-play-state:paused;opacity:.4}
 .city-label{font-family:var(--font-body);font-size:13px;font-weight:700;fill:var(--text);pointer-events:none;user-select:none}
 .city-marker:hover .city-label{fill:var(--accent)}
-@keyframes pulse{0%,100%{r:14;opacity:.25}50%{r:20;opacity:.1}}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:.25}50%{transform:scale(1.9);opacity:.1}}
 
 /* CITY PANEL */
 .city-panel{display:none;padding:0 0 4rem}
@@ -345,6 +345,25 @@ a.episode-card:hover h2{color:var(--accent)}
 
   async function init() {
     data = await (await fetch(DATA_URL)).json();
+
+    const maxCount = Math.max(...data.map(c => c.eventos.length));
+    data.forEach(city => {
+      const marker = document.querySelector(`.city-marker[data-city="${city.ciudad}"]`);
+      if (!marker) return;
+      const n = city.eventos.length;
+      const dotR = Math.round(4 + (n / maxCount) * 6);
+      const pulseR = dotR * 2;
+      const dot = marker.querySelector('circle.dot');
+      const pulse = marker.querySelector('circle.pulse');
+      if (!dot || !pulse) return;
+      const cx = dot.getAttribute('cx'), cy = dot.getAttribute('cy');
+      dot.setAttribute('r', dotR);
+      dot.style.transformOrigin = `${cx}px ${cy}px`;
+      pulse.setAttribute('r', pulseR);
+      pulse.style.transformOrigin = `${cx}px ${cy}px`;
+      marker.setAttribute('aria-label', `${city.ciudad} — ${n} ${n === 1 ? 'evento' : 'eventos'}`);
+    });
+
     document.querySelectorAll(".city-marker").forEach((marker) => {
       marker.addEventListener("click", () => openCity(marker.dataset.city));
       marker.addEventListener("keydown", (e) => {
