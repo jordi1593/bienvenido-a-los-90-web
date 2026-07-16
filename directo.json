@@ -38,6 +38,13 @@
         "fecha": "26 de enero de 2025",
         "cartel": "directo/madrid-biblioteca-nirvana-2025.jpg",
         "episodioSlug": "1023"
+      },
+      {
+        "titulo": "Homenaje a Dylan",
+        "lugar": "Sala Siroco",
+        "fecha": "20 de julio de 2019",
+        "cartel": "directo/madrid-siroco-dylan-2019.jpg",
+        "episodioSlug": "programa-550-homenaje-a-dylan-desde-la-sala-siroco-madrid-20-07-2019"
       }
     ]
   },

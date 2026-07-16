@@ -70,9 +70,10 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
 .section-title::before,.section-title::after{content:'';flex:1;height:1px;background:var(--border)}
 
 /* PAGE HERO */
-.page-hero{padding:3rem 0 0;text-align:center}
-.page-hero h1{font-family:var(--font-brand);font-weight:800;font-size:clamp(1.8rem,4vw,2.8rem);margin:0 0 .5rem;letter-spacing:-.02em}
-.page-hero p{color:var(--text-dim);margin:.4rem 0 0;font-size:1rem}
+.page-hero{padding:3rem 0 0}
+.page-hero h1{font-family:var(--font-brand);font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:.35em;color:var(--text);margin:2rem 0 1.25rem;display:flex;align-items:center;gap:1rem;white-space:nowrap}
+.page-hero h1::before,.page-hero h1::after{content:'';flex:1;height:1px;background:var(--border)}
+.page-hero p{color:var(--text-dim);margin:.4rem 0 0;font-size:1rem;text-align:center}
 
 /* MAP */
 .map-wrapper{position:relative;max-width:900px;margin:2.5rem auto 0;padding:0 1rem}
@@ -146,7 +147,7 @@ a.episode-card:hover h2{color:var(--accent)}
       <li><a href="/#episodios">Episodios</a></li>
       <li><a href="fotos.html">Fotos</a></li>
       <li><a href="directo.html" class="active">En Directo</a></li>
-      <li><a href="#" id="randomEpisodeBtn" aria-label="Episodio aleatorio"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
+      <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
       <li><a href="/#sobre-nosotros">Sobre nosotros</a></li>
       <li><a href="/#sigue">Síguenos</a></li>
     </ul>
@@ -162,7 +163,7 @@ a.episode-card:hover h2{color:var(--accent)}
 <main>
   <div class="container">
     <div class="page-hero">
-      <h1 class="font-brand">En Directo</h1>
+      <h1 class="section-title font-brand">En Directo</h1>
       <p>Los programas que hemos realizado en directo por las ciudades de España</p>
       <p style="font-size:.9rem;margin-top:.5rem">Si quieres que el programa se haga en tu ciudad escribe a <a href="mailto:bienvenidoalosnoventa@gmail.com" style="color:var(--accent)">bienvenidoalosnoventa@gmail.com</a></p>
     </div>
@@ -174,7 +175,7 @@ a.episode-card:hover h2{color:var(--accent)}
       x = 30 + (lon + 9.5) × 56.9   (lon range −9.5 → 3.5, viewBox width 800)
       y = 30 + (44.0 − lat) × 59.8  (lat range 44.0 → 35.8, viewBox height 550)
     -->
-    <svg id="spain-map" viewBox="0 0 800 550" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa de España con ciudades donde se han grabado programas en directo">
+    <svg id="spain-map" viewBox="0 0 820 550" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa de España con ciudades donde se han grabado programas en directo">
       <defs>
         <filter id="map-shadow" x="-5%" y="-5%" width="110%" height="110%">
           <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="rgba(0,0,0,0.15)" />
@@ -230,6 +231,37 @@ a.episode-card:hover h2{color:var(--accent)}
         <ellipse cx="93"  cy="452" rx="9"  ry="8"  fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
         <ellipse cx="130" cy="443" rx="8"  ry="13" fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
         <ellipse cx="162" cy="432" rx="7"  ry="10" fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
+      </g>
+
+      <!-- Balearic Islands — projected positions in the Mediterranean -->
+      <g id="baleares">
+        <!-- Formentera: lat 38.71, lon 1.46 → x=654, y=346 -->
+        <ellipse cx="654" cy="348" rx="6" ry="3" fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
+        <!-- Ibiza: lat 38.90, lon 1.44 → x=653, y=335 -->
+        <ellipse cx="652" cy="334" rx="10" ry="14" fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
+        <!-- Mallorca: lat 39.70, lon 2.90 → x=736, y=287 -->
+        <ellipse cx="736" cy="287" rx="26" ry="15" fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
+        <!-- Menorca: lat 40.00, lon 4.00 → x=798, y=269 -->
+        <ellipse cx="800" cy="269" rx="12" ry="6" fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
+        <text x="730" y="318" text-anchor="middle"
+              font-family="var(--font-body)" font-size="10" fill="var(--text-dim)" letter-spacing="0.06em">ISLAS BALEARES</text>
+      </g>
+
+      <!-- Ceuta y Melilla inset (bottom-right) -->
+      <g id="ceuta-melilla-inset">
+        <rect x="598" y="398" width="208" height="88" rx="6"
+              fill="var(--map-water)" stroke="var(--map-stroke)" stroke-width="1" stroke-dasharray="4,3"/>
+        <text x="702" y="415" text-anchor="middle"
+              font-family="var(--font-body)" font-size="10" fill="var(--text-dim)" letter-spacing="0.06em">CEUTA Y MELILLA</text>
+        <!-- Simplified North Africa coast hint -->
+        <path d="M 608,448 Q 650,443 702,445 Q 752,446 798,448"
+              fill="none" stroke="var(--map-stroke)" stroke-width="0.8" opacity="0.6"/>
+        <!-- Ceuta -->
+        <ellipse cx="642" cy="452" rx="6" ry="4" fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
+        <text x="642" y="469" text-anchor="middle" font-family="var(--font-body)" font-size="9" fill="var(--text-dim)">Ceuta</text>
+        <!-- Melilla -->
+        <ellipse cx="762" cy="452" rx="5" ry="4" fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
+        <text x="762" y="469" text-anchor="middle" font-family="var(--font-body)" font-size="9" fill="var(--text-dim)">Melilla</text>
       </g>
 
       <!-- León (Santa Colomba de Somoza): lat 42.37, lon -6.27 → x=214, y=128 -->
