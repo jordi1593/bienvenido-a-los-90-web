@@ -247,22 +247,25 @@ a.episode-card:hover h2{color:var(--accent)}
               font-family="var(--font-body)" font-size="10" fill="var(--text-dim)" letter-spacing="0.06em">ISLAS BALEARES</text>
       </g>
 
-      <!-- Norte de África — costa simplificada en posición geográfica real -->
-      <!-- La costa desciende de oeste (Ceuta, lat 35.9) a este (Melilla, lat 35.3) -->
+      <!-- Norte de África — costa realista: Ceuta sobresale como cabo, bahía del Rif entre Ceuta y Melilla -->
       <g id="norte-africa">
-        <path d="M 0,515 Q 100,512 200,513 Q 245,513 268,515
-                 Q 310,521 358,533 Q 385,540 403,545
-                 Q 460,551 550,550 Q 660,548 760,544 Q 800,542 820,541
+        <path d="M 0,526 Q 60,523 130,523 Q 185,522 230,521
+                 Q 252,516 268,510
+                 Q 282,517 305,528
+                 Q 335,542 365,553
+                 Q 388,557 403,551
+                 Q 430,550 500,550
+                 Q 600,549 700,546 Q 770,543 820,541
                  L 820,580 L 0,580 Z"
               fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1" stroke-linejoin="round"/>
-<!-- Ceuta: lat 35.89, lon -5.31 → x=268, y=515 -->
-        <ellipse cx="268" cy="515" rx="5" ry="3"
+        <!-- Ceuta: cabo septentrional x=268, y=510 -->
+        <ellipse cx="268" cy="510" rx="5" ry="3"
                  fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1.5"/>
-        <text x="276" y="511" font-family="var(--font-body)" font-size="10" fill="var(--text-dim)">Ceuta</text>
-        <!-- Melilla: lat 35.29, lon -2.94 → x=403, y=545 -->
-        <ellipse cx="403" cy="545" rx="5" ry="3"
+        <text x="276" y="506" font-family="var(--font-body)" font-size="10" fill="var(--text-dim)">Ceuta</text>
+        <!-- Melilla: x=403, y=551 -->
+        <ellipse cx="403" cy="551" rx="5" ry="3"
                  fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1.5"/>
-        <text x="411" y="541" font-family="var(--font-body)" font-size="10" fill="var(--text-dim)">Melilla</text>
+        <text x="411" y="547" font-family="var(--font-body)" font-size="10" fill="var(--text-dim)">Melilla</text>
       </g>
 
       <!-- León (Santa Colomba de Somoza): lat 42.37, lon -6.27 → x=214, y=128 -->
