@@ -30,14 +30,14 @@
         "lugar": "Delia Records · Calle Delicias, 19",
         "fecha": "4 de noviembre de 2017",
         "cartel": "directo/madrid-delia-records-2017.jpg",
-        "episodioSlug": "programa-314"
+        "episodioSlug": "programa-314-homenaje-a-radiohead-en-directo"
       },
       {
         "titulo": "El impacto de Nirvana en la juventud actual",
         "lugar": "Biblioteca Pública Municipal Eugenio Trías · Parque del Retiro",
         "fecha": "26 de enero de 2025",
         "cartel": "directo/madrid-biblioteca-nirvana-2025.jpg",
-        "episodioSlug": "1023"
+        "episodioSlug": "1023-el-impacto-de-nirvana-en-la-juventud-actual"
       },
       {
         "titulo": "Homenaje a Dylan",
@@ -93,7 +93,7 @@
         "lugar": "Valencia",
         "fecha": "",
         "cartel": "directo/valencia-wasted-garage.png",
-        "episodioSlug": "1110"
+        "episodioSlug": "1110-programa-en-directo-con-the-wasted-garage-en-valencia"
       }
     ]
   },
@@ -107,21 +107,21 @@
         "lugar": "Sevilla",
         "fecha": "",
         "cartel": "directo/sevilla-colectivo-karma.jpg",
-        "episodioSlug": "p-963"
+        "episodioSlug": "p-963-la-historia-de-andrew-jarman-y-el-el-colectivo-karma-de-sevilla"
       },
       {
         "titulo": "Beatlefeast 23 con Dani Llamas",
         "lugar": "Lady Drama Café Teatro",
         "fecha": "26 de octubre de 2023",
         "cartel": "directo/sevilla-lady-drama-beatlefeast.jpg",
-        "episodioSlug": "p-930"
+        "episodioSlug": "p-930-especial-beatles-con-dani-llamas-beatlefeast-23"
       },
       {
         "titulo": "En directo con Alain Johannes y Lost Satellite",
         "lugar": "Sevilla",
         "fecha": "",
         "cartel": "directo/sevilla-alain-johannes.jpg",
-        "episodioSlug": "p-903"
+        "episodioSlug": "p-903-entrevista-alain-johannes-lost-satellite-en-sevilla"
       }
     ]
   },
@@ -163,7 +163,7 @@
         "lugar": "Fundación Club 45 · Santa Colomba de Somoza",
         "fecha": "",
         "cartel": "directo/madrid-club45-alex-cooper.jpg",
-        "episodioSlug": "p-1014"
+        "episodioSlug": "p-1014-desde-la-fundacion-club-45-con-alex-cooper"
       }
     ]
   },
