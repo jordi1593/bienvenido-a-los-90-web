@@ -217,22 +217,6 @@ a.episode-card:hover h2{color:var(--accent)}
            Z"
         fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1.5" stroke-linejoin="round"/>
 
-      <!-- Canary Islands inset (bottom-left) -->
-      <g id="canarias-inset">
-        <rect x="15" y="410" width="175" height="110" rx="6"
-              fill="var(--map-water)" stroke="var(--map-stroke)" stroke-width="1" stroke-dasharray="4,3"/>
-        <text x="103" y="428" text-anchor="middle"
-              font-family="var(--font-body)" font-size="10" fill="var(--text-dim)" letter-spacing="0.06em">ISLAS CANARIAS</text>
-        <!-- Simplified island blobs (W→E): El Hierro, La Palma, La Gomera, Tenerife, Gran Canaria, Fuerteventura, Lanzarote -->
-        <ellipse cx="28"  cy="475" rx="5"  ry="4"  fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
-        <ellipse cx="40"  cy="460" rx="5"  ry="8"  fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
-        <ellipse cx="52"  cy="475" rx="4"  ry="4"  fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
-        <ellipse cx="67"  cy="467" rx="10" ry="7"  fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
-        <ellipse cx="93"  cy="472" rx="9"  ry="8"  fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
-        <ellipse cx="130" cy="463" rx="8"  ry="13" fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
-        <ellipse cx="162" cy="452" rx="7"  ry="10" fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
-      </g>
-
       <!-- Balearic Islands — projected positions in the Mediterranean -->
       <g id="baleares">
         <!-- Formentera: lat 38.71, lon 1.46 → x=654, y=346 -->
@@ -266,6 +250,22 @@ a.episode-card:hover h2{color:var(--accent)}
         <ellipse cx="403" cy="551" rx="5" ry="3"
                  fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1.5"/>
         <text x="411" y="547" font-family="var(--font-body)" font-size="10" fill="var(--text-dim)">Melilla</text>
+      </g>
+
+      <!-- Canary Islands inset — drawn after Africa so it appears on top -->
+      <g id="canarias-inset">
+        <rect x="15" y="468" width="175" height="110" rx="6"
+              fill="var(--map-water)" stroke="var(--map-stroke)" stroke-width="1" stroke-dasharray="4,3"/>
+        <text x="103" y="486" text-anchor="middle"
+              font-family="var(--font-body)" font-size="10" fill="var(--text-dim)" letter-spacing="0.06em">ISLAS CANARIAS</text>
+        <!-- Simplified island blobs (W→E): El Hierro, La Palma, La Gomera, Tenerife, Gran Canaria, Fuerteventura, Lanzarote -->
+        <ellipse cx="28"  cy="533" rx="5"  ry="4"  fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
+        <ellipse cx="40"  cy="518" rx="5"  ry="8"  fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
+        <ellipse cx="52"  cy="533" rx="4"  ry="4"  fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
+        <ellipse cx="67"  cy="525" rx="10" ry="7"  fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
+        <ellipse cx="93"  cy="530" rx="9"  ry="8"  fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
+        <ellipse cx="130" cy="521" rx="8"  ry="13" fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
+        <ellipse cx="162" cy="510" rx="7"  ry="10" fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
       </g>
 
       <!-- León (Santa Colomba de Somoza): lat 42.37, lon -6.27 → x=214, y=128 -->
@@ -318,10 +318,10 @@ a.episode-card:hover h2{color:var(--accent)}
 
       <!-- Lanzarote (in Canarias inset) -->
       <g class="city-marker" data-city="Lanzarote" tabindex="0" role="button" aria-label="Lanzarote — 1 evento">
-        <circle cx="162" cy="452" r="22" fill="rgba(0,0,0,0)" pointer-events="all"/>
-        <circle class="pulse" cx="162" cy="452" r="11"/>
-        <circle class="dot" cx="162" cy="452" r="6"/>
-        <text class="city-label" x="162" y="444" text-anchor="middle" font-size="11">Lanzarote</text>
+        <circle cx="162" cy="510" r="22" fill="rgba(0,0,0,0)" pointer-events="all"/>
+        <circle class="pulse" cx="162" cy="510" r="11"/>
+        <circle class="dot" cx="162" cy="510" r="6"/>
+        <text class="city-label" x="162" y="502" text-anchor="middle" font-size="11">Lanzarote</text>
       </g>
     </svg>
   </div>
