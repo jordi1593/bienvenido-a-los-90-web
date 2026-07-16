@@ -374,14 +374,23 @@ a.episode-card:hover h2{color:var(--accent)}
     document.getElementById("panelClose").addEventListener("click", closePanel);
   }
 
+  const MESES = {enero:1,febrero:2,marzo:3,abril:4,mayo:5,junio:6,julio:7,agosto:8,septiembre:9,octubre:10,noviembre:11,diciembre:12};
+  function parseFecha(fecha) {
+    if (!fecha) return Infinity;
+    const m = fecha.match(/(\d+)\s+de\s+(\w+)\s+de\s+(\d+)/);
+    if (!m) return Infinity;
+    return new Date(+m[3], (MESES[m[2].toLowerCase()] || 0) - 1, +m[1]).getTime();
+  }
+
   function openCity(cityName) {
     const city = data.find((c) => c.ciudad === cityName);
     if (!city) return;
 
     document.getElementById("panelTitle").textContent = city.ciudad;
 
+    const eventos = [...city.eventos].sort((a, b) => parseFecha(a.fecha) - parseFecha(b.fecha));
     const grid = document.getElementById("eventsGrid");
-    grid.innerHTML = city.eventos.map((ev) => `
+    grid.innerHTML = eventos.map((ev) => `
       <a class="episode-card" href="episodios/${ev.episodioSlug}.html">
         <div class="episode-cover-link">
           <img src="${ev.cartel}" alt="${ev.titulo}" class="episode-cover-img" loading="lazy" />
