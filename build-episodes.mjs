@@ -1442,6 +1442,12 @@ function buildFotosPage(episodesBySlug) {
 function main() {
   const episodes = JSON.parse(fs.readFileSync("episodes.json", "utf-8"));
   canonicalizeLabels(episodes);
+  const episodeOverrides = fs.existsSync("data/overrides.json")
+    ? JSON.parse(fs.readFileSync("data/overrides.json", "utf-8"))
+    : {};
+  episodes.forEach((ep) => {
+    if (episodeOverrides[ep.slug]) Object.assign(ep, episodeOverrides[ep.slug]);
+  });
   const relatedOverrides = fs.existsSync("related-overrides.json")
     ? JSON.parse(fs.readFileSync("related-overrides.json", "utf-8"))
     : {};
