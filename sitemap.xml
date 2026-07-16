@@ -8,6 +8,12 @@
     <image:image><image:loc>https://bienvenidoalos90.com/images/b90-logo-new.jpg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://bienvenidoalos90.com/directo.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bienvenidoalos90.com/fotos.html</loc>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
