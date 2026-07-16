@@ -175,7 +175,7 @@ a.episode-card:hover h2{color:var(--accent)}
       x = 30 + (lon + 9.5) × 56.9   (lon range −9.5 → 3.5, viewBox width 800)
       y = 30 + (44.0 − lat) × 59.8  (lat range 44.0 → 35.8, viewBox height 550)
     -->
-    <svg id="spain-map" viewBox="0 0 820 550" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa de España con ciudades donde se han grabado programas en directo">
+    <svg id="spain-map" viewBox="0 0 820 580" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa de España con ciudades donde se han grabado programas en directo">
       <defs>
         <filter id="map-shadow" x="-5%" y="-5%" width="110%" height="110%">
           <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="rgba(0,0,0,0.15)" />
@@ -247,21 +247,24 @@ a.episode-card:hover h2{color:var(--accent)}
               font-family="var(--font-body)" font-size="10" fill="var(--text-dim)" letter-spacing="0.06em">ISLAS BALEARES</text>
       </g>
 
-      <!-- Ceuta y Melilla inset (bottom-right) -->
-      <g id="ceuta-melilla-inset">
-        <rect x="598" y="398" width="208" height="88" rx="6"
-              fill="var(--map-water)" stroke="var(--map-stroke)" stroke-width="1" stroke-dasharray="4,3"/>
-        <text x="702" y="415" text-anchor="middle"
-              font-family="var(--font-body)" font-size="10" fill="var(--text-dim)" letter-spacing="0.06em">CEUTA Y MELILLA</text>
-        <!-- Simplified North Africa coast hint -->
-        <path d="M 608,448 Q 650,443 702,445 Q 752,446 798,448"
-              fill="none" stroke="var(--map-stroke)" stroke-width="0.8" opacity="0.6"/>
-        <!-- Ceuta -->
-        <ellipse cx="642" cy="452" rx="6" ry="4" fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
-        <text x="642" y="469" text-anchor="middle" font-family="var(--font-body)" font-size="9" fill="var(--text-dim)">Ceuta</text>
-        <!-- Melilla -->
-        <ellipse cx="762" cy="452" rx="5" ry="4" fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1"/>
-        <text x="762" y="469" text-anchor="middle" font-family="var(--font-body)" font-size="9" fill="var(--text-dim)">Melilla</text>
+      <!-- Norte de África — costa simplificada en posición geográfica real -->
+      <!-- La costa desciende de oeste (Ceuta, lat 35.9) a este (Melilla, lat 35.3) -->
+      <g id="norte-africa">
+        <path d="M 0,515 Q 100,512 200,513 Q 245,513 268,515
+                 Q 310,521 358,533 Q 385,540 403,545
+                 Q 460,551 550,550 Q 660,548 760,544 Q 800,542 820,541
+                 L 820,580 L 0,580 Z"
+              fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1" stroke-linejoin="round"/>
+        <text x="530" y="560" text-anchor="middle"
+              font-family="var(--font-body)" font-size="10" fill="var(--text-dim)" letter-spacing="0.05em" opacity="0.7">MARRUECOS / ARGELIA</text>
+        <!-- Ceuta: lat 35.89, lon -5.31 → x=268, y=515 -->
+        <ellipse cx="268" cy="515" rx="5" ry="3"
+                 fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1.5"/>
+        <text x="276" y="511" font-family="var(--font-body)" font-size="10" fill="var(--text-dim)">Ceuta</text>
+        <!-- Melilla: lat 35.29, lon -2.94 → x=403, y=545 -->
+        <ellipse cx="403" cy="545" rx="5" ry="3"
+                 fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1.5"/>
+        <text x="411" y="541" font-family="var(--font-body)" font-size="10" fill="var(--text-dim)">Melilla</text>
       </g>
 
       <!-- León (Santa Colomba de Somoza): lat 42.37, lon -6.27 → x=214, y=128 -->
