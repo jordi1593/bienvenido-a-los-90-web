@@ -26,13 +26,6 @@
         "episodioSlug": "1035-especial-radiohead-en-directo-desde-madrid"
       },
       {
-        "titulo": "Alex Cooper en la Fundación Club 45",
-        "lugar": "Fundación Club 45",
-        "fecha": "",
-        "cartel": "directo/madrid-club45-alex-cooper.jpg",
-        "episodioSlug": "p-1014"
-      },
-      {
         "titulo": "Fiesta OK Computer Revisited",
         "lugar": "Delia Records · Calle Delicias, 19",
         "fecha": "4 de noviembre de 2017",
@@ -150,6 +143,20 @@
         "fecha": "11 de octubre de 2025",
         "cartel": "directo/pedrajas-galan-fest-2025.png",
         "episodioSlug": "1114-especial-galan-fest-2025"
+      }
+    ]
+  },
+  {
+    "ciudad": "León",
+    "lat": 42.37,
+    "lng": -6.27,
+    "eventos": [
+      {
+        "titulo": "Alex Cooper en la Fundación Club 45",
+        "lugar": "Fundación Club 45 · Santa Colomba de Somoza",
+        "fecha": "",
+        "cartel": "directo/madrid-club45-alex-cooper.jpg",
+        "episodioSlug": "p-1014"
       }
     ]
   },
