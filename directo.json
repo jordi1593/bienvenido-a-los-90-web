@@ -54,6 +54,13 @@
     "lng": 2.1734,
     "eventos": [
       {
+        "titulo": "En directo desde Furinyaki Records Studio",
+        "lugar": "Furinyaki Records Studio",
+        "fecha": "",
+        "cartel": "directo/barcelona-furinyaki-logo.jpg",
+        "episodioSlug": "programa-395-furinyaki-records-studio"
+      },
+      {
         "titulo": "Gyoza + James Vieco Band",
         "lugar": "Furinyaki Records Studio",
         "fecha": "25 de enero de 2020",
@@ -115,6 +122,34 @@
         "fecha": "",
         "cartel": "directo/sevilla-alain-johannes.jpg",
         "episodioSlug": "p-903"
+      }
+    ]
+  },
+  {
+    "ciudad": "Pedrajas de San Esteban",
+    "lat": 41.308,
+    "lng": -4.427,
+    "eventos": [
+      {
+        "titulo": "Especial Galán Fest 2023",
+        "lugar": "Pedrajas de San Esteban",
+        "fecha": "2023",
+        "cartel": "directo/pedrajas-galan-fest-2023.jpg",
+        "episodioSlug": "p-929-especial-galan-fest-2023-con-havalina-le-mur-naia-living-camboya"
+      },
+      {
+        "titulo": "Especial Galán Fest 2024",
+        "lugar": "Frontón Viejo de Pedrajas",
+        "fecha": "5 de octubre de 2024",
+        "cartel": "directo/pedrajas-galan-fest-2024.jpg",
+        "episodioSlug": "p-999-especial-galan-fest-2024"
+      },
+      {
+        "titulo": "Especial Galán Fest 2025",
+        "lugar": "Pedrajas de San Esteban",
+        "fecha": "11 de octubre de 2025",
+        "cartel": "directo/pedrajas-galan-fest-2025.png",
+        "episodioSlug": "1114-especial-galan-fest-2025"
       }
     ]
   },
