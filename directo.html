@@ -115,90 +115,91 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
   </div>
 
   <div class="map-wrapper">
-    <!-- SVG map of Spain.
-         Projection: x = (lon + 9.5) * 61.5,  y = (44.0 - lat) * 64.7
-         ViewBox 820×560 gives room around Spain (lon -9.5..3.8, lat 35.5..44.0)
-         Madrid    (40.4168°N,  3.7038°W) → x=357, y=232
-         Barcelona (41.3851°N,  2.1734°E) → x=718, y=169
+    <!--
+      SVG map of Spain — geographic projection
+      x = 30 + (lon + 9.5) × 56.9   (lon range −9.5 → 3.5, viewBox width 800)
+      y = 30 + (44.0 − lat) × 59.8  (lat range 44.0 → 35.8, viewBox height 550)
+      Madrid    (40.42°N, 3.70°W) → (360, 244)
+      Barcelona (41.39°N, 2.17°E) → (685, 190)
     -->
-    <svg id="spain-map" viewBox="0 0 820 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa de España con ciudades donde se han grabado programas en directo">
+    <svg id="spain-map" viewBox="0 0 800 550" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa de España con ciudades donde se han grabado programas en directo">
       <defs>
         <filter id="map-shadow" x="-5%" y="-5%" width="110%" height="110%">
-          <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="rgba(0,0,0,0.18)" />
+          <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="rgba(0,0,0,0.15)" />
         </filter>
       </defs>
 
       <!-- Ocean background -->
-      <rect width="820" height="560" fill="var(--map-water)" rx="10" />
+      <rect width="800" height="550" fill="var(--map-water)" rx="10" />
 
-      <!-- Spain mainland — clockwise from Cabo Touriñán (NW) -->
+      <!--
+        Spain mainland — clockwise from Cabo Touriñán (NW)
+        Key waypoints:
+          Touriñán   (43.03, −9.30) → (41, 88)
+          A Coruña   (43.37, −8.40) → (101, 68)
+          Estaca Bares (43.79,−7.69)→ (133, 43)  ← northernmost
+          Cabo Peñas (43.66, −5.85) → (242, 51)
+          Santander  (43.49, −3.79) → (356, 60)
+          Bilbao     (43.37, −2.92) → (406, 68)
+          France     (43.36, −1.78) → (469, 68)
+          Pyrenees   (42.70,  0.72) → (611,  98)
+          Cap Creus  (42.32,  3.32) → (759, 121)
+          Barcelona  (41.39,  2.17) → (694, 179)
+          Valencia   (39.47, −0.32) → (552, 273)
+          Cabo Palos (37.63, −0.68) → (531, 381)
+          Almería    (36.84, −2.47) → (430, 428)
+          Tarifa     (36.00, −5.61) → (251, 477)
+          Cádiz      (36.53, −6.36) → (209, 445)
+          Ayamonte   (37.21, −7.40) → (149, 406)
+          Badajoz    (38.88, −6.97) → (174, 303)
+          Border N   (41.85, −6.80) → (184, 130)
+          Minho      (41.86, −8.87) → (66,  130)
+          Fisterra   (42.88, −9.27) → (43,  67)
+      -->
       <path id="spain-path" filter="url(#map-shadow)"
-        d="
-          M 12,61
-          C 25,50 35,42 43,45
-          C 55,35 80,18 111,13
-          C 135,8 165,18 185,22
-          C 210,16 225,14 245,16
-          C 270,14 310,20 351,29
-          C 380,26 410,28 436,35
-          C 450,32 462,26 473,24
-          C 490,18 510,22 530,30
-          C 555,28 580,35 610,45
-          C 645,38 670,42 700,55
-          C 720,62 740,78 756,100
-          C 762,118 765,140 760,160
-          C 755,178 745,192 732,205
-          C 720,215 708,222 700,232
-          C 690,242 682,255 678,268
-          C 672,282 668,298 664,312
-          C 658,330 652,345 645,358
-          C 635,374 622,388 608,400
-          C 592,412 575,422 558,430
-          C 540,438 520,444 500,449
-          C 480,454 458,458 438,461
-          C 415,464 390,466 365,467
-          C 340,468 315,467 290,464
-          C 265,460 240,454 218,446
-          C 200,438 185,428 172,416
-          C 160,405 148,392 138,378
-          C 128,365 120,350 115,336
-          C 108,320 104,305 102,290
-          C 98,272 96,255 98,238
-          C 100,222 105,208 108,194
-          C 110,182 110,170 108,158
-          C 106,146 100,134 94,122
-          C 88,110 80,100 70,92
-          C 58,83 44,76 37,68
-          C 28,62 18,58 12,61
-          Z
-        "
+        d="M 41,88
+           Q 101,68 133,43
+           Q 190,48 242,51
+           Q 300,58 356,60
+           Q 380,64 406,68
+           L 469,68
+           Q 540,83 611,98
+           Q 685,110 759,121
+           Q 727,150 694,179
+           Q 650,194 635,200
+           Q 616,212 597,222
+           Q 574,247 552,273
+           Q 540,335 531,381
+           Q 501,394 472,400
+           Q 461,414 430,428
+           Q 394,452 379,456
+           Q 344,466 309,470
+           Q 280,477 251,477
+           Q 230,461 209,445
+           Q 185,416 178,406
+           L 149,406
+           Q 156,370 174,303
+           Q 175,265 181,188
+           Q 182,159 184,130
+           L 66,130
+           Q 58,110 43,88
+           Q 42,88 41,88
+           Z"
         fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1.5" stroke-linejoin="round"/>
 
-      <!-- Portugal outline (slightly darker overlay on left portion) -->
-      <path
-        d="M 12,61 C 18,58 28,62 37,68 C 44,76 58,83 70,92 C 80,100 88,110 94,122
-           C 100,134 106,146 108,158 C 110,170 110,182 108,194
-           C 105,208 100,222 98,238 C 96,255 98,272 102,290
-           L 124,441 C 120,438 115,432 110,424 C 104,414 100,400 98,388
-           C 95,370 95,350 98,332 C 100,315 105,298 108,282
-           C 110,265 110,248 106,232 C 102,215 95,200 88,185
-           C 80,170 70,155 62,140 C 52,124 42,108 36,92
-           C 28,75 18,60 12,61 Z"
-        fill="var(--map-land)" stroke="var(--map-stroke)" stroke-width="1" opacity="0.5"/>
-
-      <!-- City markers — large transparent hit area + visible dot + label -->
+      <!-- City markers -->
       <g class="city-marker" data-city="Madrid" tabindex="0" role="button" aria-label="Madrid — 1 evento">
-        <circle cx="357" cy="232" r="28" fill="rgba(0,0,0,0)" pointer-events="all"/>
-        <circle class="pulse" cx="357" cy="232" r="14"/>
-        <circle class="dot" cx="357" cy="232" r="7"/>
-        <text class="city-label" x="371" y="228" dominant-baseline="auto">Madrid</text>
+        <circle cx="360" cy="244" r="28" fill="rgba(0,0,0,0)" pointer-events="all"/>
+        <circle class="pulse" cx="360" cy="244" r="14"/>
+        <circle class="dot" cx="360" cy="244" r="7"/>
+        <text class="city-label" x="374" y="240">Madrid</text>
       </g>
 
       <g class="city-marker" data-city="Barcelona" tabindex="0" role="button" aria-label="Barcelona — 1 evento">
-        <circle cx="718" cy="169" r="28" fill="rgba(0,0,0,0)" pointer-events="all"/>
-        <circle class="pulse" cx="718" cy="169" r="14"/>
-        <circle class="dot" cx="718" cy="169" r="7"/>
-        <text class="city-label" x="732" y="165" dominant-baseline="auto">Barcelona</text>
+        <circle cx="685" cy="190" r="28" fill="rgba(0,0,0,0)" pointer-events="all"/>
+        <circle class="pulse" cx="685" cy="190" r="14"/>
+        <circle class="dot" cx="685" cy="190" r="7"/>
+        <text class="city-label" x="699" y="186">Barcelona</text>
       </g>
     </svg>
   </div>
