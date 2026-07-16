@@ -10,6 +10,20 @@
         "fecha": "9 de octubre de 2021",
         "cartel": "directo/madrid-siroco-2021.jpg",
         "episodioSlug": "p-800-en-directo-desde-siroco-celebrando-los-30-anos-de-nevermind"
+      },
+      {
+        "titulo": "Emisión Programa 1000",
+        "lugar": "Biblioteca Pública Eugenio Trias · Parque del Retiro",
+        "fecha": "13 de octubre de 2024",
+        "cartel": "directo/madrid-biblioteca-1000.jpg",
+        "episodioSlug": "p-1000-en-directo-desde-la-biblioteca-publica-municipal-eugenio-trias-de-madrid"
+      },
+      {
+        "titulo": "Especial Radiohead con Felipe Couselo",
+        "lugar": "Biblioteca Pública Eugenio Trias · Parque del Retiro",
+        "fecha": "6 de abril de 2025",
+        "cartel": "directo/madrid-radiohead-2025.jpg",
+        "episodioSlug": "1035-especial-radiohead-en-directo-desde-madrid"
       }
     ]
   },
@@ -19,11 +33,46 @@
     "lng": 2.1734,
     "eventos": [
       {
+        "titulo": "Gyoza + James Vieco Band",
+        "lugar": "Furinyaki Records Studio",
+        "fecha": "25 de enero de 2020",
+        "cartel": "directo/barcelona-furinyaki-2020.jpg",
+        "episodioSlug": "p-600-desde-furinyaki-records-studio-con-gyoza-y-james-vieco-band"
+      },
+      {
         "titulo": "Especial Libros Musicales con El Ecualizador",
         "lugar": "Llibreria Sonora",
         "fecha": "18 de marzo de 2025",
         "cartel": "directo/barcelona-sonora-2025.jpg",
         "episodioSlug": "1034-especial-libros-musicales-desde-barcelona"
+      }
+    ]
+  },
+  {
+    "ciudad": "Valencia",
+    "lat": 39.4699,
+    "lng": -0.3763,
+    "eventos": [
+      {
+        "titulo": "Especial Escena Valenciana",
+        "lugar": "Espai Llimera",
+        "fecha": "16 de mayo de 2025",
+        "cartel": "directo/valencia-llimera.jpg",
+        "episodioSlug": "1124-especial-escena-alternativa-de-valencia"
+      }
+    ]
+  },
+  {
+    "ciudad": "Lanzarote",
+    "lat": 28.9635,
+    "lng": -13.5477,
+    "eventos": [
+      {
+        "titulo": "Ajeeb, Sickmen, Los Iguales, Imtima",
+        "lugar": "Casa Atey · San Bartolo",
+        "fecha": "22 de noviembre",
+        "cartel": "directo/lanzarote-casa-atey.jpg",
+        "episodioSlug": "1092-programa-en-directo-desde-lanzarote-con-ajeeb-sickmen-los-iguales-imtima"
       }
     ]
   }
