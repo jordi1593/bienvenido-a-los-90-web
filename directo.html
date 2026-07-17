@@ -86,8 +86,7 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
 .city-marker:hover circle.dot{transform:scale(1.5)}
 .city-marker:hover circle.pulse{animation-play-state:paused;opacity:.4}
 .city-label{font-family:var(--font-body);font-size:13px;font-weight:700;fill:var(--text);pointer-events:none;user-select:none}
-.city-count{font-family:var(--font-body);font-size:10px;font-weight:400;fill:var(--text-dim);pointer-events:none;user-select:none}
-.city-marker:hover .city-label,.city-marker:hover .city-count{fill:var(--accent)}
+.city-marker:hover .city-label{fill:var(--accent)}
 @keyframes pulse{0%,100%{transform:scale(1);opacity:.25}50%{transform:scale(1.9);opacity:.1}}
 
 /* CITY PANEL */
@@ -393,7 +392,10 @@ a.episode-card:hover h2{color:var(--accent)}
           <circle class="wave-ring" cx="50" cy="140" r="10"/>
           <circle class="wave-dot" cx="50" cy="140" r="4"/>
         </svg>
-        <h2 class="section-title font-brand" id="panelTitle"></h2>
+        <div style="position:relative;z-index:1;flex:1">
+          <h2 class="section-title font-brand" id="panelTitle" style="margin-bottom:0"></h2>
+          <p id="panelCount" style="font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0.2rem 0 0"></p>
+        </div>
         <button class="panel-close" id="panelClose" aria-label="Cerrar">✕</button>
       </div>
       <div class="directo-grid" id="eventsGrid"></div>
@@ -426,21 +428,6 @@ a.episode-card:hover h2{color:var(--accent)}
       pulse.setAttribute('r', pulseR);
       pulse.style.transformOrigin = `${cx}px ${cy}px`;
       marker.setAttribute('aria-label', `${city.ciudad} — ${n} ${n === 1 ? 'evento' : 'eventos'}`);
-
-      // Añadir contador debajo de la etiqueta
-      const label = marker.querySelector('text.city-label');
-      if (label) {
-        const existing = marker.querySelector('text.city-count');
-        if (existing) existing.remove();
-        const countEl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-        countEl.classList.add('city-count');
-        const isCenter = label.getAttribute('text-anchor') === 'middle';
-        countEl.setAttribute('x', label.getAttribute('x'));
-        countEl.setAttribute('y', String(parseFloat(label.getAttribute('y')) + 13));
-        if (isCenter) countEl.setAttribute('text-anchor', 'middle');
-        countEl.textContent = `${n} ${n === 1 ? 'evento' : 'eventos'}`;
-        marker.appendChild(countEl);
-      }
     });
 
     document.querySelectorAll(".city-marker").forEach((marker) => {
@@ -470,6 +457,8 @@ a.episode-card:hover h2{color:var(--accent)}
     if (!city) return;
 
     document.getElementById("panelTitle").textContent = city.ciudad;
+    const n = city.eventos.length;
+    document.getElementById("panelCount").textContent = `${n} ${n === 1 ? 'evento' : 'eventos'} en directo`;
 
     const eventos = [...city.eventos].sort((a, b) => parseFecha(a.fecha) - parseFecha(b.fecha));
     const grid = document.getElementById("eventsGrid");
