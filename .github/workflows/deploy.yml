@@ -1,4 +1,4 @@
-name: Desplegar web
+﻿name: Desplegar web
 
 on:
   push:
@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -28,7 +28,7 @@ jobs:
       - name: Regenerar el sitio
         run: npm run build
 
-      - name: Ensamblar carpeta pública
+      - name: Ensamblar carpeta pÃºblica
         run: |
           mkdir -p dist
           cp index.html 404.html privacidad.html fotos.html directo.html styles.css app.js nav.js dist/
@@ -63,17 +63,17 @@ jobs:
     needs: deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Esperar propagación CDN
+      - name: Esperar propagaciÃ³n CDN
         run: sleep 30
 
       - name: Verificar web actualizada
         run: |
           HTTP=$(curl -s -o /dev/null -w "%{http_code}" https://bienvenidoalos90.com/fotos.html)
           if [ "$HTTP" != "200" ]; then
-            echo "ERROR: fotos.html devolvió HTTP $HTTP"
+            echo "ERROR: fotos.html devolviÃ³ HTTP $HTTP"
             exit 1
           fi
-          echo "✅ Web accesible (HTTP 200)"
+          echo "âœ… Web accesible (HTTP 200)"
 
   notify-on-failure:
     needs: [build, deploy, verify]
@@ -85,8 +85,8 @@ jobs:
       - uses: actions/github-script@v7
         with:
           script: |
-            const title = "⚠️ Falló el workflow 'Desplegar web'";
-            const body = `La ejecución [${context.runId}](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}) ha fallado. Revisa los logs.`;
+            const title = "âš ï¸ FallÃ³ el workflow 'Desplegar web'";
+            const body = `La ejecuciÃ³n [${context.runId}](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}) ha fallado. Revisa los logs.`;
             const { data: issues } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
