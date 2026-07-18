@@ -1154,72 +1154,64 @@ ${footer}
 
 function buildSitemap(episodes, etiquetas) {
   const today = new Date().toISOString().slice(0, 10);
-  // El episodio más reciente marca el lastmod de la home y el índice de etiquetas
   const latestEpisodeDate = episodes[0]?.published?.slice(0, 10) ?? today;
-
-  // Prioridad mayor para etiquetas de artistas conocidos (tienen intro curado)
   const artistSlugs = new Set(Object.keys(ARTIST_DATA).map(labelSlug));
 
-  const urls = [
-    {
-      loc: `${SITE_URL}/`,
-      lastmod: latestEpisodeDate,
-      changefreq: "daily",
-      priority: "1.0",
-      image: `${SITE_URL}/images/b90-logo-new.jpg`,
-    },
-    {
-      loc: `${SITE_URL}/fotos.html`,
-      lastmod: today,
-      changefreq: "monthly",
-      priority: "0.5",
-      image: `${SITE_URL}/images/og-home.png`,
-    },
-    {
-      loc: `${SITE_URL}/directo.html`,
-      lastmod: today,
-      changefreq: "monthly",
-      priority: "0.5",
-    },
-    {
-      loc: `${SITE_URL}/etiquetas/`,
-      lastmod: latestEpisodeDate,
-      changefreq: "weekly",
-      priority: "0.6",
-    },
-    ...etiquetas.map(([label, eps]) => {
-      const slug = labelSlug(label);
-      const isArtist = artistSlugs.has(slug);
-      const newestEp = eps.sort((a, b) => new Date(b.published) - new Date(a.published))[0];
-      return {
-        loc: `${SITE_URL}/etiquetas/${slug}.html`,
-        lastmod: newestEp?.published?.slice(0, 10) ?? today,
-        changefreq: "weekly",
-        priority: isArtist ? "0.8" : "0.6",
-      };
-    }),
-    ...episodes.map((ep) => ({
-      loc: `${SITE_URL}/episodios/${ep.slug}.html`,
-      lastmod: (ep.updated || ep.published).slice(0, 10),
-      changefreq: "yearly",
-      priority: "0.7",
-      image: bigThumbnail(ep.thumbnail) || `${SITE_URL}/images/b90-logo-new.jpg`,
-    })),
-  ];
-
-  const body = urls.map((u) => `  <url>
+  const toUrl = (u) => `  <url>
     <loc>${u.loc}</loc>
     ${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ""}
     <changefreq>${u.changefreq}</changefreq>
     <priority>${u.priority}</priority>
     ${u.image ? `<image:image><image:loc>${u.image}</image:loc></image:image>` : ""}
-  </url>`).join("\n");
+  </url>`;
 
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-${body}
-</urlset>
+  const urlsetOpen = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">`;
+
+  // ── sitemap-main.xml: páginas estáticas + etiquetas ──────────────────────
+  const mainUrls = [
+    { loc: `${SITE_URL}/`, lastmod: latestEpisodeDate, changefreq: "daily", priority: "1.0", image: `${SITE_URL}/images/b90-logo-new.jpg` },
+    { loc: `${SITE_URL}/fotos.html`, lastmod: today, changefreq: "monthly", priority: "0.5", image: `${SITE_URL}/images/og-home.png` },
+    { loc: `${SITE_URL}/directo.html`, lastmod: today, changefreq: "monthly", priority: "0.5" },
+    { loc: `${SITE_URL}/etiquetas/`, lastmod: latestEpisodeDate, changefreq: "weekly", priority: "0.6" },
+    ...etiquetas.map(([label, eps]) => {
+      const slug = labelSlug(label);
+      const newestEp = eps.sort((a, b) => new Date(b.published) - new Date(a.published))[0];
+      return {
+        loc: `${SITE_URL}/etiquetas/${slug}.html`,
+        lastmod: newestEp?.published?.slice(0, 10) ?? today,
+        changefreq: "weekly",
+        priority: artistSlugs.has(slug) ? "0.8" : "0.6",
+      };
+    }),
+  ];
+  const mainXml = `${urlsetOpen}\n${mainUrls.map(toUrl).join("\n")}\n</urlset>\n`;
+
+  // ── sitemap-episodes.xml: los 1241 episodios ─────────────────────────────
+  const episodeUrls = episodes.map((ep) => ({
+    loc: `${SITE_URL}/episodios/${ep.slug}.html`,
+    lastmod: (ep.updated || ep.published).slice(0, 10),
+    changefreq: "yearly",
+    priority: "0.7",
+    image: bigThumbnail(ep.thumbnail) || `${SITE_URL}/images/b90-logo-new.jpg`,
+  }));
+  const episodesXml = `${urlsetOpen}\n${episodeUrls.map(toUrl).join("\n")}\n</urlset>\n`;
+
+  // ── sitemap.xml: índice que referencia los dos sub-sitemaps ───────────────
+  const indexXml = `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>${SITE_URL}/sitemap-main.xml</loc>
+    <lastmod>${latestEpisodeDate}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>${SITE_URL}/sitemap-episodes.xml</loc>
+    <lastmod>${latestEpisodeDate}</lastmod>
+  </sitemap>
+</sitemapindex>
 `;
+
+  return { indexXml, mainXml, episodesXml };
 }
 
 function buildRobots() {
@@ -1546,7 +1538,10 @@ function main() {
   });
 
   const etiquetas = buildEtiquetasPages(episodes);
-  fs.writeFileSync("sitemap.xml", buildSitemap(episodes, etiquetas), "utf-8");
+  const { indexXml, mainXml, episodesXml } = buildSitemap(episodes, etiquetas);
+  fs.writeFileSync("sitemap.xml", indexXml, "utf-8");
+  fs.writeFileSync("sitemap-main.xml", mainXml, "utf-8");
+  fs.writeFileSync("sitemap-episodes.xml", episodesXml, "utf-8");
   fs.writeFileSync("robots.txt", buildRobots(), "utf-8");
 
   // episodes.json incluye "paragraphs" (el cuerpo completo de cada episodio),
