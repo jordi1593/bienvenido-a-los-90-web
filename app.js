@@ -176,11 +176,11 @@ let esencialesSlugs = new Set();
 // Sello de tiempo único por carga de página: se añade como parámetro a las
 // peticiones de data/*.json para que el navegador siempre pida la versión
 // actual en vez de servir una copia en caché desde una visita anterior.
-const DATA_CACHE_BUST = Math.floor(Date.now() / 300000);
+const META_CACHE_BUST = Math.floor(Date.now() / 86400000);
 
 async function loadEsencialesSlugs() {
   try {
-    const slugs = await (await fetch(`data/esenciales.json?t=${DATA_CACHE_BUST}`)).json();
+    const slugs = await (await fetch(`data/esenciales.json?t=${META_CACHE_BUST}`)).json();
     esencialesSlugs = new Set(slugs);
   } catch {
     esencialesSlugs = new Set();
@@ -522,14 +522,12 @@ function renderArchive(episodes) {
 // el catálogo completo, así que esos se activan en cuanto termina de llegar
 // el último bloque.
 async function loadEpisodesProgressively(onFirstChunk) {
-  const meta = await (await fetch(`data/episodes-meta.json?t=${DATA_CACHE_BUST}`)).json();
-  const chunks = [];
-  for (let i = 0; i < meta.chunkCount; i++) {
-    const chunk = await (await fetch(`data/episodes-${i}.json?t=${DATA_CACHE_BUST}`)).json();
-    chunks.push(chunk);
-    if (i === 0) onFirstChunk(chunk);
-  }
-  return chunks.flat();
+  const meta = await (await fetch(`data/episodes-meta.json?t=${META_CACHE_BUST}`)).json();
+  const v = meta.dataVersion || META_CACHE_BUST;
+  const fetchChunk = (i) => fetch(`data/episodes-${i}.json?v=${v}`).then((r) => r.json());
+  const promises = Array.from({ length: meta.chunkCount }, (_, i) => fetchChunk(i));
+  promises[0].then((chunk) => onFirstChunk(chunk));
+  return (await Promise.all(promises)).flat();
 }
 
 function renderHeroLatest(episodes) {
