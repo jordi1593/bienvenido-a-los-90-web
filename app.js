@@ -576,6 +576,14 @@ async function init() {
   }
   applyFilters();
 
+  // Después de renderizar los episodios el layout cambia de tamaño, lo que
+  // puede desplazar el scroll si el usuario llegó con un ancla (#sobre-nosotros,
+  // #sigue, etc.). Re-scrolleamos al elemento destino una vez todo está listo.
+  if (location.hash) {
+    const target = document.querySelector(location.hash);
+    if (target) target.scrollIntoView({ block: "start" });
+  }
+
   els.search.addEventListener("input", (e) => {
     state.search = e.target.value;
     if (els.searchClearBtn) els.searchClearBtn.hidden = !e.target.value;
