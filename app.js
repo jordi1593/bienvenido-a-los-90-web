@@ -138,9 +138,21 @@ function titleCase(str) {
   return str.split(" ").map((word) => (word ? capitalize(word) : word)).join(" ");
 }
 
+const LABEL_ALIASES = {
+  "paul mccartney": "Paul McCartney",
+  "mccartney": "Paul McCartney",
+  "mike mccready": "Mike McCready",
+  "pj harvey": "PJ Harvey",
+  "polly jena harvey": "PJ Harvey",
+  "acdc": "AC/DC",
+  "thebeatles": "The Beatles",
+  "nin": "Nine Inch Nails",
+};
+
 function normalizeLabel(label) {
   const key = label.trim().toLowerCase().replace(/\s+/g, " ");
   if (SHOW_NAME_LABEL_VARIANTS.has(key)) return "Bienvenido a los 90";
+  if (LABEL_ALIASES[key]) return LABEL_ALIASES[key];
   return titleCase(label);
 }
 
@@ -406,7 +418,7 @@ function populateLabelFilter(episodes) {
     "podcast", "podcast en español", "radio", "radio utopia", "radio utopía",
     "subterfuge radio", "madrid", "ivoox",
     "darwinians radio bike", "darwinians raido bike", "darwiniansradiobike",
-    "b90 supernova", "especial", "radioutopia", "mike mccready", "pearljam",
+    "b90 supernova", "especial", "radioutopia", "pearljam",
     "ringo starr", "seattle", "castellano", "descarga",
     "61 garage", "rufus t. firefly",
     "james iha", "jeff ament", "krist novoselic", "stone gossard",

@@ -832,6 +832,13 @@ function buildEtiquetasPages(episodes) {
 
   const LABEL_ALIASES = {
     "Paul Mccartney": "Paul McCartney",
+    "Mccartney": "Paul McCartney",
+    "Mike Mccready": "Mike McCready",
+    "Pj Harvey": "PJ Harvey",
+    "Polly Jena Harvey": "PJ Harvey",
+    "Acdc": "AC/DC",
+    "Thebeatles": "The Beatles",
+    "Nin": "Nine Inch Nails",
   };
 
   const labelMap = new Map();
