@@ -50,6 +50,13 @@ function platformLinks(ep) {
   return links;
 }
 
+function secondsToIsoDuration(s) {
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  const sec = s % 60;
+  return `PT${h > 0 ? h + "H" : ""}${m > 0 ? m + "M" : ""}${sec > 0 ? sec + "S" : ""}` || "PT0S";
+}
+
 function escapeHtml(str) {
   return String(str).replace(/[&<>"']/g, (c) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
@@ -473,7 +480,7 @@ function episodePage(ep, { prev, next, related, series, validEtiquetaLabels }) {
       url: SITE_URL,
       description: "Podcast de música de los años 90: pop, rock, dance y eurodance en español. Más de 1200 episodios desde 2012.",
       image: { "@type": "ImageObject", url: `${SITE_URL}/images/b90-logo-new.jpg`, width: 735, height: 735 },
-      webFeed: "https://bienvenidoalos90.blogspot.com/feeds/posts/default",
+      webFeed: "https://feeds.ivoox.com/feed_fg_f132699_filtro_1.xml",
       creator: { "@type": "Person", name: "Roberto Martínez", url: "https://x.com/Rockisroll" },
     },
     ...(audioUrl ? {
@@ -481,6 +488,7 @@ function episodePage(ep, { prev, next, related, series, validEtiquetaLabels }) {
         "@type": "AudioObject",
         contentUrl: audioUrl,
         encodingFormat: "audio/mpeg",
+        ...(ep.duration ? { duration: secondsToIsoDuration(ep.duration) } : {}),
         ...(transcriptText ? { transcript: transcriptText.slice(0, 500) } : {}),
       },
     } : {}),

@@ -68,6 +68,29 @@ function parsePage(html) {
   return results;
 }
 
+function hhmmssToSeconds(str) {
+  const parts = str.trim().split(":").map(Number);
+  if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
+  if (parts.length === 2) return parts[0] * 60 + parts[1];
+  return parts[0];
+}
+
+async function fetchDurationsFromRSS() {
+  const res = await fetch("https://feeds.ivoox.com/feed_fg_f132699_filtro_1.xml");
+  if (!res.ok) throw new Error(`RSS HTTP ${res.status}`);
+  const xml = await res.text();
+  const durationById = new Map();
+  const items = xml.split("<item>");
+  for (let i = 1; i < items.length; i++) {
+    const idMatch = items[i].match(/_rf_(\d+)_/);
+    const durMatch = items[i].match(/<itunes:duration>([^<]+)<\/itunes:duration>/);
+    if (idMatch && durMatch) {
+      durationById.set(idMatch[1], hhmmssToSeconds(durMatch[1]));
+    }
+  }
+  return durationById;
+}
+
 async function main() {
   const statsById = new Map();
   const seenIds = new Set();
@@ -102,6 +125,10 @@ async function main() {
 
   console.log(`Recogidas estadísticas de ${statsById.size} episodios de iVoox.`);
 
+  console.log("Descargando duraciones desde el feed RSS...");
+  const durationById = await fetchDurationsFromRSS();
+  console.log(`Duraciones obtenidas: ${durationById.size} episodios.`);
+
   const episodes = JSON.parse(fs.readFileSync("episodes.json", "utf-8"));
 
   function ivooxId(ep) {
@@ -112,6 +139,7 @@ async function main() {
   }
 
   let updated = 0;
+  let durationsAdded = 0;
   episodes.forEach((ep) => {
     const id = ivooxId(ep);
     const stats = id ? statsById.get(id) : null;
@@ -121,10 +149,13 @@ async function main() {
       ep.plays = stats.plays;
       updated++;
     }
+    const dur = id ? durationById.get(id) : null;
+    if (dur) { ep.duration = dur; durationsAdded++; }
   });
 
   fs.writeFileSync("episodes.json", JSON.stringify(episodes, null, 2), "utf-8");
   console.log(`Actualizados ${updated}/${episodes.length} episodios con estadísticas reales de iVoox.`);
+  console.log(`Duraciones añadidas: ${durationsAdded}/${episodes.length} episodios.`);
 }
 
 main().catch((err) => {

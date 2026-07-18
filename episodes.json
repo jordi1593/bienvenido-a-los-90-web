@@ -22,7 +22,7 @@
     ],
     "comments": 3,
     "likes": 7,
-    "plays": 412,
+    "plays": 413,
     "labels": [
       "Call Me y Break The Senses",
       "foo fighters",
@@ -31,7 +31,8 @@
       "madrid",
       "nos alive",
       "pixies"
-    ]
+    ],
+    "duration": 3650
   },
   {
     "number": 1133,
@@ -72,7 +73,8 @@
       "No Somos Turistas",
       "sunny day real estate",
       "Un Lugar Tranquilo"
-    ]
+    ],
+    "duration": 4260
   },
   {
     "number": 1132,
@@ -100,11 +102,12 @@
     ],
     "comments": 2,
     "likes": 19,
-    "plays": 760,
+    "plays": 762,
     "labels": [
       "josh homme",
       "queens of the stone age"
-    ]
+    ],
+    "duration": 4675
   },
   {
     "number": 1131,
@@ -144,7 +147,8 @@
       "ivoox",
       "Podcasters",
       "podcasting"
-    ]
+    ],
+    "duration": 6127
   },
   {
     "number": 1130,
@@ -175,7 +179,8 @@
     "labels": [
       "psilicon flesh",
       "subterfuge"
-    ]
+    ],
+    "duration": 7582
   },
   {
     "number": 1129,
@@ -205,7 +210,8 @@
       "dani cabezas",
       "El péndulo",
       "le traste"
-    ]
+    ],
+    "duration": 2940
   },
   {
     "number": 1128,
@@ -244,7 +250,8 @@
       "mudhoney",
       "seattle",
       "You re No Big Deal"
-    ]
+    ],
+    "duration": 2215
   },
   {
     "number": 1127,
@@ -281,7 +288,8 @@
       "Radiohead",
       "the dramatics",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 4870
   },
   {
     "number": 1126,
@@ -319,7 +327,8 @@
       "Radiohead",
       "the beatles",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 5776
   },
   {
     "number": null,
@@ -359,7 +368,8 @@
       "gustavo iglesias",
       "radio 3",
       "Radiohead"
-    ]
+    ],
+    "duration": 3505
   },
   {
     "number": 1125,
@@ -389,7 +399,8 @@
       "A Night of Mellon Collie and Infinite Sadness",
       "billy corgan",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 2132
   },
   {
     "number": 1124,
@@ -426,7 +437,8 @@
       "The Wasted Garage",
       "valencia",
       "Vegralt"
-    ]
+    ],
+    "duration": 9427
   },
   {
     "number": 1123,
@@ -457,7 +469,8 @@
       "dave mustaine",
       "megadeth",
       "Youthanasia"
-    ]
+    ],
+    "duration": 8527
   },
   {
     "number": 1122,
@@ -492,7 +505,8 @@
       "The Wasted Garage",
       "valencia",
       "Vegralt"
-    ]
+    ],
+    "duration": 1670
   },
   {
     "number": 1121,
@@ -522,7 +536,8 @@
       "foo fighters",
       "nirvana",
       "your favorite toy"
-    ]
+    ],
+    "duration": 1501
   },
   {
     "number": null,
@@ -552,7 +567,8 @@
       "Radiohead",
       "street spirit",
       "the bends"
-    ]
+    ],
+    "duration": 1120
   },
   {
     "number": 1120,
@@ -584,7 +600,8 @@
       "josh homme",
       "mark lanegan",
       "screaming trees"
-    ]
+    ],
+    "duration": 7103
   },
   {
     "number": 1119,
@@ -616,7 +633,8 @@
       "Collision",
       "faith no more",
       "Southie"
-    ]
+    ],
+    "duration": 5455
   },
   {
     "number": 1118,
@@ -651,7 +669,8 @@
       "Bringing Down the Horse",
       "jakob dylan",
       "the wallflowers"
-    ]
+    ],
+    "duration": 2460
   },
   {
     "number": 1117,
@@ -682,7 +701,8 @@
       "el presente es imposible",
       "Radiohead",
       "thom yorke"
-    ]
+    ],
+    "duration": 4690
   },
   {
     "number": 1116,
@@ -711,7 +731,8 @@
     "labels": [
       "bruto",
       "le mur"
-    ]
+    ],
+    "duration": 3292
   },
   {
     "number": 1115,
@@ -749,7 +770,8 @@
       "ocean colour scene",
       "simon fowler",
       "steve cradock"
-    ]
+    ],
+    "duration": 4974
   },
   {
     "number": null,
@@ -781,7 +803,8 @@
       "damon albarn",
       "parlklife",
       "Phil Daniels"
-    ]
+    ],
+    "duration": 1194
   },
   {
     "number": 1114,
@@ -813,7 +836,8 @@
       "malo mundo",
       "pedrajas de san esteban",
       "sincorazon"
-    ]
+    ],
+    "duration": 6256
   },
   {
     "number": 1113,
@@ -843,7 +867,8 @@
       "galan fest",
       "naia",
       "sincorazon"
-    ]
+    ],
+    "duration": 5547
   },
   {
     "number": 1112,
@@ -873,7 +898,8 @@
       "billy corgan",
       "Mellon Collie and the Infinite Sadness",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 2946
   },
   {
     "number": 1111,
@@ -913,7 +939,8 @@
       "the mañana culture",
       "Torus",
       "Villanelle"
-    ]
+    ],
+    "duration": 3868
   },
   {
     "number": 1110,
@@ -953,7 +980,8 @@
     "plays": 544,
     "labels": [
       "The Wasted Garage"
-    ]
+    ],
+    "duration": 4654
   },
   {
     "number": 1109,
@@ -987,7 +1015,8 @@
       "noel gallagher",
       "Oasis",
       "rosalia"
-    ]
+    ],
+    "duration": 4889
   },
   {
     "number": 1108,
@@ -1016,7 +1045,8 @@
     "plays": 574,
     "labels": [
       "Navaja Cuchillo"
-    ]
+    ],
+    "duration": 3734
   },
   {
     "number": 1107,
@@ -1044,7 +1074,8 @@
       "Countdown to Extinction",
       "dave mustaine",
       "megadeth"
-    ]
+    ],
+    "duration": 7414
   },
   {
     "number": 1106,
@@ -1078,7 +1109,8 @@
       "TANTALISM",
       "THE WOW! SIGNAL",
       "THUS SPOKE ZARATHUSTRA"
-    ]
+    ],
+    "duration": 10874
   },
   {
     "number": 1105,
@@ -1123,7 +1155,8 @@
       "Rufus T. Firefly",
       "sex sodio sullivan",
       "vermú"
-    ]
+    ],
+    "duration": 6976
   },
   {
     "number": 1104,
@@ -1151,7 +1184,8 @@
     "plays": 745,
     "labels": [
       "AlphaWhores"
-    ]
+    ],
+    "duration": 4629
   },
   {
     "number": 1103,
@@ -1183,7 +1217,8 @@
       "las madres",
       "mike mccready",
       "Pearl Jam"
-    ]
+    ],
+    "duration": 4167
   },
   {
     "number": 1102,
@@ -1222,7 +1257,8 @@
       "Soundgarden",
       "tad",
       "veruca salt"
-    ]
+    ],
+    "duration": 3574
   },
   {
     "number": null,
@@ -1257,7 +1293,8 @@
       "machina",
       "The Smashing Pumpkins",
       "Untitled"
-    ]
+    ],
+    "duration": 1580
   },
   {
     "number": 1101,
@@ -1285,7 +1322,8 @@
       "dave mustaine",
       "megadeth",
       "Rust in Peace"
-    ]
+    ],
+    "duration": 8058
   },
   {
     "number": 1100,
@@ -1315,7 +1353,8 @@
       "liam gallagher",
       "noel gallagher",
       "Oasis"
-    ]
+    ],
+    "duration": 6613
   },
   {
     "number": 1099,
@@ -1346,7 +1385,8 @@
       "alice coltrane",
       "motorhead",
       "pennywise"
-    ]
+    ],
+    "duration": 955
   },
   {
     "number": 1098,
@@ -1376,7 +1416,8 @@
       "dave mustaine",
       "megadeth",
       "metallica"
-    ]
+    ],
+    "duration": 8424
   },
   {
     "number": null,
@@ -1405,7 +1446,8 @@
       "blind melon",
       "no rain",
       "shannon hoon"
-    ]
+    ],
+    "duration": 1465
   },
   {
     "number": 1097,
@@ -1439,7 +1481,8 @@
       "paul mccartney",
       "ringo starr",
       "the beatles"
-    ]
+    ],
+    "duration": 5458
   },
   {
     "number": 1096,
@@ -1477,7 +1520,8 @@
       "ringo starr",
       "the beatles",
       "The Winnerys"
-    ]
+    ],
+    "duration": 4849
   },
   {
     "number": 1095,
@@ -1511,7 +1555,8 @@
       "Rocket from the Crypt",
       "sunny day real estate",
       "the beatles"
-    ]
+    ],
+    "duration": 3655
   },
   {
     "number": null,
@@ -1543,7 +1588,8 @@
       "peter buck",
       "REM",
       "screaming trees"
-    ]
+    ],
+    "duration": 8438
   },
   {
     "number": 1094,
@@ -1569,7 +1615,8 @@
     "comments": 6,
     "likes": 22,
     "plays": 1100,
-    "labels": []
+    "labels": [],
+    "duration": 11309
   },
   {
     "number": 1093,
@@ -1609,7 +1656,8 @@
       "sonic youth",
       "Southern Culture on the Skids",
       "urge overkill"
-    ]
+    ],
+    "duration": 6109
   },
   {
     "number": 1092,
@@ -1642,7 +1690,8 @@
       "los iguales",
       "sancocho",
       "sickmen"
-    ]
+    ],
+    "duration": 9481
   },
   {
     "number": 1091,
@@ -1678,7 +1727,8 @@
       "soul asylum",
       "The Chemical Brothers",
       "The Verve"
-    ]
+    ],
+    "duration": 5897
   },
   {
     "number": 1090,
@@ -1710,7 +1760,8 @@
       "the beatles",
       "Tokyo Blues",
       "yoko ono"
-    ]
+    ],
+    "duration": 3589
   },
   {
     "number": 1089,
@@ -1764,7 +1815,8 @@
       "The Wasted Garage",
       "The Whisper",
       "zelo"
-    ]
+    ],
+    "duration": 9070
   },
   {
     "number": 1088,
@@ -1800,7 +1852,8 @@
       "supergrass",
       "white zombie",
       "wilco"
-    ]
+    ],
+    "duration": 6943
   },
   {
     "number": null,
@@ -1828,7 +1881,8 @@
       "b90 supernova",
       "madrid",
       "offspring"
-    ]
+    ],
+    "duration": 6210
   },
   {
     "number": 1087,
@@ -1856,7 +1910,8 @@
     "labels": [
       "sarajevo 84",
       "The After Party"
-    ]
+    ],
+    "duration": 3644
   },
   {
     "number": 1086,
@@ -1890,7 +1945,8 @@
       "Radiohead",
       "The Jayhawks",
       "tricky"
-    ]
+    ],
+    "duration": 5734
   },
   {
     "number": 1085,
@@ -1938,7 +1994,8 @@
       "Rufus T. Firefly",
       "sex sodio sullivan",
       "vicente navarro"
-    ]
+    ],
+    "duration": 8292
   },
   {
     "number": 1084,
@@ -1971,7 +2028,8 @@
       "lanzarote",
       "los iguales",
       "sickmen"
-    ]
+    ],
+    "duration": 1262
   },
   {
     "number": 1083,
@@ -2029,7 +2087,8 @@
       "Planeta Tentaciones radio show",
       "Rock Bottom Magazine",
       "Wurlitzer Records"
-    ]
+    ],
+    "duration": 3753
   },
   {
     "number": 1082,
@@ -2061,7 +2120,8 @@
       "matt cameron",
       "rock ¬ roll hall of fame",
       "Soundgarden"
-    ]
+    ],
+    "duration": 2989
   },
   {
     "number": 1081,
@@ -2095,7 +2155,8 @@
       "phil selway",
       "Radiohead",
       "thom yorke"
-    ]
+    ],
+    "duration": 3970
   },
   {
     "number": null,
@@ -2124,7 +2185,8 @@
       "b90 supernova",
       "madrid",
       "Radiohead"
-    ]
+    ],
+    "duration": 8060
   },
   {
     "number": 1080,
@@ -2153,7 +2215,8 @@
     "labels": [
       "Cassette Sessions",
       "Chula"
-    ]
+    ],
+    "duration": 3801
   },
   {
     "number": 1079,
@@ -2180,7 +2243,8 @@
     "plays": 620,
     "labels": [
       "pasajero"
-    ]
+    ],
+    "duration": 3481
   },
   {
     "number": 1078,
@@ -2213,7 +2277,8 @@
       "matt cameron",
       "seattle",
       "Soundgarden"
-    ]
+    ],
+    "duration": 1612
   },
   {
     "number": null,
@@ -2244,7 +2309,8 @@
       "bienvenido  a los 90",
       "musica",
       "premios ivoox"
-    ]
+    ],
+    "duration": 249
   },
   {
     "number": 1077,
@@ -2275,7 +2341,8 @@
       "bruce springsteen",
       "Deliver Me From Nowhere",
       "nebraska"
-    ]
+    ],
+    "duration": 7454
   },
   {
     "number": 1076,
@@ -2323,7 +2390,8 @@
       "prince",
       "Rory Gallagher",
       "Rufus Wainwright"
-    ]
+    ],
+    "duration": 7434
   },
   {
     "number": 1075,
@@ -2358,7 +2426,8 @@
       "peter buck",
       "REM",
       "screaming trees"
-    ]
+    ],
+    "duration": 2801
   },
   {
     "number": null,
@@ -2389,7 +2458,8 @@
       "evan dando",
       "madrid",
       "The Lemonheads"
-    ]
+    ],
+    "duration": 5801
   },
   {
     "number": 1074,
@@ -2420,7 +2490,8 @@
       "evan dando",
       "madrid",
       "The Lemonheads"
-    ]
+    ],
+    "duration": 3569
   },
   {
     "number": 1073,
@@ -2447,7 +2518,8 @@
     "comments": 12,
     "likes": 15,
     "plays": 923,
-    "labels": []
+    "labels": [],
+    "duration": 1682
   },
   {
     "number": 1072,
@@ -2482,7 +2554,8 @@
       "Jehnny Beth",
       "Paz Lenchantin",
       "Radiohead"
-    ]
+    ],
+    "duration": 1735
   },
   {
     "number": 1071,
@@ -2515,7 +2588,8 @@
       "manuel pinazo",
       "muzikalia",
       "Slowdive"
-    ]
+    ],
+    "duration": 6809
   },
   {
     "number": null,
@@ -2545,7 +2619,8 @@
       "david bowie",
       "Placebo",
       "Without You I’m Nothing"
-    ]
+    ],
+    "duration": 1420
   },
   {
     "number": 1070,
@@ -2579,7 +2654,8 @@
       "ringo starr",
       "rubber soul",
       "the beatles"
-    ]
+    ],
+    "duration": 6089
   },
   {
     "number": 1069,
@@ -2613,7 +2689,8 @@
       "ringo starr",
       "rubber soul",
       "the beatles"
-    ]
+    ],
+    "duration": 5961
   },
   {
     "number": 1068,
@@ -2645,7 +2722,8 @@
       "la rubia producciones",
       "murina",
       "veracruz"
-    ]
+    ],
+    "duration": 3867
   },
   {
     "number": 1067,
@@ -2678,7 +2756,8 @@
       "pedro garcía",
       "radio callao",
       "Young Disciples"
-    ]
+    ],
+    "duration": 9029
   },
   {
     "number": 1066,
@@ -2707,7 +2786,8 @@
     "labels": [
       "dramatics",
       "slide waves"
-    ]
+    ],
+    "duration": 4474
   },
   {
     "number": 1065,
@@ -2739,7 +2819,8 @@
       "la pedalera",
       "radio utopia",
       "raul moreno"
-    ]
+    ],
+    "duration": 7923
   },
   {
     "number": 1064,
@@ -2767,7 +2848,8 @@
     "labels": [
       "Rottens Paradise",
       "The Wasted Garage"
-    ]
+    ],
+    "duration": 4548
   },
   {
     "number": 1063,
@@ -2796,7 +2878,8 @@
       "Aerobitch",
       "fanzine not",
       "laura pardo"
-    ]
+    ],
+    "duration": 4658
   },
   {
     "number": 1062,
@@ -2828,7 +2911,8 @@
       "Oasis",
       "richard royuela",
       "rockzone"
-    ]
+    ],
+    "duration": 2998
   },
   {
     "number": 1061,
@@ -2859,7 +2943,8 @@
       "noel gallagher",
       "Oasis",
       "Wembley"
-    ]
+    ],
+    "duration": 3764
   },
   {
     "number": 1060,
@@ -2894,7 +2979,8 @@
       "pepe salort",
       "roberto aracil",
       "ruben pozo"
-    ]
+    ],
+    "duration": 7938
   },
   {
     "number": 1059,
@@ -2923,7 +3009,8 @@
       "jagged little pill",
       "mad cool",
       "madrid"
-    ]
+    ],
+    "duration": 2385
   },
   {
     "number": null,
@@ -2952,7 +3039,8 @@
       "beth gibbons",
       "las noches del botanico",
       "portishead"
-    ]
+    ],
+    "duration": 5237
   },
   {
     "number": 1058,
@@ -3005,7 +3093,8 @@
       "stone sober",
       "street lamp",
       "tracy bonham"
-    ]
+    ],
+    "duration": 3669
   },
   {
     "number": 1057,
@@ -3038,7 +3127,8 @@
       "Pearl Jam",
       "seattle",
       "stone gossard"
-    ]
+    ],
+    "duration": 5886
   },
   {
     "number": 1056,
@@ -3069,7 +3159,8 @@
       "manchester",
       "noel gallagher",
       "Oasis"
-    ]
+    ],
+    "duration": 1090
   },
   {
     "number": 1055,
@@ -3107,7 +3198,8 @@
       "rockzone",
       "slayer",
       "Villa Park"
-    ]
+    ],
+    "duration": 6889
   },
   {
     "number": 1054,
@@ -3136,7 +3228,8 @@
       "liam gallagher",
       "noel gallagher",
       "Oasis"
-    ]
+    ],
+    "duration": 6051
   },
   {
     "number": null,
@@ -3167,7 +3260,8 @@
       "madrid",
       "moon safari",
       "nicolas godin"
-    ]
+    ],
+    "duration": 5631
   },
   {
     "number": 1053,
@@ -3197,7 +3291,8 @@
       "liam gallagher",
       "noel gallagher",
       "Oasis"
-    ]
+    ],
+    "duration": 1688
   },
   {
     "number": 1052,
@@ -3226,7 +3321,8 @@
       "liam gallagher",
       "noel gallagher",
       "Oasis"
-    ]
+    ],
+    "duration": 5993
   },
   {
     "number": 1051,
@@ -3255,7 +3351,8 @@
       "liam gallagher",
       "noel gallagher",
       "Oasis"
-    ]
+    ],
+    "duration": 5263
   },
   {
     "number": 1050,
@@ -3308,7 +3405,8 @@
       "The Low Flying Panic Attack",
       "tulsa",
       "verona"
-    ]
+    ],
+    "duration": 7595
   },
   {
     "number": 1049,
@@ -3342,7 +3440,8 @@
       "Maud the Moth",
       "patti smith",
       "the distaff"
-    ]
+    ],
+    "duration": 4969
   },
   {
     "number": 1048,
@@ -3369,7 +3468,8 @@
     "labels": [
       "beat me",
       "Electric Eel Shock"
-    ]
+    ],
+    "duration": 2007
   },
   {
     "number": null,
@@ -3400,7 +3500,8 @@
       "madrid",
       "noel gallagher",
       "Oasis"
-    ]
+    ],
+    "duration": 6882
   },
   {
     "number": 1047,
@@ -3433,7 +3534,8 @@
       "kurt cobain",
       "nirvana",
       "seattle"
-    ]
+    ],
+    "duration": 3648
   },
   {
     "number": 1046,
@@ -3461,7 +3563,8 @@
     "labels": [
       "Break the Senses",
       "the rebels"
-    ]
+    ],
+    "duration": 4123
   },
   {
     "number": 1045,
@@ -3490,7 +3593,8 @@
       "musica alternativa",
       "podcast musical",
       "radio"
-    ]
+    ],
+    "duration": 4656
   },
   {
     "number": 1044,
@@ -3520,7 +3624,8 @@
       "lets rock radio",
       "onda cero",
       "Rock and Roll Animal"
-    ]
+    ],
+    "duration": 7852
   },
   {
     "number": 1043,
@@ -3550,7 +3655,8 @@
       "nirvana",
       "Rufus T. Firefly",
       "The Low Flying Panic Attack"
-    ]
+    ],
+    "duration": 4010
   },
   {
     "number": null,
@@ -3579,7 +3685,8 @@
       "Stone Temple Pilots",
       "tank girl",
       "The Magnificent Bastards"
-    ]
+    ],
+    "duration": 1571
   },
   {
     "number": 1042,
@@ -3609,7 +3716,8 @@
       "Oasis",
       "the pastel",
       "wythenshawe park"
-    ]
+    ],
+    "duration": 1991
   },
   {
     "number": 1041,
@@ -3642,7 +3750,8 @@
       "spinda records",
       "the black crowes",
       "the elven"
-    ]
+    ],
+    "duration": 3391
   },
   {
     "number": 1040,
@@ -3671,7 +3780,8 @@
       "Rage Against the Machine",
       "tom morello",
       "zack de la rocha"
-    ]
+    ],
+    "duration": 2028
   },
   {
     "number": 1039,
@@ -3704,7 +3814,8 @@
       "paul mccartney",
       "ringo starr",
       "the beatles"
-    ]
+    ],
+    "duration": 8212
   },
   {
     "number": null,
@@ -3733,7 +3844,8 @@
       "jack white",
       "Seven Nation Army",
       "the white stripes"
-    ]
+    ],
+    "duration": 1260
   },
   {
     "number": 1038,
@@ -3765,7 +3877,8 @@
       "Jean-Benoît Dunckel",
       "moon safari",
       "nicolas godin"
-    ]
+    ],
+    "duration": 3293
   },
   {
     "number": 1037,
@@ -3804,7 +3917,8 @@
       "Queen Kwong",
       "trent reznor",
       "wes borland"
-    ]
+    ],
+    "duration": 2330
   },
   {
     "number": 1036,
@@ -3841,7 +3955,8 @@
       "The Backseat Lovers",
       "The Teskey Brothers",
       "weezer"
-    ]
+    ],
+    "duration": 1827
   },
   {
     "number": null,
@@ -3874,7 +3989,8 @@
       "Colin Gregory",
       "Grudge",
       "the dylans"
-    ]
+    ],
+    "duration": 1283
   },
   {
     "number": 1035,
@@ -3918,7 +4034,8 @@
       "the bends",
       "the smile",
       "thom yorke"
-    ]
+    ],
+    "duration": 5300
   },
   {
     "number": 1034,
@@ -3968,7 +4085,8 @@
       "Motley Crüe",
       "rockzone",
       "the cure"
-    ]
+    ],
+    "duration": 6905
   },
   {
     "number": 1033,
@@ -4008,7 +4126,8 @@
       "pink floyd",
       "Radiohead",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 5610
   },
   {
     "number": 1032,
@@ -4039,7 +4158,8 @@
       "Heading into a recession",
       "jayco jr",
       "jorge antequera"
-    ]
+    ],
+    "duration": 3381
   },
   {
     "number": null,
@@ -4072,7 +4192,8 @@
       "sonic youth",
       "the breeders",
       "Washing Machine"
-    ]
+    ],
+    "duration": 1247
   },
   {
     "number": 1031,
@@ -4116,7 +4237,8 @@
       "sonic youth",
       "u2",
       "Vaughan Olivier"
-    ]
+    ],
+    "duration": 4009
   },
   {
     "number": 1030,
@@ -4147,7 +4269,8 @@
       "jennifer finch",
       "l7",
       "The Shocker"
-    ]
+    ],
+    "duration": 3469
   },
   {
     "number": 1029,
@@ -4176,7 +4299,8 @@
     "labels": [
       "Cassette Sessions Vol. 1",
       "Chula"
-    ]
+    ],
+    "duration": 5922
   },
   {
     "number": null,
@@ -4206,7 +4330,8 @@
       "Denise LaSalle",
       "Hot 8 Brass Band",
       "spotify"
-    ]
+    ],
+    "duration": 957
   },
   {
     "number": 1028,
@@ -4238,7 +4363,8 @@
       "load",
       "metallica",
       "reload"
-    ]
+    ],
+    "duration": 6379
   },
   {
     "number": 1027,
@@ -4275,7 +4401,8 @@
       "san sebastián de los reyes",
       "The Braindrops",
       "The Losers Club"
-    ]
+    ],
+    "duration": 2934
   },
   {
     "number": 1026,
@@ -4303,7 +4430,8 @@
     "labels": [
       "felipe couselo",
       "the black crowes"
-    ]
+    ],
+    "duration": 4236
   },
   {
     "number": 1025,
@@ -4333,7 +4461,8 @@
       "felipe couselo",
       "naïa",
       "the black crowes"
-    ]
+    ],
+    "duration": 4897
   },
   {
     "number": null,
@@ -4364,7 +4493,8 @@
       "devil came to me",
       "dover",
       "jesus antunez"
-    ]
+    ],
+    "duration": 1215
   },
   {
     "number": 1024,
@@ -4418,7 +4548,8 @@
       "niña de fuego",
       "radio75",
       "Yoko Factor"
-    ]
+    ],
+    "duration": 9074
   },
   {
     "number": 1023,
@@ -4450,7 +4581,8 @@
       "grunge",
       "kurt cobain",
       "nirvana"
-    ]
+    ],
+    "duration": 4637
   },
   {
     "number": null,
@@ -4480,7 +4612,8 @@
       "Rage Against the Machine",
       "tom morello",
       "zack de la rocha"
-    ]
+    ],
+    "duration": 1386
   },
   {
     "number": 1022,
@@ -4513,7 +4646,8 @@
       "paul mccartney",
       "the beatles",
       "wizink center"
-    ]
+    ],
+    "duration": 4944
   },
   {
     "number": 1021,
@@ -4547,7 +4681,8 @@
       "Pearl Jam",
       "the beatles",
       "the stone roses"
-    ]
+    ],
+    "duration": 4161
   },
   {
     "number": 1020,
@@ -4581,7 +4716,8 @@
       "the black crowes",
       "tom petty",
       "woodstock"
-    ]
+    ],
+    "duration": 4038
   },
   {
     "number": null,
@@ -4612,7 +4748,8 @@
       "Blur",
       "the great escape",
       "The Universal"
-    ]
+    ],
+    "duration": 1036
   },
   {
     "number": 1019,
@@ -4647,7 +4784,8 @@
       "The Cranberries",
       "The Cult",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 6568
   },
   {
     "number": null,
@@ -4683,7 +4821,8 @@
       "Radiohead",
       "REM",
       "veruca salt"
-    ]
+    ],
+    "duration": 5985
   },
   {
     "number": null,
@@ -4720,7 +4859,8 @@
       "portishead",
       "sebadoh",
       "The Jesus and Mary Chain"
-    ]
+    ],
+    "duration": 6005
   },
   {
     "number": null,
@@ -4750,7 +4890,8 @@
     "plays": 1500,
     "labels": [
       "musica para navidad"
-    ]
+    ],
+    "duration": 6046
   },
   {
     "number": null,
@@ -4779,7 +4920,8 @@
       "nmadrid",
       "paul mccartney",
       "the beatles"
-    ]
+    ],
+    "duration": 12187
   },
   {
     "number": null,
@@ -4816,7 +4958,8 @@
       "prodigy",
       "The Reverend Horton Heat",
       "the rolling stones"
-    ]
+    ],
+    "duration": 5214
   },
   {
     "number": null,
@@ -4850,7 +4993,8 @@
       "leon",
       "Santa Colomba de Somoza",
       "ZABRISKIE"
-    ]
+    ],
+    "duration": 5186
   },
   {
     "number": null,
@@ -4883,7 +5027,8 @@
       "sonic youth",
       "Stone Temple Pilots",
       "weezer"
-    ]
+    ],
+    "duration": 8931
   },
   {
     "number": null,
@@ -4913,7 +5058,8 @@
       "the bad seeds",
       "the birthday party",
       "the boys next door"
-    ]
+    ],
+    "duration": 10978
   },
   {
     "number": null,
@@ -4954,7 +5100,8 @@
       "kim deal",
       "nada surf",
       "ZABRISKIE"
-    ]
+    ],
+    "duration": 3779
   },
   {
     "number": null,
@@ -4983,7 +5130,8 @@
       "eleven",
       "madrid",
       "radio 75"
-    ]
+    ],
+    "duration": 4665
   },
   {
     "number": null,
@@ -5012,7 +5160,8 @@
       "carlos hernadez nombela",
       "conspire",
       "driive"
-    ]
+    ],
+    "duration": 4244
   },
   {
     "number": null,
@@ -5045,7 +5194,8 @@
       "Rock and Roll Animal",
       "Rock Bottom Magazine",
       "Wurlitzer Records"
-    ]
+    ],
+    "duration": 3455
   },
   {
     "number": null,
@@ -5079,7 +5229,8 @@
       "el cuervo",
       "the crow",
       "the crow show"
-    ]
+    ],
+    "duration": 6173
   },
   {
     "number": null,
@@ -5115,7 +5266,8 @@
       "My Bloody Valentine",
       "Pearl Jam",
       "spinda records"
-    ]
+    ],
+    "duration": 8171
   },
   {
     "number": null,
@@ -5147,7 +5299,8 @@
       "kurt cobain",
       "nirvana",
       "With The Lights Out"
-    ]
+    ],
+    "duration": 3676
   },
   {
     "number": null,
@@ -5176,7 +5329,8 @@
       "Karl Stephenson",
       "loser",
       "mellow gold"
-    ]
+    ],
+    "duration": 1754
   },
   {
     "number": null,
@@ -5208,7 +5362,8 @@
       "kurt cobain",
       "nirvana",
       "the buzz lovers"
-    ]
+    ],
+    "duration": 4406
   },
   {
     "number": null,
@@ -5246,7 +5401,8 @@
       "maraton radio",
       "mark lanegan",
       "paco perez bryan"
-    ]
+    ],
+    "duration": 6476
   },
   {
     "number": null,
@@ -5273,7 +5429,8 @@
     "plays": 908,
     "labels": [
       "maddening flames"
-    ]
+    ],
+    "duration": 4729
   },
   {
     "number": null,
@@ -5302,7 +5459,8 @@
     "labels": [
       "premios de la audiencia",
       "premios ivoox"
-    ]
+    ],
+    "duration": 578
   },
   {
     "number": null,
@@ -5334,7 +5492,8 @@
       "Plastic Ashes",
       "veruca salt",
       "veyls"
-    ]
+    ],
+    "duration": 1730
   },
   {
     "number": null,
@@ -5364,7 +5523,8 @@
       "peluze",
       "stoned fish",
       "susan"
-    ]
+    ],
+    "duration": 8850
   },
   {
     "number": null,
@@ -5395,7 +5555,8 @@
       "la casa murada",
       "radio75",
       "SCREAMING OUT"
-    ]
+    ],
+    "duration": 7597
   },
   {
     "number": null,
@@ -5435,7 +5596,8 @@
       "la alcoba",
       "Lost Satellite",
       "madrid"
-    ]
+    ],
+    "duration": 7355
   },
   {
     "number": null,
@@ -5470,7 +5632,8 @@
       "hermana furia",
       "pedrajas de san esteban",
       "The Niftys"
-    ]
+    ],
+    "duration": 9110
   },
   {
     "number": null,
@@ -5501,7 +5664,8 @@
       "kurt cobian",
       "nirvana",
       "patti smith"
-    ]
+    ],
+    "duration": 1874
   },
   {
     "number": null,
@@ -5535,7 +5699,8 @@
       "arturo paniagua",
       "daniel arias",
       "pasajero"
-    ]
+    ],
+    "duration": 9181
   },
   {
     "number": null,
@@ -5565,7 +5730,8 @@
       "mano negra",
       "manu chao",
       "oscar tramor"
-    ]
+    ],
+    "duration": 7946
   },
   {
     "number": null,
@@ -5597,7 +5763,8 @@
       "grunge",
       "Pearl Jam",
       "Soundgarden"
-    ]
+    ],
+    "duration": 1268
   },
   {
     "number": null,
@@ -5626,7 +5793,8 @@
       "liam gallagher",
       "noel gallagher",
       "Oasis"
-    ]
+    ],
+    "duration": 5200
   },
   {
     "number": null,
@@ -5657,7 +5825,8 @@
       "radio 3",
       "subterfuge radio",
       "todos los discos son grandes"
-    ]
+    ],
+    "duration": 8243
   },
   {
     "number": null,
@@ -5692,7 +5861,8 @@
       "pantera",
       "pulp",
       "terrorvision"
-    ]
+    ],
+    "duration": 7159
   },
   {
     "number": null,
@@ -5727,7 +5897,8 @@
       "Pearl Jam",
       "seattle",
       "stone gossard"
-    ]
+    ],
+    "duration": 7720
   },
   {
     "number": null,
@@ -5757,7 +5928,8 @@
       "mark arm",
       "mudhoney",
       "seattle"
-    ]
+    ],
+    "duration": 2986
   },
   {
     "number": null,
@@ -5788,7 +5960,8 @@
       "chicle",
       "pignoise",
       "real madrid"
-    ]
+    ],
+    "duration": 4304
   },
   {
     "number": null,
@@ -5826,7 +5999,8 @@
       "the black crowes",
       "The Lovemongers",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 6322
   },
   {
     "number": null,
@@ -5859,7 +6033,8 @@
       "palau sant jordi",
       "Pearl Jam",
       "stone gossard"
-    ]
+    ],
+    "duration": 8587
   },
   {
     "number": null,
@@ -5891,7 +6066,8 @@
       "james iha",
       "jimmy chamberlin",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 11077
   },
   {
     "number": null,
@@ -5921,7 +6097,8 @@
       "alain johannes",
       "eleven",
       "Lost Satellite"
-    ]
+    ],
+    "duration": 5189
   },
   {
     "number": null,
@@ -5949,7 +6126,8 @@
       "b90 supernova",
       "barcelona",
       "Pearl Jam"
-    ]
+    ],
+    "duration": 8504
   },
   {
     "number": null,
@@ -5978,7 +6156,8 @@
       "BEATLEFEAST",
       "hey bulldogs",
       "the beatles"
-    ]
+    ],
+    "duration": 5207
   },
   {
     "number": null,
@@ -6014,7 +6193,8 @@
       "offspring",
       "Soundgarden",
       "the crow"
-    ]
+    ],
+    "duration": 6595
   },
   {
     "number": null,
@@ -6048,7 +6228,8 @@
       "mike mccready",
       "Pearl Jam",
       "stone gossard"
-    ]
+    ],
+    "duration": 8089
   },
   {
     "number": null,
@@ -6086,7 +6267,8 @@
       "smashing pumpkins",
       "the breeders",
       "tom morello"
-    ]
+    ],
+    "duration": 1678
   },
   {
     "number": null,
@@ -6114,7 +6296,8 @@
       "chris martin",
       "coldplay",
       "glastonbury"
-    ]
+    ],
+    "duration": 3518
   },
   {
     "number": null,
@@ -6142,7 +6325,8 @@
       "l7",
       "madrid",
       "The Lizards"
-    ]
+    ],
+    "duration": 6905
   },
   {
     "number": null,
@@ -6171,7 +6355,8 @@
       "Alphawaves",
       "nirvana",
       "Oasis"
-    ]
+    ],
+    "duration": 4048
   },
   {
     "number": null,
@@ -6206,7 +6391,8 @@
       "mano negra",
       "maraton radio",
       "Pavement"
-    ]
+    ],
+    "duration": 7342
   },
   {
     "number": null,
@@ -6242,7 +6428,8 @@
       "Surfin' Bichos",
       "The Smashing Pumpkins",
       "zayn"
-    ]
+    ],
+    "duration": 8513
   },
   {
     "number": null,
@@ -6272,7 +6459,8 @@
       "pablo honey",
       "Radiohead",
       "thom yorke"
-    ]
+    ],
+    "duration": 1354
   },
   {
     "number": null,
@@ -6309,7 +6497,8 @@
       "mark lanegan",
       "meat puppets",
       "Tori Amos"
-    ]
+    ],
+    "duration": 6426
   },
   {
     "number": null,
@@ -6337,7 +6526,8 @@
     "labels": [
       "KrazarK",
       "stone giant"
-    ]
+    ],
+    "duration": 6199
   },
   {
     "number": null,
@@ -6369,7 +6559,8 @@
       "Pearl Jam",
       "Radiohead",
       "rock botton magazine"
-    ]
+    ],
+    "duration": 10338
   },
   {
     "number": null,
@@ -6397,7 +6588,8 @@
     "labels": [
       "las nubes",
       "tormentas malsanas"
-    ]
+    ],
+    "duration": 3542
   },
   {
     "number": null,
@@ -6429,7 +6621,8 @@
       "Martín Frias",
       "ruth baza",
       "sex pistols"
-    ]
+    ],
+    "duration": 8804
   },
   {
     "number": null,
@@ -6460,7 +6653,8 @@
       "grunge",
       "Pearl Jam",
       "seattle"
-    ]
+    ],
+    "duration": 8458
   },
   {
     "number": null,
@@ -6490,7 +6684,8 @@
       "bocangel",
       "Cuatro Cuentos de Ficción",
       "siroco"
-    ]
+    ],
+    "duration": 6980
   },
   {
     "number": null,
@@ -6521,7 +6716,8 @@
       "abel guzman",
       "diary",
       "sunny day real estate"
-    ]
+    ],
+    "duration": 5130
   },
   {
     "number": null,
@@ -6556,7 +6752,8 @@
       "tad",
       "the breeders",
       "urge overkill"
-    ]
+    ],
+    "duration": 9098
   },
   {
     "number": null,
@@ -6586,7 +6783,8 @@
       "grunge",
       "Pearl Jam",
       "seattle"
-    ]
+    ],
+    "duration": 9194
   },
   {
     "number": null,
@@ -6616,7 +6814,8 @@
       "dover",
       "foo fighters",
       "nirvana"
-    ]
+    ],
+    "duration": 4038
   },
   {
     "number": null,
@@ -6645,7 +6844,8 @@
       "Radiohead",
       "the smile",
       "thom yorke"
-    ]
+    ],
+    "duration": 1712
   },
   {
     "number": null,
@@ -6685,7 +6885,8 @@
       "seattle",
       "Soundgarden",
       "temple of the dog"
-    ]
+    ],
+    "duration": 8386
   },
   {
     "number": null,
@@ -6717,7 +6918,8 @@
       "dover",
       "julio ruiz",
       "paco perez bryan"
-    ]
+    ],
+    "duration": 2779
   },
   {
     "number": null,
@@ -6754,7 +6956,8 @@
       "Radiohead",
       "Rock Bottom Magazine",
       "smashing pumpkins"
-    ]
+    ],
+    "duration": 4719
   },
   {
     "number": null,
@@ -6791,7 +6994,8 @@
       "Krazarck",
       "land of the sun",
       "stone giant"
-    ]
+    ],
+    "duration": 4711
   },
   {
     "number": null,
@@ -6823,7 +7027,8 @@
       "mike mccready",
       "Pearl Jam",
       "stone gossard"
-    ]
+    ],
+    "duration": 4809
   },
   {
     "number": null,
@@ -6852,7 +7057,8 @@
       "Lost Satellite",
       "madrid",
       "moby dick"
-    ]
+    ],
+    "duration": 3681
   },
   {
     "number": null,
@@ -6884,7 +7090,8 @@
       "nirvana",
       "pixies",
       "Youri Lenquette"
-    ]
+    ],
+    "duration": 4868
   },
   {
     "number": null,
@@ -6914,7 +7121,8 @@
       "Louise Post",
       "veruca salt",
       "veyls"
-    ]
+    ],
+    "duration": 4185
   },
   {
     "number": null,
@@ -6945,7 +7153,8 @@
       "el amigo americano",
       "mark lanegan",
       "Scott McCloud y Pete Simonelli"
-    ]
+    ],
+    "duration": 5342
   },
   {
     "number": null,
@@ -6975,7 +7184,8 @@
       "incesticide",
       "kurt cobain",
       "nirvana"
-    ]
+    ],
+    "duration": 1685
   },
   {
     "number": null,
@@ -7004,7 +7214,8 @@
       "krist novoselic",
       "kurt cobain",
       "nirvana"
-    ]
+    ],
+    "duration": 10379
   },
   {
     "number": null,
@@ -7055,7 +7266,8 @@
       "Southern Acts Society",
       "sr chinarro",
       "strange fruit"
-    ]
+    ],
+    "duration": 10408
   },
   {
     "number": null,
@@ -7098,7 +7310,8 @@
     "labels": [
       "alain johannes",
       "Lost Satellite"
-    ]
+    ],
+    "duration": 4117
   },
   {
     "number": null,
@@ -7131,7 +7344,8 @@
       "mudhoney",
       "nirvana",
       "seattle"
-    ]
+    ],
+    "duration": 4069
   },
   {
     "number": null,
@@ -7165,7 +7379,8 @@
       "munich",
       "nirvana",
       "pat smear"
-    ]
+    ],
+    "duration": 5302
   },
   {
     "number": null,
@@ -7196,7 +7411,8 @@
       "Radiohead",
       "salvador allende",
       "thom yorke"
-    ]
+    ],
+    "duration": 1624
   },
   {
     "number": null,
@@ -7226,7 +7442,8 @@
       "paco perez bryan",
       "Soundgarden",
       "superunknown"
-    ]
+    ],
+    "duration": 10619
   },
   {
     "number": null,
@@ -7261,7 +7478,8 @@
       "paul mccartney",
       "ringo starr",
       "the beatles"
-    ]
+    ],
+    "duration": 8054
   },
   {
     "number": null,
@@ -7291,7 +7509,8 @@
       "no way sis",
       "noel gallagher",
       "Oasis"
-    ]
+    ],
+    "duration": 1651
   },
   {
     "number": null,
@@ -7321,7 +7540,8 @@
     "labels": [
       "celtas cortos",
       "da igual"
-    ]
+    ],
+    "duration": 3807
   },
   {
     "number": null,
@@ -7352,7 +7572,8 @@
       "Hackney Diamonds",
       "Mick Jagger",
       "the rolling stones"
-    ]
+    ],
+    "duration": 7446
   },
   {
     "number": null,
@@ -7381,7 +7602,8 @@
     "labels": [
       "hell of a mind",
       "lost temper"
-    ]
+    ],
+    "duration": 4137
   },
   {
     "number": null,
@@ -7410,7 +7632,8 @@
     "labels": [
       "dookie",
       "green day"
-    ]
+    ],
+    "duration": 4019
   },
   {
     "number": null,
@@ -7445,7 +7668,8 @@
       "mike mccready",
       "Pearl Jam",
       "stone gossard"
-    ]
+    ],
+    "duration": 2184
   },
   {
     "number": null,
@@ -7474,7 +7698,8 @@
     "labels": [
       "fuzz forward",
       "Pasarasites"
-    ]
+    ],
+    "duration": 4562
   },
   {
     "number": null,
@@ -7506,7 +7731,8 @@
       "Rufus T. Firefly",
       "smashing pumpkins",
       "zahara"
-    ]
+    ],
+    "duration": 10143
   },
   {
     "number": null,
@@ -7534,7 +7760,8 @@
     "labels": [
       "james vieco",
       "saturna"
-    ]
+    ],
+    "duration": 3669
   },
   {
     "number": null,
@@ -7562,7 +7789,8 @@
     "labels": [
       "californication",
       "red hot chili peppers"
-    ]
+    ],
+    "duration": 1330
   },
   {
     "number": null,
@@ -7592,7 +7820,8 @@
       "flea",
       "john frusciante",
       "red hot chili peppers"
-    ]
+    ],
+    "duration": 6151
   },
   {
     "number": null,
@@ -7622,7 +7851,8 @@
       "the smile",
       "thom yorke",
       "wall of eyes"
-    ]
+    ],
+    "duration": 3354
   },
   {
     "number": null,
@@ -7655,7 +7885,8 @@
       "radio 3",
       "turbo 3",
       "virginia diaz"
-    ]
+    ],
+    "duration": 5071
   },
   {
     "number": null,
@@ -7683,7 +7914,8 @@
     "labels": [
       "john squire",
       "liam gallagher"
-    ]
+    ],
+    "duration": 1583
   },
   {
     "number": null,
@@ -7714,7 +7946,8 @@
       "nirvana",
       "seattle",
       "tomas crespo"
-    ]
+    ],
+    "duration": 6673
   },
   {
     "number": null,
@@ -7757,7 +7990,8 @@
       "artistas del gremio",
       "dover",
       "fan fan Fanfarria"
-    ]
+    ],
+    "duration": 3609
   },
   {
     "number": null,
@@ -7792,7 +8026,8 @@
       "nirvana",
       "no dogs",
       "Oasis"
-    ]
+    ],
+    "duration": 3619
   },
   {
     "number": null,
@@ -7822,7 +8057,8 @@
       "maddening flames",
       "paco loco",
       "REM"
-    ]
+    ],
+    "duration": 4146
   },
   {
     "number": null,
@@ -7853,7 +8089,8 @@
       "live forever",
       "Noel Gallaghers",
       "Oasis"
-    ]
+    ],
+    "duration": 1928
   },
   {
     "number": null,
@@ -7897,7 +8134,8 @@
       "lujuria",
       "Nick Oliveri",
       "queens of the stone age"
-    ]
+    ],
+    "duration": 6500
   },
   {
     "number": null,
@@ -7931,7 +8169,8 @@
       "havalina",
       "manuel cabezali",
       "maquinaria"
-    ]
+    ],
+    "duration": 8843
   },
   {
     "number": null,
@@ -7964,7 +8203,8 @@
       "pixies",
       "Soundgarden",
       "the strokes"
-    ]
+    ],
+    "duration": 15364
   },
   {
     "number": null,
@@ -8003,7 +8243,8 @@
       "the breeders",
       "the heavy",
       "The Warning"
-    ]
+    ],
+    "duration": 5142
   },
   {
     "number": null,
@@ -8032,7 +8273,8 @@
       "Knights Of Cydonia",
       "matt bellamy",
       "muse"
-    ]
+    ],
+    "duration": 1751
   },
   {
     "number": null,
@@ -8065,7 +8307,8 @@
       "dragon ball",
       "javier iglesias",
       "Shunsuke Kikuchi"
-    ]
+    ],
+    "duration": 5310
   },
   {
     "number": null,
@@ -8103,7 +8346,8 @@
       "john lennon",
       "menlove ave",
       "the beatles"
-    ]
+    ],
+    "duration": 7197
   },
   {
     "number": null,
@@ -8132,7 +8376,8 @@
       "Absolution",
       "matt bellamy",
       "muse"
-    ]
+    ],
+    "duration": 3101
   },
   {
     "number": null,
@@ -8161,7 +8406,8 @@
       "saturna",
       "spinda records",
       "the reset"
-    ]
+    ],
+    "duration": 4114
   },
   {
     "number": null,
@@ -8216,7 +8462,8 @@
       "The Cranberries",
       "The Lemonheads",
       "the who"
-    ]
+    ],
+    "duration": 4880
   },
   {
     "number": null,
@@ -8250,7 +8497,8 @@
       "bravado",
       "Pearl Jam",
       "the mañana culture"
-    ]
+    ],
+    "duration": 6454
   },
   {
     "number": null,
@@ -8297,7 +8545,8 @@
       "messura",
       "second",
       "sex sodio sullivan"
-    ]
+    ],
+    "duration": 5962
   },
   {
     "number": null,
@@ -8331,7 +8580,8 @@
       "real love",
       "ringo starr",
       "the beatles"
-    ]
+    ],
+    "duration": 2705
   },
   {
     "number": null,
@@ -8372,7 +8622,8 @@
       "london",
       "pink floyd",
       "roger waters"
-    ]
+    ],
+    "duration": 2763
   },
   {
     "number": null,
@@ -8413,7 +8664,8 @@
       "dani llamas",
       "lady drama",
       "sevilla"
-    ]
+    ],
+    "duration": 3698
   },
   {
     "number": null,
@@ -8445,7 +8697,8 @@
       "Living Camboya",
       "naïa",
       "pedrajas de san esteban"
-    ]
+    ],
+    "duration": 12198
   },
   {
     "number": null,
@@ -8477,7 +8730,8 @@
       "liam gallagher",
       "noel gallagher",
       "Oasis"
-    ]
+    ],
+    "duration": 1545
   },
   {
     "number": null,
@@ -8526,7 +8780,8 @@
       "radio 3",
       "the boo radleys",
       "yo la tengo"
-    ]
+    ],
+    "duration": 6848
   },
   {
     "number": null,
@@ -8560,7 +8815,8 @@
       "Sweet Oblivion",
       "The Screaming Trees",
       "van conner"
-    ]
+    ],
+    "duration": 3765
   },
   {
     "number": null,
@@ -8592,7 +8848,8 @@
       "fisura",
       "latigo mantra",
       "metropol"
-    ]
+    ],
+    "duration": 4538
   },
   {
     "number": null,
@@ -8629,7 +8886,8 @@
       "stone gossard",
       "the mañana culture",
       "vs"
-    ]
+    ],
+    "duration": 4523
   },
   {
     "number": null,
@@ -8666,7 +8924,8 @@
       "nevermind",
       "nirvana",
       "sappy"
-    ]
+    ],
+    "duration": 1102
   },
   {
     "number": null,
@@ -8721,7 +8980,8 @@
       "Sanford Music Factory",
       "saturna",
       "susie vicha"
-    ]
+    ],
+    "duration": 12152
   },
   {
     "number": null,
@@ -8754,7 +9014,8 @@
       "julio ruiz",
       "radio 3",
       "ruth baza"
-    ]
+    ],
+    "duration": 10096
   },
   {
     "number": null,
@@ -8792,7 +9053,8 @@
       "george harrison",
       "Richey Edwards",
       "ruth baza"
-    ]
+    ],
+    "duration": 8363
   },
   {
     "number": null,
@@ -8824,7 +9086,8 @@
       "Pearl Jam",
       "seattle",
       "ten"
-    ]
+    ],
+    "duration": 1478
   },
   {
     "number": null,
@@ -8868,7 +9131,8 @@
       "radio 3",
       "Radiohead",
       "sexy sadie"
-    ]
+    ],
+    "duration": 9838
   },
   {
     "number": null,
@@ -8902,7 +9166,8 @@
       "Alphawaves",
       "britpop",
       "london"
-    ]
+    ],
+    "duration": 5724
   },
   {
     "number": null,
@@ -8934,7 +9199,8 @@
       "la alcoba",
       "paco perez bryan",
       "Talvin Singh"
-    ]
+    ],
+    "duration": 7345
   },
   {
     "number": null,
@@ -8968,7 +9234,8 @@
       "ringo starr",
       "Strawberry Fields podcast",
       "the beatles"
-    ]
+    ],
+    "duration": 5003
   },
   {
     "number": null,
@@ -9003,7 +9270,8 @@
       "seattle",
       "Soundgarden",
       "superunknown"
-    ]
+    ],
+    "duration": 1416
   },
   {
     "number": null,
@@ -9040,7 +9308,8 @@
     "labels": [
       "black maracas",
       "mad cool"
-    ]
+    ],
+    "duration": 4946
   },
   {
     "number": null,
@@ -9081,7 +9350,8 @@
       "scott weiland",
       "The Baseball Project",
       "the smile"
-    ]
+    ],
+    "duration": 5109
   },
   {
     "number": null,
@@ -9115,7 +9385,8 @@
       "Margaritas Podridas",
       "seattle",
       "sub pop"
-    ]
+    ],
+    "duration": 3779
   },
   {
     "number": null,
@@ -9143,7 +9414,8 @@
       "anthony kiedis",
       "red hot chili peppers",
       "Sinead O'connor"
-    ]
+    ],
+    "duration": 1682
   },
   {
     "number": null,
@@ -9175,7 +9447,8 @@
       "paul mccartney",
       "ringo starr",
       "the beatles"
-    ]
+    ],
+    "duration": 2738
   },
   {
     "number": null,
@@ -9218,7 +9491,8 @@
       "sr chinarro",
       "surfin bichos",
       "the clash"
-    ]
+    ],
+    "duration": 5392
   },
   {
     "number": null,
@@ -9246,7 +9520,8 @@
       "b90 supernova",
       "festimad",
       "patti smith"
-    ]
+    ],
+    "duration": 3735
   },
   {
     "number": null,
@@ -9289,7 +9564,8 @@
       "red hot chili peppers",
       "robbie williams",
       "vlack maracas"
-    ]
+    ],
+    "duration": 3936
   },
   {
     "number": null,
@@ -9323,7 +9599,8 @@
       "paul mccartney",
       "ringo starr",
       "the beatles"
-    ]
+    ],
+    "duration": 9018
   },
   {
     "number": null,
@@ -9351,7 +9628,8 @@
     "labels": [
       "mad cool",
       "red hot chili peppers"
-    ]
+    ],
+    "duration": 3535
   },
   {
     "number": null,
@@ -9388,7 +9666,8 @@
       "The Cramps",
       "The Soundtrack Of Our Lives",
       "Union Carbide Productions"
-    ]
+    ],
+    "duration": 6912
   },
   {
     "number": null,
@@ -9417,7 +9696,8 @@
       "dave grohl",
       "foo fighters",
       "glastonbury festival"
-    ]
+    ],
+    "duration": 3878
   },
   {
     "number": null,
@@ -9450,7 +9730,8 @@
       "nirvana",
       "pat smear",
       "Taylor Hawkins"
-    ]
+    ],
+    "duration": 3644
   },
   {
     "number": null,
@@ -9479,7 +9760,8 @@
       "liam gallagher",
       "noel gallagher",
       "Oasis"
-    ]
+    ],
+    "duration": 8361
   },
   {
     "number": null,
@@ -9510,7 +9792,8 @@
       "give way",
       "Pearl Jam",
       "yield"
-    ]
+    ],
+    "duration": 3974
   },
   {
     "number": null,
@@ -9542,7 +9825,8 @@
       "grahan coxon",
       "primavera sound",
       "radio75"
-    ]
+    ],
+    "duration": 6387
   },
   {
     "number": null,
@@ -9594,7 +9878,8 @@
       "sting",
       "Suicidal Tendencies",
       "The Vandals"
-    ]
+    ],
+    "duration": 8710
   },
   {
     "number": null,
@@ -9640,7 +9925,8 @@
       "jimmy chamberlin",
       "Lost in Translation",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 7527
   },
   {
     "number": null,
@@ -9673,7 +9959,8 @@
       "Eduardo Pérez Orozco",
       "Four Tops",
       "Paco Pérez Bryan"
-    ]
+    ],
+    "duration": 2854
   },
   {
     "number": null,
@@ -9709,7 +9996,8 @@
       "noel gallagher",
       "Oasis",
       "What's the Story Morning Glory"
-    ]
+    ],
+    "duration": 2013
   },
   {
     "number": null,
@@ -9744,7 +10032,8 @@
       "Lost Satellite",
       "queens of the stone age",
       "sevilla"
-    ]
+    ],
+    "duration": 7122
   },
   {
     "number": null,
@@ -9803,7 +10092,8 @@
       "Skating Polly",
       "the heavy",
       "Your Own Film"
-    ]
+    ],
+    "duration": 4865
   },
   {
     "number": null,
@@ -9836,7 +10126,8 @@
       "New Adventures In Hi-Fi",
       "peter buck",
       "REM"
-    ]
+    ],
+    "duration": 4099
   },
   {
     "number": null,
@@ -9867,7 +10158,8 @@
       "bienvenido  a los 90",
       "paco perez bryan",
       "radio"
-    ]
+    ],
+    "duration": 5431
   },
   {
     "number": null,
@@ -9906,7 +10198,8 @@
       "Friends",
       "Los Soprano",
       "Malcolm in the Middle."
-    ]
+    ],
+    "duration": 9668
   },
   {
     "number": null,
@@ -9939,7 +10232,8 @@
       "Oasis",
       "quiero ser podcaster",
       "sunne"
-    ]
+    ],
+    "duration": 4961
   },
   {
     "number": null,
@@ -9976,7 +10270,8 @@
       "richard ashcroft",
       "The Verve",
       "Urban Hymns"
-    ]
+    ],
+    "duration": 4024
   },
   {
     "number": null,
@@ -10025,7 +10320,8 @@
       "screaming trees",
       "temple of the dog",
       "tom petty"
-    ]
+    ],
+    "duration": 6096
   },
   {
     "number": null,
@@ -10060,7 +10356,8 @@
       "nirvana",
       "Slowdive",
       "The Pink Sunset Over You"
-    ]
+    ],
+    "duration": 1752
   },
   {
     "number": null,
@@ -10089,7 +10386,8 @@
       "Caelum Invictus",
       "el brote",
       "le mur"
-    ]
+    ],
+    "duration": 3619
   },
   {
     "number": null,
@@ -10134,7 +10432,8 @@
       "mark lanegan",
       "screaming trees",
       "seattle"
-    ]
+    ],
+    "duration": 5085
   },
   {
     "number": null,
@@ -10167,7 +10466,8 @@
       "donny mccaslin",
       "maria schneider",
       "tony visconti"
-    ]
+    ],
+    "duration": 3668
   },
   {
     "number": null,
@@ -10199,7 +10499,8 @@
       "foo fighters",
       "Louise Post",
       "veruca salt"
-    ]
+    ],
+    "duration": 4053
   },
   {
     "number": null,
@@ -10230,7 +10531,8 @@
       "enric montefusco",
       "standstill",
       "Viaje al centro de un idiota"
-    ]
+    ],
+    "duration": 3605
   },
   {
     "number": null,
@@ -10279,7 +10581,8 @@
       "Stevie Ray Vaughan",
       "the beatles",
       "the vickers"
-    ]
+    ],
+    "duration": 8018
   },
   {
     "number": null,
@@ -10312,7 +10615,8 @@
     "labels": [
       "coraje",
       "Efecto Lucifer"
-    ]
+    ],
+    "duration": 4551
   },
   {
     "number": null,
@@ -10355,7 +10659,8 @@
       "liam gallagher",
       "noel gallagher",
       "Oasis"
-    ]
+    ],
+    "duration": 5754
   },
   {
     "number": null,
@@ -10386,7 +10691,8 @@
       "Marta Navarro",
       "sevilla",
       "the beatles"
-    ]
+    ],
+    "duration": 5092
   },
   {
     "number": null,
@@ -10416,7 +10722,8 @@
       "Nikolai Petrovsky",
       "nirvana",
       "siberia"
-    ]
+    ],
+    "duration": 3650
   },
   {
     "number": null,
@@ -10447,7 +10754,8 @@
       "carrusel",
       "juanma ortega",
       "los 40"
-    ]
+    ],
+    "duration": 5029
   },
   {
     "number": null,
@@ -10498,7 +10806,8 @@
       "pan",
       "reme",
       "Rufus T. Firefly"
-    ]
+    ],
+    "duration": 5882
   },
   {
     "number": null,
@@ -10536,7 +10845,8 @@
       "mark lanegan",
       "ramones",
       "u2"
-    ]
+    ],
+    "duration": 6299
   },
   {
     "number": null,
@@ -10576,7 +10886,8 @@
       "Tomavistas",
       "Tsunami Xixón",
       "Viña Rock"
-    ]
+    ],
+    "duration": 6119
   },
   {
     "number": null,
@@ -10615,7 +10926,8 @@
       "paco perez bryan",
       "radio 3",
       "virginia diaz"
-    ]
+    ],
+    "duration": 6869
   },
   {
     "number": null,
@@ -10648,7 +10960,8 @@
     "labels": [
       "vanity rose",
       "Yoko Factor"
-    ]
+    ],
+    "duration": 4105
   },
   {
     "number": null,
@@ -10678,7 +10991,8 @@
       "felipe couselo",
       "neil young",
       "smashing pumpkins"
-    ]
+    ],
+    "duration": 4185
   },
   {
     "number": null,
@@ -10736,7 +11050,8 @@
       "rosy finch",
       "surfer comadreja",
       "vanity rose"
-    ]
+    ],
+    "duration": 3302
   },
   {
     "number": null,
@@ -10769,7 +11084,8 @@
       "jimmy chamberlin",
       "Mellon Collie and the Infinite Sadness",
       "smashing pumpkins"
-    ]
+    ],
+    "duration": 5929
   },
   {
     "number": null,
@@ -10804,7 +11120,8 @@
       "ringo starr",
       "Strawberry Fields",
       "the beatles"
-    ]
+    ],
+    "duration": 5427
   },
   {
     "number": null,
@@ -10845,7 +11162,8 @@
       "george harrison",
       "the beatles",
       "thenewno2"
-    ]
+    ],
+    "duration": 2897
   },
   {
     "number": null,
@@ -10875,7 +11193,8 @@
       "billy corgan",
       "The Smashing Pumpkins",
       "viper room"
-    ]
+    ],
+    "duration": 2391
   },
   {
     "number": null,
@@ -10904,7 +11223,8 @@
     "labels": [
       "Improvisation for Sonic Cure",
       "Ryuichi Sakamoto"
-    ]
+    ],
+    "duration": 2460
   },
   {
     "number": null,
@@ -10940,7 +11260,8 @@
       "Pearl Jam",
       "seattle",
       "stone gossard"
-    ]
+    ],
+    "duration": 7850
   },
   {
     "number": null,
@@ -10969,7 +11290,8 @@
     "labels": [
       "bubble bones",
       "Go Back to the Mojo"
-    ]
+    ],
+    "duration": 6738
   },
   {
     "number": null,
@@ -11002,7 +11324,8 @@
       "james iha",
       "jimmy chamberlin",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 3161
   },
   {
     "number": null,
@@ -11036,7 +11359,8 @@
       "bones of minerva",
       "embers",
       "LaRubiaProducciones"
-    ]
+    ],
+    "duration": 4931
   },
   {
     "number": null,
@@ -11067,7 +11391,8 @@
       "madrid",
       "mark lanegan",
       "The Afghan Whigs"
-    ]
+    ],
+    "duration": 4591
   },
   {
     "number": null,
@@ -11114,7 +11439,8 @@
       "revolver",
       "ringo starr",
       "the beatles"
-    ]
+    ],
+    "duration": 2619
   },
   {
     "number": null,
@@ -11152,7 +11478,8 @@
       "screaming trees",
       "seattle",
       "SING BACKWARDS AND WEEP"
-    ]
+    ],
+    "duration": 4031
   },
   {
     "number": null,
@@ -11184,7 +11511,8 @@
       "kula shaker",
       "nomade festival",
       "road trip podcast"
-    ]
+    ],
+    "duration": 5889
   },
   {
     "number": null,
@@ -11230,7 +11558,8 @@
       "The Thrown Ups",
       "UGLY AMERICAN OVERKILL",
       "vertigo"
-    ]
+    ],
+    "duration": 2795
   },
   {
     "number": null,
@@ -11269,7 +11598,8 @@
       "The rkadrano Cast",
       "twitter",
       "youtube"
-    ]
+    ],
+    "duration": 5599
   },
   {
     "number": null,
@@ -11302,7 +11632,8 @@
       "geoff barrow",
       "portishead",
       "war child"
-    ]
+    ],
+    "duration": 1864
   },
   {
     "number": null,
@@ -11337,7 +11668,8 @@
       "MÚSICA MAESTRA",
       "seattle",
       "sub pop"
-    ]
+    ],
+    "duration": 4466
   },
   {
     "number": null,
@@ -11367,7 +11699,8 @@
       "julio ruiz",
       "plasticos y decibelios",
       "vinilos"
-    ]
+    ],
+    "duration": 2578
   },
   {
     "number": null,
@@ -11411,7 +11744,8 @@
       "mark lanegan",
       "nirvana",
       "surfer comadreja"
-    ]
+    ],
+    "duration": 5106
   },
   {
     "number": null,
@@ -11441,7 +11775,8 @@
       "kim gordon",
       "sonic youth",
       "thurston moore"
-    ]
+    ],
+    "duration": 2959
   },
   {
     "number": null,
@@ -11507,7 +11842,8 @@
       "The Schizophonics",
       "Thick",
       "Tom Chaplin"
-    ]
+    ],
+    "duration": 5380
   },
   {
     "number": null,
@@ -11546,7 +11882,8 @@
       "los cavernas",
       "rarito",
       "santacruz"
-    ]
+    ],
+    "duration": 6512
   },
   {
     "number": null,
@@ -11583,7 +11920,8 @@
       "mudhoney",
       "seattle",
       "sub pop"
-    ]
+    ],
+    "duration": 2812
   },
   {
     "number": null,
@@ -11615,7 +11953,8 @@
       "foo fighters",
       "Taylor Hawkins",
       "Wembley"
-    ]
+    ],
+    "duration": 7804
   },
   {
     "number": null,
@@ -11664,7 +12003,8 @@
       "nirvana",
       "The Colour and the Shape",
       "William Goldsmith"
-    ]
+    ],
+    "duration": 3610
   },
   {
     "number": null,
@@ -11693,7 +12033,8 @@
       "matt bellamy",
       "muse",
       "will of the people"
-    ]
+    ],
+    "duration": 2535
   },
   {
     "number": null,
@@ -11722,7 +12063,8 @@
       "a rush of blood to the head",
       "chris martin",
       "coldplay"
-    ]
+    ],
+    "duration": 3700
   },
   {
     "number": null,
@@ -11778,7 +12120,8 @@
       "Toby Connor",
       "tunnel",
       "twin hands"
-    ]
+    ],
+    "duration": 4793
   },
   {
     "number": null,
@@ -11819,7 +12162,8 @@
       "santirock",
       "sonic youth",
       "thurston moore"
-    ]
+    ],
+    "duration": 3778
   },
   {
     "number": null,
@@ -11860,7 +12204,8 @@
       "austin butler",
       "elvis",
       "sun records"
-    ]
+    ],
+    "duration": 11153
   },
   {
     "number": null,
@@ -11889,7 +12234,8 @@
       "b90 classic",
       "jf leon",
       "Rock and Roll Animal"
-    ]
+    ],
+    "duration": 7740
   },
   {
     "number": null,
@@ -11945,7 +12291,8 @@
       "Sierra Swan",
       "The Smashing Pumpkins",
       "Together and Together Again"
-    ]
+    ],
+    "duration": 5437
   },
   {
     "number": null,
@@ -11976,7 +12323,8 @@
       "liam gallagher",
       "noel gallagher",
       "Oasis"
-    ]
+    ],
+    "duration": 7262
   },
   {
     "number": null,
@@ -12006,7 +12354,8 @@
       "devil came to me",
       "doctor music",
       "dover"
-    ]
+    ],
+    "duration": 2903
   },
   {
     "number": null,
@@ -12042,7 +12391,8 @@
       "ringo starr",
       "the beatles",
       "with the beatles"
-    ]
+    ],
+    "duration": 7342
   },
   {
     "number": null,
@@ -12070,7 +12420,8 @@
     "labels": [
       "Hellfest",
       "The Last Internationale"
-    ]
+    ],
+    "duration": 2871
   },
   {
     "number": null,
@@ -12108,7 +12459,8 @@
       "nevermind",
       "nirvana",
       "steve double"
-    ]
+    ],
+    "duration": 3976
   },
   {
     "number": null,
@@ -12163,7 +12515,8 @@
       "reignwolf",
       "royal blood",
       "the comet is coming"
-    ]
+    ],
+    "duration": 3690
   },
   {
     "number": null,
@@ -12194,7 +12547,8 @@
       "Mandatory",
       "radio75",
       "Songs for Celine"
-    ]
+    ],
+    "duration": 4213
   },
   {
     "number": null,
@@ -12237,7 +12591,8 @@
       "ash",
       "el ecualizador",
       "tim wheeler"
-    ]
+    ],
+    "duration": 3316
   },
   {
     "number": null,
@@ -12283,7 +12638,8 @@
       "Steve Earle",
       "Suzy Quatro",
       "the beatles"
-    ]
+    ],
+    "duration": 8567
   },
   {
     "number": null,
@@ -12314,7 +12670,8 @@
       "dave grohl",
       "glastonbury festival",
       "paul mccartney"
-    ]
+    ],
+    "duration": 9696
   },
   {
     "number": null,
@@ -12344,7 +12701,8 @@
     "labels": [
       "anima machina",
       "veronica underluxe"
-    ]
+    ],
+    "duration": 7077
   },
   {
     "number": null,
@@ -12375,7 +12733,8 @@
       "Están tocando nuestra canción",
       "lo mas plus",
       "maximo pradera"
-    ]
+    ],
+    "duration": 4956
   },
   {
     "number": null,
@@ -12405,7 +12764,8 @@
       "Bohemian Rhapsody",
       "freddie mercury",
       "queen"
-    ]
+    ],
+    "duration": 963
   },
   {
     "number": null,
@@ -12435,7 +12795,8 @@
       "bienvenido a los 90",
       "coraje",
       "Efecto Lucifer"
-    ]
+    ],
+    "duration": 5054
   },
   {
     "number": null,
@@ -12486,7 +12847,8 @@
       "Radiohead",
       "Rage Against the Machine",
       "smashing pumpkins"
-    ]
+    ],
+    "duration": 4647
   },
   {
     "number": null,
@@ -12516,7 +12878,8 @@
       "Hickeys",
       "MOTHERLODE",
       "plastico elástico"
-    ]
+    ],
+    "duration": 4157
   },
   {
     "number": null,
@@ -12547,7 +12910,8 @@
       "liam gallagher",
       "noel gallagher",
       "Oasis"
-    ]
+    ],
+    "duration": 6046
   },
   {
     "number": null,
@@ -12582,7 +12946,8 @@
       "The Verve",
       "Urban Hymns",
       "wigan"
-    ]
+    ],
+    "duration": 3356
   },
   {
     "number": null,
@@ -12616,7 +12981,8 @@
       "nirvana",
       "seattle",
       "William Burroughs"
-    ]
+    ],
+    "duration": 1546
   },
   {
     "number": null,
@@ -12643,7 +13009,8 @@
       "bjork",
       "björk",
       "homogenic"
-    ]
+    ],
+    "duration": 3188
   },
   {
     "number": null,
@@ -12676,7 +13043,8 @@
       "dover",
       "jesus antunez",
       "sister"
-    ]
+    ],
+    "duration": 8407
   },
   {
     "number": null,
@@ -12705,7 +13073,8 @@
       "grunge",
       "seattle",
       "Soundgarden"
-    ]
+    ],
+    "duration": 3961
   },
   {
     "number": null,
@@ -12735,7 +13104,8 @@
       "the smile",
       "thom yorke",
       "Tom Skinner"
-    ]
+    ],
+    "duration": 3265
   },
   {
     "number": null,
@@ -12797,7 +13167,8 @@
       "REM",
       "sonic youth",
       "sunny day real estate"
-    ]
+    ],
+    "duration": 8317
   },
   {
     "number": null,
@@ -12835,7 +13206,8 @@
     "labels": [
       "mark lanegan",
       "Maud the Moth"
-    ]
+    ],
+    "duration": 4680
   },
   {
     "number": null,
@@ -12896,7 +13268,8 @@
       "Pearl Jam",
       "queens of the stone age",
       "Soundgarden"
-    ]
+    ],
+    "duration": 8354
   },
   {
     "number": null,
@@ -12947,7 +13320,8 @@
       "temple of the dog",
       "tone dogs",
       "Wellwater Conspiracy"
-    ]
+    ],
+    "duration": 4566
   },
   {
     "number": null,
@@ -12979,7 +13353,8 @@
       "manuel cabezali",
       "reme",
       "victor cabezuelo"
-    ]
+    ],
+    "duration": 7931
   },
   {
     "number": null,
@@ -13023,7 +13398,8 @@
       "Rage Against the Machine",
       "the clash",
       "tom morello"
-    ]
+    ],
+    "duration": 4120
   },
   {
     "number": null,
@@ -13059,7 +13435,8 @@
       "morgan",
       "The king of rock and roll",
       "UNA ORQUESTA ARMADA"
-    ]
+    ],
+    "duration": 6540
   },
   {
     "number": null,
@@ -13097,7 +13474,8 @@
       "radio75",
       "Rock'n'Roll Animal",
       "Taylor Hawkins"
-    ]
+    ],
+    "duration": 8394
   },
   {
     "number": null,
@@ -13144,7 +13522,8 @@
       "Rage Against the Machine",
       "the nightwatchman",
       "tom morello"
-    ]
+    ],
+    "duration": 5519
   },
   {
     "number": null,
@@ -13173,7 +13552,8 @@
       "ivoox",
       "kelly jones",
       "STEREOPHONICS"
-    ]
+    ],
+    "duration": 3783
   },
   {
     "number": null,
@@ -13202,7 +13582,8 @@
       "ivoox",
       "mark lanegan",
       "screaming trees"
-    ]
+    ],
+    "duration": 819
   },
   {
     "number": null,
@@ -13244,7 +13625,8 @@
       "Radiohead",
       "thom yorke",
       "Unbelievable Truth"
-    ]
+    ],
+    "duration": 3313
   },
   {
     "number": null,
@@ -13282,7 +13664,8 @@
       "please please me",
       "ringo starr",
       "the beatles"
-    ]
+    ],
+    "duration": 5905
   },
   {
     "number": null,
@@ -13312,7 +13695,8 @@
       "mark lanegan",
       "screaming trees",
       "seattle"
-    ]
+    ],
+    "duration": 5722
   },
   {
     "number": null,
@@ -13342,7 +13726,8 @@
       "mark lanegan",
       "screaming trees",
       "seattle"
-    ]
+    ],
+    "duration": 6923
   },
   {
     "number": null,
@@ -13403,7 +13788,8 @@
       "smashing pumpkins",
       "Soundgarden",
       "texxcococ"
-    ]
+    ],
+    "duration": 5128
   },
   {
     "number": null,
@@ -13437,7 +13823,8 @@
       "damon albarn",
       "Dave Rowntree",
       "grahan coxon"
-    ]
+    ],
+    "duration": 3512
   },
   {
     "number": null,
@@ -13493,7 +13880,8 @@
       "Pinpilinpussies",
       "They Say",
       "yo no se"
-    ]
+    ],
+    "duration": 6093
   },
   {
     "number": null,
@@ -13544,7 +13932,8 @@
       "the smile",
       "thom yorke",
       "Tom Skinner"
-    ]
+    ],
+    "duration": 5070
   },
   {
     "number": null,
@@ -13592,7 +13981,8 @@
       "darcy",
       "james iha",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 7946
   },
   {
     "number": null,
@@ -13629,7 +14019,8 @@
       "matt cameron",
       "matt walker",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 3429
   },
   {
     "number": null,
@@ -13661,7 +14052,8 @@
       "james iha",
       "jimmy chamberlin",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 6140
   },
   {
     "number": null,
@@ -13704,7 +14096,8 @@
       "Rufus T. Firefly",
       "Soleá Morente",
       "zahara"
-    ]
+    ],
+    "duration": 6280
   },
   {
     "number": null,
@@ -13747,7 +14140,8 @@
       "anima machina",
       "audio relato",
       "veronica underluxe"
-    ]
+    ],
+    "duration": 4637
   },
   {
     "number": null,
@@ -13808,7 +14202,8 @@
       "Pearl Jam",
       "Pluralone",
       "yola"
-    ]
+    ],
+    "duration": 7409
   },
   {
     "number": null,
@@ -13845,7 +14240,8 @@
       "seattle",
       "Shawn Smith",
       "stone gossard"
-    ]
+    ],
+    "duration": 2832
   },
   {
     "number": null,
@@ -13895,7 +14291,8 @@
       "Planeta Tentaciones",
       "Rock and Roll Animal",
       "SIN BANDERA RADIO"
-    ]
+    ],
+    "duration": 10068
   },
   {
     "number": null,
@@ -13928,7 +14325,8 @@
       "linda perry",
       "pink",
       "rockstar records"
-    ]
+    ],
+    "duration": 4506
   },
   {
     "number": null,
@@ -13964,7 +14362,8 @@
       "pete best",
       "ringo starr",
       "the beatles"
-    ]
+    ],
+    "duration": 1628
   },
   {
     "number": null,
@@ -14010,7 +14409,8 @@
       "Soundgarden",
       "spinda records",
       "temple of the dog"
-    ]
+    ],
+    "duration": 12605
   },
   {
     "number": null,
@@ -14041,7 +14441,8 @@
       "bienvenido a lo 90",
       "Rotten Little Thought",
       "vanity rose"
-    ]
+    ],
+    "duration": 4413
   },
   {
     "number": null,
@@ -14077,7 +14478,8 @@
       "ringo starr",
       "the beatles",
       "the lyrics"
-    ]
+    ],
+    "duration": 5488
   },
   {
     "number": null,
@@ -14114,7 +14516,8 @@
       "ringo starr",
       "Stuart Sutcliffe",
       "the beatles"
-    ]
+    ],
+    "duration": 5488
   },
   {
     "number": null,
@@ -14144,7 +14547,8 @@
       "billy preston",
       "get back",
       "the beatles"
-    ]
+    ],
+    "duration": 2447
   },
   {
     "number": null,
@@ -14174,7 +14578,8 @@
       "Gentlemen",
       "greg dully",
       "The Afghan Whigs"
-    ]
+    ],
+    "duration": 3957
   },
   {
     "number": null,
@@ -14232,7 +14637,8 @@
       "vanity rose",
       "veronica underluxe",
       "Yoko Factor"
-    ]
+    ],
+    "duration": 6754
   },
   {
     "number": null,
@@ -14265,7 +14671,8 @@
       "ivoox",
       "maddening flames",
       "paco loco"
-    ]
+    ],
+    "duration": 2688
   },
   {
     "number": null,
@@ -14298,7 +14705,8 @@
       "carlos hurtado",
       "ivoox",
       "santiago nogales"
-    ]
+    ],
+    "duration": 3930
   },
   {
     "number": null,
@@ -14332,7 +14740,8 @@
       "Pearl Jam",
       "seattle",
       "unplugged"
-    ]
+    ],
+    "duration": 2767
   },
   {
     "number": null,
@@ -14357,7 +14766,8 @@
     "comments": 11,
     "likes": 24,
     "plays": 3100,
-    "labels": []
+    "labels": [],
+    "duration": 2721
   },
   {
     "number": null,
@@ -14381,7 +14791,8 @@
     "comments": 13,
     "likes": 34,
     "plays": 2200,
-    "labels": []
+    "labels": [],
+    "duration": 6297
   },
   {
     "number": null,
@@ -14421,7 +14832,8 @@
       "ringo starr",
       "SIN BANDERA RADIO",
       "the beatles"
-    ]
+    ],
+    "duration": 4139
   },
   {
     "number": null,
@@ -14455,7 +14867,8 @@
       "john squire",
       "the seahorses",
       "the stone roses"
-    ]
+    ],
+    "duration": 3824
   },
   {
     "number": null,
@@ -14487,7 +14900,8 @@
       "Back in Mono",
       "bienvenido a lo 90",
       "The Courettes"
-    ]
+    ],
+    "duration": 1386
   },
   {
     "number": null,
@@ -14519,7 +14933,8 @@
       "kurt cobain",
       "nirvana",
       "The Storyteller Tales of Life and Music"
-    ]
+    ],
+    "duration": 8404
   },
   {
     "number": null,
@@ -14555,7 +14970,8 @@
       "radiobleach",
       "seattle",
       "siroco"
-    ]
+    ],
+    "duration": 5256
   },
   {
     "number": null,
@@ -14585,7 +15001,8 @@
       "liam gallagher",
       "noel gallagher",
       "Oasis"
-    ]
+    ],
+    "duration": 4692
   },
   {
     "number": null,
@@ -14620,7 +15037,8 @@
       "Jane's Addiction",
       "paco perez bryan",
       "perry farrell"
-    ]
+    ],
+    "duration": 7285
   },
   {
     "number": null,
@@ -14653,7 +15071,8 @@
       "richard ashcroft",
       "the rolling stones",
       "The Verve"
-    ]
+    ],
+    "duration": 1929
   },
   {
     "number": null,
@@ -14691,7 +15110,8 @@
       "Rock and Roll Animal",
       "Soundgarden",
       "The Cult"
-    ]
+    ],
+    "duration": 9490
   },
   {
     "number": null,
@@ -14739,7 +15159,8 @@
       "REM",
       "sonic youth",
       "The Verve"
-    ]
+    ],
+    "duration": 4532
   },
   {
     "number": null,
@@ -14778,7 +15199,8 @@
       "bienvenido a los 90",
       "The Cult",
       "zeleste"
-    ]
+    ],
+    "duration": 2777
   },
   {
     "number": null,
@@ -14825,7 +15247,8 @@
       "dookie",
       "Garatge Club",
       "green day"
-    ]
+    ],
+    "duration": 3576
   },
   {
     "number": null,
@@ -14869,7 +15292,8 @@
       "sonic youth",
       "thurston moore",
       "Washing Machine"
-    ]
+    ],
+    "duration": 3699
   },
   {
     "number": null,
@@ -14897,7 +15321,8 @@
       "kgb",
       "primal scream",
       "Screamadelica"
-    ]
+    ],
+    "duration": 3527
   },
   {
     "number": null,
@@ -14946,7 +15371,8 @@
       "kim deal",
       "pixies",
       "universal sur"
-    ]
+    ],
+    "duration": 2867
   },
   {
     "number": null,
@@ -14990,7 +15416,8 @@
       "doctor music",
       "max cavalera",
       "sepultura"
-    ]
+    ],
+    "duration": 3502
   },
   {
     "number": null,
@@ -15043,7 +15470,8 @@
       "nevermind",
       "nirvana",
       "steve double"
-    ]
+    ],
+    "duration": 4742
   },
   {
     "number": null,
@@ -15087,7 +15515,8 @@
       "madrid",
       "perry farrell",
       "universal sur"
-    ]
+    ],
+    "duration": 4670
   },
   {
     "number": null,
@@ -15130,7 +15559,8 @@
       "beck",
       "spiritualized",
       "zeleste"
-    ]
+    ],
+    "duration": 3477
   },
   {
     "number": null,
@@ -15177,7 +15607,8 @@
       "la riviera",
       "madrid",
       "the cramberries"
-    ]
+    ],
+    "duration": 3994
   },
   {
     "number": null,
@@ -15219,7 +15650,8 @@
       "festimad",
       "mark sadman",
       "morphine"
-    ]
+    ],
+    "duration": 2719
   },
   {
     "number": null,
@@ -15256,7 +15688,8 @@
       "keane",
       "kings of leon",
       "the strokes"
-    ]
+    ],
+    "duration": 3473
   },
   {
     "number": null,
@@ -15316,7 +15749,8 @@
       "Upper Wilds",
       "vacation",
       "vial"
-    ]
+    ],
+    "duration": 5065
   },
   {
     "number": null,
@@ -15353,7 +15787,8 @@
       "REM",
       "saturn return",
       "shannon hoon"
-    ]
+    ],
+    "duration": 1409
   },
   {
     "number": null,
@@ -15404,7 +15839,8 @@
       "the beatles",
       "the secret machines",
       "Wilson Pickett"
-    ]
+    ],
+    "duration": 5259
   },
   {
     "number": null,
@@ -15444,7 +15880,8 @@
       "sebadoh",
       "sepultura",
       "tad"
-    ]
+    ],
+    "duration": 13206
   },
   {
     "number": null,
@@ -15498,7 +15935,8 @@
       "slant 6",
       "Sleater-Kinney",
       "Spitboy"
-    ]
+    ],
+    "duration": 2875
   },
   {
     "number": null,
@@ -15555,7 +15993,8 @@
       "noel gallagher",
       "Oasis",
       "Todos los caminos son buenos si no sabes hacia donde vas"
-    ]
+    ],
+    "duration": 7187
   },
   {
     "number": null,
@@ -15584,7 +16023,8 @@
       "muse",
       "muse fan spain",
       "The Jaded Hearts Club"
-    ]
+    ],
+    "duration": 4414
   },
   {
     "number": null,
@@ -15621,7 +16061,8 @@
       "the delmonas",
       "The Lounge Society",
       "tom morello"
-    ]
+    ],
+    "duration": 5544
   },
   {
     "number": null,
@@ -15665,7 +16106,8 @@
       "mark pickerel",
       "sub pop",
       "the jury"
-    ]
+    ],
+    "duration": 1177
   },
   {
     "number": null,
@@ -15695,7 +16137,8 @@
       "ivoox",
       "podcast",
       "the strokes"
-    ]
+    ],
+    "duration": 2509
   },
   {
     "number": null,
@@ -15727,7 +16170,8 @@
       "dookie",
       "green day",
       "laudio"
-    ]
+    ],
+    "duration": 5431
   },
   {
     "number": null,
@@ -15763,7 +16207,8 @@
       "julio ruiz",
       "nirvana",
       "radio 3"
-    ]
+    ],
+    "duration": 2982
   },
   {
     "number": null,
@@ -15797,7 +16242,8 @@
       "podcast",
       "sexy sadie",
       "subterfuge"
-    ]
+    ],
+    "duration": 3932
   },
   {
     "number": null,
@@ -15843,7 +16289,8 @@
       "Shaving Peaches",
       "Super Delux",
       "terrorvision"
-    ]
+    ],
+    "duration": 3078
   },
   {
     "number": null,
@@ -15881,7 +16328,8 @@
       "podcast",
       "the good the bad and the queen",
       "The Nearer The Fountain"
-    ]
+    ],
+    "duration": 3078
   },
   {
     "number": null,
@@ -15915,7 +16363,8 @@
       "pablo tato",
       "Simon Kallas",
       "The inner wastelands"
-    ]
+    ],
+    "duration": 6760
   },
   {
     "number": null,
@@ -15950,7 +16399,8 @@
       "podcast",
       "Surfer Rosa",
       "Trompe le Monde"
-    ]
+    ],
+    "duration": 3019
   },
   {
     "number": null,
@@ -15990,7 +16440,8 @@
       "podcast",
       "rosy finch",
       "spinda records"
-    ]
+    ],
+    "duration": 6135
   },
   {
     "number": null,
@@ -16024,7 +16475,8 @@
       "Origin of Symmetry",
       "radio 3",
       "XX Anniversary RemiXX"
-    ]
+    ],
+    "duration": 8439
   },
   {
     "number": null,
@@ -16053,7 +16505,8 @@
       "foo fighters",
       "nirvana",
       "The Storyteller"
-    ]
+    ],
+    "duration": 2277
   },
   {
     "number": null,
@@ -16100,7 +16553,8 @@
       "noel gallagher",
       "Oasis",
       "podcast"
-    ]
+    ],
+    "duration": 6656
   },
   {
     "number": null,
@@ -16136,7 +16590,8 @@
       "revolver",
       "the beatles",
       "Tomorrow Never Knows"
-    ]
+    ],
+    "duration": 1972
   },
   {
     "number": null,
@@ -16168,7 +16623,8 @@
       "peter buck",
       "REM",
       "up"
-    ]
+    ],
+    "duration": 4025
   },
   {
     "number": null,
@@ -16199,7 +16655,8 @@
       "Montmartre",
       "paris",
       "yann tiersen"
-    ]
+    ],
+    "duration": 1692
   },
   {
     "number": null,
@@ -16245,7 +16702,8 @@
       "podcast musical",
       "Thank You for the Boots",
       "The Mani-las"
-    ]
+    ],
+    "duration": 2502
   },
   {
     "number": null,
@@ -16299,7 +16757,8 @@
       "The Flaming Sideburns",
       "unos",
       "virgen"
-    ]
+    ],
+    "duration": 4793
   },
   {
     "number": null,
@@ -16340,7 +16799,8 @@
       "the smile",
       "thom yorke",
       "Tom Skinner"
-    ]
+    ],
+    "duration": 2184
   },
   {
     "number": null,
@@ -16393,7 +16853,8 @@
       "noel gallagher",
       "Oasis",
       "ride"
-    ]
+    ],
+    "duration": 6009
   },
   {
     "number": null,
@@ -16422,7 +16883,8 @@
       "el cuervo",
       "eric draven",
       "the crow"
-    ]
+    ],
+    "duration": 1974
   },
   {
     "number": null,
@@ -16455,7 +16917,8 @@
       "podcast musical",
       "robe",
       "robe iniesta"
-    ]
+    ],
+    "duration": 3127
   },
   {
     "number": null,
@@ -16485,7 +16948,8 @@
       "My Bloody Valentine",
       "podcast",
       "Shoegaze"
-    ]
+    ],
+    "duration": 1967
   },
   {
     "number": null,
@@ -16538,7 +17002,8 @@
       "royal blood",
       "sprints",
       "Warish"
-    ]
+    ],
+    "duration": 3346
   },
   {
     "number": null,
@@ -16576,7 +17041,8 @@
       "Radiohead",
       "sonic youth",
       "travis"
-    ]
+    ],
+    "duration": 3111
   },
   {
     "number": null,
@@ -16617,7 +17083,8 @@
       "sexy sadie",
       "The Smashing Pumpkins",
       "The Verve"
-    ]
+    ],
+    "duration": 4528
   },
   {
     "number": null,
@@ -16655,7 +17122,8 @@
       "Tedeschi Trucks Band",
       "tom petty",
       "virginia díaz"
-    ]
+    ],
+    "duration": 5684
   },
   {
     "number": null,
@@ -16684,7 +17152,8 @@
       "podcast musical",
       "Robert Johnson",
       "the devil"
-    ]
+    ],
+    "duration": 1021
   },
   {
     "number": null,
@@ -16715,7 +17184,8 @@
       "bienvenido a los 90",
       "deluxe",
       "xoel lopez"
-    ]
+    ],
+    "duration": 4032
   },
   {
     "number": null,
@@ -16746,7 +17216,8 @@
       "let me have it",
       "podcast",
       "the jeevas"
-    ]
+    ],
+    "duration": 2613
   },
   {
     "number": null,
@@ -16777,7 +17248,8 @@
       "kula shaker",
       "podcast",
       "the jeevas"
-    ]
+    ],
+    "duration": 2653
   },
   {
     "number": null,
@@ -16814,7 +17286,8 @@
       "podcast",
       "The Storyteller",
       "Touch"
-    ]
+    ],
+    "duration": 2277
   },
   {
     "number": null,
@@ -16843,7 +17316,8 @@
       "nirvana",
       "the breeders",
       "the prodigy"
-    ]
+    ],
+    "duration": 3518
   },
   {
     "number": null,
@@ -16874,7 +17348,8 @@
       "love tara",
       "Rick White",
       "subpop"
-    ]
+    ],
+    "duration": 2445
   },
   {
     "number": null,
@@ -16906,7 +17381,8 @@
       "sophia urista",
       "tom morello",
       "zack de la rocha"
-    ]
+    ],
+    "duration": 2235
   },
   {
     "number": null,
@@ -16950,7 +17426,8 @@
       "the beatles",
       "Tina Turner",
       "Whitesnake"
-    ]
+    ],
+    "duration": 9398
   },
   {
     "number": null,
@@ -16981,7 +17458,8 @@
       "los angeles",
       "nirvana",
       "Rock Against Rape"
-    ]
+    ],
+    "duration": 1110
   },
   {
     "number": null,
@@ -17014,7 +17492,8 @@
       "podcast musical",
       "Red Moskito",
       "seattle"
-    ]
+    ],
+    "duration": 4667
   },
   {
     "number": null,
@@ -17046,7 +17525,8 @@
       "Stephen Immerwahr",
       "sub pop",
       "The White Birch"
-    ]
+    ],
+    "duration": 2141
   },
   {
     "number": null,
@@ -17081,7 +17561,8 @@
       "Painted Shield",
       "Psychedelic Porn Crumpets",
       "Red Moskito"
-    ]
+    ],
+    "duration": 2858
   },
   {
     "number": null,
@@ -17111,7 +17592,8 @@
       "ivoox",
       "jerry cantrell",
       "layne staley"
-    ]
+    ],
+    "duration": 3009
   },
   {
     "number": null,
@@ -17152,7 +17634,8 @@
       "sub pop",
       "Surgery",
       "Unsane"
-    ]
+    ],
+    "duration": 2638
   },
   {
     "number": null,
@@ -17186,7 +17669,8 @@
       "meat puppets",
       "nirvana",
       "Velvet"
-    ]
+    ],
+    "duration": 4061
   },
   {
     "number": null,
@@ -17220,7 +17704,8 @@
       "ray loriga",
       "red hot chili peppers",
       "Shocking Blue"
-    ]
+    ],
+    "duration": 4560
   },
   {
     "number": null,
@@ -17253,7 +17738,8 @@
       "liberto peiro",
       "rosy finch",
       "Uterzine"
-    ]
+    ],
+    "duration": 3274
   },
   {
     "number": null,
@@ -17291,7 +17777,8 @@
       "nirvana",
       "vanity rose",
       "Where Did You Sleep Last Night"
-    ]
+    ],
+    "duration": 2631
   },
   {
     "number": null,
@@ -17354,7 +17841,8 @@
       "Roberta Flack",
       "Sly & The Family Stone",
       "Stevie Wonder"
-    ]
+    ],
+    "duration": 7176
   },
   {
     "number": null,
@@ -17404,7 +17892,8 @@
       "reme",
       "zahra",
       "zirconita"
-    ]
+    ],
+    "duration": 5278
   },
   {
     "number": null,
@@ -17444,7 +17933,8 @@
       "Oasis",
       "paco perez bryan",
       "radio 3"
-    ]
+    ],
+    "duration": 4059
   },
   {
     "number": null,
@@ -17479,7 +17969,8 @@
       "Navarcles",
       "the wax",
       "We Are Failing"
-    ]
+    ],
+    "duration": 6218
   },
   {
     "number": null,
@@ -17513,7 +18004,8 @@
       "paul mccartney",
       "ringo starr",
       "the beatles"
-    ]
+    ],
+    "duration": 2136
   },
   {
     "number": null,
@@ -17548,7 +18040,8 @@
       "stereolab",
       "telegram",
       "the prodigy"
-    ]
+    ],
+    "duration": 6106
   },
   {
     "number": null,
@@ -17591,7 +18084,8 @@
       "melissa auf der maur",
       "nirvana",
       "Patty Schemel"
-    ]
+    ],
+    "duration": 2653
   },
   {
     "number": null,
@@ -17622,7 +18116,8 @@
       "hermana furia",
       "maika makovski",
       "Rheia Gorecki"
-    ]
+    ],
+    "duration": 3620
   },
   {
     "number": null,
@@ -17658,7 +18153,8 @@
       "radio 3",
       "rafa cervera",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 3049
   },
   {
     "number": null,
@@ -17691,7 +18187,8 @@
       "julio ruiz",
       "paco perez bryan",
       "radio 3"
-    ]
+    ],
+    "duration": 4745
   },
   {
     "number": null,
@@ -17722,7 +18219,8 @@
       "never enough",
       "Sonja Maier",
       "vienna"
-    ]
+    ],
+    "duration": 3266
   },
   {
     "number": null,
@@ -17753,7 +18251,8 @@
       "noel gallagher",
       "Oasis",
       "plasticos y decibelios"
-    ]
+    ],
+    "duration": 3460
   },
   {
     "number": null,
@@ -17788,7 +18287,8 @@
       "nirvana",
       "podcast",
       "radio"
-    ]
+    ],
+    "duration": 2529
   },
   {
     "number": null,
@@ -17824,7 +18324,8 @@
       "palacio de los deportes de la comunidad de madrid",
       "Sacred & Profane Tour",
       "smashing pumpkins"
-    ]
+    ],
+    "duration": 9377
   },
   {
     "number": null,
@@ -17879,7 +18380,8 @@
       "radio 3",
       "tomas fernando flores",
       "xavier moreno"
-    ]
+    ],
+    "duration": 4174
   },
   {
     "number": null,
@@ -17920,7 +18422,8 @@
       "the fastbacks",
       "The Presidents Of The United States Of America",
       "Uncle Joe's Big Ol' Driver"
-    ]
+    ],
+    "duration": 3353
   },
   {
     "number": null,
@@ -17957,7 +18460,8 @@
       "pagoda",
       "podcast",
       "thustrston moore"
-    ]
+    ],
+    "duration": 3985
   },
   {
     "number": null,
@@ -17987,7 +18491,8 @@
       "podcast",
       "Rufus T. Firefly",
       "victor cabezuelo"
-    ]
+    ],
+    "duration": 4651
   },
   {
     "number": null,
@@ -18018,7 +18523,8 @@
       "medicine at midninght",
       "nirvana",
       "podcast"
-    ]
+    ],
+    "duration": 1937
   },
   {
     "number": null,
@@ -18062,7 +18568,8 @@
       "podimo",
       "scannerFM",
       "Stephen Malkmus"
-    ]
+    ],
+    "duration": 7023
   },
   {
     "number": null,
@@ -18101,7 +18608,8 @@
       "Radiohead",
       "Super Furry Animals",
       "The Verve"
-    ]
+    ],
+    "duration": 3347
   },
   {
     "number": null,
@@ -18135,7 +18643,8 @@
       "quentin tarantino",
       "The 5.6.7.8's",
       "tokio"
-    ]
+    ],
+    "duration": 2153
   },
   {
     "number": null,
@@ -18167,7 +18676,8 @@
       "noel gallagher",
       "podcast",
       "The Chemical Brothers"
-    ]
+    ],
+    "duration": 4034
   },
   {
     "number": null,
@@ -18200,7 +18710,8 @@
       "jimmy chamberlin",
       "podcast",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 4855
   },
   {
     "number": null,
@@ -18232,7 +18743,8 @@
       "nirvana",
       "Radiohead",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 3845
   },
   {
     "number": null,
@@ -18266,7 +18778,8 @@
       "podcast",
       "radio",
       "vinilo"
-    ]
+    ],
+    "duration": 3604
   },
   {
     "number": null,
@@ -18300,7 +18813,8 @@
       "nic cester",
       "podcast",
       "scannerFM"
-    ]
+    ],
+    "duration": 2425
   },
   {
     "number": null,
@@ -18355,7 +18869,8 @@
       "porno for pyros",
       "Radiohead",
       "sonic youth"
-    ]
+    ],
+    "duration": 7848
   },
   {
     "number": null,
@@ -18385,7 +18900,8 @@
       "paco perez bryan",
       "podcast",
       "radio 3\nde 4 a 3"
-    ]
+    ],
+    "duration": 2720
   },
   {
     "number": null,
@@ -18420,7 +18936,8 @@
       "radio",
       "santiago talavera",
       "scannerFM"
-    ]
+    ],
+    "duration": 3426
   },
   {
     "number": null,
@@ -18453,7 +18970,8 @@
       "seattle",
       "the black tones",
       "tres leches"
-    ]
+    ],
+    "duration": 3939
   },
   {
     "number": null,
@@ -18485,7 +19003,8 @@
       "radio",
       "spain",
       "The Blue Moods of Spain"
-    ]
+    ],
+    "duration": 3111
   },
   {
     "number": null,
@@ -18517,7 +19036,8 @@
       "mark lanegan",
       "podcast",
       "seattle"
-    ]
+    ],
+    "duration": 2236
   },
   {
     "number": null,
@@ -18561,7 +19081,8 @@
       "john lennon",
       "No One Sings Like You Anymore",
       "prince"
-    ]
+    ],
+    "duration": 2782
   },
   {
     "number": null,
@@ -18616,7 +19137,8 @@
       "slowflames",
       "test roschard",
       "The Smashing Pumkins"
-    ]
+    ],
+    "duration": 11884
   },
   {
     "number": null,
@@ -18649,7 +19171,8 @@
       "sean lennon",
       "the beatles",
       "yoko ono"
-    ]
+    ],
+    "duration": 4438
   },
   {
     "number": null,
@@ -18687,7 +19210,8 @@
       "the black tones",
       "tres leches",
       "versing"
-    ]
+    ],
+    "duration": 2153
   },
   {
     "number": null,
@@ -18729,7 +19253,8 @@
       "Nancy Wilson",
       "tad",
       "Taylor Hawkins"
-    ]
+    ],
+    "duration": 5745
   },
   {
     "number": null,
@@ -18762,7 +19287,8 @@
       "The Boy From the South",
       "The Last Internationale",
       "the wax"
-    ]
+    ],
+    "duration": 4179
   },
   {
     "number": null,
@@ -18803,7 +19329,8 @@
       "scannerFM",
       "single",
       "thom yorke"
-    ]
+    ],
+    "duration": 6045
   },
   {
     "number": null,
@@ -18854,7 +19381,8 @@
       "sub pop",
       "Teriyaki Asthma",
       "Treepeople"
-    ]
+    ],
+    "duration": 2629
   },
   {
     "number": null,
@@ -18899,7 +19427,8 @@
       "Sons of Kyuss",
       "Welcome To Sky Valley",
       "Wretch"
-    ]
+    ],
+    "duration": 3991
   },
   {
     "number": null,
@@ -18948,7 +19477,8 @@
       "rosy finch",
       "the melvins",
       "thou"
-    ]
+    ],
+    "duration": 3852
   },
   {
     "number": null,
@@ -19014,7 +19544,8 @@
       "podcast",
       "prince",
       "radio"
-    ]
+    ],
+    "duration": 8379
   },
   {
     "number": null,
@@ -19054,7 +19585,8 @@
       "radio",
       "revolve",
       "unplugged"
-    ]
+    ],
+    "duration": 3894
   },
   {
     "number": null,
@@ -19094,7 +19626,8 @@
       "the wallflowers",
       "Thin Lizzy",
       "versiones"
-    ]
+    ],
+    "duration": 6522
   },
   {
     "number": null,
@@ -19127,7 +19660,8 @@
       "podcast musical",
       "radio",
       "tragic kingdom"
-    ]
+    ],
+    "duration": 3316
   },
   {
     "number": null,
@@ -19161,7 +19695,8 @@
       "polly jena harvey",
       "rid of me",
       "to bring you my love"
-    ]
+    ],
+    "duration": 2635
   },
   {
     "number": null,
@@ -19195,7 +19730,8 @@
       "madrid",
       "There Is Nothing Left to Lose",
       "tiendas tipo"
-    ]
+    ],
+    "duration": 1754
   },
   {
     "number": null,
@@ -19234,7 +19770,8 @@
       "radio3",
       "rock fm",
       "virginia díaz"
-    ]
+    ],
+    "duration": 12702
   },
   {
     "number": null,
@@ -19289,7 +19826,8 @@
       "narrow head",
       "pj harvey",
       "podcast"
-    ]
+    ],
+    "duration": 3355
   },
   {
     "number": null,
@@ -19323,7 +19861,8 @@
       "scarlet",
       "Witchboro",
       "Wolves Waiting"
-    ]
+    ],
+    "duration": 5634
   },
   {
     "number": null,
@@ -19375,7 +19914,8 @@
       "supersuckers",
       "tad",
       "the u men"
-    ]
+    ],
+    "duration": 3950
   },
   {
     "number": null,
@@ -19410,7 +19950,8 @@
       "radio",
       "Walter Brown",
       "Zoot Sims"
-    ]
+    ],
+    "duration": 2110
   },
   {
     "number": null,
@@ -19441,7 +19982,8 @@
       "héroes del silencio",
       "ivoox",
       "radio"
-    ]
+    ],
+    "duration": 8095
   },
   {
     "number": null,
@@ -19475,7 +20017,8 @@
       "portishead",
       "radio",
       "third"
-    ]
+    ],
+    "duration": 4162
   },
   {
     "number": null,
@@ -19512,7 +20055,8 @@
       "radio",
       "smashing pumpkins",
       "virgin"
-    ]
+    ],
+    "duration": 5245
   },
   {
     "number": null,
@@ -19569,7 +20113,8 @@
       "saturna",
       "tears in rain",
       "track by track"
-    ]
+    ],
+    "duration": 9091
   },
   {
     "number": null,
@@ -19612,7 +20157,8 @@
       "radio",
       "shannon hoon",
       "soup"
-    ]
+    ],
+    "duration": 4783
   },
   {
     "number": null,
@@ -19645,7 +20191,8 @@
       "ivoox",
       "podcast",
       "radio"
-    ]
+    ],
+    "duration": 3145
   },
   {
     "number": null,
@@ -19676,7 +20223,8 @@
       "noel gallagher",
       "Oasis",
       "radio"
-    ]
+    ],
+    "duration": 7814
   },
   {
     "number": null,
@@ -19708,7 +20256,8 @@
       "Pearl Jam",
       "seattle",
       "susan silver"
-    ]
+    ],
+    "duration": 2943
   },
   {
     "number": null,
@@ -19739,7 +20288,8 @@
       "euphoria morning",
       "Natasha Shneider",
       "Pearl Jam"
-    ]
+    ],
+    "duration": 7537
   },
   {
     "number": null,
@@ -19768,7 +20318,8 @@
       "ivoox",
       "l7",
       "smell the magic"
-    ]
+    ],
+    "duration": 2552
   },
   {
     "number": null,
@@ -19805,7 +20356,8 @@
       "skunk anansie",
       "suede",
       "the cramberries"
-    ]
+    ],
+    "duration": 5522
   },
   {
     "number": null,
@@ -19833,7 +20385,8 @@
       "Mary Ramirez",
       "Rachel Nagy",
       "the detroit cobras"
-    ]
+    ],
+    "duration": 2983
   },
   {
     "number": null,
@@ -19894,7 +20447,8 @@
       "The Original Northen Island",
       "vanity rose",
       "veronica underluxe"
-    ]
+    ],
+    "duration": 10749
   },
   {
     "number": null,
@@ -19920,7 +20474,8 @@
     "labels": [
       "bienvenido a lo 90",
       "no dogs"
-    ]
+    ],
+    "duration": 1653
   },
   {
     "number": null,
@@ -19951,7 +20506,8 @@
     "plays": 1400,
     "labels": [
       "Lori Meyers"
-    ]
+    ],
+    "duration": 1147
   },
   {
     "number": null,
@@ -19978,7 +20534,8 @@
     "plays": 1800,
     "labels": [
       "bienvenido a los 90"
-    ]
+    ],
+    "duration": 4097
   },
   {
     "number": null,
@@ -20009,7 +20566,8 @@
       "jet",
       "muse",
       "The Jaded Hearts Club"
-    ]
+    ],
+    "duration": 3042
   },
   {
     "number": null,
@@ -20033,7 +20591,8 @@
     "plays": 2200,
     "labels": [
       "Elastica"
-    ]
+    ],
+    "duration": 3288
   },
   {
     "number": null,
@@ -20059,7 +20618,8 @@
     "plays": 2600,
     "labels": [
       "the beatles"
-    ]
+    ],
+    "duration": 2826
   },
   {
     "number": null,
@@ -20084,7 +20644,8 @@
     "plays": 1200,
     "labels": [
       "alain johannes"
-    ]
+    ],
+    "duration": 3935
   },
   {
     "number": null,
@@ -20108,7 +20669,8 @@
     "plays": 2600,
     "labels": [
       "offspring"
-    ]
+    ],
+    "duration": 2771
   },
   {
     "number": null,
@@ -20135,7 +20697,8 @@
       "eva lasierra",
       "flowers for dreams",
       "the saw range"
-    ]
+    ],
+    "duration": 2788
   },
   {
     "number": null,
@@ -20160,7 +20723,8 @@
     "plays": 1800,
     "labels": [
       "green day"
-    ]
+    ],
+    "duration": 2340
   },
   {
     "number": null,
@@ -20184,7 +20748,8 @@
     "comments": 42,
     "likes": 30,
     "plays": 1600,
-    "labels": []
+    "labels": [],
+    "duration": 3338
   },
   {
     "number": null,
@@ -20208,7 +20773,8 @@
     "plays": 1900,
     "labels": [
       "flea"
-    ]
+    ],
+    "duration": 4965
   },
   {
     "number": null,
@@ -20232,7 +20798,8 @@
     "plays": 2100,
     "labels": [
       "The Smashing Pumkins"
-    ]
+    ],
+    "duration": 4281
   },
   {
     "number": null,
@@ -20256,7 +20823,8 @@
     "plays": 2200,
     "labels": [
       "alanis morissette"
-    ]
+    ],
+    "duration": 3148
   },
   {
     "number": null,
@@ -20280,7 +20848,8 @@
     "plays": 2300,
     "labels": [
       "foo fighters"
-    ]
+    ],
+    "duration": 7022
   },
   {
     "number": null,
@@ -20302,7 +20871,8 @@
     "comments": 10,
     "likes": 21,
     "plays": 1900,
-    "labels": []
+    "labels": [],
+    "duration": 4506
   },
   {
     "number": null,
@@ -20326,7 +20896,8 @@
     "plays": 2700,
     "labels": [
       "marilyn manson"
-    ]
+    ],
+    "duration": 3466
   },
   {
     "number": null,
@@ -20348,7 +20919,8 @@
     "comments": 13,
     "likes": 21,
     "plays": 1300,
-    "labels": []
+    "labels": [],
+    "duration": 6607
   },
   {
     "number": null,
@@ -20372,7 +20944,8 @@
     "plays": 2300,
     "labels": [
       "grunge"
-    ]
+    ],
+    "duration": 5788
   },
   {
     "number": null,
@@ -20399,7 +20972,8 @@
       "90s",
       "años 90",
       "bienvenido a lo 90"
-    ]
+    ],
+    "duration": 3903
   },
   {
     "number": null,
@@ -20422,7 +20996,8 @@
     "comments": 6,
     "likes": 16,
     "plays": 1200,
-    "labels": []
+    "labels": [],
+    "duration": 3197
   },
   {
     "number": null,
@@ -20444,7 +21019,8 @@
     "comments": 8,
     "likes": 11,
     "plays": 1200,
-    "labels": []
+    "labels": [],
+    "duration": 3711
   },
   {
     "number": null,
@@ -20468,7 +21044,8 @@
     "plays": 1800,
     "labels": [
       "podcast"
-    ]
+    ],
+    "duration": 3868
   },
   {
     "number": null,
@@ -20490,7 +21067,8 @@
     "comments": 5,
     "likes": 15,
     "plays": 1100,
-    "labels": []
+    "labels": [],
+    "duration": 4510
   },
   {
     "number": null,
@@ -20523,7 +21101,8 @@
       "radio",
       "radio ivoox",
       "the breeders"
-    ]
+    ],
+    "duration": 6078
   },
   {
     "number": null,
@@ -20551,7 +21130,8 @@
       "bienvenido a lo 90",
       "ivoox",
       "radio"
-    ]
+    ],
+    "duration": 7234
   },
   {
     "number": null,
@@ -20580,7 +21160,8 @@
       "morphine",
       "podcast",
       "podcast en español"
-    ]
+    ],
+    "duration": 3665
   },
   {
     "number": null,
@@ -20607,7 +21188,8 @@
       "chris cornell",
       "ivoox",
       "james vieco"
-    ]
+    ],
+    "duration": 3870
   },
   {
     "number": null,
@@ -20637,7 +21219,8 @@
       "the beatles",
       "The Last Internationale",
       "the sunday drivers"
-    ]
+    ],
+    "duration": 2467
   },
   {
     "number": null,
@@ -20662,7 +21245,8 @@
     "plays": 2100,
     "labels": [
       "Radiohead"
-    ]
+    ],
+    "duration": 3191
   },
   {
     "number": null,
@@ -20687,7 +21271,8 @@
     "plays": 2200,
     "labels": [
       "mark lanegan"
-    ]
+    ],
+    "duration": 8783
   },
   {
     "number": null,
@@ -20713,7 +21298,8 @@
     "plays": 2400,
     "labels": [
       "chris cornell"
-    ]
+    ],
+    "duration": 7208
   },
   {
     "number": null,
@@ -20738,7 +21324,8 @@
     "labels": [
       "bienvenido a lo 90",
       "mad season"
-    ]
+    ],
+    "duration": 5439
   },
   {
     "number": null,
@@ -20763,7 +21350,8 @@
     "plays": 1700,
     "labels": [
       "veruca salt"
-    ]
+    ],
+    "duration": 4013
   },
   {
     "number": null,
@@ -20785,7 +21373,8 @@
     "comments": 10,
     "likes": 21,
     "plays": 1700,
-    "labels": []
+    "labels": [],
+    "duration": 4287
   },
   {
     "number": null,
@@ -20809,7 +21398,8 @@
     "plays": 2100,
     "labels": [
       "bienvenido a lo 90"
-    ]
+    ],
+    "duration": 3925
   },
   {
     "number": null,
@@ -20847,7 +21437,8 @@
       "Stanley Donwood",
       "the bends",
       "thom yorke"
-    ]
+    ],
+    "duration": 4490
   },
   {
     "number": null,
@@ -20883,7 +21474,8 @@
       "jimmy chamberlin",
       "radio",
       "smashing pumpkins"
-    ]
+    ],
+    "duration": 6720
   },
   {
     "number": null,
@@ -20932,7 +21524,8 @@
       "the rocket",
       "Thee Hypnotics",
       "Treepeople"
-    ]
+    ],
+    "duration": 2999
   },
   {
     "number": null,
@@ -20987,7 +21580,8 @@
       "The Kundalini Genie",
       "The Sorcerers",
       "the strokes"
-    ]
+    ],
+    "duration": 4387
   },
   {
     "number": null,
@@ -21026,7 +21620,8 @@
       "puddle of mudd",
       "Stiltskin",
       "undrop"
-    ]
+    ],
+    "duration": 5419
   },
   {
     "number": null,
@@ -21064,7 +21659,8 @@
       "podcast",
       "post malone",
       "travis barker"
-    ]
+    ],
+    "duration": 3341
   },
   {
     "number": null,
@@ -21100,7 +21696,8 @@
       "luke skywalker",
       "podcast",
       "star wars"
-    ]
+    ],
+    "duration": 4662
   },
   {
     "number": null,
@@ -21135,7 +21732,8 @@
       "Siamese Dream",
       "smashing pumpkins",
       "vieuphoria"
-    ]
+    ],
+    "duration": 3529
   },
   {
     "number": null,
@@ -21170,7 +21768,8 @@
       "jimmy chamberlin",
       "Siamese Dream",
       "smashing pumpkins"
-    ]
+    ],
+    "duration": 5602
   },
   {
     "number": null,
@@ -21218,7 +21817,8 @@
       "seattle",
       "Soundgarden",
       "toni cornell"
-    ]
+    ],
+    "duration": 2629
   },
   {
     "number": null,
@@ -21259,7 +21859,8 @@
       "Reddish",
       "seattle rain",
       "Storm Outbreak & The Desert Diaries"
-    ]
+    ],
+    "duration": 4778
   },
   {
     "number": null,
@@ -21303,7 +21904,8 @@
       "podcast",
       "river phoenix",
       "Speed"
-    ]
+    ],
+    "duration": 3019
   },
   {
     "number": null,
@@ -21352,7 +21954,8 @@
       "shallow",
       "Souls For Sale",
       "verbena"
-    ]
+    ],
+    "duration": 2864
   },
   {
     "number": null,
@@ -21401,7 +22004,8 @@
       "seattle",
       "Shawn Smith",
       "stevie salas"
-    ]
+    ],
+    "duration": 3690
   },
   {
     "number": null,
@@ -21454,7 +22058,8 @@
       "the stone roses",
       "the who",
       "u2"
-    ]
+    ],
+    "duration": 4393
   },
   {
     "number": null,
@@ -21505,7 +22110,8 @@
       "Tales of Terror",
       "the sonics",
       "the stooges"
-    ]
+    ],
+    "duration": 3868
   },
   {
     "number": null,
@@ -21560,7 +22166,8 @@
       "Soundgarden",
       "tad",
       "U men"
-    ]
+    ],
+    "duration": 3913
   },
   {
     "number": null,
@@ -21611,7 +22218,8 @@
       "The Smashing Pumpkins",
       "veruca salt",
       "wool"
-    ]
+    ],
+    "duration": 3113
   },
   {
     "number": null,
@@ -21659,7 +22267,8 @@
       "screaming trees",
       "the 13th floor elevators",
       "the gun club"
-    ]
+    ],
+    "duration": 3859
   },
   {
     "number": null,
@@ -21711,7 +22320,8 @@
       "seattle",
       "Steve Moriarty",
       "the gits"
-    ]
+    ],
+    "duration": 4837
   },
   {
     "number": null,
@@ -21750,7 +22360,8 @@
       "seattle",
       "stone gossard",
       "torino"
-    ]
+    ],
+    "duration": 3435
   },
   {
     "number": null,
@@ -21785,7 +22396,8 @@
       "Pearl Jam",
       "seattle",
       "stone gossard"
-    ]
+    ],
+    "duration": 4152
   },
   {
     "number": null,
@@ -21836,7 +22448,8 @@
       "seattle",
       "stone gossard",
       "yield"
-    ]
+    ],
+    "duration": 3609
   },
   {
     "number": null,
@@ -21885,7 +22498,8 @@
       "seattle",
       "stone gossard",
       "vs"
-    ]
+    ],
+    "duration": 3608
   },
   {
     "number": null,
@@ -21936,7 +22550,8 @@
       "seattle",
       "stone gossard",
       "ten"
-    ]
+    ],
+    "duration": 4129
   },
   {
     "number": null,
@@ -21998,7 +22613,8 @@
       "podcast",
       "Sweet Relief",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 5693
   },
   {
     "number": null,
@@ -22035,7 +22651,8 @@
       "podcast",
       "seattle",
       "stone gossard"
-    ]
+    ],
+    "duration": 3491
   },
   {
     "number": null,
@@ -22087,7 +22704,8 @@
       "nirvana",
       "Pearl Jam",
       "therapy"
-    ]
+    ],
+    "duration": 5117
   },
   {
     "number": null,
@@ -22136,7 +22754,8 @@
       "podcast",
       "The Smashing Pumpkins",
       "tinker"
-    ]
+    ],
+    "duration": 4579
   },
   {
     "number": null,
@@ -22174,7 +22793,8 @@
       "Gyoza",
       "ivoox",
       "podcast"
-    ]
+    ],
+    "duration": 4984
   },
   {
     "number": null,
@@ -22210,7 +22830,8 @@
       "podcast",
       "steve jobs",
       "walkman"
-    ]
+    ],
+    "duration": 1655
   },
   {
     "number": null,
@@ -22245,7 +22866,8 @@
       "sala el sol",
       "siroco",
       "tucho"
-    ]
+    ],
+    "duration": 4851
   },
   {
     "number": null,
@@ -22281,7 +22903,8 @@
       "podcast",
       "radio 3",
       "virginia díaz"
-    ]
+    ],
+    "duration": 3938
   },
   {
     "number": null,
@@ -22315,7 +22938,8 @@
       "radio",
       "radio 3",
       "travis meeks"
-    ]
+    ],
+    "duration": 5529
   },
   {
     "number": null,
@@ -22363,7 +22987,8 @@
       "Natasha Shneider",
       "podcast",
       "Soundgarden"
-    ]
+    ],
+    "duration": 7022
   },
   {
     "number": null,
@@ -22399,7 +23024,8 @@
       "seattle",
       "Soundgarden",
       "susan silver"
-    ]
+    ],
+    "duration": 3722
   },
   {
     "number": null,
@@ -22439,7 +23065,8 @@
       "The Legend of Zelda",
       "trent reznor",
       "videojuegos"
-    ]
+    ],
+    "duration": 6902
   },
   {
     "number": null,
@@ -22474,7 +23101,8 @@
       "mark lanegan",
       "Pearl Jam",
       "podcast"
-    ]
+    ],
+    "duration": 4894
   },
   {
     "number": null,
@@ -22509,7 +23137,8 @@
       "poncier",
       "seattle",
       "singles"
-    ]
+    ],
+    "duration": 2910
   },
   {
     "number": null,
@@ -22543,7 +23172,8 @@
       "Rufus T. Firefly",
       "the dark side of the moon",
       "victor cabezuelo"
-    ]
+    ],
+    "duration": 5533
   },
   {
     "number": null,
@@ -22587,7 +23217,8 @@
       "Rage Love & Devotion",
       "subterfuge radio",
       "the skinny"
-    ]
+    ],
+    "duration": 5210
   },
   {
     "number": null,
@@ -22621,7 +23252,8 @@
       "radio 3",
       "velvet goldmine",
       "Without You I'm Nothing"
-    ]
+    ],
+    "duration": 3093
   },
   {
     "number": null,
@@ -22672,7 +23304,8 @@
       "subterfuge radio",
       "supergrass",
       "tu otra bonita"
-    ]
+    ],
+    "duration": 4007
   },
   {
     "number": null,
@@ -22701,7 +23334,8 @@
       "podcast",
       "Richey James Edwards",
       "subterfuge radio"
-    ]
+    ],
+    "duration": 2735
   },
   {
     "number": null,
@@ -22751,7 +23385,8 @@
       "space",
       "the auteurs",
       "urusei yatsura"
-    ]
+    ],
+    "duration": 3369
   },
   {
     "number": null,
@@ -22784,7 +23419,8 @@
       "Sala Rockville",
       "subterfuge radio",
       "the posies"
-    ]
+    ],
+    "duration": 3471
   },
   {
     "number": null,
@@ -22833,7 +23469,8 @@
       "music radar clan",
       "podcast",
       "subterfuge radio"
-    ]
+    ],
+    "duration": 7632
   },
   {
     "number": null,
@@ -22868,7 +23505,8 @@
       "Horrores Varios de la Estupidez Actual",
       "subterfuge radio",
       "triquinoise"
-    ]
+    ],
+    "duration": 4795
   },
   {
     "number": null,
@@ -22914,7 +23552,8 @@
       "Strange Fruits And Undiscovered Plants",
       "subterfuge radio",
       "Tascam Tapes"
-    ]
+    ],
+    "duration": 2416
   },
   {
     "number": null,
@@ -22953,7 +23592,8 @@
       "samuel titos",
       "seattle",
       "sperm"
-    ]
+    ],
+    "duration": 5937
   },
   {
     "number": null,
@@ -22985,7 +23625,8 @@
       "radio",
       "radio75",
       "Songs for Celine"
-    ]
+    ],
+    "duration": 5665
   },
   {
     "number": null,
@@ -23018,7 +23659,8 @@
       "podcast",
       "Serving the servant",
       "subterfuge radio"
-    ]
+    ],
+    "duration": 4838
   },
   {
     "number": null,
@@ -23065,7 +23707,8 @@
       "ivoox",
       "podcast",
       "subterfuge radio"
-    ]
+    ],
+    "duration": 4894
   },
   {
     "number": null,
@@ -23119,7 +23762,8 @@
       "the power of dolores",
       "turbolovers",
       "tv fly"
-    ]
+    ],
+    "duration": 6272
   },
   {
     "number": null,
@@ -23169,7 +23813,8 @@
       "radio",
       "subterfuge radio",
       "tucan"
-    ]
+    ],
+    "duration": 5870
   },
   {
     "number": null,
@@ -23202,7 +23847,8 @@
       "sam teskey",
       "subterfuge radio",
       "The Teskey Brothers"
-    ]
+    ],
+    "duration": 3977
   },
   {
     "number": null,
@@ -23239,7 +23885,8 @@
       "subterfuge radio",
       "tucho",
       "wild dog"
-    ]
+    ],
+    "duration": 7696
   },
   {
     "number": null,
@@ -23272,7 +23919,8 @@
       "radio",
       "subterfuge radio",
       "wild dog"
-    ]
+    ],
+    "duration": 6448
   },
   {
     "number": null,
@@ -23323,7 +23971,8 @@
       "podcast",
       "siroco",
       "Vick Lindstrom"
-    ]
+    ],
+    "duration": 7944
   },
   {
     "number": null,
@@ -23358,7 +24007,8 @@
       "Northern Exposure",
       "radio",
       "ÁNGEL QUISLANT"
-    ]
+    ],
+    "duration": 13214
   },
   {
     "number": null,
@@ -23403,7 +24053,8 @@
       "radio",
       "showbiz",
       "subterfuge radio"
-    ]
+    ],
+    "duration": 2895
   },
   {
     "number": null,
@@ -23442,7 +24093,8 @@
       "radio",
       "subterfuge",
       "subterfuge radio"
-    ]
+    ],
+    "duration": 3896
   },
   {
     "number": null,
@@ -23476,7 +24128,8 @@
       "radio",
       "subterfuge radio",
       "the beatles"
-    ]
+    ],
+    "duration": 2066
   },
   {
     "number": null,
@@ -23510,7 +24163,8 @@
     "labels": [
       "bienvenido a lo 90",
       "sto"
-    ]
+    ],
+    "duration": 3812
   },
   {
     "number": null,
@@ -23562,7 +24216,8 @@
       "subterfuge",
       "the killer barbies",
       "undershakers"
-    ]
+    ],
+    "duration": 3003
   },
   {
     "number": null,
@@ -23594,7 +24249,8 @@
       "podcast",
       "REM",
       "subterfuge radio"
-    ]
+    ],
+    "duration": 4036
   },
   {
     "number": null,
@@ -23633,7 +24289,8 @@
       "podcasy",
       "silverchair",
       "subterfuge radio"
-    ]
+    ],
+    "duration": 7017
   },
   {
     "number": null,
@@ -23669,7 +24326,8 @@
       "subterfuge radio",
       "talk to him",
       "tucho"
-    ]
+    ],
+    "duration": 3596
   },
   {
     "number": null,
@@ -23723,7 +24381,8 @@
       "podcast",
       "sala el sol",
       "subterfuge radio"
-    ]
+    ],
+    "duration": 5424
   },
   {
     "number": null,
@@ -23758,7 +24417,8 @@
       "podcast",
       "ringo starr",
       "the beatles"
-    ]
+    ],
+    "duration": 3598
   },
   {
     "number": null,
@@ -23792,7 +24452,8 @@
       "podcast",
       "road trip podcast",
       "stone gossard"
-    ]
+    ],
+    "duration": 4154
   },
   {
     "number": null,
@@ -23834,7 +24495,8 @@
       "podcast",
       "road trip podcast",
       "valencia"
-    ]
+    ],
+    "duration": 5401
   },
   {
     "number": null,
@@ -23882,7 +24544,8 @@
       "Stone Temple Pilots",
       "the muffs",
       "the shivas"
-    ]
+    ],
+    "duration": 3831
   },
   {
     "number": null,
@@ -23925,7 +24588,8 @@
       "Radiohead",
       "subterfuge radio",
       "tamino"
-    ]
+    ],
+    "duration": 2072
   },
   {
     "number": null,
@@ -23972,7 +24636,8 @@
       "subterfuge radio",
       "the beavis And Butt-Head Experience",
       "white zombie"
-    ]
+    ],
+    "duration": 3032
   },
   {
     "number": null,
@@ -24010,7 +24675,8 @@
       "podcast",
       "river phoenix",
       "tim burton"
-    ]
+    ],
+    "duration": 3100
   },
   {
     "number": null,
@@ -24066,7 +24732,8 @@
       "madrid",
       "podcast",
       "sala el sol"
-    ]
+    ],
+    "duration": 6402
   },
   {
     "number": null,
@@ -24106,7 +24773,8 @@
       "podcast",
       "radio",
       "sonic youth"
-    ]
+    ],
+    "duration": 2652
   },
   {
     "number": null,
@@ -24142,7 +24810,8 @@
       "ivoox",
       "loiros",
       "podcast"
-    ]
+    ],
+    "duration": 4848
   },
   {
     "number": null,
@@ -24186,7 +24855,8 @@
       "radio",
       "showbiz",
       "steve lamacq"
-    ]
+    ],
+    "duration": 6330
   },
   {
     "number": null,
@@ -24228,7 +24898,8 @@
       "mark lanegan",
       "podcast",
       "radio"
-    ]
+    ],
+    "duration": 2581
   },
   {
     "number": null,
@@ -24281,7 +24952,8 @@
       "terrorvision",
       "the gun",
       "The Psychotic Monks"
-    ]
+    ],
+    "duration": 5731
   },
   {
     "number": null,
@@ -24337,7 +25009,8 @@
       "roger gascon",
       "simone",
       "veronica underluxe"
-    ]
+    ],
+    "duration": 9091
   },
   {
     "number": null,
@@ -24388,7 +25061,8 @@
       "Psychodrome",
       "rick & vera",
       "simone"
-    ]
+    ],
+    "duration": 3028
   },
   {
     "number": null,
@@ -24440,7 +25114,8 @@
       "porno for pyros",
       "red hot chili peppers",
       "woodstock"
-    ]
+    ],
+    "duration": 6792
   },
   {
     "number": null,
@@ -24484,7 +25159,8 @@
       "radio",
       "SANDFORD MUSIC FACTORY",
       "subterfuge radio"
-    ]
+    ],
+    "duration": 3811
   },
   {
     "number": null,
@@ -24523,7 +25199,8 @@
       "radiobleach",
       "subterfuge radio",
       "trinuto"
-    ]
+    ],
+    "duration": 4340
   },
   {
     "number": null,
@@ -24565,7 +25242,8 @@
       "radio",
       "subterfuge radio",
       "toss and turn"
-    ]
+    ],
+    "duration": 2429
   },
   {
     "number": null,
@@ -24604,7 +25282,8 @@
       "muntz",
       "podcast",
       "subterfuge radio"
-    ]
+    ],
+    "duration": 1650
   },
   {
     "number": null,
@@ -24646,7 +25325,8 @@
       "madrid",
       "podcast",
       "twin hands"
-    ]
+    ],
+    "duration": 2835
   },
   {
     "number": null,
@@ -24689,7 +25369,8 @@
       "podcast",
       "radio terror",
       "veronica underluxe"
-    ]
+    ],
+    "duration": 2922
   },
   {
     "number": null,
@@ -24743,7 +25424,8 @@
       "The Smashing Pumpkins",
       "vetusta morla",
       "warpaint"
-    ]
+    ],
+    "duration": 4180
   },
   {
     "number": null,
@@ -24815,7 +25497,8 @@
       "Radiohead",
       "Rage Against the Machine",
       "seatlle"
-    ]
+    ],
+    "duration": 2410
   },
   {
     "number": null,
@@ -24855,7 +25538,8 @@
       "podcast",
       "podcast en español",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 3374
   },
   {
     "number": null,
@@ -24913,7 +25597,8 @@
       "quuen",
       "Radiohead",
       "wanda"
-    ]
+    ],
+    "duration": 8650
   },
   {
     "number": null,
@@ -24955,7 +25640,8 @@
       "podcast",
       "ransom",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 4539
   },
   {
     "number": null,
@@ -25035,7 +25721,8 @@
       "Sofia Buckingham",
       "Tangerine Flavour",
       "tucho"
-    ]
+    ],
+    "duration": 8505
   },
   {
     "number": null,
@@ -25067,7 +25754,8 @@
       "highway 61 revisited",
       "podcast",
       "radio ivoox"
-    ]
+    ],
+    "duration": 4609
   },
   {
     "number": null,
@@ -25102,7 +25790,8 @@
       "radio",
       "subterfuge radio",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 5606
   },
   {
     "number": null,
@@ -25144,7 +25833,8 @@
       "screaming trees",
       "subterfuge radio",
       "tad"
-    ]
+    ],
+    "duration": 6226
   },
   {
     "number": null,
@@ -25178,7 +25868,8 @@
       "foo fighters",
       "nirvana",
       "podcast"
-    ]
+    ],
+    "duration": 1565
   },
   {
     "number": null,
@@ -25222,7 +25913,8 @@
       "michael eavis",
       "podcast",
       "the cure"
-    ]
+    ],
+    "duration": 3658
   },
   {
     "number": null,
@@ -25273,7 +25965,8 @@
       "REM",
       "The Smashing Pumpkins",
       "u2"
-    ]
+    ],
+    "duration": 3938
   },
   {
     "number": null,
@@ -25324,7 +26017,8 @@
       "prince",
       "queen",
       "REM"
-    ]
+    ],
+    "duration": 3125
   },
   {
     "number": null,
@@ -25360,7 +26054,8 @@
       "podcast",
       "seattle",
       "wizink center"
-    ]
+    ],
+    "duration": 8502
   },
   {
     "number": null,
@@ -25407,7 +26102,8 @@
       "rews",
       "Tash Sultana",
       "yonaka"
-    ]
+    ],
+    "duration": 2602
   },
   {
     "number": null,
@@ -25451,7 +26147,8 @@
       "Stone Temple Pilots",
       "tool",
       "toundra"
-    ]
+    ],
+    "duration": 2733
   },
   {
     "number": null,
@@ -25489,7 +26186,8 @@
       "madrid",
       "podcast",
       "SantiagoTalavera"
-    ]
+    ],
+    "duration": 3588
   },
   {
     "number": null,
@@ -25533,7 +26231,8 @@
       "Soundgarden",
       "Stone Temple Pilots",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 8590
   },
   {
     "number": null,
@@ -25579,7 +26278,8 @@
       "rock am ring",
       "Shiny and Oh So Bright tour",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 4709
   },
   {
     "number": null,
@@ -25632,7 +26332,8 @@
       "podcast",
       "Radiohead",
       "thom yorke"
-    ]
+    ],
+    "duration": 6318
   },
   {
     "number": null,
@@ -25663,7 +26364,8 @@
       "podcast",
       "shockwave",
       "why me why not"
-    ]
+    ],
+    "duration": 336
   },
   {
     "number": null,
@@ -25712,7 +26414,8 @@
       "purple",
       "scott weiland",
       "Stone Temple Pilots"
-    ]
+    ],
+    "duration": 4595
   },
   {
     "number": null,
@@ -25755,7 +26458,8 @@
       "podcast",
       "seattle",
       "sub pop"
-    ]
+    ],
+    "duration": 9241
   },
   {
     "number": null,
@@ -25799,7 +26503,8 @@
       "john frusciante",
       "podcast",
       "red hot chili peppers"
-    ]
+    ],
+    "duration": 4072
   },
   {
     "number": null,
@@ -25839,7 +26544,8 @@
       "podcast",
       "The Smashing Pumpkins",
       "Thirty Three"
-    ]
+    ],
+    "duration": 4574
   },
   {
     "number": null,
@@ -25887,7 +26593,8 @@
       "the frogs",
       "the last hard men",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 3583
   },
   {
     "number": null,
@@ -25950,7 +26657,8 @@
       "podcast",
       "The Smashing Pumpkins",
       "vinilo"
-    ]
+    ],
+    "duration": 7875
   },
   {
     "number": null,
@@ -25988,7 +26696,8 @@
       "podcast",
       "The Smashing Pumpkins",
       "tonight tonight"
-    ]
+    ],
+    "duration": 1818
   },
   {
     "number": null,
@@ -26047,7 +26756,8 @@
       "tucho",
       "zimmerband",
       "Éclaire"
-    ]
+    ],
+    "duration": 10343
   },
   {
     "number": null,
@@ -26089,7 +26799,8 @@
       "podcast",
       "seattle",
       "to boddah"
-    ]
+    ],
+    "duration": 3032
   },
   {
     "number": null,
@@ -26130,7 +26841,8 @@
       "tears in rain",
       "the wider light",
       "track by track"
-    ]
+    ],
+    "duration": 4137
   },
   {
     "number": null,
@@ -26171,7 +26883,8 @@
       "podcast",
       "The Smashing Pumpkins",
       "zero"
-    ]
+    ],
+    "duration": 3397
   },
   {
     "number": null,
@@ -26218,7 +26931,8 @@
       "santi campos",
       "the black crowes",
       "ultima experiencia"
-    ]
+    ],
+    "duration": 5310
   },
   {
     "number": null,
@@ -26263,7 +26977,8 @@
       "moby",
       "podcast",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 3137
   },
   {
     "number": null,
@@ -26308,7 +27023,8 @@
       "sound isidro",
       "tears in rain",
       "viaje a 800"
-    ]
+    ],
+    "duration": 6105
   },
   {
     "number": null,
@@ -26353,7 +27069,8 @@
       "podcast",
       "the muffs",
       "veruca salt"
-    ]
+    ],
+    "duration": 2257
   },
   {
     "number": null,
@@ -26397,7 +27114,8 @@
       "podcast",
       "Robert Burås",
       "Sivert Høyem"
-    ]
+    ],
+    "duration": 2999
   },
   {
     "number": null,
@@ -26443,7 +27161,8 @@
       "in utero 25",
       "nirvana",
       "podcast"
-    ]
+    ],
+    "duration": 3522
   },
   {
     "number": null,
@@ -26490,7 +27209,8 @@
       "podcast",
       "riot grrrl",
       "sugar baby dolls"
-    ]
+    ],
+    "duration": 2157
   },
   {
     "number": null,
@@ -26530,7 +27250,8 @@
       "nirvana",
       "podcast",
       "volumen 2"
-    ]
+    ],
+    "duration": 2706
   },
   {
     "number": null,
@@ -26583,7 +27304,8 @@
       "The Lemonheads",
       "The Psychotic Monks",
       "tom morello"
-    ]
+    ],
+    "duration": 4910
   },
   {
     "number": null,
@@ -26633,7 +27355,8 @@
       "nirvana",
       "podcast",
       "seattle"
-    ]
+    ],
+    "duration": 3424
   },
   {
     "number": null,
@@ -26712,7 +27435,8 @@
       "Soundgarden",
       "temple of the dog",
       "virgen"
-    ]
+    ],
+    "duration": 8035
   },
   {
     "number": null,
@@ -26781,7 +27505,8 @@
       "sala el sol",
       "smokers die young",
       "the rebels"
-    ]
+    ],
+    "duration": 8271
   },
   {
     "number": null,
@@ -26820,7 +27545,8 @@
       "bienvenido a lo 90",
       "holywater",
       "podcast"
-    ]
+    ],
+    "duration": 3045
   },
   {
     "number": null,
@@ -26853,7 +27579,8 @@
       "Oasis",
       "podcast",
       "supersonic"
-    ]
+    ],
+    "duration": 446
   },
   {
     "number": null,
@@ -26903,7 +27630,8 @@
       "nirvana",
       "podcats",
       "seattle"
-    ]
+    ],
+    "duration": 5582
   },
   {
     "number": null,
@@ -26949,7 +27677,8 @@
       "radio 75",
       "Songs for Celine",
       "u2"
-    ]
+    ],
+    "duration": 7591
   },
   {
     "number": null,
@@ -26992,7 +27721,8 @@
       "nirvana",
       "podcast",
       "seattle"
-    ]
+    ],
+    "duration": 3711
   },
   {
     "number": null,
@@ -27042,7 +27772,8 @@
       "pasajero",
       "podcast",
       "sala el sol"
-    ]
+    ],
+    "duration": 5456
   },
   {
     "number": null,
@@ -27080,7 +27811,8 @@
       "podcast",
       "Soundgarden",
       "tool"
-    ]
+    ],
+    "duration": 6250
   },
   {
     "number": null,
@@ -27126,7 +27858,8 @@
       "Soundgarden",
       "the beatles",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 4058
   },
   {
     "number": null,
@@ -27159,7 +27892,8 @@
       "moult",
       "podcast",
       "snake sister"
-    ]
+    ],
+    "duration": 3494
   },
   {
     "number": null,
@@ -27220,7 +27954,8 @@
       "rick & vera",
       "simone",
       "tom´s cabin"
-    ]
+    ],
+    "duration": 5380
   },
   {
     "number": null,
@@ -27278,7 +28013,8 @@
       "Rage Against the Machine",
       "Run The Jewels",
       "zack de la rocha"
-    ]
+    ],
+    "duration": 6954
   },
   {
     "number": null,
@@ -27322,7 +28058,8 @@
       "programa 500",
       "Psychodrome",
       "veronica underluxe"
-    ]
+    ],
+    "duration": 7115
   },
   {
     "number": null,
@@ -27365,7 +28102,8 @@
       "prozack",
       "talk to him",
       "the rebels"
-    ]
+    ],
+    "duration": 2292
   },
   {
     "number": null,
@@ -27408,7 +28146,8 @@
       "podcast",
       "reignwolf",
       "seattle"
-    ]
+    ],
+    "duration": 2620
   },
   {
     "number": null,
@@ -27450,7 +28189,8 @@
       "odeon hotel",
       "podcast",
       "portugal"
-    ]
+    ],
+    "duration": 2642
   },
   {
     "number": null,
@@ -27501,7 +28241,8 @@
       "podcast",
       "SANDFORD MUSIC FACTORY",
       "Sweet Oblivion"
-    ]
+    ],
+    "duration": 4018
   },
   {
     "number": null,
@@ -27537,7 +28278,8 @@
       "podcast",
       "rolling stone",
       "seattle"
-    ]
+    ],
+    "duration": 3157
   },
   {
     "number": null,
@@ -27584,7 +28326,8 @@
       "Soundgarden",
       "temple of the dog",
       "virgen"
-    ]
+    ],
+    "duration": 4823
   },
   {
     "number": null,
@@ -27629,7 +28372,8 @@
       "the cars",
       "the cure",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 2598
   },
   {
     "number": null,
@@ -27680,7 +28424,8 @@
       "robe",
       "smashing pumpkins",
       "yann tiersen"
-    ]
+    ],
+    "duration": 5174
   },
   {
     "number": null,
@@ -27724,7 +28469,8 @@
       "podcast",
       "The Aeroplane Flies High",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 2798
   },
   {
     "number": null,
@@ -27756,7 +28502,8 @@
       "jesus antunez",
       "mario diez",
       "podcast"
-    ]
+    ],
+    "duration": 3458
   },
   {
     "number": null,
@@ -27786,7 +28533,8 @@
       "podcast",
       "The Smashing Pumpkins",
       "Twilight to Starlight"
-    ]
+    ],
+    "duration": 4335
   },
   {
     "number": null,
@@ -27816,7 +28564,8 @@
       "Mellon Collie and the Infinite Sadness",
       "podcast",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 4822
   },
   {
     "number": null,
@@ -27851,7 +28600,8 @@
       "Pearl Jam",
       "podcast",
       "tiempo de leones"
-    ]
+    ],
+    "duration": 3631
   },
   {
     "number": null,
@@ -27978,7 +28728,8 @@
       "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
       "You are not alone",
       "ziggy stardust"
-    ]
+    ],
+    "duration": 4450
   },
   {
     "number": null,
@@ -28018,7 +28769,8 @@
       "nirvana",
       "Pearl Jam",
       "the crazy nineties"
-    ]
+    ],
+    "duration": 7090
   },
   {
     "number": null,
@@ -28095,7 +28847,8 @@
       "temple of the dog",
       "the melvins",
       "toni cornell"
-    ]
+    ],
+    "duration": 8537
   },
   {
     "number": null,
@@ -28144,7 +28897,8 @@
       "podcast",
       "seattle",
       "Soundgarden"
-    ]
+    ],
+    "duration": 5778
   },
   {
     "number": null,
@@ -28207,7 +28961,8 @@
       "talk to him",
       "thurston moore",
       "vidal"
-    ]
+    ],
+    "duration": 6040
   },
   {
     "number": null,
@@ -28242,7 +28997,8 @@
       "pupi",
       "the last days",
       "wild dog"
-    ]
+    ],
+    "duration": 4868
   },
   {
     "number": null,
@@ -28281,7 +29037,8 @@
       "podcast",
       "soul on fire",
       "The Last Internationale"
-    ]
+    ],
+    "duration": 2878
   },
   {
     "number": null,
@@ -28327,7 +29084,8 @@
       "serj tankian",
       "skin",
       "tony Iommi"
-    ]
+    ],
+    "duration": 3392
   },
   {
     "number": null,
@@ -28367,7 +29125,8 @@
       "podcast",
       "the special case",
       "trap"
-    ]
+    ],
+    "duration": 9971
   },
   {
     "number": null,
@@ -28418,7 +29177,8 @@
       "solos",
       "Soundgarden",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 4068
   },
   {
     "number": null,
@@ -28450,7 +29210,8 @@
       "podcast",
       "radio 3",
       "white album"
-    ]
+    ],
+    "duration": 4606
   },
   {
     "number": null,
@@ -28502,7 +29263,8 @@
       "veronica underluxe",
       "zahara",
       "zirconita"
-    ]
+    ],
+    "duration": 6410
   },
   {
     "number": null,
@@ -28558,7 +29320,8 @@
       "the sonics",
       "thom yorke",
       "weezer"
-    ]
+    ],
+    "duration": 3295
   },
   {
     "number": null,
@@ -28601,7 +29364,8 @@
       "matt whitecross",
       "parachutes",
       "podcast en español"
-    ]
+    ],
+    "duration": 3761
   },
   {
     "number": null,
@@ -28632,7 +29396,8 @@
       "jesus gallego",
       "podcast",
       "sad hill"
-    ]
+    ],
+    "duration": 6139
   },
   {
     "number": null,
@@ -28675,7 +29440,8 @@
       "moon relay",
       "podcast",
       "sonic jesus"
-    ]
+    ],
+    "duration": 2903
   },
   {
     "number": null,
@@ -28725,7 +29491,8 @@
       "rodrigo contreras",
       "rolling stones",
       "virgen"
-    ]
+    ],
+    "duration": 7245
   },
   {
     "number": null,
@@ -28773,7 +29540,8 @@
       "podcast",
       "seattle",
       "the breeders"
-    ]
+    ],
+    "duration": 3592
   },
   {
     "number": null,
@@ -28812,7 +29580,8 @@
       "maria santiago",
       "podcast",
       "This Is My Truth Tell Me Yours"
-    ]
+    ],
+    "duration": 2557
   },
   {
     "number": null,
@@ -28843,7 +29612,8 @@
       "podcast",
       "radio terror",
       "veronica underluxe"
-    ]
+    ],
+    "duration": 2162
   },
   {
     "number": null,
@@ -28880,7 +29650,8 @@
       "gaz coombes",
       "podcast",
       "supergrass"
-    ]
+    ],
+    "duration": 2210
   },
   {
     "number": null,
@@ -28917,7 +29688,8 @@
       "mark blake",
       "podcast",
       "queen"
-    ]
+    ],
+    "duration": 2332
   },
   {
     "number": null,
@@ -28949,7 +29721,8 @@
       "Shiny and Oh So Bright",
       "talk to him",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 5917
   },
   {
     "number": null,
@@ -28991,7 +29764,8 @@
       "podcast",
       "screaming trees",
       "seattle"
-    ]
+    ],
+    "duration": 2793
   },
   {
     "number": null,
@@ -29032,7 +29806,8 @@
       "mark blake",
       "podcast",
       "queen"
-    ]
+    ],
+    "duration": 2458
   },
   {
     "number": null,
@@ -29078,7 +29853,8 @@
       "quique gonzalez",
       "REM",
       "undrop"
-    ]
+    ],
+    "duration": 4324
   },
   {
     "number": null,
@@ -29112,7 +29888,8 @@
       "podcast",
       "soul on fire",
       "The Last Internationale"
-    ]
+    ],
+    "duration": 2102
   },
   {
     "number": null,
@@ -29163,7 +29940,8 @@
       "niña coyote eta chico tornado",
       "prodigy",
       "Rufus T. Firefly"
-    ]
+    ],
+    "duration": 3200
   },
   {
     "number": null,
@@ -29208,7 +29986,8 @@
       "Soundgarden",
       "temple of the dog",
       "toni cornell"
-    ]
+    ],
+    "duration": 3720
   },
   {
     "number": null,
@@ -29250,7 +30029,8 @@
       "music radar clan",
       "Pavement",
       "victor"
-    ]
+    ],
+    "duration": 4546
   },
   {
     "number": null,
@@ -29286,7 +30066,8 @@
       "ringo starr",
       "the beatles",
       "the white album"
-    ]
+    ],
+    "duration": 3977
   },
   {
     "number": null,
@@ -29348,7 +30129,8 @@
       "podcast",
       "podcast en español",
       "this is history"
-    ]
+    ],
+    "duration": 10581
   },
   {
     "number": null,
@@ -29387,7 +30169,8 @@
       "muse",
       "podcast",
       "simulation theory"
-    ]
+    ],
+    "duration": 2663
   },
   {
     "number": null,
@@ -29443,7 +30226,8 @@
       "podcast",
       "podcast en español",
       "the beatles"
-    ]
+    ],
+    "duration": 6058
   },
   {
     "number": null,
@@ -29491,7 +30275,8 @@
       "podcast",
       "radiografias",
       "zoo"
-    ]
+    ],
+    "duration": 5046
   },
   {
     "number": null,
@@ -29518,7 +30303,8 @@
       "julieta jones",
       "parkour nights",
       "podcast"
-    ]
+    ],
+    "duration": 2468
   },
   {
     "number": null,
@@ -29557,7 +30343,8 @@
       "podcast",
       "soft hell",
       "veronica torres"
-    ]
+    ],
+    "duration": 2144
   },
   {
     "number": null,
@@ -29605,7 +30392,8 @@
       "paul mccartney",
       "podcast",
       "the germs"
-    ]
+    ],
+    "duration": 4224
   },
   {
     "number": null,
@@ -29636,7 +30424,8 @@
       "sexy sadie",
       "subterfuge",
       "toni toledo"
-    ]
+    ],
+    "duration": 7047
   },
   {
     "number": null,
@@ -29670,7 +30459,8 @@
       "podcast en español",
       "the beatles",
       "yoko ono"
-    ]
+    ],
+    "duration": 3351
   },
   {
     "number": null,
@@ -29718,7 +30508,8 @@
       "siriusxm",
       "stone gossard",
       "vs"
-    ]
+    ],
+    "duration": 5195
   },
   {
     "number": null,
@@ -29748,7 +30539,8 @@
       "Radiohead",
       "suspiria",
       "thom yorke"
-    ]
+    ],
+    "duration": 3353
   },
   {
     "number": null,
@@ -29777,7 +30569,8 @@
       "podcast en español",
       "richard ashcroft",
       "The Verve"
-    ]
+    ],
+    "duration": 2251
   },
   {
     "number": null,
@@ -29809,7 +30602,8 @@
       "sonic youth",
       "steve shelley",
       "thurston moore"
-    ]
+    ],
+    "duration": 3340
   },
   {
     "number": null,
@@ -29841,7 +30635,8 @@
       "joan jett",
       "nirvana",
       "podcast"
-    ]
+    ],
+    "duration": 4745
   },
   {
     "number": null,
@@ -29884,7 +30679,8 @@
       "podcast",
       "podcast en español",
       "True Meanings"
-    ]
+    ],
+    "duration": 2627
   },
   {
     "number": null,
@@ -29931,7 +30727,8 @@
       "The Fadeaways",
       "tokio",
       "viaje"
-    ]
+    ],
+    "duration": 2534
   },
   {
     "number": null,
@@ -29963,7 +30760,8 @@
       "the beatles",
       "The Ultimate Collection",
       "yoko ono"
-    ]
+    ],
+    "duration": 2851
   },
   {
     "number": null,
@@ -29993,7 +30791,8 @@
       "de 4 a 3",
       "paco perez bryan",
       "radio 3"
-    ]
+    ],
+    "duration": 8844
   },
   {
     "number": null,
@@ -30027,7 +30826,8 @@
       "podcast",
       "podcast en español",
       "tears in rain"
-    ]
+    ],
+    "duration": 4542
   },
   {
     "number": null,
@@ -30069,7 +30869,8 @@
       "podcast",
       "podcast en español",
       "the best of"
-    ]
+    ],
+    "duration": 2691
   },
   {
     "number": null,
@@ -30102,7 +30903,8 @@
       "podcast en español",
       "seattle",
       "subpop"
-    ]
+    ],
+    "duration": 2788
   },
   {
     "number": null,
@@ -30150,7 +30952,8 @@
       "Shiny and Oh So Bright",
       "talk to him",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 5672
   },
   {
     "number": null,
@@ -30191,7 +30994,8 @@
       "s3A",
       "verner",
       "Vincent Geminiani"
-    ]
+    ],
+    "duration": 2288
   },
   {
     "number": null,
@@ -30245,7 +31049,8 @@
       "podcast en español",
       "prozack",
       "simone"
-    ]
+    ],
+    "duration": 7351
   },
   {
     "number": null,
@@ -30284,7 +31089,8 @@
       "Radiohead",
       "rondo",
       "vidal"
-    ]
+    ],
+    "duration": 1899
   },
   {
     "number": null,
@@ -30335,7 +31141,8 @@
       "live through this",
       "nirvana",
       "seattle"
-    ]
+    ],
+    "duration": 3184
   },
   {
     "number": null,
@@ -30387,7 +31194,8 @@
       "Radiohead",
       "tricky",
       "unkle"
-    ]
+    ],
+    "duration": 4808
   },
   {
     "number": null,
@@ -30429,7 +31237,8 @@
       "podcast en español",
       "rainier fog",
       "seattle"
-    ]
+    ],
+    "duration": 3701
   },
   {
     "number": null,
@@ -30465,7 +31274,8 @@
       "Radiohead",
       "the bends",
       "thom yorke"
-    ]
+    ],
+    "duration": 2671
   },
   {
     "number": null,
@@ -30503,7 +31313,8 @@
       "bienvenido a lo 90",
       "darwinians radio bike",
       "podcast en español"
-    ]
+    ],
+    "duration": 1842
   },
   {
     "number": null,
@@ -30556,7 +31367,8 @@
       "oakland",
       "podcast",
       "xavier amin Dphrepaulezz"
-    ]
+    ],
+    "duration": 5193
   },
   {
     "number": null,
@@ -30595,7 +31407,8 @@
       "podcast en español",
       "seattle",
       "sweet 75"
-    ]
+    ],
+    "duration": 3440
   },
   {
     "number": null,
@@ -30627,7 +31440,8 @@
       "foo fighters",
       "play",
       "podcast en español"
-    ]
+    ],
+    "duration": 2429
   },
   {
     "number": null,
@@ -30657,7 +31471,8 @@
       "ealing",
       "Isaac Gracie",
       "podcast en español"
-    ]
+    ],
+    "duration": 3848
   },
   {
     "number": null,
@@ -30706,7 +31521,8 @@
       "rizoma",
       "test roschard",
       "veronica underluxe"
-    ]
+    ],
+    "duration": 3996
   },
   {
     "number": null,
@@ -30748,7 +31564,8 @@
       "jake kiszka",
       "josh kiszka",
       "robert plant"
-    ]
+    ],
+    "duration": 2790
   },
   {
     "number": null,
@@ -30805,7 +31622,8 @@
       "The Last Shadow Puppets",
       "the little flames",
       "the rascals"
-    ]
+    ],
+    "duration": 4206
   },
   {
     "number": null,
@@ -30854,7 +31672,8 @@
       "sara navarro",
       "Still Corners",
       "Wild Animals"
-    ]
+    ],
+    "duration": 6736
   },
   {
     "number": null,
@@ -30891,7 +31710,8 @@
       "The Lemon Twigs",
       "the sunday drivers",
       "virginia díaz"
-    ]
+    ],
+    "duration": 4089
   },
   {
     "number": null,
@@ -30941,7 +31761,8 @@
       "pinkpop",
       "Snow Patrol",
       "The Last Internationale"
-    ]
+    ],
+    "duration": 4203
   },
   {
     "number": null,
@@ -30974,7 +31795,8 @@
       "podcast en español",
       "ricky lavado",
       "standstill"
-    ]
+    ],
+    "duration": 5773
   },
   {
     "number": null,
@@ -31009,7 +31831,8 @@
       "paco perez bryan",
       "Pearl Jam",
       "talk to him"
-    ]
+    ],
+    "duration": 3917
   },
   {
     "number": null,
@@ -31047,7 +31870,8 @@
       "nin",
       "Pearl Jam",
       "radio 3"
-    ]
+    ],
+    "duration": 5411
   },
   {
     "number": null,
@@ -31084,7 +31908,8 @@
       "revolver",
       "santi camuñas",
       "seattle"
-    ]
+    ],
+    "duration": 5411
   },
   {
     "number": null,
@@ -31116,7 +31941,8 @@
       "podcast en español",
       "soul on fire",
       "The Last Internationale"
-    ]
+    ],
+    "duration": 1442
   },
   {
     "number": null,
@@ -31148,7 +31974,8 @@
       "nine inch nails",
       "podcast en español",
       "trent reznor"
-    ]
+    ],
+    "duration": 2879
   },
   {
     "number": null,
@@ -31177,7 +32004,8 @@
       "carlos pina",
       "no dogs",
       "podcast en español"
-    ]
+    ],
+    "duration": 5590
   },
   {
     "number": null,
@@ -31209,7 +32037,8 @@
       "podcast en español",
       "seattle",
       "sgt peppers"
-    ]
+    ],
+    "duration": 2251
   },
   {
     "number": null,
@@ -31260,7 +32089,8 @@
       "podcast en español",
       "rainier fog",
       "The Devil Put Dinosaurs Here"
-    ]
+    ],
+    "duration": 4427
   },
   {
     "number": null,
@@ -31311,7 +32141,8 @@
       "the rebels",
       "veronica underluxe",
       "vidal"
-    ]
+    ],
+    "duration": 3322
   },
   {
     "number": null,
@@ -31354,7 +32185,8 @@
       "ragnboneman",
       "rival sons",
       "underworld"
-    ]
+    ],
+    "duration": 2171
   },
   {
     "number": null,
@@ -31399,7 +32231,8 @@
       "nuria craham",
       "the bloody beetroots",
       "the white buffalo"
-    ]
+    ],
+    "duration": 2109
   },
   {
     "number": null,
@@ -31444,7 +32277,8 @@
       "Pearl Jam",
       "re-tros",
       "the last internacionales"
-    ]
+    ],
+    "duration": 2945
   },
   {
     "number": null,
@@ -31478,7 +32312,8 @@
       "red fox music",
       "smokerdieyoung",
       "the rebels"
-    ]
+    ],
+    "duration": 5470
   },
   {
     "number": null,
@@ -31516,7 +32351,8 @@
       "tad",
       "tad doyle",
       "Thomas Andrew Doyle"
-    ]
+    ],
+    "duration": 4645
   },
   {
     "number": null,
@@ -31553,7 +32389,8 @@
       "podcast en español",
       "radio 3",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 4134
   },
   {
     "number": null,
@@ -31586,7 +32423,8 @@
       "portfolio",
       "portishead",
       "simone"
-    ]
+    ],
+    "duration": 4705
   },
   {
     "number": null,
@@ -31623,7 +32461,8 @@
       "richard cheese",
       "Soundgarden",
       "steve eydie"
-    ]
+    ],
+    "duration": 2389
   },
   {
     "number": null,
@@ -31651,7 +32490,8 @@
       "matthew bellamy",
       "muse",
       "podcast en español"
-    ]
+    ],
+    "duration": 4776
   },
   {
     "number": null,
@@ -31685,7 +32525,8 @@
       "podcast en español",
       "Sheffield",
       "Tranquility Base Hotel & Casino"
-    ]
+    ],
+    "duration": 2243
   },
   {
     "number": null,
@@ -31721,7 +32562,8 @@
       "soak in bleach",
       "The Brotherhood of the Woodsmen",
       "zaca"
-    ]
+    ],
+    "duration": 4078
   },
   {
     "number": null,
@@ -31752,7 +32594,8 @@
       "podcast en español",
       "seattle",
       "Soundgarden"
-    ]
+    ],
+    "duration": 1690
   },
   {
     "number": null,
@@ -31785,7 +32628,8 @@
       "lluis rodes",
       "maria rodes",
       "una forma de hablar"
-    ]
+    ],
+    "duration": 4871
   },
   {
     "number": null,
@@ -31823,7 +32667,8 @@
       "seattle",
       "Soundgarden",
       "truly"
-    ]
+    ],
+    "duration": 3526
   },
   {
     "number": null,
@@ -31856,7 +32701,8 @@
       "Oasis",
       "podcast",
       "podcast en español"
-    ]
+    ],
+    "duration": 4951
   },
   {
     "number": null,
@@ -31907,7 +32753,8 @@
       "podcast",
       "podcast en español",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 3925
   },
   {
     "number": null,
@@ -31936,7 +32783,8 @@
       "desert trip",
       "pink floyd",
       "roger waters"
-    ]
+    ],
+    "duration": 5466
   },
   {
     "number": null,
@@ -31966,7 +32814,8 @@
       "podcast en español",
       "roger waters",
       "us and them"
-    ]
+    ],
+    "duration": 3663
   },
   {
     "number": null,
@@ -32014,7 +32863,8 @@
       "Tangerine Flavour",
       "texxcoco",
       "THE HIPSBREAKERS"
-    ]
+    ],
+    "duration": 5167
   },
   {
     "number": null,
@@ -32049,7 +32899,8 @@
       "seattle",
       "Soundgarden",
       "tearsinrain"
-    ]
+    ],
+    "duration": 5909
   },
   {
     "number": null,
@@ -32112,7 +32963,8 @@
       "the jesus lizard",
       "the shaggs",
       "the vaselines"
-    ]
+    ],
+    "duration": 4621
   },
   {
     "number": null,
@@ -32160,7 +33012,8 @@
       "soak in bleach",
       "the magic numbers",
       "vidal"
-    ]
+    ],
+    "duration": 2643
   },
   {
     "number": null,
@@ -32193,7 +33046,8 @@
       "jeff buckley",
       "podcast",
       "the nymphs"
-    ]
+    ],
+    "duration": 4105
   },
   {
     "number": null,
@@ -32225,7 +33079,8 @@
       "podcast en español",
       "Sheffield",
       "Tranquility Base Hotel & Casino"
-    ]
+    ],
+    "duration": 2655
   },
   {
     "number": null,
@@ -32263,7 +33118,8 @@
       "patti smith",
       "thurston moore",
       "Ángel Agudo"
-    ]
+    ],
+    "duration": 5867
   },
   {
     "number": null,
@@ -32325,7 +33181,8 @@
       "subterfuge",
       "Tommy Crimes",
       "Wipe Out Skaters"
-    ]
+    ],
+    "duration": 4624
   },
   {
     "number": null,
@@ -32359,7 +33216,8 @@
       "Melvins",
       "podcast",
       "Rufus T. Firefly"
-    ]
+    ],
+    "duration": 4624
   },
   {
     "number": null,
@@ -32393,7 +33251,8 @@
       "nada surf",
       "the sonics",
       "thurston moore"
-    ]
+    ],
+    "duration": 4149
   },
   {
     "number": null,
@@ -32424,7 +33283,8 @@
       "rosendo",
       "rtve",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 3961
   },
   {
     "number": null,
@@ -32464,7 +33324,8 @@
       "Staind",
       "tracy bonham",
       "veruca salt"
-    ]
+    ],
+    "duration": 3930
   },
   {
     "number": null,
@@ -32503,7 +33364,8 @@
       "mujeres del rock",
       "redbook ediciones",
       "salvador dali"
-    ]
+    ],
+    "duration": 5938
   },
   {
     "number": null,
@@ -32531,7 +33393,8 @@
       "eric gales",
       "jimi hendrix",
       "podcast"
-    ]
+    ],
+    "duration": 5161
   },
   {
     "number": null,
@@ -32567,7 +33430,8 @@
       "podcast",
       "simone",
       "Stone Temple Pilots"
-    ]
+    ],
+    "duration": 3700
   },
   {
     "number": null,
@@ -32598,7 +33462,8 @@
       "mark oliver everett",
       "mister e",
       "the deconstruction"
-    ]
+    ],
+    "duration": 3082
   },
   {
     "number": null,
@@ -32631,7 +33496,8 @@
       "manu cabezali",
       "Rufus T. Firefly",
       "victorcabezuelo"
-    ]
+    ],
+    "duration": 5005
   },
   {
     "number": null,
@@ -32664,7 +33530,8 @@
       "Mow",
       "podcast",
       "subterfuge"
-    ]
+    ],
+    "duration": 3484
   },
   {
     "number": null,
@@ -32694,7 +33561,8 @@
       "jbdunckel",
       "Jean Benoit Duncke",
       "nicolas godin"
-    ]
+    ],
+    "duration": 3326
   },
   {
     "number": null,
@@ -32745,7 +33613,8 @@
       "tu otra bonita",
       "una semana en el motor de un autobús",
       "vidal"
-    ]
+    ],
+    "duration": 7805
   },
   {
     "number": 364,
@@ -32961,7 +33830,8 @@
       "jack white",
       "live",
       "NY"
-    ]
+    ],
+    "duration": 7324
   },
   {
     "number": null,
@@ -32991,7 +33861,8 @@
       "daniel arias",
       "darwinians radio bike",
       "pasajero"
-    ]
+    ],
+    "duration": 2136
   },
   {
     "number": null,
@@ -33031,7 +33902,8 @@
       "radio 3",
       "Radiohead",
       "rtve"
-    ]
+    ],
+    "duration": 3947
   },
   {
     "number": null,
@@ -33060,7 +33932,8 @@
       "grunge",
       "Pearl Jam",
       "seattle"
-    ]
+    ],
+    "duration": 7152
   },
   {
     "number": null,
@@ -33113,7 +33986,8 @@
       "nevermind",
       "nirvana",
       "seattle"
-    ]
+    ],
+    "duration": 4714
   },
   {
     "number": null,
@@ -33141,7 +34015,8 @@
       "liam gallagher",
       "noel gallagher",
       "Oasis"
-    ]
+    ],
+    "duration": 3814
   },
   {
     "number": null,
@@ -33168,7 +34043,8 @@
       "Boarding House Reach",
       "jack white",
       "mad cool"
-    ]
+    ],
+    "duration": 2816
   },
   {
     "number": null,
@@ -33196,7 +34072,8 @@
       "los suspiros de ramallah",
       "rondo",
       "victor tarin"
-    ]
+    ],
+    "duration": 2635
   },
   {
     "number": null,
@@ -33224,7 +34101,8 @@
       "elba fernandez",
       "jane joyd",
       "mordem"
-    ]
+    ],
+    "duration": 3959
   },
   {
     "number": null,
@@ -33259,7 +34137,8 @@
       "palau sant jordi",
       "robert trujillo",
       "wizink center"
-    ]
+    ],
+    "duration": 8826
   },
   {
     "number": null,
@@ -33298,7 +34177,8 @@
       "red hot chili peppers",
       "rgtrn",
       "soles y pingüinos"
-    ]
+    ],
+    "duration": 2224
   },
   {
     "number": null,
@@ -33329,7 +34209,8 @@
       "tacoma",
       "the devils",
       "the sonics"
-    ]
+    ],
+    "duration": 2426
   },
   {
     "number": null,
@@ -33365,7 +34246,8 @@
       "podcast",
       "ramones",
       "seattle"
-    ]
+    ],
+    "duration": 3802
   },
   {
     "number": null,
@@ -33396,7 +34278,8 @@
       "kim deal",
       "pixies",
       "the breeders"
-    ]
+    ],
+    "duration": 2658
   },
   {
     "number": null,
@@ -33430,7 +34313,8 @@
       "the magic numbers",
       "The Smashing Pumpkins",
       "veronica underluxe"
-    ]
+    ],
+    "duration": 5707
   },
   {
     "number": null,
@@ -33460,7 +34344,8 @@
       "madrid",
       "nada surf",
       "popular"
-    ]
+    ],
+    "duration": 2800
   },
   {
     "number": null,
@@ -33495,7 +34380,8 @@
       "paco seren",
       "poligamia",
       "ultrasonica"
-    ]
+    ],
+    "duration": 5108
   },
   {
     "number": null,
@@ -33535,7 +34421,8 @@
       "The Urban Voodoo Machine",
       "valtonyc",
       "Zara Mcfarlane"
-    ]
+    ],
+    "duration": 5449
   },
   {
     "number": null,
@@ -33566,7 +34453,8 @@
       "nirvana",
       "seattle",
       "Soundgarden"
-    ]
+    ],
+    "duration": 3454
   },
   {
     "number": null,
@@ -33594,7 +34482,8 @@
       "darwinians raido bike",
       "tampopo",
       "vidal"
-    ]
+    ],
+    "duration": 5997
   },
   {
     "number": null,
@@ -33626,7 +34515,8 @@
       "holy bouncer",
       "mad cool",
       "primavera sound"
-    ]
+    ],
+    "duration": 4603
   },
   {
     "number": null,
@@ -33657,7 +34547,8 @@
       "nuevenoventaicinco",
       "pasajero",
       "zoo"
-    ]
+    ],
+    "duration": 5763
   },
   {
     "number": null,
@@ -33690,7 +34581,8 @@
       "podcast",
       "radio",
       "The Smashing Pumkins"
-    ]
+    ],
+    "duration": 3566
   },
   {
     "number": null,
@@ -33728,7 +34620,8 @@
       "temple of the dog",
       "Three Fish",
       "tres mts"
-    ]
+    ],
+    "duration": 3395
   },
   {
     "number": null,
@@ -33759,7 +34652,8 @@
       "madrid",
       "metallica",
       "wizink center"
-    ]
+    ],
+    "duration": 6540
   },
   {
     "number": null,
@@ -33793,7 +34687,8 @@
       "singles",
       "Soundgarden",
       "truly"
-    ]
+    ],
+    "duration": 4626
   },
   {
     "number": null,
@@ -33825,7 +34720,8 @@
       "fito garate",
       "Natasha Shneider",
       "Unfinished Plan"
-    ]
+    ],
+    "duration": 4055
   },
   {
     "number": null,
@@ -33854,7 +34750,8 @@
       "bienvenido a lo 90",
       "lejoule",
       "rick & vera"
-    ]
+    ],
+    "duration": 2168
   },
   {
     "number": null,
@@ -33884,7 +34781,8 @@
       "load",
       "metallica",
       "reload"
-    ]
+    ],
+    "duration": 3936
   },
   {
     "number": null,
@@ -33923,7 +34821,8 @@
       "podcast",
       "Psychodrome",
       "radio"
-    ]
+    ],
+    "duration": 2675
   },
   {
     "number": null,
@@ -33962,7 +34861,8 @@
       "podcast",
       "radio",
       "sala el sol"
-    ]
+    ],
+    "duration": 1700
   },
   {
     "number": null,
@@ -33996,7 +34896,8 @@
       "kennedy",
       "podcast",
       "radio"
-    ]
+    ],
+    "duration": 1455
   },
   {
     "number": null,
@@ -34036,7 +34937,8 @@
       "the beatles",
       "The Byrds",
       "The Nits"
-    ]
+    ],
+    "duration": 2503
   },
   {
     "number": null,
@@ -34075,7 +34977,8 @@
       "screaming trees",
       "seattle",
       "temple of the dog"
-    ]
+    ],
+    "duration": 3797
   },
   {
     "number": null,
@@ -34118,7 +35021,8 @@
       "simone",
       "the beatles",
       "victorcabezuelo"
-    ]
+    ],
+    "duration": 1503
   },
   {
     "number": null,
@@ -34175,7 +35079,8 @@
       "mordem",
       "Rufus T. Firefly",
       "sex sodio sullivan"
-    ]
+    ],
+    "duration": 6487
   },
   {
     "number": null,
@@ -34222,7 +35127,8 @@
       "mudhoney",
       "pasajero",
       "subpop"
-    ]
+    ],
+    "duration": 2930
   },
   {
     "number": null,
@@ -34258,7 +35164,8 @@
       "ok computer revisited",
       "podcast",
       "Radiohead"
-    ]
+    ],
+    "duration": 1567
   },
   {
     "number": null,
@@ -34316,7 +35223,8 @@
       "She rose from the dead",
       "Solo Astra",
       "St.Woods"
-    ]
+    ],
+    "duration": 6855
   },
   {
     "number": null,
@@ -34366,7 +35274,8 @@
       "Radiohead",
       "The Smashing Pumpkins",
       "the who"
-    ]
+    ],
+    "duration": 3012
   },
   {
     "number": null,
@@ -34399,7 +35308,8 @@
       "policia",
       "radio",
       "thecranberries"
-    ]
+    ],
+    "duration": 1480
   },
   {
     "number": null,
@@ -34432,7 +35342,8 @@
       "jim vieco",
       "saturna",
       "tearsinrain"
-    ]
+    ],
+    "duration": 2451
   },
   {
     "number": null,
@@ -34460,7 +35371,8 @@
       "bienvenidoalo 90",
       "podcast",
       "radio"
-    ]
+    ],
+    "duration": 2037
   },
   {
     "number": null,
@@ -34507,7 +35419,8 @@
       "thebreeders",
       "warhaus",
       "yeahrs"
-    ]
+    ],
+    "duration": 2249
   },
   {
     "number": null,
@@ -34542,7 +35455,8 @@
       "nirvana",
       "patsmear",
       "seattle"
-    ]
+    ],
+    "duration": 2383
   },
   {
     "number": null,
@@ -34576,7 +35490,8 @@
       "podcast",
       "radio",
       "thesmashingpumpkins"
-    ]
+    ],
+    "duration": 3113
   },
   {
     "number": null,
@@ -34604,7 +35519,8 @@
       "edisdead",
       "nin",
       "thesinner"
-    ]
+    ],
+    "duration": 1942
   },
   {
     "number": null,
@@ -34645,7 +35561,8 @@
       "radio",
       "radio 3",
       "ringo starr"
-    ]
+    ],
+    "duration": 4977
   },
   {
     "number": null,
@@ -34683,7 +35600,8 @@
       "radio",
       "radio 3",
       "rompehielos"
-    ]
+    ],
+    "duration": 8025
   },
   {
     "number": null,
@@ -34729,7 +35647,8 @@
       "Radiohead",
       "rondo",
       "vidal"
-    ]
+    ],
+    "duration": 2714
   },
   {
     "number": null,
@@ -34771,7 +35690,8 @@
       "moby",
       "moses rubin",
       "the beatles"
-    ]
+    ],
+    "duration": 5509
   },
   {
     "number": null,
@@ -34831,7 +35751,8 @@
       "rufustfirefly",
       "thebeatles",
       "therebels"
-    ]
+    ],
+    "duration": 5215
   },
   {
     "number": null,
@@ -34870,7 +35791,8 @@
       "radio",
       "ringostarr",
       "sexysadie"
-    ]
+    ],
+    "duration": 5437
   },
   {
     "number": null,
@@ -34915,7 +35837,8 @@
       "radio",
       "sonicyouth",
       "ThurstonMoore"
-    ]
+    ],
+    "duration": 5529
   },
   {
     "number": null,
@@ -34949,7 +35872,8 @@
       "podcast",
       "radio",
       "whobuiltthemoon"
-    ]
+    ],
+    "duration": 5175
   },
   {
     "number": null,
@@ -34988,7 +35912,8 @@
       "sexpistols",
       "subterfuge",
       "yl48h"
-    ]
+    ],
+    "duration": 5798
   },
   {
     "number": null,
@@ -35023,7 +35948,8 @@
       "radio",
       "santiagocasares",
       "thebeatles"
-    ]
+    ],
+    "duration": 6305
   },
   {
     "number": null,
@@ -35055,7 +35981,8 @@
       "podcast",
       "rondo",
       "vickblackkeys"
-    ]
+    ],
+    "duration": 4697
   },
   {
     "number": null,
@@ -35094,7 +36021,8 @@
       "radio",
       "smokersdieyoung",
       "theleveewalkers"
-    ]
+    ],
+    "duration": 5275
   },
   {
     "number": null,
@@ -35138,7 +36066,8 @@
       "siriusxm",
       "thebeatles",
       "TomPetty"
-    ]
+    ],
+    "duration": 5538
   },
   {
     "number": null,
@@ -35171,7 +36100,8 @@
       "darwiniansradiobike",
       "smokersdieyoung",
       "therebels"
-    ]
+    ],
+    "duration": 5991
   },
   {
     "number": null,
@@ -35231,7 +36161,8 @@
       "Soundgarden",
       "thebeatles",
       "TomPetty"
-    ]
+    ],
+    "duration": 6178
   },
   {
     "number": null,
@@ -35265,7 +36196,8 @@
       "rickrubin",
       "thesmashingpumpkins",
       "williampatrickcorgan"
-    ]
+    ],
+    "duration": 2718
   },
   {
     "number": null,
@@ -35304,7 +36236,8 @@
       "radio",
       "RogerWaters",
       "TomPetty"
-    ]
+    ],
+    "duration": 5818
   },
   {
     "number": null,
@@ -35339,7 +36272,8 @@
       "podcast",
       "programa",
       "radio"
-    ]
+    ],
+    "duration": 3698
   },
   {
     "number": null,
@@ -35379,7 +36313,8 @@
       "pacosoto",
       "prozack",
       "weezer elquintoelemento"
-    ]
+    ],
+    "duration": 5774
   },
   {
     "number": null,
@@ -35419,7 +36354,8 @@
       "petedoherty",
       "ride",
       "theverve"
-    ]
+    ],
+    "duration": 5724
   },
   {
     "number": null,
@@ -35454,7 +36390,8 @@
       "martinfrias",
       "prozack",
       "salvadordali"
-    ]
+    ],
+    "duration": 5844
   },
   {
     "number": null,
@@ -35493,7 +36430,8 @@
       "podcast",
       "radio",
       "Radiohead"
-    ]
+    ],
+    "duration": 6069
   },
   {
     "number": null,
@@ -35528,7 +36466,8 @@
       "paulmccartney",
       "podcast",
       "radio"
-    ]
+    ],
+    "duration": 3260
   },
   {
     "number": null,
@@ -35596,7 +36535,8 @@
       "seattle",
       "subpop",
       "theAfghanWhigs"
-    ]
+    ],
+    "duration": 7603
   },
   {
     "number": null,
@@ -35639,7 +36579,8 @@
       "thegits",
       "u2",
       "virginiadiaz"
-    ]
+    ],
+    "duration": 5319
   },
   {
     "number": null,
@@ -35680,7 +36621,8 @@
       "rafacervera",
       "stevedouble",
       "valencia"
-    ]
+    ],
+    "duration": 6060
   },
   {
     "number": null,
@@ -35715,7 +36657,8 @@
       "radio",
       "Radiohead",
       "thomyorke"
-    ]
+    ],
+    "duration": 3495
   },
   {
     "number": null,
@@ -35750,7 +36693,8 @@
       "foofightersmadrid",
       "madcool",
       "madrid"
-    ]
+    ],
+    "duration": 4053
   },
   {
     "number": null,
@@ -35793,7 +36737,8 @@
       "ragnboneman",
       "ride",
       "thelemontwigs"
-    ]
+    ],
+    "duration": 6380
   },
   {
     "number": null,
@@ -35859,7 +36804,8 @@
       "superskinny",
       "tearsinrain",
       "vidal"
-    ]
+    ],
+    "duration": 6319
   },
   {
     "number": null,
@@ -35912,7 +36858,8 @@
       "radioutopia",
       "Sparklehorse",
       "thomyorke"
-    ]
+    ],
+    "duration": 5167
   },
   {
     "number": null,
@@ -35954,7 +36901,8 @@
       "prozack",
       "snakesister",
       "THE HIPSBREAKERS"
-    ]
+    ],
+    "duration": 6063
   },
   {
     "number": null,
@@ -35997,7 +36945,8 @@
       "singles",
       "Soundgarden",
       "virginiadiaz"
-    ]
+    ],
+    "duration": 6750
   },
   {
     "number": null,
@@ -36034,7 +36983,8 @@
       "radio",
       "Radiohead",
       "radioutopia"
-    ]
+    ],
+    "duration": 4884
   },
   {
     "number": null,
@@ -36075,7 +37025,8 @@
       "radio",
       "Radiohead",
       "thomyorke"
-    ]
+    ],
+    "duration": 3963
   },
   {
     "number": null,
@@ -36123,7 +37074,8 @@
       "Soundgarden",
       "tenclub",
       "virginiadíaz"
-    ]
+    ],
+    "duration": 5599
   },
   {
     "number": null,
@@ -36167,7 +37119,8 @@
       "riowolf",
       "seattle",
       "Soundgarden"
-    ]
+    ],
+    "duration": 6601
   },
   {
     "number": null,
@@ -36204,7 +37157,8 @@
       "seattle",
       "Soundgarden",
       "templeofthedog"
-    ]
+    ],
+    "duration": 5302
   },
   {
     "number": null,
@@ -36247,7 +37201,8 @@
       "seattle",
       "Soundgarden",
       "templeofthedog"
-    ]
+    ],
+    "duration": 5591
   },
   {
     "number": null,
@@ -36287,7 +37242,8 @@
       "sigurrós",
       "virgen",
       "von"
-    ]
+    ],
+    "duration": 4687
   },
   {
     "number": null,
@@ -36348,7 +37304,8 @@
       "rufustfirefly",
       "starwars",
       "starwars40"
-    ]
+    ],
+    "duration": 5437
   },
   {
     "number": null,
@@ -36386,7 +37343,8 @@
       "offspring",
       "smash",
       "strawberryhardcore"
-    ]
+    ],
+    "duration": 6045
   },
   {
     "number": null,
@@ -36435,7 +37393,8 @@
       "rufustfirefly",
       "salabur",
       "virginiadíaz"
-    ]
+    ],
+    "duration": 5333
   },
   {
     "number": null,
@@ -36471,7 +37430,8 @@
       "radio",
       "radioutopia",
       "RockandRollHallofFame"
-    ]
+    ],
+    "duration": 2802
   },
   {
     "number": null,
@@ -36521,7 +37481,8 @@
       "RockandRollHallofFame",
       "seattlealive",
       "TheHipsbreakers"
-    ]
+    ],
+    "duration": 5069
   },
   {
     "number": null,
@@ -36564,7 +37525,8 @@
       "radioutopia",
       "victorlenore",
       "zonatemporalmenteautonoma"
-    ]
+    ],
+    "duration": 5519
   },
   {
     "number": null,
@@ -36606,7 +37568,8 @@
       "NanciGriffith",
       "podcast",
       "radioutopia"
-    ]
+    ],
+    "duration": 4374
   },
   {
     "number": null,
@@ -36662,7 +37625,8 @@
       "radio",
       "radioutopia",
       "spirit"
-    ]
+    ],
+    "duration": 5565
   },
   {
     "number": null,
@@ -36698,7 +37662,8 @@
       "dover",
       "radioutopia",
       "TheHipsbreakers"
-    ]
+    ],
+    "duration": 4816
   },
   {
     "number": null,
@@ -36740,7 +37705,8 @@
       "radio",
       "radioutopia",
       "subterfuge"
-    ]
+    ],
+    "duration": 5546
   },
   {
     "number": null,
@@ -36800,7 +37766,8 @@
       "summertime",
       "undershakers",
       "wildthing"
-    ]
+    ],
+    "duration": 5689
   },
   {
     "number": null,
@@ -36861,7 +37828,8 @@
       "radioutopia",
       "redrocket7",
       "thegear"
-    ]
+    ],
+    "duration": 5209
   },
   {
     "number": null,
@@ -36897,7 +37865,8 @@
       "radioutopia",
       "tarantino",
       "urgeoverkill"
-    ]
+    ],
+    "duration": 5004
   },
   {
     "number": null,
@@ -36960,7 +37929,8 @@
       "shaggs",
       "thefrogs",
       "vaselines"
-    ]
+    ],
+    "duration": 4681
   },
   {
     "number": null,
@@ -37021,7 +37991,8 @@
       "rufustfirefly",
       "thecabriolets",
       "thomb"
-    ]
+    ],
+    "duration": 5783
   },
   {
     "number": null,
@@ -37054,7 +38025,8 @@
       "podcast",
       "radio",
       "radioutopia"
-    ]
+    ],
+    "duration": 6127
   },
   {
     "number": null,
@@ -37094,7 +38066,8 @@
       "ringostarr",
       "SgtPeppersLonelyHeartsClubBand",
       "thebeatles"
-    ]
+    ],
+    "duration": 5327
   },
   {
     "number": null,
@@ -37131,7 +38104,8 @@
       "podcast",
       "radio",
       "radioutopia"
-    ]
+    ],
+    "duration": 5444
   },
   {
     "number": null,
@@ -37191,7 +38165,8 @@
       "silverchair",
       "smashingpumpkins",
       "tearsinrain"
-    ]
+    ],
+    "duration": 5367
   },
   {
     "number": null,
@@ -37231,7 +38206,8 @@
       "radio3",
       "tve",
       "virginiadíaz"
-    ]
+    ],
+    "duration": 4760
   },
   {
     "number": null,
@@ -37275,7 +38251,8 @@
       "SantiagoTalavera",
       "venusnoes",
       "veronicaunderluxe"
-    ]
+    ],
+    "duration": 5679
   },
   {
     "number": null,
@@ -37346,7 +38323,8 @@
       "radioutopia",
       "smashingpumpkins",
       "villancicosrockeros"
-    ]
+    ],
+    "duration": 4925
   },
   {
     "number": null,
@@ -37387,7 +38365,8 @@
       "radio",
       "thebeatles",
       "TheWinnerys"
-    ]
+    ],
+    "duration": 7022
   },
   {
     "number": null,
@@ -37446,7 +38425,8 @@
       "radioutopia",
       "ramones",
       "sonicyouth"
-    ]
+    ],
+    "duration": 5131
   },
   {
     "number": null,
@@ -37489,7 +38469,8 @@
       "sexysadie",
       "smashingpumpkins",
       "terrorvision"
-    ]
+    ],
+    "duration": 6717
   },
   {
     "number": null,
@@ -37524,7 +38505,8 @@
       "seattle",
       "subpop",
       "tad"
-    ]
+    ],
+    "duration": 5289
   },
   {
     "number": null,
@@ -37575,7 +38557,8 @@
       "radioutopia",
       "rockfm",
       "virgen"
-    ]
+    ],
+    "duration": 6110
   },
   {
     "number": null,
@@ -37633,7 +38616,8 @@
       "podcast",
       "stonegossard",
       "templeofthedog"
-    ]
+    ],
+    "duration": 5463
   },
   {
     "number": null,
@@ -37678,7 +38662,8 @@
       "sherylcrow",
       "shirleybassey",
       "tinaturner"
-    ]
+    ],
+    "duration": 5409
   },
   {
     "number": null,
@@ -37722,7 +38707,8 @@
       "omega",
       "podcast",
       "radioutopia"
-    ]
+    ],
+    "duration": 7165
   },
   {
     "number": null,
@@ -37761,7 +38747,8 @@
       "podcast",
       "radio",
       "radioutopia"
-    ]
+    ],
+    "duration": 6223
   },
   {
     "number": null,
@@ -37802,7 +38789,8 @@
       "radioutopia",
       "REM",
       "travis"
-    ]
+    ],
+    "duration": 3554
   },
   {
     "number": null,
@@ -37845,7 +38833,8 @@
       "supergrass",
       "theverve",
       "wigan"
-    ]
+    ],
+    "duration": 5270
   },
   {
     "number": null,
@@ -37890,7 +38879,8 @@
       "seattle",
       "Soundgarden",
       "templeofthedog"
-    ]
+    ],
+    "duration": 3816
   },
   {
     "number": null,
@@ -37930,7 +38920,8 @@
       "loureed",
       "radioutopia",
       "sexodrogasyrock"
-    ]
+    ],
+    "duration": 5718
   },
   {
     "number": null,
@@ -37964,7 +38955,8 @@
       "nirvana",
       "podcast",
       "radioutopia"
-    ]
+    ],
+    "duration": 5386
   },
   {
     "number": null,
@@ -38001,7 +38993,8 @@
       "podcast",
       "radio3",
       "radioutopia"
-    ]
+    ],
+    "duration": 10601
   },
   {
     "number": null,
@@ -38069,7 +39062,8 @@
       "radioutopia",
       "templeofthedog",
       "zackdelarocha"
-    ]
+    ],
+    "duration": 5242
   },
   {
     "number": null,
@@ -38105,7 +39099,8 @@
       "revolver",
       "ringo",
       "thebeatles"
-    ]
+    ],
+    "duration": 6544
   },
   {
     "number": null,
@@ -38163,7 +39158,8 @@
       "pearljam",
       "radioutopia",
       "urgeoverkill"
-    ]
+    ],
+    "duration": 5178
   },
   {
     "number": null,
@@ -38228,7 +39224,8 @@
       "radioutopia",
       "riotgrrrl",
       "thefastbacks"
-    ]
+    ],
+    "duration": 7370
   },
   {
     "number": null,
@@ -38265,7 +39262,8 @@
       "Radiohead",
       "radiouto",
       "thomyorke"
-    ]
+    ],
+    "duration": 5480
   },
   {
     "number": null,
@@ -38306,7 +39304,8 @@
       "podcast",
       "radio",
       "radioutopia"
-    ]
+    ],
+    "duration": 5617
   },
   {
     "number": null,
@@ -38342,7 +39341,8 @@
       "sundaydrivers",
       "thesundaydrivers",
       "victorcalderon"
-    ]
+    ],
+    "duration": 5158
   },
   {
     "number": null,
@@ -38407,7 +39407,8 @@
       "radioutopia",
       "underworld",
       "zztop"
-    ]
+    ],
+    "duration": 7102
   },
   {
     "number": null,
@@ -38440,7 +39441,8 @@
       "insitufestival",
       "podcast",
       "radioutopia"
-    ]
+    ],
+    "duration": 3405
   },
   {
     "number": null,
@@ -38483,7 +39485,8 @@
       "promiseofthereal",
       "radio",
       "radioutopia"
-    ]
+    ],
+    "duration": 5223
   },
   {
     "number": null,
@@ -38524,7 +39527,8 @@
       "seattle",
       "stonegossard",
       "vs"
-    ]
+    ],
+    "duration": 5965
   },
   {
     "number": null,
@@ -38569,7 +39573,8 @@
       "radioutopia",
       "russianred",
       "zeporock"
-    ]
+    ],
+    "duration": 4896
   },
   {
     "number": null,
@@ -38611,7 +39616,8 @@
       "thomyorke",
       "victorcabezuelo",
       "vidal"
-    ]
+    ],
+    "duration": 4399
   },
   {
     "number": null,
@@ -38648,7 +39654,8 @@
       "ram",
       "richardashcroft",
       "thesedays"
-    ]
+    ],
+    "duration": 6158
   },
   {
     "number": null,
@@ -38684,7 +39691,8 @@
       "radio",
       "radioutopia",
       "thisishistory"
-    ]
+    ],
+    "duration": 8308
   },
   {
     "number": null,
@@ -38724,7 +39732,8 @@
       "radio",
       "radioutopia",
       "StandingOnTheShoulderOfGiants"
-    ]
+    ],
+    "duration": 8613
   },
   {
     "number": null,
@@ -38766,7 +39775,8 @@
       "radioutopia",
       "terminator2",
       "Trainspotting"
-    ]
+    ],
+    "duration": 5251
   },
   {
     "number": null,
@@ -38805,7 +39815,8 @@
       "podcast",
       "radio",
       "radioutopia"
-    ]
+    ],
+    "duration": 5291
   },
   {
     "number": null,
@@ -38839,7 +39850,8 @@
       "Radiohead",
       "radioutopia",
       "thomyorke"
-    ]
+    ],
+    "duration": 5724
   },
   {
     "number": null,
@@ -38875,7 +39887,8 @@
       "radioutopia",
       "ramones",
       "veronicaunderluxe"
-    ]
+    ],
+    "duration": 5148
   },
   {
     "number": null,
@@ -38915,7 +39928,8 @@
       "ratm",
       "richardashcroft",
       "templeofthedog"
-    ]
+    ],
+    "duration": 5558
   },
   {
     "number": null,
@@ -38958,7 +39972,8 @@
       "podcast",
       "radio",
       "santjordiclub"
-    ]
+    ],
+    "duration": 5383
   },
   {
     "number": null,
@@ -38996,7 +40011,8 @@
       "Oasis",
       "radioutopia",
       "santjordiclub"
-    ]
+    ],
+    "duration": 5132
   },
   {
     "number": null,
@@ -39037,7 +40053,8 @@
       "nirvana",
       "padrino",
       "radioutopia"
-    ]
+    ],
+    "duration": 5327
   },
   {
     "number": null,
@@ -39071,7 +40088,8 @@
       "elmejordetantos",
       "radioutopia",
       "venusnoes"
-    ]
+    ],
+    "duration": 4945
   },
   {
     "number": null,
@@ -39109,7 +40127,8 @@
       "threemountains",
       "TresMts",
       "TribeAfterTribe"
-    ]
+    ],
+    "duration": 5864
   },
   {
     "number": null,
@@ -39152,7 +40171,8 @@
       "Soundgarden",
       "TheUMen",
       "tinacasale"
-    ]
+    ],
+    "duration": 9227
   },
   {
     "number": null,
@@ -39191,7 +40211,8 @@
       "radioutopia",
       "thebeatles",
       "virginiadíaz"
-    ]
+    ],
+    "duration": 6003
   },
   {
     "number": null,
@@ -39233,7 +40254,8 @@
       "seattle",
       "stonegossard",
       "vitalogy"
-    ]
+    ],
+    "duration": 5325
   },
   {
     "number": null,
@@ -39269,7 +40291,8 @@
       "noelgallagher",
       "Oasis",
       "radioutopia"
-    ]
+    ],
+    "duration": 9182
   },
   {
     "number": null,
@@ -39326,7 +40349,8 @@
       "live",
       "paradiso",
       "radioutopia"
-    ]
+    ],
+    "duration": 5591
   },
   {
     "number": null,
@@ -39361,7 +40385,8 @@
       "radioutopia",
       "samolivares",
       "thejeevas"
-    ]
+    ],
+    "duration": 5936
   },
   {
     "number": null,
@@ -39401,7 +40426,8 @@
       "radioutopia",
       "strangefolk",
       "Winterhart"
-    ]
+    ],
+    "duration": 4677
   },
   {
     "number": null,
@@ -39438,7 +40464,8 @@
       "k20",
       "kulashaker",
       "radioutopia"
-    ]
+    ],
+    "duration": 8990
   },
   {
     "number": null,
@@ -39473,7 +40500,8 @@
       "podcast",
       "radio",
       "radioutopia"
-    ]
+    ],
+    "duration": 7336
   },
   {
     "number": null,
@@ -39515,7 +40543,8 @@
       "madcoolfestival",
       "pennynecklace",
       "radioutopia"
-    ]
+    ],
+    "duration": 10377
   },
   {
     "number": null,
@@ -39577,7 +40606,8 @@
       "thelazylies",
       "yay",
       "yoestratosferico"
-    ]
+    ],
+    "duration": 4847
   },
   {
     "number": null,
@@ -39621,7 +40651,8 @@
       "popular1",
       "radioutopia",
       "rafacervera"
-    ]
+    ],
+    "duration": 7160
   },
   {
     "number": null,
@@ -39661,7 +40692,8 @@
       "radioutopia",
       "virginiadíaz",
       "whatsthestorymorningglory"
-    ]
+    ],
+    "duration": 11235
   },
   {
     "number": null,
@@ -39692,7 +40724,8 @@
       "bienvenidoalos90",
       "pacoperezbryan",
       "radioutopia"
-    ]
+    ],
+    "duration": 4925
   },
   {
     "number": null,
@@ -39727,7 +40760,8 @@
       "RichardWright",
       "RogerWaters",
       "SydBarret"
-    ]
+    ],
+    "duration": 9575
   },
   {
     "number": null,
@@ -39760,7 +40794,8 @@
       "manuelcabezali",
       "radioutopia",
       "sugarkane"
-    ]
+    ],
+    "duration": 6168
   },
   {
     "number": null,
@@ -39796,7 +40831,8 @@
       "scottweiland",
       "StoneTemplePilots",
       "VelvetRevolver"
-    ]
+    ],
+    "duration": 7168
   },
   {
     "number": null,
@@ -39832,7 +40868,8 @@
       "rafacervera",
       "sonicyouth",
       "ThurstonMoore"
-    ]
+    ],
+    "duration": 6370
   },
   {
     "number": null,
@@ -39886,7 +40923,8 @@
       "radioutopia",
       "rockdelux",
       "salacanciller"
-    ]
+    ],
+    "duration": 13394
   },
   {
     "number": null,
@@ -39923,7 +40961,8 @@
       "radioutopia",
       "sexysadie",
       "srnadie"
-    ]
+    ],
+    "duration": 3331
   },
   {
     "number": null,
@@ -39960,7 +40999,8 @@
       "popu",
       "popular1",
       "radiopalafolls"
-    ]
+    ],
+    "duration": 5452
   },
   {
     "number": null,
@@ -40013,7 +41053,8 @@
       "srnadie",
       "TheRollingStones",
       "TheWinnerys"
-    ]
+    ],
+    "duration": 5163
   },
   {
     "number": null,
@@ -40044,7 +41085,8 @@
     "comments": 6,
     "likes": 11,
     "plays": 1400,
-    "labels": []
+    "labels": [],
+    "duration": 8731
   },
   {
     "number": null,
@@ -40081,7 +41123,8 @@
       "polsaguera",
       "radioutopia",
       "virgen"
-    ]
+    ],
+    "duration": 5508
   },
   {
     "number": null,
@@ -40119,7 +41162,8 @@
       "nirvana",
       "radioutopia",
       "TomPetty"
-    ]
+    ],
+    "duration": 5119
   },
   {
     "number": null,
@@ -40159,7 +41203,8 @@
       "pacoperezbryan",
       "radioutopia",
       "therain"
-    ]
+    ],
+    "duration": 5051
   },
   {
     "number": null,
@@ -40195,7 +41240,8 @@
       "radioutopia",
       "REM michaelstipe",
       "Rock"
-    ]
+    ],
+    "duration": 5013
   },
   {
     "number": null,
@@ -40237,7 +41283,8 @@
       "ripmagazine",
       "Soundgarden",
       "temple of the dog"
-    ]
+    ],
+    "duration": 10505
   },
   {
     "number": null,
@@ -40276,7 +41323,8 @@
       "radioutopia",
       "SimosFowler",
       "stevecradock"
-    ]
+    ],
+    "duration": 9758
   },
   {
     "number": null,
@@ -40311,7 +41359,8 @@
       "jellybullet",
       "miracleelixir",
       "radioutopia"
-    ]
+    ],
+    "duration": 12131
   },
   {
     "number": null,
@@ -40350,7 +41399,8 @@
       "srnadie",
       "subterfuge",
       "surfinbichos"
-    ]
+    ],
+    "duration": 4657
   },
   {
     "number": null,
@@ -40408,7 +41458,8 @@
       "surfanddestroy",
       "templeofthedog",
       "thebutts"
-    ]
+    ],
+    "duration": 4919
   },
   {
     "number": null,
@@ -40443,7 +41494,8 @@
       "shojiyamashiro",
       "tetsuo",
       "youngmagazine"
-    ]
+    ],
+    "duration": 5421
   },
   {
     "number": null,
@@ -40484,7 +41536,8 @@
       "pacoperezbryan",
       "radioutopia",
       "seattle"
-    ]
+    ],
+    "duration": 5375
   },
   {
     "number": null,
@@ -40522,7 +41575,8 @@
       "ruda",
       "thebuzzlovers",
       "trickortreat"
-    ]
+    ],
+    "duration": 5036
   },
   {
     "number": null,
@@ -40563,7 +41617,8 @@
       "radio3",
       "radioutopia",
       "wilddog"
-    ]
+    ],
+    "duration": 8322
   },
   {
     "number": null,
@@ -40594,7 +41649,8 @@
       "mikepatton",
       "mrbungle",
       "radioutopia"
-    ]
+    ],
+    "duration": 7281
   },
   {
     "number": null,
@@ -40655,7 +41711,8 @@
       "nirvana",
       "palaciodelosdeportes",
       "unreleased"
-    ]
+    ],
+    "duration": 4534
   },
   {
     "number": null,
@@ -40686,7 +41743,8 @@
       "boss",
       "brucespringsteen",
       "radioutopia"
-    ]
+    ],
+    "duration": 5958
   },
   {
     "number": null,
@@ -40725,7 +41783,8 @@
       "grahancoxon",
       "radio3",
       "radioutopia"
-    ]
+    ],
+    "duration": 5267
   },
   {
     "number": null,
@@ -40768,7 +41827,8 @@
       "radioutopia",
       "ramones",
       "shockingbeards"
-    ]
+    ],
+    "duration": 8340
   },
   {
     "number": null,
@@ -40821,7 +41881,8 @@
       "raymanzarek",
       "robbykrieger",
       "thedoors"
-    ]
+    ],
+    "duration": 5432
   },
   {
     "number": null,
@@ -40861,7 +41922,8 @@
       "radioutopia",
       "ringostarr",
       "thebeatles"
-    ]
+    ],
+    "duration": 5853
   },
   {
     "number": null,
@@ -40899,7 +41961,8 @@
       "recuerdajane",
       "yay",
       "yoestratosferica"
-    ]
+    ],
+    "duration": 6842
   },
   {
     "number": null,
@@ -40933,7 +41996,8 @@
       "monsanto",
       "neilyoung",
       "radioutopia"
-    ]
+    ],
+    "duration": 14026
   },
   {
     "number": null,
@@ -40993,7 +42057,8 @@
     "comments": 0,
     "likes": 11,
     "plays": 1300,
-    "labels": []
+    "labels": [],
+    "duration": 7521
   },
   {
     "number": null,
@@ -41053,7 +42118,8 @@
       "srnadie",
       "thebeatles",
       "whitealbum"
-    ]
+    ],
+    "duration": 9517
   },
   {
     "number": null,
@@ -41122,7 +42188,8 @@
       "theionicspell",
       "thetide",
       "vivalaguerra"
-    ]
+    ],
+    "duration": 5981
   },
   {
     "number": null,
@@ -41173,7 +42240,8 @@
       "radioutopia",
       "rafacervera",
       "rtve"
-    ]
+    ],
+    "duration": 7044
   },
   {
     "number": null,
@@ -41210,7 +42278,8 @@
       "pacoprezbryan",
       "radioutopia",
       "vintagetrouble"
-    ]
+    ],
+    "duration": 6707
   },
   {
     "number": null,
@@ -41258,7 +42327,8 @@
       "radioutopia",
       "ratm",
       "verucasalt"
-    ]
+    ],
+    "duration": 8049
   },
   {
     "number": null,
@@ -41296,7 +42366,8 @@
       "nailyoung",
       "radioutopia",
       "shakey"
-    ]
+    ],
+    "duration": 5253
   },
   {
     "number": null,
@@ -41351,7 +42422,8 @@
       "theofframp",
       "virettapark",
       "vogue"
-    ]
+    ],
+    "duration": 5867
   },
   {
     "number": null,
@@ -41397,7 +42469,8 @@
       "smashingpumpkins",
       "Soundgarden",
       "sweethome"
-    ]
+    ],
+    "duration": 5482
   },
   {
     "number": null,
@@ -41429,7 +42502,8 @@
       "jerrycantrell",
       "radioutopia",
       "seattle"
-    ]
+    ],
+    "duration": 4850
   },
   {
     "number": null,
@@ -41463,7 +42537,8 @@
       "ohio",
       "pearljam",
       "radioutopia"
-    ]
+    ],
+    "duration": 7939
   },
   {
     "number": null,
@@ -41499,7 +42574,8 @@
       "boss",
       "brucespringsteen",
       "radioutopia"
-    ]
+    ],
+    "duration": 6398
   },
   {
     "number": null,
@@ -41536,7 +42612,8 @@
       "montageofheck",
       "radioutopia",
       "seattle"
-    ]
+    ],
+    "duration": 22600
   },
   {
     "number": null,
@@ -41597,7 +42674,8 @@
       "montageofheck",
       "nirvana",
       "radioutopia"
-    ]
+    ],
+    "duration": 5537
   },
   {
     "number": null,
@@ -41655,7 +42733,8 @@
       "mucho",
       "radioutopia",
       "thesundaydrivers"
-    ]
+    ],
+    "duration": 5862
   },
   {
     "number": null,
@@ -41710,7 +42789,8 @@
       "montageofheck",
       "radioutopia",
       "seattle"
-    ]
+    ],
+    "duration": 8819
   },
   {
     "number": null,
@@ -41751,7 +42831,8 @@
       "NewWave",
       "radio utopia",
       "Triphop"
-    ]
+    ],
+    "duration": 12808
   },
   {
     "number": null,
@@ -41789,7 +42870,8 @@
       "pjharvey",
       "radioutopia",
       "readingfestival"
-    ]
+    ],
+    "duration": 4223
   },
   {
     "number": null,
@@ -41829,7 +42911,8 @@
       "radio utopia",
       "radioutopia",
       "tim"
-    ]
+    ],
+    "duration": 7598
   },
   {
     "number": null,
@@ -41894,7 +42977,8 @@
       "thom yorke",
       "veruca salt",
       "zac brown band"
-    ]
+    ],
+    "duration": 6600
   },
   {
     "number": null,
@@ -41934,7 +43018,8 @@
       "radio utopia",
       "sonic youth",
       "thurston moore"
-    ]
+    ],
+    "duration": 10029
   },
   {
     "number": null,
@@ -41991,7 +43076,8 @@
       "noel gallagher",
       "Oasis",
       "radio utopia"
-    ]
+    ],
+    "duration": 5202
   },
   {
     "number": null,
@@ -42040,7 +43126,8 @@
       "nirvana",
       "radio utopia",
       "seattle"
-    ]
+    ],
+    "duration": 7016
   },
   {
     "number": null,
@@ -42077,7 +43164,8 @@
       "radio utopia",
       "sorry all over the place",
       "valencia"
-    ]
+    ],
+    "duration": 6732
   },
   {
     "number": null,
@@ -42119,7 +43207,8 @@
       "pasajero",
       "radio utopia",
       "zoo"
-    ]
+    ],
+    "duration": 5182
   },
   {
     "number": null,
@@ -42161,7 +43250,8 @@
       "self pollution radio",
       "Soundgarden",
       "the fastbacks"
-    ]
+    ],
+    "duration": 7470
   },
   {
     "number": null,
@@ -42200,7 +43290,8 @@
       "felipe couselo",
       "radio utopia",
       "smashing pumpkins"
-    ]
+    ],
+    "duration": 7840
   },
   {
     "number": null,
@@ -42234,7 +43325,8 @@
       "moline",
       "no code",
       "Pearl Jam"
-    ]
+    ],
+    "duration": 7946
   },
   {
     "number": null,
@@ -42274,7 +43366,8 @@
       "radio utopia",
       "Rage Against the Machine",
       "virginia díaz"
-    ]
+    ],
+    "duration": 4870
   },
   {
     "number": null,
@@ -42315,7 +43408,8 @@
       "royal blood",
       "tony bennet",
       "trigger  hippy"
-    ]
+    ],
+    "duration": 7004
   },
   {
     "number": null,
@@ -42353,7 +43447,8 @@
       "persons",
       "radio utopia",
       "roayal bustards"
-    ]
+    ],
+    "duration": 15839
   },
   {
     "number": null,
@@ -42414,7 +43509,8 @@
       "seattle",
       "ten club",
       "vedder"
-    ]
+    ],
+    "duration": 6179
   },
   {
     "number": null,
@@ -42455,7 +43551,8 @@
       "radio utopia",
       "winona ryder",
       "álex de la iglesia"
-    ]
+    ],
+    "duration": 4756
   },
   {
     "number": null,
@@ -42509,7 +43606,8 @@
       "radio utopia",
       "Soundgarden",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 9911
   },
   {
     "number": null,
@@ -42548,7 +43646,8 @@
       "radio utopia",
       "radio3",
       "royal blood"
-    ]
+    ],
+    "duration": 5051
   },
   {
     "number": null,
@@ -42604,7 +43703,8 @@
       "seattle",
       "sonic highways",
       "the magic numbers"
-    ]
+    ],
+    "duration": 12501
   },
   {
     "number": null,
@@ -42657,7 +43757,8 @@
       "romeo",
       "shoko",
       "the magic numbers"
-    ]
+    ],
+    "duration": 6599
   },
   {
     "number": null,
@@ -42694,7 +43795,8 @@
       "noel",
       "Oasis",
       "radio utopia"
-    ]
+    ],
+    "duration": 4520
   },
   {
     "number": null,
@@ -42751,7 +43853,8 @@
       "radio utopia",
       "seattle",
       "smashing pumpkins"
-    ]
+    ],
+    "duration": 6529
   },
   {
     "number": null,
@@ -42794,7 +43897,8 @@
       "minutemen",
       "radio utopia",
       "thurston moore"
-    ]
+    ],
+    "duration": 4662
   },
   {
     "number": null,
@@ -42851,7 +43955,8 @@
       "Pearl Jam",
       "radio utopia",
       "seattle"
-    ]
+    ],
+    "duration": 4970
   },
   {
     "number": null,
@@ -42905,7 +44010,8 @@
       "radio utopia",
       "ruce springsteen",
       "seattle"
-    ]
+    ],
+    "duration": 8416
   },
   {
     "number": null,
@@ -42959,7 +44065,8 @@
       "noel",
       "Oasis",
       "radio utopia"
-    ]
+    ],
+    "duration": 5236
   },
   {
     "number": null,
@@ -43020,7 +44127,8 @@
       "Soundgarden",
       "swords for arrows",
       "the presidents"
-    ]
+    ],
+    "duration": 5395
   },
   {
     "number": null,
@@ -43059,7 +44167,8 @@
       "seattle",
       "Soundgarden",
       "tad"
-    ]
+    ],
+    "duration": 7484
   },
   {
     "number": null,
@@ -43100,7 +44209,8 @@
       "radio utopia",
       "robert jhonson",
       "royal bustards"
-    ]
+    ],
+    "duration": 5928
   },
   {
     "number": null,
@@ -43133,7 +44243,8 @@
       "madrid",
       "portishead",
       "radio utopia"
-    ]
+    ],
+    "duration": 5172
   },
   {
     "number": null,
@@ -43166,7 +44277,8 @@
       "manic street preachers",
       "portishead",
       "radio utopia"
-    ]
+    ],
+    "duration": 4771
   },
   {
     "number": null,
@@ -43206,7 +44318,8 @@
       "radio utopia",
       "reignwolf",
       "robert plant"
-    ]
+    ],
+    "duration": 5186
   },
   {
     "number": null,
@@ -43241,7 +44354,8 @@
       "felipe couselo",
       "michael jackson",
       "radio utopia"
-    ]
+    ],
+    "duration": 6634
   },
   {
     "number": null,
@@ -43282,7 +44396,8 @@
       "radio utopia",
       "trieste",
       "vienna"
-    ]
+    ],
+    "duration": 6918
   },
   {
     "number": null,
@@ -43317,7 +44432,8 @@
       "pixies",
       "primavera sound",
       "radio utopia"
-    ]
+    ],
+    "duration": 4811
   },
   {
     "number": null,
@@ -43357,7 +44473,8 @@
       "rolling stones",
       "stay",
       "verve"
-    ]
+    ],
+    "duration": 5030
   },
   {
     "number": null,
@@ -43398,7 +44515,8 @@
       "nooirax",
       "radio utopia",
       "árida"
-    ]
+    ],
+    "duration": 9883
   },
   {
     "number": null,
@@ -43433,7 +44551,8 @@
       "radio utopia",
       "vidal",
       "yield"
-    ]
+    ],
+    "duration": 5662
   },
   {
     "number": null,
@@ -43473,7 +44592,8 @@
       "live",
       "parachutes",
       "radio utopia"
-    ]
+    ],
+    "duration": 5351
   },
   {
     "number": null,
@@ -43503,7 +44623,8 @@
       "paco perez bryan",
       "radio utopia",
       "rolling stones"
-    ]
+    ],
+    "duration": 6017
   },
   {
     "number": null,
@@ -43543,7 +44664,8 @@
       "parker!",
       "radio utopia",
       "thurston moore."
-    ]
+    ],
+    "duration": 6824
   },
   {
     "number": null,
@@ -43584,7 +44706,8 @@
       "the jon spencer blues explosio",
       "ty segall",
       "veruca salt"
-    ]
+    ],
+    "duration": 5624
   },
   {
     "number": null,
@@ -43619,7 +44742,8 @@
       "radio utopia",
       "rick & vera",
       "spin doctors"
-    ]
+    ],
+    "duration": 3464
   },
   {
     "number": null,
@@ -43663,7 +44787,8 @@
       "Pearl Jam",
       "radio utopia",
       "Staind"
-    ]
+    ],
+    "duration": 5443
   },
   {
     "number": null,
@@ -43694,7 +44819,8 @@
       "paco perez bryan",
       "radio utopia",
       "roma"
-    ]
+    ],
+    "duration": 5041
   },
   {
     "number": null,
@@ -43726,7 +44852,8 @@
       "expediente x",
       "my so called life",
       "radio utopia"
-    ]
+    ],
+    "duration": 5179
   },
   {
     "number": null,
@@ -43762,7 +44889,8 @@
       "nómada",
       "radio utopia",
       "Soundgarden"
-    ]
+    ],
+    "duration": 4853
   },
   {
     "number": null,
@@ -43808,7 +44936,8 @@
       "peluze",
       "radio utopia",
       "stoned fish"
-    ]
+    ],
+    "duration": 5166
   },
   {
     "number": null,
@@ -43850,7 +44979,8 @@
       "los planetas",
       "radio utopia",
       "una semana en el motor de un autobús"
-    ]
+    ],
+    "duration": 5946
   },
   {
     "number": null,
@@ -43901,7 +45031,8 @@
       "radio utopia",
       "stp",
       "the doors"
-    ]
+    ],
+    "duration": 5338
   },
   {
     "number": null,
@@ -43938,7 +45069,8 @@
       "maika makovski",
       "no dogs",
       "radio utopia"
-    ]
+    ],
+    "duration": 5831
   },
   {
     "number": null,
@@ -43975,7 +45107,8 @@
       "love division",
       "radio utopia",
       "sexy sadie"
-    ]
+    ],
+    "duration": 5417
   },
   {
     "number": null,
@@ -44017,7 +45150,8 @@
       "Pearl Jam",
       "radio utopia",
       "the beatles"
-    ]
+    ],
+    "duration": 5239
   },
   {
     "number": null,
@@ -44051,7 +45185,8 @@
       "de 4 a 3",
       "paco perez bryan",
       "radio utopia"
-    ]
+    ],
+    "duration": 7356
   },
   {
     "number": null,
@@ -44109,7 +45244,8 @@
       "no dogs",
       "ocs",
       "radio utopia"
-    ]
+    ],
+    "duration": 5936
   },
   {
     "number": null,
@@ -44154,7 +45290,8 @@
       "radio utopia",
       "royal",
       "vidal"
-    ]
+    ],
+    "duration": 5428
   },
   {
     "number": null,
@@ -44192,7 +45329,8 @@
       "le traste",
       "radio utopia",
       "REM"
-    ]
+    ],
+    "duration": 5428
   },
   {
     "number": null,
@@ -44247,7 +45385,8 @@
       "mae",
       "queen",
       "radio utopia"
-    ]
+    ],
+    "duration": 5350
   },
   {
     "number": null,
@@ -44282,7 +45421,8 @@
       "Mellon Collie and the Infinite Sadness",
       "radio utopia",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 7059
   },
   {
     "number": null,
@@ -44318,7 +45458,8 @@
       "paul mccartney",
       "radio utopia",
       "ringo starr"
-    ]
+    ],
+    "duration": 5668
   },
   {
     "number": null,
@@ -44354,7 +45495,8 @@
       "john lennon",
       "paul mccartney",
       "radio utopia"
-    ]
+    ],
+    "duration": 5617
   },
   {
     "number": null,
@@ -44410,7 +45552,8 @@
       "george",
       "harrison",
       "radio utopia"
-    ]
+    ],
+    "duration": 5330
   },
   {
     "number": null,
@@ -44446,7 +45589,8 @@
       "bienvenido a los 90",
       "lennon",
       "radio utopia"
-    ]
+    ],
+    "duration": 5465
   },
   {
     "number": null,
@@ -44500,7 +45644,8 @@
       "nirvana",
       "radio utopia",
       "sunny day real estate"
-    ]
+    ],
+    "duration": 4774
   },
   {
     "number": null,
@@ -44537,7 +45682,8 @@
       "planetas",
       "radio",
       "utopía"
-    ]
+    ],
+    "duration": 5222
   },
   {
     "number": null,
@@ -44572,7 +45718,8 @@
       "radio utopia",
       "the breeders",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 5458
   },
   {
     "number": null,
@@ -44604,7 +45751,8 @@
       "havalina",
       "Pearl Jam",
       "radio utopia"
-    ]
+    ],
+    "duration": 5409
   },
   {
     "number": null,
@@ -44636,7 +45784,8 @@
       "felipe couselo",
       "radio utopia",
       "smashing pumkins"
-    ]
+    ],
+    "duration": 5507
   },
   {
     "number": null,
@@ -44672,7 +45821,8 @@
       "metropol",
       "radio utopia",
       "tom´s cabin"
-    ]
+    ],
+    "duration": 5516
   },
   {
     "number": null,
@@ -44713,7 +45863,8 @@
       "radio utopia",
       "reignwolf",
       "tom cabin"
-    ]
+    ],
+    "duration": 5358
   },
   {
     "number": null,
@@ -44747,7 +45898,8 @@
       "Oasis",
       "Pearl Jam",
       "radio utopia"
-    ]
+    ],
+    "duration": 5336
   },
   {
     "number": null,
@@ -44807,7 +45959,8 @@
       "radio utopia",
       "sueb la musica",
       "susana"
-    ]
+    ],
+    "duration": 5280
   },
   {
     "number": null,
@@ -44870,7 +46023,8 @@
       "Pearl Jam",
       "pixies",
       "radio utopia"
-    ]
+    ],
+    "duration": 5419
   },
   {
     "number": null,
@@ -44905,7 +46059,8 @@
       "castellano",
       "podcast",
       "radio utopia"
-    ]
+    ],
+    "duration": 4993
   },
   {
     "number": null,
@@ -44953,7 +46108,8 @@
       "Oasis",
       "radio utopia",
       "Radiohead"
-    ]
+    ],
+    "duration": 4722
   },
   {
     "number": null,
@@ -45008,7 +46164,8 @@
       "radio utopia",
       "Radiohead",
       "Rage Against the Machine"
-    ]
+    ],
+    "duration": 4315
   },
   {
     "number": null,
@@ -45061,7 +46218,8 @@
       "the crow",
       "the cure",
       "the jesus & mary chain"
-    ]
+    ],
+    "duration": 4126
   },
   {
     "number": null,
@@ -45120,7 +46278,8 @@
       "nirvana",
       "radio utopia",
       "steve albini"
-    ]
+    ],
+    "duration": 5438
   },
   {
     "number": null,
@@ -45171,7 +46330,8 @@
       "radio utopia",
       "silverchair",
       "tracy bonham"
-    ]
+    ],
+    "duration": 4073
   },
   {
     "number": null,
@@ -45225,7 +46385,8 @@
       "Pearl Jam",
       "primal scream",
       "radio utopia"
-    ]
+    ],
+    "duration": 949
   },
   {
     "number": null,
@@ -45270,7 +46431,8 @@
       "descarga",
       "glastonbury",
       "radio utopia"
-    ]
+    ],
+    "duration": 3829
   },
   {
     "number": null,
@@ -45307,7 +46469,8 @@
       "dover",
       "paco perez bryan",
       "radio utopia"
-    ]
+    ],
+    "duration": 3885
   },
   {
     "number": null,
@@ -45338,7 +46501,8 @@
       "dookie",
       "green day",
       "radio utopia"
-    ]
+    ],
+    "duration": 5805
   },
   {
     "number": null,
@@ -45396,7 +46560,8 @@
       "Radiohead",
       "spacehog",
       "The Smashing Pumpkins"
-    ]
+    ],
+    "duration": 4115
   },
   {
     "number": null,
@@ -45455,7 +46620,8 @@
       "sex pistols",
       "sigur ros",
       "weezer"
-    ]
+    ],
+    "duration": 4389
   },
   {
     "number": null,
@@ -45514,7 +46680,8 @@
       "primaversa sound",
       "radio",
       "utopía"
-    ]
+    ],
+    "duration": 4366
   },
   {
     "number": null,
@@ -45570,7 +46737,8 @@
       "standstill",
       "the ionic spell",
       "vivalaguerra"
-    ]
+    ],
+    "duration": 4756
   },
   {
     "number": null,
@@ -45618,7 +46786,8 @@
       "rolling stones",
       "standstill",
       "Stone Temple Pilots"
-    ]
+    ],
+    "duration": 4068
   },
   {
     "number": null,
@@ -45652,7 +46821,8 @@
       "sexy sadie",
       "the bleach",
       "tired horse soup"
-    ]
+    ],
+    "duration": 3840
   },
   {
     "number": null,
@@ -45696,7 +46866,8 @@
       "felipe couselo",
       "radio utopia",
       "rodriguez"
-    ]
+    ],
+    "duration": 3902
   },
   {
     "number": null,
@@ -45754,7 +46925,8 @@
       "nirvana",
       "radio utopia",
       "standstill"
-    ]
+    ],
+    "duration": 4460
   },
   {
     "number": null,
@@ -45808,7 +46980,8 @@
       "peggy sue",
       "radio utopia",
       "Radiohead"
-    ]
+    ],
+    "duration": 2963
   },
   {
     "number": null,
@@ -45849,7 +47022,8 @@
       "descarga",
       "julieta jones",
       "radio utopia"
-    ]
+    ],
+    "duration": 3429
   },
   {
     "number": null,
@@ -45894,7 +47068,8 @@
       "Oasis",
       "radio utopia",
       "stone gossardjeff buckley"
-    ]
+    ],
+    "duration": 4265
   },
   {
     "number": null,
@@ -45947,7 +47122,8 @@
       "smashing pumpkins",
       "sound city",
       "the elected"
-    ]
+    ],
+    "duration": 4270
   },
   {
     "number": null,
@@ -45983,7 +47159,8 @@
       "es radio",
       "felipe couselo",
       "radio utopia"
-    ]
+    ],
+    "duration": 5402
   },
   {
     "number": null,
@@ -46015,7 +47192,8 @@
       "New Jersey",
       "radio utopia",
       "the boss"
-    ]
+    ],
+    "duration": 5379
   },
   {
     "number": null,
@@ -46056,7 +47234,8 @@
       "radio utopia",
       "roy orbison",
       "u2"
-    ]
+    ],
+    "duration": 3588
   },
   {
     "number": null,
@@ -46109,7 +47288,8 @@
       "radio utopia",
       "smiths",
       "stone roses"
-    ]
+    ],
+    "duration": 3599
   },
   {
     "number": null,
@@ -46145,7 +47325,8 @@
       "Rage Against the Machine",
       "tom morello",
       "zac de la rocha"
-    ]
+    ],
+    "duration": 4639
   },
   {
     "number": null,
@@ -46204,7 +47385,8 @@
       "searching for sugar man",
       "ser",
       "sugar man"
-    ]
+    ],
+    "duration": 3741
   },
   {
     "number": null,
@@ -46241,7 +47423,8 @@
       "radio utopia",
       "Radiohead",
       "thom yorke"
-    ]
+    ],
+    "duration": 2958
   },
   {
     "number": null,
@@ -46279,7 +47462,8 @@
       "queen",
       "radio utopia",
       "roger tayler"
-    ]
+    ],
+    "duration": 3973
   },
   {
     "number": null,
@@ -46331,7 +47515,8 @@
       "REM",
       "ska P",
       "spin doctors"
-    ]
+    ],
+    "duration": 3080
   },
   {
     "number": null,
@@ -46383,7 +47568,8 @@
       "neo",
       "radio utopia",
       "wachowski"
-    ]
+    ],
+    "duration": 3939
   },
   {
     "number": null,
@@ -46448,7 +47634,8 @@
       "rapidshare",
       "seatlle",
       "stone gossard"
-    ]
+    ],
+    "duration": 4249
   },
   {
     "number": null,
@@ -46504,7 +47691,8 @@
       "Radiohead",
       "rage againt the machine",
       "red hot chili peppers"
-    ]
+    ],
+    "duration": 3644
   },
   {
     "number": null,
@@ -46558,7 +47746,8 @@
       "sandy",
       "springsteen",
       "the who"
-    ]
+    ],
+    "duration": 3799
   },
   {
     "number": null,
@@ -46611,7 +47800,8 @@
       "robert smith",
       "sonic youth",
       "the cure"
-    ]
+    ],
+    "duration": 3713
   },
   {
     "number": null,
@@ -46670,7 +47860,8 @@
       "the xx",
       "veruca salt",
       "wilco"
-    ]
+    ],
+    "duration": 5982
   },
   {
     "number": null,
@@ -46721,7 +47912,8 @@
       "phish",
       "radio utopia",
       "REM"
-    ]
+    ],
+    "duration": 4168
   },
   {
     "number": null,
@@ -46780,7 +47972,8 @@
       "rapidshare",
       "shareflare",
       "turbobit"
-    ]
+    ],
+    "duration": 4109
   },
   {
     "number": null,
@@ -46832,7 +48025,8 @@
       "john lennon",
       "radio utopia",
       "the beatles"
-    ]
+    ],
+    "duration": 2565
   },
   {
     "number": null,
@@ -46866,7 +48060,8 @@
       "the singer not the song",
       "vidal",
       "xisco"
-    ]
+    ],
+    "duration": 3948
   },
   {
     "number": null,
@@ -46912,7 +48107,8 @@
       "felipe couselo",
       "live 2012",
       "radio utopia"
-    ]
+    ],
+    "duration": 3612
   },
   {
     "number": null,
@@ -46961,7 +48157,8 @@
       "radio utopia",
       "seatlle",
       "Soundgarden"
-    ]
+    ],
+    "duration": 3800
   },
   {
     "number": null,
@@ -47015,7 +48212,8 @@
       "nirvana",
       "unplugged",
       "vaselines"
-    ]
+    ],
+    "duration": 3712
   },
   {
     "number": null,
@@ -47074,7 +48272,8 @@
       "tad",
       "the fluid",
       "walkabouts"
-    ]
+    ],
+    "duration": 3937
   },
   {
     "number": null,
@@ -47121,7 +48320,8 @@
       "muse",
       "palacio de los deportes de la comunidad de madrid",
       "the proclaimers"
-    ]
+    ],
+    "duration": 3930
   },
   {
     "number": null,
@@ -47172,7 +48372,8 @@
       "o2",
       "Oasis",
       "okkervil river"
-    ]
+    ],
+    "duration": 3750
   },
   {
     "number": null,
@@ -47225,7 +48426,8 @@
       "noel gallagher",
       "radio utopia",
       "the beatles"
-    ]
+    ],
+    "duration": 3421
   },
   {
     "number": null,
@@ -47272,7 +48474,8 @@
       "rollingstones",
       "The Verve",
       "wigan"
-    ]
+    ],
+    "duration": 3617
   },
   {
     "number": null,
@@ -47314,7 +48517,8 @@
       "spin doctors",
       "vega",
       "zircocine"
-    ]
+    ],
+    "duration": 3895
   },
   {
     "number": null,
@@ -47364,7 +48568,8 @@
       "the beatles",
       "The Verve",
       "veruca salt"
-    ]
+    ],
+    "duration": 3804
   },
   {
     "number": null,
@@ -47417,7 +48622,8 @@
       "silvercjair",
       "spin doctors",
       "supergrass"
-    ]
+    ],
+    "duration": 4474
   },
   {
     "number": null,
@@ -47462,7 +48668,8 @@
       "noel gallagher",
       "Oasis",
       "radio utopia"
-    ]
+    ],
+    "duration": 4160
   },
   {
     "number": null,
@@ -47486,7 +48693,8 @@
     "plays": 1400,
     "labels": [
       "Pearl Jam"
-    ]
+    ],
+    "duration": 3504
   },
   {
     "number": null,
@@ -47546,7 +48754,8 @@
       "stone roses",
       "suede",
       "trex"
-    ]
+    ],
+    "duration": 3706
   },
   {
     "number": null,
@@ -47593,7 +48802,8 @@
       "pigmy",
       "PROFESOR POPSNUGGLE",
       "raphael"
-    ]
+    ],
+    "duration": 4558
   },
   {
     "number": null,
@@ -47642,7 +48852,8 @@
       "radio 3",
       "Siamese Dream",
       "The Smashing Pumkins"
-    ]
+    ],
+    "duration": 3490
   },
   {
     "number": null,
@@ -47690,7 +48901,8 @@
       "paco perez bryan",
       "radio 3",
       "radio utopia"
-    ]
+    ],
+    "duration": 4197
   },
   {
     "number": null,
@@ -47730,7 +48942,8 @@
       "quentin tarantino",
       "radio utopia",
       "uma thurman"
-    ]
+    ],
+    "duration": 4013
   },
   {
     "number": null,
@@ -47787,7 +49000,8 @@
       "spooner",
       "The Smashing Pumkins",
       "the subways"
-    ]
+    ],
+    "duration": 3838
   },
   {
     "number": null,
@@ -47840,7 +49054,8 @@
       "survival",
       "the buggles",
       "unplugged"
-    ]
+    ],
+    "duration": 4148
   },
   {
     "number": null,
@@ -47876,7 +49091,8 @@
     "comments": 0,
     "likes": 4,
     "plays": 1100,
-    "labels": []
+    "labels": [],
+    "duration": 3604
   },
   {
     "number": null,
@@ -47909,7 +49125,8 @@
       "podcast",
       "radio utopia",
       "The Smashing Pumkins"
-    ]
+    ],
+    "duration": 776
   },
   {
     "number": null,
@@ -47943,7 +49160,8 @@
       "quentin tarantino",
       "radio utopia",
       "reservoir dogs"
-    ]
+    ],
+    "duration": 3735
   },
   {
     "number": null,
@@ -47976,7 +49194,8 @@
     "comments": 0,
     "likes": 4,
     "plays": 1100,
-    "labels": []
+    "labels": [],
+    "duration": 3614
   },
   {
     "number": null,
@@ -48022,7 +49241,8 @@
       "radio utopia",
       "skank",
       "supergrass"
-    ]
+    ],
+    "duration": 3441
   },
   {
     "number": null,
@@ -48063,7 +49283,8 @@
       "podcast",
       "radio utopia",
       "Soundgarden"
-    ]
+    ],
+    "duration": 3500
   },
   {
     "number": null,
@@ -48095,7 +49316,8 @@
       "chris cornell",
       "el blog del nautilus",
       "seattle"
-    ]
+    ],
+    "duration": 1429
   },
   {
     "number": null,
@@ -48152,7 +49374,8 @@
       "The Smashing Pumkins",
       "venas pluton",
       "weezer"
-    ]
+    ],
+    "duration": 3644
   },
   {
     "number": null,
@@ -48194,7 +49417,8 @@
       "nirvana",
       "podcast",
       "seatlle"
-    ]
+    ],
+    "duration": 3548
   },
   {
     "number": null,
@@ -48240,7 +49464,8 @@
       "the new pornographers",
       "the wedding present",
       "tom waits"
-    ]
+    ],
+    "duration": 3655
   },
   {
     "number": null,
@@ -48284,7 +49509,8 @@
       "radio utopia",
       "sepultura",
       "the black crowes"
-    ]
+    ],
+    "duration": 3409
   },
   {
     "number": null,
@@ -48324,7 +49550,8 @@
       "rollingstones",
       "sexpistols",
       "u2"
-    ]
+    ],
+    "duration": 3832
   },
   {
     "number": null,
@@ -48355,7 +49582,8 @@
       "podcast",
       "radio utopia",
       "Radiohead"
-    ]
+    ],
+    "duration": 3715
   },
   {
     "number": null,
@@ -48395,7 +49623,8 @@
       "sonic youth",
       "terrorvision",
       "verbena"
-    ]
+    ],
+    "duration": 3432
   },
   {
     "number": null,
@@ -48435,7 +49664,8 @@
       "radio utopia",
       "REM",
       "the bleach"
-    ]
+    ],
+    "duration": 3724
   },
   {
     "number": null,
@@ -48472,7 +49702,8 @@
       "telephones rouges",
       "The Verve",
       "travis"
-    ]
+    ],
+    "duration": 3547
   },
   {
     "number": null,
@@ -48512,7 +49743,8 @@
       "sexy sadie",
       "Soundgarden",
       "Stone Temple Pilots"
-    ]
+    ],
+    "duration": 3400
   },
   {
     "number": null,
@@ -48555,7 +49787,8 @@
       "radio utopia",
       "truth",
       "unbelievable"
-    ]
+    ],
+    "duration": 3497
   },
   {
     "number": null,
@@ -48587,7 +49820,8 @@
       "foo fighters",
       "nirvana",
       "podcast"
-    ]
+    ],
+    "duration": 3465
   },
   {
     "number": null,
@@ -48632,7 +49866,8 @@
       "seahorses",
       "The Chemical Brothers",
       "The Verve"
-    ]
+    ],
+    "duration": 3361
   },
   {
     "number": null,
@@ -48674,6 +49909,7 @@
       "radioutopia",
       "Rage Against the Machine",
       "The Smashing Pumkins"
-    ]
+    ],
+    "duration": 3301
   }
 ]
