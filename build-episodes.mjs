@@ -808,7 +808,7 @@ const ARTIST_DATA = {
     sameAs: "https://www.wikidata.org/wiki/Q1203",
     type: "Person",
   },
-  "Paul Mccartney": {
+  "Paul McCartney": {
     intro: "Paul McCartney es uno de los compositores más prolíficos de la historia. Tras The Beatles, su carrera en solitario continuó en los años 90 con nuevos álbumes y giras memorables. En Bienvenido a los 90, el podcast de música de los 90 en español, cubrimos sus actuaciones y lanzamientos de esta época.",
     sameAs: "https://www.wikidata.org/wiki/Q2599",
     type: "Person",
@@ -830,10 +830,15 @@ function buildEtiquetasPages(episodes) {
     "bienvenido a lo 90", "bienvenidoalos90", "castellano", "descarga", "seattle",
   ]);
 
+  const LABEL_ALIASES = {
+    "Paul Mccartney": "Paul McCartney",
+  };
+
   const labelMap = new Map();
   episodes.forEach((ep) => {
-    (ep.labels || []).forEach((label) => {
-      if (EXCLUDED.has(label.toLowerCase())) return;
+    (ep.labels || []).forEach((rawLabel) => {
+      if (EXCLUDED.has(rawLabel.toLowerCase())) return;
+      const label = LABEL_ALIASES[rawLabel] ?? rawLabel;
       if (!labelMap.has(label)) labelMap.set(label, []);
       labelMap.get(label).push(ep);
     });
@@ -1027,8 +1032,7 @@ ${featuredEp ? `<a class="artist-featured" href="../episodios/${featuredEp.slug}
 <p style="color:var(--text-muted);font-size:0.82rem;margin-bottom:1.5rem">${eps.length} episodio${eps.length === 1 ? "" : "s"}</p>`;
     })() : `
     <h1 class="section-title font-brand">${escapeHtml(label)}</h1>
-    ${artistData ? `<p class="artist-intro">${escapeHtml(artistData.intro)}</p>` : ""}
-    <p style="color:var(--text-dim);margin-bottom:2rem">${eps.length} episodio${eps.length === 1 ? "" : "s"}</p>`}
+    ${artistData ? `<p class="artist-intro">${escapeHtml(artistData.intro)}</p>` : ""}`}
 
     <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;margin-bottom:1.25rem">
       <span style="font-size:.85rem;color:var(--text-dim)">${sorted.length} episodio${sorted.length === 1 ? "" : "s"}</span>
