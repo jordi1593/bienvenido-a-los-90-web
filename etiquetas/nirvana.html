@@ -40,6 +40,7 @@
       <ul class="topnav-links" id="navLinks" role="list">
         <li><a href="../#escuchanos">Escúchanos</a></li>
         <li><a href="../#episodios">Episodios</a></li>
+        <li><a href="../etiquetas/">Etiquetas</a></li>
         <li><a href="../fotos.html">Fotos</a></li>
         <li><a href="../directo.html">En Directo</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
@@ -66,7 +67,11 @@
     <p class="artist-intro">Nirvana fue la banda de grunge más influyente de los años 90. Formada en Aberdeen (Washington) en 1987 por Kurt Cobain, Krist Novoselic y Dave Grohl, revolucionaron el rock mundial con álbumes como Nevermind (1991) y In Utero (1993). En Bienvenido a los 90, el podcast de música de los 90 en español, dedicamos decenas de episodios a analizar su legado, sus discos y su impacto en la cultura popular.</p>
     <p style="color:var(--text-dim);margin-bottom:2rem">173 episodios</p>
 
-    <section class="episode-list">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;margin-bottom:1.25rem">
+      <span style="font-size:.85rem;color:var(--text-dim)">173 episodios</span>
+      <label style="font-size:.82rem;color:var(--text-dim);display:flex;align-items:center;gap:.4rem">Ordenar: <select id="etiquetaSort" style="font-size:.82rem;border:1px solid var(--border);border-radius:6px;padding:.25rem .5rem;background:var(--bg);color:var(--text);cursor:pointer"><option value="recent">Más reciente primero</option><option value="oldest">Más antiguo primero</option></select></label>
+    </div>
+    <section class="episode-list" id="etiquetaGrid">
       <article class="episode-card">
         <a class="episode-cover-link" href="../episodios/1121-especial-foo-fighters-your-favorite-toy-2026.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
@@ -77,7 +82,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/1121-especial-foo-fighters-your-favorite-toy-2026.html">1121 - Especial Foo Fighters - Your Favorite Toy (2026)</a></h2>
-          <p class="episode-date">6 de mayo de 2026</p>
+          <p class="episode-date">7 de mayo de 2026</p>
         </div>
       </article>
 <article class="episode-card">
@@ -116,7 +121,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/1043-entrevista-a-the-low-flying-panic-attack.html">1043 - Entrevista a The Low Flying Panic Attack</a></h2>
-          <p class="episode-date">25 de mayo de 2025</p>
+          <p class="episode-date">26 de mayo de 2025</p>
         </div>
       </article>
 <article class="episode-card">
@@ -129,7 +134,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/1031-portadas-iconicas-de-los-90-1.html">1031 - Portadas icónicas de los 90 (1)</a></h2>
-          <p class="episode-date">19 de marzo de 2025</p>
+          <p class="episode-date">20 de marzo de 2025</p>
         </div>
       </article>
 <article class="episode-card">
@@ -194,7 +199,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-1005-hablando-de-nirvana-con-the-buzz-lovers.html">P.1005 - Hablando de Nirvana con The Buzz Lovers</a></h2>
-          <p class="episode-date">6 de noviembre de 2024</p>
+          <p class="episode-date">7 de noviembre de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -272,7 +277,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-973-entrevista-a-barret-jones.html">P.973 - Entrevista a Barret Jones</a></h2>
-          <p class="episode-date">15 de mayo de 2024</p>
+          <p class="episode-date">16 de mayo de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -285,7 +290,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-971-sigue-siendo-seattle-un-destino-atractivo-para-los-amantes-del-grunge.html">P.971 - ¿Sigue siendo Seattle un destino atractivo para los amantes del grunge?</a></h2>
-          <p class="episode-date">8 de mayo de 2024</p>
+          <p class="episode-date">9 de mayo de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -337,7 +342,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-964-especial-nirvana-desde-enero-hasta-abril-de-1994.html">P.964 - Especial Nirvana: desde enero hasta abril de 1994</a></h2>
-          <p class="episode-date">3 de abril de 2024</p>
+          <p class="episode-date">4 de abril de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -363,7 +368,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-960-el-ultimo-concierto-de-nirvana.html">P.960 - El último concierto de NIRVANA</a></h2>
-          <p class="episode-date">13 de marzo de 2024</p>
+          <p class="episode-date">14 de marzo de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -376,7 +381,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-946-in-utero-el-sonido-que-kurt-cobain-oia-en-su-cabeza.html">P.946 - In Utero, el sonido que Kurt Cobain oía en su cabeza</a></h2>
-          <p class="episode-date">17 de enero de 2024</p>
+          <p class="episode-date">18 de enero de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -389,7 +394,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-944-hablando-sobre-musica-con-la-inteligencia-artificial.html">P.944 - Hablando sobre música con la inteligencia artificial</a></h2>
-          <p class="episode-date">10 de enero de 2024</p>
+          <p class="episode-date">11 de enero de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -402,7 +407,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-940-una-seleccion-musical-exquisita-vol-1.html">P.940 - Una selección musical exquisita Vol.1</a></h2>
-          <p class="episode-date">21 de diciembre de 2023</p>
+          <p class="episode-date">22 de diciembre de 2023</p>
         </div>
       </article>
 <article class="episode-card">
@@ -415,7 +420,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-934-remasterizaciones-2023-valen-la-pena.html">P.934 - Remasterizaciones 2023, ¿valen la pena?</a></h2>
-          <p class="episode-date">22 de noviembre de 2023</p>
+          <p class="episode-date">23 de noviembre de 2023</p>
         </div>
       </article>
 <article class="episode-card">
@@ -623,7 +628,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-796-canciones-imbatibles-que-abren-disco.html">P.796 - Canciones imbatibles que abren disco</a></h2>
-          <p class="episode-date">18 de septiembre de 2021</p>
+          <p class="episode-date">19 de septiembre de 2021</p>
         </div>
       </article>
 <article class="episode-card">
@@ -805,7 +810,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-735-axl-rose-vs-kurt-cobain.html">P.735 - Axl Rose Vs. Kurt Cobain</a></h2>
-          <p class="episode-date">4 de febrero de 2021</p>
+          <p class="episode-date">5 de febrero de 2021</p>
         </div>
       </article>
 <article class="episode-card">
@@ -1156,7 +1161,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/programa-534-nirvana-y-su-identidad-visual.html">Programa 534 - Nirvana y su identidad visual</a></h2>
-          <p class="episode-date">1 de junio de 2019</p>
+          <p class="episode-date">2 de junio de 2019</p>
         </div>
       </article>
 <article class="episode-card">
@@ -2092,7 +2097,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/b90-programa-82-diecisiete.html">Programa 82 - DIECISIETE</a></h2>
-          <p class="episode-date">26 de septiembre de 2013</p>
+          <p class="episode-date">27 de septiembre de 2013</p>
         </div>
       </article>
 <article class="episode-card">
@@ -2235,7 +2240,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/bienvenido-a-los-90-programa-29-fin-de-fiesta-con-rkdrano.html">Bienvenido a los 90 - Programa 29 - Fin de fiesta con Rkdrano</a></h2>
-          <p class="episode-date">30 de agosto de 2012</p>
+          <p class="episode-date">31 de agosto de 2012</p>
         </div>
       </article>
 <article class="episode-card">
@@ -2248,7 +2253,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/bienvenido-a-los-90-programa-22-la-importancia-de-llamarse-butch.html">Bienvenido a los 90 - Programa 22 - La importancia de llamarse Butch</a></h2>
-          <p class="episode-date">5 de julio de 2012</p>
+          <p class="episode-date">6 de julio de 2012</p>
         </div>
       </article>
 <article class="episode-card">
@@ -2317,8 +2322,33 @@
         </div>
       </article>
     </section>
+    <div id="etiquetaMoreWrap" style="text-align:center;margin:2rem 0"><button id="etiquetaMore" type="button" style="padding:.6rem 2rem;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:.9rem;font-weight:600;cursor:pointer">Ver más episodios</button></div>
     <p class="back-link" style="margin-top:2rem"><a href="/">← Volver al inicio</a></p>
   </main>
+
+<script>
+(function(){
+  var PAGE=60;
+  var grid=document.getElementById("etiquetaGrid");
+  var moreWrap=document.getElementById("etiquetaMoreWrap");
+  var moreBtn=document.getElementById("etiquetaMore");
+  var sortSel=document.getElementById("etiquetaSort");
+  if(!grid)return;
+  var cards=Array.from(grid.querySelectorAll("article.episode-card"));
+  if(cards.length<=PAGE&&!sortSel)return;
+  var origOrder=cards.slice();
+  var shown=PAGE;
+  function render(){
+    var order=sortSel&&sortSel.value==="oldest"?origOrder.slice().reverse():origOrder;
+    cards.forEach(function(c){c.style.display="none"});
+    order.forEach(function(c,i){if(i<shown){c.style.display="";grid.appendChild(c);}});
+    if(moreWrap)moreWrap.hidden=shown>=order.length;
+  }
+  if(moreBtn)moreBtn.addEventListener("click",function(){shown+=PAGE;render();});
+  if(sortSel)sortSel.addEventListener("change",function(){shown=PAGE;render();});
+  render();
+})();
+</script>
 
   <footer class="site-footer">
     <div class="container">

@@ -40,6 +40,7 @@
       <ul class="topnav-links" id="navLinks" role="list">
         <li><a href="../#escuchanos">Escúchanos</a></li>
         <li><a href="../#episodios">Episodios</a></li>
+        <li><a href="../etiquetas/">Etiquetas</a></li>
         <li><a href="../fotos.html">Fotos</a></li>
         <li><a href="../directo.html">En Directo</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
@@ -66,7 +67,11 @@
     
     <p style="color:var(--text-dim);margin-bottom:2rem">27 episodios</p>
 
-    <section class="episode-list">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;margin-bottom:1.25rem">
+      <span style="font-size:.85rem;color:var(--text-dim)">27 episodios</span>
+      <label style="font-size:.82rem;color:var(--text-dim);display:flex;align-items:center;gap:.4rem">Ordenar: <select id="etiquetaSort" style="font-size:.82rem;border:1px solid var(--border);border-radius:6px;padding:.25rem .5rem;background:var(--bg);color:var(--text);cursor:pointer"><option value="recent">Más reciente primero</option><option value="oldest">Más antiguo primero</option></select></label>
+    </div>
+    <section class="episode-list" id="etiquetaGrid">
       <article class="episode-card">
         <a class="episode-cover-link" href="../episodios/b90-supernova-90-la-historia-detras-de-parklife-de-blur-y-la-voz-de-phil-daniels.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
@@ -103,7 +108,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/b90-supernova-72-cuando-blur-lanzo-the-universal.html">B90 Supernova 72 - Cuando BLUR lanzó &quot;The Universal&quot;</a></h2>
-          <p class="episode-date">11 de enero de 2025</p>
+          <p class="episode-date">12 de enero de 2025</p>
         </div>
       </article>
 <article class="episode-card">
@@ -116,7 +121,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-994-especial-1994-parte-4-hole-nick-cave-pulp-terrorvision-melvins-blur-panter.html">P.994 - Especial 1994, Parte 4: Hole, Nick Cave, Pulp, Terrorvision, Melvins, Blur, Pantera </a></h2>
-          <p class="episode-date">4 de septiembre de 2024</p>
+          <p class="episode-date">5 de septiembre de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -129,7 +134,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-922-conversaciones-con-ruth-baza-richey-edwards-courtney-love-blur-george-harr.html">P.922 - Conversaciones con Ruth Baza: Richey Edwards, Courtney Love, Blur, George Harrison...</a></h2>
-          <p class="episode-date">13 de septiembre de 2023</p>
+          <p class="episode-date">14 de septiembre de 2023</p>
         </div>
       </article>
 <article class="episode-card">
@@ -142,7 +147,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-921-julio-ruiz-recuerda-las-actuaciones-de-blur-radiohead-dover.html">P.921 - Julio Ruiz recuerda las actuaciones de Blur, Radiohead, Dover...</a></h2>
-          <p class="episode-date">6 de septiembre de 2023</p>
+          <p class="episode-date">7 de septiembre de 2023</p>
         </div>
       </article>
 <article class="episode-card">
@@ -376,7 +381,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/programa-64-rem-standstill-rodriguez-blur-dead-can-dance.html">Programa 64 - REM, STANDSTILL, RODRIGUEZ, BLUR, DEAD CAN DANCE...</a></h2>
-          <p class="episode-date">9 de mayo de 2013</p>
+          <p class="episode-date">10 de mayo de 2013</p>
         </div>
       </article>
 <article class="episode-card">
@@ -419,8 +424,33 @@
         </div>
       </article>
     </section>
+    
     <p class="back-link" style="margin-top:2rem"><a href="/">← Volver al inicio</a></p>
   </main>
+
+<script>
+(function(){
+  var PAGE=60;
+  var grid=document.getElementById("etiquetaGrid");
+  var moreWrap=document.getElementById("etiquetaMoreWrap");
+  var moreBtn=document.getElementById("etiquetaMore");
+  var sortSel=document.getElementById("etiquetaSort");
+  if(!grid)return;
+  var cards=Array.from(grid.querySelectorAll("article.episode-card"));
+  if(cards.length<=PAGE&&!sortSel)return;
+  var origOrder=cards.slice();
+  var shown=PAGE;
+  function render(){
+    var order=sortSel&&sortSel.value==="oldest"?origOrder.slice().reverse():origOrder;
+    cards.forEach(function(c){c.style.display="none"});
+    order.forEach(function(c,i){if(i<shown){c.style.display="";grid.appendChild(c);}});
+    if(moreWrap)moreWrap.hidden=shown>=order.length;
+  }
+  if(moreBtn)moreBtn.addEventListener("click",function(){shown+=PAGE;render();});
+  if(sortSel)sortSel.addEventListener("change",function(){shown=PAGE;render();});
+  render();
+})();
+</script>
 
   <footer class="site-footer">
     <div class="container">

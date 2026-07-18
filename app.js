@@ -625,8 +625,6 @@ async function init() {
         applyFilters();
       });
     });
-    const moreBtn = document.getElementById("quickTagsMore");
-    if (moreBtn) moreBtn.addEventListener("click", () => els.labelFilter.focus());
   }
 
   els.loadMore.addEventListener("click", renderNextPage);

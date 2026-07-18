@@ -40,6 +40,7 @@
       <ul class="topnav-links" id="navLinks" role="list">
         <li><a href="../#escuchanos">Escúchanos</a></li>
         <li><a href="../#episodios">Episodios</a></li>
+        <li><a href="../etiquetas/">Etiquetas</a></li>
         <li><a href="../fotos.html">Fotos</a></li>
         <li><a href="../directo.html">En Directo</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
@@ -66,7 +67,11 @@
     
     <p style="color:var(--text-dim);margin-bottom:2rem">17 episodios</p>
 
-    <section class="episode-list">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;margin-bottom:1.25rem">
+      <span style="font-size:.85rem;color:var(--text-dim)">17 episodios</span>
+      <label style="font-size:.82rem;color:var(--text-dim);display:flex;align-items:center;gap:.4rem">Ordenar: <select id="etiquetaSort" style="font-size:.82rem;border:1px solid var(--border);border-radius:6px;padding:.25rem .5rem;background:var(--bg);color:var(--text);cursor:pointer"><option value="recent">Más reciente primero</option><option value="oldest">Más antiguo primero</option></select></label>
+    </div>
+    <section class="episode-list" id="etiquetaGrid">
       <article class="episode-card">
         <a class="episode-cover-link" href="../episodios/1097-mi-visita-al-estudio-2-de-abbey-road.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
@@ -77,7 +82,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/1097-mi-visita-al-estudio-2-de-abbey-road.html">1097 - Mi visita al estudio 2 de Abbey Road</a></h2>
-          <p class="episode-date">14 de enero de 2026</p>
+          <p class="episode-date">15 de enero de 2026</p>
         </div>
       </article>
 <article class="episode-card">
@@ -116,7 +121,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-958-the-beatles-beatles-for-sale-1964-cap-5.html">P.958 - The Beatles, &quot;Beatles For Sale&quot; 1964 (Cap.5)</a></h2>
-          <p class="episode-date">28 de febrero de 2024</p>
+          <p class="episode-date">29 de febrero de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -155,7 +160,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-873-thebeatles-los-secretos-de-revolver.html">P.873 - TheBeatles, los secretos de REVOLVER</a></h2>
-          <p class="episode-date">28 de octubre de 2022</p>
+          <p class="episode-date">29 de octubre de 2022</p>
         </div>
       </article>
 <article class="episode-card">
@@ -181,7 +186,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-826-especial-the-beatles-su-primer-disco-please-please-me-1963-cap-2.html">P.826 - Especial The Beatles, su primer disco &quot;Please Please Me&quot; 1963 (Cap.2)</a></h2>
-          <p class="episode-date">8 de marzo de 2022</p>
+          <p class="episode-date">9 de marzo de 2022</p>
         </div>
       </article>
 <article class="episode-card">
@@ -289,8 +294,33 @@
         </div>
       </article>
     </section>
+    
     <p class="back-link" style="margin-top:2rem"><a href="/">← Volver al inicio</a></p>
   </main>
+
+<script>
+(function(){
+  var PAGE=60;
+  var grid=document.getElementById("etiquetaGrid");
+  var moreWrap=document.getElementById("etiquetaMoreWrap");
+  var moreBtn=document.getElementById("etiquetaMore");
+  var sortSel=document.getElementById("etiquetaSort");
+  if(!grid)return;
+  var cards=Array.from(grid.querySelectorAll("article.episode-card"));
+  if(cards.length<=PAGE&&!sortSel)return;
+  var origOrder=cards.slice();
+  var shown=PAGE;
+  function render(){
+    var order=sortSel&&sortSel.value==="oldest"?origOrder.slice().reverse():origOrder;
+    cards.forEach(function(c){c.style.display="none"});
+    order.forEach(function(c,i){if(i<shown){c.style.display="";grid.appendChild(c);}});
+    if(moreWrap)moreWrap.hidden=shown>=order.length;
+  }
+  if(moreBtn)moreBtn.addEventListener("click",function(){shown+=PAGE;render();});
+  if(sortSel)sortSel.addEventListener("change",function(){shown=PAGE;render();});
+  render();
+})();
+</script>
 
   <footer class="site-footer">
     <div class="container">

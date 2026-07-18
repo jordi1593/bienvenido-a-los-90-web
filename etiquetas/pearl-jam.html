@@ -40,6 +40,7 @@
       <ul class="topnav-links" id="navLinks" role="list">
         <li><a href="../#escuchanos">Escúchanos</a></li>
         <li><a href="../#episodios">Episodios</a></li>
+        <li><a href="../etiquetas/">Etiquetas</a></li>
         <li><a href="../fotos.html">Fotos</a></li>
         <li><a href="../directo.html">En Directo</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
@@ -66,7 +67,11 @@
     <p class="artist-intro">Pearl Jam es uno de los pilares del grunge y el rock alternativo de los 90. La banda de Seattle liderada por Eddie Vedder publicó Ten (1991), uno de los álbumes más vendidos de la década. En Bienvenido a los 90, el podcast de rock de los años 90 en español, analizamos en profundidad su discografía, sus directos y su trayectoria hasta hoy.</p>
     <p style="color:var(--text-dim);margin-bottom:2rem">121 episodios</p>
 
-    <section class="episode-list">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;margin-bottom:1.25rem">
+      <span style="font-size:.85rem;color:var(--text-dim)">121 episodios</span>
+      <label style="font-size:.82rem;color:var(--text-dim);display:flex;align-items:center;gap:.4rem">Ordenar: <select id="etiquetaSort" style="font-size:.82rem;border:1px solid var(--border);border-radius:6px;padding:.25rem .5rem;background:var(--bg);color:var(--text);cursor:pointer"><option value="recent">Más reciente primero</option><option value="oldest">Más antiguo primero</option></select></label>
+    </div>
+    <section class="episode-list" id="etiquetaGrid">
       <article class="episode-card">
         <a class="episode-cover-link" href="../episodios/1103-el-dia-que-mike-mccready-pearl-jam-se-paseo-por-lavapies.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
@@ -116,7 +121,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/1033-portadas-iconicas-de-los-90-2.html">1033 - Portadas icónicas de los 90 (2)</a></h2>
-          <p class="episode-date">26 de marzo de 2025</p>
+          <p class="episode-date">27 de marzo de 2025</p>
         </div>
       </article>
 <article class="episode-card">
@@ -155,7 +160,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/b90-supernova-66-pearl-jam-recuerda-a-chris-cornell.html">B90 Supernova 66 - Pearl Jam recuerda a Chris Cornell</a></h2>
-          <p class="episode-date">20 de septiembre de 2024</p>
+          <p class="episode-date">21 de septiembre de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -168,7 +173,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/b90-supernova-65-pearl-jam-en-madrid-11-07-24.html">B90 Supernova 65 - Pearl Jam en Madrid (11/07/24)</a></h2>
-          <p class="episode-date">31 de agosto de 2024</p>
+          <p class="episode-date">1 de septiembre de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -181,7 +186,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-991-tu-antes-molabas.html">P.991 - Tú antes molabas</a></h2>
-          <p class="episode-date">21 de agosto de 2024</p>
+          <p class="episode-date">22 de agosto de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -220,7 +225,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-986-especial-pearl-jam-en-espana-2024.html">P.986 - Especial PEARL JAM en España 2024</a></h2>
-          <p class="episode-date">17 de julio de 2024</p>
+          <p class="episode-date">18 de julio de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -285,7 +290,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/b90-supernova-59-el-primer-concierto-de-pearl-jam-en-2024.html">B90 Supernova 59 - El primer concierto de Pearl Jam en 2024</a></h2>
-          <p class="episode-date">18 de mayo de 2024</p>
+          <p class="episode-date">19 de mayo de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -298,7 +303,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-971-sigue-siendo-seattle-un-destino-atractivo-para-los-amantes-del-grunge.html">P.971 - ¿Sigue siendo Seattle un destino atractivo para los amantes del grunge?</a></h2>
-          <p class="episode-date">8 de mayo de 2024</p>
+          <p class="episode-date">9 de mayo de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -324,7 +329,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-968-especial-dark-matter-de-pearl-jam.html">P.968 - Especial &#39;Dark Matter&#39; de Pearl Jam</a></h2>
-          <p class="episode-date">24 de abril de 2024</p>
+          <p class="episode-date">25 de abril de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -350,7 +355,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-940-una-seleccion-musical-exquisita-vol-1.html">P.940 - Una selección musical exquisita Vol.1</a></h2>
-          <p class="episode-date">21 de diciembre de 2023</p>
+          <p class="episode-date">22 de diciembre de 2023</p>
         </div>
       </article>
 <article class="episode-card">
@@ -363,7 +368,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-939-mad-cool-2024-su-mejor-cartel.html">P.939 -Mad Cool 2024, ¿su mejor cartel?</a></h2>
-          <p class="episode-date">18 de diciembre de 2023</p>
+          <p class="episode-date">19 de diciembre de 2023</p>
         </div>
       </article>
 <article class="episode-card">
@@ -376,7 +381,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-934-remasterizaciones-2023-valen-la-pena.html">P.934 - Remasterizaciones 2023, ¿valen la pena?</a></h2>
-          <p class="episode-date">22 de noviembre de 2023</p>
+          <p class="episode-date">23 de noviembre de 2023</p>
         </div>
       </article>
 <article class="episode-card">
@@ -415,7 +420,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/b90-supernova-45-la-historia-de-jeremy-pearl-jam.html">B90 Supernova 45 - La historia de JEREMY (Pearl Jam)</a></h2>
-          <p class="episode-date">10 de septiembre de 2023</p>
+          <p class="episode-date">11 de septiembre de 2023</p>
         </div>
       </article>
 <article class="episode-card">
@@ -467,7 +472,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-835-matt-cameron-de-san-diego-a-seattle-cap-2.html">P.835 - Matt Cameron, de San Diego a Seattle (Cap.2)</a></h2>
-          <p class="episode-date">26 de abril de 2022</p>
+          <p class="episode-date">27 de abril de 2022</p>
         </div>
       </article>
 <article class="episode-card">
@@ -1364,7 +1369,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/programa-144-pearl-jam-moline-2014.html">Programa 144 - Pearl Jam (Moline 2014)</a></h2>
-          <p class="episode-date">15 de enero de 2015</p>
+          <p class="episode-date">16 de enero de 2015</p>
         </div>
       </article>
 <article class="episode-card">
@@ -1494,7 +1499,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/b90-programa-84-pearl-jam-lightning-bolt.html">Programa 84 - Pearl Jam Lightning Bolt</a></h2>
-          <p class="episode-date">10 de octubre de 2013</p>
+          <p class="episode-date">11 de octubre de 2013</p>
         </div>
       </article>
 <article class="episode-card">
@@ -1507,7 +1512,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/b90-programa-83-pearl-jam-moby-the-chemical-brother-kings-of-leon.html">Programa 83 -Pearl Jam, Moby, The Chemical Brother, Kings of Leon...</a></h2>
-          <p class="episode-date">3 de octubre de 2013</p>
+          <p class="episode-date">4 de octubre de 2013</p>
         </div>
       </article>
 <article class="episode-card">
@@ -1641,8 +1646,33 @@
         </div>
       </article>
     </section>
+    <div id="etiquetaMoreWrap" style="text-align:center;margin:2rem 0"><button id="etiquetaMore" type="button" style="padding:.6rem 2rem;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:.9rem;font-weight:600;cursor:pointer">Ver más episodios</button></div>
     <p class="back-link" style="margin-top:2rem"><a href="/">← Volver al inicio</a></p>
   </main>
+
+<script>
+(function(){
+  var PAGE=60;
+  var grid=document.getElementById("etiquetaGrid");
+  var moreWrap=document.getElementById("etiquetaMoreWrap");
+  var moreBtn=document.getElementById("etiquetaMore");
+  var sortSel=document.getElementById("etiquetaSort");
+  if(!grid)return;
+  var cards=Array.from(grid.querySelectorAll("article.episode-card"));
+  if(cards.length<=PAGE&&!sortSel)return;
+  var origOrder=cards.slice();
+  var shown=PAGE;
+  function render(){
+    var order=sortSel&&sortSel.value==="oldest"?origOrder.slice().reverse():origOrder;
+    cards.forEach(function(c){c.style.display="none"});
+    order.forEach(function(c,i){if(i<shown){c.style.display="";grid.appendChild(c);}});
+    if(moreWrap)moreWrap.hidden=shown>=order.length;
+  }
+  if(moreBtn)moreBtn.addEventListener("click",function(){shown+=PAGE;render();});
+  if(sortSel)sortSel.addEventListener("change",function(){shown=PAGE;render();});
+  render();
+})();
+</script>
 
   <footer class="site-footer">
     <div class="container">

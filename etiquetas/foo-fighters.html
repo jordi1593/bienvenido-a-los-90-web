@@ -40,6 +40,7 @@
       <ul class="topnav-links" id="navLinks" role="list">
         <li><a href="../#escuchanos">Escúchanos</a></li>
         <li><a href="../#episodios">Episodios</a></li>
+        <li><a href="../etiquetas/">Etiquetas</a></li>
         <li><a href="../fotos.html">Fotos</a></li>
         <li><a href="../directo.html">En Directo</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
@@ -66,7 +67,11 @@
     <p class="artist-intro">Foo Fighters nació en 1994 cuando Dave Grohl, batería de Nirvana, decidió seguir adelante tras la muerte de Kurt Cobain. Con su debut homónimo y discos como The Colour and the Shape (1997), se convirtieron en una de las bandas de rock alternativo más grandes del mundo. En Bienvenido a los 90, el podcast de rock de los 90 en español, seguimos de cerca su historia.</p>
     <p style="color:var(--text-dim);margin-bottom:2rem">68 episodios</p>
 
-    <section class="episode-list">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;margin-bottom:1.25rem">
+      <span style="font-size:.85rem;color:var(--text-dim)">68 episodios</span>
+      <label style="font-size:.82rem;color:var(--text-dim);display:flex;align-items:center;gap:.4rem">Ordenar: <select id="etiquetaSort" style="font-size:.82rem;border:1px solid var(--border);border-radius:6px;padding:.25rem .5rem;background:var(--bg);color:var(--text);cursor:pointer"><option value="recent">Más reciente primero</option><option value="oldest">Más antiguo primero</option></select></label>
+    </div>
+    <section class="episode-list" id="etiquetaGrid">
       <article class="episode-card">
         <a class="episode-cover-link" href="../episodios/1134-me-he-perdido-el-mad-cool-2026.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
@@ -77,7 +82,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/1134-me-he-perdido-el-mad-cool-2026.html">1134 - Me he perdido el Mad Cool 2026</a></h2>
-          <p class="episode-date">15 de julio de 2026</p>
+          <p class="episode-date">16 de julio de 2026</p>
         </div>
       </article>
 <article class="episode-card">
@@ -90,7 +95,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/1121-especial-foo-fighters-your-favorite-toy-2026.html">1121 - Especial Foo Fighters - Your Favorite Toy (2026)</a></h2>
-          <p class="episode-date">6 de mayo de 2026</p>
+          <p class="episode-date">7 de mayo de 2026</p>
         </div>
       </article>
 <article class="episode-card">
@@ -129,7 +134,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/1089-homenaje-a-foo-fighters-1995.html">1089 - Homenaje a Foo Fighters (1995)</a></h2>
-          <p class="episode-date">7 de diciembre de 2025</p>
+          <p class="episode-date">8 de diciembre de 2025</p>
         </div>
       </article>
 <article class="episode-card">
@@ -142,7 +147,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-973-entrevista-a-barret-jones.html">P.973 - Entrevista a Barret Jones</a></h2>
-          <p class="episode-date">15 de mayo de 2024</p>
+          <p class="episode-date">16 de mayo de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -220,7 +225,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-902-novedades-the-heavy-metallica-foo-fighters-brad-garbage.html">P.902 - Novedades: The Heavy, Metallica, Foo Fighters, Brad, Garbage...</a></h2>
-          <p class="episode-date">4 de mayo de 2023</p>
+          <p class="episode-date">5 de mayo de 2023</p>
         </div>
       </article>
 <article class="episode-card">
@@ -922,7 +927,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/bienvenido-a-los-90-programa-22-la-importancia-de-llamarse-butch.html">Bienvenido a los 90 - Programa 22 - La importancia de llamarse Butch</a></h2>
-          <p class="episode-date">5 de julio de 2012</p>
+          <p class="episode-date">6 de julio de 2012</p>
         </div>
       </article>
 <article class="episode-card">
@@ -952,8 +957,33 @@
         </div>
       </article>
     </section>
+    <div id="etiquetaMoreWrap" style="text-align:center;margin:2rem 0"><button id="etiquetaMore" type="button" style="padding:.6rem 2rem;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:.9rem;font-weight:600;cursor:pointer">Ver más episodios</button></div>
     <p class="back-link" style="margin-top:2rem"><a href="/">← Volver al inicio</a></p>
   </main>
+
+<script>
+(function(){
+  var PAGE=60;
+  var grid=document.getElementById("etiquetaGrid");
+  var moreWrap=document.getElementById("etiquetaMoreWrap");
+  var moreBtn=document.getElementById("etiquetaMore");
+  var sortSel=document.getElementById("etiquetaSort");
+  if(!grid)return;
+  var cards=Array.from(grid.querySelectorAll("article.episode-card"));
+  if(cards.length<=PAGE&&!sortSel)return;
+  var origOrder=cards.slice();
+  var shown=PAGE;
+  function render(){
+    var order=sortSel&&sortSel.value==="oldest"?origOrder.slice().reverse():origOrder;
+    cards.forEach(function(c){c.style.display="none"});
+    order.forEach(function(c,i){if(i<shown){c.style.display="";grid.appendChild(c);}});
+    if(moreWrap)moreWrap.hidden=shown>=order.length;
+  }
+  if(moreBtn)moreBtn.addEventListener("click",function(){shown+=PAGE;render();});
+  if(sortSel)sortSel.addEventListener("change",function(){shown=PAGE;render();});
+  render();
+})();
+</script>
 
   <footer class="site-footer">
     <div class="container">

@@ -40,6 +40,7 @@
       <ul class="topnav-links" id="navLinks" role="list">
         <li><a href="../#escuchanos">Escúchanos</a></li>
         <li><a href="../#episodios">Episodios</a></li>
+        <li><a href="../etiquetas/">Etiquetas</a></li>
         <li><a href="../fotos.html">Fotos</a></li>
         <li><a href="../directo.html">En Directo</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
@@ -66,7 +67,11 @@
     <p class="artist-intro">Liam Gallagher, voz de Oasis, es uno de los frontmen más carismáticos del rock de los años 90. Su actitud, su voz y su imagen lo convirtieron en un icono del britpop. En Bienvenido a los 90, el podcast de música de los 90 en español, seguimos su trayectoria con Oasis, Beady Eye y en solitario.</p>
     <p style="color:var(--text-dim);margin-bottom:2rem">55 episodios</p>
 
-    <section class="episode-list">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;margin-bottom:1.25rem">
+      <span style="font-size:.85rem;color:var(--text-dim)">55 episodios</span>
+      <label style="font-size:.82rem;color:var(--text-dim);display:flex;align-items:center;gap:.4rem">Ordenar: <select id="etiquetaSort" style="font-size:.82rem;border:1px solid var(--border);border-radius:6px;padding:.25rem .5rem;background:var(--bg);color:var(--text);cursor:pointer"><option value="recent">Más reciente primero</option><option value="oldest">Más antiguo primero</option></select></label>
+    </div>
+    <section class="episode-list" id="etiquetaGrid">
       <article class="episode-card">
         <a class="episode-cover-link" href="../episodios/1109-noel-gallagher-mejor-compositor-en-los-brit-2026.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
@@ -77,7 +82,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/1109-noel-gallagher-mejor-compositor-en-los-brit-2026.html">1109 - Noel Gallagher, mejor compositor en los BRIT 2026</a></h2>
-          <p class="episode-date">11 de marzo de 2026</p>
+          <p class="episode-date">12 de marzo de 2026</p>
         </div>
       </article>
 <article class="episode-card">
@@ -90,7 +95,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/1100-oasis-y-ahora-que.html">1100 - Oasis: ¿y ahora qué?</a></h2>
-          <p class="episode-date">28 de enero de 2026</p>
+          <p class="episode-date">29 de enero de 2026</p>
         </div>
       </article>
 <article class="episode-card">
@@ -103,7 +108,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/1062-especial-oasis-en-londres-2.html">1062 - Especial OASIS en Londres (2)</a></h2>
-          <p class="episode-date">17 de agosto de 2025</p>
+          <p class="episode-date">18 de agosto de 2025</p>
         </div>
       </article>
 <article class="episode-card">
@@ -194,7 +199,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/b90-supernova-80-oasis-en-directo-desde-la-sala-aqualung-de-madrid-2005.html">B90 Supernova 80 - Oasis en directo desde la sala Aqualung de Madrid 2005</a></h2>
-          <p class="episode-date">14 de junio de 2025</p>
+          <p class="episode-date">15 de junio de 2025</p>
         </div>
       </article>
 <article class="episode-card">
@@ -207,7 +212,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-996-el-regreso-de-oasis.html">P.996 - El regreso de Oasis</a></h2>
-          <p class="episode-date">18 de septiembre de 2024</p>
+          <p class="episode-date">19 de septiembre de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -246,7 +251,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/b90-supernova-51-la-historia-de-live-forever-oasis.html">B90 Supernova 51 - La historia de Live Forever (Oasis)</a></h2>
-          <p class="episode-date">2 de enero de 2024</p>
+          <p class="episode-date">3 de enero de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -766,7 +771,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/programa-34-noel-gallagher-international-magic-live-at-the-o2.html">Programa 34 - Noel Gallagher  International Magic Live at the O2</a></h2>
-          <p class="episode-date">18 de octubre de 2012</p>
+          <p class="episode-date">19 de octubre de 2012</p>
         </div>
       </article>
 <article class="episode-card">
@@ -783,8 +788,33 @@
         </div>
       </article>
     </section>
+    
     <p class="back-link" style="margin-top:2rem"><a href="/">← Volver al inicio</a></p>
   </main>
+
+<script>
+(function(){
+  var PAGE=60;
+  var grid=document.getElementById("etiquetaGrid");
+  var moreWrap=document.getElementById("etiquetaMoreWrap");
+  var moreBtn=document.getElementById("etiquetaMore");
+  var sortSel=document.getElementById("etiquetaSort");
+  if(!grid)return;
+  var cards=Array.from(grid.querySelectorAll("article.episode-card"));
+  if(cards.length<=PAGE&&!sortSel)return;
+  var origOrder=cards.slice();
+  var shown=PAGE;
+  function render(){
+    var order=sortSel&&sortSel.value==="oldest"?origOrder.slice().reverse():origOrder;
+    cards.forEach(function(c){c.style.display="none"});
+    order.forEach(function(c,i){if(i<shown){c.style.display="";grid.appendChild(c);}});
+    if(moreWrap)moreWrap.hidden=shown>=order.length;
+  }
+  if(moreBtn)moreBtn.addEventListener("click",function(){shown+=PAGE;render();});
+  if(sortSel)sortSel.addEventListener("change",function(){shown=PAGE;render();});
+  render();
+})();
+</script>
 
   <footer class="site-footer">
     <div class="container">

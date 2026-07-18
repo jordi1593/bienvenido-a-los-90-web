@@ -524,7 +524,7 @@ function episodePage(ep, { prev, next, related, series, validEtiquetaLabels }) {
 <link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
 <meta name="description" content="${description}" />
 <link rel="canonical" href="${canonical}" />
-<style>:root{--bg:#fff;--text:#111827;--text-muted:#6b7280;--accent:#e85d04;--border:#e5e7eb}[data-theme=dark]{--bg:#0f0f0f;--text:#f3f4f6;--text-muted:#9ca3af;--border:#1f2937}*,*::before,*::after{box-sizing:border-box}body{background:var(--bg);color:var(--text);margin:0;font-family:system-ui,sans-serif;line-height:1.6}.topnav{background:var(--bg);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;padding:0}.container{max-width:860px;margin:0 auto;padding:0 1rem}.topnav-inner{display:flex;align-items:center;gap:1rem;height:56px}${epNum != null ? `.ep-title-wrap{position:relative;overflow:visible}.ep-num-watermark{position:absolute;font-size:clamp(7rem,22vw,16rem);font-weight:900;line-height:1;top:-0.15em;left:-0.05em;color:var(--accent);opacity:0.07;pointer-events:none;user-select:none;letter-spacing:-0.04em;z-index:0}.ep-title-wrap h1,.ep-title-wrap .episode-meta,.ep-title-wrap .episode-likes{position:relative;z-index:1}` : ""}.ep-stats{display:flex;gap:0;margin:1.5rem 0;border:1px solid var(--border);border-radius:10px;overflow:hidden}.ep-stat{flex:1;display:flex;flex-direction:column;align-items:center;padding:0.5rem 0.25rem;gap:0.2rem;border-right:1px solid var(--border)}.ep-stat:last-child{border-right:none}.ep-stat-num{font-size:1rem;font-weight:700;line-height:1;color:var(--accent);letter-spacing:-0.02em;font-variant-numeric:tabular-nums}.ep-stat-icon{color:var(--text-muted);width:16px;height:16px}.ep-stat-label{font-size:0.62rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted)}</style>
+<style>:root{--bg:#ffffff;--text:#000000;--text-dim:#2b2b2b;--accent:#c41750;--border:rgba(0,0,0,0.15)}[data-theme=dark]{--bg:#16131a;--text:#f5f3f6;--text-dim:#b9b2c0;--accent:#ff5d85;--border:rgba(255,255,255,0.15)}*,*::before,*::after{box-sizing:border-box}body{background:var(--bg);color:var(--text);margin:0;font-family:system-ui,sans-serif;line-height:1.6}.topnav{background:var(--bg);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;padding:0}.container{max-width:860px;margin:0 auto;padding:0 1rem}.topnav-inner{display:flex;align-items:center;gap:1rem;height:56px}${epNum != null ? `.ep-title-wrap{position:relative;overflow:visible}.ep-num-watermark{position:absolute;font-size:clamp(7rem,22vw,16rem);font-weight:900;line-height:1;top:-0.15em;left:-0.05em;color:var(--accent);opacity:0.07;pointer-events:none;user-select:none;letter-spacing:-0.04em;z-index:0}.ep-title-wrap h1,.ep-title-wrap .episode-meta,.ep-title-wrap .episode-likes{position:relative;z-index:1}` : ""}.ep-stats{display:flex;gap:0;margin:1.5rem 0;border:1px solid var(--border);border-radius:10px;overflow:hidden}.ep-stat{flex:1;display:flex;flex-direction:column;align-items:center;padding:0.5rem 0.25rem;gap:0.2rem;border-right:1px solid var(--border)}.ep-stat:last-child{border-right:none}.ep-stat-num{font-size:1rem;font-weight:700;line-height:1;color:var(--accent);letter-spacing:-0.02em;font-variant-numeric:tabular-nums}.ep-stat-icon{color:var(--text-dim);width:16px;height:16px}.ep-stat-label{font-size:0.62rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dim)}.episode-pager{display:flex;justify-content:space-between;gap:1rem;margin:2.25rem 0 1.25rem;padding-top:1.5rem;border-top:1px solid var(--border);font-size:0.85rem}.episode-pager a{color:var(--text-dim);text-decoration:none;max-width:45%}.episode-pager span{color:var(--text-dim);opacity:0.4}</style>
 <link rel="preload" href="../styles.css?v=93" as="style" onload="this.rel='stylesheet'" />
 <noscript><link rel="stylesheet" href="../styles.css?v=93" /></noscript>
 
@@ -559,6 +559,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
       <ul class="topnav-links" id="navLinks" role="list">
         <li><a href="../#escuchanos">Escúchanos</a></li>
         <li><a href="../#episodios">Episodios</a></li>
+        <li><a href="../etiquetas/">Etiquetas</a></li>
         <li><a href="../fotos.html">Fotos</a></li>
         <li><a href="../directo.html">En Directo</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
@@ -957,6 +958,7 @@ ${extraLd ? `<script type="application/ld+json">${extraLd}</script>` : ""}
       <ul class="topnav-links" id="navLinks" role="list">
         <li><a href="../#escuchanos">Escúchanos</a></li>
         <li><a href="../#episodios">Episodios</a></li>
+        <li><a href="../etiquetas/">Etiquetas</a></li>
         <li><a href="../fotos.html">Fotos</a></li>
         <li><a href="../directo.html">En Directo</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
@@ -1028,11 +1030,40 @@ ${featuredEp ? `<a class="artist-featured" href="../episodios/${featuredEp.slug}
     ${artistData ? `<p class="artist-intro">${escapeHtml(artistData.intro)}</p>` : ""}
     <p style="color:var(--text-dim);margin-bottom:2rem">${eps.length} episodio${eps.length === 1 ? "" : "s"}</p>`}
 
-    <section class="episode-list">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;margin-bottom:1.25rem">
+      <span style="font-size:.85rem;color:var(--text-dim)">${sorted.length} episodio${sorted.length === 1 ? "" : "s"}</span>
+      ${sorted.length > 1 ? `<label style="font-size:.82rem;color:var(--text-dim);display:flex;align-items:center;gap:.4rem">Ordenar: <select id="etiquetaSort" style="font-size:.82rem;border:1px solid var(--border);border-radius:6px;padding:.25rem .5rem;background:var(--bg);color:var(--text);cursor:pointer"><option value="recent">Más reciente primero</option><option value="oldest">Más antiguo primero</option></select></label>` : ""}
+    </div>
+    <section class="episode-list" id="etiquetaGrid">
       ${episodesHtml}
     </section>
+    ${sorted.length > 60 ? `<div id="etiquetaMoreWrap" style="text-align:center;margin:2rem 0"><button id="etiquetaMore" type="button" style="padding:.6rem 2rem;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:.9rem;font-weight:600;cursor:pointer">Ver más episodios</button></div>` : ""}
     <p class="back-link" style="margin-top:2rem"><a href="/">← Volver al inicio</a></p>
   </main>
+
+<script>
+(function(){
+  var PAGE=60;
+  var grid=document.getElementById("etiquetaGrid");
+  var moreWrap=document.getElementById("etiquetaMoreWrap");
+  var moreBtn=document.getElementById("etiquetaMore");
+  var sortSel=document.getElementById("etiquetaSort");
+  if(!grid)return;
+  var cards=Array.from(grid.querySelectorAll("article.episode-card"));
+  if(cards.length<=PAGE&&!sortSel)return;
+  var origOrder=cards.slice();
+  var shown=PAGE;
+  function render(){
+    var order=sortSel&&sortSel.value==="oldest"?origOrder.slice().reverse():origOrder;
+    cards.forEach(function(c){c.style.display="none"});
+    order.forEach(function(c,i){if(i<shown){c.style.display="";grid.appendChild(c);}});
+    if(moreWrap)moreWrap.hidden=shown>=order.length;
+  }
+  if(moreBtn)moreBtn.addEventListener("click",function(){shown+=PAGE;render();});
+  if(sortSel)sortSel.addEventListener("change",function(){shown=PAGE;render();});
+  render();
+})();
+</script>
 
 ${footer}
 
@@ -1080,6 +1111,7 @@ ${footer}
       <ul class="topnav-links" id="navLinks" role="list">
         <li><a href="../#escuchanos">Escúchanos</a></li>
         <li><a href="../#episodios">Episodios</a></li>
+        <li><a href="../etiquetas/">Etiquetas</a></li>
         <li><a href="../fotos.html">Fotos</a></li>
         <li><a href="../directo.html">En Directo</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
@@ -1346,6 +1378,7 @@ function buildFotosPage(episodesBySlug) {
       <ul class="topnav-links" id="navLinks" role="list">
         <li><a href="/#escuchanos">Escúchanos</a></li>
         <li><a href="/#episodios">Episodios</a></li>
+        <li><a href="etiquetas/">Etiquetas</a></li>
         <li><a href="fotos.html" class="active">Fotos</a></li>
         <li><a href="directo.html">En Directo</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>

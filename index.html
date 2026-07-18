@@ -70,10 +70,6 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
 html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border)}
 [data-theme="dark"] .platform-btn{color:var(--text-dim);border-color:var(--border)}
 </style>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" media="print" onload="this.media='all'" />
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" /></noscript>
 <link rel="stylesheet" href="styles.css?v=93" media="print" onload="this.media='all'" />
 <noscript><link rel="stylesheet" href="styles.css?v=93" /></noscript>
 
@@ -131,6 +127,7 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
       <ul class="topnav-links" id="navLinks" role="list">
         <li><a href="#escuchanos">Escúchanos</a></li>
         <li><a href="#episodios">Episodios</a></li>
+        <li><a href="etiquetas/">Etiquetas</a></li>
         <li><a href="fotos.html">Fotos</a></li>
         <li><a href="directo.html">En Directo</a></li>
         <li><a href="#" id="randomEpisodeBtn" aria-label="Episodio aleatorio"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
@@ -245,7 +242,7 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2"/></svg>
               Discos Homenaje
             </button>
-            <button class="quick-tag quick-tag-more" id="quickTagsMore" type="button">+ ver todas las etiquetas ▾</button>
+            <a class="quick-tag quick-tag-more" id="quickTagsMore" href="etiquetas/">Ver todas las etiquetas →</a>
           </div>
           <div id="activeLabels" class="active-labels" hidden></div>
           <span id="resultCount" class="result-count"></span>

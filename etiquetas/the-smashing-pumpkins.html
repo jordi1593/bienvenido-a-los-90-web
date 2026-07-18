@@ -40,6 +40,7 @@
       <ul class="topnav-links" id="navLinks" role="list">
         <li><a href="../#escuchanos">Escúchanos</a></li>
         <li><a href="../#episodios">Episodios</a></li>
+        <li><a href="../etiquetas/">Etiquetas</a></li>
         <li><a href="../fotos.html">Fotos</a></li>
         <li><a href="../directo.html">En Directo</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
@@ -66,7 +67,11 @@
     <p class="artist-intro">The Smashing Pumpkins, liderados por Billy Corgan, definieron el rock alternativo de los 90 con discos como Siamese Dream (1993) y Mellon Collie and the Infinite Sadness (1995). En Bienvenido a los 90, el podcast de rock alternativo de los 90 en español, exploramos su sonido único que mezcla grunge, psicodelia y rock clásico.</p>
     <p style="color:var(--text-dim);margin-bottom:2rem">88 episodios</p>
 
-    <section class="episode-list">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;margin-bottom:1.25rem">
+      <span style="font-size:.85rem;color:var(--text-dim)">88 episodios</span>
+      <label style="font-size:.82rem;color:var(--text-dim);display:flex;align-items:center;gap:.4rem">Ordenar: <select id="etiquetaSort" style="font-size:.82rem;border:1px solid var(--border);border-radius:6px;padding:.25rem .5rem;background:var(--bg);color:var(--text);cursor:pointer"><option value="recent">Más reciente primero</option><option value="oldest">Más antiguo primero</option></select></label>
+    </div>
+    <section class="episode-list" id="etiquetaGrid">
       <article class="episode-card">
         <a class="episode-cover-link" href="../episodios/1127-especial-pedales-de-efectos-el-laboratorio-sonico-de-los-90-parte-2.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
@@ -116,7 +121,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/1112-me-he-vuelto-a-comprar-el-mellon-collie-and-the-infinite-sadness-30-anos-despues.html">1112 - Me he vuelto a comprar el Mellon Collie And The Infinite Sadness 30 años después</a></h2>
-          <p class="episode-date">25 de marzo de 2026</p>
+          <p class="episode-date">26 de marzo de 2026</p>
         </div>
       </article>
 <article class="episode-card">
@@ -155,7 +160,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/1033-portadas-iconicas-de-los-90-2.html">1033 - Portadas icónicas de los 90 (2)</a></h2>
-          <p class="episode-date">26 de marzo de 2025</p>
+          <p class="episode-date">27 de marzo de 2025</p>
         </div>
       </article>
 <article class="episode-card">
@@ -181,7 +186,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-991-tu-antes-molabas.html">P.991 - Tú antes molabas</a></h2>
-          <p class="episode-date">21 de agosto de 2024</p>
+          <p class="episode-date">22 de agosto de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -246,7 +251,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-951-manuel-cabezali-producciones-2023.html">P.951 - Manuel Cabezalí - Producciones 2023</a></h2>
-          <p class="episode-date">7 de febrero de 2024</p>
+          <p class="episode-date">8 de febrero de 2024</p>
         </div>
       </article>
 <article class="episode-card">
@@ -259,7 +264,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-939-mad-cool-2024-su-mejor-cartel.html">P.939 -Mad Cool 2024, ¿su mejor cartel?</a></h2>
-          <p class="episode-date">18 de diciembre de 2023</p>
+          <p class="episode-date">19 de diciembre de 2023</p>
         </div>
       </article>
 <article class="episode-card">
@@ -454,7 +459,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/p-734-the-smashing-pumpkins-madrid-8-10-2000.html">P.734 - The Smashing Pumpkins - Madrid, 8/10/2000</a></h2>
-          <p class="episode-date">4 de febrero de 2021</p>
+          <p class="episode-date">5 de febrero de 2021</p>
         </div>
       </article>
 <article class="episode-card">
@@ -1091,7 +1096,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/b90-programa-95-the-smashing-pumpkins-mellon-collie-and-the-infinite-sadness.html">Programa 95 - The Smashing Pumpkins - Mellon Collie and the Infinite Sadness</a></h2>
-          <p class="episode-date">26 de diciembre de 2013</p>
+          <p class="episode-date">27 de diciembre de 2013</p>
         </div>
       </article>
 <article class="episode-card">
@@ -1169,7 +1174,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/bienvenido-a-los-90-programa-22-la-importancia-de-llamarse-butch.html">Bienvenido a los 90 - Programa 22 - La importancia de llamarse Butch</a></h2>
-          <p class="episode-date">5 de julio de 2012</p>
+          <p class="episode-date">6 de julio de 2012</p>
         </div>
       </article>
 <article class="episode-card">
@@ -1182,7 +1187,7 @@
         </a>
         <div class="episode-body">
           <h2 class="episode-title"><a href="../episodios/bienvenido-a-los-90-programa-19-el-oceano-pumpkins.html">Bienvenido a los 90 - Programa 19 - El océano pumpkins</a></h2>
-          <p class="episode-date">14 de junio de 2012</p>
+          <p class="episode-date">15 de junio de 2012</p>
         </div>
       </article>
 <article class="episode-card">
@@ -1212,8 +1217,33 @@
         </div>
       </article>
     </section>
+    <div id="etiquetaMoreWrap" style="text-align:center;margin:2rem 0"><button id="etiquetaMore" type="button" style="padding:.6rem 2rem;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:.9rem;font-weight:600;cursor:pointer">Ver más episodios</button></div>
     <p class="back-link" style="margin-top:2rem"><a href="/">← Volver al inicio</a></p>
   </main>
+
+<script>
+(function(){
+  var PAGE=60;
+  var grid=document.getElementById("etiquetaGrid");
+  var moreWrap=document.getElementById("etiquetaMoreWrap");
+  var moreBtn=document.getElementById("etiquetaMore");
+  var sortSel=document.getElementById("etiquetaSort");
+  if(!grid)return;
+  var cards=Array.from(grid.querySelectorAll("article.episode-card"));
+  if(cards.length<=PAGE&&!sortSel)return;
+  var origOrder=cards.slice();
+  var shown=PAGE;
+  function render(){
+    var order=sortSel&&sortSel.value==="oldest"?origOrder.slice().reverse():origOrder;
+    cards.forEach(function(c){c.style.display="none"});
+    order.forEach(function(c,i){if(i<shown){c.style.display="";grid.appendChild(c);}});
+    if(moreWrap)moreWrap.hidden=shown>=order.length;
+  }
+  if(moreBtn)moreBtn.addEventListener("click",function(){shown+=PAGE;render();});
+  if(sortSel)sortSel.addEventListener("change",function(){shown=PAGE;render();});
+  render();
+})();
+</script>
 
   <footer class="site-footer">
     <div class="container">
