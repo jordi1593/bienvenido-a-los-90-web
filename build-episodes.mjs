@@ -1162,7 +1162,7 @@ function buildSitemap(episodes, etiquetas) {
     ${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ""}
     <changefreq>${u.changefreq}</changefreq>
     <priority>${u.priority}</priority>
-    ${u.image ? `<image:image><image:loc>${u.image}</image:loc></image:image>` : ""}
+    ${u.image ? `<image:image><image:loc>${u.image.replace(/&/g, "&amp;")}</image:loc></image:image>` : ""}
   </url>`;
 
   const urlsetOpen = `<?xml version="1.0" encoding="UTF-8"?>
