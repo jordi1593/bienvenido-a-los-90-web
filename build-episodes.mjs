@@ -469,6 +469,7 @@ function episodePage(ep, { prev, next, related, series, validEtiquetaLabels }) {
     name: ep.title,
     ...(epNum != null ? { episodeNumber: epNum } : {}),
     datePublished: ep.published,
+    dateModified: ep.updated || ep.published,
     url: pageUrl,
     ...(platformSameAs.length ? { sameAs: platformSameAs } : {}),
     inLanguage: "es",
@@ -528,6 +529,7 @@ function episodePage(ep, { prev, next, related, series, validEtiquetaLabels }) {
 <noscript><link rel="stylesheet" href="../styles.css?v=93" /></noscript>
 
 <meta property="og:type" content="article" />
+<meta property="og:locale" content="es_ES" />
 <meta property="og:title" content="${escapeHtml(ep.title)}" />
 <meta property="og:description" content="${description}" />
 <meta property="og:url" content="${pageUrl}" />
@@ -859,6 +861,7 @@ function buildEtiquetasPages(episodes) {
       ? `Escucha todos los episodios de Bienvenido a los 90 sobre ${label}. El podcast de música de los años 90 en español analiza su historia, discografía y legado.`
       : `Todos los episodios del podcast Bienvenido a los 90 dedicados a ${label}: análisis, entrevistas y retrospectivas.`;
     const sorted = [...eps].sort((a, b) => new Date(b.published) - new Date(a.published));
+    const etiquetaOgImage = ogThumbnail(sorted[0]?.thumbnail) || `${SITE_URL}/images/og-home.png`;
 
     const artistType = artistData?.type || "MusicGroup";
     const extraLd = artistData ? JSON.stringify({
@@ -930,10 +933,11 @@ function buildEtiquetasPages(episodes) {
 <link rel="preload" href="../styles.css?v=93" as="style" onload="this.rel='stylesheet'" />
 <noscript><link rel="stylesheet" href="../styles.css?v=93" /></noscript>
 <meta property="og:type" content="website" />
+<meta property="og:locale" content="es_ES" />
 <meta property="og:title" content="${escapeHtml(title)}" />
 <meta property="og:description" content="${escapeHtml(description)}" />
 <meta property="og:url" content="${pageUrl}" />
-<meta property="og:image" content="${SITE_URL}/images/og-home.png" />
+<meta property="og:image" content="${etiquetaOgImage}" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@Rockisroll" />
 <meta name="twitter:title" content="${escapeHtml(title)}" />
@@ -1054,6 +1058,16 @@ ${footer}
 <style>:root{--bg:#ffffff;--bg-flat:#ffffff;--text:#000000;--text-dim:#2b2b2b;--accent:#c41750;--border:rgba(0,0,0,0.15)}[data-theme=dark]{--bg:#16131a;--bg-flat:#16131a;--text:#f5f3f6;--text-dim:#b9b2c0;--accent:#ff5d85;--border:rgba(255,255,255,0.15)}*,::before,::after{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}.no-transition,.no-transition *{transition:none!important}</style>
 <link rel="preload" href="../styles.css?v=93" as="style" onload="this.rel='stylesheet'" />
 <noscript><link rel="stylesheet" href="../styles.css?v=93" /></noscript>
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:title" content="Etiquetas — Bienvenido a los 90" />
+<meta property="og:description" content="Explora los episodios de Bienvenido a los 90 por artista o temática: Nirvana, Oasis, Pearl Jam, grunge, britpop y mucho más." />
+<meta property="og:url" content="${SITE_URL}/etiquetas/" />
+<meta property="og:image" content="${SITE_URL}/images/og-home.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Rockisroll" />
+<meta name="twitter:title" content="Etiquetas — Bienvenido a los 90" />
+<meta name="twitter:description" content="Explora los episodios de Bienvenido a los 90 por artista o temática." />
 </head>
 <body>
   <nav class="topnav">
@@ -1124,6 +1138,12 @@ function buildSitemap(episodes, etiquetas) {
       changefreq: "monthly",
       priority: "0.5",
       image: `${SITE_URL}/images/og-home.png`,
+    },
+    {
+      loc: `${SITE_URL}/directo.html`,
+      lastmod: today,
+      changefreq: "monthly",
+      priority: "0.5",
     },
     {
       loc: `${SITE_URL}/etiquetas/`,
@@ -1302,6 +1322,7 @@ function buildFotosPage(episodesBySlug) {
 <noscript><link rel="stylesheet" href="styles.css?v=93" /></noscript>
 
 <meta property="og:type" content="website" />
+<meta property="og:locale" content="es_ES" />
 <meta property="og:title" content="Fotos — Bienvenido a los 90" />
 <meta property="og:description" content="Galería de fotos de programas emblemáticos de Bienvenido a los 90." />
 <meta property="og:url" content="${SITE_URL}/fotos.html" />
@@ -1529,6 +1550,16 @@ function main() {
     ? JSON.parse(fs.readFileSync("esenciales-slugs.json", "utf-8"))
     : [];
   fs.writeFileSync("data/esenciales.json", JSON.stringify(esencialesSlugs), "utf-8");
+
+  // Actualiza numberOfEpisodes en el JSON-LD PodcastSeries de index.html
+  if (fs.existsSync("index.html")) {
+    const indexSrc = fs.readFileSync("index.html", "utf-8");
+    const updated = indexSrc.replace(
+      /"numberOfEpisodes":\s*\d+/,
+      `"numberOfEpisodes": ${episodes.length}`
+    );
+    if (updated !== indexSrc) fs.writeFileSync("index.html", updated, "utf-8");
+  }
 
   console.log(`Generadas ${episodes.length} páginas en /${OUT_DIR}, sitemap.xml, robots.txt y ${chunks.length} bloques en /data (SITE_URL=${SITE_URL}).`);
 }
