@@ -926,7 +926,9 @@ function buildEtiquetasPages(episodes) {
 <link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
 <meta name="description" content="${escapeHtml(description)}" />
 <link rel="canonical" href="${pageUrl}" />
-<link rel="stylesheet" href="../styles.css?v=93" />
+<style>:root{--bg:#ffffff;--bg-flat:#ffffff;--text:#000000;--text-dim:#2b2b2b;--accent:#c41750;--border:rgba(0,0,0,0.15)}[data-theme=dark]{--bg:#16131a;--bg-flat:#16131a;--text:#f5f3f6;--text-dim:#b9b2c0;--accent:#ff5d85;--border:rgba(255,255,255,0.15)}*,::before,::after{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}.no-transition,.no-transition *{transition:none!important}</style>
+<link rel="preload" href="../styles.css?v=93" as="style" onload="this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="../styles.css?v=93" /></noscript>
 <meta property="og:type" content="website" />
 <meta property="og:title" content="${escapeHtml(title)}" />
 <meta property="og:description" content="${escapeHtml(description)}" />
@@ -1049,7 +1051,9 @@ ${footer}
 <link rel="icon" type="image/png" href="../images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
 <meta name="description" content="Explora los episodios de Bienvenido a los 90 por artista o temática: Nirvana, Oasis, Pearl Jam, grunge, britpop y mucho más." />
 <link rel="canonical" href="${SITE_URL}/etiquetas/" />
-<link rel="stylesheet" href="../styles.css?v=93" />
+<style>:root{--bg:#ffffff;--bg-flat:#ffffff;--text:#000000;--text-dim:#2b2b2b;--accent:#c41750;--border:rgba(0,0,0,0.15)}[data-theme=dark]{--bg:#16131a;--bg-flat:#16131a;--text:#f5f3f6;--text-dim:#b9b2c0;--accent:#ff5d85;--border:rgba(255,255,255,0.15)}*,::before,::after{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}.no-transition,.no-transition *{transition:none!important}</style>
+<link rel="preload" href="../styles.css?v=93" as="style" onload="this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="../styles.css?v=93" /></noscript>
 </head>
 <body>
   <nav class="topnav">
@@ -1264,7 +1268,7 @@ function buildFotosPage(episodesBySlug) {
     const cover = group.photos[0];
     const countLabel = group.photos.length === 1 ? "1 foto" : `${group.photos.length} fotos`;
     const hiddenPhotos = group.photos.map((p) =>
-      `<img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.caption)}" width="600" height="400" />`).join("");
+      `<img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.caption)}" width="600" height="400" loading="lazy" />`).join("");
 
     return `
     <article class="ep-card">
@@ -1293,7 +1297,9 @@ function buildFotosPage(episodesBySlug) {
 <link rel="icon" type="image/jpeg" href="images/b90-logo-new.jpg" media="(prefers-color-scheme: light)" />
 <link rel="icon" type="image/png" href="images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
 <link rel="apple-touch-icon" href="images/b90-logo-new.jpg" />
-<link rel="stylesheet" href="styles.css?v=93" />
+<style>:root{--bg:#ffffff;--bg-flat:#ffffff;--text:#000000;--text-dim:#2b2b2b;--accent:#c41750;--border:rgba(0,0,0,0.15)}[data-theme=dark]{--bg:#16131a;--bg-flat:#16131a;--text:#f5f3f6;--text-dim:#b9b2c0;--accent:#ff5d85;--border:rgba(255,255,255,0.15)}*,::before,::after{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}.no-transition,.no-transition *{transition:none!important}</style>
+<link rel="preload" href="styles.css?v=93" as="style" onload="this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="styles.css?v=93" /></noscript>
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Fotos — Bienvenido a los 90" />
