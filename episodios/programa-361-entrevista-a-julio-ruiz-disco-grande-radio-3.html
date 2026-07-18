@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 361 - Entrevista a Julio Ruiz (Disco grande Radio 3) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s320/IMG_20230722_123812.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s160/IMG_20230722_123812.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s320/IMG_20230722_123812.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s480/IMG_20230722_123812.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s160/IMG_20230722_123812.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s320/IMG_20230722_123812.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s480/IMG_20230722_123812.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.921 - Julio Ruiz recuerda las actuaciones de Blur, Radiohead, Dover..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifFEOhyZ1jDlqPQl43GQqnlCQ-PIIwJQp2v_JhW0zJ502Gg4oisDphdCXjozHGUDXSC2_16hyR3Lz1AQJLPakQ4gNIne43-FpBw8SOFDegNRaT9YpEzPVUoSGryexZA2PohdBQ7AZgFO-CVxAHqx2O_0mu8_kMsPFos0r-QG8MPdfL1aXiYJyXW_LrKdQ/s320/2.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifFEOhyZ1jDlqPQl43GQqnlCQ-PIIwJQp2v_JhW0zJ502Gg4oisDphdCXjozHGUDXSC2_16hyR3Lz1AQJLPakQ4gNIne43-FpBw8SOFDegNRaT9YpEzPVUoSGryexZA2PohdBQ7AZgFO-CVxAHqx2O_0mu8_kMsPFos0r-QG8MPdfL1aXiYJyXW_LrKdQ/s160/2.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifFEOhyZ1jDlqPQl43GQqnlCQ-PIIwJQp2v_JhW0zJ502Gg4oisDphdCXjozHGUDXSC2_16hyR3Lz1AQJLPakQ4gNIne43-FpBw8SOFDegNRaT9YpEzPVUoSGryexZA2PohdBQ7AZgFO-CVxAHqx2O_0mu8_kMsPFos0r-QG8MPdfL1aXiYJyXW_LrKdQ/s320/2.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifFEOhyZ1jDlqPQl43GQqnlCQ-PIIwJQp2v_JhW0zJ502Gg4oisDphdCXjozHGUDXSC2_16hyR3Lz1AQJLPakQ4gNIne43-FpBw8SOFDegNRaT9YpEzPVUoSGryexZA2PohdBQ7AZgFO-CVxAHqx2O_0mu8_kMsPFos0r-QG8MPdfL1aXiYJyXW_LrKdQ/s480/2.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifFEOhyZ1jDlqPQl43GQqnlCQ-PIIwJQp2v_JhW0zJ502Gg4oisDphdCXjozHGUDXSC2_16hyR3Lz1AQJLPakQ4gNIne43-FpBw8SOFDegNRaT9YpEzPVUoSGryexZA2PohdBQ7AZgFO-CVxAHqx2O_0mu8_kMsPFos0r-QG8MPdfL1aXiYJyXW_LrKdQ/s160/2.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifFEOhyZ1jDlqPQl43GQqnlCQ-PIIwJQp2v_JhW0zJ502Gg4oisDphdCXjozHGUDXSC2_16hyR3Lz1AQJLPakQ4gNIne43-FpBw8SOFDegNRaT9YpEzPVUoSGryexZA2PohdBQ7AZgFO-CVxAHqx2O_0mu8_kMsPFos0r-QG8MPdfL1aXiYJyXW_LrKdQ/s320/2.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifFEOhyZ1jDlqPQl43GQqnlCQ-PIIwJQp2v_JhW0zJ502Gg4oisDphdCXjozHGUDXSC2_16hyR3Lz1AQJLPakQ4gNIne43-FpBw8SOFDegNRaT9YpEzPVUoSGryexZA2PohdBQ7AZgFO-CVxAHqx2O_0mu8_kMsPFos0r-QG8MPdfL1aXiYJyXW_LrKdQ/s480/2.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.995 - Recordando las sintonías de DISCO GRANDE con Julio Ruiz"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgplJXkcjX6oqkt_b15n8HB8OpmIVgLZ2WegJbWHAdM9jRIXiT_fFSNXbyIN4YUSlc0rXnQ7f43xTBLwqDCBlssO-DsyVpMjn-AXIhmhVku9mwVh1VUkrGzT1LmKPubBW7iUKY6uo3J3cA/s320/IMG-20210711-WA0000.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgplJXkcjX6oqkt_b15n8HB8OpmIVgLZ2WegJbWHAdM9jRIXiT_fFSNXbyIN4YUSlc0rXnQ7f43xTBLwqDCBlssO-DsyVpMjn-AXIhmhVku9mwVh1VUkrGzT1LmKPubBW7iUKY6uo3J3cA/s160/IMG-20210711-WA0000.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgplJXkcjX6oqkt_b15n8HB8OpmIVgLZ2WegJbWHAdM9jRIXiT_fFSNXbyIN4YUSlc0rXnQ7f43xTBLwqDCBlssO-DsyVpMjn-AXIhmhVku9mwVh1VUkrGzT1LmKPubBW7iUKY6uo3J3cA/s320/IMG-20210711-WA0000.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgplJXkcjX6oqkt_b15n8HB8OpmIVgLZ2WegJbWHAdM9jRIXiT_fFSNXbyIN4YUSlc0rXnQ7f43xTBLwqDCBlssO-DsyVpMjn-AXIhmhVku9mwVh1VUkrGzT1LmKPubBW7iUKY6uo3J3cA/s480/IMG-20210711-WA0000.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgplJXkcjX6oqkt_b15n8HB8OpmIVgLZ2WegJbWHAdM9jRIXiT_fFSNXbyIN4YUSlc0rXnQ7f43xTBLwqDCBlssO-DsyVpMjn-AXIhmhVku9mwVh1VUkrGzT1LmKPubBW7iUKY6uo3J3cA/s160/IMG-20210711-WA0000.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgplJXkcjX6oqkt_b15n8HB8OpmIVgLZ2WegJbWHAdM9jRIXiT_fFSNXbyIN4YUSlc0rXnQ7f43xTBLwqDCBlssO-DsyVpMjn-AXIhmhVku9mwVh1VUkrGzT1LmKPubBW7iUKY6uo3J3cA/s320/IMG-20210711-WA0000.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgplJXkcjX6oqkt_b15n8HB8OpmIVgLZ2WegJbWHAdM9jRIXiT_fFSNXbyIN4YUSlc0rXnQ7f43xTBLwqDCBlssO-DsyVpMjn-AXIhmhVku9mwVh1VUkrGzT1LmKPubBW7iUKY6uo3J3cA/s480/IMG-20210711-WA0000.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.785 - Entrevista a Julio Ruiz"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="programa-165-entrevista-a-rafa-cervera.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s320/rafa-cervera-e1417550151876.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s320/rafa-cervera-e1417550151876.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s480/rafa-cervera-e1417550151876.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s640/rafa-cervera-e1417550151876.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s320/rafa-cervera-e1417550151876.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s480/rafa-cervera-e1417550151876.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s640/rafa-cervera-e1417550151876.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 165 - Entrevista a Rafa Cervera"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="p-928-entrevista-a-gustavo-iglesias-radio-3.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDSoJo8p9yLqKbXGrMx4z2xg-MknWz04aWWtGnn1SL3SOKQxWgtU__qTi88gxoTIZ_KijeQnowii84VwBtnyqw5QT949TQoPZgtqxsUS5X9IpCOVbq2z3Yinjsb-kLEHB67Oef9iIsjHUolZxuRN424zerzevy9XUEhzSTPABNEeb8O8taNrb2wLQ_ovA/s320/IMG_0430.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDSoJo8p9yLqKbXGrMx4z2xg-MknWz04aWWtGnn1SL3SOKQxWgtU__qTi88gxoTIZ_KijeQnowii84VwBtnyqw5QT949TQoPZgtqxsUS5X9IpCOVbq2z3Yinjsb-kLEHB67Oef9iIsjHUolZxuRN424zerzevy9XUEhzSTPABNEeb8O8taNrb2wLQ_ovA/s320/IMG_0430.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDSoJo8p9yLqKbXGrMx4z2xg-MknWz04aWWtGnn1SL3SOKQxWgtU__qTi88gxoTIZ_KijeQnowii84VwBtnyqw5QT949TQoPZgtqxsUS5X9IpCOVbq2z3Yinjsb-kLEHB67Oef9iIsjHUolZxuRN424zerzevy9XUEhzSTPABNEeb8O8taNrb2wLQ_ovA/s480/IMG_0430.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDSoJo8p9yLqKbXGrMx4z2xg-MknWz04aWWtGnn1SL3SOKQxWgtU__qTi88gxoTIZ_KijeQnowii84VwBtnyqw5QT949TQoPZgtqxsUS5X9IpCOVbq2z3Yinjsb-kLEHB67Oef9iIsjHUolZxuRN424zerzevy9XUEhzSTPABNEeb8O8taNrb2wLQ_ovA/s640/IMG_0430.JPG 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDSoJo8p9yLqKbXGrMx4z2xg-MknWz04aWWtGnn1SL3SOKQxWgtU__qTi88gxoTIZ_KijeQnowii84VwBtnyqw5QT949TQoPZgtqxsUS5X9IpCOVbq2z3Yinjsb-kLEHB67Oef9iIsjHUolZxuRN424zerzevy9XUEhzSTPABNEeb8O8taNrb2wLQ_ovA/s320/IMG_0430.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDSoJo8p9yLqKbXGrMx4z2xg-MknWz04aWWtGnn1SL3SOKQxWgtU__qTi88gxoTIZ_KijeQnowii84VwBtnyqw5QT949TQoPZgtqxsUS5X9IpCOVbq2z3Yinjsb-kLEHB67Oef9iIsjHUolZxuRN424zerzevy9XUEhzSTPABNEeb8O8taNrb2wLQ_ovA/s480/IMG_0430.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDSoJo8p9yLqKbXGrMx4z2xg-MknWz04aWWtGnn1SL3SOKQxWgtU__qTi88gxoTIZ_KijeQnowii84VwBtnyqw5QT949TQoPZgtqxsUS5X9IpCOVbq2z3Yinjsb-kLEHB67Oef9iIsjHUolZxuRN424zerzevy9XUEhzSTPABNEeb8O8taNrb2wLQ_ovA/s640/IMG_0430.JPG 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.928 - Entrevista a Gustavo Iglesias (Radio 3)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="programa-377-los-conciertos-de-radio-3-cumplen-20-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMESixXSvdU6aYfNAk-rEgoqkLDEdT7h64NjuFHsQDFZ39XpwrvZmDG0u-GIHlpeFqXep2JbmZh38mn5qLiaE3goKW9PvLV2dEYs9GG-HRVTXJ83YLSHBsKoVhO4Xg0tuia9-EVF_PyHU/s320/paco.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMESixXSvdU6aYfNAk-rEgoqkLDEdT7h64NjuFHsQDFZ39XpwrvZmDG0u-GIHlpeFqXep2JbmZh38mn5qLiaE3goKW9PvLV2dEYs9GG-HRVTXJ83YLSHBsKoVhO4Xg0tuia9-EVF_PyHU/s320/paco.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMESixXSvdU6aYfNAk-rEgoqkLDEdT7h64NjuFHsQDFZ39XpwrvZmDG0u-GIHlpeFqXep2JbmZh38mn5qLiaE3goKW9PvLV2dEYs9GG-HRVTXJ83YLSHBsKoVhO4Xg0tuia9-EVF_PyHU/s480/paco.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMESixXSvdU6aYfNAk-rEgoqkLDEdT7h64NjuFHsQDFZ39XpwrvZmDG0u-GIHlpeFqXep2JbmZh38mn5qLiaE3goKW9PvLV2dEYs9GG-HRVTXJ83YLSHBsKoVhO4Xg0tuia9-EVF_PyHU/s640/paco.JPG 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMESixXSvdU6aYfNAk-rEgoqkLDEdT7h64NjuFHsQDFZ39XpwrvZmDG0u-GIHlpeFqXep2JbmZh38mn5qLiaE3goKW9PvLV2dEYs9GG-HRVTXJ83YLSHBsKoVhO4Xg0tuia9-EVF_PyHU/s320/paco.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMESixXSvdU6aYfNAk-rEgoqkLDEdT7h64NjuFHsQDFZ39XpwrvZmDG0u-GIHlpeFqXep2JbmZh38mn5qLiaE3goKW9PvLV2dEYs9GG-HRVTXJ83YLSHBsKoVhO4Xg0tuia9-EVF_PyHU/s480/paco.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMESixXSvdU6aYfNAk-rEgoqkLDEdT7h64NjuFHsQDFZ39XpwrvZmDG0u-GIHlpeFqXep2JbmZh38mn5qLiaE3goKW9PvLV2dEYs9GG-HRVTXJ83YLSHBsKoVhO4Xg0tuia9-EVF_PyHU/s640/paco.JPG 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 377 - Los conciertos de Radio 3 cumplen 20 años "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

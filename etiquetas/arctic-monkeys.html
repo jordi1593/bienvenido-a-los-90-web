@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Arctic Monkeys — 6 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-795-10-discos-lanzados-fuera-de-epoca.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS_Dley6xtD1YvivoimFIS59TlmtSxzlSWSLarcUHIXkdurl7mkkJp4I3BsGsUYbx8B1J25quQ-2QMi-gzjzpXE-fKpvXk5-zeFrHwezqcagtzfRd0Z-IceMNNe7m6Q8HAvgpKpBD-MTI/s320/b90_795.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS_Dley6xtD1YvivoimFIS59TlmtSxzlSWSLarcUHIXkdurl7mkkJp4I3BsGsUYbx8B1J25quQ-2QMi-gzjzpXE-fKpvXk5-zeFrHwezqcagtzfRd0Z-IceMNNe7m6Q8HAvgpKpBD-MTI/s160/b90_795.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS_Dley6xtD1YvivoimFIS59TlmtSxzlSWSLarcUHIXkdurl7mkkJp4I3BsGsUYbx8B1J25quQ-2QMi-gzjzpXE-fKpvXk5-zeFrHwezqcagtzfRd0Z-IceMNNe7m6Q8HAvgpKpBD-MTI/s320/b90_795.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS_Dley6xtD1YvivoimFIS59TlmtSxzlSWSLarcUHIXkdurl7mkkJp4I3BsGsUYbx8B1J25quQ-2QMi-gzjzpXE-fKpvXk5-zeFrHwezqcagtzfRd0Z-IceMNNe7m6Q8HAvgpKpBD-MTI/s480/b90_795.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS_Dley6xtD1YvivoimFIS59TlmtSxzlSWSLarcUHIXkdurl7mkkJp4I3BsGsUYbx8B1J25quQ-2QMi-gzjzpXE-fKpvXk5-zeFrHwezqcagtzfRd0Z-IceMNNe7m6Q8HAvgpKpBD-MTI/s160/b90_795.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS_Dley6xtD1YvivoimFIS59TlmtSxzlSWSLarcUHIXkdurl7mkkJp4I3BsGsUYbx8B1J25quQ-2QMi-gzjzpXE-fKpvXk5-zeFrHwezqcagtzfRd0Z-IceMNNe7m6Q8HAvgpKpBD-MTI/s320/b90_795.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS_Dley6xtD1YvivoimFIS59TlmtSxzlSWSLarcUHIXkdurl7mkkJp4I3BsGsUYbx8B1J25quQ-2QMi-gzjzpXE-fKpvXk5-zeFrHwezqcagtzfRd0Z-IceMNNe7m6Q8HAvgpKpBD-MTI/s480/b90_795.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.795 - 10 discos lanzados fuera de época "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-749-ray-loriga-heroes.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s320/rayloriga_heroes-1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s160/rayloriga_heroes-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s320/rayloriga_heroes-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s480/rayloriga_heroes-1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s160/rayloriga_heroes-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s320/rayloriga_heroes-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s480/rayloriga_heroes-1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.749 - Ray Loriga - Héroes"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-400-con-paco-perez-bryan.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s160/IMG_20180608_163539.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s480/IMG_20180608_163539.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s160/IMG_20180608_163539.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s480/IMG_20180608_163539.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 400 con Paco Pérez Bryan"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-396-el-directo-de-arctic-monkeys-en-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJoNNVxwjJOhKnyOMtCRRyygN6rCtEI6p02CCzjoxDuSYf0HxwZ7BeB1GqLpEoo7qQijeBJ_tScPeuBAEHOZ5-XFG0iySBeomPbo-7f2-LKgsOfvbMyWQSF9DSwi_FYZgcyC79A-_RbA/s320/amon.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJoNNVxwjJOhKnyOMtCRRyygN6rCtEI6p02CCzjoxDuSYf0HxwZ7BeB1GqLpEoo7qQijeBJ_tScPeuBAEHOZ5-XFG0iySBeomPbo-7f2-LKgsOfvbMyWQSF9DSwi_FYZgcyC79A-_RbA/s160/amon.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJoNNVxwjJOhKnyOMtCRRyygN6rCtEI6p02CCzjoxDuSYf0HxwZ7BeB1GqLpEoo7qQijeBJ_tScPeuBAEHOZ5-XFG0iySBeomPbo-7f2-LKgsOfvbMyWQSF9DSwi_FYZgcyC79A-_RbA/s320/amon.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJoNNVxwjJOhKnyOMtCRRyygN6rCtEI6p02CCzjoxDuSYf0HxwZ7BeB1GqLpEoo7qQijeBJ_tScPeuBAEHOZ5-XFG0iySBeomPbo-7f2-LKgsOfvbMyWQSF9DSwi_FYZgcyC79A-_RbA/s480/amon.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJoNNVxwjJOhKnyOMtCRRyygN6rCtEI6p02CCzjoxDuSYf0HxwZ7BeB1GqLpEoo7qQijeBJ_tScPeuBAEHOZ5-XFG0iySBeomPbo-7f2-LKgsOfvbMyWQSF9DSwi_FYZgcyC79A-_RbA/s160/amon.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJoNNVxwjJOhKnyOMtCRRyygN6rCtEI6p02CCzjoxDuSYf0HxwZ7BeB1GqLpEoo7qQijeBJ_tScPeuBAEHOZ5-XFG0iySBeomPbo-7f2-LKgsOfvbMyWQSF9DSwi_FYZgcyC79A-_RbA/s320/amon.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJoNNVxwjJOhKnyOMtCRRyygN6rCtEI6p02CCzjoxDuSYf0HxwZ7BeB1GqLpEoo7qQijeBJ_tScPeuBAEHOZ5-XFG0iySBeomPbo-7f2-LKgsOfvbMyWQSF9DSwi_FYZgcyC79A-_RbA/s480/amon.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 396 - El directo de Arctic Monkeys en 2018"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-382-arctic-monkeys-tranquility-base-hotel-casino-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQq_QYfv1BhZH7SLanyAUNmTiOxmgmGZ6UMudNLCKj_P5NA43EM9mdQhNOu8fQ8j0-4eS1G9Ehbq4NrchlsHTQfCqYvIkeJLR1QzMkSYLviqORFaLc-5DdY5pHDAXSIRoYr7HguGmv-rc/s320/am.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQq_QYfv1BhZH7SLanyAUNmTiOxmgmGZ6UMudNLCKj_P5NA43EM9mdQhNOu8fQ8j0-4eS1G9Ehbq4NrchlsHTQfCqYvIkeJLR1QzMkSYLviqORFaLc-5DdY5pHDAXSIRoYr7HguGmv-rc/s160/am.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQq_QYfv1BhZH7SLanyAUNmTiOxmgmGZ6UMudNLCKj_P5NA43EM9mdQhNOu8fQ8j0-4eS1G9Ehbq4NrchlsHTQfCqYvIkeJLR1QzMkSYLviqORFaLc-5DdY5pHDAXSIRoYr7HguGmv-rc/s320/am.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQq_QYfv1BhZH7SLanyAUNmTiOxmgmGZ6UMudNLCKj_P5NA43EM9mdQhNOu8fQ8j0-4eS1G9Ehbq4NrchlsHTQfCqYvIkeJLR1QzMkSYLviqORFaLc-5DdY5pHDAXSIRoYr7HguGmv-rc/s480/am.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQq_QYfv1BhZH7SLanyAUNmTiOxmgmGZ6UMudNLCKj_P5NA43EM9mdQhNOu8fQ8j0-4eS1G9Ehbq4NrchlsHTQfCqYvIkeJLR1QzMkSYLviqORFaLc-5DdY5pHDAXSIRoYr7HguGmv-rc/s160/am.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQq_QYfv1BhZH7SLanyAUNmTiOxmgmGZ6UMudNLCKj_P5NA43EM9mdQhNOu8fQ8j0-4eS1G9Ehbq4NrchlsHTQfCqYvIkeJLR1QzMkSYLviqORFaLc-5DdY5pHDAXSIRoYr7HguGmv-rc/s320/am.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQq_QYfv1BhZH7SLanyAUNmTiOxmgmGZ6UMudNLCKj_P5NA43EM9mdQhNOu8fQ8j0-4eS1G9Ehbq4NrchlsHTQfCqYvIkeJLR1QzMkSYLviqORFaLc-5DdY5pHDAXSIRoYr7HguGmv-rc/s480/am.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 382 - Arctic Monkeys – Tranquility Base Hotel &amp; Casino (2018)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-324-mad-cool-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s320/madcool2018.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s160/madcool2018.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s320/madcool2018.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s480/madcool2018.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s160/madcool2018.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s320/madcool2018.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s480/madcool2018.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 324 – Mad Cool 2018"
                 loading="lazy" width="320" height="213" />
         </a>

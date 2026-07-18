@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 258 - Discos que en 2017 cumplirán 20 años — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -144,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s320/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s160/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s320/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s480/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s160/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s320/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s480/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.970 - Diez canciones que me cambiaron la vida"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -155,8 +154,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s320/ok-computer-revisited-120x120.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s160/ok-computer-revisited-120x120.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s320/ok-computer-revisited-120x120.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s480/ok-computer-revisited-120x120.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s160/ok-computer-revisited-120x120.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s320/ok-computer-revisited-120x120.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s480/ok-computer-revisited-120x120.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 287 - Ok Computer Revisited"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +164,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s320/IMG_20170705_185643.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s160/IMG_20170705_185643.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s320/IMG_20170705_185643.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s480/IMG_20170705_185643.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s160/IMG_20170705_185643.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s320/IMG_20170705_185643.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s480/IMG_20170705_185643.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 288 - Moses Rubin + Glastonbury 2017"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -183,8 +180,7 @@
         <a class="related-bottom-card" href="programa-324-mad-cool-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s320/madcool2018.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s320/madcool2018.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s480/madcool2018.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s640/madcool2018.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s320/madcool2018.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s480/madcool2018.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s640/madcool2018.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 324 – Mad Cool 2018"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +191,7 @@
           </a><a class="related-bottom-card" href="programa-478-los-mejores-solos-de-guitarra-de-los-anos-90.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s480/b90_478.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s640/b90_478.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s480/b90_478.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s640/b90_478.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 478 - Los mejores solos de guitarra de los años 90"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -207,8 +202,7 @@
           </a><a class="related-bottom-card" href="programa-138-h-y-las-rocanrol-viejas.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s640/420962_355957767755206_243875636_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s640/420962_355957767755206_243875636_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 138 - H y las Rocanrol Viejas"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

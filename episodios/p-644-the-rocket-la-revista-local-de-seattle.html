@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.644 - The Rocket , la revista local de Seattle — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -134,8 +134,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9zVoP6F6UxMYmd8RnUIyB05VMx9aXz4YiIhSvK6Z0D727mxCZaidw3na1BiSkfqq3VAj1MzO5shNALcuHhHyIn6FTJphVVahw4bgQ02VVOe1lXMnPTdhoD2hw3swuxEFwUu6KlzcP6n8/s320/b90_515.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9zVoP6F6UxMYmd8RnUIyB05VMx9aXz4YiIhSvK6Z0D727mxCZaidw3na1BiSkfqq3VAj1MzO5shNALcuHhHyIn6FTJphVVahw4bgQ02VVOe1lXMnPTdhoD2hw3swuxEFwUu6KlzcP6n8/s160/b90_515.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9zVoP6F6UxMYmd8RnUIyB05VMx9aXz4YiIhSvK6Z0D727mxCZaidw3na1BiSkfqq3VAj1MzO5shNALcuHhHyIn6FTJphVVahw4bgQ02VVOe1lXMnPTdhoD2hw3swuxEFwUu6KlzcP6n8/s320/b90_515.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9zVoP6F6UxMYmd8RnUIyB05VMx9aXz4YiIhSvK6Z0D727mxCZaidw3na1BiSkfqq3VAj1MzO5shNALcuHhHyIn6FTJphVVahw4bgQ02VVOe1lXMnPTdhoD2hw3swuxEFwUu6KlzcP6n8/s480/b90_515.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9zVoP6F6UxMYmd8RnUIyB05VMx9aXz4YiIhSvK6Z0D727mxCZaidw3na1BiSkfqq3VAj1MzO5shNALcuHhHyIn6FTJphVVahw4bgQ02VVOe1lXMnPTdhoD2hw3swuxEFwUu6KlzcP6n8/s160/b90_515.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9zVoP6F6UxMYmd8RnUIyB05VMx9aXz4YiIhSvK6Z0D727mxCZaidw3na1BiSkfqq3VAj1MzO5shNALcuHhHyIn6FTJphVVahw4bgQ02VVOe1lXMnPTdhoD2hw3swuxEFwUu6KlzcP6n8/s320/b90_515.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9zVoP6F6UxMYmd8RnUIyB05VMx9aXz4YiIhSvK6Z0D727mxCZaidw3na1BiSkfqq3VAj1MzO5shNALcuHhHyIn6FTJphVVahw4bgQ02VVOe1lXMnPTdhoD2hw3swuxEFwUu6KlzcP6n8/s480/b90_515.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 515 - Hole - Live Through This (1994)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -145,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s320/b90_511.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s160/b90_511.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s320/b90_511.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s480/b90_511.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s160/b90_511.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s320/b90_511.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s480/b90_511.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 511 - Nirvana &quot;Heavier than Heaven&quot; (Charles Cross 2019)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -156,8 +154,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s320/b90_509.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s160/b90_509.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s320/b90_509.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s480/b90_509.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s160/b90_509.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s320/b90_509.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s480/b90_509.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 509 - Los últimos días de Kurt Cobain"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -173,8 +170,7 @@
         <a class="related-bottom-card" href="programa-424-giants-in-the-trees-krist-novoselic.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s320/album.gitt_.self-titled.cd_.signed.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s320/album.gitt_.self-titled.cd_.signed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s480/album.gitt_.self-titled.cd_.signed.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s640/album.gitt_.self-titled.cd_.signed.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s320/album.gitt_.self-titled.cd_.signed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s480/album.gitt_.self-titled.cd_.signed.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s640/album.gitt_.self-titled.cd_.signed.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 424 - Giants in the Trees (Krist Novoselic)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -185,8 +181,7 @@
           </a><a class="related-bottom-card" href="programa-319-nirvana-iv.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s480/nirvanaIV.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s640/nirvanaIV.JPG 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s480/nirvanaIV.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s640/nirvanaIV.JPG 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 319 – Nirvana IV"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -197,8 +192,7 @@
           </a><a class="related-bottom-card" href="p-971-sigue-siendo-seattle-un-destino-atractivo-para-los-amantes-del-grunge.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s640/seattle-grunge-est1990-mens-t-shirt.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s640/seattle-grunge-est1990-mens-t-shirt.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.971 - ¿Sigue siendo Seattle un destino atractivo para los amantes del grunge?"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

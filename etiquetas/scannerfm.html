@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>ScannerFM — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-728-pavement-para-dummies.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcW_jeemY-DPCmk5Jog2ERQHMlg565SEQVya6zmy2FcUMGIK7FXTzy8MqinH9Ae0M5IYgofguToU8Fa3gxgKNRqdPWZGLLnNo1MRMUjd7ozWbGcOwxQD446aRAXcP26b0F8hWkPY6Fhdk/s320/pavemment2.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcW_jeemY-DPCmk5Jog2ERQHMlg565SEQVya6zmy2FcUMGIK7FXTzy8MqinH9Ae0M5IYgofguToU8Fa3gxgKNRqdPWZGLLnNo1MRMUjd7ozWbGcOwxQD446aRAXcP26b0F8hWkPY6Fhdk/s160/pavemment2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcW_jeemY-DPCmk5Jog2ERQHMlg565SEQVya6zmy2FcUMGIK7FXTzy8MqinH9Ae0M5IYgofguToU8Fa3gxgKNRqdPWZGLLnNo1MRMUjd7ozWbGcOwxQD446aRAXcP26b0F8hWkPY6Fhdk/s320/pavemment2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcW_jeemY-DPCmk5Jog2ERQHMlg565SEQVya6zmy2FcUMGIK7FXTzy8MqinH9Ae0M5IYgofguToU8Fa3gxgKNRqdPWZGLLnNo1MRMUjd7ozWbGcOwxQD446aRAXcP26b0F8hWkPY6Fhdk/s480/pavemment2.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcW_jeemY-DPCmk5Jog2ERQHMlg565SEQVya6zmy2FcUMGIK7FXTzy8MqinH9Ae0M5IYgofguToU8Fa3gxgKNRqdPWZGLLnNo1MRMUjd7ozWbGcOwxQD446aRAXcP26b0F8hWkPY6Fhdk/s160/pavemment2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcW_jeemY-DPCmk5Jog2ERQHMlg565SEQVya6zmy2FcUMGIK7FXTzy8MqinH9Ae0M5IYgofguToU8Fa3gxgKNRqdPWZGLLnNo1MRMUjd7ozWbGcOwxQD446aRAXcP26b0F8hWkPY6Fhdk/s320/pavemment2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcW_jeemY-DPCmk5Jog2ERQHMlg565SEQVya6zmy2FcUMGIK7FXTzy8MqinH9Ae0M5IYgofguToU8Fa3gxgKNRqdPWZGLLnNo1MRMUjd7ozWbGcOwxQD446aRAXcP26b0F8hWkPY6Fhdk/s480/pavemment2.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.728 - Pavement para Dummies"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-722-recordando-el-get-born-de-jet.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s320/R-648655-1399308965-6680.jpeg.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s160/R-648655-1399308965-6680.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s320/R-648655-1399308965-6680.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s480/R-648655-1399308965-6680.jpeg.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s160/R-648655-1399308965-6680.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s320/R-648655-1399308965-6680.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s480/R-648655-1399308965-6680.jpeg.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.722 - Recordando el &#39;Get Born&#39; de JET"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-719-le-traste-presentan-cuadratura-vol-2-para-sembrar-lo-incierto.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s320/a3942977190_10.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s160/a3942977190_10.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s320/a3942977190_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s480/a3942977190_10.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s160/a3942977190_10.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s320/a3942977190_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s480/a3942977190_10.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.719 - Le Traste presentan Cuadratura vol. 2: Para sembrar lo incierto"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-718-viajamos-hasta-seattle-para-hablar-con-tres-leches.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY443A5FVDDzChtxdW7w5e6H8aZ2xMNPpNZOTzQ3g2bL16U68ZvYJ5l3od1uf3OUrBIx8tGEvROk2WZf0K4Ba3K7xognWqFGmq12yXubiJYb59EaJJ-Av389fHcfwE4DFqn95qlGL3tYI/s320/84913799_2816245641754926_7919454389952053248_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY443A5FVDDzChtxdW7w5e6H8aZ2xMNPpNZOTzQ3g2bL16U68ZvYJ5l3od1uf3OUrBIx8tGEvROk2WZf0K4Ba3K7xognWqFGmq12yXubiJYb59EaJJ-Av389fHcfwE4DFqn95qlGL3tYI/s160/84913799_2816245641754926_7919454389952053248_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY443A5FVDDzChtxdW7w5e6H8aZ2xMNPpNZOTzQ3g2bL16U68ZvYJ5l3od1uf3OUrBIx8tGEvROk2WZf0K4Ba3K7xognWqFGmq12yXubiJYb59EaJJ-Av389fHcfwE4DFqn95qlGL3tYI/s320/84913799_2816245641754926_7919454389952053248_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY443A5FVDDzChtxdW7w5e6H8aZ2xMNPpNZOTzQ3g2bL16U68ZvYJ5l3od1uf3OUrBIx8tGEvROk2WZf0K4Ba3K7xognWqFGmq12yXubiJYb59EaJJ-Av389fHcfwE4DFqn95qlGL3tYI/s480/84913799_2816245641754926_7919454389952053248_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY443A5FVDDzChtxdW7w5e6H8aZ2xMNPpNZOTzQ3g2bL16U68ZvYJ5l3od1uf3OUrBIx8tGEvROk2WZf0K4Ba3K7xognWqFGmq12yXubiJYb59EaJJ-Av389fHcfwE4DFqn95qlGL3tYI/s160/84913799_2816245641754926_7919454389952053248_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY443A5FVDDzChtxdW7w5e6H8aZ2xMNPpNZOTzQ3g2bL16U68ZvYJ5l3od1uf3OUrBIx8tGEvROk2WZf0K4Ba3K7xognWqFGmq12yXubiJYb59EaJJ-Av389fHcfwE4DFqn95qlGL3tYI/s320/84913799_2816245641754926_7919454389952053248_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY443A5FVDDzChtxdW7w5e6H8aZ2xMNPpNZOTzQ3g2bL16U68ZvYJ5l3od1uf3OUrBIx8tGEvROk2WZf0K4Ba3K7xognWqFGmq12yXubiJYb59EaJJ-Av389fHcfwE4DFqn95qlGL3tYI/s480/84913799_2816245641754926_7919454389952053248_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.718 - Viajamos hasta Seattle para hablar con TRES LECHES"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/p-710-mis-canciones-favoritas-de-radiohead-que-no-estan-en-sus-discos.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s320/151498347775.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s160/151498347775.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s320/151498347775.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s480/151498347775.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s160/151498347775.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s320/151498347775.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s480/151498347775.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.710 - Mis canciones favoritas de Radiohead (que no están en sus discos)"
                 loading="lazy" width="320" height="213" />
         </a>

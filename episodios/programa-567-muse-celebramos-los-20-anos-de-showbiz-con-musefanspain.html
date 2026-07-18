@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 567 - MUSE: celebramos los 20 años de SHOWBIZ con MuseFanSpain — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -134,8 +134,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiZ1rcjt3KuFDeVd2j8XZn6b4mwkLbPRiJ8nWOWZsG7niemUJiUhGJopxu7wXgmJCNmy0Z6o77ER2xqQK8bWtT4yiU9JIvq3RIwhN2Mn28nOvgWp21u28S0uL3hPx_5wYNKDDDMJHWOTg/s320/folder.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiZ1rcjt3KuFDeVd2j8XZn6b4mwkLbPRiJ8nWOWZsG7niemUJiUhGJopxu7wXgmJCNmy0Z6o77ER2xqQK8bWtT4yiU9JIvq3RIwhN2Mn28nOvgWp21u28S0uL3hPx_5wYNKDDDMJHWOTg/s160/folder.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiZ1rcjt3KuFDeVd2j8XZn6b4mwkLbPRiJ8nWOWZsG7niemUJiUhGJopxu7wXgmJCNmy0Z6o77ER2xqQK8bWtT4yiU9JIvq3RIwhN2Mn28nOvgWp21u28S0uL3hPx_5wYNKDDDMJHWOTg/s320/folder.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiZ1rcjt3KuFDeVd2j8XZn6b4mwkLbPRiJ8nWOWZsG7niemUJiUhGJopxu7wXgmJCNmy0Z6o77ER2xqQK8bWtT4yiU9JIvq3RIwhN2Mn28nOvgWp21u28S0uL3hPx_5wYNKDDDMJHWOTg/s480/folder.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiZ1rcjt3KuFDeVd2j8XZn6b4mwkLbPRiJ8nWOWZsG7niemUJiUhGJopxu7wXgmJCNmy0Z6o77ER2xqQK8bWtT4yiU9JIvq3RIwhN2Mn28nOvgWp21u28S0uL3hPx_5wYNKDDDMJHWOTg/s160/folder.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiZ1rcjt3KuFDeVd2j8XZn6b4mwkLbPRiJ8nWOWZsG7niemUJiUhGJopxu7wXgmJCNmy0Z6o77ER2xqQK8bWtT4yiU9JIvq3RIwhN2Mn28nOvgWp21u28S0uL3hPx_5wYNKDDDMJHWOTg/s320/folder.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiZ1rcjt3KuFDeVd2j8XZn6b4mwkLbPRiJ8nWOWZsG7niemUJiUhGJopxu7wXgmJCNmy0Z6o77ER2xqQK8bWtT4yiU9JIvq3RIwhN2Mn28nOvgWp21u28S0uL3hPx_5wYNKDDDMJHWOTg/s480/folder.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.778 - 20 años del Origin of Symmetry (Muse)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -145,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibdwvyndoxqS01eQsiV1v84it98YdnKariJCQx1rvV9mTlOX6RHbe1O-cd6tD5Tis6_5xwNGEZ_T6ZA6qfk_3s6FvY9LL2pBCYJCGOq_wl54ovoo_jMlXVGbABnVZ42jVNscRo3FuCXFQ/s320/cover.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibdwvyndoxqS01eQsiV1v84it98YdnKariJCQx1rvV9mTlOX6RHbe1O-cd6tD5Tis6_5xwNGEZ_T6ZA6qfk_3s6FvY9LL2pBCYJCGOq_wl54ovoo_jMlXVGbABnVZ42jVNscRo3FuCXFQ/s160/cover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibdwvyndoxqS01eQsiV1v84it98YdnKariJCQx1rvV9mTlOX6RHbe1O-cd6tD5Tis6_5xwNGEZ_T6ZA6qfk_3s6FvY9LL2pBCYJCGOq_wl54ovoo_jMlXVGbABnVZ42jVNscRo3FuCXFQ/s320/cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibdwvyndoxqS01eQsiV1v84it98YdnKariJCQx1rvV9mTlOX6RHbe1O-cd6tD5Tis6_5xwNGEZ_T6ZA6qfk_3s6FvY9LL2pBCYJCGOq_wl54ovoo_jMlXVGbABnVZ42jVNscRo3FuCXFQ/s480/cover.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibdwvyndoxqS01eQsiV1v84it98YdnKariJCQx1rvV9mTlOX6RHbe1O-cd6tD5Tis6_5xwNGEZ_T6ZA6qfk_3s6FvY9LL2pBCYJCGOq_wl54ovoo_jMlXVGbABnVZ42jVNscRo3FuCXFQ/s160/cover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibdwvyndoxqS01eQsiV1v84it98YdnKariJCQx1rvV9mTlOX6RHbe1O-cd6tD5Tis6_5xwNGEZ_T6ZA6qfk_3s6FvY9LL2pBCYJCGOq_wl54ovoo_jMlXVGbABnVZ42jVNscRo3FuCXFQ/s320/cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibdwvyndoxqS01eQsiV1v84it98YdnKariJCQx1rvV9mTlOX6RHbe1O-cd6tD5Tis6_5xwNGEZ_T6ZA6qfk_3s6FvY9LL2pBCYJCGOq_wl54ovoo_jMlXVGbABnVZ42jVNscRo3FuCXFQ/s480/cover.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.789 - Matt Bellamy de MUSE lanza Cryosleep"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -156,8 +154,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s320/b90_586.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s160/b90_586.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s320/b90_586.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s480/b90_586.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s160/b90_586.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s320/b90_586.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s480/b90_586.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.586 - El origen de MUSE"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -173,8 +170,7 @@
         <a class="related-bottom-card" href="programa-453-muse-simulation-theory-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s320/b90453.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s320/b90453.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s480/b90453.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s640/b90453.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s320/b90453.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s480/b90453.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s640/b90453.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 453 - MUSE - Simulation Theory (2018)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -185,8 +181,7 @@
           </a><a class="related-bottom-card" href="p-859-muse-presentan-su-vision-del-mundo-will-of-the-people.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKuFzoa1bHKXID2_wNZKNvLhtdUtLvAz32cL5PyoLi93w4JSYr6BQJdPGa5dmK6J4f-M1y1_i6BEa6VLe9mct4kwbhgiA2HPbmz81ZpyUyIjS88Bpc0s-9Ad1Gsht6jEOqPfyqQmC3MAGzaIq6Ugo_x-eU5Pqnrjikp3sGga5-b2rSciVBobFP56BL/s320/R-24246320-1660900705-7542.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKuFzoa1bHKXID2_wNZKNvLhtdUtLvAz32cL5PyoLi93w4JSYr6BQJdPGa5dmK6J4f-M1y1_i6BEa6VLe9mct4kwbhgiA2HPbmz81ZpyUyIjS88Bpc0s-9Ad1Gsht6jEOqPfyqQmC3MAGzaIq6Ugo_x-eU5Pqnrjikp3sGga5-b2rSciVBobFP56BL/s320/R-24246320-1660900705-7542.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKuFzoa1bHKXID2_wNZKNvLhtdUtLvAz32cL5PyoLi93w4JSYr6BQJdPGa5dmK6J4f-M1y1_i6BEa6VLe9mct4kwbhgiA2HPbmz81ZpyUyIjS88Bpc0s-9Ad1Gsht6jEOqPfyqQmC3MAGzaIq6Ugo_x-eU5Pqnrjikp3sGga5-b2rSciVBobFP56BL/s480/R-24246320-1660900705-7542.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKuFzoa1bHKXID2_wNZKNvLhtdUtLvAz32cL5PyoLi93w4JSYr6BQJdPGa5dmK6J4f-M1y1_i6BEa6VLe9mct4kwbhgiA2HPbmz81ZpyUyIjS88Bpc0s-9Ad1Gsht6jEOqPfyqQmC3MAGzaIq6Ugo_x-eU5Pqnrjikp3sGga5-b2rSciVBobFP56BL/s640/R-24246320-1660900705-7542.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKuFzoa1bHKXID2_wNZKNvLhtdUtLvAz32cL5PyoLi93w4JSYr6BQJdPGa5dmK6J4f-M1y1_i6BEa6VLe9mct4kwbhgiA2HPbmz81ZpyUyIjS88Bpc0s-9Ad1Gsht6jEOqPfyqQmC3MAGzaIq6Ugo_x-eU5Pqnrjikp3sGga5-b2rSciVBobFP56BL/s320/R-24246320-1660900705-7542.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKuFzoa1bHKXID2_wNZKNvLhtdUtLvAz32cL5PyoLi93w4JSYr6BQJdPGa5dmK6J4f-M1y1_i6BEa6VLe9mct4kwbhgiA2HPbmz81ZpyUyIjS88Bpc0s-9Ad1Gsht6jEOqPfyqQmC3MAGzaIq6Ugo_x-eU5Pqnrjikp3sGga5-b2rSciVBobFP56BL/s480/R-24246320-1660900705-7542.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKuFzoa1bHKXID2_wNZKNvLhtdUtLvAz32cL5PyoLi93w4JSYr6BQJdPGa5dmK6J4f-M1y1_i6BEa6VLe9mct4kwbhgiA2HPbmz81ZpyUyIjS88Bpc0s-9Ad1Gsht6jEOqPfyqQmC3MAGzaIq6Ugo_x-eU5Pqnrjikp3sGga5-b2rSciVBobFP56BL/s640/R-24246320-1660900705-7542.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.859 - Muse presentan su visión del mundo: Will Of The People"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -197,8 +192,7 @@
           </a><a class="related-bottom-card" href="p-936-especial-absolution-de-muse.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqOxoKdRG94Jcwxip6rwk8DCwhKdq0-ClJYpKpFmbSNtOAmklbAWzMD5BS-ivACwABpFAvw2itkn54eRnmR9cascIHugFEj7UWHlbzVp2zA7kadD7t7IyueijIvxfdFbgwn-3-FKFKUUMsGFHbjCw16B03XE5Yqi68kdjok2zi2byPCHGUljGzifAeZMU/s320/cover.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqOxoKdRG94Jcwxip6rwk8DCwhKdq0-ClJYpKpFmbSNtOAmklbAWzMD5BS-ivACwABpFAvw2itkn54eRnmR9cascIHugFEj7UWHlbzVp2zA7kadD7t7IyueijIvxfdFbgwn-3-FKFKUUMsGFHbjCw16B03XE5Yqi68kdjok2zi2byPCHGUljGzifAeZMU/s320/cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqOxoKdRG94Jcwxip6rwk8DCwhKdq0-ClJYpKpFmbSNtOAmklbAWzMD5BS-ivACwABpFAvw2itkn54eRnmR9cascIHugFEj7UWHlbzVp2zA7kadD7t7IyueijIvxfdFbgwn-3-FKFKUUMsGFHbjCw16B03XE5Yqi68kdjok2zi2byPCHGUljGzifAeZMU/s480/cover.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqOxoKdRG94Jcwxip6rwk8DCwhKdq0-ClJYpKpFmbSNtOAmklbAWzMD5BS-ivACwABpFAvw2itkn54eRnmR9cascIHugFEj7UWHlbzVp2zA7kadD7t7IyueijIvxfdFbgwn-3-FKFKUUMsGFHbjCw16B03XE5Yqi68kdjok2zi2byPCHGUljGzifAeZMU/s640/cover.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqOxoKdRG94Jcwxip6rwk8DCwhKdq0-ClJYpKpFmbSNtOAmklbAWzMD5BS-ivACwABpFAvw2itkn54eRnmR9cascIHugFEj7UWHlbzVp2zA7kadD7t7IyueijIvxfdFbgwn-3-FKFKUUMsGFHbjCw16B03XE5Yqi68kdjok2zi2byPCHGUljGzifAeZMU/s320/cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqOxoKdRG94Jcwxip6rwk8DCwhKdq0-ClJYpKpFmbSNtOAmklbAWzMD5BS-ivACwABpFAvw2itkn54eRnmR9cascIHugFEj7UWHlbzVp2zA7kadD7t7IyueijIvxfdFbgwn-3-FKFKUUMsGFHbjCw16B03XE5Yqi68kdjok2zi2byPCHGUljGzifAeZMU/s480/cover.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqOxoKdRG94Jcwxip6rwk8DCwhKdq0-ClJYpKpFmbSNtOAmklbAWzMD5BS-ivACwABpFAvw2itkn54eRnmR9cascIHugFEj7UWHlbzVp2zA7kadD7t7IyueijIvxfdFbgwn-3-FKFKUUMsGFHbjCw16B03XE5Yqi68kdjok2zi2byPCHGUljGzifAeZMU/s640/cover.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.936 - Especial &#39;Absolution&#39; de MUSE"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

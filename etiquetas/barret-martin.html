@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Barret Martin — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-87-drink-the-sea-madrid-06-12-2025.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s320/DRINK-THE-SEA_1920x1080.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s160/DRINK-THE-SEA_1920x1080.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s320/DRINK-THE-SEA_1920x1080.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s480/DRINK-THE-SEA_1920x1080.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s160/DRINK-THE-SEA_1920x1080.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s320/DRINK-THE-SEA_1920x1080.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s480/DRINK-THE-SEA_1920x1080.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 87 - Drink the Sea Madrid 06/12/2025"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/1075-entrevista-a-drink-the-sea.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqK7oIoIirHR7cK5u9tBCzDaFr1Wz4SH-GhedENYLdxCHQQXehD2i94b8dlGYu8G9gKPSWI7AOEKo5pKulz-ldZwgwiauIxkr-dIfXD9L8W99AbHb_1Fs9ANMwKp72HLd8bnZ2Q2POVoY2bXqP6l4eapKME1zXpv_l_KNIpCB2GfxEt8mekY2mroejKI/s320/B90_1075.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqK7oIoIirHR7cK5u9tBCzDaFr1Wz4SH-GhedENYLdxCHQQXehD2i94b8dlGYu8G9gKPSWI7AOEKo5pKulz-ldZwgwiauIxkr-dIfXD9L8W99AbHb_1Fs9ANMwKp72HLd8bnZ2Q2POVoY2bXqP6l4eapKME1zXpv_l_KNIpCB2GfxEt8mekY2mroejKI/s160/B90_1075.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqK7oIoIirHR7cK5u9tBCzDaFr1Wz4SH-GhedENYLdxCHQQXehD2i94b8dlGYu8G9gKPSWI7AOEKo5pKulz-ldZwgwiauIxkr-dIfXD9L8W99AbHb_1Fs9ANMwKp72HLd8bnZ2Q2POVoY2bXqP6l4eapKME1zXpv_l_KNIpCB2GfxEt8mekY2mroejKI/s320/B90_1075.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqK7oIoIirHR7cK5u9tBCzDaFr1Wz4SH-GhedENYLdxCHQQXehD2i94b8dlGYu8G9gKPSWI7AOEKo5pKulz-ldZwgwiauIxkr-dIfXD9L8W99AbHb_1Fs9ANMwKp72HLd8bnZ2Q2POVoY2bXqP6l4eapKME1zXpv_l_KNIpCB2GfxEt8mekY2mroejKI/s480/B90_1075.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqK7oIoIirHR7cK5u9tBCzDaFr1Wz4SH-GhedENYLdxCHQQXehD2i94b8dlGYu8G9gKPSWI7AOEKo5pKulz-ldZwgwiauIxkr-dIfXD9L8W99AbHb_1Fs9ANMwKp72HLd8bnZ2Q2POVoY2bXqP6l4eapKME1zXpv_l_KNIpCB2GfxEt8mekY2mroejKI/s160/B90_1075.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqK7oIoIirHR7cK5u9tBCzDaFr1Wz4SH-GhedENYLdxCHQQXehD2i94b8dlGYu8G9gKPSWI7AOEKo5pKulz-ldZwgwiauIxkr-dIfXD9L8W99AbHb_1Fs9ANMwKp72HLd8bnZ2Q2POVoY2bXqP6l4eapKME1zXpv_l_KNIpCB2GfxEt8mekY2mroejKI/s320/B90_1075.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqK7oIoIirHR7cK5u9tBCzDaFr1Wz4SH-GhedENYLdxCHQQXehD2i94b8dlGYu8G9gKPSWI7AOEKo5pKulz-ldZwgwiauIxkr-dIfXD9L8W99AbHb_1Fs9ANMwKp72HLd8bnZ2Q2POVoY2bXqP6l4eapKME1zXpv_l_KNIpCB2GfxEt8mekY2mroejKI/s480/B90_1075.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1075 - Entrevista a Drink The Sea"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-927-los-recuerdos-de-barrett-martin-sobre-the-screaming-trees.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhgYQ6tJtY2AOSagHvNWBazcawQJfIsRE4ecl_eTJciVsBBuQPoNqvmdijS_Uqy-PdbwKB5LXgLBjKj96ucrxnLRhY27PcrXBnsGxYr5HKdphxUL1JOLdeUpaW3vmKHNk54-iymfZDKSdZvckSDZFD1hsH355yuxZJKzpgwpnS0NXOAoy3XVyuGYIv49U/s320/Barrett-Screaming-Trees-1992.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhgYQ6tJtY2AOSagHvNWBazcawQJfIsRE4ecl_eTJciVsBBuQPoNqvmdijS_Uqy-PdbwKB5LXgLBjKj96ucrxnLRhY27PcrXBnsGxYr5HKdphxUL1JOLdeUpaW3vmKHNk54-iymfZDKSdZvckSDZFD1hsH355yuxZJKzpgwpnS0NXOAoy3XVyuGYIv49U/s160/Barrett-Screaming-Trees-1992.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhgYQ6tJtY2AOSagHvNWBazcawQJfIsRE4ecl_eTJciVsBBuQPoNqvmdijS_Uqy-PdbwKB5LXgLBjKj96ucrxnLRhY27PcrXBnsGxYr5HKdphxUL1JOLdeUpaW3vmKHNk54-iymfZDKSdZvckSDZFD1hsH355yuxZJKzpgwpnS0NXOAoy3XVyuGYIv49U/s320/Barrett-Screaming-Trees-1992.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhgYQ6tJtY2AOSagHvNWBazcawQJfIsRE4ecl_eTJciVsBBuQPoNqvmdijS_Uqy-PdbwKB5LXgLBjKj96ucrxnLRhY27PcrXBnsGxYr5HKdphxUL1JOLdeUpaW3vmKHNk54-iymfZDKSdZvckSDZFD1hsH355yuxZJKzpgwpnS0NXOAoy3XVyuGYIv49U/s480/Barrett-Screaming-Trees-1992.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhgYQ6tJtY2AOSagHvNWBazcawQJfIsRE4ecl_eTJciVsBBuQPoNqvmdijS_Uqy-PdbwKB5LXgLBjKj96ucrxnLRhY27PcrXBnsGxYr5HKdphxUL1JOLdeUpaW3vmKHNk54-iymfZDKSdZvckSDZFD1hsH355yuxZJKzpgwpnS0NXOAoy3XVyuGYIv49U/s160/Barrett-Screaming-Trees-1992.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhgYQ6tJtY2AOSagHvNWBazcawQJfIsRE4ecl_eTJciVsBBuQPoNqvmdijS_Uqy-PdbwKB5LXgLBjKj96ucrxnLRhY27PcrXBnsGxYr5HKdphxUL1JOLdeUpaW3vmKHNk54-iymfZDKSdZvckSDZFD1hsH355yuxZJKzpgwpnS0NXOAoy3XVyuGYIv49U/s320/Barrett-Screaming-Trees-1992.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhgYQ6tJtY2AOSagHvNWBazcawQJfIsRE4ecl_eTJciVsBBuQPoNqvmdijS_Uqy-PdbwKB5LXgLBjKj96ucrxnLRhY27PcrXBnsGxYr5HKdphxUL1JOLdeUpaW3vmKHNk54-iymfZDKSdZvckSDZFD1hsH355yuxZJKzpgwpnS0NXOAoy3XVyuGYIv49U/s480/Barrett-Screaming-Trees-1992.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.927 - Los recuerdos de Barrett Martin sobre The Screaming Trees"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-436-homenaje-a-mad-season.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWnB6bDRqt9uQLVOHbmHxFbCF1vX6U3Smu8phwL_ugXXAy96GtQXoNKY9-50Bbxy7ePn3TVzkOKoYBFcVs6iCM2bXvsydCsak3AhIUe1B0RUw6PQkNGzaMJ331KZyxmt9hPswPWvhpe4w/s320/0014369494_10.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWnB6bDRqt9uQLVOHbmHxFbCF1vX6U3Smu8phwL_ugXXAy96GtQXoNKY9-50Bbxy7ePn3TVzkOKoYBFcVs6iCM2bXvsydCsak3AhIUe1B0RUw6PQkNGzaMJ331KZyxmt9hPswPWvhpe4w/s160/0014369494_10.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWnB6bDRqt9uQLVOHbmHxFbCF1vX6U3Smu8phwL_ugXXAy96GtQXoNKY9-50Bbxy7ePn3TVzkOKoYBFcVs6iCM2bXvsydCsak3AhIUe1B0RUw6PQkNGzaMJ331KZyxmt9hPswPWvhpe4w/s320/0014369494_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWnB6bDRqt9uQLVOHbmHxFbCF1vX6U3Smu8phwL_ugXXAy96GtQXoNKY9-50Bbxy7ePn3TVzkOKoYBFcVs6iCM2bXvsydCsak3AhIUe1B0RUw6PQkNGzaMJ331KZyxmt9hPswPWvhpe4w/s480/0014369494_10.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWnB6bDRqt9uQLVOHbmHxFbCF1vX6U3Smu8phwL_ugXXAy96GtQXoNKY9-50Bbxy7ePn3TVzkOKoYBFcVs6iCM2bXvsydCsak3AhIUe1B0RUw6PQkNGzaMJ331KZyxmt9hPswPWvhpe4w/s160/0014369494_10.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWnB6bDRqt9uQLVOHbmHxFbCF1vX6U3Smu8phwL_ugXXAy96GtQXoNKY9-50Bbxy7ePn3TVzkOKoYBFcVs6iCM2bXvsydCsak3AhIUe1B0RUw6PQkNGzaMJ331KZyxmt9hPswPWvhpe4w/s320/0014369494_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWnB6bDRqt9uQLVOHbmHxFbCF1vX6U3Smu8phwL_ugXXAy96GtQXoNKY9-50Bbxy7ePn3TVzkOKoYBFcVs6iCM2bXvsydCsak3AhIUe1B0RUw6PQkNGzaMJ331KZyxmt9hPswPWvhpe4w/s480/0014369494_10.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 436 - Homenaje a MAD SEASON"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-329-mad-season-sonic-evolution.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXNFb_XJmZpF3RFzw85sZhc0LXiB2rFkoabSEBcZPIVknUb9TpNLbF3SiAmBLPZ-yvZIMZoI2YmdO1F6yWFPjm6LVCnlNLkpZ-RLHgP_NxedxviqF1_G2QQkSlWPRtlv-XpKH1bPsSU9E/s320/bienvenido-329.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXNFb_XJmZpF3RFzw85sZhc0LXiB2rFkoabSEBcZPIVknUb9TpNLbF3SiAmBLPZ-yvZIMZoI2YmdO1F6yWFPjm6LVCnlNLkpZ-RLHgP_NxedxviqF1_G2QQkSlWPRtlv-XpKH1bPsSU9E/s160/bienvenido-329.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXNFb_XJmZpF3RFzw85sZhc0LXiB2rFkoabSEBcZPIVknUb9TpNLbF3SiAmBLPZ-yvZIMZoI2YmdO1F6yWFPjm6LVCnlNLkpZ-RLHgP_NxedxviqF1_G2QQkSlWPRtlv-XpKH1bPsSU9E/s320/bienvenido-329.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXNFb_XJmZpF3RFzw85sZhc0LXiB2rFkoabSEBcZPIVknUb9TpNLbF3SiAmBLPZ-yvZIMZoI2YmdO1F6yWFPjm6LVCnlNLkpZ-RLHgP_NxedxviqF1_G2QQkSlWPRtlv-XpKH1bPsSU9E/s480/bienvenido-329.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXNFb_XJmZpF3RFzw85sZhc0LXiB2rFkoabSEBcZPIVknUb9TpNLbF3SiAmBLPZ-yvZIMZoI2YmdO1F6yWFPjm6LVCnlNLkpZ-RLHgP_NxedxviqF1_G2QQkSlWPRtlv-XpKH1bPsSU9E/s160/bienvenido-329.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXNFb_XJmZpF3RFzw85sZhc0LXiB2rFkoabSEBcZPIVknUb9TpNLbF3SiAmBLPZ-yvZIMZoI2YmdO1F6yWFPjm6LVCnlNLkpZ-RLHgP_NxedxviqF1_G2QQkSlWPRtlv-XpKH1bPsSU9E/s320/bienvenido-329.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXNFb_XJmZpF3RFzw85sZhc0LXiB2rFkoabSEBcZPIVknUb9TpNLbF3SiAmBLPZ-yvZIMZoI2YmdO1F6yWFPjm6LVCnlNLkpZ-RLHgP_NxedxviqF1_G2QQkSlWPRtlv-XpKH1bPsSU9E/s480/bienvenido-329.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 329 – Mad Season – Sonic Evolution"
                 loading="lazy" width="320" height="213" />
         </a>

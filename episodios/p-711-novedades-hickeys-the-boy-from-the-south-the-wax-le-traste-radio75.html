@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.711 - Novedades: Hickeys, The Boy From the South, The Wax, Le Traste, Radio75... — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmNbAEL2Ux8l9_nnV-ld_l1Pwqbq2jB83tDDzttdzi1rU1n2lFeZWR0ZQrjqPLU-QwZqhAviupivwaga0roznHvDATPmg0i43xovoPBiiWz5rgL0AXLxodFNEJc_gxJI1or9rFgtfBhto/s320/b90772.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmNbAEL2Ux8l9_nnV-ld_l1Pwqbq2jB83tDDzttdzi1rU1n2lFeZWR0ZQrjqPLU-QwZqhAviupivwaga0roznHvDATPmg0i43xovoPBiiWz5rgL0AXLxodFNEJc_gxJI1or9rFgtfBhto/s160/b90772.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmNbAEL2Ux8l9_nnV-ld_l1Pwqbq2jB83tDDzttdzi1rU1n2lFeZWR0ZQrjqPLU-QwZqhAviupivwaga0roznHvDATPmg0i43xovoPBiiWz5rgL0AXLxodFNEJc_gxJI1or9rFgtfBhto/s320/b90772.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmNbAEL2Ux8l9_nnV-ld_l1Pwqbq2jB83tDDzttdzi1rU1n2lFeZWR0ZQrjqPLU-QwZqhAviupivwaga0roznHvDATPmg0i43xovoPBiiWz5rgL0AXLxodFNEJc_gxJI1or9rFgtfBhto/s480/b90772.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmNbAEL2Ux8l9_nnV-ld_l1Pwqbq2jB83tDDzttdzi1rU1n2lFeZWR0ZQrjqPLU-QwZqhAviupivwaga0roznHvDATPmg0i43xovoPBiiWz5rgL0AXLxodFNEJc_gxJI1or9rFgtfBhto/s160/b90772.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmNbAEL2Ux8l9_nnV-ld_l1Pwqbq2jB83tDDzttdzi1rU1n2lFeZWR0ZQrjqPLU-QwZqhAviupivwaga0roznHvDATPmg0i43xovoPBiiWz5rgL0AXLxodFNEJc_gxJI1or9rFgtfBhto/s320/b90772.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmNbAEL2Ux8l9_nnV-ld_l1Pwqbq2jB83tDDzttdzi1rU1n2lFeZWR0ZQrjqPLU-QwZqhAviupivwaga0roznHvDATPmg0i43xovoPBiiWz5rgL0AXLxodFNEJc_gxJI1or9rFgtfBhto/s480/b90772.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.772 - Novedades: El docu de Dover, Radio75, Hickeys, Musgö, The Crab Apples, Moura..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFIGzH1NrEyr4IXQV3803Vx7kLGGQwzp0XOM3YP6OG97i9E3V9Y7HyyXx7Zm6CsPVN5bQaikzLxaluwv8kChwutMmktqoqGjw_qcZu3POLjp0-5VkQ-3-RV7U9YPfSapPHVtkpNc-uBv4/s320/a1126264272_10.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFIGzH1NrEyr4IXQV3803Vx7kLGGQwzp0XOM3YP6OG97i9E3V9Y7HyyXx7Zm6CsPVN5bQaikzLxaluwv8kChwutMmktqoqGjw_qcZu3POLjp0-5VkQ-3-RV7U9YPfSapPHVtkpNc-uBv4/s160/a1126264272_10.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFIGzH1NrEyr4IXQV3803Vx7kLGGQwzp0XOM3YP6OG97i9E3V9Y7HyyXx7Zm6CsPVN5bQaikzLxaluwv8kChwutMmktqoqGjw_qcZu3POLjp0-5VkQ-3-RV7U9YPfSapPHVtkpNc-uBv4/s320/a1126264272_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFIGzH1NrEyr4IXQV3803Vx7kLGGQwzp0XOM3YP6OG97i9E3V9Y7HyyXx7Zm6CsPVN5bQaikzLxaluwv8kChwutMmktqoqGjw_qcZu3POLjp0-5VkQ-3-RV7U9YPfSapPHVtkpNc-uBv4/s480/a1126264272_10.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFIGzH1NrEyr4IXQV3803Vx7kLGGQwzp0XOM3YP6OG97i9E3V9Y7HyyXx7Zm6CsPVN5bQaikzLxaluwv8kChwutMmktqoqGjw_qcZu3POLjp0-5VkQ-3-RV7U9YPfSapPHVtkpNc-uBv4/s160/a1126264272_10.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFIGzH1NrEyr4IXQV3803Vx7kLGGQwzp0XOM3YP6OG97i9E3V9Y7HyyXx7Zm6CsPVN5bQaikzLxaluwv8kChwutMmktqoqGjw_qcZu3POLjp0-5VkQ-3-RV7U9YPfSapPHVtkpNc-uBv4/s320/a1126264272_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFIGzH1NrEyr4IXQV3803Vx7kLGGQwzp0XOM3YP6OG97i9E3V9Y7HyyXx7Zm6CsPVN5bQaikzLxaluwv8kChwutMmktqoqGjw_qcZu3POLjp0-5VkQ-3-RV7U9YPfSapPHVtkpNc-uBv4/s480/a1126264272_10.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.743 - The Wax presentan L&#39;Eufòria"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s320/BeFunky-collage.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s160/BeFunky-collage.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s320/BeFunky-collage.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s480/BeFunky-collage.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s160/BeFunky-collage.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s320/BeFunky-collage.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s480/BeFunky-collage.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.809 - Novedades: Lost Satellite,Vanity Rose,Yoko Factor,Radio75,Veronica Underluxe,Efecto Lucifer,Marc Rockenberg..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="p-714-homenaje-a-los-25-anos-del-mellon-collie-and-the-infinite-sadness.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s320/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s320/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s480/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s640/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s320/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s480/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s640/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.714 - Homenaje a los 25 años del Mellon Collie and the Infinite Sadness "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="p-719-le-traste-presentan-cuadratura-vol-2-para-sembrar-lo-incierto.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s320/a3942977190_10.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s320/a3942977190_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s480/a3942977190_10.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s640/a3942977190_10.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s320/a3942977190_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s480/a3942977190_10.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s640/a3942977190_10.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.719 - Le Traste presentan Cuadratura vol. 2: Para sembrar lo incierto"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="p-693-the-smashing-pumpkins-pisces-iscariot.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s320/R-3773608-1347544231-3798.jpeg.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s320/R-3773608-1347544231-3798.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s480/R-3773608-1347544231-3798.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s640/R-3773608-1347544231-3798.jpeg.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s320/R-3773608-1347544231-3798.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s480/R-3773608-1347544231-3798.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s640/R-3773608-1347544231-3798.jpeg.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.693 - The Smashing Pumpkins - Pisces Iscariot"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

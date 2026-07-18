@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.802 - John Squire, de The Stone Roses a The Seahorses — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -133,8 +133,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s320/b90_parte12_final.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s160/b90_parte12_final.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s320/b90_parte12_final.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s480/b90_parte12_final.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s160/b90_parte12_final.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s320/b90_parte12_final.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s480/b90_parte12_final.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1021 - Especial 1994 (12) : The Beatles - The Stone Roses - Bush - Pearl Jam"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -144,8 +143,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdA31sLeqp2bjXJXJku2lD_SztW6pTR9OJBDyGbS8GBLXsRR_S_FTGq_9Gt59YXBwTBizEsPV_eQMp65yi5ikBBFsZYGMhIAV1ZLvQK6XLbYwnLOfhWu5Wh8EL9s5lh28sIGuIgAjAYSLCn3UgbSrrCyJDh1wA8vqBY4AezUz3NysfO7gFrMab8iGi8oE/s320/Liam-Gallagher-John-Squire-Just-Another-Rainbow-Album-Artwork%20(1).jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdA31sLeqp2bjXJXJku2lD_SztW6pTR9OJBDyGbS8GBLXsRR_S_FTGq_9Gt59YXBwTBizEsPV_eQMp65yi5ikBBFsZYGMhIAV1ZLvQK6XLbYwnLOfhWu5Wh8EL9s5lh28sIGuIgAjAYSLCn3UgbSrrCyJDh1wA8vqBY4AezUz3NysfO7gFrMab8iGi8oE/s160/Liam-Gallagher-John-Squire-Just-Another-Rainbow-Album-Artwork%20(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdA31sLeqp2bjXJXJku2lD_SztW6pTR9OJBDyGbS8GBLXsRR_S_FTGq_9Gt59YXBwTBizEsPV_eQMp65yi5ikBBFsZYGMhIAV1ZLvQK6XLbYwnLOfhWu5Wh8EL9s5lh28sIGuIgAjAYSLCn3UgbSrrCyJDh1wA8vqBY4AezUz3NysfO7gFrMab8iGi8oE/s320/Liam-Gallagher-John-Squire-Just-Another-Rainbow-Album-Artwork%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdA31sLeqp2bjXJXJku2lD_SztW6pTR9OJBDyGbS8GBLXsRR_S_FTGq_9Gt59YXBwTBizEsPV_eQMp65yi5ikBBFsZYGMhIAV1ZLvQK6XLbYwnLOfhWu5Wh8EL9s5lh28sIGuIgAjAYSLCn3UgbSrrCyJDh1wA8vqBY4AezUz3NysfO7gFrMab8iGi8oE/s480/Liam-Gallagher-John-Squire-Just-Another-Rainbow-Album-Artwork%20(1).jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdA31sLeqp2bjXJXJku2lD_SztW6pTR9OJBDyGbS8GBLXsRR_S_FTGq_9Gt59YXBwTBizEsPV_eQMp65yi5ikBBFsZYGMhIAV1ZLvQK6XLbYwnLOfhWu5Wh8EL9s5lh28sIGuIgAjAYSLCn3UgbSrrCyJDh1wA8vqBY4AezUz3NysfO7gFrMab8iGi8oE/s160/Liam-Gallagher-John-Squire-Just-Another-Rainbow-Album-Artwork%20(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdA31sLeqp2bjXJXJku2lD_SztW6pTR9OJBDyGbS8GBLXsRR_S_FTGq_9Gt59YXBwTBizEsPV_eQMp65yi5ikBBFsZYGMhIAV1ZLvQK6XLbYwnLOfhWu5Wh8EL9s5lh28sIGuIgAjAYSLCn3UgbSrrCyJDh1wA8vqBY4AezUz3NysfO7gFrMab8iGi8oE/s320/Liam-Gallagher-John-Squire-Just-Another-Rainbow-Album-Artwork%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdA31sLeqp2bjXJXJku2lD_SztW6pTR9OJBDyGbS8GBLXsRR_S_FTGq_9Gt59YXBwTBizEsPV_eQMp65yi5ikBBFsZYGMhIAV1ZLvQK6XLbYwnLOfhWu5Wh8EL9s5lh28sIGuIgAjAYSLCn3UgbSrrCyJDh1wA8vqBY4AezUz3NysfO7gFrMab8iGi8oE/s480/Liam-Gallagher-John-Squire-Just-Another-Rainbow-Album-Artwork%20(1).jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 52 - Liam Gallagher &amp; John Squire - Just Another Rainbow"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -155,8 +153,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNxhf4KSPc8i3cAglzp9WP8BOKx6D6p53qaJ9Og5lJwzpmngiYRXU0gwbZYvBJCfdBfgWBiR3r4zjlhbzuEFdb_F8hwV2GYbJRR2RZkZ3v1NeuTgsaoNpFC5iA3Vxyq0qGSc0gD5KgDPY/s320/b90438.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNxhf4KSPc8i3cAglzp9WP8BOKx6D6p53qaJ9Og5lJwzpmngiYRXU0gwbZYvBJCfdBfgWBiR3r4zjlhbzuEFdb_F8hwV2GYbJRR2RZkZ3v1NeuTgsaoNpFC5iA3Vxyq0qGSc0gD5KgDPY/s160/b90438.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNxhf4KSPc8i3cAglzp9WP8BOKx6D6p53qaJ9Og5lJwzpmngiYRXU0gwbZYvBJCfdBfgWBiR3r4zjlhbzuEFdb_F8hwV2GYbJRR2RZkZ3v1NeuTgsaoNpFC5iA3Vxyq0qGSc0gD5KgDPY/s320/b90438.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNxhf4KSPc8i3cAglzp9WP8BOKx6D6p53qaJ9Og5lJwzpmngiYRXU0gwbZYvBJCfdBfgWBiR3r4zjlhbzuEFdb_F8hwV2GYbJRR2RZkZ3v1NeuTgsaoNpFC5iA3Vxyq0qGSc0gD5KgDPY/s480/b90438.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNxhf4KSPc8i3cAglzp9WP8BOKx6D6p53qaJ9Og5lJwzpmngiYRXU0gwbZYvBJCfdBfgWBiR3r4zjlhbzuEFdb_F8hwV2GYbJRR2RZkZ3v1NeuTgsaoNpFC5iA3Vxyq0qGSc0gD5KgDPY/s160/b90438.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNxhf4KSPc8i3cAglzp9WP8BOKx6D6p53qaJ9Og5lJwzpmngiYRXU0gwbZYvBJCfdBfgWBiR3r4zjlhbzuEFdb_F8hwV2GYbJRR2RZkZ3v1NeuTgsaoNpFC5iA3Vxyq0qGSc0gD5KgDPY/s320/b90438.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNxhf4KSPc8i3cAglzp9WP8BOKx6D6p53qaJ9Og5lJwzpmngiYRXU0gwbZYvBJCfdBfgWBiR3r4zjlhbzuEFdb_F8hwV2GYbJRR2RZkZ3v1NeuTgsaoNpFC5iA3Vxyq0qGSc0gD5KgDPY/s480/b90438.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 438 - John Lennon - Imagine The Ultimate Collection (2018)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -172,8 +169,7 @@
         <a class="related-bottom-card" href="1132-especial-queens-of-the-stone-age-parte-1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyrNtd7-1RFziCEMfE5SMq_PTJUZyICKZrsySGnj91TKsISLZ_uxr2Yd9nuwGsY12hdPMLvGwKoWQCh32Hr5E79mrH-kvoKi3VYtJmTwgBb-41Hoo9-GEFj81i3NvK13ddDiKE8MFSQVhGTrFJ_EwGUGmxpJ3D4PMAlopAiz_-q1mSwoce9aWrCVDz0aI/s320/B90_1132_2.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyrNtd7-1RFziCEMfE5SMq_PTJUZyICKZrsySGnj91TKsISLZ_uxr2Yd9nuwGsY12hdPMLvGwKoWQCh32Hr5E79mrH-kvoKi3VYtJmTwgBb-41Hoo9-GEFj81i3NvK13ddDiKE8MFSQVhGTrFJ_EwGUGmxpJ3D4PMAlopAiz_-q1mSwoce9aWrCVDz0aI/s320/B90_1132_2.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyrNtd7-1RFziCEMfE5SMq_PTJUZyICKZrsySGnj91TKsISLZ_uxr2Yd9nuwGsY12hdPMLvGwKoWQCh32Hr5E79mrH-kvoKi3VYtJmTwgBb-41Hoo9-GEFj81i3NvK13ddDiKE8MFSQVhGTrFJ_EwGUGmxpJ3D4PMAlopAiz_-q1mSwoce9aWrCVDz0aI/s480/B90_1132_2.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyrNtd7-1RFziCEMfE5SMq_PTJUZyICKZrsySGnj91TKsISLZ_uxr2Yd9nuwGsY12hdPMLvGwKoWQCh32Hr5E79mrH-kvoKi3VYtJmTwgBb-41Hoo9-GEFj81i3NvK13ddDiKE8MFSQVhGTrFJ_EwGUGmxpJ3D4PMAlopAiz_-q1mSwoce9aWrCVDz0aI/s640/B90_1132_2.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyrNtd7-1RFziCEMfE5SMq_PTJUZyICKZrsySGnj91TKsISLZ_uxr2Yd9nuwGsY12hdPMLvGwKoWQCh32Hr5E79mrH-kvoKi3VYtJmTwgBb-41Hoo9-GEFj81i3NvK13ddDiKE8MFSQVhGTrFJ_EwGUGmxpJ3D4PMAlopAiz_-q1mSwoce9aWrCVDz0aI/s320/B90_1132_2.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyrNtd7-1RFziCEMfE5SMq_PTJUZyICKZrsySGnj91TKsISLZ_uxr2Yd9nuwGsY12hdPMLvGwKoWQCh32Hr5E79mrH-kvoKi3VYtJmTwgBb-41Hoo9-GEFj81i3NvK13ddDiKE8MFSQVhGTrFJ_EwGUGmxpJ3D4PMAlopAiz_-q1mSwoce9aWrCVDz0aI/s480/B90_1132_2.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyrNtd7-1RFziCEMfE5SMq_PTJUZyICKZrsySGnj91TKsISLZ_uxr2Yd9nuwGsY12hdPMLvGwKoWQCh32Hr5E79mrH-kvoKi3VYtJmTwgBb-41Hoo9-GEFj81i3NvK13ddDiKE8MFSQVhGTrFJ_EwGUGmxpJ3D4PMAlopAiz_-q1mSwoce9aWrCVDz0aI/s640/B90_1132_2.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1132 - Especial Queens of the Stone Age (Parte 1)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -184,8 +180,7 @@
           </a><a class="related-bottom-card" href="programa-244-antes-del-britpop-the-verve.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s320/verve.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s320/verve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s480/verve.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s640/verve.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s320/verve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s480/verve.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s640/verve.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 244 - Antes del Britpop + The Verve"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -196,8 +191,7 @@
           </a><a class="related-bottom-card" href="programa-especial-the-beatles-john-lennon.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s320/John_standard.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s320/John_standard.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s480/John_standard.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s640/John_standard.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s320/John_standard.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s480/John_standard.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s640/John_standard.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa especial The Beatles: John Lennon"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

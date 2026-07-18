@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.940 - Una selección musical exquisita Vol.1 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4a-XE9aPOjbcXv8ByQS_7YRXRnpJQBbu4Tjiei9cuVUQdMmppyr1MLabFovqAxP4IYEOiltK-9AEBAhMoPO82L31aAlpSQF32JPzE-7167WWxpeZilSa196UMFOiSr1j_oeTCmA72psp_sVr4xR12hU0TrNWofITwumUJ7TblkyIRTh0yd1EcKZVDTRw/s320/360_F_901252170_CyzCU71FThuXeGjSyVcM9jhRmVy2jTrM.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4a-XE9aPOjbcXv8ByQS_7YRXRnpJQBbu4Tjiei9cuVUQdMmppyr1MLabFovqAxP4IYEOiltK-9AEBAhMoPO82L31aAlpSQF32JPzE-7167WWxpeZilSa196UMFOiSr1j_oeTCmA72psp_sVr4xR12hU0TrNWofITwumUJ7TblkyIRTh0yd1EcKZVDTRw/s160/360_F_901252170_CyzCU71FThuXeGjSyVcM9jhRmVy2jTrM.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4a-XE9aPOjbcXv8ByQS_7YRXRnpJQBbu4Tjiei9cuVUQdMmppyr1MLabFovqAxP4IYEOiltK-9AEBAhMoPO82L31aAlpSQF32JPzE-7167WWxpeZilSa196UMFOiSr1j_oeTCmA72psp_sVr4xR12hU0TrNWofITwumUJ7TblkyIRTh0yd1EcKZVDTRw/s320/360_F_901252170_CyzCU71FThuXeGjSyVcM9jhRmVy2jTrM.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4a-XE9aPOjbcXv8ByQS_7YRXRnpJQBbu4Tjiei9cuVUQdMmppyr1MLabFovqAxP4IYEOiltK-9AEBAhMoPO82L31aAlpSQF32JPzE-7167WWxpeZilSa196UMFOiSr1j_oeTCmA72psp_sVr4xR12hU0TrNWofITwumUJ7TblkyIRTh0yd1EcKZVDTRw/s480/360_F_901252170_CyzCU71FThuXeGjSyVcM9jhRmVy2jTrM.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4a-XE9aPOjbcXv8ByQS_7YRXRnpJQBbu4Tjiei9cuVUQdMmppyr1MLabFovqAxP4IYEOiltK-9AEBAhMoPO82L31aAlpSQF32JPzE-7167WWxpeZilSa196UMFOiSr1j_oeTCmA72psp_sVr4xR12hU0TrNWofITwumUJ7TblkyIRTh0yd1EcKZVDTRw/s160/360_F_901252170_CyzCU71FThuXeGjSyVcM9jhRmVy2jTrM.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4a-XE9aPOjbcXv8ByQS_7YRXRnpJQBbu4Tjiei9cuVUQdMmppyr1MLabFovqAxP4IYEOiltK-9AEBAhMoPO82L31aAlpSQF32JPzE-7167WWxpeZilSa196UMFOiSr1j_oeTCmA72psp_sVr4xR12hU0TrNWofITwumUJ7TblkyIRTh0yd1EcKZVDTRw/s320/360_F_901252170_CyzCU71FThuXeGjSyVcM9jhRmVy2jTrM.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4a-XE9aPOjbcXv8ByQS_7YRXRnpJQBbu4Tjiei9cuVUQdMmppyr1MLabFovqAxP4IYEOiltK-9AEBAhMoPO82L31aAlpSQF32JPzE-7167WWxpeZilSa196UMFOiSr1j_oeTCmA72psp_sVr4xR12hU0TrNWofITwumUJ7TblkyIRTh0yd1EcKZVDTRw/s480/360_F_901252170_CyzCU71FThuXeGjSyVcM9jhRmVy2jTrM.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.1016 - Una selección musical exquisita Vol.2 "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkaSahrX8FEK4qR_mmwNvHc2rqYbqOrQ_Nbi91_jN_Hmy8kiUmPxL1QITD0ktIyVJGJz-o_RKnICTlzSvJt7Mk8yTa6YxnkXSsCROcsUSNPKfnT-xm9l_Ne5BRoMALpEfjWH3U_VFud9bjWfnPWR2ioEYJV0PYDrTNO9ko88WTF-wsKkcm4VZ8psQS5KI/s320/Gemini_Generated_Image_rfsbhsrfsbhsrfsb.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkaSahrX8FEK4qR_mmwNvHc2rqYbqOrQ_Nbi91_jN_Hmy8kiUmPxL1QITD0ktIyVJGJz-o_RKnICTlzSvJt7Mk8yTa6YxnkXSsCROcsUSNPKfnT-xm9l_Ne5BRoMALpEfjWH3U_VFud9bjWfnPWR2ioEYJV0PYDrTNO9ko88WTF-wsKkcm4VZ8psQS5KI/s160/Gemini_Generated_Image_rfsbhsrfsbhsrfsb.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkaSahrX8FEK4qR_mmwNvHc2rqYbqOrQ_Nbi91_jN_Hmy8kiUmPxL1QITD0ktIyVJGJz-o_RKnICTlzSvJt7Mk8yTa6YxnkXSsCROcsUSNPKfnT-xm9l_Ne5BRoMALpEfjWH3U_VFud9bjWfnPWR2ioEYJV0PYDrTNO9ko88WTF-wsKkcm4VZ8psQS5KI/s320/Gemini_Generated_Image_rfsbhsrfsbhsrfsb.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkaSahrX8FEK4qR_mmwNvHc2rqYbqOrQ_Nbi91_jN_Hmy8kiUmPxL1QITD0ktIyVJGJz-o_RKnICTlzSvJt7Mk8yTa6YxnkXSsCROcsUSNPKfnT-xm9l_Ne5BRoMALpEfjWH3U_VFud9bjWfnPWR2ioEYJV0PYDrTNO9ko88WTF-wsKkcm4VZ8psQS5KI/s480/Gemini_Generated_Image_rfsbhsrfsbhsrfsb.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkaSahrX8FEK4qR_mmwNvHc2rqYbqOrQ_Nbi91_jN_Hmy8kiUmPxL1QITD0ktIyVJGJz-o_RKnICTlzSvJt7Mk8yTa6YxnkXSsCROcsUSNPKfnT-xm9l_Ne5BRoMALpEfjWH3U_VFud9bjWfnPWR2ioEYJV0PYDrTNO9ko88WTF-wsKkcm4VZ8psQS5KI/s160/Gemini_Generated_Image_rfsbhsrfsbhsrfsb.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkaSahrX8FEK4qR_mmwNvHc2rqYbqOrQ_Nbi91_jN_Hmy8kiUmPxL1QITD0ktIyVJGJz-o_RKnICTlzSvJt7Mk8yTa6YxnkXSsCROcsUSNPKfnT-xm9l_Ne5BRoMALpEfjWH3U_VFud9bjWfnPWR2ioEYJV0PYDrTNO9ko88WTF-wsKkcm4VZ8psQS5KI/s320/Gemini_Generated_Image_rfsbhsrfsbhsrfsb.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkaSahrX8FEK4qR_mmwNvHc2rqYbqOrQ_Nbi91_jN_Hmy8kiUmPxL1QITD0ktIyVJGJz-o_RKnICTlzSvJt7Mk8yTa6YxnkXSsCROcsUSNPKfnT-xm9l_Ne5BRoMALpEfjWH3U_VFud9bjWfnPWR2ioEYJV0PYDrTNO9ko88WTF-wsKkcm4VZ8psQS5KI/s480/Gemini_Generated_Image_rfsbhsrfsbhsrfsb.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1094 - Una selección musical exquisita Vol.3"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s160/b90_934_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s480/b90_934_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s160/b90_934_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s480/b90_934_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.934 - Remasterizaciones 2023, ¿valen la pena?"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="p-971-sigue-siendo-seattle-un-destino-atractivo-para-los-amantes-del-grunge.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s640/seattle-grunge-est1990-mens-t-shirt.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s640/seattle-grunge-est1990-mens-t-shirt.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.971 - ¿Sigue siendo Seattle un destino atractivo para los amantes del grunge?"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="p-844-he-vuelto-a-grabar-el-primer-programa-de-b90-kurt-tuvo-la-culpa-remastered.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s320/ni7bimcmykx01.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s320/ni7bimcmykx01.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s480/ni7bimcmykx01.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s640/ni7bimcmykx01.webp 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s320/ni7bimcmykx01.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s480/ni7bimcmykx01.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s640/ni7bimcmykx01.webp 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.844 - He vuelto a grabar el primer programa de B90: Kurt tuvo la culpa... (Remastered)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="bienvenido-a-los-90-dj-set-session-7.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEhJCFOFXPU03-X5-B5eU7T2R6LdRrOrR4YcgHwaxx0ZqEmMYhWz49MIc7lx9JsVrXKTuopOQSoSFWdh371wZqRvLkKoZpJh91bssEmbTJha3PSbYf3NOEpQayxqFBDw9QPZzJhO38PKv5Y-_vErm_TWjoQtFNXLPjCAkF3TBy_Dn_Kdl_zDEtMGiDVp=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEhJCFOFXPU03-X5-B5eU7T2R6LdRrOrR4YcgHwaxx0ZqEmMYhWz49MIc7lx9JsVrXKTuopOQSoSFWdh371wZqRvLkKoZpJh91bssEmbTJha3PSbYf3NOEpQayxqFBDw9QPZzJhO38PKv5Y-_vErm_TWjoQtFNXLPjCAkF3TBy_Dn_Kdl_zDEtMGiDVp=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEhJCFOFXPU03-X5-B5eU7T2R6LdRrOrR4YcgHwaxx0ZqEmMYhWz49MIc7lx9JsVrXKTuopOQSoSFWdh371wZqRvLkKoZpJh91bssEmbTJha3PSbYf3NOEpQayxqFBDw9QPZzJhO38PKv5Y-_vErm_TWjoQtFNXLPjCAkF3TBy_Dn_Kdl_zDEtMGiDVp=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEhJCFOFXPU03-X5-B5eU7T2R6LdRrOrR4YcgHwaxx0ZqEmMYhWz49MIc7lx9JsVrXKTuopOQSoSFWdh371wZqRvLkKoZpJh91bssEmbTJha3PSbYf3NOEpQayxqFBDw9QPZzJhO38PKv5Y-_vErm_TWjoQtFNXLPjCAkF3TBy_Dn_Kdl_zDEtMGiDVp=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Bienvenido a los 90 DJ Set - Session 7 "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 246 - Reedición Be Here Now (Oasis) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -129,8 +129,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgocfkrgBau-prMDK_kBvYlAfhUAmroXz0j17POfUknXx0W_jgN08QaTBRoLKh0CAQqzn0ynlFOSvIb_vcLj0EzmAV4e4BIoMcNdsEF2txbuwOklserK1fGKk_5Y-WQvUgrEhWb6bWfxgc/s320/12803013_1202891293061845_8533925873096678801_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgocfkrgBau-prMDK_kBvYlAfhUAmroXz0j17POfUknXx0W_jgN08QaTBRoLKh0CAQqzn0ynlFOSvIb_vcLj0EzmAV4e4BIoMcNdsEF2txbuwOklserK1fGKk_5Y-WQvUgrEhWb6bWfxgc/s160/12803013_1202891293061845_8533925873096678801_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgocfkrgBau-prMDK_kBvYlAfhUAmroXz0j17POfUknXx0W_jgN08QaTBRoLKh0CAQqzn0ynlFOSvIb_vcLj0EzmAV4e4BIoMcNdsEF2txbuwOklserK1fGKk_5Y-WQvUgrEhWb6bWfxgc/s320/12803013_1202891293061845_8533925873096678801_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgocfkrgBau-prMDK_kBvYlAfhUAmroXz0j17POfUknXx0W_jgN08QaTBRoLKh0CAQqzn0ynlFOSvIb_vcLj0EzmAV4e4BIoMcNdsEF2txbuwOklserK1fGKk_5Y-WQvUgrEhWb6bWfxgc/s480/12803013_1202891293061845_8533925873096678801_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgocfkrgBau-prMDK_kBvYlAfhUAmroXz0j17POfUknXx0W_jgN08QaTBRoLKh0CAQqzn0ynlFOSvIb_vcLj0EzmAV4e4BIoMcNdsEF2txbuwOklserK1fGKk_5Y-WQvUgrEhWb6bWfxgc/s160/12803013_1202891293061845_8533925873096678801_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgocfkrgBau-prMDK_kBvYlAfhUAmroXz0j17POfUknXx0W_jgN08QaTBRoLKh0CAQqzn0ynlFOSvIb_vcLj0EzmAV4e4BIoMcNdsEF2txbuwOklserK1fGKk_5Y-WQvUgrEhWb6bWfxgc/s320/12803013_1202891293061845_8533925873096678801_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgocfkrgBau-prMDK_kBvYlAfhUAmroXz0j17POfUknXx0W_jgN08QaTBRoLKh0CAQqzn0ynlFOSvIb_vcLj0EzmAV4e4BIoMcNdsEF2txbuwOklserK1fGKk_5Y-WQvUgrEhWb6bWfxgc/s480/12803013_1202891293061845_8533925873096678801_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 210 - Oasis &#39;This is history&#39; Capítulo 3: Be Here Now (1997) - Standing on the Shoulder of Giants (2000)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -140,8 +139,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s320/12508847_1171351242882517_303927544139429384_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s160/12508847_1171351242882517_303927544139429384_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s320/12508847_1171351242882517_303927544139429384_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s480/12508847_1171351242882517_303927544139429384_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s160/12508847_1171351242882517_303927544139429384_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s320/12508847_1171351242882517_303927544139429384_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s480/12508847_1171351242882517_303927544139429384_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 201 - Oasis This is history 2 - Glastonbury (1995) - Be Here Now (1997)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -151,8 +149,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa 28 - Oasis Be Here Now cumple 15 años"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -168,8 +165,7 @@
         <a class="related-bottom-card" href="p-770-otro-oasis-fue-posible-andy-bell-y-gem-archer.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRy2XUpSeawzvmcCKStWZNkKnRbZdG0IFhHEMaTheeNVDuDXMGfVDGvwMCf-fdDB-A3xiM_5drn8lvDHG3_iIP1cy8OIaDCfK2kfg1tQY7yknpVNInwc3N9h8Wf-gpKHWvA83fHXs4-3Y/s320/DacSmFpWsAEgneW.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRy2XUpSeawzvmcCKStWZNkKnRbZdG0IFhHEMaTheeNVDuDXMGfVDGvwMCf-fdDB-A3xiM_5drn8lvDHG3_iIP1cy8OIaDCfK2kfg1tQY7yknpVNInwc3N9h8Wf-gpKHWvA83fHXs4-3Y/s320/DacSmFpWsAEgneW.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRy2XUpSeawzvmcCKStWZNkKnRbZdG0IFhHEMaTheeNVDuDXMGfVDGvwMCf-fdDB-A3xiM_5drn8lvDHG3_iIP1cy8OIaDCfK2kfg1tQY7yknpVNInwc3N9h8Wf-gpKHWvA83fHXs4-3Y/s480/DacSmFpWsAEgneW.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRy2XUpSeawzvmcCKStWZNkKnRbZdG0IFhHEMaTheeNVDuDXMGfVDGvwMCf-fdDB-A3xiM_5drn8lvDHG3_iIP1cy8OIaDCfK2kfg1tQY7yknpVNInwc3N9h8Wf-gpKHWvA83fHXs4-3Y/s640/DacSmFpWsAEgneW.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRy2XUpSeawzvmcCKStWZNkKnRbZdG0IFhHEMaTheeNVDuDXMGfVDGvwMCf-fdDB-A3xiM_5drn8lvDHG3_iIP1cy8OIaDCfK2kfg1tQY7yknpVNInwc3N9h8Wf-gpKHWvA83fHXs4-3Y/s320/DacSmFpWsAEgneW.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRy2XUpSeawzvmcCKStWZNkKnRbZdG0IFhHEMaTheeNVDuDXMGfVDGvwMCf-fdDB-A3xiM_5drn8lvDHG3_iIP1cy8OIaDCfK2kfg1tQY7yknpVNInwc3N9h8Wf-gpKHWvA83fHXs4-3Y/s480/DacSmFpWsAEgneW.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRy2XUpSeawzvmcCKStWZNkKnRbZdG0IFhHEMaTheeNVDuDXMGfVDGvwMCf-fdDB-A3xiM_5drn8lvDHG3_iIP1cy8OIaDCfK2kfg1tQY7yknpVNInwc3N9h8Wf-gpKHWvA83fHXs4-3Y/s640/DacSmFpWsAEgneW.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.770 - Otro OASIS fue posible (Andy Bell y Gem Archer)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -180,8 +176,7 @@
           </a><a class="related-bottom-card" href="b90-supernova-47-estar-en-el-lugar-adecuado-en-el-momento-adecuado-oasis.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s320/Screen-Shot-2017-03-14-at-193817.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s320/Screen-Shot-2017-03-14-at-193817.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s480/Screen-Shot-2017-03-14-at-193817.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s640/Screen-Shot-2017-03-14-at-193817.webp 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s320/Screen-Shot-2017-03-14-at-193817.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s480/Screen-Shot-2017-03-14-at-193817.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s640/Screen-Shot-2017-03-14-at-193817.webp 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Supernova 47 - Estar en el lugar adecuado, en el momento adecuado: OASIS"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -192,8 +187,7 @@
           </a><a class="related-bottom-card" href="programa-225-oasis-this-is-history-5-heathen-chemistry.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz9ACObUmmmSAhkQ5_6qiahX_zZXXScABiU-qIHRXjQeDJzW4b55Sm8N9ZS9EsW4BOc6Q_ZnV8FYhIFytELqs64DW113o0q01N1wa7_hPZMr6a7IGzALly4_fxtOnGLobes1xeNJjxM7M/s320/13230107_1271245256226448_3602766917919964631_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz9ACObUmmmSAhkQ5_6qiahX_zZXXScABiU-qIHRXjQeDJzW4b55Sm8N9ZS9EsW4BOc6Q_ZnV8FYhIFytELqs64DW113o0q01N1wa7_hPZMr6a7IGzALly4_fxtOnGLobes1xeNJjxM7M/s320/13230107_1271245256226448_3602766917919964631_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz9ACObUmmmSAhkQ5_6qiahX_zZXXScABiU-qIHRXjQeDJzW4b55Sm8N9ZS9EsW4BOc6Q_ZnV8FYhIFytELqs64DW113o0q01N1wa7_hPZMr6a7IGzALly4_fxtOnGLobes1xeNJjxM7M/s480/13230107_1271245256226448_3602766917919964631_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz9ACObUmmmSAhkQ5_6qiahX_zZXXScABiU-qIHRXjQeDJzW4b55Sm8N9ZS9EsW4BOc6Q_ZnV8FYhIFytELqs64DW113o0q01N1wa7_hPZMr6a7IGzALly4_fxtOnGLobes1xeNJjxM7M/s640/13230107_1271245256226448_3602766917919964631_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz9ACObUmmmSAhkQ5_6qiahX_zZXXScABiU-qIHRXjQeDJzW4b55Sm8N9ZS9EsW4BOc6Q_ZnV8FYhIFytELqs64DW113o0q01N1wa7_hPZMr6a7IGzALly4_fxtOnGLobes1xeNJjxM7M/s320/13230107_1271245256226448_3602766917919964631_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz9ACObUmmmSAhkQ5_6qiahX_zZXXScABiU-qIHRXjQeDJzW4b55Sm8N9ZS9EsW4BOc6Q_ZnV8FYhIFytELqs64DW113o0q01N1wa7_hPZMr6a7IGzALly4_fxtOnGLobes1xeNJjxM7M/s480/13230107_1271245256226448_3602766917919964631_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz9ACObUmmmSAhkQ5_6qiahX_zZXXScABiU-qIHRXjQeDJzW4b55Sm8N9ZS9EsW4BOc6Q_ZnV8FYhIFytELqs64DW113o0q01N1wa7_hPZMr6a7IGzALly4_fxtOnGLobes1xeNJjxM7M/s640/13230107_1271245256226448_3602766917919964631_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 225 - Oasis &quot;this is History 5&quot; Heathen Chemistry"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 128 - El &quot;sonido Seattle&quot; en 2014 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -149,8 +149,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s160/seattle-grunge-est1990-mens-t-shirt.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s160/seattle-grunge-est1990-mens-t-shirt.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.971 - ¿Sigue siendo Seattle un destino atractivo para los amantes del grunge?"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -160,8 +159,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s320/band-map-v1_1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s160/band-map-v1_1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s320/band-map-v1_1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s480/band-map-v1_1.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s160/band-map-v1_1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s320/band-map-v1_1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s480/band-map-v1_1.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 127 - Seattle en los 90"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +169,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s320/P1030752.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s160/P1030752.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s320/P1030752.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s480/P1030752.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s160/P1030752.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s320/P1030752.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s480/P1030752.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 161 - Un paseo por Seattle"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -188,8 +185,7 @@
         <a class="related-bottom-card" href="bienvenido-a-los-90-programa-36-sub-pop-200.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Bienvenido a los 90 - Programa 36 - SUB POP 200"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -200,8 +196,7 @@
           </a><a class="related-bottom-card" href="programa-484-soundgarden-showbox-seattle-2010.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVW1qgaskjjQz8ZS0G6hAhUacCFWP7xCo-jJK2vHI5ad5F6f8N9NVMLRUY7vRH054wUn-Eiz_YHOQPpIB5K8zqECoJvg5Q2KjjY1BrhSUZOghrwd16aqv2sq9TyT84khuHX6jhz_bVYP8/s320/b90_484.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVW1qgaskjjQz8ZS0G6hAhUacCFWP7xCo-jJK2vHI5ad5F6f8N9NVMLRUY7vRH054wUn-Eiz_YHOQPpIB5K8zqECoJvg5Q2KjjY1BrhSUZOghrwd16aqv2sq9TyT84khuHX6jhz_bVYP8/s320/b90_484.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVW1qgaskjjQz8ZS0G6hAhUacCFWP7xCo-jJK2vHI5ad5F6f8N9NVMLRUY7vRH054wUn-Eiz_YHOQPpIB5K8zqECoJvg5Q2KjjY1BrhSUZOghrwd16aqv2sq9TyT84khuHX6jhz_bVYP8/s480/b90_484.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVW1qgaskjjQz8ZS0G6hAhUacCFWP7xCo-jJK2vHI5ad5F6f8N9NVMLRUY7vRH054wUn-Eiz_YHOQPpIB5K8zqECoJvg5Q2KjjY1BrhSUZOghrwd16aqv2sq9TyT84khuHX6jhz_bVYP8/s640/b90_484.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVW1qgaskjjQz8ZS0G6hAhUacCFWP7xCo-jJK2vHI5ad5F6f8N9NVMLRUY7vRH054wUn-Eiz_YHOQPpIB5K8zqECoJvg5Q2KjjY1BrhSUZOghrwd16aqv2sq9TyT84khuHX6jhz_bVYP8/s320/b90_484.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVW1qgaskjjQz8ZS0G6hAhUacCFWP7xCo-jJK2vHI5ad5F6f8N9NVMLRUY7vRH054wUn-Eiz_YHOQPpIB5K8zqECoJvg5Q2KjjY1BrhSUZOghrwd16aqv2sq9TyT84khuHX6jhz_bVYP8/s480/b90_484.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVW1qgaskjjQz8ZS0G6hAhUacCFWP7xCo-jJK2vHI5ad5F6f8N9NVMLRUY7vRH054wUn-Eiz_YHOQPpIB5K8zqECoJvg5Q2KjjY1BrhSUZOghrwd16aqv2sq9TyT84khuHX6jhz_bVYP8/s640/b90_484.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 484 - Soundgarden (Showbox - Seattle 2010)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -212,8 +207,7 @@
           </a><a class="related-bottom-card" href="programa-538-construyendo-el-sonido-de-los-90.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJfxZhPbymXSuopMfdqrD3SJ3mrNIGdkKcdw-qBQHf0zknAthmKBgSdex8NF0Lc1AbJgmYH1C5PJE9cvz5FkqQu_hhOgxBBF2DVpUphiTXUhzYJBMNsjKSzF6E3Ib2JXyYIB6wgDzR050/s320/538E+Sonido+90.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJfxZhPbymXSuopMfdqrD3SJ3mrNIGdkKcdw-qBQHf0zknAthmKBgSdex8NF0Lc1AbJgmYH1C5PJE9cvz5FkqQu_hhOgxBBF2DVpUphiTXUhzYJBMNsjKSzF6E3Ib2JXyYIB6wgDzR050/s320/538E+Sonido+90.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJfxZhPbymXSuopMfdqrD3SJ3mrNIGdkKcdw-qBQHf0zknAthmKBgSdex8NF0Lc1AbJgmYH1C5PJE9cvz5FkqQu_hhOgxBBF2DVpUphiTXUhzYJBMNsjKSzF6E3Ib2JXyYIB6wgDzR050/s480/538E+Sonido+90.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJfxZhPbymXSuopMfdqrD3SJ3mrNIGdkKcdw-qBQHf0zknAthmKBgSdex8NF0Lc1AbJgmYH1C5PJE9cvz5FkqQu_hhOgxBBF2DVpUphiTXUhzYJBMNsjKSzF6E3Ib2JXyYIB6wgDzR050/s640/538E+Sonido+90.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJfxZhPbymXSuopMfdqrD3SJ3mrNIGdkKcdw-qBQHf0zknAthmKBgSdex8NF0Lc1AbJgmYH1C5PJE9cvz5FkqQu_hhOgxBBF2DVpUphiTXUhzYJBMNsjKSzF6E3Ib2JXyYIB6wgDzR050/s320/538E+Sonido+90.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJfxZhPbymXSuopMfdqrD3SJ3mrNIGdkKcdw-qBQHf0zknAthmKBgSdex8NF0Lc1AbJgmYH1C5PJE9cvz5FkqQu_hhOgxBBF2DVpUphiTXUhzYJBMNsjKSzF6E3Ib2JXyYIB6wgDzR050/s480/538E+Sonido+90.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJfxZhPbymXSuopMfdqrD3SJ3mrNIGdkKcdw-qBQHf0zknAthmKBgSdex8NF0Lc1AbJgmYH1C5PJE9cvz5FkqQu_hhOgxBBF2DVpUphiTXUhzYJBMNsjKSzF6E3Ib2JXyYIB6wgDzR050/s640/538E+Sonido+90.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 538 - Construyendo el sonido de los 90"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

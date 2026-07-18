@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.770 - Otro OASIS fue posible (Andy Bell y Gem Archer) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -148,8 +148,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s320/Screen-Shot-2017-03-14-at-193817.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s160/Screen-Shot-2017-03-14-at-193817.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s320/Screen-Shot-2017-03-14-at-193817.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s480/Screen-Shot-2017-03-14-at-193817.webp 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s160/Screen-Shot-2017-03-14-at-193817.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s320/Screen-Shot-2017-03-14-at-193817.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s480/Screen-Shot-2017-03-14-at-193817.webp 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 47 - Estar en el lugar adecuado, en el momento adecuado: OASIS"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -159,8 +158,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvOb6dWklPvjItoHhOVmYzbN1tcH9qVBqUMuLM_RuKobfJ0wK81_1HhEvUZ0dwKlzfT6oqo683XOgN45eX1ohTx8hqX2A0HTWv_VIJk7sd30gJANvgbpcpnE6JgoEazj9Irsj_SOfydIQ/s320/oasis_rolls_royce_swimming_pool_be_here_now_05.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvOb6dWklPvjItoHhOVmYzbN1tcH9qVBqUMuLM_RuKobfJ0wK81_1HhEvUZ0dwKlzfT6oqo683XOgN45eX1ohTx8hqX2A0HTWv_VIJk7sd30gJANvgbpcpnE6JgoEazj9Irsj_SOfydIQ/s160/oasis_rolls_royce_swimming_pool_be_here_now_05.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvOb6dWklPvjItoHhOVmYzbN1tcH9qVBqUMuLM_RuKobfJ0wK81_1HhEvUZ0dwKlzfT6oqo683XOgN45eX1ohTx8hqX2A0HTWv_VIJk7sd30gJANvgbpcpnE6JgoEazj9Irsj_SOfydIQ/s320/oasis_rolls_royce_swimming_pool_be_here_now_05.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvOb6dWklPvjItoHhOVmYzbN1tcH9qVBqUMuLM_RuKobfJ0wK81_1HhEvUZ0dwKlzfT6oqo683XOgN45eX1ohTx8hqX2A0HTWv_VIJk7sd30gJANvgbpcpnE6JgoEazj9Irsj_SOfydIQ/s480/oasis_rolls_royce_swimming_pool_be_here_now_05.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvOb6dWklPvjItoHhOVmYzbN1tcH9qVBqUMuLM_RuKobfJ0wK81_1HhEvUZ0dwKlzfT6oqo683XOgN45eX1ohTx8hqX2A0HTWv_VIJk7sd30gJANvgbpcpnE6JgoEazj9Irsj_SOfydIQ/s160/oasis_rolls_royce_swimming_pool_be_here_now_05.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvOb6dWklPvjItoHhOVmYzbN1tcH9qVBqUMuLM_RuKobfJ0wK81_1HhEvUZ0dwKlzfT6oqo683XOgN45eX1ohTx8hqX2A0HTWv_VIJk7sd30gJANvgbpcpnE6JgoEazj9Irsj_SOfydIQ/s320/oasis_rolls_royce_swimming_pool_be_here_now_05.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvOb6dWklPvjItoHhOVmYzbN1tcH9qVBqUMuLM_RuKobfJ0wK81_1HhEvUZ0dwKlzfT6oqo683XOgN45eX1ohTx8hqX2A0HTWv_VIJk7sd30gJANvgbpcpnE6JgoEazj9Irsj_SOfydIQ/s480/oasis_rolls_royce_swimming_pool_be_here_now_05.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 246 - Reedición Be Here Now (Oasis)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -170,8 +168,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRVjn3UnPT0z9OaeDmrPC6JkOcGpTKEVi7-3Prm0sxC8KR10AF4OmkF-fULcSx5ZIYCOI23NeLPVJEeoqdFjo8aqQm7ZvqMG91UBZQtlhwK8X1h6SUxehn25P2wp6LlxG_0geWuL5o1-Q/s320/Oasis-Liam-y-Noel-Gallagher-1200x800.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRVjn3UnPT0z9OaeDmrPC6JkOcGpTKEVi7-3Prm0sxC8KR10AF4OmkF-fULcSx5ZIYCOI23NeLPVJEeoqdFjo8aqQm7ZvqMG91UBZQtlhwK8X1h6SUxehn25P2wp6LlxG_0geWuL5o1-Q/s160/Oasis-Liam-y-Noel-Gallagher-1200x800.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRVjn3UnPT0z9OaeDmrPC6JkOcGpTKEVi7-3Prm0sxC8KR10AF4OmkF-fULcSx5ZIYCOI23NeLPVJEeoqdFjo8aqQm7ZvqMG91UBZQtlhwK8X1h6SUxehn25P2wp6LlxG_0geWuL5o1-Q/s320/Oasis-Liam-y-Noel-Gallagher-1200x800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRVjn3UnPT0z9OaeDmrPC6JkOcGpTKEVi7-3Prm0sxC8KR10AF4OmkF-fULcSx5ZIYCOI23NeLPVJEeoqdFjo8aqQm7ZvqMG91UBZQtlhwK8X1h6SUxehn25P2wp6LlxG_0geWuL5o1-Q/s480/Oasis-Liam-y-Noel-Gallagher-1200x800.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRVjn3UnPT0z9OaeDmrPC6JkOcGpTKEVi7-3Prm0sxC8KR10AF4OmkF-fULcSx5ZIYCOI23NeLPVJEeoqdFjo8aqQm7ZvqMG91UBZQtlhwK8X1h6SUxehn25P2wp6LlxG_0geWuL5o1-Q/s160/Oasis-Liam-y-Noel-Gallagher-1200x800.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRVjn3UnPT0z9OaeDmrPC6JkOcGpTKEVi7-3Prm0sxC8KR10AF4OmkF-fULcSx5ZIYCOI23NeLPVJEeoqdFjo8aqQm7ZvqMG91UBZQtlhwK8X1h6SUxehn25P2wp6LlxG_0geWuL5o1-Q/s320/Oasis-Liam-y-Noel-Gallagher-1200x800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRVjn3UnPT0z9OaeDmrPC6JkOcGpTKEVi7-3Prm0sxC8KR10AF4OmkF-fULcSx5ZIYCOI23NeLPVJEeoqdFjo8aqQm7ZvqMG91UBZQtlhwK8X1h6SUxehn25P2wp6LlxG_0geWuL5o1-Q/s480/Oasis-Liam-y-Noel-Gallagher-1200x800.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.744 - El fenómeno Oasis en la radio musical española de los 90"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -187,8 +184,7 @@
         <a class="related-bottom-card" href="p-799-especial-oasis-knebworth-1996.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4oT13I0PmpNIHAdCD1cHjBxLysC556Sg76frrJBc-VN_TLOQo47pywcJ9aqmeBVmJTEmYITe1HPYw71EE9N4LV2BAmOn9REpdk52xiFSiFawOlxNoBY6qqaLtScjKjBWw-7X7D6hpvmk/s320/Oasis-Knebworth-1996-trailer-documental-900x506.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4oT13I0PmpNIHAdCD1cHjBxLysC556Sg76frrJBc-VN_TLOQo47pywcJ9aqmeBVmJTEmYITe1HPYw71EE9N4LV2BAmOn9REpdk52xiFSiFawOlxNoBY6qqaLtScjKjBWw-7X7D6hpvmk/s320/Oasis-Knebworth-1996-trailer-documental-900x506.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4oT13I0PmpNIHAdCD1cHjBxLysC556Sg76frrJBc-VN_TLOQo47pywcJ9aqmeBVmJTEmYITe1HPYw71EE9N4LV2BAmOn9REpdk52xiFSiFawOlxNoBY6qqaLtScjKjBWw-7X7D6hpvmk/s480/Oasis-Knebworth-1996-trailer-documental-900x506.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4oT13I0PmpNIHAdCD1cHjBxLysC556Sg76frrJBc-VN_TLOQo47pywcJ9aqmeBVmJTEmYITe1HPYw71EE9N4LV2BAmOn9REpdk52xiFSiFawOlxNoBY6qqaLtScjKjBWw-7X7D6hpvmk/s640/Oasis-Knebworth-1996-trailer-documental-900x506.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4oT13I0PmpNIHAdCD1cHjBxLysC556Sg76frrJBc-VN_TLOQo47pywcJ9aqmeBVmJTEmYITe1HPYw71EE9N4LV2BAmOn9REpdk52xiFSiFawOlxNoBY6qqaLtScjKjBWw-7X7D6hpvmk/s320/Oasis-Knebworth-1996-trailer-documental-900x506.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4oT13I0PmpNIHAdCD1cHjBxLysC556Sg76frrJBc-VN_TLOQo47pywcJ9aqmeBVmJTEmYITe1HPYw71EE9N4LV2BAmOn9REpdk52xiFSiFawOlxNoBY6qqaLtScjKjBWw-7X7D6hpvmk/s480/Oasis-Knebworth-1996-trailer-documental-900x506.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4oT13I0PmpNIHAdCD1cHjBxLysC556Sg76frrJBc-VN_TLOQo47pywcJ9aqmeBVmJTEmYITe1HPYw71EE9N4LV2BAmOn9REpdk52xiFSiFawOlxNoBY6qqaLtScjKjBWw-7X7D6hpvmk/s640/Oasis-Knebworth-1996-trailer-documental-900x506.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.799 - Especial Oasis Knebworth 1996"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -199,8 +195,7 @@
           </a><a class="related-bottom-card" href="p-689-oasis-25-anos-de-what-s-the-story-morning-glory.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s320/-hnDCirw.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s320/-hnDCirw.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s480/-hnDCirw.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s640/-hnDCirw.jpeg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s320/-hnDCirw.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s480/-hnDCirw.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s640/-hnDCirw.jpeg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.689 - Oasis, 25 años de (What&#39;s the story) Morning Glory?"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -211,8 +206,7 @@
           </a><a class="related-bottom-card" href="programa-564-bienvenido-a-los-90-presenta-oasis.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisbhvRfpvvQCkVqLO2TVbpqAQrI5kNBsl7WkE6HCntpxJ_dDRViIL_OMynaI3N7ZxATHA21h2hNzOgm0Ognkz1J38CtxU4N3PPeMwJWK3uPrVWBnBwOi7DvejVHEuluAhyphenhyphenOz17gcP27hQ/s320/Bienvenido+a+los+90+presenta+OASIS+portada.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisbhvRfpvvQCkVqLO2TVbpqAQrI5kNBsl7WkE6HCntpxJ_dDRViIL_OMynaI3N7ZxATHA21h2hNzOgm0Ognkz1J38CtxU4N3PPeMwJWK3uPrVWBnBwOi7DvejVHEuluAhyphenhyphenOz17gcP27hQ/s320/Bienvenido+a+los+90+presenta+OASIS+portada.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisbhvRfpvvQCkVqLO2TVbpqAQrI5kNBsl7WkE6HCntpxJ_dDRViIL_OMynaI3N7ZxATHA21h2hNzOgm0Ognkz1J38CtxU4N3PPeMwJWK3uPrVWBnBwOi7DvejVHEuluAhyphenhyphenOz17gcP27hQ/s480/Bienvenido+a+los+90+presenta+OASIS+portada.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisbhvRfpvvQCkVqLO2TVbpqAQrI5kNBsl7WkE6HCntpxJ_dDRViIL_OMynaI3N7ZxATHA21h2hNzOgm0Ognkz1J38CtxU4N3PPeMwJWK3uPrVWBnBwOi7DvejVHEuluAhyphenhyphenOz17gcP27hQ/s640/Bienvenido+a+los+90+presenta+OASIS+portada.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisbhvRfpvvQCkVqLO2TVbpqAQrI5kNBsl7WkE6HCntpxJ_dDRViIL_OMynaI3N7ZxATHA21h2hNzOgm0Ognkz1J38CtxU4N3PPeMwJWK3uPrVWBnBwOi7DvejVHEuluAhyphenhyphenOz17gcP27hQ/s320/Bienvenido+a+los+90+presenta+OASIS+portada.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisbhvRfpvvQCkVqLO2TVbpqAQrI5kNBsl7WkE6HCntpxJ_dDRViIL_OMynaI3N7ZxATHA21h2hNzOgm0Ognkz1J38CtxU4N3PPeMwJWK3uPrVWBnBwOi7DvejVHEuluAhyphenhyphenOz17gcP27hQ/s480/Bienvenido+a+los+90+presenta+OASIS+portada.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisbhvRfpvvQCkVqLO2TVbpqAQrI5kNBsl7WkE6HCntpxJ_dDRViIL_OMynaI3N7ZxATHA21h2hNzOgm0Ognkz1J38CtxU4N3PPeMwJWK3uPrVWBnBwOi7DvejVHEuluAhyphenhyphenOz17gcP27hQ/s640/Bienvenido+a+los+90+presenta+OASIS+portada.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 564: Bienvenido a los 90 presenta : Oasis"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

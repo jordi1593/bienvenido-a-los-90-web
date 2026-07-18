@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.947 - La típica entrevista a Virginia Díaz y Julio Ródenas — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsOlhdjCENJFTVWzdQRCqkH9b0Rao0OWg4nMrkSgoqnh3Zr1pXa8QlOxKx6GOEkxeUQBYkrlbfVAuKN3tqujvnBygfU-0GaimP6p22vWLHUXmqt8HjAe47CmDyOze_-ymW0pzMLuEhs98/s320/3.+Virginia+Di%CC%81az+en+Bienvenido+a+los+90+BW.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsOlhdjCENJFTVWzdQRCqkH9b0Rao0OWg4nMrkSgoqnh3Zr1pXa8QlOxKx6GOEkxeUQBYkrlbfVAuKN3tqujvnBygfU-0GaimP6p22vWLHUXmqt8HjAe47CmDyOze_-ymW0pzMLuEhs98/s160/3.+Virginia+Di%CC%81az+en+Bienvenido+a+los+90+BW.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsOlhdjCENJFTVWzdQRCqkH9b0Rao0OWg4nMrkSgoqnh3Zr1pXa8QlOxKx6GOEkxeUQBYkrlbfVAuKN3tqujvnBygfU-0GaimP6p22vWLHUXmqt8HjAe47CmDyOze_-ymW0pzMLuEhs98/s320/3.+Virginia+Di%CC%81az+en+Bienvenido+a+los+90+BW.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsOlhdjCENJFTVWzdQRCqkH9b0Rao0OWg4nMrkSgoqnh3Zr1pXa8QlOxKx6GOEkxeUQBYkrlbfVAuKN3tqujvnBygfU-0GaimP6p22vWLHUXmqt8HjAe47CmDyOze_-ymW0pzMLuEhs98/s480/3.+Virginia+Di%CC%81az+en+Bienvenido+a+los+90+BW.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsOlhdjCENJFTVWzdQRCqkH9b0Rao0OWg4nMrkSgoqnh3Zr1pXa8QlOxKx6GOEkxeUQBYkrlbfVAuKN3tqujvnBygfU-0GaimP6p22vWLHUXmqt8HjAe47CmDyOze_-ymW0pzMLuEhs98/s160/3.+Virginia+Di%CC%81az+en+Bienvenido+a+los+90+BW.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsOlhdjCENJFTVWzdQRCqkH9b0Rao0OWg4nMrkSgoqnh3Zr1pXa8QlOxKx6GOEkxeUQBYkrlbfVAuKN3tqujvnBygfU-0GaimP6p22vWLHUXmqt8HjAe47CmDyOze_-ymW0pzMLuEhs98/s320/3.+Virginia+Di%CC%81az+en+Bienvenido+a+los+90+BW.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsOlhdjCENJFTVWzdQRCqkH9b0Rao0OWg4nMrkSgoqnh3Zr1pXa8QlOxKx6GOEkxeUQBYkrlbfVAuKN3tqujvnBygfU-0GaimP6p22vWLHUXmqt8HjAe47CmDyOze_-ymW0pzMLuEhs98/s480/3.+Virginia+Di%CC%81az+en+Bienvenido+a+los+90+BW.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 143 - Entrevista a Virginia Díaz"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimZPM3DwYKL_ZiKr29ofXTZcImu0teCh3MN_ANLi3Iqk4TvBNvGQImmxA3-9QcSRnypDu_93g0wYf-x9emC_sZ11EizD3e3E078EM2pcESHA8ozH8eZs4QW5UEe8xwm5TVgoiIxLEjsko/s320/IMG_20180726_175307.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimZPM3DwYKL_ZiKr29ofXTZcImu0teCh3MN_ANLi3Iqk4TvBNvGQImmxA3-9QcSRnypDu_93g0wYf-x9emC_sZ11EizD3e3E078EM2pcESHA8ozH8eZs4QW5UEe8xwm5TVgoiIxLEjsko/s160/IMG_20180726_175307.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimZPM3DwYKL_ZiKr29ofXTZcImu0teCh3MN_ANLi3Iqk4TvBNvGQImmxA3-9QcSRnypDu_93g0wYf-x9emC_sZ11EizD3e3E078EM2pcESHA8ozH8eZs4QW5UEe8xwm5TVgoiIxLEjsko/s320/IMG_20180726_175307.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimZPM3DwYKL_ZiKr29ofXTZcImu0teCh3MN_ANLi3Iqk4TvBNvGQImmxA3-9QcSRnypDu_93g0wYf-x9emC_sZ11EizD3e3E078EM2pcESHA8ozH8eZs4QW5UEe8xwm5TVgoiIxLEjsko/s480/IMG_20180726_175307.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimZPM3DwYKL_ZiKr29ofXTZcImu0teCh3MN_ANLi3Iqk4TvBNvGQImmxA3-9QcSRnypDu_93g0wYf-x9emC_sZ11EizD3e3E078EM2pcESHA8ozH8eZs4QW5UEe8xwm5TVgoiIxLEjsko/s160/IMG_20180726_175307.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimZPM3DwYKL_ZiKr29ofXTZcImu0teCh3MN_ANLi3Iqk4TvBNvGQImmxA3-9QcSRnypDu_93g0wYf-x9emC_sZ11EizD3e3E078EM2pcESHA8ozH8eZs4QW5UEe8xwm5TVgoiIxLEjsko/s320/IMG_20180726_175307.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimZPM3DwYKL_ZiKr29ofXTZcImu0teCh3MN_ANLi3Iqk4TvBNvGQImmxA3-9QcSRnypDu_93g0wYf-x9emC_sZ11EizD3e3E078EM2pcESHA8ozH8eZs4QW5UEe8xwm5TVgoiIxLEjsko/s480/IMG_20180726_175307.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 417 - Virginia Díaz"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-BQTxtUqZSqvRkMi4J7nQuafRQZoH3jUAD11dcH2-iG1VKaXXj0eUiT62Myk-WM4U5_K1H-P2d74i3YdFjeMB17x5E-EORs6dplePWUnsI8at6FcbucPPdZKQ8-XPR-Df3Z73pX4z0E/s320/Captura+de+pantalla+2016-12-29+a+las+19.06.52.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-BQTxtUqZSqvRkMi4J7nQuafRQZoH3jUAD11dcH2-iG1VKaXXj0eUiT62Myk-WM4U5_K1H-P2d74i3YdFjeMB17x5E-EORs6dplePWUnsI8at6FcbucPPdZKQ8-XPR-Df3Z73pX4z0E/s160/Captura+de+pantalla+2016-12-29+a+las+19.06.52.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-BQTxtUqZSqvRkMi4J7nQuafRQZoH3jUAD11dcH2-iG1VKaXXj0eUiT62Myk-WM4U5_K1H-P2d74i3YdFjeMB17x5E-EORs6dplePWUnsI8at6FcbucPPdZKQ8-XPR-Df3Z73pX4z0E/s320/Captura+de+pantalla+2016-12-29+a+las+19.06.52.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-BQTxtUqZSqvRkMi4J7nQuafRQZoH3jUAD11dcH2-iG1VKaXXj0eUiT62Myk-WM4U5_K1H-P2d74i3YdFjeMB17x5E-EORs6dplePWUnsI8at6FcbucPPdZKQ8-XPR-Df3Z73pX4z0E/s480/Captura+de+pantalla+2016-12-29+a+las+19.06.52.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-BQTxtUqZSqvRkMi4J7nQuafRQZoH3jUAD11dcH2-iG1VKaXXj0eUiT62Myk-WM4U5_K1H-P2d74i3YdFjeMB17x5E-EORs6dplePWUnsI8at6FcbucPPdZKQ8-XPR-Df3Z73pX4z0E/s160/Captura+de+pantalla+2016-12-29+a+las+19.06.52.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-BQTxtUqZSqvRkMi4J7nQuafRQZoH3jUAD11dcH2-iG1VKaXXj0eUiT62Myk-WM4U5_K1H-P2d74i3YdFjeMB17x5E-EORs6dplePWUnsI8at6FcbucPPdZKQ8-XPR-Df3Z73pX4z0E/s320/Captura+de+pantalla+2016-12-29+a+las+19.06.52.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-BQTxtUqZSqvRkMi4J7nQuafRQZoH3jUAD11dcH2-iG1VKaXXj0eUiT62Myk-WM4U5_K1H-P2d74i3YdFjeMB17x5E-EORs6dplePWUnsI8at6FcbucPPdZKQ8-XPR-Df3Z73pX4z0E/s480/Captura+de+pantalla+2016-12-29+a+las+19.06.52.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 257 - Virginia Díaz y Paco Pérez Bryan"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="p-785-entrevista-a-julio-ruiz.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgplJXkcjX6oqkt_b15n8HB8OpmIVgLZ2WegJbWHAdM9jRIXiT_fFSNXbyIN4YUSlc0rXnQ7f43xTBLwqDCBlssO-DsyVpMjn-AXIhmhVku9mwVh1VUkrGzT1LmKPubBW7iUKY6uo3J3cA/s320/IMG-20210711-WA0000.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgplJXkcjX6oqkt_b15n8HB8OpmIVgLZ2WegJbWHAdM9jRIXiT_fFSNXbyIN4YUSlc0rXnQ7f43xTBLwqDCBlssO-DsyVpMjn-AXIhmhVku9mwVh1VUkrGzT1LmKPubBW7iUKY6uo3J3cA/s320/IMG-20210711-WA0000.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgplJXkcjX6oqkt_b15n8HB8OpmIVgLZ2WegJbWHAdM9jRIXiT_fFSNXbyIN4YUSlc0rXnQ7f43xTBLwqDCBlssO-DsyVpMjn-AXIhmhVku9mwVh1VUkrGzT1LmKPubBW7iUKY6uo3J3cA/s480/IMG-20210711-WA0000.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgplJXkcjX6oqkt_b15n8HB8OpmIVgLZ2WegJbWHAdM9jRIXiT_fFSNXbyIN4YUSlc0rXnQ7f43xTBLwqDCBlssO-DsyVpMjn-AXIhmhVku9mwVh1VUkrGzT1LmKPubBW7iUKY6uo3J3cA/s640/IMG-20210711-WA0000.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgplJXkcjX6oqkt_b15n8HB8OpmIVgLZ2WegJbWHAdM9jRIXiT_fFSNXbyIN4YUSlc0rXnQ7f43xTBLwqDCBlssO-DsyVpMjn-AXIhmhVku9mwVh1VUkrGzT1LmKPubBW7iUKY6uo3J3cA/s320/IMG-20210711-WA0000.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgplJXkcjX6oqkt_b15n8HB8OpmIVgLZ2WegJbWHAdM9jRIXiT_fFSNXbyIN4YUSlc0rXnQ7f43xTBLwqDCBlssO-DsyVpMjn-AXIhmhVku9mwVh1VUkrGzT1LmKPubBW7iUKY6uo3J3cA/s480/IMG-20210711-WA0000.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgplJXkcjX6oqkt_b15n8HB8OpmIVgLZ2WegJbWHAdM9jRIXiT_fFSNXbyIN4YUSlc0rXnQ7f43xTBLwqDCBlssO-DsyVpMjn-AXIhmhVku9mwVh1VUkrGzT1LmKPubBW7iUKY6uo3J3cA/s640/IMG-20210711-WA0000.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.785 - Entrevista a Julio Ruiz"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="programa-361-entrevista-a-julio-ruiz-disco-grande-radio-3.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s320/julio.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s320/julio.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s480/julio.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s640/julio.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s320/julio.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s480/julio.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s640/julio.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 361 - Entrevista a Julio Ruiz (Disco grande Radio 3)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="programa-284-un-mes-sin-chris-cornell.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s320/19225808_1760878623929773_4620285124997754232_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s320/19225808_1760878623929773_4620285124997754232_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s480/19225808_1760878623929773_4620285124997754232_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s640/19225808_1760878623929773_4620285124997754232_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s320/19225808_1760878623929773_4620285124997754232_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s480/19225808_1760878623929773_4620285124997754232_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s640/19225808_1760878623929773_4620285124997754232_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 284 - Un mes sin Chris Cornell"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

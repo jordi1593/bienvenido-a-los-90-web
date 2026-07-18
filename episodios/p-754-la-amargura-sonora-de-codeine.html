@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.754 - La amargura sonora de CODEINE — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -130,8 +130,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9j4vgcn1nAlkJ8u2m2gVPFhCNph5Pc295-JYgO0vn3IkpZAUYF5tOpoZxk6X3hVymlKujOKuKDMZXehZVxOA0ktQy0ap_AeP4UDOU2E3v6xFPkI8ezD7CUloJeEl4Rh2n4HkwG5VhOv8/s320/R-466837-1174484052.jpeg.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9j4vgcn1nAlkJ8u2m2gVPFhCNph5Pc295-JYgO0vn3IkpZAUYF5tOpoZxk6X3hVymlKujOKuKDMZXehZVxOA0ktQy0ap_AeP4UDOU2E3v6xFPkI8ezD7CUloJeEl4Rh2n4HkwG5VhOv8/s160/R-466837-1174484052.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9j4vgcn1nAlkJ8u2m2gVPFhCNph5Pc295-JYgO0vn3IkpZAUYF5tOpoZxk6X3hVymlKujOKuKDMZXehZVxOA0ktQy0ap_AeP4UDOU2E3v6xFPkI8ezD7CUloJeEl4Rh2n4HkwG5VhOv8/s320/R-466837-1174484052.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9j4vgcn1nAlkJ8u2m2gVPFhCNph5Pc295-JYgO0vn3IkpZAUYF5tOpoZxk6X3hVymlKujOKuKDMZXehZVxOA0ktQy0ap_AeP4UDOU2E3v6xFPkI8ezD7CUloJeEl4Rh2n4HkwG5VhOv8/s480/R-466837-1174484052.jpeg.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9j4vgcn1nAlkJ8u2m2gVPFhCNph5Pc295-JYgO0vn3IkpZAUYF5tOpoZxk6X3hVymlKujOKuKDMZXehZVxOA0ktQy0ap_AeP4UDOU2E3v6xFPkI8ezD7CUloJeEl4Rh2n4HkwG5VhOv8/s160/R-466837-1174484052.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9j4vgcn1nAlkJ8u2m2gVPFhCNph5Pc295-JYgO0vn3IkpZAUYF5tOpoZxk6X3hVymlKujOKuKDMZXehZVxOA0ktQy0ap_AeP4UDOU2E3v6xFPkI8ezD7CUloJeEl4Rh2n4HkwG5VhOv8/s320/R-466837-1174484052.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9j4vgcn1nAlkJ8u2m2gVPFhCNph5Pc295-JYgO0vn3IkpZAUYF5tOpoZxk6X3hVymlKujOKuKDMZXehZVxOA0ktQy0ap_AeP4UDOU2E3v6xFPkI8ezD7CUloJeEl4Rh2n4HkwG5VhOv8/s480/R-466837-1174484052.jpeg.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.751 - Glitterhouse Records, el SUB POP europeo"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -141,8 +140,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFwpS-4INnPUrAjkljWQfbRCH189K36GRO2htU5UmoPK86Qiuqu5P3NQt9q7R9E-CSWLO8-a63nn_4UgT8_ZOTFsJYD-_nANaEtdqv_I3kNdd9PXT5_0H-XMIorjPoNcgVpjGiWuOYeHw/s320/2585.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFwpS-4INnPUrAjkljWQfbRCH189K36GRO2htU5UmoPK86Qiuqu5P3NQt9q7R9E-CSWLO8-a63nn_4UgT8_ZOTFsJYD-_nANaEtdqv_I3kNdd9PXT5_0H-XMIorjPoNcgVpjGiWuOYeHw/s160/2585.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFwpS-4INnPUrAjkljWQfbRCH189K36GRO2htU5UmoPK86Qiuqu5P3NQt9q7R9E-CSWLO8-a63nn_4UgT8_ZOTFsJYD-_nANaEtdqv_I3kNdd9PXT5_0H-XMIorjPoNcgVpjGiWuOYeHw/s320/2585.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFwpS-4INnPUrAjkljWQfbRCH189K36GRO2htU5UmoPK86Qiuqu5P3NQt9q7R9E-CSWLO8-a63nn_4UgT8_ZOTFsJYD-_nANaEtdqv_I3kNdd9PXT5_0H-XMIorjPoNcgVpjGiWuOYeHw/s480/2585.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFwpS-4INnPUrAjkljWQfbRCH189K36GRO2htU5UmoPK86Qiuqu5P3NQt9q7R9E-CSWLO8-a63nn_4UgT8_ZOTFsJYD-_nANaEtdqv_I3kNdd9PXT5_0H-XMIorjPoNcgVpjGiWuOYeHw/s160/2585.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFwpS-4INnPUrAjkljWQfbRCH189K36GRO2htU5UmoPK86Qiuqu5P3NQt9q7R9E-CSWLO8-a63nn_4UgT8_ZOTFsJYD-_nANaEtdqv_I3kNdd9PXT5_0H-XMIorjPoNcgVpjGiWuOYeHw/s320/2585.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFwpS-4INnPUrAjkljWQfbRCH189K36GRO2htU5UmoPK86Qiuqu5P3NQt9q7R9E-CSWLO8-a63nn_4UgT8_ZOTFsJYD-_nANaEtdqv_I3kNdd9PXT5_0H-XMIorjPoNcgVpjGiWuOYeHw/s480/2585.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.758 - Eric&#39;s Trip, el eterno amor adolescente "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -152,8 +150,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s160/thejurysocial112514.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s480/thejurysocial112514.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s160/thejurysocial112514.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s480/thejurysocial112514.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 10: The Jury - Kurt Cobain y Mark Lanegan"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -169,8 +166,7 @@
         <a class="related-bottom-card" href="p-709-teriyaki-asthma-c-z-records-la-otra-cara-del-grunge.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s320/s-l400+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s320/s-l400+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s480/s-l400+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s640/s-l400+%25281%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s320/s-l400+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s480/s-l400+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s640/s-l400+%25281%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.709 - Teriyaki Asthma - C/Z Records (La otra cara del grunge)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -181,8 +177,7 @@
           </a><a class="related-bottom-card" href="p-697-la-historia-de-sub-pop-en-10-canciones.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s480/3201.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s640/3201.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s480/3201.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s640/3201.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.697 - La historia de SUB POP en 10 canciones"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -193,8 +188,7 @@
           </a><a class="related-bottom-card" href="p-862-la-historia-de-mudhoney-en-los-90-s.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRyM_9nvawqj_K-uEC4596irwCgZqKDiwkXbEQldEOZ7m8p2heXFymbs1sQQPHPFA3qiwFgu5LtItdQyhe_ocSmNidhAfPXXqG2EM_IrVyXRzKlF1izkDnG9osR414ZNc61o32TPKJWTkMsyeRNYGkQbXi9f5MR-VTqBOAGVfvSUsW8OBM6uyLNPpd/s320/EVBYmqaWAAEjNfa.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRyM_9nvawqj_K-uEC4596irwCgZqKDiwkXbEQldEOZ7m8p2heXFymbs1sQQPHPFA3qiwFgu5LtItdQyhe_ocSmNidhAfPXXqG2EM_IrVyXRzKlF1izkDnG9osR414ZNc61o32TPKJWTkMsyeRNYGkQbXi9f5MR-VTqBOAGVfvSUsW8OBM6uyLNPpd/s320/EVBYmqaWAAEjNfa.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRyM_9nvawqj_K-uEC4596irwCgZqKDiwkXbEQldEOZ7m8p2heXFymbs1sQQPHPFA3qiwFgu5LtItdQyhe_ocSmNidhAfPXXqG2EM_IrVyXRzKlF1izkDnG9osR414ZNc61o32TPKJWTkMsyeRNYGkQbXi9f5MR-VTqBOAGVfvSUsW8OBM6uyLNPpd/s480/EVBYmqaWAAEjNfa.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRyM_9nvawqj_K-uEC4596irwCgZqKDiwkXbEQldEOZ7m8p2heXFymbs1sQQPHPFA3qiwFgu5LtItdQyhe_ocSmNidhAfPXXqG2EM_IrVyXRzKlF1izkDnG9osR414ZNc61o32TPKJWTkMsyeRNYGkQbXi9f5MR-VTqBOAGVfvSUsW8OBM6uyLNPpd/s640/EVBYmqaWAAEjNfa.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRyM_9nvawqj_K-uEC4596irwCgZqKDiwkXbEQldEOZ7m8p2heXFymbs1sQQPHPFA3qiwFgu5LtItdQyhe_ocSmNidhAfPXXqG2EM_IrVyXRzKlF1izkDnG9osR414ZNc61o32TPKJWTkMsyeRNYGkQbXi9f5MR-VTqBOAGVfvSUsW8OBM6uyLNPpd/s320/EVBYmqaWAAEjNfa.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRyM_9nvawqj_K-uEC4596irwCgZqKDiwkXbEQldEOZ7m8p2heXFymbs1sQQPHPFA3qiwFgu5LtItdQyhe_ocSmNidhAfPXXqG2EM_IrVyXRzKlF1izkDnG9osR414ZNc61o32TPKJWTkMsyeRNYGkQbXi9f5MR-VTqBOAGVfvSUsW8OBM6uyLNPpd/s480/EVBYmqaWAAEjNfa.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRyM_9nvawqj_K-uEC4596irwCgZqKDiwkXbEQldEOZ7m8p2heXFymbs1sQQPHPFA3qiwFgu5LtItdQyhe_ocSmNidhAfPXXqG2EM_IrVyXRzKlF1izkDnG9osR414ZNc61o32TPKJWTkMsyeRNYGkQbXi9f5MR-VTqBOAGVfvSUsW8OBM6uyLNPpd/s640/EVBYmqaWAAEjNfa.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.862 - La historia de Mudhoney en los 90&#39;s"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 215 - VENUS NO ES  — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -136,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEildtjca5I8QNReeMph0f5KeCW6ZjCMpP6boxHFbuMuX1UiEKcYWEk3vBK5puof5ytSoG6hJH7GRiSEv4kIdABDNigzKn6LrHzMGOAAkXc-CGCfBGF4i0nb6bFEJzTlnKN_rxYy2vD8gU4/s320/Captura+de+pantalla+2016-12-22+a+las+20.46.47.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEildtjca5I8QNReeMph0f5KeCW6ZjCMpP6boxHFbuMuX1UiEKcYWEk3vBK5puof5ytSoG6hJH7GRiSEv4kIdABDNigzKn6LrHzMGOAAkXc-CGCfBGF4i0nb6bFEJzTlnKN_rxYy2vD8gU4/s160/Captura+de+pantalla+2016-12-22+a+las+20.46.47.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEildtjca5I8QNReeMph0f5KeCW6ZjCMpP6boxHFbuMuX1UiEKcYWEk3vBK5puof5ytSoG6hJH7GRiSEv4kIdABDNigzKn6LrHzMGOAAkXc-CGCfBGF4i0nb6bFEJzTlnKN_rxYy2vD8gU4/s320/Captura+de+pantalla+2016-12-22+a+las+20.46.47.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEildtjca5I8QNReeMph0f5KeCW6ZjCMpP6boxHFbuMuX1UiEKcYWEk3vBK5puof5ytSoG6hJH7GRiSEv4kIdABDNigzKn6LrHzMGOAAkXc-CGCfBGF4i0nb6bFEJzTlnKN_rxYy2vD8gU4/s480/Captura+de+pantalla+2016-12-22+a+las+20.46.47.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEildtjca5I8QNReeMph0f5KeCW6ZjCMpP6boxHFbuMuX1UiEKcYWEk3vBK5puof5ytSoG6hJH7GRiSEv4kIdABDNigzKn6LrHzMGOAAkXc-CGCfBGF4i0nb6bFEJzTlnKN_rxYy2vD8gU4/s160/Captura+de+pantalla+2016-12-22+a+las+20.46.47.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEildtjca5I8QNReeMph0f5KeCW6ZjCMpP6boxHFbuMuX1UiEKcYWEk3vBK5puof5ytSoG6hJH7GRiSEv4kIdABDNigzKn6LrHzMGOAAkXc-CGCfBGF4i0nb6bFEJzTlnKN_rxYy2vD8gU4/s320/Captura+de+pantalla+2016-12-22+a+las+20.46.47.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEildtjca5I8QNReeMph0f5KeCW6ZjCMpP6boxHFbuMuX1UiEKcYWEk3vBK5puof5ytSoG6hJH7GRiSEv4kIdABDNigzKn6LrHzMGOAAkXc-CGCfBGF4i0nb6bFEJzTlnKN_rxYy2vD8gU4/s480/Captura+de+pantalla+2016-12-22+a+las+20.46.47.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 256 - Árida + 61 Garage"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -147,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s320/10329214_10153451455942747_4912215046456512836_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s160/10329214_10153451455942747_4912215046456512836_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s320/10329214_10153451455942747_4912215046456512836_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s480/10329214_10153451455942747_4912215046456512836_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s160/10329214_10153451455942747_4912215046456512836_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s320/10329214_10153451455942747_4912215046456512836_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s480/10329214_10153451455942747_4912215046456512836_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 214 - Jeff Ament"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -158,8 +156,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s320/kurtaxl_a_l.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s160/kurtaxl_a_l.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s320/kurtaxl_a_l.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s480/kurtaxl_a_l.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s160/kurtaxl_a_l.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s320/kurtaxl_a_l.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s480/kurtaxl_a_l.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 216 - Nirvana vs Guns N&#39; Roses"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -175,8 +172,7 @@
         <a class="related-bottom-card" href="programa-213-deep-six-c-z-records.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5MPPp2aOMeSG5ZxB2NEhry8kHh5GQg6RzlNwf7SJTKKQn2VnXBifpSImHDKpJ5O_TgdzDFkoFXNKW75Pg8uP87sdqb8K-fpQIR6P2QXQxo9ILr5k9wRKWLJEUZPoIoXP049snzr1vimU/s320/1917366_1218216064862701_8150853918997971011_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5MPPp2aOMeSG5ZxB2NEhry8kHh5GQg6RzlNwf7SJTKKQn2VnXBifpSImHDKpJ5O_TgdzDFkoFXNKW75Pg8uP87sdqb8K-fpQIR6P2QXQxo9ILr5k9wRKWLJEUZPoIoXP049snzr1vimU/s320/1917366_1218216064862701_8150853918997971011_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5MPPp2aOMeSG5ZxB2NEhry8kHh5GQg6RzlNwf7SJTKKQn2VnXBifpSImHDKpJ5O_TgdzDFkoFXNKW75Pg8uP87sdqb8K-fpQIR6P2QXQxo9ILr5k9wRKWLJEUZPoIoXP049snzr1vimU/s480/1917366_1218216064862701_8150853918997971011_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5MPPp2aOMeSG5ZxB2NEhry8kHh5GQg6RzlNwf7SJTKKQn2VnXBifpSImHDKpJ5O_TgdzDFkoFXNKW75Pg8uP87sdqb8K-fpQIR6P2QXQxo9ILr5k9wRKWLJEUZPoIoXP049snzr1vimU/s640/1917366_1218216064862701_8150853918997971011_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5MPPp2aOMeSG5ZxB2NEhry8kHh5GQg6RzlNwf7SJTKKQn2VnXBifpSImHDKpJ5O_TgdzDFkoFXNKW75Pg8uP87sdqb8K-fpQIR6P2QXQxo9ILr5k9wRKWLJEUZPoIoXP049snzr1vimU/s320/1917366_1218216064862701_8150853918997971011_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5MPPp2aOMeSG5ZxB2NEhry8kHh5GQg6RzlNwf7SJTKKQn2VnXBifpSImHDKpJ5O_TgdzDFkoFXNKW75Pg8uP87sdqb8K-fpQIR6P2QXQxo9ILr5k9wRKWLJEUZPoIoXP049snzr1vimU/s480/1917366_1218216064862701_8150853918997971011_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5MPPp2aOMeSG5ZxB2NEhry8kHh5GQg6RzlNwf7SJTKKQn2VnXBifpSImHDKpJ5O_TgdzDFkoFXNKW75Pg8uP87sdqb8K-fpQIR6P2QXQxo9ILr5k9wRKWLJEUZPoIoXP049snzr1vimU/s640/1917366_1218216064862701_8150853918997971011_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 213 - Deep Six (C/Z Records)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -187,8 +183,7 @@
           </a><a class="related-bottom-card" href="programa-217-noel-gallagher-en-espana.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4_E4B3_O3On1AtPTvlpESNRB0jz0DFUifqbHufII5Jggy-HYKLELZ93ucI3glcaqY9DpxtfdpXUh33nw0abWjeCW-fgz40Wl0l0TYcHvMKQCADFd4-PAsKbP52vjpoKisqA6k-OvaUsY/s320/12963932_10153494644572747_6768744456148482814_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4_E4B3_O3On1AtPTvlpESNRB0jz0DFUifqbHufII5Jggy-HYKLELZ93ucI3glcaqY9DpxtfdpXUh33nw0abWjeCW-fgz40Wl0l0TYcHvMKQCADFd4-PAsKbP52vjpoKisqA6k-OvaUsY/s320/12963932_10153494644572747_6768744456148482814_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4_E4B3_O3On1AtPTvlpESNRB0jz0DFUifqbHufII5Jggy-HYKLELZ93ucI3glcaqY9DpxtfdpXUh33nw0abWjeCW-fgz40Wl0l0TYcHvMKQCADFd4-PAsKbP52vjpoKisqA6k-OvaUsY/s480/12963932_10153494644572747_6768744456148482814_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4_E4B3_O3On1AtPTvlpESNRB0jz0DFUifqbHufII5Jggy-HYKLELZ93ucI3glcaqY9DpxtfdpXUh33nw0abWjeCW-fgz40Wl0l0TYcHvMKQCADFd4-PAsKbP52vjpoKisqA6k-OvaUsY/s640/12963932_10153494644572747_6768744456148482814_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4_E4B3_O3On1AtPTvlpESNRB0jz0DFUifqbHufII5Jggy-HYKLELZ93ucI3glcaqY9DpxtfdpXUh33nw0abWjeCW-fgz40Wl0l0TYcHvMKQCADFd4-PAsKbP52vjpoKisqA6k-OvaUsY/s320/12963932_10153494644572747_6768744456148482814_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4_E4B3_O3On1AtPTvlpESNRB0jz0DFUifqbHufII5Jggy-HYKLELZ93ucI3glcaqY9DpxtfdpXUh33nw0abWjeCW-fgz40Wl0l0TYcHvMKQCADFd4-PAsKbP52vjpoKisqA6k-OvaUsY/s480/12963932_10153494644572747_6768744456148482814_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4_E4B3_O3On1AtPTvlpESNRB0jz0DFUifqbHufII5Jggy-HYKLELZ93ucI3glcaqY9DpxtfdpXUh33nw0abWjeCW-fgz40Wl0l0TYcHvMKQCADFd4-PAsKbP52vjpoKisqA6k-OvaUsY/s640/12963932_10153494644572747_6768744456148482814_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 217 - Noel Gallagher en España"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -199,8 +194,7 @@
           </a><a class="related-bottom-card" href="programa-212-dia-internacional-de-la-mujer-george-martin.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF9LZHdts_pBPTn3zBAmSg6imayrBSVQXZsFV9MIWSsfyWJidBoETz5U1sdW12i6FdAkViO75-IZzz7ncT6ViUyDYgZdhVNZfd9PS8rHvaCwyqLQVqF0JrfQL_cqx8kxRZjtDDQo64anM/s320/11921688_901419803237855_4314168177216834195_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF9LZHdts_pBPTn3zBAmSg6imayrBSVQXZsFV9MIWSsfyWJidBoETz5U1sdW12i6FdAkViO75-IZzz7ncT6ViUyDYgZdhVNZfd9PS8rHvaCwyqLQVqF0JrfQL_cqx8kxRZjtDDQo64anM/s320/11921688_901419803237855_4314168177216834195_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF9LZHdts_pBPTn3zBAmSg6imayrBSVQXZsFV9MIWSsfyWJidBoETz5U1sdW12i6FdAkViO75-IZzz7ncT6ViUyDYgZdhVNZfd9PS8rHvaCwyqLQVqF0JrfQL_cqx8kxRZjtDDQo64anM/s480/11921688_901419803237855_4314168177216834195_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF9LZHdts_pBPTn3zBAmSg6imayrBSVQXZsFV9MIWSsfyWJidBoETz5U1sdW12i6FdAkViO75-IZzz7ncT6ViUyDYgZdhVNZfd9PS8rHvaCwyqLQVqF0JrfQL_cqx8kxRZjtDDQo64anM/s640/11921688_901419803237855_4314168177216834195_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF9LZHdts_pBPTn3zBAmSg6imayrBSVQXZsFV9MIWSsfyWJidBoETz5U1sdW12i6FdAkViO75-IZzz7ncT6ViUyDYgZdhVNZfd9PS8rHvaCwyqLQVqF0JrfQL_cqx8kxRZjtDDQo64anM/s320/11921688_901419803237855_4314168177216834195_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF9LZHdts_pBPTn3zBAmSg6imayrBSVQXZsFV9MIWSsfyWJidBoETz5U1sdW12i6FdAkViO75-IZzz7ncT6ViUyDYgZdhVNZfd9PS8rHvaCwyqLQVqF0JrfQL_cqx8kxRZjtDDQo64anM/s480/11921688_901419803237855_4314168177216834195_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF9LZHdts_pBPTn3zBAmSg6imayrBSVQXZsFV9MIWSsfyWJidBoETz5U1sdW12i6FdAkViO75-IZzz7ncT6ViUyDYgZdhVNZfd9PS8rHvaCwyqLQVqF0JrfQL_cqx8kxRZjtDDQo64anM/s640/11921688_901419803237855_4314168177216834195_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 212 - Día Internacional de la Mujer - George Martin"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

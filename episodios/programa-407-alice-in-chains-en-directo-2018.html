@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 407 - Alice in Chains en directo 2018 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -141,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbOaGbfWTOki_G5M2jK-yquUweO00Nzj2Kfxavu4jrdlCUre-5VWEoar-ZAZe98ggjL7Y0y63Nqu3oQI8sqsrTplOzpWHRVrKkOmuCOswD1Z3lDjw0zTQ6bXXb3h_foIRLa9FdTF1GmOo/s320/aicrainierfogcover.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbOaGbfWTOki_G5M2jK-yquUweO00Nzj2Kfxavu4jrdlCUre-5VWEoar-ZAZe98ggjL7Y0y63Nqu3oQI8sqsrTplOzpWHRVrKkOmuCOswD1Z3lDjw0zTQ6bXXb3h_foIRLa9FdTF1GmOo/s160/aicrainierfogcover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbOaGbfWTOki_G5M2jK-yquUweO00Nzj2Kfxavu4jrdlCUre-5VWEoar-ZAZe98ggjL7Y0y63Nqu3oQI8sqsrTplOzpWHRVrKkOmuCOswD1Z3lDjw0zTQ6bXXb3h_foIRLa9FdTF1GmOo/s320/aicrainierfogcover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbOaGbfWTOki_G5M2jK-yquUweO00Nzj2Kfxavu4jrdlCUre-5VWEoar-ZAZe98ggjL7Y0y63Nqu3oQI8sqsrTplOzpWHRVrKkOmuCOswD1Z3lDjw0zTQ6bXXb3h_foIRLa9FdTF1GmOo/s480/aicrainierfogcover.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbOaGbfWTOki_G5M2jK-yquUweO00Nzj2Kfxavu4jrdlCUre-5VWEoar-ZAZe98ggjL7Y0y63Nqu3oQI8sqsrTplOzpWHRVrKkOmuCOswD1Z3lDjw0zTQ6bXXb3h_foIRLa9FdTF1GmOo/s160/aicrainierfogcover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbOaGbfWTOki_G5M2jK-yquUweO00Nzj2Kfxavu4jrdlCUre-5VWEoar-ZAZe98ggjL7Y0y63Nqu3oQI8sqsrTplOzpWHRVrKkOmuCOswD1Z3lDjw0zTQ6bXXb3h_foIRLa9FdTF1GmOo/s320/aicrainierfogcover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbOaGbfWTOki_G5M2jK-yquUweO00Nzj2Kfxavu4jrdlCUre-5VWEoar-ZAZe98ggjL7Y0y63Nqu3oQI8sqsrTplOzpWHRVrKkOmuCOswD1Z3lDjw0zTQ6bXXb3h_foIRLa9FdTF1GmOo/s480/aicrainierfogcover.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 428 - Alice in Chains &#39;Rainier Fog&#39; (2018)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -152,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48KPqpRBuVeEPGInxN3vdtahopm138YvotxMM62SB4jI6ZI-6bwm_WnIM9WZDwZ3MY1pnHVTmcJA9LH-HHxG93EVq-EJzP4Jv4mR-t3IupTmo0JZggOoxeujYK2FxcLNxnNz9-FRp8Qg/s320/Alice-in-Chains2+(1).jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48KPqpRBuVeEPGInxN3vdtahopm138YvotxMM62SB4jI6ZI-6bwm_WnIM9WZDwZ3MY1pnHVTmcJA9LH-HHxG93EVq-EJzP4Jv4mR-t3IupTmo0JZggOoxeujYK2FxcLNxnNz9-FRp8Qg/s160/Alice-in-Chains2+(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48KPqpRBuVeEPGInxN3vdtahopm138YvotxMM62SB4jI6ZI-6bwm_WnIM9WZDwZ3MY1pnHVTmcJA9LH-HHxG93EVq-EJzP4Jv4mR-t3IupTmo0JZggOoxeujYK2FxcLNxnNz9-FRp8Qg/s320/Alice-in-Chains2+(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48KPqpRBuVeEPGInxN3vdtahopm138YvotxMM62SB4jI6ZI-6bwm_WnIM9WZDwZ3MY1pnHVTmcJA9LH-HHxG93EVq-EJzP4Jv4mR-t3IupTmo0JZggOoxeujYK2FxcLNxnNz9-FRp8Qg/s480/Alice-in-Chains2+(1).jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48KPqpRBuVeEPGInxN3vdtahopm138YvotxMM62SB4jI6ZI-6bwm_WnIM9WZDwZ3MY1pnHVTmcJA9LH-HHxG93EVq-EJzP4Jv4mR-t3IupTmo0JZggOoxeujYK2FxcLNxnNz9-FRp8Qg/s160/Alice-in-Chains2+(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48KPqpRBuVeEPGInxN3vdtahopm138YvotxMM62SB4jI6ZI-6bwm_WnIM9WZDwZ3MY1pnHVTmcJA9LH-HHxG93EVq-EJzP4Jv4mR-t3IupTmo0JZggOoxeujYK2FxcLNxnNz9-FRp8Qg/s320/Alice-in-Chains2+(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48KPqpRBuVeEPGInxN3vdtahopm138YvotxMM62SB4jI6ZI-6bwm_WnIM9WZDwZ3MY1pnHVTmcJA9LH-HHxG93EVq-EJzP4Jv4mR-t3IupTmo0JZggOoxeujYK2FxcLNxnNz9-FRp8Qg/s480/Alice-in-Chains2+(1).jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Especial Alice in Chains"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -163,8 +161,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s320/unnamed+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s160/unnamed+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s320/unnamed+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s480/unnamed+%25281%2529.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s160/unnamed+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s320/unnamed+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s480/unnamed+%25281%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.611 - Susan Silver, la manager del grunge (Soundgarden, Alice in Chains, Screaming Trees...)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -180,8 +177,7 @@
         <a class="related-bottom-card" href="p-712-un-homenaje-a-alice-in-chains-desde-seattle.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGkhJ-ngJ9V2szLZQHejEOgjgrUsd2J_4Rou1pgNnLetCu5Q1__SGg00t_NpVqznvkUnhSP_D9JeeWQpCU9ClWGgwRMCUfWXeL_L0nEfEhfrVBXWdXyqfjdjuwSTL-BejK14VuKPZTOMQ/s320/126023094_3213669028733900_5833598185518685930_o.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGkhJ-ngJ9V2szLZQHejEOgjgrUsd2J_4Rou1pgNnLetCu5Q1__SGg00t_NpVqznvkUnhSP_D9JeeWQpCU9ClWGgwRMCUfWXeL_L0nEfEhfrVBXWdXyqfjdjuwSTL-BejK14VuKPZTOMQ/s320/126023094_3213669028733900_5833598185518685930_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGkhJ-ngJ9V2szLZQHejEOgjgrUsd2J_4Rou1pgNnLetCu5Q1__SGg00t_NpVqznvkUnhSP_D9JeeWQpCU9ClWGgwRMCUfWXeL_L0nEfEhfrVBXWdXyqfjdjuwSTL-BejK14VuKPZTOMQ/s480/126023094_3213669028733900_5833598185518685930_o.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGkhJ-ngJ9V2szLZQHejEOgjgrUsd2J_4Rou1pgNnLetCu5Q1__SGg00t_NpVqznvkUnhSP_D9JeeWQpCU9ClWGgwRMCUfWXeL_L0nEfEhfrVBXWdXyqfjdjuwSTL-BejK14VuKPZTOMQ/s640/126023094_3213669028733900_5833598185518685930_o.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGkhJ-ngJ9V2szLZQHejEOgjgrUsd2J_4Rou1pgNnLetCu5Q1__SGg00t_NpVqznvkUnhSP_D9JeeWQpCU9ClWGgwRMCUfWXeL_L0nEfEhfrVBXWdXyqfjdjuwSTL-BejK14VuKPZTOMQ/s320/126023094_3213669028733900_5833598185518685930_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGkhJ-ngJ9V2szLZQHejEOgjgrUsd2J_4Rou1pgNnLetCu5Q1__SGg00t_NpVqznvkUnhSP_D9JeeWQpCU9ClWGgwRMCUfWXeL_L0nEfEhfrVBXWdXyqfjdjuwSTL-BejK14VuKPZTOMQ/s480/126023094_3213669028733900_5833598185518685930_o.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGkhJ-ngJ9V2szLZQHejEOgjgrUsd2J_4Rou1pgNnLetCu5Q1__SGg00t_NpVqznvkUnhSP_D9JeeWQpCU9ClWGgwRMCUfWXeL_L0nEfEhfrVBXWdXyqfjdjuwSTL-BejK14VuKPZTOMQ/s640/126023094_3213669028733900_5833598185518685930_o.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.712 - Un homenaje a Alice in Chains desde Seattle"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -192,8 +188,7 @@
           </a><a class="related-bottom-card" href="p-806-recordando-el-unplugged-de-pearl-jam-alice-in-chains-y-nirvana.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s320/b90-805+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s320/b90-805+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s480/b90-805+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s640/b90-805+%25281%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s320/b90-805+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s480/b90-805+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s640/b90-805+%25281%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.806 - Recordando el Unplugged de Pearl Jam, Alice in Chains y Nirvana"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -204,8 +199,7 @@
           </a><a class="related-bottom-card" href="programa-107-soundgarden-alice-in-chains-nirvana-61-garage-y-nomada.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 107 - Soundgarden, Alice in Chains, Nirvana, 61 Garage y Nómada"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

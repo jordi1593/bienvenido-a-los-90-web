@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.618 - Melissa Auf der Maur (HOLE, The Smashing Pumpkins) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -141,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s320/R-3773608-1347544231-3798.jpeg.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s160/R-3773608-1347544231-3798.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s320/R-3773608-1347544231-3798.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s480/R-3773608-1347544231-3798.jpeg.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s160/R-3773608-1347544231-3798.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s320/R-3773608-1347544231-3798.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s480/R-3773608-1347544231-3798.jpeg.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.693 - The Smashing Pumpkins - Pisces Iscariot"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -152,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyrSYOYmANdahVKeuhjRMqNuKkH_AhIDWKPFzd3iYi74sOWXsCGXrn5kZgcSiiKSxg4xICpJdO3m7RiixDaBW8uyCeOb-8cw8VLep3givYhOVNPOnUNCg0bKrKWwKo84br2U9lLn7q9y4/s320/Caratula+SP+551+v2.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyrSYOYmANdahVKeuhjRMqNuKkH_AhIDWKPFzd3iYi74sOWXsCGXrn5kZgcSiiKSxg4xICpJdO3m7RiixDaBW8uyCeOb-8cw8VLep3givYhOVNPOnUNCg0bKrKWwKo84br2U9lLn7q9y4/s160/Caratula+SP+551+v2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyrSYOYmANdahVKeuhjRMqNuKkH_AhIDWKPFzd3iYi74sOWXsCGXrn5kZgcSiiKSxg4xICpJdO3m7RiixDaBW8uyCeOb-8cw8VLep3givYhOVNPOnUNCg0bKrKWwKo84br2U9lLn7q9y4/s320/Caratula+SP+551+v2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyrSYOYmANdahVKeuhjRMqNuKkH_AhIDWKPFzd3iYi74sOWXsCGXrn5kZgcSiiKSxg4xICpJdO3m7RiixDaBW8uyCeOb-8cw8VLep3givYhOVNPOnUNCg0bKrKWwKo84br2U9lLn7q9y4/s480/Caratula+SP+551+v2.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyrSYOYmANdahVKeuhjRMqNuKkH_AhIDWKPFzd3iYi74sOWXsCGXrn5kZgcSiiKSxg4xICpJdO3m7RiixDaBW8uyCeOb-8cw8VLep3givYhOVNPOnUNCg0bKrKWwKo84br2U9lLn7q9y4/s160/Caratula+SP+551+v2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyrSYOYmANdahVKeuhjRMqNuKkH_AhIDWKPFzd3iYi74sOWXsCGXrn5kZgcSiiKSxg4xICpJdO3m7RiixDaBW8uyCeOb-8cw8VLep3givYhOVNPOnUNCg0bKrKWwKo84br2U9lLn7q9y4/s320/Caratula+SP+551+v2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyrSYOYmANdahVKeuhjRMqNuKkH_AhIDWKPFzd3iYi74sOWXsCGXrn5kZgcSiiKSxg4xICpJdO3m7RiixDaBW8uyCeOb-8cw8VLep3givYhOVNPOnUNCg0bKrKWwKo84br2U9lLn7q9y4/s480/Caratula+SP+551+v2.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 551 - The Smashing Pumpkins - Infinite Sadness Tour"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -163,8 +161,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgV7g3kLGDuu7k5I02uQZmmlvvnTbPQdtM2fm6rKf35R7X03FSVyRt3rzIGYvNLonPM9lJ4gf9FW7ic_wpPghinnnBiR002Z9x_jIFAebBRmKlmbltIks1sS1DLTr6w_nu8QrqXIcyO-Y/s320/IMG_20190712_233413.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgV7g3kLGDuu7k5I02uQZmmlvvnTbPQdtM2fm6rKf35R7X03FSVyRt3rzIGYvNLonPM9lJ4gf9FW7ic_wpPghinnnBiR002Z9x_jIFAebBRmKlmbltIks1sS1DLTr6w_nu8QrqXIcyO-Y/s160/IMG_20190712_233413.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgV7g3kLGDuu7k5I02uQZmmlvvnTbPQdtM2fm6rKf35R7X03FSVyRt3rzIGYvNLonPM9lJ4gf9FW7ic_wpPghinnnBiR002Z9x_jIFAebBRmKlmbltIks1sS1DLTr6w_nu8QrqXIcyO-Y/s320/IMG_20190712_233413.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgV7g3kLGDuu7k5I02uQZmmlvvnTbPQdtM2fm6rKf35R7X03FSVyRt3rzIGYvNLonPM9lJ4gf9FW7ic_wpPghinnnBiR002Z9x_jIFAebBRmKlmbltIks1sS1DLTr6w_nu8QrqXIcyO-Y/s480/IMG_20190712_233413.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgV7g3kLGDuu7k5I02uQZmmlvvnTbPQdtM2fm6rKf35R7X03FSVyRt3rzIGYvNLonPM9lJ4gf9FW7ic_wpPghinnnBiR002Z9x_jIFAebBRmKlmbltIks1sS1DLTr6w_nu8QrqXIcyO-Y/s160/IMG_20190712_233413.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgV7g3kLGDuu7k5I02uQZmmlvvnTbPQdtM2fm6rKf35R7X03FSVyRt3rzIGYvNLonPM9lJ4gf9FW7ic_wpPghinnnBiR002Z9x_jIFAebBRmKlmbltIks1sS1DLTr6w_nu8QrqXIcyO-Y/s320/IMG_20190712_233413.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgV7g3kLGDuu7k5I02uQZmmlvvnTbPQdtM2fm6rKf35R7X03FSVyRt3rzIGYvNLonPM9lJ4gf9FW7ic_wpPghinnnBiR002Z9x_jIFAebBRmKlmbltIks1sS1DLTr6w_nu8QrqXIcyO-Y/s480/IMG_20190712_233413.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 548: The Smashing Pumpkins en Mad Cool 2019: cuando volvimos a ser adolescentes"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -180,8 +177,7 @@
         <a class="related-bottom-card" href="programa-537-the-smashing-pumpkins-regresan-a-europa.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHoLWFQTEYbV-lGeaDk2CvW0MpebgvxqOP50lsjZlmk2P8lxG8F3z4vZxNp_FSelGd3zdYPRhcbgxhO-xNkC7kpjv620a933RVAYWqEN5N41LSK0AUMUDEqznYlDFJdDRbnJHJtXEu7cw/s320/537A+SP+-+Europa.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHoLWFQTEYbV-lGeaDk2CvW0MpebgvxqOP50lsjZlmk2P8lxG8F3z4vZxNp_FSelGd3zdYPRhcbgxhO-xNkC7kpjv620a933RVAYWqEN5N41LSK0AUMUDEqznYlDFJdDRbnJHJtXEu7cw/s320/537A+SP+-+Europa.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHoLWFQTEYbV-lGeaDk2CvW0MpebgvxqOP50lsjZlmk2P8lxG8F3z4vZxNp_FSelGd3zdYPRhcbgxhO-xNkC7kpjv620a933RVAYWqEN5N41LSK0AUMUDEqznYlDFJdDRbnJHJtXEu7cw/s480/537A+SP+-+Europa.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHoLWFQTEYbV-lGeaDk2CvW0MpebgvxqOP50lsjZlmk2P8lxG8F3z4vZxNp_FSelGd3zdYPRhcbgxhO-xNkC7kpjv620a933RVAYWqEN5N41LSK0AUMUDEqznYlDFJdDRbnJHJtXEu7cw/s640/537A+SP+-+Europa.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHoLWFQTEYbV-lGeaDk2CvW0MpebgvxqOP50lsjZlmk2P8lxG8F3z4vZxNp_FSelGd3zdYPRhcbgxhO-xNkC7kpjv620a933RVAYWqEN5N41LSK0AUMUDEqznYlDFJdDRbnJHJtXEu7cw/s320/537A+SP+-+Europa.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHoLWFQTEYbV-lGeaDk2CvW0MpebgvxqOP50lsjZlmk2P8lxG8F3z4vZxNp_FSelGd3zdYPRhcbgxhO-xNkC7kpjv620a933RVAYWqEN5N41LSK0AUMUDEqznYlDFJdDRbnJHJtXEu7cw/s480/537A+SP+-+Europa.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHoLWFQTEYbV-lGeaDk2CvW0MpebgvxqOP50lsjZlmk2P8lxG8F3z4vZxNp_FSelGd3zdYPRhcbgxhO-xNkC7kpjv620a933RVAYWqEN5N41LSK0AUMUDEqznYlDFJdDRbnJHJtXEu7cw/s640/537A+SP+-+Europa.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 537 - The Smashing Pumpkins regresan a Europa"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -192,8 +188,7 @@
           </a><a class="related-bottom-card" href="programa-532-the-smashing-pumpkins-thirty-three.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyX8c-lgNNGoUbdDW2qNCwJsBfzsxbwctjZRL3skuQPkuhpMzzBuHZrR3di3eTpG2pSVnh9uNaQ5F2UB_zGC37wTIu6GCOM8O1vvry4W4jWdupYc4sbfMVrXrqZbhES2JIc-pwWHgdtCo/s320/b90_532.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyX8c-lgNNGoUbdDW2qNCwJsBfzsxbwctjZRL3skuQPkuhpMzzBuHZrR3di3eTpG2pSVnh9uNaQ5F2UB_zGC37wTIu6GCOM8O1vvry4W4jWdupYc4sbfMVrXrqZbhES2JIc-pwWHgdtCo/s320/b90_532.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyX8c-lgNNGoUbdDW2qNCwJsBfzsxbwctjZRL3skuQPkuhpMzzBuHZrR3di3eTpG2pSVnh9uNaQ5F2UB_zGC37wTIu6GCOM8O1vvry4W4jWdupYc4sbfMVrXrqZbhES2JIc-pwWHgdtCo/s480/b90_532.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyX8c-lgNNGoUbdDW2qNCwJsBfzsxbwctjZRL3skuQPkuhpMzzBuHZrR3di3eTpG2pSVnh9uNaQ5F2UB_zGC37wTIu6GCOM8O1vvry4W4jWdupYc4sbfMVrXrqZbhES2JIc-pwWHgdtCo/s640/b90_532.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyX8c-lgNNGoUbdDW2qNCwJsBfzsxbwctjZRL3skuQPkuhpMzzBuHZrR3di3eTpG2pSVnh9uNaQ5F2UB_zGC37wTIu6GCOM8O1vvry4W4jWdupYc4sbfMVrXrqZbhES2JIc-pwWHgdtCo/s320/b90_532.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyX8c-lgNNGoUbdDW2qNCwJsBfzsxbwctjZRL3skuQPkuhpMzzBuHZrR3di3eTpG2pSVnh9uNaQ5F2UB_zGC37wTIu6GCOM8O1vvry4W4jWdupYc4sbfMVrXrqZbhES2JIc-pwWHgdtCo/s480/b90_532.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyX8c-lgNNGoUbdDW2qNCwJsBfzsxbwctjZRL3skuQPkuhpMzzBuHZrR3di3eTpG2pSVnh9uNaQ5F2UB_zGC37wTIu6GCOM8O1vvry4W4jWdupYc4sbfMVrXrqZbhES2JIc-pwWHgdtCo/s640/b90_532.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 532 - The Smashing Pumpkins - Thirty Three"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -204,8 +199,7 @@
           </a><a class="related-bottom-card" href="programa-530-the-smashing-pumpkins-mellon-collie-and-the-infinite-sadness-en-vin.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7LrObYkPFj6IJ4qPcucFjNLVuduYxtQPQ7lhb92kQvBsnmPlcQOyQ4F-kz6C4Tf5UsR_82JfT-rJCEYH6dxD7mQqCgJwnVIUyUV-5UhP07gZMrEqvwnM8F5rZJ-akBSIn6fEq6leFqso/s320/b90_530.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7LrObYkPFj6IJ4qPcucFjNLVuduYxtQPQ7lhb92kQvBsnmPlcQOyQ4F-kz6C4Tf5UsR_82JfT-rJCEYH6dxD7mQqCgJwnVIUyUV-5UhP07gZMrEqvwnM8F5rZJ-akBSIn6fEq6leFqso/s320/b90_530.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7LrObYkPFj6IJ4qPcucFjNLVuduYxtQPQ7lhb92kQvBsnmPlcQOyQ4F-kz6C4Tf5UsR_82JfT-rJCEYH6dxD7mQqCgJwnVIUyUV-5UhP07gZMrEqvwnM8F5rZJ-akBSIn6fEq6leFqso/s480/b90_530.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7LrObYkPFj6IJ4qPcucFjNLVuduYxtQPQ7lhb92kQvBsnmPlcQOyQ4F-kz6C4Tf5UsR_82JfT-rJCEYH6dxD7mQqCgJwnVIUyUV-5UhP07gZMrEqvwnM8F5rZJ-akBSIn6fEq6leFqso/s640/b90_530.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7LrObYkPFj6IJ4qPcucFjNLVuduYxtQPQ7lhb92kQvBsnmPlcQOyQ4F-kz6C4Tf5UsR_82JfT-rJCEYH6dxD7mQqCgJwnVIUyUV-5UhP07gZMrEqvwnM8F5rZJ-akBSIn6fEq6leFqso/s320/b90_530.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7LrObYkPFj6IJ4qPcucFjNLVuduYxtQPQ7lhb92kQvBsnmPlcQOyQ4F-kz6C4Tf5UsR_82JfT-rJCEYH6dxD7mQqCgJwnVIUyUV-5UhP07gZMrEqvwnM8F5rZJ-akBSIn6fEq6leFqso/s480/b90_530.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7LrObYkPFj6IJ4qPcucFjNLVuduYxtQPQ7lhb92kQvBsnmPlcQOyQ4F-kz6C4Tf5UsR_82JfT-rJCEYH6dxD7mQqCgJwnVIUyUV-5UhP07gZMrEqvwnM8F5rZJ-akBSIn6fEq6leFqso/s640/b90_530.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 530 - The Smashing Pumpkins - Mellon Collie and the Infinite Sadness en vinilo"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

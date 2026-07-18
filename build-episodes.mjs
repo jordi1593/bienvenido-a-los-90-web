@@ -1,4 +1,4 @@
-// Genera una página HTML estática por episodio en /episodios/, optimizada
+﻿﻿// Genera una página HTML estática por episodio en /episodios/, optimizada
 // para SEO: meta description, Open Graph, canonical a esta misma página
 // (esta web compite por su propio posicionamiento, no apunta al blog
 // original) y JSON-LD PodcastEpisode. También genera sitemap.xml y robots.txt.
@@ -105,8 +105,10 @@ function thumbAtSize(thumb, size, crop = false) {
 }
 
 // Genera el valor del atributo srcset para un conjunto de anchos (px).
+// Devuelve null si la URL no es del CDN de Blogger (sin patrón /sNNN/) porque
+// en ese caso thumbAtSize devuelve la misma URL en todos los tamaños.
 function imageSrcset(thumb, widths) {
-  if (!thumb) return null;
+  if (!thumb || !/\/s\d+(-c)?\//i.test(thumb)) return null;
   return widths.map((w) => `${thumbAtSize(thumb, w)} ${w}w`).join(", ");
 }
 
@@ -247,7 +249,7 @@ const LABEL_TYPO_FIXES = new Map([
 function looseLabelKey(label) {
   return label
     .toLowerCase()
-    .normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .replace(/^the\s+/, "")
     .replace(/[^a-z0-9]/g, "");
 }
@@ -331,7 +333,7 @@ function titleKeywords(title) {
   return new Set(
     title
       .toLowerCase()
-      .normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
       .replace(/[^a-z0-9\s]/g, " ")
       .split(/\s+/)
       .filter((w) => w.length > 2 && !TITLE_STOPWORDS.has(w))
@@ -512,7 +514,7 @@ function episodePage(ep, { prev, next, related, series, validEtiquetaLabels }) {
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>${escapeHtml(ep.title)} — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -548,8 +550,8 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -586,7 +588,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
     <article>
       ${epNum != null ? `<div class="ep-title-wrap"><span class="ep-num-watermark" aria-hidden="true">${epNum}</span>` : ""}
       <h1>${escapeHtml(ep.title)}</h1>
-      <p class="episode-meta">${formatDateLong(ep.published)} · ${ep.comments} comentario${ep.comments === 1 ? "" : "s"}</p>
+      <p class="episode-meta">${formatDateLong(ep.published)}${ep.comments != null ? ` · ${ep.comments} comentario${ep.comments === 1 ? "" : "s"}` : ""}</p>
       ${typeof ep.likes === "number" ? `<p class="episode-likes"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 20.5s-7.5-4.6-9.8-9.2C.5 7.8 2.3 4.5 5.8 4c2.1-.3 4.1.7 6.2 3 2.1-2.3 4.1-3.3 6.2-3 3.5.5 5.3 3.8 3.6 7.3-2.3 4.6-9.8 9.2-9.8 9.2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg> ${ep.likes}</p>` : ""}
       ${epNum != null ? `</div>` : ""}
 
@@ -594,7 +596,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 
       ${!ivooxId && coverImage ? `<img class="episode-cover"
         src="${coverImage}"
-        ${ep.thumbnail ? `srcset="${imageSrcset(ep.thumbnail, [320, 640, 960])}" sizes="(max-width: 680px) calc(100vw - 2rem), 640px"` : ""}
+        ${imageSrcset(ep.thumbnail, [320, 640, 960]) ? `srcset="${imageSrcset(ep.thumbnail, [320, 640, 960])}" sizes="(max-width: 680px) calc(100vw - 2rem), 640px"` : ""}
         alt="${escapeHtml(ep.title)}"
         width="640" height="427" />` : ""}
 
@@ -658,8 +660,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
             ${relImage
               ? `<img class="episode-cover-img"
                   src="${relImage}"
-                  srcset="${imageSrcset(r.thumbnail, [160, 320, 480])}"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  ${imageSrcset(r.thumbnail, [160, 320, 480]) ? `srcset="${imageSrcset(r.thumbnail, [160, 320, 480])}" sizes="(max-width: 480px) 45vw, 160px"` : ""}
                   alt="${escapeHtml(r.title)}"
                   loading="lazy" width="320" height="213" />`
               : `<div class="episode-cover-img"></div>`}
@@ -683,8 +684,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
             ${relImage
               ? `<img class="related-bottom-card-img"
                   src="${relImage}"
-                  srcset="${imageSrcset(r.thumbnail, [320, 480, 640])}"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  ${imageSrcset(r.thumbnail, [320, 480, 640]) ? `srcset="${imageSrcset(r.thumbnail, [320, 480, 640])}" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"` : ""}
                   alt="${escapeHtml(r.title)}"
                   loading="lazy" width="320" height="213" />`
               : `<div class="related-bottom-card-img related-bottom-card-img--placeholder"></div>`}
@@ -817,7 +817,7 @@ const ARTIST_DATA = {
 };
 
 function labelSlug(label) {
-  return label.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  return label.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 
 function buildEtiquetasPages(episodes) {
@@ -900,8 +900,7 @@ function buildEtiquetasPages(episodes) {
           ${thumb
             ? `<img class="episode-cover-img"
                 src="${escapeHtml(thumb)}"
-                srcset="${imageSrcset(ep.thumbnail, [160, 320, 480])}"
-                sizes="(max-width: 480px) 45vw, 320px"
+                ${imageSrcset(ep.thumbnail, [160, 320, 480]) ? `srcset="${imageSrcset(ep.thumbnail, [160, 320, 480])}" sizes="(max-width: 480px) 45vw, 320px"` : ""}
                 alt="${escapeHtml(ep.title.replace(/^B90\s*-\s*/i, ''))}"
                 loading="lazy" width="320" height="213" />`
             : `<div class="episode-cover-img"></div>`}
@@ -918,7 +917,7 @@ function buildEtiquetasPages(episodes) {
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>${escapeHtml(title)}</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -945,8 +944,8 @@ ${extraLd ? `<script type="application/ld+json">${extraLd}</script>` : ""}
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -1044,7 +1043,7 @@ ${footer}
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Etiquetas — Bienvenido a los 90</title>
 <link rel="icon" type="image/jpeg" href="../images/b90-logo-new.jpg" media="(prefers-color-scheme: light)" />
 <link rel="icon" type="image/png" href="../images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
@@ -1056,8 +1055,8 @@ ${footer}
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -1287,7 +1286,7 @@ function buildFotosPage(episodesBySlug) {
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Fotos — Bienvenido a los 90</title>
 <meta name="description" content="Galería de fotos de programas emblemáticos de Bienvenido a los 90, el podcast de música de los años 90." />
 <link rel="canonical" href="${SITE_URL}/fotos.html" />
@@ -1313,8 +1312,8 @@ function buildFotosPage(episodesBySlug) {
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="images/b90-logo-dark-icon.png" alt="B" width="128" height="128" />
+        <img class="brand-logo logo-light" src="images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="images/b90-logo-dark-icon.png" alt="" width="128" height="128" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">

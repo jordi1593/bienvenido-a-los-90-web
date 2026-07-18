@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Moby — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/programa-523-the-smashing-pumpkins-1979.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmOpWgpCrRfVO6pkkQHRxX7S1xKznevBSAAl-bWT1Gx9An9uDK-0liDVhFP-dwYdR7YVFcUzFO14soE97yRuOXfwv8XDIc2PpgQ8I8oxtrTNUgTC40hPnJXQjYyPneo-iQ1okwobaTOZc/s320/b90_523.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmOpWgpCrRfVO6pkkQHRxX7S1xKznevBSAAl-bWT1Gx9An9uDK-0liDVhFP-dwYdR7YVFcUzFO14soE97yRuOXfwv8XDIc2PpgQ8I8oxtrTNUgTC40hPnJXQjYyPneo-iQ1okwobaTOZc/s160/b90_523.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmOpWgpCrRfVO6pkkQHRxX7S1xKznevBSAAl-bWT1Gx9An9uDK-0liDVhFP-dwYdR7YVFcUzFO14soE97yRuOXfwv8XDIc2PpgQ8I8oxtrTNUgTC40hPnJXQjYyPneo-iQ1okwobaTOZc/s320/b90_523.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmOpWgpCrRfVO6pkkQHRxX7S1xKznevBSAAl-bWT1Gx9An9uDK-0liDVhFP-dwYdR7YVFcUzFO14soE97yRuOXfwv8XDIc2PpgQ8I8oxtrTNUgTC40hPnJXQjYyPneo-iQ1okwobaTOZc/s480/b90_523.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmOpWgpCrRfVO6pkkQHRxX7S1xKznevBSAAl-bWT1Gx9An9uDK-0liDVhFP-dwYdR7YVFcUzFO14soE97yRuOXfwv8XDIc2PpgQ8I8oxtrTNUgTC40hPnJXQjYyPneo-iQ1okwobaTOZc/s160/b90_523.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmOpWgpCrRfVO6pkkQHRxX7S1xKznevBSAAl-bWT1Gx9An9uDK-0liDVhFP-dwYdR7YVFcUzFO14soE97yRuOXfwv8XDIc2PpgQ8I8oxtrTNUgTC40hPnJXQjYyPneo-iQ1okwobaTOZc/s320/b90_523.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmOpWgpCrRfVO6pkkQHRxX7S1xKznevBSAAl-bWT1Gx9An9uDK-0liDVhFP-dwYdR7YVFcUzFO14soE97yRuOXfwv8XDIc2PpgQ8I8oxtrTNUgTC40hPnJXQjYyPneo-iQ1okwobaTOZc/s480/b90_523.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 523 - The Smashing Pumpkins &#39;1979&#39;"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/programa-429-la-banda-sonora-del-fin-del-milenio.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiShztCP2GoWZeEgi9m8vHRCyB2JM9OugvdtWbBE0kzy9LThwncV8E-QZKQZxia3WqXa4PDIrzGC5h2pwphsmJ-PlggvKQx5_a0Bms4H9ajVW7O5LqRPmLujgpv_XQrQscr4pWA7ZktOt4/s320/efecto-2038-repetira-historia-del-efecto-2000-L-fSQlRT.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiShztCP2GoWZeEgi9m8vHRCyB2JM9OugvdtWbBE0kzy9LThwncV8E-QZKQZxia3WqXa4PDIrzGC5h2pwphsmJ-PlggvKQx5_a0Bms4H9ajVW7O5LqRPmLujgpv_XQrQscr4pWA7ZktOt4/s160/efecto-2038-repetira-historia-del-efecto-2000-L-fSQlRT.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiShztCP2GoWZeEgi9m8vHRCyB2JM9OugvdtWbBE0kzy9LThwncV8E-QZKQZxia3WqXa4PDIrzGC5h2pwphsmJ-PlggvKQx5_a0Bms4H9ajVW7O5LqRPmLujgpv_XQrQscr4pWA7ZktOt4/s320/efecto-2038-repetira-historia-del-efecto-2000-L-fSQlRT.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiShztCP2GoWZeEgi9m8vHRCyB2JM9OugvdtWbBE0kzy9LThwncV8E-QZKQZxia3WqXa4PDIrzGC5h2pwphsmJ-PlggvKQx5_a0Bms4H9ajVW7O5LqRPmLujgpv_XQrQscr4pWA7ZktOt4/s480/efecto-2038-repetira-historia-del-efecto-2000-L-fSQlRT.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiShztCP2GoWZeEgi9m8vHRCyB2JM9OugvdtWbBE0kzy9LThwncV8E-QZKQZxia3WqXa4PDIrzGC5h2pwphsmJ-PlggvKQx5_a0Bms4H9ajVW7O5LqRPmLujgpv_XQrQscr4pWA7ZktOt4/s160/efecto-2038-repetira-historia-del-efecto-2000-L-fSQlRT.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiShztCP2GoWZeEgi9m8vHRCyB2JM9OugvdtWbBE0kzy9LThwncV8E-QZKQZxia3WqXa4PDIrzGC5h2pwphsmJ-PlggvKQx5_a0Bms4H9ajVW7O5LqRPmLujgpv_XQrQscr4pWA7ZktOt4/s320/efecto-2038-repetira-historia-del-efecto-2000-L-fSQlRT.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiShztCP2GoWZeEgi9m8vHRCyB2JM9OugvdtWbBE0kzy9LThwncV8E-QZKQZxia3WqXa4PDIrzGC5h2pwphsmJ-PlggvKQx5_a0Bms4H9ajVW7O5LqRPmLujgpv_XQrQscr4pWA7ZktOt4/s480/efecto-2038-repetira-historia-del-efecto-2000-L-fSQlRT.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 429 - La banda sonora del fin del milenio"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-313-un-paseo-por-el-pop-el-folk-y-las-raices-de-moses-rubin.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNDsWbx-pjkVTNbbxRA77zr4fzEq0GKBrOdnQxVGqb5XCseS1_GkSd8ipXUN-9sas25RVku_fWXdrn5wdY8bl5AfuuPKNZsz-RtOzLKRDARuMjOB1DpMfTrJdunHeCIw17McqkZdxExWw/s320/IMG_20171215_171932.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNDsWbx-pjkVTNbbxRA77zr4fzEq0GKBrOdnQxVGqb5XCseS1_GkSd8ipXUN-9sas25RVku_fWXdrn5wdY8bl5AfuuPKNZsz-RtOzLKRDARuMjOB1DpMfTrJdunHeCIw17McqkZdxExWw/s160/IMG_20171215_171932.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNDsWbx-pjkVTNbbxRA77zr4fzEq0GKBrOdnQxVGqb5XCseS1_GkSd8ipXUN-9sas25RVku_fWXdrn5wdY8bl5AfuuPKNZsz-RtOzLKRDARuMjOB1DpMfTrJdunHeCIw17McqkZdxExWw/s320/IMG_20171215_171932.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNDsWbx-pjkVTNbbxRA77zr4fzEq0GKBrOdnQxVGqb5XCseS1_GkSd8ipXUN-9sas25RVku_fWXdrn5wdY8bl5AfuuPKNZsz-RtOzLKRDARuMjOB1DpMfTrJdunHeCIw17McqkZdxExWw/s480/IMG_20171215_171932.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNDsWbx-pjkVTNbbxRA77zr4fzEq0GKBrOdnQxVGqb5XCseS1_GkSd8ipXUN-9sas25RVku_fWXdrn5wdY8bl5AfuuPKNZsz-RtOzLKRDARuMjOB1DpMfTrJdunHeCIw17McqkZdxExWw/s160/IMG_20171215_171932.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNDsWbx-pjkVTNbbxRA77zr4fzEq0GKBrOdnQxVGqb5XCseS1_GkSd8ipXUN-9sas25RVku_fWXdrn5wdY8bl5AfuuPKNZsz-RtOzLKRDARuMjOB1DpMfTrJdunHeCIw17McqkZdxExWw/s320/IMG_20171215_171932.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNDsWbx-pjkVTNbbxRA77zr4fzEq0GKBrOdnQxVGqb5XCseS1_GkSd8ipXUN-9sas25RVku_fWXdrn5wdY8bl5AfuuPKNZsz-RtOzLKRDARuMjOB1DpMfTrJdunHeCIw17McqkZdxExWw/s480/IMG_20171215_171932.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 313 – Un paseo por el pop, el folk y las raices de Moses Rubin"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/b90-programa-83-pearl-jam-moby-the-chemical-brother-kings-of-leon.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 83 -Pearl Jam, Moby, The Chemical Brother, Kings of Leon..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-30-inicio-de-la-segunda-temporada.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s320/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s160/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s320/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s480/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s160/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s320/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s480/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Bienvenido a los 90 - Programa 30 - Inicio de la segunda temporada"
                 loading="lazy" width="320" height="213" />
         </a>

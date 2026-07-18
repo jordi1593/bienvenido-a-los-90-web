@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>B90 Classic 2: El nuevo &#39;GRUNGE&#39; — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -128,8 +128,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEgzd2zbefQz2TJAmScv-jQcAs1nKc-u-fWdXL0VRRLVvWpKal9oPEyTqM3tAnEBRfRWJf_58e8ftv0iLvaNfQRh-pZc5d1cVfWA8548f4sh0Mq4wDU26Wo8iR1rhhm4jQ_xfmx06Md-FGKlORt7FFwX9RF_sLMFNoyzyJoCmMAQqyk-H1mhhOd1cg0f=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEgzd2zbefQz2TJAmScv-jQcAs1nKc-u-fWdXL0VRRLVvWpKal9oPEyTqM3tAnEBRfRWJf_58e8ftv0iLvaNfQRh-pZc5d1cVfWA8548f4sh0Mq4wDU26Wo8iR1rhhm4jQ_xfmx06Md-FGKlORt7FFwX9RF_sLMFNoyzyJoCmMAQqyk-H1mhhOd1cg0f=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEgzd2zbefQz2TJAmScv-jQcAs1nKc-u-fWdXL0VRRLVvWpKal9oPEyTqM3tAnEBRfRWJf_58e8ftv0iLvaNfQRh-pZc5d1cVfWA8548f4sh0Mq4wDU26Wo8iR1rhhm4jQ_xfmx06Md-FGKlORt7FFwX9RF_sLMFNoyzyJoCmMAQqyk-H1mhhOd1cg0f=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEgzd2zbefQz2TJAmScv-jQcAs1nKc-u-fWdXL0VRRLVvWpKal9oPEyTqM3tAnEBRfRWJf_58e8ftv0iLvaNfQRh-pZc5d1cVfWA8548f4sh0Mq4wDU26Wo8iR1rhhm4jQ_xfmx06Md-FGKlORt7FFwX9RF_sLMFNoyzyJoCmMAQqyk-H1mhhOd1cg0f=s72-c 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="B90 Classic 18: Mark Lanegan en directo desde Elche 25/10/2019"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -139,8 +138,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s160/B1gPDmmc+PS._SS500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s480/B1gPDmmc+PS._SS500_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s160/B1gPDmmc+PS._SS500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s480/B1gPDmmc+PS._SS500_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 22: Cuando Kurt Cobain conoció a William Burroughs"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -150,8 +148,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s160/seattle-grunge-est1990-mens-t-shirt.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s160/seattle-grunge-est1990-mens-t-shirt.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.971 - ¿Sigue siendo Seattle un destino atractivo para los amantes del grunge?"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -167,8 +164,7 @@
         <a class="related-bottom-card" href="p-718-viajamos-hasta-seattle-para-hablar-con-tres-leches.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY443A5FVDDzChtxdW7w5e6H8aZ2xMNPpNZOTzQ3g2bL16U68ZvYJ5l3od1uf3OUrBIx8tGEvROk2WZf0K4Ba3K7xognWqFGmq12yXubiJYb59EaJJ-Av389fHcfwE4DFqn95qlGL3tYI/s320/84913799_2816245641754926_7919454389952053248_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY443A5FVDDzChtxdW7w5e6H8aZ2xMNPpNZOTzQ3g2bL16U68ZvYJ5l3od1uf3OUrBIx8tGEvROk2WZf0K4Ba3K7xognWqFGmq12yXubiJYb59EaJJ-Av389fHcfwE4DFqn95qlGL3tYI/s320/84913799_2816245641754926_7919454389952053248_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY443A5FVDDzChtxdW7w5e6H8aZ2xMNPpNZOTzQ3g2bL16U68ZvYJ5l3od1uf3OUrBIx8tGEvROk2WZf0K4Ba3K7xognWqFGmq12yXubiJYb59EaJJ-Av389fHcfwE4DFqn95qlGL3tYI/s480/84913799_2816245641754926_7919454389952053248_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY443A5FVDDzChtxdW7w5e6H8aZ2xMNPpNZOTzQ3g2bL16U68ZvYJ5l3od1uf3OUrBIx8tGEvROk2WZf0K4Ba3K7xognWqFGmq12yXubiJYb59EaJJ-Av389fHcfwE4DFqn95qlGL3tYI/s640/84913799_2816245641754926_7919454389952053248_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY443A5FVDDzChtxdW7w5e6H8aZ2xMNPpNZOTzQ3g2bL16U68ZvYJ5l3od1uf3OUrBIx8tGEvROk2WZf0K4Ba3K7xognWqFGmq12yXubiJYb59EaJJ-Av389fHcfwE4DFqn95qlGL3tYI/s320/84913799_2816245641754926_7919454389952053248_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY443A5FVDDzChtxdW7w5e6H8aZ2xMNPpNZOTzQ3g2bL16U68ZvYJ5l3od1uf3OUrBIx8tGEvROk2WZf0K4Ba3K7xognWqFGmq12yXubiJYb59EaJJ-Av389fHcfwE4DFqn95qlGL3tYI/s480/84913799_2816245641754926_7919454389952053248_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY443A5FVDDzChtxdW7w5e6H8aZ2xMNPpNZOTzQ3g2bL16U68ZvYJ5l3od1uf3OUrBIx8tGEvROk2WZf0K4Ba3K7xognWqFGmq12yXubiJYb59EaJJ-Av389fHcfwE4DFqn95qlGL3tYI/s640/84913799_2816245641754926_7919454389952053248_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.718 - Viajamos hasta Seattle para hablar con TRES LECHES"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -179,8 +175,7 @@
           </a><a class="related-bottom-card" href="b90-classic-10-the-jury-kurt-cobain-y-mark-lanegan.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s480/thejurysocial112514.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s640/thejurysocial112514.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s480/thejurysocial112514.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s640/thejurysocial112514.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 10: The Jury - Kurt Cobain y Mark Lanegan"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -191,8 +186,7 @@
           </a><a class="related-bottom-card" href="p-630-kim-thayil-de-soundgarden-habla-de-sus-discos-favoritos-del-grunge.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s480/kimthayil.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s640/kimthayil.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s480/kimthayil.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s640/kimthayil.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.630 - Kim Thayil de Soundgarden habla de sus discos favoritos del grunge"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

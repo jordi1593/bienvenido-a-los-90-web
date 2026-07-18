@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Blind Melon — 12 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-88-blind-melon-la-historia-de-no-rain.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKFGYoeiE__JE9nEQshecjkYEytek7GZSjvAISGue0dOfVKr8VJzhDWQir_gp0JAL2jRfpYEbHnRPa-5fI0jjiKzGW65qqyNxPFHmEh4YGT6WzgwAFJoZihdNONuJEh0dmmcctoeA5YBLQQpw5QtaJCVB1SHxRnVAafSTXZACpIvVIdYVhqtYV2BNOQTY/s320/MV5BNzY2MjdkYWYtZGY5ZC00MjE1LWE1ZWItM2I2YTFlYWYyMmRhXkEyXkFqcGc@._V1_.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKFGYoeiE__JE9nEQshecjkYEytek7GZSjvAISGue0dOfVKr8VJzhDWQir_gp0JAL2jRfpYEbHnRPa-5fI0jjiKzGW65qqyNxPFHmEh4YGT6WzgwAFJoZihdNONuJEh0dmmcctoeA5YBLQQpw5QtaJCVB1SHxRnVAafSTXZACpIvVIdYVhqtYV2BNOQTY/s160/MV5BNzY2MjdkYWYtZGY5ZC00MjE1LWE1ZWItM2I2YTFlYWYyMmRhXkEyXkFqcGc@._V1_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKFGYoeiE__JE9nEQshecjkYEytek7GZSjvAISGue0dOfVKr8VJzhDWQir_gp0JAL2jRfpYEbHnRPa-5fI0jjiKzGW65qqyNxPFHmEh4YGT6WzgwAFJoZihdNONuJEh0dmmcctoeA5YBLQQpw5QtaJCVB1SHxRnVAafSTXZACpIvVIdYVhqtYV2BNOQTY/s320/MV5BNzY2MjdkYWYtZGY5ZC00MjE1LWE1ZWItM2I2YTFlYWYyMmRhXkEyXkFqcGc@._V1_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKFGYoeiE__JE9nEQshecjkYEytek7GZSjvAISGue0dOfVKr8VJzhDWQir_gp0JAL2jRfpYEbHnRPa-5fI0jjiKzGW65qqyNxPFHmEh4YGT6WzgwAFJoZihdNONuJEh0dmmcctoeA5YBLQQpw5QtaJCVB1SHxRnVAafSTXZACpIvVIdYVhqtYV2BNOQTY/s480/MV5BNzY2MjdkYWYtZGY5ZC00MjE1LWE1ZWItM2I2YTFlYWYyMmRhXkEyXkFqcGc@._V1_.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKFGYoeiE__JE9nEQshecjkYEytek7GZSjvAISGue0dOfVKr8VJzhDWQir_gp0JAL2jRfpYEbHnRPa-5fI0jjiKzGW65qqyNxPFHmEh4YGT6WzgwAFJoZihdNONuJEh0dmmcctoeA5YBLQQpw5QtaJCVB1SHxRnVAafSTXZACpIvVIdYVhqtYV2BNOQTY/s160/MV5BNzY2MjdkYWYtZGY5ZC00MjE1LWE1ZWItM2I2YTFlYWYyMmRhXkEyXkFqcGc@._V1_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKFGYoeiE__JE9nEQshecjkYEytek7GZSjvAISGue0dOfVKr8VJzhDWQir_gp0JAL2jRfpYEbHnRPa-5fI0jjiKzGW65qqyNxPFHmEh4YGT6WzgwAFJoZihdNONuJEh0dmmcctoeA5YBLQQpw5QtaJCVB1SHxRnVAafSTXZACpIvVIdYVhqtYV2BNOQTY/s320/MV5BNzY2MjdkYWYtZGY5ZC00MjE1LWE1ZWItM2I2YTFlYWYyMmRhXkEyXkFqcGc@._V1_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKFGYoeiE__JE9nEQshecjkYEytek7GZSjvAISGue0dOfVKr8VJzhDWQir_gp0JAL2jRfpYEbHnRPa-5fI0jjiKzGW65qqyNxPFHmEh4YGT6WzgwAFJoZihdNONuJEh0dmmcctoeA5YBLQQpw5QtaJCVB1SHxRnVAafSTXZACpIvVIdYVhqtYV2BNOQTY/s480/MV5BNzY2MjdkYWYtZGY5ZC00MjE1LWE1ZWItM2I2YTFlYWYyMmRhXkEyXkFqcGc@._V1_.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 88 - Blind Melon, la historia de &quot;No Rain&quot;"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/1093-especial-1995-4-5-ramones-garbage-blind-melon-rancid-oasis-no-doubt.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s320/b90_1093.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s160/b90_1093.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s320/b90_1093.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s480/b90_1093.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s160/b90_1093.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s320/b90_1093.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s480/b90_1093.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1093 - Especial 1995 (4/5) Ramones, Garbage, Blind Melon, Rancid, Oasis, No Doubt..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-970-diez-canciones-que-me-cambiaron-la-vida.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s320/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s160/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s320/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s480/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s160/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s320/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s480/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.970 - Diez canciones que me cambiaron la vida"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-691-recordando-a-shannon-hoon-blind-melon.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVx-m-UF8XQqMsikicHxWgJdcqKoH0SIDEmoMDL9d09ZOIJR9MFDkOLK1v3x6vWUebtiCmuR-Dpnn4MrXrpJ2GopLf_iaYU4whinv2-WJagwAelOfxQNU3OBjkRh-POOuE3yY9flKHcnk/s320/gettyimages-635764769.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVx-m-UF8XQqMsikicHxWgJdcqKoH0SIDEmoMDL9d09ZOIJR9MFDkOLK1v3x6vWUebtiCmuR-Dpnn4MrXrpJ2GopLf_iaYU4whinv2-WJagwAelOfxQNU3OBjkRh-POOuE3yY9flKHcnk/s160/gettyimages-635764769.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVx-m-UF8XQqMsikicHxWgJdcqKoH0SIDEmoMDL9d09ZOIJR9MFDkOLK1v3x6vWUebtiCmuR-Dpnn4MrXrpJ2GopLf_iaYU4whinv2-WJagwAelOfxQNU3OBjkRh-POOuE3yY9flKHcnk/s320/gettyimages-635764769.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVx-m-UF8XQqMsikicHxWgJdcqKoH0SIDEmoMDL9d09ZOIJR9MFDkOLK1v3x6vWUebtiCmuR-Dpnn4MrXrpJ2GopLf_iaYU4whinv2-WJagwAelOfxQNU3OBjkRh-POOuE3yY9flKHcnk/s480/gettyimages-635764769.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVx-m-UF8XQqMsikicHxWgJdcqKoH0SIDEmoMDL9d09ZOIJR9MFDkOLK1v3x6vWUebtiCmuR-Dpnn4MrXrpJ2GopLf_iaYU4whinv2-WJagwAelOfxQNU3OBjkRh-POOuE3yY9flKHcnk/s160/gettyimages-635764769.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVx-m-UF8XQqMsikicHxWgJdcqKoH0SIDEmoMDL9d09ZOIJR9MFDkOLK1v3x6vWUebtiCmuR-Dpnn4MrXrpJ2GopLf_iaYU4whinv2-WJagwAelOfxQNU3OBjkRh-POOuE3yY9flKHcnk/s320/gettyimages-635764769.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVx-m-UF8XQqMsikicHxWgJdcqKoH0SIDEmoMDL9d09ZOIJR9MFDkOLK1v3x6vWUebtiCmuR-Dpnn4MrXrpJ2GopLf_iaYU4whinv2-WJagwAelOfxQNU3OBjkRh-POOuE3yY9flKHcnk/s480/gettyimages-635764769.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.691 - Recordando a Shannon Hoon (Blind Melon)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/p-619-discos-tributo-de-los-anos-90.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji0JsFA2JOPpL1bjWLSOJR1ChoxOgoX-NzQVa58V_jtd7EVvUbiH3LFp3k_ZUUOuz2Uh33wca_umFicabmTHHIQnshMjFm7jqREDQFFtMEdPPNkIpliS47RENCLQsQ3bJD9uT2tmEP6Tg/s320/b90_620.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji0JsFA2JOPpL1bjWLSOJR1ChoxOgoX-NzQVa58V_jtd7EVvUbiH3LFp3k_ZUUOuz2Uh33wca_umFicabmTHHIQnshMjFm7jqREDQFFtMEdPPNkIpliS47RENCLQsQ3bJD9uT2tmEP6Tg/s160/b90_620.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji0JsFA2JOPpL1bjWLSOJR1ChoxOgoX-NzQVa58V_jtd7EVvUbiH3LFp3k_ZUUOuz2Uh33wca_umFicabmTHHIQnshMjFm7jqREDQFFtMEdPPNkIpliS47RENCLQsQ3bJD9uT2tmEP6Tg/s320/b90_620.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji0JsFA2JOPpL1bjWLSOJR1ChoxOgoX-NzQVa58V_jtd7EVvUbiH3LFp3k_ZUUOuz2Uh33wca_umFicabmTHHIQnshMjFm7jqREDQFFtMEdPPNkIpliS47RENCLQsQ3bJD9uT2tmEP6Tg/s480/b90_620.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji0JsFA2JOPpL1bjWLSOJR1ChoxOgoX-NzQVa58V_jtd7EVvUbiH3LFp3k_ZUUOuz2Uh33wca_umFicabmTHHIQnshMjFm7jqREDQFFtMEdPPNkIpliS47RENCLQsQ3bJD9uT2tmEP6Tg/s160/b90_620.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji0JsFA2JOPpL1bjWLSOJR1ChoxOgoX-NzQVa58V_jtd7EVvUbiH3LFp3k_ZUUOuz2Uh33wca_umFicabmTHHIQnshMjFm7jqREDQFFtMEdPPNkIpliS47RENCLQsQ3bJD9uT2tmEP6Tg/s320/b90_620.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji0JsFA2JOPpL1bjWLSOJR1ChoxOgoX-NzQVa58V_jtd7EVvUbiH3LFp3k_ZUUOuz2Uh33wca_umFicabmTHHIQnshMjFm7jqREDQFFtMEdPPNkIpliS47RENCLQsQ3bJD9uT2tmEP6Tg/s480/b90_620.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.619 Discos tributo de los años 90"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-565-novedades-terrorvision-alain-johannes-travis-kim-gordon.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbuWd6GvQnFpPR7W4PxDuahdpqy9fAD3ILRH5MJ4-QDXBHzDMOPvvrANQa7nePfu0qpIDCt0KKrHN68ftDGXehp6VW21yeLevOVdkpVlZgUTp986u21WZEEVybxo16KLLRKiZbtl4MxJg/s320/b90_565.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbuWd6GvQnFpPR7W4PxDuahdpqy9fAD3ILRH5MJ4-QDXBHzDMOPvvrANQa7nePfu0qpIDCt0KKrHN68ftDGXehp6VW21yeLevOVdkpVlZgUTp986u21WZEEVybxo16KLLRKiZbtl4MxJg/s160/b90_565.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbuWd6GvQnFpPR7W4PxDuahdpqy9fAD3ILRH5MJ4-QDXBHzDMOPvvrANQa7nePfu0qpIDCt0KKrHN68ftDGXehp6VW21yeLevOVdkpVlZgUTp986u21WZEEVybxo16KLLRKiZbtl4MxJg/s320/b90_565.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbuWd6GvQnFpPR7W4PxDuahdpqy9fAD3ILRH5MJ4-QDXBHzDMOPvvrANQa7nePfu0qpIDCt0KKrHN68ftDGXehp6VW21yeLevOVdkpVlZgUTp986u21WZEEVybxo16KLLRKiZbtl4MxJg/s480/b90_565.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbuWd6GvQnFpPR7W4PxDuahdpqy9fAD3ILRH5MJ4-QDXBHzDMOPvvrANQa7nePfu0qpIDCt0KKrHN68ftDGXehp6VW21yeLevOVdkpVlZgUTp986u21WZEEVybxo16KLLRKiZbtl4MxJg/s160/b90_565.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbuWd6GvQnFpPR7W4PxDuahdpqy9fAD3ILRH5MJ4-QDXBHzDMOPvvrANQa7nePfu0qpIDCt0KKrHN68ftDGXehp6VW21yeLevOVdkpVlZgUTp986u21WZEEVybxo16KLLRKiZbtl4MxJg/s320/b90_565.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbuWd6GvQnFpPR7W4PxDuahdpqy9fAD3ILRH5MJ4-QDXBHzDMOPvvrANQa7nePfu0qpIDCt0KKrHN68ftDGXehp6VW21yeLevOVdkpVlZgUTp986u21WZEEVybxo16KLLRKiZbtl4MxJg/s480/b90_565.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 565 - Novedades: Terrorvision, Alain Johannes, Travis, Kim Gordon..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-554-la-seleccion-musical-de-layne-staley.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s320/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s160/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s320/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s480/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s160/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s320/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s480/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 554: La selección musical de Layne Staley"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/programa-505-mis-10-documentales-musicales-favoritos-de-los-90.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s320/b90_505.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s160/b90_505.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s320/b90_505.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s480/b90_505.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s160/b90_505.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s320/b90_505.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s480/b90_505.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 505 - Mis 10 documentales musicales favoritos de los 90"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -180,8 +172,7 @@
         <a class="episode-cover-link" href="../episodios/programa-292-blind-melon-u2-the-gits-afghan-whigs-nin.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s160/imagen-sin-titulo.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s480/imagen-sin-titulo.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s160/imagen-sin-titulo.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s480/imagen-sin-titulo.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 292 - Blind Melon, U2, The Gits, Afghan Whigs, NIN. "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -194,8 +185,7 @@
         <a class="episode-cover-link" href="../episodios/programa-245-canciones-ocultas.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s320/cancion.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s160/cancion.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s320/cancion.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s480/cancion.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s160/cancion.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s320/cancion.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s480/cancion.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 245 - Canciones ocultas"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -208,8 +198,7 @@
         <a class="episode-cover-link" href="../episodios/programa-70-canciones-olvidadas-de-los-90.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 70 - Canciones olvidadas de los 90"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -222,8 +211,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-4-la-inspiracion-de-mr-e.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx7kuvq447EH9HuQt8NBiG9k7vM-LWIPMIAkLOHRqBMGCFvfmJ7d7B9Ht0rxayxHHhaEHYufafXikRJJLxcB8iaWi0Iu1_JmnSNySK_yb2CV4zRBetJHeG2Z5x4p4ydzGileL7r5MzrCU/s320/95f587aa962196d588179e801cc43bfb49aa44fd_m.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx7kuvq447EH9HuQt8NBiG9k7vM-LWIPMIAkLOHRqBMGCFvfmJ7d7B9Ht0rxayxHHhaEHYufafXikRJJLxcB8iaWi0Iu1_JmnSNySK_yb2CV4zRBetJHeG2Z5x4p4ydzGileL7r5MzrCU/s160/95f587aa962196d588179e801cc43bfb49aa44fd_m.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx7kuvq447EH9HuQt8NBiG9k7vM-LWIPMIAkLOHRqBMGCFvfmJ7d7B9Ht0rxayxHHhaEHYufafXikRJJLxcB8iaWi0Iu1_JmnSNySK_yb2CV4zRBetJHeG2Z5x4p4ydzGileL7r5MzrCU/s320/95f587aa962196d588179e801cc43bfb49aa44fd_m.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx7kuvq447EH9HuQt8NBiG9k7vM-LWIPMIAkLOHRqBMGCFvfmJ7d7B9Ht0rxayxHHhaEHYufafXikRJJLxcB8iaWi0Iu1_JmnSNySK_yb2CV4zRBetJHeG2Z5x4p4ydzGileL7r5MzrCU/s480/95f587aa962196d588179e801cc43bfb49aa44fd_m.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx7kuvq447EH9HuQt8NBiG9k7vM-LWIPMIAkLOHRqBMGCFvfmJ7d7B9Ht0rxayxHHhaEHYufafXikRJJLxcB8iaWi0Iu1_JmnSNySK_yb2CV4zRBetJHeG2Z5x4p4ydzGileL7r5MzrCU/s160/95f587aa962196d588179e801cc43bfb49aa44fd_m.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx7kuvq447EH9HuQt8NBiG9k7vM-LWIPMIAkLOHRqBMGCFvfmJ7d7B9Ht0rxayxHHhaEHYufafXikRJJLxcB8iaWi0Iu1_JmnSNySK_yb2CV4zRBetJHeG2Z5x4p4ydzGileL7r5MzrCU/s320/95f587aa962196d588179e801cc43bfb49aa44fd_m.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx7kuvq447EH9HuQt8NBiG9k7vM-LWIPMIAkLOHRqBMGCFvfmJ7d7B9Ht0rxayxHHhaEHYufafXikRJJLxcB8iaWi0Iu1_JmnSNySK_yb2CV4zRBetJHeG2Z5x4p4ydzGileL7r5MzrCU/s480/95f587aa962196d588179e801cc43bfb49aa44fd_m.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Bienvenido a los 90 - Programa #4 - La inspiración de Mr.E"
                 loading="lazy" width="320" height="213" />
         </a>

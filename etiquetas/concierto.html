@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Concierto — 12 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-578-havalina-en-directo-sala-el-sol-6-11-2019.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s320/572A+Havalina.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s160/572A+Havalina.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s320/572A+Havalina.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s480/572A+Havalina.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s160/572A+Havalina.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s320/572A+Havalina.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s480/572A+Havalina.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.578 - Havalina en directo (Sala El Sol 6/11/2019)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/programa-558-muntz-en-gruta-77-28-06-2019.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiMbmGA5mGxqD1Qep0YPSJW-dKsPnRlJxg6s4qBMYxCEmNbsVaiWTLS-m1F2_71OCqkxiD3bWa6lA7uy0DW9KjYOn2VoElmGEob3LXKr3kfP1mbQXxlnBG7D-wqV_V-HjuStQjjzj93Vg/s320/MUNTZ+WTF+MUSIC+PARTY+PORTADA.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiMbmGA5mGxqD1Qep0YPSJW-dKsPnRlJxg6s4qBMYxCEmNbsVaiWTLS-m1F2_71OCqkxiD3bWa6lA7uy0DW9KjYOn2VoElmGEob3LXKr3kfP1mbQXxlnBG7D-wqV_V-HjuStQjjzj93Vg/s160/MUNTZ+WTF+MUSIC+PARTY+PORTADA.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiMbmGA5mGxqD1Qep0YPSJW-dKsPnRlJxg6s4qBMYxCEmNbsVaiWTLS-m1F2_71OCqkxiD3bWa6lA7uy0DW9KjYOn2VoElmGEob3LXKr3kfP1mbQXxlnBG7D-wqV_V-HjuStQjjzj93Vg/s320/MUNTZ+WTF+MUSIC+PARTY+PORTADA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiMbmGA5mGxqD1Qep0YPSJW-dKsPnRlJxg6s4qBMYxCEmNbsVaiWTLS-m1F2_71OCqkxiD3bWa6lA7uy0DW9KjYOn2VoElmGEob3LXKr3kfP1mbQXxlnBG7D-wqV_V-HjuStQjjzj93Vg/s480/MUNTZ+WTF+MUSIC+PARTY+PORTADA.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiMbmGA5mGxqD1Qep0YPSJW-dKsPnRlJxg6s4qBMYxCEmNbsVaiWTLS-m1F2_71OCqkxiD3bWa6lA7uy0DW9KjYOn2VoElmGEob3LXKr3kfP1mbQXxlnBG7D-wqV_V-HjuStQjjzj93Vg/s160/MUNTZ+WTF+MUSIC+PARTY+PORTADA.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiMbmGA5mGxqD1Qep0YPSJW-dKsPnRlJxg6s4qBMYxCEmNbsVaiWTLS-m1F2_71OCqkxiD3bWa6lA7uy0DW9KjYOn2VoElmGEob3LXKr3kfP1mbQXxlnBG7D-wqV_V-HjuStQjjzj93Vg/s320/MUNTZ+WTF+MUSIC+PARTY+PORTADA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiMbmGA5mGxqD1Qep0YPSJW-dKsPnRlJxg6s4qBMYxCEmNbsVaiWTLS-m1F2_71OCqkxiD3bWa6lA7uy0DW9KjYOn2VoElmGEob3LXKr3kfP1mbQXxlnBG7D-wqV_V-HjuStQjjzj93Vg/s480/MUNTZ+WTF+MUSIC+PARTY+PORTADA.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 558: MUNTZ en GRUTA 77 (28/06/2019)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-557-twin-hands-en-gruta-77-28-06-2019.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj4LcWTgAB6A03WSld33qwEzjKaKQRlQrgYO_1-3qRAIvCdlF5TJWkesnis0gxGx3TRdJfSBgwuCkesNgvtXg2u2MJm6bIJlh0AoGu7CePPmxld48r8M98fIAZVUxVkioBy335whFBfG8/s320/TWIN+HANDS+WTF+MUSIC+PARTY+PORTADA.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj4LcWTgAB6A03WSld33qwEzjKaKQRlQrgYO_1-3qRAIvCdlF5TJWkesnis0gxGx3TRdJfSBgwuCkesNgvtXg2u2MJm6bIJlh0AoGu7CePPmxld48r8M98fIAZVUxVkioBy335whFBfG8/s160/TWIN+HANDS+WTF+MUSIC+PARTY+PORTADA.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj4LcWTgAB6A03WSld33qwEzjKaKQRlQrgYO_1-3qRAIvCdlF5TJWkesnis0gxGx3TRdJfSBgwuCkesNgvtXg2u2MJm6bIJlh0AoGu7CePPmxld48r8M98fIAZVUxVkioBy335whFBfG8/s320/TWIN+HANDS+WTF+MUSIC+PARTY+PORTADA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj4LcWTgAB6A03WSld33qwEzjKaKQRlQrgYO_1-3qRAIvCdlF5TJWkesnis0gxGx3TRdJfSBgwuCkesNgvtXg2u2MJm6bIJlh0AoGu7CePPmxld48r8M98fIAZVUxVkioBy335whFBfG8/s480/TWIN+HANDS+WTF+MUSIC+PARTY+PORTADA.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj4LcWTgAB6A03WSld33qwEzjKaKQRlQrgYO_1-3qRAIvCdlF5TJWkesnis0gxGx3TRdJfSBgwuCkesNgvtXg2u2MJm6bIJlh0AoGu7CePPmxld48r8M98fIAZVUxVkioBy335whFBfG8/s160/TWIN+HANDS+WTF+MUSIC+PARTY+PORTADA.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj4LcWTgAB6A03WSld33qwEzjKaKQRlQrgYO_1-3qRAIvCdlF5TJWkesnis0gxGx3TRdJfSBgwuCkesNgvtXg2u2MJm6bIJlh0AoGu7CePPmxld48r8M98fIAZVUxVkioBy335whFBfG8/s320/TWIN+HANDS+WTF+MUSIC+PARTY+PORTADA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj4LcWTgAB6A03WSld33qwEzjKaKQRlQrgYO_1-3qRAIvCdlF5TJWkesnis0gxGx3TRdJfSBgwuCkesNgvtXg2u2MJm6bIJlh0AoGu7CePPmxld48r8M98fIAZVUxVkioBy335whFBfG8/s480/TWIN+HANDS+WTF+MUSIC+PARTY+PORTADA.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 557: TWIN HANDS en GRUTA 77 (28/06/2019)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-556-veronica-underluxe-en-gruta-77-28-06-2019.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s320/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s160/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s320/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s480/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s160/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s320/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s480/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 556: VERONICA UNDERLUXE en GRUTA 77 (28/06/2019)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-552-muse-destroza-en-wanda-metropolitano-26-07-2019.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s160/67728307_10158901432243066_812912656296968192_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s480/67728307_10158901432243066_812912656296968192_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s160/67728307_10158901432243066_812912656296968192_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s480/67728307_10158901432243066_812912656296968192_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 552 - Muse destroza en Wanda Metropolitano (26/07/2019)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-542-eddie-vedder-madrid-2019.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s320/542B+Vedder.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s160/542B+Vedder.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s320/542B+Vedder.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s480/542B+Vedder.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s160/542B+Vedder.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s320/542B+Vedder.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s480/542B+Vedder.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 542 - Eddie Vedder Madrid 2019"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-513-gyoza-smokers-die-young-the-rebels-sala-el-sol-22-03-19.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaz0BsMuX_WvRWlibBFtTyOT-t0z1RVxEIemjCcuncJ5TOK4yVyKkHvQtHUQoYFI2ju0lx2VeXGDiU-dbkhQhYviCrnvsLb_jbzeCQcXzM42masduCb6gzFfyNUgzGHog1WVXC533poSc/s320/b90_513+%25284%2529.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaz0BsMuX_WvRWlibBFtTyOT-t0z1RVxEIemjCcuncJ5TOK4yVyKkHvQtHUQoYFI2ju0lx2VeXGDiU-dbkhQhYviCrnvsLb_jbzeCQcXzM42masduCb6gzFfyNUgzGHog1WVXC533poSc/s160/b90_513+%25284%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaz0BsMuX_WvRWlibBFtTyOT-t0z1RVxEIemjCcuncJ5TOK4yVyKkHvQtHUQoYFI2ju0lx2VeXGDiU-dbkhQhYviCrnvsLb_jbzeCQcXzM42masduCb6gzFfyNUgzGHog1WVXC533poSc/s320/b90_513+%25284%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaz0BsMuX_WvRWlibBFtTyOT-t0z1RVxEIemjCcuncJ5TOK4yVyKkHvQtHUQoYFI2ju0lx2VeXGDiU-dbkhQhYviCrnvsLb_jbzeCQcXzM42masduCb6gzFfyNUgzGHog1WVXC533poSc/s480/b90_513+%25284%2529.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaz0BsMuX_WvRWlibBFtTyOT-t0z1RVxEIemjCcuncJ5TOK4yVyKkHvQtHUQoYFI2ju0lx2VeXGDiU-dbkhQhYviCrnvsLb_jbzeCQcXzM42masduCb6gzFfyNUgzGHog1WVXC533poSc/s160/b90_513+%25284%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaz0BsMuX_WvRWlibBFtTyOT-t0z1RVxEIemjCcuncJ5TOK4yVyKkHvQtHUQoYFI2ju0lx2VeXGDiU-dbkhQhYviCrnvsLb_jbzeCQcXzM42masduCb6gzFfyNUgzGHog1WVXC533poSc/s320/b90_513+%25284%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaz0BsMuX_WvRWlibBFtTyOT-t0z1RVxEIemjCcuncJ5TOK4yVyKkHvQtHUQoYFI2ju0lx2VeXGDiU-dbkhQhYviCrnvsLb_jbzeCQcXzM42masduCb6gzFfyNUgzGHog1WVXC533poSc/s480/b90_513+%25284%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 513 - GYOZA + SMOKERS DIE YOUNG + THE REBELS (SALA EL SOL 22/03/19)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/programa-508-pasajero-en-directo-el-sol-14-02-2019.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s320/b90_508.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s160/b90_508.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s320/b90_508.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s480/b90_508.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s160/b90_508.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s320/b90_508.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s480/b90_508.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 508 - Pasajero en directo (El Sol 14/02/2019)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -180,8 +172,7 @@
         <a class="episode-cover-link" href="../episodios/programa-354-metallica-en-espana-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s320/fotonoticia_20170316103002_800.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s160/fotonoticia_20170316103002_800.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s320/fotonoticia_20170316103002_800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s480/fotonoticia_20170316103002_800.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s160/fotonoticia_20170316103002_800.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s320/fotonoticia_20170316103002_800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s480/fotonoticia_20170316103002_800.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 354 - Metallica en España (2018)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -194,8 +185,7 @@
         <a class="episode-cover-link" href="../episodios/programa-348-nada-surf-teatro-barcelo-madrid-feb-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s320/Screenshot_20180228-202853.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s160/Screenshot_20180228-202853.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s320/Screenshot_20180228-202853.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s480/Screenshot_20180228-202853.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s160/Screenshot_20180228-202853.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s320/Screenshot_20180228-202853.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s480/Screenshot_20180228-202853.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 348 - Nada Surf - Teatro Barceló (Madrid Feb 2018)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -208,8 +198,7 @@
         <a class="episode-cover-link" href="../episodios/programa-235-el-sonido-crudo-del-directo-de-radiohead-en-2016.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd_MciAFV26ygvTH4PRN7l6-wVQGh9qAOJe81gZR9uou-aoXdNGX6NgRKDgyPV9KIhrTpmrH8X1le-4oZoFlNqRVKQCEqQqs5YkMOV4bfJH3oqSki7efaX5zSovmHvct4w0jxcp19Pyk0/s320/radiohead_2.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd_MciAFV26ygvTH4PRN7l6-wVQGh9qAOJe81gZR9uou-aoXdNGX6NgRKDgyPV9KIhrTpmrH8X1le-4oZoFlNqRVKQCEqQqs5YkMOV4bfJH3oqSki7efaX5zSovmHvct4w0jxcp19Pyk0/s160/radiohead_2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd_MciAFV26ygvTH4PRN7l6-wVQGh9qAOJe81gZR9uou-aoXdNGX6NgRKDgyPV9KIhrTpmrH8X1le-4oZoFlNqRVKQCEqQqs5YkMOV4bfJH3oqSki7efaX5zSovmHvct4w0jxcp19Pyk0/s320/radiohead_2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd_MciAFV26ygvTH4PRN7l6-wVQGh9qAOJe81gZR9uou-aoXdNGX6NgRKDgyPV9KIhrTpmrH8X1le-4oZoFlNqRVKQCEqQqs5YkMOV4bfJH3oqSki7efaX5zSovmHvct4w0jxcp19Pyk0/s480/radiohead_2.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd_MciAFV26ygvTH4PRN7l6-wVQGh9qAOJe81gZR9uou-aoXdNGX6NgRKDgyPV9KIhrTpmrH8X1le-4oZoFlNqRVKQCEqQqs5YkMOV4bfJH3oqSki7efaX5zSovmHvct4w0jxcp19Pyk0/s160/radiohead_2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd_MciAFV26ygvTH4PRN7l6-wVQGh9qAOJe81gZR9uou-aoXdNGX6NgRKDgyPV9KIhrTpmrH8X1le-4oZoFlNqRVKQCEqQqs5YkMOV4bfJH3oqSki7efaX5zSovmHvct4w0jxcp19Pyk0/s320/radiohead_2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd_MciAFV26ygvTH4PRN7l6-wVQGh9qAOJe81gZR9uou-aoXdNGX6NgRKDgyPV9KIhrTpmrH8X1le-4oZoFlNqRVKQCEqQqs5YkMOV4bfJH3oqSki7efaX5zSovmHvct4w0jxcp19Pyk0/s480/radiohead_2.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 235 - El sonido crudo del directo de Radiohead en 2016"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -222,8 +211,7 @@
         <a class="episode-cover-link" href="../episodios/programa-46-12-12-12-concierto-para-los-afectados-de-sandy.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 46 - 12-12-12 Concierto para los afectados de Sandy "
                 loading="lazy" width="320" height="213" />
         </a>

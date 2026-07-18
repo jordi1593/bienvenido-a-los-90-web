@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Jota — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/programa-364-los-planetas-una-semana-en-el-motor-de-un-autobus-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s320/CAP1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s160/CAP1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s320/CAP1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s480/CAP1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s160/CAP1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s320/CAP1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s480/CAP1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 364 - Los Planetas &#39;Una semana en el motor de un autobús&#39; 1"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/programa-365-los-planetas-una-semana-en-el-motor-de-un-autobus-2.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s320/CAP1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s160/CAP1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s320/CAP1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s480/CAP1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s160/CAP1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s320/CAP1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s480/CAP1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 365 - Los Planetas &#39;Una semana en el motor de un autobús&#39; 2"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-366-los-planetas-una-semana-en-el-motor-de-un-autobus-3.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s320/CAP1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s160/CAP1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s320/CAP1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s480/CAP1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s160/CAP1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s320/CAP1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s480/CAP1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 366 - Los Planetas &#39;Una semana en el motor de un autobús&#39; 3"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-367-los-planetas-una-semana-en-el-motor-de-un-autobus-4.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s320/CAP1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s160/CAP1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s320/CAP1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s480/CAP1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s160/CAP1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s320/CAP1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s480/CAP1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 367 - Los Planetas &#39;Una semana en el motor de un autobús&#39; 4"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-368-los-planetas-una-semana-en-el-motor-de-un-autobus-5.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s320/CAP1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s160/CAP1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s320/CAP1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s480/CAP1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s160/CAP1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s320/CAP1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-p_pGbXdQhEQOuQLAhRYSUpJrqJ_HF0pFIK4ApSB1dUrkmUf7lFoviTgQzBEOE9HXl_5tykMlhllDbiR5udsVhH00jO6LZSTylPm2btVXHUSSCAPSjt-XreWS3mZiaTM_nNAQq3OL54g/s480/CAP1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 368 - Los Planetas &#39;Una semana en el motor de un autobús&#39; 5"
                 loading="lazy" width="320" height="213" />
         </a>

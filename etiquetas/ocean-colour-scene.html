@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Ocean Colour Scene — 8 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1115-especial-30-anos-del-moseley-shoals-ocean-colour-scene.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeZNAuu0KppWhmdKU8-MrhP7NwHzpm9qnzfcZmroPTmgXO0ROYZCAu-heYmF-5czKh0T3mJ4_cpMmpH5UnSQT7lSBUBwfkFVPFIrDudlzX0T6JpkY9SvSxJYoixMI7L4q71MVOOERUmH2VMlMP6cAtT38x_PJonoE6MYCMvAXXFMGpXry2OElUPF9a5lE/s320/B90_1115.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeZNAuu0KppWhmdKU8-MrhP7NwHzpm9qnzfcZmroPTmgXO0ROYZCAu-heYmF-5czKh0T3mJ4_cpMmpH5UnSQT7lSBUBwfkFVPFIrDudlzX0T6JpkY9SvSxJYoixMI7L4q71MVOOERUmH2VMlMP6cAtT38x_PJonoE6MYCMvAXXFMGpXry2OElUPF9a5lE/s160/B90_1115.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeZNAuu0KppWhmdKU8-MrhP7NwHzpm9qnzfcZmroPTmgXO0ROYZCAu-heYmF-5czKh0T3mJ4_cpMmpH5UnSQT7lSBUBwfkFVPFIrDudlzX0T6JpkY9SvSxJYoixMI7L4q71MVOOERUmH2VMlMP6cAtT38x_PJonoE6MYCMvAXXFMGpXry2OElUPF9a5lE/s320/B90_1115.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeZNAuu0KppWhmdKU8-MrhP7NwHzpm9qnzfcZmroPTmgXO0ROYZCAu-heYmF-5czKh0T3mJ4_cpMmpH5UnSQT7lSBUBwfkFVPFIrDudlzX0T6JpkY9SvSxJYoixMI7L4q71MVOOERUmH2VMlMP6cAtT38x_PJonoE6MYCMvAXXFMGpXry2OElUPF9a5lE/s480/B90_1115.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeZNAuu0KppWhmdKU8-MrhP7NwHzpm9qnzfcZmroPTmgXO0ROYZCAu-heYmF-5czKh0T3mJ4_cpMmpH5UnSQT7lSBUBwfkFVPFIrDudlzX0T6JpkY9SvSxJYoixMI7L4q71MVOOERUmH2VMlMP6cAtT38x_PJonoE6MYCMvAXXFMGpXry2OElUPF9a5lE/s160/B90_1115.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeZNAuu0KppWhmdKU8-MrhP7NwHzpm9qnzfcZmroPTmgXO0ROYZCAu-heYmF-5czKh0T3mJ4_cpMmpH5UnSQT7lSBUBwfkFVPFIrDudlzX0T6JpkY9SvSxJYoixMI7L4q71MVOOERUmH2VMlMP6cAtT38x_PJonoE6MYCMvAXXFMGpXry2OElUPF9a5lE/s320/B90_1115.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeZNAuu0KppWhmdKU8-MrhP7NwHzpm9qnzfcZmroPTmgXO0ROYZCAu-heYmF-5czKh0T3mJ4_cpMmpH5UnSQT7lSBUBwfkFVPFIrDudlzX0T6JpkY9SvSxJYoixMI7L4q71MVOOERUmH2VMlMP6cAtT38x_PJonoE6MYCMvAXXFMGpXry2OElUPF9a5lE/s480/B90_1115.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1115 - Especial: 30 años del Moseley Shoals - Ocean Colour Scene"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-796-canciones-imbatibles-que-abren-disco.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s320/1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s160/1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s320/1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s480/1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s160/1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s320/1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s480/1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.796 - Canciones imbatibles que abren disco"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-192-la-musica-es-un-arma-de-conciliacion-masiva.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s320/11214256_10153202170607747_1111774229671122726_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s160/11214256_10153202170607747_1111774229671122726_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s320/11214256_10153202170607747_1111774229671122726_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s480/11214256_10153202170607747_1111774229671122726_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s160/11214256_10153202170607747_1111774229671122726_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s320/11214256_10153202170607747_1111774229671122726_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s480/11214256_10153202170607747_1111774229671122726_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 192 - La música es un arma de conciliación masiva"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-185-ocean-colour-scene.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s320/unnamed.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s160/unnamed.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s320/unnamed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s480/unnamed.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s160/unnamed.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s320/unnamed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s480/unnamed.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 185 - Ocean Colour Scene"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-56-la-musica-de-juanjo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 56 - La música de Juanjo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-38-soundgarden-king-animal.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa 38 - Soundgarden &quot;King Animal&quot;"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-16-yo-soy-la-morsa.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa #16 - Yo soy la morsa"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-6-especial-britpop.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 #6 - Especial Britpop"
                 loading="lazy" width="320" height="213" />
         </a>

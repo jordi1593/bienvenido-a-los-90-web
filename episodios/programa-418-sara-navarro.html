@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 418 - Sara Navarro — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -136,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s320/kurt50.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s160/kurt50.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s320/kurt50.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s480/kurt50.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s160/kurt50.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s320/kurt50.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s480/kurt50.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 263 - Los 50 discos favoritos de Kurt Cobain"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -147,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s320/14117701_1356893064328333_8249292549315850784_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s160/14117701_1356893064328333_8249292549315850784_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s320/14117701_1356893064328333_8249292549315850784_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s480/14117701_1356893064328333_8249292549315850784_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s160/14117701_1356893064328333_8249292549315850784_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s320/14117701_1356893064328333_8249292549315850784_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s480/14117701_1356893064328333_8249292549315850784_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 239 - Inicio nueva temporada"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -158,8 +156,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s320/concert-crowd.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s160/concert-crowd.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s320/concert-crowd.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s480/concert-crowd.jpeg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s160/concert-crowd.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s320/concert-crowd.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s480/concert-crowd.jpeg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.685 - Necesitamos música en directo"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -175,8 +172,7 @@
         <a class="related-bottom-card" href="p-780-the-best-of-pixies-vol-1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s320/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s320/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s480/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s640/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s320/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s480/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s640/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.780 - The Best Of : PIXIES (Vol.1)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -187,8 +183,7 @@
           </a><a class="related-bottom-card" href="p-814-homenaje-a-1991-el-ano-que-cambio-la-musica.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="P.814 - Homenaje a 1991, el año que cambió la música"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -199,8 +194,7 @@
           </a><a class="related-bottom-card" href="b90-programa-81-pearl-jam-desvela-sus-cartas.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 - Programa 81 - Pearl Jam desvela sus cartas"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

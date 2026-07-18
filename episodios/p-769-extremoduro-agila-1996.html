@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.769 - Extremoduro - Agíla (1996)  — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -132,8 +132,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAJoiw0Qh8f3qt3tDjQ0mJv0JlIhpJgbv7ZKL1barBd6JMD1fN1lki8Zy-SKKrE1vDxAaYI-CJlIadcLVHCHJzn11pNNswHwGsPTh9v-weHTXN4t3fKd-GawyfmV5UBvz4oSGB9wMtw9s/s320/robert_johnson.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAJoiw0Qh8f3qt3tDjQ0mJv0JlIhpJgbv7ZKL1barBd6JMD1fN1lki8Zy-SKKrE1vDxAaYI-CJlIadcLVHCHJzn11pNNswHwGsPTh9v-weHTXN4t3fKd-GawyfmV5UBvz4oSGB9wMtw9s/s160/robert_johnson.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAJoiw0Qh8f3qt3tDjQ0mJv0JlIhpJgbv7ZKL1barBd6JMD1fN1lki8Zy-SKKrE1vDxAaYI-CJlIadcLVHCHJzn11pNNswHwGsPTh9v-weHTXN4t3fKd-GawyfmV5UBvz4oSGB9wMtw9s/s320/robert_johnson.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAJoiw0Qh8f3qt3tDjQ0mJv0JlIhpJgbv7ZKL1barBd6JMD1fN1lki8Zy-SKKrE1vDxAaYI-CJlIadcLVHCHJzn11pNNswHwGsPTh9v-weHTXN4t3fKd-GawyfmV5UBvz4oSGB9wMtw9s/s480/robert_johnson.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAJoiw0Qh8f3qt3tDjQ0mJv0JlIhpJgbv7ZKL1barBd6JMD1fN1lki8Zy-SKKrE1vDxAaYI-CJlIadcLVHCHJzn11pNNswHwGsPTh9v-weHTXN4t3fKd-GawyfmV5UBvz4oSGB9wMtw9s/s160/robert_johnson.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAJoiw0Qh8f3qt3tDjQ0mJv0JlIhpJgbv7ZKL1barBd6JMD1fN1lki8Zy-SKKrE1vDxAaYI-CJlIadcLVHCHJzn11pNNswHwGsPTh9v-weHTXN4t3fKd-GawyfmV5UBvz4oSGB9wMtw9s/s320/robert_johnson.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAJoiw0Qh8f3qt3tDjQ0mJv0JlIhpJgbv7ZKL1barBd6JMD1fN1lki8Zy-SKKrE1vDxAaYI-CJlIadcLVHCHJzn11pNNswHwGsPTh9v-weHTXN4t3fKd-GawyfmV5UBvz4oSGB9wMtw9s/s480/robert_johnson.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 7: El diablo y Robert Johnson"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -143,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s320/Maika-Makovski-portada.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s160/Maika-Makovski-portada.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s320/Maika-Makovski-portada.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s480/Maika-Makovski-portada.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s160/Maika-Makovski-portada.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s320/Maika-Makovski-portada.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s480/Maika-Makovski-portada.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.773 - DIEZ temazos de Maika Makovski "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s320/67508534_2427049850696115_2106468557159137280_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s160/67508534_2427049850696115_2106468557159137280_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s320/67508534_2427049850696115_2106468557159137280_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s480/67508534_2427049850696115_2106468557159137280_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s160/67508534_2427049850696115_2106468557159137280_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s320/67508534_2427049850696115_2106468557159137280_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s480/67508534_2427049850696115_2106468557159137280_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.755 - Red Moskito, una de las mejores bandas tributo a Pearl Jam"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +168,7 @@
         <a class="related-bottom-card" href="p-742-algunos-conciertos-inolvidables.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg92OdxiJhyphenhyphenxyZ10328c0esVuMyJ36629zqm6SYkz_9xTu2Hqzze7IUrhgQ5FDemURCpGYt4o4ledYRfiCmXPqDxxKfl7uvpUHSqnLop-lElD1NE_YGgXgOXknU_Dt-e_kIQHLeYH0QZqc/s320/FB_IMG_1613549476892.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg92OdxiJhyphenhyphenxyZ10328c0esVuMyJ36629zqm6SYkz_9xTu2Hqzze7IUrhgQ5FDemURCpGYt4o4ledYRfiCmXPqDxxKfl7uvpUHSqnLop-lElD1NE_YGgXgOXknU_Dt-e_kIQHLeYH0QZqc/s320/FB_IMG_1613549476892.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg92OdxiJhyphenhyphenxyZ10328c0esVuMyJ36629zqm6SYkz_9xTu2Hqzze7IUrhgQ5FDemURCpGYt4o4ledYRfiCmXPqDxxKfl7uvpUHSqnLop-lElD1NE_YGgXgOXknU_Dt-e_kIQHLeYH0QZqc/s480/FB_IMG_1613549476892.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg92OdxiJhyphenhyphenxyZ10328c0esVuMyJ36629zqm6SYkz_9xTu2Hqzze7IUrhgQ5FDemURCpGYt4o4ledYRfiCmXPqDxxKfl7uvpUHSqnLop-lElD1NE_YGgXgOXknU_Dt-e_kIQHLeYH0QZqc/s640/FB_IMG_1613549476892.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg92OdxiJhyphenhyphenxyZ10328c0esVuMyJ36629zqm6SYkz_9xTu2Hqzze7IUrhgQ5FDemURCpGYt4o4ledYRfiCmXPqDxxKfl7uvpUHSqnLop-lElD1NE_YGgXgOXknU_Dt-e_kIQHLeYH0QZqc/s320/FB_IMG_1613549476892.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg92OdxiJhyphenhyphenxyZ10328c0esVuMyJ36629zqm6SYkz_9xTu2Hqzze7IUrhgQ5FDemURCpGYt4o4ledYRfiCmXPqDxxKfl7uvpUHSqnLop-lElD1NE_YGgXgOXknU_Dt-e_kIQHLeYH0QZqc/s480/FB_IMG_1613549476892.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg92OdxiJhyphenhyphenxyZ10328c0esVuMyJ36629zqm6SYkz_9xTu2Hqzze7IUrhgQ5FDemURCpGYt4o4ledYRfiCmXPqDxxKfl7uvpUHSqnLop-lElD1NE_YGgXgOXknU_Dt-e_kIQHLeYH0QZqc/s640/FB_IMG_1613549476892.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.742 - Algunos conciertos inolvidables"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -183,8 +179,7 @@
           </a><a class="related-bottom-card" href="sepultura-doctor-music-festival-lleida-12-07-1996.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit_TXYxIjD1hnAJxXOxzjYZLfJJOGfvSUdCVcVm438sIm21Yzib4is3LEFGvNagFHY6q4gaeJEz0WKPAxMlrblqo1Fg5-msIs8C4bWeuDRQ_YLWSU0Mma1APFbdyorqXrDQCPC-6FnHPI/s320/Sepultura-foto-1996-rockzone.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit_TXYxIjD1hnAJxXOxzjYZLfJJOGfvSUdCVcVm438sIm21Yzib4is3LEFGvNagFHY6q4gaeJEz0WKPAxMlrblqo1Fg5-msIs8C4bWeuDRQ_YLWSU0Mma1APFbdyorqXrDQCPC-6FnHPI/s320/Sepultura-foto-1996-rockzone.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit_TXYxIjD1hnAJxXOxzjYZLfJJOGfvSUdCVcVm438sIm21Yzib4is3LEFGvNagFHY6q4gaeJEz0WKPAxMlrblqo1Fg5-msIs8C4bWeuDRQ_YLWSU0Mma1APFbdyorqXrDQCPC-6FnHPI/s480/Sepultura-foto-1996-rockzone.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit_TXYxIjD1hnAJxXOxzjYZLfJJOGfvSUdCVcVm438sIm21Yzib4is3LEFGvNagFHY6q4gaeJEz0WKPAxMlrblqo1Fg5-msIs8C4bWeuDRQ_YLWSU0Mma1APFbdyorqXrDQCPC-6FnHPI/s640/Sepultura-foto-1996-rockzone.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit_TXYxIjD1hnAJxXOxzjYZLfJJOGfvSUdCVcVm438sIm21Yzib4is3LEFGvNagFHY6q4gaeJEz0WKPAxMlrblqo1Fg5-msIs8C4bWeuDRQ_YLWSU0Mma1APFbdyorqXrDQCPC-6FnHPI/s320/Sepultura-foto-1996-rockzone.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit_TXYxIjD1hnAJxXOxzjYZLfJJOGfvSUdCVcVm438sIm21Yzib4is3LEFGvNagFHY6q4gaeJEz0WKPAxMlrblqo1Fg5-msIs8C4bWeuDRQ_YLWSU0Mma1APFbdyorqXrDQCPC-6FnHPI/s480/Sepultura-foto-1996-rockzone.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit_TXYxIjD1hnAJxXOxzjYZLfJJOGfvSUdCVcVm438sIm21Yzib4is3LEFGvNagFHY6q4gaeJEz0WKPAxMlrblqo1Fg5-msIs8C4bWeuDRQ_YLWSU0Mma1APFbdyorqXrDQCPC-6FnHPI/s640/Sepultura-foto-1996-rockzone.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Sepultura - Doctor Music Festival (Lleida 12/07/1996)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +190,7 @@
           </a><a class="related-bottom-card" href="sonic-youth-la-riviera-madrid-27-03-1996.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s320/Sonic-Youth-Goo-1990-770x511.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s320/Sonic-Youth-Goo-1990-770x511.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s480/Sonic-Youth-Goo-1990-770x511.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s640/Sonic-Youth-Goo-1990-770x511.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s320/Sonic-Youth-Goo-1990-770x511.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s480/Sonic-Youth-Goo-1990-770x511.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s640/Sonic-Youth-Goo-1990-770x511.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Sonic Youth - La Riviera (Madrid 27/03/1996)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

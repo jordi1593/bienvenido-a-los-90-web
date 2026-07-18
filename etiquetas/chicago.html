@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Chicago — 8 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-876-la-historia-de-d-arcy-wretzky-smashing-pumpkins.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvqR3ZtZ2PR2oJowv3aTaoF_NRvQMTCLfHCixXG_zYKkL6n0OtNN8hf4K9VUfQmmhfkIr-JVW3cuZXp03sv9W47z8p4YGPMx_P9yCNYWXGlBm9yGL1KXpVCdNVRFcCdFB9WEcmWviqt5iMVfSiXWoTxeFwZtbmENCOnlReS9Bitg8tYKAvfTR8ixBj/s320/darcy-wretzky.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvqR3ZtZ2PR2oJowv3aTaoF_NRvQMTCLfHCixXG_zYKkL6n0OtNN8hf4K9VUfQmmhfkIr-JVW3cuZXp03sv9W47z8p4YGPMx_P9yCNYWXGlBm9yGL1KXpVCdNVRFcCdFB9WEcmWviqt5iMVfSiXWoTxeFwZtbmENCOnlReS9Bitg8tYKAvfTR8ixBj/s160/darcy-wretzky.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvqR3ZtZ2PR2oJowv3aTaoF_NRvQMTCLfHCixXG_zYKkL6n0OtNN8hf4K9VUfQmmhfkIr-JVW3cuZXp03sv9W47z8p4YGPMx_P9yCNYWXGlBm9yGL1KXpVCdNVRFcCdFB9WEcmWviqt5iMVfSiXWoTxeFwZtbmENCOnlReS9Bitg8tYKAvfTR8ixBj/s320/darcy-wretzky.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvqR3ZtZ2PR2oJowv3aTaoF_NRvQMTCLfHCixXG_zYKkL6n0OtNN8hf4K9VUfQmmhfkIr-JVW3cuZXp03sv9W47z8p4YGPMx_P9yCNYWXGlBm9yGL1KXpVCdNVRFcCdFB9WEcmWviqt5iMVfSiXWoTxeFwZtbmENCOnlReS9Bitg8tYKAvfTR8ixBj/s480/darcy-wretzky.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvqR3ZtZ2PR2oJowv3aTaoF_NRvQMTCLfHCixXG_zYKkL6n0OtNN8hf4K9VUfQmmhfkIr-JVW3cuZXp03sv9W47z8p4YGPMx_P9yCNYWXGlBm9yGL1KXpVCdNVRFcCdFB9WEcmWviqt5iMVfSiXWoTxeFwZtbmENCOnlReS9Bitg8tYKAvfTR8ixBj/s160/darcy-wretzky.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvqR3ZtZ2PR2oJowv3aTaoF_NRvQMTCLfHCixXG_zYKkL6n0OtNN8hf4K9VUfQmmhfkIr-JVW3cuZXp03sv9W47z8p4YGPMx_P9yCNYWXGlBm9yGL1KXpVCdNVRFcCdFB9WEcmWviqt5iMVfSiXWoTxeFwZtbmENCOnlReS9Bitg8tYKAvfTR8ixBj/s320/darcy-wretzky.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvqR3ZtZ2PR2oJowv3aTaoF_NRvQMTCLfHCixXG_zYKkL6n0OtNN8hf4K9VUfQmmhfkIr-JVW3cuZXp03sv9W47z8p4YGPMx_P9yCNYWXGlBm9yGL1KXpVCdNVRFcCdFB9WEcmWviqt5iMVfSiXWoTxeFwZtbmENCOnlReS9Bitg8tYKAvfTR8ixBj/s480/darcy-wretzky.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.876 - La historia de D&#39;arcy Wretzky ( Smashing Pumpkins )"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-724-especial-cyr-lo-ultimo-de-los-smashing-pumpkins.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOfAs4fJ_fHY-aBN_nDJTqKYnVW4M38egMazVB7BqgcRoUs6yJYDC4Tbl4NIBlhY9q8zPn_Omynl7Kgqgu7gAlS1lpFZpI_yhC-Il8-gDTCHtUR0dLfsIHbjGWrL6XVMHcD00wbzH6H7M/s320/Smashing-Pumpkins-CYR-art.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOfAs4fJ_fHY-aBN_nDJTqKYnVW4M38egMazVB7BqgcRoUs6yJYDC4Tbl4NIBlhY9q8zPn_Omynl7Kgqgu7gAlS1lpFZpI_yhC-Il8-gDTCHtUR0dLfsIHbjGWrL6XVMHcD00wbzH6H7M/s160/Smashing-Pumpkins-CYR-art.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOfAs4fJ_fHY-aBN_nDJTqKYnVW4M38egMazVB7BqgcRoUs6yJYDC4Tbl4NIBlhY9q8zPn_Omynl7Kgqgu7gAlS1lpFZpI_yhC-Il8-gDTCHtUR0dLfsIHbjGWrL6XVMHcD00wbzH6H7M/s320/Smashing-Pumpkins-CYR-art.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOfAs4fJ_fHY-aBN_nDJTqKYnVW4M38egMazVB7BqgcRoUs6yJYDC4Tbl4NIBlhY9q8zPn_Omynl7Kgqgu7gAlS1lpFZpI_yhC-Il8-gDTCHtUR0dLfsIHbjGWrL6XVMHcD00wbzH6H7M/s480/Smashing-Pumpkins-CYR-art.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOfAs4fJ_fHY-aBN_nDJTqKYnVW4M38egMazVB7BqgcRoUs6yJYDC4Tbl4NIBlhY9q8zPn_Omynl7Kgqgu7gAlS1lpFZpI_yhC-Il8-gDTCHtUR0dLfsIHbjGWrL6XVMHcD00wbzH6H7M/s160/Smashing-Pumpkins-CYR-art.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOfAs4fJ_fHY-aBN_nDJTqKYnVW4M38egMazVB7BqgcRoUs6yJYDC4Tbl4NIBlhY9q8zPn_Omynl7Kgqgu7gAlS1lpFZpI_yhC-Il8-gDTCHtUR0dLfsIHbjGWrL6XVMHcD00wbzH6H7M/s320/Smashing-Pumpkins-CYR-art.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOfAs4fJ_fHY-aBN_nDJTqKYnVW4M38egMazVB7BqgcRoUs6yJYDC4Tbl4NIBlhY9q8zPn_Omynl7Kgqgu7gAlS1lpFZpI_yhC-Il8-gDTCHtUR0dLfsIHbjGWrL6XVMHcD00wbzH6H7M/s480/Smashing-Pumpkins-CYR-art.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.724 - Especial CYR, lo último de los Smashing Pumpkins"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-645-smashing-pumpkins-especial-gish.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm4JrcFfNMD8y5fNA8HNScIM3mWJ5FcEnqak6_HHxY42SJbKED8xmdMWinMqBQEITKktmBBSaCpgf2EuGu9-KiAkqJYtpUiAjZ5H6KRTVkZAXay5QteWTMPowV5cKVmWRVgPtMNZRh7wg/s320/R-4164801-1357418184-6221.jpeg.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm4JrcFfNMD8y5fNA8HNScIM3mWJ5FcEnqak6_HHxY42SJbKED8xmdMWinMqBQEITKktmBBSaCpgf2EuGu9-KiAkqJYtpUiAjZ5H6KRTVkZAXay5QteWTMPowV5cKVmWRVgPtMNZRh7wg/s160/R-4164801-1357418184-6221.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm4JrcFfNMD8y5fNA8HNScIM3mWJ5FcEnqak6_HHxY42SJbKED8xmdMWinMqBQEITKktmBBSaCpgf2EuGu9-KiAkqJYtpUiAjZ5H6KRTVkZAXay5QteWTMPowV5cKVmWRVgPtMNZRh7wg/s320/R-4164801-1357418184-6221.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm4JrcFfNMD8y5fNA8HNScIM3mWJ5FcEnqak6_HHxY42SJbKED8xmdMWinMqBQEITKktmBBSaCpgf2EuGu9-KiAkqJYtpUiAjZ5H6KRTVkZAXay5QteWTMPowV5cKVmWRVgPtMNZRh7wg/s480/R-4164801-1357418184-6221.jpeg.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm4JrcFfNMD8y5fNA8HNScIM3mWJ5FcEnqak6_HHxY42SJbKED8xmdMWinMqBQEITKktmBBSaCpgf2EuGu9-KiAkqJYtpUiAjZ5H6KRTVkZAXay5QteWTMPowV5cKVmWRVgPtMNZRh7wg/s160/R-4164801-1357418184-6221.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm4JrcFfNMD8y5fNA8HNScIM3mWJ5FcEnqak6_HHxY42SJbKED8xmdMWinMqBQEITKktmBBSaCpgf2EuGu9-KiAkqJYtpUiAjZ5H6KRTVkZAXay5QteWTMPowV5cKVmWRVgPtMNZRh7wg/s320/R-4164801-1357418184-6221.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm4JrcFfNMD8y5fNA8HNScIM3mWJ5FcEnqak6_HHxY42SJbKED8xmdMWinMqBQEITKktmBBSaCpgf2EuGu9-KiAkqJYtpUiAjZ5H6KRTVkZAXay5QteWTMPowV5cKVmWRVgPtMNZRh7wg/s480/R-4164801-1357418184-6221.jpeg.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.645 - Smashing Pumpkins - Especial Gish"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-530-the-smashing-pumpkins-mellon-collie-and-the-infinite-sadness-en-vin.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7LrObYkPFj6IJ4qPcucFjNLVuduYxtQPQ7lhb92kQvBsnmPlcQOyQ4F-kz6C4Tf5UsR_82JfT-rJCEYH6dxD7mQqCgJwnVIUyUV-5UhP07gZMrEqvwnM8F5rZJ-akBSIn6fEq6leFqso/s320/b90_530.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7LrObYkPFj6IJ4qPcucFjNLVuduYxtQPQ7lhb92kQvBsnmPlcQOyQ4F-kz6C4Tf5UsR_82JfT-rJCEYH6dxD7mQqCgJwnVIUyUV-5UhP07gZMrEqvwnM8F5rZJ-akBSIn6fEq6leFqso/s160/b90_530.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7LrObYkPFj6IJ4qPcucFjNLVuduYxtQPQ7lhb92kQvBsnmPlcQOyQ4F-kz6C4Tf5UsR_82JfT-rJCEYH6dxD7mQqCgJwnVIUyUV-5UhP07gZMrEqvwnM8F5rZJ-akBSIn6fEq6leFqso/s320/b90_530.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7LrObYkPFj6IJ4qPcucFjNLVuduYxtQPQ7lhb92kQvBsnmPlcQOyQ4F-kz6C4Tf5UsR_82JfT-rJCEYH6dxD7mQqCgJwnVIUyUV-5UhP07gZMrEqvwnM8F5rZJ-akBSIn6fEq6leFqso/s480/b90_530.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7LrObYkPFj6IJ4qPcucFjNLVuduYxtQPQ7lhb92kQvBsnmPlcQOyQ4F-kz6C4Tf5UsR_82JfT-rJCEYH6dxD7mQqCgJwnVIUyUV-5UhP07gZMrEqvwnM8F5rZJ-akBSIn6fEq6leFqso/s160/b90_530.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7LrObYkPFj6IJ4qPcucFjNLVuduYxtQPQ7lhb92kQvBsnmPlcQOyQ4F-kz6C4Tf5UsR_82JfT-rJCEYH6dxD7mQqCgJwnVIUyUV-5UhP07gZMrEqvwnM8F5rZJ-akBSIn6fEq6leFqso/s320/b90_530.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7LrObYkPFj6IJ4qPcucFjNLVuduYxtQPQ7lhb92kQvBsnmPlcQOyQ4F-kz6C4Tf5UsR_82JfT-rJCEYH6dxD7mQqCgJwnVIUyUV-5UhP07gZMrEqvwnM8F5rZJ-akBSIn6fEq6leFqso/s480/b90_530.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 530 - The Smashing Pumpkins - Mellon Collie and the Infinite Sadness en vinilo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-525-the-smashing-pumpkins-zero.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX4fbZX5_a6ktcNef-Ggp_CjI5F7B1IbpuayygHQaBAVOD90dQJoK8dFf2QLt3fnjvf4GkXCf1sv_kYHURnrAd_nHTCGTN-kUx-52mzCBmDemagr0IVTirmoIftC-1zP2YSyf5xZvY2dk/s320/b90_525.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX4fbZX5_a6ktcNef-Ggp_CjI5F7B1IbpuayygHQaBAVOD90dQJoK8dFf2QLt3fnjvf4GkXCf1sv_kYHURnrAd_nHTCGTN-kUx-52mzCBmDemagr0IVTirmoIftC-1zP2YSyf5xZvY2dk/s160/b90_525.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX4fbZX5_a6ktcNef-Ggp_CjI5F7B1IbpuayygHQaBAVOD90dQJoK8dFf2QLt3fnjvf4GkXCf1sv_kYHURnrAd_nHTCGTN-kUx-52mzCBmDemagr0IVTirmoIftC-1zP2YSyf5xZvY2dk/s320/b90_525.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX4fbZX5_a6ktcNef-Ggp_CjI5F7B1IbpuayygHQaBAVOD90dQJoK8dFf2QLt3fnjvf4GkXCf1sv_kYHURnrAd_nHTCGTN-kUx-52mzCBmDemagr0IVTirmoIftC-1zP2YSyf5xZvY2dk/s480/b90_525.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX4fbZX5_a6ktcNef-Ggp_CjI5F7B1IbpuayygHQaBAVOD90dQJoK8dFf2QLt3fnjvf4GkXCf1sv_kYHURnrAd_nHTCGTN-kUx-52mzCBmDemagr0IVTirmoIftC-1zP2YSyf5xZvY2dk/s160/b90_525.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX4fbZX5_a6ktcNef-Ggp_CjI5F7B1IbpuayygHQaBAVOD90dQJoK8dFf2QLt3fnjvf4GkXCf1sv_kYHURnrAd_nHTCGTN-kUx-52mzCBmDemagr0IVTirmoIftC-1zP2YSyf5xZvY2dk/s320/b90_525.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX4fbZX5_a6ktcNef-Ggp_CjI5F7B1IbpuayygHQaBAVOD90dQJoK8dFf2QLt3fnjvf4GkXCf1sv_kYHURnrAd_nHTCGTN-kUx-52mzCBmDemagr0IVTirmoIftC-1zP2YSyf5xZvY2dk/s480/b90_525.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 525 - The Smashing Pumpkins - &#39;ZERO&#39; "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-494-the-smashing-pumpkins-bullet-with-butterfly-wings.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s320/b90_494.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s160/b90_494.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s320/b90_494.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s480/b90_494.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s160/b90_494.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s320/b90_494.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s480/b90_494.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 494 - The Smashing Pumpkins - Bullet with Butterfly Wings"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-492-the-smashing-pumpkins-live-at-double-door-feb-1995.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPOvWBEGAv76IJE1tYqvKPRnmbxg0KTxQpOP9BwDao9YgeU1WDieLzxwOU40HZ51hFPCKQeFq_FeGhaQhlQcirsV_2g4xMT-2c7X85Pb7pKoki7Apnu26ocFbgT-Ffg5aY6Mg138xNg48/s320/b90_492+%25281%2529.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPOvWBEGAv76IJE1tYqvKPRnmbxg0KTxQpOP9BwDao9YgeU1WDieLzxwOU40HZ51hFPCKQeFq_FeGhaQhlQcirsV_2g4xMT-2c7X85Pb7pKoki7Apnu26ocFbgT-Ffg5aY6Mg138xNg48/s160/b90_492+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPOvWBEGAv76IJE1tYqvKPRnmbxg0KTxQpOP9BwDao9YgeU1WDieLzxwOU40HZ51hFPCKQeFq_FeGhaQhlQcirsV_2g4xMT-2c7X85Pb7pKoki7Apnu26ocFbgT-Ffg5aY6Mg138xNg48/s320/b90_492+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPOvWBEGAv76IJE1tYqvKPRnmbxg0KTxQpOP9BwDao9YgeU1WDieLzxwOU40HZ51hFPCKQeFq_FeGhaQhlQcirsV_2g4xMT-2c7X85Pb7pKoki7Apnu26ocFbgT-Ffg5aY6Mg138xNg48/s480/b90_492+%25281%2529.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPOvWBEGAv76IJE1tYqvKPRnmbxg0KTxQpOP9BwDao9YgeU1WDieLzxwOU40HZ51hFPCKQeFq_FeGhaQhlQcirsV_2g4xMT-2c7X85Pb7pKoki7Apnu26ocFbgT-Ffg5aY6Mg138xNg48/s160/b90_492+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPOvWBEGAv76IJE1tYqvKPRnmbxg0KTxQpOP9BwDao9YgeU1WDieLzxwOU40HZ51hFPCKQeFq_FeGhaQhlQcirsV_2g4xMT-2c7X85Pb7pKoki7Apnu26ocFbgT-Ffg5aY6Mg138xNg48/s320/b90_492+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPOvWBEGAv76IJE1tYqvKPRnmbxg0KTxQpOP9BwDao9YgeU1WDieLzxwOU40HZ51hFPCKQeFq_FeGhaQhlQcirsV_2g4xMT-2c7X85Pb7pKoki7Apnu26ocFbgT-Ffg5aY6Mg138xNg48/s480/b90_492+%25281%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 492 - The Smashing Pumpkins - Live at Double Door ( Feb. 1995)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/programa-390-billy-corgan-berlin-2017.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGq548W64G8kO6Uu0t-4LzNdBj-6w7lhAVxPLwJuNYMaCciZ-5v3VYxXdkotwJ1ITFeOjWQVLNgG8ORSh9H3YKn1mowo5bK7KwarbV5unGOnXhi4tymThe1kI7-xpZrDaial_jUOQnO1w/s320/maxresdefault-1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGq548W64G8kO6Uu0t-4LzNdBj-6w7lhAVxPLwJuNYMaCciZ-5v3VYxXdkotwJ1ITFeOjWQVLNgG8ORSh9H3YKn1mowo5bK7KwarbV5unGOnXhi4tymThe1kI7-xpZrDaial_jUOQnO1w/s160/maxresdefault-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGq548W64G8kO6Uu0t-4LzNdBj-6w7lhAVxPLwJuNYMaCciZ-5v3VYxXdkotwJ1ITFeOjWQVLNgG8ORSh9H3YKn1mowo5bK7KwarbV5unGOnXhi4tymThe1kI7-xpZrDaial_jUOQnO1w/s320/maxresdefault-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGq548W64G8kO6Uu0t-4LzNdBj-6w7lhAVxPLwJuNYMaCciZ-5v3VYxXdkotwJ1ITFeOjWQVLNgG8ORSh9H3YKn1mowo5bK7KwarbV5unGOnXhi4tymThe1kI7-xpZrDaial_jUOQnO1w/s480/maxresdefault-1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGq548W64G8kO6Uu0t-4LzNdBj-6w7lhAVxPLwJuNYMaCciZ-5v3VYxXdkotwJ1ITFeOjWQVLNgG8ORSh9H3YKn1mowo5bK7KwarbV5unGOnXhi4tymThe1kI7-xpZrDaial_jUOQnO1w/s160/maxresdefault-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGq548W64G8kO6Uu0t-4LzNdBj-6w7lhAVxPLwJuNYMaCciZ-5v3VYxXdkotwJ1ITFeOjWQVLNgG8ORSh9H3YKn1mowo5bK7KwarbV5unGOnXhi4tymThe1kI7-xpZrDaial_jUOQnO1w/s320/maxresdefault-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGq548W64G8kO6Uu0t-4LzNdBj-6w7lhAVxPLwJuNYMaCciZ-5v3VYxXdkotwJ1ITFeOjWQVLNgG8ORSh9H3YKn1mowo5bK7KwarbV5unGOnXhi4tymThe1kI7-xpZrDaial_jUOQnO1w/s480/maxresdefault-1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 390 - Billy Corgan (Berlin 2017)"
                 loading="lazy" width="320" height="213" />
         </a>

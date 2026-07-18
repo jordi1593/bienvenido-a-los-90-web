@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P. 575 - Road Trip Podcast &quot;En busca de Mark Lanegan&quot; (Primera parte) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -133,8 +133,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKLYODiR26wkKeR-yp3q4tEnccG2BQvKYUsDUWcXKf5_a0JPUfF_yZgOR555cBDAM0tVeq17dm8pth8QOgNvuq1pBVIgcv1JQMtwSCBKhxfgeHhVtlm8VBtM3g20ZCLKzewxzWAjGDWrk/s320/b90_576+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKLYODiR26wkKeR-yp3q4tEnccG2BQvKYUsDUWcXKf5_a0JPUfF_yZgOR555cBDAM0tVeq17dm8pth8QOgNvuq1pBVIgcv1JQMtwSCBKhxfgeHhVtlm8VBtM3g20ZCLKzewxzWAjGDWrk/s160/b90_576+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKLYODiR26wkKeR-yp3q4tEnccG2BQvKYUsDUWcXKf5_a0JPUfF_yZgOR555cBDAM0tVeq17dm8pth8QOgNvuq1pBVIgcv1JQMtwSCBKhxfgeHhVtlm8VBtM3g20ZCLKzewxzWAjGDWrk/s320/b90_576+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKLYODiR26wkKeR-yp3q4tEnccG2BQvKYUsDUWcXKf5_a0JPUfF_yZgOR555cBDAM0tVeq17dm8pth8QOgNvuq1pBVIgcv1JQMtwSCBKhxfgeHhVtlm8VBtM3g20ZCLKzewxzWAjGDWrk/s480/b90_576+%25281%2529.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKLYODiR26wkKeR-yp3q4tEnccG2BQvKYUsDUWcXKf5_a0JPUfF_yZgOR555cBDAM0tVeq17dm8pth8QOgNvuq1pBVIgcv1JQMtwSCBKhxfgeHhVtlm8VBtM3g20ZCLKzewxzWAjGDWrk/s160/b90_576+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKLYODiR26wkKeR-yp3q4tEnccG2BQvKYUsDUWcXKf5_a0JPUfF_yZgOR555cBDAM0tVeq17dm8pth8QOgNvuq1pBVIgcv1JQMtwSCBKhxfgeHhVtlm8VBtM3g20ZCLKzewxzWAjGDWrk/s320/b90_576+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKLYODiR26wkKeR-yp3q4tEnccG2BQvKYUsDUWcXKf5_a0JPUfF_yZgOR555cBDAM0tVeq17dm8pth8QOgNvuq1pBVIgcv1JQMtwSCBKhxfgeHhVtlm8VBtM3g20ZCLKzewxzWAjGDWrk/s480/b90_576+%25281%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.576 - Road Trip Podcast &quot;En busca de Mark Lanegan&quot; (Segunda parte)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -144,8 +143,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEgzd2zbefQz2TJAmScv-jQcAs1nKc-u-fWdXL0VRRLVvWpKal9oPEyTqM3tAnEBRfRWJf_58e8ftv0iLvaNfQRh-pZc5d1cVfWA8548f4sh0Mq4wDU26Wo8iR1rhhm4jQ_xfmx06Md-FGKlORt7FFwX9RF_sLMFNoyzyJoCmMAQqyk-H1mhhOd1cg0f=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEgzd2zbefQz2TJAmScv-jQcAs1nKc-u-fWdXL0VRRLVvWpKal9oPEyTqM3tAnEBRfRWJf_58e8ftv0iLvaNfQRh-pZc5d1cVfWA8548f4sh0Mq4wDU26Wo8iR1rhhm4jQ_xfmx06Md-FGKlORt7FFwX9RF_sLMFNoyzyJoCmMAQqyk-H1mhhOd1cg0f=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEgzd2zbefQz2TJAmScv-jQcAs1nKc-u-fWdXL0VRRLVvWpKal9oPEyTqM3tAnEBRfRWJf_58e8ftv0iLvaNfQRh-pZc5d1cVfWA8548f4sh0Mq4wDU26Wo8iR1rhhm4jQ_xfmx06Md-FGKlORt7FFwX9RF_sLMFNoyzyJoCmMAQqyk-H1mhhOd1cg0f=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEgzd2zbefQz2TJAmScv-jQcAs1nKc-u-fWdXL0VRRLVvWpKal9oPEyTqM3tAnEBRfRWJf_58e8ftv0iLvaNfQRh-pZc5d1cVfWA8548f4sh0Mq4wDU26Wo8iR1rhhm4jQ_xfmx06Md-FGKlORt7FFwX9RF_sLMFNoyzyJoCmMAQqyk-H1mhhOd1cg0f=s72-c 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="B90 Classic 18: Mark Lanegan en directo desde Elche 25/10/2019"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -155,8 +153,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s160/thejurysocial112514.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s480/thejurysocial112514.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s160/thejurysocial112514.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s480/thejurysocial112514.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 10: The Jury - Kurt Cobain y Mark Lanegan"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -172,8 +169,7 @@
         <a class="related-bottom-card" href="p-825-mark-lanegan-devil-in-a-coma.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEgZPK7K_iJJLp-NCB8VjvCNpGONqE1JDqFoLG98YlN2TdEA9LIOdobCVoAOxP1XcXz4uGCE1SgN4V0yE2DLzl8CB_nk-JnVjuQ35He4jL3Xc8Vh5mJC1C7IAveM_nNGU0Ygpn-fVZMLnYFpqEUNtL8l-dsCTAegF6rF3tJnUPbKFcy8-bDiy-nGozkz=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEgZPK7K_iJJLp-NCB8VjvCNpGONqE1JDqFoLG98YlN2TdEA9LIOdobCVoAOxP1XcXz4uGCE1SgN4V0yE2DLzl8CB_nk-JnVjuQ35He4jL3Xc8Vh5mJC1C7IAveM_nNGU0Ygpn-fVZMLnYFpqEUNtL8l-dsCTAegF6rF3tJnUPbKFcy8-bDiy-nGozkz=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEgZPK7K_iJJLp-NCB8VjvCNpGONqE1JDqFoLG98YlN2TdEA9LIOdobCVoAOxP1XcXz4uGCE1SgN4V0yE2DLzl8CB_nk-JnVjuQ35He4jL3Xc8Vh5mJC1C7IAveM_nNGU0Ygpn-fVZMLnYFpqEUNtL8l-dsCTAegF6rF3tJnUPbKFcy8-bDiy-nGozkz=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEgZPK7K_iJJLp-NCB8VjvCNpGONqE1JDqFoLG98YlN2TdEA9LIOdobCVoAOxP1XcXz4uGCE1SgN4V0yE2DLzl8CB_nk-JnVjuQ35He4jL3Xc8Vh5mJC1C7IAveM_nNGU0Ygpn-fVZMLnYFpqEUNtL8l-dsCTAegF6rF3tJnUPbKFcy8-bDiy-nGozkz=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="P.825 - Mark Lanegan &quot;Devil in a Coma&quot;"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -184,8 +180,7 @@
           </a><a class="related-bottom-card" href="b90-classic-19-la-ultima-conversacion-entre-mark-lanegan-y-gary-lee-conner.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEhtS6l7YIrmU2qaRG3T9xsXjVd8ny30txWsvchUqIvUCMbCSewIDb2cK2GlRnTcyUsrZPEVmTMnMpK8CRrlkNSQ0G1yAqXz_-v1TB0JN-GVC76JY3-7YkQ32ovblkQ01eqQWs8g4kNx1DSu5lGbu6B1pspkvL7DqTPMYLAXPXsK3QxTkIx8g1l7RPOR=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEhtS6l7YIrmU2qaRG3T9xsXjVd8ny30txWsvchUqIvUCMbCSewIDb2cK2GlRnTcyUsrZPEVmTMnMpK8CRrlkNSQ0G1yAqXz_-v1TB0JN-GVC76JY3-7YkQ32ovblkQ01eqQWs8g4kNx1DSu5lGbu6B1pspkvL7DqTPMYLAXPXsK3QxTkIx8g1l7RPOR=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEhtS6l7YIrmU2qaRG3T9xsXjVd8ny30txWsvchUqIvUCMbCSewIDb2cK2GlRnTcyUsrZPEVmTMnMpK8CRrlkNSQ0G1yAqXz_-v1TB0JN-GVC76JY3-7YkQ32ovblkQ01eqQWs8g4kNx1DSu5lGbu6B1pspkvL7DqTPMYLAXPXsK3QxTkIx8g1l7RPOR=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEhtS6l7YIrmU2qaRG3T9xsXjVd8ny30txWsvchUqIvUCMbCSewIDb2cK2GlRnTcyUsrZPEVmTMnMpK8CRrlkNSQ0G1yAqXz_-v1TB0JN-GVC76JY3-7YkQ32ovblkQ01eqQWs8g4kNx1DSu5lGbu6B1pspkvL7DqTPMYLAXPXsK3QxTkIx8g1l7RPOR=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 Classic 19: La última conversación entre Mark Lanegan y Gary Lee Conner"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -196,8 +191,7 @@
           </a><a class="related-bottom-card" href="p-872-recordando-a-mark-lanegan-con-elvira-asensi.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYStCcHpWE-vDZemERFgRdGzHmv-FdTObIsx6wpK7YZuVQicOsMXACx33sXMSybRDaLiMeICbqGhfT8wT03wFw7NAFvN0OFGxzWQOwED5FqM9fJvlr1huY7-tSmPoC7M6fNTZpBF3UyutbhxVXuMzIQUYM9HnGBedGA8SLjPREreGmKtbiA7SRjgr3/s320/312132389_8042102565831100_8648339350223429995_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYStCcHpWE-vDZemERFgRdGzHmv-FdTObIsx6wpK7YZuVQicOsMXACx33sXMSybRDaLiMeICbqGhfT8wT03wFw7NAFvN0OFGxzWQOwED5FqM9fJvlr1huY7-tSmPoC7M6fNTZpBF3UyutbhxVXuMzIQUYM9HnGBedGA8SLjPREreGmKtbiA7SRjgr3/s320/312132389_8042102565831100_8648339350223429995_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYStCcHpWE-vDZemERFgRdGzHmv-FdTObIsx6wpK7YZuVQicOsMXACx33sXMSybRDaLiMeICbqGhfT8wT03wFw7NAFvN0OFGxzWQOwED5FqM9fJvlr1huY7-tSmPoC7M6fNTZpBF3UyutbhxVXuMzIQUYM9HnGBedGA8SLjPREreGmKtbiA7SRjgr3/s480/312132389_8042102565831100_8648339350223429995_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYStCcHpWE-vDZemERFgRdGzHmv-FdTObIsx6wpK7YZuVQicOsMXACx33sXMSybRDaLiMeICbqGhfT8wT03wFw7NAFvN0OFGxzWQOwED5FqM9fJvlr1huY7-tSmPoC7M6fNTZpBF3UyutbhxVXuMzIQUYM9HnGBedGA8SLjPREreGmKtbiA7SRjgr3/s640/312132389_8042102565831100_8648339350223429995_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYStCcHpWE-vDZemERFgRdGzHmv-FdTObIsx6wpK7YZuVQicOsMXACx33sXMSybRDaLiMeICbqGhfT8wT03wFw7NAFvN0OFGxzWQOwED5FqM9fJvlr1huY7-tSmPoC7M6fNTZpBF3UyutbhxVXuMzIQUYM9HnGBedGA8SLjPREreGmKtbiA7SRjgr3/s320/312132389_8042102565831100_8648339350223429995_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYStCcHpWE-vDZemERFgRdGzHmv-FdTObIsx6wpK7YZuVQicOsMXACx33sXMSybRDaLiMeICbqGhfT8wT03wFw7NAFvN0OFGxzWQOwED5FqM9fJvlr1huY7-tSmPoC7M6fNTZpBF3UyutbhxVXuMzIQUYM9HnGBedGA8SLjPREreGmKtbiA7SRjgr3/s480/312132389_8042102565831100_8648339350223429995_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYStCcHpWE-vDZemERFgRdGzHmv-FdTObIsx6wpK7YZuVQicOsMXACx33sXMSybRDaLiMeICbqGhfT8wT03wFw7NAFvN0OFGxzWQOwED5FqM9fJvlr1huY7-tSmPoC7M6fNTZpBF3UyutbhxVXuMzIQUYM9HnGBedGA8SLjPREreGmKtbiA7SRjgr3/s640/312132389_8042102565831100_8648339350223429995_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.872 - Recordando a Mark Lanegan con Elvira Asensi"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

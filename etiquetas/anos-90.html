@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Años 90 — 6 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-663-garbage-la-banda-que-mato-el-grunge.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s320/66dba64fc5001318c1ffc6f472b8ebfc.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s160/66dba64fc5001318c1ffc6f472b8ebfc.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s320/66dba64fc5001318c1ffc6f472b8ebfc.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s480/66dba64fc5001318c1ffc6f472b8ebfc.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s160/66dba64fc5001318c1ffc6f472b8ebfc.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s320/66dba64fc5001318c1ffc6f472b8ebfc.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s480/66dba64fc5001318c1ffc6f472b8ebfc.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.663 - Garbage, la banda que mató el grunge"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-571-especial-cine-batman-joker-y-los-hermanos-phoenix.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s320/EspUzf_k_400x400.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s160/EspUzf_k_400x400.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s320/EspUzf_k_400x400.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s480/EspUzf_k_400x400.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s160/EspUzf_k_400x400.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s320/EspUzf_k_400x400.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s480/EspUzf_k_400x400.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.571 - Especial cine: Batman, Joker y los hermanos Phoenix"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-282-radiohead-ok-computer.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpB4VP2CcJqSoKd7y7FZG7bSn-YNj-QnlTDF8lC2RmW2LoiM-xw-eQ30f9bcOl1ubbPCXwSJYQF8cv70yCJ3OaiNpkR-15CyR5h6xseyD22t1u9UKWFdBp7pgPUjiw5KK5zMY-8kvGvxQ/s320/18952788_1747855458565423_205365138828621678_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpB4VP2CcJqSoKd7y7FZG7bSn-YNj-QnlTDF8lC2RmW2LoiM-xw-eQ30f9bcOl1ubbPCXwSJYQF8cv70yCJ3OaiNpkR-15CyR5h6xseyD22t1u9UKWFdBp7pgPUjiw5KK5zMY-8kvGvxQ/s160/18952788_1747855458565423_205365138828621678_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpB4VP2CcJqSoKd7y7FZG7bSn-YNj-QnlTDF8lC2RmW2LoiM-xw-eQ30f9bcOl1ubbPCXwSJYQF8cv70yCJ3OaiNpkR-15CyR5h6xseyD22t1u9UKWFdBp7pgPUjiw5KK5zMY-8kvGvxQ/s320/18952788_1747855458565423_205365138828621678_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpB4VP2CcJqSoKd7y7FZG7bSn-YNj-QnlTDF8lC2RmW2LoiM-xw-eQ30f9bcOl1ubbPCXwSJYQF8cv70yCJ3OaiNpkR-15CyR5h6xseyD22t1u9UKWFdBp7pgPUjiw5KK5zMY-8kvGvxQ/s480/18952788_1747855458565423_205365138828621678_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpB4VP2CcJqSoKd7y7FZG7bSn-YNj-QnlTDF8lC2RmW2LoiM-xw-eQ30f9bcOl1ubbPCXwSJYQF8cv70yCJ3OaiNpkR-15CyR5h6xseyD22t1u9UKWFdBp7pgPUjiw5KK5zMY-8kvGvxQ/s160/18952788_1747855458565423_205365138828621678_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpB4VP2CcJqSoKd7y7FZG7bSn-YNj-QnlTDF8lC2RmW2LoiM-xw-eQ30f9bcOl1ubbPCXwSJYQF8cv70yCJ3OaiNpkR-15CyR5h6xseyD22t1u9UKWFdBp7pgPUjiw5KK5zMY-8kvGvxQ/s320/18952788_1747855458565423_205365138828621678_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpB4VP2CcJqSoKd7y7FZG7bSn-YNj-QnlTDF8lC2RmW2LoiM-xw-eQ30f9bcOl1ubbPCXwSJYQF8cv70yCJ3OaiNpkR-15CyR5h6xseyD22t1u9UKWFdBp7pgPUjiw5KK5zMY-8kvGvxQ/s480/18952788_1747855458565423_205365138828621678_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 282 - Radiohead Ok Computer "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-266-la-escena-indie-de-los-90-con-victor-calderon.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJkvBpReQ21dsRJyduQQ3rEtCC1mswTgUmzkrrD4SZW-DCBpCieZDlv_VdRdQ0QYufL1KekeIoGwwmLb4HK3eYd0-SLADh1JX0YXbWgAqzOSOzqkjo0K2LPCYSMeMzpYPbiH5AoOLvBc/s320/IMG_20170223_182913.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJkvBpReQ21dsRJyduQQ3rEtCC1mswTgUmzkrrD4SZW-DCBpCieZDlv_VdRdQ0QYufL1KekeIoGwwmLb4HK3eYd0-SLADh1JX0YXbWgAqzOSOzqkjo0K2LPCYSMeMzpYPbiH5AoOLvBc/s160/IMG_20170223_182913.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJkvBpReQ21dsRJyduQQ3rEtCC1mswTgUmzkrrD4SZW-DCBpCieZDlv_VdRdQ0QYufL1KekeIoGwwmLb4HK3eYd0-SLADh1JX0YXbWgAqzOSOzqkjo0K2LPCYSMeMzpYPbiH5AoOLvBc/s320/IMG_20170223_182913.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJkvBpReQ21dsRJyduQQ3rEtCC1mswTgUmzkrrD4SZW-DCBpCieZDlv_VdRdQ0QYufL1KekeIoGwwmLb4HK3eYd0-SLADh1JX0YXbWgAqzOSOzqkjo0K2LPCYSMeMzpYPbiH5AoOLvBc/s480/IMG_20170223_182913.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJkvBpReQ21dsRJyduQQ3rEtCC1mswTgUmzkrrD4SZW-DCBpCieZDlv_VdRdQ0QYufL1KekeIoGwwmLb4HK3eYd0-SLADh1JX0YXbWgAqzOSOzqkjo0K2LPCYSMeMzpYPbiH5AoOLvBc/s160/IMG_20170223_182913.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJkvBpReQ21dsRJyduQQ3rEtCC1mswTgUmzkrrD4SZW-DCBpCieZDlv_VdRdQ0QYufL1KekeIoGwwmLb4HK3eYd0-SLADh1JX0YXbWgAqzOSOzqkjo0K2LPCYSMeMzpYPbiH5AoOLvBc/s320/IMG_20170223_182913.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJkvBpReQ21dsRJyduQQ3rEtCC1mswTgUmzkrrD4SZW-DCBpCieZDlv_VdRdQ0QYufL1KekeIoGwwmLb4HK3eYd0-SLADh1JX0YXbWgAqzOSOzqkjo0K2LPCYSMeMzpYPbiH5AoOLvBc/s480/IMG_20170223_182913.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 266 - La escena indie de los 90 con Victor Calderón"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-265-red-rocket-7-mike-allred.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s320/red-rocket-7.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s160/red-rocket-7.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s320/red-rocket-7.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s480/red-rocket-7.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s160/red-rocket-7.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s320/red-rocket-7.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s480/red-rocket-7.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 265 - Red Rocket 7 (Mike Allred)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-263-los-50-discos-favoritos-de-kurt-cobain.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s320/kurt50.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s160/kurt50.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s320/kurt50.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s480/kurt50.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s160/kurt50.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s320/kurt50.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s480/kurt50.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 263 - Los 50 discos favoritos de Kurt Cobain"
                 loading="lazy" width="320" height="213" />
         </a>

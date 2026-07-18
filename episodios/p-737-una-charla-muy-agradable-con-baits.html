@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>(P.737 - Una charla muy agradable con BAITS — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihAAiFW8LFUdYxBqHvCQu2N_UZz39hQqrnmg8XdJS8jZyuWsqXCee5ERPtpLF_qgrU9uyVYSP1P2C9N2xYzYjyOVN-bl-Tl0gVKAqm3fc5CG0eOo7NctHKcHt6C4YLWa2b-_EgWEIolLI/s320/566F+Alain.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihAAiFW8LFUdYxBqHvCQu2N_UZz39hQqrnmg8XdJS8jZyuWsqXCee5ERPtpLF_qgrU9uyVYSP1P2C9N2xYzYjyOVN-bl-Tl0gVKAqm3fc5CG0eOo7NctHKcHt6C4YLWa2b-_EgWEIolLI/s160/566F+Alain.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihAAiFW8LFUdYxBqHvCQu2N_UZz39hQqrnmg8XdJS8jZyuWsqXCee5ERPtpLF_qgrU9uyVYSP1P2C9N2xYzYjyOVN-bl-Tl0gVKAqm3fc5CG0eOo7NctHKcHt6C4YLWa2b-_EgWEIolLI/s320/566F+Alain.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihAAiFW8LFUdYxBqHvCQu2N_UZz39hQqrnmg8XdJS8jZyuWsqXCee5ERPtpLF_qgrU9uyVYSP1P2C9N2xYzYjyOVN-bl-Tl0gVKAqm3fc5CG0eOo7NctHKcHt6C4YLWa2b-_EgWEIolLI/s480/566F+Alain.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihAAiFW8LFUdYxBqHvCQu2N_UZz39hQqrnmg8XdJS8jZyuWsqXCee5ERPtpLF_qgrU9uyVYSP1P2C9N2xYzYjyOVN-bl-Tl0gVKAqm3fc5CG0eOo7NctHKcHt6C4YLWa2b-_EgWEIolLI/s160/566F+Alain.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihAAiFW8LFUdYxBqHvCQu2N_UZz39hQqrnmg8XdJS8jZyuWsqXCee5ERPtpLF_qgrU9uyVYSP1P2C9N2xYzYjyOVN-bl-Tl0gVKAqm3fc5CG0eOo7NctHKcHt6C4YLWa2b-_EgWEIolLI/s320/566F+Alain.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihAAiFW8LFUdYxBqHvCQu2N_UZz39hQqrnmg8XdJS8jZyuWsqXCee5ERPtpLF_qgrU9uyVYSP1P2C9N2xYzYjyOVN-bl-Tl0gVKAqm3fc5CG0eOo7NctHKcHt6C4YLWa2b-_EgWEIolLI/s480/566F+Alain.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 566: Una agradable charla con Alain Johannes"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHk_yZ6T0bKcjAgFRLhNP5xodBzdRYKag1uSBx8Ryfb16HM2GxcIvDxZYVm8XbdwUOF4Upku68L50bKT1pvqSrV6LPTsrTeUmniuUGwNYdmfFo3kQak0FXiNdfipPcc-6qhL_VcfFF3is/s320/promo+4.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHk_yZ6T0bKcjAgFRLhNP5xodBzdRYKag1uSBx8Ryfb16HM2GxcIvDxZYVm8XbdwUOF4Upku68L50bKT1pvqSrV6LPTsrTeUmniuUGwNYdmfFo3kQak0FXiNdfipPcc-6qhL_VcfFF3is/s160/promo+4.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHk_yZ6T0bKcjAgFRLhNP5xodBzdRYKag1uSBx8Ryfb16HM2GxcIvDxZYVm8XbdwUOF4Upku68L50bKT1pvqSrV6LPTsrTeUmniuUGwNYdmfFo3kQak0FXiNdfipPcc-6qhL_VcfFF3is/s320/promo+4.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHk_yZ6T0bKcjAgFRLhNP5xodBzdRYKag1uSBx8Ryfb16HM2GxcIvDxZYVm8XbdwUOF4Upku68L50bKT1pvqSrV6LPTsrTeUmniuUGwNYdmfFo3kQak0FXiNdfipPcc-6qhL_VcfFF3is/s480/promo+4.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHk_yZ6T0bKcjAgFRLhNP5xodBzdRYKag1uSBx8Ryfb16HM2GxcIvDxZYVm8XbdwUOF4Upku68L50bKT1pvqSrV6LPTsrTeUmniuUGwNYdmfFo3kQak0FXiNdfipPcc-6qhL_VcfFF3is/s160/promo+4.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHk_yZ6T0bKcjAgFRLhNP5xodBzdRYKag1uSBx8Ryfb16HM2GxcIvDxZYVm8XbdwUOF4Upku68L50bKT1pvqSrV6LPTsrTeUmniuUGwNYdmfFo3kQak0FXiNdfipPcc-6qhL_VcfFF3is/s320/promo+4.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHk_yZ6T0bKcjAgFRLhNP5xodBzdRYKag1uSBx8Ryfb16HM2GxcIvDxZYVm8XbdwUOF4Upku68L50bKT1pvqSrV6LPTsrTeUmniuUGwNYdmfFo3kQak0FXiNdfipPcc-6qhL_VcfFF3is/s480/promo+4.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.659 - Maddening Flames, un regreso muy esperado"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5W8_6VgvCsxa-3MS-x5jl0HWGasjkQcQ6gfpVC8EzLftW5hBYyFJtpL4aar4S5UzPvPLWXjQ3zX40ePCHBo0RUxsPLPij38g94UMmNrtNbnN25MonYD-_mx4HtGTuQcV2-yuTAoiHejh83SjpV53FMbo3ItcEjv9vdZpHVuHuDfpO0QtgGUsWCxxE9s8/s320/420955151_929761805825172_8219026540320967556_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5W8_6VgvCsxa-3MS-x5jl0HWGasjkQcQ6gfpVC8EzLftW5hBYyFJtpL4aar4S5UzPvPLWXjQ3zX40ePCHBo0RUxsPLPij38g94UMmNrtNbnN25MonYD-_mx4HtGTuQcV2-yuTAoiHejh83SjpV53FMbo3ItcEjv9vdZpHVuHuDfpO0QtgGUsWCxxE9s8/s160/420955151_929761805825172_8219026540320967556_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5W8_6VgvCsxa-3MS-x5jl0HWGasjkQcQ6gfpVC8EzLftW5hBYyFJtpL4aar4S5UzPvPLWXjQ3zX40ePCHBo0RUxsPLPij38g94UMmNrtNbnN25MonYD-_mx4HtGTuQcV2-yuTAoiHejh83SjpV53FMbo3ItcEjv9vdZpHVuHuDfpO0QtgGUsWCxxE9s8/s320/420955151_929761805825172_8219026540320967556_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5W8_6VgvCsxa-3MS-x5jl0HWGasjkQcQ6gfpVC8EzLftW5hBYyFJtpL4aar4S5UzPvPLWXjQ3zX40ePCHBo0RUxsPLPij38g94UMmNrtNbnN25MonYD-_mx4HtGTuQcV2-yuTAoiHejh83SjpV53FMbo3ItcEjv9vdZpHVuHuDfpO0QtgGUsWCxxE9s8/s480/420955151_929761805825172_8219026540320967556_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5W8_6VgvCsxa-3MS-x5jl0HWGasjkQcQ6gfpVC8EzLftW5hBYyFJtpL4aar4S5UzPvPLWXjQ3zX40ePCHBo0RUxsPLPij38g94UMmNrtNbnN25MonYD-_mx4HtGTuQcV2-yuTAoiHejh83SjpV53FMbo3ItcEjv9vdZpHVuHuDfpO0QtgGUsWCxxE9s8/s160/420955151_929761805825172_8219026540320967556_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5W8_6VgvCsxa-3MS-x5jl0HWGasjkQcQ6gfpVC8EzLftW5hBYyFJtpL4aar4S5UzPvPLWXjQ3zX40ePCHBo0RUxsPLPij38g94UMmNrtNbnN25MonYD-_mx4HtGTuQcV2-yuTAoiHejh83SjpV53FMbo3ItcEjv9vdZpHVuHuDfpO0QtgGUsWCxxE9s8/s320/420955151_929761805825172_8219026540320967556_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5W8_6VgvCsxa-3MS-x5jl0HWGasjkQcQ6gfpVC8EzLftW5hBYyFJtpL4aar4S5UzPvPLWXjQ3zX40ePCHBo0RUxsPLPij38g94UMmNrtNbnN25MonYD-_mx4HtGTuQcV2-yuTAoiHejh83SjpV53FMbo3ItcEjv9vdZpHVuHuDfpO0QtgGUsWCxxE9s8/s480/420955151_929761805825172_8219026540320967556_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 58 - Presentación y charla de Bienvenidos a la Radio (el docuemtal)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="programa-120-pearl-jam-gira-europea-2014.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMuk_GQlz2TFnA9ymk2kBQ9udBePBv80FGunyyjdNQC_LQ6MLfw-kKjUKNI3OTSyaX2Tj61BKAMmvch1JUk0Ti2pbm6DbtkIHLL2nmIHbplDv7OBY7ahsUsEiLOHp8u01j_HHOM2eDo8U/s320/unnamed.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMuk_GQlz2TFnA9ymk2kBQ9udBePBv80FGunyyjdNQC_LQ6MLfw-kKjUKNI3OTSyaX2Tj61BKAMmvch1JUk0Ti2pbm6DbtkIHLL2nmIHbplDv7OBY7ahsUsEiLOHp8u01j_HHOM2eDo8U/s320/unnamed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMuk_GQlz2TFnA9ymk2kBQ9udBePBv80FGunyyjdNQC_LQ6MLfw-kKjUKNI3OTSyaX2Tj61BKAMmvch1JUk0Ti2pbm6DbtkIHLL2nmIHbplDv7OBY7ahsUsEiLOHp8u01j_HHOM2eDo8U/s480/unnamed.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMuk_GQlz2TFnA9ymk2kBQ9udBePBv80FGunyyjdNQC_LQ6MLfw-kKjUKNI3OTSyaX2Tj61BKAMmvch1JUk0Ti2pbm6DbtkIHLL2nmIHbplDv7OBY7ahsUsEiLOHp8u01j_HHOM2eDo8U/s640/unnamed.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMuk_GQlz2TFnA9ymk2kBQ9udBePBv80FGunyyjdNQC_LQ6MLfw-kKjUKNI3OTSyaX2Tj61BKAMmvch1JUk0Ti2pbm6DbtkIHLL2nmIHbplDv7OBY7ahsUsEiLOHp8u01j_HHOM2eDo8U/s320/unnamed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMuk_GQlz2TFnA9ymk2kBQ9udBePBv80FGunyyjdNQC_LQ6MLfw-kKjUKNI3OTSyaX2Tj61BKAMmvch1JUk0Ti2pbm6DbtkIHLL2nmIHbplDv7OBY7ahsUsEiLOHp8u01j_HHOM2eDo8U/s480/unnamed.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMuk_GQlz2TFnA9ymk2kBQ9udBePBv80FGunyyjdNQC_LQ6MLfw-kKjUKNI3OTSyaX2Tj61BKAMmvch1JUk0Ti2pbm6DbtkIHLL2nmIHbplDv7OBY7ahsUsEiLOHp8u01j_HHOM2eDo8U/s640/unnamed.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 120 - Pearl Jam gira europea 2014"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="p-738-especial-radio-3-parte-2.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-3SkjfohyphenhyphenQEQCtPiFUV6NxBmUwlqpqGfKZ1HmcgD9yL5QK5JCkZNzRedmsTmPfbX7Oen_oS2COQKdyeeNTm4unofQ6BU1DePnOBW2mlRkmAB0QcwsovHUuBR7HS0UW1Yxq7q0OGKE3c/s320/145225905_5359932007357732_8061310345148791492_o.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-3SkjfohyphenhyphenQEQCtPiFUV6NxBmUwlqpqGfKZ1HmcgD9yL5QK5JCkZNzRedmsTmPfbX7Oen_oS2COQKdyeeNTm4unofQ6BU1DePnOBW2mlRkmAB0QcwsovHUuBR7HS0UW1Yxq7q0OGKE3c/s320/145225905_5359932007357732_8061310345148791492_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-3SkjfohyphenhyphenQEQCtPiFUV6NxBmUwlqpqGfKZ1HmcgD9yL5QK5JCkZNzRedmsTmPfbX7Oen_oS2COQKdyeeNTm4unofQ6BU1DePnOBW2mlRkmAB0QcwsovHUuBR7HS0UW1Yxq7q0OGKE3c/s480/145225905_5359932007357732_8061310345148791492_o.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-3SkjfohyphenhyphenQEQCtPiFUV6NxBmUwlqpqGfKZ1HmcgD9yL5QK5JCkZNzRedmsTmPfbX7Oen_oS2COQKdyeeNTm4unofQ6BU1DePnOBW2mlRkmAB0QcwsovHUuBR7HS0UW1Yxq7q0OGKE3c/s640/145225905_5359932007357732_8061310345148791492_o.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-3SkjfohyphenhyphenQEQCtPiFUV6NxBmUwlqpqGfKZ1HmcgD9yL5QK5JCkZNzRedmsTmPfbX7Oen_oS2COQKdyeeNTm4unofQ6BU1DePnOBW2mlRkmAB0QcwsovHUuBR7HS0UW1Yxq7q0OGKE3c/s320/145225905_5359932007357732_8061310345148791492_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-3SkjfohyphenhyphenQEQCtPiFUV6NxBmUwlqpqGfKZ1HmcgD9yL5QK5JCkZNzRedmsTmPfbX7Oen_oS2COQKdyeeNTm4unofQ6BU1DePnOBW2mlRkmAB0QcwsovHUuBR7HS0UW1Yxq7q0OGKE3c/s480/145225905_5359932007357732_8061310345148791492_o.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-3SkjfohyphenhyphenQEQCtPiFUV6NxBmUwlqpqGfKZ1HmcgD9yL5QK5JCkZNzRedmsTmPfbX7Oen_oS2COQKdyeeNTm4unofQ6BU1DePnOBW2mlRkmAB0QcwsovHUuBR7HS0UW1Yxq7q0OGKE3c/s640/145225905_5359932007357732_8061310345148791492_o.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.738 - Especial Radio 3 (Parte 2)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="p-736-la-entrevista-perdida-a-noel-gallagher-1997.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRLuUUUiFR7XAE4oI5d8sFnrp2LAoKjZ2PKwaG6Mfyo141cMJRg4V6wHlAw2hAJZpVfCKhCTvr4UE4UfayhtdfM9iqMtXYsnBazplBn4ufuRtX1MqBAeCG0OLcECtSmwTSGYo2RCPmzIk/s320/1973246_296496580515906_3887298394066856231_o.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRLuUUUiFR7XAE4oI5d8sFnrp2LAoKjZ2PKwaG6Mfyo141cMJRg4V6wHlAw2hAJZpVfCKhCTvr4UE4UfayhtdfM9iqMtXYsnBazplBn4ufuRtX1MqBAeCG0OLcECtSmwTSGYo2RCPmzIk/s320/1973246_296496580515906_3887298394066856231_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRLuUUUiFR7XAE4oI5d8sFnrp2LAoKjZ2PKwaG6Mfyo141cMJRg4V6wHlAw2hAJZpVfCKhCTvr4UE4UfayhtdfM9iqMtXYsnBazplBn4ufuRtX1MqBAeCG0OLcECtSmwTSGYo2RCPmzIk/s480/1973246_296496580515906_3887298394066856231_o.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRLuUUUiFR7XAE4oI5d8sFnrp2LAoKjZ2PKwaG6Mfyo141cMJRg4V6wHlAw2hAJZpVfCKhCTvr4UE4UfayhtdfM9iqMtXYsnBazplBn4ufuRtX1MqBAeCG0OLcECtSmwTSGYo2RCPmzIk/s640/1973246_296496580515906_3887298394066856231_o.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRLuUUUiFR7XAE4oI5d8sFnrp2LAoKjZ2PKwaG6Mfyo141cMJRg4V6wHlAw2hAJZpVfCKhCTvr4UE4UfayhtdfM9iqMtXYsnBazplBn4ufuRtX1MqBAeCG0OLcECtSmwTSGYo2RCPmzIk/s320/1973246_296496580515906_3887298394066856231_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRLuUUUiFR7XAE4oI5d8sFnrp2LAoKjZ2PKwaG6Mfyo141cMJRg4V6wHlAw2hAJZpVfCKhCTvr4UE4UfayhtdfM9iqMtXYsnBazplBn4ufuRtX1MqBAeCG0OLcECtSmwTSGYo2RCPmzIk/s480/1973246_296496580515906_3887298394066856231_o.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRLuUUUiFR7XAE4oI5d8sFnrp2LAoKjZ2PKwaG6Mfyo141cMJRg4V6wHlAw2hAJZpVfCKhCTvr4UE4UfayhtdfM9iqMtXYsnBazplBn4ufuRtX1MqBAeCG0OLcECtSmwTSGYo2RCPmzIk/s640/1973246_296496580515906_3887298394066856231_o.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.736 - La entrevista perdida a Noel Gallagher (1997)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

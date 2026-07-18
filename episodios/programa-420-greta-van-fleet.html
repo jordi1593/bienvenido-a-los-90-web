@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 420 - Greta Van Fleet  — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -136,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s320/play.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s160/play.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s320/play.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s480/play.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s160/play.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s320/play.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s480/play.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 423 - Dave Grohl ‘PLAY’ "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -147,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimZPM3DwYKL_ZiKr29ofXTZcImu0teCh3MN_ANLi3Iqk4TvBNvGQImmxA3-9QcSRnypDu_93g0wYf-x9emC_sZ11EizD3e3E078EM2pcESHA8ozH8eZs4QW5UEe8xwm5TVgoiIxLEjsko/s320/IMG_20180726_175307.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimZPM3DwYKL_ZiKr29ofXTZcImu0teCh3MN_ANLi3Iqk4TvBNvGQImmxA3-9QcSRnypDu_93g0wYf-x9emC_sZ11EizD3e3E078EM2pcESHA8ozH8eZs4QW5UEe8xwm5TVgoiIxLEjsko/s160/IMG_20180726_175307.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimZPM3DwYKL_ZiKr29ofXTZcImu0teCh3MN_ANLi3Iqk4TvBNvGQImmxA3-9QcSRnypDu_93g0wYf-x9emC_sZ11EizD3e3E078EM2pcESHA8ozH8eZs4QW5UEe8xwm5TVgoiIxLEjsko/s320/IMG_20180726_175307.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimZPM3DwYKL_ZiKr29ofXTZcImu0teCh3MN_ANLi3Iqk4TvBNvGQImmxA3-9QcSRnypDu_93g0wYf-x9emC_sZ11EizD3e3E078EM2pcESHA8ozH8eZs4QW5UEe8xwm5TVgoiIxLEjsko/s480/IMG_20180726_175307.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimZPM3DwYKL_ZiKr29ofXTZcImu0teCh3MN_ANLi3Iqk4TvBNvGQImmxA3-9QcSRnypDu_93g0wYf-x9emC_sZ11EizD3e3E078EM2pcESHA8ozH8eZs4QW5UEe8xwm5TVgoiIxLEjsko/s160/IMG_20180726_175307.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimZPM3DwYKL_ZiKr29ofXTZcImu0teCh3MN_ANLi3Iqk4TvBNvGQImmxA3-9QcSRnypDu_93g0wYf-x9emC_sZ11EizD3e3E078EM2pcESHA8ozH8eZs4QW5UEe8xwm5TVgoiIxLEjsko/s320/IMG_20180726_175307.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimZPM3DwYKL_ZiKr29ofXTZcImu0teCh3MN_ANLi3Iqk4TvBNvGQImmxA3-9QcSRnypDu_93g0wYf-x9emC_sZ11EizD3e3E078EM2pcESHA8ozH8eZs4QW5UEe8xwm5TVgoiIxLEjsko/s480/IMG_20180726_175307.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 417 - Virginia Díaz"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -158,8 +156,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s320/4796764187_443628a460.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s160/4796764187_443628a460.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s320/4796764187_443628a460.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s480/4796764187_443628a460.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s160/4796764187_443628a460.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s320/4796764187_443628a460.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s480/4796764187_443628a460.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 416 - PinkPop 2018"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -175,8 +172,7 @@
         <a class="related-bottom-card" href="programa-359-nirvana-en-busca-del-nevermind.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s480/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s640/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s480/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s640/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 359 - Nirvana, en busca del Nevermind "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -187,8 +183,7 @@
           </a><a class="related-bottom-card" href="programa-480-tony-iommi-2000.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6qCWCdNr-p4vMwuKpJi9rjHg0E0B0yImPKb0MhqbilUsJPl0aVE4rhABY5gyOBQTSEhyphenhyphenKzApD3XC4YQeWDnciWiE31O9EorAZp7xLGlZXXc1JP3uqIIcyJqXxACt8WdwJTBIa7rIKsaA/s320/b90_480.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6qCWCdNr-p4vMwuKpJi9rjHg0E0B0yImPKb0MhqbilUsJPl0aVE4rhABY5gyOBQTSEhyphenhyphenKzApD3XC4YQeWDnciWiE31O9EorAZp7xLGlZXXc1JP3uqIIcyJqXxACt8WdwJTBIa7rIKsaA/s320/b90_480.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6qCWCdNr-p4vMwuKpJi9rjHg0E0B0yImPKb0MhqbilUsJPl0aVE4rhABY5gyOBQTSEhyphenhyphenKzApD3XC4YQeWDnciWiE31O9EorAZp7xLGlZXXc1JP3uqIIcyJqXxACt8WdwJTBIa7rIKsaA/s480/b90_480.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6qCWCdNr-p4vMwuKpJi9rjHg0E0B0yImPKb0MhqbilUsJPl0aVE4rhABY5gyOBQTSEhyphenhyphenKzApD3XC4YQeWDnciWiE31O9EorAZp7xLGlZXXc1JP3uqIIcyJqXxACt8WdwJTBIa7rIKsaA/s640/b90_480.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6qCWCdNr-p4vMwuKpJi9rjHg0E0B0yImPKb0MhqbilUsJPl0aVE4rhABY5gyOBQTSEhyphenhyphenKzApD3XC4YQeWDnciWiE31O9EorAZp7xLGlZXXc1JP3uqIIcyJqXxACt8WdwJTBIa7rIKsaA/s320/b90_480.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6qCWCdNr-p4vMwuKpJi9rjHg0E0B0yImPKb0MhqbilUsJPl0aVE4rhABY5gyOBQTSEhyphenhyphenKzApD3XC4YQeWDnciWiE31O9EorAZp7xLGlZXXc1JP3uqIIcyJqXxACt8WdwJTBIa7rIKsaA/s480/b90_480.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6qCWCdNr-p4vMwuKpJi9rjHg0E0B0yImPKb0MhqbilUsJPl0aVE4rhABY5gyOBQTSEhyphenhyphenKzApD3XC4YQeWDnciWiE31O9EorAZp7xLGlZXXc1JP3uqIIcyJqXxACt8WdwJTBIa7rIKsaA/s640/b90_480.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 480 - Tony Iommi (2000)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -199,8 +194,7 @@
           </a><a class="related-bottom-card" href="programa-319-nirvana-iv.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s480/nirvanaIV.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s640/nirvanaIV.JPG 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s480/nirvanaIV.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s640/nirvanaIV.JPG 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 319 – Nirvana IV"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

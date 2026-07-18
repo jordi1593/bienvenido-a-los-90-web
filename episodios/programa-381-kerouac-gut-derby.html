@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 381 - Kerouac + Gut Derby — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s160/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s480/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s160/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s480/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 - Programa 78 - Tibetan Freedon Concert"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidf-oc9l9yo6E2-0Zzj8Ap5dNZtoDAfLdr5KCcQ38_8w0PHFXAMDpLbDFie5UvFAsh-WUSjvSv-SHwbZR30p0CvwhdbEr4nzZdCjMcnlOAed19cjpmNFC1OPuNgR-XuXrlxSy2qq1NiEU/s320/inger-lorre_jeff-buckley.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidf-oc9l9yo6E2-0Zzj8Ap5dNZtoDAfLdr5KCcQ38_8w0PHFXAMDpLbDFie5UvFAsh-WUSjvSv-SHwbZR30p0CvwhdbEr4nzZdCjMcnlOAed19cjpmNFC1OPuNgR-XuXrlxSy2qq1NiEU/s160/inger-lorre_jeff-buckley.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidf-oc9l9yo6E2-0Zzj8Ap5dNZtoDAfLdr5KCcQ38_8w0PHFXAMDpLbDFie5UvFAsh-WUSjvSv-SHwbZR30p0CvwhdbEr4nzZdCjMcnlOAed19cjpmNFC1OPuNgR-XuXrlxSy2qq1NiEU/s320/inger-lorre_jeff-buckley.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidf-oc9l9yo6E2-0Zzj8Ap5dNZtoDAfLdr5KCcQ38_8w0PHFXAMDpLbDFie5UvFAsh-WUSjvSv-SHwbZR30p0CvwhdbEr4nzZdCjMcnlOAed19cjpmNFC1OPuNgR-XuXrlxSy2qq1NiEU/s480/inger-lorre_jeff-buckley.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidf-oc9l9yo6E2-0Zzj8Ap5dNZtoDAfLdr5KCcQ38_8w0PHFXAMDpLbDFie5UvFAsh-WUSjvSv-SHwbZR30p0CvwhdbEr4nzZdCjMcnlOAed19cjpmNFC1OPuNgR-XuXrlxSy2qq1NiEU/s160/inger-lorre_jeff-buckley.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidf-oc9l9yo6E2-0Zzj8Ap5dNZtoDAfLdr5KCcQ38_8w0PHFXAMDpLbDFie5UvFAsh-WUSjvSv-SHwbZR30p0CvwhdbEr4nzZdCjMcnlOAed19cjpmNFC1OPuNgR-XuXrlxSy2qq1NiEU/s320/inger-lorre_jeff-buckley.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidf-oc9l9yo6E2-0Zzj8Ap5dNZtoDAfLdr5KCcQ38_8w0PHFXAMDpLbDFie5UvFAsh-WUSjvSv-SHwbZR30p0CvwhdbEr4nzZdCjMcnlOAed19cjpmNFC1OPuNgR-XuXrlxSy2qq1NiEU/s480/inger-lorre_jeff-buckley.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 383 - Inger Lorre"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuuZt0pdhIxUzjMwJUiTey8USUJZ0tqoy0SNmnA3RXPJ5ynFeE3WH9LpXX9OFwyPUeHaUZleI_zUhjG1VyXh_T3i_18FvrXbZLcKwaCDE8I0ib1p137Co9bDn7neXT9d9Lqk-kfIE8d-s/s320/Cartel-Jeff-Buckley.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuuZt0pdhIxUzjMwJUiTey8USUJZ0tqoy0SNmnA3RXPJ5ynFeE3WH9LpXX9OFwyPUeHaUZleI_zUhjG1VyXh_T3i_18FvrXbZLcKwaCDE8I0ib1p137Co9bDn7neXT9d9Lqk-kfIE8d-s/s160/Cartel-Jeff-Buckley.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuuZt0pdhIxUzjMwJUiTey8USUJZ0tqoy0SNmnA3RXPJ5ynFeE3WH9LpXX9OFwyPUeHaUZleI_zUhjG1VyXh_T3i_18FvrXbZLcKwaCDE8I0ib1p137Co9bDn7neXT9d9Lqk-kfIE8d-s/s320/Cartel-Jeff-Buckley.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuuZt0pdhIxUzjMwJUiTey8USUJZ0tqoy0SNmnA3RXPJ5ynFeE3WH9LpXX9OFwyPUeHaUZleI_zUhjG1VyXh_T3i_18FvrXbZLcKwaCDE8I0ib1p137Co9bDn7neXT9d9Lqk-kfIE8d-s/s480/Cartel-Jeff-Buckley.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuuZt0pdhIxUzjMwJUiTey8USUJZ0tqoy0SNmnA3RXPJ5ynFeE3WH9LpXX9OFwyPUeHaUZleI_zUhjG1VyXh_T3i_18FvrXbZLcKwaCDE8I0ib1p137Co9bDn7neXT9d9Lqk-kfIE8d-s/s160/Cartel-Jeff-Buckley.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuuZt0pdhIxUzjMwJUiTey8USUJZ0tqoy0SNmnA3RXPJ5ynFeE3WH9LpXX9OFwyPUeHaUZleI_zUhjG1VyXh_T3i_18FvrXbZLcKwaCDE8I0ib1p137Co9bDn7neXT9d9Lqk-kfIE8d-s/s320/Cartel-Jeff-Buckley.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuuZt0pdhIxUzjMwJUiTey8USUJZ0tqoy0SNmnA3RXPJ5ynFeE3WH9LpXX9OFwyPUeHaUZleI_zUhjG1VyXh_T3i_18FvrXbZLcKwaCDE8I0ib1p137Co9bDn7neXT9d9Lqk-kfIE8d-s/s480/Cartel-Jeff-Buckley.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 310 – Thurston Moore en Madrid + Homenaje a Jeff Buckley"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="programa-280-jeff-buckley-chris-conell-eddie-vedder.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZhiRsyZrXhPRxGvXQke1LmI9Y8ov388io2CMinAIRZmVP3pFJbp_QVQqYdvOI_HAiBqA-bH316VqsQ_cwNLwc0JM0GPR3hI3UsDch4_PgXVrNm4fI7oN9jy2L434_K3VjmtLc2Ohyphenhyphengwg/s320/DAiTYjmWsAA468d.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZhiRsyZrXhPRxGvXQke1LmI9Y8ov388io2CMinAIRZmVP3pFJbp_QVQqYdvOI_HAiBqA-bH316VqsQ_cwNLwc0JM0GPR3hI3UsDch4_PgXVrNm4fI7oN9jy2L434_K3VjmtLc2Ohyphenhyphengwg/s320/DAiTYjmWsAA468d.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZhiRsyZrXhPRxGvXQke1LmI9Y8ov388io2CMinAIRZmVP3pFJbp_QVQqYdvOI_HAiBqA-bH316VqsQ_cwNLwc0JM0GPR3hI3UsDch4_PgXVrNm4fI7oN9jy2L434_K3VjmtLc2Ohyphenhyphengwg/s480/DAiTYjmWsAA468d.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZhiRsyZrXhPRxGvXQke1LmI9Y8ov388io2CMinAIRZmVP3pFJbp_QVQqYdvOI_HAiBqA-bH316VqsQ_cwNLwc0JM0GPR3hI3UsDch4_PgXVrNm4fI7oN9jy2L434_K3VjmtLc2Ohyphenhyphengwg/s640/DAiTYjmWsAA468d.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZhiRsyZrXhPRxGvXQke1LmI9Y8ov388io2CMinAIRZmVP3pFJbp_QVQqYdvOI_HAiBqA-bH316VqsQ_cwNLwc0JM0GPR3hI3UsDch4_PgXVrNm4fI7oN9jy2L434_K3VjmtLc2Ohyphenhyphengwg/s320/DAiTYjmWsAA468d.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZhiRsyZrXhPRxGvXQke1LmI9Y8ov388io2CMinAIRZmVP3pFJbp_QVQqYdvOI_HAiBqA-bH316VqsQ_cwNLwc0JM0GPR3hI3UsDch4_PgXVrNm4fI7oN9jy2L434_K3VjmtLc2Ohyphenhyphengwg/s480/DAiTYjmWsAA468d.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZhiRsyZrXhPRxGvXQke1LmI9Y8ov388io2CMinAIRZmVP3pFJbp_QVQqYdvOI_HAiBqA-bH316VqsQ_cwNLwc0JM0GPR3hI3UsDch4_PgXVrNm4fI7oN9jy2L434_K3VjmtLc2Ohyphenhyphengwg/s640/DAiTYjmWsAA468d.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 280 - Jeff Buckley - Chris Conell - Eddie Vedder"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="programa-192-la-musica-es-un-arma-de-conciliacion-masiva.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s320/11214256_10153202170607747_1111774229671122726_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s320/11214256_10153202170607747_1111774229671122726_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s480/11214256_10153202170607747_1111774229671122726_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s640/11214256_10153202170607747_1111774229671122726_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s320/11214256_10153202170607747_1111774229671122726_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s480/11214256_10153202170607747_1111774229671122726_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s640/11214256_10153202170607747_1111774229671122726_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 192 - La música es un arma de conciliación masiva"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="programa-132-mike-watt-ball-hog-or-tugboat.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHciFOmUGHgIUXTOMl58JsvnovA1w3PJJR4lHT0YydgI28ageKi1gANW9a2aOiRGEXFgo-yZnm_U4h-H074v1EXEOTArUz9L3eSlS7gSq9N0DMWxYn4bftRul1VOzj_BFJW8aDrHkpEYA/s320/10671216_10152405020777747_3098676225259765510_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHciFOmUGHgIUXTOMl58JsvnovA1w3PJJR4lHT0YydgI28ageKi1gANW9a2aOiRGEXFgo-yZnm_U4h-H074v1EXEOTArUz9L3eSlS7gSq9N0DMWxYn4bftRul1VOzj_BFJW8aDrHkpEYA/s320/10671216_10152405020777747_3098676225259765510_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHciFOmUGHgIUXTOMl58JsvnovA1w3PJJR4lHT0YydgI28ageKi1gANW9a2aOiRGEXFgo-yZnm_U4h-H074v1EXEOTArUz9L3eSlS7gSq9N0DMWxYn4bftRul1VOzj_BFJW8aDrHkpEYA/s480/10671216_10152405020777747_3098676225259765510_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHciFOmUGHgIUXTOMl58JsvnovA1w3PJJR4lHT0YydgI28ageKi1gANW9a2aOiRGEXFgo-yZnm_U4h-H074v1EXEOTArUz9L3eSlS7gSq9N0DMWxYn4bftRul1VOzj_BFJW8aDrHkpEYA/s640/10671216_10152405020777747_3098676225259765510_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHciFOmUGHgIUXTOMl58JsvnovA1w3PJJR4lHT0YydgI28ageKi1gANW9a2aOiRGEXFgo-yZnm_U4h-H074v1EXEOTArUz9L3eSlS7gSq9N0DMWxYn4bftRul1VOzj_BFJW8aDrHkpEYA/s320/10671216_10152405020777747_3098676225259765510_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHciFOmUGHgIUXTOMl58JsvnovA1w3PJJR4lHT0YydgI28ageKi1gANW9a2aOiRGEXFgo-yZnm_U4h-H074v1EXEOTArUz9L3eSlS7gSq9N0DMWxYn4bftRul1VOzj_BFJW8aDrHkpEYA/s480/10671216_10152405020777747_3098676225259765510_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHciFOmUGHgIUXTOMl58JsvnovA1w3PJJR4lHT0YydgI28ageKi1gANW9a2aOiRGEXFgo-yZnm_U4h-H074v1EXEOTArUz9L3eSlS7gSq9N0DMWxYn4bftRul1VOzj_BFJW8aDrHkpEYA/s640/10671216_10152405020777747_3098676225259765510_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 132 - Mike Watt - Ball-Hog or Tugboat? "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

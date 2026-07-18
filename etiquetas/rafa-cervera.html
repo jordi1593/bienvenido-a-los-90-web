@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Rafa Cervera — 6 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-739-the-smashing-pumpkins-madrid-1998-la-intrahistoria.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2kSVbSa0viDipSLbOs6tWUK7kBPFlUfcB2KykV82yYGrDtEt6FSaH2xtV7ljWcc3NCEVuKpgUMYiwphpIeAdqOKQmDlACfPFfHwQRUl9dyXpHBCMlSabdmGjScK4iYKLurNtcz37VZPI/s320/conciradio3.5.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2kSVbSa0viDipSLbOs6tWUK7kBPFlUfcB2KykV82yYGrDtEt6FSaH2xtV7ljWcc3NCEVuKpgUMYiwphpIeAdqOKQmDlACfPFfHwQRUl9dyXpHBCMlSabdmGjScK4iYKLurNtcz37VZPI/s160/conciradio3.5.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2kSVbSa0viDipSLbOs6tWUK7kBPFlUfcB2KykV82yYGrDtEt6FSaH2xtV7ljWcc3NCEVuKpgUMYiwphpIeAdqOKQmDlACfPFfHwQRUl9dyXpHBCMlSabdmGjScK4iYKLurNtcz37VZPI/s320/conciradio3.5.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2kSVbSa0viDipSLbOs6tWUK7kBPFlUfcB2KykV82yYGrDtEt6FSaH2xtV7ljWcc3NCEVuKpgUMYiwphpIeAdqOKQmDlACfPFfHwQRUl9dyXpHBCMlSabdmGjScK4iYKLurNtcz37VZPI/s480/conciradio3.5.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2kSVbSa0viDipSLbOs6tWUK7kBPFlUfcB2KykV82yYGrDtEt6FSaH2xtV7ljWcc3NCEVuKpgUMYiwphpIeAdqOKQmDlACfPFfHwQRUl9dyXpHBCMlSabdmGjScK4iYKLurNtcz37VZPI/s160/conciradio3.5.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2kSVbSa0viDipSLbOs6tWUK7kBPFlUfcB2KykV82yYGrDtEt6FSaH2xtV7ljWcc3NCEVuKpgUMYiwphpIeAdqOKQmDlACfPFfHwQRUl9dyXpHBCMlSabdmGjScK4iYKLurNtcz37VZPI/s320/conciradio3.5.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2kSVbSa0viDipSLbOs6tWUK7kBPFlUfcB2KykV82yYGrDtEt6FSaH2xtV7ljWcc3NCEVuKpgUMYiwphpIeAdqOKQmDlACfPFfHwQRUl9dyXpHBCMlSabdmGjScK4iYKLurNtcz37VZPI/s480/conciradio3.5.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.739 - The Smashing Pumpkins - Madrid 1998, la intrahistoria. "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/programa-291-nirvana-visita-espana-1992.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s320/nirvana_35a_7a.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s160/nirvana_35a_7a.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s320/nirvana_35a_7a.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s480/nirvana_35a_7a.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s160/nirvana_35a_7a.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s320/nirvana_35a_7a.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s480/nirvana_35a_7a.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 291 - Nirvana visita España 1992"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-202-adios-bowie.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYQyHz2zZG7mt3yEEJwCm-LTuXkNZ-vovMn8w5GzVLj41HT4_l-a0z_jqjL6oDL5FMMiiojRVjJuUWooUVo5Jp40-b56VFse11f5zyCQhDWCUpUYok3nmi_MgvM2L7fZGfPnd1IgdO-zI/s320/db-cdcover2.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYQyHz2zZG7mt3yEEJwCm-LTuXkNZ-vovMn8w5GzVLj41HT4_l-a0z_jqjL6oDL5FMMiiojRVjJuUWooUVo5Jp40-b56VFse11f5zyCQhDWCUpUYok3nmi_MgvM2L7fZGfPnd1IgdO-zI/s160/db-cdcover2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYQyHz2zZG7mt3yEEJwCm-LTuXkNZ-vovMn8w5GzVLj41HT4_l-a0z_jqjL6oDL5FMMiiojRVjJuUWooUVo5Jp40-b56VFse11f5zyCQhDWCUpUYok3nmi_MgvM2L7fZGfPnd1IgdO-zI/s320/db-cdcover2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYQyHz2zZG7mt3yEEJwCm-LTuXkNZ-vovMn8w5GzVLj41HT4_l-a0z_jqjL6oDL5FMMiiojRVjJuUWooUVo5Jp40-b56VFse11f5zyCQhDWCUpUYok3nmi_MgvM2L7fZGfPnd1IgdO-zI/s480/db-cdcover2.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYQyHz2zZG7mt3yEEJwCm-LTuXkNZ-vovMn8w5GzVLj41HT4_l-a0z_jqjL6oDL5FMMiiojRVjJuUWooUVo5Jp40-b56VFse11f5zyCQhDWCUpUYok3nmi_MgvM2L7fZGfPnd1IgdO-zI/s160/db-cdcover2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYQyHz2zZG7mt3yEEJwCm-LTuXkNZ-vovMn8w5GzVLj41HT4_l-a0z_jqjL6oDL5FMMiiojRVjJuUWooUVo5Jp40-b56VFse11f5zyCQhDWCUpUYok3nmi_MgvM2L7fZGfPnd1IgdO-zI/s320/db-cdcover2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYQyHz2zZG7mt3yEEJwCm-LTuXkNZ-vovMn8w5GzVLj41HT4_l-a0z_jqjL6oDL5FMMiiojRVjJuUWooUVo5Jp40-b56VFse11f5zyCQhDWCUpUYok3nmi_MgvM2L7fZGfPnd1IgdO-zI/s480/db-cdcover2.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 202 - Adiós Bowie"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-196-sonic-youth-sao-paulo-14-nov-2011.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s320/swu2011_mh_marcoshermes_195234-3.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s160/swu2011_mh_marcoshermes_195234-3.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s320/swu2011_mh_marcoshermes_195234-3.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s480/swu2011_mh_marcoshermes_195234-3.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s160/swu2011_mh_marcoshermes_195234-3.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s320/swu2011_mh_marcoshermes_195234-3.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s480/swu2011_mh_marcoshermes_195234-3.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 196 - Sonic Youth São Paulo 14 Nov. 2011"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-165-entrevista-a-rafa-cervera.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s320/rafa-cervera-e1417550151876.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s160/rafa-cervera-e1417550151876.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s320/rafa-cervera-e1417550151876.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s480/rafa-cervera-e1417550151876.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s160/rafa-cervera-e1417550151876.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s320/rafa-cervera-e1417550151876.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s480/rafa-cervera-e1417550151876.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 165 - Entrevista a Rafa Cervera"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-152-entrevista-a-rafa-cervera.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 152 - Entrevista a Rafa Cervera"
                 loading="lazy" width="320" height="213" />
         </a>

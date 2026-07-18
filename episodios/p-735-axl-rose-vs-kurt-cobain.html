@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.735 - Axl Rose Vs. Kurt Cobain — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s320/kurtaxl_a_l.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s160/kurtaxl_a_l.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s320/kurtaxl_a_l.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s480/kurtaxl_a_l.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s160/kurtaxl_a_l.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s320/kurtaxl_a_l.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s480/kurtaxl_a_l.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 216 - Nirvana vs Guns N&#39; Roses"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s160/B1gPDmmc+PS._SS500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s480/B1gPDmmc+PS._SS500_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s160/B1gPDmmc+PS._SS500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s480/B1gPDmmc+PS._SS500_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 22: Cuando Kurt Cobain conoció a William Burroughs"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj659nLnS_yKfPj7LtVwD3lvhQ3aJYd1BpJ0JyoJud5anviactbf38TnCdeyRNk5c4WoHpB13AlWryBLvdagyP6AsmCX647BR9SfiFu_B7F9aZ3xIcbLF0tGLm0nwlJwgQz7eFcB0w3sp4/s320/72f3a7c35c3fb87d0e3ed860efb63b83.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj659nLnS_yKfPj7LtVwD3lvhQ3aJYd1BpJ0JyoJud5anviactbf38TnCdeyRNk5c4WoHpB13AlWryBLvdagyP6AsmCX647BR9SfiFu_B7F9aZ3xIcbLF0tGLm0nwlJwgQz7eFcB0w3sp4/s160/72f3a7c35c3fb87d0e3ed860efb63b83.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj659nLnS_yKfPj7LtVwD3lvhQ3aJYd1BpJ0JyoJud5anviactbf38TnCdeyRNk5c4WoHpB13AlWryBLvdagyP6AsmCX647BR9SfiFu_B7F9aZ3xIcbLF0tGLm0nwlJwgQz7eFcB0w3sp4/s320/72f3a7c35c3fb87d0e3ed860efb63b83.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj659nLnS_yKfPj7LtVwD3lvhQ3aJYd1BpJ0JyoJud5anviactbf38TnCdeyRNk5c4WoHpB13AlWryBLvdagyP6AsmCX647BR9SfiFu_B7F9aZ3xIcbLF0tGLm0nwlJwgQz7eFcB0w3sp4/s480/72f3a7c35c3fb87d0e3ed860efb63b83.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj659nLnS_yKfPj7LtVwD3lvhQ3aJYd1BpJ0JyoJud5anviactbf38TnCdeyRNk5c4WoHpB13AlWryBLvdagyP6AsmCX647BR9SfiFu_B7F9aZ3xIcbLF0tGLm0nwlJwgQz7eFcB0w3sp4/s160/72f3a7c35c3fb87d0e3ed860efb63b83.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj659nLnS_yKfPj7LtVwD3lvhQ3aJYd1BpJ0JyoJud5anviactbf38TnCdeyRNk5c4WoHpB13AlWryBLvdagyP6AsmCX647BR9SfiFu_B7F9aZ3xIcbLF0tGLm0nwlJwgQz7eFcB0w3sp4/s320/72f3a7c35c3fb87d0e3ed860efb63b83.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj659nLnS_yKfPj7LtVwD3lvhQ3aJYd1BpJ0JyoJud5anviactbf38TnCdeyRNk5c4WoHpB13AlWryBLvdagyP6AsmCX647BR9SfiFu_B7F9aZ3xIcbLF0tGLm0nwlJwgQz7eFcB0w3sp4/s480/72f3a7c35c3fb87d0e3ed860efb63b83.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.731 - Pagoda, Michael Pitt: tras el eco de Kurt Cobain"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="b90-classic-6-la-primera-y-unica-vez-que-kurt-y-courtney-actuaron-juntos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s320/d9dbb49122ca7f199dfd9fc1bd704541.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s320/d9dbb49122ca7f199dfd9fc1bd704541.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s480/d9dbb49122ca7f199dfd9fc1bd704541.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s640/d9dbb49122ca7f199dfd9fc1bd704541.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s320/d9dbb49122ca7f199dfd9fc1bd704541.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s480/d9dbb49122ca7f199dfd9fc1bd704541.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s640/d9dbb49122ca7f199dfd9fc1bd704541.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 6: La primera y única vez que Kurt y Courtney actuaron juntos"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="p-641-post-malone-y-travis-barker-recuerdan-a-nirvana.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s320/Postie-and-Travis-Barker-768x412.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s320/Postie-and-Travis-Barker-768x412.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s480/Postie-and-Travis-Barker-768x412.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s640/Postie-and-Travis-Barker-768x412.jpeg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s320/Postie-and-Travis-Barker-768x412.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s480/Postie-and-Travis-Barker-768x412.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s640/Postie-and-Travis-Barker-768x412.jpeg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.641 Post Malone y Travis Barker recuerdan a Nirvana"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="p-595-danny-goldberg-serving-the-servant-recordando-a-kurt-cobain.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9-pudLlZzedBk1sC4X1iy6IYUzJbRyFskTrVlFQBj4i01wQbKrYz4Oz2vAkYpUkpeZESrPnBqMrBvdVsM0cbf3Uo4t5BP3p9cPSBk-0hEpyidBlSjEdRXCHekxkKHPQGCTfnelsGqUcg/s320/b90_595.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9-pudLlZzedBk1sC4X1iy6IYUzJbRyFskTrVlFQBj4i01wQbKrYz4Oz2vAkYpUkpeZESrPnBqMrBvdVsM0cbf3Uo4t5BP3p9cPSBk-0hEpyidBlSjEdRXCHekxkKHPQGCTfnelsGqUcg/s320/b90_595.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9-pudLlZzedBk1sC4X1iy6IYUzJbRyFskTrVlFQBj4i01wQbKrYz4Oz2vAkYpUkpeZESrPnBqMrBvdVsM0cbf3Uo4t5BP3p9cPSBk-0hEpyidBlSjEdRXCHekxkKHPQGCTfnelsGqUcg/s480/b90_595.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9-pudLlZzedBk1sC4X1iy6IYUzJbRyFskTrVlFQBj4i01wQbKrYz4Oz2vAkYpUkpeZESrPnBqMrBvdVsM0cbf3Uo4t5BP3p9cPSBk-0hEpyidBlSjEdRXCHekxkKHPQGCTfnelsGqUcg/s640/b90_595.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9-pudLlZzedBk1sC4X1iy6IYUzJbRyFskTrVlFQBj4i01wQbKrYz4Oz2vAkYpUkpeZESrPnBqMrBvdVsM0cbf3Uo4t5BP3p9cPSBk-0hEpyidBlSjEdRXCHekxkKHPQGCTfnelsGqUcg/s320/b90_595.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9-pudLlZzedBk1sC4X1iy6IYUzJbRyFskTrVlFQBj4i01wQbKrYz4Oz2vAkYpUkpeZESrPnBqMrBvdVsM0cbf3Uo4t5BP3p9cPSBk-0hEpyidBlSjEdRXCHekxkKHPQGCTfnelsGqUcg/s480/b90_595.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9-pudLlZzedBk1sC4X1iy6IYUzJbRyFskTrVlFQBj4i01wQbKrYz4Oz2vAkYpUkpeZESrPnBqMrBvdVsM0cbf3Uo4t5BP3p9cPSBk-0hEpyidBlSjEdRXCHekxkKHPQGCTfnelsGqUcg/s640/b90_595.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.595  - Danny Goldberg &#39;Serving the servant&#39;, recordando a Kurt Cobain"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.774 - Yann Tiersen y el fabuloso destino de Amélie Poulain — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -130,8 +130,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s320/b90_493+%25282%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s160/b90_493+%25282%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s320/b90_493+%25282%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s480/b90_493+%25282%2529.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s160/b90_493+%25282%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s320/b90_493+%25282%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s480/b90_493+%25282%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 493 - Actualidad y entrevista a PAN"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -141,8 +140,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s160/seattle-grunge-est1990-mens-t-shirt.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s160/seattle-grunge-est1990-mens-t-shirt.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.971 - ¿Sigue siendo Seattle un destino atractivo para los amantes del grunge?"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -152,8 +150,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s320/R.E.M..jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s160/R.E.M..jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s320/R.E.M..jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s480/R.E.M..jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s160/R.E.M..jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s320/R.E.M..jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s480/R.E.M..jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.775 - R.E.M. Up (1998)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -169,8 +166,7 @@
         <a class="related-bottom-card" href="b90-classic-9-tomorrow-never-knows-sigue-siendo-un-misterio.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s320/AP17johnlid.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s320/AP17johnlid.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s480/AP17johnlid.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s640/AP17johnlid.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s320/AP17johnlid.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s480/AP17johnlid.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s640/AP17johnlid.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 9: Tomorrow Never Knows sigue siendo un misterio"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -181,8 +177,7 @@
           </a><a class="related-bottom-card" href="p-776-noel-gallagher-s-high-flying-birds-back-the-way-we-came-vol-1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSh2lEU6EGgMaXoXW52uu0yKPIpDnMrtCtJBq-w8LQhCAA5WbtZ1SqaBlX15Y_r9KUgHd_3MnhvjLq33n-sTx99vO085SrAOzXQQcYkpUs9_QgE_8VkuVKrKuMBFvjfHBOIRq1Ys4RE0/s320/75016484aabc717837ee10e187f40a11.1000x1000x1.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSh2lEU6EGgMaXoXW52uu0yKPIpDnMrtCtJBq-w8LQhCAA5WbtZ1SqaBlX15Y_r9KUgHd_3MnhvjLq33n-sTx99vO085SrAOzXQQcYkpUs9_QgE_8VkuVKrKuMBFvjfHBOIRq1Ys4RE0/s320/75016484aabc717837ee10e187f40a11.1000x1000x1.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSh2lEU6EGgMaXoXW52uu0yKPIpDnMrtCtJBq-w8LQhCAA5WbtZ1SqaBlX15Y_r9KUgHd_3MnhvjLq33n-sTx99vO085SrAOzXQQcYkpUs9_QgE_8VkuVKrKuMBFvjfHBOIRq1Ys4RE0/s480/75016484aabc717837ee10e187f40a11.1000x1000x1.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSh2lEU6EGgMaXoXW52uu0yKPIpDnMrtCtJBq-w8LQhCAA5WbtZ1SqaBlX15Y_r9KUgHd_3MnhvjLq33n-sTx99vO085SrAOzXQQcYkpUs9_QgE_8VkuVKrKuMBFvjfHBOIRq1Ys4RE0/s640/75016484aabc717837ee10e187f40a11.1000x1000x1.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSh2lEU6EGgMaXoXW52uu0yKPIpDnMrtCtJBq-w8LQhCAA5WbtZ1SqaBlX15Y_r9KUgHd_3MnhvjLq33n-sTx99vO085SrAOzXQQcYkpUs9_QgE_8VkuVKrKuMBFvjfHBOIRq1Ys4RE0/s320/75016484aabc717837ee10e187f40a11.1000x1000x1.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSh2lEU6EGgMaXoXW52uu0yKPIpDnMrtCtJBq-w8LQhCAA5WbtZ1SqaBlX15Y_r9KUgHd_3MnhvjLq33n-sTx99vO085SrAOzXQQcYkpUs9_QgE_8VkuVKrKuMBFvjfHBOIRq1Ys4RE0/s480/75016484aabc717837ee10e187f40a11.1000x1000x1.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSh2lEU6EGgMaXoXW52uu0yKPIpDnMrtCtJBq-w8LQhCAA5WbtZ1SqaBlX15Y_r9KUgHd_3MnhvjLq33n-sTx99vO085SrAOzXQQcYkpUs9_QgE_8VkuVKrKuMBFvjfHBOIRq1Ys4RE0/s640/75016484aabc717837ee10e187f40a11.1000x1000x1.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.776 - Noel Gallagher&#39;s High Flying Birds - Back The Way We Came Vol. 1"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -193,8 +188,7 @@
           </a><a class="related-bottom-card" href="p-773-diez-temazos-de-maika-makovski.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s320/Maika-Makovski-portada.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s320/Maika-Makovski-portada.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s480/Maika-Makovski-portada.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s640/Maika-Makovski-portada.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s320/Maika-Makovski-portada.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s480/Maika-Makovski-portada.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s640/Maika-Makovski-portada.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.773 - DIEZ temazos de Maika Makovski "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

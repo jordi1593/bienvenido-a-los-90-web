@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Ok Computer Revisited — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/los-conciertos-de-bienvenido-a-los-90.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQnXDHA2jOzvgvtX5oWe6DH0ZhnIN2670hnEzLRuHfq2tNJ4e8Unr-D1bYvjWKO93MYJpstGluCniyg1nX7Vyg4C_g8JFzP39CWZlP2-06Fzjc7SnBShf05qbxMORIE6D7w0-4ktOL6Y/s320/22552763_1929663387051295_5305889142817090822_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQnXDHA2jOzvgvtX5oWe6DH0ZhnIN2670hnEzLRuHfq2tNJ4e8Unr-D1bYvjWKO93MYJpstGluCniyg1nX7Vyg4C_g8JFzP39CWZlP2-06Fzjc7SnBShf05qbxMORIE6D7w0-4ktOL6Y/s160/22552763_1929663387051295_5305889142817090822_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQnXDHA2jOzvgvtX5oWe6DH0ZhnIN2670hnEzLRuHfq2tNJ4e8Unr-D1bYvjWKO93MYJpstGluCniyg1nX7Vyg4C_g8JFzP39CWZlP2-06Fzjc7SnBShf05qbxMORIE6D7w0-4ktOL6Y/s320/22552763_1929663387051295_5305889142817090822_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQnXDHA2jOzvgvtX5oWe6DH0ZhnIN2670hnEzLRuHfq2tNJ4e8Unr-D1bYvjWKO93MYJpstGluCniyg1nX7Vyg4C_g8JFzP39CWZlP2-06Fzjc7SnBShf05qbxMORIE6D7w0-4ktOL6Y/s480/22552763_1929663387051295_5305889142817090822_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQnXDHA2jOzvgvtX5oWe6DH0ZhnIN2670hnEzLRuHfq2tNJ4e8Unr-D1bYvjWKO93MYJpstGluCniyg1nX7Vyg4C_g8JFzP39CWZlP2-06Fzjc7SnBShf05qbxMORIE6D7w0-4ktOL6Y/s160/22552763_1929663387051295_5305889142817090822_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQnXDHA2jOzvgvtX5oWe6DH0ZhnIN2670hnEzLRuHfq2tNJ4e8Unr-D1bYvjWKO93MYJpstGluCniyg1nX7Vyg4C_g8JFzP39CWZlP2-06Fzjc7SnBShf05qbxMORIE6D7w0-4ktOL6Y/s320/22552763_1929663387051295_5305889142817090822_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQnXDHA2jOzvgvtX5oWe6DH0ZhnIN2670hnEzLRuHfq2tNJ4e8Unr-D1bYvjWKO93MYJpstGluCniyg1nX7Vyg4C_g8JFzP39CWZlP2-06Fzjc7SnBShf05qbxMORIE6D7w0-4ktOL6Y/s480/22552763_1929663387051295_5305889142817090822_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Los conciertos de Bienvenido a los 90"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/programa-326-lo-mejor-del-2017-ok-computer-revisited.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi6dLyN4yFWJl9mEms7JCCDRLY9WLxA13u_aPaag55Wv5Eg1TaHNGqMgumojt2VA0uoaIvlC44lxX_if6GGJQyd4yLhX01fWLvGc_cSLzHemSlKlYyT1Pc8niInJQ83dkTfL6v6x0BK-0/s320/524071-944-432.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi6dLyN4yFWJl9mEms7JCCDRLY9WLxA13u_aPaag55Wv5Eg1TaHNGqMgumojt2VA0uoaIvlC44lxX_if6GGJQyd4yLhX01fWLvGc_cSLzHemSlKlYyT1Pc8niInJQ83dkTfL6v6x0BK-0/s160/524071-944-432.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi6dLyN4yFWJl9mEms7JCCDRLY9WLxA13u_aPaag55Wv5Eg1TaHNGqMgumojt2VA0uoaIvlC44lxX_if6GGJQyd4yLhX01fWLvGc_cSLzHemSlKlYyT1Pc8niInJQ83dkTfL6v6x0BK-0/s320/524071-944-432.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi6dLyN4yFWJl9mEms7JCCDRLY9WLxA13u_aPaag55Wv5Eg1TaHNGqMgumojt2VA0uoaIvlC44lxX_if6GGJQyd4yLhX01fWLvGc_cSLzHemSlKlYyT1Pc8niInJQ83dkTfL6v6x0BK-0/s480/524071-944-432.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi6dLyN4yFWJl9mEms7JCCDRLY9WLxA13u_aPaag55Wv5Eg1TaHNGqMgumojt2VA0uoaIvlC44lxX_if6GGJQyd4yLhX01fWLvGc_cSLzHemSlKlYyT1Pc8niInJQ83dkTfL6v6x0BK-0/s160/524071-944-432.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi6dLyN4yFWJl9mEms7JCCDRLY9WLxA13u_aPaag55Wv5Eg1TaHNGqMgumojt2VA0uoaIvlC44lxX_if6GGJQyd4yLhX01fWLvGc_cSLzHemSlKlYyT1Pc8niInJQ83dkTfL6v6x0BK-0/s320/524071-944-432.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi6dLyN4yFWJl9mEms7JCCDRLY9WLxA13u_aPaag55Wv5Eg1TaHNGqMgumojt2VA0uoaIvlC44lxX_if6GGJQyd4yLhX01fWLvGc_cSLzHemSlKlYyT1Pc8niInJQ83dkTfL6v6x0BK-0/s480/524071-944-432.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 326 – Lo mejor del 2017 OK Computer Revisited"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-314-homenaje-a-radiohead-en-directo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s320/22552763_1929663387051295_5305889142817090822_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s160/22552763_1929663387051295_5305889142817090822_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s320/22552763_1929663387051295_5305889142817090822_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s480/22552763_1929663387051295_5305889142817090822_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s160/22552763_1929663387051295_5305889142817090822_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s320/22552763_1929663387051295_5305889142817090822_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s480/22552763_1929663387051295_5305889142817090822_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 314 - Homenaje a Radiohead en directo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-295-inicio-de-temporada-con-new-day.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaEahRaXd-_p8XSw3LdkvqnGoKq3vhk7XWFqgxClYpru_13eYrUQfO2T685OAwkacjzMR5v7j9vjjBsGgcifrUVK69Dt7V14rNBsSLmnoBV642SDMs5o38OWBXqAXNWz5lvu5gSPGEqEU/s320/bienvenido-295.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaEahRaXd-_p8XSw3LdkvqnGoKq3vhk7XWFqgxClYpru_13eYrUQfO2T685OAwkacjzMR5v7j9vjjBsGgcifrUVK69Dt7V14rNBsSLmnoBV642SDMs5o38OWBXqAXNWz5lvu5gSPGEqEU/s160/bienvenido-295.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaEahRaXd-_p8XSw3LdkvqnGoKq3vhk7XWFqgxClYpru_13eYrUQfO2T685OAwkacjzMR5v7j9vjjBsGgcifrUVK69Dt7V14rNBsSLmnoBV642SDMs5o38OWBXqAXNWz5lvu5gSPGEqEU/s320/bienvenido-295.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaEahRaXd-_p8XSw3LdkvqnGoKq3vhk7XWFqgxClYpru_13eYrUQfO2T685OAwkacjzMR5v7j9vjjBsGgcifrUVK69Dt7V14rNBsSLmnoBV642SDMs5o38OWBXqAXNWz5lvu5gSPGEqEU/s480/bienvenido-295.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaEahRaXd-_p8XSw3LdkvqnGoKq3vhk7XWFqgxClYpru_13eYrUQfO2T685OAwkacjzMR5v7j9vjjBsGgcifrUVK69Dt7V14rNBsSLmnoBV642SDMs5o38OWBXqAXNWz5lvu5gSPGEqEU/s160/bienvenido-295.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaEahRaXd-_p8XSw3LdkvqnGoKq3vhk7XWFqgxClYpru_13eYrUQfO2T685OAwkacjzMR5v7j9vjjBsGgcifrUVK69Dt7V14rNBsSLmnoBV642SDMs5o38OWBXqAXNWz5lvu5gSPGEqEU/s320/bienvenido-295.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaEahRaXd-_p8XSw3LdkvqnGoKq3vhk7XWFqgxClYpru_13eYrUQfO2T685OAwkacjzMR5v7j9vjjBsGgcifrUVK69Dt7V14rNBsSLmnoBV642SDMs5o38OWBXqAXNWz5lvu5gSPGEqEU/s480/bienvenido-295.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 295 - Inicio de temporada con New Day"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-287-ok-computer-revisited.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s320/ok-computer-revisited-120x120.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s160/ok-computer-revisited-120x120.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s320/ok-computer-revisited-120x120.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s480/ok-computer-revisited-120x120.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s160/ok-computer-revisited-120x120.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s320/ok-computer-revisited-120x120.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s480/ok-computer-revisited-120x120.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 287 - Ok Computer Revisited"
                 loading="lazy" width="320" height="213" />
         </a>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Tom Petty — 7 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1020-especial-1994-11-the-black-crowes-nirvana-tom-petty-woodstock-94.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s320/b90_parte12.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s160/b90_parte12.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s320/b90_parte12.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s480/b90_parte12.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s160/b90_parte12.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s320/b90_parte12.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s480/b90_parte12.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1020 - Especial 1994 (11) : The Black Crowes - Nirvana - Tom Petty - Woodstock 94"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-896-la-radio-musical-tal-y-como-nos-gusta.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfzWgaoLD5nbP_7iQs5FLOWWyS3LPK1SbBxKsbqY7TOgHmbMeYk95P9pg37Gq5LlAhY87xAXS9mNWAZrJtrjcWQW-fCxi7l604N9B0tzy9oCG9GMHeQ3pxWHYSM1JZDTOGaNL4wC1goFS8L_3HSHMSFIo8WFT3ORXp2dkJEP4GdwSsjqBecu-tV_Eg/s320/el%20maquinista.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfzWgaoLD5nbP_7iQs5FLOWWyS3LPK1SbBxKsbqY7TOgHmbMeYk95P9pg37Gq5LlAhY87xAXS9mNWAZrJtrjcWQW-fCxi7l604N9B0tzy9oCG9GMHeQ3pxWHYSM1JZDTOGaNL4wC1goFS8L_3HSHMSFIo8WFT3ORXp2dkJEP4GdwSsjqBecu-tV_Eg/s160/el%20maquinista.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfzWgaoLD5nbP_7iQs5FLOWWyS3LPK1SbBxKsbqY7TOgHmbMeYk95P9pg37Gq5LlAhY87xAXS9mNWAZrJtrjcWQW-fCxi7l604N9B0tzy9oCG9GMHeQ3pxWHYSM1JZDTOGaNL4wC1goFS8L_3HSHMSFIo8WFT3ORXp2dkJEP4GdwSsjqBecu-tV_Eg/s320/el%20maquinista.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfzWgaoLD5nbP_7iQs5FLOWWyS3LPK1SbBxKsbqY7TOgHmbMeYk95P9pg37Gq5LlAhY87xAXS9mNWAZrJtrjcWQW-fCxi7l604N9B0tzy9oCG9GMHeQ3pxWHYSM1JZDTOGaNL4wC1goFS8L_3HSHMSFIo8WFT3ORXp2dkJEP4GdwSsjqBecu-tV_Eg/s480/el%20maquinista.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfzWgaoLD5nbP_7iQs5FLOWWyS3LPK1SbBxKsbqY7TOgHmbMeYk95P9pg37Gq5LlAhY87xAXS9mNWAZrJtrjcWQW-fCxi7l604N9B0tzy9oCG9GMHeQ3pxWHYSM1JZDTOGaNL4wC1goFS8L_3HSHMSFIo8WFT3ORXp2dkJEP4GdwSsjqBecu-tV_Eg/s160/el%20maquinista.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfzWgaoLD5nbP_7iQs5FLOWWyS3LPK1SbBxKsbqY7TOgHmbMeYk95P9pg37Gq5LlAhY87xAXS9mNWAZrJtrjcWQW-fCxi7l604N9B0tzy9oCG9GMHeQ3pxWHYSM1JZDTOGaNL4wC1goFS8L_3HSHMSFIo8WFT3ORXp2dkJEP4GdwSsjqBecu-tV_Eg/s320/el%20maquinista.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfzWgaoLD5nbP_7iQs5FLOWWyS3LPK1SbBxKsbqY7TOgHmbMeYk95P9pg37Gq5LlAhY87xAXS9mNWAZrJtrjcWQW-fCxi7l604N9B0tzy9oCG9GMHeQ3pxWHYSM1JZDTOGaNL4wC1goFS8L_3HSHMSFIo8WFT3ORXp2dkJEP4GdwSsjqBecu-tV_Eg/s480/el%20maquinista.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.896 - La RADIO MUSICAL tal y como nos gusta"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-764-canciones-que-haran-mejorar-tu-dia.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s320/ideas_inspiradoras_20190901.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s160/ideas_inspiradoras_20190901.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s320/ideas_inspiradoras_20190901.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s480/ideas_inspiradoras_20190901.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s160/ideas_inspiradoras_20190901.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s320/ideas_inspiradoras_20190901.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s480/ideas_inspiradoras_20190901.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.764 - Canciones que harán mejorar tu día"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-304-eddie-vedder-the-beatles.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s160/211e39bccf57b79c8093eea29fe06350.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s480/211e39bccf57b79c8093eea29fe06350.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s160/211e39bccf57b79c8093eea29fe06350.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s480/211e39bccf57b79c8093eea29fe06350.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 304 – Eddie Vedder + The Beatles"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-300-con-paco-perez-bryan.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s320/B90+-+300.JPG"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s160/B90+-+300.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s320/B90+-+300.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s480/B90+-+300.JPG 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s160/B90+-+300.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s320/B90+-+300.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s480/B90+-+300.JPG 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 300 con Paco Pérez Bryan"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-299-tom-petty.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMZM-Aq7upVzVFogJvVXWCwwnCAqOezJSiXuh4scC-xCzcGRxFJBu6XQOV8rRJiX6jQC_jF0_WwfcnIJqlmkfrsyb8yy3GwrlNs9JWAdZGJQKo_vw_C0zHlHSmu__R3H_5mqT06759Qvc/s320/Tom+Petty+-+R.I.P..jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMZM-Aq7upVzVFogJvVXWCwwnCAqOezJSiXuh4scC-xCzcGRxFJBu6XQOV8rRJiX6jQC_jF0_WwfcnIJqlmkfrsyb8yy3GwrlNs9JWAdZGJQKo_vw_C0zHlHSmu__R3H_5mqT06759Qvc/s160/Tom+Petty+-+R.I.P..jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMZM-Aq7upVzVFogJvVXWCwwnCAqOezJSiXuh4scC-xCzcGRxFJBu6XQOV8rRJiX6jQC_jF0_WwfcnIJqlmkfrsyb8yy3GwrlNs9JWAdZGJQKo_vw_C0zHlHSmu__R3H_5mqT06759Qvc/s320/Tom+Petty+-+R.I.P..jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMZM-Aq7upVzVFogJvVXWCwwnCAqOezJSiXuh4scC-xCzcGRxFJBu6XQOV8rRJiX6jQC_jF0_WwfcnIJqlmkfrsyb8yy3GwrlNs9JWAdZGJQKo_vw_C0zHlHSmu__R3H_5mqT06759Qvc/s480/Tom+Petty+-+R.I.P..jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMZM-Aq7upVzVFogJvVXWCwwnCAqOezJSiXuh4scC-xCzcGRxFJBu6XQOV8rRJiX6jQC_jF0_WwfcnIJqlmkfrsyb8yy3GwrlNs9JWAdZGJQKo_vw_C0zHlHSmu__R3H_5mqT06759Qvc/s160/Tom+Petty+-+R.I.P..jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMZM-Aq7upVzVFogJvVXWCwwnCAqOezJSiXuh4scC-xCzcGRxFJBu6XQOV8rRJiX6jQC_jF0_WwfcnIJqlmkfrsyb8yy3GwrlNs9JWAdZGJQKo_vw_C0zHlHSmu__R3H_5mqT06759Qvc/s320/Tom+Petty+-+R.I.P..jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMZM-Aq7upVzVFogJvVXWCwwnCAqOezJSiXuh4scC-xCzcGRxFJBu6XQOV8rRJiX6jQC_jF0_WwfcnIJqlmkfrsyb8yy3GwrlNs9JWAdZGJQKo_vw_C0zHlHSmu__R3H_5mqT06759Qvc/s480/Tom+Petty+-+R.I.P..jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 299 – Tom Petty"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-189-especial-foo-fighters.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLq9-aMuFoyhOfma_1Wsum_u1yMYuJahCFbiqk0yJkotkGucTi6kz0QDO14B6ajXexQjkGu047pCz_e3yPWyVl6UynA7K1NDGGXtMf_Qo7A-Yspn-QTNTsyqZlU8-J8705ZOFb_nXFrmw/s320/12118864_10153173098882747_5073175791221350506_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLq9-aMuFoyhOfma_1Wsum_u1yMYuJahCFbiqk0yJkotkGucTi6kz0QDO14B6ajXexQjkGu047pCz_e3yPWyVl6UynA7K1NDGGXtMf_Qo7A-Yspn-QTNTsyqZlU8-J8705ZOFb_nXFrmw/s160/12118864_10153173098882747_5073175791221350506_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLq9-aMuFoyhOfma_1Wsum_u1yMYuJahCFbiqk0yJkotkGucTi6kz0QDO14B6ajXexQjkGu047pCz_e3yPWyVl6UynA7K1NDGGXtMf_Qo7A-Yspn-QTNTsyqZlU8-J8705ZOFb_nXFrmw/s320/12118864_10153173098882747_5073175791221350506_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLq9-aMuFoyhOfma_1Wsum_u1yMYuJahCFbiqk0yJkotkGucTi6kz0QDO14B6ajXexQjkGu047pCz_e3yPWyVl6UynA7K1NDGGXtMf_Qo7A-Yspn-QTNTsyqZlU8-J8705ZOFb_nXFrmw/s480/12118864_10153173098882747_5073175791221350506_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLq9-aMuFoyhOfma_1Wsum_u1yMYuJahCFbiqk0yJkotkGucTi6kz0QDO14B6ajXexQjkGu047pCz_e3yPWyVl6UynA7K1NDGGXtMf_Qo7A-Yspn-QTNTsyqZlU8-J8705ZOFb_nXFrmw/s160/12118864_10153173098882747_5073175791221350506_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLq9-aMuFoyhOfma_1Wsum_u1yMYuJahCFbiqk0yJkotkGucTi6kz0QDO14B6ajXexQjkGu047pCz_e3yPWyVl6UynA7K1NDGGXtMf_Qo7A-Yspn-QTNTsyqZlU8-J8705ZOFb_nXFrmw/s320/12118864_10153173098882747_5073175791221350506_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLq9-aMuFoyhOfma_1Wsum_u1yMYuJahCFbiqk0yJkotkGucTi6kz0QDO14B6ajXexQjkGu047pCz_e3yPWyVl6UynA7K1NDGGXtMf_Qo7A-Yspn-QTNTsyqZlU8-J8705ZOFb_nXFrmw/s480/12118864_10153173098882747_5073175791221350506_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 189 - Especial Foo Fighters"
                 loading="lazy" width="320" height="213" />
         </a>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.571 - Especial cine: Batman, Joker y los hermanos Phoenix — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -128,8 +128,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpJH4u9N1b0h4nrRocd8Qka7H8pGSnt9ibGoXZoATQqpAykVrUkSMZ6A11qan69UJsfj7IYTs3rO6Cl0ljq16moH23N_EJVyGpSSIRkrHUmsk6Qq8W_Bb7LjZBoPlq3g08iubWCOi32T0/s320/Groundhog-Day.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpJH4u9N1b0h4nrRocd8Qka7H8pGSnt9ibGoXZoATQqpAykVrUkSMZ6A11qan69UJsfj7IYTs3rO6Cl0ljq16moH23N_EJVyGpSSIRkrHUmsk6Qq8W_Bb7LjZBoPlq3g08iubWCOi32T0/s160/Groundhog-Day.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpJH4u9N1b0h4nrRocd8Qka7H8pGSnt9ibGoXZoATQqpAykVrUkSMZ6A11qan69UJsfj7IYTs3rO6Cl0ljq16moH23N_EJVyGpSSIRkrHUmsk6Qq8W_Bb7LjZBoPlq3g08iubWCOi32T0/s320/Groundhog-Day.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpJH4u9N1b0h4nrRocd8Qka7H8pGSnt9ibGoXZoATQqpAykVrUkSMZ6A11qan69UJsfj7IYTs3rO6Cl0ljq16moH23N_EJVyGpSSIRkrHUmsk6Qq8W_Bb7LjZBoPlq3g08iubWCOi32T0/s480/Groundhog-Day.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpJH4u9N1b0h4nrRocd8Qka7H8pGSnt9ibGoXZoATQqpAykVrUkSMZ6A11qan69UJsfj7IYTs3rO6Cl0ljq16moH23N_EJVyGpSSIRkrHUmsk6Qq8W_Bb7LjZBoPlq3g08iubWCOi32T0/s160/Groundhog-Day.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpJH4u9N1b0h4nrRocd8Qka7H8pGSnt9ibGoXZoATQqpAykVrUkSMZ6A11qan69UJsfj7IYTs3rO6Cl0ljq16moH23N_EJVyGpSSIRkrHUmsk6Qq8W_Bb7LjZBoPlq3g08iubWCOi32T0/s320/Groundhog-Day.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpJH4u9N1b0h4nrRocd8Qka7H8pGSnt9ibGoXZoATQqpAykVrUkSMZ6A11qan69UJsfj7IYTs3rO6Cl0ljq16moH23N_EJVyGpSSIRkrHUmsk6Qq8W_Bb7LjZBoPlq3g08iubWCOi32T0/s480/Groundhog-Day.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 223 - Trainspotting - Terminator 2 - El día de la marmota"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -139,8 +138,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXvbF4x-kN2dEQQP4ZXPrmS3cWn5THcEvHlrbkDJaBp6KzvG2SQ-1NqglK1YFgfBMe-kWiwJSgO1r4ximPw4-UbSjuUZDa86nLtRQJQpEaUS4nSrVEF1DGIcRqcxurq7SRZjDH7ooFGAQ/s320/Coronavirus.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXvbF4x-kN2dEQQP4ZXPrmS3cWn5THcEvHlrbkDJaBp6KzvG2SQ-1NqglK1YFgfBMe-kWiwJSgO1r4ximPw4-UbSjuUZDa86nLtRQJQpEaUS4nSrVEF1DGIcRqcxurq7SRZjDH7ooFGAQ/s160/Coronavirus.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXvbF4x-kN2dEQQP4ZXPrmS3cWn5THcEvHlrbkDJaBp6KzvG2SQ-1NqglK1YFgfBMe-kWiwJSgO1r4ximPw4-UbSjuUZDa86nLtRQJQpEaUS4nSrVEF1DGIcRqcxurq7SRZjDH7ooFGAQ/s320/Coronavirus.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXvbF4x-kN2dEQQP4ZXPrmS3cWn5THcEvHlrbkDJaBp6KzvG2SQ-1NqglK1YFgfBMe-kWiwJSgO1r4ximPw4-UbSjuUZDa86nLtRQJQpEaUS4nSrVEF1DGIcRqcxurq7SRZjDH7ooFGAQ/s480/Coronavirus.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXvbF4x-kN2dEQQP4ZXPrmS3cWn5THcEvHlrbkDJaBp6KzvG2SQ-1NqglK1YFgfBMe-kWiwJSgO1r4ximPw4-UbSjuUZDa86nLtRQJQpEaUS4nSrVEF1DGIcRqcxurq7SRZjDH7ooFGAQ/s160/Coronavirus.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXvbF4x-kN2dEQQP4ZXPrmS3cWn5THcEvHlrbkDJaBp6KzvG2SQ-1NqglK1YFgfBMe-kWiwJSgO1r4ximPw4-UbSjuUZDa86nLtRQJQpEaUS4nSrVEF1DGIcRqcxurq7SRZjDH7ooFGAQ/s320/Coronavirus.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXvbF4x-kN2dEQQP4ZXPrmS3cWn5THcEvHlrbkDJaBp6KzvG2SQ-1NqglK1YFgfBMe-kWiwJSgO1r4ximPw4-UbSjuUZDa86nLtRQJQpEaUS4nSrVEF1DGIcRqcxurq7SRZjDH7ooFGAQ/s480/Coronavirus.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.614 - Así afecta el Covid 19 a la industria discográfica"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -150,8 +148,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY35oEGKFaDCIwpr6_xgW_KfJcVbdRKFnJ61Izf5_RdtgAbRvmfuoAGGt7sw5bhE38xM4qhYyJRrMlkp3pAVVfwMb5O6I6fWIG1s-p6u7VvoHXlWQJnyS1zW3QtxjhC4D0nz9aejR4mOM/s320/5cdf15ac24000031007f0c31.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY35oEGKFaDCIwpr6_xgW_KfJcVbdRKFnJ61Izf5_RdtgAbRvmfuoAGGt7sw5bhE38xM4qhYyJRrMlkp3pAVVfwMb5O6I6fWIG1s-p6u7VvoHXlWQJnyS1zW3QtxjhC4D0nz9aejR4mOM/s160/5cdf15ac24000031007f0c31.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY35oEGKFaDCIwpr6_xgW_KfJcVbdRKFnJ61Izf5_RdtgAbRvmfuoAGGt7sw5bhE38xM4qhYyJRrMlkp3pAVVfwMb5O6I6fWIG1s-p6u7VvoHXlWQJnyS1zW3QtxjhC4D0nz9aejR4mOM/s320/5cdf15ac24000031007f0c31.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY35oEGKFaDCIwpr6_xgW_KfJcVbdRKFnJ61Izf5_RdtgAbRvmfuoAGGt7sw5bhE38xM4qhYyJRrMlkp3pAVVfwMb5O6I6fWIG1s-p6u7VvoHXlWQJnyS1zW3QtxjhC4D0nz9aejR4mOM/s480/5cdf15ac24000031007f0c31.jpeg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY35oEGKFaDCIwpr6_xgW_KfJcVbdRKFnJ61Izf5_RdtgAbRvmfuoAGGt7sw5bhE38xM4qhYyJRrMlkp3pAVVfwMb5O6I6fWIG1s-p6u7VvoHXlWQJnyS1zW3QtxjhC4D0nz9aejR4mOM/s160/5cdf15ac24000031007f0c31.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY35oEGKFaDCIwpr6_xgW_KfJcVbdRKFnJ61Izf5_RdtgAbRvmfuoAGGt7sw5bhE38xM4qhYyJRrMlkp3pAVVfwMb5O6I6fWIG1s-p6u7VvoHXlWQJnyS1zW3QtxjhC4D0nz9aejR4mOM/s320/5cdf15ac24000031007f0c31.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY35oEGKFaDCIwpr6_xgW_KfJcVbdRKFnJ61Izf5_RdtgAbRvmfuoAGGt7sw5bhE38xM4qhYyJRrMlkp3pAVVfwMb5O6I6fWIG1s-p6u7VvoHXlWQJnyS1zW3QtxjhC4D0nz9aejR4mOM/s480/5cdf15ac24000031007f0c31.jpeg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.635 Keanu Reeves, el actor grunge"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -167,8 +164,7 @@
         <a class="related-bottom-card" href="p-663-garbage-la-banda-que-mato-el-grunge.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s320/66dba64fc5001318c1ffc6f472b8ebfc.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s320/66dba64fc5001318c1ffc6f472b8ebfc.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s480/66dba64fc5001318c1ffc6f472b8ebfc.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s640/66dba64fc5001318c1ffc6f472b8ebfc.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s320/66dba64fc5001318c1ffc6f472b8ebfc.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s480/66dba64fc5001318c1ffc6f472b8ebfc.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s640/66dba64fc5001318c1ffc6f472b8ebfc.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.663 - Garbage, la banda que mató el grunge"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -179,8 +175,7 @@
           </a><a class="related-bottom-card" href="programa-381-kerouac-gut-derby.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s320/381.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s320/381.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s480/381.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s640/381.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s320/381.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s480/381.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s640/381.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 381 - Kerouac + Gut Derby"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -191,8 +186,7 @@
           </a><a class="related-bottom-card" href="programa-298-paco-soto.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s320/P1040063.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s320/P1040063.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s480/P1040063.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s640/P1040063.JPG 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s320/P1040063.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s480/P1040063.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s640/P1040063.JPG 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 298 – Paco Soto"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

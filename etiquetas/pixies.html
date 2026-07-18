@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Pixies — 27 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1134-me-he-perdido-el-mad-cool-2026.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uttq2DC2H_qXVfvCyQaADN5zQgb8p2kuxh3shwjY6LPHde_cdJ1XZXrcU9UCarhXtBDPyyhClrB9mpLdua5fLd9sLrksv9-9fbTf96ZUT8rJcFMIF6b7BcBeGNfDxunV-SZuvBozaCzRlPThnFkZEW0LYsD4sg_VSUQ7fuqMqfHoKV9WlIdLyRB61-g/s320/B90_1134.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uttq2DC2H_qXVfvCyQaADN5zQgb8p2kuxh3shwjY6LPHde_cdJ1XZXrcU9UCarhXtBDPyyhClrB9mpLdua5fLd9sLrksv9-9fbTf96ZUT8rJcFMIF6b7BcBeGNfDxunV-SZuvBozaCzRlPThnFkZEW0LYsD4sg_VSUQ7fuqMqfHoKV9WlIdLyRB61-g/s160/B90_1134.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uttq2DC2H_qXVfvCyQaADN5zQgb8p2kuxh3shwjY6LPHde_cdJ1XZXrcU9UCarhXtBDPyyhClrB9mpLdua5fLd9sLrksv9-9fbTf96ZUT8rJcFMIF6b7BcBeGNfDxunV-SZuvBozaCzRlPThnFkZEW0LYsD4sg_VSUQ7fuqMqfHoKV9WlIdLyRB61-g/s320/B90_1134.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uttq2DC2H_qXVfvCyQaADN5zQgb8p2kuxh3shwjY6LPHde_cdJ1XZXrcU9UCarhXtBDPyyhClrB9mpLdua5fLd9sLrksv9-9fbTf96ZUT8rJcFMIF6b7BcBeGNfDxunV-SZuvBozaCzRlPThnFkZEW0LYsD4sg_VSUQ7fuqMqfHoKV9WlIdLyRB61-g/s480/B90_1134.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uttq2DC2H_qXVfvCyQaADN5zQgb8p2kuxh3shwjY6LPHde_cdJ1XZXrcU9UCarhXtBDPyyhClrB9mpLdua5fLd9sLrksv9-9fbTf96ZUT8rJcFMIF6b7BcBeGNfDxunV-SZuvBozaCzRlPThnFkZEW0LYsD4sg_VSUQ7fuqMqfHoKV9WlIdLyRB61-g/s160/B90_1134.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uttq2DC2H_qXVfvCyQaADN5zQgb8p2kuxh3shwjY6LPHde_cdJ1XZXrcU9UCarhXtBDPyyhClrB9mpLdua5fLd9sLrksv9-9fbTf96ZUT8rJcFMIF6b7BcBeGNfDxunV-SZuvBozaCzRlPThnFkZEW0LYsD4sg_VSUQ7fuqMqfHoKV9WlIdLyRB61-g/s320/B90_1134.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uttq2DC2H_qXVfvCyQaADN5zQgb8p2kuxh3shwjY6LPHde_cdJ1XZXrcU9UCarhXtBDPyyhClrB9mpLdua5fLd9sLrksv9-9fbTf96ZUT8rJcFMIF6b7BcBeGNfDxunV-SZuvBozaCzRlPThnFkZEW0LYsD4sg_VSUQ7fuqMqfHoKV9WlIdLyRB61-g/s480/B90_1134.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1134 - Me he perdido el Mad Cool 2026"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-76-kim-gordon-y-kim-deal.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s320/Kim-Deal-Kim-Gordon-Netflix-2025.webp"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s160/Kim-Deal-Kim-Gordon-Netflix-2025.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s320/Kim-Deal-Kim-Gordon-Netflix-2025.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s480/Kim-Deal-Kim-Gordon-Netflix-2025.webp 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s160/Kim-Deal-Kim-Gordon-Netflix-2025.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s320/Kim-Deal-Kim-Gordon-Netflix-2025.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s480/Kim-Deal-Kim-Gordon-Netflix-2025.webp 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 76 - Kim Gordon y Kim Deal"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/1031-portadas-iconicas-de-los-90-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicUr7hisVhiO1dpN_q0fyb0O2cVKWggufEzPiDyF_hx16Huexs37Ld8Iof_crD0lAVEpDbzebnDfDHVkaJIwXT5BcVpkyP3RmmQl_J73Une0aznvAbWhoAIs_EaJef4ErkxeWLq7of-7PqZz5a-9CKvVu9HePpCtpx-gb9hUeAtF0WWc2F9VtWB8WINX8/s320/Imagen%20de%20WhatsApp%202025-02-04%20a%20las%2011.23.45_7863dd3e.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicUr7hisVhiO1dpN_q0fyb0O2cVKWggufEzPiDyF_hx16Huexs37Ld8Iof_crD0lAVEpDbzebnDfDHVkaJIwXT5BcVpkyP3RmmQl_J73Une0aznvAbWhoAIs_EaJef4ErkxeWLq7of-7PqZz5a-9CKvVu9HePpCtpx-gb9hUeAtF0WWc2F9VtWB8WINX8/s160/Imagen%20de%20WhatsApp%202025-02-04%20a%20las%2011.23.45_7863dd3e.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicUr7hisVhiO1dpN_q0fyb0O2cVKWggufEzPiDyF_hx16Huexs37Ld8Iof_crD0lAVEpDbzebnDfDHVkaJIwXT5BcVpkyP3RmmQl_J73Une0aznvAbWhoAIs_EaJef4ErkxeWLq7of-7PqZz5a-9CKvVu9HePpCtpx-gb9hUeAtF0WWc2F9VtWB8WINX8/s320/Imagen%20de%20WhatsApp%202025-02-04%20a%20las%2011.23.45_7863dd3e.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicUr7hisVhiO1dpN_q0fyb0O2cVKWggufEzPiDyF_hx16Huexs37Ld8Iof_crD0lAVEpDbzebnDfDHVkaJIwXT5BcVpkyP3RmmQl_J73Une0aznvAbWhoAIs_EaJef4ErkxeWLq7of-7PqZz5a-9CKvVu9HePpCtpx-gb9hUeAtF0WWc2F9VtWB8WINX8/s480/Imagen%20de%20WhatsApp%202025-02-04%20a%20las%2011.23.45_7863dd3e.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicUr7hisVhiO1dpN_q0fyb0O2cVKWggufEzPiDyF_hx16Huexs37Ld8Iof_crD0lAVEpDbzebnDfDHVkaJIwXT5BcVpkyP3RmmQl_J73Une0aznvAbWhoAIs_EaJef4ErkxeWLq7of-7PqZz5a-9CKvVu9HePpCtpx-gb9hUeAtF0WWc2F9VtWB8WINX8/s160/Imagen%20de%20WhatsApp%202025-02-04%20a%20las%2011.23.45_7863dd3e.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicUr7hisVhiO1dpN_q0fyb0O2cVKWggufEzPiDyF_hx16Huexs37Ld8Iof_crD0lAVEpDbzebnDfDHVkaJIwXT5BcVpkyP3RmmQl_J73Une0aznvAbWhoAIs_EaJef4ErkxeWLq7of-7PqZz5a-9CKvVu9HePpCtpx-gb9hUeAtF0WWc2F9VtWB8WINX8/s320/Imagen%20de%20WhatsApp%202025-02-04%20a%20las%2011.23.45_7863dd3e.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicUr7hisVhiO1dpN_q0fyb0O2cVKWggufEzPiDyF_hx16Huexs37Ld8Iof_crD0lAVEpDbzebnDfDHVkaJIwXT5BcVpkyP3RmmQl_J73Une0aznvAbWhoAIs_EaJef4ErkxeWLq7of-7PqZz5a-9CKvVu9HePpCtpx-gb9hUeAtF0WWc2F9VtWB8WINX8/s480/Imagen%20de%20WhatsApp%202025-02-04%20a%20las%2011.23.45_7863dd3e.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1031 - Portadas icónicas de los 90 (1)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-974-recordando-a-steve-albini.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvOm3LeInCgOU7-EjtuHP5-9qeFj5pxp6dM1wUN1WXitFIcer0kgeF-J25vtc24wUqfXAx4fTSIkuHMnW0OdYTwxv_xmMNhFJC_UZfcnp0EqXAYil2xpDbSMClnzV1MsPyxxD8kPUNdtkBEewT9wRnkteOsa-dU00KmJuD-42rhoEVJadQFcMkl_TPT5s/s320/Imagen%20de%20WhatsApp%202024-05-22%20a%20las%2023.53.36_4b010ae3.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvOm3LeInCgOU7-EjtuHP5-9qeFj5pxp6dM1wUN1WXitFIcer0kgeF-J25vtc24wUqfXAx4fTSIkuHMnW0OdYTwxv_xmMNhFJC_UZfcnp0EqXAYil2xpDbSMClnzV1MsPyxxD8kPUNdtkBEewT9wRnkteOsa-dU00KmJuD-42rhoEVJadQFcMkl_TPT5s/s160/Imagen%20de%20WhatsApp%202024-05-22%20a%20las%2023.53.36_4b010ae3.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvOm3LeInCgOU7-EjtuHP5-9qeFj5pxp6dM1wUN1WXitFIcer0kgeF-J25vtc24wUqfXAx4fTSIkuHMnW0OdYTwxv_xmMNhFJC_UZfcnp0EqXAYil2xpDbSMClnzV1MsPyxxD8kPUNdtkBEewT9wRnkteOsa-dU00KmJuD-42rhoEVJadQFcMkl_TPT5s/s320/Imagen%20de%20WhatsApp%202024-05-22%20a%20las%2023.53.36_4b010ae3.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvOm3LeInCgOU7-EjtuHP5-9qeFj5pxp6dM1wUN1WXitFIcer0kgeF-J25vtc24wUqfXAx4fTSIkuHMnW0OdYTwxv_xmMNhFJC_UZfcnp0EqXAYil2xpDbSMClnzV1MsPyxxD8kPUNdtkBEewT9wRnkteOsa-dU00KmJuD-42rhoEVJadQFcMkl_TPT5s/s480/Imagen%20de%20WhatsApp%202024-05-22%20a%20las%2023.53.36_4b010ae3.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvOm3LeInCgOU7-EjtuHP5-9qeFj5pxp6dM1wUN1WXitFIcer0kgeF-J25vtc24wUqfXAx4fTSIkuHMnW0OdYTwxv_xmMNhFJC_UZfcnp0EqXAYil2xpDbSMClnzV1MsPyxxD8kPUNdtkBEewT9wRnkteOsa-dU00KmJuD-42rhoEVJadQFcMkl_TPT5s/s160/Imagen%20de%20WhatsApp%202024-05-22%20a%20las%2023.53.36_4b010ae3.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvOm3LeInCgOU7-EjtuHP5-9qeFj5pxp6dM1wUN1WXitFIcer0kgeF-J25vtc24wUqfXAx4fTSIkuHMnW0OdYTwxv_xmMNhFJC_UZfcnp0EqXAYil2xpDbSMClnzV1MsPyxxD8kPUNdtkBEewT9wRnkteOsa-dU00KmJuD-42rhoEVJadQFcMkl_TPT5s/s320/Imagen%20de%20WhatsApp%202024-05-22%20a%20las%2023.53.36_4b010ae3.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvOm3LeInCgOU7-EjtuHP5-9qeFj5pxp6dM1wUN1WXitFIcer0kgeF-J25vtc24wUqfXAx4fTSIkuHMnW0OdYTwxv_xmMNhFJC_UZfcnp0EqXAYil2xpDbSMClnzV1MsPyxxD8kPUNdtkBEewT9wRnkteOsa-dU00KmJuD-42rhoEVJadQFcMkl_TPT5s/s480/Imagen%20de%20WhatsApp%202024-05-22%20a%20las%2023.53.36_4b010ae3.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.974 - Recordando a Steve Albini"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/p-967-hablando-con-youri-lenquette-de-nirvana-mano-negra-pixies.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1f8X-fHxDj2Qwb_gbGGmLBonAK9hkJKGJcGLbaH4e_1n-hYtaX6_PEFZG9EaL8OpDO7YhcdIkZhMBEjugDY2pTxZTjULNGfnqLqBoMOrcpntMqD8wTjExcdwjbCgHyFI7ALCW2mscLlteJCGkBhk9SXlVniVqzovXFPo-oJJviNVi-9SrDzM3ESULe54/s320/000_Par7836834.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1f8X-fHxDj2Qwb_gbGGmLBonAK9hkJKGJcGLbaH4e_1n-hYtaX6_PEFZG9EaL8OpDO7YhcdIkZhMBEjugDY2pTxZTjULNGfnqLqBoMOrcpntMqD8wTjExcdwjbCgHyFI7ALCW2mscLlteJCGkBhk9SXlVniVqzovXFPo-oJJviNVi-9SrDzM3ESULe54/s160/000_Par7836834.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1f8X-fHxDj2Qwb_gbGGmLBonAK9hkJKGJcGLbaH4e_1n-hYtaX6_PEFZG9EaL8OpDO7YhcdIkZhMBEjugDY2pTxZTjULNGfnqLqBoMOrcpntMqD8wTjExcdwjbCgHyFI7ALCW2mscLlteJCGkBhk9SXlVniVqzovXFPo-oJJviNVi-9SrDzM3ESULe54/s320/000_Par7836834.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1f8X-fHxDj2Qwb_gbGGmLBonAK9hkJKGJcGLbaH4e_1n-hYtaX6_PEFZG9EaL8OpDO7YhcdIkZhMBEjugDY2pTxZTjULNGfnqLqBoMOrcpntMqD8wTjExcdwjbCgHyFI7ALCW2mscLlteJCGkBhk9SXlVniVqzovXFPo-oJJviNVi-9SrDzM3ESULe54/s480/000_Par7836834.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1f8X-fHxDj2Qwb_gbGGmLBonAK9hkJKGJcGLbaH4e_1n-hYtaX6_PEFZG9EaL8OpDO7YhcdIkZhMBEjugDY2pTxZTjULNGfnqLqBoMOrcpntMqD8wTjExcdwjbCgHyFI7ALCW2mscLlteJCGkBhk9SXlVniVqzovXFPo-oJJviNVi-9SrDzM3ESULe54/s160/000_Par7836834.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1f8X-fHxDj2Qwb_gbGGmLBonAK9hkJKGJcGLbaH4e_1n-hYtaX6_PEFZG9EaL8OpDO7YhcdIkZhMBEjugDY2pTxZTjULNGfnqLqBoMOrcpntMqD8wTjExcdwjbCgHyFI7ALCW2mscLlteJCGkBhk9SXlVniVqzovXFPo-oJJviNVi-9SrDzM3ESULe54/s320/000_Par7836834.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1f8X-fHxDj2Qwb_gbGGmLBonAK9hkJKGJcGLbaH4e_1n-hYtaX6_PEFZG9EaL8OpDO7YhcdIkZhMBEjugDY2pTxZTjULNGfnqLqBoMOrcpntMqD8wTjExcdwjbCgHyFI7ALCW2mscLlteJCGkBhk9SXlVniVqzovXFPo-oJJviNVi-9SrDzM3ESULe54/s480/000_Par7836834.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.967 - Hablando con Youri Lenquette de Nirvana, Mano Negra, Pixies..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/p-940-una-seleccion-musical-exquisita-vol-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvDjYQMyLfLtlxdtLQCdtBsRmSa8Sp_V3diNcc4q_8m47Vcog0cmZRcyNpZaXPYSBYTxdqD_DkAD57YjKpk5wKsojjiBwAYpMQXUIFSK5da8C8C65Bt7b5ONLvJ6WLxnt8rnTC4SaT0nBPQMbWKE-W_-Ypt7SypJoXoXMKmilOe8WqC8cECPDlqd62vkA/s320/50183cfc5c59edd3d67ed3b833e4dd51.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvDjYQMyLfLtlxdtLQCdtBsRmSa8Sp_V3diNcc4q_8m47Vcog0cmZRcyNpZaXPYSBYTxdqD_DkAD57YjKpk5wKsojjiBwAYpMQXUIFSK5da8C8C65Bt7b5ONLvJ6WLxnt8rnTC4SaT0nBPQMbWKE-W_-Ypt7SypJoXoXMKmilOe8WqC8cECPDlqd62vkA/s160/50183cfc5c59edd3d67ed3b833e4dd51.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvDjYQMyLfLtlxdtLQCdtBsRmSa8Sp_V3diNcc4q_8m47Vcog0cmZRcyNpZaXPYSBYTxdqD_DkAD57YjKpk5wKsojjiBwAYpMQXUIFSK5da8C8C65Bt7b5ONLvJ6WLxnt8rnTC4SaT0nBPQMbWKE-W_-Ypt7SypJoXoXMKmilOe8WqC8cECPDlqd62vkA/s320/50183cfc5c59edd3d67ed3b833e4dd51.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvDjYQMyLfLtlxdtLQCdtBsRmSa8Sp_V3diNcc4q_8m47Vcog0cmZRcyNpZaXPYSBYTxdqD_DkAD57YjKpk5wKsojjiBwAYpMQXUIFSK5da8C8C65Bt7b5ONLvJ6WLxnt8rnTC4SaT0nBPQMbWKE-W_-Ypt7SypJoXoXMKmilOe8WqC8cECPDlqd62vkA/s480/50183cfc5c59edd3d67ed3b833e4dd51.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvDjYQMyLfLtlxdtLQCdtBsRmSa8Sp_V3diNcc4q_8m47Vcog0cmZRcyNpZaXPYSBYTxdqD_DkAD57YjKpk5wKsojjiBwAYpMQXUIFSK5da8C8C65Bt7b5ONLvJ6WLxnt8rnTC4SaT0nBPQMbWKE-W_-Ypt7SypJoXoXMKmilOe8WqC8cECPDlqd62vkA/s160/50183cfc5c59edd3d67ed3b833e4dd51.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvDjYQMyLfLtlxdtLQCdtBsRmSa8Sp_V3diNcc4q_8m47Vcog0cmZRcyNpZaXPYSBYTxdqD_DkAD57YjKpk5wKsojjiBwAYpMQXUIFSK5da8C8C65Bt7b5ONLvJ6WLxnt8rnTC4SaT0nBPQMbWKE-W_-Ypt7SypJoXoXMKmilOe8WqC8cECPDlqd62vkA/s320/50183cfc5c59edd3d67ed3b833e4dd51.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvDjYQMyLfLtlxdtLQCdtBsRmSa8Sp_V3diNcc4q_8m47Vcog0cmZRcyNpZaXPYSBYTxdqD_DkAD57YjKpk5wKsojjiBwAYpMQXUIFSK5da8C8C65Bt7b5ONLvJ6WLxnt8rnTC4SaT0nBPQMbWKE-W_-Ypt7SypJoXoXMKmilOe8WqC8cECPDlqd62vkA/s480/50183cfc5c59edd3d67ed3b833e4dd51.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.940 - Una selección musical exquisita Vol.1"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/p-851-asi-vivi-el-mad-cool-2022.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s320/P_0tB-z8.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s160/P_0tB-z8.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s320/P_0tB-z8.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s480/P_0tB-z8.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s160/P_0tB-z8.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s320/P_0tB-z8.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s480/P_0tB-z8.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.851 - Así viví el Mad Cool 2022"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/p-837-homenaje-a-felipe-couselo-cap-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s320/IMG_20220130_163810.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s160/IMG_20220130_163810.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s320/IMG_20220130_163810.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s480/IMG_20220130_163810.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s160/IMG_20220130_163810.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s320/IMG_20220130_163810.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s480/IMG_20220130_163810.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.837 - Homenaje a Felipe Couselo (Cap.1)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -180,8 +172,7 @@
         <a class="episode-cover-link" href="../episodios/p-814-homenaje-a-1991-el-ano-que-cambio-la-musica.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c"
-                srcset="https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="P.814 - Homenaje a 1991, el año que cambió la música"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -194,8 +185,7 @@
         <a class="episode-cover-link" href="../episodios/pixies-universal-sur-madrid-17-09-1990.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhN6JL5s8cE30-r-Z14vw3vOD80-xUSuxeiyn0jyBUd7zZL5YjAX2PQIaAXQeW4tl0tSNXXUsndRQL21vC8J4Thn48fNKPKNyl-Z4_DjNJz2ao4renS7EeYL7AMvEMaPBRtQIeAIhaxUM/s320/pixies-1990.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhN6JL5s8cE30-r-Z14vw3vOD80-xUSuxeiyn0jyBUd7zZL5YjAX2PQIaAXQeW4tl0tSNXXUsndRQL21vC8J4Thn48fNKPKNyl-Z4_DjNJz2ao4renS7EeYL7AMvEMaPBRtQIeAIhaxUM/s160/pixies-1990.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhN6JL5s8cE30-r-Z14vw3vOD80-xUSuxeiyn0jyBUd7zZL5YjAX2PQIaAXQeW4tl0tSNXXUsndRQL21vC8J4Thn48fNKPKNyl-Z4_DjNJz2ao4renS7EeYL7AMvEMaPBRtQIeAIhaxUM/s320/pixies-1990.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhN6JL5s8cE30-r-Z14vw3vOD80-xUSuxeiyn0jyBUd7zZL5YjAX2PQIaAXQeW4tl0tSNXXUsndRQL21vC8J4Thn48fNKPKNyl-Z4_DjNJz2ao4renS7EeYL7AMvEMaPBRtQIeAIhaxUM/s480/pixies-1990.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhN6JL5s8cE30-r-Z14vw3vOD80-xUSuxeiyn0jyBUd7zZL5YjAX2PQIaAXQeW4tl0tSNXXUsndRQL21vC8J4Thn48fNKPKNyl-Z4_DjNJz2ao4renS7EeYL7AMvEMaPBRtQIeAIhaxUM/s160/pixies-1990.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhN6JL5s8cE30-r-Z14vw3vOD80-xUSuxeiyn0jyBUd7zZL5YjAX2PQIaAXQeW4tl0tSNXXUsndRQL21vC8J4Thn48fNKPKNyl-Z4_DjNJz2ao4renS7EeYL7AMvEMaPBRtQIeAIhaxUM/s320/pixies-1990.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhN6JL5s8cE30-r-Z14vw3vOD80-xUSuxeiyn0jyBUd7zZL5YjAX2PQIaAXQeW4tl0tSNXXUsndRQL21vC8J4Thn48fNKPKNyl-Z4_DjNJz2ao4renS7EeYL7AMvEMaPBRtQIeAIhaxUM/s480/pixies-1990.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Pixies - Universal Sur (Madrid 17/09/1990)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -208,8 +198,7 @@
         <a class="episode-cover-link" href="../episodios/p-784-sexy-sadie-butterflies-2021.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYkPqXA-kiCk0WrzZKfaRyB6biUuq9asr14LDNW_aPTp8DgASc_8RS1m7jF5EpesmiJusWM6zGATvdXQn6mnB072acyiRHMd8-mLkz1sTLi6Tt3LePlzoOXq9oq99HnnGqO6ganEHegW8/s320/0277d07c50983678fb9dc4c4c3716f2d.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYkPqXA-kiCk0WrzZKfaRyB6biUuq9asr14LDNW_aPTp8DgASc_8RS1m7jF5EpesmiJusWM6zGATvdXQn6mnB072acyiRHMd8-mLkz1sTLi6Tt3LePlzoOXq9oq99HnnGqO6ganEHegW8/s160/0277d07c50983678fb9dc4c4c3716f2d.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYkPqXA-kiCk0WrzZKfaRyB6biUuq9asr14LDNW_aPTp8DgASc_8RS1m7jF5EpesmiJusWM6zGATvdXQn6mnB072acyiRHMd8-mLkz1sTLi6Tt3LePlzoOXq9oq99HnnGqO6ganEHegW8/s320/0277d07c50983678fb9dc4c4c3716f2d.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYkPqXA-kiCk0WrzZKfaRyB6biUuq9asr14LDNW_aPTp8DgASc_8RS1m7jF5EpesmiJusWM6zGATvdXQn6mnB072acyiRHMd8-mLkz1sTLi6Tt3LePlzoOXq9oq99HnnGqO6ganEHegW8/s480/0277d07c50983678fb9dc4c4c3716f2d.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYkPqXA-kiCk0WrzZKfaRyB6biUuq9asr14LDNW_aPTp8DgASc_8RS1m7jF5EpesmiJusWM6zGATvdXQn6mnB072acyiRHMd8-mLkz1sTLi6Tt3LePlzoOXq9oq99HnnGqO6ganEHegW8/s160/0277d07c50983678fb9dc4c4c3716f2d.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYkPqXA-kiCk0WrzZKfaRyB6biUuq9asr14LDNW_aPTp8DgASc_8RS1m7jF5EpesmiJusWM6zGATvdXQn6mnB072acyiRHMd8-mLkz1sTLi6Tt3LePlzoOXq9oq99HnnGqO6ganEHegW8/s320/0277d07c50983678fb9dc4c4c3716f2d.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYkPqXA-kiCk0WrzZKfaRyB6biUuq9asr14LDNW_aPTp8DgASc_8RS1m7jF5EpesmiJusWM6zGATvdXQn6mnB072acyiRHMd8-mLkz1sTLi6Tt3LePlzoOXq9oq99HnnGqO6ganEHegW8/s480/0277d07c50983678fb9dc4c4c3716f2d.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.784 - Sexy Sadie &#39;Butterflies&#39; (2021)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -222,8 +211,7 @@
         <a class="episode-cover-link" href="../episodios/p-780-the-best-of-pixies-vol-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s320/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s160/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s320/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s480/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s160/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s320/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s480/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.780 - The Best Of : PIXIES (Vol.1)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -236,8 +224,7 @@
         <a class="episode-cover-link" href="../episodios/p-685-necesitamos-musica-en-directo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s320/concert-crowd.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s160/concert-crowd.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s320/concert-crowd.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s480/concert-crowd.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s160/concert-crowd.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s320/concert-crowd.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s480/concert-crowd.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.685 - Necesitamos música en directo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -250,8 +237,7 @@
         <a class="episode-cover-link" href="../episodios/p-658-kim-deal-pixies-the-breeders.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s320/EZsXIFFWkAAK_wI.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s160/EZsXIFFWkAAK_wI.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s320/EZsXIFFWkAAK_wI.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s480/EZsXIFFWkAAK_wI.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s160/EZsXIFFWkAAK_wI.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s320/EZsXIFFWkAAK_wI.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s480/EZsXIFFWkAAK_wI.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.658 - Kim Deal (Pixies, The Breeders)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -264,8 +250,7 @@
         <a class="episode-cover-link" href="../episodios/p-574-novedades-childmind-the-shivas-the-muffs-mark-lanegan.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi-sZ-VQLBDWYFWQOEEj6i9v90_10JG1e_mEwn1gELegoNXqf3F8Twhwdki8C7NC4uAvLYSxs0sFUGjdC_mXxSfWLB1LyRwajVfM_qbb7lKz9ubGj1sM2PlxY9VTAzQb10raMMTGNbJb8/s320/b90_574.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi-sZ-VQLBDWYFWQOEEj6i9v90_10JG1e_mEwn1gELegoNXqf3F8Twhwdki8C7NC4uAvLYSxs0sFUGjdC_mXxSfWLB1LyRwajVfM_qbb7lKz9ubGj1sM2PlxY9VTAzQb10raMMTGNbJb8/s160/b90_574.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi-sZ-VQLBDWYFWQOEEj6i9v90_10JG1e_mEwn1gELegoNXqf3F8Twhwdki8C7NC4uAvLYSxs0sFUGjdC_mXxSfWLB1LyRwajVfM_qbb7lKz9ubGj1sM2PlxY9VTAzQb10raMMTGNbJb8/s320/b90_574.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi-sZ-VQLBDWYFWQOEEj6i9v90_10JG1e_mEwn1gELegoNXqf3F8Twhwdki8C7NC4uAvLYSxs0sFUGjdC_mXxSfWLB1LyRwajVfM_qbb7lKz9ubGj1sM2PlxY9VTAzQb10raMMTGNbJb8/s480/b90_574.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi-sZ-VQLBDWYFWQOEEj6i9v90_10JG1e_mEwn1gELegoNXqf3F8Twhwdki8C7NC4uAvLYSxs0sFUGjdC_mXxSfWLB1LyRwajVfM_qbb7lKz9ubGj1sM2PlxY9VTAzQb10raMMTGNbJb8/s160/b90_574.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi-sZ-VQLBDWYFWQOEEj6i9v90_10JG1e_mEwn1gELegoNXqf3F8Twhwdki8C7NC4uAvLYSxs0sFUGjdC_mXxSfWLB1LyRwajVfM_qbb7lKz9ubGj1sM2PlxY9VTAzQb10raMMTGNbJb8/s320/b90_574.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi-sZ-VQLBDWYFWQOEEj6i9v90_10JG1e_mEwn1gELegoNXqf3F8Twhwdki8C7NC4uAvLYSxs0sFUGjdC_mXxSfWLB1LyRwajVfM_qbb7lKz9ubGj1sM2PlxY9VTAzQb10raMMTGNbJb8/s480/b90_574.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.574 - Novedades: Childmind, The Shivas, The Muffs,Mark Lanegan"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -278,8 +263,7 @@
         <a class="episode-cover-link" href="../episodios/programa-418-sara-navarro.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqCcOkmxA5gAtE7sQp39fdedWipr31nRS-qYbXNHg3EIRLaTS8jpr4LU-rHC0fosz2jTZYNxcFnac1OVT-v1_h7I78t73t5sLELFzYohKo-fSIsAt4RUolSRzC7fXiG2p_iFYj5pujwKs/s320/IMG-20180727-WA0006.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqCcOkmxA5gAtE7sQp39fdedWipr31nRS-qYbXNHg3EIRLaTS8jpr4LU-rHC0fosz2jTZYNxcFnac1OVT-v1_h7I78t73t5sLELFzYohKo-fSIsAt4RUolSRzC7fXiG2p_iFYj5pujwKs/s160/IMG-20180727-WA0006.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqCcOkmxA5gAtE7sQp39fdedWipr31nRS-qYbXNHg3EIRLaTS8jpr4LU-rHC0fosz2jTZYNxcFnac1OVT-v1_h7I78t73t5sLELFzYohKo-fSIsAt4RUolSRzC7fXiG2p_iFYj5pujwKs/s320/IMG-20180727-WA0006.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqCcOkmxA5gAtE7sQp39fdedWipr31nRS-qYbXNHg3EIRLaTS8jpr4LU-rHC0fosz2jTZYNxcFnac1OVT-v1_h7I78t73t5sLELFzYohKo-fSIsAt4RUolSRzC7fXiG2p_iFYj5pujwKs/s480/IMG-20180727-WA0006.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqCcOkmxA5gAtE7sQp39fdedWipr31nRS-qYbXNHg3EIRLaTS8jpr4LU-rHC0fosz2jTZYNxcFnac1OVT-v1_h7I78t73t5sLELFzYohKo-fSIsAt4RUolSRzC7fXiG2p_iFYj5pujwKs/s160/IMG-20180727-WA0006.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqCcOkmxA5gAtE7sQp39fdedWipr31nRS-qYbXNHg3EIRLaTS8jpr4LU-rHC0fosz2jTZYNxcFnac1OVT-v1_h7I78t73t5sLELFzYohKo-fSIsAt4RUolSRzC7fXiG2p_iFYj5pujwKs/s320/IMG-20180727-WA0006.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqCcOkmxA5gAtE7sQp39fdedWipr31nRS-qYbXNHg3EIRLaTS8jpr4LU-rHC0fosz2jTZYNxcFnac1OVT-v1_h7I78t73t5sLELFzYohKo-fSIsAt4RUolSRzC7fXiG2p_iFYj5pujwKs/s480/IMG-20180727-WA0006.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 418 - Sara Navarro"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -292,8 +276,7 @@
         <a class="episode-cover-link" href="../episodios/programa-350-the-breeders-all-nerve-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDW329XkvPH6aM22T5KbDOfsZYlxWh4CXQC5gdQhHc65jwYfpCccXXqGX2KQrsEcewVxIVv0Nd1-xjwxQGX4tt5HZBJ8BsUkQvm7Khcbeq5_MmdvpYizX0ND0NHn2KxiHDAh7qKFi7P2U/s320/thebreeders-allnerve.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDW329XkvPH6aM22T5KbDOfsZYlxWh4CXQC5gdQhHc65jwYfpCccXXqGX2KQrsEcewVxIVv0Nd1-xjwxQGX4tt5HZBJ8BsUkQvm7Khcbeq5_MmdvpYizX0ND0NHn2KxiHDAh7qKFi7P2U/s160/thebreeders-allnerve.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDW329XkvPH6aM22T5KbDOfsZYlxWh4CXQC5gdQhHc65jwYfpCccXXqGX2KQrsEcewVxIVv0Nd1-xjwxQGX4tt5HZBJ8BsUkQvm7Khcbeq5_MmdvpYizX0ND0NHn2KxiHDAh7qKFi7P2U/s320/thebreeders-allnerve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDW329XkvPH6aM22T5KbDOfsZYlxWh4CXQC5gdQhHc65jwYfpCccXXqGX2KQrsEcewVxIVv0Nd1-xjwxQGX4tt5HZBJ8BsUkQvm7Khcbeq5_MmdvpYizX0ND0NHn2KxiHDAh7qKFi7P2U/s480/thebreeders-allnerve.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDW329XkvPH6aM22T5KbDOfsZYlxWh4CXQC5gdQhHc65jwYfpCccXXqGX2KQrsEcewVxIVv0Nd1-xjwxQGX4tt5HZBJ8BsUkQvm7Khcbeq5_MmdvpYizX0ND0NHn2KxiHDAh7qKFi7P2U/s160/thebreeders-allnerve.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDW329XkvPH6aM22T5KbDOfsZYlxWh4CXQC5gdQhHc65jwYfpCccXXqGX2KQrsEcewVxIVv0Nd1-xjwxQGX4tt5HZBJ8BsUkQvm7Khcbeq5_MmdvpYizX0ND0NHn2KxiHDAh7qKFi7P2U/s320/thebreeders-allnerve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDW329XkvPH6aM22T5KbDOfsZYlxWh4CXQC5gdQhHc65jwYfpCccXXqGX2KQrsEcewVxIVv0Nd1-xjwxQGX4tt5HZBJ8BsUkQvm7Khcbeq5_MmdvpYizX0ND0NHn2KxiHDAh7qKFi7P2U/s480/thebreeders-allnerve.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 350 - The Breeders &#39;All Nerve&#39; (2018)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -306,8 +289,7 @@
         <a class="episode-cover-link" href="../episodios/programa-263-los-50-discos-favoritos-de-kurt-cobain.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s320/kurt50.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s160/kurt50.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s320/kurt50.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s480/kurt50.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s160/kurt50.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s320/kurt50.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s480/kurt50.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 263 - Los 50 discos favoritos de Kurt Cobain"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -320,8 +302,7 @@
         <a class="episode-cover-link" href="../episodios/programa-239-inicio-nueva-temporada.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s320/14117701_1356893064328333_8249292549315850784_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s160/14117701_1356893064328333_8249292549315850784_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s320/14117701_1356893064328333_8249292549315850784_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s480/14117701_1356893064328333_8249292549315850784_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s160/14117701_1356893064328333_8249292549315850784_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s320/14117701_1356893064328333_8249292549315850784_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s480/14117701_1356893064328333_8249292549315850784_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 239 - Inicio nueva temporada"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -334,8 +315,7 @@
         <a class="episode-cover-link" href="../episodios/programa-122-eels-en-madrid-y-glastonbury-2014.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 122 - Eels en Madrid y Glastonbury 2014"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -348,8 +328,7 @@
         <a class="episode-cover-link" href="../episodios/programa-119-primavera-sound-2014-con-felipe-couselo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s320/primavera.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s160/primavera.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s320/primavera.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s480/primavera.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s160/primavera.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s320/primavera.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s480/primavera.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 119 - Primavera Sound 2014 con Felipe Couselo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -362,8 +341,7 @@
         <a class="episode-cover-link" href="../episodios/programa-112-especial-coachella-2014.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9oM6dCpfItcKxmoRPLybFnCMuPQPLYClXewFowe4BXP81aQiFfy29YiiPfaajayp_6YZbtn_ktpGdS9raPcikzO63a9N96BvElvDfdwlSxFmTmPsfOIk4L5h9hL-WzRkqzWdJTyKoyDk/s320/Coachella-2014_NRF.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9oM6dCpfItcKxmoRPLybFnCMuPQPLYClXewFowe4BXP81aQiFfy29YiiPfaajayp_6YZbtn_ktpGdS9raPcikzO63a9N96BvElvDfdwlSxFmTmPsfOIk4L5h9hL-WzRkqzWdJTyKoyDk/s160/Coachella-2014_NRF.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9oM6dCpfItcKxmoRPLybFnCMuPQPLYClXewFowe4BXP81aQiFfy29YiiPfaajayp_6YZbtn_ktpGdS9raPcikzO63a9N96BvElvDfdwlSxFmTmPsfOIk4L5h9hL-WzRkqzWdJTyKoyDk/s320/Coachella-2014_NRF.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9oM6dCpfItcKxmoRPLybFnCMuPQPLYClXewFowe4BXP81aQiFfy29YiiPfaajayp_6YZbtn_ktpGdS9raPcikzO63a9N96BvElvDfdwlSxFmTmPsfOIk4L5h9hL-WzRkqzWdJTyKoyDk/s480/Coachella-2014_NRF.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9oM6dCpfItcKxmoRPLybFnCMuPQPLYClXewFowe4BXP81aQiFfy29YiiPfaajayp_6YZbtn_ktpGdS9raPcikzO63a9N96BvElvDfdwlSxFmTmPsfOIk4L5h9hL-WzRkqzWdJTyKoyDk/s160/Coachella-2014_NRF.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9oM6dCpfItcKxmoRPLybFnCMuPQPLYClXewFowe4BXP81aQiFfy29YiiPfaajayp_6YZbtn_ktpGdS9raPcikzO63a9N96BvElvDfdwlSxFmTmPsfOIk4L5h9hL-WzRkqzWdJTyKoyDk/s320/Coachella-2014_NRF.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9oM6dCpfItcKxmoRPLybFnCMuPQPLYClXewFowe4BXP81aQiFfy29YiiPfaajayp_6YZbtn_ktpGdS9raPcikzO63a9N96BvElvDfdwlSxFmTmPsfOIk4L5h9hL-WzRkqzWdJTyKoyDk/s480/Coachella-2014_NRF.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 112 - Especial Coachella 2014"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -376,8 +354,7 @@
         <a class="episode-cover-link" href="../episodios/b90-programa-88-pixies-en-madrid.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji_VvUsMTzMNQqt-ePnNYeKkAx6b5rApg1u7Xabq5s5cvICBY7nIlcLu3hIuiSrSKnMXSQui53B_zBaUekXiJr_m1eRjqgIECLBUZDAXXOOwcFfg-p8vBgTlpXOWRdWYqhHWYCsgU4-AA/s320/fc5f7678-7e62-4e07-82c7-cfe1a8709f95.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji_VvUsMTzMNQqt-ePnNYeKkAx6b5rApg1u7Xabq5s5cvICBY7nIlcLu3hIuiSrSKnMXSQui53B_zBaUekXiJr_m1eRjqgIECLBUZDAXXOOwcFfg-p8vBgTlpXOWRdWYqhHWYCsgU4-AA/s160/fc5f7678-7e62-4e07-82c7-cfe1a8709f95.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji_VvUsMTzMNQqt-ePnNYeKkAx6b5rApg1u7Xabq5s5cvICBY7nIlcLu3hIuiSrSKnMXSQui53B_zBaUekXiJr_m1eRjqgIECLBUZDAXXOOwcFfg-p8vBgTlpXOWRdWYqhHWYCsgU4-AA/s320/fc5f7678-7e62-4e07-82c7-cfe1a8709f95.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji_VvUsMTzMNQqt-ePnNYeKkAx6b5rApg1u7Xabq5s5cvICBY7nIlcLu3hIuiSrSKnMXSQui53B_zBaUekXiJr_m1eRjqgIECLBUZDAXXOOwcFfg-p8vBgTlpXOWRdWYqhHWYCsgU4-AA/s480/fc5f7678-7e62-4e07-82c7-cfe1a8709f95.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji_VvUsMTzMNQqt-ePnNYeKkAx6b5rApg1u7Xabq5s5cvICBY7nIlcLu3hIuiSrSKnMXSQui53B_zBaUekXiJr_m1eRjqgIECLBUZDAXXOOwcFfg-p8vBgTlpXOWRdWYqhHWYCsgU4-AA/s160/fc5f7678-7e62-4e07-82c7-cfe1a8709f95.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji_VvUsMTzMNQqt-ePnNYeKkAx6b5rApg1u7Xabq5s5cvICBY7nIlcLu3hIuiSrSKnMXSQui53B_zBaUekXiJr_m1eRjqgIECLBUZDAXXOOwcFfg-p8vBgTlpXOWRdWYqhHWYCsgU4-AA/s320/fc5f7678-7e62-4e07-82c7-cfe1a8709f95.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji_VvUsMTzMNQqt-ePnNYeKkAx6b5rApg1u7Xabq5s5cvICBY7nIlcLu3hIuiSrSKnMXSQui53B_zBaUekXiJr_m1eRjqgIECLBUZDAXXOOwcFfg-p8vBgTlpXOWRdWYqhHWYCsgU4-AA/s480/fc5f7678-7e62-4e07-82c7-cfe1a8709f95.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 88 - Pixies en Madrid"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -390,8 +367,7 @@
         <a class="episode-cover-link" href="../episodios/b90-programa-81-pearl-jam-desvela-sus-cartas.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 81 - Pearl Jam desvela sus cartas"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -404,8 +380,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-47.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa 47"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -418,8 +393,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-27-glastonbury.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s320/g08_RTR2O2AU.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s160/g08_RTR2O2AU.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s320/g08_RTR2O2AU.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s480/g08_RTR2O2AU.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s160/g08_RTR2O2AU.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s320/g08_RTR2O2AU.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s480/g08_RTR2O2AU.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Bienvenido a los 90 - Programa 27 - Glastonbury"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -432,8 +406,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-5-entrevista-con-jaime-garcia-soriano.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa #5 - Entrevista con Jaime García Soriano"
                 loading="lazy" width="320" height="213" />
         </a>

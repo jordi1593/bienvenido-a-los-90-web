@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 232 - Glastonbury 2016 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -149,8 +149,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5eV0njXPKKtf3AgShhcrY5w-I2072WQF9pIAsJ2tV5DXqg10zEbFaYJvMYe8azPNQlMZoYd7NtV9Kt0s2ncGxpgoPoKBgmSQPsVsIA3Tz0UjUZjKGkeQivEU_L1JxgAAfB08jtwAvnTU/s320/545+Glastenbury.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5eV0njXPKKtf3AgShhcrY5w-I2072WQF9pIAsJ2tV5DXqg10zEbFaYJvMYe8azPNQlMZoYd7NtV9Kt0s2ncGxpgoPoKBgmSQPsVsIA3Tz0UjUZjKGkeQivEU_L1JxgAAfB08jtwAvnTU/s160/545+Glastenbury.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5eV0njXPKKtf3AgShhcrY5w-I2072WQF9pIAsJ2tV5DXqg10zEbFaYJvMYe8azPNQlMZoYd7NtV9Kt0s2ncGxpgoPoKBgmSQPsVsIA3Tz0UjUZjKGkeQivEU_L1JxgAAfB08jtwAvnTU/s320/545+Glastenbury.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5eV0njXPKKtf3AgShhcrY5w-I2072WQF9pIAsJ2tV5DXqg10zEbFaYJvMYe8azPNQlMZoYd7NtV9Kt0s2ncGxpgoPoKBgmSQPsVsIA3Tz0UjUZjKGkeQivEU_L1JxgAAfB08jtwAvnTU/s480/545+Glastenbury.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5eV0njXPKKtf3AgShhcrY5w-I2072WQF9pIAsJ2tV5DXqg10zEbFaYJvMYe8azPNQlMZoYd7NtV9Kt0s2ncGxpgoPoKBgmSQPsVsIA3Tz0UjUZjKGkeQivEU_L1JxgAAfB08jtwAvnTU/s160/545+Glastenbury.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5eV0njXPKKtf3AgShhcrY5w-I2072WQF9pIAsJ2tV5DXqg10zEbFaYJvMYe8azPNQlMZoYd7NtV9Kt0s2ncGxpgoPoKBgmSQPsVsIA3Tz0UjUZjKGkeQivEU_L1JxgAAfB08jtwAvnTU/s320/545+Glastenbury.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5eV0njXPKKtf3AgShhcrY5w-I2072WQF9pIAsJ2tV5DXqg10zEbFaYJvMYe8azPNQlMZoYd7NtV9Kt0s2ncGxpgoPoKBgmSQPsVsIA3Tz0UjUZjKGkeQivEU_L1JxgAAfB08jtwAvnTU/s480/545+Glastenbury.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 545 - Lo mejor del Glastonbury 2019"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -160,8 +159,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s320/g08_RTR2O2AU.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s160/g08_RTR2O2AU.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s320/g08_RTR2O2AU.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s480/g08_RTR2O2AU.jpeg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s160/g08_RTR2O2AU.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s320/g08_RTR2O2AU.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s480/g08_RTR2O2AU.jpeg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Bienvenido a los 90 - Programa 27 - Glastonbury"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +169,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uBTnGJ_c5vv4KLjh6Yey1sIsAt0wPwalZsKa5YCnPfFvqQHyvoRh107N08E1ZSxUA5Jy_YI4oMh3OBrwq7-GDvGfe0sJG0HNwOpZMP8T9Jmz6_yx3wOqnk8Tikc99pc7WIbIqvjVw6JmsH7Z0Ctal6QNZvYwwy58J0Z0wQKNrqJkqWlxOPTsdwPi8SI/s320/coldplay_69.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uBTnGJ_c5vv4KLjh6Yey1sIsAt0wPwalZsKa5YCnPfFvqQHyvoRh107N08E1ZSxUA5Jy_YI4oMh3OBrwq7-GDvGfe0sJG0HNwOpZMP8T9Jmz6_yx3wOqnk8Tikc99pc7WIbIqvjVw6JmsH7Z0Ctal6QNZvYwwy58J0Z0wQKNrqJkqWlxOPTsdwPi8SI/s160/coldplay_69.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uBTnGJ_c5vv4KLjh6Yey1sIsAt0wPwalZsKa5YCnPfFvqQHyvoRh107N08E1ZSxUA5Jy_YI4oMh3OBrwq7-GDvGfe0sJG0HNwOpZMP8T9Jmz6_yx3wOqnk8Tikc99pc7WIbIqvjVw6JmsH7Z0Ctal6QNZvYwwy58J0Z0wQKNrqJkqWlxOPTsdwPi8SI/s320/coldplay_69.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uBTnGJ_c5vv4KLjh6Yey1sIsAt0wPwalZsKa5YCnPfFvqQHyvoRh107N08E1ZSxUA5Jy_YI4oMh3OBrwq7-GDvGfe0sJG0HNwOpZMP8T9Jmz6_yx3wOqnk8Tikc99pc7WIbIqvjVw6JmsH7Z0Ctal6QNZvYwwy58J0Z0wQKNrqJkqWlxOPTsdwPi8SI/s480/coldplay_69.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uBTnGJ_c5vv4KLjh6Yey1sIsAt0wPwalZsKa5YCnPfFvqQHyvoRh107N08E1ZSxUA5Jy_YI4oMh3OBrwq7-GDvGfe0sJG0HNwOpZMP8T9Jmz6_yx3wOqnk8Tikc99pc7WIbIqvjVw6JmsH7Z0Ctal6QNZvYwwy58J0Z0wQKNrqJkqWlxOPTsdwPi8SI/s160/coldplay_69.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uBTnGJ_c5vv4KLjh6Yey1sIsAt0wPwalZsKa5YCnPfFvqQHyvoRh107N08E1ZSxUA5Jy_YI4oMh3OBrwq7-GDvGfe0sJG0HNwOpZMP8T9Jmz6_yx3wOqnk8Tikc99pc7WIbIqvjVw6JmsH7Z0Ctal6QNZvYwwy58J0Z0wQKNrqJkqWlxOPTsdwPi8SI/s320/coldplay_69.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uBTnGJ_c5vv4KLjh6Yey1sIsAt0wPwalZsKa5YCnPfFvqQHyvoRh107N08E1ZSxUA5Jy_YI4oMh3OBrwq7-GDvGfe0sJG0HNwOpZMP8T9Jmz6_yx3wOqnk8Tikc99pc7WIbIqvjVw6JmsH7Z0Ctal6QNZvYwwy58J0Z0wQKNrqJkqWlxOPTsdwPi8SI/s480/coldplay_69.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.985 - Los mejores momentos de Coldplay en el Glastonbury 2024 "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -188,8 +185,7 @@
         <a class="related-bottom-card" href="programa-288-moses-rubin-glastonbury-2017.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s320/IMG_20170705_185643.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s320/IMG_20170705_185643.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s480/IMG_20170705_185643.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s640/IMG_20170705_185643.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s320/IMG_20170705_185643.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s480/IMG_20170705_185643.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s640/IMG_20170705_185643.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 288 - Moses Rubin + Glastonbury 2017"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -200,8 +196,7 @@
           </a><a class="related-bottom-card" href="programa-73-glastonbury-2013.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 73 - Glastonbury 2013"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -212,8 +207,7 @@
           </a><a class="related-bottom-card" href="bienvenido-a-los-90-programa-33-entrevista-a-felipe-couselo.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Bienvenido a los 90 - Programa 33 - Entrevista a Felipe Couselo"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

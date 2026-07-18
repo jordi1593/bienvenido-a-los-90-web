@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.708 - Especial Kyuss  — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -134,8 +134,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy9vUvjvrn1ye_1Rpgp5dCO5LZ86bcO34BK5myNfMcrWwisQOH3pMoTuqSG1N2GMe75t1JWx1rsMfzbraj6p3xmPYfY2-2MwlEMpgh1h71BDPuB9b4XYH6i9Ak6tI6kmn1UzJtYXlOb2q0n0IfIqQtUpSWlEYdPeBQtIbEtCJmUwUmiPIzGlP9l8PNC3Y/s320/Maraton%20b90%202024%205.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy9vUvjvrn1ye_1Rpgp5dCO5LZ86bcO34BK5myNfMcrWwisQOH3pMoTuqSG1N2GMe75t1JWx1rsMfzbraj6p3xmPYfY2-2MwlEMpgh1h71BDPuB9b4XYH6i9Ak6tI6kmn1UzJtYXlOb2q0n0IfIqQtUpSWlEYdPeBQtIbEtCJmUwUmiPIzGlP9l8PNC3Y/s160/Maraton%20b90%202024%205.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy9vUvjvrn1ye_1Rpgp5dCO5LZ86bcO34BK5myNfMcrWwisQOH3pMoTuqSG1N2GMe75t1JWx1rsMfzbraj6p3xmPYfY2-2MwlEMpgh1h71BDPuB9b4XYH6i9Ak6tI6kmn1UzJtYXlOb2q0n0IfIqQtUpSWlEYdPeBQtIbEtCJmUwUmiPIzGlP9l8PNC3Y/s320/Maraton%20b90%202024%205.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy9vUvjvrn1ye_1Rpgp5dCO5LZ86bcO34BK5myNfMcrWwisQOH3pMoTuqSG1N2GMe75t1JWx1rsMfzbraj6p3xmPYfY2-2MwlEMpgh1h71BDPuB9b4XYH6i9Ak6tI6kmn1UzJtYXlOb2q0n0IfIqQtUpSWlEYdPeBQtIbEtCJmUwUmiPIzGlP9l8PNC3Y/s480/Maraton%20b90%202024%205.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy9vUvjvrn1ye_1Rpgp5dCO5LZ86bcO34BK5myNfMcrWwisQOH3pMoTuqSG1N2GMe75t1JWx1rsMfzbraj6p3xmPYfY2-2MwlEMpgh1h71BDPuB9b4XYH6i9Ak6tI6kmn1UzJtYXlOb2q0n0IfIqQtUpSWlEYdPeBQtIbEtCJmUwUmiPIzGlP9l8PNC3Y/s160/Maraton%20b90%202024%205.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy9vUvjvrn1ye_1Rpgp5dCO5LZ86bcO34BK5myNfMcrWwisQOH3pMoTuqSG1N2GMe75t1JWx1rsMfzbraj6p3xmPYfY2-2MwlEMpgh1h71BDPuB9b4XYH6i9Ak6tI6kmn1UzJtYXlOb2q0n0IfIqQtUpSWlEYdPeBQtIbEtCJmUwUmiPIzGlP9l8PNC3Y/s320/Maraton%20b90%202024%205.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy9vUvjvrn1ye_1Rpgp5dCO5LZ86bcO34BK5myNfMcrWwisQOH3pMoTuqSG1N2GMe75t1JWx1rsMfzbraj6p3xmPYfY2-2MwlEMpgh1h71BDPuB9b4XYH6i9Ak6tI6kmn1UzJtYXlOb2q0n0IfIqQtUpSWlEYdPeBQtIbEtCJmUwUmiPIzGlP9l8PNC3Y/s480/Maraton%20b90%202024%205.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.1004 - Especial 1994, Parte 5: Johnny Cash, Mark Lanegan, Kyuss, Bad Religion, Live"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -145,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFXAUfZjGhoq1jMR8g2QGbDZiBiQNbJBPPS8tH0I1orG6vOlPugePSCc5d57ume2JduUAXS3xiULRISg7r82JYLz6I0jg2KI_iCmo9OI-8QaHyvKFD9v08LUpLIp0MrbuKCVT6L4j0y-5HGN3Dtdy4wHR9J8rawLJo71kkq7pVGKPSz-DTA3ZoV5wwa9k/s320/Imagen%20de%20WhatsApp%202024-01-01%20a%20las%2018.18.44_3eda2ab8.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFXAUfZjGhoq1jMR8g2QGbDZiBiQNbJBPPS8tH0I1orG6vOlPugePSCc5d57ume2JduUAXS3xiULRISg7r82JYLz6I0jg2KI_iCmo9OI-8QaHyvKFD9v08LUpLIp0MrbuKCVT6L4j0y-5HGN3Dtdy4wHR9J8rawLJo71kkq7pVGKPSz-DTA3ZoV5wwa9k/s160/Imagen%20de%20WhatsApp%202024-01-01%20a%20las%2018.18.44_3eda2ab8.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFXAUfZjGhoq1jMR8g2QGbDZiBiQNbJBPPS8tH0I1orG6vOlPugePSCc5d57ume2JduUAXS3xiULRISg7r82JYLz6I0jg2KI_iCmo9OI-8QaHyvKFD9v08LUpLIp0MrbuKCVT6L4j0y-5HGN3Dtdy4wHR9J8rawLJo71kkq7pVGKPSz-DTA3ZoV5wwa9k/s320/Imagen%20de%20WhatsApp%202024-01-01%20a%20las%2018.18.44_3eda2ab8.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFXAUfZjGhoq1jMR8g2QGbDZiBiQNbJBPPS8tH0I1orG6vOlPugePSCc5d57ume2JduUAXS3xiULRISg7r82JYLz6I0jg2KI_iCmo9OI-8QaHyvKFD9v08LUpLIp0MrbuKCVT6L4j0y-5HGN3Dtdy4wHR9J8rawLJo71kkq7pVGKPSz-DTA3ZoV5wwa9k/s480/Imagen%20de%20WhatsApp%202024-01-01%20a%20las%2018.18.44_3eda2ab8.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFXAUfZjGhoq1jMR8g2QGbDZiBiQNbJBPPS8tH0I1orG6vOlPugePSCc5d57ume2JduUAXS3xiULRISg7r82JYLz6I0jg2KI_iCmo9OI-8QaHyvKFD9v08LUpLIp0MrbuKCVT6L4j0y-5HGN3Dtdy4wHR9J8rawLJo71kkq7pVGKPSz-DTA3ZoV5wwa9k/s160/Imagen%20de%20WhatsApp%202024-01-01%20a%20las%2018.18.44_3eda2ab8.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFXAUfZjGhoq1jMR8g2QGbDZiBiQNbJBPPS8tH0I1orG6vOlPugePSCc5d57ume2JduUAXS3xiULRISg7r82JYLz6I0jg2KI_iCmo9OI-8QaHyvKFD9v08LUpLIp0MrbuKCVT6L4j0y-5HGN3Dtdy4wHR9J8rawLJo71kkq7pVGKPSz-DTA3ZoV5wwa9k/s320/Imagen%20de%20WhatsApp%202024-01-01%20a%20las%2018.18.44_3eda2ab8.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFXAUfZjGhoq1jMR8g2QGbDZiBiQNbJBPPS8tH0I1orG6vOlPugePSCc5d57ume2JduUAXS3xiULRISg7r82JYLz6I0jg2KI_iCmo9OI-8QaHyvKFD9v08LUpLIp0MrbuKCVT6L4j0y-5HGN3Dtdy4wHR9J8rawLJo71kkq7pVGKPSz-DTA3ZoV5wwa9k/s480/Imagen%20de%20WhatsApp%202024-01-01%20a%20las%2018.18.44_3eda2ab8.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.942 - Lujuria, los amigos de Jesse Hughes y Nick Oliveri"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -156,8 +154,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s320/b90_1091.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s160/b90_1091.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s320/b90_1091.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s480/b90_1091.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s160/b90_1091.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s320/b90_1091.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s480/b90_1091.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1091 - Especial 1995 (3/5) Smashing Pumpkins, Primus, Bjork, Alanis Morissette, Foo Fighters, Neil Young..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -173,8 +170,7 @@
         <a class="related-bottom-card" href="b90-programa-83-pearl-jam-moby-the-chemical-brother-kings-of-leon.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 - Programa 83 -Pearl Jam, Moby, The Chemical Brother, Kings of Leon..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -185,8 +181,7 @@
           </a><a class="related-bottom-card" href="p-707-especial-magnetic-eye-records-redux.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO2PiBug4wXydG39rhb8nYPmwrvHHw8QLg6lD6g1dnjcm9JJyaPO5kbqWOF_ooFPKlAoXUPsjQiGOjhCVOldoxXnujrt99DHtzRl8_kgXVh48Fblw9_ax5wpC95yCdSHpguPIzoe6l_38/s320/DOv5_qw7.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO2PiBug4wXydG39rhb8nYPmwrvHHw8QLg6lD6g1dnjcm9JJyaPO5kbqWOF_ooFPKlAoXUPsjQiGOjhCVOldoxXnujrt99DHtzRl8_kgXVh48Fblw9_ax5wpC95yCdSHpguPIzoe6l_38/s320/DOv5_qw7.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO2PiBug4wXydG39rhb8nYPmwrvHHw8QLg6lD6g1dnjcm9JJyaPO5kbqWOF_ooFPKlAoXUPsjQiGOjhCVOldoxXnujrt99DHtzRl8_kgXVh48Fblw9_ax5wpC95yCdSHpguPIzoe6l_38/s480/DOv5_qw7.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO2PiBug4wXydG39rhb8nYPmwrvHHw8QLg6lD6g1dnjcm9JJyaPO5kbqWOF_ooFPKlAoXUPsjQiGOjhCVOldoxXnujrt99DHtzRl8_kgXVh48Fblw9_ax5wpC95yCdSHpguPIzoe6l_38/s640/DOv5_qw7.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO2PiBug4wXydG39rhb8nYPmwrvHHw8QLg6lD6g1dnjcm9JJyaPO5kbqWOF_ooFPKlAoXUPsjQiGOjhCVOldoxXnujrt99DHtzRl8_kgXVh48Fblw9_ax5wpC95yCdSHpguPIzoe6l_38/s320/DOv5_qw7.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO2PiBug4wXydG39rhb8nYPmwrvHHw8QLg6lD6g1dnjcm9JJyaPO5kbqWOF_ooFPKlAoXUPsjQiGOjhCVOldoxXnujrt99DHtzRl8_kgXVh48Fblw9_ax5wpC95yCdSHpguPIzoe6l_38/s480/DOv5_qw7.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO2PiBug4wXydG39rhb8nYPmwrvHHw8QLg6lD6g1dnjcm9JJyaPO5kbqWOF_ooFPKlAoXUPsjQiGOjhCVOldoxXnujrt99DHtzRl8_kgXVh48Fblw9_ax5wpC95yCdSHpguPIzoe6l_38/s640/DOv5_qw7.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.707 - Especial Magnetic Eye Records (Redux) "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -197,8 +192,7 @@
           </a><a class="related-bottom-card" href="p-709-teriyaki-asthma-c-z-records-la-otra-cara-del-grunge.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s320/s-l400+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s320/s-l400+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s480/s-l400+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s640/s-l400+%25281%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s320/s-l400+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s480/s-l400+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s640/s-l400+%25281%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.709 - Teriyaki Asthma - C/Z Records (La otra cara del grunge)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

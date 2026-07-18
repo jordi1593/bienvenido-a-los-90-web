@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 117 - Entrevista con ÁRIDA + Jack White, Kasabian, Nirvana... — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -132,8 +132,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIn2YS9cJDZiJpTMguaEz1xvWODkzx0IzVWyUvoZ9IPOTCBaq9jhFq9LdX65cCSx9eGdUWNeCunOzix3mIxTTAmn4h3kfmDXETgUvPGMqL6IuWrnf8jCyJXpewCM1le_lT2tLvYdyy9DU/s320/Cover+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIn2YS9cJDZiJpTMguaEz1xvWODkzx0IzVWyUvoZ9IPOTCBaq9jhFq9LdX65cCSx9eGdUWNeCunOzix3mIxTTAmn4h3kfmDXETgUvPGMqL6IuWrnf8jCyJXpewCM1le_lT2tLvYdyy9DU/s160/Cover+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIn2YS9cJDZiJpTMguaEz1xvWODkzx0IzVWyUvoZ9IPOTCBaq9jhFq9LdX65cCSx9eGdUWNeCunOzix3mIxTTAmn4h3kfmDXETgUvPGMqL6IuWrnf8jCyJXpewCM1le_lT2tLvYdyy9DU/s320/Cover+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIn2YS9cJDZiJpTMguaEz1xvWODkzx0IzVWyUvoZ9IPOTCBaq9jhFq9LdX65cCSx9eGdUWNeCunOzix3mIxTTAmn4h3kfmDXETgUvPGMqL6IuWrnf8jCyJXpewCM1le_lT2tLvYdyy9DU/s480/Cover+%25281%2529.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIn2YS9cJDZiJpTMguaEz1xvWODkzx0IzVWyUvoZ9IPOTCBaq9jhFq9LdX65cCSx9eGdUWNeCunOzix3mIxTTAmn4h3kfmDXETgUvPGMqL6IuWrnf8jCyJXpewCM1le_lT2tLvYdyy9DU/s160/Cover+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIn2YS9cJDZiJpTMguaEz1xvWODkzx0IzVWyUvoZ9IPOTCBaq9jhFq9LdX65cCSx9eGdUWNeCunOzix3mIxTTAmn4h3kfmDXETgUvPGMqL6IuWrnf8jCyJXpewCM1le_lT2tLvYdyy9DU/s320/Cover+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIn2YS9cJDZiJpTMguaEz1xvWODkzx0IzVWyUvoZ9IPOTCBaq9jhFq9LdX65cCSx9eGdUWNeCunOzix3mIxTTAmn4h3kfmDXETgUvPGMqL6IuWrnf8jCyJXpewCM1le_lT2tLvYdyy9DU/s480/Cover+%25281%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 357 -Jack White, Boarding House Reach "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -143,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilZcgzU6P56Qq4h3c-b5r65KztcOMRTUI9aR7_H6f0OA2YSYFhngHMrga7-AJeRwEvne_AxCmEoAqgKXj_oSELmlxOHJJ68dcNg2xUJZ3Q_a2vHenyxXAa6cX1sin5rtu2imnWys4rBrM/s320/maxresdefault.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilZcgzU6P56Qq4h3c-b5r65KztcOMRTUI9aR7_H6f0OA2YSYFhngHMrga7-AJeRwEvne_AxCmEoAqgKXj_oSELmlxOHJJ68dcNg2xUJZ3Q_a2vHenyxXAa6cX1sin5rtu2imnWys4rBrM/s160/maxresdefault.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilZcgzU6P56Qq4h3c-b5r65KztcOMRTUI9aR7_H6f0OA2YSYFhngHMrga7-AJeRwEvne_AxCmEoAqgKXj_oSELmlxOHJJ68dcNg2xUJZ3Q_a2vHenyxXAa6cX1sin5rtu2imnWys4rBrM/s320/maxresdefault.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilZcgzU6P56Qq4h3c-b5r65KztcOMRTUI9aR7_H6f0OA2YSYFhngHMrga7-AJeRwEvne_AxCmEoAqgKXj_oSELmlxOHJJ68dcNg2xUJZ3Q_a2vHenyxXAa6cX1sin5rtu2imnWys4rBrM/s480/maxresdefault.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilZcgzU6P56Qq4h3c-b5r65KztcOMRTUI9aR7_H6f0OA2YSYFhngHMrga7-AJeRwEvne_AxCmEoAqgKXj_oSELmlxOHJJ68dcNg2xUJZ3Q_a2vHenyxXAa6cX1sin5rtu2imnWys4rBrM/s160/maxresdefault.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilZcgzU6P56Qq4h3c-b5r65KztcOMRTUI9aR7_H6f0OA2YSYFhngHMrga7-AJeRwEvne_AxCmEoAqgKXj_oSELmlxOHJJ68dcNg2xUJZ3Q_a2vHenyxXAa6cX1sin5rtu2imnWys4rBrM/s320/maxresdefault.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilZcgzU6P56Qq4h3c-b5r65KztcOMRTUI9aR7_H6f0OA2YSYFhngHMrga7-AJeRwEvne_AxCmEoAqgKXj_oSELmlxOHJJ68dcNg2xUJZ3Q_a2vHenyxXAa6cX1sin5rtu2imnWys4rBrM/s480/maxresdefault.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 363 - Jack White live 2018 "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 122 - Eels en Madrid y Glastonbury 2014"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +168,7 @@
         <a class="related-bottom-card" href="programa-109-20-anos-nirvana.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 109 - 20 años Nirvana"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -183,8 +179,7 @@
           </a><a class="related-bottom-card" href="programa-107-soundgarden-alice-in-chains-nirvana-61-garage-y-nomada.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 107 - Soundgarden, Alice in Chains, Nirvana, 61 Garage y Nómada"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +190,7 @@
           </a><a class="related-bottom-card" href="programa-130-entrevista-a-charles-r-cross.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s480/P1030709.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s640/P1030709.JPG 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s480/P1030709.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s640/P1030709.JPG 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 130 - Entrevista a Charles R. Cross"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

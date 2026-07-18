@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Layne Staley — 7 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/b90-classic-11-el-regreso-de-saturno-y-el-club-de-los-27.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s320/saturn-return-rectangle.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s160/saturn-return-rectangle.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s320/saturn-return-rectangle.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s480/saturn-return-rectangle.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s160/saturn-return-rectangle.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s320/saturn-return-rectangle.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s480/saturn-return-rectangle.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Classic 11: El regreso de Saturno y el club de los 27"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-752-jerry-cantrell.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmsS98tLsOf6ePOwPUHzLWUGDPKQBhqR_4els-YRRvNaYIOC_JsE5jhmVL4Ehui6AZEVaDhrbfZAptq6Yr1lxah-ZKHoMOOX-qMQQVY6aVYnwP6MT8KOyuzl0u1ky8ay2bn_ooA-zwjB4/s320/KARENMASONBLAIR90s129.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmsS98tLsOf6ePOwPUHzLWUGDPKQBhqR_4els-YRRvNaYIOC_JsE5jhmVL4Ehui6AZEVaDhrbfZAptq6Yr1lxah-ZKHoMOOX-qMQQVY6aVYnwP6MT8KOyuzl0u1ky8ay2bn_ooA-zwjB4/s160/KARENMASONBLAIR90s129.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmsS98tLsOf6ePOwPUHzLWUGDPKQBhqR_4els-YRRvNaYIOC_JsE5jhmVL4Ehui6AZEVaDhrbfZAptq6Yr1lxah-ZKHoMOOX-qMQQVY6aVYnwP6MT8KOyuzl0u1ky8ay2bn_ooA-zwjB4/s320/KARENMASONBLAIR90s129.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmsS98tLsOf6ePOwPUHzLWUGDPKQBhqR_4els-YRRvNaYIOC_JsE5jhmVL4Ehui6AZEVaDhrbfZAptq6Yr1lxah-ZKHoMOOX-qMQQVY6aVYnwP6MT8KOyuzl0u1ky8ay2bn_ooA-zwjB4/s480/KARENMASONBLAIR90s129.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmsS98tLsOf6ePOwPUHzLWUGDPKQBhqR_4els-YRRvNaYIOC_JsE5jhmVL4Ehui6AZEVaDhrbfZAptq6Yr1lxah-ZKHoMOOX-qMQQVY6aVYnwP6MT8KOyuzl0u1ky8ay2bn_ooA-zwjB4/s160/KARENMASONBLAIR90s129.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmsS98tLsOf6ePOwPUHzLWUGDPKQBhqR_4els-YRRvNaYIOC_JsE5jhmVL4Ehui6AZEVaDhrbfZAptq6Yr1lxah-ZKHoMOOX-qMQQVY6aVYnwP6MT8KOyuzl0u1ky8ay2bn_ooA-zwjB4/s320/KARENMASONBLAIR90s129.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmsS98tLsOf6ePOwPUHzLWUGDPKQBhqR_4els-YRRvNaYIOC_JsE5jhmVL4Ehui6AZEVaDhrbfZAptq6Yr1lxah-ZKHoMOOX-qMQQVY6aVYnwP6MT8KOyuzl0u1ky8ay2bn_ooA-zwjB4/s480/KARENMASONBLAIR90s129.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.752 - Jerry Cantrell "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-554-la-seleccion-musical-de-layne-staley.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s320/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s160/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s320/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s480/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s160/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s320/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s480/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 554: La selección musical de Layne Staley"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-436-homenaje-a-mad-season.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWnB6bDRqt9uQLVOHbmHxFbCF1vX6U3Smu8phwL_ugXXAy96GtQXoNKY9-50Bbxy7ePn3TVzkOKoYBFcVs6iCM2bXvsydCsak3AhIUe1B0RUw6PQkNGzaMJ331KZyxmt9hPswPWvhpe4w/s320/0014369494_10.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWnB6bDRqt9uQLVOHbmHxFbCF1vX6U3Smu8phwL_ugXXAy96GtQXoNKY9-50Bbxy7ePn3TVzkOKoYBFcVs6iCM2bXvsydCsak3AhIUe1B0RUw6PQkNGzaMJ331KZyxmt9hPswPWvhpe4w/s160/0014369494_10.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWnB6bDRqt9uQLVOHbmHxFbCF1vX6U3Smu8phwL_ugXXAy96GtQXoNKY9-50Bbxy7ePn3TVzkOKoYBFcVs6iCM2bXvsydCsak3AhIUe1B0RUw6PQkNGzaMJ331KZyxmt9hPswPWvhpe4w/s320/0014369494_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWnB6bDRqt9uQLVOHbmHxFbCF1vX6U3Smu8phwL_ugXXAy96GtQXoNKY9-50Bbxy7ePn3TVzkOKoYBFcVs6iCM2bXvsydCsak3AhIUe1B0RUw6PQkNGzaMJ331KZyxmt9hPswPWvhpe4w/s480/0014369494_10.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWnB6bDRqt9uQLVOHbmHxFbCF1vX6U3Smu8phwL_ugXXAy96GtQXoNKY9-50Bbxy7ePn3TVzkOKoYBFcVs6iCM2bXvsydCsak3AhIUe1B0RUw6PQkNGzaMJ331KZyxmt9hPswPWvhpe4w/s160/0014369494_10.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWnB6bDRqt9uQLVOHbmHxFbCF1vX6U3Smu8phwL_ugXXAy96GtQXoNKY9-50Bbxy7ePn3TVzkOKoYBFcVs6iCM2bXvsydCsak3AhIUe1B0RUw6PQkNGzaMJ331KZyxmt9hPswPWvhpe4w/s320/0014369494_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWnB6bDRqt9uQLVOHbmHxFbCF1vX6U3Smu8phwL_ugXXAy96GtQXoNKY9-50Bbxy7ePn3TVzkOKoYBFcVs6iCM2bXvsydCsak3AhIUe1B0RUw6PQkNGzaMJ331KZyxmt9hPswPWvhpe4w/s480/0014369494_10.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 436 - Homenaje a MAD SEASON"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-329-mad-season-sonic-evolution.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXNFb_XJmZpF3RFzw85sZhc0LXiB2rFkoabSEBcZPIVknUb9TpNLbF3SiAmBLPZ-yvZIMZoI2YmdO1F6yWFPjm6LVCnlNLkpZ-RLHgP_NxedxviqF1_G2QQkSlWPRtlv-XpKH1bPsSU9E/s320/bienvenido-329.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXNFb_XJmZpF3RFzw85sZhc0LXiB2rFkoabSEBcZPIVknUb9TpNLbF3SiAmBLPZ-yvZIMZoI2YmdO1F6yWFPjm6LVCnlNLkpZ-RLHgP_NxedxviqF1_G2QQkSlWPRtlv-XpKH1bPsSU9E/s160/bienvenido-329.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXNFb_XJmZpF3RFzw85sZhc0LXiB2rFkoabSEBcZPIVknUb9TpNLbF3SiAmBLPZ-yvZIMZoI2YmdO1F6yWFPjm6LVCnlNLkpZ-RLHgP_NxedxviqF1_G2QQkSlWPRtlv-XpKH1bPsSU9E/s320/bienvenido-329.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXNFb_XJmZpF3RFzw85sZhc0LXiB2rFkoabSEBcZPIVknUb9TpNLbF3SiAmBLPZ-yvZIMZoI2YmdO1F6yWFPjm6LVCnlNLkpZ-RLHgP_NxedxviqF1_G2QQkSlWPRtlv-XpKH1bPsSU9E/s480/bienvenido-329.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXNFb_XJmZpF3RFzw85sZhc0LXiB2rFkoabSEBcZPIVknUb9TpNLbF3SiAmBLPZ-yvZIMZoI2YmdO1F6yWFPjm6LVCnlNLkpZ-RLHgP_NxedxviqF1_G2QQkSlWPRtlv-XpKH1bPsSU9E/s160/bienvenido-329.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXNFb_XJmZpF3RFzw85sZhc0LXiB2rFkoabSEBcZPIVknUb9TpNLbF3SiAmBLPZ-yvZIMZoI2YmdO1F6yWFPjm6LVCnlNLkpZ-RLHgP_NxedxviqF1_G2QQkSlWPRtlv-XpKH1bPsSU9E/s320/bienvenido-329.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXNFb_XJmZpF3RFzw85sZhc0LXiB2rFkoabSEBcZPIVknUb9TpNLbF3SiAmBLPZ-yvZIMZoI2YmdO1F6yWFPjm6LVCnlNLkpZ-RLHgP_NxedxviqF1_G2QQkSlWPRtlv-XpKH1bPsSU9E/s480/bienvenido-329.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 329 – Mad Season – Sonic Evolution"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-242-drogas-y-rock-roll.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihR-mdZamx9jZOZbxImUaMc4RwrztYSk_HVzkV0zhPeGVVYQ2GfBG1NG0As2RtZ4iqTUZse3V7_MdsKGZ6g-0GIJeJ5Tnv5QphnBD6PW663Lx2qPDiBtehLGBALJU3UIWjX0-XLwtcSoY/s320/IMG_20160929_205925.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihR-mdZamx9jZOZbxImUaMc4RwrztYSk_HVzkV0zhPeGVVYQ2GfBG1NG0As2RtZ4iqTUZse3V7_MdsKGZ6g-0GIJeJ5Tnv5QphnBD6PW663Lx2qPDiBtehLGBALJU3UIWjX0-XLwtcSoY/s160/IMG_20160929_205925.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihR-mdZamx9jZOZbxImUaMc4RwrztYSk_HVzkV0zhPeGVVYQ2GfBG1NG0As2RtZ4iqTUZse3V7_MdsKGZ6g-0GIJeJ5Tnv5QphnBD6PW663Lx2qPDiBtehLGBALJU3UIWjX0-XLwtcSoY/s320/IMG_20160929_205925.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihR-mdZamx9jZOZbxImUaMc4RwrztYSk_HVzkV0zhPeGVVYQ2GfBG1NG0As2RtZ4iqTUZse3V7_MdsKGZ6g-0GIJeJ5Tnv5QphnBD6PW663Lx2qPDiBtehLGBALJU3UIWjX0-XLwtcSoY/s480/IMG_20160929_205925.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihR-mdZamx9jZOZbxImUaMc4RwrztYSk_HVzkV0zhPeGVVYQ2GfBG1NG0As2RtZ4iqTUZse3V7_MdsKGZ6g-0GIJeJ5Tnv5QphnBD6PW663Lx2qPDiBtehLGBALJU3UIWjX0-XLwtcSoY/s160/IMG_20160929_205925.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihR-mdZamx9jZOZbxImUaMc4RwrztYSk_HVzkV0zhPeGVVYQ2GfBG1NG0As2RtZ4iqTUZse3V7_MdsKGZ6g-0GIJeJ5Tnv5QphnBD6PW663Lx2qPDiBtehLGBALJU3UIWjX0-XLwtcSoY/s320/IMG_20160929_205925.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihR-mdZamx9jZOZbxImUaMc4RwrztYSk_HVzkV0zhPeGVVYQ2GfBG1NG0As2RtZ4iqTUZse3V7_MdsKGZ6g-0GIJeJ5Tnv5QphnBD6PW663Lx2qPDiBtehLGBALJU3UIWjX0-XLwtcSoY/s480/IMG_20160929_205925.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 242 - Drogas y Rock &amp; Roll"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-110-layne-staley-jonathan-wilson-bush-the-birds-of-satan.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 110 - Layne Staley, Jonathan Wilson, Bush, The Birds of Satan..."
                 loading="lazy" width="320" height="213" />
         </a>

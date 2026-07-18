@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 181 - AKIRA — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHKPC9A9Vs0vFwaaWTeV6PjVuQtFJmcX5gY_hbtm3JTzX0ZPYEOwFHVdk6TxTlMKvN1Z9r6anC4oRw4mX_4uTJW92NHeqxYW5ky4MBpuAVZ4JbXej2KTAXrwnvnrgCWdw6DG4JYMLQOhg/s320/Eddie_Vedder+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHKPC9A9Vs0vFwaaWTeV6PjVuQtFJmcX5gY_hbtm3JTzX0ZPYEOwFHVdk6TxTlMKvN1Z9r6anC4oRw4mX_4uTJW92NHeqxYW5ky4MBpuAVZ4JbXej2KTAXrwnvnrgCWdw6DG4JYMLQOhg/s160/Eddie_Vedder+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHKPC9A9Vs0vFwaaWTeV6PjVuQtFJmcX5gY_hbtm3JTzX0ZPYEOwFHVdk6TxTlMKvN1Z9r6anC4oRw4mX_4uTJW92NHeqxYW5ky4MBpuAVZ4JbXej2KTAXrwnvnrgCWdw6DG4JYMLQOhg/s320/Eddie_Vedder+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHKPC9A9Vs0vFwaaWTeV6PjVuQtFJmcX5gY_hbtm3JTzX0ZPYEOwFHVdk6TxTlMKvN1Z9r6anC4oRw4mX_4uTJW92NHeqxYW5ky4MBpuAVZ4JbXej2KTAXrwnvnrgCWdw6DG4JYMLQOhg/s480/Eddie_Vedder+%25281%2529.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHKPC9A9Vs0vFwaaWTeV6PjVuQtFJmcX5gY_hbtm3JTzX0ZPYEOwFHVdk6TxTlMKvN1Z9r6anC4oRw4mX_4uTJW92NHeqxYW5ky4MBpuAVZ4JbXej2KTAXrwnvnrgCWdw6DG4JYMLQOhg/s160/Eddie_Vedder+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHKPC9A9Vs0vFwaaWTeV6PjVuQtFJmcX5gY_hbtm3JTzX0ZPYEOwFHVdk6TxTlMKvN1Z9r6anC4oRw4mX_4uTJW92NHeqxYW5ky4MBpuAVZ4JbXej2KTAXrwnvnrgCWdw6DG4JYMLQOhg/s320/Eddie_Vedder+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHKPC9A9Vs0vFwaaWTeV6PjVuQtFJmcX5gY_hbtm3JTzX0ZPYEOwFHVdk6TxTlMKvN1Z9r6anC4oRw4mX_4uTJW92NHeqxYW5ky4MBpuAVZ4JbXej2KTAXrwnvnrgCWdw6DG4JYMLQOhg/s480/Eddie_Vedder+%25281%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 182 - Eddie Vedder"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s320/12006280_10153085749307747_5891161989028975656_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s160/12006280_10153085749307747_5891161989028975656_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s320/12006280_10153085749307747_5891161989028975656_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s480/12006280_10153085749307747_5891161989028975656_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s160/12006280_10153085749307747_5891161989028975656_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s320/12006280_10153085749307747_5891161989028975656_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s480/12006280_10153085749307747_5891161989028975656_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 180 - Entrevista Charles Cross"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s320/mercromina.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s160/mercromina.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s320/mercromina.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s480/mercromina.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s160/mercromina.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s320/mercromina.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s480/mercromina.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 183 - Mercromina"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="programa-184-jelly-bullet.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrMV0s90YXt-lgdckFrio0DyCM8EYvfa-cj62QR6hhv6tUQYYd34X2qqpYqZfeTAXzto0kQ0uLoPvzPfu_S9B-TJzBzz2H6ezRyB8E-Rl0Llgl0LwZjHgmBQNJFw4NLiFQrJSY2qvSgT8/s320/11988610_942449025801761_575615321641805969_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrMV0s90YXt-lgdckFrio0DyCM8EYvfa-cj62QR6hhv6tUQYYd34X2qqpYqZfeTAXzto0kQ0uLoPvzPfu_S9B-TJzBzz2H6ezRyB8E-Rl0Llgl0LwZjHgmBQNJFw4NLiFQrJSY2qvSgT8/s320/11988610_942449025801761_575615321641805969_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrMV0s90YXt-lgdckFrio0DyCM8EYvfa-cj62QR6hhv6tUQYYd34X2qqpYqZfeTAXzto0kQ0uLoPvzPfu_S9B-TJzBzz2H6ezRyB8E-Rl0Llgl0LwZjHgmBQNJFw4NLiFQrJSY2qvSgT8/s480/11988610_942449025801761_575615321641805969_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrMV0s90YXt-lgdckFrio0DyCM8EYvfa-cj62QR6hhv6tUQYYd34X2qqpYqZfeTAXzto0kQ0uLoPvzPfu_S9B-TJzBzz2H6ezRyB8E-Rl0Llgl0LwZjHgmBQNJFw4NLiFQrJSY2qvSgT8/s640/11988610_942449025801761_575615321641805969_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrMV0s90YXt-lgdckFrio0DyCM8EYvfa-cj62QR6hhv6tUQYYd34X2qqpYqZfeTAXzto0kQ0uLoPvzPfu_S9B-TJzBzz2H6ezRyB8E-Rl0Llgl0LwZjHgmBQNJFw4NLiFQrJSY2qvSgT8/s320/11988610_942449025801761_575615321641805969_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrMV0s90YXt-lgdckFrio0DyCM8EYvfa-cj62QR6hhv6tUQYYd34X2qqpYqZfeTAXzto0kQ0uLoPvzPfu_S9B-TJzBzz2H6ezRyB8E-Rl0Llgl0LwZjHgmBQNJFw4NLiFQrJSY2qvSgT8/s480/11988610_942449025801761_575615321641805969_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrMV0s90YXt-lgdckFrio0DyCM8EYvfa-cj62QR6hhv6tUQYYd34X2qqpYqZfeTAXzto0kQ0uLoPvzPfu_S9B-TJzBzz2H6ezRyB8E-Rl0Llgl0LwZjHgmBQNJFw4NLiFQrJSY2qvSgT8/s640/11988610_942449025801761_575615321641805969_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 184 - Jelly Bullet"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="programa-185-ocean-colour-scene.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s320/unnamed.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s320/unnamed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s480/unnamed.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s640/unnamed.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s320/unnamed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s480/unnamed.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s640/unnamed.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 185 - Ocean Colour Scene"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="programa-186-fiesta-de-rip-magazine-1991-carbono-14.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_Wd2RJDZrVhDtC0huhK_DtGfg4KYwq3neOh3wC9T7LMb8Ql3jAgQe9sSlnPUNlgPygWJhx4GZ3SKsEsx2NKblx_jjJfxgVhx7XVoiftjDSE9J5lDZaKdxsX6E8q4wdVsIlmP8QnMOCD4/s320/image.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_Wd2RJDZrVhDtC0huhK_DtGfg4KYwq3neOh3wC9T7LMb8Ql3jAgQe9sSlnPUNlgPygWJhx4GZ3SKsEsx2NKblx_jjJfxgVhx7XVoiftjDSE9J5lDZaKdxsX6E8q4wdVsIlmP8QnMOCD4/s320/image.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_Wd2RJDZrVhDtC0huhK_DtGfg4KYwq3neOh3wC9T7LMb8Ql3jAgQe9sSlnPUNlgPygWJhx4GZ3SKsEsx2NKblx_jjJfxgVhx7XVoiftjDSE9J5lDZaKdxsX6E8q4wdVsIlmP8QnMOCD4/s480/image.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_Wd2RJDZrVhDtC0huhK_DtGfg4KYwq3neOh3wC9T7LMb8Ql3jAgQe9sSlnPUNlgPygWJhx4GZ3SKsEsx2NKblx_jjJfxgVhx7XVoiftjDSE9J5lDZaKdxsX6E8q4wdVsIlmP8QnMOCD4/s640/image.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_Wd2RJDZrVhDtC0huhK_DtGfg4KYwq3neOh3wC9T7LMb8Ql3jAgQe9sSlnPUNlgPygWJhx4GZ3SKsEsx2NKblx_jjJfxgVhx7XVoiftjDSE9J5lDZaKdxsX6E8q4wdVsIlmP8QnMOCD4/s320/image.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_Wd2RJDZrVhDtC0huhK_DtGfg4KYwq3neOh3wC9T7LMb8Ql3jAgQe9sSlnPUNlgPygWJhx4GZ3SKsEsx2NKblx_jjJfxgVhx7XVoiftjDSE9J5lDZaKdxsX6E8q4wdVsIlmP8QnMOCD4/s480/image.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_Wd2RJDZrVhDtC0huhK_DtGfg4KYwq3neOh3wC9T7LMb8Ql3jAgQe9sSlnPUNlgPygWJhx4GZ3SKsEsx2NKblx_jjJfxgVhx7XVoiftjDSE9J5lDZaKdxsX6E8q4wdVsIlmP8QnMOCD4/s640/image.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 186 - Fiesta de RIP Magazine 1991 + Carbono 14"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

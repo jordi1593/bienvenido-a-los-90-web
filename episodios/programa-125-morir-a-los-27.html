@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 125 - Morir a los 27 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -129,8 +129,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s160/P1030709.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s480/P1030709.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s160/P1030709.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s480/P1030709.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 130 - Entrevista a Charles R. Cross"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -140,8 +139,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 109 - 20 años Nirvana"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -151,8 +149,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCjhLPg24hRtdObAMTsjZkLG7BgVSDynwC5x1nO1VxnPoUW4cF47OEqODmPjMWiCs0UjRxuctvAcDoZM5SVqUMCA4KiSX_X1U9vxTxxmhJWZ79Vgiq4pVfRSbC0hC9RMSzfv6Y9BuuNrQ/s320/10665387_760644447306750_8365003578891165095_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCjhLPg24hRtdObAMTsjZkLG7BgVSDynwC5x1nO1VxnPoUW4cF47OEqODmPjMWiCs0UjRxuctvAcDoZM5SVqUMCA4KiSX_X1U9vxTxxmhJWZ79Vgiq4pVfRSbC0hC9RMSzfv6Y9BuuNrQ/s160/10665387_760644447306750_8365003578891165095_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCjhLPg24hRtdObAMTsjZkLG7BgVSDynwC5x1nO1VxnPoUW4cF47OEqODmPjMWiCs0UjRxuctvAcDoZM5SVqUMCA4KiSX_X1U9vxTxxmhJWZ79Vgiq4pVfRSbC0hC9RMSzfv6Y9BuuNrQ/s320/10665387_760644447306750_8365003578891165095_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCjhLPg24hRtdObAMTsjZkLG7BgVSDynwC5x1nO1VxnPoUW4cF47OEqODmPjMWiCs0UjRxuctvAcDoZM5SVqUMCA4KiSX_X1U9vxTxxmhJWZ79Vgiq4pVfRSbC0hC9RMSzfv6Y9BuuNrQ/s480/10665387_760644447306750_8365003578891165095_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCjhLPg24hRtdObAMTsjZkLG7BgVSDynwC5x1nO1VxnPoUW4cF47OEqODmPjMWiCs0UjRxuctvAcDoZM5SVqUMCA4KiSX_X1U9vxTxxmhJWZ79Vgiq4pVfRSbC0hC9RMSzfv6Y9BuuNrQ/s160/10665387_760644447306750_8365003578891165095_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCjhLPg24hRtdObAMTsjZkLG7BgVSDynwC5x1nO1VxnPoUW4cF47OEqODmPjMWiCs0UjRxuctvAcDoZM5SVqUMCA4KiSX_X1U9vxTxxmhJWZ79Vgiq4pVfRSbC0hC9RMSzfv6Y9BuuNrQ/s320/10665387_760644447306750_8365003578891165095_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCjhLPg24hRtdObAMTsjZkLG7BgVSDynwC5x1nO1VxnPoUW4cF47OEqODmPjMWiCs0UjRxuctvAcDoZM5SVqUMCA4KiSX_X1U9vxTxxmhJWZ79Vgiq4pVfRSbC0hC9RMSzfv6Y9BuuNrQ/s480/10665387_760644447306750_8365003578891165095_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 141 - Le Traste + Royal Bustards"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -168,8 +165,7 @@
         <a class="related-bottom-card" href="programa-104-the-doors-en-los-90.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS1US6w3VknxJBTfo8DSCRodX25RSGPF5dAXfUgDr0X283cjWHLYYK6sYsRCSn1TjkGILEVVxGfBVe_osbdp5y6BHyJhuP5NO6z2sOO6yUwhAIVPE8fTnxqYQUQYFFsAmN7kd_0xk5BZU/s320/0007559624752_500X500.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS1US6w3VknxJBTfo8DSCRodX25RSGPF5dAXfUgDr0X283cjWHLYYK6sYsRCSn1TjkGILEVVxGfBVe_osbdp5y6BHyJhuP5NO6z2sOO6yUwhAIVPE8fTnxqYQUQYFFsAmN7kd_0xk5BZU/s320/0007559624752_500X500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS1US6w3VknxJBTfo8DSCRodX25RSGPF5dAXfUgDr0X283cjWHLYYK6sYsRCSn1TjkGILEVVxGfBVe_osbdp5y6BHyJhuP5NO6z2sOO6yUwhAIVPE8fTnxqYQUQYFFsAmN7kd_0xk5BZU/s480/0007559624752_500X500.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS1US6w3VknxJBTfo8DSCRodX25RSGPF5dAXfUgDr0X283cjWHLYYK6sYsRCSn1TjkGILEVVxGfBVe_osbdp5y6BHyJhuP5NO6z2sOO6yUwhAIVPE8fTnxqYQUQYFFsAmN7kd_0xk5BZU/s640/0007559624752_500X500.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS1US6w3VknxJBTfo8DSCRodX25RSGPF5dAXfUgDr0X283cjWHLYYK6sYsRCSn1TjkGILEVVxGfBVe_osbdp5y6BHyJhuP5NO6z2sOO6yUwhAIVPE8fTnxqYQUQYFFsAmN7kd_0xk5BZU/s320/0007559624752_500X500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS1US6w3VknxJBTfo8DSCRodX25RSGPF5dAXfUgDr0X283cjWHLYYK6sYsRCSn1TjkGILEVVxGfBVe_osbdp5y6BHyJhuP5NO6z2sOO6yUwhAIVPE8fTnxqYQUQYFFsAmN7kd_0xk5BZU/s480/0007559624752_500X500.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS1US6w3VknxJBTfo8DSCRodX25RSGPF5dAXfUgDr0X283cjWHLYYK6sYsRCSn1TjkGILEVVxGfBVe_osbdp5y6BHyJhuP5NO6z2sOO6yUwhAIVPE8fTnxqYQUQYFFsAmN7kd_0xk5BZU/s640/0007559624752_500X500.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 104 - The Doors en los 90"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -180,8 +176,7 @@
           </a><a class="related-bottom-card" href="programa-149-kurt-cobain-cumple-48-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s480/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s640/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s480/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s640/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 149 - Kurt Cobain cumple 48 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -192,8 +187,7 @@
           </a><a class="related-bottom-card" href="programa-151-kim-gordon-la-chica-del-grupo.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQw7ccBbLGIQHzJI4ZsLQ0rBnKhiEh3IXZlpBcHObT8eDdNrkUQoQByY_zh0Gq0ewvaIUDxKGDxfN04RwwUhpqPyzw1T7oFZIyXuD_uv6ngjM9zvlowXe_GJjxdvNOMH_VvZzokcV-N2Q/s320/10997993_10152688940797747_1170606635313502221_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQw7ccBbLGIQHzJI4ZsLQ0rBnKhiEh3IXZlpBcHObT8eDdNrkUQoQByY_zh0Gq0ewvaIUDxKGDxfN04RwwUhpqPyzw1T7oFZIyXuD_uv6ngjM9zvlowXe_GJjxdvNOMH_VvZzokcV-N2Q/s320/10997993_10152688940797747_1170606635313502221_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQw7ccBbLGIQHzJI4ZsLQ0rBnKhiEh3IXZlpBcHObT8eDdNrkUQoQByY_zh0Gq0ewvaIUDxKGDxfN04RwwUhpqPyzw1T7oFZIyXuD_uv6ngjM9zvlowXe_GJjxdvNOMH_VvZzokcV-N2Q/s480/10997993_10152688940797747_1170606635313502221_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQw7ccBbLGIQHzJI4ZsLQ0rBnKhiEh3IXZlpBcHObT8eDdNrkUQoQByY_zh0Gq0ewvaIUDxKGDxfN04RwwUhpqPyzw1T7oFZIyXuD_uv6ngjM9zvlowXe_GJjxdvNOMH_VvZzokcV-N2Q/s640/10997993_10152688940797747_1170606635313502221_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQw7ccBbLGIQHzJI4ZsLQ0rBnKhiEh3IXZlpBcHObT8eDdNrkUQoQByY_zh0Gq0ewvaIUDxKGDxfN04RwwUhpqPyzw1T7oFZIyXuD_uv6ngjM9zvlowXe_GJjxdvNOMH_VvZzokcV-N2Q/s320/10997993_10152688940797747_1170606635313502221_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQw7ccBbLGIQHzJI4ZsLQ0rBnKhiEh3IXZlpBcHObT8eDdNrkUQoQByY_zh0Gq0ewvaIUDxKGDxfN04RwwUhpqPyzw1T7oFZIyXuD_uv6ngjM9zvlowXe_GJjxdvNOMH_VvZzokcV-N2Q/s480/10997993_10152688940797747_1170606635313502221_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQw7ccBbLGIQHzJI4ZsLQ0rBnKhiEh3IXZlpBcHObT8eDdNrkUQoQByY_zh0Gq0ewvaIUDxKGDxfN04RwwUhpqPyzw1T7oFZIyXuD_uv6ngjM9zvlowXe_GJjxdvNOMH_VvZzokcV-N2Q/s640/10997993_10152688940797747_1170606635313502221_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 151 - Kim Gordon &quot;La chica del grupo&quot;"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

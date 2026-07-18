@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.648 - The Cardigans &#39;Gran Turismo&#39; — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -124,8 +124,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s320/71VJAU9IPSL._SY355_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s160/71VJAU9IPSL._SY355_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s320/71VJAU9IPSL._SY355_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s480/71VJAU9IPSL._SY355_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s160/71VJAU9IPSL._SY355_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s320/71VJAU9IPSL._SY355_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s480/71VJAU9IPSL._SY355_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.646 - Radiohead, especial The Bends"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -135,8 +134,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s160/TheRocket_May1988.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s480/TheRocket_May1988.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s160/TheRocket_May1988.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s480/TheRocket_May1988.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.644 - The Rocket , la revista local de Seattle"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -146,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFdnapgbtpoaiTRBCYaJhwziINEMEW3kIquAlYkaR3_qQAUNdHUJT7kUrhMBuC6U4LMe_P237dh4hM8rzksmvlHnvjlZVvNjUVE2nJdf7eHsKqMfFfdczZPaUkcvKGv_15tSkwSD011NE/s320/b90_+643.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFdnapgbtpoaiTRBCYaJhwziINEMEW3kIquAlYkaR3_qQAUNdHUJT7kUrhMBuC6U4LMe_P237dh4hM8rzksmvlHnvjlZVvNjUVE2nJdf7eHsKqMfFfdczZPaUkcvKGv_15tSkwSD011NE/s160/b90_+643.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFdnapgbtpoaiTRBCYaJhwziINEMEW3kIquAlYkaR3_qQAUNdHUJT7kUrhMBuC6U4LMe_P237dh4hM8rzksmvlHnvjlZVvNjUVE2nJdf7eHsKqMfFfdczZPaUkcvKGv_15tSkwSD011NE/s320/b90_+643.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFdnapgbtpoaiTRBCYaJhwziINEMEW3kIquAlYkaR3_qQAUNdHUJT7kUrhMBuC6U4LMe_P237dh4hM8rzksmvlHnvjlZVvNjUVE2nJdf7eHsKqMfFfdczZPaUkcvKGv_15tSkwSD011NE/s480/b90_+643.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFdnapgbtpoaiTRBCYaJhwziINEMEW3kIquAlYkaR3_qQAUNdHUJT7kUrhMBuC6U4LMe_P237dh4hM8rzksmvlHnvjlZVvNjUVE2nJdf7eHsKqMfFfdczZPaUkcvKGv_15tSkwSD011NE/s160/b90_+643.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFdnapgbtpoaiTRBCYaJhwziINEMEW3kIquAlYkaR3_qQAUNdHUJT7kUrhMBuC6U4LMe_P237dh4hM8rzksmvlHnvjlZVvNjUVE2nJdf7eHsKqMfFfdczZPaUkcvKGv_15tSkwSD011NE/s320/b90_+643.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFdnapgbtpoaiTRBCYaJhwziINEMEW3kIquAlYkaR3_qQAUNdHUJT7kUrhMBuC6U4LMe_P237dh4hM8rzksmvlHnvjlZVvNjUVE2nJdf7eHsKqMfFfdczZPaUkcvKGv_15tSkwSD011NE/s480/b90_+643.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.643 - Novedades de Local H, Green Day, The Strokes, Fiona Apple"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -163,8 +160,7 @@
         <a class="related-bottom-card" href="p-634-verbena-souls-for-sale-into-the-pink-la-musica-negra.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiweyhhyphenhyphenKNmhY9lZOTDCK-CJ4Wr60gZfPsdSFnUNim8xTjIYgmRs3CAZuRw46FM9VTNDWrOe3NoHo0GrEvKgFlBWDQu49ASHQlWmIFpKfIZL03xJIytEnQkIna4rFj3E8EzVy6hyuUn22o/s320/MI0001423586.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiweyhhyphenhyphenKNmhY9lZOTDCK-CJ4Wr60gZfPsdSFnUNim8xTjIYgmRs3CAZuRw46FM9VTNDWrOe3NoHo0GrEvKgFlBWDQu49ASHQlWmIFpKfIZL03xJIytEnQkIna4rFj3E8EzVy6hyuUn22o/s320/MI0001423586.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiweyhhyphenhyphenKNmhY9lZOTDCK-CJ4Wr60gZfPsdSFnUNim8xTjIYgmRs3CAZuRw46FM9VTNDWrOe3NoHo0GrEvKgFlBWDQu49ASHQlWmIFpKfIZL03xJIytEnQkIna4rFj3E8EzVy6hyuUn22o/s480/MI0001423586.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiweyhhyphenhyphenKNmhY9lZOTDCK-CJ4Wr60gZfPsdSFnUNim8xTjIYgmRs3CAZuRw46FM9VTNDWrOe3NoHo0GrEvKgFlBWDQu49ASHQlWmIFpKfIZL03xJIytEnQkIna4rFj3E8EzVy6hyuUn22o/s640/MI0001423586.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiweyhhyphenhyphenKNmhY9lZOTDCK-CJ4Wr60gZfPsdSFnUNim8xTjIYgmRs3CAZuRw46FM9VTNDWrOe3NoHo0GrEvKgFlBWDQu49ASHQlWmIFpKfIZL03xJIytEnQkIna4rFj3E8EzVy6hyuUn22o/s320/MI0001423586.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiweyhhyphenhyphenKNmhY9lZOTDCK-CJ4Wr60gZfPsdSFnUNim8xTjIYgmRs3CAZuRw46FM9VTNDWrOe3NoHo0GrEvKgFlBWDQu49ASHQlWmIFpKfIZL03xJIytEnQkIna4rFj3E8EzVy6hyuUn22o/s480/MI0001423586.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiweyhhyphenhyphenKNmhY9lZOTDCK-CJ4Wr60gZfPsdSFnUNim8xTjIYgmRs3CAZuRw46FM9VTNDWrOe3NoHo0GrEvKgFlBWDQu49ASHQlWmIFpKfIZL03xJIytEnQkIna4rFj3E8EzVy6hyuUn22o/s640/MI0001423586.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.634 Verbena (Souls For Sale - Into The Pink - La Musica Negra)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -175,8 +171,7 @@
           </a><a class="related-bottom-card" href="p-658-kim-deal-pixies-the-breeders.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s320/EZsXIFFWkAAK_wI.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s320/EZsXIFFWkAAK_wI.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s480/EZsXIFFWkAAK_wI.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s640/EZsXIFFWkAAK_wI.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s320/EZsXIFFWkAAK_wI.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s480/EZsXIFFWkAAK_wI.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s640/EZsXIFFWkAAK_wI.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.658 - Kim Deal (Pixies, The Breeders)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -187,8 +182,7 @@
           </a><a class="related-bottom-card" href="p-661-musgo-nos-presenta-open-the-gate.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ7m35xVr0oLCU-I2wUEJhzeWFby_67SRluP4mbqDDqsNkW6k2-eTGECrFIbl5FuEocKh_YaW9HnVqim0Mjl8G4Bcmt8kWr_tFw4DkJFa7iBvDECQr_kONjaLo5DLKVY-mCbxf9yL9njA/s320/71298612_2431050573835396_1126693264611606528_n.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ7m35xVr0oLCU-I2wUEJhzeWFby_67SRluP4mbqDDqsNkW6k2-eTGECrFIbl5FuEocKh_YaW9HnVqim0Mjl8G4Bcmt8kWr_tFw4DkJFa7iBvDECQr_kONjaLo5DLKVY-mCbxf9yL9njA/s320/71298612_2431050573835396_1126693264611606528_n.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ7m35xVr0oLCU-I2wUEJhzeWFby_67SRluP4mbqDDqsNkW6k2-eTGECrFIbl5FuEocKh_YaW9HnVqim0Mjl8G4Bcmt8kWr_tFw4DkJFa7iBvDECQr_kONjaLo5DLKVY-mCbxf9yL9njA/s480/71298612_2431050573835396_1126693264611606528_n.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ7m35xVr0oLCU-I2wUEJhzeWFby_67SRluP4mbqDDqsNkW6k2-eTGECrFIbl5FuEocKh_YaW9HnVqim0Mjl8G4Bcmt8kWr_tFw4DkJFa7iBvDECQr_kONjaLo5DLKVY-mCbxf9yL9njA/s640/71298612_2431050573835396_1126693264611606528_n.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ7m35xVr0oLCU-I2wUEJhzeWFby_67SRluP4mbqDDqsNkW6k2-eTGECrFIbl5FuEocKh_YaW9HnVqim0Mjl8G4Bcmt8kWr_tFw4DkJFa7iBvDECQr_kONjaLo5DLKVY-mCbxf9yL9njA/s320/71298612_2431050573835396_1126693264611606528_n.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ7m35xVr0oLCU-I2wUEJhzeWFby_67SRluP4mbqDDqsNkW6k2-eTGECrFIbl5FuEocKh_YaW9HnVqim0Mjl8G4Bcmt8kWr_tFw4DkJFa7iBvDECQr_kONjaLo5DLKVY-mCbxf9yL9njA/s480/71298612_2431050573835396_1126693264611606528_n.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ7m35xVr0oLCU-I2wUEJhzeWFby_67SRluP4mbqDDqsNkW6k2-eTGECrFIbl5FuEocKh_YaW9HnVqim0Mjl8G4Bcmt8kWr_tFw4DkJFa7iBvDECQr_kONjaLo5DLKVY-mCbxf9yL9njA/s640/71298612_2431050573835396_1126693264611606528_n.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.661 - Musgö nos presenta &#39;Open the Gate&#39;"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

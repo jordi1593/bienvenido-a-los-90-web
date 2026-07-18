@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 276 - Star Wars 40 años — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -146,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE5MZVRpd_3RCN07s7-RyjKQsOyizNoIl0X3A30hO4fgmdZBzI_70Ozfiyt82Su12jCnFOHNX1F6OM3Nf5WE7_RsOU9iFK2TMZwWh56wZwE73tA7kqs-MbLKm4-C7UMzoUO_WGpQA_Cgs/s320/il_570xN.1966121652_t3bh.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE5MZVRpd_3RCN07s7-RyjKQsOyizNoIl0X3A30hO4fgmdZBzI_70Ozfiyt82Su12jCnFOHNX1F6OM3Nf5WE7_RsOU9iFK2TMZwWh56wZwE73tA7kqs-MbLKm4-C7UMzoUO_WGpQA_Cgs/s160/il_570xN.1966121652_t3bh.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE5MZVRpd_3RCN07s7-RyjKQsOyizNoIl0X3A30hO4fgmdZBzI_70Ozfiyt82Su12jCnFOHNX1F6OM3Nf5WE7_RsOU9iFK2TMZwWh56wZwE73tA7kqs-MbLKm4-C7UMzoUO_WGpQA_Cgs/s320/il_570xN.1966121652_t3bh.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE5MZVRpd_3RCN07s7-RyjKQsOyizNoIl0X3A30hO4fgmdZBzI_70Ozfiyt82Su12jCnFOHNX1F6OM3Nf5WE7_RsOU9iFK2TMZwWh56wZwE73tA7kqs-MbLKm4-C7UMzoUO_WGpQA_Cgs/s480/il_570xN.1966121652_t3bh.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE5MZVRpd_3RCN07s7-RyjKQsOyizNoIl0X3A30hO4fgmdZBzI_70Ozfiyt82Su12jCnFOHNX1F6OM3Nf5WE7_RsOU9iFK2TMZwWh56wZwE73tA7kqs-MbLKm4-C7UMzoUO_WGpQA_Cgs/s160/il_570xN.1966121652_t3bh.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE5MZVRpd_3RCN07s7-RyjKQsOyizNoIl0X3A30hO4fgmdZBzI_70Ozfiyt82Su12jCnFOHNX1F6OM3Nf5WE7_RsOU9iFK2TMZwWh56wZwE73tA7kqs-MbLKm4-C7UMzoUO_WGpQA_Cgs/s320/il_570xN.1966121652_t3bh.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE5MZVRpd_3RCN07s7-RyjKQsOyizNoIl0X3A30hO4fgmdZBzI_70Ozfiyt82Su12jCnFOHNX1F6OM3Nf5WE7_RsOU9iFK2TMZwWh56wZwE73tA7kqs-MbLKm4-C7UMzoUO_WGpQA_Cgs/s480/il_570xN.1966121652_t3bh.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.640 Star Wars para no iniciados (Disney incluído)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -157,8 +156,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg89YSPQey6ZyVqS0-zRUqMeqVYX2T9suH9jt_EPf7RVKa21gppiuFFDcbuQLZwGMmQyTI-n2Izkcck2RJaYPx_qB6kkbC0X5SOjmXGANqszUwa-Q-AgRkxu4myc6S-K0e1GzUZUB76EGY/s320/b90_5temp.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg89YSPQey6ZyVqS0-zRUqMeqVYX2T9suH9jt_EPf7RVKa21gppiuFFDcbuQLZwGMmQyTI-n2Izkcck2RJaYPx_qB6kkbC0X5SOjmXGANqszUwa-Q-AgRkxu4myc6S-K0e1GzUZUB76EGY/s160/b90_5temp.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg89YSPQey6ZyVqS0-zRUqMeqVYX2T9suH9jt_EPf7RVKa21gppiuFFDcbuQLZwGMmQyTI-n2Izkcck2RJaYPx_qB6kkbC0X5SOjmXGANqszUwa-Q-AgRkxu4myc6S-K0e1GzUZUB76EGY/s320/b90_5temp.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg89YSPQey6ZyVqS0-zRUqMeqVYX2T9suH9jt_EPf7RVKa21gppiuFFDcbuQLZwGMmQyTI-n2Izkcck2RJaYPx_qB6kkbC0X5SOjmXGANqszUwa-Q-AgRkxu4myc6S-K0e1GzUZUB76EGY/s480/b90_5temp.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg89YSPQey6ZyVqS0-zRUqMeqVYX2T9suH9jt_EPf7RVKa21gppiuFFDcbuQLZwGMmQyTI-n2Izkcck2RJaYPx_qB6kkbC0X5SOjmXGANqszUwa-Q-AgRkxu4myc6S-K0e1GzUZUB76EGY/s160/b90_5temp.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg89YSPQey6ZyVqS0-zRUqMeqVYX2T9suH9jt_EPf7RVKa21gppiuFFDcbuQLZwGMmQyTI-n2Izkcck2RJaYPx_qB6kkbC0X5SOjmXGANqszUwa-Q-AgRkxu4myc6S-K0e1GzUZUB76EGY/s320/b90_5temp.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg89YSPQey6ZyVqS0-zRUqMeqVYX2T9suH9jt_EPf7RVKa21gppiuFFDcbuQLZwGMmQyTI-n2Izkcck2RJaYPx_qB6kkbC0X5SOjmXGANqszUwa-Q-AgRkxu4myc6S-K0e1GzUZUB76EGY/s480/b90_5temp.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 261 - 5 años de emisiones"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -168,8 +166,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvecbEJerM8ucMTsshyphenhyphenZ6Ce0QRCN-yKLUGRUm5QwNA8gW1mvyuogW4jR1enqaeHtHuhAXKbb9q_e82mF1YlZz2F8LscHmbSyv_yd5fAw-07Brdlhq5a2odCmVumPIx58cWnfhIlsIIuTw/s320/71oEjjqMTJL._SX355_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvecbEJerM8ucMTsshyphenhyphenZ6Ce0QRCN-yKLUGRUm5QwNA8gW1mvyuogW4jR1enqaeHtHuhAXKbb9q_e82mF1YlZz2F8LscHmbSyv_yd5fAw-07Brdlhq5a2odCmVumPIx58cWnfhIlsIIuTw/s160/71oEjjqMTJL._SX355_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvecbEJerM8ucMTsshyphenhyphenZ6Ce0QRCN-yKLUGRUm5QwNA8gW1mvyuogW4jR1enqaeHtHuhAXKbb9q_e82mF1YlZz2F8LscHmbSyv_yd5fAw-07Brdlhq5a2odCmVumPIx58cWnfhIlsIIuTw/s320/71oEjjqMTJL._SX355_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvecbEJerM8ucMTsshyphenhyphenZ6Ce0QRCN-yKLUGRUm5QwNA8gW1mvyuogW4jR1enqaeHtHuhAXKbb9q_e82mF1YlZz2F8LscHmbSyv_yd5fAw-07Brdlhq5a2odCmVumPIx58cWnfhIlsIIuTw/s480/71oEjjqMTJL._SX355_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvecbEJerM8ucMTsshyphenhyphenZ6Ce0QRCN-yKLUGRUm5QwNA8gW1mvyuogW4jR1enqaeHtHuhAXKbb9q_e82mF1YlZz2F8LscHmbSyv_yd5fAw-07Brdlhq5a2odCmVumPIx58cWnfhIlsIIuTw/s160/71oEjjqMTJL._SX355_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvecbEJerM8ucMTsshyphenhyphenZ6Ce0QRCN-yKLUGRUm5QwNA8gW1mvyuogW4jR1enqaeHtHuhAXKbb9q_e82mF1YlZz2F8LscHmbSyv_yd5fAw-07Brdlhq5a2odCmVumPIx58cWnfhIlsIIuTw/s320/71oEjjqMTJL._SX355_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvecbEJerM8ucMTsshyphenhyphenZ6Ce0QRCN-yKLUGRUm5QwNA8gW1mvyuogW4jR1enqaeHtHuhAXKbb9q_e82mF1YlZz2F8LscHmbSyv_yd5fAw-07Brdlhq5a2odCmVumPIx58cWnfhIlsIIuTw/s480/71oEjjqMTJL._SX355_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 247 - OMEGA 20 Años"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -185,8 +182,7 @@
         <a class="related-bottom-card" href="programa-460-novedades-nov-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBLac8vzchyphenhyphenDtAjQKbS4vvK493kAcS91VdHa1NxQrWrTrP95rr3Yt3slIMDFPAh6_pq_RU13n9jAZ0FNSTN8RxXh0gFVRer6eHOrzXuJDPnmTNURRc1bJAQ_dbVeJTGL567q9M46E-L80/s320/21317870_1875865385764429_5463718400540979453_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBLac8vzchyphenhyphenDtAjQKbS4vvK493kAcS91VdHa1NxQrWrTrP95rr3Yt3slIMDFPAh6_pq_RU13n9jAZ0FNSTN8RxXh0gFVRer6eHOrzXuJDPnmTNURRc1bJAQ_dbVeJTGL567q9M46E-L80/s320/21317870_1875865385764429_5463718400540979453_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBLac8vzchyphenhyphenDtAjQKbS4vvK493kAcS91VdHa1NxQrWrTrP95rr3Yt3slIMDFPAh6_pq_RU13n9jAZ0FNSTN8RxXh0gFVRer6eHOrzXuJDPnmTNURRc1bJAQ_dbVeJTGL567q9M46E-L80/s480/21317870_1875865385764429_5463718400540979453_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBLac8vzchyphenhyphenDtAjQKbS4vvK493kAcS91VdHa1NxQrWrTrP95rr3Yt3slIMDFPAh6_pq_RU13n9jAZ0FNSTN8RxXh0gFVRer6eHOrzXuJDPnmTNURRc1bJAQ_dbVeJTGL567q9M46E-L80/s640/21317870_1875865385764429_5463718400540979453_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBLac8vzchyphenhyphenDtAjQKbS4vvK493kAcS91VdHa1NxQrWrTrP95rr3Yt3slIMDFPAh6_pq_RU13n9jAZ0FNSTN8RxXh0gFVRer6eHOrzXuJDPnmTNURRc1bJAQ_dbVeJTGL567q9M46E-L80/s320/21317870_1875865385764429_5463718400540979453_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBLac8vzchyphenhyphenDtAjQKbS4vvK493kAcS91VdHa1NxQrWrTrP95rr3Yt3slIMDFPAh6_pq_RU13n9jAZ0FNSTN8RxXh0gFVRer6eHOrzXuJDPnmTNURRc1bJAQ_dbVeJTGL567q9M46E-L80/s480/21317870_1875865385764429_5463718400540979453_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBLac8vzchyphenhyphenDtAjQKbS4vvK493kAcS91VdHa1NxQrWrTrP95rr3Yt3slIMDFPAh6_pq_RU13n9jAZ0FNSTN8RxXh0gFVRer6eHOrzXuJDPnmTNURRc1bJAQ_dbVeJTGL567q9M46E-L80/s640/21317870_1875865385764429_5463718400540979453_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 460 - Novedades Nov. 2018"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -197,8 +193,7 @@
           </a><a class="related-bottom-card" href="programa-277-especial-sigur-ros.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZDqTkjHvTdF2x4SuKWPCwec17YPokPyPWCglI-4Zi5An2Z9QsmjWxqcM3XurzGVA50t2iEpqybSpnRnDxOihnBCwXeLFqqlldXCpEkwPCsOcSv86xEHtzG7qyJfOJwqznW9I0pDbNB-4/s320/Von-cover.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZDqTkjHvTdF2x4SuKWPCwec17YPokPyPWCglI-4Zi5An2Z9QsmjWxqcM3XurzGVA50t2iEpqybSpnRnDxOihnBCwXeLFqqlldXCpEkwPCsOcSv86xEHtzG7qyJfOJwqznW9I0pDbNB-4/s320/Von-cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZDqTkjHvTdF2x4SuKWPCwec17YPokPyPWCglI-4Zi5An2Z9QsmjWxqcM3XurzGVA50t2iEpqybSpnRnDxOihnBCwXeLFqqlldXCpEkwPCsOcSv86xEHtzG7qyJfOJwqznW9I0pDbNB-4/s480/Von-cover.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZDqTkjHvTdF2x4SuKWPCwec17YPokPyPWCglI-4Zi5An2Z9QsmjWxqcM3XurzGVA50t2iEpqybSpnRnDxOihnBCwXeLFqqlldXCpEkwPCsOcSv86xEHtzG7qyJfOJwqznW9I0pDbNB-4/s640/Von-cover.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZDqTkjHvTdF2x4SuKWPCwec17YPokPyPWCglI-4Zi5An2Z9QsmjWxqcM3XurzGVA50t2iEpqybSpnRnDxOihnBCwXeLFqqlldXCpEkwPCsOcSv86xEHtzG7qyJfOJwqznW9I0pDbNB-4/s320/Von-cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZDqTkjHvTdF2x4SuKWPCwec17YPokPyPWCglI-4Zi5An2Z9QsmjWxqcM3XurzGVA50t2iEpqybSpnRnDxOihnBCwXeLFqqlldXCpEkwPCsOcSv86xEHtzG7qyJfOJwqznW9I0pDbNB-4/s480/Von-cover.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZDqTkjHvTdF2x4SuKWPCwec17YPokPyPWCglI-4Zi5An2Z9QsmjWxqcM3XurzGVA50t2iEpqybSpnRnDxOihnBCwXeLFqqlldXCpEkwPCsOcSv86xEHtzG7qyJfOJwqznW9I0pDbNB-4/s640/Von-cover.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 277 - Especial Sigur Rós"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -209,8 +204,7 @@
           </a><a class="related-bottom-card" href="programa-274-rufus-t-firefly-greatest-hits.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyW7yrSfKXCL1oJSS93tVoiwJwmcK9NPH9lJlE70SU19_9DQjZmlO3ElVoe0NWuvche5q8ezfZGMSuu8bhwtxHahHTPVnDNXgTsBOztCavf9X7eMmHAQEOZeuVizSTZ9O1N00p2ZaPv9Q/s320/17884384_1314735405271852_3670028682219140927_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyW7yrSfKXCL1oJSS93tVoiwJwmcK9NPH9lJlE70SU19_9DQjZmlO3ElVoe0NWuvche5q8ezfZGMSuu8bhwtxHahHTPVnDNXgTsBOztCavf9X7eMmHAQEOZeuVizSTZ9O1N00p2ZaPv9Q/s320/17884384_1314735405271852_3670028682219140927_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyW7yrSfKXCL1oJSS93tVoiwJwmcK9NPH9lJlE70SU19_9DQjZmlO3ElVoe0NWuvche5q8ezfZGMSuu8bhwtxHahHTPVnDNXgTsBOztCavf9X7eMmHAQEOZeuVizSTZ9O1N00p2ZaPv9Q/s480/17884384_1314735405271852_3670028682219140927_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyW7yrSfKXCL1oJSS93tVoiwJwmcK9NPH9lJlE70SU19_9DQjZmlO3ElVoe0NWuvche5q8ezfZGMSuu8bhwtxHahHTPVnDNXgTsBOztCavf9X7eMmHAQEOZeuVizSTZ9O1N00p2ZaPv9Q/s640/17884384_1314735405271852_3670028682219140927_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyW7yrSfKXCL1oJSS93tVoiwJwmcK9NPH9lJlE70SU19_9DQjZmlO3ElVoe0NWuvche5q8ezfZGMSuu8bhwtxHahHTPVnDNXgTsBOztCavf9X7eMmHAQEOZeuVizSTZ9O1N00p2ZaPv9Q/s320/17884384_1314735405271852_3670028682219140927_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyW7yrSfKXCL1oJSS93tVoiwJwmcK9NPH9lJlE70SU19_9DQjZmlO3ElVoe0NWuvche5q8ezfZGMSuu8bhwtxHahHTPVnDNXgTsBOztCavf9X7eMmHAQEOZeuVizSTZ9O1N00p2ZaPv9Q/s480/17884384_1314735405271852_3670028682219140927_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyW7yrSfKXCL1oJSS93tVoiwJwmcK9NPH9lJlE70SU19_9DQjZmlO3ElVoe0NWuvche5q8ezfZGMSuu8bhwtxHahHTPVnDNXgTsBOztCavf9X7eMmHAQEOZeuVizSTZ9O1N00p2ZaPv9Q/s640/17884384_1314735405271852_3670028682219140927_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 274 - Rufus T. Firefly - Greatest Hits"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

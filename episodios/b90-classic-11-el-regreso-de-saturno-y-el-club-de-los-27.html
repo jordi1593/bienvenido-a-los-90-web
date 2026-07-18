@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>B90 Classic 11: El regreso de Saturno y el club de los 27 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -132,8 +132,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s160/thejurysocial112514.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s480/thejurysocial112514.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s160/thejurysocial112514.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s480/thejurysocial112514.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 10: The Jury - Kurt Cobain y Mark Lanegan"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -143,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s320/d9dbb49122ca7f199dfd9fc1bd704541.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s160/d9dbb49122ca7f199dfd9fc1bd704541.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s320/d9dbb49122ca7f199dfd9fc1bd704541.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s480/d9dbb49122ca7f199dfd9fc1bd704541.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s160/d9dbb49122ca7f199dfd9fc1bd704541.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s320/d9dbb49122ca7f199dfd9fc1bd704541.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s480/d9dbb49122ca7f199dfd9fc1bd704541.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 6: La primera y única vez que Kurt y Courtney actuaron juntos"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s160/B1gPDmmc+PS._SS500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s480/B1gPDmmc+PS._SS500_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s160/B1gPDmmc+PS._SS500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s480/B1gPDmmc+PS._SS500_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 22: Cuando Kurt Cobain conoció a William Burroughs"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +168,7 @@
         <a class="related-bottom-card" href="b90-classic-12-la-historia-completa-de-bittersweet-symphony.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s320/The-Verve.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s320/The-Verve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s480/The-Verve.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s640/The-Verve.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s320/The-Verve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s480/The-Verve.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s640/The-Verve.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 12: La historia completa de Bittersweet Symphony"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -183,8 +179,7 @@
           </a><a class="related-bottom-card" href="b90-classic-9-tomorrow-never-knows-sigue-siendo-un-misterio.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s320/AP17johnlid.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s320/AP17johnlid.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s480/AP17johnlid.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s640/AP17johnlid.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s320/AP17johnlid.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s480/AP17johnlid.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s640/AP17johnlid.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 9: Tomorrow Never Knows sigue siendo un misterio"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +190,7 @@
           </a><a class="related-bottom-card" href="b90-classic-13-los-sonidos-sugerentes-de-the-courettes.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48RwZVa45yDKyy2X0owEzpg4PNUCDz-6EGioKO90oTSYtkUDz0twcymdH08br8cW2tR8LVYBFZqPtw0xhIDNePocp1Z6qmPhWFm7MCfewPnj206ZFnmxj6vkIuYeJzrqUAfZamH0yqK8/s320/courettes-009.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48RwZVa45yDKyy2X0owEzpg4PNUCDz-6EGioKO90oTSYtkUDz0twcymdH08br8cW2tR8LVYBFZqPtw0xhIDNePocp1Z6qmPhWFm7MCfewPnj206ZFnmxj6vkIuYeJzrqUAfZamH0yqK8/s320/courettes-009.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48RwZVa45yDKyy2X0owEzpg4PNUCDz-6EGioKO90oTSYtkUDz0twcymdH08br8cW2tR8LVYBFZqPtw0xhIDNePocp1Z6qmPhWFm7MCfewPnj206ZFnmxj6vkIuYeJzrqUAfZamH0yqK8/s480/courettes-009.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48RwZVa45yDKyy2X0owEzpg4PNUCDz-6EGioKO90oTSYtkUDz0twcymdH08br8cW2tR8LVYBFZqPtw0xhIDNePocp1Z6qmPhWFm7MCfewPnj206ZFnmxj6vkIuYeJzrqUAfZamH0yqK8/s640/courettes-009.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48RwZVa45yDKyy2X0owEzpg4PNUCDz-6EGioKO90oTSYtkUDz0twcymdH08br8cW2tR8LVYBFZqPtw0xhIDNePocp1Z6qmPhWFm7MCfewPnj206ZFnmxj6vkIuYeJzrqUAfZamH0yqK8/s320/courettes-009.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48RwZVa45yDKyy2X0owEzpg4PNUCDz-6EGioKO90oTSYtkUDz0twcymdH08br8cW2tR8LVYBFZqPtw0xhIDNePocp1Z6qmPhWFm7MCfewPnj206ZFnmxj6vkIuYeJzrqUAfZamH0yqK8/s480/courettes-009.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48RwZVa45yDKyy2X0owEzpg4PNUCDz-6EGioKO90oTSYtkUDz0twcymdH08br8cW2tR8LVYBFZqPtw0xhIDNePocp1Z6qmPhWFm7MCfewPnj206ZFnmxj6vkIuYeJzrqUAfZamH0yqK8/s640/courettes-009.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 13: Los sonidos sugerentes de The Courettes"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 63 - MUSE, BEADY EYE, NIRVANA, RHCP, STANDSTILL... — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -149,8 +149,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKvMp8l6QL-yeosUdzEyWsr4GQyaHMijhwJzq6BQga7C9hVPUh8L36DNwOjuzmcFNx9y0rl2eoLkE73s286G9RjytVEvhGn6UrBe9sKdPyiN8IiYCcnYylQdESluhzx4jDm0FqxpCg5Gg/s320/16-jan-1993---chris-novoselic-beija-kurt-cobain-durante-show-do-nirvana-no-segundo-dia-do-hollywood-rock-1358293997213_956x500.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKvMp8l6QL-yeosUdzEyWsr4GQyaHMijhwJzq6BQga7C9hVPUh8L36DNwOjuzmcFNx9y0rl2eoLkE73s286G9RjytVEvhGn6UrBe9sKdPyiN8IiYCcnYylQdESluhzx4jDm0FqxpCg5Gg/s160/16-jan-1993---chris-novoselic-beija-kurt-cobain-durante-show-do-nirvana-no-segundo-dia-do-hollywood-rock-1358293997213_956x500.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKvMp8l6QL-yeosUdzEyWsr4GQyaHMijhwJzq6BQga7C9hVPUh8L36DNwOjuzmcFNx9y0rl2eoLkE73s286G9RjytVEvhGn6UrBe9sKdPyiN8IiYCcnYylQdESluhzx4jDm0FqxpCg5Gg/s320/16-jan-1993---chris-novoselic-beija-kurt-cobain-durante-show-do-nirvana-no-segundo-dia-do-hollywood-rock-1358293997213_956x500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKvMp8l6QL-yeosUdzEyWsr4GQyaHMijhwJzq6BQga7C9hVPUh8L36DNwOjuzmcFNx9y0rl2eoLkE73s286G9RjytVEvhGn6UrBe9sKdPyiN8IiYCcnYylQdESluhzx4jDm0FqxpCg5Gg/s480/16-jan-1993---chris-novoselic-beija-kurt-cobain-durante-show-do-nirvana-no-segundo-dia-do-hollywood-rock-1358293997213_956x500.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKvMp8l6QL-yeosUdzEyWsr4GQyaHMijhwJzq6BQga7C9hVPUh8L36DNwOjuzmcFNx9y0rl2eoLkE73s286G9RjytVEvhGn6UrBe9sKdPyiN8IiYCcnYylQdESluhzx4jDm0FqxpCg5Gg/s160/16-jan-1993---chris-novoselic-beija-kurt-cobain-durante-show-do-nirvana-no-segundo-dia-do-hollywood-rock-1358293997213_956x500.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKvMp8l6QL-yeosUdzEyWsr4GQyaHMijhwJzq6BQga7C9hVPUh8L36DNwOjuzmcFNx9y0rl2eoLkE73s286G9RjytVEvhGn6UrBe9sKdPyiN8IiYCcnYylQdESluhzx4jDm0FqxpCg5Gg/s320/16-jan-1993---chris-novoselic-beija-kurt-cobain-durante-show-do-nirvana-no-segundo-dia-do-hollywood-rock-1358293997213_956x500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKvMp8l6QL-yeosUdzEyWsr4GQyaHMijhwJzq6BQga7C9hVPUh8L36DNwOjuzmcFNx9y0rl2eoLkE73s286G9RjytVEvhGn6UrBe9sKdPyiN8IiYCcnYylQdESluhzx4jDm0FqxpCg5Gg/s480/16-jan-1993---chris-novoselic-beija-kurt-cobain-durante-show-do-nirvana-no-segundo-dia-do-hollywood-rock-1358293997213_956x500.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 101 - Nirvana Brazil 1993 "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -160,8 +159,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s320/b90_parte12.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s160/b90_parte12.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s320/b90_parte12.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s480/b90_parte12.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s160/b90_parte12.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s320/b90_parte12.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s480/b90_parte12.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1020 - Especial 1994 (11) : The Black Crowes - Nirvana - Tom Petty - Woodstock 94"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +169,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 59 - Bush, Nirvana, No Doubt, Pearl Jam, The Smashing Pumpkins..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -188,8 +185,7 @@
         <a class="related-bottom-card" href="b90-una-hora-con-standstill.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0pB3CJ_amT6bd3VYvPRWizzTOYfiTqg8-WCSdupMsfeJlsQTRn_Xi9Qvh2BlUeat9LkaIQPhjKc1DH8sjxtRuomWSxigmybzZ3shwTZdjRYb8o-5j0ff4PKPGTANWH84xjbP3X00c_yE/s320/d0e572e9-b353-49c2-a716-ba479dc2afa4.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0pB3CJ_amT6bd3VYvPRWizzTOYfiTqg8-WCSdupMsfeJlsQTRn_Xi9Qvh2BlUeat9LkaIQPhjKc1DH8sjxtRuomWSxigmybzZ3shwTZdjRYb8o-5j0ff4PKPGTANWH84xjbP3X00c_yE/s320/d0e572e9-b353-49c2-a716-ba479dc2afa4.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0pB3CJ_amT6bd3VYvPRWizzTOYfiTqg8-WCSdupMsfeJlsQTRn_Xi9Qvh2BlUeat9LkaIQPhjKc1DH8sjxtRuomWSxigmybzZ3shwTZdjRYb8o-5j0ff4PKPGTANWH84xjbP3X00c_yE/s480/d0e572e9-b353-49c2-a716-ba479dc2afa4.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0pB3CJ_amT6bd3VYvPRWizzTOYfiTqg8-WCSdupMsfeJlsQTRn_Xi9Qvh2BlUeat9LkaIQPhjKc1DH8sjxtRuomWSxigmybzZ3shwTZdjRYb8o-5j0ff4PKPGTANWH84xjbP3X00c_yE/s640/d0e572e9-b353-49c2-a716-ba479dc2afa4.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0pB3CJ_amT6bd3VYvPRWizzTOYfiTqg8-WCSdupMsfeJlsQTRn_Xi9Qvh2BlUeat9LkaIQPhjKc1DH8sjxtRuomWSxigmybzZ3shwTZdjRYb8o-5j0ff4PKPGTANWH84xjbP3X00c_yE/s320/d0e572e9-b353-49c2-a716-ba479dc2afa4.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0pB3CJ_amT6bd3VYvPRWizzTOYfiTqg8-WCSdupMsfeJlsQTRn_Xi9Qvh2BlUeat9LkaIQPhjKc1DH8sjxtRuomWSxigmybzZ3shwTZdjRYb8o-5j0ff4PKPGTANWH84xjbP3X00c_yE/s480/d0e572e9-b353-49c2-a716-ba479dc2afa4.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0pB3CJ_amT6bd3VYvPRWizzTOYfiTqg8-WCSdupMsfeJlsQTRn_Xi9Qvh2BlUeat9LkaIQPhjKc1DH8sjxtRuomWSxigmybzZ3shwTZdjRYb8o-5j0ff4PKPGTANWH84xjbP3X00c_yE/s640/d0e572e9-b353-49c2-a716-ba479dc2afa4.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 - Una hora con Standstill"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -200,8 +196,7 @@
           </a><a class="related-bottom-card" href="b90-programa-76-nirvana-in-utero-20th-anniversary.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 - Programa 76 - Nirvana - In Utero 20th Anniversary "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -212,8 +207,7 @@
           </a><a class="related-bottom-card" href="b90-programa-81-pearl-jam-desvela-sus-cartas.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 - Programa 81 - Pearl Jam desvela sus cartas"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.746 - Mark Oliver Everett (Eels) pincha sus canciones favoritas (Parte 2) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -154,8 +154,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s320/malcolm450.1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s160/malcolm450.1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s320/malcolm450.1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s480/malcolm450.1.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s160/malcolm450.1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s320/malcolm450.1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s480/malcolm450.1.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.706 - Mark Oliver Everett (Eels) pincha sus canciones favoritas"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +164,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBbFvsCw0V4wstmTOv9E_ZclrH472VvEI0IuSZaLdEY0-X3jJ8iz-Eae361lE3_sGdaMlIg794U3LCEN_rkYvGVkSoFyC3HOZ3HAy0C5DtxSOzNp_2x4k9WFGLC12t3PRWqVJzJ_Q7icg/s320/eels-the-deconstruction.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBbFvsCw0V4wstmTOv9E_ZclrH472VvEI0IuSZaLdEY0-X3jJ8iz-Eae361lE3_sGdaMlIg794U3LCEN_rkYvGVkSoFyC3HOZ3HAy0C5DtxSOzNp_2x4k9WFGLC12t3PRWqVJzJ_Q7icg/s160/eels-the-deconstruction.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBbFvsCw0V4wstmTOv9E_ZclrH472VvEI0IuSZaLdEY0-X3jJ8iz-Eae361lE3_sGdaMlIg794U3LCEN_rkYvGVkSoFyC3HOZ3HAy0C5DtxSOzNp_2x4k9WFGLC12t3PRWqVJzJ_Q7icg/s320/eels-the-deconstruction.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBbFvsCw0V4wstmTOv9E_ZclrH472VvEI0IuSZaLdEY0-X3jJ8iz-Eae361lE3_sGdaMlIg794U3LCEN_rkYvGVkSoFyC3HOZ3HAy0C5DtxSOzNp_2x4k9WFGLC12t3PRWqVJzJ_Q7icg/s480/eels-the-deconstruction.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBbFvsCw0V4wstmTOv9E_ZclrH472VvEI0IuSZaLdEY0-X3jJ8iz-Eae361lE3_sGdaMlIg794U3LCEN_rkYvGVkSoFyC3HOZ3HAy0C5DtxSOzNp_2x4k9WFGLC12t3PRWqVJzJ_Q7icg/s160/eels-the-deconstruction.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBbFvsCw0V4wstmTOv9E_ZclrH472VvEI0IuSZaLdEY0-X3jJ8iz-Eae361lE3_sGdaMlIg794U3LCEN_rkYvGVkSoFyC3HOZ3HAy0C5DtxSOzNp_2x4k9WFGLC12t3PRWqVJzJ_Q7icg/s320/eels-the-deconstruction.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBbFvsCw0V4wstmTOv9E_ZclrH472VvEI0IuSZaLdEY0-X3jJ8iz-Eae361lE3_sGdaMlIg794U3LCEN_rkYvGVkSoFyC3HOZ3HAy0C5DtxSOzNp_2x4k9WFGLC12t3PRWqVJzJ_Q7icg/s480/eels-the-deconstruction.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 372 - EELS presenta The Deconstruction"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -176,8 +174,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s320/151498347775.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s160/151498347775.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s320/151498347775.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s480/151498347775.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s160/151498347775.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s320/151498347775.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s480/151498347775.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.710 - Mis canciones favoritas de Radiohead (que no están en sus discos)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -193,8 +190,7 @@
         <a class="related-bottom-card" href="programa-122-eels-en-madrid-y-glastonbury-2014.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s640/420962_355957767755206_243875636_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s640/420962_355957767755206_243875636_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 122 - Eels en Madrid y Glastonbury 2014"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -205,8 +201,7 @@
           </a><a class="related-bottom-card" href="programa-99-no-dogs-beck-damon-albarn-foo-fighteres-eels-dewolff-mad-season-ocs-.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 99 - No Dogs, Beck, Damon Albarn, Foo Fighteres, Eels, Dewolff, Mad Season, OCS, Love Division y Carbono14"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -217,8 +212,7 @@
           </a><a class="related-bottom-card" href="programa-62-eels-beck-radiohead-eddie-vedder.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 62 - EELS, BECK, RADIOHEAD, EDDIE VEDDER..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

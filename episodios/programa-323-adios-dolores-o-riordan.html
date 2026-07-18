@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 323 - Adiós Dolores O&#39;Riordan — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -125,8 +125,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0q2SFvlzfZHhVYkkRPCJV_msgSpyb8Os0FN0nQKUqhP2zATfWvZWEByhVzvXDR3lTh4_GrkR-Af5BhYeOdQQLdR9TMiXLNzD9GO1SWuZdDoNj86R6gIO7cW-sj_VuLGQPe9fCuCaJX6A/s320/deparetha.jpg_2072119851.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0q2SFvlzfZHhVYkkRPCJV_msgSpyb8Os0FN0nQKUqhP2zATfWvZWEByhVzvXDR3lTh4_GrkR-Af5BhYeOdQQLdR9TMiXLNzD9GO1SWuZdDoNj86R6gIO7cW-sj_VuLGQPe9fCuCaJX6A/s160/deparetha.jpg_2072119851.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0q2SFvlzfZHhVYkkRPCJV_msgSpyb8Os0FN0nQKUqhP2zATfWvZWEByhVzvXDR3lTh4_GrkR-Af5BhYeOdQQLdR9TMiXLNzD9GO1SWuZdDoNj86R6gIO7cW-sj_VuLGQPe9fCuCaJX6A/s320/deparetha.jpg_2072119851.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0q2SFvlzfZHhVYkkRPCJV_msgSpyb8Os0FN0nQKUqhP2zATfWvZWEByhVzvXDR3lTh4_GrkR-Af5BhYeOdQQLdR9TMiXLNzD9GO1SWuZdDoNj86R6gIO7cW-sj_VuLGQPe9fCuCaJX6A/s480/deparetha.jpg_2072119851.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0q2SFvlzfZHhVYkkRPCJV_msgSpyb8Os0FN0nQKUqhP2zATfWvZWEByhVzvXDR3lTh4_GrkR-Af5BhYeOdQQLdR9TMiXLNzD9GO1SWuZdDoNj86R6gIO7cW-sj_VuLGQPe9fCuCaJX6A/s160/deparetha.jpg_2072119851.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0q2SFvlzfZHhVYkkRPCJV_msgSpyb8Os0FN0nQKUqhP2zATfWvZWEByhVzvXDR3lTh4_GrkR-Af5BhYeOdQQLdR9TMiXLNzD9GO1SWuZdDoNj86R6gIO7cW-sj_VuLGQPe9fCuCaJX6A/s320/deparetha.jpg_2072119851.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0q2SFvlzfZHhVYkkRPCJV_msgSpyb8Os0FN0nQKUqhP2zATfWvZWEByhVzvXDR3lTh4_GrkR-Af5BhYeOdQQLdR9TMiXLNzD9GO1SWuZdDoNj86R6gIO7cW-sj_VuLGQPe9fCuCaJX6A/s480/deparetha.jpg_2072119851.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 426 - Adiós Aretha"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -136,8 +135,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s320/b90_593.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s160/b90_593.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s320/b90_593.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s480/b90_593.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s160/b90_593.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s320/b90_593.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s480/b90_593.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.593 - The Power of Dolores cumple 20 años"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -147,8 +145,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYQyHz2zZG7mt3yEEJwCm-LTuXkNZ-vovMn8w5GzVLj41HT4_l-a0z_jqjL6oDL5FMMiiojRVjJuUWooUVo5Jp40-b56VFse11f5zyCQhDWCUpUYok3nmi_MgvM2L7fZGfPnd1IgdO-zI/s320/db-cdcover2.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYQyHz2zZG7mt3yEEJwCm-LTuXkNZ-vovMn8w5GzVLj41HT4_l-a0z_jqjL6oDL5FMMiiojRVjJuUWooUVo5Jp40-b56VFse11f5zyCQhDWCUpUYok3nmi_MgvM2L7fZGfPnd1IgdO-zI/s160/db-cdcover2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYQyHz2zZG7mt3yEEJwCm-LTuXkNZ-vovMn8w5GzVLj41HT4_l-a0z_jqjL6oDL5FMMiiojRVjJuUWooUVo5Jp40-b56VFse11f5zyCQhDWCUpUYok3nmi_MgvM2L7fZGfPnd1IgdO-zI/s320/db-cdcover2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYQyHz2zZG7mt3yEEJwCm-LTuXkNZ-vovMn8w5GzVLj41HT4_l-a0z_jqjL6oDL5FMMiiojRVjJuUWooUVo5Jp40-b56VFse11f5zyCQhDWCUpUYok3nmi_MgvM2L7fZGfPnd1IgdO-zI/s480/db-cdcover2.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYQyHz2zZG7mt3yEEJwCm-LTuXkNZ-vovMn8w5GzVLj41HT4_l-a0z_jqjL6oDL5FMMiiojRVjJuUWooUVo5Jp40-b56VFse11f5zyCQhDWCUpUYok3nmi_MgvM2L7fZGfPnd1IgdO-zI/s160/db-cdcover2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYQyHz2zZG7mt3yEEJwCm-LTuXkNZ-vovMn8w5GzVLj41HT4_l-a0z_jqjL6oDL5FMMiiojRVjJuUWooUVo5Jp40-b56VFse11f5zyCQhDWCUpUYok3nmi_MgvM2L7fZGfPnd1IgdO-zI/s320/db-cdcover2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYQyHz2zZG7mt3yEEJwCm-LTuXkNZ-vovMn8w5GzVLj41HT4_l-a0z_jqjL6oDL5FMMiiojRVjJuUWooUVo5Jp40-b56VFse11f5zyCQhDWCUpUYok3nmi_MgvM2L7fZGfPnd1IgdO-zI/s480/db-cdcover2.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 202 - Adiós Bowie"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -164,8 +161,7 @@
         <a class="related-bottom-card" href="programa-166-adios-standstill.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s320/11393179_10152880824657747_5216406057049803366_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s320/11393179_10152880824657747_5216406057049803366_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s480/11393179_10152880824657747_5216406057049803366_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s640/11393179_10152880824657747_5216406057049803366_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s320/11393179_10152880824657747_5216406057049803366_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s480/11393179_10152880824657747_5216406057049803366_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s640/11393179_10152880824657747_5216406057049803366_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 166 - Adiós Standstill"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -176,8 +172,7 @@
           </a><a class="related-bottom-card" href="the-cranberries-la-riviera-madrid-22-04-1999.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s320/3771629213825_XXL.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s320/3771629213825_XXL.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s480/3771629213825_XXL.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s640/3771629213825_XXL.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s320/3771629213825_XXL.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s480/3771629213825_XXL.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s640/3771629213825_XXL.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="The Cranberries - La Riviera (Madrid 22/04/1999)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -188,8 +183,7 @@
           </a><a class="related-bottom-card" href="p-824-blur-1997-el-adios-al-britpop.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEiHJmMkYHf59C9pceX6kqLsjHqr2learqWngmlo3jynpshtAimU7ShVbFD4Q69yQ4qIQnWJTDuNWtBCEpLA-eG71HP_jH4kE9yhUYyw7_k8wFQuJdvdsgE_3rzpsvfYMsXnyj-NvylfrMG0CpFQLp3HMGSp9FNLyesItwXi0kLZ5OAKG97LP6sMsZV5=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEiHJmMkYHf59C9pceX6kqLsjHqr2learqWngmlo3jynpshtAimU7ShVbFD4Q69yQ4qIQnWJTDuNWtBCEpLA-eG71HP_jH4kE9yhUYyw7_k8wFQuJdvdsgE_3rzpsvfYMsXnyj-NvylfrMG0CpFQLp3HMGSp9FNLyesItwXi0kLZ5OAKG97LP6sMsZV5=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEiHJmMkYHf59C9pceX6kqLsjHqr2learqWngmlo3jynpshtAimU7ShVbFD4Q69yQ4qIQnWJTDuNWtBCEpLA-eG71HP_jH4kE9yhUYyw7_k8wFQuJdvdsgE_3rzpsvfYMsXnyj-NvylfrMG0CpFQLp3HMGSp9FNLyesItwXi0kLZ5OAKG97LP6sMsZV5=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEiHJmMkYHf59C9pceX6kqLsjHqr2learqWngmlo3jynpshtAimU7ShVbFD4Q69yQ4qIQnWJTDuNWtBCEpLA-eG71HP_jH4kE9yhUYyw7_k8wFQuJdvdsgE_3rzpsvfYMsXnyj-NvylfrMG0CpFQLp3HMGSp9FNLyesItwXi0kLZ5OAKG97LP6sMsZV5=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="P.824 - Blur (1997), el adiós al Britpop"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 346 - Sala Clamores — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb6UgcujGXl7DgB_A4MTSkebJioUIre-gCgs-lKntKGxHMN0Gpd-xwRIRmSVB3wLWuPOMaLrerV8x5Dy1aCI3FyrU7oeEWghqmOuNB1bxJ-TMG2_kxTv1hpNbsNU0phHuI0uAlckwVQHM/s320/rondovic.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb6UgcujGXl7DgB_A4MTSkebJioUIre-gCgs-lKntKGxHMN0Gpd-xwRIRmSVB3wLWuPOMaLrerV8x5Dy1aCI3FyrU7oeEWghqmOuNB1bxJ-TMG2_kxTv1hpNbsNU0phHuI0uAlckwVQHM/s160/rondovic.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb6UgcujGXl7DgB_A4MTSkebJioUIre-gCgs-lKntKGxHMN0Gpd-xwRIRmSVB3wLWuPOMaLrerV8x5Dy1aCI3FyrU7oeEWghqmOuNB1bxJ-TMG2_kxTv1hpNbsNU0phHuI0uAlckwVQHM/s320/rondovic.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb6UgcujGXl7DgB_A4MTSkebJioUIre-gCgs-lKntKGxHMN0Gpd-xwRIRmSVB3wLWuPOMaLrerV8x5Dy1aCI3FyrU7oeEWghqmOuNB1bxJ-TMG2_kxTv1hpNbsNU0phHuI0uAlckwVQHM/s480/rondovic.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb6UgcujGXl7DgB_A4MTSkebJioUIre-gCgs-lKntKGxHMN0Gpd-xwRIRmSVB3wLWuPOMaLrerV8x5Dy1aCI3FyrU7oeEWghqmOuNB1bxJ-TMG2_kxTv1hpNbsNU0phHuI0uAlckwVQHM/s160/rondovic.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb6UgcujGXl7DgB_A4MTSkebJioUIre-gCgs-lKntKGxHMN0Gpd-xwRIRmSVB3wLWuPOMaLrerV8x5Dy1aCI3FyrU7oeEWghqmOuNB1bxJ-TMG2_kxTv1hpNbsNU0phHuI0uAlckwVQHM/s320/rondovic.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb6UgcujGXl7DgB_A4MTSkebJioUIre-gCgs-lKntKGxHMN0Gpd-xwRIRmSVB3wLWuPOMaLrerV8x5Dy1aCI3FyrU7oeEWghqmOuNB1bxJ-TMG2_kxTv1hpNbsNU0phHuI0uAlckwVQHM/s480/rondovic.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Los conciertos de b90 - Rondo y Victor Tarin "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl0FaEkp7b9vsd82o11VmPWb9YwKnzGnZwdI8P38b4hsPHRKbrkbXxWZ8zv5Ktf1fbaNqr2MGtG3bdmCrkM1b3aHHxMKYzjtpqpZ-jFMBAgmTQWctab4TMFHvY7sV6SwXMtKWoI77mgDM/s320/Eric-gales-4.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl0FaEkp7b9vsd82o11VmPWb9YwKnzGnZwdI8P38b4hsPHRKbrkbXxWZ8zv5Ktf1fbaNqr2MGtG3bdmCrkM1b3aHHxMKYzjtpqpZ-jFMBAgmTQWctab4TMFHvY7sV6SwXMtKWoI77mgDM/s160/Eric-gales-4.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl0FaEkp7b9vsd82o11VmPWb9YwKnzGnZwdI8P38b4hsPHRKbrkbXxWZ8zv5Ktf1fbaNqr2MGtG3bdmCrkM1b3aHHxMKYzjtpqpZ-jFMBAgmTQWctab4TMFHvY7sV6SwXMtKWoI77mgDM/s320/Eric-gales-4.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl0FaEkp7b9vsd82o11VmPWb9YwKnzGnZwdI8P38b4hsPHRKbrkbXxWZ8zv5Ktf1fbaNqr2MGtG3bdmCrkM1b3aHHxMKYzjtpqpZ-jFMBAgmTQWctab4TMFHvY7sV6SwXMtKWoI77mgDM/s480/Eric-gales-4.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl0FaEkp7b9vsd82o11VmPWb9YwKnzGnZwdI8P38b4hsPHRKbrkbXxWZ8zv5Ktf1fbaNqr2MGtG3bdmCrkM1b3aHHxMKYzjtpqpZ-jFMBAgmTQWctab4TMFHvY7sV6SwXMtKWoI77mgDM/s160/Eric-gales-4.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl0FaEkp7b9vsd82o11VmPWb9YwKnzGnZwdI8P38b4hsPHRKbrkbXxWZ8zv5Ktf1fbaNqr2MGtG3bdmCrkM1b3aHHxMKYzjtpqpZ-jFMBAgmTQWctab4TMFHvY7sV6SwXMtKWoI77mgDM/s320/Eric-gales-4.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl0FaEkp7b9vsd82o11VmPWb9YwKnzGnZwdI8P38b4hsPHRKbrkbXxWZ8zv5Ktf1fbaNqr2MGtG3bdmCrkM1b3aHHxMKYzjtpqpZ-jFMBAgmTQWctab4TMFHvY7sV6SwXMtKWoI77mgDM/s480/Eric-gales-4.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 374 - Eric Gales"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s320/22552763_1929663387051295_5305889142817090822_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s160/22552763_1929663387051295_5305889142817090822_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s320/22552763_1929663387051295_5305889142817090822_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s480/22552763_1929663387051295_5305889142817090822_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s160/22552763_1929663387051295_5305889142817090822_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s320/22552763_1929663387051295_5305889142817090822_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s480/22552763_1929663387051295_5305889142817090822_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 314 - Homenaje a Radiohead en directo"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="programa-384-novedades-de-jeff-ament-reef-th-booty-hunters.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-9uhMBNPlQfl81MIIdYlVHB_qaS5HqC5vMAdzarOCXAsLNURNQxfLJjBnK-V6_vc1Ihy0qa_INe21OFu9BSwGZMt3_Sh6U4e63XUQhPIF0axR-No62n3HtqJgU7i9PlwsFLKaN46eag/s320/384-1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-9uhMBNPlQfl81MIIdYlVHB_qaS5HqC5vMAdzarOCXAsLNURNQxfLJjBnK-V6_vc1Ihy0qa_INe21OFu9BSwGZMt3_Sh6U4e63XUQhPIF0axR-No62n3HtqJgU7i9PlwsFLKaN46eag/s320/384-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-9uhMBNPlQfl81MIIdYlVHB_qaS5HqC5vMAdzarOCXAsLNURNQxfLJjBnK-V6_vc1Ihy0qa_INe21OFu9BSwGZMt3_Sh6U4e63XUQhPIF0axR-No62n3HtqJgU7i9PlwsFLKaN46eag/s480/384-1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-9uhMBNPlQfl81MIIdYlVHB_qaS5HqC5vMAdzarOCXAsLNURNQxfLJjBnK-V6_vc1Ihy0qa_INe21OFu9BSwGZMt3_Sh6U4e63XUQhPIF0axR-No62n3HtqJgU7i9PlwsFLKaN46eag/s640/384-1.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-9uhMBNPlQfl81MIIdYlVHB_qaS5HqC5vMAdzarOCXAsLNURNQxfLJjBnK-V6_vc1Ihy0qa_INe21OFu9BSwGZMt3_Sh6U4e63XUQhPIF0axR-No62n3HtqJgU7i9PlwsFLKaN46eag/s320/384-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-9uhMBNPlQfl81MIIdYlVHB_qaS5HqC5vMAdzarOCXAsLNURNQxfLJjBnK-V6_vc1Ihy0qa_INe21OFu9BSwGZMt3_Sh6U4e63XUQhPIF0axR-No62n3HtqJgU7i9PlwsFLKaN46eag/s480/384-1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-9uhMBNPlQfl81MIIdYlVHB_qaS5HqC5vMAdzarOCXAsLNURNQxfLJjBnK-V6_vc1Ihy0qa_INe21OFu9BSwGZMt3_Sh6U4e63XUQhPIF0axR-No62n3HtqJgU7i9PlwsFLKaN46eag/s640/384-1.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 384 - Novedades de Jeff Ament, Reef, Th’ Booty Hunters "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="programa-306-rondo-los-suspiros-de-ramallah.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ZMCiRgAjb45mKymq4XWe1VSfrkWpItZ8ROJbJ2pNisHDc7a5KvO-or8v8um4DR9TehbD2usi63K-51z6eUbFE6Ym01rfgVbuYh23yzwRbgG9qgO3ByThbxMhCGRf6qT5Yk7ggBOvueY/s320/bienvenido-306.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ZMCiRgAjb45mKymq4XWe1VSfrkWpItZ8ROJbJ2pNisHDc7a5KvO-or8v8um4DR9TehbD2usi63K-51z6eUbFE6Ym01rfgVbuYh23yzwRbgG9qgO3ByThbxMhCGRf6qT5Yk7ggBOvueY/s320/bienvenido-306.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ZMCiRgAjb45mKymq4XWe1VSfrkWpItZ8ROJbJ2pNisHDc7a5KvO-or8v8um4DR9TehbD2usi63K-51z6eUbFE6Ym01rfgVbuYh23yzwRbgG9qgO3ByThbxMhCGRf6qT5Yk7ggBOvueY/s480/bienvenido-306.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ZMCiRgAjb45mKymq4XWe1VSfrkWpItZ8ROJbJ2pNisHDc7a5KvO-or8v8um4DR9TehbD2usi63K-51z6eUbFE6Ym01rfgVbuYh23yzwRbgG9qgO3ByThbxMhCGRf6qT5Yk7ggBOvueY/s640/bienvenido-306.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ZMCiRgAjb45mKymq4XWe1VSfrkWpItZ8ROJbJ2pNisHDc7a5KvO-or8v8um4DR9TehbD2usi63K-51z6eUbFE6Ym01rfgVbuYh23yzwRbgG9qgO3ByThbxMhCGRf6qT5Yk7ggBOvueY/s320/bienvenido-306.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ZMCiRgAjb45mKymq4XWe1VSfrkWpItZ8ROJbJ2pNisHDc7a5KvO-or8v8um4DR9TehbD2usi63K-51z6eUbFE6Ym01rfgVbuYh23yzwRbgG9qgO3ByThbxMhCGRf6qT5Yk7ggBOvueY/s480/bienvenido-306.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ZMCiRgAjb45mKymq4XWe1VSfrkWpItZ8ROJbJ2pNisHDc7a5KvO-or8v8um4DR9TehbD2usi63K-51z6eUbFE6Ym01rfgVbuYh23yzwRbgG9qgO3ByThbxMhCGRf6qT5Yk7ggBOvueY/s640/bienvenido-306.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 306 – Rondo ‘Los suspiros de Ramallah’"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="programa-425-fantastic-negrito.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5hnY-uqWixDtwmCsEpHe3ZmVsUb6KWLhRStu1-hb7hu-vvGk6Muk9pJsu7GQJSVoe_eqemKJMk1n7OIwgVGogjTOIFZg6QXuuNoO2DIFrYbJy0cMI9K2zNvIZQteHC39AJeiQL3bJx-g/s320/fantasticnegrito-history-image08_1520x.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5hnY-uqWixDtwmCsEpHe3ZmVsUb6KWLhRStu1-hb7hu-vvGk6Muk9pJsu7GQJSVoe_eqemKJMk1n7OIwgVGogjTOIFZg6QXuuNoO2DIFrYbJy0cMI9K2zNvIZQteHC39AJeiQL3bJx-g/s320/fantasticnegrito-history-image08_1520x.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5hnY-uqWixDtwmCsEpHe3ZmVsUb6KWLhRStu1-hb7hu-vvGk6Muk9pJsu7GQJSVoe_eqemKJMk1n7OIwgVGogjTOIFZg6QXuuNoO2DIFrYbJy0cMI9K2zNvIZQteHC39AJeiQL3bJx-g/s480/fantasticnegrito-history-image08_1520x.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5hnY-uqWixDtwmCsEpHe3ZmVsUb6KWLhRStu1-hb7hu-vvGk6Muk9pJsu7GQJSVoe_eqemKJMk1n7OIwgVGogjTOIFZg6QXuuNoO2DIFrYbJy0cMI9K2zNvIZQteHC39AJeiQL3bJx-g/s640/fantasticnegrito-history-image08_1520x.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5hnY-uqWixDtwmCsEpHe3ZmVsUb6KWLhRStu1-hb7hu-vvGk6Muk9pJsu7GQJSVoe_eqemKJMk1n7OIwgVGogjTOIFZg6QXuuNoO2DIFrYbJy0cMI9K2zNvIZQteHC39AJeiQL3bJx-g/s320/fantasticnegrito-history-image08_1520x.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5hnY-uqWixDtwmCsEpHe3ZmVsUb6KWLhRStu1-hb7hu-vvGk6Muk9pJsu7GQJSVoe_eqemKJMk1n7OIwgVGogjTOIFZg6QXuuNoO2DIFrYbJy0cMI9K2zNvIZQteHC39AJeiQL3bJx-g/s480/fantasticnegrito-history-image08_1520x.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5hnY-uqWixDtwmCsEpHe3ZmVsUb6KWLhRStu1-hb7hu-vvGk6Muk9pJsu7GQJSVoe_eqemKJMk1n7OIwgVGogjTOIFZg6QXuuNoO2DIFrYbJy0cMI9K2zNvIZQteHC39AJeiQL3bJx-g/s640/fantasticnegrito-history-image08_1520x.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 425 - Fantastic Negrito"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

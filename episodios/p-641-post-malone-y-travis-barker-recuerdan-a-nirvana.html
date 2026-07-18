@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.641 Post Malone y Travis Barker recuerdan a Nirvana — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s160/nirvanaIV.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s480/nirvanaIV.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s160/nirvanaIV.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s480/nirvanaIV.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 319 – Nirvana IV"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa #13 - Especial Nirvana"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s160/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s480/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s160/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s480/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 359 - Nirvana, en busca del Nevermind "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="programa-291-nirvana-visita-espana-1992.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s320/nirvana_35a_7a.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s320/nirvana_35a_7a.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s480/nirvana_35a_7a.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s640/nirvana_35a_7a.jpeg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s320/nirvana_35a_7a.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s480/nirvana_35a_7a.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s640/nirvana_35a_7a.jpeg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 291 - Nirvana visita España 1992"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="programa-216-nirvana-vs-guns-n-roses.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s320/kurtaxl_a_l.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s320/kurtaxl_a_l.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s480/kurtaxl_a_l.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s640/kurtaxl_a_l.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s320/kurtaxl_a_l.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s480/kurtaxl_a_l.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s640/kurtaxl_a_l.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 216 - Nirvana vs Guns N&#39; Roses"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="p-1006-especial-with-the-lights-out-de-nirvana.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixSBxqwHc65cLWvEyosBPOhmBm-vYWl7zSjEJ1tRCI53NEZtKuciO4e7BDQkkTAfIz_Q1sB8d5FGE_hOpnyABrDk7JohHThT6654RY9Aw8xAa5GeikedYdqIu0U27ybOzsW6V8wXA_ii2kqlzDfizXZGOma5A-iFbekBHkKVDHiLwEq4zG9ofpIAIrRVg/s320/nirvana__with_the_lights_out-600x600.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixSBxqwHc65cLWvEyosBPOhmBm-vYWl7zSjEJ1tRCI53NEZtKuciO4e7BDQkkTAfIz_Q1sB8d5FGE_hOpnyABrDk7JohHThT6654RY9Aw8xAa5GeikedYdqIu0U27ybOzsW6V8wXA_ii2kqlzDfizXZGOma5A-iFbekBHkKVDHiLwEq4zG9ofpIAIrRVg/s320/nirvana__with_the_lights_out-600x600.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixSBxqwHc65cLWvEyosBPOhmBm-vYWl7zSjEJ1tRCI53NEZtKuciO4e7BDQkkTAfIz_Q1sB8d5FGE_hOpnyABrDk7JohHThT6654RY9Aw8xAa5GeikedYdqIu0U27ybOzsW6V8wXA_ii2kqlzDfizXZGOma5A-iFbekBHkKVDHiLwEq4zG9ofpIAIrRVg/s480/nirvana__with_the_lights_out-600x600.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixSBxqwHc65cLWvEyosBPOhmBm-vYWl7zSjEJ1tRCI53NEZtKuciO4e7BDQkkTAfIz_Q1sB8d5FGE_hOpnyABrDk7JohHThT6654RY9Aw8xAa5GeikedYdqIu0U27ybOzsW6V8wXA_ii2kqlzDfizXZGOma5A-iFbekBHkKVDHiLwEq4zG9ofpIAIrRVg/s640/nirvana__with_the_lights_out-600x600.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixSBxqwHc65cLWvEyosBPOhmBm-vYWl7zSjEJ1tRCI53NEZtKuciO4e7BDQkkTAfIz_Q1sB8d5FGE_hOpnyABrDk7JohHThT6654RY9Aw8xAa5GeikedYdqIu0U27ybOzsW6V8wXA_ii2kqlzDfizXZGOma5A-iFbekBHkKVDHiLwEq4zG9ofpIAIrRVg/s320/nirvana__with_the_lights_out-600x600.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixSBxqwHc65cLWvEyosBPOhmBm-vYWl7zSjEJ1tRCI53NEZtKuciO4e7BDQkkTAfIz_Q1sB8d5FGE_hOpnyABrDk7JohHThT6654RY9Aw8xAa5GeikedYdqIu0U27ybOzsW6V8wXA_ii2kqlzDfizXZGOma5A-iFbekBHkKVDHiLwEq4zG9ofpIAIrRVg/s480/nirvana__with_the_lights_out-600x600.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixSBxqwHc65cLWvEyosBPOhmBm-vYWl7zSjEJ1tRCI53NEZtKuciO4e7BDQkkTAfIz_Q1sB8d5FGE_hOpnyABrDk7JohHThT6654RY9Aw8xAa5GeikedYdqIu0U27ybOzsW6V8wXA_ii2kqlzDfizXZGOma5A-iFbekBHkKVDHiLwEq4zG9ofpIAIrRVg/s640/nirvana__with_the_lights_out-600x600.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.1006 - Especial &#39;With The Lights Out&#39; de Nirvana"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

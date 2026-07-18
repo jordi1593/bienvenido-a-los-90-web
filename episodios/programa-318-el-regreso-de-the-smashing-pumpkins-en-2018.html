@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 318 - El regreso de The Smashing Pumpkins en 2018 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2By85QqVkXsfIZ9bCSOrBOqa17W022OAtLWzQqFuH3fOIPkFIS-AiBo-dEsacXg6tQWHoXg5Q5hUIRCWe9ca3QjyMQdNz0my-czzWs0cb4SVZKiuFISssZI5rAKJ5NpsTrJApOFw-9EU/s320/TheSmashingPumpkinsLogo-2.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2By85QqVkXsfIZ9bCSOrBOqa17W022OAtLWzQqFuH3fOIPkFIS-AiBo-dEsacXg6tQWHoXg5Q5hUIRCWe9ca3QjyMQdNz0my-czzWs0cb4SVZKiuFISssZI5rAKJ5NpsTrJApOFw-9EU/s160/TheSmashingPumpkinsLogo-2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2By85QqVkXsfIZ9bCSOrBOqa17W022OAtLWzQqFuH3fOIPkFIS-AiBo-dEsacXg6tQWHoXg5Q5hUIRCWe9ca3QjyMQdNz0my-czzWs0cb4SVZKiuFISssZI5rAKJ5NpsTrJApOFw-9EU/s320/TheSmashingPumpkinsLogo-2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2By85QqVkXsfIZ9bCSOrBOqa17W022OAtLWzQqFuH3fOIPkFIS-AiBo-dEsacXg6tQWHoXg5Q5hUIRCWe9ca3QjyMQdNz0my-czzWs0cb4SVZKiuFISssZI5rAKJ5NpsTrJApOFw-9EU/s480/TheSmashingPumpkinsLogo-2.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2By85QqVkXsfIZ9bCSOrBOqa17W022OAtLWzQqFuH3fOIPkFIS-AiBo-dEsacXg6tQWHoXg5Q5hUIRCWe9ca3QjyMQdNz0my-czzWs0cb4SVZKiuFISssZI5rAKJ5NpsTrJApOFw-9EU/s160/TheSmashingPumpkinsLogo-2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2By85QqVkXsfIZ9bCSOrBOqa17W022OAtLWzQqFuH3fOIPkFIS-AiBo-dEsacXg6tQWHoXg5Q5hUIRCWe9ca3QjyMQdNz0my-czzWs0cb4SVZKiuFISssZI5rAKJ5NpsTrJApOFw-9EU/s320/TheSmashingPumpkinsLogo-2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2By85QqVkXsfIZ9bCSOrBOqa17W022OAtLWzQqFuH3fOIPkFIS-AiBo-dEsacXg6tQWHoXg5Q5hUIRCWe9ca3QjyMQdNz0my-czzWs0cb4SVZKiuFISssZI5rAKJ5NpsTrJApOFw-9EU/s480/TheSmashingPumpkinsLogo-2.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 341 - El regreso de The Smashing Pumpkins"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s320/R-3773608-1347544231-3798.jpeg.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s160/R-3773608-1347544231-3798.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s320/R-3773608-1347544231-3798.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s480/R-3773608-1347544231-3798.jpeg.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s160/R-3773608-1347544231-3798.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s320/R-3773608-1347544231-3798.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s480/R-3773608-1347544231-3798.jpeg.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.693 - The Smashing Pumpkins - Pisces Iscariot"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEi6P0G-ZqLGoeUdhidt2NWTGfIJ_h5EvN3uBS6Rwr_X_P-VNCSrJn_aP5UrlulMgMQMpGcta4h72bHi9ga-2_ZGrhTAGNn8hQyn6vgMBb9-GFmkc0SncvdxvX8XzEHH1nwPyNDE2cX9VDeSbcsQzoJ2mvQ6vmaBm_jxVgOOodx6VhkCcf6Ussu2v5ui=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEi6P0G-ZqLGoeUdhidt2NWTGfIJ_h5EvN3uBS6Rwr_X_P-VNCSrJn_aP5UrlulMgMQMpGcta4h72bHi9ga-2_ZGrhTAGNn8hQyn6vgMBb9-GFmkc0SncvdxvX8XzEHH1nwPyNDE2cX9VDeSbcsQzoJ2mvQ6vmaBm_jxVgOOodx6VhkCcf6Ussu2v5ui=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEi6P0G-ZqLGoeUdhidt2NWTGfIJ_h5EvN3uBS6Rwr_X_P-VNCSrJn_aP5UrlulMgMQMpGcta4h72bHi9ga-2_ZGrhTAGNn8hQyn6vgMBb9-GFmkc0SncvdxvX8XzEHH1nwPyNDE2cX9VDeSbcsQzoJ2mvQ6vmaBm_jxVgOOodx6VhkCcf6Ussu2v5ui=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEi6P0G-ZqLGoeUdhidt2NWTGfIJ_h5EvN3uBS6Rwr_X_P-VNCSrJn_aP5UrlulMgMQMpGcta4h72bHi9ga-2_ZGrhTAGNn8hQyn6vgMBb9-GFmkc0SncvdxvX8XzEHH1nwPyNDE2cX9VDeSbcsQzoJ2mvQ6vmaBm_jxVgOOodx6VhkCcf6Ussu2v5ui=s72-c 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="P.820 - The Smashing Pumpkins: ADORE track by track (1998)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="p-821-the-smashing-pumpkins-asi-grabaron-adore.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEhEqXs6C6Boc2OnTmZCDQjdddFuqap4VgkL3_IflARoqjD0CJgjhTIdSwKBJmFxw-DJX-kZQ7ZyfA2y9IqvzYPMnoc3qRRN0EWOZ8dHoRQxB-55UrPjeh7tVGtTsskt4mejJubxRuBHX9hFfjS7uXDIfncUeW5YrkN5aBj-J5I5gtZWYU3Qk0RdcPWE=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEhEqXs6C6Boc2OnTmZCDQjdddFuqap4VgkL3_IflARoqjD0CJgjhTIdSwKBJmFxw-DJX-kZQ7ZyfA2y9IqvzYPMnoc3qRRN0EWOZ8dHoRQxB-55UrPjeh7tVGtTsskt4mejJubxRuBHX9hFfjS7uXDIfncUeW5YrkN5aBj-J5I5gtZWYU3Qk0RdcPWE=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEhEqXs6C6Boc2OnTmZCDQjdddFuqap4VgkL3_IflARoqjD0CJgjhTIdSwKBJmFxw-DJX-kZQ7ZyfA2y9IqvzYPMnoc3qRRN0EWOZ8dHoRQxB-55UrPjeh7tVGtTsskt4mejJubxRuBHX9hFfjS7uXDIfncUeW5YrkN5aBj-J5I5gtZWYU3Qk0RdcPWE=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEhEqXs6C6Boc2OnTmZCDQjdddFuqap4VgkL3_IflARoqjD0CJgjhTIdSwKBJmFxw-DJX-kZQ7ZyfA2y9IqvzYPMnoc3qRRN0EWOZ8dHoRQxB-55UrPjeh7tVGtTsskt4mejJubxRuBHX9hFfjS7uXDIfncUeW5YrkN5aBj-J5I5gtZWYU3Qk0RdcPWE=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="P.821 - The Smashing Pumpkins: así grabaron ADORE "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="programa-548-the-smashing-pumpkins-en-mad-cool-2019-cuando-volvimos-a-ser-adoles.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgV7g3kLGDuu7k5I02uQZmmlvvnTbPQdtM2fm6rKf35R7X03FSVyRt3rzIGYvNLonPM9lJ4gf9FW7ic_wpPghinnnBiR002Z9x_jIFAebBRmKlmbltIks1sS1DLTr6w_nu8QrqXIcyO-Y/s320/IMG_20190712_233413.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgV7g3kLGDuu7k5I02uQZmmlvvnTbPQdtM2fm6rKf35R7X03FSVyRt3rzIGYvNLonPM9lJ4gf9FW7ic_wpPghinnnBiR002Z9x_jIFAebBRmKlmbltIks1sS1DLTr6w_nu8QrqXIcyO-Y/s320/IMG_20190712_233413.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgV7g3kLGDuu7k5I02uQZmmlvvnTbPQdtM2fm6rKf35R7X03FSVyRt3rzIGYvNLonPM9lJ4gf9FW7ic_wpPghinnnBiR002Z9x_jIFAebBRmKlmbltIks1sS1DLTr6w_nu8QrqXIcyO-Y/s480/IMG_20190712_233413.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgV7g3kLGDuu7k5I02uQZmmlvvnTbPQdtM2fm6rKf35R7X03FSVyRt3rzIGYvNLonPM9lJ4gf9FW7ic_wpPghinnnBiR002Z9x_jIFAebBRmKlmbltIks1sS1DLTr6w_nu8QrqXIcyO-Y/s640/IMG_20190712_233413.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgV7g3kLGDuu7k5I02uQZmmlvvnTbPQdtM2fm6rKf35R7X03FSVyRt3rzIGYvNLonPM9lJ4gf9FW7ic_wpPghinnnBiR002Z9x_jIFAebBRmKlmbltIks1sS1DLTr6w_nu8QrqXIcyO-Y/s320/IMG_20190712_233413.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgV7g3kLGDuu7k5I02uQZmmlvvnTbPQdtM2fm6rKf35R7X03FSVyRt3rzIGYvNLonPM9lJ4gf9FW7ic_wpPghinnnBiR002Z9x_jIFAebBRmKlmbltIks1sS1DLTr6w_nu8QrqXIcyO-Y/s480/IMG_20190712_233413.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgV7g3kLGDuu7k5I02uQZmmlvvnTbPQdtM2fm6rKf35R7X03FSVyRt3rzIGYvNLonPM9lJ4gf9FW7ic_wpPghinnnBiR002Z9x_jIFAebBRmKlmbltIks1sS1DLTr6w_nu8QrqXIcyO-Y/s640/IMG_20190712_233413.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 548: The Smashing Pumpkins en Mad Cool 2019: cuando volvimos a ser adolescentes"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="p-638-smashing-pumpkins-especial-siamese-dream-parte-1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivl7H7jNPiKpJaKQ4H2LGwqzWN4Jy4hOFWHimF8-ZPRlAZUW4ahHJdidjbxAu6SOVBLDWKbJA7NeanzXzTqNdMNPGxoCg8WxZ_vx0RPH2AAX6k0_kR4i9clPKevqTs3MJHdpq1k7h0ppE/s320/siamese.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivl7H7jNPiKpJaKQ4H2LGwqzWN4Jy4hOFWHimF8-ZPRlAZUW4ahHJdidjbxAu6SOVBLDWKbJA7NeanzXzTqNdMNPGxoCg8WxZ_vx0RPH2AAX6k0_kR4i9clPKevqTs3MJHdpq1k7h0ppE/s320/siamese.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivl7H7jNPiKpJaKQ4H2LGwqzWN4Jy4hOFWHimF8-ZPRlAZUW4ahHJdidjbxAu6SOVBLDWKbJA7NeanzXzTqNdMNPGxoCg8WxZ_vx0RPH2AAX6k0_kR4i9clPKevqTs3MJHdpq1k7h0ppE/s480/siamese.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivl7H7jNPiKpJaKQ4H2LGwqzWN4Jy4hOFWHimF8-ZPRlAZUW4ahHJdidjbxAu6SOVBLDWKbJA7NeanzXzTqNdMNPGxoCg8WxZ_vx0RPH2AAX6k0_kR4i9clPKevqTs3MJHdpq1k7h0ppE/s640/siamese.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivl7H7jNPiKpJaKQ4H2LGwqzWN4Jy4hOFWHimF8-ZPRlAZUW4ahHJdidjbxAu6SOVBLDWKbJA7NeanzXzTqNdMNPGxoCg8WxZ_vx0RPH2AAX6k0_kR4i9clPKevqTs3MJHdpq1k7h0ppE/s320/siamese.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivl7H7jNPiKpJaKQ4H2LGwqzWN4Jy4hOFWHimF8-ZPRlAZUW4ahHJdidjbxAu6SOVBLDWKbJA7NeanzXzTqNdMNPGxoCg8WxZ_vx0RPH2AAX6k0_kR4i9clPKevqTs3MJHdpq1k7h0ppE/s480/siamese.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivl7H7jNPiKpJaKQ4H2LGwqzWN4Jy4hOFWHimF8-ZPRlAZUW4ahHJdidjbxAu6SOVBLDWKbJA7NeanzXzTqNdMNPGxoCg8WxZ_vx0RPH2AAX6k0_kR4i9clPKevqTs3MJHdpq1k7h0ppE/s640/siamese.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.638 Smashing Pumpkins - Especial Siamese Dream Parte 1"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

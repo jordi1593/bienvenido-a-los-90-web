@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Muse — 23 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-50-la-historia-de-knights-of-cydonia-muse.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOGgITWpc7QafT3LBN8qdQMOwK0xzsqW23J3KYVOMgQF_bAdHF_pJvzeDKpG5tfrA5qCVjO8voAlO9b52T2Nx-xaPMSeAJ5LVKF_4dl0vcyQRDQdk8ojBRZwoC_cukpZJLJzsyx19vSyKvtJAnfBzXDsyU9RVHTkgCwfFCCxpJRnhT23Ou6iYPS82TxaE/s320/R-847190-1371504280-2029.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOGgITWpc7QafT3LBN8qdQMOwK0xzsqW23J3KYVOMgQF_bAdHF_pJvzeDKpG5tfrA5qCVjO8voAlO9b52T2Nx-xaPMSeAJ5LVKF_4dl0vcyQRDQdk8ojBRZwoC_cukpZJLJzsyx19vSyKvtJAnfBzXDsyU9RVHTkgCwfFCCxpJRnhT23Ou6iYPS82TxaE/s160/R-847190-1371504280-2029.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOGgITWpc7QafT3LBN8qdQMOwK0xzsqW23J3KYVOMgQF_bAdHF_pJvzeDKpG5tfrA5qCVjO8voAlO9b52T2Nx-xaPMSeAJ5LVKF_4dl0vcyQRDQdk8ojBRZwoC_cukpZJLJzsyx19vSyKvtJAnfBzXDsyU9RVHTkgCwfFCCxpJRnhT23Ou6iYPS82TxaE/s320/R-847190-1371504280-2029.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOGgITWpc7QafT3LBN8qdQMOwK0xzsqW23J3KYVOMgQF_bAdHF_pJvzeDKpG5tfrA5qCVjO8voAlO9b52T2Nx-xaPMSeAJ5LVKF_4dl0vcyQRDQdk8ojBRZwoC_cukpZJLJzsyx19vSyKvtJAnfBzXDsyU9RVHTkgCwfFCCxpJRnhT23Ou6iYPS82TxaE/s480/R-847190-1371504280-2029.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOGgITWpc7QafT3LBN8qdQMOwK0xzsqW23J3KYVOMgQF_bAdHF_pJvzeDKpG5tfrA5qCVjO8voAlO9b52T2Nx-xaPMSeAJ5LVKF_4dl0vcyQRDQdk8ojBRZwoC_cukpZJLJzsyx19vSyKvtJAnfBzXDsyU9RVHTkgCwfFCCxpJRnhT23Ou6iYPS82TxaE/s160/R-847190-1371504280-2029.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOGgITWpc7QafT3LBN8qdQMOwK0xzsqW23J3KYVOMgQF_bAdHF_pJvzeDKpG5tfrA5qCVjO8voAlO9b52T2Nx-xaPMSeAJ5LVKF_4dl0vcyQRDQdk8ojBRZwoC_cukpZJLJzsyx19vSyKvtJAnfBzXDsyU9RVHTkgCwfFCCxpJRnhT23Ou6iYPS82TxaE/s320/R-847190-1371504280-2029.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOGgITWpc7QafT3LBN8qdQMOwK0xzsqW23J3KYVOMgQF_bAdHF_pJvzeDKpG5tfrA5qCVjO8voAlO9b52T2Nx-xaPMSeAJ5LVKF_4dl0vcyQRDQdk8ojBRZwoC_cukpZJLJzsyx19vSyKvtJAnfBzXDsyU9RVHTkgCwfFCCxpJRnhT23Ou6iYPS82TxaE/s480/R-847190-1371504280-2029.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 50 - La historia de Knights Of Cydonia (MUSE)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-936-especial-absolution-de-muse.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqOxoKdRG94Jcwxip6rwk8DCwhKdq0-ClJYpKpFmbSNtOAmklbAWzMD5BS-ivACwABpFAvw2itkn54eRnmR9cascIHugFEj7UWHlbzVp2zA7kadD7t7IyueijIvxfdFbgwn-3-FKFKUUMsGFHbjCw16B03XE5Yqi68kdjok2zi2byPCHGUljGzifAeZMU/s320/cover.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqOxoKdRG94Jcwxip6rwk8DCwhKdq0-ClJYpKpFmbSNtOAmklbAWzMD5BS-ivACwABpFAvw2itkn54eRnmR9cascIHugFEj7UWHlbzVp2zA7kadD7t7IyueijIvxfdFbgwn-3-FKFKUUMsGFHbjCw16B03XE5Yqi68kdjok2zi2byPCHGUljGzifAeZMU/s160/cover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqOxoKdRG94Jcwxip6rwk8DCwhKdq0-ClJYpKpFmbSNtOAmklbAWzMD5BS-ivACwABpFAvw2itkn54eRnmR9cascIHugFEj7UWHlbzVp2zA7kadD7t7IyueijIvxfdFbgwn-3-FKFKUUMsGFHbjCw16B03XE5Yqi68kdjok2zi2byPCHGUljGzifAeZMU/s320/cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqOxoKdRG94Jcwxip6rwk8DCwhKdq0-ClJYpKpFmbSNtOAmklbAWzMD5BS-ivACwABpFAvw2itkn54eRnmR9cascIHugFEj7UWHlbzVp2zA7kadD7t7IyueijIvxfdFbgwn-3-FKFKUUMsGFHbjCw16B03XE5Yqi68kdjok2zi2byPCHGUljGzifAeZMU/s480/cover.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqOxoKdRG94Jcwxip6rwk8DCwhKdq0-ClJYpKpFmbSNtOAmklbAWzMD5BS-ivACwABpFAvw2itkn54eRnmR9cascIHugFEj7UWHlbzVp2zA7kadD7t7IyueijIvxfdFbgwn-3-FKFKUUMsGFHbjCw16B03XE5Yqi68kdjok2zi2byPCHGUljGzifAeZMU/s160/cover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqOxoKdRG94Jcwxip6rwk8DCwhKdq0-ClJYpKpFmbSNtOAmklbAWzMD5BS-ivACwABpFAvw2itkn54eRnmR9cascIHugFEj7UWHlbzVp2zA7kadD7t7IyueijIvxfdFbgwn-3-FKFKUUMsGFHbjCw16B03XE5Yqi68kdjok2zi2byPCHGUljGzifAeZMU/s320/cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqOxoKdRG94Jcwxip6rwk8DCwhKdq0-ClJYpKpFmbSNtOAmklbAWzMD5BS-ivACwABpFAvw2itkn54eRnmR9cascIHugFEj7UWHlbzVp2zA7kadD7t7IyueijIvxfdFbgwn-3-FKFKUUMsGFHbjCw16B03XE5Yqi68kdjok2zi2byPCHGUljGzifAeZMU/s480/cover.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.936 - Especial &#39;Absolution&#39; de MUSE"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-934-remasterizaciones-2023-valen-la-pena.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s160/b90_934_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s480/b90_934_.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s160/b90_934_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s480/b90_934_.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.934 - Remasterizaciones 2023, ¿valen la pena?"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-859-muse-presentan-su-vision-del-mundo-will-of-the-people.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKuFzoa1bHKXID2_wNZKNvLhtdUtLvAz32cL5PyoLi93w4JSYr6BQJdPGa5dmK6J4f-M1y1_i6BEa6VLe9mct4kwbhgiA2HPbmz81ZpyUyIjS88Bpc0s-9Ad1Gsht6jEOqPfyqQmC3MAGzaIq6Ugo_x-eU5Pqnrjikp3sGga5-b2rSciVBobFP56BL/s320/R-24246320-1660900705-7542.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKuFzoa1bHKXID2_wNZKNvLhtdUtLvAz32cL5PyoLi93w4JSYr6BQJdPGa5dmK6J4f-M1y1_i6BEa6VLe9mct4kwbhgiA2HPbmz81ZpyUyIjS88Bpc0s-9Ad1Gsht6jEOqPfyqQmC3MAGzaIq6Ugo_x-eU5Pqnrjikp3sGga5-b2rSciVBobFP56BL/s160/R-24246320-1660900705-7542.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKuFzoa1bHKXID2_wNZKNvLhtdUtLvAz32cL5PyoLi93w4JSYr6BQJdPGa5dmK6J4f-M1y1_i6BEa6VLe9mct4kwbhgiA2HPbmz81ZpyUyIjS88Bpc0s-9Ad1Gsht6jEOqPfyqQmC3MAGzaIq6Ugo_x-eU5Pqnrjikp3sGga5-b2rSciVBobFP56BL/s320/R-24246320-1660900705-7542.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKuFzoa1bHKXID2_wNZKNvLhtdUtLvAz32cL5PyoLi93w4JSYr6BQJdPGa5dmK6J4f-M1y1_i6BEa6VLe9mct4kwbhgiA2HPbmz81ZpyUyIjS88Bpc0s-9Ad1Gsht6jEOqPfyqQmC3MAGzaIq6Ugo_x-eU5Pqnrjikp3sGga5-b2rSciVBobFP56BL/s480/R-24246320-1660900705-7542.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKuFzoa1bHKXID2_wNZKNvLhtdUtLvAz32cL5PyoLi93w4JSYr6BQJdPGa5dmK6J4f-M1y1_i6BEa6VLe9mct4kwbhgiA2HPbmz81ZpyUyIjS88Bpc0s-9Ad1Gsht6jEOqPfyqQmC3MAGzaIq6Ugo_x-eU5Pqnrjikp3sGga5-b2rSciVBobFP56BL/s160/R-24246320-1660900705-7542.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKuFzoa1bHKXID2_wNZKNvLhtdUtLvAz32cL5PyoLi93w4JSYr6BQJdPGa5dmK6J4f-M1y1_i6BEa6VLe9mct4kwbhgiA2HPbmz81ZpyUyIjS88Bpc0s-9Ad1Gsht6jEOqPfyqQmC3MAGzaIq6Ugo_x-eU5Pqnrjikp3sGga5-b2rSciVBobFP56BL/s320/R-24246320-1660900705-7542.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKuFzoa1bHKXID2_wNZKNvLhtdUtLvAz32cL5PyoLi93w4JSYr6BQJdPGa5dmK6J4f-M1y1_i6BEa6VLe9mct4kwbhgiA2HPbmz81ZpyUyIjS88Bpc0s-9Ad1Gsht6jEOqPfyqQmC3MAGzaIq6Ugo_x-eU5Pqnrjikp3sGga5-b2rSciVBobFP56BL/s480/R-24246320-1660900705-7542.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.859 - Muse presentan su visión del mundo: Will Of The People"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/p-851-asi-vivi-el-mad-cool-2022.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s320/P_0tB-z8.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s160/P_0tB-z8.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s320/P_0tB-z8.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s480/P_0tB-z8.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s160/P_0tB-z8.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s320/P_0tB-z8.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s480/P_0tB-z8.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.851 - Así viví el Mad Cool 2022"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/p-789-matt-bellamy-de-muse-lanza-cryosleep.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibdwvyndoxqS01eQsiV1v84it98YdnKariJCQx1rvV9mTlOX6RHbe1O-cd6tD5Tis6_5xwNGEZ_T6ZA6qfk_3s6FvY9LL2pBCYJCGOq_wl54ovoo_jMlXVGbABnVZ42jVNscRo3FuCXFQ/s320/cover.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibdwvyndoxqS01eQsiV1v84it98YdnKariJCQx1rvV9mTlOX6RHbe1O-cd6tD5Tis6_5xwNGEZ_T6ZA6qfk_3s6FvY9LL2pBCYJCGOq_wl54ovoo_jMlXVGbABnVZ42jVNscRo3FuCXFQ/s160/cover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibdwvyndoxqS01eQsiV1v84it98YdnKariJCQx1rvV9mTlOX6RHbe1O-cd6tD5Tis6_5xwNGEZ_T6ZA6qfk_3s6FvY9LL2pBCYJCGOq_wl54ovoo_jMlXVGbABnVZ42jVNscRo3FuCXFQ/s320/cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibdwvyndoxqS01eQsiV1v84it98YdnKariJCQx1rvV9mTlOX6RHbe1O-cd6tD5Tis6_5xwNGEZ_T6ZA6qfk_3s6FvY9LL2pBCYJCGOq_wl54ovoo_jMlXVGbABnVZ42jVNscRo3FuCXFQ/s480/cover.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibdwvyndoxqS01eQsiV1v84it98YdnKariJCQx1rvV9mTlOX6RHbe1O-cd6tD5Tis6_5xwNGEZ_T6ZA6qfk_3s6FvY9LL2pBCYJCGOq_wl54ovoo_jMlXVGbABnVZ42jVNscRo3FuCXFQ/s160/cover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibdwvyndoxqS01eQsiV1v84it98YdnKariJCQx1rvV9mTlOX6RHbe1O-cd6tD5Tis6_5xwNGEZ_T6ZA6qfk_3s6FvY9LL2pBCYJCGOq_wl54ovoo_jMlXVGbABnVZ42jVNscRo3FuCXFQ/s320/cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibdwvyndoxqS01eQsiV1v84it98YdnKariJCQx1rvV9mTlOX6RHbe1O-cd6tD5Tis6_5xwNGEZ_T6ZA6qfk_3s6FvY9LL2pBCYJCGOq_wl54ovoo_jMlXVGbABnVZ42jVNscRo3FuCXFQ/s480/cover.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.789 - Matt Bellamy de MUSE lanza Cryosleep"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/p-778-20-anos-del-origin-of-symmetry-muse.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiZ1rcjt3KuFDeVd2j8XZn6b4mwkLbPRiJ8nWOWZsG7niemUJiUhGJopxu7wXgmJCNmy0Z6o77ER2xqQK8bWtT4yiU9JIvq3RIwhN2Mn28nOvgWp21u28S0uL3hPx_5wYNKDDDMJHWOTg/s320/folder.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiZ1rcjt3KuFDeVd2j8XZn6b4mwkLbPRiJ8nWOWZsG7niemUJiUhGJopxu7wXgmJCNmy0Z6o77ER2xqQK8bWtT4yiU9JIvq3RIwhN2Mn28nOvgWp21u28S0uL3hPx_5wYNKDDDMJHWOTg/s160/folder.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiZ1rcjt3KuFDeVd2j8XZn6b4mwkLbPRiJ8nWOWZsG7niemUJiUhGJopxu7wXgmJCNmy0Z6o77ER2xqQK8bWtT4yiU9JIvq3RIwhN2Mn28nOvgWp21u28S0uL3hPx_5wYNKDDDMJHWOTg/s320/folder.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiZ1rcjt3KuFDeVd2j8XZn6b4mwkLbPRiJ8nWOWZsG7niemUJiUhGJopxu7wXgmJCNmy0Z6o77ER2xqQK8bWtT4yiU9JIvq3RIwhN2Mn28nOvgWp21u28S0uL3hPx_5wYNKDDDMJHWOTg/s480/folder.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiZ1rcjt3KuFDeVd2j8XZn6b4mwkLbPRiJ8nWOWZsG7niemUJiUhGJopxu7wXgmJCNmy0Z6o77ER2xqQK8bWtT4yiU9JIvq3RIwhN2Mn28nOvgWp21u28S0uL3hPx_5wYNKDDDMJHWOTg/s160/folder.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiZ1rcjt3KuFDeVd2j8XZn6b4mwkLbPRiJ8nWOWZsG7niemUJiUhGJopxu7wXgmJCNmy0Z6o77ER2xqQK8bWtT4yiU9JIvq3RIwhN2Mn28nOvgWp21u28S0uL3hPx_5wYNKDDDMJHWOTg/s320/folder.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiZ1rcjt3KuFDeVd2j8XZn6b4mwkLbPRiJ8nWOWZsG7niemUJiUhGJopxu7wXgmJCNmy0Z6o77ER2xqQK8bWtT4yiU9JIvq3RIwhN2Mn28nOvgWp21u28S0uL3hPx_5wYNKDDDMJHWOTg/s480/folder.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.778 - 20 años del Origin of Symmetry (Muse)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/p-679-the-jaded-hearts-club-muse-blur-jet-zutons.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJt_FkAPenTWeSNLqwaqoZUe16Lna5NDkuNIRIsuM2YPStmGd1Y7SQLVU0VZK6Y30RyNe_8ieK33b3hA_6JZuQnQSQ-uZamj4DvoZraQJN0KKumHMvXkFUAqDkjDpPONhvy2LCTshuvPc/s72-w384-h378-c/R-14670771-1579314513-1605.jpeg.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJt_FkAPenTWeSNLqwaqoZUe16Lna5NDkuNIRIsuM2YPStmGd1Y7SQLVU0VZK6Y30RyNe_8ieK33b3hA_6JZuQnQSQ-uZamj4DvoZraQJN0KKumHMvXkFUAqDkjDpPONhvy2LCTshuvPc/s72-w384-h378-c/R-14670771-1579314513-1605.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJt_FkAPenTWeSNLqwaqoZUe16Lna5NDkuNIRIsuM2YPStmGd1Y7SQLVU0VZK6Y30RyNe_8ieK33b3hA_6JZuQnQSQ-uZamj4DvoZraQJN0KKumHMvXkFUAqDkjDpPONhvy2LCTshuvPc/s72-w384-h378-c/R-14670771-1579314513-1605.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJt_FkAPenTWeSNLqwaqoZUe16Lna5NDkuNIRIsuM2YPStmGd1Y7SQLVU0VZK6Y30RyNe_8ieK33b3hA_6JZuQnQSQ-uZamj4DvoZraQJN0KKumHMvXkFUAqDkjDpPONhvy2LCTshuvPc/s72-w384-h378-c/R-14670771-1579314513-1605.jpeg.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="P.679 - The Jaded Hearts Club (Muse, Blur, Jet, Zutons)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -180,8 +172,7 @@
         <a class="episode-cover-link" href="../episodios/p-586-el-origen-de-muse.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s320/b90_586.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s160/b90_586.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s320/b90_586.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s480/b90_586.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s160/b90_586.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s320/b90_586.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s480/b90_586.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.586 - El origen de MUSE"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -194,8 +185,7 @@
         <a class="episode-cover-link" href="../episodios/programa-567-muse-celebramos-los-20-anos-de-showbiz-con-musefanspain.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL_uxgLD5WbSPkRxs27dCgX-8onG2lM5F466W87zqiyktBUGRSo_UXyVykSuZ0uUGVvrX1zfb8kXVmIKgIZE7veFQZ3zuYZv0RoYElWQscn1iRmnODjesmnFIhManNG1OUs37VOdACfdU/s320/567C+Muse+-+Showbiz.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL_uxgLD5WbSPkRxs27dCgX-8onG2lM5F466W87zqiyktBUGRSo_UXyVykSuZ0uUGVvrX1zfb8kXVmIKgIZE7veFQZ3zuYZv0RoYElWQscn1iRmnODjesmnFIhManNG1OUs37VOdACfdU/s160/567C+Muse+-+Showbiz.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL_uxgLD5WbSPkRxs27dCgX-8onG2lM5F466W87zqiyktBUGRSo_UXyVykSuZ0uUGVvrX1zfb8kXVmIKgIZE7veFQZ3zuYZv0RoYElWQscn1iRmnODjesmnFIhManNG1OUs37VOdACfdU/s320/567C+Muse+-+Showbiz.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL_uxgLD5WbSPkRxs27dCgX-8onG2lM5F466W87zqiyktBUGRSo_UXyVykSuZ0uUGVvrX1zfb8kXVmIKgIZE7veFQZ3zuYZv0RoYElWQscn1iRmnODjesmnFIhManNG1OUs37VOdACfdU/s480/567C+Muse+-+Showbiz.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL_uxgLD5WbSPkRxs27dCgX-8onG2lM5F466W87zqiyktBUGRSo_UXyVykSuZ0uUGVvrX1zfb8kXVmIKgIZE7veFQZ3zuYZv0RoYElWQscn1iRmnODjesmnFIhManNG1OUs37VOdACfdU/s160/567C+Muse+-+Showbiz.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL_uxgLD5WbSPkRxs27dCgX-8onG2lM5F466W87zqiyktBUGRSo_UXyVykSuZ0uUGVvrX1zfb8kXVmIKgIZE7veFQZ3zuYZv0RoYElWQscn1iRmnODjesmnFIhManNG1OUs37VOdACfdU/s320/567C+Muse+-+Showbiz.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL_uxgLD5WbSPkRxs27dCgX-8onG2lM5F466W87zqiyktBUGRSo_UXyVykSuZ0uUGVvrX1zfb8kXVmIKgIZE7veFQZ3zuYZv0RoYElWQscn1iRmnODjesmnFIhManNG1OUs37VOdACfdU/s480/567C+Muse+-+Showbiz.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 567 - MUSE: celebramos los 20 años de SHOWBIZ con MuseFanSpain"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -208,8 +198,7 @@
         <a class="episode-cover-link" href="../episodios/programa-552-muse-destroza-en-wanda-metropolitano-26-07-2019.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s160/67728307_10158901432243066_812912656296968192_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s480/67728307_10158901432243066_812912656296968192_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s160/67728307_10158901432243066_812912656296968192_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s480/67728307_10158901432243066_812912656296968192_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 552 - Muse destroza en Wanda Metropolitano (26/07/2019)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -222,8 +211,7 @@
         <a class="episode-cover-link" href="../episodios/programa-453-muse-simulation-theory-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s320/b90453.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s160/b90453.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s320/b90453.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s480/b90453.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s160/b90453.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s320/b90453.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s480/b90453.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 453 - MUSE - Simulation Theory (2018)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -236,8 +224,7 @@
         <a class="episode-cover-link" href="../episodios/programa-397-en-que-andan-metidos-muse.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcuyICRfA7mFMjD9dPQzRUPkJIcKJfuan4H-ISG4-lvQX6jfrORCBXIeODdm__QfyXwcuLXy3W2Qr0tDnpBpHU1vODu3d5Zp7i-4FlmC5f6syeD1Jw67-8LA_xDcIy97vYqYOswfx2UDs/s320/GettyImages-889335436_muse_plug_in_baby_1000-920x584.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcuyICRfA7mFMjD9dPQzRUPkJIcKJfuan4H-ISG4-lvQX6jfrORCBXIeODdm__QfyXwcuLXy3W2Qr0tDnpBpHU1vODu3d5Zp7i-4FlmC5f6syeD1Jw67-8LA_xDcIy97vYqYOswfx2UDs/s160/GettyImages-889335436_muse_plug_in_baby_1000-920x584.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcuyICRfA7mFMjD9dPQzRUPkJIcKJfuan4H-ISG4-lvQX6jfrORCBXIeODdm__QfyXwcuLXy3W2Qr0tDnpBpHU1vODu3d5Zp7i-4FlmC5f6syeD1Jw67-8LA_xDcIy97vYqYOswfx2UDs/s320/GettyImages-889335436_muse_plug_in_baby_1000-920x584.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcuyICRfA7mFMjD9dPQzRUPkJIcKJfuan4H-ISG4-lvQX6jfrORCBXIeODdm__QfyXwcuLXy3W2Qr0tDnpBpHU1vODu3d5Zp7i-4FlmC5f6syeD1Jw67-8LA_xDcIy97vYqYOswfx2UDs/s480/GettyImages-889335436_muse_plug_in_baby_1000-920x584.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcuyICRfA7mFMjD9dPQzRUPkJIcKJfuan4H-ISG4-lvQX6jfrORCBXIeODdm__QfyXwcuLXy3W2Qr0tDnpBpHU1vODu3d5Zp7i-4FlmC5f6syeD1Jw67-8LA_xDcIy97vYqYOswfx2UDs/s160/GettyImages-889335436_muse_plug_in_baby_1000-920x584.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcuyICRfA7mFMjD9dPQzRUPkJIcKJfuan4H-ISG4-lvQX6jfrORCBXIeODdm__QfyXwcuLXy3W2Qr0tDnpBpHU1vODu3d5Zp7i-4FlmC5f6syeD1Jw67-8LA_xDcIy97vYqYOswfx2UDs/s320/GettyImages-889335436_muse_plug_in_baby_1000-920x584.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcuyICRfA7mFMjD9dPQzRUPkJIcKJfuan4H-ISG4-lvQX6jfrORCBXIeODdm__QfyXwcuLXy3W2Qr0tDnpBpHU1vODu3d5Zp7i-4FlmC5f6syeD1Jw67-8LA_xDcIy97vYqYOswfx2UDs/s480/GettyImages-889335436_muse_plug_in_baby_1000-920x584.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 397 - ¿En qué andan metidos MUSE?"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -250,8 +237,7 @@
         <a class="episode-cover-link" href="../episodios/programa-324-mad-cool-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s320/madcool2018.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s160/madcool2018.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s320/madcool2018.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s480/madcool2018.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s160/madcool2018.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s320/madcool2018.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s480/madcool2018.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 324 – Mad Cool 2018"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -264,8 +250,7 @@
         <a class="episode-cover-link" href="../episodios/programa-232-glastonbury-2016.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s320/13528906_1296510453699928_874557075224996922_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s160/13528906_1296510453699928_874557075224996922_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s320/13528906_1296510453699928_874557075224996922_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s480/13528906_1296510453699928_874557075224996922_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s160/13528906_1296510453699928_874557075224996922_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s320/13528906_1296510453699928_874557075224996922_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s480/13528906_1296510453699928_874557075224996922_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 232 - Glastonbury 2016"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -278,8 +263,7 @@
         <a class="episode-cover-link" href="../episodios/programa-222-muse-conquista-espana.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s320/13151904_10153416486066682_8229543257137880107_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s160/13151904_10153416486066682_8229543257137880107_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s320/13151904_10153416486066682_8229543257137880107_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s480/13151904_10153416486066682_8229543257137880107_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s160/13151904_10153416486066682_8229543257137880107_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s320/13151904_10153416486066682_8229543257137880107_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s480/13151904_10153416486066682_8229543257137880107_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 222 - Muse conquista España "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -292,8 +276,7 @@
         <a class="episode-cover-link" href="../episodios/programa-63-muse-beady-eye-nirvana-rhcp-standstill.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 63 - MUSE, BEADY EYE, NIRVANA, RHCP, STANDSTILL..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -306,8 +289,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-35-muse-palacio-de-los-deporte-de-la-comunidad-de-m.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx3b1vKI_jchov59GprvAyFUum2RV6n4bkk24dLpVJ8Po_6Q7DJZ_lnmMCH-_HwMM4b_Ykj8OrbKbUoeo8uHMVJuoMqAIegY1GxG3P8g77J6ygNVfjyhyn5SSG6kV9Pm6B7tczqx9nyaE/s320/8109857345_92ac418b38_o.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx3b1vKI_jchov59GprvAyFUum2RV6n4bkk24dLpVJ8Po_6Q7DJZ_lnmMCH-_HwMM4b_Ykj8OrbKbUoeo8uHMVJuoMqAIegY1GxG3P8g77J6ygNVfjyhyn5SSG6kV9Pm6B7tczqx9nyaE/s160/8109857345_92ac418b38_o.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx3b1vKI_jchov59GprvAyFUum2RV6n4bkk24dLpVJ8Po_6Q7DJZ_lnmMCH-_HwMM4b_Ykj8OrbKbUoeo8uHMVJuoMqAIegY1GxG3P8g77J6ygNVfjyhyn5SSG6kV9Pm6B7tczqx9nyaE/s320/8109857345_92ac418b38_o.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx3b1vKI_jchov59GprvAyFUum2RV6n4bkk24dLpVJ8Po_6Q7DJZ_lnmMCH-_HwMM4b_Ykj8OrbKbUoeo8uHMVJuoMqAIegY1GxG3P8g77J6ygNVfjyhyn5SSG6kV9Pm6B7tczqx9nyaE/s480/8109857345_92ac418b38_o.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx3b1vKI_jchov59GprvAyFUum2RV6n4bkk24dLpVJ8Po_6Q7DJZ_lnmMCH-_HwMM4b_Ykj8OrbKbUoeo8uHMVJuoMqAIegY1GxG3P8g77J6ygNVfjyhyn5SSG6kV9Pm6B7tczqx9nyaE/s160/8109857345_92ac418b38_o.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx3b1vKI_jchov59GprvAyFUum2RV6n4bkk24dLpVJ8Po_6Q7DJZ_lnmMCH-_HwMM4b_Ykj8OrbKbUoeo8uHMVJuoMqAIegY1GxG3P8g77J6ygNVfjyhyn5SSG6kV9Pm6B7tczqx9nyaE/s320/8109857345_92ac418b38_o.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx3b1vKI_jchov59GprvAyFUum2RV6n4bkk24dLpVJ8Po_6Q7DJZ_lnmMCH-_HwMM4b_Ykj8OrbKbUoeo8uHMVJuoMqAIegY1GxG3P8g77J6ygNVfjyhyn5SSG6kV9Pm6B7tczqx9nyaE/s480/8109857345_92ac418b38_o.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Bienvenido a los 90 - Programa 35 - Muse - Palacio de los Deporte de la Comunidad de Madrid 2012"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -320,8 +302,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-33-entrevista-a-felipe-couselo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa 33 - Entrevista a Felipe Couselo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -334,8 +315,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-30-inicio-de-la-segunda-temporada.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s320/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s160/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s320/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s480/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s160/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s320/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s480/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Bienvenido a los 90 - Programa 30 - Inicio de la segunda temporada"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -348,8 +328,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-27-glastonbury.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s320/g08_RTR2O2AU.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s160/g08_RTR2O2AU.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s320/g08_RTR2O2AU.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s480/g08_RTR2O2AU.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s160/g08_RTR2O2AU.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s320/g08_RTR2O2AU.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s480/g08_RTR2O2AU.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Bienvenido a los 90 - Programa 27 - Glastonbury"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -362,8 +341,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-21-mtv-unplugged.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa 21 - MTV Unplugged"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -376,8 +354,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-7-el-efecto-stipe.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6kmWT6_ZwwD6sdEj298HpmHWnNsOKr4E9KqI6Ou620e1RHZ_ufEGWy59Hv1D5eh_5pyIO3zNkQsQM5Luu8Emz49gcTqAVFT5fuS0NevUyvvBPLawwyuD8buLj8NKdy-mcUOpAU2OBr3s/s320/bcb8bf228faa8fb7d9585dac76a34f0f65992f20_m.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6kmWT6_ZwwD6sdEj298HpmHWnNsOKr4E9KqI6Ou620e1RHZ_ufEGWy59Hv1D5eh_5pyIO3zNkQsQM5Luu8Emz49gcTqAVFT5fuS0NevUyvvBPLawwyuD8buLj8NKdy-mcUOpAU2OBr3s/s160/bcb8bf228faa8fb7d9585dac76a34f0f65992f20_m.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6kmWT6_ZwwD6sdEj298HpmHWnNsOKr4E9KqI6Ou620e1RHZ_ufEGWy59Hv1D5eh_5pyIO3zNkQsQM5Luu8Emz49gcTqAVFT5fuS0NevUyvvBPLawwyuD8buLj8NKdy-mcUOpAU2OBr3s/s320/bcb8bf228faa8fb7d9585dac76a34f0f65992f20_m.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6kmWT6_ZwwD6sdEj298HpmHWnNsOKr4E9KqI6Ou620e1RHZ_ufEGWy59Hv1D5eh_5pyIO3zNkQsQM5Luu8Emz49gcTqAVFT5fuS0NevUyvvBPLawwyuD8buLj8NKdy-mcUOpAU2OBr3s/s480/bcb8bf228faa8fb7d9585dac76a34f0f65992f20_m.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6kmWT6_ZwwD6sdEj298HpmHWnNsOKr4E9KqI6Ou620e1RHZ_ufEGWy59Hv1D5eh_5pyIO3zNkQsQM5Luu8Emz49gcTqAVFT5fuS0NevUyvvBPLawwyuD8buLj8NKdy-mcUOpAU2OBr3s/s160/bcb8bf228faa8fb7d9585dac76a34f0f65992f20_m.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6kmWT6_ZwwD6sdEj298HpmHWnNsOKr4E9KqI6Ou620e1RHZ_ufEGWy59Hv1D5eh_5pyIO3zNkQsQM5Luu8Emz49gcTqAVFT5fuS0NevUyvvBPLawwyuD8buLj8NKdy-mcUOpAU2OBr3s/s320/bcb8bf228faa8fb7d9585dac76a34f0f65992f20_m.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6kmWT6_ZwwD6sdEj298HpmHWnNsOKr4E9KqI6Ou620e1RHZ_ufEGWy59Hv1D5eh_5pyIO3zNkQsQM5Luu8Emz49gcTqAVFT5fuS0NevUyvvBPLawwyuD8buLj8NKdy-mcUOpAU2OBr3s/s480/bcb8bf228faa8fb7d9585dac76a34f0f65992f20_m.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Bienvenido a los 90 #7 - El efecto Stipe"
                 loading="lazy" width="320" height="213" />
         </a>

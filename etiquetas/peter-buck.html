@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Peter Buck — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-87-drink-the-sea-madrid-06-12-2025.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s320/DRINK-THE-SEA_1920x1080.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s160/DRINK-THE-SEA_1920x1080.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s320/DRINK-THE-SEA_1920x1080.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s480/DRINK-THE-SEA_1920x1080.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s160/DRINK-THE-SEA_1920x1080.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s320/DRINK-THE-SEA_1920x1080.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s480/DRINK-THE-SEA_1920x1080.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 87 - Drink the Sea Madrid 06/12/2025"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/1075-entrevista-a-drink-the-sea.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqK7oIoIirHR7cK5u9tBCzDaFr1Wz4SH-GhedENYLdxCHQQXehD2i94b8dlGYu8G9gKPSWI7AOEKo5pKulz-ldZwgwiauIxkr-dIfXD9L8W99AbHb_1Fs9ANMwKp72HLd8bnZ2Q2POVoY2bXqP6l4eapKME1zXpv_l_KNIpCB2GfxEt8mekY2mroejKI/s320/B90_1075.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqK7oIoIirHR7cK5u9tBCzDaFr1Wz4SH-GhedENYLdxCHQQXehD2i94b8dlGYu8G9gKPSWI7AOEKo5pKulz-ldZwgwiauIxkr-dIfXD9L8W99AbHb_1Fs9ANMwKp72HLd8bnZ2Q2POVoY2bXqP6l4eapKME1zXpv_l_KNIpCB2GfxEt8mekY2mroejKI/s160/B90_1075.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqK7oIoIirHR7cK5u9tBCzDaFr1Wz4SH-GhedENYLdxCHQQXehD2i94b8dlGYu8G9gKPSWI7AOEKo5pKulz-ldZwgwiauIxkr-dIfXD9L8W99AbHb_1Fs9ANMwKp72HLd8bnZ2Q2POVoY2bXqP6l4eapKME1zXpv_l_KNIpCB2GfxEt8mekY2mroejKI/s320/B90_1075.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqK7oIoIirHR7cK5u9tBCzDaFr1Wz4SH-GhedENYLdxCHQQXehD2i94b8dlGYu8G9gKPSWI7AOEKo5pKulz-ldZwgwiauIxkr-dIfXD9L8W99AbHb_1Fs9ANMwKp72HLd8bnZ2Q2POVoY2bXqP6l4eapKME1zXpv_l_KNIpCB2GfxEt8mekY2mroejKI/s480/B90_1075.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqK7oIoIirHR7cK5u9tBCzDaFr1Wz4SH-GhedENYLdxCHQQXehD2i94b8dlGYu8G9gKPSWI7AOEKo5pKulz-ldZwgwiauIxkr-dIfXD9L8W99AbHb_1Fs9ANMwKp72HLd8bnZ2Q2POVoY2bXqP6l4eapKME1zXpv_l_KNIpCB2GfxEt8mekY2mroejKI/s160/B90_1075.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqK7oIoIirHR7cK5u9tBCzDaFr1Wz4SH-GhedENYLdxCHQQXehD2i94b8dlGYu8G9gKPSWI7AOEKo5pKulz-ldZwgwiauIxkr-dIfXD9L8W99AbHb_1Fs9ANMwKp72HLd8bnZ2Q2POVoY2bXqP6l4eapKME1zXpv_l_KNIpCB2GfxEt8mekY2mroejKI/s320/B90_1075.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqK7oIoIirHR7cK5u9tBCzDaFr1Wz4SH-GhedENYLdxCHQQXehD2i94b8dlGYu8G9gKPSWI7AOEKo5pKulz-ldZwgwiauIxkr-dIfXD9L8W99AbHb_1Fs9ANMwKp72HLd8bnZ2Q2POVoY2bXqP6l4eapKME1zXpv_l_KNIpCB2GfxEt8mekY2mroejKI/s480/B90_1075.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1075 - Entrevista a Drink The Sea"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-901-rem-especial-new-adventures-in-hi-fi.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb1CKjWOccLk6Der9gXbksCIIejgvWhdwxJFHQsa_rq3FnRwPvRUQ4zCno4MZQshyvwwUqh_uC3GBx3NQsf8Ws19_kCM08WsEeX2Xlz4zVfdqrNv3Oul-VVUt7eUhRL6EE3kLiSjn0BAtas1DpNHEfDeOTB2PKyUplaCFR40YN4PEzsVvkkhJ-jSjX/s320/rem-1.webp"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb1CKjWOccLk6Der9gXbksCIIejgvWhdwxJFHQsa_rq3FnRwPvRUQ4zCno4MZQshyvwwUqh_uC3GBx3NQsf8Ws19_kCM08WsEeX2Xlz4zVfdqrNv3Oul-VVUt7eUhRL6EE3kLiSjn0BAtas1DpNHEfDeOTB2PKyUplaCFR40YN4PEzsVvkkhJ-jSjX/s160/rem-1.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb1CKjWOccLk6Der9gXbksCIIejgvWhdwxJFHQsa_rq3FnRwPvRUQ4zCno4MZQshyvwwUqh_uC3GBx3NQsf8Ws19_kCM08WsEeX2Xlz4zVfdqrNv3Oul-VVUt7eUhRL6EE3kLiSjn0BAtas1DpNHEfDeOTB2PKyUplaCFR40YN4PEzsVvkkhJ-jSjX/s320/rem-1.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb1CKjWOccLk6Der9gXbksCIIejgvWhdwxJFHQsa_rq3FnRwPvRUQ4zCno4MZQshyvwwUqh_uC3GBx3NQsf8Ws19_kCM08WsEeX2Xlz4zVfdqrNv3Oul-VVUt7eUhRL6EE3kLiSjn0BAtas1DpNHEfDeOTB2PKyUplaCFR40YN4PEzsVvkkhJ-jSjX/s480/rem-1.webp 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb1CKjWOccLk6Der9gXbksCIIejgvWhdwxJFHQsa_rq3FnRwPvRUQ4zCno4MZQshyvwwUqh_uC3GBx3NQsf8Ws19_kCM08WsEeX2Xlz4zVfdqrNv3Oul-VVUt7eUhRL6EE3kLiSjn0BAtas1DpNHEfDeOTB2PKyUplaCFR40YN4PEzsVvkkhJ-jSjX/s160/rem-1.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb1CKjWOccLk6Der9gXbksCIIejgvWhdwxJFHQsa_rq3FnRwPvRUQ4zCno4MZQshyvwwUqh_uC3GBx3NQsf8Ws19_kCM08WsEeX2Xlz4zVfdqrNv3Oul-VVUt7eUhRL6EE3kLiSjn0BAtas1DpNHEfDeOTB2PKyUplaCFR40YN4PEzsVvkkhJ-jSjX/s320/rem-1.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb1CKjWOccLk6Der9gXbksCIIejgvWhdwxJFHQsa_rq3FnRwPvRUQ4zCno4MZQshyvwwUqh_uC3GBx3NQsf8Ws19_kCM08WsEeX2Xlz4zVfdqrNv3Oul-VVUt7eUhRL6EE3kLiSjn0BAtas1DpNHEfDeOTB2PKyUplaCFR40YN4PEzsVvkkhJ-jSjX/s480/rem-1.webp 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.901 - REM, especial New Adventures In Hi-Fi"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-775-r-e-m-up-1998.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s320/R.E.M..jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s160/R.E.M..jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s320/R.E.M..jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s480/R.E.M..jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s160/R.E.M..jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s320/R.E.M..jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s480/R.E.M..jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.775 - R.E.M. Up (1998)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-187-r-e-m-en-los-90.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbnbIJYD0WPcdFEKsqaccs5d653l0uJ3ZW0Iq40BesX1diru4aDypwT84xCONk7eJYaXlzX7xng1gtBrM8lIoKqquNOp1fEe6dU8odtycOHiVktM3_zgn13QjXE6oD7fkm1Mg2WVpUyIQ/s320/11218990_10153162751947747_1162016639125233484_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbnbIJYD0WPcdFEKsqaccs5d653l0uJ3ZW0Iq40BesX1diru4aDypwT84xCONk7eJYaXlzX7xng1gtBrM8lIoKqquNOp1fEe6dU8odtycOHiVktM3_zgn13QjXE6oD7fkm1Mg2WVpUyIQ/s160/11218990_10153162751947747_1162016639125233484_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbnbIJYD0WPcdFEKsqaccs5d653l0uJ3ZW0Iq40BesX1diru4aDypwT84xCONk7eJYaXlzX7xng1gtBrM8lIoKqquNOp1fEe6dU8odtycOHiVktM3_zgn13QjXE6oD7fkm1Mg2WVpUyIQ/s320/11218990_10153162751947747_1162016639125233484_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbnbIJYD0WPcdFEKsqaccs5d653l0uJ3ZW0Iq40BesX1diru4aDypwT84xCONk7eJYaXlzX7xng1gtBrM8lIoKqquNOp1fEe6dU8odtycOHiVktM3_zgn13QjXE6oD7fkm1Mg2WVpUyIQ/s480/11218990_10153162751947747_1162016639125233484_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbnbIJYD0WPcdFEKsqaccs5d653l0uJ3ZW0Iq40BesX1diru4aDypwT84xCONk7eJYaXlzX7xng1gtBrM8lIoKqquNOp1fEe6dU8odtycOHiVktM3_zgn13QjXE6oD7fkm1Mg2WVpUyIQ/s160/11218990_10153162751947747_1162016639125233484_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbnbIJYD0WPcdFEKsqaccs5d653l0uJ3ZW0Iq40BesX1diru4aDypwT84xCONk7eJYaXlzX7xng1gtBrM8lIoKqquNOp1fEe6dU8odtycOHiVktM3_zgn13QjXE6oD7fkm1Mg2WVpUyIQ/s320/11218990_10153162751947747_1162016639125233484_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbnbIJYD0WPcdFEKsqaccs5d653l0uJ3ZW0Iq40BesX1diru4aDypwT84xCONk7eJYaXlzX7xng1gtBrM8lIoKqquNOp1fEe6dU8odtycOHiVktM3_zgn13QjXE6oD7fkm1Mg2WVpUyIQ/s480/11218990_10153162751947747_1162016639125233484_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 187 - R.E.M. en los 90"
                 loading="lazy" width="320" height="213" />
         </a>

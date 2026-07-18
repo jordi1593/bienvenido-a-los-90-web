@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.657 - Bandas Sonoras Vol.1 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -125,8 +125,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKx59-FAsIcHCmzcpvac7Nj4WRp-hplBxtnwedprdd9sBSKC48t1NMWlPKnJtNTCTTFHhAw5DaZMIrsAX30NjJGQEEfR0y3k8N9-dAnEc_0XmllqBBdxc2IE6dHChLa4BRvcR4R9V0SjE/s320/b90_590.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKx59-FAsIcHCmzcpvac7Nj4WRp-hplBxtnwedprdd9sBSKC48t1NMWlPKnJtNTCTTFHhAw5DaZMIrsAX30NjJGQEEfR0y3k8N9-dAnEc_0XmllqBBdxc2IE6dHChLa4BRvcR4R9V0SjE/s160/b90_590.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKx59-FAsIcHCmzcpvac7Nj4WRp-hplBxtnwedprdd9sBSKC48t1NMWlPKnJtNTCTTFHhAw5DaZMIrsAX30NjJGQEEfR0y3k8N9-dAnEc_0XmllqBBdxc2IE6dHChLa4BRvcR4R9V0SjE/s320/b90_590.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKx59-FAsIcHCmzcpvac7Nj4WRp-hplBxtnwedprdd9sBSKC48t1NMWlPKnJtNTCTTFHhAw5DaZMIrsAX30NjJGQEEfR0y3k8N9-dAnEc_0XmllqBBdxc2IE6dHChLa4BRvcR4R9V0SjE/s480/b90_590.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKx59-FAsIcHCmzcpvac7Nj4WRp-hplBxtnwedprdd9sBSKC48t1NMWlPKnJtNTCTTFHhAw5DaZMIrsAX30NjJGQEEfR0y3k8N9-dAnEc_0XmllqBBdxc2IE6dHChLa4BRvcR4R9V0SjE/s160/b90_590.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKx59-FAsIcHCmzcpvac7Nj4WRp-hplBxtnwedprdd9sBSKC48t1NMWlPKnJtNTCTTFHhAw5DaZMIrsAX30NjJGQEEfR0y3k8N9-dAnEc_0XmllqBBdxc2IE6dHChLa4BRvcR4R9V0SjE/s320/b90_590.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKx59-FAsIcHCmzcpvac7Nj4WRp-hplBxtnwedprdd9sBSKC48t1NMWlPKnJtNTCTTFHhAw5DaZMIrsAX30NjJGQEEfR0y3k8N9-dAnEc_0XmllqBBdxc2IE6dHChLa4BRvcR4R9V0SjE/s480/b90_590.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.590 - Las bandas locales que han pasado por el programa en 2019"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -136,8 +135,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s320/a3942977190_10.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s160/a3942977190_10.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s320/a3942977190_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s480/a3942977190_10.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s160/a3942977190_10.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s320/a3942977190_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s480/a3942977190_10.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.719 - Le Traste presentan Cuadratura vol. 2: Para sembrar lo incierto"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -147,8 +145,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s160/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s480/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s160/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s480/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.727 - Sintiendo caer la mierda sobre mí: canciones para el Blue Monday Vol.1"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -164,8 +161,7 @@
         <a class="related-bottom-card" href="programa-563-live-vol-1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s320/IMG_20190821_193538.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s320/IMG_20190821_193538.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s480/IMG_20190821_193538.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s640/IMG_20190821_193538.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s320/IMG_20190821_193538.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s480/IMG_20190821_193538.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s640/IMG_20190821_193538.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 563: Live! Vol.1 "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -176,8 +172,7 @@
           </a><a class="related-bottom-card" href="p-755-red-moskito-una-de-las-mejores-bandas-tributo-a-pearl-jam.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s320/67508534_2427049850696115_2106468557159137280_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s320/67508534_2427049850696115_2106468557159137280_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s480/67508534_2427049850696115_2106468557159137280_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s640/67508534_2427049850696115_2106468557159137280_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s320/67508534_2427049850696115_2106468557159137280_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s480/67508534_2427049850696115_2106468557159137280_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s640/67508534_2427049850696115_2106468557159137280_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.755 - Red Moskito, una de las mejores bandas tributo a Pearl Jam"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -188,8 +183,7 @@
           </a><a class="related-bottom-card" href="programa-544-el-origen-del-nombre-de-algunas-de-mis-bandas-favoritas.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s320/b90_544.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s320/b90_544.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s480/b90_544.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s640/b90_544.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s320/b90_544.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s480/b90_544.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s640/b90_544.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 544 - El origen del nombre de algunas de mis bandas favoritas"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 241 - Nevermind 25 años — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -129,8 +129,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s320/242494530_244509814350378_3513229620045245238_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s160/242494530_244509814350378_3513229620045245238_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s320/242494530_244509814350378_3513229620045245238_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s480/242494530_244509814350378_3513229620045245238_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s160/242494530_244509814350378_3513229620045245238_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s320/242494530_244509814350378_3513229620045245238_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s480/242494530_244509814350378_3513229620045245238_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.800 - En directo desde Siroco celebrando los 30 años de Nevermind"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -140,8 +139,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s160/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s480/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s160/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s480/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 359 - Nirvana, en busca del Nevermind "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -151,8 +149,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s320/IMG-20220716-WA0011.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s160/IMG-20220716-WA0011.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s320/IMG-20220716-WA0011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s480/IMG-20220716-WA0011.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s160/IMG-20220716-WA0011.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s320/IMG-20220716-WA0011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s480/IMG-20220716-WA0011.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.852 - 30 años después del primer concierto de Nirvana en España"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -168,8 +165,7 @@
         <a class="related-bottom-card" href="programa-176-nirvana-mixes-demos-2015.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnZ3RpuKDYarRKcVpLQcpK4gn8ZD5BDQwb0iGMtBWbSgqWVKX0yFZIEPKbSvz_LeLI17h4ZD9T_Q5ukcpoATjDcMUmcn3hh1z3xnTSmbtL9CjHEYAT4Hfp4ZADpatz_oHL4yg405q2IiU/s320/11800082_1036423006368595_7349121891611549252_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnZ3RpuKDYarRKcVpLQcpK4gn8ZD5BDQwb0iGMtBWbSgqWVKX0yFZIEPKbSvz_LeLI17h4ZD9T_Q5ukcpoATjDcMUmcn3hh1z3xnTSmbtL9CjHEYAT4Hfp4ZADpatz_oHL4yg405q2IiU/s320/11800082_1036423006368595_7349121891611549252_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnZ3RpuKDYarRKcVpLQcpK4gn8ZD5BDQwb0iGMtBWbSgqWVKX0yFZIEPKbSvz_LeLI17h4ZD9T_Q5ukcpoATjDcMUmcn3hh1z3xnTSmbtL9CjHEYAT4Hfp4ZADpatz_oHL4yg405q2IiU/s480/11800082_1036423006368595_7349121891611549252_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnZ3RpuKDYarRKcVpLQcpK4gn8ZD5BDQwb0iGMtBWbSgqWVKX0yFZIEPKbSvz_LeLI17h4ZD9T_Q5ukcpoATjDcMUmcn3hh1z3xnTSmbtL9CjHEYAT4Hfp4ZADpatz_oHL4yg405q2IiU/s640/11800082_1036423006368595_7349121891611549252_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnZ3RpuKDYarRKcVpLQcpK4gn8ZD5BDQwb0iGMtBWbSgqWVKX0yFZIEPKbSvz_LeLI17h4ZD9T_Q5ukcpoATjDcMUmcn3hh1z3xnTSmbtL9CjHEYAT4Hfp4ZADpatz_oHL4yg405q2IiU/s320/11800082_1036423006368595_7349121891611549252_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnZ3RpuKDYarRKcVpLQcpK4gn8ZD5BDQwb0iGMtBWbSgqWVKX0yFZIEPKbSvz_LeLI17h4ZD9T_Q5ukcpoATjDcMUmcn3hh1z3xnTSmbtL9CjHEYAT4Hfp4ZADpatz_oHL4yg405q2IiU/s480/11800082_1036423006368595_7349121891611549252_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnZ3RpuKDYarRKcVpLQcpK4gn8ZD5BDQwb0iGMtBWbSgqWVKX0yFZIEPKbSvz_LeLI17h4ZD9T_Q5ukcpoATjDcMUmcn3hh1z3xnTSmbtL9CjHEYAT4Hfp4ZADpatz_oHL4yg405q2IiU/s640/11800082_1036423006368595_7349121891611549252_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 176 - Nirvana - Mixes + Demos 2015"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -180,8 +176,7 @@
           </a><a class="related-bottom-card" href="programa-149-kurt-cobain-cumple-48-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s480/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s640/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s480/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s640/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 149 - Kurt Cobain cumple 48 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -192,8 +187,7 @@
           </a><a class="related-bottom-card" href="programa-109-20-anos-nirvana.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 109 - 20 años Nirvana"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

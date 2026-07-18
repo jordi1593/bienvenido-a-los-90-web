@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Mother Love Bone — 8 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1102-una-hora-de-grunge-sin-casi-pausas.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s320/B90_1102.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s160/B90_1102.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s320/B90_1102.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s480/B90_1102.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s160/B90_1102.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s320/B90_1102.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s480/B90_1102.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1102 - Una hora de GRUNGE sin (casi) pausas"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-971-sigue-siendo-seattle-un-destino-atractivo-para-los-amantes-del-grunge.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s160/seattle-grunge-est1990-mens-t-shirt.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s160/seattle-grunge-est1990-mens-t-shirt.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.971 - ¿Sigue siendo Seattle un destino atractivo para los amantes del grunge?"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-340-jeff-ament-de-montana-a-seattle.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s320/e4c620f2a967d3906f46bc3bafbcefc2.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s160/e4c620f2a967d3906f46bc3bafbcefc2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s320/e4c620f2a967d3906f46bc3bafbcefc2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s480/e4c620f2a967d3906f46bc3bafbcefc2.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s160/e4c620f2a967d3906f46bc3bafbcefc2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s320/e4c620f2a967d3906f46bc3bafbcefc2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s480/e4c620f2a967d3906f46bc3bafbcefc2.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 340 - Jeff Ament, de Montana a Seattle"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-243-temple-of-the-dog-25-anos.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s320/temple1-1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s160/temple1-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s320/temple1-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s480/temple1-1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s160/temple1-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s320/temple1-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s480/temple1-1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 243 - Temple of the Dog (25 años)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-214-jeff-ament.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s320/10329214_10153451455942747_4912215046456512836_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s160/10329214_10153451455942747_4912215046456512836_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s320/10329214_10153451455942747_4912215046456512836_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s480/10329214_10153451455942747_4912215046456512836_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s160/10329214_10153451455942747_4912215046456512836_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s320/10329214_10153451455942747_4912215046456512836_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s480/10329214_10153451455942747_4912215046456512836_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 214 - Jeff Ament"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-160-asesinos-natos-sweet-home-y-singles-con-angel-agudo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 160 - Asesinos Natos, Sweet Home y Singles con Ángel Agudo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-138-h-y-las-rocanrol-viejas.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 138 - H y las Rocanrol Viejas"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-15-especial-pearl-jam.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa #15 - Especial Pearl Jam"
                 loading="lazy" width="320" height="213" />
         </a>

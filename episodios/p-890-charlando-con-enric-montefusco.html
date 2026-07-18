@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.890 - Charlando con Enric Montefusco — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -134,8 +134,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s320/11393179_10152880824657747_5216406057049803366_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s160/11393179_10152880824657747_5216406057049803366_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s320/11393179_10152880824657747_5216406057049803366_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s480/11393179_10152880824657747_5216406057049803366_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s160/11393179_10152880824657747_5216406057049803366_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s320/11393179_10152880824657747_5216406057049803366_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s480/11393179_10152880824657747_5216406057049803366_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 166 - Adiós Standstill"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -145,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOQeg6jlsADf3Vsjr2PmD5A18xWDvdyMavAiAur3MNVFpua8IaI0VmB6flwqg9Qka54ASx5AIJypyLEAsj6sh84bFL2v3IoZiURUWfl_Dq9evmUE6IirVAL2cHIVdNfEJPOh0wHxnPqEOtRrYi9SoRmMuc3u0H9F3XWBWNlyysU0EwiSYxN3GXYWtQ/s320/juanma2.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOQeg6jlsADf3Vsjr2PmD5A18xWDvdyMavAiAur3MNVFpua8IaI0VmB6flwqg9Qka54ASx5AIJypyLEAsj6sh84bFL2v3IoZiURUWfl_Dq9evmUE6IirVAL2cHIVdNfEJPOh0wHxnPqEOtRrYi9SoRmMuc3u0H9F3XWBWNlyysU0EwiSYxN3GXYWtQ/s160/juanma2.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOQeg6jlsADf3Vsjr2PmD5A18xWDvdyMavAiAur3MNVFpua8IaI0VmB6flwqg9Qka54ASx5AIJypyLEAsj6sh84bFL2v3IoZiURUWfl_Dq9evmUE6IirVAL2cHIVdNfEJPOh0wHxnPqEOtRrYi9SoRmMuc3u0H9F3XWBWNlyysU0EwiSYxN3GXYWtQ/s320/juanma2.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOQeg6jlsADf3Vsjr2PmD5A18xWDvdyMavAiAur3MNVFpua8IaI0VmB6flwqg9Qka54ASx5AIJypyLEAsj6sh84bFL2v3IoZiURUWfl_Dq9evmUE6IirVAL2cHIVdNfEJPOh0wHxnPqEOtRrYi9SoRmMuc3u0H9F3XWBWNlyysU0EwiSYxN3GXYWtQ/s480/juanma2.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOQeg6jlsADf3Vsjr2PmD5A18xWDvdyMavAiAur3MNVFpua8IaI0VmB6flwqg9Qka54ASx5AIJypyLEAsj6sh84bFL2v3IoZiURUWfl_Dq9evmUE6IirVAL2cHIVdNfEJPOh0wHxnPqEOtRrYi9SoRmMuc3u0H9F3XWBWNlyysU0EwiSYxN3GXYWtQ/s160/juanma2.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOQeg6jlsADf3Vsjr2PmD5A18xWDvdyMavAiAur3MNVFpua8IaI0VmB6flwqg9Qka54ASx5AIJypyLEAsj6sh84bFL2v3IoZiURUWfl_Dq9evmUE6IirVAL2cHIVdNfEJPOh0wHxnPqEOtRrYi9SoRmMuc3u0H9F3XWBWNlyysU0EwiSYxN3GXYWtQ/s320/juanma2.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOQeg6jlsADf3Vsjr2PmD5A18xWDvdyMavAiAur3MNVFpua8IaI0VmB6flwqg9Qka54ASx5AIJypyLEAsj6sh84bFL2v3IoZiURUWfl_Dq9evmUE6IirVAL2cHIVdNfEJPOh0wHxnPqEOtRrYi9SoRmMuc3u0H9F3XWBWNlyysU0EwiSYxN3GXYWtQ/s480/juanma2.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.887 - Charlando con Juanma Ortega"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -156,8 +154,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s320/b90_923_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s160/b90_923_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s320/b90_923_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s480/b90_923_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s160/b90_923_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s320/b90_923_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s480/b90_923_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.923 - El último programa de la temporada 11"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -173,8 +170,7 @@
         <a class="related-bottom-card" href="p-831-charlando-con-ivan-muniz-sobre-una-orquesta-armada.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMHzFJGdEgoQTlAElB5B7LyLw5kWOfkNQYdk1xgA9d6h4ppRiX4tvbdXOTJ3duLifZsnYare-JcUITw2JRWaAgHItwKR9-eSUlwOvcqJUiR5anoHMTzQmBkhJfPOllWCcXkVL2jbCCUKln1yMBdrow7HR6EQlAtvmXzoeGKvscUouv5RmklYgbpoIy/s320/una_orquesta_armada_0_orig.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMHzFJGdEgoQTlAElB5B7LyLw5kWOfkNQYdk1xgA9d6h4ppRiX4tvbdXOTJ3duLifZsnYare-JcUITw2JRWaAgHItwKR9-eSUlwOvcqJUiR5anoHMTzQmBkhJfPOllWCcXkVL2jbCCUKln1yMBdrow7HR6EQlAtvmXzoeGKvscUouv5RmklYgbpoIy/s320/una_orquesta_armada_0_orig.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMHzFJGdEgoQTlAElB5B7LyLw5kWOfkNQYdk1xgA9d6h4ppRiX4tvbdXOTJ3duLifZsnYare-JcUITw2JRWaAgHItwKR9-eSUlwOvcqJUiR5anoHMTzQmBkhJfPOllWCcXkVL2jbCCUKln1yMBdrow7HR6EQlAtvmXzoeGKvscUouv5RmklYgbpoIy/s480/una_orquesta_armada_0_orig.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMHzFJGdEgoQTlAElB5B7LyLw5kWOfkNQYdk1xgA9d6h4ppRiX4tvbdXOTJ3duLifZsnYare-JcUITw2JRWaAgHItwKR9-eSUlwOvcqJUiR5anoHMTzQmBkhJfPOllWCcXkVL2jbCCUKln1yMBdrow7HR6EQlAtvmXzoeGKvscUouv5RmklYgbpoIy/s640/una_orquesta_armada_0_orig.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMHzFJGdEgoQTlAElB5B7LyLw5kWOfkNQYdk1xgA9d6h4ppRiX4tvbdXOTJ3duLifZsnYare-JcUITw2JRWaAgHItwKR9-eSUlwOvcqJUiR5anoHMTzQmBkhJfPOllWCcXkVL2jbCCUKln1yMBdrow7HR6EQlAtvmXzoeGKvscUouv5RmklYgbpoIy/s320/una_orquesta_armada_0_orig.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMHzFJGdEgoQTlAElB5B7LyLw5kWOfkNQYdk1xgA9d6h4ppRiX4tvbdXOTJ3duLifZsnYare-JcUITw2JRWaAgHItwKR9-eSUlwOvcqJUiR5anoHMTzQmBkhJfPOllWCcXkVL2jbCCUKln1yMBdrow7HR6EQlAtvmXzoeGKvscUouv5RmklYgbpoIy/s480/una_orquesta_armada_0_orig.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMHzFJGdEgoQTlAElB5B7LyLw5kWOfkNQYdk1xgA9d6h4ppRiX4tvbdXOTJ3duLifZsnYare-JcUITw2JRWaAgHItwKR9-eSUlwOvcqJUiR5anoHMTzQmBkhJfPOllWCcXkVL2jbCCUKln1yMBdrow7HR6EQlAtvmXzoeGKvscUouv5RmklYgbpoIy/s640/una_orquesta_armada_0_orig.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P. 831 - Charlando con Iván Muñiz sobre &quot;UNA ORQUESTA ARMADA&quot;"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -185,8 +181,7 @@
           </a><a class="related-bottom-card" href="p-807-charlando-con-beavis-y-butt-head.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijdwDHhtbNsDpM0blfyAb6z0d0hVcrFy4FZZn2WYZ1ttz5tdwwFCLXPENkzS5-3poFua2YAdN67dc8B1fpHariL-14apCoVI3XYTqWguX_c5mreOtqrQKpQntvK_l1zkRF-CvwyS4-PL4/s320/beavis-butthead-wallpaper-preview+%25284%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijdwDHhtbNsDpM0blfyAb6z0d0hVcrFy4FZZn2WYZ1ttz5tdwwFCLXPENkzS5-3poFua2YAdN67dc8B1fpHariL-14apCoVI3XYTqWguX_c5mreOtqrQKpQntvK_l1zkRF-CvwyS4-PL4/s320/beavis-butthead-wallpaper-preview+%25284%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijdwDHhtbNsDpM0blfyAb6z0d0hVcrFy4FZZn2WYZ1ttz5tdwwFCLXPENkzS5-3poFua2YAdN67dc8B1fpHariL-14apCoVI3XYTqWguX_c5mreOtqrQKpQntvK_l1zkRF-CvwyS4-PL4/s480/beavis-butthead-wallpaper-preview+%25284%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijdwDHhtbNsDpM0blfyAb6z0d0hVcrFy4FZZn2WYZ1ttz5tdwwFCLXPENkzS5-3poFua2YAdN67dc8B1fpHariL-14apCoVI3XYTqWguX_c5mreOtqrQKpQntvK_l1zkRF-CvwyS4-PL4/s640/beavis-butthead-wallpaper-preview+%25284%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijdwDHhtbNsDpM0blfyAb6z0d0hVcrFy4FZZn2WYZ1ttz5tdwwFCLXPENkzS5-3poFua2YAdN67dc8B1fpHariL-14apCoVI3XYTqWguX_c5mreOtqrQKpQntvK_l1zkRF-CvwyS4-PL4/s320/beavis-butthead-wallpaper-preview+%25284%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijdwDHhtbNsDpM0blfyAb6z0d0hVcrFy4FZZn2WYZ1ttz5tdwwFCLXPENkzS5-3poFua2YAdN67dc8B1fpHariL-14apCoVI3XYTqWguX_c5mreOtqrQKpQntvK_l1zkRF-CvwyS4-PL4/s480/beavis-butthead-wallpaper-preview+%25284%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijdwDHhtbNsDpM0blfyAb6z0d0hVcrFy4FZZn2WYZ1ttz5tdwwFCLXPENkzS5-3poFua2YAdN67dc8B1fpHariL-14apCoVI3XYTqWguX_c5mreOtqrQKpQntvK_l1zkRF-CvwyS4-PL4/s640/beavis-butthead-wallpaper-preview+%25284%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.807 - Charlando con Beavis y Butt-Head"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -197,8 +192,7 @@
           </a><a class="related-bottom-card" href="programa-415-ricky-lavado.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0V_v45FOR9htz3E4gQeDBi-zn5wtSlVZgsRXoHi8Tbrg3k-fOVOC3q1gMMgR2WWYj2ebwE_4RZ4L5ORcNKsint3_vEuvJ1OTiUR7CQzQJWufeJF2_fGzuu0e3K3hF1MNamfpgmE9iGAE/s320/b90ENDORA.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0V_v45FOR9htz3E4gQeDBi-zn5wtSlVZgsRXoHi8Tbrg3k-fOVOC3q1gMMgR2WWYj2ebwE_4RZ4L5ORcNKsint3_vEuvJ1OTiUR7CQzQJWufeJF2_fGzuu0e3K3hF1MNamfpgmE9iGAE/s320/b90ENDORA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0V_v45FOR9htz3E4gQeDBi-zn5wtSlVZgsRXoHi8Tbrg3k-fOVOC3q1gMMgR2WWYj2ebwE_4RZ4L5ORcNKsint3_vEuvJ1OTiUR7CQzQJWufeJF2_fGzuu0e3K3hF1MNamfpgmE9iGAE/s480/b90ENDORA.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0V_v45FOR9htz3E4gQeDBi-zn5wtSlVZgsRXoHi8Tbrg3k-fOVOC3q1gMMgR2WWYj2ebwE_4RZ4L5ORcNKsint3_vEuvJ1OTiUR7CQzQJWufeJF2_fGzuu0e3K3hF1MNamfpgmE9iGAE/s640/b90ENDORA.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0V_v45FOR9htz3E4gQeDBi-zn5wtSlVZgsRXoHi8Tbrg3k-fOVOC3q1gMMgR2WWYj2ebwE_4RZ4L5ORcNKsint3_vEuvJ1OTiUR7CQzQJWufeJF2_fGzuu0e3K3hF1MNamfpgmE9iGAE/s320/b90ENDORA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0V_v45FOR9htz3E4gQeDBi-zn5wtSlVZgsRXoHi8Tbrg3k-fOVOC3q1gMMgR2WWYj2ebwE_4RZ4L5ORcNKsint3_vEuvJ1OTiUR7CQzQJWufeJF2_fGzuu0e3K3hF1MNamfpgmE9iGAE/s480/b90ENDORA.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0V_v45FOR9htz3E4gQeDBi-zn5wtSlVZgsRXoHi8Tbrg3k-fOVOC3q1gMMgR2WWYj2ebwE_4RZ4L5ORcNKsint3_vEuvJ1OTiUR7CQzQJWufeJF2_fGzuu0e3K3hF1MNamfpgmE9iGAE/s640/b90ENDORA.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 415 - Ricky Lavado"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

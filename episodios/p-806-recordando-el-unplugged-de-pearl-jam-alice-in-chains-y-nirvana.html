@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.806 - Recordando el Unplugged de Pearl Jam, Alice in Chains y Nirvana — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -132,8 +132,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s320/unnamed+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s160/unnamed+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s320/unnamed+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s480/unnamed+%25281%2529.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s160/unnamed+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s320/unnamed+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s480/unnamed+%25281%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.611 - Susan Silver, la manager del grunge (Soundgarden, Alice in Chains, Screaming Trees...)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -143,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa 21 - MTV Unplugged"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s320/67508534_2427049850696115_2106468557159137280_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s160/67508534_2427049850696115_2106468557159137280_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s320/67508534_2427049850696115_2106468557159137280_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s480/67508534_2427049850696115_2106468557159137280_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s160/67508534_2427049850696115_2106468557159137280_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s320/67508534_2427049850696115_2106468557159137280_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s480/67508534_2427049850696115_2106468557159137280_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.755 - Red Moskito, una de las mejores bandas tributo a Pearl Jam"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +168,7 @@
         <a class="related-bottom-card" href="p-878-un-repaso-a-toda-la-gira-de-pearl-jam-en-2022.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisS2RpHbZHqFEUTfOoAMmc0dzgCGgsbBQoO7PCPDX8vlI6G3Vu8AXrZPMzN0ZEZM-EeuZJR2aWp7400LcbkYoG49oFUobem7d9IDP2Zt4qcYCgxgMooJnDbben0YwiTzk9bnhJAyVzWolPXYx_s2fdFVek2MGUPS67b6fAqGtuelVL9zSTTfLpwscm/s320/6cd41b64-b332-4526-907a-349cc418c9b7.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisS2RpHbZHqFEUTfOoAMmc0dzgCGgsbBQoO7PCPDX8vlI6G3Vu8AXrZPMzN0ZEZM-EeuZJR2aWp7400LcbkYoG49oFUobem7d9IDP2Zt4qcYCgxgMooJnDbben0YwiTzk9bnhJAyVzWolPXYx_s2fdFVek2MGUPS67b6fAqGtuelVL9zSTTfLpwscm/s320/6cd41b64-b332-4526-907a-349cc418c9b7.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisS2RpHbZHqFEUTfOoAMmc0dzgCGgsbBQoO7PCPDX8vlI6G3Vu8AXrZPMzN0ZEZM-EeuZJR2aWp7400LcbkYoG49oFUobem7d9IDP2Zt4qcYCgxgMooJnDbben0YwiTzk9bnhJAyVzWolPXYx_s2fdFVek2MGUPS67b6fAqGtuelVL9zSTTfLpwscm/s480/6cd41b64-b332-4526-907a-349cc418c9b7.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisS2RpHbZHqFEUTfOoAMmc0dzgCGgsbBQoO7PCPDX8vlI6G3Vu8AXrZPMzN0ZEZM-EeuZJR2aWp7400LcbkYoG49oFUobem7d9IDP2Zt4qcYCgxgMooJnDbben0YwiTzk9bnhJAyVzWolPXYx_s2fdFVek2MGUPS67b6fAqGtuelVL9zSTTfLpwscm/s640/6cd41b64-b332-4526-907a-349cc418c9b7.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisS2RpHbZHqFEUTfOoAMmc0dzgCGgsbBQoO7PCPDX8vlI6G3Vu8AXrZPMzN0ZEZM-EeuZJR2aWp7400LcbkYoG49oFUobem7d9IDP2Zt4qcYCgxgMooJnDbben0YwiTzk9bnhJAyVzWolPXYx_s2fdFVek2MGUPS67b6fAqGtuelVL9zSTTfLpwscm/s320/6cd41b64-b332-4526-907a-349cc418c9b7.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisS2RpHbZHqFEUTfOoAMmc0dzgCGgsbBQoO7PCPDX8vlI6G3Vu8AXrZPMzN0ZEZM-EeuZJR2aWp7400LcbkYoG49oFUobem7d9IDP2Zt4qcYCgxgMooJnDbben0YwiTzk9bnhJAyVzWolPXYx_s2fdFVek2MGUPS67b6fAqGtuelVL9zSTTfLpwscm/s480/6cd41b64-b332-4526-907a-349cc418c9b7.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisS2RpHbZHqFEUTfOoAMmc0dzgCGgsbBQoO7PCPDX8vlI6G3Vu8AXrZPMzN0ZEZM-EeuZJR2aWp7400LcbkYoG49oFUobem7d9IDP2Zt4qcYCgxgMooJnDbben0YwiTzk9bnhJAyVzWolPXYx_s2fdFVek2MGUPS67b6fAqGtuelVL9zSTTfLpwscm/s640/6cd41b64-b332-4526-907a-349cc418c9b7.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.878 - Un repaso a toda la gira de PEARL JAM en 2022"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -183,8 +179,7 @@
           </a><a class="related-bottom-card" href="p-633-la-historia-de-dave-abbruzzese-pearl-jam.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirY4rFtAKPrHmMjj0AO6sqKd9D3irXv2Sh5cqAVvQTMiWq88hc7H5ztb6BD-KH-aEP4SMBrL7IBbkAmOzetyyLUukLB5MXJ5ywu8APV71Kp8525F5i5F2Qphiv6kzZQt3z200N_yYczAo/s320/abbruzzese-dave-image.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirY4rFtAKPrHmMjj0AO6sqKd9D3irXv2Sh5cqAVvQTMiWq88hc7H5ztb6BD-KH-aEP4SMBrL7IBbkAmOzetyyLUukLB5MXJ5ywu8APV71Kp8525F5i5F2Qphiv6kzZQt3z200N_yYczAo/s320/abbruzzese-dave-image.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirY4rFtAKPrHmMjj0AO6sqKd9D3irXv2Sh5cqAVvQTMiWq88hc7H5ztb6BD-KH-aEP4SMBrL7IBbkAmOzetyyLUukLB5MXJ5ywu8APV71Kp8525F5i5F2Qphiv6kzZQt3z200N_yYczAo/s480/abbruzzese-dave-image.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirY4rFtAKPrHmMjj0AO6sqKd9D3irXv2Sh5cqAVvQTMiWq88hc7H5ztb6BD-KH-aEP4SMBrL7IBbkAmOzetyyLUukLB5MXJ5ywu8APV71Kp8525F5i5F2Qphiv6kzZQt3z200N_yYczAo/s640/abbruzzese-dave-image.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirY4rFtAKPrHmMjj0AO6sqKd9D3irXv2Sh5cqAVvQTMiWq88hc7H5ztb6BD-KH-aEP4SMBrL7IBbkAmOzetyyLUukLB5MXJ5ywu8APV71Kp8525F5i5F2Qphiv6kzZQt3z200N_yYczAo/s320/abbruzzese-dave-image.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirY4rFtAKPrHmMjj0AO6sqKd9D3irXv2Sh5cqAVvQTMiWq88hc7H5ztb6BD-KH-aEP4SMBrL7IBbkAmOzetyyLUukLB5MXJ5ywu8APV71Kp8525F5i5F2Qphiv6kzZQt3z200N_yYczAo/s480/abbruzzese-dave-image.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirY4rFtAKPrHmMjj0AO6sqKd9D3irXv2Sh5cqAVvQTMiWq88hc7H5ztb6BD-KH-aEP4SMBrL7IBbkAmOzetyyLUukLB5MXJ5ywu8APV71Kp8525F5i5F2Qphiv6kzZQt3z200N_yYczAo/s640/abbruzzese-dave-image.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.633 La historia de Dave Abbruzzese (Pearl Jam)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +190,7 @@
           </a><a class="related-bottom-card" href="p-630-kim-thayil-de-soundgarden-habla-de-sus-discos-favoritos-del-grunge.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s480/kimthayil.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s640/kimthayil.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s480/kimthayil.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s640/kimthayil.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.630 - Kim Thayil de Soundgarden habla de sus discos favoritos del grunge"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

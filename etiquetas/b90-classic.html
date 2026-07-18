@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>B90 Classic — 6 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/b90-classic-27-especial-24h-con-j-f-leon.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd-QJJOKYeUJ-fkvBXFkp0NNMSHzdm-_9Dwn2tb_Cjs38R_N07M7ZRpbjx6elZUBvx517JpE3d0-NxCfXHZ0YeJUjXNZLhuqy3BRSRKrHRUfh3kidKwjJsIIJslqQQORmN8o3ED96wsC54gKfe_HKsECaz4Ju6MaqwYeWWSjYKdi4hU8PJxTlHuaGG/s320/IMG-20220623-WA0000.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd-QJJOKYeUJ-fkvBXFkp0NNMSHzdm-_9Dwn2tb_Cjs38R_N07M7ZRpbjx6elZUBvx517JpE3d0-NxCfXHZ0YeJUjXNZLhuqy3BRSRKrHRUfh3kidKwjJsIIJslqQQORmN8o3ED96wsC54gKfe_HKsECaz4Ju6MaqwYeWWSjYKdi4hU8PJxTlHuaGG/s160/IMG-20220623-WA0000.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd-QJJOKYeUJ-fkvBXFkp0NNMSHzdm-_9Dwn2tb_Cjs38R_N07M7ZRpbjx6elZUBvx517JpE3d0-NxCfXHZ0YeJUjXNZLhuqy3BRSRKrHRUfh3kidKwjJsIIJslqQQORmN8o3ED96wsC54gKfe_HKsECaz4Ju6MaqwYeWWSjYKdi4hU8PJxTlHuaGG/s320/IMG-20220623-WA0000.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd-QJJOKYeUJ-fkvBXFkp0NNMSHzdm-_9Dwn2tb_Cjs38R_N07M7ZRpbjx6elZUBvx517JpE3d0-NxCfXHZ0YeJUjXNZLhuqy3BRSRKrHRUfh3kidKwjJsIIJslqQQORmN8o3ED96wsC54gKfe_HKsECaz4Ju6MaqwYeWWSjYKdi4hU8PJxTlHuaGG/s480/IMG-20220623-WA0000.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd-QJJOKYeUJ-fkvBXFkp0NNMSHzdm-_9Dwn2tb_Cjs38R_N07M7ZRpbjx6elZUBvx517JpE3d0-NxCfXHZ0YeJUjXNZLhuqy3BRSRKrHRUfh3kidKwjJsIIJslqQQORmN8o3ED96wsC54gKfe_HKsECaz4Ju6MaqwYeWWSjYKdi4hU8PJxTlHuaGG/s160/IMG-20220623-WA0000.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd-QJJOKYeUJ-fkvBXFkp0NNMSHzdm-_9Dwn2tb_Cjs38R_N07M7ZRpbjx6elZUBvx517JpE3d0-NxCfXHZ0YeJUjXNZLhuqy3BRSRKrHRUfh3kidKwjJsIIJslqQQORmN8o3ED96wsC54gKfe_HKsECaz4Ju6MaqwYeWWSjYKdi4hU8PJxTlHuaGG/s320/IMG-20220623-WA0000.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd-QJJOKYeUJ-fkvBXFkp0NNMSHzdm-_9Dwn2tb_Cjs38R_N07M7ZRpbjx6elZUBvx517JpE3d0-NxCfXHZ0YeJUjXNZLhuqy3BRSRKrHRUfh3kidKwjJsIIJslqQQORmN8o3ED96wsC54gKfe_HKsECaz4Ju6MaqwYeWWSjYKdi4hU8PJxTlHuaGG/s480/IMG-20220623-WA0000.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Classic 27: Especial 24H con J.F.Leon"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/b90-classic-24-paul-mccartney-glastonbury-2022.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s320/16562580925225.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s160/16562580925225.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s320/16562580925225.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s480/16562580925225.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s160/16562580925225.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s320/16562580925225.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s480/16562580925225.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Classic 24: Paul McCartney - Glastonbury 2022"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/b90-classic-17-asi-suenan-the-smile-en-directo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c"
-                srcset="https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="B90 Classic 17: Así suenan THE SMILE en directo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/b90-classic-12-la-historia-completa-de-bittersweet-symphony.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s320/The-Verve.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s160/The-Verve.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s320/The-Verve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s480/The-Verve.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s160/The-Verve.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s320/The-Verve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s480/The-Verve.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Classic 12: La historia completa de Bittersweet Symphony"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/b90-classic-10-the-jury-kurt-cobain-y-mark-lanegan.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s160/thejurysocial112514.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s480/thejurysocial112514.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s160/thejurysocial112514.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s480/thejurysocial112514.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Classic 10: The Jury - Kurt Cobain y Mark Lanegan"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/b90-classic-4-cuando-los-beatles-se-subieron-a-la-azotea.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggGLoS-4d57lYpXe1y5Va98IWzPJvZvxyDGXwp7QVI3vY-PPrE4-sR0OkRmb2cES47Ht2fCb5zedRMyACDZJucqj_03xg2zFK5VVXcSAaG5_uf0ruXXFCm_CbVCrGasqwBgzShY7O6Z2k/s320/a51609f69db1d33fd6cbffb5f8f56a97.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggGLoS-4d57lYpXe1y5Va98IWzPJvZvxyDGXwp7QVI3vY-PPrE4-sR0OkRmb2cES47Ht2fCb5zedRMyACDZJucqj_03xg2zFK5VVXcSAaG5_uf0ruXXFCm_CbVCrGasqwBgzShY7O6Z2k/s160/a51609f69db1d33fd6cbffb5f8f56a97.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggGLoS-4d57lYpXe1y5Va98IWzPJvZvxyDGXwp7QVI3vY-PPrE4-sR0OkRmb2cES47Ht2fCb5zedRMyACDZJucqj_03xg2zFK5VVXcSAaG5_uf0ruXXFCm_CbVCrGasqwBgzShY7O6Z2k/s320/a51609f69db1d33fd6cbffb5f8f56a97.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggGLoS-4d57lYpXe1y5Va98IWzPJvZvxyDGXwp7QVI3vY-PPrE4-sR0OkRmb2cES47Ht2fCb5zedRMyACDZJucqj_03xg2zFK5VVXcSAaG5_uf0ruXXFCm_CbVCrGasqwBgzShY7O6Z2k/s480/a51609f69db1d33fd6cbffb5f8f56a97.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggGLoS-4d57lYpXe1y5Va98IWzPJvZvxyDGXwp7QVI3vY-PPrE4-sR0OkRmb2cES47Ht2fCb5zedRMyACDZJucqj_03xg2zFK5VVXcSAaG5_uf0ruXXFCm_CbVCrGasqwBgzShY7O6Z2k/s160/a51609f69db1d33fd6cbffb5f8f56a97.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggGLoS-4d57lYpXe1y5Va98IWzPJvZvxyDGXwp7QVI3vY-PPrE4-sR0OkRmb2cES47Ht2fCb5zedRMyACDZJucqj_03xg2zFK5VVXcSAaG5_uf0ruXXFCm_CbVCrGasqwBgzShY7O6Z2k/s320/a51609f69db1d33fd6cbffb5f8f56a97.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggGLoS-4d57lYpXe1y5Va98IWzPJvZvxyDGXwp7QVI3vY-PPrE4-sR0OkRmb2cES47Ht2fCb5zedRMyACDZJucqj_03xg2zFK5VVXcSAaG5_uf0ruXXFCm_CbVCrGasqwBgzShY7O6Z2k/s480/a51609f69db1d33fd6cbffb5f8f56a97.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Classic 4: Cuando los Beatles se subieron a la azotea"
                 loading="lazy" width="320" height="213" />
         </a>

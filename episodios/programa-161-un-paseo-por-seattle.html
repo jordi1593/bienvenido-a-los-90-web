@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 161 - Un paseo por Seattle — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -137,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa 36 - SUB POP 200"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s160/kimthayil.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s480/kimthayil.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s160/kimthayil.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s480/kimthayil.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.630 - Kim Thayil de Soundgarden habla de sus discos favoritos del grunge"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -159,8 +157,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s160/seattle-grunge-est1990-mens-t-shirt.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s160/seattle-grunge-est1990-mens-t-shirt.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.971 - ¿Sigue siendo Seattle un destino atractivo para los amantes del grunge?"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -176,8 +173,7 @@
         <a class="related-bottom-card" href="programa-160-asesinos-natos-sweet-home-y-singles-con-angel-agudo.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 160 - Asesinos Natos, Sweet Home y Singles con Ángel Agudo"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -188,8 +184,7 @@
           </a><a class="related-bottom-card" href="programa-127-seattle-en-los-90.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s320/band-map-v1_1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s320/band-map-v1_1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s480/band-map-v1_1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s640/band-map-v1_1.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s320/band-map-v1_1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s480/band-map-v1_1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s640/band-map-v1_1.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 127 - Seattle en los 90"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -200,8 +195,7 @@
           </a><a class="related-bottom-card" href="programa-292-blind-melon-u2-the-gits-afghan-whigs-nin.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s480/imagen-sin-titulo.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s640/imagen-sin-titulo.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s480/imagen-sin-titulo.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s640/imagen-sin-titulo.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 292 - Blind Melon, U2, The Gits, Afghan Whigs, NIN. "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

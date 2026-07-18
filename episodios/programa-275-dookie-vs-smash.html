@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 275 - Dookie Vs. Smash — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -129,8 +129,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-5ecUL0oetywth3ByvNPdYiFw3STsuCCyK5ZWsn3qrK3xvqGS9RCU98dH70OEBavBZKXN_c_sJSa2_OYvLtH_2oLA1dhqWIGhHK63Oj1XPvvvpszW9Fgk7u3X_RNRWqkAMGTt2WAcNhNjvfOfV9pGZvPwWg_NHGopA4XhlSe6J6_El_M6RSeKpamA0NM/s320/Green+Day+Dookie+-+Autographed-578565.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-5ecUL0oetywth3ByvNPdYiFw3STsuCCyK5ZWsn3qrK3xvqGS9RCU98dH70OEBavBZKXN_c_sJSa2_OYvLtH_2oLA1dhqWIGhHK63Oj1XPvvvpszW9Fgk7u3X_RNRWqkAMGTt2WAcNhNjvfOfV9pGZvPwWg_NHGopA4XhlSe6J6_El_M6RSeKpamA0NM/s160/Green+Day+Dookie+-+Autographed-578565.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-5ecUL0oetywth3ByvNPdYiFw3STsuCCyK5ZWsn3qrK3xvqGS9RCU98dH70OEBavBZKXN_c_sJSa2_OYvLtH_2oLA1dhqWIGhHK63Oj1XPvvvpszW9Fgk7u3X_RNRWqkAMGTt2WAcNhNjvfOfV9pGZvPwWg_NHGopA4XhlSe6J6_El_M6RSeKpamA0NM/s320/Green+Day+Dookie+-+Autographed-578565.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-5ecUL0oetywth3ByvNPdYiFw3STsuCCyK5ZWsn3qrK3xvqGS9RCU98dH70OEBavBZKXN_c_sJSa2_OYvLtH_2oLA1dhqWIGhHK63Oj1XPvvvpszW9Fgk7u3X_RNRWqkAMGTt2WAcNhNjvfOfV9pGZvPwWg_NHGopA4XhlSe6J6_El_M6RSeKpamA0NM/s480/Green+Day+Dookie+-+Autographed-578565.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-5ecUL0oetywth3ByvNPdYiFw3STsuCCyK5ZWsn3qrK3xvqGS9RCU98dH70OEBavBZKXN_c_sJSa2_OYvLtH_2oLA1dhqWIGhHK63Oj1XPvvvpszW9Fgk7u3X_RNRWqkAMGTt2WAcNhNjvfOfV9pGZvPwWg_NHGopA4XhlSe6J6_El_M6RSeKpamA0NM/s160/Green+Day+Dookie+-+Autographed-578565.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-5ecUL0oetywth3ByvNPdYiFw3STsuCCyK5ZWsn3qrK3xvqGS9RCU98dH70OEBavBZKXN_c_sJSa2_OYvLtH_2oLA1dhqWIGhHK63Oj1XPvvvpszW9Fgk7u3X_RNRWqkAMGTt2WAcNhNjvfOfV9pGZvPwWg_NHGopA4XhlSe6J6_El_M6RSeKpamA0NM/s320/Green+Day+Dookie+-+Autographed-578565.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-5ecUL0oetywth3ByvNPdYiFw3STsuCCyK5ZWsn3qrK3xvqGS9RCU98dH70OEBavBZKXN_c_sJSa2_OYvLtH_2oLA1dhqWIGhHK63Oj1XPvvvpszW9Fgk7u3X_RNRWqkAMGTt2WAcNhNjvfOfV9pGZvPwWg_NHGopA4XhlSe6J6_El_M6RSeKpamA0NM/s480/Green+Day+Dookie+-+Autographed-578565.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.954 - Green Day &#39;Dookie&#39; 30 años después"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -140,8 +139,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0-Z4cJESzSXBDFzJNRkMzdn1WtQb9YSzitreYDqh2VTs2N6-0WYS2OUGf6d8duY9lGl77yMxAUA926N_6L5_s3EG1GrTQb2DBiC-A1m3LplAR6mOGYXGyZRNhNRTd59xQlwzw3NP4XZQ/s320/ChP0-MIU0AAlaOA.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0-Z4cJESzSXBDFzJNRkMzdn1WtQb9YSzitreYDqh2VTs2N6-0WYS2OUGf6d8duY9lGl77yMxAUA926N_6L5_s3EG1GrTQb2DBiC-A1m3LplAR6mOGYXGyZRNhNRTd59xQlwzw3NP4XZQ/s160/ChP0-MIU0AAlaOA.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0-Z4cJESzSXBDFzJNRkMzdn1WtQb9YSzitreYDqh2VTs2N6-0WYS2OUGf6d8duY9lGl77yMxAUA926N_6L5_s3EG1GrTQb2DBiC-A1m3LplAR6mOGYXGyZRNhNRTd59xQlwzw3NP4XZQ/s320/ChP0-MIU0AAlaOA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0-Z4cJESzSXBDFzJNRkMzdn1WtQb9YSzitreYDqh2VTs2N6-0WYS2OUGf6d8duY9lGl77yMxAUA926N_6L5_s3EG1GrTQb2DBiC-A1m3LplAR6mOGYXGyZRNhNRTd59xQlwzw3NP4XZQ/s480/ChP0-MIU0AAlaOA.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0-Z4cJESzSXBDFzJNRkMzdn1WtQb9YSzitreYDqh2VTs2N6-0WYS2OUGf6d8duY9lGl77yMxAUA926N_6L5_s3EG1GrTQb2DBiC-A1m3LplAR6mOGYXGyZRNhNRTd59xQlwzw3NP4XZQ/s160/ChP0-MIU0AAlaOA.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0-Z4cJESzSXBDFzJNRkMzdn1WtQb9YSzitreYDqh2VTs2N6-0WYS2OUGf6d8duY9lGl77yMxAUA926N_6L5_s3EG1GrTQb2DBiC-A1m3LplAR6mOGYXGyZRNhNRTd59xQlwzw3NP4XZQ/s320/ChP0-MIU0AAlaOA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0-Z4cJESzSXBDFzJNRkMzdn1WtQb9YSzitreYDqh2VTs2N6-0WYS2OUGf6d8duY9lGl77yMxAUA926N_6L5_s3EG1GrTQb2DBiC-A1m3LplAR6mOGYXGyZRNhNRTd59xQlwzw3NP4XZQ/s480/ChP0-MIU0AAlaOA.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.673 - Green Day, la vida después de Dookie: Insomniac y Nimrod"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -151,8 +149,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s320/7a2806b36599681118bdf58136438e3b.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s160/7a2806b36599681118bdf58136438e3b.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s320/7a2806b36599681118bdf58136438e3b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s480/7a2806b36599681118bdf58136438e3b.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s160/7a2806b36599681118bdf58136438e3b.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s320/7a2806b36599681118bdf58136438e3b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s480/7a2806b36599681118bdf58136438e3b.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.675 - Offspring &#39;Smash&#39;, el disco independiente más vendido de la historia"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -168,8 +165,7 @@
         <a class="related-bottom-card" href="programa-71-especial-green-day.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 71 - Especial GREEN DAY"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -180,8 +176,7 @@
           </a><a class="related-bottom-card" href="programa-69-green-day-offspring-weezer-fugazi-alice-in-chains.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 69 - GREEN DAY, OFFSPRING, WEEZER, FUGAZI, ALICE IN CHAINS..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -192,8 +187,7 @@
           </a><a class="related-bottom-card" href="p-786-cuando-green-day-no-eran-famosos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijyRz0fbPOYWL5zfDAkPDi39laqd6RBhbXzPRFHnyeuY-FYn_CWirojcGUrM-MZK1vIs9X2vuYRBXlHUCu3myD6CCsodek13gwqWSL-vbIJtUyeNzJTO9JqtswEARsTrBq36NPEs5TPUM/s320/GreenDay.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijyRz0fbPOYWL5zfDAkPDi39laqd6RBhbXzPRFHnyeuY-FYn_CWirojcGUrM-MZK1vIs9X2vuYRBXlHUCu3myD6CCsodek13gwqWSL-vbIJtUyeNzJTO9JqtswEARsTrBq36NPEs5TPUM/s320/GreenDay.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijyRz0fbPOYWL5zfDAkPDi39laqd6RBhbXzPRFHnyeuY-FYn_CWirojcGUrM-MZK1vIs9X2vuYRBXlHUCu3myD6CCsodek13gwqWSL-vbIJtUyeNzJTO9JqtswEARsTrBq36NPEs5TPUM/s480/GreenDay.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijyRz0fbPOYWL5zfDAkPDi39laqd6RBhbXzPRFHnyeuY-FYn_CWirojcGUrM-MZK1vIs9X2vuYRBXlHUCu3myD6CCsodek13gwqWSL-vbIJtUyeNzJTO9JqtswEARsTrBq36NPEs5TPUM/s640/GreenDay.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijyRz0fbPOYWL5zfDAkPDi39laqd6RBhbXzPRFHnyeuY-FYn_CWirojcGUrM-MZK1vIs9X2vuYRBXlHUCu3myD6CCsodek13gwqWSL-vbIJtUyeNzJTO9JqtswEARsTrBq36NPEs5TPUM/s320/GreenDay.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijyRz0fbPOYWL5zfDAkPDi39laqd6RBhbXzPRFHnyeuY-FYn_CWirojcGUrM-MZK1vIs9X2vuYRBXlHUCu3myD6CCsodek13gwqWSL-vbIJtUyeNzJTO9JqtswEARsTrBq36NPEs5TPUM/s480/GreenDay.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijyRz0fbPOYWL5zfDAkPDi39laqd6RBhbXzPRFHnyeuY-FYn_CWirojcGUrM-MZK1vIs9X2vuYRBXlHUCu3myD6CCsodek13gwqWSL-vbIJtUyeNzJTO9JqtswEARsTrBq36NPEs5TPUM/s640/GreenDay.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.786 - Cuando Green Day no eran famosos"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

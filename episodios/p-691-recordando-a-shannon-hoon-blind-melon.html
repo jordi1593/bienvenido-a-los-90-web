@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.691 - Recordando a Shannon Hoon (Blind Melon) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -133,8 +133,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKFGYoeiE__JE9nEQshecjkYEytek7GZSjvAISGue0dOfVKr8VJzhDWQir_gp0JAL2jRfpYEbHnRPa-5fI0jjiKzGW65qqyNxPFHmEh4YGT6WzgwAFJoZihdNONuJEh0dmmcctoeA5YBLQQpw5QtaJCVB1SHxRnVAafSTXZACpIvVIdYVhqtYV2BNOQTY/s320/MV5BNzY2MjdkYWYtZGY5ZC00MjE1LWE1ZWItM2I2YTFlYWYyMmRhXkEyXkFqcGc@._V1_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKFGYoeiE__JE9nEQshecjkYEytek7GZSjvAISGue0dOfVKr8VJzhDWQir_gp0JAL2jRfpYEbHnRPa-5fI0jjiKzGW65qqyNxPFHmEh4YGT6WzgwAFJoZihdNONuJEh0dmmcctoeA5YBLQQpw5QtaJCVB1SHxRnVAafSTXZACpIvVIdYVhqtYV2BNOQTY/s160/MV5BNzY2MjdkYWYtZGY5ZC00MjE1LWE1ZWItM2I2YTFlYWYyMmRhXkEyXkFqcGc@._V1_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKFGYoeiE__JE9nEQshecjkYEytek7GZSjvAISGue0dOfVKr8VJzhDWQir_gp0JAL2jRfpYEbHnRPa-5fI0jjiKzGW65qqyNxPFHmEh4YGT6WzgwAFJoZihdNONuJEh0dmmcctoeA5YBLQQpw5QtaJCVB1SHxRnVAafSTXZACpIvVIdYVhqtYV2BNOQTY/s320/MV5BNzY2MjdkYWYtZGY5ZC00MjE1LWE1ZWItM2I2YTFlYWYyMmRhXkEyXkFqcGc@._V1_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKFGYoeiE__JE9nEQshecjkYEytek7GZSjvAISGue0dOfVKr8VJzhDWQir_gp0JAL2jRfpYEbHnRPa-5fI0jjiKzGW65qqyNxPFHmEh4YGT6WzgwAFJoZihdNONuJEh0dmmcctoeA5YBLQQpw5QtaJCVB1SHxRnVAafSTXZACpIvVIdYVhqtYV2BNOQTY/s480/MV5BNzY2MjdkYWYtZGY5ZC00MjE1LWE1ZWItM2I2YTFlYWYyMmRhXkEyXkFqcGc@._V1_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKFGYoeiE__JE9nEQshecjkYEytek7GZSjvAISGue0dOfVKr8VJzhDWQir_gp0JAL2jRfpYEbHnRPa-5fI0jjiKzGW65qqyNxPFHmEh4YGT6WzgwAFJoZihdNONuJEh0dmmcctoeA5YBLQQpw5QtaJCVB1SHxRnVAafSTXZACpIvVIdYVhqtYV2BNOQTY/s160/MV5BNzY2MjdkYWYtZGY5ZC00MjE1LWE1ZWItM2I2YTFlYWYyMmRhXkEyXkFqcGc@._V1_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKFGYoeiE__JE9nEQshecjkYEytek7GZSjvAISGue0dOfVKr8VJzhDWQir_gp0JAL2jRfpYEbHnRPa-5fI0jjiKzGW65qqyNxPFHmEh4YGT6WzgwAFJoZihdNONuJEh0dmmcctoeA5YBLQQpw5QtaJCVB1SHxRnVAafSTXZACpIvVIdYVhqtYV2BNOQTY/s320/MV5BNzY2MjdkYWYtZGY5ZC00MjE1LWE1ZWItM2I2YTFlYWYyMmRhXkEyXkFqcGc@._V1_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKFGYoeiE__JE9nEQshecjkYEytek7GZSjvAISGue0dOfVKr8VJzhDWQir_gp0JAL2jRfpYEbHnRPa-5fI0jjiKzGW65qqyNxPFHmEh4YGT6WzgwAFJoZihdNONuJEh0dmmcctoeA5YBLQQpw5QtaJCVB1SHxRnVAafSTXZACpIvVIdYVhqtYV2BNOQTY/s480/MV5BNzY2MjdkYWYtZGY5ZC00MjE1LWE1ZWItM2I2YTFlYWYyMmRhXkEyXkFqcGc@._V1_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 88 - Blind Melon, la historia de &quot;No Rain&quot;"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -144,8 +143,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s160/imagen-sin-titulo.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s480/imagen-sin-titulo.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s160/imagen-sin-titulo.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s480/imagen-sin-titulo.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 292 - Blind Melon, U2, The Gits, Afghan Whigs, NIN. "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -155,8 +153,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s320/b90_1093.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s160/b90_1093.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s320/b90_1093.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s480/b90_1093.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s160/b90_1093.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s320/b90_1093.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s480/b90_1093.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1093 - Especial 1995 (4/5) Ramones, Garbage, Blind Melon, Rancid, Oasis, No Doubt..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -172,8 +169,7 @@
         <a class="related-bottom-card" href="p-698-especial-rosy-finch.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSAaRv70SiJFdUM5xjnsvKF7JNd0yjQThMvxNHYsHJNkZUi-nkSW1FV06mKQLfAcLhzjgIL9VLzTxwljhWFKic2qtJEiECEu8O9ZAhKLH84rySQQRrnrFaFeMKBvdssr5wH6L92bGHFYo/s320/81607645_1341050772722945_3195018779855683584_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSAaRv70SiJFdUM5xjnsvKF7JNd0yjQThMvxNHYsHJNkZUi-nkSW1FV06mKQLfAcLhzjgIL9VLzTxwljhWFKic2qtJEiECEu8O9ZAhKLH84rySQQRrnrFaFeMKBvdssr5wH6L92bGHFYo/s320/81607645_1341050772722945_3195018779855683584_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSAaRv70SiJFdUM5xjnsvKF7JNd0yjQThMvxNHYsHJNkZUi-nkSW1FV06mKQLfAcLhzjgIL9VLzTxwljhWFKic2qtJEiECEu8O9ZAhKLH84rySQQRrnrFaFeMKBvdssr5wH6L92bGHFYo/s480/81607645_1341050772722945_3195018779855683584_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSAaRv70SiJFdUM5xjnsvKF7JNd0yjQThMvxNHYsHJNkZUi-nkSW1FV06mKQLfAcLhzjgIL9VLzTxwljhWFKic2qtJEiECEu8O9ZAhKLH84rySQQRrnrFaFeMKBvdssr5wH6L92bGHFYo/s640/81607645_1341050772722945_3195018779855683584_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSAaRv70SiJFdUM5xjnsvKF7JNd0yjQThMvxNHYsHJNkZUi-nkSW1FV06mKQLfAcLhzjgIL9VLzTxwljhWFKic2qtJEiECEu8O9ZAhKLH84rySQQRrnrFaFeMKBvdssr5wH6L92bGHFYo/s320/81607645_1341050772722945_3195018779855683584_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSAaRv70SiJFdUM5xjnsvKF7JNd0yjQThMvxNHYsHJNkZUi-nkSW1FV06mKQLfAcLhzjgIL9VLzTxwljhWFKic2qtJEiECEu8O9ZAhKLH84rySQQRrnrFaFeMKBvdssr5wH6L92bGHFYo/s480/81607645_1341050772722945_3195018779855683584_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSAaRv70SiJFdUM5xjnsvKF7JNd0yjQThMvxNHYsHJNkZUi-nkSW1FV06mKQLfAcLhzjgIL9VLzTxwljhWFKic2qtJEiECEu8O9ZAhKLH84rySQQRrnrFaFeMKBvdssr5wH6L92bGHFYo/s640/81607645_1341050772722945_3195018779855683584_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.698 - Especial Rosy Finch"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -184,8 +180,7 @@
           </a><a class="related-bottom-card" href="p-722-recordando-el-get-born-de-jet.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s320/R-648655-1399308965-6680.jpeg.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s320/R-648655-1399308965-6680.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s480/R-648655-1399308965-6680.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s640/R-648655-1399308965-6680.jpeg.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s320/R-648655-1399308965-6680.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s480/R-648655-1399308965-6680.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s640/R-648655-1399308965-6680.jpeg.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.722 - Recordando el &#39;Get Born&#39; de JET"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -196,8 +191,7 @@
           </a><a class="related-bottom-card" href="p-585-recordando-a-purr.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzrsibwgPjO4FvuFzRX2xmgVKJrOj89f-Y-b9zytrSD6lc_-yaf5Jnqd4BCJo3A86TT1Z5pvZls27yiAg-L89sTNp6rqYsLdUE1c6me8g1TEB6q8CCGX4EsPyUqksopUrv4Gh5j-FKi5o/s320/b90_585.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzrsibwgPjO4FvuFzRX2xmgVKJrOj89f-Y-b9zytrSD6lc_-yaf5Jnqd4BCJo3A86TT1Z5pvZls27yiAg-L89sTNp6rqYsLdUE1c6me8g1TEB6q8CCGX4EsPyUqksopUrv4Gh5j-FKi5o/s320/b90_585.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzrsibwgPjO4FvuFzRX2xmgVKJrOj89f-Y-b9zytrSD6lc_-yaf5Jnqd4BCJo3A86TT1Z5pvZls27yiAg-L89sTNp6rqYsLdUE1c6me8g1TEB6q8CCGX4EsPyUqksopUrv4Gh5j-FKi5o/s480/b90_585.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzrsibwgPjO4FvuFzRX2xmgVKJrOj89f-Y-b9zytrSD6lc_-yaf5Jnqd4BCJo3A86TT1Z5pvZls27yiAg-L89sTNp6rqYsLdUE1c6me8g1TEB6q8CCGX4EsPyUqksopUrv4Gh5j-FKi5o/s640/b90_585.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzrsibwgPjO4FvuFzRX2xmgVKJrOj89f-Y-b9zytrSD6lc_-yaf5Jnqd4BCJo3A86TT1Z5pvZls27yiAg-L89sTNp6rqYsLdUE1c6me8g1TEB6q8CCGX4EsPyUqksopUrv4Gh5j-FKi5o/s320/b90_585.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzrsibwgPjO4FvuFzRX2xmgVKJrOj89f-Y-b9zytrSD6lc_-yaf5Jnqd4BCJo3A86TT1Z5pvZls27yiAg-L89sTNp6rqYsLdUE1c6me8g1TEB6q8CCGX4EsPyUqksopUrv4Gh5j-FKi5o/s480/b90_585.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzrsibwgPjO4FvuFzRX2xmgVKJrOj89f-Y-b9zytrSD6lc_-yaf5Jnqd4BCJo3A86TT1Z5pvZls27yiAg-L89sTNp6rqYsLdUE1c6me8g1TEB6q8CCGX4EsPyUqksopUrv4Gh5j-FKi5o/s640/b90_585.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.585 - Recordando a PURR"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>1022 - Hablamos del concierto de Paul McCartney en Madrid con Paco Pérez Bryan — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyVvZ07qZ_iIsPbCxYDC-tlZRwD1usyQSnwWmzd-ioEDNJZB4E71yxRIXC1qdgN8zsYw2cTd8_csh0y8ZdSQZwH3OdAO-0sl-pSKfzrUgASRNaDmQY0ycmk0LoncfFiZehHhNHENsg8k2Izsb9HslZgVs1e_C3IW0VvvpaN4YHGLR7_qEI3RrU_IeTtZI/s320/469745325_18435196186074678_944798517198893647_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyVvZ07qZ_iIsPbCxYDC-tlZRwD1usyQSnwWmzd-ioEDNJZB4E71yxRIXC1qdgN8zsYw2cTd8_csh0y8ZdSQZwH3OdAO-0sl-pSKfzrUgASRNaDmQY0ycmk0LoncfFiZehHhNHENsg8k2Izsb9HslZgVs1e_C3IW0VvvpaN4YHGLR7_qEI3RrU_IeTtZI/s160/469745325_18435196186074678_944798517198893647_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyVvZ07qZ_iIsPbCxYDC-tlZRwD1usyQSnwWmzd-ioEDNJZB4E71yxRIXC1qdgN8zsYw2cTd8_csh0y8ZdSQZwH3OdAO-0sl-pSKfzrUgASRNaDmQY0ycmk0LoncfFiZehHhNHENsg8k2Izsb9HslZgVs1e_C3IW0VvvpaN4YHGLR7_qEI3RrU_IeTtZI/s320/469745325_18435196186074678_944798517198893647_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyVvZ07qZ_iIsPbCxYDC-tlZRwD1usyQSnwWmzd-ioEDNJZB4E71yxRIXC1qdgN8zsYw2cTd8_csh0y8ZdSQZwH3OdAO-0sl-pSKfzrUgASRNaDmQY0ycmk0LoncfFiZehHhNHENsg8k2Izsb9HslZgVs1e_C3IW0VvvpaN4YHGLR7_qEI3RrU_IeTtZI/s480/469745325_18435196186074678_944798517198893647_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyVvZ07qZ_iIsPbCxYDC-tlZRwD1usyQSnwWmzd-ioEDNJZB4E71yxRIXC1qdgN8zsYw2cTd8_csh0y8ZdSQZwH3OdAO-0sl-pSKfzrUgASRNaDmQY0ycmk0LoncfFiZehHhNHENsg8k2Izsb9HslZgVs1e_C3IW0VvvpaN4YHGLR7_qEI3RrU_IeTtZI/s160/469745325_18435196186074678_944798517198893647_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyVvZ07qZ_iIsPbCxYDC-tlZRwD1usyQSnwWmzd-ioEDNJZB4E71yxRIXC1qdgN8zsYw2cTd8_csh0y8ZdSQZwH3OdAO-0sl-pSKfzrUgASRNaDmQY0ycmk0LoncfFiZehHhNHENsg8k2Izsb9HslZgVs1e_C3IW0VvvpaN4YHGLR7_qEI3RrU_IeTtZI/s320/469745325_18435196186074678_944798517198893647_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyVvZ07qZ_iIsPbCxYDC-tlZRwD1usyQSnwWmzd-ioEDNJZB4E71yxRIXC1qdgN8zsYw2cTd8_csh0y8ZdSQZwH3OdAO-0sl-pSKfzrUgASRNaDmQY0ycmk0LoncfFiZehHhNHENsg8k2Izsb9HslZgVs1e_C3IW0VvvpaN4YHGLR7_qEI3RrU_IeTtZI/s480/469745325_18435196186074678_944798517198893647_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 71 - Paul McCartney Madrid 2024"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO8vlrtpopGkM4tA4JJRXiXUVcRZ_L-OKeb1EOj6zAxvPdMrMKVgQuh1ZJxVe0qOa1HKqz1_7leyVOe1BLfalUf2vlIlQIvcDWb-TG4TG9ta9OdaupzQogiI28odolUg6UmWGpnViOH5s/s320/91A6PWbddYL._SL1500_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO8vlrtpopGkM4tA4JJRXiXUVcRZ_L-OKeb1EOj6zAxvPdMrMKVgQuh1ZJxVe0qOa1HKqz1_7leyVOe1BLfalUf2vlIlQIvcDWb-TG4TG9ta9OdaupzQogiI28odolUg6UmWGpnViOH5s/s160/91A6PWbddYL._SL1500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO8vlrtpopGkM4tA4JJRXiXUVcRZ_L-OKeb1EOj6zAxvPdMrMKVgQuh1ZJxVe0qOa1HKqz1_7leyVOe1BLfalUf2vlIlQIvcDWb-TG4TG9ta9OdaupzQogiI28odolUg6UmWGpnViOH5s/s320/91A6PWbddYL._SL1500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO8vlrtpopGkM4tA4JJRXiXUVcRZ_L-OKeb1EOj6zAxvPdMrMKVgQuh1ZJxVe0qOa1HKqz1_7leyVOe1BLfalUf2vlIlQIvcDWb-TG4TG9ta9OdaupzQogiI28odolUg6UmWGpnViOH5s/s480/91A6PWbddYL._SL1500_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO8vlrtpopGkM4tA4JJRXiXUVcRZ_L-OKeb1EOj6zAxvPdMrMKVgQuh1ZJxVe0qOa1HKqz1_7leyVOe1BLfalUf2vlIlQIvcDWb-TG4TG9ta9OdaupzQogiI28odolUg6UmWGpnViOH5s/s160/91A6PWbddYL._SL1500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO8vlrtpopGkM4tA4JJRXiXUVcRZ_L-OKeb1EOj6zAxvPdMrMKVgQuh1ZJxVe0qOa1HKqz1_7leyVOe1BLfalUf2vlIlQIvcDWb-TG4TG9ta9OdaupzQogiI28odolUg6UmWGpnViOH5s/s320/91A6PWbddYL._SL1500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO8vlrtpopGkM4tA4JJRXiXUVcRZ_L-OKeb1EOj6zAxvPdMrMKVgQuh1ZJxVe0qOa1HKqz1_7leyVOe1BLfalUf2vlIlQIvcDWb-TG4TG9ta9OdaupzQogiI28odolUg6UmWGpnViOH5s/s480/91A6PWbddYL._SL1500_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 316 - Especial Magical Mystery Tour con Paco Pérez Bryan"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3l3S98OSW5P0Ze9vAf6YDGJpykRPo50Ak-t0Zxgc1je_3HKm8I6f4TiOweBY0GzW3SGDGcp4uRjOLaGac_xz6h5u0UukxqG4g5d4VnZ7d8MrZWqL9FJT7Id376b2NYB3lUQ36sMVL_uxt3h-caQYBYa1Ho9jGf5Ow_rsbvjLByliDViGQ_nJeDFoKuuI/s320/attachment-paul-cover.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3l3S98OSW5P0Ze9vAf6YDGJpykRPo50Ak-t0Zxgc1je_3HKm8I6f4TiOweBY0GzW3SGDGcp4uRjOLaGac_xz6h5u0UukxqG4g5d4VnZ7d8MrZWqL9FJT7Id376b2NYB3lUQ36sMVL_uxt3h-caQYBYa1Ho9jGf5Ow_rsbvjLByliDViGQ_nJeDFoKuuI/s160/attachment-paul-cover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3l3S98OSW5P0Ze9vAf6YDGJpykRPo50Ak-t0Zxgc1je_3HKm8I6f4TiOweBY0GzW3SGDGcp4uRjOLaGac_xz6h5u0UukxqG4g5d4VnZ7d8MrZWqL9FJT7Id376b2NYB3lUQ36sMVL_uxt3h-caQYBYa1Ho9jGf5Ow_rsbvjLByliDViGQ_nJeDFoKuuI/s320/attachment-paul-cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3l3S98OSW5P0Ze9vAf6YDGJpykRPo50Ak-t0Zxgc1je_3HKm8I6f4TiOweBY0GzW3SGDGcp4uRjOLaGac_xz6h5u0UukxqG4g5d4VnZ7d8MrZWqL9FJT7Id376b2NYB3lUQ36sMVL_uxt3h-caQYBYa1Ho9jGf5Ow_rsbvjLByliDViGQ_nJeDFoKuuI/s480/attachment-paul-cover.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3l3S98OSW5P0Ze9vAf6YDGJpykRPo50Ak-t0Zxgc1je_3HKm8I6f4TiOweBY0GzW3SGDGcp4uRjOLaGac_xz6h5u0UukxqG4g5d4VnZ7d8MrZWqL9FJT7Id376b2NYB3lUQ36sMVL_uxt3h-caQYBYa1Ho9jGf5Ow_rsbvjLByliDViGQ_nJeDFoKuuI/s160/attachment-paul-cover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3l3S98OSW5P0Ze9vAf6YDGJpykRPo50Ak-t0Zxgc1je_3HKm8I6f4TiOweBY0GzW3SGDGcp4uRjOLaGac_xz6h5u0UukxqG4g5d4VnZ7d8MrZWqL9FJT7Id376b2NYB3lUQ36sMVL_uxt3h-caQYBYa1Ho9jGf5Ow_rsbvjLByliDViGQ_nJeDFoKuuI/s320/attachment-paul-cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3l3S98OSW5P0Ze9vAf6YDGJpykRPo50Ak-t0Zxgc1je_3HKm8I6f4TiOweBY0GzW3SGDGcp4uRjOLaGac_xz6h5u0UukxqG4g5d4VnZ7d8MrZWqL9FJT7Id376b2NYB3lUQ36sMVL_uxt3h-caQYBYa1Ho9jGf5Ow_rsbvjLByliDViGQ_nJeDFoKuuI/s480/attachment-paul-cover.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.914 - Paul McCartney: Eyes of the Storm (1964)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="p-812-los-recuerdos-de-paul-mccartney-en-the-lyrics-parte-1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEh89Tj85J6Bu6EDGzQeVFkPHnfXj4s2sels5ti_mb0LapOjRFAKDa-M9d-zUz6fU1uu29OqwwrHhGcW1aiTQv8KtYoxV60gqHBE3FhBCX32I-BXJPYZsjlL72kcJQMBcvYEsraSRSYY4_dEVGJHwC9cn_JEhNs5BGbgLP1yj9rJul7dUVfhXLAgRU_U=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEh89Tj85J6Bu6EDGzQeVFkPHnfXj4s2sels5ti_mb0LapOjRFAKDa-M9d-zUz6fU1uu29OqwwrHhGcW1aiTQv8KtYoxV60gqHBE3FhBCX32I-BXJPYZsjlL72kcJQMBcvYEsraSRSYY4_dEVGJHwC9cn_JEhNs5BGbgLP1yj9rJul7dUVfhXLAgRU_U=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEh89Tj85J6Bu6EDGzQeVFkPHnfXj4s2sels5ti_mb0LapOjRFAKDa-M9d-zUz6fU1uu29OqwwrHhGcW1aiTQv8KtYoxV60gqHBE3FhBCX32I-BXJPYZsjlL72kcJQMBcvYEsraSRSYY4_dEVGJHwC9cn_JEhNs5BGbgLP1yj9rJul7dUVfhXLAgRU_U=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEh89Tj85J6Bu6EDGzQeVFkPHnfXj4s2sels5ti_mb0LapOjRFAKDa-M9d-zUz6fU1uu29OqwwrHhGcW1aiTQv8KtYoxV60gqHBE3FhBCX32I-BXJPYZsjlL72kcJQMBcvYEsraSRSYY4_dEVGJHwC9cn_JEhNs5BGbgLP1yj9rJul7dUVfhXLAgRU_U=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="P.812 - Los recuerdos de Paul McCartney en The Lyrics (Parte 1)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="programa-477-fin-de-ano-con-paco-perez-bryan-y-los-beatles.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9E7VqlBusfQftFLpf5QzE2b8h54n_YJrj6xbsfdMwJf3GcM1L1pvEjTygD53p3rDdTCJHkWr53snCG6wqD2BMLTlXEpLmmkmdyNIjK4JzOUEPFCIcifCbRXOPaRFWyuiSKGVVrfnF9rs/s320/b90_477.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9E7VqlBusfQftFLpf5QzE2b8h54n_YJrj6xbsfdMwJf3GcM1L1pvEjTygD53p3rDdTCJHkWr53snCG6wqD2BMLTlXEpLmmkmdyNIjK4JzOUEPFCIcifCbRXOPaRFWyuiSKGVVrfnF9rs/s320/b90_477.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9E7VqlBusfQftFLpf5QzE2b8h54n_YJrj6xbsfdMwJf3GcM1L1pvEjTygD53p3rDdTCJHkWr53snCG6wqD2BMLTlXEpLmmkmdyNIjK4JzOUEPFCIcifCbRXOPaRFWyuiSKGVVrfnF9rs/s480/b90_477.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9E7VqlBusfQftFLpf5QzE2b8h54n_YJrj6xbsfdMwJf3GcM1L1pvEjTygD53p3rDdTCJHkWr53snCG6wqD2BMLTlXEpLmmkmdyNIjK4JzOUEPFCIcifCbRXOPaRFWyuiSKGVVrfnF9rs/s640/b90_477.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9E7VqlBusfQftFLpf5QzE2b8h54n_YJrj6xbsfdMwJf3GcM1L1pvEjTygD53p3rDdTCJHkWr53snCG6wqD2BMLTlXEpLmmkmdyNIjK4JzOUEPFCIcifCbRXOPaRFWyuiSKGVVrfnF9rs/s320/b90_477.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9E7VqlBusfQftFLpf5QzE2b8h54n_YJrj6xbsfdMwJf3GcM1L1pvEjTygD53p3rDdTCJHkWr53snCG6wqD2BMLTlXEpLmmkmdyNIjK4JzOUEPFCIcifCbRXOPaRFWyuiSKGVVrfnF9rs/s480/b90_477.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9E7VqlBusfQftFLpf5QzE2b8h54n_YJrj6xbsfdMwJf3GcM1L1pvEjTygD53p3rDdTCJHkWr53snCG6wqD2BMLTlXEpLmmkmdyNIjK4JzOUEPFCIcifCbRXOPaRFWyuiSKGVVrfnF9rs/s640/b90_477.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 477 - Fin de año con Paco Pérez Bryan y los Beatles"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="programa-452-paul-mccartney-austin-city-limits-music-festival-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s320/b90452.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s320/b90452.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s480/b90452.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s640/b90452.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s320/b90452.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s480/b90452.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s640/b90452.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 452 - Paul McCartney - Austin City Limits Music Festival 2018"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

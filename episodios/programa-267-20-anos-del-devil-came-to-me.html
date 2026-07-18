@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 267 - 20 años del Devil Came To Me  — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -131,8 +131,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge1YBvmE0WxRuIS7OyOz8sdmysF-9b7o5iLjVP-GW2X-KX4ZGmxS59Awbgxi7bMSgvcfSK8Q7xnE_Hiz1HZbTGcEl8Z41ppdRODmWIYRMzyc015FkHVqhlY9uO05djJjs_P7_b1ytltSI/s320/1997_Logo.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge1YBvmE0WxRuIS7OyOz8sdmysF-9b7o5iLjVP-GW2X-KX4ZGmxS59Awbgxi7bMSgvcfSK8Q7xnE_Hiz1HZbTGcEl8Z41ppdRODmWIYRMzyc015FkHVqhlY9uO05djJjs_P7_b1ytltSI/s160/1997_Logo.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge1YBvmE0WxRuIS7OyOz8sdmysF-9b7o5iLjVP-GW2X-KX4ZGmxS59Awbgxi7bMSgvcfSK8Q7xnE_Hiz1HZbTGcEl8Z41ppdRODmWIYRMzyc015FkHVqhlY9uO05djJjs_P7_b1ytltSI/s320/1997_Logo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge1YBvmE0WxRuIS7OyOz8sdmysF-9b7o5iLjVP-GW2X-KX4ZGmxS59Awbgxi7bMSgvcfSK8Q7xnE_Hiz1HZbTGcEl8Z41ppdRODmWIYRMzyc015FkHVqhlY9uO05djJjs_P7_b1ytltSI/s480/1997_Logo.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge1YBvmE0WxRuIS7OyOz8sdmysF-9b7o5iLjVP-GW2X-KX4ZGmxS59Awbgxi7bMSgvcfSK8Q7xnE_Hiz1HZbTGcEl8Z41ppdRODmWIYRMzyc015FkHVqhlY9uO05djJjs_P7_b1ytltSI/s160/1997_Logo.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge1YBvmE0WxRuIS7OyOz8sdmysF-9b7o5iLjVP-GW2X-KX4ZGmxS59Awbgxi7bMSgvcfSK8Q7xnE_Hiz1HZbTGcEl8Z41ppdRODmWIYRMzyc015FkHVqhlY9uO05djJjs_P7_b1ytltSI/s320/1997_Logo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge1YBvmE0WxRuIS7OyOz8sdmysF-9b7o5iLjVP-GW2X-KX4ZGmxS59Awbgxi7bMSgvcfSK8Q7xnE_Hiz1HZbTGcEl8Z41ppdRODmWIYRMzyc015FkHVqhlY9uO05djJjs_P7_b1ytltSI/s480/1997_Logo.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 258 - Discos que en 2017 cumplirán 20 años"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -142,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi10qniRgse4qHU6Z0IcYbMUQ5RldKKyRIY3aibS6mPRmoEWlLsdJzCtoklqoiEB53mwOoPrB9mo83MVeeexXUgkWyCpRYZEcmGD85FMC5RNQBLI5up8FtxDTQgDx6AkTFKsG0EJbBQc1g/s320/IMG_20171117_152005.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi10qniRgse4qHU6Z0IcYbMUQ5RldKKyRIY3aibS6mPRmoEWlLsdJzCtoklqoiEB53mwOoPrB9mo83MVeeexXUgkWyCpRYZEcmGD85FMC5RNQBLI5up8FtxDTQgDx6AkTFKsG0EJbBQc1g/s160/IMG_20171117_152005.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi10qniRgse4qHU6Z0IcYbMUQ5RldKKyRIY3aibS6mPRmoEWlLsdJzCtoklqoiEB53mwOoPrB9mo83MVeeexXUgkWyCpRYZEcmGD85FMC5RNQBLI5up8FtxDTQgDx6AkTFKsG0EJbBQc1g/s320/IMG_20171117_152005.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi10qniRgse4qHU6Z0IcYbMUQ5RldKKyRIY3aibS6mPRmoEWlLsdJzCtoklqoiEB53mwOoPrB9mo83MVeeexXUgkWyCpRYZEcmGD85FMC5RNQBLI5up8FtxDTQgDx6AkTFKsG0EJbBQc1g/s480/IMG_20171117_152005.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi10qniRgse4qHU6Z0IcYbMUQ5RldKKyRIY3aibS6mPRmoEWlLsdJzCtoklqoiEB53mwOoPrB9mo83MVeeexXUgkWyCpRYZEcmGD85FMC5RNQBLI5up8FtxDTQgDx6AkTFKsG0EJbBQc1g/s160/IMG_20171117_152005.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi10qniRgse4qHU6Z0IcYbMUQ5RldKKyRIY3aibS6mPRmoEWlLsdJzCtoklqoiEB53mwOoPrB9mo83MVeeexXUgkWyCpRYZEcmGD85FMC5RNQBLI5up8FtxDTQgDx6AkTFKsG0EJbBQc1g/s320/IMG_20171117_152005.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi10qniRgse4qHU6Z0IcYbMUQ5RldKKyRIY3aibS6mPRmoEWlLsdJzCtoklqoiEB53mwOoPrB9mo83MVeeexXUgkWyCpRYZEcmGD85FMC5RNQBLI5up8FtxDTQgDx6AkTFKsG0EJbBQc1g/s480/IMG_20171117_152005.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 308 – 25 años de Automatic for the People (R.E.M.)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -153,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjh1Pr7NDBMTAJc4sqcQhoF7fyuDeXtMeC_9Oe8BYYWCI2MaUUeWJHQNZf8NGuwKekNS1o2W9MsmLJOa4bYP4MgM768cEF0YE5CRURJUGp8jWWoqF2ZUilMQqlBiuod_uAQ4aRw1jLBzNw/s320/IMG_20180410_173323.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjh1Pr7NDBMTAJc4sqcQhoF7fyuDeXtMeC_9Oe8BYYWCI2MaUUeWJHQNZf8NGuwKekNS1o2W9MsmLJOa4bYP4MgM768cEF0YE5CRURJUGp8jWWoqF2ZUilMQqlBiuod_uAQ4aRw1jLBzNw/s160/IMG_20180410_173323.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjh1Pr7NDBMTAJc4sqcQhoF7fyuDeXtMeC_9Oe8BYYWCI2MaUUeWJHQNZf8NGuwKekNS1o2W9MsmLJOa4bYP4MgM768cEF0YE5CRURJUGp8jWWoqF2ZUilMQqlBiuod_uAQ4aRw1jLBzNw/s320/IMG_20180410_173323.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjh1Pr7NDBMTAJc4sqcQhoF7fyuDeXtMeC_9Oe8BYYWCI2MaUUeWJHQNZf8NGuwKekNS1o2W9MsmLJOa4bYP4MgM768cEF0YE5CRURJUGp8jWWoqF2ZUilMQqlBiuod_uAQ4aRw1jLBzNw/s480/IMG_20180410_173323.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjh1Pr7NDBMTAJc4sqcQhoF7fyuDeXtMeC_9Oe8BYYWCI2MaUUeWJHQNZf8NGuwKekNS1o2W9MsmLJOa4bYP4MgM768cEF0YE5CRURJUGp8jWWoqF2ZUilMQqlBiuod_uAQ4aRw1jLBzNw/s160/IMG_20180410_173323.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjh1Pr7NDBMTAJc4sqcQhoF7fyuDeXtMeC_9Oe8BYYWCI2MaUUeWJHQNZf8NGuwKekNS1o2W9MsmLJOa4bYP4MgM768cEF0YE5CRURJUGp8jWWoqF2ZUilMQqlBiuod_uAQ4aRw1jLBzNw/s320/IMG_20180410_173323.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjh1Pr7NDBMTAJc4sqcQhoF7fyuDeXtMeC_9Oe8BYYWCI2MaUUeWJHQNZf8NGuwKekNS1o2W9MsmLJOa4bYP4MgM768cEF0YE5CRURJUGp8jWWoqF2ZUilMQqlBiuod_uAQ4aRw1jLBzNw/s480/IMG_20180410_173323.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 370 - Entrevista Carlos Galán (Subterfuge Records)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -170,8 +167,7 @@
         <a class="related-bottom-card" href="programa-491-diavlo-presentan-diferente.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgH-oPgpj9lVoWgp5RBKvYCo_Rsd9xIPhM_beHnGksRMwDhy3Wny8Ckn_vI8mbyhqRP7I5heZZYg1r0sDiIit-OSTXXKE4Z8lRiBaFK_9O4vD1v8vz2yDOrbu9ItaHK4k7XkVxC4bT2sHs/s320/b90_491+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgH-oPgpj9lVoWgp5RBKvYCo_Rsd9xIPhM_beHnGksRMwDhy3Wny8Ckn_vI8mbyhqRP7I5heZZYg1r0sDiIit-OSTXXKE4Z8lRiBaFK_9O4vD1v8vz2yDOrbu9ItaHK4k7XkVxC4bT2sHs/s320/b90_491+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgH-oPgpj9lVoWgp5RBKvYCo_Rsd9xIPhM_beHnGksRMwDhy3Wny8Ckn_vI8mbyhqRP7I5heZZYg1r0sDiIit-OSTXXKE4Z8lRiBaFK_9O4vD1v8vz2yDOrbu9ItaHK4k7XkVxC4bT2sHs/s480/b90_491+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgH-oPgpj9lVoWgp5RBKvYCo_Rsd9xIPhM_beHnGksRMwDhy3Wny8Ckn_vI8mbyhqRP7I5heZZYg1r0sDiIit-OSTXXKE4Z8lRiBaFK_9O4vD1v8vz2yDOrbu9ItaHK4k7XkVxC4bT2sHs/s640/b90_491+%25281%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgH-oPgpj9lVoWgp5RBKvYCo_Rsd9xIPhM_beHnGksRMwDhy3Wny8Ckn_vI8mbyhqRP7I5heZZYg1r0sDiIit-OSTXXKE4Z8lRiBaFK_9O4vD1v8vz2yDOrbu9ItaHK4k7XkVxC4bT2sHs/s320/b90_491+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgH-oPgpj9lVoWgp5RBKvYCo_Rsd9xIPhM_beHnGksRMwDhy3Wny8Ckn_vI8mbyhqRP7I5heZZYg1r0sDiIit-OSTXXKE4Z8lRiBaFK_9O4vD1v8vz2yDOrbu9ItaHK4k7XkVxC4bT2sHs/s480/b90_491+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgH-oPgpj9lVoWgp5RBKvYCo_Rsd9xIPhM_beHnGksRMwDhy3Wny8Ckn_vI8mbyhqRP7I5heZZYg1r0sDiIit-OSTXXKE4Z8lRiBaFK_9O4vD1v8vz2yDOrbu9ItaHK4k7XkVxC4bT2sHs/s640/b90_491+%25281%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 491 - DIAVLO presentan &#39;Diferente&#39;"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -182,8 +178,7 @@
           </a><a class="related-bottom-card" href="p-582-mis-11-discos-favoritos-de-subterfuge-en-los-90.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDX98dFgXoJ6kD-yd3htQspuwzuqpMeGy_mcwYK5FSqjHQtr_VWSbocdlfMSYDkd31MKAbdf7OX1-DoX1-5dp3RBrODgS3oGy_Ig-w9IswTpRtLdEhfa_5Yi0i8zKvmc3QJ7na5KF4U_I/s320/b90_582.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDX98dFgXoJ6kD-yd3htQspuwzuqpMeGy_mcwYK5FSqjHQtr_VWSbocdlfMSYDkd31MKAbdf7OX1-DoX1-5dp3RBrODgS3oGy_Ig-w9IswTpRtLdEhfa_5Yi0i8zKvmc3QJ7na5KF4U_I/s320/b90_582.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDX98dFgXoJ6kD-yd3htQspuwzuqpMeGy_mcwYK5FSqjHQtr_VWSbocdlfMSYDkd31MKAbdf7OX1-DoX1-5dp3RBrODgS3oGy_Ig-w9IswTpRtLdEhfa_5Yi0i8zKvmc3QJ7na5KF4U_I/s480/b90_582.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDX98dFgXoJ6kD-yd3htQspuwzuqpMeGy_mcwYK5FSqjHQtr_VWSbocdlfMSYDkd31MKAbdf7OX1-DoX1-5dp3RBrODgS3oGy_Ig-w9IswTpRtLdEhfa_5Yi0i8zKvmc3QJ7na5KF4U_I/s640/b90_582.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDX98dFgXoJ6kD-yd3htQspuwzuqpMeGy_mcwYK5FSqjHQtr_VWSbocdlfMSYDkd31MKAbdf7OX1-DoX1-5dp3RBrODgS3oGy_Ig-w9IswTpRtLdEhfa_5Yi0i8zKvmc3QJ7na5KF4U_I/s320/b90_582.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDX98dFgXoJ6kD-yd3htQspuwzuqpMeGy_mcwYK5FSqjHQtr_VWSbocdlfMSYDkd31MKAbdf7OX1-DoX1-5dp3RBrODgS3oGy_Ig-w9IswTpRtLdEhfa_5Yi0i8zKvmc3QJ7na5KF4U_I/s480/b90_582.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDX98dFgXoJ6kD-yd3htQspuwzuqpMeGy_mcwYK5FSqjHQtr_VWSbocdlfMSYDkd31MKAbdf7OX1-DoX1-5dp3RBrODgS3oGy_Ig-w9IswTpRtLdEhfa_5Yi0i8zKvmc3QJ7na5KF4U_I/s640/b90_582.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.582 - Mis 11 discos favoritos de Subterfuge en los 90"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -194,8 +189,7 @@
           </a><a class="related-bottom-card" href="p-593-the-power-of-dolores-cumple-20-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s320/b90_593.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s320/b90_593.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s480/b90_593.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s640/b90_593.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s320/b90_593.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s480/b90_593.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s640/b90_593.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.593 - The Power of Dolores cumple 20 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

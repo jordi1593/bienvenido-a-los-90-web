@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 291 - Nirvana visita España 1992 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s320/IMG-20220716-WA0011.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s160/IMG-20220716-WA0011.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s320/IMG-20220716-WA0011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s480/IMG-20220716-WA0011.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s160/IMG-20220716-WA0011.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s320/IMG-20220716-WA0011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s480/IMG-20220716-WA0011.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.852 - 30 años después del primer concierto de Nirvana en España"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s160/nirvanaIV.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s480/nirvanaIV.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s160/nirvanaIV.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s480/nirvanaIV.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 319 – Nirvana IV"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s320/kurtaxl_a_l.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s160/kurtaxl_a_l.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s320/kurtaxl_a_l.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s480/kurtaxl_a_l.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s160/kurtaxl_a_l.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s320/kurtaxl_a_l.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s480/kurtaxl_a_l.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 216 - Nirvana vs Guns N&#39; Roses"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="p-641-post-malone-y-travis-barker-recuerdan-a-nirvana.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s320/Postie-and-Travis-Barker-768x412.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s320/Postie-and-Travis-Barker-768x412.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s480/Postie-and-Travis-Barker-768x412.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s640/Postie-and-Travis-Barker-768x412.jpeg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s320/Postie-and-Travis-Barker-768x412.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s480/Postie-and-Travis-Barker-768x412.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s640/Postie-and-Travis-Barker-768x412.jpeg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.641 Post Malone y Travis Barker recuerdan a Nirvana"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="b90-programa-76-nirvana-in-utero-20th-anniversary.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 - Programa 76 - Nirvana - In Utero 20th Anniversary "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="nirvana-palacio-de-los-deportes-de-la-comunidad-de-madrid-03-07-1992.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s320/1550662537_945128_1550663698_rrss_normal.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s320/1550662537_945128_1550663698_rrss_normal.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s480/1550662537_945128_1550663698_rrss_normal.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s640/1550662537_945128_1550663698_rrss_normal.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s320/1550662537_945128_1550663698_rrss_normal.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s480/1550662537_945128_1550663698_rrss_normal.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s640/1550662537_945128_1550663698_rrss_normal.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Nirvana - Palacio de los Deportes de la Comunidad de Madrid (03/07/1992)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

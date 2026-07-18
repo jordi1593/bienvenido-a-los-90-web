@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 515 - Hole - Live Through This (1994) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -142,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8BQzn4B7jMXklCEiUNyD7HKa6Bp6HeGs6CTzfji56oYThT2WLtQswuyKQPup5NIc5460v9njN8J3PeLZGde6QxfO3L8Y_Iwsuy5yP7VH-Tzj97BoLZUM-wy6b3506EDOQquLtJFYcdXg/s320/518e714cebe04d4c86f929a1b3c225ac.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8BQzn4B7jMXklCEiUNyD7HKa6Bp6HeGs6CTzfji56oYThT2WLtQswuyKQPup5NIc5460v9njN8J3PeLZGde6QxfO3L8Y_Iwsuy5yP7VH-Tzj97BoLZUM-wy6b3506EDOQquLtJFYcdXg/s160/518e714cebe04d4c86f929a1b3c225ac.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8BQzn4B7jMXklCEiUNyD7HKa6Bp6HeGs6CTzfji56oYThT2WLtQswuyKQPup5NIc5460v9njN8J3PeLZGde6QxfO3L8Y_Iwsuy5yP7VH-Tzj97BoLZUM-wy6b3506EDOQquLtJFYcdXg/s320/518e714cebe04d4c86f929a1b3c225ac.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8BQzn4B7jMXklCEiUNyD7HKa6Bp6HeGs6CTzfji56oYThT2WLtQswuyKQPup5NIc5460v9njN8J3PeLZGde6QxfO3L8Y_Iwsuy5yP7VH-Tzj97BoLZUM-wy6b3506EDOQquLtJFYcdXg/s480/518e714cebe04d4c86f929a1b3c225ac.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8BQzn4B7jMXklCEiUNyD7HKa6Bp6HeGs6CTzfji56oYThT2WLtQswuyKQPup5NIc5460v9njN8J3PeLZGde6QxfO3L8Y_Iwsuy5yP7VH-Tzj97BoLZUM-wy6b3506EDOQquLtJFYcdXg/s160/518e714cebe04d4c86f929a1b3c225ac.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8BQzn4B7jMXklCEiUNyD7HKa6Bp6HeGs6CTzfji56oYThT2WLtQswuyKQPup5NIc5460v9njN8J3PeLZGde6QxfO3L8Y_Iwsuy5yP7VH-Tzj97BoLZUM-wy6b3506EDOQquLtJFYcdXg/s320/518e714cebe04d4c86f929a1b3c225ac.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8BQzn4B7jMXklCEiUNyD7HKa6Bp6HeGs6CTzfji56oYThT2WLtQswuyKQPup5NIc5460v9njN8J3PeLZGde6QxfO3L8Y_Iwsuy5yP7VH-Tzj97BoLZUM-wy6b3506EDOQquLtJFYcdXg/s480/518e714cebe04d4c86f929a1b3c225ac.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 430 - Kristen Pfaff "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -153,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s160/TheRocket_May1988.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s480/TheRocket_May1988.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s160/TheRocket_May1988.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s480/TheRocket_May1988.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.644 - The Rocket , la revista local de Seattle"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -164,8 +162,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s160/nirvanaIV.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s480/nirvanaIV.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s160/nirvanaIV.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s480/nirvanaIV.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 319 – Nirvana IV"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -181,8 +178,7 @@
         <a class="related-bottom-card" href="p-741-courtney-love-renaciendo-de-las-cenizas.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWOBJZJRSSvXr6sgSag45HOZZSnRuCZlmQNm-htZuRf86HXNBG7YfKl14JlmAE2eGQU5Dpo4h04i4Jo3q-yqTYD1mm_HNP5xU6IW0GYRC7VMFJNnwllOEHcDUBV8plh35ADOVyMb6Ocxc/s320/unnamed+%25289%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWOBJZJRSSvXr6sgSag45HOZZSnRuCZlmQNm-htZuRf86HXNBG7YfKl14JlmAE2eGQU5Dpo4h04i4Jo3q-yqTYD1mm_HNP5xU6IW0GYRC7VMFJNnwllOEHcDUBV8plh35ADOVyMb6Ocxc/s320/unnamed+%25289%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWOBJZJRSSvXr6sgSag45HOZZSnRuCZlmQNm-htZuRf86HXNBG7YfKl14JlmAE2eGQU5Dpo4h04i4Jo3q-yqTYD1mm_HNP5xU6IW0GYRC7VMFJNnwllOEHcDUBV8plh35ADOVyMb6Ocxc/s480/unnamed+%25289%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWOBJZJRSSvXr6sgSag45HOZZSnRuCZlmQNm-htZuRf86HXNBG7YfKl14JlmAE2eGQU5Dpo4h04i4Jo3q-yqTYD1mm_HNP5xU6IW0GYRC7VMFJNnwllOEHcDUBV8plh35ADOVyMb6Ocxc/s640/unnamed+%25289%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWOBJZJRSSvXr6sgSag45HOZZSnRuCZlmQNm-htZuRf86HXNBG7YfKl14JlmAE2eGQU5Dpo4h04i4Jo3q-yqTYD1mm_HNP5xU6IW0GYRC7VMFJNnwllOEHcDUBV8plh35ADOVyMb6Ocxc/s320/unnamed+%25289%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWOBJZJRSSvXr6sgSag45HOZZSnRuCZlmQNm-htZuRf86HXNBG7YfKl14JlmAE2eGQU5Dpo4h04i4Jo3q-yqTYD1mm_HNP5xU6IW0GYRC7VMFJNnwllOEHcDUBV8plh35ADOVyMb6Ocxc/s480/unnamed+%25289%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWOBJZJRSSvXr6sgSag45HOZZSnRuCZlmQNm-htZuRf86HXNBG7YfKl14JlmAE2eGQU5Dpo4h04i4Jo3q-yqTYD1mm_HNP5xU6IW0GYRC7VMFJNnwllOEHcDUBV8plh35ADOVyMb6Ocxc/s640/unnamed+%25289%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.741 - Courtney Love, renaciendo de las cenizas"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -193,8 +189,7 @@
           </a><a class="related-bottom-card" href="bienvenido-a-los-90-programa-13-especial-nirvana.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Bienvenido a los 90 - Programa #13 - Especial Nirvana"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -205,8 +200,7 @@
           </a><a class="related-bottom-card" href="programa-518-sugar-baby-dolls-hole-babes-in-toyland-l7.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk7J0DRxU_rtQOQzm_idH3YYbQJo17z_Y5tDvg12kRVK-fzPtUUj0DQbZvjMtGZRiBEeMbG2O-wX9J51tl2LxIB09p2B3YwXex5dwDkn3TXcKUtxF-5RhOvPZeS5DGp5wtihBb7u8vRhQ/s320/b90_518.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk7J0DRxU_rtQOQzm_idH3YYbQJo17z_Y5tDvg12kRVK-fzPtUUj0DQbZvjMtGZRiBEeMbG2O-wX9J51tl2LxIB09p2B3YwXex5dwDkn3TXcKUtxF-5RhOvPZeS5DGp5wtihBb7u8vRhQ/s320/b90_518.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk7J0DRxU_rtQOQzm_idH3YYbQJo17z_Y5tDvg12kRVK-fzPtUUj0DQbZvjMtGZRiBEeMbG2O-wX9J51tl2LxIB09p2B3YwXex5dwDkn3TXcKUtxF-5RhOvPZeS5DGp5wtihBb7u8vRhQ/s480/b90_518.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk7J0DRxU_rtQOQzm_idH3YYbQJo17z_Y5tDvg12kRVK-fzPtUUj0DQbZvjMtGZRiBEeMbG2O-wX9J51tl2LxIB09p2B3YwXex5dwDkn3TXcKUtxF-5RhOvPZeS5DGp5wtihBb7u8vRhQ/s640/b90_518.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk7J0DRxU_rtQOQzm_idH3YYbQJo17z_Y5tDvg12kRVK-fzPtUUj0DQbZvjMtGZRiBEeMbG2O-wX9J51tl2LxIB09p2B3YwXex5dwDkn3TXcKUtxF-5RhOvPZeS5DGp5wtihBb7u8vRhQ/s320/b90_518.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk7J0DRxU_rtQOQzm_idH3YYbQJo17z_Y5tDvg12kRVK-fzPtUUj0DQbZvjMtGZRiBEeMbG2O-wX9J51tl2LxIB09p2B3YwXex5dwDkn3TXcKUtxF-5RhOvPZeS5DGp5wtihBb7u8vRhQ/s480/b90_518.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk7J0DRxU_rtQOQzm_idH3YYbQJo17z_Y5tDvg12kRVK-fzPtUUj0DQbZvjMtGZRiBEeMbG2O-wX9J51tl2LxIB09p2B3YwXex5dwDkn3TXcKUtxF-5RhOvPZeS5DGp5wtihBb7u8vRhQ/s640/b90_518.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 518 - Sugar Baby Dolls (Hole + Babes in Toyland + L7)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

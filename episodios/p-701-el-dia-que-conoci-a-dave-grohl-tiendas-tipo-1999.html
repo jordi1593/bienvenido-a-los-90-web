@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.701 - El día que conocí a Dave Grohl (Tiendas Tipo, 1999) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijhp2R0256R2c1Sials8LxRZfYBp2j47u4EOEUsd4w6r1CmW8NoAJTMiEPwyCatNN3hwqlB4ed_cI6Bl-PebLZS3joCPc_SO8Z-0HfgZ_iMHuDbZFRlVYhPgSasZtfgk5KvcxZuXtImSk/s320/169856087_287447509412094_8533684157139085049_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijhp2R0256R2c1Sials8LxRZfYBp2j47u4EOEUsd4w6r1CmW8NoAJTMiEPwyCatNN3hwqlB4ed_cI6Bl-PebLZS3joCPc_SO8Z-0HfgZ_iMHuDbZFRlVYhPgSasZtfgk5KvcxZuXtImSk/s160/169856087_287447509412094_8533684157139085049_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijhp2R0256R2c1Sials8LxRZfYBp2j47u4EOEUsd4w6r1CmW8NoAJTMiEPwyCatNN3hwqlB4ed_cI6Bl-PebLZS3joCPc_SO8Z-0HfgZ_iMHuDbZFRlVYhPgSasZtfgk5KvcxZuXtImSk/s320/169856087_287447509412094_8533684157139085049_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijhp2R0256R2c1Sials8LxRZfYBp2j47u4EOEUsd4w6r1CmW8NoAJTMiEPwyCatNN3hwqlB4ed_cI6Bl-PebLZS3joCPc_SO8Z-0HfgZ_iMHuDbZFRlVYhPgSasZtfgk5KvcxZuXtImSk/s480/169856087_287447509412094_8533684157139085049_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijhp2R0256R2c1Sials8LxRZfYBp2j47u4EOEUsd4w6r1CmW8NoAJTMiEPwyCatNN3hwqlB4ed_cI6Bl-PebLZS3joCPc_SO8Z-0HfgZ_iMHuDbZFRlVYhPgSasZtfgk5KvcxZuXtImSk/s160/169856087_287447509412094_8533684157139085049_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijhp2R0256R2c1Sials8LxRZfYBp2j47u4EOEUsd4w6r1CmW8NoAJTMiEPwyCatNN3hwqlB4ed_cI6Bl-PebLZS3joCPc_SO8Z-0HfgZ_iMHuDbZFRlVYhPgSasZtfgk5KvcxZuXtImSk/s320/169856087_287447509412094_8533684157139085049_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijhp2R0256R2c1Sials8LxRZfYBp2j47u4EOEUsd4w6r1CmW8NoAJTMiEPwyCatNN3hwqlB4ed_cI6Bl-PebLZS3joCPc_SO8Z-0HfgZ_iMHuDbZFRlVYhPgSasZtfgk5KvcxZuXtImSk/s480/169856087_287447509412094_8533684157139085049_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.760 - Hablamos del nuevo libro de Dave Grohl"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcXNyMUAslg3GKVoh5D2fYoMlB9VET9s3vJ6vQbigi7mWWnQBzJB_s28uA84UnIbfDSzuB0iG3Ttaz5mg7YNdVt-QfyxEUG5Asej8hGmduv9FdhMqZk_Aym65jxU5o_CzG9RFdcD7OqaY/s320/mq030g1p5eiut6h6n1rcj4b7ok._SY600_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcXNyMUAslg3GKVoh5D2fYoMlB9VET9s3vJ6vQbigi7mWWnQBzJB_s28uA84UnIbfDSzuB0iG3Ttaz5mg7YNdVt-QfyxEUG5Asej8hGmduv9FdhMqZk_Aym65jxU5o_CzG9RFdcD7OqaY/s160/mq030g1p5eiut6h6n1rcj4b7ok._SY600_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcXNyMUAslg3GKVoh5D2fYoMlB9VET9s3vJ6vQbigi7mWWnQBzJB_s28uA84UnIbfDSzuB0iG3Ttaz5mg7YNdVt-QfyxEUG5Asej8hGmduv9FdhMqZk_Aym65jxU5o_CzG9RFdcD7OqaY/s320/mq030g1p5eiut6h6n1rcj4b7ok._SY600_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcXNyMUAslg3GKVoh5D2fYoMlB9VET9s3vJ6vQbigi7mWWnQBzJB_s28uA84UnIbfDSzuB0iG3Ttaz5mg7YNdVt-QfyxEUG5Asej8hGmduv9FdhMqZk_Aym65jxU5o_CzG9RFdcD7OqaY/s480/mq030g1p5eiut6h6n1rcj4b7ok._SY600_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcXNyMUAslg3GKVoh5D2fYoMlB9VET9s3vJ6vQbigi7mWWnQBzJB_s28uA84UnIbfDSzuB0iG3Ttaz5mg7YNdVt-QfyxEUG5Asej8hGmduv9FdhMqZk_Aym65jxU5o_CzG9RFdcD7OqaY/s160/mq030g1p5eiut6h6n1rcj4b7ok._SY600_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcXNyMUAslg3GKVoh5D2fYoMlB9VET9s3vJ6vQbigi7mWWnQBzJB_s28uA84UnIbfDSzuB0iG3Ttaz5mg7YNdVt-QfyxEUG5Asej8hGmduv9FdhMqZk_Aym65jxU5o_CzG9RFdcD7OqaY/s320/mq030g1p5eiut6h6n1rcj4b7ok._SY600_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcXNyMUAslg3GKVoh5D2fYoMlB9VET9s3vJ6vQbigi7mWWnQBzJB_s28uA84UnIbfDSzuB0iG3Ttaz5mg7YNdVt-QfyxEUG5Asej8hGmduv9FdhMqZk_Aym65jxU5o_CzG9RFdcD7OqaY/s480/mq030g1p5eiut6h6n1rcj4b7ok._SY600_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.801 - Un repaso al libro de Dave Grohl &#39;The Storyteller Tales of Life and Music&#39;"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8i3ov-FFxneV0hJq1dqTGEDyAA6VDTwadC91f7eWoWN7IhIY_IZ6y1zOtdLbObTCpHiJ7b5wOqOgDdRtENpFSBfpRL34HvPeMUVFAH3PdSaSjASBy_qgnERo811z6fge2f49SeJcTclCLaLmjL6mGozBPhq4G1T99LxAuu1AeYHejyqQSssvEebQO/s320/82519368888823.5b6c9e8a73b25.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8i3ov-FFxneV0hJq1dqTGEDyAA6VDTwadC91f7eWoWN7IhIY_IZ6y1zOtdLbObTCpHiJ7b5wOqOgDdRtENpFSBfpRL34HvPeMUVFAH3PdSaSjASBy_qgnERo811z6fge2f49SeJcTclCLaLmjL6mGozBPhq4G1T99LxAuu1AeYHejyqQSssvEebQO/s160/82519368888823.5b6c9e8a73b25.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8i3ov-FFxneV0hJq1dqTGEDyAA6VDTwadC91f7eWoWN7IhIY_IZ6y1zOtdLbObTCpHiJ7b5wOqOgDdRtENpFSBfpRL34HvPeMUVFAH3PdSaSjASBy_qgnERo811z6fge2f49SeJcTclCLaLmjL6mGozBPhq4G1T99LxAuu1AeYHejyqQSssvEebQO/s320/82519368888823.5b6c9e8a73b25.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8i3ov-FFxneV0hJq1dqTGEDyAA6VDTwadC91f7eWoWN7IhIY_IZ6y1zOtdLbObTCpHiJ7b5wOqOgDdRtENpFSBfpRL34HvPeMUVFAH3PdSaSjASBy_qgnERo811z6fge2f49SeJcTclCLaLmjL6mGozBPhq4G1T99LxAuu1AeYHejyqQSssvEebQO/s480/82519368888823.5b6c9e8a73b25.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8i3ov-FFxneV0hJq1dqTGEDyAA6VDTwadC91f7eWoWN7IhIY_IZ6y1zOtdLbObTCpHiJ7b5wOqOgDdRtENpFSBfpRL34HvPeMUVFAH3PdSaSjASBy_qgnERo811z6fge2f49SeJcTclCLaLmjL6mGozBPhq4G1T99LxAuu1AeYHejyqQSssvEebQO/s160/82519368888823.5b6c9e8a73b25.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8i3ov-FFxneV0hJq1dqTGEDyAA6VDTwadC91f7eWoWN7IhIY_IZ6y1zOtdLbObTCpHiJ7b5wOqOgDdRtENpFSBfpRL34HvPeMUVFAH3PdSaSjASBy_qgnERo811z6fge2f49SeJcTclCLaLmjL6mGozBPhq4G1T99LxAuu1AeYHejyqQSssvEebQO/s320/82519368888823.5b6c9e8a73b25.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8i3ov-FFxneV0hJq1dqTGEDyAA6VDTwadC91f7eWoWN7IhIY_IZ6y1zOtdLbObTCpHiJ7b5wOqOgDdRtENpFSBfpRL34HvPeMUVFAH3PdSaSjASBy_qgnERo811z6fge2f49SeJcTclCLaLmjL6mGozBPhq4G1T99LxAuu1AeYHejyqQSssvEebQO/s480/82519368888823.5b6c9e8a73b25.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.860 - Dave Grohl contra la espada y la pared: The Colour and the Shape (1997)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="programa-423-dave-grohl-play.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s320/play.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s320/play.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s480/play.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s640/play.JPG 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s320/play.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s480/play.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s640/play.JPG 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 423 - Dave Grohl ‘PLAY’ "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="p-668-la-cara-oculta-de-dave-grohl.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFHG6VRvA_4Dl-1MlX7Ts_eDv5-eFhJKB-TCg1Nny91pb9z9u1o-zgeVDVdET4tRlzOh9JYILJtjlbyxNKWBZ3YBT5XKd-dlPKN0EbZDtlIh3SEVPy5mGVJ7rRWynTljT1JSQAlrZO5OM/s320/7fa67ea39a5fc0adec80956cb9b5a5fc.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFHG6VRvA_4Dl-1MlX7Ts_eDv5-eFhJKB-TCg1Nny91pb9z9u1o-zgeVDVdET4tRlzOh9JYILJtjlbyxNKWBZ3YBT5XKd-dlPKN0EbZDtlIh3SEVPy5mGVJ7rRWynTljT1JSQAlrZO5OM/s320/7fa67ea39a5fc0adec80956cb9b5a5fc.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFHG6VRvA_4Dl-1MlX7Ts_eDv5-eFhJKB-TCg1Nny91pb9z9u1o-zgeVDVdET4tRlzOh9JYILJtjlbyxNKWBZ3YBT5XKd-dlPKN0EbZDtlIh3SEVPy5mGVJ7rRWynTljT1JSQAlrZO5OM/s480/7fa67ea39a5fc0adec80956cb9b5a5fc.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFHG6VRvA_4Dl-1MlX7Ts_eDv5-eFhJKB-TCg1Nny91pb9z9u1o-zgeVDVdET4tRlzOh9JYILJtjlbyxNKWBZ3YBT5XKd-dlPKN0EbZDtlIh3SEVPy5mGVJ7rRWynTljT1JSQAlrZO5OM/s640/7fa67ea39a5fc0adec80956cb9b5a5fc.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFHG6VRvA_4Dl-1MlX7Ts_eDv5-eFhJKB-TCg1Nny91pb9z9u1o-zgeVDVdET4tRlzOh9JYILJtjlbyxNKWBZ3YBT5XKd-dlPKN0EbZDtlIh3SEVPy5mGVJ7rRWynTljT1JSQAlrZO5OM/s320/7fa67ea39a5fc0adec80956cb9b5a5fc.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFHG6VRvA_4Dl-1MlX7Ts_eDv5-eFhJKB-TCg1Nny91pb9z9u1o-zgeVDVdET4tRlzOh9JYILJtjlbyxNKWBZ3YBT5XKd-dlPKN0EbZDtlIh3SEVPy5mGVJ7rRWynTljT1JSQAlrZO5OM/s480/7fa67ea39a5fc0adec80956cb9b5a5fc.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFHG6VRvA_4Dl-1MlX7Ts_eDv5-eFhJKB-TCg1Nny91pb9z9u1o-zgeVDVdET4tRlzOh9JYILJtjlbyxNKWBZ3YBT5XKd-dlPKN0EbZDtlIh3SEVPy5mGVJ7rRWynTljT1JSQAlrZO5OM/s640/7fa67ea39a5fc0adec80956cb9b5a5fc.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.668 - La cara oculta de Dave Grohl"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="p-777-cuando-dave-conocio-a-david.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8iI33qVurBUq2vmi7IFUVR79zZzFA3oCYdFJpA2RcQKb0DPXo1ahNUqorcErTPLoHH8jKSPHyKrPFU1x_GUe8IGy-1aNpVhKXZ6tXSvL-3_Lue47LWccXcJU_DEMImPj14Wbt0x6aYd0/s320/b90_777.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8iI33qVurBUq2vmi7IFUVR79zZzFA3oCYdFJpA2RcQKb0DPXo1ahNUqorcErTPLoHH8jKSPHyKrPFU1x_GUe8IGy-1aNpVhKXZ6tXSvL-3_Lue47LWccXcJU_DEMImPj14Wbt0x6aYd0/s320/b90_777.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8iI33qVurBUq2vmi7IFUVR79zZzFA3oCYdFJpA2RcQKb0DPXo1ahNUqorcErTPLoHH8jKSPHyKrPFU1x_GUe8IGy-1aNpVhKXZ6tXSvL-3_Lue47LWccXcJU_DEMImPj14Wbt0x6aYd0/s480/b90_777.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8iI33qVurBUq2vmi7IFUVR79zZzFA3oCYdFJpA2RcQKb0DPXo1ahNUqorcErTPLoHH8jKSPHyKrPFU1x_GUe8IGy-1aNpVhKXZ6tXSvL-3_Lue47LWccXcJU_DEMImPj14Wbt0x6aYd0/s640/b90_777.JPG 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8iI33qVurBUq2vmi7IFUVR79zZzFA3oCYdFJpA2RcQKb0DPXo1ahNUqorcErTPLoHH8jKSPHyKrPFU1x_GUe8IGy-1aNpVhKXZ6tXSvL-3_Lue47LWccXcJU_DEMImPj14Wbt0x6aYd0/s320/b90_777.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8iI33qVurBUq2vmi7IFUVR79zZzFA3oCYdFJpA2RcQKb0DPXo1ahNUqorcErTPLoHH8jKSPHyKrPFU1x_GUe8IGy-1aNpVhKXZ6tXSvL-3_Lue47LWccXcJU_DEMImPj14Wbt0x6aYd0/s480/b90_777.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8iI33qVurBUq2vmi7IFUVR79zZzFA3oCYdFJpA2RcQKb0DPXo1ahNUqorcErTPLoHH8jKSPHyKrPFU1x_GUe8IGy-1aNpVhKXZ6tXSvL-3_Lue47LWccXcJU_DEMImPj14Wbt0x6aYd0/s640/b90_777.JPG 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.777 - Cuando DAVE conoció a DAVID"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

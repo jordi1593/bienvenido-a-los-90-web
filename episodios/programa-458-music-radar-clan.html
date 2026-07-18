@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 458 - Music Radar Clan — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -133,8 +133,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s160/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s480/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s160/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s480/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.727 - Sintiendo caer la mierda sobre mí: canciones para el Blue Monday Vol.1"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -144,8 +143,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s320/b90452.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s160/b90452.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s320/b90452.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s480/b90452.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s160/b90452.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s320/b90452.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s480/b90452.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 452 - Paul McCartney - Austin City Limits Music Festival 2018"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -155,8 +153,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s320/b90_475.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s160/b90_475.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s320/b90_475.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s480/b90_475.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s160/b90_475.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s320/b90_475.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s480/b90_475.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 475 - La Navidad y el Rock &amp; Roll"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -172,8 +169,7 @@
         <a class="related-bottom-card" href="programa-429-la-banda-sonora-del-fin-del-milenio.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiShztCP2GoWZeEgi9m8vHRCyB2JM9OugvdtWbBE0kzy9LThwncV8E-QZKQZxia3WqXa4PDIrzGC5h2pwphsmJ-PlggvKQx5_a0Bms4H9ajVW7O5LqRPmLujgpv_XQrQscr4pWA7ZktOt4/s320/efecto-2038-repetira-historia-del-efecto-2000-L-fSQlRT.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiShztCP2GoWZeEgi9m8vHRCyB2JM9OugvdtWbBE0kzy9LThwncV8E-QZKQZxia3WqXa4PDIrzGC5h2pwphsmJ-PlggvKQx5_a0Bms4H9ajVW7O5LqRPmLujgpv_XQrQscr4pWA7ZktOt4/s320/efecto-2038-repetira-historia-del-efecto-2000-L-fSQlRT.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiShztCP2GoWZeEgi9m8vHRCyB2JM9OugvdtWbBE0kzy9LThwncV8E-QZKQZxia3WqXa4PDIrzGC5h2pwphsmJ-PlggvKQx5_a0Bms4H9ajVW7O5LqRPmLujgpv_XQrQscr4pWA7ZktOt4/s480/efecto-2038-repetira-historia-del-efecto-2000-L-fSQlRT.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiShztCP2GoWZeEgi9m8vHRCyB2JM9OugvdtWbBE0kzy9LThwncV8E-QZKQZxia3WqXa4PDIrzGC5h2pwphsmJ-PlggvKQx5_a0Bms4H9ajVW7O5LqRPmLujgpv_XQrQscr4pWA7ZktOt4/s640/efecto-2038-repetira-historia-del-efecto-2000-L-fSQlRT.jpeg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiShztCP2GoWZeEgi9m8vHRCyB2JM9OugvdtWbBE0kzy9LThwncV8E-QZKQZxia3WqXa4PDIrzGC5h2pwphsmJ-PlggvKQx5_a0Bms4H9ajVW7O5LqRPmLujgpv_XQrQscr4pWA7ZktOt4/s320/efecto-2038-repetira-historia-del-efecto-2000-L-fSQlRT.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiShztCP2GoWZeEgi9m8vHRCyB2JM9OugvdtWbBE0kzy9LThwncV8E-QZKQZxia3WqXa4PDIrzGC5h2pwphsmJ-PlggvKQx5_a0Bms4H9ajVW7O5LqRPmLujgpv_XQrQscr4pWA7ZktOt4/s480/efecto-2038-repetira-historia-del-efecto-2000-L-fSQlRT.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiShztCP2GoWZeEgi9m8vHRCyB2JM9OugvdtWbBE0kzy9LThwncV8E-QZKQZxia3WqXa4PDIrzGC5h2pwphsmJ-PlggvKQx5_a0Bms4H9ajVW7O5LqRPmLujgpv_XQrQscr4pWA7ZktOt4/s640/efecto-2038-repetira-historia-del-efecto-2000-L-fSQlRT.jpeg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 429 - La banda sonora del fin del milenio"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -184,8 +180,7 @@
           </a><a class="related-bottom-card" href="programa-497-sandford-music-factory.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmrQeOlfpBAvlZfkOTyZVh-dsnBhVZRtD8cSsDbehV0ORXQtOXBiHSDjvYHcFfSK8DHTtmEe2KJY6a_cffSQkMPFydmaZTLZ9e75qjCVgaFOJfXZWyftM-jfVVch3AnuAdyDf5UooTJfM/s320/b90_497.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmrQeOlfpBAvlZfkOTyZVh-dsnBhVZRtD8cSsDbehV0ORXQtOXBiHSDjvYHcFfSK8DHTtmEe2KJY6a_cffSQkMPFydmaZTLZ9e75qjCVgaFOJfXZWyftM-jfVVch3AnuAdyDf5UooTJfM/s320/b90_497.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmrQeOlfpBAvlZfkOTyZVh-dsnBhVZRtD8cSsDbehV0ORXQtOXBiHSDjvYHcFfSK8DHTtmEe2KJY6a_cffSQkMPFydmaZTLZ9e75qjCVgaFOJfXZWyftM-jfVVch3AnuAdyDf5UooTJfM/s480/b90_497.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmrQeOlfpBAvlZfkOTyZVh-dsnBhVZRtD8cSsDbehV0ORXQtOXBiHSDjvYHcFfSK8DHTtmEe2KJY6a_cffSQkMPFydmaZTLZ9e75qjCVgaFOJfXZWyftM-jfVVch3AnuAdyDf5UooTJfM/s640/b90_497.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmrQeOlfpBAvlZfkOTyZVh-dsnBhVZRtD8cSsDbehV0ORXQtOXBiHSDjvYHcFfSK8DHTtmEe2KJY6a_cffSQkMPFydmaZTLZ9e75qjCVgaFOJfXZWyftM-jfVVch3AnuAdyDf5UooTJfM/s320/b90_497.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmrQeOlfpBAvlZfkOTyZVh-dsnBhVZRtD8cSsDbehV0ORXQtOXBiHSDjvYHcFfSK8DHTtmEe2KJY6a_cffSQkMPFydmaZTLZ9e75qjCVgaFOJfXZWyftM-jfVVch3AnuAdyDf5UooTJfM/s480/b90_497.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmrQeOlfpBAvlZfkOTyZVh-dsnBhVZRtD8cSsDbehV0ORXQtOXBiHSDjvYHcFfSK8DHTtmEe2KJY6a_cffSQkMPFydmaZTLZ9e75qjCVgaFOJfXZWyftM-jfVVch3AnuAdyDf5UooTJfM/s640/b90_497.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 497 - SANDFORD MUSIC FACTORY"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -196,8 +191,7 @@
           </a><a class="related-bottom-card" href="que-significa-bienvenido-a-los-90-para-ti.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s320/53012096_666655617086037_624432951429431296_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s320/53012096_666655617086037_624432951429431296_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s480/53012096_666655617086037_624432951429431296_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s640/53012096_666655617086037_624432951429431296_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s320/53012096_666655617086037_624432951429431296_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s480/53012096_666655617086037_624432951429431296_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s640/53012096_666655617086037_624432951429431296_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="¿Qué significa &#39;Bienvenido a los 90 para ti?"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 173 - Edi Clavo - Electricidad revisitada — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -131,8 +131,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s320/We-Are-The-World%20(1).jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s160/We-Are-The-World%20(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s320/We-Are-The-World%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s480/We-Are-The-World%20(1).jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s160/We-Are-The-World%20(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s320/We-Are-The-World%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s480/We-Are-The-World%20(1).jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.885 - Canciones divertidas para una Navidad alternativa"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -142,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s320/13082777_10153537137482747_793937129574110212_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s160/13082777_10153537137482747_793937129574110212_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s320/13082777_10153537137482747_793937129574110212_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s480/13082777_10153537137482747_793937129574110212_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s160/13082777_10153537137482747_793937129574110212_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s320/13082777_10153537137482747_793937129574110212_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s480/13082777_10153537137482747_793937129574110212_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 220 - Veronica Underluxe"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -153,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA41DWIKvyTE5Uk1g5cL71mi5mBI5iOUc7p84J_71fu6GzOECQQSUs09dcHdYJNhbpdnydLINdHhbrRHrzj_w7HhCSOarJ0XLx9UetujrIcLy62l-_J9UK66e0Uhc1u9slCM9C79KY91o/s320/CynD9t1XEAEnpUh.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA41DWIKvyTE5Uk1g5cL71mi5mBI5iOUc7p84J_71fu6GzOECQQSUs09dcHdYJNhbpdnydLINdHhbrRHrzj_w7HhCSOarJ0XLx9UetujrIcLy62l-_J9UK66e0Uhc1u9slCM9C79KY91o/s160/CynD9t1XEAEnpUh.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA41DWIKvyTE5Uk1g5cL71mi5mBI5iOUc7p84J_71fu6GzOECQQSUs09dcHdYJNhbpdnydLINdHhbrRHrzj_w7HhCSOarJ0XLx9UetujrIcLy62l-_J9UK66e0Uhc1u9slCM9C79KY91o/s320/CynD9t1XEAEnpUh.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA41DWIKvyTE5Uk1g5cL71mi5mBI5iOUc7p84J_71fu6GzOECQQSUs09dcHdYJNhbpdnydLINdHhbrRHrzj_w7HhCSOarJ0XLx9UetujrIcLy62l-_J9UK66e0Uhc1u9slCM9C79KY91o/s480/CynD9t1XEAEnpUh.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA41DWIKvyTE5Uk1g5cL71mi5mBI5iOUc7p84J_71fu6GzOECQQSUs09dcHdYJNhbpdnydLINdHhbrRHrzj_w7HhCSOarJ0XLx9UetujrIcLy62l-_J9UK66e0Uhc1u9slCM9C79KY91o/s160/CynD9t1XEAEnpUh.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA41DWIKvyTE5Uk1g5cL71mi5mBI5iOUc7p84J_71fu6GzOECQQSUs09dcHdYJNhbpdnydLINdHhbrRHrzj_w7HhCSOarJ0XLx9UetujrIcLy62l-_J9UK66e0Uhc1u9slCM9C79KY91o/s320/CynD9t1XEAEnpUh.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA41DWIKvyTE5Uk1g5cL71mi5mBI5iOUc7p84J_71fu6GzOECQQSUs09dcHdYJNhbpdnydLINdHhbrRHrzj_w7HhCSOarJ0XLx9UetujrIcLy62l-_J9UK66e0Uhc1u9slCM9C79KY91o/s480/CynD9t1XEAEnpUh.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 253 - 1991 The Year Punk Broke"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -170,8 +167,7 @@
         <a class="related-bottom-card" href="programa-265-red-rocket-7-mike-allred.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s320/red-rocket-7.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s320/red-rocket-7.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s480/red-rocket-7.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s640/red-rocket-7.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s320/red-rocket-7.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s480/red-rocket-7.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s640/red-rocket-7.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 265 - Red Rocket 7 (Mike Allred)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -182,8 +178,7 @@
           </a><a class="related-bottom-card" href="programa-69-green-day-offspring-weezer-fugazi-alice-in-chains.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 69 - GREEN DAY, OFFSPRING, WEEZER, FUGAZI, ALICE IN CHAINS..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -194,8 +189,7 @@
           </a><a class="related-bottom-card" href="programa-328-manu-cabezali-producciones-2017.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s320/bienvenido-328.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s320/bienvenido-328.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s480/bienvenido-328.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s640/bienvenido-328.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s320/bienvenido-328.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s480/bienvenido-328.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s640/bienvenido-328.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 328 – Manu Cabezalí (Producciones 2017)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Brit Pop — 10 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-920-alphawaves-desde-londres-con-pasion.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL91zURZWqJUoF3gBSs_8eq8OIoyexos9Vg5fY2JoK7JvUStFEoQmz40Npb61y7AFwA-wy8Zne2-TrT-bI3eHo2JqlLwJIDQXXE2SbvvL6MiK2MPTsHvUeqSGrjemC7YkdzqUnucUe51ZZC61OQkIBdslHGvL15YIO09jL9ES7J1xYnOIZFsSTG0QRdb0/s320/25230012.JPG"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL91zURZWqJUoF3gBSs_8eq8OIoyexos9Vg5fY2JoK7JvUStFEoQmz40Npb61y7AFwA-wy8Zne2-TrT-bI3eHo2JqlLwJIDQXXE2SbvvL6MiK2MPTsHvUeqSGrjemC7YkdzqUnucUe51ZZC61OQkIBdslHGvL15YIO09jL9ES7J1xYnOIZFsSTG0QRdb0/s160/25230012.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL91zURZWqJUoF3gBSs_8eq8OIoyexos9Vg5fY2JoK7JvUStFEoQmz40Npb61y7AFwA-wy8Zne2-TrT-bI3eHo2JqlLwJIDQXXE2SbvvL6MiK2MPTsHvUeqSGrjemC7YkdzqUnucUe51ZZC61OQkIBdslHGvL15YIO09jL9ES7J1xYnOIZFsSTG0QRdb0/s320/25230012.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL91zURZWqJUoF3gBSs_8eq8OIoyexos9Vg5fY2JoK7JvUStFEoQmz40Npb61y7AFwA-wy8Zne2-TrT-bI3eHo2JqlLwJIDQXXE2SbvvL6MiK2MPTsHvUeqSGrjemC7YkdzqUnucUe51ZZC61OQkIBdslHGvL15YIO09jL9ES7J1xYnOIZFsSTG0QRdb0/s480/25230012.JPG 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL91zURZWqJUoF3gBSs_8eq8OIoyexos9Vg5fY2JoK7JvUStFEoQmz40Npb61y7AFwA-wy8Zne2-TrT-bI3eHo2JqlLwJIDQXXE2SbvvL6MiK2MPTsHvUeqSGrjemC7YkdzqUnucUe51ZZC61OQkIBdslHGvL15YIO09jL9ES7J1xYnOIZFsSTG0QRdb0/s160/25230012.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL91zURZWqJUoF3gBSs_8eq8OIoyexos9Vg5fY2JoK7JvUStFEoQmz40Npb61y7AFwA-wy8Zne2-TrT-bI3eHo2JqlLwJIDQXXE2SbvvL6MiK2MPTsHvUeqSGrjemC7YkdzqUnucUe51ZZC61OQkIBdslHGvL15YIO09jL9ES7J1xYnOIZFsSTG0QRdb0/s320/25230012.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL91zURZWqJUoF3gBSs_8eq8OIoyexos9Vg5fY2JoK7JvUStFEoQmz40Npb61y7AFwA-wy8Zne2-TrT-bI3eHo2JqlLwJIDQXXE2SbvvL6MiK2MPTsHvUeqSGrjemC7YkdzqUnucUe51ZZC61OQkIBdslHGvL15YIO09jL9ES7J1xYnOIZFsSTG0QRdb0/s480/25230012.JPG 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.920 - Alphawaves, desde Londres con pasión"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-842-mi-viaje-a-knebworth-para-ver-a-liam-gallagher.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6azIDYyrw9E3NNxLGzM-6EpVUyj4nHagfjlCeM29zB5uXMS7JxeBHvP88-LA7plRWo7F5xj9eoWjbSxLXDhir3XLCdqkGEIB_GzXYasIbdMxf4KrLXnIFQ56ZAptOvkKzv3zA_h6-VwbGsYqg5FgZBTD0wzYwYFqzjWBmWdIxp1oElacv1Er0H-id/s320/Screenshot_2022-06-07-13-27-49-203_com.instagram.android_2.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6azIDYyrw9E3NNxLGzM-6EpVUyj4nHagfjlCeM29zB5uXMS7JxeBHvP88-LA7plRWo7F5xj9eoWjbSxLXDhir3XLCdqkGEIB_GzXYasIbdMxf4KrLXnIFQ56ZAptOvkKzv3zA_h6-VwbGsYqg5FgZBTD0wzYwYFqzjWBmWdIxp1oElacv1Er0H-id/s160/Screenshot_2022-06-07-13-27-49-203_com.instagram.android_2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6azIDYyrw9E3NNxLGzM-6EpVUyj4nHagfjlCeM29zB5uXMS7JxeBHvP88-LA7plRWo7F5xj9eoWjbSxLXDhir3XLCdqkGEIB_GzXYasIbdMxf4KrLXnIFQ56ZAptOvkKzv3zA_h6-VwbGsYqg5FgZBTD0wzYwYFqzjWBmWdIxp1oElacv1Er0H-id/s320/Screenshot_2022-06-07-13-27-49-203_com.instagram.android_2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6azIDYyrw9E3NNxLGzM-6EpVUyj4nHagfjlCeM29zB5uXMS7JxeBHvP88-LA7plRWo7F5xj9eoWjbSxLXDhir3XLCdqkGEIB_GzXYasIbdMxf4KrLXnIFQ56ZAptOvkKzv3zA_h6-VwbGsYqg5FgZBTD0wzYwYFqzjWBmWdIxp1oElacv1Er0H-id/s480/Screenshot_2022-06-07-13-27-49-203_com.instagram.android_2.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6azIDYyrw9E3NNxLGzM-6EpVUyj4nHagfjlCeM29zB5uXMS7JxeBHvP88-LA7plRWo7F5xj9eoWjbSxLXDhir3XLCdqkGEIB_GzXYasIbdMxf4KrLXnIFQ56ZAptOvkKzv3zA_h6-VwbGsYqg5FgZBTD0wzYwYFqzjWBmWdIxp1oElacv1Er0H-id/s160/Screenshot_2022-06-07-13-27-49-203_com.instagram.android_2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6azIDYyrw9E3NNxLGzM-6EpVUyj4nHagfjlCeM29zB5uXMS7JxeBHvP88-LA7plRWo7F5xj9eoWjbSxLXDhir3XLCdqkGEIB_GzXYasIbdMxf4KrLXnIFQ56ZAptOvkKzv3zA_h6-VwbGsYqg5FgZBTD0wzYwYFqzjWBmWdIxp1oElacv1Er0H-id/s320/Screenshot_2022-06-07-13-27-49-203_com.instagram.android_2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6azIDYyrw9E3NNxLGzM-6EpVUyj4nHagfjlCeM29zB5uXMS7JxeBHvP88-LA7plRWo7F5xj9eoWjbSxLXDhir3XLCdqkGEIB_GzXYasIbdMxf4KrLXnIFQ56ZAptOvkKzv3zA_h6-VwbGsYqg5FgZBTD0wzYwYFqzjWBmWdIxp1oElacv1Er0H-id/s480/Screenshot_2022-06-07-13-27-49-203_com.instagram.android_2.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.842 - Mi viaje a Knebworth para ver a Liam Gallagher"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-841-the-verve-urban-hymns-el-adios-del-britpop.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJQLiFgmOFQZkYWbMk4f4aM3PZ0d6afDpdjjwEIiSzaOdFB2RVSDK-FIlXmjON1xL7zeV9i9VsYCVL0nt5vsih4bFqdGH-ziMr2nnXDJvbt_1XIg1Y06X54Vv46BFgPzyJIJl9B0SIGzQYmpzvUgV4NEaz6CN6z4VPphNHwTY03Mra4LACw5SgEsp/s320/71UpxJQy0xL._SL1418_.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJQLiFgmOFQZkYWbMk4f4aM3PZ0d6afDpdjjwEIiSzaOdFB2RVSDK-FIlXmjON1xL7zeV9i9VsYCVL0nt5vsih4bFqdGH-ziMr2nnXDJvbt_1XIg1Y06X54Vv46BFgPzyJIJl9B0SIGzQYmpzvUgV4NEaz6CN6z4VPphNHwTY03Mra4LACw5SgEsp/s160/71UpxJQy0xL._SL1418_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJQLiFgmOFQZkYWbMk4f4aM3PZ0d6afDpdjjwEIiSzaOdFB2RVSDK-FIlXmjON1xL7zeV9i9VsYCVL0nt5vsih4bFqdGH-ziMr2nnXDJvbt_1XIg1Y06X54Vv46BFgPzyJIJl9B0SIGzQYmpzvUgV4NEaz6CN6z4VPphNHwTY03Mra4LACw5SgEsp/s320/71UpxJQy0xL._SL1418_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJQLiFgmOFQZkYWbMk4f4aM3PZ0d6afDpdjjwEIiSzaOdFB2RVSDK-FIlXmjON1xL7zeV9i9VsYCVL0nt5vsih4bFqdGH-ziMr2nnXDJvbt_1XIg1Y06X54Vv46BFgPzyJIJl9B0SIGzQYmpzvUgV4NEaz6CN6z4VPphNHwTY03Mra4LACw5SgEsp/s480/71UpxJQy0xL._SL1418_.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJQLiFgmOFQZkYWbMk4f4aM3PZ0d6afDpdjjwEIiSzaOdFB2RVSDK-FIlXmjON1xL7zeV9i9VsYCVL0nt5vsih4bFqdGH-ziMr2nnXDJvbt_1XIg1Y06X54Vv46BFgPzyJIJl9B0SIGzQYmpzvUgV4NEaz6CN6z4VPphNHwTY03Mra4LACw5SgEsp/s160/71UpxJQy0xL._SL1418_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJQLiFgmOFQZkYWbMk4f4aM3PZ0d6afDpdjjwEIiSzaOdFB2RVSDK-FIlXmjON1xL7zeV9i9VsYCVL0nt5vsih4bFqdGH-ziMr2nnXDJvbt_1XIg1Y06X54Vv46BFgPzyJIJl9B0SIGzQYmpzvUgV4NEaz6CN6z4VPphNHwTY03Mra4LACw5SgEsp/s320/71UpxJQy0xL._SL1418_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJQLiFgmOFQZkYWbMk4f4aM3PZ0d6afDpdjjwEIiSzaOdFB2RVSDK-FIlXmjON1xL7zeV9i9VsYCVL0nt5vsih4bFqdGH-ziMr2nnXDJvbt_1XIg1Y06X54Vv46BFgPzyJIJl9B0SIGzQYmpzvUgV4NEaz6CN6z4VPphNHwTY03Mra4LACw5SgEsp/s480/71UpxJQy0xL._SL1418_.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.841 - The Verve - Urban Hymns, el adiós del britpop"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-824-blur-1997-el-adios-al-britpop.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/a/AVvXsEiHJmMkYHf59C9pceX6kqLsjHqr2learqWngmlo3jynpshtAimU7ShVbFD4Q69yQ4qIQnWJTDuNWtBCEpLA-eG71HP_jH4kE9yhUYyw7_k8wFQuJdvdsgE_3rzpsvfYMsXnyj-NvylfrMG0CpFQLp3HMGSp9FNLyesItwXi0kLZ5OAKG97LP6sMsZV5=s72-c"
-                srcset="https://blogger.googleusercontent.com/img/a/AVvXsEiHJmMkYHf59C9pceX6kqLsjHqr2learqWngmlo3jynpshtAimU7ShVbFD4Q69yQ4qIQnWJTDuNWtBCEpLA-eG71HP_jH4kE9yhUYyw7_k8wFQuJdvdsgE_3rzpsvfYMsXnyj-NvylfrMG0CpFQLp3HMGSp9FNLyesItwXi0kLZ5OAKG97LP6sMsZV5=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEiHJmMkYHf59C9pceX6kqLsjHqr2learqWngmlo3jynpshtAimU7ShVbFD4Q69yQ4qIQnWJTDuNWtBCEpLA-eG71HP_jH4kE9yhUYyw7_k8wFQuJdvdsgE_3rzpsvfYMsXnyj-NvylfrMG0CpFQLp3HMGSp9FNLyesItwXi0kLZ5OAKG97LP6sMsZV5=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEiHJmMkYHf59C9pceX6kqLsjHqr2learqWngmlo3jynpshtAimU7ShVbFD4Q69yQ4qIQnWJTDuNWtBCEpLA-eG71HP_jH4kE9yhUYyw7_k8wFQuJdvdsgE_3rzpsvfYMsXnyj-NvylfrMG0CpFQLp3HMGSp9FNLyesItwXi0kLZ5OAKG97LP6sMsZV5=s72-c 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="P.824 - Blur (1997), el adiós al Britpop"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/p-782-el-magnetismo-de-damon-albarn.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s320/90fe1fb3912ea7c5614943139fb6850b.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s160/90fe1fb3912ea7c5614943139fb6850b.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s320/90fe1fb3912ea7c5614943139fb6850b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s480/90fe1fb3912ea7c5614943139fb6850b.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s160/90fe1fb3912ea7c5614943139fb6850b.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s320/90fe1fb3912ea7c5614943139fb6850b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s480/90fe1fb3912ea7c5614943139fb6850b.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.782 - El magnetismo de Damon Albarn"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/p-602-el-britpop-que-no-vimos.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIPKunlVUC656SiOAeboffy_00VJJ9-NAtgh1hJaj73L7BHP7zJ-ZDJEPuL1J-A-_i3mzOW8DCK2EBScz7tuZ_RbgJHOhU1fi6gp9t1Knick4rtC4HGq0I3nFz0VzGBoNr8t9DUhTkAT4/s320/c300.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIPKunlVUC656SiOAeboffy_00VJJ9-NAtgh1hJaj73L7BHP7zJ-ZDJEPuL1J-A-_i3mzOW8DCK2EBScz7tuZ_RbgJHOhU1fi6gp9t1Knick4rtC4HGq0I3nFz0VzGBoNr8t9DUhTkAT4/s160/c300.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIPKunlVUC656SiOAeboffy_00VJJ9-NAtgh1hJaj73L7BHP7zJ-ZDJEPuL1J-A-_i3mzOW8DCK2EBScz7tuZ_RbgJHOhU1fi6gp9t1Knick4rtC4HGq0I3nFz0VzGBoNr8t9DUhTkAT4/s320/c300.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIPKunlVUC656SiOAeboffy_00VJJ9-NAtgh1hJaj73L7BHP7zJ-ZDJEPuL1J-A-_i3mzOW8DCK2EBScz7tuZ_RbgJHOhU1fi6gp9t1Knick4rtC4HGq0I3nFz0VzGBoNr8t9DUhTkAT4/s480/c300.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIPKunlVUC656SiOAeboffy_00VJJ9-NAtgh1hJaj73L7BHP7zJ-ZDJEPuL1J-A-_i3mzOW8DCK2EBScz7tuZ_RbgJHOhU1fi6gp9t1Knick4rtC4HGq0I3nFz0VzGBoNr8t9DUhTkAT4/s160/c300.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIPKunlVUC656SiOAeboffy_00VJJ9-NAtgh1hJaj73L7BHP7zJ-ZDJEPuL1J-A-_i3mzOW8DCK2EBScz7tuZ_RbgJHOhU1fi6gp9t1Knick4rtC4HGq0I3nFz0VzGBoNr8t9DUhTkAT4/s320/c300.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIPKunlVUC656SiOAeboffy_00VJJ9-NAtgh1hJaj73L7BHP7zJ-ZDJEPuL1J-A-_i3mzOW8DCK2EBScz7tuZ_RbgJHOhU1fi6gp9t1Knick4rtC4HGq0I3nFz0VzGBoNr8t9DUhTkAT4/s480/c300.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.602 - El Britpop que no vimos"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-435-the-best-of-blur.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s320/thebestof_blur.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s160/thebestof_blur.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s320/thebestof_blur.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s480/thebestof_blur.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s160/thebestof_blur.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s320/thebestof_blur.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s480/thebestof_blur.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 435 - The Best Of: BLUR"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/programa-311-gallagher-vs-gallagher.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s160/noel-liam-gallagher.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s480/noel-liam-gallagher.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s160/noel-liam-gallagher.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s480/noel-liam-gallagher.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 311 - Gallagher vs. Gallagher"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -180,8 +172,7 @@
         <a class="episode-cover-link" href="../episodios/programa-205-kula-shaker-los-inicios-hasta-k.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEm9NWAIJtCIu6RRFcTNAgGFuR9-xGfE1wbAHe9dFGeWlrVc-PMt0KPvWAbqVgSE6snM8vIMpdKSYoQk_uOECJXrRO9YYlx-fAzMpkFaAp9Yll2pxa3aBKffya5QUjcAX4xKao2fW2eOI/s320/12654350_1187684987915809_6392295640972299145_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEm9NWAIJtCIu6RRFcTNAgGFuR9-xGfE1wbAHe9dFGeWlrVc-PMt0KPvWAbqVgSE6snM8vIMpdKSYoQk_uOECJXrRO9YYlx-fAzMpkFaAp9Yll2pxa3aBKffya5QUjcAX4xKao2fW2eOI/s160/12654350_1187684987915809_6392295640972299145_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEm9NWAIJtCIu6RRFcTNAgGFuR9-xGfE1wbAHe9dFGeWlrVc-PMt0KPvWAbqVgSE6snM8vIMpdKSYoQk_uOECJXrRO9YYlx-fAzMpkFaAp9Yll2pxa3aBKffya5QUjcAX4xKao2fW2eOI/s320/12654350_1187684987915809_6392295640972299145_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEm9NWAIJtCIu6RRFcTNAgGFuR9-xGfE1wbAHe9dFGeWlrVc-PMt0KPvWAbqVgSE6snM8vIMpdKSYoQk_uOECJXrRO9YYlx-fAzMpkFaAp9Yll2pxa3aBKffya5QUjcAX4xKao2fW2eOI/s480/12654350_1187684987915809_6392295640972299145_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEm9NWAIJtCIu6RRFcTNAgGFuR9-xGfE1wbAHe9dFGeWlrVc-PMt0KPvWAbqVgSE6snM8vIMpdKSYoQk_uOECJXrRO9YYlx-fAzMpkFaAp9Yll2pxa3aBKffya5QUjcAX4xKao2fW2eOI/s160/12654350_1187684987915809_6392295640972299145_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEm9NWAIJtCIu6RRFcTNAgGFuR9-xGfE1wbAHe9dFGeWlrVc-PMt0KPvWAbqVgSE6snM8vIMpdKSYoQk_uOECJXrRO9YYlx-fAzMpkFaAp9Yll2pxa3aBKffya5QUjcAX4xKao2fW2eOI/s320/12654350_1187684987915809_6392295640972299145_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEm9NWAIJtCIu6RRFcTNAgGFuR9-xGfE1wbAHe9dFGeWlrVc-PMt0KPvWAbqVgSE6snM8vIMpdKSYoQk_uOECJXrRO9YYlx-fAzMpkFaAp9Yll2pxa3aBKffya5QUjcAX4xKao2fW2eOI/s480/12654350_1187684987915809_6392295640972299145_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 205 - Kula Shaker, los inicios hasta K"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -194,8 +185,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-6-especial-britpop.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 #6 - Especial Britpop"
                 loading="lazy" width="320" height="213" />
         </a>

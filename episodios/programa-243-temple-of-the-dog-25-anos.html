@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 243 - Temple of the Dog (25 años) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -138,8 +138,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDY-KIfXWtOaezghSSksjefXcn9nyxyYKOM424eBn7lKrhy5ocYSli-yGKE9H4IpdsVVfkTm7MXb0H3cN4C7kLFrl36NhqwLySJ4szlha8uZyoX-AHN16JV3TprIlOOGt51mhGzCRdRXM/s320/Captura+de+pantalla+2016-11-09+a+las+14.12.00.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDY-KIfXWtOaezghSSksjefXcn9nyxyYKOM424eBn7lKrhy5ocYSli-yGKE9H4IpdsVVfkTm7MXb0H3cN4C7kLFrl36NhqwLySJ4szlha8uZyoX-AHN16JV3TprIlOOGt51mhGzCRdRXM/s160/Captura+de+pantalla+2016-11-09+a+las+14.12.00.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDY-KIfXWtOaezghSSksjefXcn9nyxyYKOM424eBn7lKrhy5ocYSli-yGKE9H4IpdsVVfkTm7MXb0H3cN4C7kLFrl36NhqwLySJ4szlha8uZyoX-AHN16JV3TprIlOOGt51mhGzCRdRXM/s320/Captura+de+pantalla+2016-11-09+a+las+14.12.00.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDY-KIfXWtOaezghSSksjefXcn9nyxyYKOM424eBn7lKrhy5ocYSli-yGKE9H4IpdsVVfkTm7MXb0H3cN4C7kLFrl36NhqwLySJ4szlha8uZyoX-AHN16JV3TprIlOOGt51mhGzCRdRXM/s480/Captura+de+pantalla+2016-11-09+a+las+14.12.00.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDY-KIfXWtOaezghSSksjefXcn9nyxyYKOM424eBn7lKrhy5ocYSli-yGKE9H4IpdsVVfkTm7MXb0H3cN4C7kLFrl36NhqwLySJ4szlha8uZyoX-AHN16JV3TprIlOOGt51mhGzCRdRXM/s160/Captura+de+pantalla+2016-11-09+a+las+14.12.00.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDY-KIfXWtOaezghSSksjefXcn9nyxyYKOM424eBn7lKrhy5ocYSli-yGKE9H4IpdsVVfkTm7MXb0H3cN4C7kLFrl36NhqwLySJ4szlha8uZyoX-AHN16JV3TprIlOOGt51mhGzCRdRXM/s320/Captura+de+pantalla+2016-11-09+a+las+14.12.00.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDY-KIfXWtOaezghSSksjefXcn9nyxyYKOM424eBn7lKrhy5ocYSli-yGKE9H4IpdsVVfkTm7MXb0H3cN4C7kLFrl36NhqwLySJ4szlha8uZyoX-AHN16JV3TprIlOOGt51mhGzCRdRXM/s480/Captura+de+pantalla+2016-11-09+a+las+14.12.00.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 249 - Temple of The Dog Live 2016"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +148,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s160/seattle-grunge-est1990-mens-t-shirt.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s160/seattle-grunge-est1990-mens-t-shirt.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.971 - ¿Sigue siendo Seattle un destino atractivo para los amantes del grunge?"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -160,8 +158,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s320/10329214_10153451455942747_4912215046456512836_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s160/10329214_10153451455942747_4912215046456512836_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s320/10329214_10153451455942747_4912215046456512836_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s480/10329214_10153451455942747_4912215046456512836_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s160/10329214_10153451455942747_4912215046456512836_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s320/10329214_10153451455942747_4912215046456512836_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRfYxygwgVP-hsOaJOWkJvNSOIoNOqQoeywZ5EVHmWeMbQbEFJfxWori5qjmNvXHbIEq6rNcsuqhmfxWLpwVQqcL6W3csHex5VjsXj5ggtGF4-CPwrAsgHQ2FEqxA32c_vbbajxIfo34/s480/10329214_10153451455942747_4912215046456512836_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 214 - Jeff Ament"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -177,8 +174,7 @@
         <a class="related-bottom-card" href="programa-340-jeff-ament-de-montana-a-seattle.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s320/e4c620f2a967d3906f46bc3bafbcefc2.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s320/e4c620f2a967d3906f46bc3bafbcefc2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s480/e4c620f2a967d3906f46bc3bafbcefc2.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s640/e4c620f2a967d3906f46bc3bafbcefc2.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s320/e4c620f2a967d3906f46bc3bafbcefc2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s480/e4c620f2a967d3906f46bc3bafbcefc2.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s640/e4c620f2a967d3906f46bc3bafbcefc2.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 340 - Jeff Ament, de Montana a Seattle"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +185,7 @@
           </a><a class="related-bottom-card" href="programa-278-chris-cornell.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBvrcRuDTAs2of_YsRYA9KLcN6f7a0E_TPhp1hAGzH4Fkv8H5uKfzuwBL_DwxUnlgn24_vXE7PxOG-vnAes7cIWXBQkj8jaywal1yVgdWoQ89WBD66o2y2ox82SfUOzRuNE3vyTv7wKo4/s320/DAEn8DVXcAMqD6P.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBvrcRuDTAs2of_YsRYA9KLcN6f7a0E_TPhp1hAGzH4Fkv8H5uKfzuwBL_DwxUnlgn24_vXE7PxOG-vnAes7cIWXBQkj8jaywal1yVgdWoQ89WBD66o2y2ox82SfUOzRuNE3vyTv7wKo4/s320/DAEn8DVXcAMqD6P.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBvrcRuDTAs2of_YsRYA9KLcN6f7a0E_TPhp1hAGzH4Fkv8H5uKfzuwBL_DwxUnlgn24_vXE7PxOG-vnAes7cIWXBQkj8jaywal1yVgdWoQ89WBD66o2y2ox82SfUOzRuNE3vyTv7wKo4/s480/DAEn8DVXcAMqD6P.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBvrcRuDTAs2of_YsRYA9KLcN6f7a0E_TPhp1hAGzH4Fkv8H5uKfzuwBL_DwxUnlgn24_vXE7PxOG-vnAes7cIWXBQkj8jaywal1yVgdWoQ89WBD66o2y2ox82SfUOzRuNE3vyTv7wKo4/s640/DAEn8DVXcAMqD6P.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBvrcRuDTAs2of_YsRYA9KLcN6f7a0E_TPhp1hAGzH4Fkv8H5uKfzuwBL_DwxUnlgn24_vXE7PxOG-vnAes7cIWXBQkj8jaywal1yVgdWoQ89WBD66o2y2ox82SfUOzRuNE3vyTv7wKo4/s320/DAEn8DVXcAMqD6P.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBvrcRuDTAs2of_YsRYA9KLcN6f7a0E_TPhp1hAGzH4Fkv8H5uKfzuwBL_DwxUnlgn24_vXE7PxOG-vnAes7cIWXBQkj8jaywal1yVgdWoQ89WBD66o2y2ox82SfUOzRuNE3vyTv7wKo4/s480/DAEn8DVXcAMqD6P.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBvrcRuDTAs2of_YsRYA9KLcN6f7a0E_TPhp1hAGzH4Fkv8H5uKfzuwBL_DwxUnlgn24_vXE7PxOG-vnAes7cIWXBQkj8jaywal1yVgdWoQ89WBD66o2y2ox82SfUOzRuNE3vyTv7wKo4/s640/DAEn8DVXcAMqD6P.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 278 - Chris Cornell"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -201,8 +196,7 @@
           </a><a class="related-bottom-card" href="programa-279-especial-chris-cornell.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtLMcW1I9V7TVcNjK_8Wk4GJDgH4X7FBvmiZacIyCxRHS3avh1Pt_eRUDGpxRQOo-MfFkrX2Wae_EooBPkEYX9umcoSJzEgd9-5V1yjZMKrc-o7yHYy7c7gFXqxzL9neh-uR97xVXfFb8/s320/18519624_1721307674553535_8535095113033537457_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtLMcW1I9V7TVcNjK_8Wk4GJDgH4X7FBvmiZacIyCxRHS3avh1Pt_eRUDGpxRQOo-MfFkrX2Wae_EooBPkEYX9umcoSJzEgd9-5V1yjZMKrc-o7yHYy7c7gFXqxzL9neh-uR97xVXfFb8/s320/18519624_1721307674553535_8535095113033537457_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtLMcW1I9V7TVcNjK_8Wk4GJDgH4X7FBvmiZacIyCxRHS3avh1Pt_eRUDGpxRQOo-MfFkrX2Wae_EooBPkEYX9umcoSJzEgd9-5V1yjZMKrc-o7yHYy7c7gFXqxzL9neh-uR97xVXfFb8/s480/18519624_1721307674553535_8535095113033537457_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtLMcW1I9V7TVcNjK_8Wk4GJDgH4X7FBvmiZacIyCxRHS3avh1Pt_eRUDGpxRQOo-MfFkrX2Wae_EooBPkEYX9umcoSJzEgd9-5V1yjZMKrc-o7yHYy7c7gFXqxzL9neh-uR97xVXfFb8/s640/18519624_1721307674553535_8535095113033537457_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtLMcW1I9V7TVcNjK_8Wk4GJDgH4X7FBvmiZacIyCxRHS3avh1Pt_eRUDGpxRQOo-MfFkrX2Wae_EooBPkEYX9umcoSJzEgd9-5V1yjZMKrc-o7yHYy7c7gFXqxzL9neh-uR97xVXfFb8/s320/18519624_1721307674553535_8535095113033537457_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtLMcW1I9V7TVcNjK_8Wk4GJDgH4X7FBvmiZacIyCxRHS3avh1Pt_eRUDGpxRQOo-MfFkrX2Wae_EooBPkEYX9umcoSJzEgd9-5V1yjZMKrc-o7yHYy7c7gFXqxzL9neh-uR97xVXfFb8/s480/18519624_1721307674553535_8535095113033537457_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtLMcW1I9V7TVcNjK_8Wk4GJDgH4X7FBvmiZacIyCxRHS3avh1Pt_eRUDGpxRQOo-MfFkrX2Wae_EooBPkEYX9umcoSJzEgd9-5V1yjZMKrc-o7yHYy7c7gFXqxzL9neh-uR97xVXfFb8/s640/18519624_1721307674553535_8535095113033537457_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 279 - Especial Chris Cornell"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Bowie — 15 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1076-os-presento-a-la-persona-que-me-descubrio-otra-musica.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s320/B90_1076.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s160/B90_1076.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s320/B90_1076.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s480/B90_1076.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s160/B90_1076.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s320/B90_1076.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s480/B90_1076.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1076 - Os presento a la persona que me descubrió otra música"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-923-el-ultimo-programa-de-la-temporada-11.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s320/b90_923_.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s160/b90_923_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s320/b90_923_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s480/b90_923_.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s160/b90_923_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s320/b90_923_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s480/b90_923_.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.923 - El último programa de la temporada 11"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-750-nadie-hace-versiones-como-nirvana.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVw5hRGRd9raR980CHHQHXXQ9CqrBO5DgBpLeTyEVZvuaXAccZdKHoTvq5tSnF0QsKQ3AOStfVLprlnnnn-jf9loxoWovXwr72KLoDH12I5JThyphenhyphenWj1Hvfo5l4yqlZ-dEAxdthsPo0FcCA/s320/nirvana-2015.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVw5hRGRd9raR980CHHQHXXQ9CqrBO5DgBpLeTyEVZvuaXAccZdKHoTvq5tSnF0QsKQ3AOStfVLprlnnnn-jf9loxoWovXwr72KLoDH12I5JThyphenhyphenWj1Hvfo5l4yqlZ-dEAxdthsPo0FcCA/s160/nirvana-2015.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVw5hRGRd9raR980CHHQHXXQ9CqrBO5DgBpLeTyEVZvuaXAccZdKHoTvq5tSnF0QsKQ3AOStfVLprlnnnn-jf9loxoWovXwr72KLoDH12I5JThyphenhyphenWj1Hvfo5l4yqlZ-dEAxdthsPo0FcCA/s320/nirvana-2015.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVw5hRGRd9raR980CHHQHXXQ9CqrBO5DgBpLeTyEVZvuaXAccZdKHoTvq5tSnF0QsKQ3AOStfVLprlnnnn-jf9loxoWovXwr72KLoDH12I5JThyphenhyphenWj1Hvfo5l4yqlZ-dEAxdthsPo0FcCA/s480/nirvana-2015.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVw5hRGRd9raR980CHHQHXXQ9CqrBO5DgBpLeTyEVZvuaXAccZdKHoTvq5tSnF0QsKQ3AOStfVLprlnnnn-jf9loxoWovXwr72KLoDH12I5JThyphenhyphenWj1Hvfo5l4yqlZ-dEAxdthsPo0FcCA/s160/nirvana-2015.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVw5hRGRd9raR980CHHQHXXQ9CqrBO5DgBpLeTyEVZvuaXAccZdKHoTvq5tSnF0QsKQ3AOStfVLprlnnnn-jf9loxoWovXwr72KLoDH12I5JThyphenhyphenWj1Hvfo5l4yqlZ-dEAxdthsPo0FcCA/s320/nirvana-2015.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVw5hRGRd9raR980CHHQHXXQ9CqrBO5DgBpLeTyEVZvuaXAccZdKHoTvq5tSnF0QsKQ3AOStfVLprlnnnn-jf9loxoWovXwr72KLoDH12I5JThyphenhyphenWj1Hvfo5l4yqlZ-dEAxdthsPo0FcCA/s480/nirvana-2015.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.750 - Nadie hace versiones como Nirvana"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-749-ray-loriga-heroes.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s320/rayloriga_heroes-1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s160/rayloriga_heroes-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s320/rayloriga_heroes-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s480/rayloriga_heroes-1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s160/rayloriga_heroes-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s320/rayloriga_heroes-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s480/rayloriga_heroes-1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.749 - Ray Loriga - Héroes"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/p-704-canciones-que-vivieron-una-segunda-juventud-en-los-anos-90-parte-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s320/b90_704.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s160/b90_704.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s320/b90_704.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s480/b90_704.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s160/b90_704.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s320/b90_704.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s480/b90_704.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.704 - Canciones que vivieron una segunda juventud en los años 90 (Parte 1)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/p-628-los-discos-imprescindibles-de-mark-lanegan.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhryzzy_X1TlTID8rCNsgI7SoIjCjT-0GlXh9utYKrC4FvhrGsBqVCGMuSOxA1XkOpIDuspCwNxBeD2VAkXMD0RZK7A9jsN9hrop-MMjHxmKRqHWtxbqX60qNFhUAAAI9Wo2JtJmeZXv98/s320/Mar-Lanegan.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhryzzy_X1TlTID8rCNsgI7SoIjCjT-0GlXh9utYKrC4FvhrGsBqVCGMuSOxA1XkOpIDuspCwNxBeD2VAkXMD0RZK7A9jsN9hrop-MMjHxmKRqHWtxbqX60qNFhUAAAI9Wo2JtJmeZXv98/s160/Mar-Lanegan.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhryzzy_X1TlTID8rCNsgI7SoIjCjT-0GlXh9utYKrC4FvhrGsBqVCGMuSOxA1XkOpIDuspCwNxBeD2VAkXMD0RZK7A9jsN9hrop-MMjHxmKRqHWtxbqX60qNFhUAAAI9Wo2JtJmeZXv98/s320/Mar-Lanegan.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhryzzy_X1TlTID8rCNsgI7SoIjCjT-0GlXh9utYKrC4FvhrGsBqVCGMuSOxA1XkOpIDuspCwNxBeD2VAkXMD0RZK7A9jsN9hrop-MMjHxmKRqHWtxbqX60qNFhUAAAI9Wo2JtJmeZXv98/s480/Mar-Lanegan.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhryzzy_X1TlTID8rCNsgI7SoIjCjT-0GlXh9utYKrC4FvhrGsBqVCGMuSOxA1XkOpIDuspCwNxBeD2VAkXMD0RZK7A9jsN9hrop-MMjHxmKRqHWtxbqX60qNFhUAAAI9Wo2JtJmeZXv98/s160/Mar-Lanegan.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhryzzy_X1TlTID8rCNsgI7SoIjCjT-0GlXh9utYKrC4FvhrGsBqVCGMuSOxA1XkOpIDuspCwNxBeD2VAkXMD0RZK7A9jsN9hrop-MMjHxmKRqHWtxbqX60qNFhUAAAI9Wo2JtJmeZXv98/s320/Mar-Lanegan.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhryzzy_X1TlTID8rCNsgI7SoIjCjT-0GlXh9utYKrC4FvhrGsBqVCGMuSOxA1XkOpIDuspCwNxBeD2VAkXMD0RZK7A9jsN9hrop-MMjHxmKRqHWtxbqX60qNFhUAAAI9Wo2JtJmeZXv98/s480/Mar-Lanegan.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.628 - Los discos imprescindibles de Mark Lanegan"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/p-610-la-musica-en-los-videojuegos.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRx3VMDDiqmsoMdsVSai0_GwZJw4VVJW2Ps6PNrekwqqP3A7gpcfod7n-O1l8CYZhB0PrhzFoxBW835LE-llo5BFFuaIfYcgOiMXUgd8ai2hbsbrRM1OnBsYaXgojhJMYE6fx2XSH05hU/s320/B90+Pixel.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRx3VMDDiqmsoMdsVSai0_GwZJw4VVJW2Ps6PNrekwqqP3A7gpcfod7n-O1l8CYZhB0PrhzFoxBW835LE-llo5BFFuaIfYcgOiMXUgd8ai2hbsbrRM1OnBsYaXgojhJMYE6fx2XSH05hU/s160/B90+Pixel.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRx3VMDDiqmsoMdsVSai0_GwZJw4VVJW2Ps6PNrekwqqP3A7gpcfod7n-O1l8CYZhB0PrhzFoxBW835LE-llo5BFFuaIfYcgOiMXUgd8ai2hbsbrRM1OnBsYaXgojhJMYE6fx2XSH05hU/s320/B90+Pixel.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRx3VMDDiqmsoMdsVSai0_GwZJw4VVJW2Ps6PNrekwqqP3A7gpcfod7n-O1l8CYZhB0PrhzFoxBW835LE-llo5BFFuaIfYcgOiMXUgd8ai2hbsbrRM1OnBsYaXgojhJMYE6fx2XSH05hU/s480/B90+Pixel.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRx3VMDDiqmsoMdsVSai0_GwZJw4VVJW2Ps6PNrekwqqP3A7gpcfod7n-O1l8CYZhB0PrhzFoxBW835LE-llo5BFFuaIfYcgOiMXUgd8ai2hbsbrRM1OnBsYaXgojhJMYE6fx2XSH05hU/s160/B90+Pixel.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRx3VMDDiqmsoMdsVSai0_GwZJw4VVJW2Ps6PNrekwqqP3A7gpcfod7n-O1l8CYZhB0PrhzFoxBW835LE-llo5BFFuaIfYcgOiMXUgd8ai2hbsbrRM1OnBsYaXgojhJMYE6fx2XSH05hU/s320/B90+Pixel.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRx3VMDDiqmsoMdsVSai0_GwZJw4VVJW2Ps6PNrekwqqP3A7gpcfod7n-O1l8CYZhB0PrhzFoxBW835LE-llo5BFFuaIfYcgOiMXUgd8ai2hbsbrRM1OnBsYaXgojhJMYE6fx2XSH05hU/s480/B90+Pixel.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.610 - La música en los videojuegos"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/programa-479-el-matinal-2-con-juan-de-pablos-the-special-case-y-especial-trap.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0930SFWohg4naBFLHp_qWMAW6HDhc-kWgB4oiYrXCJdV7Er_49mfoPRl31dVWZqZ0YXeA7DwkIVQmRBIgV5g7qwKvpEEsOrn6jFN90wkYWwEaHR1byIypwJQEetLXDwbNo3Z87BLepXw/s320/IMG_20190105_133643.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0930SFWohg4naBFLHp_qWMAW6HDhc-kWgB4oiYrXCJdV7Er_49mfoPRl31dVWZqZ0YXeA7DwkIVQmRBIgV5g7qwKvpEEsOrn6jFN90wkYWwEaHR1byIypwJQEetLXDwbNo3Z87BLepXw/s160/IMG_20190105_133643.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0930SFWohg4naBFLHp_qWMAW6HDhc-kWgB4oiYrXCJdV7Er_49mfoPRl31dVWZqZ0YXeA7DwkIVQmRBIgV5g7qwKvpEEsOrn6jFN90wkYWwEaHR1byIypwJQEetLXDwbNo3Z87BLepXw/s320/IMG_20190105_133643.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0930SFWohg4naBFLHp_qWMAW6HDhc-kWgB4oiYrXCJdV7Er_49mfoPRl31dVWZqZ0YXeA7DwkIVQmRBIgV5g7qwKvpEEsOrn6jFN90wkYWwEaHR1byIypwJQEetLXDwbNo3Z87BLepXw/s480/IMG_20190105_133643.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0930SFWohg4naBFLHp_qWMAW6HDhc-kWgB4oiYrXCJdV7Er_49mfoPRl31dVWZqZ0YXeA7DwkIVQmRBIgV5g7qwKvpEEsOrn6jFN90wkYWwEaHR1byIypwJQEetLXDwbNo3Z87BLepXw/s160/IMG_20190105_133643.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0930SFWohg4naBFLHp_qWMAW6HDhc-kWgB4oiYrXCJdV7Er_49mfoPRl31dVWZqZ0YXeA7DwkIVQmRBIgV5g7qwKvpEEsOrn6jFN90wkYWwEaHR1byIypwJQEetLXDwbNo3Z87BLepXw/s320/IMG_20190105_133643.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0930SFWohg4naBFLHp_qWMAW6HDhc-kWgB4oiYrXCJdV7Er_49mfoPRl31dVWZqZ0YXeA7DwkIVQmRBIgV5g7qwKvpEEsOrn6jFN90wkYWwEaHR1byIypwJQEetLXDwbNo3Z87BLepXw/s480/IMG_20190105_133643.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 479 - El Matinal #2 con Juan de Pablos, The Special Case y Especial Trap"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -180,8 +172,7 @@
         <a class="episode-cover-link" href="../episodios/programa-471-jorge-vileilla-nos-explica-el-fenomeno-rock-fm.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJyE4VreFXzmHeiscxWj0z1WRneZiJUltm2yLp_b_It3HhuIUR4L5Z_Z5Bow430JeolCQmf9i4cFQpJoFu5g7-9Jyba27o11EOvuxnCmf1lQPqlaUZJgoT_BxWpFi4qpwHXKUcGTlwUOM/s320/b90_471.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJyE4VreFXzmHeiscxWj0z1WRneZiJUltm2yLp_b_It3HhuIUR4L5Z_Z5Bow430JeolCQmf9i4cFQpJoFu5g7-9Jyba27o11EOvuxnCmf1lQPqlaUZJgoT_BxWpFi4qpwHXKUcGTlwUOM/s160/b90_471.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJyE4VreFXzmHeiscxWj0z1WRneZiJUltm2yLp_b_It3HhuIUR4L5Z_Z5Bow430JeolCQmf9i4cFQpJoFu5g7-9Jyba27o11EOvuxnCmf1lQPqlaUZJgoT_BxWpFi4qpwHXKUcGTlwUOM/s320/b90_471.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJyE4VreFXzmHeiscxWj0z1WRneZiJUltm2yLp_b_It3HhuIUR4L5Z_Z5Bow430JeolCQmf9i4cFQpJoFu5g7-9Jyba27o11EOvuxnCmf1lQPqlaUZJgoT_BxWpFi4qpwHXKUcGTlwUOM/s480/b90_471.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJyE4VreFXzmHeiscxWj0z1WRneZiJUltm2yLp_b_It3HhuIUR4L5Z_Z5Bow430JeolCQmf9i4cFQpJoFu5g7-9Jyba27o11EOvuxnCmf1lQPqlaUZJgoT_BxWpFi4qpwHXKUcGTlwUOM/s160/b90_471.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJyE4VreFXzmHeiscxWj0z1WRneZiJUltm2yLp_b_It3HhuIUR4L5Z_Z5Bow430JeolCQmf9i4cFQpJoFu5g7-9Jyba27o11EOvuxnCmf1lQPqlaUZJgoT_BxWpFi4qpwHXKUcGTlwUOM/s320/b90_471.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJyE4VreFXzmHeiscxWj0z1WRneZiJUltm2yLp_b_It3HhuIUR4L5Z_Z5Bow430JeolCQmf9i4cFQpJoFu5g7-9Jyba27o11EOvuxnCmf1lQPqlaUZJgoT_BxWpFi4qpwHXKUcGTlwUOM/s480/b90_471.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 471 - Jorge Vileilla nos explica el fenómeno &#39;Rock FM&#39;"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -194,8 +185,7 @@
         <a class="episode-cover-link" href="../episodios/programa-419-miles-kane.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVZnx-QzBtpKicAVdUh4RLvdAw7gRdIaH1zSeFvkGkLoGPYvxlownyp1bnNe_gpC1JjovxDb6Qc8tNeFr1_3W_cqVGa0uABo4wlzzXp5P_Bpyznj1chD8HWXFwmcfHGY8gFkUfbpTm-QE/s320/259078-12449760-Neil_Bedford_Miles_Kane_1_jpg.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVZnx-QzBtpKicAVdUh4RLvdAw7gRdIaH1zSeFvkGkLoGPYvxlownyp1bnNe_gpC1JjovxDb6Qc8tNeFr1_3W_cqVGa0uABo4wlzzXp5P_Bpyznj1chD8HWXFwmcfHGY8gFkUfbpTm-QE/s160/259078-12449760-Neil_Bedford_Miles_Kane_1_jpg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVZnx-QzBtpKicAVdUh4RLvdAw7gRdIaH1zSeFvkGkLoGPYvxlownyp1bnNe_gpC1JjovxDb6Qc8tNeFr1_3W_cqVGa0uABo4wlzzXp5P_Bpyznj1chD8HWXFwmcfHGY8gFkUfbpTm-QE/s320/259078-12449760-Neil_Bedford_Miles_Kane_1_jpg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVZnx-QzBtpKicAVdUh4RLvdAw7gRdIaH1zSeFvkGkLoGPYvxlownyp1bnNe_gpC1JjovxDb6Qc8tNeFr1_3W_cqVGa0uABo4wlzzXp5P_Bpyznj1chD8HWXFwmcfHGY8gFkUfbpTm-QE/s480/259078-12449760-Neil_Bedford_Miles_Kane_1_jpg.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVZnx-QzBtpKicAVdUh4RLvdAw7gRdIaH1zSeFvkGkLoGPYvxlownyp1bnNe_gpC1JjovxDb6Qc8tNeFr1_3W_cqVGa0uABo4wlzzXp5P_Bpyznj1chD8HWXFwmcfHGY8gFkUfbpTm-QE/s160/259078-12449760-Neil_Bedford_Miles_Kane_1_jpg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVZnx-QzBtpKicAVdUh4RLvdAw7gRdIaH1zSeFvkGkLoGPYvxlownyp1bnNe_gpC1JjovxDb6Qc8tNeFr1_3W_cqVGa0uABo4wlzzXp5P_Bpyznj1chD8HWXFwmcfHGY8gFkUfbpTm-QE/s320/259078-12449760-Neil_Bedford_Miles_Kane_1_jpg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVZnx-QzBtpKicAVdUh4RLvdAw7gRdIaH1zSeFvkGkLoGPYvxlownyp1bnNe_gpC1JjovxDb6Qc8tNeFr1_3W_cqVGa0uABo4wlzzXp5P_Bpyznj1chD8HWXFwmcfHGY8gFkUfbpTm-QE/s480/259078-12449760-Neil_Bedford_Miles_Kane_1_jpg.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 419 - Miles Kane"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -208,8 +198,7 @@
         <a class="episode-cover-link" href="../episodios/programa-331-vinilos-rock-historia-subjetiva-del-rock.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s320/b90_P331.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s160/b90_P331.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s320/b90_P331.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s480/b90_P331.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s160/b90_P331.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s320/b90_P331.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s480/b90_P331.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 331 - Vinilos Rock: Historia subjetiva del rock"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -222,8 +211,7 @@
         <a class="episode-cover-link" href="../episodios/programa-265-red-rocket-7-mike-allred.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s320/red-rocket-7.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s160/red-rocket-7.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s320/red-rocket-7.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s480/red-rocket-7.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s160/red-rocket-7.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s320/red-rocket-7.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s480/red-rocket-7.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 265 - Red Rocket 7 (Mike Allred)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -236,8 +224,7 @@
         <a class="episode-cover-link" href="../episodios/programa-259-bowie-en-los-90.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_iQ8aOUx9_1bFABqQIa8QyBi-NRS0P-tdS0E2V85VTNgqyIEcx6gdJpKTZiomraEeKg-MZHSd0aDC79zuCtj30d8fPDhQe1OFqmDEy8TQqhvVTTyfFeNGf4Mb9dIcRUl0lwFdsNbfIfM/s320/76c62953.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_iQ8aOUx9_1bFABqQIa8QyBi-NRS0P-tdS0E2V85VTNgqyIEcx6gdJpKTZiomraEeKg-MZHSd0aDC79zuCtj30d8fPDhQe1OFqmDEy8TQqhvVTTyfFeNGf4Mb9dIcRUl0lwFdsNbfIfM/s160/76c62953.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_iQ8aOUx9_1bFABqQIa8QyBi-NRS0P-tdS0E2V85VTNgqyIEcx6gdJpKTZiomraEeKg-MZHSd0aDC79zuCtj30d8fPDhQe1OFqmDEy8TQqhvVTTyfFeNGf4Mb9dIcRUl0lwFdsNbfIfM/s320/76c62953.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_iQ8aOUx9_1bFABqQIa8QyBi-NRS0P-tdS0E2V85VTNgqyIEcx6gdJpKTZiomraEeKg-MZHSd0aDC79zuCtj30d8fPDhQe1OFqmDEy8TQqhvVTTyfFeNGf4Mb9dIcRUl0lwFdsNbfIfM/s480/76c62953.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_iQ8aOUx9_1bFABqQIa8QyBi-NRS0P-tdS0E2V85VTNgqyIEcx6gdJpKTZiomraEeKg-MZHSd0aDC79zuCtj30d8fPDhQe1OFqmDEy8TQqhvVTTyfFeNGf4Mb9dIcRUl0lwFdsNbfIfM/s160/76c62953.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_iQ8aOUx9_1bFABqQIa8QyBi-NRS0P-tdS0E2V85VTNgqyIEcx6gdJpKTZiomraEeKg-MZHSd0aDC79zuCtj30d8fPDhQe1OFqmDEy8TQqhvVTTyfFeNGf4Mb9dIcRUl0lwFdsNbfIfM/s320/76c62953.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_iQ8aOUx9_1bFABqQIa8QyBi-NRS0P-tdS0E2V85VTNgqyIEcx6gdJpKTZiomraEeKg-MZHSd0aDC79zuCtj30d8fPDhQe1OFqmDEy8TQqhvVTTyfFeNGf4Mb9dIcRUl0lwFdsNbfIfM/s480/76c62953.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 259 - Bowie en los 90"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -250,8 +237,7 @@
         <a class="episode-cover-link" href="../episodios/programa-204-expediente-x-mad-cool-festival-penny-necklace.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdc76HKOvX4MneN6PmMD87Ea09gumDi-oWpMf23gv-V1kOpBPt8uhsquChS049i6fbi8IC15pByE0J3rx326YPxaWEb8kPpldgAwdwYc3uEGUJXKecO7Mu4SdhFD35zGpbpFp-8VZzvuc/s320/IMG_20160128_194945.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdc76HKOvX4MneN6PmMD87Ea09gumDi-oWpMf23gv-V1kOpBPt8uhsquChS049i6fbi8IC15pByE0J3rx326YPxaWEb8kPpldgAwdwYc3uEGUJXKecO7Mu4SdhFD35zGpbpFp-8VZzvuc/s160/IMG_20160128_194945.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdc76HKOvX4MneN6PmMD87Ea09gumDi-oWpMf23gv-V1kOpBPt8uhsquChS049i6fbi8IC15pByE0J3rx326YPxaWEb8kPpldgAwdwYc3uEGUJXKecO7Mu4SdhFD35zGpbpFp-8VZzvuc/s320/IMG_20160128_194945.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdc76HKOvX4MneN6PmMD87Ea09gumDi-oWpMf23gv-V1kOpBPt8uhsquChS049i6fbi8IC15pByE0J3rx326YPxaWEb8kPpldgAwdwYc3uEGUJXKecO7Mu4SdhFD35zGpbpFp-8VZzvuc/s480/IMG_20160128_194945.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdc76HKOvX4MneN6PmMD87Ea09gumDi-oWpMf23gv-V1kOpBPt8uhsquChS049i6fbi8IC15pByE0J3rx326YPxaWEb8kPpldgAwdwYc3uEGUJXKecO7Mu4SdhFD35zGpbpFp-8VZzvuc/s160/IMG_20160128_194945.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdc76HKOvX4MneN6PmMD87Ea09gumDi-oWpMf23gv-V1kOpBPt8uhsquChS049i6fbi8IC15pByE0J3rx326YPxaWEb8kPpldgAwdwYc3uEGUJXKecO7Mu4SdhFD35zGpbpFp-8VZzvuc/s320/IMG_20160128_194945.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdc76HKOvX4MneN6PmMD87Ea09gumDi-oWpMf23gv-V1kOpBPt8uhsquChS049i6fbi8IC15pByE0J3rx326YPxaWEb8kPpldgAwdwYc3uEGUJXKecO7Mu4SdhFD35zGpbpFp-8VZzvuc/s480/IMG_20160128_194945.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 204 - Expediente X - Mad Cool Festival - Penny Necklace"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -264,8 +250,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-37-nirvana-mtv-unplugged-19-anos-despues.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa 37 - Nirvana MTV Unplugged, 19 años después"
                 loading="lazy" width="320" height="213" />
         </a>

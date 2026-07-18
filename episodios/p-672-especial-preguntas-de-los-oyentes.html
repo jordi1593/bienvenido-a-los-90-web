@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.672 - Especial &#39;PREGUNTAS DE LOS OYENTES&#39; — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT90KKJEANYgFBotfYItjtBPKGSmUOGaEpc2UcJzPvKPjKjMWprwdtfnQWttc1BEd8k2zBsR7FPfDUGzoRqV9RqADO3Z612YJc3jfXnE0sTagWlhiepjvEe6KkZAXTehJM_aEZPMDH8ls/s320/Flea-Michael-Balzary-red-hot-chili-peppers-31202530-500-637.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT90KKJEANYgFBotfYItjtBPKGSmUOGaEpc2UcJzPvKPjKjMWprwdtfnQWttc1BEd8k2zBsR7FPfDUGzoRqV9RqADO3Z612YJc3jfXnE0sTagWlhiepjvEe6KkZAXTehJM_aEZPMDH8ls/s160/Flea-Michael-Balzary-red-hot-chili-peppers-31202530-500-637.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT90KKJEANYgFBotfYItjtBPKGSmUOGaEpc2UcJzPvKPjKjMWprwdtfnQWttc1BEd8k2zBsR7FPfDUGzoRqV9RqADO3Z612YJc3jfXnE0sTagWlhiepjvEe6KkZAXTehJM_aEZPMDH8ls/s320/Flea-Michael-Balzary-red-hot-chili-peppers-31202530-500-637.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT90KKJEANYgFBotfYItjtBPKGSmUOGaEpc2UcJzPvKPjKjMWprwdtfnQWttc1BEd8k2zBsR7FPfDUGzoRqV9RqADO3Z612YJc3jfXnE0sTagWlhiepjvEe6KkZAXTehJM_aEZPMDH8ls/s480/Flea-Michael-Balzary-red-hot-chili-peppers-31202530-500-637.jpeg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT90KKJEANYgFBotfYItjtBPKGSmUOGaEpc2UcJzPvKPjKjMWprwdtfnQWttc1BEd8k2zBsR7FPfDUGzoRqV9RqADO3Z612YJc3jfXnE0sTagWlhiepjvEe6KkZAXTehJM_aEZPMDH8ls/s160/Flea-Michael-Balzary-red-hot-chili-peppers-31202530-500-637.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT90KKJEANYgFBotfYItjtBPKGSmUOGaEpc2UcJzPvKPjKjMWprwdtfnQWttc1BEd8k2zBsR7FPfDUGzoRqV9RqADO3Z612YJc3jfXnE0sTagWlhiepjvEe6KkZAXTehJM_aEZPMDH8ls/s320/Flea-Michael-Balzary-red-hot-chili-peppers-31202530-500-637.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT90KKJEANYgFBotfYItjtBPKGSmUOGaEpc2UcJzPvKPjKjMWprwdtfnQWttc1BEd8k2zBsR7FPfDUGzoRqV9RqADO3Z612YJc3jfXnE0sTagWlhiepjvEe6KkZAXTehJM_aEZPMDH8ls/s480/Flea-Michael-Balzary-red-hot-chili-peppers-31202530-500-637.jpeg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.671 - Flea, ¿el mejor bajista de los 90?"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0-Z4cJESzSXBDFzJNRkMzdn1WtQb9YSzitreYDqh2VTs2N6-0WYS2OUGf6d8duY9lGl77yMxAUA926N_6L5_s3EG1GrTQb2DBiC-A1m3LplAR6mOGYXGyZRNhNRTd59xQlwzw3NP4XZQ/s320/ChP0-MIU0AAlaOA.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0-Z4cJESzSXBDFzJNRkMzdn1WtQb9YSzitreYDqh2VTs2N6-0WYS2OUGf6d8duY9lGl77yMxAUA926N_6L5_s3EG1GrTQb2DBiC-A1m3LplAR6mOGYXGyZRNhNRTd59xQlwzw3NP4XZQ/s160/ChP0-MIU0AAlaOA.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0-Z4cJESzSXBDFzJNRkMzdn1WtQb9YSzitreYDqh2VTs2N6-0WYS2OUGf6d8duY9lGl77yMxAUA926N_6L5_s3EG1GrTQb2DBiC-A1m3LplAR6mOGYXGyZRNhNRTd59xQlwzw3NP4XZQ/s320/ChP0-MIU0AAlaOA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0-Z4cJESzSXBDFzJNRkMzdn1WtQb9YSzitreYDqh2VTs2N6-0WYS2OUGf6d8duY9lGl77yMxAUA926N_6L5_s3EG1GrTQb2DBiC-A1m3LplAR6mOGYXGyZRNhNRTd59xQlwzw3NP4XZQ/s480/ChP0-MIU0AAlaOA.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0-Z4cJESzSXBDFzJNRkMzdn1WtQb9YSzitreYDqh2VTs2N6-0WYS2OUGf6d8duY9lGl77yMxAUA926N_6L5_s3EG1GrTQb2DBiC-A1m3LplAR6mOGYXGyZRNhNRTd59xQlwzw3NP4XZQ/s160/ChP0-MIU0AAlaOA.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0-Z4cJESzSXBDFzJNRkMzdn1WtQb9YSzitreYDqh2VTs2N6-0WYS2OUGf6d8duY9lGl77yMxAUA926N_6L5_s3EG1GrTQb2DBiC-A1m3LplAR6mOGYXGyZRNhNRTd59xQlwzw3NP4XZQ/s320/ChP0-MIU0AAlaOA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0-Z4cJESzSXBDFzJNRkMzdn1WtQb9YSzitreYDqh2VTs2N6-0WYS2OUGf6d8duY9lGl77yMxAUA926N_6L5_s3EG1GrTQb2DBiC-A1m3LplAR6mOGYXGyZRNhNRTd59xQlwzw3NP4XZQ/s480/ChP0-MIU0AAlaOA.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.673 - Green Day, la vida después de Dookie: Insomniac y Nimrod"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx9PVIUUMavvkEB7k9zko5lkpvZBxLtpomwBeGDLLQYO15ySSoD_gjNfxQnN9ylesmE3GASIFMyFz9aCRixsI7LmYooqhaJ8zOefgG-qH5gQ_UzBF-uEMJxAFAKdoW6PeUP9FwvPC_fPA/s320/106541894_596053441021348_563034096715533069_o.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx9PVIUUMavvkEB7k9zko5lkpvZBxLtpomwBeGDLLQYO15ySSoD_gjNfxQnN9ylesmE3GASIFMyFz9aCRixsI7LmYooqhaJ8zOefgG-qH5gQ_UzBF-uEMJxAFAKdoW6PeUP9FwvPC_fPA/s160/106541894_596053441021348_563034096715533069_o.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx9PVIUUMavvkEB7k9zko5lkpvZBxLtpomwBeGDLLQYO15ySSoD_gjNfxQnN9ylesmE3GASIFMyFz9aCRixsI7LmYooqhaJ8zOefgG-qH5gQ_UzBF-uEMJxAFAKdoW6PeUP9FwvPC_fPA/s320/106541894_596053441021348_563034096715533069_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx9PVIUUMavvkEB7k9zko5lkpvZBxLtpomwBeGDLLQYO15ySSoD_gjNfxQnN9ylesmE3GASIFMyFz9aCRixsI7LmYooqhaJ8zOefgG-qH5gQ_UzBF-uEMJxAFAKdoW6PeUP9FwvPC_fPA/s480/106541894_596053441021348_563034096715533069_o.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx9PVIUUMavvkEB7k9zko5lkpvZBxLtpomwBeGDLLQYO15ySSoD_gjNfxQnN9ylesmE3GASIFMyFz9aCRixsI7LmYooqhaJ8zOefgG-qH5gQ_UzBF-uEMJxAFAKdoW6PeUP9FwvPC_fPA/s160/106541894_596053441021348_563034096715533069_o.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx9PVIUUMavvkEB7k9zko5lkpvZBxLtpomwBeGDLLQYO15ySSoD_gjNfxQnN9ylesmE3GASIFMyFz9aCRixsI7LmYooqhaJ8zOefgG-qH5gQ_UzBF-uEMJxAFAKdoW6PeUP9FwvPC_fPA/s320/106541894_596053441021348_563034096715533069_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx9PVIUUMavvkEB7k9zko5lkpvZBxLtpomwBeGDLLQYO15ySSoD_gjNfxQnN9ylesmE3GASIFMyFz9aCRixsI7LmYooqhaJ8zOefgG-qH5gQ_UzBF-uEMJxAFAKdoW6PeUP9FwvPC_fPA/s480/106541894_596053441021348_563034096715533069_o.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.674 - The Saw Range &#39;Flowers FOR Dreams&#39; (2020)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="p-670-the-smashing-pumpkins-la-historia-de-machina-the-machines-of-god.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi67pG3HI0LaUnaW4K8_S2QMMbu_l8cowH9oupMkzUBwAjlrJ5OpLY7_kGm851X_90gl3TivDB9IZdYCh0gzB3zKvc3Ioen5KDhwy1PuH50VY8bEJ8eUQXx5EtrpB8wUdGsquf7KT_g_pw/s320/04.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi67pG3HI0LaUnaW4K8_S2QMMbu_l8cowH9oupMkzUBwAjlrJ5OpLY7_kGm851X_90gl3TivDB9IZdYCh0gzB3zKvc3Ioen5KDhwy1PuH50VY8bEJ8eUQXx5EtrpB8wUdGsquf7KT_g_pw/s320/04.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi67pG3HI0LaUnaW4K8_S2QMMbu_l8cowH9oupMkzUBwAjlrJ5OpLY7_kGm851X_90gl3TivDB9IZdYCh0gzB3zKvc3Ioen5KDhwy1PuH50VY8bEJ8eUQXx5EtrpB8wUdGsquf7KT_g_pw/s480/04.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi67pG3HI0LaUnaW4K8_S2QMMbu_l8cowH9oupMkzUBwAjlrJ5OpLY7_kGm851X_90gl3TivDB9IZdYCh0gzB3zKvc3Ioen5KDhwy1PuH50VY8bEJ8eUQXx5EtrpB8wUdGsquf7KT_g_pw/s640/04.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi67pG3HI0LaUnaW4K8_S2QMMbu_l8cowH9oupMkzUBwAjlrJ5OpLY7_kGm851X_90gl3TivDB9IZdYCh0gzB3zKvc3Ioen5KDhwy1PuH50VY8bEJ8eUQXx5EtrpB8wUdGsquf7KT_g_pw/s320/04.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi67pG3HI0LaUnaW4K8_S2QMMbu_l8cowH9oupMkzUBwAjlrJ5OpLY7_kGm851X_90gl3TivDB9IZdYCh0gzB3zKvc3Ioen5KDhwy1PuH50VY8bEJ8eUQXx5EtrpB8wUdGsquf7KT_g_pw/s480/04.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi67pG3HI0LaUnaW4K8_S2QMMbu_l8cowH9oupMkzUBwAjlrJ5OpLY7_kGm851X_90gl3TivDB9IZdYCh0gzB3zKvc3Ioen5KDhwy1PuH50VY8bEJ8eUQXx5EtrpB8wUdGsquf7KT_g_pw/s640/04.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.670 - The Smashing Pumpkins, la historia de &#39;Machina/The Machines of God&#39;"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="p-675-offspring-smash-el-disco-independiente-mas-vendido-de-la-historia.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s320/7a2806b36599681118bdf58136438e3b.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s320/7a2806b36599681118bdf58136438e3b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s480/7a2806b36599681118bdf58136438e3b.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s640/7a2806b36599681118bdf58136438e3b.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s320/7a2806b36599681118bdf58136438e3b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s480/7a2806b36599681118bdf58136438e3b.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s640/7a2806b36599681118bdf58136438e3b.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.675 - Offspring &#39;Smash&#39;, el disco independiente más vendido de la historia"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="p-669-alanis-morissette-jagged-little-pill-1995.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEQ4RnA88OmglA9z4X31bTEvpzwb94h8ElnhA-lYWCX0kfG-LfyLPDhDRdbGcYmxHqZADyYy-KhsPllBpGuMWRLsdd_tEOS7QeIMLRGGOVHzlMAr11GDtdtIIcRXWmzjyPkqoeHiOkU7w/s320/81UsU658UVL._SL1425_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEQ4RnA88OmglA9z4X31bTEvpzwb94h8ElnhA-lYWCX0kfG-LfyLPDhDRdbGcYmxHqZADyYy-KhsPllBpGuMWRLsdd_tEOS7QeIMLRGGOVHzlMAr11GDtdtIIcRXWmzjyPkqoeHiOkU7w/s320/81UsU658UVL._SL1425_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEQ4RnA88OmglA9z4X31bTEvpzwb94h8ElnhA-lYWCX0kfG-LfyLPDhDRdbGcYmxHqZADyYy-KhsPllBpGuMWRLsdd_tEOS7QeIMLRGGOVHzlMAr11GDtdtIIcRXWmzjyPkqoeHiOkU7w/s480/81UsU658UVL._SL1425_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEQ4RnA88OmglA9z4X31bTEvpzwb94h8ElnhA-lYWCX0kfG-LfyLPDhDRdbGcYmxHqZADyYy-KhsPllBpGuMWRLsdd_tEOS7QeIMLRGGOVHzlMAr11GDtdtIIcRXWmzjyPkqoeHiOkU7w/s640/81UsU658UVL._SL1425_.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEQ4RnA88OmglA9z4X31bTEvpzwb94h8ElnhA-lYWCX0kfG-LfyLPDhDRdbGcYmxHqZADyYy-KhsPllBpGuMWRLsdd_tEOS7QeIMLRGGOVHzlMAr11GDtdtIIcRXWmzjyPkqoeHiOkU7w/s320/81UsU658UVL._SL1425_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEQ4RnA88OmglA9z4X31bTEvpzwb94h8ElnhA-lYWCX0kfG-LfyLPDhDRdbGcYmxHqZADyYy-KhsPllBpGuMWRLsdd_tEOS7QeIMLRGGOVHzlMAr11GDtdtIIcRXWmzjyPkqoeHiOkU7w/s480/81UsU658UVL._SL1425_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEQ4RnA88OmglA9z4X31bTEvpzwb94h8ElnhA-lYWCX0kfG-LfyLPDhDRdbGcYmxHqZADyYy-KhsPllBpGuMWRLsdd_tEOS7QeIMLRGGOVHzlMAr11GDtdtIIcRXWmzjyPkqoeHiOkU7w/s640/81UsU658UVL._SL1425_.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.669 - Alanis Morissette - Jagged Little Pill (1995)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

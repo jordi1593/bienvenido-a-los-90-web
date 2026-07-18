@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>The Lemonheads — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-84-the-lemonheads-madrid-2025.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXRticoY-yztYVbAO2lWaKNWVB23IVilvSIYFAjF6HsiRx0lPJOFGGGiDREfMCPKQ6MLDSkHGFjA1EQyzZo9O90Iua-39jFQpiMDEiiATKp2of5ovvqxxdwCknma3yapIJ8cH7tfHkePEXxoTXLH_mF3d-rSflSy4vKWuaIokCD1Q3aN_b-3wgZg8qWiw/s320/lemonheads-come_on_feel-tour-mad_bcn-2025-696x870%20(1).jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXRticoY-yztYVbAO2lWaKNWVB23IVilvSIYFAjF6HsiRx0lPJOFGGGiDREfMCPKQ6MLDSkHGFjA1EQyzZo9O90Iua-39jFQpiMDEiiATKp2of5ovvqxxdwCknma3yapIJ8cH7tfHkePEXxoTXLH_mF3d-rSflSy4vKWuaIokCD1Q3aN_b-3wgZg8qWiw/s160/lemonheads-come_on_feel-tour-mad_bcn-2025-696x870%20(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXRticoY-yztYVbAO2lWaKNWVB23IVilvSIYFAjF6HsiRx0lPJOFGGGiDREfMCPKQ6MLDSkHGFjA1EQyzZo9O90Iua-39jFQpiMDEiiATKp2of5ovvqxxdwCknma3yapIJ8cH7tfHkePEXxoTXLH_mF3d-rSflSy4vKWuaIokCD1Q3aN_b-3wgZg8qWiw/s320/lemonheads-come_on_feel-tour-mad_bcn-2025-696x870%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXRticoY-yztYVbAO2lWaKNWVB23IVilvSIYFAjF6HsiRx0lPJOFGGGiDREfMCPKQ6MLDSkHGFjA1EQyzZo9O90Iua-39jFQpiMDEiiATKp2of5ovvqxxdwCknma3yapIJ8cH7tfHkePEXxoTXLH_mF3d-rSflSy4vKWuaIokCD1Q3aN_b-3wgZg8qWiw/s480/lemonheads-come_on_feel-tour-mad_bcn-2025-696x870%20(1).jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXRticoY-yztYVbAO2lWaKNWVB23IVilvSIYFAjF6HsiRx0lPJOFGGGiDREfMCPKQ6MLDSkHGFjA1EQyzZo9O90Iua-39jFQpiMDEiiATKp2of5ovvqxxdwCknma3yapIJ8cH7tfHkePEXxoTXLH_mF3d-rSflSy4vKWuaIokCD1Q3aN_b-3wgZg8qWiw/s160/lemonheads-come_on_feel-tour-mad_bcn-2025-696x870%20(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXRticoY-yztYVbAO2lWaKNWVB23IVilvSIYFAjF6HsiRx0lPJOFGGGiDREfMCPKQ6MLDSkHGFjA1EQyzZo9O90Iua-39jFQpiMDEiiATKp2of5ovvqxxdwCknma3yapIJ8cH7tfHkePEXxoTXLH_mF3d-rSflSy4vKWuaIokCD1Q3aN_b-3wgZg8qWiw/s320/lemonheads-come_on_feel-tour-mad_bcn-2025-696x870%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXRticoY-yztYVbAO2lWaKNWVB23IVilvSIYFAjF6HsiRx0lPJOFGGGiDREfMCPKQ6MLDSkHGFjA1EQyzZo9O90Iua-39jFQpiMDEiiATKp2of5ovvqxxdwCknma3yapIJ8cH7tfHkePEXxoTXLH_mF3d-rSflSy4vKWuaIokCD1Q3aN_b-3wgZg8qWiw/s480/lemonheads-come_on_feel-tour-mad_bcn-2025-696x870%20(1).jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 84 - The Lemonheads Madrid 2025"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/1074-the-lemonheads-arte-o-timo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd0ZF_neuBppLkRQCPtA6fuHzJARr0mzboDlHSwSzPgcThUb5QhMipAb6d595SL_tD8eGQyL2l57ic4eHFss0S8Zj6q-1VYp-FFzFCWps1U2bB5uxgOWGAp5uZ48YzEKETqAl5xx0Cm2OLokWF1VpRvCwHLQ0-bjwKsfMbVPnEL8y9MGXpYPxzJ0jrYH0/s320/B90_1074.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd0ZF_neuBppLkRQCPtA6fuHzJARr0mzboDlHSwSzPgcThUb5QhMipAb6d595SL_tD8eGQyL2l57ic4eHFss0S8Zj6q-1VYp-FFzFCWps1U2bB5uxgOWGAp5uZ48YzEKETqAl5xx0Cm2OLokWF1VpRvCwHLQ0-bjwKsfMbVPnEL8y9MGXpYPxzJ0jrYH0/s160/B90_1074.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd0ZF_neuBppLkRQCPtA6fuHzJARr0mzboDlHSwSzPgcThUb5QhMipAb6d595SL_tD8eGQyL2l57ic4eHFss0S8Zj6q-1VYp-FFzFCWps1U2bB5uxgOWGAp5uZ48YzEKETqAl5xx0Cm2OLokWF1VpRvCwHLQ0-bjwKsfMbVPnEL8y9MGXpYPxzJ0jrYH0/s320/B90_1074.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd0ZF_neuBppLkRQCPtA6fuHzJARr0mzboDlHSwSzPgcThUb5QhMipAb6d595SL_tD8eGQyL2l57ic4eHFss0S8Zj6q-1VYp-FFzFCWps1U2bB5uxgOWGAp5uZ48YzEKETqAl5xx0Cm2OLokWF1VpRvCwHLQ0-bjwKsfMbVPnEL8y9MGXpYPxzJ0jrYH0/s480/B90_1074.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd0ZF_neuBppLkRQCPtA6fuHzJARr0mzboDlHSwSzPgcThUb5QhMipAb6d595SL_tD8eGQyL2l57ic4eHFss0S8Zj6q-1VYp-FFzFCWps1U2bB5uxgOWGAp5uZ48YzEKETqAl5xx0Cm2OLokWF1VpRvCwHLQ0-bjwKsfMbVPnEL8y9MGXpYPxzJ0jrYH0/s160/B90_1074.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd0ZF_neuBppLkRQCPtA6fuHzJARr0mzboDlHSwSzPgcThUb5QhMipAb6d595SL_tD8eGQyL2l57ic4eHFss0S8Zj6q-1VYp-FFzFCWps1U2bB5uxgOWGAp5uZ48YzEKETqAl5xx0Cm2OLokWF1VpRvCwHLQ0-bjwKsfMbVPnEL8y9MGXpYPxzJ0jrYH0/s320/B90_1074.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd0ZF_neuBppLkRQCPtA6fuHzJARr0mzboDlHSwSzPgcThUb5QhMipAb6d595SL_tD8eGQyL2l57ic4eHFss0S8Zj6q-1VYp-FFzFCWps1U2bB5uxgOWGAp5uZ48YzEKETqAl5xx0Cm2OLokWF1VpRvCwHLQ0-bjwKsfMbVPnEL8y9MGXpYPxzJ0jrYH0/s480/B90_1074.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1074 - The Lemonheads, ¿arte o timo?"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-934-remasterizaciones-2023-valen-la-pena.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s160/b90_934_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s480/b90_934_.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s160/b90_934_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s480/b90_934_.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.934 - Remasterizaciones 2023, ¿valen la pena?"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-704-canciones-que-vivieron-una-segunda-juventud-en-los-anos-90-parte-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s320/b90_704.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s160/b90_704.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s320/b90_704.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s480/b90_704.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s160/b90_704.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s320/b90_704.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s480/b90_704.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.704 - Canciones que vivieron una segunda juventud en los años 90 (Parte 1)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-516-novedades-skunk-anansie-mansun-the-lemonheads-reef.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwe8Kl_OAbnWCNTmhO6S3RgrCYxXbpvQfVIICEYXVvnLGYPedxh_w2zPtOG-T0CupEpgvPxGJxX-iJSffKHazmsbElPfEPuiJkCdrULbxJ9I6CaTpcH5wN9zAApDe1kqoK4UukpKSvMes/s320/b90_516.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwe8Kl_OAbnWCNTmhO6S3RgrCYxXbpvQfVIICEYXVvnLGYPedxh_w2zPtOG-T0CupEpgvPxGJxX-iJSffKHazmsbElPfEPuiJkCdrULbxJ9I6CaTpcH5wN9zAApDe1kqoK4UukpKSvMes/s160/b90_516.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwe8Kl_OAbnWCNTmhO6S3RgrCYxXbpvQfVIICEYXVvnLGYPedxh_w2zPtOG-T0CupEpgvPxGJxX-iJSffKHazmsbElPfEPuiJkCdrULbxJ9I6CaTpcH5wN9zAApDe1kqoK4UukpKSvMes/s320/b90_516.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwe8Kl_OAbnWCNTmhO6S3RgrCYxXbpvQfVIICEYXVvnLGYPedxh_w2zPtOG-T0CupEpgvPxGJxX-iJSffKHazmsbElPfEPuiJkCdrULbxJ9I6CaTpcH5wN9zAApDe1kqoK4UukpKSvMes/s480/b90_516.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwe8Kl_OAbnWCNTmhO6S3RgrCYxXbpvQfVIICEYXVvnLGYPedxh_w2zPtOG-T0CupEpgvPxGJxX-iJSffKHazmsbElPfEPuiJkCdrULbxJ9I6CaTpcH5wN9zAApDe1kqoK4UukpKSvMes/s160/b90_516.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwe8Kl_OAbnWCNTmhO6S3RgrCYxXbpvQfVIICEYXVvnLGYPedxh_w2zPtOG-T0CupEpgvPxGJxX-iJSffKHazmsbElPfEPuiJkCdrULbxJ9I6CaTpcH5wN9zAApDe1kqoK4UukpKSvMes/s320/b90_516.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwe8Kl_OAbnWCNTmhO6S3RgrCYxXbpvQfVIICEYXVvnLGYPedxh_w2zPtOG-T0CupEpgvPxGJxX-iJSffKHazmsbElPfEPuiJkCdrULbxJ9I6CaTpcH5wN9zAApDe1kqoK4UukpKSvMes/s480/b90_516.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 516 - Novedades: Skunk Anansie, Mansun, The Lemonheads, Reef..."
                 loading="lazy" width="320" height="213" />
         </a>

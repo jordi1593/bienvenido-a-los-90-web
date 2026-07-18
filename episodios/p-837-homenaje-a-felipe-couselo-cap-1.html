@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.837 - Homenaje a Felipe Couselo (Cap.1) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -151,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="P.814 - Homenaje a 1991, el año que cambió la música"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -162,8 +161,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa 33 - Entrevista a Felipe Couselo"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -173,8 +171,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s320/1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s160/1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s320/1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s480/1.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s160/1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s320/1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s480/1.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.796 - Canciones imbatibles que abren disco"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -190,8 +187,7 @@
         <a class="related-bottom-card" href="programa-544-el-origen-del-nombre-de-algunas-de-mis-bandas-favoritas.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s320/b90_544.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s320/b90_544.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s480/b90_544.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s640/b90_544.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s320/b90_544.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s480/b90_544.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s640/b90_544.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 544 - El origen del nombre de algunas de mis bandas favoritas"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -202,8 +198,7 @@
           </a><a class="related-bottom-card" href="programa-543-amparo-llanos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s320/543OK+Amparo+Llanos.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s320/543OK+Amparo+Llanos.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s480/543OK+Amparo+Llanos.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s640/543OK+Amparo+Llanos.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s320/543OK+Amparo+Llanos.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s480/543OK+Amparo+Llanos.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s640/543OK+Amparo+Llanos.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 543 - Amparo Llanos"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -214,8 +209,7 @@
           </a><a class="related-bottom-card" href="programa-119-primavera-sound-2014-con-felipe-couselo.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s320/primavera.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s320/primavera.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s480/primavera.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s640/primavera.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s320/primavera.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s480/primavera.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s640/primavera.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 119 - Primavera Sound 2014 con Felipe Couselo"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

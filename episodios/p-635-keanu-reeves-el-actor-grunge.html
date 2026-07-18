@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.635 Keanu Reeves, el actor grunge — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -134,8 +134,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s160/kimthayil.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s480/kimthayil.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s160/kimthayil.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s480/kimthayil.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.630 - Kim Thayil de Soundgarden habla de sus discos favoritos del grunge"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -145,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6RaFkOf3S-T62tygvAN3ANfDoqV8BBcJb_3ij06wUJO1j3OjHfp3hCkLv9W5X9TlrfrJ3JAMdsxr5OJWqX-zQbNWMdOwfWRflOoBT_cmYkNonZ4RgRKzshHViHcNYsjkiAf-38mL7hq0/s320/Donita%252BSparks%252BLWlHxIE_jEQm.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6RaFkOf3S-T62tygvAN3ANfDoqV8BBcJb_3ij06wUJO1j3OjHfp3hCkLv9W5X9TlrfrJ3JAMdsxr5OJWqX-zQbNWMdOwfWRflOoBT_cmYkNonZ4RgRKzshHViHcNYsjkiAf-38mL7hq0/s160/Donita%252BSparks%252BLWlHxIE_jEQm.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6RaFkOf3S-T62tygvAN3ANfDoqV8BBcJb_3ij06wUJO1j3OjHfp3hCkLv9W5X9TlrfrJ3JAMdsxr5OJWqX-zQbNWMdOwfWRflOoBT_cmYkNonZ4RgRKzshHViHcNYsjkiAf-38mL7hq0/s320/Donita%252BSparks%252BLWlHxIE_jEQm.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6RaFkOf3S-T62tygvAN3ANfDoqV8BBcJb_3ij06wUJO1j3OjHfp3hCkLv9W5X9TlrfrJ3JAMdsxr5OJWqX-zQbNWMdOwfWRflOoBT_cmYkNonZ4RgRKzshHViHcNYsjkiAf-38mL7hq0/s480/Donita%252BSparks%252BLWlHxIE_jEQm.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6RaFkOf3S-T62tygvAN3ANfDoqV8BBcJb_3ij06wUJO1j3OjHfp3hCkLv9W5X9TlrfrJ3JAMdsxr5OJWqX-zQbNWMdOwfWRflOoBT_cmYkNonZ4RgRKzshHViHcNYsjkiAf-38mL7hq0/s160/Donita%252BSparks%252BLWlHxIE_jEQm.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6RaFkOf3S-T62tygvAN3ANfDoqV8BBcJb_3ij06wUJO1j3OjHfp3hCkLv9W5X9TlrfrJ3JAMdsxr5OJWqX-zQbNWMdOwfWRflOoBT_cmYkNonZ4RgRKzshHViHcNYsjkiAf-38mL7hq0/s320/Donita%252BSparks%252BLWlHxIE_jEQm.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6RaFkOf3S-T62tygvAN3ANfDoqV8BBcJb_3ij06wUJO1j3OjHfp3hCkLv9W5X9TlrfrJ3JAMdsxr5OJWqX-zQbNWMdOwfWRflOoBT_cmYkNonZ4RgRKzshHViHcNYsjkiAf-38mL7hq0/s480/Donita%252BSparks%252BLWlHxIE_jEQm.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.629 Donita Sparks de L7 habla de sus discos favoritos del grunge"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -156,8 +154,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s320/unnamed+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s160/unnamed+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s320/unnamed+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s480/unnamed+%25281%2529.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s160/unnamed+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s320/unnamed+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s480/unnamed+%25281%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.611 - Susan Silver, la manager del grunge (Soundgarden, Alice in Chains, Screaming Trees...)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -173,8 +170,7 @@
         <a class="related-bottom-card" href="p-663-garbage-la-banda-que-mato-el-grunge.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s320/66dba64fc5001318c1ffc6f472b8ebfc.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s320/66dba64fc5001318c1ffc6f472b8ebfc.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s480/66dba64fc5001318c1ffc6f472b8ebfc.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s640/66dba64fc5001318c1ffc6f472b8ebfc.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s320/66dba64fc5001318c1ffc6f472b8ebfc.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s480/66dba64fc5001318c1ffc6f472b8ebfc.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMny6qnr2ZT0oI5m4r3piB612_C5lhiijHO0ejmKCdUhNlgLhyXJ5XLwe9vwLWZDHG2Z6WgY9KjKqvGxZU50DVUaKUZ0Lt2b9RknTxxuvNt2VJjxnobmkWgepxFHmD6yfvdj7NiGVvSRY/s640/66dba64fc5001318c1ffc6f472b8ebfc.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.663 - Garbage, la banda que mató el grunge"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -185,8 +181,7 @@
           </a><a class="related-bottom-card" href="p-571-especial-cine-batman-joker-y-los-hermanos-phoenix.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s320/EspUzf_k_400x400.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s320/EspUzf_k_400x400.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s480/EspUzf_k_400x400.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s640/EspUzf_k_400x400.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s320/EspUzf_k_400x400.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s480/EspUzf_k_400x400.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s640/EspUzf_k_400x400.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.571 - Especial cine: Batman, Joker y los hermanos Phoenix"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -197,8 +192,7 @@
           </a><a class="related-bottom-card" href="p-709-teriyaki-asthma-c-z-records-la-otra-cara-del-grunge.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s320/s-l400+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s320/s-l400+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s480/s-l400+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s640/s-l400+%25281%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s320/s-l400+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s480/s-l400+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s640/s-l400+%25281%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.709 - Teriyaki Asthma - C/Z Records (La otra cara del grunge)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

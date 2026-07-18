@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 202 - Adiós Bowie — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -135,8 +135,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s320/Screenshot_20160410-123235-2.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s160/Screenshot_20160410-123235-2.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s320/Screenshot_20160410-123235-2.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s480/Screenshot_20160410-123235-2.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s160/Screenshot_20160410-123235-2.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s320/Screenshot_20160410-123235-2.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s480/Screenshot_20160410-123235-2.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 218 - Noel Gallagher - David Bowie"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -146,8 +145,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_iQ8aOUx9_1bFABqQIa8QyBi-NRS0P-tdS0E2V85VTNgqyIEcx6gdJpKTZiomraEeKg-MZHSd0aDC79zuCtj30d8fPDhQe1OFqmDEy8TQqhvVTTyfFeNGf4Mb9dIcRUl0lwFdsNbfIfM/s320/76c62953.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_iQ8aOUx9_1bFABqQIa8QyBi-NRS0P-tdS0E2V85VTNgqyIEcx6gdJpKTZiomraEeKg-MZHSd0aDC79zuCtj30d8fPDhQe1OFqmDEy8TQqhvVTTyfFeNGf4Mb9dIcRUl0lwFdsNbfIfM/s160/76c62953.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_iQ8aOUx9_1bFABqQIa8QyBi-NRS0P-tdS0E2V85VTNgqyIEcx6gdJpKTZiomraEeKg-MZHSd0aDC79zuCtj30d8fPDhQe1OFqmDEy8TQqhvVTTyfFeNGf4Mb9dIcRUl0lwFdsNbfIfM/s320/76c62953.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_iQ8aOUx9_1bFABqQIa8QyBi-NRS0P-tdS0E2V85VTNgqyIEcx6gdJpKTZiomraEeKg-MZHSd0aDC79zuCtj30d8fPDhQe1OFqmDEy8TQqhvVTTyfFeNGf4Mb9dIcRUl0lwFdsNbfIfM/s480/76c62953.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_iQ8aOUx9_1bFABqQIa8QyBi-NRS0P-tdS0E2V85VTNgqyIEcx6gdJpKTZiomraEeKg-MZHSd0aDC79zuCtj30d8fPDhQe1OFqmDEy8TQqhvVTTyfFeNGf4Mb9dIcRUl0lwFdsNbfIfM/s160/76c62953.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_iQ8aOUx9_1bFABqQIa8QyBi-NRS0P-tdS0E2V85VTNgqyIEcx6gdJpKTZiomraEeKg-MZHSd0aDC79zuCtj30d8fPDhQe1OFqmDEy8TQqhvVTTyfFeNGf4Mb9dIcRUl0lwFdsNbfIfM/s320/76c62953.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_iQ8aOUx9_1bFABqQIa8QyBi-NRS0P-tdS0E2V85VTNgqyIEcx6gdJpKTZiomraEeKg-MZHSd0aDC79zuCtj30d8fPDhQe1OFqmDEy8TQqhvVTTyfFeNGf4Mb9dIcRUl0lwFdsNbfIfM/s480/76c62953.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 259 - Bowie en los 90"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -157,8 +155,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s320/DavidBowie_50th_with_BC.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s160/DavidBowie_50th_with_BC.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s320/DavidBowie_50th_with_BC.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s480/DavidBowie_50th_with_BC.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s160/DavidBowie_50th_with_BC.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s320/DavidBowie_50th_with_BC.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s480/DavidBowie_50th_with_BC.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 45 - Cuando Bowie cumplió los 50"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -174,8 +171,7 @@
         <a class="related-bottom-card" href="p-892-el-repaso-definitivo-al-blackstar-de-bowie.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCseNN3HBwfRwyUAOUOjJ-GCrcD50AYqH318gOcJ7Q9Xu6BHNrqL0UyINlRaQJk0kJhjm5Mp0braCey6qBo-j1fonDhqhG6QylryYgu5JHkq1x_zFYf9RI8nwkY6X5moncj_OkLJrs32x5nVZmTBiNT_bfo1XgF1kzLMeySOQWhlMdH5AF-GH7l_QY/s320/david-bowie-20-11-15.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCseNN3HBwfRwyUAOUOjJ-GCrcD50AYqH318gOcJ7Q9Xu6BHNrqL0UyINlRaQJk0kJhjm5Mp0braCey6qBo-j1fonDhqhG6QylryYgu5JHkq1x_zFYf9RI8nwkY6X5moncj_OkLJrs32x5nVZmTBiNT_bfo1XgF1kzLMeySOQWhlMdH5AF-GH7l_QY/s320/david-bowie-20-11-15.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCseNN3HBwfRwyUAOUOjJ-GCrcD50AYqH318gOcJ7Q9Xu6BHNrqL0UyINlRaQJk0kJhjm5Mp0braCey6qBo-j1fonDhqhG6QylryYgu5JHkq1x_zFYf9RI8nwkY6X5moncj_OkLJrs32x5nVZmTBiNT_bfo1XgF1kzLMeySOQWhlMdH5AF-GH7l_QY/s480/david-bowie-20-11-15.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCseNN3HBwfRwyUAOUOjJ-GCrcD50AYqH318gOcJ7Q9Xu6BHNrqL0UyINlRaQJk0kJhjm5Mp0braCey6qBo-j1fonDhqhG6QylryYgu5JHkq1x_zFYf9RI8nwkY6X5moncj_OkLJrs32x5nVZmTBiNT_bfo1XgF1kzLMeySOQWhlMdH5AF-GH7l_QY/s640/david-bowie-20-11-15.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCseNN3HBwfRwyUAOUOjJ-GCrcD50AYqH318gOcJ7Q9Xu6BHNrqL0UyINlRaQJk0kJhjm5Mp0braCey6qBo-j1fonDhqhG6QylryYgu5JHkq1x_zFYf9RI8nwkY6X5moncj_OkLJrs32x5nVZmTBiNT_bfo1XgF1kzLMeySOQWhlMdH5AF-GH7l_QY/s320/david-bowie-20-11-15.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCseNN3HBwfRwyUAOUOjJ-GCrcD50AYqH318gOcJ7Q9Xu6BHNrqL0UyINlRaQJk0kJhjm5Mp0braCey6qBo-j1fonDhqhG6QylryYgu5JHkq1x_zFYf9RI8nwkY6X5moncj_OkLJrs32x5nVZmTBiNT_bfo1XgF1kzLMeySOQWhlMdH5AF-GH7l_QY/s480/david-bowie-20-11-15.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCseNN3HBwfRwyUAOUOjJ-GCrcD50AYqH318gOcJ7Q9Xu6BHNrqL0UyINlRaQJk0kJhjm5Mp0braCey6qBo-j1fonDhqhG6QylryYgu5JHkq1x_zFYf9RI8nwkY6X5moncj_OkLJrs32x5nVZmTBiNT_bfo1XgF1kzLMeySOQWhlMdH5AF-GH7l_QY/s640/david-bowie-20-11-15.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.892 - El repaso definitivo al Blackstar de Bowie"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -186,8 +182,7 @@
           </a><a class="related-bottom-card" href="b90-supernova-83-placebo-y-david-bowie.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAeY88n4Tg99MWMhFznuabpQsdejDWOJKzvU6NGPTHgRS6WycrgedHmIUh9fz-Hr3ZZuVQmEtAeVcGUae5pjYO6ybNgJi3EKW0NQAPgACT0TENzSZNwvcjUS_1ybCs45GjtVjv3wKQVV7mu7vwh2asXqO7UKsCVRxQkkz_OKleaIXIEOLE_fKrqOwcKOQ/s320/51GfVPdtlaL._UXNaN_FMjpg_QL85_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAeY88n4Tg99MWMhFznuabpQsdejDWOJKzvU6NGPTHgRS6WycrgedHmIUh9fz-Hr3ZZuVQmEtAeVcGUae5pjYO6ybNgJi3EKW0NQAPgACT0TENzSZNwvcjUS_1ybCs45GjtVjv3wKQVV7mu7vwh2asXqO7UKsCVRxQkkz_OKleaIXIEOLE_fKrqOwcKOQ/s320/51GfVPdtlaL._UXNaN_FMjpg_QL85_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAeY88n4Tg99MWMhFznuabpQsdejDWOJKzvU6NGPTHgRS6WycrgedHmIUh9fz-Hr3ZZuVQmEtAeVcGUae5pjYO6ybNgJi3EKW0NQAPgACT0TENzSZNwvcjUS_1ybCs45GjtVjv3wKQVV7mu7vwh2asXqO7UKsCVRxQkkz_OKleaIXIEOLE_fKrqOwcKOQ/s480/51GfVPdtlaL._UXNaN_FMjpg_QL85_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAeY88n4Tg99MWMhFznuabpQsdejDWOJKzvU6NGPTHgRS6WycrgedHmIUh9fz-Hr3ZZuVQmEtAeVcGUae5pjYO6ybNgJi3EKW0NQAPgACT0TENzSZNwvcjUS_1ybCs45GjtVjv3wKQVV7mu7vwh2asXqO7UKsCVRxQkkz_OKleaIXIEOLE_fKrqOwcKOQ/s640/51GfVPdtlaL._UXNaN_FMjpg_QL85_.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAeY88n4Tg99MWMhFznuabpQsdejDWOJKzvU6NGPTHgRS6WycrgedHmIUh9fz-Hr3ZZuVQmEtAeVcGUae5pjYO6ybNgJi3EKW0NQAPgACT0TENzSZNwvcjUS_1ybCs45GjtVjv3wKQVV7mu7vwh2asXqO7UKsCVRxQkkz_OKleaIXIEOLE_fKrqOwcKOQ/s320/51GfVPdtlaL._UXNaN_FMjpg_QL85_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAeY88n4Tg99MWMhFznuabpQsdejDWOJKzvU6NGPTHgRS6WycrgedHmIUh9fz-Hr3ZZuVQmEtAeVcGUae5pjYO6ybNgJi3EKW0NQAPgACT0TENzSZNwvcjUS_1ybCs45GjtVjv3wKQVV7mu7vwh2asXqO7UKsCVRxQkkz_OKleaIXIEOLE_fKrqOwcKOQ/s480/51GfVPdtlaL._UXNaN_FMjpg_QL85_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAeY88n4Tg99MWMhFznuabpQsdejDWOJKzvU6NGPTHgRS6WycrgedHmIUh9fz-Hr3ZZuVQmEtAeVcGUae5pjYO6ybNgJi3EKW0NQAPgACT0TENzSZNwvcjUS_1ybCs45GjtVjv3wKQVV7mu7vwh2asXqO7UKsCVRxQkkz_OKleaIXIEOLE_fKrqOwcKOQ/s640/51GfVPdtlaL._UXNaN_FMjpg_QL85_.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Supernova 83 - Placebo y David Bowie"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -198,8 +193,7 @@
           </a><a class="related-bottom-card" href="programa-196-sonic-youth-sao-paulo-14-nov-2011.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s320/swu2011_mh_marcoshermes_195234-3.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s320/swu2011_mh_marcoshermes_195234-3.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s480/swu2011_mh_marcoshermes_195234-3.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s640/swu2011_mh_marcoshermes_195234-3.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s320/swu2011_mh_marcoshermes_195234-3.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s480/swu2011_mh_marcoshermes_195234-3.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s640/swu2011_mh_marcoshermes_195234-3.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 196 - Sonic Youth São Paulo 14 Nov. 2011"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

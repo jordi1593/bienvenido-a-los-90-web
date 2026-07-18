@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Mae — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-1002-hablando-con-susana-y-mae-de-diecisiete.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp30IcVhQYfqrXPm0uYvaEFiiTzzRrcr-XmRhLhU9zU4HTAuAu-U0OrdnvdSrEE4dBCUSiz-z0FFeom-t4Whwk5MYEXkRi40mo0s0N0lz7h2RsKRbbJO9JLRZ0KQNZbVVloc-ZYv13sjdqgsA9rn216AE2Z7Ld1jjYX_0HMI-uHeAMdBUvqolFYdECEng/s320/diecisiete_foto.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp30IcVhQYfqrXPm0uYvaEFiiTzzRrcr-XmRhLhU9zU4HTAuAu-U0OrdnvdSrEE4dBCUSiz-z0FFeom-t4Whwk5MYEXkRi40mo0s0N0lz7h2RsKRbbJO9JLRZ0KQNZbVVloc-ZYv13sjdqgsA9rn216AE2Z7Ld1jjYX_0HMI-uHeAMdBUvqolFYdECEng/s160/diecisiete_foto.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp30IcVhQYfqrXPm0uYvaEFiiTzzRrcr-XmRhLhU9zU4HTAuAu-U0OrdnvdSrEE4dBCUSiz-z0FFeom-t4Whwk5MYEXkRi40mo0s0N0lz7h2RsKRbbJO9JLRZ0KQNZbVVloc-ZYv13sjdqgsA9rn216AE2Z7Ld1jjYX_0HMI-uHeAMdBUvqolFYdECEng/s320/diecisiete_foto.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp30IcVhQYfqrXPm0uYvaEFiiTzzRrcr-XmRhLhU9zU4HTAuAu-U0OrdnvdSrEE4dBCUSiz-z0FFeom-t4Whwk5MYEXkRi40mo0s0N0lz7h2RsKRbbJO9JLRZ0KQNZbVVloc-ZYv13sjdqgsA9rn216AE2Z7Ld1jjYX_0HMI-uHeAMdBUvqolFYdECEng/s480/diecisiete_foto.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp30IcVhQYfqrXPm0uYvaEFiiTzzRrcr-XmRhLhU9zU4HTAuAu-U0OrdnvdSrEE4dBCUSiz-z0FFeom-t4Whwk5MYEXkRi40mo0s0N0lz7h2RsKRbbJO9JLRZ0KQNZbVVloc-ZYv13sjdqgsA9rn216AE2Z7Ld1jjYX_0HMI-uHeAMdBUvqolFYdECEng/s160/diecisiete_foto.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp30IcVhQYfqrXPm0uYvaEFiiTzzRrcr-XmRhLhU9zU4HTAuAu-U0OrdnvdSrEE4dBCUSiz-z0FFeom-t4Whwk5MYEXkRi40mo0s0N0lz7h2RsKRbbJO9JLRZ0KQNZbVVloc-ZYv13sjdqgsA9rn216AE2Z7Ld1jjYX_0HMI-uHeAMdBUvqolFYdECEng/s320/diecisiete_foto.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp30IcVhQYfqrXPm0uYvaEFiiTzzRrcr-XmRhLhU9zU4HTAuAu-U0OrdnvdSrEE4dBCUSiz-z0FFeom-t4Whwk5MYEXkRi40mo0s0N0lz7h2RsKRbbJO9JLRZ0KQNZbVVloc-ZYv13sjdqgsA9rn216AE2Z7Ld1jjYX_0HMI-uHeAMdBUvqolFYdECEng/s480/diecisiete_foto.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.1002 - Hablando con Susana y Mae de DIECISIETE"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/programa-503-las-b90-sessions-vol-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s320/b90_503+%25283%2529.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s160/b90_503+%25283%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s320/b90_503+%25283%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s480/b90_503+%25283%2529.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s160/b90_503+%25283%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s320/b90_503+%25283%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s480/b90_503+%25283%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 503 - Las b90 Sessions Vol.1"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-106-mae.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTJMwiVYW7da-tML3AvkUdIzHhxmIOrJIo0qp-dzJMKN0nCn_-8zczuvYVf6l0L1BdWEac2_T5QdWHZZ1wgT6laVOE3feNwRoKvbroxmXHWFtROiFUCyEUXW1AgB3ELvUEAQybj6ydYbM/s320/P1020858.JPG"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTJMwiVYW7da-tML3AvkUdIzHhxmIOrJIo0qp-dzJMKN0nCn_-8zczuvYVf6l0L1BdWEac2_T5QdWHZZ1wgT6laVOE3feNwRoKvbroxmXHWFtROiFUCyEUXW1AgB3ELvUEAQybj6ydYbM/s160/P1020858.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTJMwiVYW7da-tML3AvkUdIzHhxmIOrJIo0qp-dzJMKN0nCn_-8zczuvYVf6l0L1BdWEac2_T5QdWHZZ1wgT6laVOE3feNwRoKvbroxmXHWFtROiFUCyEUXW1AgB3ELvUEAQybj6ydYbM/s320/P1020858.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTJMwiVYW7da-tML3AvkUdIzHhxmIOrJIo0qp-dzJMKN0nCn_-8zczuvYVf6l0L1BdWEac2_T5QdWHZZ1wgT6laVOE3feNwRoKvbroxmXHWFtROiFUCyEUXW1AgB3ELvUEAQybj6ydYbM/s480/P1020858.JPG 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTJMwiVYW7da-tML3AvkUdIzHhxmIOrJIo0qp-dzJMKN0nCn_-8zczuvYVf6l0L1BdWEac2_T5QdWHZZ1wgT6laVOE3feNwRoKvbroxmXHWFtROiFUCyEUXW1AgB3ELvUEAQybj6ydYbM/s160/P1020858.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTJMwiVYW7da-tML3AvkUdIzHhxmIOrJIo0qp-dzJMKN0nCn_-8zczuvYVf6l0L1BdWEac2_T5QdWHZZ1wgT6laVOE3feNwRoKvbroxmXHWFtROiFUCyEUXW1AgB3ELvUEAQybj6ydYbM/s320/P1020858.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTJMwiVYW7da-tML3AvkUdIzHhxmIOrJIo0qp-dzJMKN0nCn_-8zczuvYVf6l0L1BdWEac2_T5QdWHZZ1wgT6laVOE3feNwRoKvbroxmXHWFtROiFUCyEUXW1AgB3ELvUEAQybj6ydYbM/s480/P1020858.JPG 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 106 - MAE"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-96-lo-mejor-del-2013.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s320/420962_355957767755206_243875636_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s480/420962_355957767755206_243875636_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s480/420962_355957767755206_243875636_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 96 - Lo mejor del 2013"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/b90-programa-82-diecisiete.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZyDLmPfgwVvmRHNQwisg3Q6dKm9RMzTODxvzCYQAnfOg9NpZSJ_62nznX-olOET0Uhjcoa-RhItAYrPtLfIMzhSKb_DhHMj-eigU1gKj1hFrQYUmcWKbJhT3UzZF6mwzlPd0ORM9ffZI/s320/IMG_8342.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZyDLmPfgwVvmRHNQwisg3Q6dKm9RMzTODxvzCYQAnfOg9NpZSJ_62nznX-olOET0Uhjcoa-RhItAYrPtLfIMzhSKb_DhHMj-eigU1gKj1hFrQYUmcWKbJhT3UzZF6mwzlPd0ORM9ffZI/s160/IMG_8342.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZyDLmPfgwVvmRHNQwisg3Q6dKm9RMzTODxvzCYQAnfOg9NpZSJ_62nznX-olOET0Uhjcoa-RhItAYrPtLfIMzhSKb_DhHMj-eigU1gKj1hFrQYUmcWKbJhT3UzZF6mwzlPd0ORM9ffZI/s320/IMG_8342.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZyDLmPfgwVvmRHNQwisg3Q6dKm9RMzTODxvzCYQAnfOg9NpZSJ_62nznX-olOET0Uhjcoa-RhItAYrPtLfIMzhSKb_DhHMj-eigU1gKj1hFrQYUmcWKbJhT3UzZF6mwzlPd0ORM9ffZI/s480/IMG_8342.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZyDLmPfgwVvmRHNQwisg3Q6dKm9RMzTODxvzCYQAnfOg9NpZSJ_62nznX-olOET0Uhjcoa-RhItAYrPtLfIMzhSKb_DhHMj-eigU1gKj1hFrQYUmcWKbJhT3UzZF6mwzlPd0ORM9ffZI/s160/IMG_8342.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZyDLmPfgwVvmRHNQwisg3Q6dKm9RMzTODxvzCYQAnfOg9NpZSJ_62nznX-olOET0Uhjcoa-RhItAYrPtLfIMzhSKb_DhHMj-eigU1gKj1hFrQYUmcWKbJhT3UzZF6mwzlPd0ORM9ffZI/s320/IMG_8342.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZyDLmPfgwVvmRHNQwisg3Q6dKm9RMzTODxvzCYQAnfOg9NpZSJ_62nznX-olOET0Uhjcoa-RhItAYrPtLfIMzhSKb_DhHMj-eigU1gKj1hFrQYUmcWKbJhT3UzZF6mwzlPd0ORM9ffZI/s480/IMG_8342.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 82 - DIECISIETE"
                 loading="lazy" width="320" height="213" />
         </a>

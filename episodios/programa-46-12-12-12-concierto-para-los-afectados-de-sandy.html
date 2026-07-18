@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 46 - 12-12-12 Concierto para los afectados de Sandy  — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -144,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj64nYSMisSTVfN32imskxcN7YfjriKV01k_y8UEbnl0r1pL1cCAPVA6k8bHcopsj9Lg5svJjOvojv942Wm22Z7Errh0Uqe4PcJzcoiGwTcbOqDLSZNaamSz6I7jtvMJ1tDelbY2wq4Xn0/s320/foofighters-concrete-and-gold.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj64nYSMisSTVfN32imskxcN7YfjriKV01k_y8UEbnl0r1pL1cCAPVA6k8bHcopsj9Lg5svJjOvojv942Wm22Z7Errh0Uqe4PcJzcoiGwTcbOqDLSZNaamSz6I7jtvMJ1tDelbY2wq4Xn0/s160/foofighters-concrete-and-gold.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj64nYSMisSTVfN32imskxcN7YfjriKV01k_y8UEbnl0r1pL1cCAPVA6k8bHcopsj9Lg5svJjOvojv942Wm22Z7Errh0Uqe4PcJzcoiGwTcbOqDLSZNaamSz6I7jtvMJ1tDelbY2wq4Xn0/s320/foofighters-concrete-and-gold.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj64nYSMisSTVfN32imskxcN7YfjriKV01k_y8UEbnl0r1pL1cCAPVA6k8bHcopsj9Lg5svJjOvojv942Wm22Z7Errh0Uqe4PcJzcoiGwTcbOqDLSZNaamSz6I7jtvMJ1tDelbY2wq4Xn0/s480/foofighters-concrete-and-gold.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj64nYSMisSTVfN32imskxcN7YfjriKV01k_y8UEbnl0r1pL1cCAPVA6k8bHcopsj9Lg5svJjOvojv942Wm22Z7Errh0Uqe4PcJzcoiGwTcbOqDLSZNaamSz6I7jtvMJ1tDelbY2wq4Xn0/s160/foofighters-concrete-and-gold.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj64nYSMisSTVfN32imskxcN7YfjriKV01k_y8UEbnl0r1pL1cCAPVA6k8bHcopsj9Lg5svJjOvojv942Wm22Z7Errh0Uqe4PcJzcoiGwTcbOqDLSZNaamSz6I7jtvMJ1tDelbY2wq4Xn0/s320/foofighters-concrete-and-gold.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj64nYSMisSTVfN32imskxcN7YfjriKV01k_y8UEbnl0r1pL1cCAPVA6k8bHcopsj9Lg5svJjOvojv942Wm22Z7Errh0Uqe4PcJzcoiGwTcbOqDLSZNaamSz6I7jtvMJ1tDelbY2wq4Xn0/s480/foofighters-concrete-and-gold.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 294 - Foo Fighters &quot;Concrete and Gold&quot;"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -155,8 +154,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa 47"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +164,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoQpF-ZIDwo3iYbZRL0qD8_BI3KbT-jGXHrABdqgxZKLAGaCIchL7hhPyK_nDElC5bTpm0hd_B-0u0MimRJYvLDyTa3A9qDZjC1fgv-0igktBlI5ujVs2RGSc2_IRF0fuC_J83FfkZJNU/s320/nocode_-_triangle.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoQpF-ZIDwo3iYbZRL0qD8_BI3KbT-jGXHrABdqgxZKLAGaCIchL7hhPyK_nDElC5bTpm0hd_B-0u0MimRJYvLDyTa3A9qDZjC1fgv-0igktBlI5ujVs2RGSc2_IRF0fuC_J83FfkZJNU/s160/nocode_-_triangle.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoQpF-ZIDwo3iYbZRL0qD8_BI3KbT-jGXHrABdqgxZKLAGaCIchL7hhPyK_nDElC5bTpm0hd_B-0u0MimRJYvLDyTa3A9qDZjC1fgv-0igktBlI5ujVs2RGSc2_IRF0fuC_J83FfkZJNU/s320/nocode_-_triangle.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoQpF-ZIDwo3iYbZRL0qD8_BI3KbT-jGXHrABdqgxZKLAGaCIchL7hhPyK_nDElC5bTpm0hd_B-0u0MimRJYvLDyTa3A9qDZjC1fgv-0igktBlI5ujVs2RGSc2_IRF0fuC_J83FfkZJNU/s480/nocode_-_triangle.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoQpF-ZIDwo3iYbZRL0qD8_BI3KbT-jGXHrABdqgxZKLAGaCIchL7hhPyK_nDElC5bTpm0hd_B-0u0MimRJYvLDyTa3A9qDZjC1fgv-0igktBlI5ujVs2RGSc2_IRF0fuC_J83FfkZJNU/s160/nocode_-_triangle.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoQpF-ZIDwo3iYbZRL0qD8_BI3KbT-jGXHrABdqgxZKLAGaCIchL7hhPyK_nDElC5bTpm0hd_B-0u0MimRJYvLDyTa3A9qDZjC1fgv-0igktBlI5ujVs2RGSc2_IRF0fuC_J83FfkZJNU/s320/nocode_-_triangle.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoQpF-ZIDwo3iYbZRL0qD8_BI3KbT-jGXHrABdqgxZKLAGaCIchL7hhPyK_nDElC5bTpm0hd_B-0u0MimRJYvLDyTa3A9qDZjC1fgv-0igktBlI5ujVs2RGSc2_IRF0fuC_J83FfkZJNU/s480/nocode_-_triangle.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 48 - Pearl Jam &quot;No Code&quot;"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -183,8 +180,7 @@
         <a class="related-bottom-card" href="programa-42-john-lennon-parte2.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0U1cUEkwyNeIQa7AQPZkXY6P2Mkuxm6SGdrYvjvO9vLzZeWqtSGq5SJjKqZOZhyFfYTzxw3WyIHh-v3q6QXNIOCCL0D6mljP4Q0lAcz0TCGm8xQNz6LQRFHHENiltnAV435RaSqapraY/s320/John_morado+(1).jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0U1cUEkwyNeIQa7AQPZkXY6P2Mkuxm6SGdrYvjvO9vLzZeWqtSGq5SJjKqZOZhyFfYTzxw3WyIHh-v3q6QXNIOCCL0D6mljP4Q0lAcz0TCGm8xQNz6LQRFHHENiltnAV435RaSqapraY/s320/John_morado+(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0U1cUEkwyNeIQa7AQPZkXY6P2Mkuxm6SGdrYvjvO9vLzZeWqtSGq5SJjKqZOZhyFfYTzxw3WyIHh-v3q6QXNIOCCL0D6mljP4Q0lAcz0TCGm8xQNz6LQRFHHENiltnAV435RaSqapraY/s480/John_morado+(1).jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0U1cUEkwyNeIQa7AQPZkXY6P2Mkuxm6SGdrYvjvO9vLzZeWqtSGq5SJjKqZOZhyFfYTzxw3WyIHh-v3q6QXNIOCCL0D6mljP4Q0lAcz0TCGm8xQNz6LQRFHHENiltnAV435RaSqapraY/s640/John_morado+(1).jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0U1cUEkwyNeIQa7AQPZkXY6P2Mkuxm6SGdrYvjvO9vLzZeWqtSGq5SJjKqZOZhyFfYTzxw3WyIHh-v3q6QXNIOCCL0D6mljP4Q0lAcz0TCGm8xQNz6LQRFHHENiltnAV435RaSqapraY/s320/John_morado+(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0U1cUEkwyNeIQa7AQPZkXY6P2Mkuxm6SGdrYvjvO9vLzZeWqtSGq5SJjKqZOZhyFfYTzxw3WyIHh-v3q6QXNIOCCL0D6mljP4Q0lAcz0TCGm8xQNz6LQRFHHENiltnAV435RaSqapraY/s480/John_morado+(1).jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0U1cUEkwyNeIQa7AQPZkXY6P2Mkuxm6SGdrYvjvO9vLzZeWqtSGq5SJjKqZOZhyFfYTzxw3WyIHh-v3q6QXNIOCCL0D6mljP4Q0lAcz0TCGm8xQNz6LQRFHHENiltnAV435RaSqapraY/s640/John_morado+(1).jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 42 - John Lennon (parte2)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +191,7 @@
           </a><a class="related-bottom-card" href="programa-66-the-doors-stone-temple-pilots-qotsa-primal-scream.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 66 - The DOORS, STONE TEMPLE PILOTS, QOTSA, PRIMAL SCREAM"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -207,8 +202,7 @@
           </a><a class="related-bottom-card" href="programa-304-eddie-vedder-the-beatles.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s480/211e39bccf57b79c8093eea29fe06350.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s640/211e39bccf57b79c8093eea29fe06350.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s480/211e39bccf57b79c8093eea29fe06350.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s640/211e39bccf57b79c8093eea29fe06350.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 304 – Eddie Vedder + The Beatles"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

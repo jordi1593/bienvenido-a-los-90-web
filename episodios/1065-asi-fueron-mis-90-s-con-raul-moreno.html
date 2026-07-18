@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>1065 - Así fueron mis 90´s con Raúl Moreno — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIzwpEwNk4xlUex5J7pUqcLmDjvVUUTphE2KMU5N58ZyndsnsWk8pbn6PqH53f83QkbyvQtsTu8JXuKIg9DqjEOxZh0wjVfsblDhWNxzGqzuK73y_hiLXfsQ_W-BL6RZcZgbv0lfM1EqrvWXT47vPuSLcxVg6qogTqQT8MXkANIGO6TdA6IBwZoUZAaWI/s320/500982293_10229108655968364_6929251846878984884_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIzwpEwNk4xlUex5J7pUqcLmDjvVUUTphE2KMU5N58ZyndsnsWk8pbn6PqH53f83QkbyvQtsTu8JXuKIg9DqjEOxZh0wjVfsblDhWNxzGqzuK73y_hiLXfsQ_W-BL6RZcZgbv0lfM1EqrvWXT47vPuSLcxVg6qogTqQT8MXkANIGO6TdA6IBwZoUZAaWI/s160/500982293_10229108655968364_6929251846878984884_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIzwpEwNk4xlUex5J7pUqcLmDjvVUUTphE2KMU5N58ZyndsnsWk8pbn6PqH53f83QkbyvQtsTu8JXuKIg9DqjEOxZh0wjVfsblDhWNxzGqzuK73y_hiLXfsQ_W-BL6RZcZgbv0lfM1EqrvWXT47vPuSLcxVg6qogTqQT8MXkANIGO6TdA6IBwZoUZAaWI/s320/500982293_10229108655968364_6929251846878984884_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIzwpEwNk4xlUex5J7pUqcLmDjvVUUTphE2KMU5N58ZyndsnsWk8pbn6PqH53f83QkbyvQtsTu8JXuKIg9DqjEOxZh0wjVfsblDhWNxzGqzuK73y_hiLXfsQ_W-BL6RZcZgbv0lfM1EqrvWXT47vPuSLcxVg6qogTqQT8MXkANIGO6TdA6IBwZoUZAaWI/s480/500982293_10229108655968364_6929251846878984884_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIzwpEwNk4xlUex5J7pUqcLmDjvVUUTphE2KMU5N58ZyndsnsWk8pbn6PqH53f83QkbyvQtsTu8JXuKIg9DqjEOxZh0wjVfsblDhWNxzGqzuK73y_hiLXfsQ_W-BL6RZcZgbv0lfM1EqrvWXT47vPuSLcxVg6qogTqQT8MXkANIGO6TdA6IBwZoUZAaWI/s160/500982293_10229108655968364_6929251846878984884_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIzwpEwNk4xlUex5J7pUqcLmDjvVUUTphE2KMU5N58ZyndsnsWk8pbn6PqH53f83QkbyvQtsTu8JXuKIg9DqjEOxZh0wjVfsblDhWNxzGqzuK73y_hiLXfsQ_W-BL6RZcZgbv0lfM1EqrvWXT47vPuSLcxVg6qogTqQT8MXkANIGO6TdA6IBwZoUZAaWI/s320/500982293_10229108655968364_6929251846878984884_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIzwpEwNk4xlUex5J7pUqcLmDjvVUUTphE2KMU5N58ZyndsnsWk8pbn6PqH53f83QkbyvQtsTu8JXuKIg9DqjEOxZh0wjVfsblDhWNxzGqzuK73y_hiLXfsQ_W-BL6RZcZgbv0lfM1EqrvWXT47vPuSLcxVg6qogTqQT8MXkANIGO6TdA6IBwZoUZAaWI/s480/500982293_10229108655968364_6929251846878984884_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1044 - J.F.León, así fueron mis 90&#39;s"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgFbYSiSkJcMp15NhIHKdlrSfl8lt_JpG9Qp3l-byWZohMwdqbzJYxuynlibK5jkjhNW7HEBuZAofo6vQYTPUQHgFsvja9JPvyCQzoseGJWQIaPtMwze4v55FkqRBWdCfA0xQeWwmQZMp4Ohny_sIOrQkPSddlHpJiR5EidyDvcxpigRlLE1YasGmN0wE/s320/500x500-000000-80-0-0.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgFbYSiSkJcMp15NhIHKdlrSfl8lt_JpG9Qp3l-byWZohMwdqbzJYxuynlibK5jkjhNW7HEBuZAofo6vQYTPUQHgFsvja9JPvyCQzoseGJWQIaPtMwze4v55FkqRBWdCfA0xQeWwmQZMp4Ohny_sIOrQkPSddlHpJiR5EidyDvcxpigRlLE1YasGmN0wE/s160/500x500-000000-80-0-0.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgFbYSiSkJcMp15NhIHKdlrSfl8lt_JpG9Qp3l-byWZohMwdqbzJYxuynlibK5jkjhNW7HEBuZAofo6vQYTPUQHgFsvja9JPvyCQzoseGJWQIaPtMwze4v55FkqRBWdCfA0xQeWwmQZMp4Ohny_sIOrQkPSddlHpJiR5EidyDvcxpigRlLE1YasGmN0wE/s320/500x500-000000-80-0-0.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgFbYSiSkJcMp15NhIHKdlrSfl8lt_JpG9Qp3l-byWZohMwdqbzJYxuynlibK5jkjhNW7HEBuZAofo6vQYTPUQHgFsvja9JPvyCQzoseGJWQIaPtMwze4v55FkqRBWdCfA0xQeWwmQZMp4Ohny_sIOrQkPSddlHpJiR5EidyDvcxpigRlLE1YasGmN0wE/s480/500x500-000000-80-0-0.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgFbYSiSkJcMp15NhIHKdlrSfl8lt_JpG9Qp3l-byWZohMwdqbzJYxuynlibK5jkjhNW7HEBuZAofo6vQYTPUQHgFsvja9JPvyCQzoseGJWQIaPtMwze4v55FkqRBWdCfA0xQeWwmQZMp4Ohny_sIOrQkPSddlHpJiR5EidyDvcxpigRlLE1YasGmN0wE/s160/500x500-000000-80-0-0.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgFbYSiSkJcMp15NhIHKdlrSfl8lt_JpG9Qp3l-byWZohMwdqbzJYxuynlibK5jkjhNW7HEBuZAofo6vQYTPUQHgFsvja9JPvyCQzoseGJWQIaPtMwze4v55FkqRBWdCfA0xQeWwmQZMp4Ohny_sIOrQkPSddlHpJiR5EidyDvcxpigRlLE1YasGmN0wE/s320/500x500-000000-80-0-0.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgFbYSiSkJcMp15NhIHKdlrSfl8lt_JpG9Qp3l-byWZohMwdqbzJYxuynlibK5jkjhNW7HEBuZAofo6vQYTPUQHgFsvja9JPvyCQzoseGJWQIaPtMwze4v55FkqRBWdCfA0xQeWwmQZMp4Ohny_sIOrQkPSddlHpJiR5EidyDvcxpigRlLE1YasGmN0wE/s480/500x500-000000-80-0-0.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 78 - Así nació la popularidad de Seven Nation Army (The White Stripes)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOOSoDekqwkE1SllcqA84GUTOfQlyw-Is6GGF22DYdmrpcoAqRXuQrXizHYlV5h2zlp2koKwFrSOTjHNU2E3XSaIWl28i729hb-JJ5f_QxPFi7r6mS-gd2-WLKXqYakFAidAuf4S8B7JuWSWasJUZOIbutpl8E5h4MsMMWI4wvbwmEE9D3bqUQZrXoCVM/s320/sam_taylor_black_hole_sun_final_web.0.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOOSoDekqwkE1SllcqA84GUTOfQlyw-Is6GGF22DYdmrpcoAqRXuQrXizHYlV5h2zlp2koKwFrSOTjHNU2E3XSaIWl28i729hb-JJ5f_QxPFi7r6mS-gd2-WLKXqYakFAidAuf4S8B7JuWSWasJUZOIbutpl8E5h4MsMMWI4wvbwmEE9D3bqUQZrXoCVM/s160/sam_taylor_black_hole_sun_final_web.0.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOOSoDekqwkE1SllcqA84GUTOfQlyw-Is6GGF22DYdmrpcoAqRXuQrXizHYlV5h2zlp2koKwFrSOTjHNU2E3XSaIWl28i729hb-JJ5f_QxPFi7r6mS-gd2-WLKXqYakFAidAuf4S8B7JuWSWasJUZOIbutpl8E5h4MsMMWI4wvbwmEE9D3bqUQZrXoCVM/s320/sam_taylor_black_hole_sun_final_web.0.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOOSoDekqwkE1SllcqA84GUTOfQlyw-Is6GGF22DYdmrpcoAqRXuQrXizHYlV5h2zlp2koKwFrSOTjHNU2E3XSaIWl28i729hb-JJ5f_QxPFi7r6mS-gd2-WLKXqYakFAidAuf4S8B7JuWSWasJUZOIbutpl8E5h4MsMMWI4wvbwmEE9D3bqUQZrXoCVM/s480/sam_taylor_black_hole_sun_final_web.0.webp 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOOSoDekqwkE1SllcqA84GUTOfQlyw-Is6GGF22DYdmrpcoAqRXuQrXizHYlV5h2zlp2koKwFrSOTjHNU2E3XSaIWl28i729hb-JJ5f_QxPFi7r6mS-gd2-WLKXqYakFAidAuf4S8B7JuWSWasJUZOIbutpl8E5h4MsMMWI4wvbwmEE9D3bqUQZrXoCVM/s160/sam_taylor_black_hole_sun_final_web.0.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOOSoDekqwkE1SllcqA84GUTOfQlyw-Is6GGF22DYdmrpcoAqRXuQrXizHYlV5h2zlp2koKwFrSOTjHNU2E3XSaIWl28i729hb-JJ5f_QxPFi7r6mS-gd2-WLKXqYakFAidAuf4S8B7JuWSWasJUZOIbutpl8E5h4MsMMWI4wvbwmEE9D3bqUQZrXoCVM/s320/sam_taylor_black_hole_sun_final_web.0.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOOSoDekqwkE1SllcqA84GUTOfQlyw-Is6GGF22DYdmrpcoAqRXuQrXizHYlV5h2zlp2koKwFrSOTjHNU2E3XSaIWl28i729hb-JJ5f_QxPFi7r6mS-gd2-WLKXqYakFAidAuf4S8B7JuWSWasJUZOIbutpl8E5h4MsMMWI4wvbwmEE9D3bqUQZrXoCVM/s480/sam_taylor_black_hole_sun_final_web.0.webp 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 44 - Así se gestó &#39;Black Hole Sun&#39;"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="b90-supernova-41-asi-sonaran-red-hot-chili-peppers-en-mad-cool.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjexHyZCC-L1PUMFa-gkoY8T1tlTdgb99hwWE3m5bnNqmrK_sbc3-dmHnRVq12O4AzrCIuF3_A2RqKXUPI8TZOjQCiJcdLhfIsW-bSxn_zmc0JJfXV8G5wyi-yzHNbxKDKJ9QBqFaqREL42tbOIPGHOsAkG9McGD6TU_oaaUaFDJIP5--tuMuJ1ih-yKYg/s320/THEEZNQQBVAPZNKNMT7M6ZHTYY.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjexHyZCC-L1PUMFa-gkoY8T1tlTdgb99hwWE3m5bnNqmrK_sbc3-dmHnRVq12O4AzrCIuF3_A2RqKXUPI8TZOjQCiJcdLhfIsW-bSxn_zmc0JJfXV8G5wyi-yzHNbxKDKJ9QBqFaqREL42tbOIPGHOsAkG9McGD6TU_oaaUaFDJIP5--tuMuJ1ih-yKYg/s320/THEEZNQQBVAPZNKNMT7M6ZHTYY.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjexHyZCC-L1PUMFa-gkoY8T1tlTdgb99hwWE3m5bnNqmrK_sbc3-dmHnRVq12O4AzrCIuF3_A2RqKXUPI8TZOjQCiJcdLhfIsW-bSxn_zmc0JJfXV8G5wyi-yzHNbxKDKJ9QBqFaqREL42tbOIPGHOsAkG9McGD6TU_oaaUaFDJIP5--tuMuJ1ih-yKYg/s480/THEEZNQQBVAPZNKNMT7M6ZHTYY.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjexHyZCC-L1PUMFa-gkoY8T1tlTdgb99hwWE3m5bnNqmrK_sbc3-dmHnRVq12O4AzrCIuF3_A2RqKXUPI8TZOjQCiJcdLhfIsW-bSxn_zmc0JJfXV8G5wyi-yzHNbxKDKJ9QBqFaqREL42tbOIPGHOsAkG9McGD6TU_oaaUaFDJIP5--tuMuJ1ih-yKYg/s640/THEEZNQQBVAPZNKNMT7M6ZHTYY.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjexHyZCC-L1PUMFa-gkoY8T1tlTdgb99hwWE3m5bnNqmrK_sbc3-dmHnRVq12O4AzrCIuF3_A2RqKXUPI8TZOjQCiJcdLhfIsW-bSxn_zmc0JJfXV8G5wyi-yzHNbxKDKJ9QBqFaqREL42tbOIPGHOsAkG9McGD6TU_oaaUaFDJIP5--tuMuJ1ih-yKYg/s320/THEEZNQQBVAPZNKNMT7M6ZHTYY.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjexHyZCC-L1PUMFa-gkoY8T1tlTdgb99hwWE3m5bnNqmrK_sbc3-dmHnRVq12O4AzrCIuF3_A2RqKXUPI8TZOjQCiJcdLhfIsW-bSxn_zmc0JJfXV8G5wyi-yzHNbxKDKJ9QBqFaqREL42tbOIPGHOsAkG9McGD6TU_oaaUaFDJIP5--tuMuJ1ih-yKYg/s480/THEEZNQQBVAPZNKNMT7M6ZHTYY.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjexHyZCC-L1PUMFa-gkoY8T1tlTdgb99hwWE3m5bnNqmrK_sbc3-dmHnRVq12O4AzrCIuF3_A2RqKXUPI8TZOjQCiJcdLhfIsW-bSxn_zmc0JJfXV8G5wyi-yzHNbxKDKJ9QBqFaqREL42tbOIPGHOsAkG9McGD6TU_oaaUaFDJIP5--tuMuJ1ih-yKYg/s640/THEEZNQQBVAPZNKNMT7M6ZHTYY.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Supernova 41 - Así sonarán RED HOT CHILI PEPPERS en Mad Cool"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="p-851-asi-vivi-el-mad-cool-2022.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s320/P_0tB-z8.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s320/P_0tB-z8.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s480/P_0tB-z8.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s640/P_0tB-z8.jpeg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s320/P_0tB-z8.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s480/P_0tB-z8.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s640/P_0tB-z8.jpeg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.851 - Así viví el Mad Cool 2022"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="b90-classic-17-asi-suenan-the-smile-en-directo.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 Classic 17: Así suenan THE SMILE en directo"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.813 - Especial VANITY ROSE + acústico — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -134,8 +134,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s320/BeFunky-collage.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s160/BeFunky-collage.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s320/BeFunky-collage.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s480/BeFunky-collage.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s160/BeFunky-collage.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s320/BeFunky-collage.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s480/BeFunky-collage.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.809 - Novedades: Lost Satellite,Vanity Rose,Yoko Factor,Radio75,Veronica Underluxe,Efecto Lucifer,Marc Rockenberg..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -145,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgleOcB_R_XT4FhflYr5KrOdSNxeIVNViyfkYIy3JIfhJyjCkCrSBkSkiTirr4pOYR3FLy7bj_YCDkPIIK5EofcEf7KA5DqcYX8e2BxlRmA8JAV_tVBWXJRVbmiOnp9csmBocSwxvcqXl8/s320/evidenza_nirvana_where_did_you_sleep_last_night_2.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgleOcB_R_XT4FhflYr5KrOdSNxeIVNViyfkYIy3JIfhJyjCkCrSBkSkiTirr4pOYR3FLy7bj_YCDkPIIK5EofcEf7KA5DqcYX8e2BxlRmA8JAV_tVBWXJRVbmiOnp9csmBocSwxvcqXl8/s160/evidenza_nirvana_where_did_you_sleep_last_night_2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgleOcB_R_XT4FhflYr5KrOdSNxeIVNViyfkYIy3JIfhJyjCkCrSBkSkiTirr4pOYR3FLy7bj_YCDkPIIK5EofcEf7KA5DqcYX8e2BxlRmA8JAV_tVBWXJRVbmiOnp9csmBocSwxvcqXl8/s320/evidenza_nirvana_where_did_you_sleep_last_night_2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgleOcB_R_XT4FhflYr5KrOdSNxeIVNViyfkYIy3JIfhJyjCkCrSBkSkiTirr4pOYR3FLy7bj_YCDkPIIK5EofcEf7KA5DqcYX8e2BxlRmA8JAV_tVBWXJRVbmiOnp9csmBocSwxvcqXl8/s480/evidenza_nirvana_where_did_you_sleep_last_night_2.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgleOcB_R_XT4FhflYr5KrOdSNxeIVNViyfkYIy3JIfhJyjCkCrSBkSkiTirr4pOYR3FLy7bj_YCDkPIIK5EofcEf7KA5DqcYX8e2BxlRmA8JAV_tVBWXJRVbmiOnp9csmBocSwxvcqXl8/s160/evidenza_nirvana_where_did_you_sleep_last_night_2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgleOcB_R_XT4FhflYr5KrOdSNxeIVNViyfkYIy3JIfhJyjCkCrSBkSkiTirr4pOYR3FLy7bj_YCDkPIIK5EofcEf7KA5DqcYX8e2BxlRmA8JAV_tVBWXJRVbmiOnp9csmBocSwxvcqXl8/s320/evidenza_nirvana_where_did_you_sleep_last_night_2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgleOcB_R_XT4FhflYr5KrOdSNxeIVNViyfkYIy3JIfhJyjCkCrSBkSkiTirr4pOYR3FLy7bj_YCDkPIIK5EofcEf7KA5DqcYX8e2BxlRmA8JAV_tVBWXJRVbmiOnp9csmBocSwxvcqXl8/s480/evidenza_nirvana_where_did_you_sleep_last_night_2.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.747 - El misterio de &quot;Where Did You Sleep Last Night&quot;"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -156,8 +154,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s320/35b95a7ac02799ef06b89c8075fc68b1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s160/35b95a7ac02799ef06b89c8075fc68b1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s320/35b95a7ac02799ef06b89c8075fc68b1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s480/35b95a7ac02799ef06b89c8075fc68b1.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s160/35b95a7ac02799ef06b89c8075fc68b1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s320/35b95a7ac02799ef06b89c8075fc68b1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s480/35b95a7ac02799ef06b89c8075fc68b1.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.735 - Axl Rose Vs. Kurt Cobain"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -173,8 +170,7 @@
         <a class="related-bottom-card" href="p-881-el-disco-del-decimo-aniversario-del-programa.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0eF83kHJ0kMEU93Aog07MMQAevdreak1C3fsqLaVQt5gkWLCX0iU2LGLaQTFs0Buqdgqc0B7vyttIQni5qJTheYaSeB0A1PlWxd3allsOb71aplfkGxEQJTb91Lzf5YOrZ904JDDNYGIiaj_NMBAsGbZnTMTAdR_edZ6WPtuQoyyZijl7APZdiYkX/s320/16%20enero%202021.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0eF83kHJ0kMEU93Aog07MMQAevdreak1C3fsqLaVQt5gkWLCX0iU2LGLaQTFs0Buqdgqc0B7vyttIQni5qJTheYaSeB0A1PlWxd3allsOb71aplfkGxEQJTb91Lzf5YOrZ904JDDNYGIiaj_NMBAsGbZnTMTAdR_edZ6WPtuQoyyZijl7APZdiYkX/s320/16%20enero%202021.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0eF83kHJ0kMEU93Aog07MMQAevdreak1C3fsqLaVQt5gkWLCX0iU2LGLaQTFs0Buqdgqc0B7vyttIQni5qJTheYaSeB0A1PlWxd3allsOb71aplfkGxEQJTb91Lzf5YOrZ904JDDNYGIiaj_NMBAsGbZnTMTAdR_edZ6WPtuQoyyZijl7APZdiYkX/s480/16%20enero%202021.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0eF83kHJ0kMEU93Aog07MMQAevdreak1C3fsqLaVQt5gkWLCX0iU2LGLaQTFs0Buqdgqc0B7vyttIQni5qJTheYaSeB0A1PlWxd3allsOb71aplfkGxEQJTb91Lzf5YOrZ904JDDNYGIiaj_NMBAsGbZnTMTAdR_edZ6WPtuQoyyZijl7APZdiYkX/s640/16%20enero%202021.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0eF83kHJ0kMEU93Aog07MMQAevdreak1C3fsqLaVQt5gkWLCX0iU2LGLaQTFs0Buqdgqc0B7vyttIQni5qJTheYaSeB0A1PlWxd3allsOb71aplfkGxEQJTb91Lzf5YOrZ904JDDNYGIiaj_NMBAsGbZnTMTAdR_edZ6WPtuQoyyZijl7APZdiYkX/s320/16%20enero%202021.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0eF83kHJ0kMEU93Aog07MMQAevdreak1C3fsqLaVQt5gkWLCX0iU2LGLaQTFs0Buqdgqc0B7vyttIQni5qJTheYaSeB0A1PlWxd3allsOb71aplfkGxEQJTb91Lzf5YOrZ904JDDNYGIiaj_NMBAsGbZnTMTAdR_edZ6WPtuQoyyZijl7APZdiYkX/s480/16%20enero%202021.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0eF83kHJ0kMEU93Aog07MMQAevdreak1C3fsqLaVQt5gkWLCX0iU2LGLaQTFs0Buqdgqc0B7vyttIQni5qJTheYaSeB0A1PlWxd3allsOb71aplfkGxEQJTb91Lzf5YOrZ904JDDNYGIiaj_NMBAsGbZnTMTAdR_edZ6WPtuQoyyZijl7APZdiYkX/s640/16%20enero%202021.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.881 - El disco del DÉCIMO aniversario del programa"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -185,8 +181,7 @@
           </a><a class="related-bottom-card" href="p883-yoko-factor-la-diversion-esta-en-mallorca.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-3ctOznszLjHqTxnujAKYwtmGNximuhHVJSWK6cZO7mojm9S_xE2Zlg9ApLpd9F700ZbysBD0LFCL8stAsLdN83yTQge4qJCkYKvLbD9GezXR14B5aq9G5f34SbTcW6PWtyMYO-4zkybbl1O691quCfTOPXShL4q8Z4-3WHi79R5EBpEsnmXA1Yhs/s320/288707717_451617563631484_3722035017305542447_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-3ctOznszLjHqTxnujAKYwtmGNximuhHVJSWK6cZO7mojm9S_xE2Zlg9ApLpd9F700ZbysBD0LFCL8stAsLdN83yTQge4qJCkYKvLbD9GezXR14B5aq9G5f34SbTcW6PWtyMYO-4zkybbl1O691quCfTOPXShL4q8Z4-3WHi79R5EBpEsnmXA1Yhs/s320/288707717_451617563631484_3722035017305542447_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-3ctOznszLjHqTxnujAKYwtmGNximuhHVJSWK6cZO7mojm9S_xE2Zlg9ApLpd9F700ZbysBD0LFCL8stAsLdN83yTQge4qJCkYKvLbD9GezXR14B5aq9G5f34SbTcW6PWtyMYO-4zkybbl1O691quCfTOPXShL4q8Z4-3WHi79R5EBpEsnmXA1Yhs/s480/288707717_451617563631484_3722035017305542447_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-3ctOznszLjHqTxnujAKYwtmGNximuhHVJSWK6cZO7mojm9S_xE2Zlg9ApLpd9F700ZbysBD0LFCL8stAsLdN83yTQge4qJCkYKvLbD9GezXR14B5aq9G5f34SbTcW6PWtyMYO-4zkybbl1O691quCfTOPXShL4q8Z4-3WHi79R5EBpEsnmXA1Yhs/s640/288707717_451617563631484_3722035017305542447_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-3ctOznszLjHqTxnujAKYwtmGNximuhHVJSWK6cZO7mojm9S_xE2Zlg9ApLpd9F700ZbysBD0LFCL8stAsLdN83yTQge4qJCkYKvLbD9GezXR14B5aq9G5f34SbTcW6PWtyMYO-4zkybbl1O691quCfTOPXShL4q8Z4-3WHi79R5EBpEsnmXA1Yhs/s320/288707717_451617563631484_3722035017305542447_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-3ctOznszLjHqTxnujAKYwtmGNximuhHVJSWK6cZO7mojm9S_xE2Zlg9ApLpd9F700ZbysBD0LFCL8stAsLdN83yTQge4qJCkYKvLbD9GezXR14B5aq9G5f34SbTcW6PWtyMYO-4zkybbl1O691quCfTOPXShL4q8Z4-3WHi79R5EBpEsnmXA1Yhs/s480/288707717_451617563631484_3722035017305542447_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-3ctOznszLjHqTxnujAKYwtmGNximuhHVJSWK6cZO7mojm9S_xE2Zlg9ApLpd9F700ZbysBD0LFCL8stAsLdN83yTQge4qJCkYKvLbD9GezXR14B5aq9G5f34SbTcW6PWtyMYO-4zkybbl1O691quCfTOPXShL4q8Z4-3WHi79R5EBpEsnmXA1Yhs/s640/288707717_451617563631484_3722035017305542447_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P883 - Yoko Factor, la diversión está en Mallorca"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -197,8 +192,7 @@
           </a><a class="related-bottom-card" href="p-683-homenaje-a-alain-johannes.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhobWAZ0DAxgMVOTSYSj5_KaNofwR7eqoCj0uV9HgKB-uDAxgcJMFj1sHYlwxNWnIBBonlieNaR2VflSOHgrbMCgr9llEl_GQIfP3j3N1wGOwiZKtcmXQRD-lpKfiP3GAy8C9v2QxYIhYo/s320/Disco_10.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhobWAZ0DAxgMVOTSYSj5_KaNofwR7eqoCj0uV9HgKB-uDAxgcJMFj1sHYlwxNWnIBBonlieNaR2VflSOHgrbMCgr9llEl_GQIfP3j3N1wGOwiZKtcmXQRD-lpKfiP3GAy8C9v2QxYIhYo/s320/Disco_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhobWAZ0DAxgMVOTSYSj5_KaNofwR7eqoCj0uV9HgKB-uDAxgcJMFj1sHYlwxNWnIBBonlieNaR2VflSOHgrbMCgr9llEl_GQIfP3j3N1wGOwiZKtcmXQRD-lpKfiP3GAy8C9v2QxYIhYo/s480/Disco_10.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhobWAZ0DAxgMVOTSYSj5_KaNofwR7eqoCj0uV9HgKB-uDAxgcJMFj1sHYlwxNWnIBBonlieNaR2VflSOHgrbMCgr9llEl_GQIfP3j3N1wGOwiZKtcmXQRD-lpKfiP3GAy8C9v2QxYIhYo/s640/Disco_10.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhobWAZ0DAxgMVOTSYSj5_KaNofwR7eqoCj0uV9HgKB-uDAxgcJMFj1sHYlwxNWnIBBonlieNaR2VflSOHgrbMCgr9llEl_GQIfP3j3N1wGOwiZKtcmXQRD-lpKfiP3GAy8C9v2QxYIhYo/s320/Disco_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhobWAZ0DAxgMVOTSYSj5_KaNofwR7eqoCj0uV9HgKB-uDAxgcJMFj1sHYlwxNWnIBBonlieNaR2VflSOHgrbMCgr9llEl_GQIfP3j3N1wGOwiZKtcmXQRD-lpKfiP3GAy8C9v2QxYIhYo/s480/Disco_10.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhobWAZ0DAxgMVOTSYSj5_KaNofwR7eqoCj0uV9HgKB-uDAxgcJMFj1sHYlwxNWnIBBonlieNaR2VflSOHgrbMCgr9llEl_GQIfP3j3N1wGOwiZKtcmXQRD-lpKfiP3GAy8C9v2QxYIhYo/s640/Disco_10.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.683 - Homenaje a ALAIN JOHANNES"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

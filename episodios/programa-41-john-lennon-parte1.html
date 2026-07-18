@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 41 - John Lennon (parte1) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -161,8 +161,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6MxlX1_i2MFr6KOOP2vGED34luIA6calRqJkTCL_cb4ik80J2KIulwL5pBVT1pzfq9hudYrkRKYNquvYuB9l-B6EZSUZptTDKHkOxw-lV3fhpZJqmxgSM7y2X_Ns_VzyqjrX-_NUWArg/s320/bienvenido-330.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6MxlX1_i2MFr6KOOP2vGED34luIA6calRqJkTCL_cb4ik80J2KIulwL5pBVT1pzfq9hudYrkRKYNquvYuB9l-B6EZSUZptTDKHkOxw-lV3fhpZJqmxgSM7y2X_Ns_VzyqjrX-_NUWArg/s160/bienvenido-330.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6MxlX1_i2MFr6KOOP2vGED34luIA6calRqJkTCL_cb4ik80J2KIulwL5pBVT1pzfq9hudYrkRKYNquvYuB9l-B6EZSUZptTDKHkOxw-lV3fhpZJqmxgSM7y2X_Ns_VzyqjrX-_NUWArg/s320/bienvenido-330.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6MxlX1_i2MFr6KOOP2vGED34luIA6calRqJkTCL_cb4ik80J2KIulwL5pBVT1pzfq9hudYrkRKYNquvYuB9l-B6EZSUZptTDKHkOxw-lV3fhpZJqmxgSM7y2X_Ns_VzyqjrX-_NUWArg/s480/bienvenido-330.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6MxlX1_i2MFr6KOOP2vGED34luIA6calRqJkTCL_cb4ik80J2KIulwL5pBVT1pzfq9hudYrkRKYNquvYuB9l-B6EZSUZptTDKHkOxw-lV3fhpZJqmxgSM7y2X_Ns_VzyqjrX-_NUWArg/s160/bienvenido-330.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6MxlX1_i2MFr6KOOP2vGED34luIA6calRqJkTCL_cb4ik80J2KIulwL5pBVT1pzfq9hudYrkRKYNquvYuB9l-B6EZSUZptTDKHkOxw-lV3fhpZJqmxgSM7y2X_Ns_VzyqjrX-_NUWArg/s320/bienvenido-330.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6MxlX1_i2MFr6KOOP2vGED34luIA6calRqJkTCL_cb4ik80J2KIulwL5pBVT1pzfq9hudYrkRKYNquvYuB9l-B6EZSUZptTDKHkOxw-lV3fhpZJqmxgSM7y2X_Ns_VzyqjrX-_NUWArg/s480/bienvenido-330.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 330 – Lo mejor del 2017: Tributo a John Lennon"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -172,8 +171,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNxhf4KSPc8i3cAglzp9WP8BOKx6D6p53qaJ9Og5lJwzpmngiYRXU0gwbZYvBJCfdBfgWBiR3r4zjlhbzuEFdb_F8hwV2GYbJRR2RZkZ3v1NeuTgsaoNpFC5iA3Vxyq0qGSc0gD5KgDPY/s320/b90438.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNxhf4KSPc8i3cAglzp9WP8BOKx6D6p53qaJ9Og5lJwzpmngiYRXU0gwbZYvBJCfdBfgWBiR3r4zjlhbzuEFdb_F8hwV2GYbJRR2RZkZ3v1NeuTgsaoNpFC5iA3Vxyq0qGSc0gD5KgDPY/s160/b90438.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNxhf4KSPc8i3cAglzp9WP8BOKx6D6p53qaJ9Og5lJwzpmngiYRXU0gwbZYvBJCfdBfgWBiR3r4zjlhbzuEFdb_F8hwV2GYbJRR2RZkZ3v1NeuTgsaoNpFC5iA3Vxyq0qGSc0gD5KgDPY/s320/b90438.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNxhf4KSPc8i3cAglzp9WP8BOKx6D6p53qaJ9Og5lJwzpmngiYRXU0gwbZYvBJCfdBfgWBiR3r4zjlhbzuEFdb_F8hwV2GYbJRR2RZkZ3v1NeuTgsaoNpFC5iA3Vxyq0qGSc0gD5KgDPY/s480/b90438.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNxhf4KSPc8i3cAglzp9WP8BOKx6D6p53qaJ9Og5lJwzpmngiYRXU0gwbZYvBJCfdBfgWBiR3r4zjlhbzuEFdb_F8hwV2GYbJRR2RZkZ3v1NeuTgsaoNpFC5iA3Vxyq0qGSc0gD5KgDPY/s160/b90438.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNxhf4KSPc8i3cAglzp9WP8BOKx6D6p53qaJ9Og5lJwzpmngiYRXU0gwbZYvBJCfdBfgWBiR3r4zjlhbzuEFdb_F8hwV2GYbJRR2RZkZ3v1NeuTgsaoNpFC5iA3Vxyq0qGSc0gD5KgDPY/s320/b90438.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNxhf4KSPc8i3cAglzp9WP8BOKx6D6p53qaJ9Og5lJwzpmngiYRXU0gwbZYvBJCfdBfgWBiR3r4zjlhbzuEFdb_F8hwV2GYbJRR2RZkZ3v1NeuTgsaoNpFC5iA3Vxyq0qGSc0gD5KgDPY/s480/b90438.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 438 - John Lennon - Imagine The Ultimate Collection (2018)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -183,8 +181,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwjfbkKhz-i5bXLYOYCkFHU5-NwtUblw5Y1oshZECFT-JlA2TZ5HXw3vVKqky60QJ0h4kFJIB37ed2QrKqsVsNDoS-zsA-4ZGy06FL5yvxo2a80GZLhgCyy8Qo7_EK4AozR5wpblOjfaA/s320/b90446.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwjfbkKhz-i5bXLYOYCkFHU5-NwtUblw5Y1oshZECFT-JlA2TZ5HXw3vVKqky60QJ0h4kFJIB37ed2QrKqsVsNDoS-zsA-4ZGy06FL5yvxo2a80GZLhgCyy8Qo7_EK4AozR5wpblOjfaA/s160/b90446.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwjfbkKhz-i5bXLYOYCkFHU5-NwtUblw5Y1oshZECFT-JlA2TZ5HXw3vVKqky60QJ0h4kFJIB37ed2QrKqsVsNDoS-zsA-4ZGy06FL5yvxo2a80GZLhgCyy8Qo7_EK4AozR5wpblOjfaA/s320/b90446.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwjfbkKhz-i5bXLYOYCkFHU5-NwtUblw5Y1oshZECFT-JlA2TZ5HXw3vVKqky60QJ0h4kFJIB37ed2QrKqsVsNDoS-zsA-4ZGy06FL5yvxo2a80GZLhgCyy8Qo7_EK4AozR5wpblOjfaA/s480/b90446.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwjfbkKhz-i5bXLYOYCkFHU5-NwtUblw5Y1oshZECFT-JlA2TZ5HXw3vVKqky60QJ0h4kFJIB37ed2QrKqsVsNDoS-zsA-4ZGy06FL5yvxo2a80GZLhgCyy8Qo7_EK4AozR5wpblOjfaA/s160/b90446.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwjfbkKhz-i5bXLYOYCkFHU5-NwtUblw5Y1oshZECFT-JlA2TZ5HXw3vVKqky60QJ0h4kFJIB37ed2QrKqsVsNDoS-zsA-4ZGy06FL5yvxo2a80GZLhgCyy8Qo7_EK4AozR5wpblOjfaA/s320/b90446.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwjfbkKhz-i5bXLYOYCkFHU5-NwtUblw5Y1oshZECFT-JlA2TZ5HXw3vVKqky60QJ0h4kFJIB37ed2QrKqsVsNDoS-zsA-4ZGy06FL5yvxo2a80GZLhgCyy8Qo7_EK4AozR5wpblOjfaA/s480/b90446.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 446 - John Lennon - IMAGINE, el libro"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -200,8 +197,7 @@
         <a class="related-bottom-card" href="p-584-el-fatidico-8-de-diciembre-john-lennon.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTvNR2smzA0TVqqjMtlAWFctyhonP2OIPu7mhYMVoYMjdjntyoN8SwVJSULXkk9FRDsj6t93C5Rq8a2k4oG5u4m5xAikwXp5-x1vc_oRlvWcyNnu5xW79TrslUVie7SpIjk8j39WPeWWY/s320/447817299_521836.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTvNR2smzA0TVqqjMtlAWFctyhonP2OIPu7mhYMVoYMjdjntyoN8SwVJSULXkk9FRDsj6t93C5Rq8a2k4oG5u4m5xAikwXp5-x1vc_oRlvWcyNnu5xW79TrslUVie7SpIjk8j39WPeWWY/s320/447817299_521836.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTvNR2smzA0TVqqjMtlAWFctyhonP2OIPu7mhYMVoYMjdjntyoN8SwVJSULXkk9FRDsj6t93C5Rq8a2k4oG5u4m5xAikwXp5-x1vc_oRlvWcyNnu5xW79TrslUVie7SpIjk8j39WPeWWY/s480/447817299_521836.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTvNR2smzA0TVqqjMtlAWFctyhonP2OIPu7mhYMVoYMjdjntyoN8SwVJSULXkk9FRDsj6t93C5Rq8a2k4oG5u4m5xAikwXp5-x1vc_oRlvWcyNnu5xW79TrslUVie7SpIjk8j39WPeWWY/s640/447817299_521836.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTvNR2smzA0TVqqjMtlAWFctyhonP2OIPu7mhYMVoYMjdjntyoN8SwVJSULXkk9FRDsj6t93C5Rq8a2k4oG5u4m5xAikwXp5-x1vc_oRlvWcyNnu5xW79TrslUVie7SpIjk8j39WPeWWY/s320/447817299_521836.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTvNR2smzA0TVqqjMtlAWFctyhonP2OIPu7mhYMVoYMjdjntyoN8SwVJSULXkk9FRDsj6t93C5Rq8a2k4oG5u4m5xAikwXp5-x1vc_oRlvWcyNnu5xW79TrslUVie7SpIjk8j39WPeWWY/s480/447817299_521836.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTvNR2smzA0TVqqjMtlAWFctyhonP2OIPu7mhYMVoYMjdjntyoN8SwVJSULXkk9FRDsj6t93C5Rq8a2k4oG5u4m5xAikwXp5-x1vc_oRlvWcyNnu5xW79TrslUVie7SpIjk8j39WPeWWY/s640/447817299_521836.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.584 - El fatídico 8 de diciembre, John Lennon"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -212,8 +208,7 @@
           </a><a class="related-bottom-card" href="p-937-recordando-a-john-lennon.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVN9arJjI_2VH2I4soRAmJai6Cvxncxtah9GX3zGNJnnlfE0tChGor4SdN0dDB9FFf76fgM_bR-4gpvws29CLXlGP-WHlxzBcfgLZLrjhy6yOmdUGkbh6JsFfHJmf6ioQOjIO-k06D86e-BKn-sZdQPrlhq-Zum_IXnqCW9Cw5oAKhdJUTaCvE5RIxJRw/s320/712gAfCwUcL._UF894,1000_QL80_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVN9arJjI_2VH2I4soRAmJai6Cvxncxtah9GX3zGNJnnlfE0tChGor4SdN0dDB9FFf76fgM_bR-4gpvws29CLXlGP-WHlxzBcfgLZLrjhy6yOmdUGkbh6JsFfHJmf6ioQOjIO-k06D86e-BKn-sZdQPrlhq-Zum_IXnqCW9Cw5oAKhdJUTaCvE5RIxJRw/s320/712gAfCwUcL._UF894,1000_QL80_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVN9arJjI_2VH2I4soRAmJai6Cvxncxtah9GX3zGNJnnlfE0tChGor4SdN0dDB9FFf76fgM_bR-4gpvws29CLXlGP-WHlxzBcfgLZLrjhy6yOmdUGkbh6JsFfHJmf6ioQOjIO-k06D86e-BKn-sZdQPrlhq-Zum_IXnqCW9Cw5oAKhdJUTaCvE5RIxJRw/s480/712gAfCwUcL._UF894,1000_QL80_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVN9arJjI_2VH2I4soRAmJai6Cvxncxtah9GX3zGNJnnlfE0tChGor4SdN0dDB9FFf76fgM_bR-4gpvws29CLXlGP-WHlxzBcfgLZLrjhy6yOmdUGkbh6JsFfHJmf6ioQOjIO-k06D86e-BKn-sZdQPrlhq-Zum_IXnqCW9Cw5oAKhdJUTaCvE5RIxJRw/s640/712gAfCwUcL._UF894,1000_QL80_.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVN9arJjI_2VH2I4soRAmJai6Cvxncxtah9GX3zGNJnnlfE0tChGor4SdN0dDB9FFf76fgM_bR-4gpvws29CLXlGP-WHlxzBcfgLZLrjhy6yOmdUGkbh6JsFfHJmf6ioQOjIO-k06D86e-BKn-sZdQPrlhq-Zum_IXnqCW9Cw5oAKhdJUTaCvE5RIxJRw/s320/712gAfCwUcL._UF894,1000_QL80_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVN9arJjI_2VH2I4soRAmJai6Cvxncxtah9GX3zGNJnnlfE0tChGor4SdN0dDB9FFf76fgM_bR-4gpvws29CLXlGP-WHlxzBcfgLZLrjhy6yOmdUGkbh6JsFfHJmf6ioQOjIO-k06D86e-BKn-sZdQPrlhq-Zum_IXnqCW9Cw5oAKhdJUTaCvE5RIxJRw/s480/712gAfCwUcL._UF894,1000_QL80_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVN9arJjI_2VH2I4soRAmJai6Cvxncxtah9GX3zGNJnnlfE0tChGor4SdN0dDB9FFf76fgM_bR-4gpvws29CLXlGP-WHlxzBcfgLZLrjhy6yOmdUGkbh6JsFfHJmf6ioQOjIO-k06D86e-BKn-sZdQPrlhq-Zum_IXnqCW9Cw5oAKhdJUTaCvE5RIxJRw/s640/712gAfCwUcL._UF894,1000_QL80_.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.937 - Recordando a John Lennon"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -224,8 +219,7 @@
           </a><a class="related-bottom-card" href="1090-recordando-a-lennon-john-lennon-anthology-1998.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhv8IMstzF3PaitH_zxjZiRWtXUoM9V8MTnJN49ZbHvhXz713VyX67heJDM67RXDeQHf3b50Y_7CgLNFWL_WmmzwX7_nG4pGrDs1JrCGD647C5OJWusdc82PwsUEA1T8ovcEPVWAtH_ItOJnIWu1gYQVLDC8jhsxDoOSxIwIOLsW1Q5gZFwapLcIetQSkI/s320/B90_1090.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhv8IMstzF3PaitH_zxjZiRWtXUoM9V8MTnJN49ZbHvhXz713VyX67heJDM67RXDeQHf3b50Y_7CgLNFWL_WmmzwX7_nG4pGrDs1JrCGD647C5OJWusdc82PwsUEA1T8ovcEPVWAtH_ItOJnIWu1gYQVLDC8jhsxDoOSxIwIOLsW1Q5gZFwapLcIetQSkI/s320/B90_1090.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhv8IMstzF3PaitH_zxjZiRWtXUoM9V8MTnJN49ZbHvhXz713VyX67heJDM67RXDeQHf3b50Y_7CgLNFWL_WmmzwX7_nG4pGrDs1JrCGD647C5OJWusdc82PwsUEA1T8ovcEPVWAtH_ItOJnIWu1gYQVLDC8jhsxDoOSxIwIOLsW1Q5gZFwapLcIetQSkI/s480/B90_1090.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhv8IMstzF3PaitH_zxjZiRWtXUoM9V8MTnJN49ZbHvhXz713VyX67heJDM67RXDeQHf3b50Y_7CgLNFWL_WmmzwX7_nG4pGrDs1JrCGD647C5OJWusdc82PwsUEA1T8ovcEPVWAtH_ItOJnIWu1gYQVLDC8jhsxDoOSxIwIOLsW1Q5gZFwapLcIetQSkI/s640/B90_1090.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhv8IMstzF3PaitH_zxjZiRWtXUoM9V8MTnJN49ZbHvhXz713VyX67heJDM67RXDeQHf3b50Y_7CgLNFWL_WmmzwX7_nG4pGrDs1JrCGD647C5OJWusdc82PwsUEA1T8ovcEPVWAtH_ItOJnIWu1gYQVLDC8jhsxDoOSxIwIOLsW1Q5gZFwapLcIetQSkI/s320/B90_1090.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhv8IMstzF3PaitH_zxjZiRWtXUoM9V8MTnJN49ZbHvhXz713VyX67heJDM67RXDeQHf3b50Y_7CgLNFWL_WmmzwX7_nG4pGrDs1JrCGD647C5OJWusdc82PwsUEA1T8ovcEPVWAtH_ItOJnIWu1gYQVLDC8jhsxDoOSxIwIOLsW1Q5gZFwapLcIetQSkI/s480/B90_1090.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhv8IMstzF3PaitH_zxjZiRWtXUoM9V8MTnJN49ZbHvhXz713VyX67heJDM67RXDeQHf3b50Y_7CgLNFWL_WmmzwX7_nG4pGrDs1JrCGD647C5OJWusdc82PwsUEA1T8ovcEPVWAtH_ItOJnIWu1gYQVLDC8jhsxDoOSxIwIOLsW1Q5gZFwapLcIetQSkI/s640/B90_1090.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1090 - Recordando a Lennon: John Lennon Anthology (1998)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

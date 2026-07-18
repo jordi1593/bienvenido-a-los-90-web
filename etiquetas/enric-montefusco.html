@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Enric Montefusco — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-923-el-ultimo-programa-de-la-temporada-11.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s320/b90_923_.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s160/b90_923_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s320/b90_923_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s480/b90_923_.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s160/b90_923_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s320/b90_923_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkzlFjygQobO5t8mg0LfaKEVKfMFKdz41w_Kbwomb97DkqVDN_kC9kW4MIxp3GHydkiI88sPTrZL_z4D57OpmQ0sGTjSx-WQA9gEh66wFqAaWPiBLYEtswDSrPENJiJbB00pkxsLtATSopLUVzydCrZrvLEjt8bdAh8_XcDOscKaeAJ7xbEOi0nXBjmjo/s480/b90_923_.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.923 - El último programa de la temporada 11"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-890-charlando-con-enric-montefusco.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8I9x97G-TnOCcBFO473PM921jwqnjxun0K2_2itElsYH3UhrWT0KiCKuRq6aLVr1B7ZKJWeNNkgo2QIyNWvxAu2-WbVXnx-e_2ah3wqbTcVL5qoZB6bshluVk21TYkcM3am-johDguCTSf9vnhuuB57DityOtIiOCmytpwdhKvppQ7kJpqL78P9hW/s320/enric-foto.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8I9x97G-TnOCcBFO473PM921jwqnjxun0K2_2itElsYH3UhrWT0KiCKuRq6aLVr1B7ZKJWeNNkgo2QIyNWvxAu2-WbVXnx-e_2ah3wqbTcVL5qoZB6bshluVk21TYkcM3am-johDguCTSf9vnhuuB57DityOtIiOCmytpwdhKvppQ7kJpqL78P9hW/s160/enric-foto.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8I9x97G-TnOCcBFO473PM921jwqnjxun0K2_2itElsYH3UhrWT0KiCKuRq6aLVr1B7ZKJWeNNkgo2QIyNWvxAu2-WbVXnx-e_2ah3wqbTcVL5qoZB6bshluVk21TYkcM3am-johDguCTSf9vnhuuB57DityOtIiOCmytpwdhKvppQ7kJpqL78P9hW/s320/enric-foto.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8I9x97G-TnOCcBFO473PM921jwqnjxun0K2_2itElsYH3UhrWT0KiCKuRq6aLVr1B7ZKJWeNNkgo2QIyNWvxAu2-WbVXnx-e_2ah3wqbTcVL5qoZB6bshluVk21TYkcM3am-johDguCTSf9vnhuuB57DityOtIiOCmytpwdhKvppQ7kJpqL78P9hW/s480/enric-foto.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8I9x97G-TnOCcBFO473PM921jwqnjxun0K2_2itElsYH3UhrWT0KiCKuRq6aLVr1B7ZKJWeNNkgo2QIyNWvxAu2-WbVXnx-e_2ah3wqbTcVL5qoZB6bshluVk21TYkcM3am-johDguCTSf9vnhuuB57DityOtIiOCmytpwdhKvppQ7kJpqL78P9hW/s160/enric-foto.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8I9x97G-TnOCcBFO473PM921jwqnjxun0K2_2itElsYH3UhrWT0KiCKuRq6aLVr1B7ZKJWeNNkgo2QIyNWvxAu2-WbVXnx-e_2ah3wqbTcVL5qoZB6bshluVk21TYkcM3am-johDguCTSf9vnhuuB57DityOtIiOCmytpwdhKvppQ7kJpqL78P9hW/s320/enric-foto.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8I9x97G-TnOCcBFO473PM921jwqnjxun0K2_2itElsYH3UhrWT0KiCKuRq6aLVr1B7ZKJWeNNkgo2QIyNWvxAu2-WbVXnx-e_2ah3wqbTcVL5qoZB6bshluVk21TYkcM3am-johDguCTSf9vnhuuB57DityOtIiOCmytpwdhKvppQ7kJpqL78P9hW/s480/enric-foto.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.890 - Charlando con Enric Montefusco"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-375-libros-musicales-y-dali.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2ALCXGlbBNNYdLQ5_sQw-OplRC0eLvYsrLZ8_ZFvHE_8mOx30hlT-AdAAfrCFUF2yjZ6_l0NWuroFRdbVu3ckoW2D4_FagOQ04spsDFIPJT7jTLrlSHpFhKO_DSLGH6xdwE_22RmyaMM/s320/IMG_20180420_185833.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2ALCXGlbBNNYdLQ5_sQw-OplRC0eLvYsrLZ8_ZFvHE_8mOx30hlT-AdAAfrCFUF2yjZ6_l0NWuroFRdbVu3ckoW2D4_FagOQ04spsDFIPJT7jTLrlSHpFhKO_DSLGH6xdwE_22RmyaMM/s160/IMG_20180420_185833.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2ALCXGlbBNNYdLQ5_sQw-OplRC0eLvYsrLZ8_ZFvHE_8mOx30hlT-AdAAfrCFUF2yjZ6_l0NWuroFRdbVu3ckoW2D4_FagOQ04spsDFIPJT7jTLrlSHpFhKO_DSLGH6xdwE_22RmyaMM/s320/IMG_20180420_185833.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2ALCXGlbBNNYdLQ5_sQw-OplRC0eLvYsrLZ8_ZFvHE_8mOx30hlT-AdAAfrCFUF2yjZ6_l0NWuroFRdbVu3ckoW2D4_FagOQ04spsDFIPJT7jTLrlSHpFhKO_DSLGH6xdwE_22RmyaMM/s480/IMG_20180420_185833.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2ALCXGlbBNNYdLQ5_sQw-OplRC0eLvYsrLZ8_ZFvHE_8mOx30hlT-AdAAfrCFUF2yjZ6_l0NWuroFRdbVu3ckoW2D4_FagOQ04spsDFIPJT7jTLrlSHpFhKO_DSLGH6xdwE_22RmyaMM/s160/IMG_20180420_185833.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2ALCXGlbBNNYdLQ5_sQw-OplRC0eLvYsrLZ8_ZFvHE_8mOx30hlT-AdAAfrCFUF2yjZ6_l0NWuroFRdbVu3ckoW2D4_FagOQ04spsDFIPJT7jTLrlSHpFhKO_DSLGH6xdwE_22RmyaMM/s320/IMG_20180420_185833.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2ALCXGlbBNNYdLQ5_sQw-OplRC0eLvYsrLZ8_ZFvHE_8mOx30hlT-AdAAfrCFUF2yjZ6_l0NWuroFRdbVu3ckoW2D4_FagOQ04spsDFIPJT7jTLrlSHpFhKO_DSLGH6xdwE_22RmyaMM/s480/IMG_20180420_185833.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 375 - Libros musicales y Dalí"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-327-actualidad-musical-enero-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s320/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s160/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s320/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s480/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s160/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s320/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s480/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 327 – Actualidad musical (Enero 2018)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-166-adios-standstill.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s320/11393179_10152880824657747_5216406057049803366_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s160/11393179_10152880824657747_5216406057049803366_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s320/11393179_10152880824657747_5216406057049803366_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s480/11393179_10152880824657747_5216406057049803366_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s160/11393179_10152880824657747_5216406057049803366_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s320/11393179_10152880824657747_5216406057049803366_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s480/11393179_10152880824657747_5216406057049803366_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 166 - Adiós Standstill"
                 loading="lazy" width="320" height="213" />
         </a>

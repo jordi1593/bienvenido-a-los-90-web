@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>B90 - Programa 84 - Pearl Jam Lightning Bolt — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -131,8 +131,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="B90 - Programa 83 -Pearl Jam, Moby, The Chemical Brother, Kings of Leon..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -142,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="B90 - Programa 81 - Pearl Jam desvela sus cartas"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -153,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy5yIaaQ6WX6wMsE-XjF6Py5t4HAodmUQQn1s01Huu0hOrdcF_YF3_JttXxDDjgq4Z5Y4mFc3ZOD313WOJ6MbSdUSHmjkfDBpl6NyEHk0xb8-F9yJvDCgvQ6kgm5VIO4zHB2Ms_osp8xo/s320/B0_M9_A_ICEAAx_Nv_G.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy5yIaaQ6WX6wMsE-XjF6Py5t4HAodmUQQn1s01Huu0hOrdcF_YF3_JttXxDDjgq4Z5Y4mFc3ZOD313WOJ6MbSdUSHmjkfDBpl6NyEHk0xb8-F9yJvDCgvQ6kgm5VIO4zHB2Ms_osp8xo/s160/B0_M9_A_ICEAAx_Nv_G.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy5yIaaQ6WX6wMsE-XjF6Py5t4HAodmUQQn1s01Huu0hOrdcF_YF3_JttXxDDjgq4Z5Y4mFc3ZOD313WOJ6MbSdUSHmjkfDBpl6NyEHk0xb8-F9yJvDCgvQ6kgm5VIO4zHB2Ms_osp8xo/s320/B0_M9_A_ICEAAx_Nv_G.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy5yIaaQ6WX6wMsE-XjF6Py5t4HAodmUQQn1s01Huu0hOrdcF_YF3_JttXxDDjgq4Z5Y4mFc3ZOD313WOJ6MbSdUSHmjkfDBpl6NyEHk0xb8-F9yJvDCgvQ6kgm5VIO4zHB2Ms_osp8xo/s480/B0_M9_A_ICEAAx_Nv_G.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy5yIaaQ6WX6wMsE-XjF6Py5t4HAodmUQQn1s01Huu0hOrdcF_YF3_JttXxDDjgq4Z5Y4mFc3ZOD313WOJ6MbSdUSHmjkfDBpl6NyEHk0xb8-F9yJvDCgvQ6kgm5VIO4zHB2Ms_osp8xo/s160/B0_M9_A_ICEAAx_Nv_G.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy5yIaaQ6WX6wMsE-XjF6Py5t4HAodmUQQn1s01Huu0hOrdcF_YF3_JttXxDDjgq4Z5Y4mFc3ZOD313WOJ6MbSdUSHmjkfDBpl6NyEHk0xb8-F9yJvDCgvQ6kgm5VIO4zHB2Ms_osp8xo/s320/B0_M9_A_ICEAAx_Nv_G.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy5yIaaQ6WX6wMsE-XjF6Py5t4HAodmUQQn1s01Huu0hOrdcF_YF3_JttXxDDjgq4Z5Y4mFc3ZOD313WOJ6MbSdUSHmjkfDBpl6NyEHk0xb8-F9yJvDCgvQ6kgm5VIO4zHB2Ms_osp8xo/s480/B0_M9_A_ICEAAx_Nv_G.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 144 - Pearl Jam (Moline 2014)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -170,8 +167,7 @@
         <a class="related-bottom-card" href="b90-supernova-45-la-historia-de-jeremy-pearl-jam.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2ShQ0FPB6M2zwT59BMDbdrqOZnPmq_q_93xfpJx7wcEFT1aUylSw4x31-KEWx9xbC6PRVHtcETQMrX4g3mkN5dGHIG3mXPzwe-tdSNtUC8gmdiQWY26ofOpEH1m8GFTw-Ys23qLKKtFbTT78FK1XVSoRnEMpqZAlVe2S9p9Rd023c6Yh5OSlktubZ2C4/s320/R-418642-1312181416%20(1).jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2ShQ0FPB6M2zwT59BMDbdrqOZnPmq_q_93xfpJx7wcEFT1aUylSw4x31-KEWx9xbC6PRVHtcETQMrX4g3mkN5dGHIG3mXPzwe-tdSNtUC8gmdiQWY26ofOpEH1m8GFTw-Ys23qLKKtFbTT78FK1XVSoRnEMpqZAlVe2S9p9Rd023c6Yh5OSlktubZ2C4/s320/R-418642-1312181416%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2ShQ0FPB6M2zwT59BMDbdrqOZnPmq_q_93xfpJx7wcEFT1aUylSw4x31-KEWx9xbC6PRVHtcETQMrX4g3mkN5dGHIG3mXPzwe-tdSNtUC8gmdiQWY26ofOpEH1m8GFTw-Ys23qLKKtFbTT78FK1XVSoRnEMpqZAlVe2S9p9Rd023c6Yh5OSlktubZ2C4/s480/R-418642-1312181416%20(1).jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2ShQ0FPB6M2zwT59BMDbdrqOZnPmq_q_93xfpJx7wcEFT1aUylSw4x31-KEWx9xbC6PRVHtcETQMrX4g3mkN5dGHIG3mXPzwe-tdSNtUC8gmdiQWY26ofOpEH1m8GFTw-Ys23qLKKtFbTT78FK1XVSoRnEMpqZAlVe2S9p9Rd023c6Yh5OSlktubZ2C4/s640/R-418642-1312181416%20(1).jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2ShQ0FPB6M2zwT59BMDbdrqOZnPmq_q_93xfpJx7wcEFT1aUylSw4x31-KEWx9xbC6PRVHtcETQMrX4g3mkN5dGHIG3mXPzwe-tdSNtUC8gmdiQWY26ofOpEH1m8GFTw-Ys23qLKKtFbTT78FK1XVSoRnEMpqZAlVe2S9p9Rd023c6Yh5OSlktubZ2C4/s320/R-418642-1312181416%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2ShQ0FPB6M2zwT59BMDbdrqOZnPmq_q_93xfpJx7wcEFT1aUylSw4x31-KEWx9xbC6PRVHtcETQMrX4g3mkN5dGHIG3mXPzwe-tdSNtUC8gmdiQWY26ofOpEH1m8GFTw-Ys23qLKKtFbTT78FK1XVSoRnEMpqZAlVe2S9p9Rd023c6Yh5OSlktubZ2C4/s480/R-418642-1312181416%20(1).jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2ShQ0FPB6M2zwT59BMDbdrqOZnPmq_q_93xfpJx7wcEFT1aUylSw4x31-KEWx9xbC6PRVHtcETQMrX4g3mkN5dGHIG3mXPzwe-tdSNtUC8gmdiQWY26ofOpEH1m8GFTw-Ys23qLKKtFbTT78FK1XVSoRnEMpqZAlVe2S9p9Rd023c6Yh5OSlktubZ2C4/s640/R-418642-1312181416%20(1).jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Supernova 45 - La historia de JEREMY (Pearl Jam)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -182,8 +178,7 @@
           </a><a class="related-bottom-card" href="b90-supernova-59-el-primer-concierto-de-pearl-jam-en-2024.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNiuzksW6Eg8rrMP6TNk7gXw_q55xI_satc0D2M7j6BaDHpgn7VIEruN-jH2tN5d47xVd85RJgWG0_IvlKGMHD6Wcg1WRBqSMPC6tB9QREym0HvxPNxrYk2TymD6971PLjJRDigUm6hVREhTjSgDSPvqW_Mecse3_o1xLAZ0sQ1ovH78flCdB_apzvDJE/s320/pearl-jam.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNiuzksW6Eg8rrMP6TNk7gXw_q55xI_satc0D2M7j6BaDHpgn7VIEruN-jH2tN5d47xVd85RJgWG0_IvlKGMHD6Wcg1WRBqSMPC6tB9QREym0HvxPNxrYk2TymD6971PLjJRDigUm6hVREhTjSgDSPvqW_Mecse3_o1xLAZ0sQ1ovH78flCdB_apzvDJE/s320/pearl-jam.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNiuzksW6Eg8rrMP6TNk7gXw_q55xI_satc0D2M7j6BaDHpgn7VIEruN-jH2tN5d47xVd85RJgWG0_IvlKGMHD6Wcg1WRBqSMPC6tB9QREym0HvxPNxrYk2TymD6971PLjJRDigUm6hVREhTjSgDSPvqW_Mecse3_o1xLAZ0sQ1ovH78flCdB_apzvDJE/s480/pearl-jam.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNiuzksW6Eg8rrMP6TNk7gXw_q55xI_satc0D2M7j6BaDHpgn7VIEruN-jH2tN5d47xVd85RJgWG0_IvlKGMHD6Wcg1WRBqSMPC6tB9QREym0HvxPNxrYk2TymD6971PLjJRDigUm6hVREhTjSgDSPvqW_Mecse3_o1xLAZ0sQ1ovH78flCdB_apzvDJE/s640/pearl-jam.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNiuzksW6Eg8rrMP6TNk7gXw_q55xI_satc0D2M7j6BaDHpgn7VIEruN-jH2tN5d47xVd85RJgWG0_IvlKGMHD6Wcg1WRBqSMPC6tB9QREym0HvxPNxrYk2TymD6971PLjJRDigUm6hVREhTjSgDSPvqW_Mecse3_o1xLAZ0sQ1ovH78flCdB_apzvDJE/s320/pearl-jam.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNiuzksW6Eg8rrMP6TNk7gXw_q55xI_satc0D2M7j6BaDHpgn7VIEruN-jH2tN5d47xVd85RJgWG0_IvlKGMHD6Wcg1WRBqSMPC6tB9QREym0HvxPNxrYk2TymD6971PLjJRDigUm6hVREhTjSgDSPvqW_Mecse3_o1xLAZ0sQ1ovH78flCdB_apzvDJE/s480/pearl-jam.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNiuzksW6Eg8rrMP6TNk7gXw_q55xI_satc0D2M7j6BaDHpgn7VIEruN-jH2tN5d47xVd85RJgWG0_IvlKGMHD6Wcg1WRBqSMPC6tB9QREym0HvxPNxrYk2TymD6971PLjJRDigUm6hVREhTjSgDSPvqW_Mecse3_o1xLAZ0sQ1ovH78flCdB_apzvDJE/s640/pearl-jam.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Supernova 59 - El primer concierto de Pearl Jam en 2024"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -194,8 +189,7 @@
           </a><a class="related-bottom-card" href="b90-supernova-60-el-segundo-concierto-de-pearl-jam-en-2024.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizoKIr1u06VnTm-bV87RoQv55OCteYVDVsWCoKWVXJn1iYfK-s6t0NvQIhZpveNFQoKOW3bG5xyuOf0VSe0FVKjzMvLp1Nn_3PP8LWMngeT8jL53UeDeKdkqu7QklbtZltrEvEQ1nJsiPV4q0GUWV13i0Gqt3mzGTmN0IUz4BStJl4kcfACOeXU8NdKJk/s320/1M8A6055-3-1024x683.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizoKIr1u06VnTm-bV87RoQv55OCteYVDVsWCoKWVXJn1iYfK-s6t0NvQIhZpveNFQoKOW3bG5xyuOf0VSe0FVKjzMvLp1Nn_3PP8LWMngeT8jL53UeDeKdkqu7QklbtZltrEvEQ1nJsiPV4q0GUWV13i0Gqt3mzGTmN0IUz4BStJl4kcfACOeXU8NdKJk/s320/1M8A6055-3-1024x683.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizoKIr1u06VnTm-bV87RoQv55OCteYVDVsWCoKWVXJn1iYfK-s6t0NvQIhZpveNFQoKOW3bG5xyuOf0VSe0FVKjzMvLp1Nn_3PP8LWMngeT8jL53UeDeKdkqu7QklbtZltrEvEQ1nJsiPV4q0GUWV13i0Gqt3mzGTmN0IUz4BStJl4kcfACOeXU8NdKJk/s480/1M8A6055-3-1024x683.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizoKIr1u06VnTm-bV87RoQv55OCteYVDVsWCoKWVXJn1iYfK-s6t0NvQIhZpveNFQoKOW3bG5xyuOf0VSe0FVKjzMvLp1Nn_3PP8LWMngeT8jL53UeDeKdkqu7QklbtZltrEvEQ1nJsiPV4q0GUWV13i0Gqt3mzGTmN0IUz4BStJl4kcfACOeXU8NdKJk/s640/1M8A6055-3-1024x683.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizoKIr1u06VnTm-bV87RoQv55OCteYVDVsWCoKWVXJn1iYfK-s6t0NvQIhZpveNFQoKOW3bG5xyuOf0VSe0FVKjzMvLp1Nn_3PP8LWMngeT8jL53UeDeKdkqu7QklbtZltrEvEQ1nJsiPV4q0GUWV13i0Gqt3mzGTmN0IUz4BStJl4kcfACOeXU8NdKJk/s320/1M8A6055-3-1024x683.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizoKIr1u06VnTm-bV87RoQv55OCteYVDVsWCoKWVXJn1iYfK-s6t0NvQIhZpveNFQoKOW3bG5xyuOf0VSe0FVKjzMvLp1Nn_3PP8LWMngeT8jL53UeDeKdkqu7QklbtZltrEvEQ1nJsiPV4q0GUWV13i0Gqt3mzGTmN0IUz4BStJl4kcfACOeXU8NdKJk/s480/1M8A6055-3-1024x683.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizoKIr1u06VnTm-bV87RoQv55OCteYVDVsWCoKWVXJn1iYfK-s6t0NvQIhZpveNFQoKOW3bG5xyuOf0VSe0FVKjzMvLp1Nn_3PP8LWMngeT8jL53UeDeKdkqu7QklbtZltrEvEQ1nJsiPV4q0GUWV13i0Gqt3mzGTmN0IUz4BStJl4kcfACOeXU8NdKJk/s640/1M8A6055-3-1024x683.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Supernova 60 - El segundo concierto de Pearl Jam en 2024"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

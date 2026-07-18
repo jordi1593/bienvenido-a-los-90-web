@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 242 - Drogas y Rock &amp; Roll — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -132,8 +132,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEine3fxoUIa-CFdd3KfQ6BhAovZdkv0FRPvHcgdwCdsbKInjiTMg5yHDY3oXoxk-bywMUEvS4FkRrk6hsfLf9MYeoodugo3hQltCx4zoDTMJTF0rrrjFtCI7E-WQmgErNu5vDWxeBr7e5U/s320/GettyImages-666022010-Pearl-Jam-Hall-of-fame-920x598.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEine3fxoUIa-CFdd3KfQ6BhAovZdkv0FRPvHcgdwCdsbKInjiTMg5yHDY3oXoxk-bywMUEvS4FkRrk6hsfLf9MYeoodugo3hQltCx4zoDTMJTF0rrrjFtCI7E-WQmgErNu5vDWxeBr7e5U/s160/GettyImages-666022010-Pearl-Jam-Hall-of-fame-920x598.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEine3fxoUIa-CFdd3KfQ6BhAovZdkv0FRPvHcgdwCdsbKInjiTMg5yHDY3oXoxk-bywMUEvS4FkRrk6hsfLf9MYeoodugo3hQltCx4zoDTMJTF0rrrjFtCI7E-WQmgErNu5vDWxeBr7e5U/s320/GettyImages-666022010-Pearl-Jam-Hall-of-fame-920x598.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEine3fxoUIa-CFdd3KfQ6BhAovZdkv0FRPvHcgdwCdsbKInjiTMg5yHDY3oXoxk-bywMUEvS4FkRrk6hsfLf9MYeoodugo3hQltCx4zoDTMJTF0rrrjFtCI7E-WQmgErNu5vDWxeBr7e5U/s480/GettyImages-666022010-Pearl-Jam-Hall-of-fame-920x598.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEine3fxoUIa-CFdd3KfQ6BhAovZdkv0FRPvHcgdwCdsbKInjiTMg5yHDY3oXoxk-bywMUEvS4FkRrk6hsfLf9MYeoodugo3hQltCx4zoDTMJTF0rrrjFtCI7E-WQmgErNu5vDWxeBr7e5U/s160/GettyImages-666022010-Pearl-Jam-Hall-of-fame-920x598.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEine3fxoUIa-CFdd3KfQ6BhAovZdkv0FRPvHcgdwCdsbKInjiTMg5yHDY3oXoxk-bywMUEvS4FkRrk6hsfLf9MYeoodugo3hQltCx4zoDTMJTF0rrrjFtCI7E-WQmgErNu5vDWxeBr7e5U/s320/GettyImages-666022010-Pearl-Jam-Hall-of-fame-920x598.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEine3fxoUIa-CFdd3KfQ6BhAovZdkv0FRPvHcgdwCdsbKInjiTMg5yHDY3oXoxk-bywMUEvS4FkRrk6hsfLf9MYeoodugo3hQltCx4zoDTMJTF0rrrjFtCI7E-WQmgErNu5vDWxeBr7e5U/s480/GettyImages-666022010-Pearl-Jam-Hall-of-fame-920x598.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 273 - Pearl Jam entran en el Rock &amp; Roll Hall of Fame"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -143,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s320/b90_475.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s160/b90_475.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s320/b90_475.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s480/b90_475.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s160/b90_475.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s320/b90_475.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s480/b90_475.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 475 - La Navidad y el Rock &amp; Roll"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDN-IjwxShDRkA4UHVYH6AUe1-4PaLgzwp2WGNc61gjEUDg88PKhyBPV9ctQF_oiyyXYTntDAN9cKiFg_aQM36SUW-cpvZP82M8SDdu9XdwNSFtoU3BkvO0l4haCaJf1GDK0Y1OcgFTzE/s320/72991a770f56894aa18c707e0c58aa8f.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDN-IjwxShDRkA4UHVYH6AUe1-4PaLgzwp2WGNc61gjEUDg88PKhyBPV9ctQF_oiyyXYTntDAN9cKiFg_aQM36SUW-cpvZP82M8SDdu9XdwNSFtoU3BkvO0l4haCaJf1GDK0Y1OcgFTzE/s160/72991a770f56894aa18c707e0c58aa8f.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDN-IjwxShDRkA4UHVYH6AUe1-4PaLgzwp2WGNc61gjEUDg88PKhyBPV9ctQF_oiyyXYTntDAN9cKiFg_aQM36SUW-cpvZP82M8SDdu9XdwNSFtoU3BkvO0l4haCaJf1GDK0Y1OcgFTzE/s320/72991a770f56894aa18c707e0c58aa8f.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDN-IjwxShDRkA4UHVYH6AUe1-4PaLgzwp2WGNc61gjEUDg88PKhyBPV9ctQF_oiyyXYTntDAN9cKiFg_aQM36SUW-cpvZP82M8SDdu9XdwNSFtoU3BkvO0l4haCaJf1GDK0Y1OcgFTzE/s480/72991a770f56894aa18c707e0c58aa8f.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDN-IjwxShDRkA4UHVYH6AUe1-4PaLgzwp2WGNc61gjEUDg88PKhyBPV9ctQF_oiyyXYTntDAN9cKiFg_aQM36SUW-cpvZP82M8SDdu9XdwNSFtoU3BkvO0l4haCaJf1GDK0Y1OcgFTzE/s160/72991a770f56894aa18c707e0c58aa8f.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDN-IjwxShDRkA4UHVYH6AUe1-4PaLgzwp2WGNc61gjEUDg88PKhyBPV9ctQF_oiyyXYTntDAN9cKiFg_aQM36SUW-cpvZP82M8SDdu9XdwNSFtoU3BkvO0l4haCaJf1GDK0Y1OcgFTzE/s320/72991a770f56894aa18c707e0c58aa8f.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDN-IjwxShDRkA4UHVYH6AUe1-4PaLgzwp2WGNc61gjEUDg88PKhyBPV9ctQF_oiyyXYTntDAN9cKiFg_aQM36SUW-cpvZP82M8SDdu9XdwNSFtoU3BkvO0l4haCaJf1GDK0Y1OcgFTzE/s480/72991a770f56894aa18c707e0c58aa8f.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.684 - The Detroit Cobras, las chicas malas del rock &#39;n&#39; roll"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +168,7 @@
         <a class="related-bottom-card" href="b90-classic-11-el-regreso-de-saturno-y-el-club-de-los-27.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s320/saturn-return-rectangle.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s320/saturn-return-rectangle.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s480/saturn-return-rectangle.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s640/saturn-return-rectangle.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s320/saturn-return-rectangle.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s480/saturn-return-rectangle.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s640/saturn-return-rectangle.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 11: El regreso de Saturno y el club de los 27"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -183,8 +179,7 @@
           </a><a class="related-bottom-card" href="1082-soundgarden-ingresan-en-el-rock-roll-hall-of-fame.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMdiPqIRc55IEjFYM_f6OKJbLwiO9nK_mdI7ANpIMhvBcH3e1HpJE6zJ5iRHjkaD6RMdWtqIOfApYvvfhlPIiSHnJoGgRYelsG-ArL415O2aHj1xSgYkDt0pZDIksqMATwK9MPQwGGVcNnE-rZAswzTcKEoQRUAOxG8NmBLi286C7GI-2okTJIuL18E1o/s320/B90_1082.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMdiPqIRc55IEjFYM_f6OKJbLwiO9nK_mdI7ANpIMhvBcH3e1HpJE6zJ5iRHjkaD6RMdWtqIOfApYvvfhlPIiSHnJoGgRYelsG-ArL415O2aHj1xSgYkDt0pZDIksqMATwK9MPQwGGVcNnE-rZAswzTcKEoQRUAOxG8NmBLi286C7GI-2okTJIuL18E1o/s320/B90_1082.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMdiPqIRc55IEjFYM_f6OKJbLwiO9nK_mdI7ANpIMhvBcH3e1HpJE6zJ5iRHjkaD6RMdWtqIOfApYvvfhlPIiSHnJoGgRYelsG-ArL415O2aHj1xSgYkDt0pZDIksqMATwK9MPQwGGVcNnE-rZAswzTcKEoQRUAOxG8NmBLi286C7GI-2okTJIuL18E1o/s480/B90_1082.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMdiPqIRc55IEjFYM_f6OKJbLwiO9nK_mdI7ANpIMhvBcH3e1HpJE6zJ5iRHjkaD6RMdWtqIOfApYvvfhlPIiSHnJoGgRYelsG-ArL415O2aHj1xSgYkDt0pZDIksqMATwK9MPQwGGVcNnE-rZAswzTcKEoQRUAOxG8NmBLi286C7GI-2okTJIuL18E1o/s640/B90_1082.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMdiPqIRc55IEjFYM_f6OKJbLwiO9nK_mdI7ANpIMhvBcH3e1HpJE6zJ5iRHjkaD6RMdWtqIOfApYvvfhlPIiSHnJoGgRYelsG-ArL415O2aHj1xSgYkDt0pZDIksqMATwK9MPQwGGVcNnE-rZAswzTcKEoQRUAOxG8NmBLi286C7GI-2okTJIuL18E1o/s320/B90_1082.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMdiPqIRc55IEjFYM_f6OKJbLwiO9nK_mdI7ANpIMhvBcH3e1HpJE6zJ5iRHjkaD6RMdWtqIOfApYvvfhlPIiSHnJoGgRYelsG-ArL415O2aHj1xSgYkDt0pZDIksqMATwK9MPQwGGVcNnE-rZAswzTcKEoQRUAOxG8NmBLi286C7GI-2okTJIuL18E1o/s480/B90_1082.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMdiPqIRc55IEjFYM_f6OKJbLwiO9nK_mdI7ANpIMhvBcH3e1HpJE6zJ5iRHjkaD6RMdWtqIOfApYvvfhlPIiSHnJoGgRYelsG-ArL415O2aHj1xSgYkDt0pZDIksqMATwK9MPQwGGVcNnE-rZAswzTcKEoQRUAOxG8NmBLi286C7GI-2okTJIuL18E1o/s640/B90_1082.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1082 - Soundgarden ingresan en el Rock &amp; Roll Hall of Fame"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +190,7 @@
           </a><a class="related-bottom-card" href="programa-241-nevermind-25-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnJlMnHWeLYsDhHvu5CHXNyZGZXzfBNS0X9X2j5epYAXy-ouEkznKk31mbF7QizLKj96_1CxzHmmWOtb25tY7hW9FYUA9Jivpvl4Swuvg4i9rtguXWoEBTUD74vzYQC9a5yel7Fqe7dDg/s320/14440747_1382418038442502_846197449531145797_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnJlMnHWeLYsDhHvu5CHXNyZGZXzfBNS0X9X2j5epYAXy-ouEkznKk31mbF7QizLKj96_1CxzHmmWOtb25tY7hW9FYUA9Jivpvl4Swuvg4i9rtguXWoEBTUD74vzYQC9a5yel7Fqe7dDg/s320/14440747_1382418038442502_846197449531145797_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnJlMnHWeLYsDhHvu5CHXNyZGZXzfBNS0X9X2j5epYAXy-ouEkznKk31mbF7QizLKj96_1CxzHmmWOtb25tY7hW9FYUA9Jivpvl4Swuvg4i9rtguXWoEBTUD74vzYQC9a5yel7Fqe7dDg/s480/14440747_1382418038442502_846197449531145797_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnJlMnHWeLYsDhHvu5CHXNyZGZXzfBNS0X9X2j5epYAXy-ouEkznKk31mbF7QizLKj96_1CxzHmmWOtb25tY7hW9FYUA9Jivpvl4Swuvg4i9rtguXWoEBTUD74vzYQC9a5yel7Fqe7dDg/s640/14440747_1382418038442502_846197449531145797_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnJlMnHWeLYsDhHvu5CHXNyZGZXzfBNS0X9X2j5epYAXy-ouEkznKk31mbF7QizLKj96_1CxzHmmWOtb25tY7hW9FYUA9Jivpvl4Swuvg4i9rtguXWoEBTUD74vzYQC9a5yel7Fqe7dDg/s320/14440747_1382418038442502_846197449531145797_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnJlMnHWeLYsDhHvu5CHXNyZGZXzfBNS0X9X2j5epYAXy-ouEkznKk31mbF7QizLKj96_1CxzHmmWOtb25tY7hW9FYUA9Jivpvl4Swuvg4i9rtguXWoEBTUD74vzYQC9a5yel7Fqe7dDg/s480/14440747_1382418038442502_846197449531145797_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnJlMnHWeLYsDhHvu5CHXNyZGZXzfBNS0X9X2j5epYAXy-ouEkznKk31mbF7QizLKj96_1CxzHmmWOtb25tY7hW9FYUA9Jivpvl4Swuvg4i9rtguXWoEBTUD74vzYQC9a5yel7Fqe7dDg/s640/14440747_1382418038442502_846197449531145797_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 241 - Nevermind 25 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

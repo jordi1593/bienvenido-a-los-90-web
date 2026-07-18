@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 141 - Le Traste + Royal Bustards — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -128,8 +128,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 97: Hora y media con LE TRASTE"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -139,8 +138,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFpOKsiANEfXWzu_0XlBOHJ5YhpwpCaca5aFw1ZFfqNcv7zpr_MMzmBbYZ9evnVgXW_b-V6N9aiL0yoxlVzzRKNhgPxXU8ueRqnM-WwF3ps-wXjZ9Qorxxvd_EuGCqPs5w-_TU2fXqQZU/s320/Caratula+le+Traste.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFpOKsiANEfXWzu_0XlBOHJ5YhpwpCaca5aFw1ZFfqNcv7zpr_MMzmBbYZ9evnVgXW_b-V6N9aiL0yoxlVzzRKNhgPxXU8ueRqnM-WwF3ps-wXjZ9Qorxxvd_EuGCqPs5w-_TU2fXqQZU/s160/Caratula+le+Traste.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFpOKsiANEfXWzu_0XlBOHJ5YhpwpCaca5aFw1ZFfqNcv7zpr_MMzmBbYZ9evnVgXW_b-V6N9aiL0yoxlVzzRKNhgPxXU8ueRqnM-WwF3ps-wXjZ9Qorxxvd_EuGCqPs5w-_TU2fXqQZU/s320/Caratula+le+Traste.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFpOKsiANEfXWzu_0XlBOHJ5YhpwpCaca5aFw1ZFfqNcv7zpr_MMzmBbYZ9evnVgXW_b-V6N9aiL0yoxlVzzRKNhgPxXU8ueRqnM-WwF3ps-wXjZ9Qorxxvd_EuGCqPs5w-_TU2fXqQZU/s480/Caratula+le+Traste.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFpOKsiANEfXWzu_0XlBOHJ5YhpwpCaca5aFw1ZFfqNcv7zpr_MMzmBbYZ9evnVgXW_b-V6N9aiL0yoxlVzzRKNhgPxXU8ueRqnM-WwF3ps-wXjZ9Qorxxvd_EuGCqPs5w-_TU2fXqQZU/s160/Caratula+le+Traste.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFpOKsiANEfXWzu_0XlBOHJ5YhpwpCaca5aFw1ZFfqNcv7zpr_MMzmBbYZ9evnVgXW_b-V6N9aiL0yoxlVzzRKNhgPxXU8ueRqnM-WwF3ps-wXjZ9Qorxxvd_EuGCqPs5w-_TU2fXqQZU/s320/Caratula+le+Traste.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFpOKsiANEfXWzu_0XlBOHJ5YhpwpCaca5aFw1ZFfqNcv7zpr_MMzmBbYZ9evnVgXW_b-V6N9aiL0yoxlVzzRKNhgPxXU8ueRqnM-WwF3ps-wXjZ9Qorxxvd_EuGCqPs5w-_TU2fXqQZU/s480/Caratula+le+Traste.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 539: El regreso de LE TRASTE"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -150,8 +148,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFkGcPusydzSVQCbRvNCzJv8gPMntL8WU5v_L3zV6Z0kIJ7jjgSeodVM1MF8tX88TvikMEDBQkX5uleygxt7trRrFNpjody-7qMgNYt14E1TS7TkziOCnC2Nr6cmMNtapKzVX5FILo8wI/s320/b90_711.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFkGcPusydzSVQCbRvNCzJv8gPMntL8WU5v_L3zV6Z0kIJ7jjgSeodVM1MF8tX88TvikMEDBQkX5uleygxt7trRrFNpjody-7qMgNYt14E1TS7TkziOCnC2Nr6cmMNtapKzVX5FILo8wI/s160/b90_711.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFkGcPusydzSVQCbRvNCzJv8gPMntL8WU5v_L3zV6Z0kIJ7jjgSeodVM1MF8tX88TvikMEDBQkX5uleygxt7trRrFNpjody-7qMgNYt14E1TS7TkziOCnC2Nr6cmMNtapKzVX5FILo8wI/s320/b90_711.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFkGcPusydzSVQCbRvNCzJv8gPMntL8WU5v_L3zV6Z0kIJ7jjgSeodVM1MF8tX88TvikMEDBQkX5uleygxt7trRrFNpjody-7qMgNYt14E1TS7TkziOCnC2Nr6cmMNtapKzVX5FILo8wI/s480/b90_711.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFkGcPusydzSVQCbRvNCzJv8gPMntL8WU5v_L3zV6Z0kIJ7jjgSeodVM1MF8tX88TvikMEDBQkX5uleygxt7trRrFNpjody-7qMgNYt14E1TS7TkziOCnC2Nr6cmMNtapKzVX5FILo8wI/s160/b90_711.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFkGcPusydzSVQCbRvNCzJv8gPMntL8WU5v_L3zV6Z0kIJ7jjgSeodVM1MF8tX88TvikMEDBQkX5uleygxt7trRrFNpjody-7qMgNYt14E1TS7TkziOCnC2Nr6cmMNtapKzVX5FILo8wI/s320/b90_711.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFkGcPusydzSVQCbRvNCzJv8gPMntL8WU5v_L3zV6Z0kIJ7jjgSeodVM1MF8tX88TvikMEDBQkX5uleygxt7trRrFNpjody-7qMgNYt14E1TS7TkziOCnC2Nr6cmMNtapKzVX5FILo8wI/s480/b90_711.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.711 - Novedades: Hickeys, The Boy From the South, The Wax, Le Traste, Radio75..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -167,8 +164,7 @@
         <a class="related-bottom-card" href="p-719-le-traste-presentan-cuadratura-vol-2-para-sembrar-lo-incierto.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s320/a3942977190_10.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s320/a3942977190_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s480/a3942977190_10.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s640/a3942977190_10.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s320/a3942977190_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s480/a3942977190_10.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s640/a3942977190_10.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.719 - Le Traste presentan Cuadratura vol. 2: Para sembrar lo incierto"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -179,8 +175,7 @@
           </a><a class="related-bottom-card" href="programa-146-pearl-jam-self-pollution-radio-1995.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNT3Ns_3oAjghJsedukU1OJff20cmtMqG57HlU57p8IqbSS_se_B2raN5SsJRJ5WNMjJn2rSMadmdPtoTxhXvziOEqwWNN8qA5KjFCxnRj1m_kQ6HfSQqK9BGIAjBkGw0OQnzj3_Mkqn0/s320/4935704732_a14f6d5623_b.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNT3Ns_3oAjghJsedukU1OJff20cmtMqG57HlU57p8IqbSS_se_B2raN5SsJRJ5WNMjJn2rSMadmdPtoTxhXvziOEqwWNN8qA5KjFCxnRj1m_kQ6HfSQqK9BGIAjBkGw0OQnzj3_Mkqn0/s320/4935704732_a14f6d5623_b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNT3Ns_3oAjghJsedukU1OJff20cmtMqG57HlU57p8IqbSS_se_B2raN5SsJRJ5WNMjJn2rSMadmdPtoTxhXvziOEqwWNN8qA5KjFCxnRj1m_kQ6HfSQqK9BGIAjBkGw0OQnzj3_Mkqn0/s480/4935704732_a14f6d5623_b.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNT3Ns_3oAjghJsedukU1OJff20cmtMqG57HlU57p8IqbSS_se_B2raN5SsJRJ5WNMjJn2rSMadmdPtoTxhXvziOEqwWNN8qA5KjFCxnRj1m_kQ6HfSQqK9BGIAjBkGw0OQnzj3_Mkqn0/s640/4935704732_a14f6d5623_b.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNT3Ns_3oAjghJsedukU1OJff20cmtMqG57HlU57p8IqbSS_se_B2raN5SsJRJ5WNMjJn2rSMadmdPtoTxhXvziOEqwWNN8qA5KjFCxnRj1m_kQ6HfSQqK9BGIAjBkGw0OQnzj3_Mkqn0/s320/4935704732_a14f6d5623_b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNT3Ns_3oAjghJsedukU1OJff20cmtMqG57HlU57p8IqbSS_se_B2raN5SsJRJ5WNMjJn2rSMadmdPtoTxhXvziOEqwWNN8qA5KjFCxnRj1m_kQ6HfSQqK9BGIAjBkGw0OQnzj3_Mkqn0/s480/4935704732_a14f6d5623_b.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNT3Ns_3oAjghJsedukU1OJff20cmtMqG57HlU57p8IqbSS_se_B2raN5SsJRJ5WNMjJn2rSMadmdPtoTxhXvziOEqwWNN8qA5KjFCxnRj1m_kQ6HfSQqK9BGIAjBkGw0OQnzj3_Mkqn0/s640/4935704732_a14f6d5623_b.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 146 - Pearl Jam Self Pollution Radio (1995)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -191,8 +186,7 @@
           </a><a class="related-bottom-card" href="programa-152-entrevista-a-rafa-cervera.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s640/420962_355957767755206_243875636_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s640/420962_355957767755206_243875636_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 152 - Entrevista a Rafa Cervera"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

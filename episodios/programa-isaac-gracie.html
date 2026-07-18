@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa  - Isaac Gracie — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s320/Dap1yj2W4AE2MVd.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s160/Dap1yj2W4AE2MVd.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s320/Dap1yj2W4AE2MVd.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s480/Dap1yj2W4AE2MVd.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s160/Dap1yj2W4AE2MVd.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s320/Dap1yj2W4AE2MVd.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s480/Dap1yj2W4AE2MVd.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 373 - Isaac Gracie, melancolía infinita"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s320/play.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s160/play.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s320/play.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s480/play.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s160/play.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s320/play.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifrIVQHZmwpV8OTJR9rLYUlwXtBey_vs4uxqMFnk1WZWQniwO1asAQDBtaN1G1E1AF2SIceQHz8XPKFt9nqHP4fChrBYsGH9_qGTNwZ5WFxfMuZKuOYX28JpV_xWYikbduK4c0s8v3ORM/s480/play.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 423 - Dave Grohl ‘PLAY’ "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhQOJd3sspp40pYbTWUuxhxsB-iWO9qGhyphenhyphend1lzYTqeJHsNqrDndNixSDOojb-zpcCrE_0S9u9WZXxquYk9jWN0u_DnXAbvA83dNQvN4TZjL0Y0M2Gc5WO0QnJ7dtnw95C26q-_rjovAcY/s320/420.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhQOJd3sspp40pYbTWUuxhxsB-iWO9qGhyphenhyphend1lzYTqeJHsNqrDndNixSDOojb-zpcCrE_0S9u9WZXxquYk9jWN0u_DnXAbvA83dNQvN4TZjL0Y0M2Gc5WO0QnJ7dtnw95C26q-_rjovAcY/s160/420.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhQOJd3sspp40pYbTWUuxhxsB-iWO9qGhyphenhyphend1lzYTqeJHsNqrDndNixSDOojb-zpcCrE_0S9u9WZXxquYk9jWN0u_DnXAbvA83dNQvN4TZjL0Y0M2Gc5WO0QnJ7dtnw95C26q-_rjovAcY/s320/420.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhQOJd3sspp40pYbTWUuxhxsB-iWO9qGhyphenhyphend1lzYTqeJHsNqrDndNixSDOojb-zpcCrE_0S9u9WZXxquYk9jWN0u_DnXAbvA83dNQvN4TZjL0Y0M2Gc5WO0QnJ7dtnw95C26q-_rjovAcY/s480/420.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhQOJd3sspp40pYbTWUuxhxsB-iWO9qGhyphenhyphend1lzYTqeJHsNqrDndNixSDOojb-zpcCrE_0S9u9WZXxquYk9jWN0u_DnXAbvA83dNQvN4TZjL0Y0M2Gc5WO0QnJ7dtnw95C26q-_rjovAcY/s160/420.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhQOJd3sspp40pYbTWUuxhxsB-iWO9qGhyphenhyphend1lzYTqeJHsNqrDndNixSDOojb-zpcCrE_0S9u9WZXxquYk9jWN0u_DnXAbvA83dNQvN4TZjL0Y0M2Gc5WO0QnJ7dtnw95C26q-_rjovAcY/s320/420.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhQOJd3sspp40pYbTWUuxhxsB-iWO9qGhyphenhyphend1lzYTqeJHsNqrDndNixSDOojb-zpcCrE_0S9u9WZXxquYk9jWN0u_DnXAbvA83dNQvN4TZjL0Y0M2Gc5WO0QnJ7dtnw95C26q-_rjovAcY/s480/420.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 421 - Música del subsuelo español #2"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="programa-420-greta-van-fleet.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ4rLZfWfC7DrqJZgQtH-DVxAGQQoZDEeuF3hfxA_yCDIgeVuJVPpmf2QFOldHGry4Ns-iJhfr2OYgn3rk6dDcVe2BpGLG0_ga6utN6Io-QWTxavhJ2vP5QcwipOUSywIxZCuj-2ZCSfA/s320/37290214_1780549672028127_5463824709822971904_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ4rLZfWfC7DrqJZgQtH-DVxAGQQoZDEeuF3hfxA_yCDIgeVuJVPpmf2QFOldHGry4Ns-iJhfr2OYgn3rk6dDcVe2BpGLG0_ga6utN6Io-QWTxavhJ2vP5QcwipOUSywIxZCuj-2ZCSfA/s320/37290214_1780549672028127_5463824709822971904_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ4rLZfWfC7DrqJZgQtH-DVxAGQQoZDEeuF3hfxA_yCDIgeVuJVPpmf2QFOldHGry4Ns-iJhfr2OYgn3rk6dDcVe2BpGLG0_ga6utN6Io-QWTxavhJ2vP5QcwipOUSywIxZCuj-2ZCSfA/s480/37290214_1780549672028127_5463824709822971904_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ4rLZfWfC7DrqJZgQtH-DVxAGQQoZDEeuF3hfxA_yCDIgeVuJVPpmf2QFOldHGry4Ns-iJhfr2OYgn3rk6dDcVe2BpGLG0_ga6utN6Io-QWTxavhJ2vP5QcwipOUSywIxZCuj-2ZCSfA/s640/37290214_1780549672028127_5463824709822971904_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ4rLZfWfC7DrqJZgQtH-DVxAGQQoZDEeuF3hfxA_yCDIgeVuJVPpmf2QFOldHGry4Ns-iJhfr2OYgn3rk6dDcVe2BpGLG0_ga6utN6Io-QWTxavhJ2vP5QcwipOUSywIxZCuj-2ZCSfA/s320/37290214_1780549672028127_5463824709822971904_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ4rLZfWfC7DrqJZgQtH-DVxAGQQoZDEeuF3hfxA_yCDIgeVuJVPpmf2QFOldHGry4Ns-iJhfr2OYgn3rk6dDcVe2BpGLG0_ga6utN6Io-QWTxavhJ2vP5QcwipOUSywIxZCuj-2ZCSfA/s480/37290214_1780549672028127_5463824709822971904_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ4rLZfWfC7DrqJZgQtH-DVxAGQQoZDEeuF3hfxA_yCDIgeVuJVPpmf2QFOldHGry4Ns-iJhfr2OYgn3rk6dDcVe2BpGLG0_ga6utN6Io-QWTxavhJ2vP5QcwipOUSywIxZCuj-2ZCSfA/s640/37290214_1780549672028127_5463824709822971904_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 420 - Greta Van Fleet "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="programa-424-giants-in-the-trees-krist-novoselic.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s320/album.gitt_.self-titled.cd_.signed.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s320/album.gitt_.self-titled.cd_.signed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s480/album.gitt_.self-titled.cd_.signed.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s640/album.gitt_.self-titled.cd_.signed.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s320/album.gitt_.self-titled.cd_.signed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s480/album.gitt_.self-titled.cd_.signed.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s640/album.gitt_.self-titled.cd_.signed.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 424 - Giants in the Trees (Krist Novoselic)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="programa-425-fantastic-negrito.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5hnY-uqWixDtwmCsEpHe3ZmVsUb6KWLhRStu1-hb7hu-vvGk6Muk9pJsu7GQJSVoe_eqemKJMk1n7OIwgVGogjTOIFZg6QXuuNoO2DIFrYbJy0cMI9K2zNvIZQteHC39AJeiQL3bJx-g/s320/fantasticnegrito-history-image08_1520x.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5hnY-uqWixDtwmCsEpHe3ZmVsUb6KWLhRStu1-hb7hu-vvGk6Muk9pJsu7GQJSVoe_eqemKJMk1n7OIwgVGogjTOIFZg6QXuuNoO2DIFrYbJy0cMI9K2zNvIZQteHC39AJeiQL3bJx-g/s320/fantasticnegrito-history-image08_1520x.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5hnY-uqWixDtwmCsEpHe3ZmVsUb6KWLhRStu1-hb7hu-vvGk6Muk9pJsu7GQJSVoe_eqemKJMk1n7OIwgVGogjTOIFZg6QXuuNoO2DIFrYbJy0cMI9K2zNvIZQteHC39AJeiQL3bJx-g/s480/fantasticnegrito-history-image08_1520x.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5hnY-uqWixDtwmCsEpHe3ZmVsUb6KWLhRStu1-hb7hu-vvGk6Muk9pJsu7GQJSVoe_eqemKJMk1n7OIwgVGogjTOIFZg6QXuuNoO2DIFrYbJy0cMI9K2zNvIZQteHC39AJeiQL3bJx-g/s640/fantasticnegrito-history-image08_1520x.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5hnY-uqWixDtwmCsEpHe3ZmVsUb6KWLhRStu1-hb7hu-vvGk6Muk9pJsu7GQJSVoe_eqemKJMk1n7OIwgVGogjTOIFZg6QXuuNoO2DIFrYbJy0cMI9K2zNvIZQteHC39AJeiQL3bJx-g/s320/fantasticnegrito-history-image08_1520x.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5hnY-uqWixDtwmCsEpHe3ZmVsUb6KWLhRStu1-hb7hu-vvGk6Muk9pJsu7GQJSVoe_eqemKJMk1n7OIwgVGogjTOIFZg6QXuuNoO2DIFrYbJy0cMI9K2zNvIZQteHC39AJeiQL3bJx-g/s480/fantasticnegrito-history-image08_1520x.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5hnY-uqWixDtwmCsEpHe3ZmVsUb6KWLhRStu1-hb7hu-vvGk6Muk9pJsu7GQJSVoe_eqemKJMk1n7OIwgVGogjTOIFZg6QXuuNoO2DIFrYbJy0cMI9K2zNvIZQteHC39AJeiQL3bJx-g/s640/fantasticnegrito-history-image08_1520x.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 425 - Fantastic Negrito"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

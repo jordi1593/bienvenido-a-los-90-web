@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 569 - Kim Gordon lanza su primer disco en solitario: No Home Record (2019) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -134,8 +134,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQw7ccBbLGIQHzJI4ZsLQ0rBnKhiEh3IXZlpBcHObT8eDdNrkUQoQByY_zh0Gq0ewvaIUDxKGDxfN04RwwUhpqPyzw1T7oFZIyXuD_uv6ngjM9zvlowXe_GJjxdvNOMH_VvZzokcV-N2Q/s320/10997993_10152688940797747_1170606635313502221_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQw7ccBbLGIQHzJI4ZsLQ0rBnKhiEh3IXZlpBcHObT8eDdNrkUQoQByY_zh0Gq0ewvaIUDxKGDxfN04RwwUhpqPyzw1T7oFZIyXuD_uv6ngjM9zvlowXe_GJjxdvNOMH_VvZzokcV-N2Q/s160/10997993_10152688940797747_1170606635313502221_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQw7ccBbLGIQHzJI4ZsLQ0rBnKhiEh3IXZlpBcHObT8eDdNrkUQoQByY_zh0Gq0ewvaIUDxKGDxfN04RwwUhpqPyzw1T7oFZIyXuD_uv6ngjM9zvlowXe_GJjxdvNOMH_VvZzokcV-N2Q/s320/10997993_10152688940797747_1170606635313502221_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQw7ccBbLGIQHzJI4ZsLQ0rBnKhiEh3IXZlpBcHObT8eDdNrkUQoQByY_zh0Gq0ewvaIUDxKGDxfN04RwwUhpqPyzw1T7oFZIyXuD_uv6ngjM9zvlowXe_GJjxdvNOMH_VvZzokcV-N2Q/s480/10997993_10152688940797747_1170606635313502221_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQw7ccBbLGIQHzJI4ZsLQ0rBnKhiEh3IXZlpBcHObT8eDdNrkUQoQByY_zh0Gq0ewvaIUDxKGDxfN04RwwUhpqPyzw1T7oFZIyXuD_uv6ngjM9zvlowXe_GJjxdvNOMH_VvZzokcV-N2Q/s160/10997993_10152688940797747_1170606635313502221_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQw7ccBbLGIQHzJI4ZsLQ0rBnKhiEh3IXZlpBcHObT8eDdNrkUQoQByY_zh0Gq0ewvaIUDxKGDxfN04RwwUhpqPyzw1T7oFZIyXuD_uv6ngjM9zvlowXe_GJjxdvNOMH_VvZzokcV-N2Q/s320/10997993_10152688940797747_1170606635313502221_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQw7ccBbLGIQHzJI4ZsLQ0rBnKhiEh3IXZlpBcHObT8eDdNrkUQoQByY_zh0Gq0ewvaIUDxKGDxfN04RwwUhpqPyzw1T7oFZIyXuD_uv6ngjM9zvlowXe_GJjxdvNOMH_VvZzokcV-N2Q/s480/10997993_10152688940797747_1170606635313502221_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 151 - Kim Gordon &quot;La chica del grupo&quot;"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -145,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s320/Kim-Deal-Kim-Gordon-Netflix-2025.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s160/Kim-Deal-Kim-Gordon-Netflix-2025.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s320/Kim-Deal-Kim-Gordon-Netflix-2025.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s480/Kim-Deal-Kim-Gordon-Netflix-2025.webp 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s160/Kim-Deal-Kim-Gordon-Netflix-2025.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s320/Kim-Deal-Kim-Gordon-Netflix-2025.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s480/Kim-Deal-Kim-Gordon-Netflix-2025.webp 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 76 - Kim Gordon y Kim Deal"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -156,8 +154,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbuWd6GvQnFpPR7W4PxDuahdpqy9fAD3ILRH5MJ4-QDXBHzDMOPvvrANQa7nePfu0qpIDCt0KKrHN68ftDGXehp6VW21yeLevOVdkpVlZgUTp986u21WZEEVybxo16KLLRKiZbtl4MxJg/s320/b90_565.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbuWd6GvQnFpPR7W4PxDuahdpqy9fAD3ILRH5MJ4-QDXBHzDMOPvvrANQa7nePfu0qpIDCt0KKrHN68ftDGXehp6VW21yeLevOVdkpVlZgUTp986u21WZEEVybxo16KLLRKiZbtl4MxJg/s160/b90_565.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbuWd6GvQnFpPR7W4PxDuahdpqy9fAD3ILRH5MJ4-QDXBHzDMOPvvrANQa7nePfu0qpIDCt0KKrHN68ftDGXehp6VW21yeLevOVdkpVlZgUTp986u21WZEEVybxo16KLLRKiZbtl4MxJg/s320/b90_565.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbuWd6GvQnFpPR7W4PxDuahdpqy9fAD3ILRH5MJ4-QDXBHzDMOPvvrANQa7nePfu0qpIDCt0KKrHN68ftDGXehp6VW21yeLevOVdkpVlZgUTp986u21WZEEVybxo16KLLRKiZbtl4MxJg/s480/b90_565.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbuWd6GvQnFpPR7W4PxDuahdpqy9fAD3ILRH5MJ4-QDXBHzDMOPvvrANQa7nePfu0qpIDCt0KKrHN68ftDGXehp6VW21yeLevOVdkpVlZgUTp986u21WZEEVybxo16KLLRKiZbtl4MxJg/s160/b90_565.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbuWd6GvQnFpPR7W4PxDuahdpqy9fAD3ILRH5MJ4-QDXBHzDMOPvvrANQa7nePfu0qpIDCt0KKrHN68ftDGXehp6VW21yeLevOVdkpVlZgUTp986u21WZEEVybxo16KLLRKiZbtl4MxJg/s320/b90_565.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbuWd6GvQnFpPR7W4PxDuahdpqy9fAD3ILRH5MJ4-QDXBHzDMOPvvrANQa7nePfu0qpIDCt0KKrHN68ftDGXehp6VW21yeLevOVdkpVlZgUTp986u21WZEEVybxo16KLLRKiZbtl4MxJg/s480/b90_565.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 565 - Novedades: Terrorvision, Alain Johannes, Travis, Kim Gordon..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -173,8 +170,7 @@
         <a class="related-bottom-card" href="1111-novedades-le-mur-kim-gordon-puma-blue-social-distortion-jehnny-beth-violet-grohl.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrUFqqePOzhrqdSaISnSEZWOdQ9GYBPCQ4XTeSPGNAetXBj71t0jHJtteDc-iD0HHjia1SxMTCFR_a1J2AFY8yhP0Chyuptlm_ZlrCCY57NqaYuQ1-0YEY5orjX0LVEGTLNdh9xU5GTJl5mfnbx8IcEaYOB83gCIW87aRriENyY4mEWbp0Tv_MvSYTjqc/s320/b90_1111.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrUFqqePOzhrqdSaISnSEZWOdQ9GYBPCQ4XTeSPGNAetXBj71t0jHJtteDc-iD0HHjia1SxMTCFR_a1J2AFY8yhP0Chyuptlm_ZlrCCY57NqaYuQ1-0YEY5orjX0LVEGTLNdh9xU5GTJl5mfnbx8IcEaYOB83gCIW87aRriENyY4mEWbp0Tv_MvSYTjqc/s320/b90_1111.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrUFqqePOzhrqdSaISnSEZWOdQ9GYBPCQ4XTeSPGNAetXBj71t0jHJtteDc-iD0HHjia1SxMTCFR_a1J2AFY8yhP0Chyuptlm_ZlrCCY57NqaYuQ1-0YEY5orjX0LVEGTLNdh9xU5GTJl5mfnbx8IcEaYOB83gCIW87aRriENyY4mEWbp0Tv_MvSYTjqc/s480/b90_1111.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrUFqqePOzhrqdSaISnSEZWOdQ9GYBPCQ4XTeSPGNAetXBj71t0jHJtteDc-iD0HHjia1SxMTCFR_a1J2AFY8yhP0Chyuptlm_ZlrCCY57NqaYuQ1-0YEY5orjX0LVEGTLNdh9xU5GTJl5mfnbx8IcEaYOB83gCIW87aRriENyY4mEWbp0Tv_MvSYTjqc/s640/b90_1111.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrUFqqePOzhrqdSaISnSEZWOdQ9GYBPCQ4XTeSPGNAetXBj71t0jHJtteDc-iD0HHjia1SxMTCFR_a1J2AFY8yhP0Chyuptlm_ZlrCCY57NqaYuQ1-0YEY5orjX0LVEGTLNdh9xU5GTJl5mfnbx8IcEaYOB83gCIW87aRriENyY4mEWbp0Tv_MvSYTjqc/s320/b90_1111.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrUFqqePOzhrqdSaISnSEZWOdQ9GYBPCQ4XTeSPGNAetXBj71t0jHJtteDc-iD0HHjia1SxMTCFR_a1J2AFY8yhP0Chyuptlm_ZlrCCY57NqaYuQ1-0YEY5orjX0LVEGTLNdh9xU5GTJl5mfnbx8IcEaYOB83gCIW87aRriENyY4mEWbp0Tv_MvSYTjqc/s480/b90_1111.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrUFqqePOzhrqdSaISnSEZWOdQ9GYBPCQ4XTeSPGNAetXBj71t0jHJtteDc-iD0HHjia1SxMTCFR_a1J2AFY8yhP0Chyuptlm_ZlrCCY57NqaYuQ1-0YEY5orjX0LVEGTLNdh9xU5GTJl5mfnbx8IcEaYOB83gCIW87aRriENyY4mEWbp0Tv_MvSYTjqc/s640/b90_1111.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1111 - Novedades: Le Mur, Kim Gordon, Puma Blue, Social Distortion, Jehnny Beth, Violet Grohl..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -185,8 +181,7 @@
           </a><a class="related-bottom-card" href="programa-519-gyoza-nos-cuentan-los-secretos-de-su-primer-disco.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ0hCnjG0gT6lw3qiVmaKGWR8lrdcJ-dQNmoFAmbDMT-xv4qWXLYFGnNYM6cMhnjfTmIPrVXPZgassOPHplv7MXkkExLZtAHjyaQGwCKysFsmIjhA3NX3PJdL8Nu-QsfXvAm3UX-VXY14/s320/b90_519.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ0hCnjG0gT6lw3qiVmaKGWR8lrdcJ-dQNmoFAmbDMT-xv4qWXLYFGnNYM6cMhnjfTmIPrVXPZgassOPHplv7MXkkExLZtAHjyaQGwCKysFsmIjhA3NX3PJdL8Nu-QsfXvAm3UX-VXY14/s320/b90_519.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ0hCnjG0gT6lw3qiVmaKGWR8lrdcJ-dQNmoFAmbDMT-xv4qWXLYFGnNYM6cMhnjfTmIPrVXPZgassOPHplv7MXkkExLZtAHjyaQGwCKysFsmIjhA3NX3PJdL8Nu-QsfXvAm3UX-VXY14/s480/b90_519.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ0hCnjG0gT6lw3qiVmaKGWR8lrdcJ-dQNmoFAmbDMT-xv4qWXLYFGnNYM6cMhnjfTmIPrVXPZgassOPHplv7MXkkExLZtAHjyaQGwCKysFsmIjhA3NX3PJdL8Nu-QsfXvAm3UX-VXY14/s640/b90_519.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ0hCnjG0gT6lw3qiVmaKGWR8lrdcJ-dQNmoFAmbDMT-xv4qWXLYFGnNYM6cMhnjfTmIPrVXPZgassOPHplv7MXkkExLZtAHjyaQGwCKysFsmIjhA3NX3PJdL8Nu-QsfXvAm3UX-VXY14/s320/b90_519.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ0hCnjG0gT6lw3qiVmaKGWR8lrdcJ-dQNmoFAmbDMT-xv4qWXLYFGnNYM6cMhnjfTmIPrVXPZgassOPHplv7MXkkExLZtAHjyaQGwCKysFsmIjhA3NX3PJdL8Nu-QsfXvAm3UX-VXY14/s480/b90_519.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ0hCnjG0gT6lw3qiVmaKGWR8lrdcJ-dQNmoFAmbDMT-xv4qWXLYFGnNYM6cMhnjfTmIPrVXPZgassOPHplv7MXkkExLZtAHjyaQGwCKysFsmIjhA3NX3PJdL8Nu-QsfXvAm3UX-VXY14/s640/b90_519.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 519 - GYOZA nos cuentan los secretos de su primer disco"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -197,8 +192,7 @@
           </a><a class="related-bottom-card" href="programa-483-sonic-youth-su-ultimo-concierto-en-nueva-york.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimljceBQSFPRXj6METSk86iC_5LQ4-CGCmuRb9k7E3fH4YPX7B3I1vAhrxZelmM_vUN58klHRIMsqu5d6epqQjCc63b4nFSQpT7uq3YGNtsUt9iY4L-Idko2Jt9Zc-lC2qyVEzRQyDaIg/s320/b90_483.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimljceBQSFPRXj6METSk86iC_5LQ4-CGCmuRb9k7E3fH4YPX7B3I1vAhrxZelmM_vUN58klHRIMsqu5d6epqQjCc63b4nFSQpT7uq3YGNtsUt9iY4L-Idko2Jt9Zc-lC2qyVEzRQyDaIg/s320/b90_483.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimljceBQSFPRXj6METSk86iC_5LQ4-CGCmuRb9k7E3fH4YPX7B3I1vAhrxZelmM_vUN58klHRIMsqu5d6epqQjCc63b4nFSQpT7uq3YGNtsUt9iY4L-Idko2Jt9Zc-lC2qyVEzRQyDaIg/s480/b90_483.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimljceBQSFPRXj6METSk86iC_5LQ4-CGCmuRb9k7E3fH4YPX7B3I1vAhrxZelmM_vUN58klHRIMsqu5d6epqQjCc63b4nFSQpT7uq3YGNtsUt9iY4L-Idko2Jt9Zc-lC2qyVEzRQyDaIg/s640/b90_483.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimljceBQSFPRXj6METSk86iC_5LQ4-CGCmuRb9k7E3fH4YPX7B3I1vAhrxZelmM_vUN58klHRIMsqu5d6epqQjCc63b4nFSQpT7uq3YGNtsUt9iY4L-Idko2Jt9Zc-lC2qyVEzRQyDaIg/s320/b90_483.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimljceBQSFPRXj6METSk86iC_5LQ4-CGCmuRb9k7E3fH4YPX7B3I1vAhrxZelmM_vUN58klHRIMsqu5d6epqQjCc63b4nFSQpT7uq3YGNtsUt9iY4L-Idko2Jt9Zc-lC2qyVEzRQyDaIg/s480/b90_483.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimljceBQSFPRXj6METSk86iC_5LQ4-CGCmuRb9k7E3fH4YPX7B3I1vAhrxZelmM_vUN58klHRIMsqu5d6epqQjCc63b4nFSQpT7uq3YGNtsUt9iY4L-Idko2Jt9Zc-lC2qyVEzRQyDaIg/s640/b90_483.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 483 - Sonic Youth, su último concierto en Nueva York "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

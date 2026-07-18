@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.681 - El día que quise fichar a Lori Meyers — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -131,8 +131,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXjAhboLtKCiZDuM0kqUEmZwb2xgsHoZQs9M-t1mqIFndqzVQtAFAKe39-ZLyRTMFVKablRrdFJztsVyYdBOsQR_w-32AwUimyleyR1k9zllY9EReC9hUirL5ALGpt9mKDU9JXAWOi5fk/s320/IMG_20201107_113339.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXjAhboLtKCiZDuM0kqUEmZwb2xgsHoZQs9M-t1mqIFndqzVQtAFAKe39-ZLyRTMFVKablRrdFJztsVyYdBOsQR_w-32AwUimyleyR1k9zllY9EReC9hUirL5ALGpt9mKDU9JXAWOi5fk/s160/IMG_20201107_113339.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXjAhboLtKCiZDuM0kqUEmZwb2xgsHoZQs9M-t1mqIFndqzVQtAFAKe39-ZLyRTMFVKablRrdFJztsVyYdBOsQR_w-32AwUimyleyR1k9zllY9EReC9hUirL5ALGpt9mKDU9JXAWOi5fk/s320/IMG_20201107_113339.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXjAhboLtKCiZDuM0kqUEmZwb2xgsHoZQs9M-t1mqIFndqzVQtAFAKe39-ZLyRTMFVKablRrdFJztsVyYdBOsQR_w-32AwUimyleyR1k9zllY9EReC9hUirL5ALGpt9mKDU9JXAWOi5fk/s480/IMG_20201107_113339.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXjAhboLtKCiZDuM0kqUEmZwb2xgsHoZQs9M-t1mqIFndqzVQtAFAKe39-ZLyRTMFVKablRrdFJztsVyYdBOsQR_w-32AwUimyleyR1k9zllY9EReC9hUirL5ALGpt9mKDU9JXAWOi5fk/s160/IMG_20201107_113339.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXjAhboLtKCiZDuM0kqUEmZwb2xgsHoZQs9M-t1mqIFndqzVQtAFAKe39-ZLyRTMFVKablRrdFJztsVyYdBOsQR_w-32AwUimyleyR1k9zllY9EReC9hUirL5ALGpt9mKDU9JXAWOi5fk/s320/IMG_20201107_113339.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXjAhboLtKCiZDuM0kqUEmZwb2xgsHoZQs9M-t1mqIFndqzVQtAFAKe39-ZLyRTMFVKablRrdFJztsVyYdBOsQR_w-32AwUimyleyR1k9zllY9EReC9hUirL5ALGpt9mKDU9JXAWOi5fk/s480/IMG_20201107_113339.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.701 - El día que conocí a Dave Grohl (Tiendas Tipo, 1999)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -142,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s320/ideas_inspiradoras_20190901.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s160/ideas_inspiradoras_20190901.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s320/ideas_inspiradoras_20190901.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s480/ideas_inspiradoras_20190901.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s160/ideas_inspiradoras_20190901.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s320/ideas_inspiradoras_20190901.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s480/ideas_inspiradoras_20190901.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.764 - Canciones que harán mejorar tu día"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -153,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s320/patti-smith-2019-2.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s160/patti-smith-2019-2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s320/patti-smith-2019-2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s480/patti-smith-2019-2.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s160/patti-smith-2019-2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s320/patti-smith-2019-2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s480/patti-smith-2019-2.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 42 - El día que conocí a Patti Smith"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -170,8 +167,7 @@
         <a class="related-bottom-card" href="programa-223-trainspotting-terminator-2-el-dia-de-la-marmota.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpJH4u9N1b0h4nrRocd8Qka7H8pGSnt9ibGoXZoATQqpAykVrUkSMZ6A11qan69UJsfj7IYTs3rO6Cl0ljq16moH23N_EJVyGpSSIRkrHUmsk6Qq8W_Bb7LjZBoPlq3g08iubWCOi32T0/s320/Groundhog-Day.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpJH4u9N1b0h4nrRocd8Qka7H8pGSnt9ibGoXZoATQqpAykVrUkSMZ6A11qan69UJsfj7IYTs3rO6Cl0ljq16moH23N_EJVyGpSSIRkrHUmsk6Qq8W_Bb7LjZBoPlq3g08iubWCOi32T0/s320/Groundhog-Day.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpJH4u9N1b0h4nrRocd8Qka7H8pGSnt9ibGoXZoATQqpAykVrUkSMZ6A11qan69UJsfj7IYTs3rO6Cl0ljq16moH23N_EJVyGpSSIRkrHUmsk6Qq8W_Bb7LjZBoPlq3g08iubWCOi32T0/s480/Groundhog-Day.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpJH4u9N1b0h4nrRocd8Qka7H8pGSnt9ibGoXZoATQqpAykVrUkSMZ6A11qan69UJsfj7IYTs3rO6Cl0ljq16moH23N_EJVyGpSSIRkrHUmsk6Qq8W_Bb7LjZBoPlq3g08iubWCOi32T0/s640/Groundhog-Day.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpJH4u9N1b0h4nrRocd8Qka7H8pGSnt9ibGoXZoATQqpAykVrUkSMZ6A11qan69UJsfj7IYTs3rO6Cl0ljq16moH23N_EJVyGpSSIRkrHUmsk6Qq8W_Bb7LjZBoPlq3g08iubWCOi32T0/s320/Groundhog-Day.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpJH4u9N1b0h4nrRocd8Qka7H8pGSnt9ibGoXZoATQqpAykVrUkSMZ6A11qan69UJsfj7IYTs3rO6Cl0ljq16moH23N_EJVyGpSSIRkrHUmsk6Qq8W_Bb7LjZBoPlq3g08iubWCOi32T0/s480/Groundhog-Day.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpJH4u9N1b0h4nrRocd8Qka7H8pGSnt9ibGoXZoATQqpAykVrUkSMZ6A11qan69UJsfj7IYTs3rO6Cl0ljq16moH23N_EJVyGpSSIRkrHUmsk6Qq8W_Bb7LjZBoPlq3g08iubWCOi32T0/s640/Groundhog-Day.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 223 - Trainspotting - Terminator 2 - El día de la marmota"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -182,8 +178,7 @@
           </a><a class="related-bottom-card" href="programa-212-dia-internacional-de-la-mujer-george-martin.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF9LZHdts_pBPTn3zBAmSg6imayrBSVQXZsFV9MIWSsfyWJidBoETz5U1sdW12i6FdAkViO75-IZzz7ncT6ViUyDYgZdhVNZfd9PS8rHvaCwyqLQVqF0JrfQL_cqx8kxRZjtDDQo64anM/s320/11921688_901419803237855_4314168177216834195_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF9LZHdts_pBPTn3zBAmSg6imayrBSVQXZsFV9MIWSsfyWJidBoETz5U1sdW12i6FdAkViO75-IZzz7ncT6ViUyDYgZdhVNZfd9PS8rHvaCwyqLQVqF0JrfQL_cqx8kxRZjtDDQo64anM/s320/11921688_901419803237855_4314168177216834195_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF9LZHdts_pBPTn3zBAmSg6imayrBSVQXZsFV9MIWSsfyWJidBoETz5U1sdW12i6FdAkViO75-IZzz7ncT6ViUyDYgZdhVNZfd9PS8rHvaCwyqLQVqF0JrfQL_cqx8kxRZjtDDQo64anM/s480/11921688_901419803237855_4314168177216834195_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF9LZHdts_pBPTn3zBAmSg6imayrBSVQXZsFV9MIWSsfyWJidBoETz5U1sdW12i6FdAkViO75-IZzz7ncT6ViUyDYgZdhVNZfd9PS8rHvaCwyqLQVqF0JrfQL_cqx8kxRZjtDDQo64anM/s640/11921688_901419803237855_4314168177216834195_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF9LZHdts_pBPTn3zBAmSg6imayrBSVQXZsFV9MIWSsfyWJidBoETz5U1sdW12i6FdAkViO75-IZzz7ncT6ViUyDYgZdhVNZfd9PS8rHvaCwyqLQVqF0JrfQL_cqx8kxRZjtDDQo64anM/s320/11921688_901419803237855_4314168177216834195_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF9LZHdts_pBPTn3zBAmSg6imayrBSVQXZsFV9MIWSsfyWJidBoETz5U1sdW12i6FdAkViO75-IZzz7ncT6ViUyDYgZdhVNZfd9PS8rHvaCwyqLQVqF0JrfQL_cqx8kxRZjtDDQo64anM/s480/11921688_901419803237855_4314168177216834195_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF9LZHdts_pBPTn3zBAmSg6imayrBSVQXZsFV9MIWSsfyWJidBoETz5U1sdW12i6FdAkViO75-IZzz7ncT6ViUyDYgZdhVNZfd9PS8rHvaCwyqLQVqF0JrfQL_cqx8kxRZjtDDQo64anM/s640/11921688_901419803237855_4314168177216834195_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 212 - Día Internacional de la Mujer - George Martin"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -194,8 +189,7 @@
           </a><a class="related-bottom-card" href="1103-el-dia-que-mike-mccready-pearl-jam-se-paseo-por-lavapies.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk_GP6lXB0eLcwj3hPNy_bHT9vb-F_YzHuVGFv53YEcPFCqKayt_qI_DEoZPPnYjlRVdLpMbJI8hOaV1Sj_RV9jvuh2xhWKrAYQs_zB3p8xZL7s7tS9RCvG99hT-d2cZIphMRxrstFYnmwnsQgLHkW8bAAxSl0LvYqcBcSxfsut0mDG8QRT3hbWhhj9s0/s320/ChatGPT%20Image%2014%20feb%202026,%2018_43_36.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk_GP6lXB0eLcwj3hPNy_bHT9vb-F_YzHuVGFv53YEcPFCqKayt_qI_DEoZPPnYjlRVdLpMbJI8hOaV1Sj_RV9jvuh2xhWKrAYQs_zB3p8xZL7s7tS9RCvG99hT-d2cZIphMRxrstFYnmwnsQgLHkW8bAAxSl0LvYqcBcSxfsut0mDG8QRT3hbWhhj9s0/s320/ChatGPT%20Image%2014%20feb%202026,%2018_43_36.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk_GP6lXB0eLcwj3hPNy_bHT9vb-F_YzHuVGFv53YEcPFCqKayt_qI_DEoZPPnYjlRVdLpMbJI8hOaV1Sj_RV9jvuh2xhWKrAYQs_zB3p8xZL7s7tS9RCvG99hT-d2cZIphMRxrstFYnmwnsQgLHkW8bAAxSl0LvYqcBcSxfsut0mDG8QRT3hbWhhj9s0/s480/ChatGPT%20Image%2014%20feb%202026,%2018_43_36.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk_GP6lXB0eLcwj3hPNy_bHT9vb-F_YzHuVGFv53YEcPFCqKayt_qI_DEoZPPnYjlRVdLpMbJI8hOaV1Sj_RV9jvuh2xhWKrAYQs_zB3p8xZL7s7tS9RCvG99hT-d2cZIphMRxrstFYnmwnsQgLHkW8bAAxSl0LvYqcBcSxfsut0mDG8QRT3hbWhhj9s0/s640/ChatGPT%20Image%2014%20feb%202026,%2018_43_36.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk_GP6lXB0eLcwj3hPNy_bHT9vb-F_YzHuVGFv53YEcPFCqKayt_qI_DEoZPPnYjlRVdLpMbJI8hOaV1Sj_RV9jvuh2xhWKrAYQs_zB3p8xZL7s7tS9RCvG99hT-d2cZIphMRxrstFYnmwnsQgLHkW8bAAxSl0LvYqcBcSxfsut0mDG8QRT3hbWhhj9s0/s320/ChatGPT%20Image%2014%20feb%202026,%2018_43_36.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk_GP6lXB0eLcwj3hPNy_bHT9vb-F_YzHuVGFv53YEcPFCqKayt_qI_DEoZPPnYjlRVdLpMbJI8hOaV1Sj_RV9jvuh2xhWKrAYQs_zB3p8xZL7s7tS9RCvG99hT-d2cZIphMRxrstFYnmwnsQgLHkW8bAAxSl0LvYqcBcSxfsut0mDG8QRT3hbWhhj9s0/s480/ChatGPT%20Image%2014%20feb%202026,%2018_43_36.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk_GP6lXB0eLcwj3hPNy_bHT9vb-F_YzHuVGFv53YEcPFCqKayt_qI_DEoZPPnYjlRVdLpMbJI8hOaV1Sj_RV9jvuh2xhWKrAYQs_zB3p8xZL7s7tS9RCvG99hT-d2cZIphMRxrstFYnmwnsQgLHkW8bAAxSl0LvYqcBcSxfsut0mDG8QRT3hbWhhj9s0/s640/ChatGPT%20Image%2014%20feb%202026,%2018_43_36.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1103 - El día que Mike McCready (Pearl Jam) se paseó por Lavapies"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

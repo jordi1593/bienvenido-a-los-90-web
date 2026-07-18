@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Lost In Translation — 6 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-905-lo-que-nadie-cuenta-de-atum-the-smashing-pumpkins.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXmzK1AvF2UTsgRyZ_NQvgYpLd4varL3ZoImkIC_Kg5eb4HoOQsAOwLhfsBr7LvvrD70ReSIo9TCxE0-EyU5QINajp3QftuSjDEZKUjla5-5bD9w0HhOMjqxj6e6i785za7x7sEJY25FGVXZEfu9ZqSnwtz95udtrQ8ln2Tyh2_SCD_qI3APDFqS2g/s320/Cover.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXmzK1AvF2UTsgRyZ_NQvgYpLd4varL3ZoImkIC_Kg5eb4HoOQsAOwLhfsBr7LvvrD70ReSIo9TCxE0-EyU5QINajp3QftuSjDEZKUjla5-5bD9w0HhOMjqxj6e6i785za7x7sEJY25FGVXZEfu9ZqSnwtz95udtrQ8ln2Tyh2_SCD_qI3APDFqS2g/s160/Cover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXmzK1AvF2UTsgRyZ_NQvgYpLd4varL3ZoImkIC_Kg5eb4HoOQsAOwLhfsBr7LvvrD70ReSIo9TCxE0-EyU5QINajp3QftuSjDEZKUjla5-5bD9w0HhOMjqxj6e6i785za7x7sEJY25FGVXZEfu9ZqSnwtz95udtrQ8ln2Tyh2_SCD_qI3APDFqS2g/s320/Cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXmzK1AvF2UTsgRyZ_NQvgYpLd4varL3ZoImkIC_Kg5eb4HoOQsAOwLhfsBr7LvvrD70ReSIo9TCxE0-EyU5QINajp3QftuSjDEZKUjla5-5bD9w0HhOMjqxj6e6i785za7x7sEJY25FGVXZEfu9ZqSnwtz95udtrQ8ln2Tyh2_SCD_qI3APDFqS2g/s480/Cover.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXmzK1AvF2UTsgRyZ_NQvgYpLd4varL3ZoImkIC_Kg5eb4HoOQsAOwLhfsBr7LvvrD70ReSIo9TCxE0-EyU5QINajp3QftuSjDEZKUjla5-5bD9w0HhOMjqxj6e6i785za7x7sEJY25FGVXZEfu9ZqSnwtz95udtrQ8ln2Tyh2_SCD_qI3APDFqS2g/s160/Cover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXmzK1AvF2UTsgRyZ_NQvgYpLd4varL3ZoImkIC_Kg5eb4HoOQsAOwLhfsBr7LvvrD70ReSIo9TCxE0-EyU5QINajp3QftuSjDEZKUjla5-5bD9w0HhOMjqxj6e6i785za7x7sEJY25FGVXZEfu9ZqSnwtz95udtrQ8ln2Tyh2_SCD_qI3APDFqS2g/s320/Cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXmzK1AvF2UTsgRyZ_NQvgYpLd4varL3ZoImkIC_Kg5eb4HoOQsAOwLhfsBr7LvvrD70ReSIo9TCxE0-EyU5QINajp3QftuSjDEZKUjla5-5bD9w0HhOMjqxj6e6i785za7x7sEJY25FGVXZEfu9ZqSnwtz95udtrQ8ln2Tyh2_SCD_qI3APDFqS2g/s480/Cover.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.905 - Lo que NADIE cuenta de ATUM, The Smashing Pumpkins"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-884-bienvenidos-a-la-radio-un-largometraje-documental.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1Bjvma7V7KN3nmH7Rlk8SaDG5LX1heYQlQlDys-ogE9nInwJgcf6l4gOxCC4sRqZVT8QqHS0WkCt_KAZqy9eDr0GS3mESI2EYaPaVEhlGZV_bp0JBpwnun33i-NrJtATiXbtpeuD_xPnN0r9kp4EGkyGlArteryNG1t5idfO9_ArCH6jKqYyeQPgo/s320/IMG-20221218-WA0007.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1Bjvma7V7KN3nmH7Rlk8SaDG5LX1heYQlQlDys-ogE9nInwJgcf6l4gOxCC4sRqZVT8QqHS0WkCt_KAZqy9eDr0GS3mESI2EYaPaVEhlGZV_bp0JBpwnun33i-NrJtATiXbtpeuD_xPnN0r9kp4EGkyGlArteryNG1t5idfO9_ArCH6jKqYyeQPgo/s160/IMG-20221218-WA0007.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1Bjvma7V7KN3nmH7Rlk8SaDG5LX1heYQlQlDys-ogE9nInwJgcf6l4gOxCC4sRqZVT8QqHS0WkCt_KAZqy9eDr0GS3mESI2EYaPaVEhlGZV_bp0JBpwnun33i-NrJtATiXbtpeuD_xPnN0r9kp4EGkyGlArteryNG1t5idfO9_ArCH6jKqYyeQPgo/s320/IMG-20221218-WA0007.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1Bjvma7V7KN3nmH7Rlk8SaDG5LX1heYQlQlDys-ogE9nInwJgcf6l4gOxCC4sRqZVT8QqHS0WkCt_KAZqy9eDr0GS3mESI2EYaPaVEhlGZV_bp0JBpwnun33i-NrJtATiXbtpeuD_xPnN0r9kp4EGkyGlArteryNG1t5idfO9_ArCH6jKqYyeQPgo/s480/IMG-20221218-WA0007.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1Bjvma7V7KN3nmH7Rlk8SaDG5LX1heYQlQlDys-ogE9nInwJgcf6l4gOxCC4sRqZVT8QqHS0WkCt_KAZqy9eDr0GS3mESI2EYaPaVEhlGZV_bp0JBpwnun33i-NrJtATiXbtpeuD_xPnN0r9kp4EGkyGlArteryNG1t5idfO9_ArCH6jKqYyeQPgo/s160/IMG-20221218-WA0007.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1Bjvma7V7KN3nmH7Rlk8SaDG5LX1heYQlQlDys-ogE9nInwJgcf6l4gOxCC4sRqZVT8QqHS0WkCt_KAZqy9eDr0GS3mESI2EYaPaVEhlGZV_bp0JBpwnun33i-NrJtATiXbtpeuD_xPnN0r9kp4EGkyGlArteryNG1t5idfO9_ArCH6jKqYyeQPgo/s320/IMG-20221218-WA0007.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1Bjvma7V7KN3nmH7Rlk8SaDG5LX1heYQlQlDys-ogE9nInwJgcf6l4gOxCC4sRqZVT8QqHS0WkCt_KAZqy9eDr0GS3mESI2EYaPaVEhlGZV_bp0JBpwnun33i-NrJtATiXbtpeuD_xPnN0r9kp4EGkyGlArteryNG1t5idfO9_ArCH6jKqYyeQPgo/s480/IMG-20221218-WA0007.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.884 - Bienvenidos a la radio, un largometraje documental"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-852-30-anos-despues-del-primer-concierto-de-nirvana-en-espana.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s320/IMG-20220716-WA0011.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s160/IMG-20220716-WA0011.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s320/IMG-20220716-WA0011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s480/IMG-20220716-WA0011.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s160/IMG-20220716-WA0011.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s320/IMG-20220716-WA0011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s480/IMG-20220716-WA0011.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.852 - 30 años después del primer concierto de Nirvana en España"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-830-taylor-hawkins-1972-2022.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBVOpd5w0VRmgCiES0mXTd1rdTV2M4oqnKpWdw61dOC-Lx6ufEXZF1BIsjSDXEt0znJMRRa_A9EAXgvkjwcrY1LUgsYfdnkKQ8841v7rGXNFh8nF_xpAKb5ceHIvr_I6bjZYb6wWuQ9PMwtzmUFYKGhg1QFVpBM2yrEu72XRFbS0a-tBk6BJ0MCmaD/s320/277170248_5307831409250820_807243658216714791_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBVOpd5w0VRmgCiES0mXTd1rdTV2M4oqnKpWdw61dOC-Lx6ufEXZF1BIsjSDXEt0znJMRRa_A9EAXgvkjwcrY1LUgsYfdnkKQ8841v7rGXNFh8nF_xpAKb5ceHIvr_I6bjZYb6wWuQ9PMwtzmUFYKGhg1QFVpBM2yrEu72XRFbS0a-tBk6BJ0MCmaD/s160/277170248_5307831409250820_807243658216714791_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBVOpd5w0VRmgCiES0mXTd1rdTV2M4oqnKpWdw61dOC-Lx6ufEXZF1BIsjSDXEt0znJMRRa_A9EAXgvkjwcrY1LUgsYfdnkKQ8841v7rGXNFh8nF_xpAKb5ceHIvr_I6bjZYb6wWuQ9PMwtzmUFYKGhg1QFVpBM2yrEu72XRFbS0a-tBk6BJ0MCmaD/s320/277170248_5307831409250820_807243658216714791_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBVOpd5w0VRmgCiES0mXTd1rdTV2M4oqnKpWdw61dOC-Lx6ufEXZF1BIsjSDXEt0znJMRRa_A9EAXgvkjwcrY1LUgsYfdnkKQ8841v7rGXNFh8nF_xpAKb5ceHIvr_I6bjZYb6wWuQ9PMwtzmUFYKGhg1QFVpBM2yrEu72XRFbS0a-tBk6BJ0MCmaD/s480/277170248_5307831409250820_807243658216714791_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBVOpd5w0VRmgCiES0mXTd1rdTV2M4oqnKpWdw61dOC-Lx6ufEXZF1BIsjSDXEt0znJMRRa_A9EAXgvkjwcrY1LUgsYfdnkKQ8841v7rGXNFh8nF_xpAKb5ceHIvr_I6bjZYb6wWuQ9PMwtzmUFYKGhg1QFVpBM2yrEu72XRFbS0a-tBk6BJ0MCmaD/s160/277170248_5307831409250820_807243658216714791_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBVOpd5w0VRmgCiES0mXTd1rdTV2M4oqnKpWdw61dOC-Lx6ufEXZF1BIsjSDXEt0znJMRRa_A9EAXgvkjwcrY1LUgsYfdnkKQ8841v7rGXNFh8nF_xpAKb5ceHIvr_I6bjZYb6wWuQ9PMwtzmUFYKGhg1QFVpBM2yrEu72XRFbS0a-tBk6BJ0MCmaD/s320/277170248_5307831409250820_807243658216714791_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBVOpd5w0VRmgCiES0mXTd1rdTV2M4oqnKpWdw61dOC-Lx6ufEXZF1BIsjSDXEt0znJMRRa_A9EAXgvkjwcrY1LUgsYfdnkKQ8841v7rGXNFh8nF_xpAKb5ceHIvr_I6bjZYb6wWuQ9PMwtzmUFYKGhg1QFVpBM2yrEu72XRFbS0a-tBk6BJ0MCmaD/s480/277170248_5307831409250820_807243658216714791_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P. 830 - Taylor Hawkins 1972-2022"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/p-816-mesa-redonda-sobre-el-podcast-musical-en-espana.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/a/AVvXsEjsXBWNrhlJyn4VjqzV-VJ-JEVu78yaD1ADt20sStxUdqYYhc7-35NUhzzFb3UJLnV0Rdy3mKHal2ewN_ReeituIw_UFmn5n0QdET90ppk4C8_MvRqSDHxdKEney5-ed512zOQEztZnFqIKYQz0PsLSqdJNDH6TvDr2Emd1qO5t7_3yh3i1sSdlLnrn=s72-c"
-                srcset="https://blogger.googleusercontent.com/img/a/AVvXsEjsXBWNrhlJyn4VjqzV-VJ-JEVu78yaD1ADt20sStxUdqYYhc7-35NUhzzFb3UJLnV0Rdy3mKHal2ewN_ReeituIw_UFmn5n0QdET90ppk4C8_MvRqSDHxdKEney5-ed512zOQEztZnFqIKYQz0PsLSqdJNDH6TvDr2Emd1qO5t7_3yh3i1sSdlLnrn=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEjsXBWNrhlJyn4VjqzV-VJ-JEVu78yaD1ADt20sStxUdqYYhc7-35NUhzzFb3UJLnV0Rdy3mKHal2ewN_ReeituIw_UFmn5n0QdET90ppk4C8_MvRqSDHxdKEney5-ed512zOQEztZnFqIKYQz0PsLSqdJNDH6TvDr2Emd1qO5t7_3yh3i1sSdlLnrn=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEjsXBWNrhlJyn4VjqzV-VJ-JEVu78yaD1ADt20sStxUdqYYhc7-35NUhzzFb3UJLnV0Rdy3mKHal2ewN_ReeituIw_UFmn5n0QdET90ppk4C8_MvRqSDHxdKEney5-ed512zOQEztZnFqIKYQz0PsLSqdJNDH6TvDr2Emd1qO5t7_3yh3i1sSdlLnrn=s72-c 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="P.816 - Mesa redonda sobre el podcast musical en España"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/p-700-una-radiografia-al-fenomeno-podcast.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS4mV88vMNvstRxZ8eaUz5DyU87wN0y0gINjbS4P6Q7jloNpfibTl8U7QwSm3hcoEQYEWACfLmGNt44ZaBrQUgr21Pn41dytBhA0X3VCjb16neqeGL2SAuy8ULZXCIv8Uf_-5CwoV8Bng/s320/b90_700+%25281%2529.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS4mV88vMNvstRxZ8eaUz5DyU87wN0y0gINjbS4P6Q7jloNpfibTl8U7QwSm3hcoEQYEWACfLmGNt44ZaBrQUgr21Pn41dytBhA0X3VCjb16neqeGL2SAuy8ULZXCIv8Uf_-5CwoV8Bng/s160/b90_700+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS4mV88vMNvstRxZ8eaUz5DyU87wN0y0gINjbS4P6Q7jloNpfibTl8U7QwSm3hcoEQYEWACfLmGNt44ZaBrQUgr21Pn41dytBhA0X3VCjb16neqeGL2SAuy8ULZXCIv8Uf_-5CwoV8Bng/s320/b90_700+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS4mV88vMNvstRxZ8eaUz5DyU87wN0y0gINjbS4P6Q7jloNpfibTl8U7QwSm3hcoEQYEWACfLmGNt44ZaBrQUgr21Pn41dytBhA0X3VCjb16neqeGL2SAuy8ULZXCIv8Uf_-5CwoV8Bng/s480/b90_700+%25281%2529.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS4mV88vMNvstRxZ8eaUz5DyU87wN0y0gINjbS4P6Q7jloNpfibTl8U7QwSm3hcoEQYEWACfLmGNt44ZaBrQUgr21Pn41dytBhA0X3VCjb16neqeGL2SAuy8ULZXCIv8Uf_-5CwoV8Bng/s160/b90_700+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS4mV88vMNvstRxZ8eaUz5DyU87wN0y0gINjbS4P6Q7jloNpfibTl8U7QwSm3hcoEQYEWACfLmGNt44ZaBrQUgr21Pn41dytBhA0X3VCjb16neqeGL2SAuy8ULZXCIv8Uf_-5CwoV8Bng/s320/b90_700+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS4mV88vMNvstRxZ8eaUz5DyU87wN0y0gINjbS4P6Q7jloNpfibTl8U7QwSm3hcoEQYEWACfLmGNt44ZaBrQUgr21Pn41dytBhA0X3VCjb16neqeGL2SAuy8ULZXCIv8Uf_-5CwoV8Bng/s480/b90_700+%25281%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.700 - Una radiografía al fenómeno Podcast"
                 loading="lazy" width="320" height="213" />
         </a>

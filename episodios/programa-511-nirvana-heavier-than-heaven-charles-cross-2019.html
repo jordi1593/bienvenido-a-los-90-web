@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 511 - Nirvana &quot;Heavier than Heaven&quot; (Charles Cross 2019) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -143,8 +143,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s320/12006280_10153085749307747_5891161989028975656_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s160/12006280_10153085749307747_5891161989028975656_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s320/12006280_10153085749307747_5891161989028975656_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s480/12006280_10153085749307747_5891161989028975656_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s160/12006280_10153085749307747_5891161989028975656_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s320/12006280_10153085749307747_5891161989028975656_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s480/12006280_10153085749307747_5891161989028975656_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 180 - Entrevista Charles Cross"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +153,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s160/P1030709.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s480/P1030709.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s160/P1030709.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s480/P1030709.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 130 - Entrevista a Charles R. Cross"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +163,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s320/b90_509.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s160/b90_509.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s320/b90_509.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s480/b90_509.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s160/b90_509.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s320/b90_509.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s480/b90_509.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 509 - Los últimos días de Kurt Cobain"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -182,8 +179,7 @@
         <a class="related-bottom-card" href="programa-527-to-boddah-nirvana.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLQvG-lwIKH-SZ4SA_x6teeJLZ51SQl-ADlfpe54O7b6lDUyIzdfl3e1bUwWyLmcB91n8HO4mhqQp5Bd7s7SWj1vOakH3HDnChr30GcW9Xp0BgxpgSa6rNLrM8oYW2573HCT8POFb-fYA/s320/b90_527_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLQvG-lwIKH-SZ4SA_x6teeJLZ51SQl-ADlfpe54O7b6lDUyIzdfl3e1bUwWyLmcB91n8HO4mhqQp5Bd7s7SWj1vOakH3HDnChr30GcW9Xp0BgxpgSa6rNLrM8oYW2573HCT8POFb-fYA/s320/b90_527_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLQvG-lwIKH-SZ4SA_x6teeJLZ51SQl-ADlfpe54O7b6lDUyIzdfl3e1bUwWyLmcB91n8HO4mhqQp5Bd7s7SWj1vOakH3HDnChr30GcW9Xp0BgxpgSa6rNLrM8oYW2573HCT8POFb-fYA/s480/b90_527_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLQvG-lwIKH-SZ4SA_x6teeJLZ51SQl-ADlfpe54O7b6lDUyIzdfl3e1bUwWyLmcB91n8HO4mhqQp5Bd7s7SWj1vOakH3HDnChr30GcW9Xp0BgxpgSa6rNLrM8oYW2573HCT8POFb-fYA/s640/b90_527_.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLQvG-lwIKH-SZ4SA_x6teeJLZ51SQl-ADlfpe54O7b6lDUyIzdfl3e1bUwWyLmcB91n8HO4mhqQp5Bd7s7SWj1vOakH3HDnChr30GcW9Xp0BgxpgSa6rNLrM8oYW2573HCT8POFb-fYA/s320/b90_527_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLQvG-lwIKH-SZ4SA_x6teeJLZ51SQl-ADlfpe54O7b6lDUyIzdfl3e1bUwWyLmcB91n8HO4mhqQp5Bd7s7SWj1vOakH3HDnChr30GcW9Xp0BgxpgSa6rNLrM8oYW2573HCT8POFb-fYA/s480/b90_527_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLQvG-lwIKH-SZ4SA_x6teeJLZ51SQl-ADlfpe54O7b6lDUyIzdfl3e1bUwWyLmcB91n8HO4mhqQp5Bd7s7SWj1vOakH3HDnChr30GcW9Xp0BgxpgSa6rNLrM8oYW2573HCT8POFb-fYA/s640/b90_527_.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 527 - To Boddah (NIRVANA)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -194,8 +190,7 @@
           </a><a class="related-bottom-card" href="programa-534-nirvana-y-su-identidad-visual.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwaTsXdv0KIzYOecK9ZaDSE0dYDlkgO85VZJ9MUxuxoOdxnCZENnm6fV5rSZ1eYCdy4sHeVG_hIyDApFDUcD4vC6je4ioKmWoTevMRJhokXTwjk76-J0av4UzbR_MQJ-y7SFWVgeOVrg4/s320/B90+-+534.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwaTsXdv0KIzYOecK9ZaDSE0dYDlkgO85VZJ9MUxuxoOdxnCZENnm6fV5rSZ1eYCdy4sHeVG_hIyDApFDUcD4vC6je4ioKmWoTevMRJhokXTwjk76-J0av4UzbR_MQJ-y7SFWVgeOVrg4/s320/B90+-+534.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwaTsXdv0KIzYOecK9ZaDSE0dYDlkgO85VZJ9MUxuxoOdxnCZENnm6fV5rSZ1eYCdy4sHeVG_hIyDApFDUcD4vC6je4ioKmWoTevMRJhokXTwjk76-J0av4UzbR_MQJ-y7SFWVgeOVrg4/s480/B90+-+534.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwaTsXdv0KIzYOecK9ZaDSE0dYDlkgO85VZJ9MUxuxoOdxnCZENnm6fV5rSZ1eYCdy4sHeVG_hIyDApFDUcD4vC6je4ioKmWoTevMRJhokXTwjk76-J0av4UzbR_MQJ-y7SFWVgeOVrg4/s640/B90+-+534.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwaTsXdv0KIzYOecK9ZaDSE0dYDlkgO85VZJ9MUxuxoOdxnCZENnm6fV5rSZ1eYCdy4sHeVG_hIyDApFDUcD4vC6je4ioKmWoTevMRJhokXTwjk76-J0av4UzbR_MQJ-y7SFWVgeOVrg4/s320/B90+-+534.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwaTsXdv0KIzYOecK9ZaDSE0dYDlkgO85VZJ9MUxuxoOdxnCZENnm6fV5rSZ1eYCdy4sHeVG_hIyDApFDUcD4vC6je4ioKmWoTevMRJhokXTwjk76-J0av4UzbR_MQJ-y7SFWVgeOVrg4/s480/B90+-+534.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwaTsXdv0KIzYOecK9ZaDSE0dYDlkgO85VZJ9MUxuxoOdxnCZENnm6fV5rSZ1eYCdy4sHeVG_hIyDApFDUcD4vC6je4ioKmWoTevMRJhokXTwjk76-J0av4UzbR_MQJ-y7SFWVgeOVrg4/s640/B90+-+534.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 534 - Nirvana y su identidad visual"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -206,8 +201,7 @@
           </a><a class="related-bottom-card" href="programa-359-nirvana-en-busca-del-nevermind.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s480/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s640/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s480/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s640/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 359 - Nirvana, en busca del Nevermind "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

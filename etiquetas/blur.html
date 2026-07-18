@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Blur — 27 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-90-la-historia-detras-de-parklife-de-blur-y-la-voz-de-phil-daniels.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA7gSvHaTSoszwSYjWAfrB6GyxlgoV7AFiAtiv6CL6x2lA5AwHMiEIbv0s7LE2aKPeq83zq4BqfMzsVyCfSKHU0jNEPspO3Aq6iJzTSqfSD5K-3wy1hlvIo3CfGxF9zMpaRshnzvirX5uTVyOZe1NQ1XEgShgHsqkv91SWIXspwYbf8XVk4u_2oM139cA/s320/71OOqMriOQL._SL1280_.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA7gSvHaTSoszwSYjWAfrB6GyxlgoV7AFiAtiv6CL6x2lA5AwHMiEIbv0s7LE2aKPeq83zq4BqfMzsVyCfSKHU0jNEPspO3Aq6iJzTSqfSD5K-3wy1hlvIo3CfGxF9zMpaRshnzvirX5uTVyOZe1NQ1XEgShgHsqkv91SWIXspwYbf8XVk4u_2oM139cA/s160/71OOqMriOQL._SL1280_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA7gSvHaTSoszwSYjWAfrB6GyxlgoV7AFiAtiv6CL6x2lA5AwHMiEIbv0s7LE2aKPeq83zq4BqfMzsVyCfSKHU0jNEPspO3Aq6iJzTSqfSD5K-3wy1hlvIo3CfGxF9zMpaRshnzvirX5uTVyOZe1NQ1XEgShgHsqkv91SWIXspwYbf8XVk4u_2oM139cA/s320/71OOqMriOQL._SL1280_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA7gSvHaTSoszwSYjWAfrB6GyxlgoV7AFiAtiv6CL6x2lA5AwHMiEIbv0s7LE2aKPeq83zq4BqfMzsVyCfSKHU0jNEPspO3Aq6iJzTSqfSD5K-3wy1hlvIo3CfGxF9zMpaRshnzvirX5uTVyOZe1NQ1XEgShgHsqkv91SWIXspwYbf8XVk4u_2oM139cA/s480/71OOqMriOQL._SL1280_.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA7gSvHaTSoszwSYjWAfrB6GyxlgoV7AFiAtiv6CL6x2lA5AwHMiEIbv0s7LE2aKPeq83zq4BqfMzsVyCfSKHU0jNEPspO3Aq6iJzTSqfSD5K-3wy1hlvIo3CfGxF9zMpaRshnzvirX5uTVyOZe1NQ1XEgShgHsqkv91SWIXspwYbf8XVk4u_2oM139cA/s160/71OOqMriOQL._SL1280_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA7gSvHaTSoszwSYjWAfrB6GyxlgoV7AFiAtiv6CL6x2lA5AwHMiEIbv0s7LE2aKPeq83zq4BqfMzsVyCfSKHU0jNEPspO3Aq6iJzTSqfSD5K-3wy1hlvIo3CfGxF9zMpaRshnzvirX5uTVyOZe1NQ1XEgShgHsqkv91SWIXspwYbf8XVk4u_2oM139cA/s320/71OOqMriOQL._SL1280_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA7gSvHaTSoszwSYjWAfrB6GyxlgoV7AFiAtiv6CL6x2lA5AwHMiEIbv0s7LE2aKPeq83zq4BqfMzsVyCfSKHU0jNEPspO3Aq6iJzTSqfSD5K-3wy1hlvIo3CfGxF9zMpaRshnzvirX5uTVyOZe1NQ1XEgShgHsqkv91SWIXspwYbf8XVk4u_2oM139cA/s480/71OOqMriOQL._SL1280_.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 90 - La historia detrás de &quot;Parklife&quot; de Blur y la voz de Phil Daniels"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/1093-especial-1995-4-5-ramones-garbage-blind-melon-rancid-oasis-no-doubt.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s320/b90_1093.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s160/b90_1093.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s320/b90_1093.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s480/b90_1093.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s160/b90_1093.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s320/b90_1093.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s480/b90_1093.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1093 - Especial 1995 (4/5) Ramones, Garbage, Blind Melon, Rancid, Oasis, No Doubt..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-72-cuando-blur-lanzo-the-universal.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY-DMS0c5bbb5xUjknbXIR_evmN0GaaDA-mZBx0pb29PMwXvYSVDccz41jGjW9-ivjLoGTslusGg91ehlwsaqLl_zjTz_vLCCla9cEJoocXm6l7p5PUmYjugpGUCP1JdOLjWfn-CHJkL0mNO_ZQu67YPVs8pYDRAIn1olsOWkhht0SdXjUahPXADNacmo/s320/08eee1e557508496359d454e49fc1b9c.webp"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY-DMS0c5bbb5xUjknbXIR_evmN0GaaDA-mZBx0pb29PMwXvYSVDccz41jGjW9-ivjLoGTslusGg91ehlwsaqLl_zjTz_vLCCla9cEJoocXm6l7p5PUmYjugpGUCP1JdOLjWfn-CHJkL0mNO_ZQu67YPVs8pYDRAIn1olsOWkhht0SdXjUahPXADNacmo/s160/08eee1e557508496359d454e49fc1b9c.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY-DMS0c5bbb5xUjknbXIR_evmN0GaaDA-mZBx0pb29PMwXvYSVDccz41jGjW9-ivjLoGTslusGg91ehlwsaqLl_zjTz_vLCCla9cEJoocXm6l7p5PUmYjugpGUCP1JdOLjWfn-CHJkL0mNO_ZQu67YPVs8pYDRAIn1olsOWkhht0SdXjUahPXADNacmo/s320/08eee1e557508496359d454e49fc1b9c.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY-DMS0c5bbb5xUjknbXIR_evmN0GaaDA-mZBx0pb29PMwXvYSVDccz41jGjW9-ivjLoGTslusGg91ehlwsaqLl_zjTz_vLCCla9cEJoocXm6l7p5PUmYjugpGUCP1JdOLjWfn-CHJkL0mNO_ZQu67YPVs8pYDRAIn1olsOWkhht0SdXjUahPXADNacmo/s480/08eee1e557508496359d454e49fc1b9c.webp 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY-DMS0c5bbb5xUjknbXIR_evmN0GaaDA-mZBx0pb29PMwXvYSVDccz41jGjW9-ivjLoGTslusGg91ehlwsaqLl_zjTz_vLCCla9cEJoocXm6l7p5PUmYjugpGUCP1JdOLjWfn-CHJkL0mNO_ZQu67YPVs8pYDRAIn1olsOWkhht0SdXjUahPXADNacmo/s160/08eee1e557508496359d454e49fc1b9c.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY-DMS0c5bbb5xUjknbXIR_evmN0GaaDA-mZBx0pb29PMwXvYSVDccz41jGjW9-ivjLoGTslusGg91ehlwsaqLl_zjTz_vLCCla9cEJoocXm6l7p5PUmYjugpGUCP1JdOLjWfn-CHJkL0mNO_ZQu67YPVs8pYDRAIn1olsOWkhht0SdXjUahPXADNacmo/s320/08eee1e557508496359d454e49fc1b9c.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY-DMS0c5bbb5xUjknbXIR_evmN0GaaDA-mZBx0pb29PMwXvYSVDccz41jGjW9-ivjLoGTslusGg91ehlwsaqLl_zjTz_vLCCla9cEJoocXm6l7p5PUmYjugpGUCP1JdOLjWfn-CHJkL0mNO_ZQu67YPVs8pYDRAIn1olsOWkhht0SdXjUahPXADNacmo/s480/08eee1e557508496359d454e49fc1b9c.webp 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 72 - Cuando BLUR lanzó &quot;The Universal&quot;"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-994-especial-1994-parte-4-hole-nick-cave-pulp-terrorvision-melvins-blur-panter.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij9CTd5FKR1U-7Yg74kHL1w7qVithYgGAwlHwzp5BzGH8rn8gYsXzJWGRTWADHnAbDf2hfgzuJhHEcbcqR_JMNTYKU9x_bcezIsiEC52EOP8UGXg75vrDCVaV6P7KQs9sH0RdyTd09dSCubwMLQ5kp5SClcsky39Al0-YwxMdfNvv5KHDPO0RWAVgODS4/s320/Maraton%20b90%202024%20blue%204.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij9CTd5FKR1U-7Yg74kHL1w7qVithYgGAwlHwzp5BzGH8rn8gYsXzJWGRTWADHnAbDf2hfgzuJhHEcbcqR_JMNTYKU9x_bcezIsiEC52EOP8UGXg75vrDCVaV6P7KQs9sH0RdyTd09dSCubwMLQ5kp5SClcsky39Al0-YwxMdfNvv5KHDPO0RWAVgODS4/s160/Maraton%20b90%202024%20blue%204.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij9CTd5FKR1U-7Yg74kHL1w7qVithYgGAwlHwzp5BzGH8rn8gYsXzJWGRTWADHnAbDf2hfgzuJhHEcbcqR_JMNTYKU9x_bcezIsiEC52EOP8UGXg75vrDCVaV6P7KQs9sH0RdyTd09dSCubwMLQ5kp5SClcsky39Al0-YwxMdfNvv5KHDPO0RWAVgODS4/s320/Maraton%20b90%202024%20blue%204.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij9CTd5FKR1U-7Yg74kHL1w7qVithYgGAwlHwzp5BzGH8rn8gYsXzJWGRTWADHnAbDf2hfgzuJhHEcbcqR_JMNTYKU9x_bcezIsiEC52EOP8UGXg75vrDCVaV6P7KQs9sH0RdyTd09dSCubwMLQ5kp5SClcsky39Al0-YwxMdfNvv5KHDPO0RWAVgODS4/s480/Maraton%20b90%202024%20blue%204.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij9CTd5FKR1U-7Yg74kHL1w7qVithYgGAwlHwzp5BzGH8rn8gYsXzJWGRTWADHnAbDf2hfgzuJhHEcbcqR_JMNTYKU9x_bcezIsiEC52EOP8UGXg75vrDCVaV6P7KQs9sH0RdyTd09dSCubwMLQ5kp5SClcsky39Al0-YwxMdfNvv5KHDPO0RWAVgODS4/s160/Maraton%20b90%202024%20blue%204.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij9CTd5FKR1U-7Yg74kHL1w7qVithYgGAwlHwzp5BzGH8rn8gYsXzJWGRTWADHnAbDf2hfgzuJhHEcbcqR_JMNTYKU9x_bcezIsiEC52EOP8UGXg75vrDCVaV6P7KQs9sH0RdyTd09dSCubwMLQ5kp5SClcsky39Al0-YwxMdfNvv5KHDPO0RWAVgODS4/s320/Maraton%20b90%202024%20blue%204.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij9CTd5FKR1U-7Yg74kHL1w7qVithYgGAwlHwzp5BzGH8rn8gYsXzJWGRTWADHnAbDf2hfgzuJhHEcbcqR_JMNTYKU9x_bcezIsiEC52EOP8UGXg75vrDCVaV6P7KQs9sH0RdyTd09dSCubwMLQ5kp5SClcsky39Al0-YwxMdfNvv5KHDPO0RWAVgODS4/s480/Maraton%20b90%202024%20blue%204.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.994 - Especial 1994, Parte 4: Hole, Nick Cave, Pulp, Terrorvision, Melvins, Blur, Pantera "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/p-922-conversaciones-con-ruth-baza-richey-edwards-courtney-love-blur-george-harr.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdMrGKO6qroEJB_fGQTrKwXVEOyK-EMLNp9vy5c1f7j_kzRFY6YiaVJZOw7ffCvl5P5BDgdZxAYRnP0X6XCUpajEJ2vh0UpjzZ_sflqAdGyasB3Rop9MW1NcYZi6Lm34av-OMGyi25VYJYVs7AC4msyqeOL_yWkDFejDCOiPD1icScMlPFCbgWLLxuJ78/s320/Ruth%20Baza1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdMrGKO6qroEJB_fGQTrKwXVEOyK-EMLNp9vy5c1f7j_kzRFY6YiaVJZOw7ffCvl5P5BDgdZxAYRnP0X6XCUpajEJ2vh0UpjzZ_sflqAdGyasB3Rop9MW1NcYZi6Lm34av-OMGyi25VYJYVs7AC4msyqeOL_yWkDFejDCOiPD1icScMlPFCbgWLLxuJ78/s160/Ruth%20Baza1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdMrGKO6qroEJB_fGQTrKwXVEOyK-EMLNp9vy5c1f7j_kzRFY6YiaVJZOw7ffCvl5P5BDgdZxAYRnP0X6XCUpajEJ2vh0UpjzZ_sflqAdGyasB3Rop9MW1NcYZi6Lm34av-OMGyi25VYJYVs7AC4msyqeOL_yWkDFejDCOiPD1icScMlPFCbgWLLxuJ78/s320/Ruth%20Baza1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdMrGKO6qroEJB_fGQTrKwXVEOyK-EMLNp9vy5c1f7j_kzRFY6YiaVJZOw7ffCvl5P5BDgdZxAYRnP0X6XCUpajEJ2vh0UpjzZ_sflqAdGyasB3Rop9MW1NcYZi6Lm34av-OMGyi25VYJYVs7AC4msyqeOL_yWkDFejDCOiPD1icScMlPFCbgWLLxuJ78/s480/Ruth%20Baza1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdMrGKO6qroEJB_fGQTrKwXVEOyK-EMLNp9vy5c1f7j_kzRFY6YiaVJZOw7ffCvl5P5BDgdZxAYRnP0X6XCUpajEJ2vh0UpjzZ_sflqAdGyasB3Rop9MW1NcYZi6Lm34av-OMGyi25VYJYVs7AC4msyqeOL_yWkDFejDCOiPD1icScMlPFCbgWLLxuJ78/s160/Ruth%20Baza1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdMrGKO6qroEJB_fGQTrKwXVEOyK-EMLNp9vy5c1f7j_kzRFY6YiaVJZOw7ffCvl5P5BDgdZxAYRnP0X6XCUpajEJ2vh0UpjzZ_sflqAdGyasB3Rop9MW1NcYZi6Lm34av-OMGyi25VYJYVs7AC4msyqeOL_yWkDFejDCOiPD1icScMlPFCbgWLLxuJ78/s320/Ruth%20Baza1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdMrGKO6qroEJB_fGQTrKwXVEOyK-EMLNp9vy5c1f7j_kzRFY6YiaVJZOw7ffCvl5P5BDgdZxAYRnP0X6XCUpajEJ2vh0UpjzZ_sflqAdGyasB3Rop9MW1NcYZi6Lm34av-OMGyi25VYJYVs7AC4msyqeOL_yWkDFejDCOiPD1icScMlPFCbgWLLxuJ78/s480/Ruth%20Baza1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.922 - Conversaciones con Ruth Baza: Richey Edwards, Courtney Love, Blur, George Harrison..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/p-921-julio-ruiz-recuerda-las-actuaciones-de-blur-radiohead-dover.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s320/IMG_20230722_123812.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s160/IMG_20230722_123812.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s320/IMG_20230722_123812.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s480/IMG_20230722_123812.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s160/IMG_20230722_123812.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s320/IMG_20230722_123812.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s480/IMG_20230722_123812.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.921 - Julio Ruiz recuerda las actuaciones de Blur, Radiohead, Dover..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-39-nos-colamos-en-el-concierto-de-blur-del-primavera-sound.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s320/346653033_3774654446007990_1178888865460395925_n.webp"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s160/346653033_3774654446007990_1178888865460395925_n.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s320/346653033_3774654446007990_1178888865460395925_n.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s480/346653033_3774654446007990_1178888865460395925_n.webp 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s160/346653033_3774654446007990_1178888865460395925_n.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s320/346653033_3774654446007990_1178888865460395925_n.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s480/346653033_3774654446007990_1178888865460395925_n.webp 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 39 - Nos colamos en el concierto de Blur del Primavera Sound"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/p-824-blur-1997-el-adios-al-britpop.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/a/AVvXsEiHJmMkYHf59C9pceX6kqLsjHqr2learqWngmlo3jynpshtAimU7ShVbFD4Q69yQ4qIQnWJTDuNWtBCEpLA-eG71HP_jH4kE9yhUYyw7_k8wFQuJdvdsgE_3rzpsvfYMsXnyj-NvylfrMG0CpFQLp3HMGSp9FNLyesItwXi0kLZ5OAKG97LP6sMsZV5=s72-c"
-                srcset="https://blogger.googleusercontent.com/img/a/AVvXsEiHJmMkYHf59C9pceX6kqLsjHqr2learqWngmlo3jynpshtAimU7ShVbFD4Q69yQ4qIQnWJTDuNWtBCEpLA-eG71HP_jH4kE9yhUYyw7_k8wFQuJdvdsgE_3rzpsvfYMsXnyj-NvylfrMG0CpFQLp3HMGSp9FNLyesItwXi0kLZ5OAKG97LP6sMsZV5=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEiHJmMkYHf59C9pceX6kqLsjHqr2learqWngmlo3jynpshtAimU7ShVbFD4Q69yQ4qIQnWJTDuNWtBCEpLA-eG71HP_jH4kE9yhUYyw7_k8wFQuJdvdsgE_3rzpsvfYMsXnyj-NvylfrMG0CpFQLp3HMGSp9FNLyesItwXi0kLZ5OAKG97LP6sMsZV5=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEiHJmMkYHf59C9pceX6kqLsjHqr2learqWngmlo3jynpshtAimU7ShVbFD4Q69yQ4qIQnWJTDuNWtBCEpLA-eG71HP_jH4kE9yhUYyw7_k8wFQuJdvdsgE_3rzpsvfYMsXnyj-NvylfrMG0CpFQLp3HMGSp9FNLyesItwXi0kLZ5OAKG97LP6sMsZV5=s72-c 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="P.824 - Blur (1997), el adiós al Britpop"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -180,8 +172,7 @@
         <a class="episode-cover-link" href="../episodios/p-782-el-magnetismo-de-damon-albarn.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s320/90fe1fb3912ea7c5614943139fb6850b.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s160/90fe1fb3912ea7c5614943139fb6850b.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s320/90fe1fb3912ea7c5614943139fb6850b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s480/90fe1fb3912ea7c5614943139fb6850b.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s160/90fe1fb3912ea7c5614943139fb6850b.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s320/90fe1fb3912ea7c5614943139fb6850b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s480/90fe1fb3912ea7c5614943139fb6850b.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.782 - El magnetismo de Damon Albarn"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -194,8 +185,7 @@
         <a class="episode-cover-link" href="../episodios/p-742-algunos-conciertos-inolvidables.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg92OdxiJhyphenhyphenxyZ10328c0esVuMyJ36629zqm6SYkz_9xTu2Hqzze7IUrhgQ5FDemURCpGYt4o4ledYRfiCmXPqDxxKfl7uvpUHSqnLop-lElD1NE_YGgXgOXknU_Dt-e_kIQHLeYH0QZqc/s320/FB_IMG_1613549476892.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg92OdxiJhyphenhyphenxyZ10328c0esVuMyJ36629zqm6SYkz_9xTu2Hqzze7IUrhgQ5FDemURCpGYt4o4ledYRfiCmXPqDxxKfl7uvpUHSqnLop-lElD1NE_YGgXgOXknU_Dt-e_kIQHLeYH0QZqc/s160/FB_IMG_1613549476892.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg92OdxiJhyphenhyphenxyZ10328c0esVuMyJ36629zqm6SYkz_9xTu2Hqzze7IUrhgQ5FDemURCpGYt4o4ledYRfiCmXPqDxxKfl7uvpUHSqnLop-lElD1NE_YGgXgOXknU_Dt-e_kIQHLeYH0QZqc/s320/FB_IMG_1613549476892.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg92OdxiJhyphenhyphenxyZ10328c0esVuMyJ36629zqm6SYkz_9xTu2Hqzze7IUrhgQ5FDemURCpGYt4o4ledYRfiCmXPqDxxKfl7uvpUHSqnLop-lElD1NE_YGgXgOXknU_Dt-e_kIQHLeYH0QZqc/s480/FB_IMG_1613549476892.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg92OdxiJhyphenhyphenxyZ10328c0esVuMyJ36629zqm6SYkz_9xTu2Hqzze7IUrhgQ5FDemURCpGYt4o4ledYRfiCmXPqDxxKfl7uvpUHSqnLop-lElD1NE_YGgXgOXknU_Dt-e_kIQHLeYH0QZqc/s160/FB_IMG_1613549476892.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg92OdxiJhyphenhyphenxyZ10328c0esVuMyJ36629zqm6SYkz_9xTu2Hqzze7IUrhgQ5FDemURCpGYt4o4ledYRfiCmXPqDxxKfl7uvpUHSqnLop-lElD1NE_YGgXgOXknU_Dt-e_kIQHLeYH0QZqc/s320/FB_IMG_1613549476892.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg92OdxiJhyphenhyphenxyZ10328c0esVuMyJ36629zqm6SYkz_9xTu2Hqzze7IUrhgQ5FDemURCpGYt4o4ledYRfiCmXPqDxxKfl7uvpUHSqnLop-lElD1NE_YGgXgOXknU_Dt-e_kIQHLeYH0QZqc/s480/FB_IMG_1613549476892.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.742 - Algunos conciertos inolvidables"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -208,8 +198,7 @@
         <a class="episode-cover-link" href="../episodios/p-679-the-jaded-hearts-club-muse-blur-jet-zutons.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJt_FkAPenTWeSNLqwaqoZUe16Lna5NDkuNIRIsuM2YPStmGd1Y7SQLVU0VZK6Y30RyNe_8ieK33b3hA_6JZuQnQSQ-uZamj4DvoZraQJN0KKumHMvXkFUAqDkjDpPONhvy2LCTshuvPc/s72-w384-h378-c/R-14670771-1579314513-1605.jpeg.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJt_FkAPenTWeSNLqwaqoZUe16Lna5NDkuNIRIsuM2YPStmGd1Y7SQLVU0VZK6Y30RyNe_8ieK33b3hA_6JZuQnQSQ-uZamj4DvoZraQJN0KKumHMvXkFUAqDkjDpPONhvy2LCTshuvPc/s72-w384-h378-c/R-14670771-1579314513-1605.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJt_FkAPenTWeSNLqwaqoZUe16Lna5NDkuNIRIsuM2YPStmGd1Y7SQLVU0VZK6Y30RyNe_8ieK33b3hA_6JZuQnQSQ-uZamj4DvoZraQJN0KKumHMvXkFUAqDkjDpPONhvy2LCTshuvPc/s72-w384-h378-c/R-14670771-1579314513-1605.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJt_FkAPenTWeSNLqwaqoZUe16Lna5NDkuNIRIsuM2YPStmGd1Y7SQLVU0VZK6Y30RyNe_8ieK33b3hA_6JZuQnQSQ-uZamj4DvoZraQJN0KKumHMvXkFUAqDkjDpPONhvy2LCTshuvPc/s72-w384-h378-c/R-14670771-1579314513-1605.jpeg.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="P.679 - The Jaded Hearts Club (Muse, Blur, Jet, Zutons)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -222,8 +211,7 @@
         <a class="episode-cover-link" href="../episodios/programa-555-rufus-t-firefly-en-directo-desde-noches-del-botanico-31-07-2019.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s320/b90_555.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s160/b90_555.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s320/b90_555.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s480/b90_555.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s160/b90_555.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s320/b90_555.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s480/b90_555.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 555 - Rufus T. Firefly en directo desde Noches del Botánico (31/07/2019)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -236,8 +224,7 @@
         <a class="episode-cover-link" href="../episodios/programa-486-entrevista-a-driive-y-the-crazy-nineties.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNUncrFVKq_B3lwSlITfgW9R_88wDke16pr3XA6rurtpFptrScYeWUASK6Sk2JBh02W0ZpB34FUb9OhZmGnWDOIi5l55bzw_TPEH6xm5H6WFSgUM_xYFOUl90i0wlqbiC06-1A6upx4CU/s320/b90_486.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNUncrFVKq_B3lwSlITfgW9R_88wDke16pr3XA6rurtpFptrScYeWUASK6Sk2JBh02W0ZpB34FUb9OhZmGnWDOIi5l55bzw_TPEH6xm5H6WFSgUM_xYFOUl90i0wlqbiC06-1A6upx4CU/s160/b90_486.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNUncrFVKq_B3lwSlITfgW9R_88wDke16pr3XA6rurtpFptrScYeWUASK6Sk2JBh02W0ZpB34FUb9OhZmGnWDOIi5l55bzw_TPEH6xm5H6WFSgUM_xYFOUl90i0wlqbiC06-1A6upx4CU/s320/b90_486.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNUncrFVKq_B3lwSlITfgW9R_88wDke16pr3XA6rurtpFptrScYeWUASK6Sk2JBh02W0ZpB34FUb9OhZmGnWDOIi5l55bzw_TPEH6xm5H6WFSgUM_xYFOUl90i0wlqbiC06-1A6upx4CU/s480/b90_486.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNUncrFVKq_B3lwSlITfgW9R_88wDke16pr3XA6rurtpFptrScYeWUASK6Sk2JBh02W0ZpB34FUb9OhZmGnWDOIi5l55bzw_TPEH6xm5H6WFSgUM_xYFOUl90i0wlqbiC06-1A6upx4CU/s160/b90_486.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNUncrFVKq_B3lwSlITfgW9R_88wDke16pr3XA6rurtpFptrScYeWUASK6Sk2JBh02W0ZpB34FUb9OhZmGnWDOIi5l55bzw_TPEH6xm5H6WFSgUM_xYFOUl90i0wlqbiC06-1A6upx4CU/s320/b90_486.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNUncrFVKq_B3lwSlITfgW9R_88wDke16pr3XA6rurtpFptrScYeWUASK6Sk2JBh02W0ZpB34FUb9OhZmGnWDOIi5l55bzw_TPEH6xm5H6WFSgUM_xYFOUl90i0wlqbiC06-1A6upx4CU/s480/b90_486.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 486 - Entrevista a Driive y The Crazy Nineties"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -250,8 +237,7 @@
         <a class="episode-cover-link" href="../episodios/programa-478-los-mejores-solos-de-guitarra-de-los-anos-90.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s160/b90_478.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s480/b90_478.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s160/b90_478.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s480/b90_478.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 478 - Los mejores solos de guitarra de los años 90"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -264,8 +250,7 @@
         <a class="episode-cover-link" href="../episodios/programa-435-the-best-of-blur.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s320/thebestof_blur.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s160/thebestof_blur.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s320/thebestof_blur.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s480/thebestof_blur.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s160/thebestof_blur.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s320/thebestof_blur.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s480/thebestof_blur.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 435 - The Best Of: BLUR"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -278,8 +263,7 @@
         <a class="episode-cover-link" href="../episodios/programa-361-entrevista-a-julio-ruiz-disco-grande-radio-3.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s320/julio.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s160/julio.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s320/julio.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s480/julio.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s160/julio.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s320/julio.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s480/julio.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 361 - Entrevista a Julio Ruiz (Disco grande Radio 3)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -292,8 +276,7 @@
         <a class="episode-cover-link" href="../episodios/programa-297-el-fenomeno-fan-2-0.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s320/bienvenido-297-b.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s160/bienvenido-297-b.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s320/bienvenido-297-b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s480/bienvenido-297-b.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s160/bienvenido-297-b.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s320/bienvenido-297-b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s480/bienvenido-297-b.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 297 – El fenómeno fan 2.0"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -306,8 +289,7 @@
         <a class="episode-cover-link" href="../episodios/programa-244-antes-del-britpop-the-verve.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s320/verve.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s160/verve.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s320/verve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s480/verve.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s160/verve.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s320/verve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s480/verve.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 244 - Antes del Britpop + The Verve"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -320,8 +302,7 @@
         <a class="episode-cover-link" href="../episodios/programa-174-blur-en-benicassim-2015.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIoc1-HJEXUGNOpAnzzjQHtJpEd-zeheswvGyH_cfQa6hStdsCrwAi9LKI-PINKbvA87yTSJmH8esnyPPX_Thal51w8qtk8puGOD9k6fBNyXS8FIS3vQcb2NL_0MV1UXFOWKbxPjPk05c/s320/imagen197849g.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIoc1-HJEXUGNOpAnzzjQHtJpEd-zeheswvGyH_cfQa6hStdsCrwAi9LKI-PINKbvA87yTSJmH8esnyPPX_Thal51w8qtk8puGOD9k6fBNyXS8FIS3vQcb2NL_0MV1UXFOWKbxPjPk05c/s160/imagen197849g.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIoc1-HJEXUGNOpAnzzjQHtJpEd-zeheswvGyH_cfQa6hStdsCrwAi9LKI-PINKbvA87yTSJmH8esnyPPX_Thal51w8qtk8puGOD9k6fBNyXS8FIS3vQcb2NL_0MV1UXFOWKbxPjPk05c/s320/imagen197849g.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIoc1-HJEXUGNOpAnzzjQHtJpEd-zeheswvGyH_cfQa6hStdsCrwAi9LKI-PINKbvA87yTSJmH8esnyPPX_Thal51w8qtk8puGOD9k6fBNyXS8FIS3vQcb2NL_0MV1UXFOWKbxPjPk05c/s480/imagen197849g.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIoc1-HJEXUGNOpAnzzjQHtJpEd-zeheswvGyH_cfQa6hStdsCrwAi9LKI-PINKbvA87yTSJmH8esnyPPX_Thal51w8qtk8puGOD9k6fBNyXS8FIS3vQcb2NL_0MV1UXFOWKbxPjPk05c/s160/imagen197849g.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIoc1-HJEXUGNOpAnzzjQHtJpEd-zeheswvGyH_cfQa6hStdsCrwAi9LKI-PINKbvA87yTSJmH8esnyPPX_Thal51w8qtk8puGOD9k6fBNyXS8FIS3vQcb2NL_0MV1UXFOWKbxPjPk05c/s320/imagen197849g.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIoc1-HJEXUGNOpAnzzjQHtJpEd-zeheswvGyH_cfQa6hStdsCrwAi9LKI-PINKbvA87yTSJmH8esnyPPX_Thal51w8qtk8puGOD9k6fBNyXS8FIS3vQcb2NL_0MV1UXFOWKbxPjPk05c/s480/imagen197849g.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 174 - Blur en Benicassim 2015"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -334,8 +315,7 @@
         <a class="episode-cover-link" href="../episodios/programa-158-montage-of-heck-y-cool.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s320/fotonoticia_20150422115943_800.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s160/fotonoticia_20150422115943_800.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s320/fotonoticia_20150422115943_800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s480/fotonoticia_20150422115943_800.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s160/fotonoticia_20150422115943_800.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s320/fotonoticia_20150422115943_800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s480/fotonoticia_20150422115943_800.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 158 - Montage of Heck y Cool"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -348,8 +328,7 @@
         <a class="episode-cover-link" href="../episodios/programa-152-entrevista-a-rafa-cervera.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 152 - Entrevista a Rafa Cervera"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -362,8 +341,7 @@
         <a class="episode-cover-link" href="../episodios/b90-programa-78-tibetan-freedon-concert.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s160/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s480/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s160/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s480/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 78 - Tibetan Freedon Concert"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -376,8 +354,7 @@
         <a class="episode-cover-link" href="../episodios/b90-programa-68-optimus-primavera-sound-2013.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 68 - Optimus Primavera Sound 2013"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -390,8 +367,7 @@
         <a class="episode-cover-link" href="../episodios/programa-64-rem-standstill-rodriguez-blur-dead-can-dance.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 64 - REM, STANDSTILL, RODRIGUEZ, BLUR, DEAD CAN DANCE..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -404,8 +380,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-33-entrevista-a-felipe-couselo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa 33 - Entrevista a Felipe Couselo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -418,8 +393,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-27-glastonbury.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s320/g08_RTR2O2AU.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s160/g08_RTR2O2AU.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s320/g08_RTR2O2AU.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s480/g08_RTR2O2AU.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s160/g08_RTR2O2AU.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s320/g08_RTR2O2AU.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s480/g08_RTR2O2AU.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Bienvenido a los 90 - Programa 27 - Glastonbury"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -432,8 +406,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-6-especial-britpop.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 #6 - Especial Britpop"
                 loading="lazy" width="320" height="213" />
         </a>

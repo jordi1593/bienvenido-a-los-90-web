@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.675 - Offspring &#39;Smash&#39;, el disco independiente más vendido de la historia — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -124,8 +124,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJLN1StDtz-5gYVQ07l4kYuqFdHE20kbIDkRv-xv9RFeGyfIGSWsPzubwvV95TF9o7FtRy21csHMpoXhBYGPPo12vrleCK3cLdQOIlvmi2GGbazUbjfqffnAA6IHqv3aftJSUqPgfhYik/s320/18118510_1689590421058594_7781613603976268512_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJLN1StDtz-5gYVQ07l4kYuqFdHE20kbIDkRv-xv9RFeGyfIGSWsPzubwvV95TF9o7FtRy21csHMpoXhBYGPPo12vrleCK3cLdQOIlvmi2GGbazUbjfqffnAA6IHqv3aftJSUqPgfhYik/s160/18118510_1689590421058594_7781613603976268512_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJLN1StDtz-5gYVQ07l4kYuqFdHE20kbIDkRv-xv9RFeGyfIGSWsPzubwvV95TF9o7FtRy21csHMpoXhBYGPPo12vrleCK3cLdQOIlvmi2GGbazUbjfqffnAA6IHqv3aftJSUqPgfhYik/s320/18118510_1689590421058594_7781613603976268512_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJLN1StDtz-5gYVQ07l4kYuqFdHE20kbIDkRv-xv9RFeGyfIGSWsPzubwvV95TF9o7FtRy21csHMpoXhBYGPPo12vrleCK3cLdQOIlvmi2GGbazUbjfqffnAA6IHqv3aftJSUqPgfhYik/s480/18118510_1689590421058594_7781613603976268512_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJLN1StDtz-5gYVQ07l4kYuqFdHE20kbIDkRv-xv9RFeGyfIGSWsPzubwvV95TF9o7FtRy21csHMpoXhBYGPPo12vrleCK3cLdQOIlvmi2GGbazUbjfqffnAA6IHqv3aftJSUqPgfhYik/s160/18118510_1689590421058594_7781613603976268512_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJLN1StDtz-5gYVQ07l4kYuqFdHE20kbIDkRv-xv9RFeGyfIGSWsPzubwvV95TF9o7FtRy21csHMpoXhBYGPPo12vrleCK3cLdQOIlvmi2GGbazUbjfqffnAA6IHqv3aftJSUqPgfhYik/s320/18118510_1689590421058594_7781613603976268512_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJLN1StDtz-5gYVQ07l4kYuqFdHE20kbIDkRv-xv9RFeGyfIGSWsPzubwvV95TF9o7FtRy21csHMpoXhBYGPPo12vrleCK3cLdQOIlvmi2GGbazUbjfqffnAA6IHqv3aftJSUqPgfhYik/s480/18118510_1689590421058594_7781613603976268512_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 275 - Dookie Vs. Smash"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -135,8 +134,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2ecXBKWt-O5MgiROEVoMaBnfu5o6SNRvHCDt2bVg-oSNMUuxBBWpughanBOXVlbtnMRy_lQqfatHnHHqhI5fvkQkRPuJqtc5jEz_3VVri-dgP-PQv4hd2b-2wH7Hxv2bi8a-0T4KmU7v6KZEBIcCNCgFCZeOJwzMVumyS68hQ0kul1SqpQSoGjce__2Y/s320/Maraton%20b90%202024%20parte3%20(1).jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2ecXBKWt-O5MgiROEVoMaBnfu5o6SNRvHCDt2bVg-oSNMUuxBBWpughanBOXVlbtnMRy_lQqfatHnHHqhI5fvkQkRPuJqtc5jEz_3VVri-dgP-PQv4hd2b-2wH7Hxv2bi8a-0T4KmU7v6KZEBIcCNCgFCZeOJwzMVumyS68hQ0kul1SqpQSoGjce__2Y/s160/Maraton%20b90%202024%20parte3%20(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2ecXBKWt-O5MgiROEVoMaBnfu5o6SNRvHCDt2bVg-oSNMUuxBBWpughanBOXVlbtnMRy_lQqfatHnHHqhI5fvkQkRPuJqtc5jEz_3VVri-dgP-PQv4hd2b-2wH7Hxv2bi8a-0T4KmU7v6KZEBIcCNCgFCZeOJwzMVumyS68hQ0kul1SqpQSoGjce__2Y/s320/Maraton%20b90%202024%20parte3%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2ecXBKWt-O5MgiROEVoMaBnfu5o6SNRvHCDt2bVg-oSNMUuxBBWpughanBOXVlbtnMRy_lQqfatHnHHqhI5fvkQkRPuJqtc5jEz_3VVri-dgP-PQv4hd2b-2wH7Hxv2bi8a-0T4KmU7v6KZEBIcCNCgFCZeOJwzMVumyS68hQ0kul1SqpQSoGjce__2Y/s480/Maraton%20b90%202024%20parte3%20(1).jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2ecXBKWt-O5MgiROEVoMaBnfu5o6SNRvHCDt2bVg-oSNMUuxBBWpughanBOXVlbtnMRy_lQqfatHnHHqhI5fvkQkRPuJqtc5jEz_3VVri-dgP-PQv4hd2b-2wH7Hxv2bi8a-0T4KmU7v6KZEBIcCNCgFCZeOJwzMVumyS68hQ0kul1SqpQSoGjce__2Y/s160/Maraton%20b90%202024%20parte3%20(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2ecXBKWt-O5MgiROEVoMaBnfu5o6SNRvHCDt2bVg-oSNMUuxBBWpughanBOXVlbtnMRy_lQqfatHnHHqhI5fvkQkRPuJqtc5jEz_3VVri-dgP-PQv4hd2b-2wH7Hxv2bi8a-0T4KmU7v6KZEBIcCNCgFCZeOJwzMVumyS68hQ0kul1SqpQSoGjce__2Y/s320/Maraton%20b90%202024%20parte3%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2ecXBKWt-O5MgiROEVoMaBnfu5o6SNRvHCDt2bVg-oSNMUuxBBWpughanBOXVlbtnMRy_lQqfatHnHHqhI5fvkQkRPuJqtc5jEz_3VVri-dgP-PQv4hd2b-2wH7Hxv2bi8a-0T4KmU7v6KZEBIcCNCgFCZeOJwzMVumyS68hQ0kul1SqpQSoGjce__2Y/s480/Maraton%20b90%202024%20parte3%20(1).jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.987 - Especial 1994, Parte 3: Nine inch Nails, Soundgarden, Offspring, The Crow"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -146,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjylErW_aUjsjCQ0gUstF__trt8kQncK9_sczXh4O8A9lrTC2KidRJX-ZvxN96wUbPk0BT-3MBbKJR57qyRSHIzzkxFrY2tunLbDmVpS9ST8XzEylNYl4-dLMRSIuTuIvyhCAg5Dfu4JNjgYe9BBXvRORpGroq9W4l4AZ2KghB2fA4BMc4jWnnDKGuEShQ/s320/The-Offspring-poster-gira-2025-500x500.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjylErW_aUjsjCQ0gUstF__trt8kQncK9_sczXh4O8A9lrTC2KidRJX-ZvxN96wUbPk0BT-3MBbKJR57qyRSHIzzkxFrY2tunLbDmVpS9ST8XzEylNYl4-dLMRSIuTuIvyhCAg5Dfu4JNjgYe9BBXvRORpGroq9W4l4AZ2KghB2fA4BMc4jWnnDKGuEShQ/s160/The-Offspring-poster-gira-2025-500x500.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjylErW_aUjsjCQ0gUstF__trt8kQncK9_sczXh4O8A9lrTC2KidRJX-ZvxN96wUbPk0BT-3MBbKJR57qyRSHIzzkxFrY2tunLbDmVpS9ST8XzEylNYl4-dLMRSIuTuIvyhCAg5Dfu4JNjgYe9BBXvRORpGroq9W4l4AZ2KghB2fA4BMc4jWnnDKGuEShQ/s320/The-Offspring-poster-gira-2025-500x500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjylErW_aUjsjCQ0gUstF__trt8kQncK9_sczXh4O8A9lrTC2KidRJX-ZvxN96wUbPk0BT-3MBbKJR57qyRSHIzzkxFrY2tunLbDmVpS9ST8XzEylNYl4-dLMRSIuTuIvyhCAg5Dfu4JNjgYe9BBXvRORpGroq9W4l4AZ2KghB2fA4BMc4jWnnDKGuEShQ/s480/The-Offspring-poster-gira-2025-500x500.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjylErW_aUjsjCQ0gUstF__trt8kQncK9_sczXh4O8A9lrTC2KidRJX-ZvxN96wUbPk0BT-3MBbKJR57qyRSHIzzkxFrY2tunLbDmVpS9ST8XzEylNYl4-dLMRSIuTuIvyhCAg5Dfu4JNjgYe9BBXvRORpGroq9W4l4AZ2KghB2fA4BMc4jWnnDKGuEShQ/s160/The-Offspring-poster-gira-2025-500x500.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjylErW_aUjsjCQ0gUstF__trt8kQncK9_sczXh4O8A9lrTC2KidRJX-ZvxN96wUbPk0BT-3MBbKJR57qyRSHIzzkxFrY2tunLbDmVpS9ST8XzEylNYl4-dLMRSIuTuIvyhCAg5Dfu4JNjgYe9BBXvRORpGroq9W4l4AZ2KghB2fA4BMc4jWnnDKGuEShQ/s320/The-Offspring-poster-gira-2025-500x500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjylErW_aUjsjCQ0gUstF__trt8kQncK9_sczXh4O8A9lrTC2KidRJX-ZvxN96wUbPk0BT-3MBbKJR57qyRSHIzzkxFrY2tunLbDmVpS9ST8XzEylNYl4-dLMRSIuTuIvyhCAg5Dfu4JNjgYe9BBXvRORpGroq9W4l4AZ2KghB2fA4BMc4jWnnDKGuEShQ/s480/The-Offspring-poster-gira-2025-500x500.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 86 - The Offspring Madrid 26/09/2025"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -163,8 +160,7 @@
         <a class="related-bottom-card" href="programa-69-green-day-offspring-weezer-fugazi-alice-in-chains.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 69 - GREEN DAY, OFFSPRING, WEEZER, FUGAZI, ALICE IN CHAINS..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -175,8 +171,7 @@
           </a><a class="related-bottom-card" href="p-670-the-smashing-pumpkins-la-historia-de-machina-the-machines-of-god.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi67pG3HI0LaUnaW4K8_S2QMMbu_l8cowH9oupMkzUBwAjlrJ5OpLY7_kGm851X_90gl3TivDB9IZdYCh0gzB3zKvc3Ioen5KDhwy1PuH50VY8bEJ8eUQXx5EtrpB8wUdGsquf7KT_g_pw/s320/04.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi67pG3HI0LaUnaW4K8_S2QMMbu_l8cowH9oupMkzUBwAjlrJ5OpLY7_kGm851X_90gl3TivDB9IZdYCh0gzB3zKvc3Ioen5KDhwy1PuH50VY8bEJ8eUQXx5EtrpB8wUdGsquf7KT_g_pw/s320/04.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi67pG3HI0LaUnaW4K8_S2QMMbu_l8cowH9oupMkzUBwAjlrJ5OpLY7_kGm851X_90gl3TivDB9IZdYCh0gzB3zKvc3Ioen5KDhwy1PuH50VY8bEJ8eUQXx5EtrpB8wUdGsquf7KT_g_pw/s480/04.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi67pG3HI0LaUnaW4K8_S2QMMbu_l8cowH9oupMkzUBwAjlrJ5OpLY7_kGm851X_90gl3TivDB9IZdYCh0gzB3zKvc3Ioen5KDhwy1PuH50VY8bEJ8eUQXx5EtrpB8wUdGsquf7KT_g_pw/s640/04.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi67pG3HI0LaUnaW4K8_S2QMMbu_l8cowH9oupMkzUBwAjlrJ5OpLY7_kGm851X_90gl3TivDB9IZdYCh0gzB3zKvc3Ioen5KDhwy1PuH50VY8bEJ8eUQXx5EtrpB8wUdGsquf7KT_g_pw/s320/04.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi67pG3HI0LaUnaW4K8_S2QMMbu_l8cowH9oupMkzUBwAjlrJ5OpLY7_kGm851X_90gl3TivDB9IZdYCh0gzB3zKvc3Ioen5KDhwy1PuH50VY8bEJ8eUQXx5EtrpB8wUdGsquf7KT_g_pw/s480/04.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi67pG3HI0LaUnaW4K8_S2QMMbu_l8cowH9oupMkzUBwAjlrJ5OpLY7_kGm851X_90gl3TivDB9IZdYCh0gzB3zKvc3Ioen5KDhwy1PuH50VY8bEJ8eUQXx5EtrpB8wUdGsquf7KT_g_pw/s640/04.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.670 - The Smashing Pumpkins, la historia de &#39;Machina/The Machines of God&#39;"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -187,8 +182,7 @@
           </a><a class="related-bottom-card" href="p-656-la-historia-de-mark-sandman-y-morphine.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s320/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s320/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s480/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s640/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s320/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s480/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s640/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.656 - La historia de Mark Sandman y Morphine"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

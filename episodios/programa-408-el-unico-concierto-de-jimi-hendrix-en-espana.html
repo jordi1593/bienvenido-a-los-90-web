@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 408 - El único concierto de Jimi Hendrix en España  — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -125,8 +125,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s320/PearlJam-MadCool18-Thurs-DB-9570.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s160/PearlJam-MadCool18-Thurs-DB-9570.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s320/PearlJam-MadCool18-Thurs-DB-9570.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s480/PearlJam-MadCool18-Thurs-DB-9570.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s160/PearlJam-MadCool18-Thurs-DB-9570.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s320/PearlJam-MadCool18-Thurs-DB-9570.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s480/PearlJam-MadCool18-Thurs-DB-9570.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 412 - Pearl Jam en España (2018)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -136,8 +135,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s320/P1030752.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s160/P1030752.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s320/P1030752.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s480/P1030752.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s160/P1030752.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s320/P1030752.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s480/P1030752.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 161 - Un paseo por Seattle"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -147,8 +145,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s160/P1030709.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s480/P1030709.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s160/P1030709.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s480/P1030709.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 130 - Entrevista a Charles R. Cross"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -164,8 +161,7 @@
         <a class="related-bottom-card" href="p-852-30-anos-despues-del-primer-concierto-de-nirvana-en-espana.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s320/IMG-20220716-WA0011.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s320/IMG-20220716-WA0011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s480/IMG-20220716-WA0011.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s640/IMG-20220716-WA0011.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s320/IMG-20220716-WA0011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s480/IMG-20220716-WA0011.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRM8FsZD7N4ymJ6-WyQdywgD6xOhBTn2IkPoSMwZx6YP7VW3BezT2B6y4EXaF71kmx0uXc-PcAyQv7zfAsBjN-36wOM3wNJm2dRvX14t6HcimZqzUN8hjNWO4hv5r-KMRIJRfmV5h1-rC4XdCFweQTvhGcaTpbqjWx95B581dxK-ZyAg1pjGfHdq8i/s640/IMG-20220716-WA0011.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.852 - 30 años después del primer concierto de Nirvana en España"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -176,8 +172,7 @@
           </a><a class="related-bottom-card" href="b90-supernova-59-el-primer-concierto-de-pearl-jam-en-2024.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNiuzksW6Eg8rrMP6TNk7gXw_q55xI_satc0D2M7j6BaDHpgn7VIEruN-jH2tN5d47xVd85RJgWG0_IvlKGMHD6Wcg1WRBqSMPC6tB9QREym0HvxPNxrYk2TymD6971PLjJRDigUm6hVREhTjSgDSPvqW_Mecse3_o1xLAZ0sQ1ovH78flCdB_apzvDJE/s320/pearl-jam.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNiuzksW6Eg8rrMP6TNk7gXw_q55xI_satc0D2M7j6BaDHpgn7VIEruN-jH2tN5d47xVd85RJgWG0_IvlKGMHD6Wcg1WRBqSMPC6tB9QREym0HvxPNxrYk2TymD6971PLjJRDigUm6hVREhTjSgDSPvqW_Mecse3_o1xLAZ0sQ1ovH78flCdB_apzvDJE/s320/pearl-jam.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNiuzksW6Eg8rrMP6TNk7gXw_q55xI_satc0D2M7j6BaDHpgn7VIEruN-jH2tN5d47xVd85RJgWG0_IvlKGMHD6Wcg1WRBqSMPC6tB9QREym0HvxPNxrYk2TymD6971PLjJRDigUm6hVREhTjSgDSPvqW_Mecse3_o1xLAZ0sQ1ovH78flCdB_apzvDJE/s480/pearl-jam.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNiuzksW6Eg8rrMP6TNk7gXw_q55xI_satc0D2M7j6BaDHpgn7VIEruN-jH2tN5d47xVd85RJgWG0_IvlKGMHD6Wcg1WRBqSMPC6tB9QREym0HvxPNxrYk2TymD6971PLjJRDigUm6hVREhTjSgDSPvqW_Mecse3_o1xLAZ0sQ1ovH78flCdB_apzvDJE/s640/pearl-jam.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNiuzksW6Eg8rrMP6TNk7gXw_q55xI_satc0D2M7j6BaDHpgn7VIEruN-jH2tN5d47xVd85RJgWG0_IvlKGMHD6Wcg1WRBqSMPC6tB9QREym0HvxPNxrYk2TymD6971PLjJRDigUm6hVREhTjSgDSPvqW_Mecse3_o1xLAZ0sQ1ovH78flCdB_apzvDJE/s320/pearl-jam.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNiuzksW6Eg8rrMP6TNk7gXw_q55xI_satc0D2M7j6BaDHpgn7VIEruN-jH2tN5d47xVd85RJgWG0_IvlKGMHD6Wcg1WRBqSMPC6tB9QREym0HvxPNxrYk2TymD6971PLjJRDigUm6hVREhTjSgDSPvqW_Mecse3_o1xLAZ0sQ1ovH78flCdB_apzvDJE/s480/pearl-jam.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNiuzksW6Eg8rrMP6TNk7gXw_q55xI_satc0D2M7j6BaDHpgn7VIEruN-jH2tN5d47xVd85RJgWG0_IvlKGMHD6Wcg1WRBqSMPC6tB9QREym0HvxPNxrYk2TymD6971PLjJRDigUm6hVREhTjSgDSPvqW_Mecse3_o1xLAZ0sQ1ovH78flCdB_apzvDJE/s640/pearl-jam.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Supernova 59 - El primer concierto de Pearl Jam en 2024"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -188,8 +183,7 @@
           </a><a class="related-bottom-card" href="b90-supernova-60-el-segundo-concierto-de-pearl-jam-en-2024.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizoKIr1u06VnTm-bV87RoQv55OCteYVDVsWCoKWVXJn1iYfK-s6t0NvQIhZpveNFQoKOW3bG5xyuOf0VSe0FVKjzMvLp1Nn_3PP8LWMngeT8jL53UeDeKdkqu7QklbtZltrEvEQ1nJsiPV4q0GUWV13i0Gqt3mzGTmN0IUz4BStJl4kcfACOeXU8NdKJk/s320/1M8A6055-3-1024x683.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizoKIr1u06VnTm-bV87RoQv55OCteYVDVsWCoKWVXJn1iYfK-s6t0NvQIhZpveNFQoKOW3bG5xyuOf0VSe0FVKjzMvLp1Nn_3PP8LWMngeT8jL53UeDeKdkqu7QklbtZltrEvEQ1nJsiPV4q0GUWV13i0Gqt3mzGTmN0IUz4BStJl4kcfACOeXU8NdKJk/s320/1M8A6055-3-1024x683.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizoKIr1u06VnTm-bV87RoQv55OCteYVDVsWCoKWVXJn1iYfK-s6t0NvQIhZpveNFQoKOW3bG5xyuOf0VSe0FVKjzMvLp1Nn_3PP8LWMngeT8jL53UeDeKdkqu7QklbtZltrEvEQ1nJsiPV4q0GUWV13i0Gqt3mzGTmN0IUz4BStJl4kcfACOeXU8NdKJk/s480/1M8A6055-3-1024x683.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizoKIr1u06VnTm-bV87RoQv55OCteYVDVsWCoKWVXJn1iYfK-s6t0NvQIhZpveNFQoKOW3bG5xyuOf0VSe0FVKjzMvLp1Nn_3PP8LWMngeT8jL53UeDeKdkqu7QklbtZltrEvEQ1nJsiPV4q0GUWV13i0Gqt3mzGTmN0IUz4BStJl4kcfACOeXU8NdKJk/s640/1M8A6055-3-1024x683.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizoKIr1u06VnTm-bV87RoQv55OCteYVDVsWCoKWVXJn1iYfK-s6t0NvQIhZpveNFQoKOW3bG5xyuOf0VSe0FVKjzMvLp1Nn_3PP8LWMngeT8jL53UeDeKdkqu7QklbtZltrEvEQ1nJsiPV4q0GUWV13i0Gqt3mzGTmN0IUz4BStJl4kcfACOeXU8NdKJk/s320/1M8A6055-3-1024x683.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizoKIr1u06VnTm-bV87RoQv55OCteYVDVsWCoKWVXJn1iYfK-s6t0NvQIhZpveNFQoKOW3bG5xyuOf0VSe0FVKjzMvLp1Nn_3PP8LWMngeT8jL53UeDeKdkqu7QklbtZltrEvEQ1nJsiPV4q0GUWV13i0Gqt3mzGTmN0IUz4BStJl4kcfACOeXU8NdKJk/s480/1M8A6055-3-1024x683.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizoKIr1u06VnTm-bV87RoQv55OCteYVDVsWCoKWVXJn1iYfK-s6t0NvQIhZpveNFQoKOW3bG5xyuOf0VSe0FVKjzMvLp1Nn_3PP8LWMngeT8jL53UeDeKdkqu7QklbtZltrEvEQ1nJsiPV4q0GUWV13i0Gqt3mzGTmN0IUz4BStJl4kcfACOeXU8NdKJk/s640/1M8A6055-3-1024x683.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Supernova 60 - El segundo concierto de Pearl Jam en 2024"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

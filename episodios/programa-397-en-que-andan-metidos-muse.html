@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 397 - ¿En qué andan metidos MUSE? — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -125,8 +125,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s320/b90_586.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s160/b90_586.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s320/b90_586.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s480/b90_586.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s160/b90_586.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s320/b90_586.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4_b0Lv_t0SlWAlCqrAVkJ21UxqgXVL4MjpiW5ZcQUUI7_CELJXImrgXOVze11BamevqwS5f9h-Krvtkui6q_fUVOs7WkMI-VuRLBrJjtpmaCBvC4-1zxZQwYYRzEwEtQsRA6pPQ2UVvU/s480/b90_586.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.586 - El origen de MUSE"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -136,8 +135,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s320/b90453.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s160/b90453.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s320/b90453.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s480/b90453.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s160/b90453.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s320/b90453.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s480/b90453.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 453 - MUSE - Simulation Theory (2018)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -147,8 +145,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s160/67728307_10158901432243066_812912656296968192_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s480/67728307_10158901432243066_812912656296968192_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s160/67728307_10158901432243066_812912656296968192_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s480/67728307_10158901432243066_812912656296968192_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 552 - Muse destroza en Wanda Metropolitano (26/07/2019)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -164,8 +161,7 @@
         <a class="related-bottom-card" href="programa-567-muse-celebramos-los-20-anos-de-showbiz-con-musefanspain.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL_uxgLD5WbSPkRxs27dCgX-8onG2lM5F466W87zqiyktBUGRSo_UXyVykSuZ0uUGVvrX1zfb8kXVmIKgIZE7veFQZ3zuYZv0RoYElWQscn1iRmnODjesmnFIhManNG1OUs37VOdACfdU/s320/567C+Muse+-+Showbiz.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL_uxgLD5WbSPkRxs27dCgX-8onG2lM5F466W87zqiyktBUGRSo_UXyVykSuZ0uUGVvrX1zfb8kXVmIKgIZE7veFQZ3zuYZv0RoYElWQscn1iRmnODjesmnFIhManNG1OUs37VOdACfdU/s320/567C+Muse+-+Showbiz.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL_uxgLD5WbSPkRxs27dCgX-8onG2lM5F466W87zqiyktBUGRSo_UXyVykSuZ0uUGVvrX1zfb8kXVmIKgIZE7veFQZ3zuYZv0RoYElWQscn1iRmnODjesmnFIhManNG1OUs37VOdACfdU/s480/567C+Muse+-+Showbiz.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL_uxgLD5WbSPkRxs27dCgX-8onG2lM5F466W87zqiyktBUGRSo_UXyVykSuZ0uUGVvrX1zfb8kXVmIKgIZE7veFQZ3zuYZv0RoYElWQscn1iRmnODjesmnFIhManNG1OUs37VOdACfdU/s640/567C+Muse+-+Showbiz.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL_uxgLD5WbSPkRxs27dCgX-8onG2lM5F466W87zqiyktBUGRSo_UXyVykSuZ0uUGVvrX1zfb8kXVmIKgIZE7veFQZ3zuYZv0RoYElWQscn1iRmnODjesmnFIhManNG1OUs37VOdACfdU/s320/567C+Muse+-+Showbiz.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL_uxgLD5WbSPkRxs27dCgX-8onG2lM5F466W87zqiyktBUGRSo_UXyVykSuZ0uUGVvrX1zfb8kXVmIKgIZE7veFQZ3zuYZv0RoYElWQscn1iRmnODjesmnFIhManNG1OUs37VOdACfdU/s480/567C+Muse+-+Showbiz.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL_uxgLD5WbSPkRxs27dCgX-8onG2lM5F466W87zqiyktBUGRSo_UXyVykSuZ0uUGVvrX1zfb8kXVmIKgIZE7veFQZ3zuYZv0RoYElWQscn1iRmnODjesmnFIhManNG1OUs37VOdACfdU/s640/567C+Muse+-+Showbiz.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 567 - MUSE: celebramos los 20 años de SHOWBIZ con MuseFanSpain"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -176,8 +172,7 @@
           </a><a class="related-bottom-card" href="programa-222-muse-conquista-espana.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s320/13151904_10153416486066682_8229543257137880107_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s320/13151904_10153416486066682_8229543257137880107_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s480/13151904_10153416486066682_8229543257137880107_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s640/13151904_10153416486066682_8229543257137880107_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s320/13151904_10153416486066682_8229543257137880107_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s480/13151904_10153416486066682_8229543257137880107_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s640/13151904_10153416486066682_8229543257137880107_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 222 - Muse conquista España "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -188,8 +183,7 @@
           </a><a class="related-bottom-card" href="p-679-the-jaded-hearts-club-muse-blur-jet-zutons.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJt_FkAPenTWeSNLqwaqoZUe16Lna5NDkuNIRIsuM2YPStmGd1Y7SQLVU0VZK6Y30RyNe_8ieK33b3hA_6JZuQnQSQ-uZamj4DvoZraQJN0KKumHMvXkFUAqDkjDpPONhvy2LCTshuvPc/s72-w384-h378-c/R-14670771-1579314513-1605.jpeg.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJt_FkAPenTWeSNLqwaqoZUe16Lna5NDkuNIRIsuM2YPStmGd1Y7SQLVU0VZK6Y30RyNe_8ieK33b3hA_6JZuQnQSQ-uZamj4DvoZraQJN0KKumHMvXkFUAqDkjDpPONhvy2LCTshuvPc/s72-w384-h378-c/R-14670771-1579314513-1605.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJt_FkAPenTWeSNLqwaqoZUe16Lna5NDkuNIRIsuM2YPStmGd1Y7SQLVU0VZK6Y30RyNe_8ieK33b3hA_6JZuQnQSQ-uZamj4DvoZraQJN0KKumHMvXkFUAqDkjDpPONhvy2LCTshuvPc/s72-w384-h378-c/R-14670771-1579314513-1605.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJt_FkAPenTWeSNLqwaqoZUe16Lna5NDkuNIRIsuM2YPStmGd1Y7SQLVU0VZK6Y30RyNe_8ieK33b3hA_6JZuQnQSQ-uZamj4DvoZraQJN0KKumHMvXkFUAqDkjDpPONhvy2LCTshuvPc/s72-w384-h378-c/R-14670771-1579314513-1605.jpeg.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="P.679 - The Jaded Hearts Club (Muse, Blur, Jet, Zutons)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

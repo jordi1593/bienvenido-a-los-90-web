@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 350 - The Breeders &#39;All Nerve&#39; (2018) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s320/EZsXIFFWkAAK_wI.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s160/EZsXIFFWkAAK_wI.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s320/EZsXIFFWkAAK_wI.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s480/EZsXIFFWkAAK_wI.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s160/EZsXIFFWkAAK_wI.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s320/EZsXIFFWkAAK_wI.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUvg8koWuOMpKtgIoOl3kP2ro-qg8wqCm7yjABLAmsWDu4ItqVrcDg1FjOrAW9AAyhSzGNeMSugh67tU9F40vsUWve9Yg6cqP9HTS_MctgaCL4lPjFYMeR6u2Yvts-F0Vj_pErHaqakFk/s480/EZsXIFFWkAAK_wI.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.658 - Kim Deal (Pixies, The Breeders)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s320/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s160/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s320/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s480/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s160/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s320/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s480/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.780 - The Best Of : PIXIES (Vol.1)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s320/Kim-Deal-Kim-Gordon-Netflix-2025.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s160/Kim-Deal-Kim-Gordon-Netflix-2025.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s320/Kim-Deal-Kim-Gordon-Netflix-2025.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s480/Kim-Deal-Kim-Gordon-Netflix-2025.webp 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s160/Kim-Deal-Kim-Gordon-Netflix-2025.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s320/Kim-Deal-Kim-Gordon-Netflix-2025.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxpL-K69lr25lIsQZnDyuDBSowzh3LykvPb8BIvGq6Z80A9oQSSw0QnkJZuYSIC3AD_B_-JJtlG1kiThQYBDVS5CDEcH6iBDxHKiIROVys1y4BDVUrV3e8YANAP6YDFnsjpDGJQkEjIKB4sCVbq1vm_mhen6Lg4IL4CNiE2fdfyMpM-H0Hnif6g-mjmI/s480/Kim-Deal-Kim-Gordon-Netflix-2025.webp 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 76 - Kim Gordon y Kim Deal"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="programa-318-el-regreso-de-the-smashing-pumpkins-en-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitICO2FxF-t8-YVJuynHaLPXW4PlSnI0RKhbc0MjQLpsMLiOgOVNAipPofcwSWD9AL3dYtSxTmJJqsaHZXq_Xz9pcKZd6eyvvm8NqITYdbq_pW-Byzupu3u4U1-E5fEbmphnE5wZIjFj8/s320/SP.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitICO2FxF-t8-YVJuynHaLPXW4PlSnI0RKhbc0MjQLpsMLiOgOVNAipPofcwSWD9AL3dYtSxTmJJqsaHZXq_Xz9pcKZd6eyvvm8NqITYdbq_pW-Byzupu3u4U1-E5fEbmphnE5wZIjFj8/s320/SP.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitICO2FxF-t8-YVJuynHaLPXW4PlSnI0RKhbc0MjQLpsMLiOgOVNAipPofcwSWD9AL3dYtSxTmJJqsaHZXq_Xz9pcKZd6eyvvm8NqITYdbq_pW-Byzupu3u4U1-E5fEbmphnE5wZIjFj8/s480/SP.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitICO2FxF-t8-YVJuynHaLPXW4PlSnI0RKhbc0MjQLpsMLiOgOVNAipPofcwSWD9AL3dYtSxTmJJqsaHZXq_Xz9pcKZd6eyvvm8NqITYdbq_pW-Byzupu3u4U1-E5fEbmphnE5wZIjFj8/s640/SP.JPG 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitICO2FxF-t8-YVJuynHaLPXW4PlSnI0RKhbc0MjQLpsMLiOgOVNAipPofcwSWD9AL3dYtSxTmJJqsaHZXq_Xz9pcKZd6eyvvm8NqITYdbq_pW-Byzupu3u4U1-E5fEbmphnE5wZIjFj8/s320/SP.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitICO2FxF-t8-YVJuynHaLPXW4PlSnI0RKhbc0MjQLpsMLiOgOVNAipPofcwSWD9AL3dYtSxTmJJqsaHZXq_Xz9pcKZd6eyvvm8NqITYdbq_pW-Byzupu3u4U1-E5fEbmphnE5wZIjFj8/s480/SP.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitICO2FxF-t8-YVJuynHaLPXW4PlSnI0RKhbc0MjQLpsMLiOgOVNAipPofcwSWD9AL3dYtSxTmJJqsaHZXq_Xz9pcKZd6eyvvm8NqITYdbq_pW-Byzupu3u4U1-E5fEbmphnE5wZIjFj8/s640/SP.JPG 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 318 - El regreso de The Smashing Pumpkins en 2018"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="programa-411-the-last-internationale-live-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY9-t6ba6YX5RB-dYwbqBinRSpW_Bjf75fUhvy1gs03evz4_HoAnYKHeuhncoqSLZjPRvuHotDHUWmaoEABgoQXaCQd-1UZSkt7qzbP5SWUQGNjgSGmMcvY63Ioj3Ef1iWhDOaMx-FDkg/s320/1006286_10152087369159951_3836296_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY9-t6ba6YX5RB-dYwbqBinRSpW_Bjf75fUhvy1gs03evz4_HoAnYKHeuhncoqSLZjPRvuHotDHUWmaoEABgoQXaCQd-1UZSkt7qzbP5SWUQGNjgSGmMcvY63Ioj3Ef1iWhDOaMx-FDkg/s320/1006286_10152087369159951_3836296_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY9-t6ba6YX5RB-dYwbqBinRSpW_Bjf75fUhvy1gs03evz4_HoAnYKHeuhncoqSLZjPRvuHotDHUWmaoEABgoQXaCQd-1UZSkt7qzbP5SWUQGNjgSGmMcvY63Ioj3Ef1iWhDOaMx-FDkg/s480/1006286_10152087369159951_3836296_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY9-t6ba6YX5RB-dYwbqBinRSpW_Bjf75fUhvy1gs03evz4_HoAnYKHeuhncoqSLZjPRvuHotDHUWmaoEABgoQXaCQd-1UZSkt7qzbP5SWUQGNjgSGmMcvY63Ioj3Ef1iWhDOaMx-FDkg/s640/1006286_10152087369159951_3836296_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY9-t6ba6YX5RB-dYwbqBinRSpW_Bjf75fUhvy1gs03evz4_HoAnYKHeuhncoqSLZjPRvuHotDHUWmaoEABgoQXaCQd-1UZSkt7qzbP5SWUQGNjgSGmMcvY63Ioj3Ef1iWhDOaMx-FDkg/s320/1006286_10152087369159951_3836296_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY9-t6ba6YX5RB-dYwbqBinRSpW_Bjf75fUhvy1gs03evz4_HoAnYKHeuhncoqSLZjPRvuHotDHUWmaoEABgoQXaCQd-1UZSkt7qzbP5SWUQGNjgSGmMcvY63Ioj3Ef1iWhDOaMx-FDkg/s480/1006286_10152087369159951_3836296_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY9-t6ba6YX5RB-dYwbqBinRSpW_Bjf75fUhvy1gs03evz4_HoAnYKHeuhncoqSLZjPRvuHotDHUWmaoEABgoQXaCQd-1UZSkt7qzbP5SWUQGNjgSGmMcvY63Ioj3Ef1iWhDOaMx-FDkg/s640/1006286_10152087369159951_3836296_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 411 - The Last Internationale (Live 2018)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="programa-433-the-smashing-pumpkins-seattle-24-08-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqQ8UUYIgx74i-d5dzIPrVrhJT3d7d_WObdAxddHFDcNrfbZz8d_ywjD1KP0BfsluCVzjIYagXtJin5XKZ_N6iA1ciRIMY6cGGN5J__PYnjZ01YSvdKz8bGQKrpm6mlBiCBiTLmuLbEns/s320/b90-SP.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqQ8UUYIgx74i-d5dzIPrVrhJT3d7d_WObdAxddHFDcNrfbZz8d_ywjD1KP0BfsluCVzjIYagXtJin5XKZ_N6iA1ciRIMY6cGGN5J__PYnjZ01YSvdKz8bGQKrpm6mlBiCBiTLmuLbEns/s320/b90-SP.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqQ8UUYIgx74i-d5dzIPrVrhJT3d7d_WObdAxddHFDcNrfbZz8d_ywjD1KP0BfsluCVzjIYagXtJin5XKZ_N6iA1ciRIMY6cGGN5J__PYnjZ01YSvdKz8bGQKrpm6mlBiCBiTLmuLbEns/s480/b90-SP.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqQ8UUYIgx74i-d5dzIPrVrhJT3d7d_WObdAxddHFDcNrfbZz8d_ywjD1KP0BfsluCVzjIYagXtJin5XKZ_N6iA1ciRIMY6cGGN5J__PYnjZ01YSvdKz8bGQKrpm6mlBiCBiTLmuLbEns/s640/b90-SP.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqQ8UUYIgx74i-d5dzIPrVrhJT3d7d_WObdAxddHFDcNrfbZz8d_ywjD1KP0BfsluCVzjIYagXtJin5XKZ_N6iA1ciRIMY6cGGN5J__PYnjZ01YSvdKz8bGQKrpm6mlBiCBiTLmuLbEns/s320/b90-SP.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqQ8UUYIgx74i-d5dzIPrVrhJT3d7d_WObdAxddHFDcNrfbZz8d_ywjD1KP0BfsluCVzjIYagXtJin5XKZ_N6iA1ciRIMY6cGGN5J__PYnjZ01YSvdKz8bGQKrpm6mlBiCBiTLmuLbEns/s480/b90-SP.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqQ8UUYIgx74i-d5dzIPrVrhJT3d7d_WObdAxddHFDcNrfbZz8d_ywjD1KP0BfsluCVzjIYagXtJin5XKZ_N6iA1ciRIMY6cGGN5J__PYnjZ01YSvdKz8bGQKrpm6mlBiCBiTLmuLbEns/s640/b90-SP.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 433 - The Smashing Pumpkins -Seattle - 24-08-2018"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

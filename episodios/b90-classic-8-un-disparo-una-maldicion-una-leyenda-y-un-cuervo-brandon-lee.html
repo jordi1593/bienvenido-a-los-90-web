@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>B90 Classic 8: Un disparo, una maldición, una leyenda y un cuervo: Brandon Lee — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -131,8 +131,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="B90 - Programa 77 - El Cuervo"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -142,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEhtS6l7YIrmU2qaRG3T9xsXjVd8ny30txWsvchUqIvUCMbCSewIDb2cK2GlRnTcyUsrZPEVmTMnMpK8CRrlkNSQ0G1yAqXz_-v1TB0JN-GVC76JY3-7YkQ32ovblkQ01eqQWs8g4kNx1DSu5lGbu6B1pspkvL7DqTPMYLAXPXsK3QxTkIx8g1l7RPOR=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEhtS6l7YIrmU2qaRG3T9xsXjVd8ny30txWsvchUqIvUCMbCSewIDb2cK2GlRnTcyUsrZPEVmTMnMpK8CRrlkNSQ0G1yAqXz_-v1TB0JN-GVC76JY3-7YkQ32ovblkQ01eqQWs8g4kNx1DSu5lGbu6B1pspkvL7DqTPMYLAXPXsK3QxTkIx8g1l7RPOR=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEhtS6l7YIrmU2qaRG3T9xsXjVd8ny30txWsvchUqIvUCMbCSewIDb2cK2GlRnTcyUsrZPEVmTMnMpK8CRrlkNSQ0G1yAqXz_-v1TB0JN-GVC76JY3-7YkQ32ovblkQ01eqQWs8g4kNx1DSu5lGbu6B1pspkvL7DqTPMYLAXPXsK3QxTkIx8g1l7RPOR=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEhtS6l7YIrmU2qaRG3T9xsXjVd8ny30txWsvchUqIvUCMbCSewIDb2cK2GlRnTcyUsrZPEVmTMnMpK8CRrlkNSQ0G1yAqXz_-v1TB0JN-GVC76JY3-7YkQ32ovblkQ01eqQWs8g4kNx1DSu5lGbu6B1pspkvL7DqTPMYLAXPXsK3QxTkIx8g1l7RPOR=s72-c 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="B90 Classic 19: La última conversación entre Mark Lanegan y Gary Lee Conner"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -153,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggDmki8-fykFnt4mgYDgOtuPbfyWx-GDPpBjm7mLiNwAjk8uTyAdLleLm0Lt76h8B7oqUgqFPthqQYCkxCkb1XsY8LufSaoL5NDnd-Zi7vm1KUcmpfGbL98hLNuxnquuaPGLOBmESzaqfntFGyRb_bM7U9O4KDvWpiLa93eClc4-dqFucNaT3eM546M_M/s320/crow-ver6-xlg-button-1721307883846.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggDmki8-fykFnt4mgYDgOtuPbfyWx-GDPpBjm7mLiNwAjk8uTyAdLleLm0Lt76h8B7oqUgqFPthqQYCkxCkb1XsY8LufSaoL5NDnd-Zi7vm1KUcmpfGbL98hLNuxnquuaPGLOBmESzaqfntFGyRb_bM7U9O4KDvWpiLa93eClc4-dqFucNaT3eM546M_M/s160/crow-ver6-xlg-button-1721307883846.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggDmki8-fykFnt4mgYDgOtuPbfyWx-GDPpBjm7mLiNwAjk8uTyAdLleLm0Lt76h8B7oqUgqFPthqQYCkxCkb1XsY8LufSaoL5NDnd-Zi7vm1KUcmpfGbL98hLNuxnquuaPGLOBmESzaqfntFGyRb_bM7U9O4KDvWpiLa93eClc4-dqFucNaT3eM546M_M/s320/crow-ver6-xlg-button-1721307883846.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggDmki8-fykFnt4mgYDgOtuPbfyWx-GDPpBjm7mLiNwAjk8uTyAdLleLm0Lt76h8B7oqUgqFPthqQYCkxCkb1XsY8LufSaoL5NDnd-Zi7vm1KUcmpfGbL98hLNuxnquuaPGLOBmESzaqfntFGyRb_bM7U9O4KDvWpiLa93eClc4-dqFucNaT3eM546M_M/s480/crow-ver6-xlg-button-1721307883846.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggDmki8-fykFnt4mgYDgOtuPbfyWx-GDPpBjm7mLiNwAjk8uTyAdLleLm0Lt76h8B7oqUgqFPthqQYCkxCkb1XsY8LufSaoL5NDnd-Zi7vm1KUcmpfGbL98hLNuxnquuaPGLOBmESzaqfntFGyRb_bM7U9O4KDvWpiLa93eClc4-dqFucNaT3eM546M_M/s160/crow-ver6-xlg-button-1721307883846.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggDmki8-fykFnt4mgYDgOtuPbfyWx-GDPpBjm7mLiNwAjk8uTyAdLleLm0Lt76h8B7oqUgqFPthqQYCkxCkb1XsY8LufSaoL5NDnd-Zi7vm1KUcmpfGbL98hLNuxnquuaPGLOBmESzaqfntFGyRb_bM7U9O4KDvWpiLa93eClc4-dqFucNaT3eM546M_M/s320/crow-ver6-xlg-button-1721307883846.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggDmki8-fykFnt4mgYDgOtuPbfyWx-GDPpBjm7mLiNwAjk8uTyAdLleLm0Lt76h8B7oqUgqFPthqQYCkxCkb1XsY8LufSaoL5NDnd-Zi7vm1KUcmpfGbL98hLNuxnquuaPGLOBmESzaqfntFGyRb_bM7U9O4KDvWpiLa93eClc4-dqFucNaT3eM546M_M/s480/crow-ver6-xlg-button-1721307883846.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.1008 - El Cuervo 1994 - 2024"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -170,8 +167,7 @@
         <a class="related-bottom-card" href="b90-classic-7-el-diablo-y-robert-johnson.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAJoiw0Qh8f3qt3tDjQ0mJv0JlIhpJgbv7ZKL1barBd6JMD1fN1lki8Zy-SKKrE1vDxAaYI-CJlIadcLVHCHJzn11pNNswHwGsPTh9v-weHTXN4t3fKd-GawyfmV5UBvz4oSGB9wMtw9s/s320/robert_johnson.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAJoiw0Qh8f3qt3tDjQ0mJv0JlIhpJgbv7ZKL1barBd6JMD1fN1lki8Zy-SKKrE1vDxAaYI-CJlIadcLVHCHJzn11pNNswHwGsPTh9v-weHTXN4t3fKd-GawyfmV5UBvz4oSGB9wMtw9s/s320/robert_johnson.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAJoiw0Qh8f3qt3tDjQ0mJv0JlIhpJgbv7ZKL1barBd6JMD1fN1lki8Zy-SKKrE1vDxAaYI-CJlIadcLVHCHJzn11pNNswHwGsPTh9v-weHTXN4t3fKd-GawyfmV5UBvz4oSGB9wMtw9s/s480/robert_johnson.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAJoiw0Qh8f3qt3tDjQ0mJv0JlIhpJgbv7ZKL1barBd6JMD1fN1lki8Zy-SKKrE1vDxAaYI-CJlIadcLVHCHJzn11pNNswHwGsPTh9v-weHTXN4t3fKd-GawyfmV5UBvz4oSGB9wMtw9s/s640/robert_johnson.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAJoiw0Qh8f3qt3tDjQ0mJv0JlIhpJgbv7ZKL1barBd6JMD1fN1lki8Zy-SKKrE1vDxAaYI-CJlIadcLVHCHJzn11pNNswHwGsPTh9v-weHTXN4t3fKd-GawyfmV5UBvz4oSGB9wMtw9s/s320/robert_johnson.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAJoiw0Qh8f3qt3tDjQ0mJv0JlIhpJgbv7ZKL1barBd6JMD1fN1lki8Zy-SKKrE1vDxAaYI-CJlIadcLVHCHJzn11pNNswHwGsPTh9v-weHTXN4t3fKd-GawyfmV5UBvz4oSGB9wMtw9s/s480/robert_johnson.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAJoiw0Qh8f3qt3tDjQ0mJv0JlIhpJgbv7ZKL1barBd6JMD1fN1lki8Zy-SKKrE1vDxAaYI-CJlIadcLVHCHJzn11pNNswHwGsPTh9v-weHTXN4t3fKd-GawyfmV5UBvz4oSGB9wMtw9s/s640/robert_johnson.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 7: El diablo y Robert Johnson"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -182,8 +178,7 @@
           </a><a class="related-bottom-card" href="b90-classic-9-tomorrow-never-knows-sigue-siendo-un-misterio.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s320/AP17johnlid.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s320/AP17johnlid.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s480/AP17johnlid.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s640/AP17johnlid.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s320/AP17johnlid.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s480/AP17johnlid.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s640/AP17johnlid.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 9: Tomorrow Never Knows sigue siendo un misterio"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -194,8 +189,7 @@
           </a><a class="related-bottom-card" href="b90-classic-6-la-primera-y-unica-vez-que-kurt-y-courtney-actuaron-juntos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s320/d9dbb49122ca7f199dfd9fc1bd704541.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s320/d9dbb49122ca7f199dfd9fc1bd704541.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s480/d9dbb49122ca7f199dfd9fc1bd704541.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s640/d9dbb49122ca7f199dfd9fc1bd704541.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s320/d9dbb49122ca7f199dfd9fc1bd704541.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s480/d9dbb49122ca7f199dfd9fc1bd704541.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s640/d9dbb49122ca7f199dfd9fc1bd704541.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 6: La primera y única vez que Kurt y Courtney actuaron juntos"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

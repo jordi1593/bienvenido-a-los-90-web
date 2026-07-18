@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 311 - Gallagher vs. Gallagher — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -125,8 +125,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s160/IMG_20180608_163539.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s480/IMG_20180608_163539.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s160/IMG_20180608_163539.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s480/IMG_20180608_163539.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 400 con Paco Pérez Bryan"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -136,8 +135,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6azIDYyrw9E3NNxLGzM-6EpVUyj4nHagfjlCeM29zB5uXMS7JxeBHvP88-LA7plRWo7F5xj9eoWjbSxLXDhir3XLCdqkGEIB_GzXYasIbdMxf4KrLXnIFQ56ZAptOvkKzv3zA_h6-VwbGsYqg5FgZBTD0wzYwYFqzjWBmWdIxp1oElacv1Er0H-id/s320/Screenshot_2022-06-07-13-27-49-203_com.instagram.android_2.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6azIDYyrw9E3NNxLGzM-6EpVUyj4nHagfjlCeM29zB5uXMS7JxeBHvP88-LA7plRWo7F5xj9eoWjbSxLXDhir3XLCdqkGEIB_GzXYasIbdMxf4KrLXnIFQ56ZAptOvkKzv3zA_h6-VwbGsYqg5FgZBTD0wzYwYFqzjWBmWdIxp1oElacv1Er0H-id/s160/Screenshot_2022-06-07-13-27-49-203_com.instagram.android_2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6azIDYyrw9E3NNxLGzM-6EpVUyj4nHagfjlCeM29zB5uXMS7JxeBHvP88-LA7plRWo7F5xj9eoWjbSxLXDhir3XLCdqkGEIB_GzXYasIbdMxf4KrLXnIFQ56ZAptOvkKzv3zA_h6-VwbGsYqg5FgZBTD0wzYwYFqzjWBmWdIxp1oElacv1Er0H-id/s320/Screenshot_2022-06-07-13-27-49-203_com.instagram.android_2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6azIDYyrw9E3NNxLGzM-6EpVUyj4nHagfjlCeM29zB5uXMS7JxeBHvP88-LA7plRWo7F5xj9eoWjbSxLXDhir3XLCdqkGEIB_GzXYasIbdMxf4KrLXnIFQ56ZAptOvkKzv3zA_h6-VwbGsYqg5FgZBTD0wzYwYFqzjWBmWdIxp1oElacv1Er0H-id/s480/Screenshot_2022-06-07-13-27-49-203_com.instagram.android_2.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6azIDYyrw9E3NNxLGzM-6EpVUyj4nHagfjlCeM29zB5uXMS7JxeBHvP88-LA7plRWo7F5xj9eoWjbSxLXDhir3XLCdqkGEIB_GzXYasIbdMxf4KrLXnIFQ56ZAptOvkKzv3zA_h6-VwbGsYqg5FgZBTD0wzYwYFqzjWBmWdIxp1oElacv1Er0H-id/s160/Screenshot_2022-06-07-13-27-49-203_com.instagram.android_2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6azIDYyrw9E3NNxLGzM-6EpVUyj4nHagfjlCeM29zB5uXMS7JxeBHvP88-LA7plRWo7F5xj9eoWjbSxLXDhir3XLCdqkGEIB_GzXYasIbdMxf4KrLXnIFQ56ZAptOvkKzv3zA_h6-VwbGsYqg5FgZBTD0wzYwYFqzjWBmWdIxp1oElacv1Er0H-id/s320/Screenshot_2022-06-07-13-27-49-203_com.instagram.android_2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6azIDYyrw9E3NNxLGzM-6EpVUyj4nHagfjlCeM29zB5uXMS7JxeBHvP88-LA7plRWo7F5xj9eoWjbSxLXDhir3XLCdqkGEIB_GzXYasIbdMxf4KrLXnIFQ56ZAptOvkKzv3zA_h6-VwbGsYqg5FgZBTD0wzYwYFqzjWBmWdIxp1oElacv1Er0H-id/s480/Screenshot_2022-06-07-13-27-49-203_com.instagram.android_2.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.842 - Mi viaje a Knebworth para ver a Liam Gallagher"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -147,8 +145,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8EH9AUiZd2sA7yLiYOu6-6XDl-LTwTZMrFTk3EoMUPJMGc3-D84-_bS3IXYsr5uXG4diUbh-Ysb2PEWJN82Iay3FubtV6OmQdO_gTyHC_JUVeKUd1FvPZqHIfWW5I1jtvWE0fWmVSRBg/s320/nghfb---packshot---who-built-the-moon-acc528a5-944c-442d-be89-2cb546fea1b6.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8EH9AUiZd2sA7yLiYOu6-6XDl-LTwTZMrFTk3EoMUPJMGc3-D84-_bS3IXYsr5uXG4diUbh-Ysb2PEWJN82Iay3FubtV6OmQdO_gTyHC_JUVeKUd1FvPZqHIfWW5I1jtvWE0fWmVSRBg/s160/nghfb---packshot---who-built-the-moon-acc528a5-944c-442d-be89-2cb546fea1b6.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8EH9AUiZd2sA7yLiYOu6-6XDl-LTwTZMrFTk3EoMUPJMGc3-D84-_bS3IXYsr5uXG4diUbh-Ysb2PEWJN82Iay3FubtV6OmQdO_gTyHC_JUVeKUd1FvPZqHIfWW5I1jtvWE0fWmVSRBg/s320/nghfb---packshot---who-built-the-moon-acc528a5-944c-442d-be89-2cb546fea1b6.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8EH9AUiZd2sA7yLiYOu6-6XDl-LTwTZMrFTk3EoMUPJMGc3-D84-_bS3IXYsr5uXG4diUbh-Ysb2PEWJN82Iay3FubtV6OmQdO_gTyHC_JUVeKUd1FvPZqHIfWW5I1jtvWE0fWmVSRBg/s480/nghfb---packshot---who-built-the-moon-acc528a5-944c-442d-be89-2cb546fea1b6.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8EH9AUiZd2sA7yLiYOu6-6XDl-LTwTZMrFTk3EoMUPJMGc3-D84-_bS3IXYsr5uXG4diUbh-Ysb2PEWJN82Iay3FubtV6OmQdO_gTyHC_JUVeKUd1FvPZqHIfWW5I1jtvWE0fWmVSRBg/s160/nghfb---packshot---who-built-the-moon-acc528a5-944c-442d-be89-2cb546fea1b6.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8EH9AUiZd2sA7yLiYOu6-6XDl-LTwTZMrFTk3EoMUPJMGc3-D84-_bS3IXYsr5uXG4diUbh-Ysb2PEWJN82Iay3FubtV6OmQdO_gTyHC_JUVeKUd1FvPZqHIfWW5I1jtvWE0fWmVSRBg/s320/nghfb---packshot---who-built-the-moon-acc528a5-944c-442d-be89-2cb546fea1b6.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8EH9AUiZd2sA7yLiYOu6-6XDl-LTwTZMrFTk3EoMUPJMGc3-D84-_bS3IXYsr5uXG4diUbh-Ysb2PEWJN82Iay3FubtV6OmQdO_gTyHC_JUVeKUd1FvPZqHIfWW5I1jtvWE0fWmVSRBg/s480/nghfb---packshot---who-built-the-moon-acc528a5-944c-442d-be89-2cb546fea1b6.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 309 - Noel Gallagher - Who Built the Moon"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -164,8 +161,7 @@
         <a class="related-bottom-card" href="especial-liam-gallagher-as-you-were.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixWuh_lUhjXgqHJo5EWF6FXkBeBg5idbrdZ9sw47uOHCoGm3lYgNhOtu8AAhO8Iv8mVbCkScTWC5Zm2U5ZY-T4iUtWFeD3lTwYgsuOUqe5KKMfCHqA2fz6fNaQbME266nG3Ylw7PZ7z7w/s320/Liam-Gallagher%2525E2%252580%25258F-AS-YOU-WERE.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixWuh_lUhjXgqHJo5EWF6FXkBeBg5idbrdZ9sw47uOHCoGm3lYgNhOtu8AAhO8Iv8mVbCkScTWC5Zm2U5ZY-T4iUtWFeD3lTwYgsuOUqe5KKMfCHqA2fz6fNaQbME266nG3Ylw7PZ7z7w/s320/Liam-Gallagher%2525E2%252580%25258F-AS-YOU-WERE.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixWuh_lUhjXgqHJo5EWF6FXkBeBg5idbrdZ9sw47uOHCoGm3lYgNhOtu8AAhO8Iv8mVbCkScTWC5Zm2U5ZY-T4iUtWFeD3lTwYgsuOUqe5KKMfCHqA2fz6fNaQbME266nG3Ylw7PZ7z7w/s480/Liam-Gallagher%2525E2%252580%25258F-AS-YOU-WERE.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixWuh_lUhjXgqHJo5EWF6FXkBeBg5idbrdZ9sw47uOHCoGm3lYgNhOtu8AAhO8Iv8mVbCkScTWC5Zm2U5ZY-T4iUtWFeD3lTwYgsuOUqe5KKMfCHqA2fz6fNaQbME266nG3Ylw7PZ7z7w/s640/Liam-Gallagher%2525E2%252580%25258F-AS-YOU-WERE.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixWuh_lUhjXgqHJo5EWF6FXkBeBg5idbrdZ9sw47uOHCoGm3lYgNhOtu8AAhO8Iv8mVbCkScTWC5Zm2U5ZY-T4iUtWFeD3lTwYgsuOUqe5KKMfCHqA2fz6fNaQbME266nG3Ylw7PZ7z7w/s320/Liam-Gallagher%2525E2%252580%25258F-AS-YOU-WERE.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixWuh_lUhjXgqHJo5EWF6FXkBeBg5idbrdZ9sw47uOHCoGm3lYgNhOtu8AAhO8Iv8mVbCkScTWC5Zm2U5ZY-T4iUtWFeD3lTwYgsuOUqe5KKMfCHqA2fz6fNaQbME266nG3Ylw7PZ7z7w/s480/Liam-Gallagher%2525E2%252580%25258F-AS-YOU-WERE.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixWuh_lUhjXgqHJo5EWF6FXkBeBg5idbrdZ9sw47uOHCoGm3lYgNhOtu8AAhO8Iv8mVbCkScTWC5Zm2U5ZY-T4iUtWFeD3lTwYgsuOUqe5KKMfCHqA2fz6fNaQbME266nG3Ylw7PZ7z7w/s640/Liam-Gallagher%2525E2%252580%25258F-AS-YOU-WERE.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Especial Liam Gallagher - As You Were"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -176,8 +172,7 @@
           </a><a class="related-bottom-card" href="programa-358-liam-gallagher-cigarrillos-y-alcohol.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZB8Fv3YFPfqv2-iPesmI7MoGTkAxc4WhQIA7KFQ_e_LZ4xlDcaWLhkb8BQz1We47wPtSGffFRh7vQDenpEA6izmxODBsKV7yICovEIQDOPULZywUqtM28A5NTQRah8W9UxF4U6qaDwVw/s320/085b4b7f30166325d681a71f63f1f6ba-liam-gallagher-oasis.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZB8Fv3YFPfqv2-iPesmI7MoGTkAxc4WhQIA7KFQ_e_LZ4xlDcaWLhkb8BQz1We47wPtSGffFRh7vQDenpEA6izmxODBsKV7yICovEIQDOPULZywUqtM28A5NTQRah8W9UxF4U6qaDwVw/s320/085b4b7f30166325d681a71f63f1f6ba-liam-gallagher-oasis.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZB8Fv3YFPfqv2-iPesmI7MoGTkAxc4WhQIA7KFQ_e_LZ4xlDcaWLhkb8BQz1We47wPtSGffFRh7vQDenpEA6izmxODBsKV7yICovEIQDOPULZywUqtM28A5NTQRah8W9UxF4U6qaDwVw/s480/085b4b7f30166325d681a71f63f1f6ba-liam-gallagher-oasis.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZB8Fv3YFPfqv2-iPesmI7MoGTkAxc4WhQIA7KFQ_e_LZ4xlDcaWLhkb8BQz1We47wPtSGffFRh7vQDenpEA6izmxODBsKV7yICovEIQDOPULZywUqtM28A5NTQRah8W9UxF4U6qaDwVw/s640/085b4b7f30166325d681a71f63f1f6ba-liam-gallagher-oasis.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZB8Fv3YFPfqv2-iPesmI7MoGTkAxc4WhQIA7KFQ_e_LZ4xlDcaWLhkb8BQz1We47wPtSGffFRh7vQDenpEA6izmxODBsKV7yICovEIQDOPULZywUqtM28A5NTQRah8W9UxF4U6qaDwVw/s320/085b4b7f30166325d681a71f63f1f6ba-liam-gallagher-oasis.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZB8Fv3YFPfqv2-iPesmI7MoGTkAxc4WhQIA7KFQ_e_LZ4xlDcaWLhkb8BQz1We47wPtSGffFRh7vQDenpEA6izmxODBsKV7yICovEIQDOPULZywUqtM28A5NTQRah8W9UxF4U6qaDwVw/s480/085b4b7f30166325d681a71f63f1f6ba-liam-gallagher-oasis.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZB8Fv3YFPfqv2-iPesmI7MoGTkAxc4WhQIA7KFQ_e_LZ4xlDcaWLhkb8BQz1We47wPtSGffFRh7vQDenpEA6izmxODBsKV7yICovEIQDOPULZywUqtM28A5NTQRah8W9UxF4U6qaDwVw/s640/085b4b7f30166325d681a71f63f1f6ba-liam-gallagher-oasis.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 358 - Liam Gallagher, cigarrillos y alcohol "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -188,8 +183,7 @@
           </a><a class="related-bottom-card" href="p-770-otro-oasis-fue-posible-andy-bell-y-gem-archer.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRy2XUpSeawzvmcCKStWZNkKnRbZdG0IFhHEMaTheeNVDuDXMGfVDGvwMCf-fdDB-A3xiM_5drn8lvDHG3_iIP1cy8OIaDCfK2kfg1tQY7yknpVNInwc3N9h8Wf-gpKHWvA83fHXs4-3Y/s320/DacSmFpWsAEgneW.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRy2XUpSeawzvmcCKStWZNkKnRbZdG0IFhHEMaTheeNVDuDXMGfVDGvwMCf-fdDB-A3xiM_5drn8lvDHG3_iIP1cy8OIaDCfK2kfg1tQY7yknpVNInwc3N9h8Wf-gpKHWvA83fHXs4-3Y/s320/DacSmFpWsAEgneW.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRy2XUpSeawzvmcCKStWZNkKnRbZdG0IFhHEMaTheeNVDuDXMGfVDGvwMCf-fdDB-A3xiM_5drn8lvDHG3_iIP1cy8OIaDCfK2kfg1tQY7yknpVNInwc3N9h8Wf-gpKHWvA83fHXs4-3Y/s480/DacSmFpWsAEgneW.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRy2XUpSeawzvmcCKStWZNkKnRbZdG0IFhHEMaTheeNVDuDXMGfVDGvwMCf-fdDB-A3xiM_5drn8lvDHG3_iIP1cy8OIaDCfK2kfg1tQY7yknpVNInwc3N9h8Wf-gpKHWvA83fHXs4-3Y/s640/DacSmFpWsAEgneW.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRy2XUpSeawzvmcCKStWZNkKnRbZdG0IFhHEMaTheeNVDuDXMGfVDGvwMCf-fdDB-A3xiM_5drn8lvDHG3_iIP1cy8OIaDCfK2kfg1tQY7yknpVNInwc3N9h8Wf-gpKHWvA83fHXs4-3Y/s320/DacSmFpWsAEgneW.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRy2XUpSeawzvmcCKStWZNkKnRbZdG0IFhHEMaTheeNVDuDXMGfVDGvwMCf-fdDB-A3xiM_5drn8lvDHG3_iIP1cy8OIaDCfK2kfg1tQY7yknpVNInwc3N9h8Wf-gpKHWvA83fHXs4-3Y/s480/DacSmFpWsAEgneW.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRy2XUpSeawzvmcCKStWZNkKnRbZdG0IFhHEMaTheeNVDuDXMGfVDGvwMCf-fdDB-A3xiM_5drn8lvDHG3_iIP1cy8OIaDCfK2kfg1tQY7yknpVNInwc3N9h8Wf-gpKHWvA83fHXs4-3Y/s640/DacSmFpWsAEgneW.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.770 - Otro OASIS fue posible (Andy Bell y Gem Archer)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

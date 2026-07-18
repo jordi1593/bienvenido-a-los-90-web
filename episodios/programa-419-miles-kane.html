@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 419 - Miles Kane — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -147,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKYadJm_4A1QG1jWmVWPE2pGGLYZzeWS6vOcKAk0RDPJOW6_zsPpGCXOPnIaYv0WUbouTb5QM8BeI8cvwvk1lL0CFZTDEATpztaGmSk5iqRi-BjIXJ4uzlZDSQPRosAXMg3ZNpKdvSLO5_7NxnZZfDAr2BXQn8CepmJdVCmXNAVXXfqAtYWYPdSp-vVGo/s320/b90_916_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKYadJm_4A1QG1jWmVWPE2pGGLYZzeWS6vOcKAk0RDPJOW6_zsPpGCXOPnIaYv0WUbouTb5QM8BeI8cvwvk1lL0CFZTDEATpztaGmSk5iqRi-BjIXJ4uzlZDSQPRosAXMg3ZNpKdvSLO5_7NxnZZfDAr2BXQn8CepmJdVCmXNAVXXfqAtYWYPdSp-vVGo/s160/b90_916_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKYadJm_4A1QG1jWmVWPE2pGGLYZzeWS6vOcKAk0RDPJOW6_zsPpGCXOPnIaYv0WUbouTb5QM8BeI8cvwvk1lL0CFZTDEATpztaGmSk5iqRi-BjIXJ4uzlZDSQPRosAXMg3ZNpKdvSLO5_7NxnZZfDAr2BXQn8CepmJdVCmXNAVXXfqAtYWYPdSp-vVGo/s320/b90_916_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKYadJm_4A1QG1jWmVWPE2pGGLYZzeWS6vOcKAk0RDPJOW6_zsPpGCXOPnIaYv0WUbouTb5QM8BeI8cvwvk1lL0CFZTDEATpztaGmSk5iqRi-BjIXJ4uzlZDSQPRosAXMg3ZNpKdvSLO5_7NxnZZfDAr2BXQn8CepmJdVCmXNAVXXfqAtYWYPdSp-vVGo/s480/b90_916_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKYadJm_4A1QG1jWmVWPE2pGGLYZzeWS6vOcKAk0RDPJOW6_zsPpGCXOPnIaYv0WUbouTb5QM8BeI8cvwvk1lL0CFZTDEATpztaGmSk5iqRi-BjIXJ4uzlZDSQPRosAXMg3ZNpKdvSLO5_7NxnZZfDAr2BXQn8CepmJdVCmXNAVXXfqAtYWYPdSp-vVGo/s160/b90_916_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKYadJm_4A1QG1jWmVWPE2pGGLYZzeWS6vOcKAk0RDPJOW6_zsPpGCXOPnIaYv0WUbouTb5QM8BeI8cvwvk1lL0CFZTDEATpztaGmSk5iqRi-BjIXJ4uzlZDSQPRosAXMg3ZNpKdvSLO5_7NxnZZfDAr2BXQn8CepmJdVCmXNAVXXfqAtYWYPdSp-vVGo/s320/b90_916_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKYadJm_4A1QG1jWmVWPE2pGGLYZzeWS6vOcKAk0RDPJOW6_zsPpGCXOPnIaYv0WUbouTb5QM8BeI8cvwvk1lL0CFZTDEATpztaGmSk5iqRi-BjIXJ4uzlZDSQPRosAXMg3ZNpKdvSLO5_7NxnZZfDAr2BXQn8CepmJdVCmXNAVXXfqAtYWYPdSp-vVGo/s480/b90_916_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.916 - Novedades: Miles Kane, Alphawaves, Cucamaras, Ajeeb, Murmur... "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -158,8 +157,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggE1ZvUKOLaGEFgMNRQF6PcQxrhXa9nB7cO_HdjYiYFCv_ornnlgR8-BsLLQoyhMVKt-1WyjDxasTDnRkWl9qab4X0GeyNaR7BDm9R859ID8l6MJt21Bzsix_DGxUbyFQ4mkrJjdmF-JA/s320/programa440.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggE1ZvUKOLaGEFgMNRQF6PcQxrhXa9nB7cO_HdjYiYFCv_ornnlgR8-BsLLQoyhMVKt-1WyjDxasTDnRkWl9qab4X0GeyNaR7BDm9R859ID8l6MJt21Bzsix_DGxUbyFQ4mkrJjdmF-JA/s160/programa440.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggE1ZvUKOLaGEFgMNRQF6PcQxrhXa9nB7cO_HdjYiYFCv_ornnlgR8-BsLLQoyhMVKt-1WyjDxasTDnRkWl9qab4X0GeyNaR7BDm9R859ID8l6MJt21Bzsix_DGxUbyFQ4mkrJjdmF-JA/s320/programa440.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggE1ZvUKOLaGEFgMNRQF6PcQxrhXa9nB7cO_HdjYiYFCv_ornnlgR8-BsLLQoyhMVKt-1WyjDxasTDnRkWl9qab4X0GeyNaR7BDm9R859ID8l6MJt21Bzsix_DGxUbyFQ4mkrJjdmF-JA/s480/programa440.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggE1ZvUKOLaGEFgMNRQF6PcQxrhXa9nB7cO_HdjYiYFCv_ornnlgR8-BsLLQoyhMVKt-1WyjDxasTDnRkWl9qab4X0GeyNaR7BDm9R859ID8l6MJt21Bzsix_DGxUbyFQ4mkrJjdmF-JA/s160/programa440.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggE1ZvUKOLaGEFgMNRQF6PcQxrhXa9nB7cO_HdjYiYFCv_ornnlgR8-BsLLQoyhMVKt-1WyjDxasTDnRkWl9qab4X0GeyNaR7BDm9R859ID8l6MJt21Bzsix_DGxUbyFQ4mkrJjdmF-JA/s320/programa440.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggE1ZvUKOLaGEFgMNRQF6PcQxrhXa9nB7cO_HdjYiYFCv_ornnlgR8-BsLLQoyhMVKt-1WyjDxasTDnRkWl9qab4X0GeyNaR7BDm9R859ID8l6MJt21Bzsix_DGxUbyFQ4mkrJjdmF-JA/s480/programa440.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 440 - Paul Weller - True Meanings"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -169,8 +167,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s320/4796764187_443628a460.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s160/4796764187_443628a460.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s320/4796764187_443628a460.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s480/4796764187_443628a460.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s160/4796764187_443628a460.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s320/4796764187_443628a460.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s480/4796764187_443628a460.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 416 - PinkPop 2018"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -186,8 +183,7 @@
         <a class="related-bottom-card" href="programa-400-con-paco-perez-bryan.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s480/IMG_20180608_163539.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s640/IMG_20180608_163539.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s480/IMG_20180608_163539.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s640/IMG_20180608_163539.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 400 con Paco Pérez Bryan"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -198,8 +194,7 @@
           </a><a class="related-bottom-card" href="programa-396-el-directo-de-arctic-monkeys-en-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJoNNVxwjJOhKnyOMtCRRyygN6rCtEI6p02CCzjoxDuSYf0HxwZ7BeB1GqLpEoo7qQijeBJ_tScPeuBAEHOZ5-XFG0iySBeomPbo-7f2-LKgsOfvbMyWQSF9DSwi_FYZgcyC79A-_RbA/s320/amon.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJoNNVxwjJOhKnyOMtCRRyygN6rCtEI6p02CCzjoxDuSYf0HxwZ7BeB1GqLpEoo7qQijeBJ_tScPeuBAEHOZ5-XFG0iySBeomPbo-7f2-LKgsOfvbMyWQSF9DSwi_FYZgcyC79A-_RbA/s320/amon.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJoNNVxwjJOhKnyOMtCRRyygN6rCtEI6p02CCzjoxDuSYf0HxwZ7BeB1GqLpEoo7qQijeBJ_tScPeuBAEHOZ5-XFG0iySBeomPbo-7f2-LKgsOfvbMyWQSF9DSwi_FYZgcyC79A-_RbA/s480/amon.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJoNNVxwjJOhKnyOMtCRRyygN6rCtEI6p02CCzjoxDuSYf0HxwZ7BeB1GqLpEoo7qQijeBJ_tScPeuBAEHOZ5-XFG0iySBeomPbo-7f2-LKgsOfvbMyWQSF9DSwi_FYZgcyC79A-_RbA/s640/amon.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJoNNVxwjJOhKnyOMtCRRyygN6rCtEI6p02CCzjoxDuSYf0HxwZ7BeB1GqLpEoo7qQijeBJ_tScPeuBAEHOZ5-XFG0iySBeomPbo-7f2-LKgsOfvbMyWQSF9DSwi_FYZgcyC79A-_RbA/s320/amon.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJoNNVxwjJOhKnyOMtCRRyygN6rCtEI6p02CCzjoxDuSYf0HxwZ7BeB1GqLpEoo7qQijeBJ_tScPeuBAEHOZ5-XFG0iySBeomPbo-7f2-LKgsOfvbMyWQSF9DSwi_FYZgcyC79A-_RbA/s480/amon.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJoNNVxwjJOhKnyOMtCRRyygN6rCtEI6p02CCzjoxDuSYf0HxwZ7BeB1GqLpEoo7qQijeBJ_tScPeuBAEHOZ5-XFG0iySBeomPbo-7f2-LKgsOfvbMyWQSF9DSwi_FYZgcyC79A-_RbA/s640/amon.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 396 - El directo de Arctic Monkeys en 2018"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -210,8 +205,7 @@
           </a><a class="related-bottom-card" href="programa-391-liam-vs-noel.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQU_KDOtLuvHsuuugs9o8dwJ9owGHKql7wo_OeQcelyqpppKaJc24c368KMwCyNZMvfOZd6PALSziUciWhiwQiSOrw42CWMKdvcEABqxalvJzRFNZ91I9Y3pa35kryc97VEM8vrRV6_JQ/s320/liam_y_noel_gallagher_23_anos_odiandose_1878_863x647.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQU_KDOtLuvHsuuugs9o8dwJ9owGHKql7wo_OeQcelyqpppKaJc24c368KMwCyNZMvfOZd6PALSziUciWhiwQiSOrw42CWMKdvcEABqxalvJzRFNZ91I9Y3pa35kryc97VEM8vrRV6_JQ/s320/liam_y_noel_gallagher_23_anos_odiandose_1878_863x647.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQU_KDOtLuvHsuuugs9o8dwJ9owGHKql7wo_OeQcelyqpppKaJc24c368KMwCyNZMvfOZd6PALSziUciWhiwQiSOrw42CWMKdvcEABqxalvJzRFNZ91I9Y3pa35kryc97VEM8vrRV6_JQ/s480/liam_y_noel_gallagher_23_anos_odiandose_1878_863x647.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQU_KDOtLuvHsuuugs9o8dwJ9owGHKql7wo_OeQcelyqpppKaJc24c368KMwCyNZMvfOZd6PALSziUciWhiwQiSOrw42CWMKdvcEABqxalvJzRFNZ91I9Y3pa35kryc97VEM8vrRV6_JQ/s640/liam_y_noel_gallagher_23_anos_odiandose_1878_863x647.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQU_KDOtLuvHsuuugs9o8dwJ9owGHKql7wo_OeQcelyqpppKaJc24c368KMwCyNZMvfOZd6PALSziUciWhiwQiSOrw42CWMKdvcEABqxalvJzRFNZ91I9Y3pa35kryc97VEM8vrRV6_JQ/s320/liam_y_noel_gallagher_23_anos_odiandose_1878_863x647.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQU_KDOtLuvHsuuugs9o8dwJ9owGHKql7wo_OeQcelyqpppKaJc24c368KMwCyNZMvfOZd6PALSziUciWhiwQiSOrw42CWMKdvcEABqxalvJzRFNZ91I9Y3pa35kryc97VEM8vrRV6_JQ/s480/liam_y_noel_gallagher_23_anos_odiandose_1878_863x647.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQU_KDOtLuvHsuuugs9o8dwJ9owGHKql7wo_OeQcelyqpppKaJc24c368KMwCyNZMvfOZd6PALSziUciWhiwQiSOrw42CWMKdvcEABqxalvJzRFNZ91I9Y3pa35kryc97VEM8vrRV6_JQ/s640/liam_y_noel_gallagher_23_anos_odiandose_1878_863x647.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 391 - Liam vs. Noel"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

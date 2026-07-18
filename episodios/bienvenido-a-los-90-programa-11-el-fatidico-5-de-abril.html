@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Bienvenido a los 90 - Programa #11 - El fatídico 5 de Abril — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -131,8 +131,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s320/1991-in-music.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s160/1991-in-music.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s320/1991-in-music.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s480/1991-in-music.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s160/1991-in-music.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s320/1991-in-music.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s480/1991-in-music.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.792 - El repaso definitivo a 1991 "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -142,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa 21 - MTV Unplugged"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -153,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 63 - MUSE, BEADY EYE, NIRVANA, RHCP, STANDSTILL..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -170,8 +167,7 @@
         <a class="related-bottom-card" href="programa-69-green-day-offspring-weezer-fugazi-alice-in-chains.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 69 - GREEN DAY, OFFSPRING, WEEZER, FUGAZI, ALICE IN CHAINS..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -182,8 +178,7 @@
           </a><a class="related-bottom-card" href="programa-107-soundgarden-alice-in-chains-nirvana-61-garage-y-nomada.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 107 - Soundgarden, Alice in Chains, Nirvana, 61 Garage y Nómada"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -194,8 +189,7 @@
           </a><a class="related-bottom-card" href="especial-the-afghan-whigs.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoWcCc21lhPn1hXFDIUYMA9wlSarEO9EkizB2gXlw0Z8ZUZ6EVuahU6ZsSXtjTVMVQuwqZKGb-ODeukmbhbzI5kyQ_pWthJnb2p-zrINqyXD7mNp-gtUvrBMaHJuJZrw-f60EJB1Q8bAw/s320/IMG_20150425_113715.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoWcCc21lhPn1hXFDIUYMA9wlSarEO9EkizB2gXlw0Z8ZUZ6EVuahU6ZsSXtjTVMVQuwqZKGb-ODeukmbhbzI5kyQ_pWthJnb2p-zrINqyXD7mNp-gtUvrBMaHJuJZrw-f60EJB1Q8bAw/s320/IMG_20150425_113715.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoWcCc21lhPn1hXFDIUYMA9wlSarEO9EkizB2gXlw0Z8ZUZ6EVuahU6ZsSXtjTVMVQuwqZKGb-ODeukmbhbzI5kyQ_pWthJnb2p-zrINqyXD7mNp-gtUvrBMaHJuJZrw-f60EJB1Q8bAw/s480/IMG_20150425_113715.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoWcCc21lhPn1hXFDIUYMA9wlSarEO9EkizB2gXlw0Z8ZUZ6EVuahU6ZsSXtjTVMVQuwqZKGb-ODeukmbhbzI5kyQ_pWthJnb2p-zrINqyXD7mNp-gtUvrBMaHJuJZrw-f60EJB1Q8bAw/s640/IMG_20150425_113715.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoWcCc21lhPn1hXFDIUYMA9wlSarEO9EkizB2gXlw0Z8ZUZ6EVuahU6ZsSXtjTVMVQuwqZKGb-ODeukmbhbzI5kyQ_pWthJnb2p-zrINqyXD7mNp-gtUvrBMaHJuJZrw-f60EJB1Q8bAw/s320/IMG_20150425_113715.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoWcCc21lhPn1hXFDIUYMA9wlSarEO9EkizB2gXlw0Z8ZUZ6EVuahU6ZsSXtjTVMVQuwqZKGb-ODeukmbhbzI5kyQ_pWthJnb2p-zrINqyXD7mNp-gtUvrBMaHJuJZrw-f60EJB1Q8bAw/s480/IMG_20150425_113715.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoWcCc21lhPn1hXFDIUYMA9wlSarEO9EkizB2gXlw0Z8ZUZ6EVuahU6ZsSXtjTVMVQuwqZKGb-ODeukmbhbzI5kyQ_pWthJnb2p-zrINqyXD7mNp-gtUvrBMaHJuJZrw-f60EJB1Q8bAw/s640/IMG_20150425_113715.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Especial The Afghan Whigs"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

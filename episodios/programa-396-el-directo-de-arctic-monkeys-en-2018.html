@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 396 - El directo de Arctic Monkeys en 2018 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQq_QYfv1BhZH7SLanyAUNmTiOxmgmGZ6UMudNLCKj_P5NA43EM9mdQhNOu8fQ8j0-4eS1G9Ehbq4NrchlsHTQfCqYvIkeJLR1QzMkSYLviqORFaLc-5DdY5pHDAXSIRoYr7HguGmv-rc/s320/am.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQq_QYfv1BhZH7SLanyAUNmTiOxmgmGZ6UMudNLCKj_P5NA43EM9mdQhNOu8fQ8j0-4eS1G9Ehbq4NrchlsHTQfCqYvIkeJLR1QzMkSYLviqORFaLc-5DdY5pHDAXSIRoYr7HguGmv-rc/s160/am.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQq_QYfv1BhZH7SLanyAUNmTiOxmgmGZ6UMudNLCKj_P5NA43EM9mdQhNOu8fQ8j0-4eS1G9Ehbq4NrchlsHTQfCqYvIkeJLR1QzMkSYLviqORFaLc-5DdY5pHDAXSIRoYr7HguGmv-rc/s320/am.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQq_QYfv1BhZH7SLanyAUNmTiOxmgmGZ6UMudNLCKj_P5NA43EM9mdQhNOu8fQ8j0-4eS1G9Ehbq4NrchlsHTQfCqYvIkeJLR1QzMkSYLviqORFaLc-5DdY5pHDAXSIRoYr7HguGmv-rc/s480/am.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQq_QYfv1BhZH7SLanyAUNmTiOxmgmGZ6UMudNLCKj_P5NA43EM9mdQhNOu8fQ8j0-4eS1G9Ehbq4NrchlsHTQfCqYvIkeJLR1QzMkSYLviqORFaLc-5DdY5pHDAXSIRoYr7HguGmv-rc/s160/am.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQq_QYfv1BhZH7SLanyAUNmTiOxmgmGZ6UMudNLCKj_P5NA43EM9mdQhNOu8fQ8j0-4eS1G9Ehbq4NrchlsHTQfCqYvIkeJLR1QzMkSYLviqORFaLc-5DdY5pHDAXSIRoYr7HguGmv-rc/s320/am.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQq_QYfv1BhZH7SLanyAUNmTiOxmgmGZ6UMudNLCKj_P5NA43EM9mdQhNOu8fQ8j0-4eS1G9Ehbq4NrchlsHTQfCqYvIkeJLR1QzMkSYLviqORFaLc-5DdY5pHDAXSIRoYr7HguGmv-rc/s480/am.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 382 - Arctic Monkeys – Tranquility Base Hotel &amp; Casino (2018)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Uu3y4Dx3CGqeJe4ZEUmTvYfBrsYEJZbrRwXHFm-AlFNkRCQBcLKQpimg-30lXkcqVZXOKTt07MZ5WsE1LGWxcxaKSjrCM-KUbCy02GdyIjtpfQOLKvbapjLV-9kVSZt3MvTAcp5pi94/s320/aictourmarch.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Uu3y4Dx3CGqeJe4ZEUmTvYfBrsYEJZbrRwXHFm-AlFNkRCQBcLKQpimg-30lXkcqVZXOKTt07MZ5WsE1LGWxcxaKSjrCM-KUbCy02GdyIjtpfQOLKvbapjLV-9kVSZt3MvTAcp5pi94/s160/aictourmarch.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Uu3y4Dx3CGqeJe4ZEUmTvYfBrsYEJZbrRwXHFm-AlFNkRCQBcLKQpimg-30lXkcqVZXOKTt07MZ5WsE1LGWxcxaKSjrCM-KUbCy02GdyIjtpfQOLKvbapjLV-9kVSZt3MvTAcp5pi94/s320/aictourmarch.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Uu3y4Dx3CGqeJe4ZEUmTvYfBrsYEJZbrRwXHFm-AlFNkRCQBcLKQpimg-30lXkcqVZXOKTt07MZ5WsE1LGWxcxaKSjrCM-KUbCy02GdyIjtpfQOLKvbapjLV-9kVSZt3MvTAcp5pi94/s480/aictourmarch.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Uu3y4Dx3CGqeJe4ZEUmTvYfBrsYEJZbrRwXHFm-AlFNkRCQBcLKQpimg-30lXkcqVZXOKTt07MZ5WsE1LGWxcxaKSjrCM-KUbCy02GdyIjtpfQOLKvbapjLV-9kVSZt3MvTAcp5pi94/s160/aictourmarch.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Uu3y4Dx3CGqeJe4ZEUmTvYfBrsYEJZbrRwXHFm-AlFNkRCQBcLKQpimg-30lXkcqVZXOKTt07MZ5WsE1LGWxcxaKSjrCM-KUbCy02GdyIjtpfQOLKvbapjLV-9kVSZt3MvTAcp5pi94/s320/aictourmarch.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Uu3y4Dx3CGqeJe4ZEUmTvYfBrsYEJZbrRwXHFm-AlFNkRCQBcLKQpimg-30lXkcqVZXOKTt07MZ5WsE1LGWxcxaKSjrCM-KUbCy02GdyIjtpfQOLKvbapjLV-9kVSZt3MvTAcp5pi94/s480/aictourmarch.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 407 - Alice in Chains en directo 2018"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s320/madcool2018.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s160/madcool2018.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s320/madcool2018.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s480/madcool2018.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s160/madcool2018.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s320/madcool2018.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QLRKPe350VK0TQzT5BagaE8RwYpXJ_giacG4bV93yc7n1S0jpiF6zrgF-jgc4KIqU5c-9cQNjiu-Q0o-pnvXlxUEV3mR4UnFm7CUAGwhfohWJHAyfiK6_CiveXWIq9TRpJC3kB4IspI/s480/madcool2018.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 324 – Mad Cool 2018"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="programa-393-maria-rodes-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJr5GL94NUJ5-GsI1iOv3Xede9lDMQmP1h0e3eOpHId1hOzTbbaFYLGGA7RU6E3h1DivXVD_v3bW6p_6qdWZOPPyl5g0HlxJBwEhzHcanGm0aXRCLsak9M1HzqvmwnE8ibCfHvtTcnGrc/s320/mariarodes.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJr5GL94NUJ5-GsI1iOv3Xede9lDMQmP1h0e3eOpHId1hOzTbbaFYLGGA7RU6E3h1DivXVD_v3bW6p_6qdWZOPPyl5g0HlxJBwEhzHcanGm0aXRCLsak9M1HzqvmwnE8ibCfHvtTcnGrc/s320/mariarodes.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJr5GL94NUJ5-GsI1iOv3Xede9lDMQmP1h0e3eOpHId1hOzTbbaFYLGGA7RU6E3h1DivXVD_v3bW6p_6qdWZOPPyl5g0HlxJBwEhzHcanGm0aXRCLsak9M1HzqvmwnE8ibCfHvtTcnGrc/s480/mariarodes.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJr5GL94NUJ5-GsI1iOv3Xede9lDMQmP1h0e3eOpHId1hOzTbbaFYLGGA7RU6E3h1DivXVD_v3bW6p_6qdWZOPPyl5g0HlxJBwEhzHcanGm0aXRCLsak9M1HzqvmwnE8ibCfHvtTcnGrc/s640/mariarodes.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJr5GL94NUJ5-GsI1iOv3Xede9lDMQmP1h0e3eOpHId1hOzTbbaFYLGGA7RU6E3h1DivXVD_v3bW6p_6qdWZOPPyl5g0HlxJBwEhzHcanGm0aXRCLsak9M1HzqvmwnE8ibCfHvtTcnGrc/s320/mariarodes.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJr5GL94NUJ5-GsI1iOv3Xede9lDMQmP1h0e3eOpHId1hOzTbbaFYLGGA7RU6E3h1DivXVD_v3bW6p_6qdWZOPPyl5g0HlxJBwEhzHcanGm0aXRCLsak9M1HzqvmwnE8ibCfHvtTcnGrc/s480/mariarodes.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJr5GL94NUJ5-GsI1iOv3Xede9lDMQmP1h0e3eOpHId1hOzTbbaFYLGGA7RU6E3h1DivXVD_v3bW6p_6qdWZOPPyl5g0HlxJBwEhzHcanGm0aXRCLsak9M1HzqvmwnE8ibCfHvtTcnGrc/s640/mariarodes.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 393 - Maria Rodés (2018)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="programa-400-con-paco-perez-bryan.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s480/IMG_20180608_163539.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s640/IMG_20180608_163539.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s480/IMG_20180608_163539.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s640/IMG_20180608_163539.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 400 con Paco Pérez Bryan"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="programa-391-liam-vs-noel.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQU_KDOtLuvHsuuugs9o8dwJ9owGHKql7wo_OeQcelyqpppKaJc24c368KMwCyNZMvfOZd6PALSziUciWhiwQiSOrw42CWMKdvcEABqxalvJzRFNZ91I9Y3pa35kryc97VEM8vrRV6_JQ/s320/liam_y_noel_gallagher_23_anos_odiandose_1878_863x647.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQU_KDOtLuvHsuuugs9o8dwJ9owGHKql7wo_OeQcelyqpppKaJc24c368KMwCyNZMvfOZd6PALSziUciWhiwQiSOrw42CWMKdvcEABqxalvJzRFNZ91I9Y3pa35kryc97VEM8vrRV6_JQ/s320/liam_y_noel_gallagher_23_anos_odiandose_1878_863x647.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQU_KDOtLuvHsuuugs9o8dwJ9owGHKql7wo_OeQcelyqpppKaJc24c368KMwCyNZMvfOZd6PALSziUciWhiwQiSOrw42CWMKdvcEABqxalvJzRFNZ91I9Y3pa35kryc97VEM8vrRV6_JQ/s480/liam_y_noel_gallagher_23_anos_odiandose_1878_863x647.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQU_KDOtLuvHsuuugs9o8dwJ9owGHKql7wo_OeQcelyqpppKaJc24c368KMwCyNZMvfOZd6PALSziUciWhiwQiSOrw42CWMKdvcEABqxalvJzRFNZ91I9Y3pa35kryc97VEM8vrRV6_JQ/s640/liam_y_noel_gallagher_23_anos_odiandose_1878_863x647.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQU_KDOtLuvHsuuugs9o8dwJ9owGHKql7wo_OeQcelyqpppKaJc24c368KMwCyNZMvfOZd6PALSziUciWhiwQiSOrw42CWMKdvcEABqxalvJzRFNZ91I9Y3pa35kryc97VEM8vrRV6_JQ/s320/liam_y_noel_gallagher_23_anos_odiandose_1878_863x647.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQU_KDOtLuvHsuuugs9o8dwJ9owGHKql7wo_OeQcelyqpppKaJc24c368KMwCyNZMvfOZd6PALSziUciWhiwQiSOrw42CWMKdvcEABqxalvJzRFNZ91I9Y3pa35kryc97VEM8vrRV6_JQ/s480/liam_y_noel_gallagher_23_anos_odiandose_1878_863x647.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQU_KDOtLuvHsuuugs9o8dwJ9owGHKql7wo_OeQcelyqpppKaJc24c368KMwCyNZMvfOZd6PALSziUciWhiwQiSOrw42CWMKdvcEABqxalvJzRFNZ91I9Y3pa35kryc97VEM8vrRV6_JQ/s640/liam_y_noel_gallagher_23_anos_odiandose_1878_863x647.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 391 - Liam vs. Noel"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

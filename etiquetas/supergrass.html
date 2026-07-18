@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Supergrass — 7 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1088-especial-1995-2-5-monster-magnet-morphine-silverchair-wilco-faith-no-more-chris-.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s320/b90_1088.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s160/b90_1088.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s320/b90_1088.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s480/b90_1088.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s160/b90_1088.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s320/b90_1088.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s480/b90_1088.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1088 - Especial 1995 (2/5) Monster Magnet, Morphine, Silverchair, Wilco, Faith No More, Chris Isaak,..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-604-hablamos-de-lo-ultimo-de-green-day-stone-temple-pilots-pearl-jam.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbxfFORtHKZUUd4BfE6Isl34CJVEieWFwgcf1q9vKAlU7mtKVbAU2WtjKWCjigSagYfMR7qwIGw7QCy3SA2mNJN4hbf4QzZJGXC_8vg7VhYYaL8k2meG1hx6ETyiB7NXHUZiuWVDaxMpU/s320/b90_604.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbxfFORtHKZUUd4BfE6Isl34CJVEieWFwgcf1q9vKAlU7mtKVbAU2WtjKWCjigSagYfMR7qwIGw7QCy3SA2mNJN4hbf4QzZJGXC_8vg7VhYYaL8k2meG1hx6ETyiB7NXHUZiuWVDaxMpU/s160/b90_604.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbxfFORtHKZUUd4BfE6Isl34CJVEieWFwgcf1q9vKAlU7mtKVbAU2WtjKWCjigSagYfMR7qwIGw7QCy3SA2mNJN4hbf4QzZJGXC_8vg7VhYYaL8k2meG1hx6ETyiB7NXHUZiuWVDaxMpU/s320/b90_604.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbxfFORtHKZUUd4BfE6Isl34CJVEieWFwgcf1q9vKAlU7mtKVbAU2WtjKWCjigSagYfMR7qwIGw7QCy3SA2mNJN4hbf4QzZJGXC_8vg7VhYYaL8k2meG1hx6ETyiB7NXHUZiuWVDaxMpU/s480/b90_604.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbxfFORtHKZUUd4BfE6Isl34CJVEieWFwgcf1q9vKAlU7mtKVbAU2WtjKWCjigSagYfMR7qwIGw7QCy3SA2mNJN4hbf4QzZJGXC_8vg7VhYYaL8k2meG1hx6ETyiB7NXHUZiuWVDaxMpU/s160/b90_604.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbxfFORtHKZUUd4BfE6Isl34CJVEieWFwgcf1q9vKAlU7mtKVbAU2WtjKWCjigSagYfMR7qwIGw7QCy3SA2mNJN4hbf4QzZJGXC_8vg7VhYYaL8k2meG1hx6ETyiB7NXHUZiuWVDaxMpU/s320/b90_604.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbxfFORtHKZUUd4BfE6Isl34CJVEieWFwgcf1q9vKAlU7mtKVbAU2WtjKWCjigSagYfMR7qwIGw7QCy3SA2mNJN4hbf4QzZJGXC_8vg7VhYYaL8k2meG1hx6ETyiB7NXHUZiuWVDaxMpU/s480/b90_604.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.604 - Hablamos de lo último de Green Day, Stone Temple Pilots, Pearl Jam..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-467-gaz-coombes-supergrass.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM2mX5G-w6elhWlhxhZG6L3fciSaH21WhcxIOE1uctSJUkv7-isdRWXd32mSAynkwPa4vRNw37uSDrhjFVvDztB0ndXjDmEN2sXr7FP_4TG1K5c0nGIo5VWNgcuZTg7UN8WiVeFQLiOoo/s320/b90_467.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM2mX5G-w6elhWlhxhZG6L3fciSaH21WhcxIOE1uctSJUkv7-isdRWXd32mSAynkwPa4vRNw37uSDrhjFVvDztB0ndXjDmEN2sXr7FP_4TG1K5c0nGIo5VWNgcuZTg7UN8WiVeFQLiOoo/s160/b90_467.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM2mX5G-w6elhWlhxhZG6L3fciSaH21WhcxIOE1uctSJUkv7-isdRWXd32mSAynkwPa4vRNw37uSDrhjFVvDztB0ndXjDmEN2sXr7FP_4TG1K5c0nGIo5VWNgcuZTg7UN8WiVeFQLiOoo/s320/b90_467.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM2mX5G-w6elhWlhxhZG6L3fciSaH21WhcxIOE1uctSJUkv7-isdRWXd32mSAynkwPa4vRNw37uSDrhjFVvDztB0ndXjDmEN2sXr7FP_4TG1K5c0nGIo5VWNgcuZTg7UN8WiVeFQLiOoo/s480/b90_467.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM2mX5G-w6elhWlhxhZG6L3fciSaH21WhcxIOE1uctSJUkv7-isdRWXd32mSAynkwPa4vRNw37uSDrhjFVvDztB0ndXjDmEN2sXr7FP_4TG1K5c0nGIo5VWNgcuZTg7UN8WiVeFQLiOoo/s160/b90_467.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM2mX5G-w6elhWlhxhZG6L3fciSaH21WhcxIOE1uctSJUkv7-isdRWXd32mSAynkwPa4vRNw37uSDrhjFVvDztB0ndXjDmEN2sXr7FP_4TG1K5c0nGIo5VWNgcuZTg7UN8WiVeFQLiOoo/s320/b90_467.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM2mX5G-w6elhWlhxhZG6L3fciSaH21WhcxIOE1uctSJUkv7-isdRWXd32mSAynkwPa4vRNw37uSDrhjFVvDztB0ndXjDmEN2sXr7FP_4TG1K5c0nGIo5VWNgcuZTg7UN8WiVeFQLiOoo/s480/b90_467.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 467 - Gaz Coombes (Supergrass)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-244-antes-del-britpop-the-verve.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s320/verve.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s160/verve.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s320/verve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s480/verve.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s160/verve.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s320/verve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s480/verve.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 244 - Antes del Britpop + The Verve"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-29-fin-de-fiesta-con-rkdrano.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa 29 - Fin de fiesta con Rkdrano"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-16-yo-soy-la-morsa.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa #16 - Yo soy la morsa"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-14-los-hermanos-guerrero.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa #14 - Los hermanos Guerrero"
                 loading="lazy" width="320" height="213" />
         </a>

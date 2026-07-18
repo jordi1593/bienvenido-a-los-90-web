@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 123 - Manic Street Preachers — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -129,8 +129,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqUvnadvM56onOygLyZIfs099NH1EGtGX39YA0f7P72jTut7-uQRmHBJIjxE4GxG9_QaOPlST-Exw2spWo7pvAE_6lr0FBAPmmt7WScrJAurHxVMmaatSWW548TI05TiqWOp8HZ8tF0N0/s320/58a2fbef7a50a4fb52cef2bf58fc09a3.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqUvnadvM56onOygLyZIfs099NH1EGtGX39YA0f7P72jTut7-uQRmHBJIjxE4GxG9_QaOPlST-Exw2spWo7pvAE_6lr0FBAPmmt7WScrJAurHxVMmaatSWW548TI05TiqWOp8HZ8tF0N0/s160/58a2fbef7a50a4fb52cef2bf58fc09a3.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqUvnadvM56onOygLyZIfs099NH1EGtGX39YA0f7P72jTut7-uQRmHBJIjxE4GxG9_QaOPlST-Exw2spWo7pvAE_6lr0FBAPmmt7WScrJAurHxVMmaatSWW548TI05TiqWOp8HZ8tF0N0/s320/58a2fbef7a50a4fb52cef2bf58fc09a3.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqUvnadvM56onOygLyZIfs099NH1EGtGX39YA0f7P72jTut7-uQRmHBJIjxE4GxG9_QaOPlST-Exw2spWo7pvAE_6lr0FBAPmmt7WScrJAurHxVMmaatSWW548TI05TiqWOp8HZ8tF0N0/s480/58a2fbef7a50a4fb52cef2bf58fc09a3.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqUvnadvM56onOygLyZIfs099NH1EGtGX39YA0f7P72jTut7-uQRmHBJIjxE4GxG9_QaOPlST-Exw2spWo7pvAE_6lr0FBAPmmt7WScrJAurHxVMmaatSWW548TI05TiqWOp8HZ8tF0N0/s160/58a2fbef7a50a4fb52cef2bf58fc09a3.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqUvnadvM56onOygLyZIfs099NH1EGtGX39YA0f7P72jTut7-uQRmHBJIjxE4GxG9_QaOPlST-Exw2spWo7pvAE_6lr0FBAPmmt7WScrJAurHxVMmaatSWW548TI05TiqWOp8HZ8tF0N0/s320/58a2fbef7a50a4fb52cef2bf58fc09a3.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqUvnadvM56onOygLyZIfs099NH1EGtGX39YA0f7P72jTut7-uQRmHBJIjxE4GxG9_QaOPlST-Exw2spWo7pvAE_6lr0FBAPmmt7WScrJAurHxVMmaatSWW548TI05TiqWOp8HZ8tF0N0/s480/58a2fbef7a50a4fb52cef2bf58fc09a3.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 469 - Manic Street Preachers - This Is My Truth Tell Me Yours cumple 20 años"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -140,8 +139,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2QffnT6_hvkyxf94751LhPN3ofxAO60G7ILX6TgmBtgFyKD3TrYFH4Vq7mmk_c9vtKdTyovkz0cNNfB73PUUr-gkmkmsRLDIYYFV7ikca6WZqKYojeeD93dlGxJHpw7xXLfzfgjMKxfI/s320/richey.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2QffnT6_hvkyxf94751LhPN3ofxAO60G7ILX6TgmBtgFyKD3TrYFH4Vq7mmk_c9vtKdTyovkz0cNNfB73PUUr-gkmkmsRLDIYYFV7ikca6WZqKYojeeD93dlGxJHpw7xXLfzfgjMKxfI/s160/richey.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2QffnT6_hvkyxf94751LhPN3ofxAO60G7ILX6TgmBtgFyKD3TrYFH4Vq7mmk_c9vtKdTyovkz0cNNfB73PUUr-gkmkmsRLDIYYFV7ikca6WZqKYojeeD93dlGxJHpw7xXLfzfgjMKxfI/s320/richey.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2QffnT6_hvkyxf94751LhPN3ofxAO60G7ILX6TgmBtgFyKD3TrYFH4Vq7mmk_c9vtKdTyovkz0cNNfB73PUUr-gkmkmsRLDIYYFV7ikca6WZqKYojeeD93dlGxJHpw7xXLfzfgjMKxfI/s480/richey.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2QffnT6_hvkyxf94751LhPN3ofxAO60G7ILX6TgmBtgFyKD3TrYFH4Vq7mmk_c9vtKdTyovkz0cNNfB73PUUr-gkmkmsRLDIYYFV7ikca6WZqKYojeeD93dlGxJHpw7xXLfzfgjMKxfI/s160/richey.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2QffnT6_hvkyxf94751LhPN3ofxAO60G7ILX6TgmBtgFyKD3TrYFH4Vq7mmk_c9vtKdTyovkz0cNNfB73PUUr-gkmkmsRLDIYYFV7ikca6WZqKYojeeD93dlGxJHpw7xXLfzfgjMKxfI/s320/richey.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2QffnT6_hvkyxf94751LhPN3ofxAO60G7ILX6TgmBtgFyKD3TrYFH4Vq7mmk_c9vtKdTyovkz0cNNfB73PUUr-gkmkmsRLDIYYFV7ikca6WZqKYojeeD93dlGxJHpw7xXLfzfgjMKxfI/s480/richey.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.603 - Richey James Edwards (Manic Street Preachers)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -151,8 +149,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 122 - Eels en Madrid y Glastonbury 2014"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -168,8 +165,7 @@
         <a class="related-bottom-card" href="programa-124-portishead-18-de-julio-2014-madrid.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbljXuoamvZfDC20dyxAyt2aJYbYYSmoPbX1a4z5VrLK4RyoHGq5AerFW-LxWVgXVNd2stra-yFaLMiwjqatGrKanerYBRj2RHmRWoGIyny9iizZHpPT9tX_ghV2pgGfnksEJd51vT-S0/s320/Portishead-129RetP1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbljXuoamvZfDC20dyxAyt2aJYbYYSmoPbX1a4z5VrLK4RyoHGq5AerFW-LxWVgXVNd2stra-yFaLMiwjqatGrKanerYBRj2RHmRWoGIyny9iizZHpPT9tX_ghV2pgGfnksEJd51vT-S0/s320/Portishead-129RetP1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbljXuoamvZfDC20dyxAyt2aJYbYYSmoPbX1a4z5VrLK4RyoHGq5AerFW-LxWVgXVNd2stra-yFaLMiwjqatGrKanerYBRj2RHmRWoGIyny9iizZHpPT9tX_ghV2pgGfnksEJd51vT-S0/s480/Portishead-129RetP1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbljXuoamvZfDC20dyxAyt2aJYbYYSmoPbX1a4z5VrLK4RyoHGq5AerFW-LxWVgXVNd2stra-yFaLMiwjqatGrKanerYBRj2RHmRWoGIyny9iizZHpPT9tX_ghV2pgGfnksEJd51vT-S0/s640/Portishead-129RetP1.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbljXuoamvZfDC20dyxAyt2aJYbYYSmoPbX1a4z5VrLK4RyoHGq5AerFW-LxWVgXVNd2stra-yFaLMiwjqatGrKanerYBRj2RHmRWoGIyny9iizZHpPT9tX_ghV2pgGfnksEJd51vT-S0/s320/Portishead-129RetP1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbljXuoamvZfDC20dyxAyt2aJYbYYSmoPbX1a4z5VrLK4RyoHGq5AerFW-LxWVgXVNd2stra-yFaLMiwjqatGrKanerYBRj2RHmRWoGIyny9iizZHpPT9tX_ghV2pgGfnksEJd51vT-S0/s480/Portishead-129RetP1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbljXuoamvZfDC20dyxAyt2aJYbYYSmoPbX1a4z5VrLK4RyoHGq5AerFW-LxWVgXVNd2stra-yFaLMiwjqatGrKanerYBRj2RHmRWoGIyny9iizZHpPT9tX_ghV2pgGfnksEJd51vT-S0/s640/Portishead-129RetP1.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 124 - Portishead 18 de Julio 2014 Madrid"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -180,8 +176,7 @@
           </a><a class="related-bottom-card" href="b90-programa-75.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 - Programa 75"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -192,8 +187,7 @@
           </a><a class="related-bottom-card" href="programa-237-los-90-s-rinden-tributo.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicpPAOzyHcb-oDUaymD04Xlf8KNeKPEKc5Z-rEuhHDS_SYCVVxCPrpDJtZ6U7wpl8Xb5B2xG_62bWfdtQZ28-kNlJp2RnSfEbw9_inEeE7FE4ftsc-Nbni-zBdDXfAMzodAx2ukBW8PuI/s320/combine_images3-630x420.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicpPAOzyHcb-oDUaymD04Xlf8KNeKPEKc5Z-rEuhHDS_SYCVVxCPrpDJtZ6U7wpl8Xb5B2xG_62bWfdtQZ28-kNlJp2RnSfEbw9_inEeE7FE4ftsc-Nbni-zBdDXfAMzodAx2ukBW8PuI/s320/combine_images3-630x420.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicpPAOzyHcb-oDUaymD04Xlf8KNeKPEKc5Z-rEuhHDS_SYCVVxCPrpDJtZ6U7wpl8Xb5B2xG_62bWfdtQZ28-kNlJp2RnSfEbw9_inEeE7FE4ftsc-Nbni-zBdDXfAMzodAx2ukBW8PuI/s480/combine_images3-630x420.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicpPAOzyHcb-oDUaymD04Xlf8KNeKPEKc5Z-rEuhHDS_SYCVVxCPrpDJtZ6U7wpl8Xb5B2xG_62bWfdtQZ28-kNlJp2RnSfEbw9_inEeE7FE4ftsc-Nbni-zBdDXfAMzodAx2ukBW8PuI/s640/combine_images3-630x420.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicpPAOzyHcb-oDUaymD04Xlf8KNeKPEKc5Z-rEuhHDS_SYCVVxCPrpDJtZ6U7wpl8Xb5B2xG_62bWfdtQZ28-kNlJp2RnSfEbw9_inEeE7FE4ftsc-Nbni-zBdDXfAMzodAx2ukBW8PuI/s320/combine_images3-630x420.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicpPAOzyHcb-oDUaymD04Xlf8KNeKPEKc5Z-rEuhHDS_SYCVVxCPrpDJtZ6U7wpl8Xb5B2xG_62bWfdtQZ28-kNlJp2RnSfEbw9_inEeE7FE4ftsc-Nbni-zBdDXfAMzodAx2ukBW8PuI/s480/combine_images3-630x420.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicpPAOzyHcb-oDUaymD04Xlf8KNeKPEKc5Z-rEuhHDS_SYCVVxCPrpDJtZ6U7wpl8Xb5B2xG_62bWfdtQZ28-kNlJp2RnSfEbw9_inEeE7FE4ftsc-Nbni-zBdDXfAMzodAx2ukBW8PuI/s640/combine_images3-630x420.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 237 - Los 90&#39;s rinden tributo"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

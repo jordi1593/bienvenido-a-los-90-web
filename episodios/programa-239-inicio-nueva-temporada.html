@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 239 - Inicio nueva temporada — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -149,8 +149,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 70 - Canciones olvidadas de los 90"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -160,8 +159,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s320/ni7bimcmykx01.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s160/ni7bimcmykx01.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s320/ni7bimcmykx01.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s480/ni7bimcmykx01.webp 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s160/ni7bimcmykx01.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s320/ni7bimcmykx01.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s480/ni7bimcmykx01.webp 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.844 - He vuelto a grabar el primer programa de B90: Kurt tuvo la culpa... (Remastered)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +169,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s160/b90_934_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s480/b90_934_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s160/b90_934_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s480/b90_934_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.934 - Remasterizaciones 2023, ¿valen la pena?"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -188,8 +185,7 @@
         <a class="related-bottom-card" href="programa-245-canciones-ocultas.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s320/cancion.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s320/cancion.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s480/cancion.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s640/cancion.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s320/cancion.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s480/cancion.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s640/cancion.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 245 - Canciones ocultas"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -200,8 +196,7 @@
           </a><a class="related-bottom-card" href="programa-236-riot-girls.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s320/13754394_1318527614831545_8016198913287522190_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s320/13754394_1318527614831545_8016198913287522190_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s480/13754394_1318527614831545_8016198913287522190_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s640/13754394_1318527614831545_8016198913287522190_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s320/13754394_1318527614831545_8016198913287522190_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s480/13754394_1318527614831545_8016198913287522190_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s640/13754394_1318527614831545_8016198913287522190_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 236 - Riot Girls "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -212,8 +207,7 @@
           </a><a class="related-bottom-card" href="b90-programa-79-vinilos-de-los-90.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLs7TqBcWwhO3BxwLoi6UXrhW1uyBDDvtD0e-C0a52gb_6OB3MvQ0pCmGc_EdYhXiL4V80-8UwpZI2Akwf-_vMdQwUuOn5qbwxHLCohnmFlPFZahYme4G_cQqtNgD9VfvVfdN1JzUoiKk/s320/1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLs7TqBcWwhO3BxwLoi6UXrhW1uyBDDvtD0e-C0a52gb_6OB3MvQ0pCmGc_EdYhXiL4V80-8UwpZI2Akwf-_vMdQwUuOn5qbwxHLCohnmFlPFZahYme4G_cQqtNgD9VfvVfdN1JzUoiKk/s320/1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLs7TqBcWwhO3BxwLoi6UXrhW1uyBDDvtD0e-C0a52gb_6OB3MvQ0pCmGc_EdYhXiL4V80-8UwpZI2Akwf-_vMdQwUuOn5qbwxHLCohnmFlPFZahYme4G_cQqtNgD9VfvVfdN1JzUoiKk/s480/1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLs7TqBcWwhO3BxwLoi6UXrhW1uyBDDvtD0e-C0a52gb_6OB3MvQ0pCmGc_EdYhXiL4V80-8UwpZI2Akwf-_vMdQwUuOn5qbwxHLCohnmFlPFZahYme4G_cQqtNgD9VfvVfdN1JzUoiKk/s640/1.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLs7TqBcWwhO3BxwLoi6UXrhW1uyBDDvtD0e-C0a52gb_6OB3MvQ0pCmGc_EdYhXiL4V80-8UwpZI2Akwf-_vMdQwUuOn5qbwxHLCohnmFlPFZahYme4G_cQqtNgD9VfvVfdN1JzUoiKk/s320/1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLs7TqBcWwhO3BxwLoi6UXrhW1uyBDDvtD0e-C0a52gb_6OB3MvQ0pCmGc_EdYhXiL4V80-8UwpZI2Akwf-_vMdQwUuOn5qbwxHLCohnmFlPFZahYme4G_cQqtNgD9VfvVfdN1JzUoiKk/s480/1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLs7TqBcWwhO3BxwLoi6UXrhW1uyBDDvtD0e-C0a52gb_6OB3MvQ0pCmGc_EdYhXiL4V80-8UwpZI2Akwf-_vMdQwUuOn5qbwxHLCohnmFlPFZahYme4G_cQqtNgD9VfvVfdN1JzUoiKk/s640/1.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 - Programa 79 - Vinilos de los 90"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

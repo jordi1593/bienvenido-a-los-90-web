@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Bienvenido a los 90 - Programa 39 - Coldplay Live 2012 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -141,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzoXd3zdIokEaeTQBIU21kw-OWNyot3iLm7LE-X8HU2mmRgQ-EeP2stGJw-3CbMmP8Axs1n2iZp_remkJwINt-1y5i9k8Rjv_iYTksvBkOGDlLwwOFzHtxrkxjoEef3k1wi3N1agElIjs/s320/10401481_10152116887657747_4234636729823659977_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzoXd3zdIokEaeTQBIU21kw-OWNyot3iLm7LE-X8HU2mmRgQ-EeP2stGJw-3CbMmP8Axs1n2iZp_remkJwINt-1y5i9k8Rjv_iYTksvBkOGDlLwwOFzHtxrkxjoEef3k1wi3N1agElIjs/s160/10401481_10152116887657747_4234636729823659977_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzoXd3zdIokEaeTQBIU21kw-OWNyot3iLm7LE-X8HU2mmRgQ-EeP2stGJw-3CbMmP8Axs1n2iZp_remkJwINt-1y5i9k8Rjv_iYTksvBkOGDlLwwOFzHtxrkxjoEef3k1wi3N1agElIjs/s320/10401481_10152116887657747_4234636729823659977_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzoXd3zdIokEaeTQBIU21kw-OWNyot3iLm7LE-X8HU2mmRgQ-EeP2stGJw-3CbMmP8Axs1n2iZp_remkJwINt-1y5i9k8Rjv_iYTksvBkOGDlLwwOFzHtxrkxjoEef3k1wi3N1agElIjs/s480/10401481_10152116887657747_4234636729823659977_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzoXd3zdIokEaeTQBIU21kw-OWNyot3iLm7LE-X8HU2mmRgQ-EeP2stGJw-3CbMmP8Axs1n2iZp_remkJwINt-1y5i9k8Rjv_iYTksvBkOGDlLwwOFzHtxrkxjoEef3k1wi3N1agElIjs/s160/10401481_10152116887657747_4234636729823659977_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzoXd3zdIokEaeTQBIU21kw-OWNyot3iLm7LE-X8HU2mmRgQ-EeP2stGJw-3CbMmP8Axs1n2iZp_remkJwINt-1y5i9k8Rjv_iYTksvBkOGDlLwwOFzHtxrkxjoEef3k1wi3N1agElIjs/s320/10401481_10152116887657747_4234636729823659977_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzoXd3zdIokEaeTQBIU21kw-OWNyot3iLm7LE-X8HU2mmRgQ-EeP2stGJw-3CbMmP8Axs1n2iZp_remkJwINt-1y5i9k8Rjv_iYTksvBkOGDlLwwOFzHtxrkxjoEef3k1wi3N1agElIjs/s480/10401481_10152116887657747_4234636729823659977_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 115 - Coldplay (Parachutes era)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -152,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifnC-W5xh2l2joBP-pHJaeHFomDTdvQuwR7wmpPMc3P9CoMXXfkM0pYmK3zjZsOh1POffOC8DmSRcRkfEr_wuwlqFTQm1qAZ5G2dGXHg1tBnpRhol1UA285UKvB_n06EaSgpe9LOm9qbc/s320/b90_474.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifnC-W5xh2l2joBP-pHJaeHFomDTdvQuwR7wmpPMc3P9CoMXXfkM0pYmK3zjZsOh1POffOC8DmSRcRkfEr_wuwlqFTQm1qAZ5G2dGXHg1tBnpRhol1UA285UKvB_n06EaSgpe9LOm9qbc/s160/b90_474.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifnC-W5xh2l2joBP-pHJaeHFomDTdvQuwR7wmpPMc3P9CoMXXfkM0pYmK3zjZsOh1POffOC8DmSRcRkfEr_wuwlqFTQm1qAZ5G2dGXHg1tBnpRhol1UA285UKvB_n06EaSgpe9LOm9qbc/s320/b90_474.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifnC-W5xh2l2joBP-pHJaeHFomDTdvQuwR7wmpPMc3P9CoMXXfkM0pYmK3zjZsOh1POffOC8DmSRcRkfEr_wuwlqFTQm1qAZ5G2dGXHg1tBnpRhol1UA285UKvB_n06EaSgpe9LOm9qbc/s480/b90_474.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifnC-W5xh2l2joBP-pHJaeHFomDTdvQuwR7wmpPMc3P9CoMXXfkM0pYmK3zjZsOh1POffOC8DmSRcRkfEr_wuwlqFTQm1qAZ5G2dGXHg1tBnpRhol1UA285UKvB_n06EaSgpe9LOm9qbc/s160/b90_474.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifnC-W5xh2l2joBP-pHJaeHFomDTdvQuwR7wmpPMc3P9CoMXXfkM0pYmK3zjZsOh1POffOC8DmSRcRkfEr_wuwlqFTQm1qAZ5G2dGXHg1tBnpRhol1UA285UKvB_n06EaSgpe9LOm9qbc/s320/b90_474.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifnC-W5xh2l2joBP-pHJaeHFomDTdvQuwR7wmpPMc3P9CoMXXfkM0pYmK3zjZsOh1POffOC8DmSRcRkfEr_wuwlqFTQm1qAZ5G2dGXHg1tBnpRhol1UA285UKvB_n06EaSgpe9LOm9qbc/s480/b90_474.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 474 - Coldplay “A Head Full of Dreams” el documental"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -163,8 +161,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhffXCOhwItepenYJ6Igu0GAbuzjtwumPT7RPos_DX-3CruEND_91aak3PfrttRXFnyzBxiX0PtqlfZ6b2o3Tm_IhmbkC6jOhlcaSXt4Ndn8xC-YfsXigTosJ09xTLG_l2gHQLo75OzI0vL6tx2dWf8ytKcYrDgowl9K83frSAEFJgYaGQx1oCAT_CD/s320/81H8hN+pmwL._SL1500_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhffXCOhwItepenYJ6Igu0GAbuzjtwumPT7RPos_DX-3CruEND_91aak3PfrttRXFnyzBxiX0PtqlfZ6b2o3Tm_IhmbkC6jOhlcaSXt4Ndn8xC-YfsXigTosJ09xTLG_l2gHQLo75OzI0vL6tx2dWf8ytKcYrDgowl9K83frSAEFJgYaGQx1oCAT_CD/s160/81H8hN+pmwL._SL1500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhffXCOhwItepenYJ6Igu0GAbuzjtwumPT7RPos_DX-3CruEND_91aak3PfrttRXFnyzBxiX0PtqlfZ6b2o3Tm_IhmbkC6jOhlcaSXt4Ndn8xC-YfsXigTosJ09xTLG_l2gHQLo75OzI0vL6tx2dWf8ytKcYrDgowl9K83frSAEFJgYaGQx1oCAT_CD/s320/81H8hN+pmwL._SL1500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhffXCOhwItepenYJ6Igu0GAbuzjtwumPT7RPos_DX-3CruEND_91aak3PfrttRXFnyzBxiX0PtqlfZ6b2o3Tm_IhmbkC6jOhlcaSXt4Ndn8xC-YfsXigTosJ09xTLG_l2gHQLo75OzI0vL6tx2dWf8ytKcYrDgowl9K83frSAEFJgYaGQx1oCAT_CD/s480/81H8hN+pmwL._SL1500_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhffXCOhwItepenYJ6Igu0GAbuzjtwumPT7RPos_DX-3CruEND_91aak3PfrttRXFnyzBxiX0PtqlfZ6b2o3Tm_IhmbkC6jOhlcaSXt4Ndn8xC-YfsXigTosJ09xTLG_l2gHQLo75OzI0vL6tx2dWf8ytKcYrDgowl9K83frSAEFJgYaGQx1oCAT_CD/s160/81H8hN+pmwL._SL1500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhffXCOhwItepenYJ6Igu0GAbuzjtwumPT7RPos_DX-3CruEND_91aak3PfrttRXFnyzBxiX0PtqlfZ6b2o3Tm_IhmbkC6jOhlcaSXt4Ndn8xC-YfsXigTosJ09xTLG_l2gHQLo75OzI0vL6tx2dWf8ytKcYrDgowl9K83frSAEFJgYaGQx1oCAT_CD/s320/81H8hN+pmwL._SL1500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhffXCOhwItepenYJ6Igu0GAbuzjtwumPT7RPos_DX-3CruEND_91aak3PfrttRXFnyzBxiX0PtqlfZ6b2o3Tm_IhmbkC6jOhlcaSXt4Ndn8xC-YfsXigTosJ09xTLG_l2gHQLo75OzI0vL6tx2dWf8ytKcYrDgowl9K83frSAEFJgYaGQx1oCAT_CD/s480/81H8hN+pmwL._SL1500_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P858 - El salto al vacío de Coldplay: A Rush of Blood to the Head"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -180,8 +177,7 @@
         <a class="related-bottom-card" href="p-985-los-mejores-momentos-de-coldplay-en-el-glastonbury-2024.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uBTnGJ_c5vv4KLjh6Yey1sIsAt0wPwalZsKa5YCnPfFvqQHyvoRh107N08E1ZSxUA5Jy_YI4oMh3OBrwq7-GDvGfe0sJG0HNwOpZMP8T9Jmz6_yx3wOqnk8Tikc99pc7WIbIqvjVw6JmsH7Z0Ctal6QNZvYwwy58J0Z0wQKNrqJkqWlxOPTsdwPi8SI/s320/coldplay_69.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uBTnGJ_c5vv4KLjh6Yey1sIsAt0wPwalZsKa5YCnPfFvqQHyvoRh107N08E1ZSxUA5Jy_YI4oMh3OBrwq7-GDvGfe0sJG0HNwOpZMP8T9Jmz6_yx3wOqnk8Tikc99pc7WIbIqvjVw6JmsH7Z0Ctal6QNZvYwwy58J0Z0wQKNrqJkqWlxOPTsdwPi8SI/s320/coldplay_69.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uBTnGJ_c5vv4KLjh6Yey1sIsAt0wPwalZsKa5YCnPfFvqQHyvoRh107N08E1ZSxUA5Jy_YI4oMh3OBrwq7-GDvGfe0sJG0HNwOpZMP8T9Jmz6_yx3wOqnk8Tikc99pc7WIbIqvjVw6JmsH7Z0Ctal6QNZvYwwy58J0Z0wQKNrqJkqWlxOPTsdwPi8SI/s480/coldplay_69.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uBTnGJ_c5vv4KLjh6Yey1sIsAt0wPwalZsKa5YCnPfFvqQHyvoRh107N08E1ZSxUA5Jy_YI4oMh3OBrwq7-GDvGfe0sJG0HNwOpZMP8T9Jmz6_yx3wOqnk8Tikc99pc7WIbIqvjVw6JmsH7Z0Ctal6QNZvYwwy58J0Z0wQKNrqJkqWlxOPTsdwPi8SI/s640/coldplay_69.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uBTnGJ_c5vv4KLjh6Yey1sIsAt0wPwalZsKa5YCnPfFvqQHyvoRh107N08E1ZSxUA5Jy_YI4oMh3OBrwq7-GDvGfe0sJG0HNwOpZMP8T9Jmz6_yx3wOqnk8Tikc99pc7WIbIqvjVw6JmsH7Z0Ctal6QNZvYwwy58J0Z0wQKNrqJkqWlxOPTsdwPi8SI/s320/coldplay_69.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uBTnGJ_c5vv4KLjh6Yey1sIsAt0wPwalZsKa5YCnPfFvqQHyvoRh107N08E1ZSxUA5Jy_YI4oMh3OBrwq7-GDvGfe0sJG0HNwOpZMP8T9Jmz6_yx3wOqnk8Tikc99pc7WIbIqvjVw6JmsH7Z0Ctal6QNZvYwwy58J0Z0wQKNrqJkqWlxOPTsdwPi8SI/s480/coldplay_69.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5uBTnGJ_c5vv4KLjh6Yey1sIsAt0wPwalZsKa5YCnPfFvqQHyvoRh107N08E1ZSxUA5Jy_YI4oMh3OBrwq7-GDvGfe0sJG0HNwOpZMP8T9Jmz6_yx3wOqnk8Tikc99pc7WIbIqvjVw6JmsH7Z0Ctal6QNZvYwwy58J0Z0wQKNrqJkqWlxOPTsdwPi8SI/s640/coldplay_69.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.985 - Los mejores momentos de Coldplay en el Glastonbury 2024 "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -192,8 +188,7 @@
           </a><a class="related-bottom-card" href="bienvenido-a-los-90-programa-35-muse-palacio-de-los-deporte-de-la-comunidad-de-m.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx3b1vKI_jchov59GprvAyFUum2RV6n4bkk24dLpVJ8Po_6Q7DJZ_lnmMCH-_HwMM4b_Ykj8OrbKbUoeo8uHMVJuoMqAIegY1GxG3P8g77J6ygNVfjyhyn5SSG6kV9Pm6B7tczqx9nyaE/s320/8109857345_92ac418b38_o.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx3b1vKI_jchov59GprvAyFUum2RV6n4bkk24dLpVJ8Po_6Q7DJZ_lnmMCH-_HwMM4b_Ykj8OrbKbUoeo8uHMVJuoMqAIegY1GxG3P8g77J6ygNVfjyhyn5SSG6kV9Pm6B7tczqx9nyaE/s320/8109857345_92ac418b38_o.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx3b1vKI_jchov59GprvAyFUum2RV6n4bkk24dLpVJ8Po_6Q7DJZ_lnmMCH-_HwMM4b_Ykj8OrbKbUoeo8uHMVJuoMqAIegY1GxG3P8g77J6ygNVfjyhyn5SSG6kV9Pm6B7tczqx9nyaE/s480/8109857345_92ac418b38_o.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx3b1vKI_jchov59GprvAyFUum2RV6n4bkk24dLpVJ8Po_6Q7DJZ_lnmMCH-_HwMM4b_Ykj8OrbKbUoeo8uHMVJuoMqAIegY1GxG3P8g77J6ygNVfjyhyn5SSG6kV9Pm6B7tczqx9nyaE/s640/8109857345_92ac418b38_o.jpeg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx3b1vKI_jchov59GprvAyFUum2RV6n4bkk24dLpVJ8Po_6Q7DJZ_lnmMCH-_HwMM4b_Ykj8OrbKbUoeo8uHMVJuoMqAIegY1GxG3P8g77J6ygNVfjyhyn5SSG6kV9Pm6B7tczqx9nyaE/s320/8109857345_92ac418b38_o.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx3b1vKI_jchov59GprvAyFUum2RV6n4bkk24dLpVJ8Po_6Q7DJZ_lnmMCH-_HwMM4b_Ykj8OrbKbUoeo8uHMVJuoMqAIegY1GxG3P8g77J6ygNVfjyhyn5SSG6kV9Pm6B7tczqx9nyaE/s480/8109857345_92ac418b38_o.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx3b1vKI_jchov59GprvAyFUum2RV6n4bkk24dLpVJ8Po_6Q7DJZ_lnmMCH-_HwMM4b_Ykj8OrbKbUoeo8uHMVJuoMqAIegY1GxG3P8g77J6ygNVfjyhyn5SSG6kV9Pm6B7tczqx9nyaE/s640/8109857345_92ac418b38_o.jpeg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Bienvenido a los 90 - Programa 35 - Muse - Palacio de los Deporte de la Comunidad de Madrid 2012"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -204,8 +199,7 @@
           </a><a class="related-bottom-card" href="programa-34-noel-gallagher-international-magic-live-at-the-o2.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 34 - Noel Gallagher  International Magic Live at the O2"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

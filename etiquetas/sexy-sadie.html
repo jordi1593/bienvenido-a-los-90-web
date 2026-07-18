@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Sexy Sadie — 13 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-921-julio-ruiz-recuerda-las-actuaciones-de-blur-radiohead-dover.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s320/IMG_20230722_123812.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s160/IMG_20230722_123812.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s320/IMG_20230722_123812.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s480/IMG_20230722_123812.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s160/IMG_20230722_123812.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s320/IMG_20230722_123812.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s480/IMG_20230722_123812.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.921 - Julio Ruiz recuerda las actuaciones de Blur, Radiohead, Dover..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-784-sexy-sadie-butterflies-2021.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYkPqXA-kiCk0WrzZKfaRyB6biUuq9asr14LDNW_aPTp8DgASc_8RS1m7jF5EpesmiJusWM6zGATvdXQn6mnB072acyiRHMd8-mLkz1sTLi6Tt3LePlzoOXq9oq99HnnGqO6ganEHegW8/s320/0277d07c50983678fb9dc4c4c3716f2d.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYkPqXA-kiCk0WrzZKfaRyB6biUuq9asr14LDNW_aPTp8DgASc_8RS1m7jF5EpesmiJusWM6zGATvdXQn6mnB072acyiRHMd8-mLkz1sTLi6Tt3LePlzoOXq9oq99HnnGqO6ganEHegW8/s160/0277d07c50983678fb9dc4c4c3716f2d.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYkPqXA-kiCk0WrzZKfaRyB6biUuq9asr14LDNW_aPTp8DgASc_8RS1m7jF5EpesmiJusWM6zGATvdXQn6mnB072acyiRHMd8-mLkz1sTLi6Tt3LePlzoOXq9oq99HnnGqO6ganEHegW8/s320/0277d07c50983678fb9dc4c4c3716f2d.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYkPqXA-kiCk0WrzZKfaRyB6biUuq9asr14LDNW_aPTp8DgASc_8RS1m7jF5EpesmiJusWM6zGATvdXQn6mnB072acyiRHMd8-mLkz1sTLi6Tt3LePlzoOXq9oq99HnnGqO6ganEHegW8/s480/0277d07c50983678fb9dc4c4c3716f2d.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYkPqXA-kiCk0WrzZKfaRyB6biUuq9asr14LDNW_aPTp8DgASc_8RS1m7jF5EpesmiJusWM6zGATvdXQn6mnB072acyiRHMd8-mLkz1sTLi6Tt3LePlzoOXq9oq99HnnGqO6ganEHegW8/s160/0277d07c50983678fb9dc4c4c3716f2d.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYkPqXA-kiCk0WrzZKfaRyB6biUuq9asr14LDNW_aPTp8DgASc_8RS1m7jF5EpesmiJusWM6zGATvdXQn6mnB072acyiRHMd8-mLkz1sTLi6Tt3LePlzoOXq9oq99HnnGqO6ganEHegW8/s320/0277d07c50983678fb9dc4c4c3716f2d.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYkPqXA-kiCk0WrzZKfaRyB6biUuq9asr14LDNW_aPTp8DgASc_8RS1m7jF5EpesmiJusWM6zGATvdXQn6mnB072acyiRHMd8-mLkz1sTLi6Tt3LePlzoOXq9oq99HnnGqO6ganEHegW8/s480/0277d07c50983678fb9dc4c4c3716f2d.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.784 - Sexy Sadie &#39;Butterflies&#39; (2021)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-765-la-cara-b-de-los-90-parte-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s320/L-370558-1571805648-9408.jpeg.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s160/L-370558-1571805648-9408.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s320/L-370558-1571805648-9408.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s480/L-370558-1571805648-9408.jpeg.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s160/L-370558-1571805648-9408.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s320/L-370558-1571805648-9408.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s480/L-370558-1571805648-9408.jpeg.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.765 - La cara B de los 90 (Parte 1)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-582-mis-11-discos-favoritos-de-subterfuge-en-los-90.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDX98dFgXoJ6kD-yd3htQspuwzuqpMeGy_mcwYK5FSqjHQtr_VWSbocdlfMSYDkd31MKAbdf7OX1-DoX1-5dp3RBrODgS3oGy_Ig-w9IswTpRtLdEhfa_5Yi0i8zKvmc3QJ7na5KF4U_I/s320/b90_582.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDX98dFgXoJ6kD-yd3htQspuwzuqpMeGy_mcwYK5FSqjHQtr_VWSbocdlfMSYDkd31MKAbdf7OX1-DoX1-5dp3RBrODgS3oGy_Ig-w9IswTpRtLdEhfa_5Yi0i8zKvmc3QJ7na5KF4U_I/s160/b90_582.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDX98dFgXoJ6kD-yd3htQspuwzuqpMeGy_mcwYK5FSqjHQtr_VWSbocdlfMSYDkd31MKAbdf7OX1-DoX1-5dp3RBrODgS3oGy_Ig-w9IswTpRtLdEhfa_5Yi0i8zKvmc3QJ7na5KF4U_I/s320/b90_582.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDX98dFgXoJ6kD-yd3htQspuwzuqpMeGy_mcwYK5FSqjHQtr_VWSbocdlfMSYDkd31MKAbdf7OX1-DoX1-5dp3RBrODgS3oGy_Ig-w9IswTpRtLdEhfa_5Yi0i8zKvmc3QJ7na5KF4U_I/s480/b90_582.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDX98dFgXoJ6kD-yd3htQspuwzuqpMeGy_mcwYK5FSqjHQtr_VWSbocdlfMSYDkd31MKAbdf7OX1-DoX1-5dp3RBrODgS3oGy_Ig-w9IswTpRtLdEhfa_5Yi0i8zKvmc3QJ7na5KF4U_I/s160/b90_582.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDX98dFgXoJ6kD-yd3htQspuwzuqpMeGy_mcwYK5FSqjHQtr_VWSbocdlfMSYDkd31MKAbdf7OX1-DoX1-5dp3RBrODgS3oGy_Ig-w9IswTpRtLdEhfa_5Yi0i8zKvmc3QJ7na5KF4U_I/s320/b90_582.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDX98dFgXoJ6kD-yd3htQspuwzuqpMeGy_mcwYK5FSqjHQtr_VWSbocdlfMSYDkd31MKAbdf7OX1-DoX1-5dp3RBrODgS3oGy_Ig-w9IswTpRtLdEhfa_5Yi0i8zKvmc3QJ7na5KF4U_I/s480/b90_582.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.582 - Mis 11 discos favoritos de Subterfuge en los 90"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-447-sexy-sadie-it-s-beautiful-it-s-love-1998-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0lpl3RN-od5fuNDtgs35J-bEPLAKyqjEAWwGTfM3lieMquEpAt1w6_DTR0s2vwZMJkVvtvNXss-HEslIS6yo4racMGkE0GvMaMW4EcmWoV-pMFEXG-H0JNsIwRjLOipBysZpM6WXz_qw/s320/b90447.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0lpl3RN-od5fuNDtgs35J-bEPLAKyqjEAWwGTfM3lieMquEpAt1w6_DTR0s2vwZMJkVvtvNXss-HEslIS6yo4racMGkE0GvMaMW4EcmWoV-pMFEXG-H0JNsIwRjLOipBysZpM6WXz_qw/s160/b90447.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0lpl3RN-od5fuNDtgs35J-bEPLAKyqjEAWwGTfM3lieMquEpAt1w6_DTR0s2vwZMJkVvtvNXss-HEslIS6yo4racMGkE0GvMaMW4EcmWoV-pMFEXG-H0JNsIwRjLOipBysZpM6WXz_qw/s320/b90447.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0lpl3RN-od5fuNDtgs35J-bEPLAKyqjEAWwGTfM3lieMquEpAt1w6_DTR0s2vwZMJkVvtvNXss-HEslIS6yo4racMGkE0GvMaMW4EcmWoV-pMFEXG-H0JNsIwRjLOipBysZpM6WXz_qw/s480/b90447.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0lpl3RN-od5fuNDtgs35J-bEPLAKyqjEAWwGTfM3lieMquEpAt1w6_DTR0s2vwZMJkVvtvNXss-HEslIS6yo4racMGkE0GvMaMW4EcmWoV-pMFEXG-H0JNsIwRjLOipBysZpM6WXz_qw/s160/b90447.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0lpl3RN-od5fuNDtgs35J-bEPLAKyqjEAWwGTfM3lieMquEpAt1w6_DTR0s2vwZMJkVvtvNXss-HEslIS6yo4racMGkE0GvMaMW4EcmWoV-pMFEXG-H0JNsIwRjLOipBysZpM6WXz_qw/s320/b90447.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0lpl3RN-od5fuNDtgs35J-bEPLAKyqjEAWwGTfM3lieMquEpAt1w6_DTR0s2vwZMJkVvtvNXss-HEslIS6yo4racMGkE0GvMaMW4EcmWoV-pMFEXG-H0JNsIwRjLOipBysZpM6WXz_qw/s480/b90447.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 447 - Sexy Sadie - It&#39;s Beautiful, It&#39;s Love 1998-2018"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-311-gallagher-vs-gallagher.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s160/noel-liam-gallagher.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s480/noel-liam-gallagher.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s160/noel-liam-gallagher.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s480/noel-liam-gallagher.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 311 - Gallagher vs. Gallagher"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-252-festimad-1996.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s320/festimad_96_cartel.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s160/festimad_96_cartel.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s320/festimad_96_cartel.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s480/festimad_96_cartel.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s160/festimad_96_cartel.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s320/festimad_96_cartel.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s480/festimad_96_cartel.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 252 - Festimad 1996"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/programa-194-jaime-g-soriano-caido-del-cielo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1mJk5BUgQccyZUd6yeKWkk71dJgZ0SdPJYQAClRj_K3WqbWIf-MZqnUIFI56FM1zQFY53OAt-x31jDjpVGi01ghfPHSzbq7l9U8A2xp2qYchcHqpR2IfseMLG5DahrvOLwX9Xuj3Qadg/s320/12238385_10153208079362747_4613300475445960468_o.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1mJk5BUgQccyZUd6yeKWkk71dJgZ0SdPJYQAClRj_K3WqbWIf-MZqnUIFI56FM1zQFY53OAt-x31jDjpVGi01ghfPHSzbq7l9U8A2xp2qYchcHqpR2IfseMLG5DahrvOLwX9Xuj3Qadg/s160/12238385_10153208079362747_4613300475445960468_o.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1mJk5BUgQccyZUd6yeKWkk71dJgZ0SdPJYQAClRj_K3WqbWIf-MZqnUIFI56FM1zQFY53OAt-x31jDjpVGi01ghfPHSzbq7l9U8A2xp2qYchcHqpR2IfseMLG5DahrvOLwX9Xuj3Qadg/s320/12238385_10153208079362747_4613300475445960468_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1mJk5BUgQccyZUd6yeKWkk71dJgZ0SdPJYQAClRj_K3WqbWIf-MZqnUIFI56FM1zQFY53OAt-x31jDjpVGi01ghfPHSzbq7l9U8A2xp2qYchcHqpR2IfseMLG5DahrvOLwX9Xuj3Qadg/s480/12238385_10153208079362747_4613300475445960468_o.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1mJk5BUgQccyZUd6yeKWkk71dJgZ0SdPJYQAClRj_K3WqbWIf-MZqnUIFI56FM1zQFY53OAt-x31jDjpVGi01ghfPHSzbq7l9U8A2xp2qYchcHqpR2IfseMLG5DahrvOLwX9Xuj3Qadg/s160/12238385_10153208079362747_4613300475445960468_o.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1mJk5BUgQccyZUd6yeKWkk71dJgZ0SdPJYQAClRj_K3WqbWIf-MZqnUIFI56FM1zQFY53OAt-x31jDjpVGi01ghfPHSzbq7l9U8A2xp2qYchcHqpR2IfseMLG5DahrvOLwX9Xuj3Qadg/s320/12238385_10153208079362747_4613300475445960468_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1mJk5BUgQccyZUd6yeKWkk71dJgZ0SdPJYQAClRj_K3WqbWIf-MZqnUIFI56FM1zQFY53OAt-x31jDjpVGi01ghfPHSzbq7l9U8A2xp2qYchcHqpR2IfseMLG5DahrvOLwX9Xuj3Qadg/s480/12238385_10153208079362747_4613300475445960468_o.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 194 - Jaime G. Soriano - Caído del cielo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -180,8 +172,7 @@
         <a class="episode-cover-link" href="../episodios/programa-183-mercromina.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s320/mercromina.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s160/mercromina.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s320/mercromina.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s480/mercromina.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s160/mercromina.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s320/mercromina.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s480/mercromina.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 183 - Mercromina"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -194,8 +185,7 @@
         <a class="episode-cover-link" href="../episodios/programa-167-the-beatles-white-album-parte-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9F_t3l1WbYx-lsdvRp-dRg3UruORHbG6RQ9zNhnv8wn2oqD8YSQj1CzdSALB_XWvCADDIR92v8Ci-QokdvVGv5VzfkMZ6Qpw4nW9nMEJHgrSJxi0CFPOCDOF_3BQ8PIWMaaRoBCzPjIs/s320/11062311_10152896666352747_4221624368018851863_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9F_t3l1WbYx-lsdvRp-dRg3UruORHbG6RQ9zNhnv8wn2oqD8YSQj1CzdSALB_XWvCADDIR92v8Ci-QokdvVGv5VzfkMZ6Qpw4nW9nMEJHgrSJxi0CFPOCDOF_3BQ8PIWMaaRoBCzPjIs/s160/11062311_10152896666352747_4221624368018851863_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9F_t3l1WbYx-lsdvRp-dRg3UruORHbG6RQ9zNhnv8wn2oqD8YSQj1CzdSALB_XWvCADDIR92v8Ci-QokdvVGv5VzfkMZ6Qpw4nW9nMEJHgrSJxi0CFPOCDOF_3BQ8PIWMaaRoBCzPjIs/s320/11062311_10152896666352747_4221624368018851863_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9F_t3l1WbYx-lsdvRp-dRg3UruORHbG6RQ9zNhnv8wn2oqD8YSQj1CzdSALB_XWvCADDIR92v8Ci-QokdvVGv5VzfkMZ6Qpw4nW9nMEJHgrSJxi0CFPOCDOF_3BQ8PIWMaaRoBCzPjIs/s480/11062311_10152896666352747_4221624368018851863_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9F_t3l1WbYx-lsdvRp-dRg3UruORHbG6RQ9zNhnv8wn2oqD8YSQj1CzdSALB_XWvCADDIR92v8Ci-QokdvVGv5VzfkMZ6Qpw4nW9nMEJHgrSJxi0CFPOCDOF_3BQ8PIWMaaRoBCzPjIs/s160/11062311_10152896666352747_4221624368018851863_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9F_t3l1WbYx-lsdvRp-dRg3UruORHbG6RQ9zNhnv8wn2oqD8YSQj1CzdSALB_XWvCADDIR92v8Ci-QokdvVGv5VzfkMZ6Qpw4nW9nMEJHgrSJxi0CFPOCDOF_3BQ8PIWMaaRoBCzPjIs/s320/11062311_10152896666352747_4221624368018851863_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9F_t3l1WbYx-lsdvRp-dRg3UruORHbG6RQ9zNhnv8wn2oqD8YSQj1CzdSALB_XWvCADDIR92v8Ci-QokdvVGv5VzfkMZ6Qpw4nW9nMEJHgrSJxi0CFPOCDOF_3BQ8PIWMaaRoBCzPjIs/s480/11062311_10152896666352747_4221624368018851863_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 167 - The Beatles White Album (Parte 1)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -208,8 +198,7 @@
         <a class="episode-cover-link" href="../episodios/programa-102-el-regreso-de-sexy-sadie-entrevista-con-johnny-card-y-lovedivision.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 102 - El regreso de Sexy Sadie, entrevista con Johnny Card y LoveDivision"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -222,8 +211,7 @@
         <a class="episode-cover-link" href="../episodios/programa-65-especial-the-bleach.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 65 especial THE BLEACH"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -236,8 +224,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-5-entrevista-con-jaime-garcia-soriano.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa #5 - Entrevista con Jaime García Soriano"
                 loading="lazy" width="320" height="213" />
         </a>

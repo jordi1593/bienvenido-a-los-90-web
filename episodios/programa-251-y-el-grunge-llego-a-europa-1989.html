@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 251 - Y el grunge llegó a Europa (1989) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s160/kimthayil.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s480/kimthayil.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s160/kimthayil.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s480/kimthayil.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.630 - Kim Thayil de Soundgarden habla de sus discos favoritos del grunge"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s160/3201.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s480/3201.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s160/3201.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s480/3201.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.697 - La historia de SUB POP en 10 canciones"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa 36 - SUB POP 200"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="p-961-entrevista-con-charles-peterson-el-fotografo-del-grunge.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s320/book_600x600.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s320/book_600x600.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s480/book_600x600.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s640/book_600x600.webp 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s320/book_600x600.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s480/book_600x600.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s640/book_600x600.webp 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.961 - Entrevista con Charles Peterson, el fotógrafo del grunge"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="programa-401-thomas-andrew-doyle.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir8R1c0Wld3-TdXBbv82QE_5jpyWqaOsvUFkFKiZnTbUEkbDbvgrsM78wdQyMJGc9zk0oPaMWUSE8H8WGlTypoQZL0xWCXiA8RqJM5EjyC7BUbD5OEUEncKz0fGFFa1r2VxjORT7ZMaAM/s320/ROtwXHZY.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir8R1c0Wld3-TdXBbv82QE_5jpyWqaOsvUFkFKiZnTbUEkbDbvgrsM78wdQyMJGc9zk0oPaMWUSE8H8WGlTypoQZL0xWCXiA8RqJM5EjyC7BUbD5OEUEncKz0fGFFa1r2VxjORT7ZMaAM/s320/ROtwXHZY.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir8R1c0Wld3-TdXBbv82QE_5jpyWqaOsvUFkFKiZnTbUEkbDbvgrsM78wdQyMJGc9zk0oPaMWUSE8H8WGlTypoQZL0xWCXiA8RqJM5EjyC7BUbD5OEUEncKz0fGFFa1r2VxjORT7ZMaAM/s480/ROtwXHZY.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir8R1c0Wld3-TdXBbv82QE_5jpyWqaOsvUFkFKiZnTbUEkbDbvgrsM78wdQyMJGc9zk0oPaMWUSE8H8WGlTypoQZL0xWCXiA8RqJM5EjyC7BUbD5OEUEncKz0fGFFa1r2VxjORT7ZMaAM/s640/ROtwXHZY.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir8R1c0Wld3-TdXBbv82QE_5jpyWqaOsvUFkFKiZnTbUEkbDbvgrsM78wdQyMJGc9zk0oPaMWUSE8H8WGlTypoQZL0xWCXiA8RqJM5EjyC7BUbD5OEUEncKz0fGFFa1r2VxjORT7ZMaAM/s320/ROtwXHZY.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir8R1c0Wld3-TdXBbv82QE_5jpyWqaOsvUFkFKiZnTbUEkbDbvgrsM78wdQyMJGc9zk0oPaMWUSE8H8WGlTypoQZL0xWCXiA8RqJM5EjyC7BUbD5OEUEncKz0fGFFa1r2VxjORT7ZMaAM/s480/ROtwXHZY.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir8R1c0Wld3-TdXBbv82QE_5jpyWqaOsvUFkFKiZnTbUEkbDbvgrsM78wdQyMJGc9zk0oPaMWUSE8H8WGlTypoQZL0xWCXiA8RqJM5EjyC7BUbD5OEUEncKz0fGFFa1r2VxjORT7ZMaAM/s640/ROtwXHZY.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 401 - Thomas Andrew Doyle"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="programa-434-mudhoney-digital-garbage.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHsY6XRU1TaxonvGM-IwgAC_7XJ2w2Gtx2cBnYbsI-0VC8lmzijnCsOBk49gJeFnMEx-NDqFKEokAp6miksL_uboM7Gyl5UtzwCzMkjYeVxtGM0_MmYNjEjcrrl0WhGAy-QPfkz3I0yo/s320/b90-434.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHsY6XRU1TaxonvGM-IwgAC_7XJ2w2Gtx2cBnYbsI-0VC8lmzijnCsOBk49gJeFnMEx-NDqFKEokAp6miksL_uboM7Gyl5UtzwCzMkjYeVxtGM0_MmYNjEjcrrl0WhGAy-QPfkz3I0yo/s320/b90-434.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHsY6XRU1TaxonvGM-IwgAC_7XJ2w2Gtx2cBnYbsI-0VC8lmzijnCsOBk49gJeFnMEx-NDqFKEokAp6miksL_uboM7Gyl5UtzwCzMkjYeVxtGM0_MmYNjEjcrrl0WhGAy-QPfkz3I0yo/s480/b90-434.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHsY6XRU1TaxonvGM-IwgAC_7XJ2w2Gtx2cBnYbsI-0VC8lmzijnCsOBk49gJeFnMEx-NDqFKEokAp6miksL_uboM7Gyl5UtzwCzMkjYeVxtGM0_MmYNjEjcrrl0WhGAy-QPfkz3I0yo/s640/b90-434.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHsY6XRU1TaxonvGM-IwgAC_7XJ2w2Gtx2cBnYbsI-0VC8lmzijnCsOBk49gJeFnMEx-NDqFKEokAp6miksL_uboM7Gyl5UtzwCzMkjYeVxtGM0_MmYNjEjcrrl0WhGAy-QPfkz3I0yo/s320/b90-434.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHsY6XRU1TaxonvGM-IwgAC_7XJ2w2Gtx2cBnYbsI-0VC8lmzijnCsOBk49gJeFnMEx-NDqFKEokAp6miksL_uboM7Gyl5UtzwCzMkjYeVxtGM0_MmYNjEjcrrl0WhGAy-QPfkz3I0yo/s480/b90-434.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHsY6XRU1TaxonvGM-IwgAC_7XJ2w2Gtx2cBnYbsI-0VC8lmzijnCsOBk49gJeFnMEx-NDqFKEokAp6miksL_uboM7Gyl5UtzwCzMkjYeVxtGM0_MmYNjEjcrrl0WhGAy-QPfkz3I0yo/s640/b90-434.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 434 - Mudhoney - Digital Garbage"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 253 - 1991 The Year Punk Broke — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -147,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa 22 - La importancia de llamarse Butch"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -158,8 +157,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s320/14117701_1356893064328333_8249292549315850784_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s160/14117701_1356893064328333_8249292549315850784_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s320/14117701_1356893064328333_8249292549315850784_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s480/14117701_1356893064328333_8249292549315850784_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s160/14117701_1356893064328333_8249292549315850784_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s320/14117701_1356893064328333_8249292549315850784_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s480/14117701_1356893064328333_8249292549315850784_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 239 - Inicio nueva temporada"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -169,8 +167,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s320/13754394_1318527614831545_8016198913287522190_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s160/13754394_1318527614831545_8016198913287522190_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s320/13754394_1318527614831545_8016198913287522190_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s480/13754394_1318527614831545_8016198913287522190_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s160/13754394_1318527614831545_8016198913287522190_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s320/13754394_1318527614831545_8016198913287522190_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s480/13754394_1318527614831545_8016198913287522190_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 236 - Riot Girls "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -186,8 +183,7 @@
         <a class="related-bottom-card" href="programa-292-blind-melon-u2-the-gits-afghan-whigs-nin.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s480/imagen-sin-titulo.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s640/imagen-sin-titulo.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s480/imagen-sin-titulo.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s640/imagen-sin-titulo.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 292 - Blind Melon, U2, The Gits, Afghan Whigs, NIN. "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -198,8 +194,7 @@
           </a><a class="related-bottom-card" href="programa-352-the-sonics-22-feb-joy-eslava.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg4OQjdc7MqnVomFVKg15dbpk2h2a9JkUTiuklCtDVOpYkcxDA6dqsxZcfcknD5wdtWilrs21eGjyD29VejjTwipdrRKRs6c68xGN7KjcdoU-3LsFpEo5NRY8r4qbV7mUT9pza1jr-jmU/s320/Screenshot_20180306-202738.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg4OQjdc7MqnVomFVKg15dbpk2h2a9JkUTiuklCtDVOpYkcxDA6dqsxZcfcknD5wdtWilrs21eGjyD29VejjTwipdrRKRs6c68xGN7KjcdoU-3LsFpEo5NRY8r4qbV7mUT9pza1jr-jmU/s320/Screenshot_20180306-202738.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg4OQjdc7MqnVomFVKg15dbpk2h2a9JkUTiuklCtDVOpYkcxDA6dqsxZcfcknD5wdtWilrs21eGjyD29VejjTwipdrRKRs6c68xGN7KjcdoU-3LsFpEo5NRY8r4qbV7mUT9pza1jr-jmU/s480/Screenshot_20180306-202738.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg4OQjdc7MqnVomFVKg15dbpk2h2a9JkUTiuklCtDVOpYkcxDA6dqsxZcfcknD5wdtWilrs21eGjyD29VejjTwipdrRKRs6c68xGN7KjcdoU-3LsFpEo5NRY8r4qbV7mUT9pza1jr-jmU/s640/Screenshot_20180306-202738.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg4OQjdc7MqnVomFVKg15dbpk2h2a9JkUTiuklCtDVOpYkcxDA6dqsxZcfcknD5wdtWilrs21eGjyD29VejjTwipdrRKRs6c68xGN7KjcdoU-3LsFpEo5NRY8r4qbV7mUT9pza1jr-jmU/s320/Screenshot_20180306-202738.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg4OQjdc7MqnVomFVKg15dbpk2h2a9JkUTiuklCtDVOpYkcxDA6dqsxZcfcknD5wdtWilrs21eGjyD29VejjTwipdrRKRs6c68xGN7KjcdoU-3LsFpEo5NRY8r4qbV7mUT9pza1jr-jmU/s480/Screenshot_20180306-202738.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg4OQjdc7MqnVomFVKg15dbpk2h2a9JkUTiuklCtDVOpYkcxDA6dqsxZcfcknD5wdtWilrs21eGjyD29VejjTwipdrRKRs6c68xGN7KjcdoU-3LsFpEo5NRY8r4qbV7mUT9pza1jr-jmU/s640/Screenshot_20180306-202738.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 352 - The Sonics (22 Feb Joy Eslava)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -210,8 +205,7 @@
           </a><a class="related-bottom-card" href="especial-the-afghan-whigs.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoWcCc21lhPn1hXFDIUYMA9wlSarEO9EkizB2gXlw0Z8ZUZ6EVuahU6ZsSXtjTVMVQuwqZKGb-ODeukmbhbzI5kyQ_pWthJnb2p-zrINqyXD7mNp-gtUvrBMaHJuJZrw-f60EJB1Q8bAw/s320/IMG_20150425_113715.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoWcCc21lhPn1hXFDIUYMA9wlSarEO9EkizB2gXlw0Z8ZUZ6EVuahU6ZsSXtjTVMVQuwqZKGb-ODeukmbhbzI5kyQ_pWthJnb2p-zrINqyXD7mNp-gtUvrBMaHJuJZrw-f60EJB1Q8bAw/s320/IMG_20150425_113715.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoWcCc21lhPn1hXFDIUYMA9wlSarEO9EkizB2gXlw0Z8ZUZ6EVuahU6ZsSXtjTVMVQuwqZKGb-ODeukmbhbzI5kyQ_pWthJnb2p-zrINqyXD7mNp-gtUvrBMaHJuJZrw-f60EJB1Q8bAw/s480/IMG_20150425_113715.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoWcCc21lhPn1hXFDIUYMA9wlSarEO9EkizB2gXlw0Z8ZUZ6EVuahU6ZsSXtjTVMVQuwqZKGb-ODeukmbhbzI5kyQ_pWthJnb2p-zrINqyXD7mNp-gtUvrBMaHJuJZrw-f60EJB1Q8bAw/s640/IMG_20150425_113715.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoWcCc21lhPn1hXFDIUYMA9wlSarEO9EkizB2gXlw0Z8ZUZ6EVuahU6ZsSXtjTVMVQuwqZKGb-ODeukmbhbzI5kyQ_pWthJnb2p-zrINqyXD7mNp-gtUvrBMaHJuJZrw-f60EJB1Q8bAw/s320/IMG_20150425_113715.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoWcCc21lhPn1hXFDIUYMA9wlSarEO9EkizB2gXlw0Z8ZUZ6EVuahU6ZsSXtjTVMVQuwqZKGb-ODeukmbhbzI5kyQ_pWthJnb2p-zrINqyXD7mNp-gtUvrBMaHJuJZrw-f60EJB1Q8bAw/s480/IMG_20150425_113715.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoWcCc21lhPn1hXFDIUYMA9wlSarEO9EkizB2gXlw0Z8ZUZ6EVuahU6ZsSXtjTVMVQuwqZKGb-ODeukmbhbzI5kyQ_pWthJnb2p-zrINqyXD7mNp-gtUvrBMaHJuJZrw-f60EJB1Q8bAw/s640/IMG_20150425_113715.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Especial The Afghan Whigs"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

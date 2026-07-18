@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Morphine - Festimad (Madrid 03/05/1997) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -144,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s320/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s160/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s320/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s480/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s160/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s320/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s480/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.656 - La historia de Mark Sandman y Morphine"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -155,8 +154,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s320/b90_1088.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s160/b90_1088.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s320/b90_1088.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s480/b90_1088.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s160/b90_1088.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s320/b90_1088.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s480/b90_1088.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1088 - Especial 1995 (2/5) Monster Magnet, Morphine, Silverchair, Wilco, Faith No More, Chris Isaak,..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +164,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s320/festimad_96_cartel.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s160/festimad_96_cartel.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s320/festimad_96_cartel.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s480/festimad_96_cartel.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s160/festimad_96_cartel.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s320/festimad_96_cartel.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s480/festimad_96_cartel.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 252 - Festimad 1996"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -183,8 +180,7 @@
         <a class="related-bottom-card" href="the-cranberries-la-riviera-madrid-22-04-1999.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s320/3771629213825_XXL.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s320/3771629213825_XXL.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s480/3771629213825_XXL.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s640/3771629213825_XXL.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s320/3771629213825_XXL.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s480/3771629213825_XXL.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s640/3771629213825_XXL.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="The Cranberries - La Riviera (Madrid 22/04/1999)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +191,7 @@
           </a><a class="related-bottom-card" href="jane-s-addiction-universal-sur-madrid-07-04-91.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghUrARnuqvXQLjWULWayv37SNOPjZnu7zPt6ZjTNuxF74ACpYu8epHSsDtzrEcdoEUWqxeKR8hB7KwpSc_gGK4xd9_cR5mrb8jPqaMvy3MKahueHuiTvUqDi9kRe0gHLTOTO6Sv9vcxOc/s320/janes_addiction.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghUrARnuqvXQLjWULWayv37SNOPjZnu7zPt6ZjTNuxF74ACpYu8epHSsDtzrEcdoEUWqxeKR8hB7KwpSc_gGK4xd9_cR5mrb8jPqaMvy3MKahueHuiTvUqDi9kRe0gHLTOTO6Sv9vcxOc/s320/janes_addiction.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghUrARnuqvXQLjWULWayv37SNOPjZnu7zPt6ZjTNuxF74ACpYu8epHSsDtzrEcdoEUWqxeKR8hB7KwpSc_gGK4xd9_cR5mrb8jPqaMvy3MKahueHuiTvUqDi9kRe0gHLTOTO6Sv9vcxOc/s480/janes_addiction.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghUrARnuqvXQLjWULWayv37SNOPjZnu7zPt6ZjTNuxF74ACpYu8epHSsDtzrEcdoEUWqxeKR8hB7KwpSc_gGK4xd9_cR5mrb8jPqaMvy3MKahueHuiTvUqDi9kRe0gHLTOTO6Sv9vcxOc/s640/janes_addiction.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghUrARnuqvXQLjWULWayv37SNOPjZnu7zPt6ZjTNuxF74ACpYu8epHSsDtzrEcdoEUWqxeKR8hB7KwpSc_gGK4xd9_cR5mrb8jPqaMvy3MKahueHuiTvUqDi9kRe0gHLTOTO6Sv9vcxOc/s320/janes_addiction.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghUrARnuqvXQLjWULWayv37SNOPjZnu7zPt6ZjTNuxF74ACpYu8epHSsDtzrEcdoEUWqxeKR8hB7KwpSc_gGK4xd9_cR5mrb8jPqaMvy3MKahueHuiTvUqDi9kRe0gHLTOTO6Sv9vcxOc/s480/janes_addiction.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghUrARnuqvXQLjWULWayv37SNOPjZnu7zPt6ZjTNuxF74ACpYu8epHSsDtzrEcdoEUWqxeKR8hB7KwpSc_gGK4xd9_cR5mrb8jPqaMvy3MKahueHuiTvUqDi9kRe0gHLTOTO6Sv9vcxOc/s640/janes_addiction.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Jane&#39;s Addiction - Universal Sur (Madrid 07/04/91)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -207,8 +202,7 @@
           </a><a class="related-bottom-card" href="nirvana-palacio-de-los-deportes-de-la-comunidad-de-madrid-03-07-1992.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s320/1550662537_945128_1550663698_rrss_normal.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s320/1550662537_945128_1550663698_rrss_normal.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s480/1550662537_945128_1550663698_rrss_normal.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s640/1550662537_945128_1550663698_rrss_normal.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s320/1550662537_945128_1550663698_rrss_normal.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s480/1550662537_945128_1550663698_rrss_normal.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s640/1550662537_945128_1550663698_rrss_normal.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Nirvana - Palacio de los Deportes de la Comunidad de Madrid (03/07/1992)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

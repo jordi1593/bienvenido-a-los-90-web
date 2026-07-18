@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.694 - El latido de Portishead — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVlvgW7KKsPBYc9uIjvjGrbfgV8bFBq26uef6b1FMmgNBU6EzLNkT7ySFtf58hhzj3ulVA-z9mtFRgHQGT8syedTvq0s2GWpLOmILa69JBafWmRtrjU1uCdmiYrbVR_XpxE3ORPr403lAC1JHrNplgSTNooHWPn6-ffClS-qGf5cdVYGep-MH2-FLg/s320/maxresdefault%20(4).jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVlvgW7KKsPBYc9uIjvjGrbfgV8bFBq26uef6b1FMmgNBU6EzLNkT7ySFtf58hhzj3ulVA-z9mtFRgHQGT8syedTvq0s2GWpLOmILa69JBafWmRtrjU1uCdmiYrbVR_XpxE3ORPr403lAC1JHrNplgSTNooHWPn6-ffClS-qGf5cdVYGep-MH2-FLg/s160/maxresdefault%20(4).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVlvgW7KKsPBYc9uIjvjGrbfgV8bFBq26uef6b1FMmgNBU6EzLNkT7ySFtf58hhzj3ulVA-z9mtFRgHQGT8syedTvq0s2GWpLOmILa69JBafWmRtrjU1uCdmiYrbVR_XpxE3ORPr403lAC1JHrNplgSTNooHWPn6-ffClS-qGf5cdVYGep-MH2-FLg/s320/maxresdefault%20(4).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVlvgW7KKsPBYc9uIjvjGrbfgV8bFBq26uef6b1FMmgNBU6EzLNkT7ySFtf58hhzj3ulVA-z9mtFRgHQGT8syedTvq0s2GWpLOmILa69JBafWmRtrjU1uCdmiYrbVR_XpxE3ORPr403lAC1JHrNplgSTNooHWPn6-ffClS-qGf5cdVYGep-MH2-FLg/s480/maxresdefault%20(4).jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVlvgW7KKsPBYc9uIjvjGrbfgV8bFBq26uef6b1FMmgNBU6EzLNkT7ySFtf58hhzj3ulVA-z9mtFRgHQGT8syedTvq0s2GWpLOmILa69JBafWmRtrjU1uCdmiYrbVR_XpxE3ORPr403lAC1JHrNplgSTNooHWPn6-ffClS-qGf5cdVYGep-MH2-FLg/s160/maxresdefault%20(4).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVlvgW7KKsPBYc9uIjvjGrbfgV8bFBq26uef6b1FMmgNBU6EzLNkT7ySFtf58hhzj3ulVA-z9mtFRgHQGT8syedTvq0s2GWpLOmILa69JBafWmRtrjU1uCdmiYrbVR_XpxE3ORPr403lAC1JHrNplgSTNooHWPn6-ffClS-qGf5cdVYGep-MH2-FLg/s320/maxresdefault%20(4).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVlvgW7KKsPBYc9uIjvjGrbfgV8bFBq26uef6b1FMmgNBU6EzLNkT7ySFtf58hhzj3ulVA-z9mtFRgHQGT8syedTvq0s2GWpLOmILa69JBafWmRtrjU1uCdmiYrbVR_XpxE3ORPr403lAC1JHrNplgSTNooHWPn6-ffClS-qGf5cdVYGep-MH2-FLg/s480/maxresdefault%20(4).jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 30: Portishead regresan al escenario"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ7jnaM4jvmxlKB9wHPkVl0WbD1BenQGr3foQGSAehIbHgXTxKFjYsWVV4UMCXGeOucQI6FqEK56aTwmeha6oWJSSS3mSV7Rs0kmXs5T51R26eCb0aM-8bv-Roy69zA7VJopiSQY30iRVBCKfUKrGRKbxhrZEHcJbJUnPOxNea4ndf5LZdN65JNFpNU8c/s320/b90_cap8.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ7jnaM4jvmxlKB9wHPkVl0WbD1BenQGr3foQGSAehIbHgXTxKFjYsWVV4UMCXGeOucQI6FqEK56aTwmeha6oWJSSS3mSV7Rs0kmXs5T51R26eCb0aM-8bv-Roy69zA7VJopiSQY30iRVBCKfUKrGRKbxhrZEHcJbJUnPOxNea4ndf5LZdN65JNFpNU8c/s160/b90_cap8.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ7jnaM4jvmxlKB9wHPkVl0WbD1BenQGr3foQGSAehIbHgXTxKFjYsWVV4UMCXGeOucQI6FqEK56aTwmeha6oWJSSS3mSV7Rs0kmXs5T51R26eCb0aM-8bv-Roy69zA7VJopiSQY30iRVBCKfUKrGRKbxhrZEHcJbJUnPOxNea4ndf5LZdN65JNFpNU8c/s320/b90_cap8.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ7jnaM4jvmxlKB9wHPkVl0WbD1BenQGr3foQGSAehIbHgXTxKFjYsWVV4UMCXGeOucQI6FqEK56aTwmeha6oWJSSS3mSV7Rs0kmXs5T51R26eCb0aM-8bv-Roy69zA7VJopiSQY30iRVBCKfUKrGRKbxhrZEHcJbJUnPOxNea4ndf5LZdN65JNFpNU8c/s480/b90_cap8.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ7jnaM4jvmxlKB9wHPkVl0WbD1BenQGr3foQGSAehIbHgXTxKFjYsWVV4UMCXGeOucQI6FqEK56aTwmeha6oWJSSS3mSV7Rs0kmXs5T51R26eCb0aM-8bv-Roy69zA7VJopiSQY30iRVBCKfUKrGRKbxhrZEHcJbJUnPOxNea4ndf5LZdN65JNFpNU8c/s160/b90_cap8.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ7jnaM4jvmxlKB9wHPkVl0WbD1BenQGr3foQGSAehIbHgXTxKFjYsWVV4UMCXGeOucQI6FqEK56aTwmeha6oWJSSS3mSV7Rs0kmXs5T51R26eCb0aM-8bv-Roy69zA7VJopiSQY30iRVBCKfUKrGRKbxhrZEHcJbJUnPOxNea4ndf5LZdN65JNFpNU8c/s320/b90_cap8.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ7jnaM4jvmxlKB9wHPkVl0WbD1BenQGr3foQGSAehIbHgXTxKFjYsWVV4UMCXGeOucQI6FqEK56aTwmeha6oWJSSS3mSV7Rs0kmXs5T51R26eCb0aM-8bv-Roy69zA7VJopiSQY30iRVBCKfUKrGRKbxhrZEHcJbJUnPOxNea4ndf5LZdN65JNFpNU8c/s480/b90_cap8.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.1017 - Especial 1994, Parte 8: Oasis, Portishead, Jeff Buckley, Echobelly, Sebadoh, Dinosaur Jr..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY5e6-4Hh7NCikv4Gx5KZ6o4CpspoWi5wjLNBUBcrtisq4de2rOWTbURD6AMNEfUBEAOHrvKD-9uWG55Z4MZm-EaXrYJqKAGsZiuVNWByJ2l_PbiAgzd7B71bHbiqJSOqrt1fIMVb3Fo3uCgGtVXplm2sXO5IpFWVlLd3tUkPcQvJ-0BVc3SW58GLp_ek/s320/250715_BETH_GIBBONS_400X504-696x877.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY5e6-4Hh7NCikv4Gx5KZ6o4CpspoWi5wjLNBUBcrtisq4de2rOWTbURD6AMNEfUBEAOHrvKD-9uWG55Z4MZm-EaXrYJqKAGsZiuVNWByJ2l_PbiAgzd7B71bHbiqJSOqrt1fIMVb3Fo3uCgGtVXplm2sXO5IpFWVlLd3tUkPcQvJ-0BVc3SW58GLp_ek/s160/250715_BETH_GIBBONS_400X504-696x877.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY5e6-4Hh7NCikv4Gx5KZ6o4CpspoWi5wjLNBUBcrtisq4de2rOWTbURD6AMNEfUBEAOHrvKD-9uWG55Z4MZm-EaXrYJqKAGsZiuVNWByJ2l_PbiAgzd7B71bHbiqJSOqrt1fIMVb3Fo3uCgGtVXplm2sXO5IpFWVlLd3tUkPcQvJ-0BVc3SW58GLp_ek/s320/250715_BETH_GIBBONS_400X504-696x877.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY5e6-4Hh7NCikv4Gx5KZ6o4CpspoWi5wjLNBUBcrtisq4de2rOWTbURD6AMNEfUBEAOHrvKD-9uWG55Z4MZm-EaXrYJqKAGsZiuVNWByJ2l_PbiAgzd7B71bHbiqJSOqrt1fIMVb3Fo3uCgGtVXplm2sXO5IpFWVlLd3tUkPcQvJ-0BVc3SW58GLp_ek/s480/250715_BETH_GIBBONS_400X504-696x877.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY5e6-4Hh7NCikv4Gx5KZ6o4CpspoWi5wjLNBUBcrtisq4de2rOWTbURD6AMNEfUBEAOHrvKD-9uWG55Z4MZm-EaXrYJqKAGsZiuVNWByJ2l_PbiAgzd7B71bHbiqJSOqrt1fIMVb3Fo3uCgGtVXplm2sXO5IpFWVlLd3tUkPcQvJ-0BVc3SW58GLp_ek/s160/250715_BETH_GIBBONS_400X504-696x877.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY5e6-4Hh7NCikv4Gx5KZ6o4CpspoWi5wjLNBUBcrtisq4de2rOWTbURD6AMNEfUBEAOHrvKD-9uWG55Z4MZm-EaXrYJqKAGsZiuVNWByJ2l_PbiAgzd7B71bHbiqJSOqrt1fIMVb3Fo3uCgGtVXplm2sXO5IpFWVlLd3tUkPcQvJ-0BVc3SW58GLp_ek/s320/250715_BETH_GIBBONS_400X504-696x877.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY5e6-4Hh7NCikv4Gx5KZ6o4CpspoWi5wjLNBUBcrtisq4de2rOWTbURD6AMNEfUBEAOHrvKD-9uWG55Z4MZm-EaXrYJqKAGsZiuVNWByJ2l_PbiAgzd7B71bHbiqJSOqrt1fIMVb3Fo3uCgGtVXplm2sXO5IpFWVlLd3tUkPcQvJ-0BVc3SW58GLp_ek/s480/250715_BETH_GIBBONS_400X504-696x877.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 82 - Beth Gibbons – Noches del Botánico (Madrid)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="programa-124-portishead-18-de-julio-2014-madrid.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbljXuoamvZfDC20dyxAyt2aJYbYYSmoPbX1a4z5VrLK4RyoHGq5AerFW-LxWVgXVNd2stra-yFaLMiwjqatGrKanerYBRj2RHmRWoGIyny9iizZHpPT9tX_ghV2pgGfnksEJd51vT-S0/s320/Portishead-129RetP1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbljXuoamvZfDC20dyxAyt2aJYbYYSmoPbX1a4z5VrLK4RyoHGq5AerFW-LxWVgXVNd2stra-yFaLMiwjqatGrKanerYBRj2RHmRWoGIyny9iizZHpPT9tX_ghV2pgGfnksEJd51vT-S0/s320/Portishead-129RetP1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbljXuoamvZfDC20dyxAyt2aJYbYYSmoPbX1a4z5VrLK4RyoHGq5AerFW-LxWVgXVNd2stra-yFaLMiwjqatGrKanerYBRj2RHmRWoGIyny9iizZHpPT9tX_ghV2pgGfnksEJd51vT-S0/s480/Portishead-129RetP1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbljXuoamvZfDC20dyxAyt2aJYbYYSmoPbX1a4z5VrLK4RyoHGq5AerFW-LxWVgXVNd2stra-yFaLMiwjqatGrKanerYBRj2RHmRWoGIyny9iizZHpPT9tX_ghV2pgGfnksEJd51vT-S0/s640/Portishead-129RetP1.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbljXuoamvZfDC20dyxAyt2aJYbYYSmoPbX1a4z5VrLK4RyoHGq5AerFW-LxWVgXVNd2stra-yFaLMiwjqatGrKanerYBRj2RHmRWoGIyny9iizZHpPT9tX_ghV2pgGfnksEJd51vT-S0/s320/Portishead-129RetP1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbljXuoamvZfDC20dyxAyt2aJYbYYSmoPbX1a4z5VrLK4RyoHGq5AerFW-LxWVgXVNd2stra-yFaLMiwjqatGrKanerYBRj2RHmRWoGIyny9iizZHpPT9tX_ghV2pgGfnksEJd51vT-S0/s480/Portishead-129RetP1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbljXuoamvZfDC20dyxAyt2aJYbYYSmoPbX1a4z5VrLK4RyoHGq5AerFW-LxWVgXVNd2stra-yFaLMiwjqatGrKanerYBRj2RHmRWoGIyny9iizZHpPT9tX_ghV2pgGfnksEJd51vT-S0/s640/Portishead-129RetP1.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 124 - Portishead 18 de Julio 2014 Madrid"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="p-727-sintiendo-caer-la-mierda-sobre-mi-canciones-para-el-blue-monday-vol-1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s480/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s640/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s480/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s640/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.727 - Sintiendo caer la mierda sobre mí: canciones para el Blue Monday Vol.1"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="p-796-canciones-imbatibles-que-abren-disco.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s320/1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s320/1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s480/1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s640/1.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s320/1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s480/1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s640/1.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.796 - Canciones imbatibles que abren disco"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 287 - Ok Computer Revisited — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -150,8 +150,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s320/22552763_1929663387051295_5305889142817090822_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s160/22552763_1929663387051295_5305889142817090822_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s320/22552763_1929663387051295_5305889142817090822_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s480/22552763_1929663387051295_5305889142817090822_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s160/22552763_1929663387051295_5305889142817090822_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s320/22552763_1929663387051295_5305889142817090822_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRmuKNNEuCmAJ6nnLbm6HxoHRyeZNw6d2zJRywatpbBBHcSyhflc7sw1tHn-kAQ4kmDtbzJY8-LtofA7qhaji9J6OlRv-YAYU1zpRnPM0x1zoeg5uyWQlEwMsvwM_sVjwAJITcWnBO94o/s480/22552763_1929663387051295_5305889142817090822_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 314 - Homenaje a Radiohead en directo"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -161,8 +160,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQnXDHA2jOzvgvtX5oWe6DH0ZhnIN2670hnEzLRuHfq2tNJ4e8Unr-D1bYvjWKO93MYJpstGluCniyg1nX7Vyg4C_g8JFzP39CWZlP2-06Fzjc7SnBShf05qbxMORIE6D7w0-4ktOL6Y/s320/22552763_1929663387051295_5305889142817090822_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQnXDHA2jOzvgvtX5oWe6DH0ZhnIN2670hnEzLRuHfq2tNJ4e8Unr-D1bYvjWKO93MYJpstGluCniyg1nX7Vyg4C_g8JFzP39CWZlP2-06Fzjc7SnBShf05qbxMORIE6D7w0-4ktOL6Y/s160/22552763_1929663387051295_5305889142817090822_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQnXDHA2jOzvgvtX5oWe6DH0ZhnIN2670hnEzLRuHfq2tNJ4e8Unr-D1bYvjWKO93MYJpstGluCniyg1nX7Vyg4C_g8JFzP39CWZlP2-06Fzjc7SnBShf05qbxMORIE6D7w0-4ktOL6Y/s320/22552763_1929663387051295_5305889142817090822_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQnXDHA2jOzvgvtX5oWe6DH0ZhnIN2670hnEzLRuHfq2tNJ4e8Unr-D1bYvjWKO93MYJpstGluCniyg1nX7Vyg4C_g8JFzP39CWZlP2-06Fzjc7SnBShf05qbxMORIE6D7w0-4ktOL6Y/s480/22552763_1929663387051295_5305889142817090822_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQnXDHA2jOzvgvtX5oWe6DH0ZhnIN2670hnEzLRuHfq2tNJ4e8Unr-D1bYvjWKO93MYJpstGluCniyg1nX7Vyg4C_g8JFzP39CWZlP2-06Fzjc7SnBShf05qbxMORIE6D7w0-4ktOL6Y/s160/22552763_1929663387051295_5305889142817090822_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQnXDHA2jOzvgvtX5oWe6DH0ZhnIN2670hnEzLRuHfq2tNJ4e8Unr-D1bYvjWKO93MYJpstGluCniyg1nX7Vyg4C_g8JFzP39CWZlP2-06Fzjc7SnBShf05qbxMORIE6D7w0-4ktOL6Y/s320/22552763_1929663387051295_5305889142817090822_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQnXDHA2jOzvgvtX5oWe6DH0ZhnIN2670hnEzLRuHfq2tNJ4e8Unr-D1bYvjWKO93MYJpstGluCniyg1nX7Vyg4C_g8JFzP39CWZlP2-06Fzjc7SnBShf05qbxMORIE6D7w0-4ktOL6Y/s480/22552763_1929663387051295_5305889142817090822_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Los conciertos de Bienvenido a los 90"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -172,8 +170,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi6dLyN4yFWJl9mEms7JCCDRLY9WLxA13u_aPaag55Wv5Eg1TaHNGqMgumojt2VA0uoaIvlC44lxX_if6GGJQyd4yLhX01fWLvGc_cSLzHemSlKlYyT1Pc8niInJQ83dkTfL6v6x0BK-0/s320/524071-944-432.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi6dLyN4yFWJl9mEms7JCCDRLY9WLxA13u_aPaag55Wv5Eg1TaHNGqMgumojt2VA0uoaIvlC44lxX_if6GGJQyd4yLhX01fWLvGc_cSLzHemSlKlYyT1Pc8niInJQ83dkTfL6v6x0BK-0/s160/524071-944-432.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi6dLyN4yFWJl9mEms7JCCDRLY9WLxA13u_aPaag55Wv5Eg1TaHNGqMgumojt2VA0uoaIvlC44lxX_if6GGJQyd4yLhX01fWLvGc_cSLzHemSlKlYyT1Pc8niInJQ83dkTfL6v6x0BK-0/s320/524071-944-432.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi6dLyN4yFWJl9mEms7JCCDRLY9WLxA13u_aPaag55Wv5Eg1TaHNGqMgumojt2VA0uoaIvlC44lxX_if6GGJQyd4yLhX01fWLvGc_cSLzHemSlKlYyT1Pc8niInJQ83dkTfL6v6x0BK-0/s480/524071-944-432.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi6dLyN4yFWJl9mEms7JCCDRLY9WLxA13u_aPaag55Wv5Eg1TaHNGqMgumojt2VA0uoaIvlC44lxX_if6GGJQyd4yLhX01fWLvGc_cSLzHemSlKlYyT1Pc8niInJQ83dkTfL6v6x0BK-0/s160/524071-944-432.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi6dLyN4yFWJl9mEms7JCCDRLY9WLxA13u_aPaag55Wv5Eg1TaHNGqMgumojt2VA0uoaIvlC44lxX_if6GGJQyd4yLhX01fWLvGc_cSLzHemSlKlYyT1Pc8niInJQ83dkTfL6v6x0BK-0/s320/524071-944-432.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi6dLyN4yFWJl9mEms7JCCDRLY9WLxA13u_aPaag55Wv5Eg1TaHNGqMgumojt2VA0uoaIvlC44lxX_if6GGJQyd4yLhX01fWLvGc_cSLzHemSlKlYyT1Pc8niInJQ83dkTfL6v6x0BK-0/s480/524071-944-432.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 326 – Lo mejor del 2017 OK Computer Revisited"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -189,8 +186,7 @@
         <a class="related-bottom-card" href="programa-286-la-cara-oculta-de-ok-computer.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiV8OSVanSQSe6vFrk2g3zMDlNDYT7hydHKH7uLYyehpg7T_yGvFRzI3ME0XsH50Q6I5kcwGylIyCq2wUCsJvvJsQSYt_jU2x7e2ppEgRXLy6NIlWcFq7jnngHT1D9bahdeHTd2CsKvJdo/s320/19424492_1766001526750816_8382539317453511670_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiV8OSVanSQSe6vFrk2g3zMDlNDYT7hydHKH7uLYyehpg7T_yGvFRzI3ME0XsH50Q6I5kcwGylIyCq2wUCsJvvJsQSYt_jU2x7e2ppEgRXLy6NIlWcFq7jnngHT1D9bahdeHTd2CsKvJdo/s320/19424492_1766001526750816_8382539317453511670_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiV8OSVanSQSe6vFrk2g3zMDlNDYT7hydHKH7uLYyehpg7T_yGvFRzI3ME0XsH50Q6I5kcwGylIyCq2wUCsJvvJsQSYt_jU2x7e2ppEgRXLy6NIlWcFq7jnngHT1D9bahdeHTd2CsKvJdo/s480/19424492_1766001526750816_8382539317453511670_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiV8OSVanSQSe6vFrk2g3zMDlNDYT7hydHKH7uLYyehpg7T_yGvFRzI3ME0XsH50Q6I5kcwGylIyCq2wUCsJvvJsQSYt_jU2x7e2ppEgRXLy6NIlWcFq7jnngHT1D9bahdeHTd2CsKvJdo/s640/19424492_1766001526750816_8382539317453511670_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiV8OSVanSQSe6vFrk2g3zMDlNDYT7hydHKH7uLYyehpg7T_yGvFRzI3ME0XsH50Q6I5kcwGylIyCq2wUCsJvvJsQSYt_jU2x7e2ppEgRXLy6NIlWcFq7jnngHT1D9bahdeHTd2CsKvJdo/s320/19424492_1766001526750816_8382539317453511670_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiV8OSVanSQSe6vFrk2g3zMDlNDYT7hydHKH7uLYyehpg7T_yGvFRzI3ME0XsH50Q6I5kcwGylIyCq2wUCsJvvJsQSYt_jU2x7e2ppEgRXLy6NIlWcFq7jnngHT1D9bahdeHTd2CsKvJdo/s480/19424492_1766001526750816_8382539317453511670_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiV8OSVanSQSe6vFrk2g3zMDlNDYT7hydHKH7uLYyehpg7T_yGvFRzI3ME0XsH50Q6I5kcwGylIyCq2wUCsJvvJsQSYt_jU2x7e2ppEgRXLy6NIlWcFq7jnngHT1D9bahdeHTd2CsKvJdo/s640/19424492_1766001526750816_8382539317453511670_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 286 - La cara oculta de Ok Computer"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -201,8 +197,7 @@
           </a><a class="related-bottom-card" href="programa-290-en-las-tripas-de-ok-computer.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnrgTj9nmcr5EKhj09PnlsXFx_hNVxU678gDe2k1nVpq9BaIFavU-0v74wkcdwuHa6ea6PVYZYRbDmCzUCwkFzMiSEWxLbu3u1158CGOuxpR4qGKIY_T5n8llVsBpgEZH4oT-ZsRlK14Y/s320/cassette+oknotok+radiohead.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnrgTj9nmcr5EKhj09PnlsXFx_hNVxU678gDe2k1nVpq9BaIFavU-0v74wkcdwuHa6ea6PVYZYRbDmCzUCwkFzMiSEWxLbu3u1158CGOuxpR4qGKIY_T5n8llVsBpgEZH4oT-ZsRlK14Y/s320/cassette+oknotok+radiohead.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnrgTj9nmcr5EKhj09PnlsXFx_hNVxU678gDe2k1nVpq9BaIFavU-0v74wkcdwuHa6ea6PVYZYRbDmCzUCwkFzMiSEWxLbu3u1158CGOuxpR4qGKIY_T5n8llVsBpgEZH4oT-ZsRlK14Y/s480/cassette+oknotok+radiohead.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnrgTj9nmcr5EKhj09PnlsXFx_hNVxU678gDe2k1nVpq9BaIFavU-0v74wkcdwuHa6ea6PVYZYRbDmCzUCwkFzMiSEWxLbu3u1158CGOuxpR4qGKIY_T5n8llVsBpgEZH4oT-ZsRlK14Y/s640/cassette+oknotok+radiohead.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnrgTj9nmcr5EKhj09PnlsXFx_hNVxU678gDe2k1nVpq9BaIFavU-0v74wkcdwuHa6ea6PVYZYRbDmCzUCwkFzMiSEWxLbu3u1158CGOuxpR4qGKIY_T5n8llVsBpgEZH4oT-ZsRlK14Y/s320/cassette+oknotok+radiohead.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnrgTj9nmcr5EKhj09PnlsXFx_hNVxU678gDe2k1nVpq9BaIFavU-0v74wkcdwuHa6ea6PVYZYRbDmCzUCwkFzMiSEWxLbu3u1158CGOuxpR4qGKIY_T5n8llVsBpgEZH4oT-ZsRlK14Y/s480/cassette+oknotok+radiohead.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnrgTj9nmcr5EKhj09PnlsXFx_hNVxU678gDe2k1nVpq9BaIFavU-0v74wkcdwuHa6ea6PVYZYRbDmCzUCwkFzMiSEWxLbu3u1158CGOuxpR4qGKIY_T5n8llVsBpgEZH4oT-ZsRlK14Y/s640/cassette+oknotok+radiohead.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 290 - En las tripas de Ok Computer"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -213,8 +208,7 @@
           </a><a class="related-bottom-card" href="programa-283-radiohead-ok-computer-construyendo-un-mito.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimkl_5JqK_CZ__LP3HO3uHLAACWUtL-MN6Yge7cmy4vc9BunpLt9rWRXxn93veURoXHPDrgN4uULz4gQbWJ0LL6d2r8i4TGqjnXTLliI7C8QhXCxFi_moVeZ5JnIVcOEq4uWdi__7KeG0/s320/screen-shot-2015-03-13-at-9-53-03-am.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimkl_5JqK_CZ__LP3HO3uHLAACWUtL-MN6Yge7cmy4vc9BunpLt9rWRXxn93veURoXHPDrgN4uULz4gQbWJ0LL6d2r8i4TGqjnXTLliI7C8QhXCxFi_moVeZ5JnIVcOEq4uWdi__7KeG0/s320/screen-shot-2015-03-13-at-9-53-03-am.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimkl_5JqK_CZ__LP3HO3uHLAACWUtL-MN6Yge7cmy4vc9BunpLt9rWRXxn93veURoXHPDrgN4uULz4gQbWJ0LL6d2r8i4TGqjnXTLliI7C8QhXCxFi_moVeZ5JnIVcOEq4uWdi__7KeG0/s480/screen-shot-2015-03-13-at-9-53-03-am.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimkl_5JqK_CZ__LP3HO3uHLAACWUtL-MN6Yge7cmy4vc9BunpLt9rWRXxn93veURoXHPDrgN4uULz4gQbWJ0LL6d2r8i4TGqjnXTLliI7C8QhXCxFi_moVeZ5JnIVcOEq4uWdi__7KeG0/s640/screen-shot-2015-03-13-at-9-53-03-am.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimkl_5JqK_CZ__LP3HO3uHLAACWUtL-MN6Yge7cmy4vc9BunpLt9rWRXxn93veURoXHPDrgN4uULz4gQbWJ0LL6d2r8i4TGqjnXTLliI7C8QhXCxFi_moVeZ5JnIVcOEq4uWdi__7KeG0/s320/screen-shot-2015-03-13-at-9-53-03-am.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimkl_5JqK_CZ__LP3HO3uHLAACWUtL-MN6Yge7cmy4vc9BunpLt9rWRXxn93veURoXHPDrgN4uULz4gQbWJ0LL6d2r8i4TGqjnXTLliI7C8QhXCxFi_moVeZ5JnIVcOEq4uWdi__7KeG0/s480/screen-shot-2015-03-13-at-9-53-03-am.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimkl_5JqK_CZ__LP3HO3uHLAACWUtL-MN6Yge7cmy4vc9BunpLt9rWRXxn93veURoXHPDrgN4uULz4gQbWJ0LL6d2r8i4TGqjnXTLliI7C8QhXCxFi_moVeZ5JnIVcOEq4uWdi__7KeG0/s640/screen-shot-2015-03-13-at-9-53-03-am.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 283 - Radiohead - Ok Computer (Construyendo un mito)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

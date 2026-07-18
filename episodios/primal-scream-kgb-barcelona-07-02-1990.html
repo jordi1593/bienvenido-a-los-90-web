@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Primal Scream - KGB (Barcelona 07/02/1990) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -131,8 +131,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 66 - The DOORS, STONE TEMPLE PILOTS, QOTSA, PRIMAL SCREAM"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -142,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhN6JL5s8cE30-r-Z14vw3vOD80-xUSuxeiyn0jyBUd7zZL5YjAX2PQIaAXQeW4tl0tSNXXUsndRQL21vC8J4Thn48fNKPKNyl-Z4_DjNJz2ao4renS7EeYL7AMvEMaPBRtQIeAIhaxUM/s320/pixies-1990.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhN6JL5s8cE30-r-Z14vw3vOD80-xUSuxeiyn0jyBUd7zZL5YjAX2PQIaAXQeW4tl0tSNXXUsndRQL21vC8J4Thn48fNKPKNyl-Z4_DjNJz2ao4renS7EeYL7AMvEMaPBRtQIeAIhaxUM/s160/pixies-1990.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhN6JL5s8cE30-r-Z14vw3vOD80-xUSuxeiyn0jyBUd7zZL5YjAX2PQIaAXQeW4tl0tSNXXUsndRQL21vC8J4Thn48fNKPKNyl-Z4_DjNJz2ao4renS7EeYL7AMvEMaPBRtQIeAIhaxUM/s320/pixies-1990.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhN6JL5s8cE30-r-Z14vw3vOD80-xUSuxeiyn0jyBUd7zZL5YjAX2PQIaAXQeW4tl0tSNXXUsndRQL21vC8J4Thn48fNKPKNyl-Z4_DjNJz2ao4renS7EeYL7AMvEMaPBRtQIeAIhaxUM/s480/pixies-1990.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhN6JL5s8cE30-r-Z14vw3vOD80-xUSuxeiyn0jyBUd7zZL5YjAX2PQIaAXQeW4tl0tSNXXUsndRQL21vC8J4Thn48fNKPKNyl-Z4_DjNJz2ao4renS7EeYL7AMvEMaPBRtQIeAIhaxUM/s160/pixies-1990.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhN6JL5s8cE30-r-Z14vw3vOD80-xUSuxeiyn0jyBUd7zZL5YjAX2PQIaAXQeW4tl0tSNXXUsndRQL21vC8J4Thn48fNKPKNyl-Z4_DjNJz2ao4renS7EeYL7AMvEMaPBRtQIeAIhaxUM/s320/pixies-1990.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhN6JL5s8cE30-r-Z14vw3vOD80-xUSuxeiyn0jyBUd7zZL5YjAX2PQIaAXQeW4tl0tSNXXUsndRQL21vC8J4Thn48fNKPKNyl-Z4_DjNJz2ao4renS7EeYL7AMvEMaPBRtQIeAIhaxUM/s480/pixies-1990.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Pixies - Universal Sur (Madrid 17/09/1990)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -153,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-B_ree20xEwdStfd8a7En1pCZ94425EQPs8cXtkuVo5mrw97M5QeTPO3-cf2t46vK62woLQzC7zIlFnatbuD_2K2oH48rf3wHePJIJ2Qfugt1KC_oKFPsOk0YlgSYVOlCC0CvITjdQA8/s320/image%252B%252825%2529.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-B_ree20xEwdStfd8a7En1pCZ94425EQPs8cXtkuVo5mrw97M5QeTPO3-cf2t46vK62woLQzC7zIlFnatbuD_2K2oH48rf3wHePJIJ2Qfugt1KC_oKFPsOk0YlgSYVOlCC0CvITjdQA8/s160/image%252B%252825%2529.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-B_ree20xEwdStfd8a7En1pCZ94425EQPs8cXtkuVo5mrw97M5QeTPO3-cf2t46vK62woLQzC7zIlFnatbuD_2K2oH48rf3wHePJIJ2Qfugt1KC_oKFPsOk0YlgSYVOlCC0CvITjdQA8/s320/image%252B%252825%2529.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-B_ree20xEwdStfd8a7En1pCZ94425EQPs8cXtkuVo5mrw97M5QeTPO3-cf2t46vK62woLQzC7zIlFnatbuD_2K2oH48rf3wHePJIJ2Qfugt1KC_oKFPsOk0YlgSYVOlCC0CvITjdQA8/s480/image%252B%252825%2529.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-B_ree20xEwdStfd8a7En1pCZ94425EQPs8cXtkuVo5mrw97M5QeTPO3-cf2t46vK62woLQzC7zIlFnatbuD_2K2oH48rf3wHePJIJ2Qfugt1KC_oKFPsOk0YlgSYVOlCC0CvITjdQA8/s160/image%252B%252825%2529.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-B_ree20xEwdStfd8a7En1pCZ94425EQPs8cXtkuVo5mrw97M5QeTPO3-cf2t46vK62woLQzC7zIlFnatbuD_2K2oH48rf3wHePJIJ2Qfugt1KC_oKFPsOk0YlgSYVOlCC0CvITjdQA8/s320/image%252B%252825%2529.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-B_ree20xEwdStfd8a7En1pCZ94425EQPs8cXtkuVo5mrw97M5QeTPO3-cf2t46vK62woLQzC7zIlFnatbuD_2K2oH48rf3wHePJIJ2Qfugt1KC_oKFPsOk0YlgSYVOlCC0CvITjdQA8/s480/image%252B%252825%2529.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Green Day - Garatge Club (Barcelona 05/06/1994)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -170,8 +167,7 @@
         <a class="related-bottom-card" href="the-cult-zeleste-barcelona-11-07-1994.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH1JoCBv_GPedM9lEWK-5tvnoSxqCDWJbAJWkhqbOJEw9HUcwybvoWmD_mJmkOqRcJonC_fM9tesArqUOXht7BqZrdNxsIhzzRVJmIRXwsf96D0D0Rn9IoTpWZltGnFpiIYCCFsc1VGnE/s320/vlcsnap-2011-05-14-17h43m06s238.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH1JoCBv_GPedM9lEWK-5tvnoSxqCDWJbAJWkhqbOJEw9HUcwybvoWmD_mJmkOqRcJonC_fM9tesArqUOXht7BqZrdNxsIhzzRVJmIRXwsf96D0D0Rn9IoTpWZltGnFpiIYCCFsc1VGnE/s320/vlcsnap-2011-05-14-17h43m06s238.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH1JoCBv_GPedM9lEWK-5tvnoSxqCDWJbAJWkhqbOJEw9HUcwybvoWmD_mJmkOqRcJonC_fM9tesArqUOXht7BqZrdNxsIhzzRVJmIRXwsf96D0D0Rn9IoTpWZltGnFpiIYCCFsc1VGnE/s480/vlcsnap-2011-05-14-17h43m06s238.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH1JoCBv_GPedM9lEWK-5tvnoSxqCDWJbAJWkhqbOJEw9HUcwybvoWmD_mJmkOqRcJonC_fM9tesArqUOXht7BqZrdNxsIhzzRVJmIRXwsf96D0D0Rn9IoTpWZltGnFpiIYCCFsc1VGnE/s640/vlcsnap-2011-05-14-17h43m06s238.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH1JoCBv_GPedM9lEWK-5tvnoSxqCDWJbAJWkhqbOJEw9HUcwybvoWmD_mJmkOqRcJonC_fM9tesArqUOXht7BqZrdNxsIhzzRVJmIRXwsf96D0D0Rn9IoTpWZltGnFpiIYCCFsc1VGnE/s320/vlcsnap-2011-05-14-17h43m06s238.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH1JoCBv_GPedM9lEWK-5tvnoSxqCDWJbAJWkhqbOJEw9HUcwybvoWmD_mJmkOqRcJonC_fM9tesArqUOXht7BqZrdNxsIhzzRVJmIRXwsf96D0D0Rn9IoTpWZltGnFpiIYCCFsc1VGnE/s480/vlcsnap-2011-05-14-17h43m06s238.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH1JoCBv_GPedM9lEWK-5tvnoSxqCDWJbAJWkhqbOJEw9HUcwybvoWmD_mJmkOqRcJonC_fM9tesArqUOXht7BqZrdNxsIhzzRVJmIRXwsf96D0D0Rn9IoTpWZltGnFpiIYCCFsc1VGnE/s640/vlcsnap-2011-05-14-17h43m06s238.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="The Cult - Zeleste (Barcelona 11/07/1994)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -182,8 +178,7 @@
           </a><a class="related-bottom-card" href="beck-zeleste-barcelona-25-05-1998.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz7LkEWL3HX6dnmbjTTg_ykr_tdsGAoEuThrFu_MlA9Jp9k6b2qG4rVcfGzFDs4c6AEL3O4pxWbrMg6gz3ZcMDpOmCZaE23mg6RzAjK4gq3Kp94B_y3Luy3kfWWJfl6I29yO3qVBDQEEI/s320/Vogue+Hommes+International+mode+Autumn+Winter+1998-99+Musical+Mavericks+-+Beck.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz7LkEWL3HX6dnmbjTTg_ykr_tdsGAoEuThrFu_MlA9Jp9k6b2qG4rVcfGzFDs4c6AEL3O4pxWbrMg6gz3ZcMDpOmCZaE23mg6RzAjK4gq3Kp94B_y3Luy3kfWWJfl6I29yO3qVBDQEEI/s320/Vogue+Hommes+International+mode+Autumn+Winter+1998-99+Musical+Mavericks+-+Beck.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz7LkEWL3HX6dnmbjTTg_ykr_tdsGAoEuThrFu_MlA9Jp9k6b2qG4rVcfGzFDs4c6AEL3O4pxWbrMg6gz3ZcMDpOmCZaE23mg6RzAjK4gq3Kp94B_y3Luy3kfWWJfl6I29yO3qVBDQEEI/s480/Vogue+Hommes+International+mode+Autumn+Winter+1998-99+Musical+Mavericks+-+Beck.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz7LkEWL3HX6dnmbjTTg_ykr_tdsGAoEuThrFu_MlA9Jp9k6b2qG4rVcfGzFDs4c6AEL3O4pxWbrMg6gz3ZcMDpOmCZaE23mg6RzAjK4gq3Kp94B_y3Luy3kfWWJfl6I29yO3qVBDQEEI/s640/Vogue+Hommes+International+mode+Autumn+Winter+1998-99+Musical+Mavericks+-+Beck.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz7LkEWL3HX6dnmbjTTg_ykr_tdsGAoEuThrFu_MlA9Jp9k6b2qG4rVcfGzFDs4c6AEL3O4pxWbrMg6gz3ZcMDpOmCZaE23mg6RzAjK4gq3Kp94B_y3Luy3kfWWJfl6I29yO3qVBDQEEI/s320/Vogue+Hommes+International+mode+Autumn+Winter+1998-99+Musical+Mavericks+-+Beck.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz7LkEWL3HX6dnmbjTTg_ykr_tdsGAoEuThrFu_MlA9Jp9k6b2qG4rVcfGzFDs4c6AEL3O4pxWbrMg6gz3ZcMDpOmCZaE23mg6RzAjK4gq3Kp94B_y3Luy3kfWWJfl6I29yO3qVBDQEEI/s480/Vogue+Hommes+International+mode+Autumn+Winter+1998-99+Musical+Mavericks+-+Beck.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz7LkEWL3HX6dnmbjTTg_ykr_tdsGAoEuThrFu_MlA9Jp9k6b2qG4rVcfGzFDs4c6AEL3O4pxWbrMg6gz3ZcMDpOmCZaE23mg6RzAjK4gq3Kp94B_y3Luy3kfWWJfl6I29yO3qVBDQEEI/s640/Vogue+Hommes+International+mode+Autumn+Winter+1998-99+Musical+Mavericks+-+Beck.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Beck - Zeleste (Barcelona 25/05/1998)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -194,8 +189,7 @@
           </a><a class="related-bottom-card" href="p-792-el-repaso-definitivo-a-1991.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s320/1991-in-music.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s320/1991-in-music.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s480/1991-in-music.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s640/1991-in-music.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s320/1991-in-music.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s480/1991-in-music.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s640/1991-in-music.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.792 - El repaso definitivo a 1991 "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

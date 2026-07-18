@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.699 - Novedades: Blues Pills, Clt Drp, Lucidvox, Naked Giants, Aua... — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -140,8 +140,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHOlwLhJYPrr_6XvrYQ7d8vOzihKmGEsyWHq8dVG2P1FEFNP_d9MX9Umr0BOsOdK0SfuankFguAG9Kdf7evCgqaSFqYLjc_cFxnPhroAF6XmlknYKOos3ADCGgbOcd8w7laAydxjhAKI/s320/PJ-HARVEY-1992-1000x600.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHOlwLhJYPrr_6XvrYQ7d8vOzihKmGEsyWHq8dVG2P1FEFNP_d9MX9Umr0BOsOdK0SfuankFguAG9Kdf7evCgqaSFqYLjc_cFxnPhroAF6XmlknYKOos3ADCGgbOcd8w7laAydxjhAKI/s160/PJ-HARVEY-1992-1000x600.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHOlwLhJYPrr_6XvrYQ7d8vOzihKmGEsyWHq8dVG2P1FEFNP_d9MX9Umr0BOsOdK0SfuankFguAG9Kdf7evCgqaSFqYLjc_cFxnPhroAF6XmlknYKOos3ADCGgbOcd8w7laAydxjhAKI/s320/PJ-HARVEY-1992-1000x600.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHOlwLhJYPrr_6XvrYQ7d8vOzihKmGEsyWHq8dVG2P1FEFNP_d9MX9Umr0BOsOdK0SfuankFguAG9Kdf7evCgqaSFqYLjc_cFxnPhroAF6XmlknYKOos3ADCGgbOcd8w7laAydxjhAKI/s480/PJ-HARVEY-1992-1000x600.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHOlwLhJYPrr_6XvrYQ7d8vOzihKmGEsyWHq8dVG2P1FEFNP_d9MX9Umr0BOsOdK0SfuankFguAG9Kdf7evCgqaSFqYLjc_cFxnPhroAF6XmlknYKOos3ADCGgbOcd8w7laAydxjhAKI/s160/PJ-HARVEY-1992-1000x600.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHOlwLhJYPrr_6XvrYQ7d8vOzihKmGEsyWHq8dVG2P1FEFNP_d9MX9Umr0BOsOdK0SfuankFguAG9Kdf7evCgqaSFqYLjc_cFxnPhroAF6XmlknYKOos3ADCGgbOcd8w7laAydxjhAKI/s320/PJ-HARVEY-1992-1000x600.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHOlwLhJYPrr_6XvrYQ7d8vOzihKmGEsyWHq8dVG2P1FEFNP_d9MX9Umr0BOsOdK0SfuankFguAG9Kdf7evCgqaSFqYLjc_cFxnPhroAF6XmlknYKOos3ADCGgbOcd8w7laAydxjhAKI/s480/PJ-HARVEY-1992-1000x600.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.702 - Especial PJ Harvey (Parte 1)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -151,8 +150,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s320/malcolm450.1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s160/malcolm450.1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s320/malcolm450.1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s480/malcolm450.1.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s160/malcolm450.1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s320/malcolm450.1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s480/malcolm450.1.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.706 - Mark Oliver Everett (Eels) pincha sus canciones favoritas"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -162,8 +160,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFkGcPusydzSVQCbRvNCzJv8gPMntL8WU5v_L3zV6Z0kIJ7jjgSeodVM1MF8tX88TvikMEDBQkX5uleygxt7trRrFNpjody-7qMgNYt14E1TS7TkziOCnC2Nr6cmMNtapKzVX5FILo8wI/s320/b90_711.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFkGcPusydzSVQCbRvNCzJv8gPMntL8WU5v_L3zV6Z0kIJ7jjgSeodVM1MF8tX88TvikMEDBQkX5uleygxt7trRrFNpjody-7qMgNYt14E1TS7TkziOCnC2Nr6cmMNtapKzVX5FILo8wI/s160/b90_711.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFkGcPusydzSVQCbRvNCzJv8gPMntL8WU5v_L3zV6Z0kIJ7jjgSeodVM1MF8tX88TvikMEDBQkX5uleygxt7trRrFNpjody-7qMgNYt14E1TS7TkziOCnC2Nr6cmMNtapKzVX5FILo8wI/s320/b90_711.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFkGcPusydzSVQCbRvNCzJv8gPMntL8WU5v_L3zV6Z0kIJ7jjgSeodVM1MF8tX88TvikMEDBQkX5uleygxt7trRrFNpjody-7qMgNYt14E1TS7TkziOCnC2Nr6cmMNtapKzVX5FILo8wI/s480/b90_711.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFkGcPusydzSVQCbRvNCzJv8gPMntL8WU5v_L3zV6Z0kIJ7jjgSeodVM1MF8tX88TvikMEDBQkX5uleygxt7trRrFNpjody-7qMgNYt14E1TS7TkziOCnC2Nr6cmMNtapKzVX5FILo8wI/s160/b90_711.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFkGcPusydzSVQCbRvNCzJv8gPMntL8WU5v_L3zV6Z0kIJ7jjgSeodVM1MF8tX88TvikMEDBQkX5uleygxt7trRrFNpjody-7qMgNYt14E1TS7TkziOCnC2Nr6cmMNtapKzVX5FILo8wI/s320/b90_711.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFkGcPusydzSVQCbRvNCzJv8gPMntL8WU5v_L3zV6Z0kIJ7jjgSeodVM1MF8tX88TvikMEDBQkX5uleygxt7trRrFNpjody-7qMgNYt14E1TS7TkziOCnC2Nr6cmMNtapKzVX5FILo8wI/s480/b90_711.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.711 - Novedades: Hickeys, The Boy From the South, The Wax, Le Traste, Radio75..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -179,8 +176,7 @@
         <a class="related-bottom-card" href="b90-classic-2-el-nuevo-grunge.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNajXe8yRJyrUbYeIUpo-zjXP0jcc5fRZ7Lg_JrJWaCSFJQCXnxumIxUygbEHVbhuqvvH6GPMH6-0GfoYl1aLN9i5IN3nRcdC_iGyiqHXJCwoIlfEV4bLntIc8TAj_4jsz-2ZHT5TfsK4/s320/b90_Classsic+2.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNajXe8yRJyrUbYeIUpo-zjXP0jcc5fRZ7Lg_JrJWaCSFJQCXnxumIxUygbEHVbhuqvvH6GPMH6-0GfoYl1aLN9i5IN3nRcdC_iGyiqHXJCwoIlfEV4bLntIc8TAj_4jsz-2ZHT5TfsK4/s320/b90_Classsic+2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNajXe8yRJyrUbYeIUpo-zjXP0jcc5fRZ7Lg_JrJWaCSFJQCXnxumIxUygbEHVbhuqvvH6GPMH6-0GfoYl1aLN9i5IN3nRcdC_iGyiqHXJCwoIlfEV4bLntIc8TAj_4jsz-2ZHT5TfsK4/s480/b90_Classsic+2.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNajXe8yRJyrUbYeIUpo-zjXP0jcc5fRZ7Lg_JrJWaCSFJQCXnxumIxUygbEHVbhuqvvH6GPMH6-0GfoYl1aLN9i5IN3nRcdC_iGyiqHXJCwoIlfEV4bLntIc8TAj_4jsz-2ZHT5TfsK4/s640/b90_Classsic+2.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNajXe8yRJyrUbYeIUpo-zjXP0jcc5fRZ7Lg_JrJWaCSFJQCXnxumIxUygbEHVbhuqvvH6GPMH6-0GfoYl1aLN9i5IN3nRcdC_iGyiqHXJCwoIlfEV4bLntIc8TAj_4jsz-2ZHT5TfsK4/s320/b90_Classsic+2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNajXe8yRJyrUbYeIUpo-zjXP0jcc5fRZ7Lg_JrJWaCSFJQCXnxumIxUygbEHVbhuqvvH6GPMH6-0GfoYl1aLN9i5IN3nRcdC_iGyiqHXJCwoIlfEV4bLntIc8TAj_4jsz-2ZHT5TfsK4/s480/b90_Classsic+2.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNajXe8yRJyrUbYeIUpo-zjXP0jcc5fRZ7Lg_JrJWaCSFJQCXnxumIxUygbEHVbhuqvvH6GPMH6-0GfoYl1aLN9i5IN3nRcdC_iGyiqHXJCwoIlfEV4bLntIc8TAj_4jsz-2ZHT5TfsK4/s640/b90_Classsic+2.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 2: El nuevo &#39;GRUNGE&#39;"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -191,8 +187,7 @@
           </a><a class="related-bottom-card" href="p-740-novedades-hermana-furia-bala-rheia-gorecki-astrobahn-balate.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6wVsccvlxrbcmshH-b_S9DpfKq3hPg90zQGcTF9-LCyqQW6S2KyPJKDdRMzFO05-PAq2waGd5AAjiLW0cm4cXho8m0gm78Xa7assloeOwdqKkETJfPzLeRqcFHIaA0HqvAPOPmby_nAU/s320/b90_740+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6wVsccvlxrbcmshH-b_S9DpfKq3hPg90zQGcTF9-LCyqQW6S2KyPJKDdRMzFO05-PAq2waGd5AAjiLW0cm4cXho8m0gm78Xa7assloeOwdqKkETJfPzLeRqcFHIaA0HqvAPOPmby_nAU/s320/b90_740+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6wVsccvlxrbcmshH-b_S9DpfKq3hPg90zQGcTF9-LCyqQW6S2KyPJKDdRMzFO05-PAq2waGd5AAjiLW0cm4cXho8m0gm78Xa7assloeOwdqKkETJfPzLeRqcFHIaA0HqvAPOPmby_nAU/s480/b90_740+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6wVsccvlxrbcmshH-b_S9DpfKq3hPg90zQGcTF9-LCyqQW6S2KyPJKDdRMzFO05-PAq2waGd5AAjiLW0cm4cXho8m0gm78Xa7assloeOwdqKkETJfPzLeRqcFHIaA0HqvAPOPmby_nAU/s640/b90_740+%25281%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6wVsccvlxrbcmshH-b_S9DpfKq3hPg90zQGcTF9-LCyqQW6S2KyPJKDdRMzFO05-PAq2waGd5AAjiLW0cm4cXho8m0gm78Xa7assloeOwdqKkETJfPzLeRqcFHIaA0HqvAPOPmby_nAU/s320/b90_740+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6wVsccvlxrbcmshH-b_S9DpfKq3hPg90zQGcTF9-LCyqQW6S2KyPJKDdRMzFO05-PAq2waGd5AAjiLW0cm4cXho8m0gm78Xa7assloeOwdqKkETJfPzLeRqcFHIaA0HqvAPOPmby_nAU/s480/b90_740+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6wVsccvlxrbcmshH-b_S9DpfKq3hPg90zQGcTF9-LCyqQW6S2KyPJKDdRMzFO05-PAq2waGd5AAjiLW0cm4cXho8m0gm78Xa7assloeOwdqKkETJfPzLeRqcFHIaA0HqvAPOPmby_nAU/s640/b90_740+%25281%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.740 - Novedades: Hermana Furia, Bala, Rheia Gorecki, Astrobahn, Baläte..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -203,8 +198,7 @@
           </a><a class="related-bottom-card" href="p-746-mark-oliver-everett-eels-pincha-sus-canciones-favoritas-parte-2.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyg0f1j-OnWXZLVS9ZoOajFJtAbrzOtRbvT8BraW7guHiT72LjhJengCCGYJ9oE64Z0EKfjFwIZ4LVxxaFMBGZUOgdIG-acq5UFC-DBsnfkL_3XKJ2uQUwwxAr4BCg8UkFzt-3o6RTt7Q/s320/OCR-L-EELS-WBOX-0505-1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyg0f1j-OnWXZLVS9ZoOajFJtAbrzOtRbvT8BraW7guHiT72LjhJengCCGYJ9oE64Z0EKfjFwIZ4LVxxaFMBGZUOgdIG-acq5UFC-DBsnfkL_3XKJ2uQUwwxAr4BCg8UkFzt-3o6RTt7Q/s320/OCR-L-EELS-WBOX-0505-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyg0f1j-OnWXZLVS9ZoOajFJtAbrzOtRbvT8BraW7guHiT72LjhJengCCGYJ9oE64Z0EKfjFwIZ4LVxxaFMBGZUOgdIG-acq5UFC-DBsnfkL_3XKJ2uQUwwxAr4BCg8UkFzt-3o6RTt7Q/s480/OCR-L-EELS-WBOX-0505-1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyg0f1j-OnWXZLVS9ZoOajFJtAbrzOtRbvT8BraW7guHiT72LjhJengCCGYJ9oE64Z0EKfjFwIZ4LVxxaFMBGZUOgdIG-acq5UFC-DBsnfkL_3XKJ2uQUwwxAr4BCg8UkFzt-3o6RTt7Q/s640/OCR-L-EELS-WBOX-0505-1.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyg0f1j-OnWXZLVS9ZoOajFJtAbrzOtRbvT8BraW7guHiT72LjhJengCCGYJ9oE64Z0EKfjFwIZ4LVxxaFMBGZUOgdIG-acq5UFC-DBsnfkL_3XKJ2uQUwwxAr4BCg8UkFzt-3o6RTt7Q/s320/OCR-L-EELS-WBOX-0505-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyg0f1j-OnWXZLVS9ZoOajFJtAbrzOtRbvT8BraW7guHiT72LjhJengCCGYJ9oE64Z0EKfjFwIZ4LVxxaFMBGZUOgdIG-acq5UFC-DBsnfkL_3XKJ2uQUwwxAr4BCg8UkFzt-3o6RTt7Q/s480/OCR-L-EELS-WBOX-0505-1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyg0f1j-OnWXZLVS9ZoOajFJtAbrzOtRbvT8BraW7guHiT72LjhJengCCGYJ9oE64Z0EKfjFwIZ4LVxxaFMBGZUOgdIG-acq5UFC-DBsnfkL_3XKJ2uQUwwxAr4BCg8UkFzt-3o6RTt7Q/s640/OCR-L-EELS-WBOX-0505-1.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.746 - Mark Oliver Everett (Eels) pincha sus canciones favoritas (Parte 2)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

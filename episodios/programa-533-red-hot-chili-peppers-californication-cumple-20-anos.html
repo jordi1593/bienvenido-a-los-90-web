@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 533 - Red Hot Chili Peppers &#39;Californication&#39; cumple 20 años — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -137,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjexHyZCC-L1PUMFa-gkoY8T1tlTdgb99hwWE3m5bnNqmrK_sbc3-dmHnRVq12O4AzrCIuF3_A2RqKXUPI8TZOjQCiJcdLhfIsW-bSxn_zmc0JJfXV8G5wyi-yzHNbxKDKJ9QBqFaqREL42tbOIPGHOsAkG9McGD6TU_oaaUaFDJIP5--tuMuJ1ih-yKYg/s320/THEEZNQQBVAPZNKNMT7M6ZHTYY.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjexHyZCC-L1PUMFa-gkoY8T1tlTdgb99hwWE3m5bnNqmrK_sbc3-dmHnRVq12O4AzrCIuF3_A2RqKXUPI8TZOjQCiJcdLhfIsW-bSxn_zmc0JJfXV8G5wyi-yzHNbxKDKJ9QBqFaqREL42tbOIPGHOsAkG9McGD6TU_oaaUaFDJIP5--tuMuJ1ih-yKYg/s160/THEEZNQQBVAPZNKNMT7M6ZHTYY.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjexHyZCC-L1PUMFa-gkoY8T1tlTdgb99hwWE3m5bnNqmrK_sbc3-dmHnRVq12O4AzrCIuF3_A2RqKXUPI8TZOjQCiJcdLhfIsW-bSxn_zmc0JJfXV8G5wyi-yzHNbxKDKJ9QBqFaqREL42tbOIPGHOsAkG9McGD6TU_oaaUaFDJIP5--tuMuJ1ih-yKYg/s320/THEEZNQQBVAPZNKNMT7M6ZHTYY.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjexHyZCC-L1PUMFa-gkoY8T1tlTdgb99hwWE3m5bnNqmrK_sbc3-dmHnRVq12O4AzrCIuF3_A2RqKXUPI8TZOjQCiJcdLhfIsW-bSxn_zmc0JJfXV8G5wyi-yzHNbxKDKJ9QBqFaqREL42tbOIPGHOsAkG9McGD6TU_oaaUaFDJIP5--tuMuJ1ih-yKYg/s480/THEEZNQQBVAPZNKNMT7M6ZHTYY.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjexHyZCC-L1PUMFa-gkoY8T1tlTdgb99hwWE3m5bnNqmrK_sbc3-dmHnRVq12O4AzrCIuF3_A2RqKXUPI8TZOjQCiJcdLhfIsW-bSxn_zmc0JJfXV8G5wyi-yzHNbxKDKJ9QBqFaqREL42tbOIPGHOsAkG9McGD6TU_oaaUaFDJIP5--tuMuJ1ih-yKYg/s160/THEEZNQQBVAPZNKNMT7M6ZHTYY.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjexHyZCC-L1PUMFa-gkoY8T1tlTdgb99hwWE3m5bnNqmrK_sbc3-dmHnRVq12O4AzrCIuF3_A2RqKXUPI8TZOjQCiJcdLhfIsW-bSxn_zmc0JJfXV8G5wyi-yzHNbxKDKJ9QBqFaqREL42tbOIPGHOsAkG9McGD6TU_oaaUaFDJIP5--tuMuJ1ih-yKYg/s320/THEEZNQQBVAPZNKNMT7M6ZHTYY.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjexHyZCC-L1PUMFa-gkoY8T1tlTdgb99hwWE3m5bnNqmrK_sbc3-dmHnRVq12O4AzrCIuF3_A2RqKXUPI8TZOjQCiJcdLhfIsW-bSxn_zmc0JJfXV8G5wyi-yzHNbxKDKJ9QBqFaqREL42tbOIPGHOsAkG9McGD6TU_oaaUaFDJIP5--tuMuJ1ih-yKYg/s480/THEEZNQQBVAPZNKNMT7M6ZHTYY.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 41 - Así sonarán RED HOT CHILI PEPPERS en Mad Cool"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9K_h12WOIz4C_AEdY3ovHCacClpsg3i-0zCnkg7nxFn3bTMZBuWGKBA-6ip0c8aFAm7FuKbyxks-gfdMrje8uqoxC8DtS-SpBtLOe5KBAd9pmMIeiRRqTBiQYPU0Un89Yw5JcVm0tWhAkQ5_LSlliXGqIieMZye6Em_qkujd5J5IO7vxT3ES-wcEPPp8/s320/58536a392cd3a79d927c230ce66b55cd.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9K_h12WOIz4C_AEdY3ovHCacClpsg3i-0zCnkg7nxFn3bTMZBuWGKBA-6ip0c8aFAm7FuKbyxks-gfdMrje8uqoxC8DtS-SpBtLOe5KBAd9pmMIeiRRqTBiQYPU0Un89Yw5JcVm0tWhAkQ5_LSlliXGqIieMZye6Em_qkujd5J5IO7vxT3ES-wcEPPp8/s160/58536a392cd3a79d927c230ce66b55cd.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9K_h12WOIz4C_AEdY3ovHCacClpsg3i-0zCnkg7nxFn3bTMZBuWGKBA-6ip0c8aFAm7FuKbyxks-gfdMrje8uqoxC8DtS-SpBtLOe5KBAd9pmMIeiRRqTBiQYPU0Un89Yw5JcVm0tWhAkQ5_LSlliXGqIieMZye6Em_qkujd5J5IO7vxT3ES-wcEPPp8/s320/58536a392cd3a79d927c230ce66b55cd.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9K_h12WOIz4C_AEdY3ovHCacClpsg3i-0zCnkg7nxFn3bTMZBuWGKBA-6ip0c8aFAm7FuKbyxks-gfdMrje8uqoxC8DtS-SpBtLOe5KBAd9pmMIeiRRqTBiQYPU0Un89Yw5JcVm0tWhAkQ5_LSlliXGqIieMZye6Em_qkujd5J5IO7vxT3ES-wcEPPp8/s480/58536a392cd3a79d927c230ce66b55cd.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9K_h12WOIz4C_AEdY3ovHCacClpsg3i-0zCnkg7nxFn3bTMZBuWGKBA-6ip0c8aFAm7FuKbyxks-gfdMrje8uqoxC8DtS-SpBtLOe5KBAd9pmMIeiRRqTBiQYPU0Un89Yw5JcVm0tWhAkQ5_LSlliXGqIieMZye6Em_qkujd5J5IO7vxT3ES-wcEPPp8/s160/58536a392cd3a79d927c230ce66b55cd.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9K_h12WOIz4C_AEdY3ovHCacClpsg3i-0zCnkg7nxFn3bTMZBuWGKBA-6ip0c8aFAm7FuKbyxks-gfdMrje8uqoxC8DtS-SpBtLOe5KBAd9pmMIeiRRqTBiQYPU0Un89Yw5JcVm0tWhAkQ5_LSlliXGqIieMZye6Em_qkujd5J5IO7vxT3ES-wcEPPp8/s320/58536a392cd3a79d927c230ce66b55cd.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9K_h12WOIz4C_AEdY3ovHCacClpsg3i-0zCnkg7nxFn3bTMZBuWGKBA-6ip0c8aFAm7FuKbyxks-gfdMrje8uqoxC8DtS-SpBtLOe5KBAd9pmMIeiRRqTBiQYPU0Un89Yw5JcVm0tWhAkQ5_LSlliXGqIieMZye6Em_qkujd5J5IO7vxT3ES-wcEPPp8/s480/58536a392cd3a79d927c230ce66b55cd.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.949 - ¿Por qué nos encanta Californication?"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -159,8 +157,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJhun0vgzTpuIjd8eaq8ZCI2t7o8D4pgnCAY7riCy9WAQy8bLyfIPLVpcaY7P07akNUX7kF-jaIEpqD6U9Ghqi3TMYVV8RLSUiok_FhJKp45Hh0hGQ00LV8-dDU__Nwk2rETEEMhuY1oY/s320/535+-+STP+-+Purple+A.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJhun0vgzTpuIjd8eaq8ZCI2t7o8D4pgnCAY7riCy9WAQy8bLyfIPLVpcaY7P07akNUX7kF-jaIEpqD6U9Ghqi3TMYVV8RLSUiok_FhJKp45Hh0hGQ00LV8-dDU__Nwk2rETEEMhuY1oY/s160/535+-+STP+-+Purple+A.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJhun0vgzTpuIjd8eaq8ZCI2t7o8D4pgnCAY7riCy9WAQy8bLyfIPLVpcaY7P07akNUX7kF-jaIEpqD6U9Ghqi3TMYVV8RLSUiok_FhJKp45Hh0hGQ00LV8-dDU__Nwk2rETEEMhuY1oY/s320/535+-+STP+-+Purple+A.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJhun0vgzTpuIjd8eaq8ZCI2t7o8D4pgnCAY7riCy9WAQy8bLyfIPLVpcaY7P07akNUX7kF-jaIEpqD6U9Ghqi3TMYVV8RLSUiok_FhJKp45Hh0hGQ00LV8-dDU__Nwk2rETEEMhuY1oY/s480/535+-+STP+-+Purple+A.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJhun0vgzTpuIjd8eaq8ZCI2t7o8D4pgnCAY7riCy9WAQy8bLyfIPLVpcaY7P07akNUX7kF-jaIEpqD6U9Ghqi3TMYVV8RLSUiok_FhJKp45Hh0hGQ00LV8-dDU__Nwk2rETEEMhuY1oY/s160/535+-+STP+-+Purple+A.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJhun0vgzTpuIjd8eaq8ZCI2t7o8D4pgnCAY7riCy9WAQy8bLyfIPLVpcaY7P07akNUX7kF-jaIEpqD6U9Ghqi3TMYVV8RLSUiok_FhJKp45Hh0hGQ00LV8-dDU__Nwk2rETEEMhuY1oY/s320/535+-+STP+-+Purple+A.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJhun0vgzTpuIjd8eaq8ZCI2t7o8D4pgnCAY7riCy9WAQy8bLyfIPLVpcaY7P07akNUX7kF-jaIEpqD6U9Ghqi3TMYVV8RLSUiok_FhJKp45Hh0hGQ00LV8-dDU__Nwk2rETEEMhuY1oY/s480/535+-+STP+-+Purple+A.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 535 - &#39;Purple&#39; de Stone Temple Pilots cumple 25 años"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -176,8 +173,7 @@
         <a class="related-bottom-card" href="supersonic-de-oasis-cumple-25-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy8pfga-h9_BrGLJbanRT3s9K24bPkUkmuOmed4audwcNRrsRHC_oRFZ2T9m5S3ErjZouGVJgQXS3oHe4q97HiYPia8cMLOWvyjkQEERBVG5n3IRFwrjfcU1lpzUUGE0zHOyZ9kjW_b7I/s320/R-1194299-1199823225.jpeg.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy8pfga-h9_BrGLJbanRT3s9K24bPkUkmuOmed4audwcNRrsRHC_oRFZ2T9m5S3ErjZouGVJgQXS3oHe4q97HiYPia8cMLOWvyjkQEERBVG5n3IRFwrjfcU1lpzUUGE0zHOyZ9kjW_b7I/s320/R-1194299-1199823225.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy8pfga-h9_BrGLJbanRT3s9K24bPkUkmuOmed4audwcNRrsRHC_oRFZ2T9m5S3ErjZouGVJgQXS3oHe4q97HiYPia8cMLOWvyjkQEERBVG5n3IRFwrjfcU1lpzUUGE0zHOyZ9kjW_b7I/s480/R-1194299-1199823225.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy8pfga-h9_BrGLJbanRT3s9K24bPkUkmuOmed4audwcNRrsRHC_oRFZ2T9m5S3ErjZouGVJgQXS3oHe4q97HiYPia8cMLOWvyjkQEERBVG5n3IRFwrjfcU1lpzUUGE0zHOyZ9kjW_b7I/s640/R-1194299-1199823225.jpeg.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy8pfga-h9_BrGLJbanRT3s9K24bPkUkmuOmed4audwcNRrsRHC_oRFZ2T9m5S3ErjZouGVJgQXS3oHe4q97HiYPia8cMLOWvyjkQEERBVG5n3IRFwrjfcU1lpzUUGE0zHOyZ9kjW_b7I/s320/R-1194299-1199823225.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy8pfga-h9_BrGLJbanRT3s9K24bPkUkmuOmed4audwcNRrsRHC_oRFZ2T9m5S3ErjZouGVJgQXS3oHe4q97HiYPia8cMLOWvyjkQEERBVG5n3IRFwrjfcU1lpzUUGE0zHOyZ9kjW_b7I/s480/R-1194299-1199823225.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy8pfga-h9_BrGLJbanRT3s9K24bPkUkmuOmed4audwcNRrsRHC_oRFZ2T9m5S3ErjZouGVJgQXS3oHe4q97HiYPia8cMLOWvyjkQEERBVG5n3IRFwrjfcU1lpzUUGE0zHOyZ9kjW_b7I/s640/R-1194299-1199823225.jpeg.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="&#39;Supersonic&#39; de Oasis cumple 25 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -188,8 +184,7 @@
           </a><a class="related-bottom-card" href="programa-570-la-sala-el-sol-cumple-40-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s320/b90_570.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s320/b90_570.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s480/b90_570.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s640/b90_570.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s320/b90_570.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s480/b90_570.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s640/b90_570.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 570 - La sala EL SOL cumple 40 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -200,8 +195,7 @@
           </a><a class="related-bottom-card" href="programa-478-los-mejores-solos-de-guitarra-de-los-anos-90.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s480/b90_478.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s640/b90_478.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s480/b90_478.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s640/b90_478.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 478 - Los mejores solos de guitarra de los años 90"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

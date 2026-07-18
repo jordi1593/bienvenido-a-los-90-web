@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 503 - Las b90 Sessions Vol.1 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -146,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s320/IMG_20190821_193538.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s160/IMG_20190821_193538.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s320/IMG_20190821_193538.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s480/IMG_20190821_193538.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s160/IMG_20190821_193538.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s320/IMG_20190821_193538.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s480/IMG_20190821_193538.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 563: Live! Vol.1 "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -157,8 +156,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK1jNY3X_iWBhQ8EhtEOnZZEXbQUj5q2CUu0SYcU-QXwxQuYpd0-e3yMgqEBzJsHr8XdSk098fv3sZbMq9OLN5HViyXbztU_rGLMU4RM-XRSRWVYB2Z_xDHRHzspiRCgwp0Zs2iYp6uBA/s320/b90_500+%25282%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK1jNY3X_iWBhQ8EhtEOnZZEXbQUj5q2CUu0SYcU-QXwxQuYpd0-e3yMgqEBzJsHr8XdSk098fv3sZbMq9OLN5HViyXbztU_rGLMU4RM-XRSRWVYB2Z_xDHRHzspiRCgwp0Zs2iYp6uBA/s160/b90_500+%25282%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK1jNY3X_iWBhQ8EhtEOnZZEXbQUj5q2CUu0SYcU-QXwxQuYpd0-e3yMgqEBzJsHr8XdSk098fv3sZbMq9OLN5HViyXbztU_rGLMU4RM-XRSRWVYB2Z_xDHRHzspiRCgwp0Zs2iYp6uBA/s320/b90_500+%25282%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK1jNY3X_iWBhQ8EhtEOnZZEXbQUj5q2CUu0SYcU-QXwxQuYpd0-e3yMgqEBzJsHr8XdSk098fv3sZbMq9OLN5HViyXbztU_rGLMU4RM-XRSRWVYB2Z_xDHRHzspiRCgwp0Zs2iYp6uBA/s480/b90_500+%25282%2529.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK1jNY3X_iWBhQ8EhtEOnZZEXbQUj5q2CUu0SYcU-QXwxQuYpd0-e3yMgqEBzJsHr8XdSk098fv3sZbMq9OLN5HViyXbztU_rGLMU4RM-XRSRWVYB2Z_xDHRHzspiRCgwp0Zs2iYp6uBA/s160/b90_500+%25282%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK1jNY3X_iWBhQ8EhtEOnZZEXbQUj5q2CUu0SYcU-QXwxQuYpd0-e3yMgqEBzJsHr8XdSk098fv3sZbMq9OLN5HViyXbztU_rGLMU4RM-XRSRWVYB2Z_xDHRHzspiRCgwp0Zs2iYp6uBA/s320/b90_500+%25282%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK1jNY3X_iWBhQ8EhtEOnZZEXbQUj5q2CUu0SYcU-QXwxQuYpd0-e3yMgqEBzJsHr8XdSk098fv3sZbMq9OLN5HViyXbztU_rGLMU4RM-XRSRWVYB2Z_xDHRHzspiRCgwp0Zs2iYp6uBA/s480/b90_500+%25282%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 500, la fiesta continúa"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -168,8 +166,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s320/53012096_666655617086037_624432951429431296_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s160/53012096_666655617086037_624432951429431296_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s320/53012096_666655617086037_624432951429431296_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s480/53012096_666655617086037_624432951429431296_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s160/53012096_666655617086037_624432951429431296_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s320/53012096_666655617086037_624432951429431296_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s480/53012096_666655617086037_624432951429431296_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="¿Qué significa &#39;Bienvenido a los 90 para ti?"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -185,8 +182,7 @@
         <a class="related-bottom-card" href="programa-493-actualidad-y-entrevista-a-pan.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s320/b90_493+%25282%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s320/b90_493+%25282%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s480/b90_493+%25282%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s640/b90_493+%25282%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s320/b90_493+%25282%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s480/b90_493+%25282%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s640/b90_493+%25282%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 493 - Actualidad y entrevista a PAN"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -197,8 +193,7 @@
           </a><a class="related-bottom-card" href="programa-476-manuel-cabezali-producciones-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s320/IMG_20181226_134431.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s320/IMG_20181226_134431.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s480/IMG_20181226_134431.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s640/IMG_20181226_134431.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s320/IMG_20181226_134431.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s480/IMG_20181226_134431.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s640/IMG_20181226_134431.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 476 - Manuel Cabezalí - Producciones 2018"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -209,8 +204,7 @@
           </a><a class="related-bottom-card" href="programa-406-mad-cool-2018-escenario-b90.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6DD-r3L13YSZQtn72nub9qYFVJoKpJ-LtZ-SKO0s_dccy55Ml92sfRXYZ-T1r_N_gQs1xTEHpM-Vkcnru74JtNagAeIuCcSBnpxMmqBUT2NxC0gEThgUWXgQoec5yTeF1i_bagaszzy4/s320/escenario+b90.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6DD-r3L13YSZQtn72nub9qYFVJoKpJ-LtZ-SKO0s_dccy55Ml92sfRXYZ-T1r_N_gQs1xTEHpM-Vkcnru74JtNagAeIuCcSBnpxMmqBUT2NxC0gEThgUWXgQoec5yTeF1i_bagaszzy4/s320/escenario+b90.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6DD-r3L13YSZQtn72nub9qYFVJoKpJ-LtZ-SKO0s_dccy55Ml92sfRXYZ-T1r_N_gQs1xTEHpM-Vkcnru74JtNagAeIuCcSBnpxMmqBUT2NxC0gEThgUWXgQoec5yTeF1i_bagaszzy4/s480/escenario+b90.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6DD-r3L13YSZQtn72nub9qYFVJoKpJ-LtZ-SKO0s_dccy55Ml92sfRXYZ-T1r_N_gQs1xTEHpM-Vkcnru74JtNagAeIuCcSBnpxMmqBUT2NxC0gEThgUWXgQoec5yTeF1i_bagaszzy4/s640/escenario+b90.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6DD-r3L13YSZQtn72nub9qYFVJoKpJ-LtZ-SKO0s_dccy55Ml92sfRXYZ-T1r_N_gQs1xTEHpM-Vkcnru74JtNagAeIuCcSBnpxMmqBUT2NxC0gEThgUWXgQoec5yTeF1i_bagaszzy4/s320/escenario+b90.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6DD-r3L13YSZQtn72nub9qYFVJoKpJ-LtZ-SKO0s_dccy55Ml92sfRXYZ-T1r_N_gQs1xTEHpM-Vkcnru74JtNagAeIuCcSBnpxMmqBUT2NxC0gEThgUWXgQoec5yTeF1i_bagaszzy4/s480/escenario+b90.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6DD-r3L13YSZQtn72nub9qYFVJoKpJ-LtZ-SKO0s_dccy55Ml92sfRXYZ-T1r_N_gQs1xTEHpM-Vkcnru74JtNagAeIuCcSBnpxMmqBUT2NxC0gEThgUWXgQoec5yTeF1i_bagaszzy4/s640/escenario+b90.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 406 - Mad Cool 2018, Escenario b90"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

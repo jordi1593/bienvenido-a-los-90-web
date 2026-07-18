@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 248 - James Bond en los 90 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -128,8 +128,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZhiRsyZrXhPRxGvXQke1LmI9Y8ov388io2CMinAIRZmVP3pFJbp_QVQqYdvOI_HAiBqA-bH316VqsQ_cwNLwc0JM0GPR3hI3UsDch4_PgXVrNm4fI7oN9jy2L434_K3VjmtLc2Ohyphenhyphengwg/s320/DAiTYjmWsAA468d.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZhiRsyZrXhPRxGvXQke1LmI9Y8ov388io2CMinAIRZmVP3pFJbp_QVQqYdvOI_HAiBqA-bH316VqsQ_cwNLwc0JM0GPR3hI3UsDch4_PgXVrNm4fI7oN9jy2L434_K3VjmtLc2Ohyphenhyphengwg/s160/DAiTYjmWsAA468d.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZhiRsyZrXhPRxGvXQke1LmI9Y8ov388io2CMinAIRZmVP3pFJbp_QVQqYdvOI_HAiBqA-bH316VqsQ_cwNLwc0JM0GPR3hI3UsDch4_PgXVrNm4fI7oN9jy2L434_K3VjmtLc2Ohyphenhyphengwg/s320/DAiTYjmWsAA468d.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZhiRsyZrXhPRxGvXQke1LmI9Y8ov388io2CMinAIRZmVP3pFJbp_QVQqYdvOI_HAiBqA-bH316VqsQ_cwNLwc0JM0GPR3hI3UsDch4_PgXVrNm4fI7oN9jy2L434_K3VjmtLc2Ohyphenhyphengwg/s480/DAiTYjmWsAA468d.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZhiRsyZrXhPRxGvXQke1LmI9Y8ov388io2CMinAIRZmVP3pFJbp_QVQqYdvOI_HAiBqA-bH316VqsQ_cwNLwc0JM0GPR3hI3UsDch4_PgXVrNm4fI7oN9jy2L434_K3VjmtLc2Ohyphenhyphengwg/s160/DAiTYjmWsAA468d.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZhiRsyZrXhPRxGvXQke1LmI9Y8ov388io2CMinAIRZmVP3pFJbp_QVQqYdvOI_HAiBqA-bH316VqsQ_cwNLwc0JM0GPR3hI3UsDch4_PgXVrNm4fI7oN9jy2L434_K3VjmtLc2Ohyphenhyphengwg/s320/DAiTYjmWsAA468d.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZhiRsyZrXhPRxGvXQke1LmI9Y8ov388io2CMinAIRZmVP3pFJbp_QVQqYdvOI_HAiBqA-bH316VqsQ_cwNLwc0JM0GPR3hI3UsDch4_PgXVrNm4fI7oN9jy2L434_K3VjmtLc2Ohyphenhyphengwg/s480/DAiTYjmWsAA468d.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 280 - Jeff Buckley - Chris Conell - Eddie Vedder"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -139,8 +138,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s320/IMG-20170601-WA0005.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s160/IMG-20170601-WA0005.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s320/IMG-20170601-WA0005.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s480/IMG-20170601-WA0005.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s160/IMG-20170601-WA0005.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s320/IMG-20170601-WA0005.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s480/IMG-20170601-WA0005.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 281 - Eddie Vedder Amsterdam 2017"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -150,8 +148,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s160/noel-liam-gallagher.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s480/noel-liam-gallagher.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s160/noel-liam-gallagher.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s480/noel-liam-gallagher.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 311 - Gallagher vs. Gallagher"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -167,8 +164,7 @@
         <a class="related-bottom-card" href="programa-400-con-paco-perez-bryan.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s480/IMG_20180608_163539.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s640/IMG_20180608_163539.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s480/IMG_20180608_163539.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s640/IMG_20180608_163539.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 400 con Paco Pérez Bryan"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -179,8 +175,7 @@
           </a><a class="related-bottom-card" href="programa-152-entrevista-a-rafa-cervera.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s640/420962_355957767755206_243875636_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s640/420962_355957767755206_243875636_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 152 - Entrevista a Rafa Cervera"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -191,8 +186,7 @@
           </a><a class="related-bottom-card" href="programa-478-los-mejores-solos-de-guitarra-de-los-anos-90.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s480/b90_478.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s640/b90_478.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s480/b90_478.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s640/b90_478.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 478 - Los mejores solos de guitarra de los años 90"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.603 - Richey James Edwards (Manic Street Preachers) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -124,8 +124,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqUvnadvM56onOygLyZIfs099NH1EGtGX39YA0f7P72jTut7-uQRmHBJIjxE4GxG9_QaOPlST-Exw2spWo7pvAE_6lr0FBAPmmt7WScrJAurHxVMmaatSWW548TI05TiqWOp8HZ8tF0N0/s320/58a2fbef7a50a4fb52cef2bf58fc09a3.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqUvnadvM56onOygLyZIfs099NH1EGtGX39YA0f7P72jTut7-uQRmHBJIjxE4GxG9_QaOPlST-Exw2spWo7pvAE_6lr0FBAPmmt7WScrJAurHxVMmaatSWW548TI05TiqWOp8HZ8tF0N0/s160/58a2fbef7a50a4fb52cef2bf58fc09a3.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqUvnadvM56onOygLyZIfs099NH1EGtGX39YA0f7P72jTut7-uQRmHBJIjxE4GxG9_QaOPlST-Exw2spWo7pvAE_6lr0FBAPmmt7WScrJAurHxVMmaatSWW548TI05TiqWOp8HZ8tF0N0/s320/58a2fbef7a50a4fb52cef2bf58fc09a3.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqUvnadvM56onOygLyZIfs099NH1EGtGX39YA0f7P72jTut7-uQRmHBJIjxE4GxG9_QaOPlST-Exw2spWo7pvAE_6lr0FBAPmmt7WScrJAurHxVMmaatSWW548TI05TiqWOp8HZ8tF0N0/s480/58a2fbef7a50a4fb52cef2bf58fc09a3.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqUvnadvM56onOygLyZIfs099NH1EGtGX39YA0f7P72jTut7-uQRmHBJIjxE4GxG9_QaOPlST-Exw2spWo7pvAE_6lr0FBAPmmt7WScrJAurHxVMmaatSWW548TI05TiqWOp8HZ8tF0N0/s160/58a2fbef7a50a4fb52cef2bf58fc09a3.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqUvnadvM56onOygLyZIfs099NH1EGtGX39YA0f7P72jTut7-uQRmHBJIjxE4GxG9_QaOPlST-Exw2spWo7pvAE_6lr0FBAPmmt7WScrJAurHxVMmaatSWW548TI05TiqWOp8HZ8tF0N0/s320/58a2fbef7a50a4fb52cef2bf58fc09a3.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqUvnadvM56onOygLyZIfs099NH1EGtGX39YA0f7P72jTut7-uQRmHBJIjxE4GxG9_QaOPlST-Exw2spWo7pvAE_6lr0FBAPmmt7WScrJAurHxVMmaatSWW548TI05TiqWOp8HZ8tF0N0/s480/58a2fbef7a50a4fb52cef2bf58fc09a3.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 469 - Manic Street Preachers - This Is My Truth Tell Me Yours cumple 20 años"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -135,8 +134,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 123 - Manic Street Preachers"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -146,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdMrGKO6qroEJB_fGQTrKwXVEOyK-EMLNp9vy5c1f7j_kzRFY6YiaVJZOw7ffCvl5P5BDgdZxAYRnP0X6XCUpajEJ2vh0UpjzZ_sflqAdGyasB3Rop9MW1NcYZi6Lm34av-OMGyi25VYJYVs7AC4msyqeOL_yWkDFejDCOiPD1icScMlPFCbgWLLxuJ78/s320/Ruth%20Baza1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdMrGKO6qroEJB_fGQTrKwXVEOyK-EMLNp9vy5c1f7j_kzRFY6YiaVJZOw7ffCvl5P5BDgdZxAYRnP0X6XCUpajEJ2vh0UpjzZ_sflqAdGyasB3Rop9MW1NcYZi6Lm34av-OMGyi25VYJYVs7AC4msyqeOL_yWkDFejDCOiPD1icScMlPFCbgWLLxuJ78/s160/Ruth%20Baza1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdMrGKO6qroEJB_fGQTrKwXVEOyK-EMLNp9vy5c1f7j_kzRFY6YiaVJZOw7ffCvl5P5BDgdZxAYRnP0X6XCUpajEJ2vh0UpjzZ_sflqAdGyasB3Rop9MW1NcYZi6Lm34av-OMGyi25VYJYVs7AC4msyqeOL_yWkDFejDCOiPD1icScMlPFCbgWLLxuJ78/s320/Ruth%20Baza1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdMrGKO6qroEJB_fGQTrKwXVEOyK-EMLNp9vy5c1f7j_kzRFY6YiaVJZOw7ffCvl5P5BDgdZxAYRnP0X6XCUpajEJ2vh0UpjzZ_sflqAdGyasB3Rop9MW1NcYZi6Lm34av-OMGyi25VYJYVs7AC4msyqeOL_yWkDFejDCOiPD1icScMlPFCbgWLLxuJ78/s480/Ruth%20Baza1.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdMrGKO6qroEJB_fGQTrKwXVEOyK-EMLNp9vy5c1f7j_kzRFY6YiaVJZOw7ffCvl5P5BDgdZxAYRnP0X6XCUpajEJ2vh0UpjzZ_sflqAdGyasB3Rop9MW1NcYZi6Lm34av-OMGyi25VYJYVs7AC4msyqeOL_yWkDFejDCOiPD1icScMlPFCbgWLLxuJ78/s160/Ruth%20Baza1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdMrGKO6qroEJB_fGQTrKwXVEOyK-EMLNp9vy5c1f7j_kzRFY6YiaVJZOw7ffCvl5P5BDgdZxAYRnP0X6XCUpajEJ2vh0UpjzZ_sflqAdGyasB3Rop9MW1NcYZi6Lm34av-OMGyi25VYJYVs7AC4msyqeOL_yWkDFejDCOiPD1icScMlPFCbgWLLxuJ78/s320/Ruth%20Baza1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdMrGKO6qroEJB_fGQTrKwXVEOyK-EMLNp9vy5c1f7j_kzRFY6YiaVJZOw7ffCvl5P5BDgdZxAYRnP0X6XCUpajEJ2vh0UpjzZ_sflqAdGyasB3Rop9MW1NcYZi6Lm34av-OMGyi25VYJYVs7AC4msyqeOL_yWkDFejDCOiPD1icScMlPFCbgWLLxuJ78/s480/Ruth%20Baza1.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.922 - Conversaciones con Ruth Baza: Richey Edwards, Courtney Love, Blur, George Harrison..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -163,8 +160,7 @@
         <a class="related-bottom-card" href="p-600-desde-furinyaki-records-studio-con-gyoza-y-james-vieco-band.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUNNQ-jCQSzRD1l1B_sHH9fZ12WLaCOgtm6TImRy1k43u7VvOmwnVD_Un7BOg_vP2p-VDepiKT9-K3U0U_njVQ3gxUgNgAF41yiWmQyNLtO0mBNe14t07GkhU7vOFNrbUGCluurArw0_8/s320/Recurso+6.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUNNQ-jCQSzRD1l1B_sHH9fZ12WLaCOgtm6TImRy1k43u7VvOmwnVD_Un7BOg_vP2p-VDepiKT9-K3U0U_njVQ3gxUgNgAF41yiWmQyNLtO0mBNe14t07GkhU7vOFNrbUGCluurArw0_8/s320/Recurso+6.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUNNQ-jCQSzRD1l1B_sHH9fZ12WLaCOgtm6TImRy1k43u7VvOmwnVD_Un7BOg_vP2p-VDepiKT9-K3U0U_njVQ3gxUgNgAF41yiWmQyNLtO0mBNe14t07GkhU7vOFNrbUGCluurArw0_8/s480/Recurso+6.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUNNQ-jCQSzRD1l1B_sHH9fZ12WLaCOgtm6TImRy1k43u7VvOmwnVD_Un7BOg_vP2p-VDepiKT9-K3U0U_njVQ3gxUgNgAF41yiWmQyNLtO0mBNe14t07GkhU7vOFNrbUGCluurArw0_8/s640/Recurso+6.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUNNQ-jCQSzRD1l1B_sHH9fZ12WLaCOgtm6TImRy1k43u7VvOmwnVD_Un7BOg_vP2p-VDepiKT9-K3U0U_njVQ3gxUgNgAF41yiWmQyNLtO0mBNe14t07GkhU7vOFNrbUGCluurArw0_8/s320/Recurso+6.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUNNQ-jCQSzRD1l1B_sHH9fZ12WLaCOgtm6TImRy1k43u7VvOmwnVD_Un7BOg_vP2p-VDepiKT9-K3U0U_njVQ3gxUgNgAF41yiWmQyNLtO0mBNe14t07GkhU7vOFNrbUGCluurArw0_8/s480/Recurso+6.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUNNQ-jCQSzRD1l1B_sHH9fZ12WLaCOgtm6TImRy1k43u7VvOmwnVD_Un7BOg_vP2p-VDepiKT9-K3U0U_njVQ3gxUgNgAF41yiWmQyNLtO0mBNe14t07GkhU7vOFNrbUGCluurArw0_8/s640/Recurso+6.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.600 - Desde Furinyaki Records Studio con GYOZA y JAMES VIECO BAND"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -175,8 +171,7 @@
           </a><a class="related-bottom-card" href="p-655-james-vieco-recuerda-a-chris-cornell.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr8Nrx7_nAPis5gbjvjO7pu7jM3jfh8ElWjOwc6A8apK8xIOcrLatScnyxCL6SU1xdXogpiWzDg1fSCXk96WAKGh2gm_1G68OAi7pmEJTpxCpgT3wcgLj_caATAaLlOJEODb49efOJVlg/s320/IMG-20200523-WA0010.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr8Nrx7_nAPis5gbjvjO7pu7jM3jfh8ElWjOwc6A8apK8xIOcrLatScnyxCL6SU1xdXogpiWzDg1fSCXk96WAKGh2gm_1G68OAi7pmEJTpxCpgT3wcgLj_caATAaLlOJEODb49efOJVlg/s320/IMG-20200523-WA0010.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr8Nrx7_nAPis5gbjvjO7pu7jM3jfh8ElWjOwc6A8apK8xIOcrLatScnyxCL6SU1xdXogpiWzDg1fSCXk96WAKGh2gm_1G68OAi7pmEJTpxCpgT3wcgLj_caATAaLlOJEODb49efOJVlg/s480/IMG-20200523-WA0010.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr8Nrx7_nAPis5gbjvjO7pu7jM3jfh8ElWjOwc6A8apK8xIOcrLatScnyxCL6SU1xdXogpiWzDg1fSCXk96WAKGh2gm_1G68OAi7pmEJTpxCpgT3wcgLj_caATAaLlOJEODb49efOJVlg/s640/IMG-20200523-WA0010.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr8Nrx7_nAPis5gbjvjO7pu7jM3jfh8ElWjOwc6A8apK8xIOcrLatScnyxCL6SU1xdXogpiWzDg1fSCXk96WAKGh2gm_1G68OAi7pmEJTpxCpgT3wcgLj_caATAaLlOJEODb49efOJVlg/s320/IMG-20200523-WA0010.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr8Nrx7_nAPis5gbjvjO7pu7jM3jfh8ElWjOwc6A8apK8xIOcrLatScnyxCL6SU1xdXogpiWzDg1fSCXk96WAKGh2gm_1G68OAi7pmEJTpxCpgT3wcgLj_caATAaLlOJEODb49efOJVlg/s480/IMG-20200523-WA0010.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr8Nrx7_nAPis5gbjvjO7pu7jM3jfh8ElWjOwc6A8apK8xIOcrLatScnyxCL6SU1xdXogpiWzDg1fSCXk96WAKGh2gm_1G68OAi7pmEJTpxCpgT3wcgLj_caATAaLlOJEODb49efOJVlg/s640/IMG-20200523-WA0010.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.655 - James Vieco recuerda a Chris Cornell"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -187,8 +182,7 @@
           </a><a class="related-bottom-card" href="programa-544-el-origen-del-nombre-de-algunas-de-mis-bandas-favoritas.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s320/b90_544.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s320/b90_544.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s480/b90_544.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s640/b90_544.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s320/b90_544.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s480/b90_544.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s640/b90_544.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 544 - El origen del nombre de algunas de mis bandas favoritas"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

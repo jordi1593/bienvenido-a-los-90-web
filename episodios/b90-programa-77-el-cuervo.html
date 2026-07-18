@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>B90 - Programa 77 - El Cuervo — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -141,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHFGNEotfoLeWXyHeHVIc6PUXHOSl0VWuMxFWzrk2f7ZixpvLpfdTnfeURc2h3F1SlvSA732GhI1k_D9vti9q6bynit7mXiuvxrV9wUqwpZ06PQ5BG85QtpPmkdia-Rn32M6w9sT8pqMo/s320/El-Cuervo.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHFGNEotfoLeWXyHeHVIc6PUXHOSl0VWuMxFWzrk2f7ZixpvLpfdTnfeURc2h3F1SlvSA732GhI1k_D9vti9q6bynit7mXiuvxrV9wUqwpZ06PQ5BG85QtpPmkdia-Rn32M6w9sT8pqMo/s160/El-Cuervo.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHFGNEotfoLeWXyHeHVIc6PUXHOSl0VWuMxFWzrk2f7ZixpvLpfdTnfeURc2h3F1SlvSA732GhI1k_D9vti9q6bynit7mXiuvxrV9wUqwpZ06PQ5BG85QtpPmkdia-Rn32M6w9sT8pqMo/s320/El-Cuervo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHFGNEotfoLeWXyHeHVIc6PUXHOSl0VWuMxFWzrk2f7ZixpvLpfdTnfeURc2h3F1SlvSA732GhI1k_D9vti9q6bynit7mXiuvxrV9wUqwpZ06PQ5BG85QtpPmkdia-Rn32M6w9sT8pqMo/s480/El-Cuervo.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHFGNEotfoLeWXyHeHVIc6PUXHOSl0VWuMxFWzrk2f7ZixpvLpfdTnfeURc2h3F1SlvSA732GhI1k_D9vti9q6bynit7mXiuvxrV9wUqwpZ06PQ5BG85QtpPmkdia-Rn32M6w9sT8pqMo/s160/El-Cuervo.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHFGNEotfoLeWXyHeHVIc6PUXHOSl0VWuMxFWzrk2f7ZixpvLpfdTnfeURc2h3F1SlvSA732GhI1k_D9vti9q6bynit7mXiuvxrV9wUqwpZ06PQ5BG85QtpPmkdia-Rn32M6w9sT8pqMo/s320/El-Cuervo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHFGNEotfoLeWXyHeHVIc6PUXHOSl0VWuMxFWzrk2f7ZixpvLpfdTnfeURc2h3F1SlvSA732GhI1k_D9vti9q6bynit7mXiuvxrV9wUqwpZ06PQ5BG85QtpPmkdia-Rn32M6w9sT8pqMo/s480/El-Cuervo.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 8: Un disparo, una maldición, una leyenda y un cuervo: Brandon Lee"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -152,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggDmki8-fykFnt4mgYDgOtuPbfyWx-GDPpBjm7mLiNwAjk8uTyAdLleLm0Lt76h8B7oqUgqFPthqQYCkxCkb1XsY8LufSaoL5NDnd-Zi7vm1KUcmpfGbL98hLNuxnquuaPGLOBmESzaqfntFGyRb_bM7U9O4KDvWpiLa93eClc4-dqFucNaT3eM546M_M/s320/crow-ver6-xlg-button-1721307883846.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggDmki8-fykFnt4mgYDgOtuPbfyWx-GDPpBjm7mLiNwAjk8uTyAdLleLm0Lt76h8B7oqUgqFPthqQYCkxCkb1XsY8LufSaoL5NDnd-Zi7vm1KUcmpfGbL98hLNuxnquuaPGLOBmESzaqfntFGyRb_bM7U9O4KDvWpiLa93eClc4-dqFucNaT3eM546M_M/s160/crow-ver6-xlg-button-1721307883846.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggDmki8-fykFnt4mgYDgOtuPbfyWx-GDPpBjm7mLiNwAjk8uTyAdLleLm0Lt76h8B7oqUgqFPthqQYCkxCkb1XsY8LufSaoL5NDnd-Zi7vm1KUcmpfGbL98hLNuxnquuaPGLOBmESzaqfntFGyRb_bM7U9O4KDvWpiLa93eClc4-dqFucNaT3eM546M_M/s320/crow-ver6-xlg-button-1721307883846.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggDmki8-fykFnt4mgYDgOtuPbfyWx-GDPpBjm7mLiNwAjk8uTyAdLleLm0Lt76h8B7oqUgqFPthqQYCkxCkb1XsY8LufSaoL5NDnd-Zi7vm1KUcmpfGbL98hLNuxnquuaPGLOBmESzaqfntFGyRb_bM7U9O4KDvWpiLa93eClc4-dqFucNaT3eM546M_M/s480/crow-ver6-xlg-button-1721307883846.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggDmki8-fykFnt4mgYDgOtuPbfyWx-GDPpBjm7mLiNwAjk8uTyAdLleLm0Lt76h8B7oqUgqFPthqQYCkxCkb1XsY8LufSaoL5NDnd-Zi7vm1KUcmpfGbL98hLNuxnquuaPGLOBmESzaqfntFGyRb_bM7U9O4KDvWpiLa93eClc4-dqFucNaT3eM546M_M/s160/crow-ver6-xlg-button-1721307883846.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggDmki8-fykFnt4mgYDgOtuPbfyWx-GDPpBjm7mLiNwAjk8uTyAdLleLm0Lt76h8B7oqUgqFPthqQYCkxCkb1XsY8LufSaoL5NDnd-Zi7vm1KUcmpfGbL98hLNuxnquuaPGLOBmESzaqfntFGyRb_bM7U9O4KDvWpiLa93eClc4-dqFucNaT3eM546M_M/s320/crow-ver6-xlg-button-1721307883846.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggDmki8-fykFnt4mgYDgOtuPbfyWx-GDPpBjm7mLiNwAjk8uTyAdLleLm0Lt76h8B7oqUgqFPthqQYCkxCkb1XsY8LufSaoL5NDnd-Zi7vm1KUcmpfGbL98hLNuxnquuaPGLOBmESzaqfntFGyRb_bM7U9O4KDvWpiLa93eClc4-dqFucNaT3eM546M_M/s480/crow-ver6-xlg-button-1721307883846.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.1008 - El Cuervo 1994 - 2024"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -163,8 +161,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizQMh6aHGb2kFvY7cDipJLY_KqstUBF_U_TDV0sktLlzfwz6OdsLLnnUtcvTES65ZCiyO0zykiF-F8TA68zmH1XpbLF57u5eHCK0OK6ClguXIBnCjLbPDdyG5MIiXF7ugig6Dn-ftrLfYAjyQzXXcVjGmTQ8515QfJKa_g3YKLj3OlP-flSlVbpX27Uzo/s320/R-1336621-1513368598-3166.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizQMh6aHGb2kFvY7cDipJLY_KqstUBF_U_TDV0sktLlzfwz6OdsLLnnUtcvTES65ZCiyO0zykiF-F8TA68zmH1XpbLF57u5eHCK0OK6ClguXIBnCjLbPDdyG5MIiXF7ugig6Dn-ftrLfYAjyQzXXcVjGmTQ8515QfJKa_g3YKLj3OlP-flSlVbpX27Uzo/s160/R-1336621-1513368598-3166.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizQMh6aHGb2kFvY7cDipJLY_KqstUBF_U_TDV0sktLlzfwz6OdsLLnnUtcvTES65ZCiyO0zykiF-F8TA68zmH1XpbLF57u5eHCK0OK6ClguXIBnCjLbPDdyG5MIiXF7ugig6Dn-ftrLfYAjyQzXXcVjGmTQ8515QfJKa_g3YKLj3OlP-flSlVbpX27Uzo/s320/R-1336621-1513368598-3166.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizQMh6aHGb2kFvY7cDipJLY_KqstUBF_U_TDV0sktLlzfwz6OdsLLnnUtcvTES65ZCiyO0zykiF-F8TA68zmH1XpbLF57u5eHCK0OK6ClguXIBnCjLbPDdyG5MIiXF7ugig6Dn-ftrLfYAjyQzXXcVjGmTQ8515QfJKa_g3YKLj3OlP-flSlVbpX27Uzo/s480/R-1336621-1513368598-3166.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizQMh6aHGb2kFvY7cDipJLY_KqstUBF_U_TDV0sktLlzfwz6OdsLLnnUtcvTES65ZCiyO0zykiF-F8TA68zmH1XpbLF57u5eHCK0OK6ClguXIBnCjLbPDdyG5MIiXF7ugig6Dn-ftrLfYAjyQzXXcVjGmTQ8515QfJKa_g3YKLj3OlP-flSlVbpX27Uzo/s160/R-1336621-1513368598-3166.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizQMh6aHGb2kFvY7cDipJLY_KqstUBF_U_TDV0sktLlzfwz6OdsLLnnUtcvTES65ZCiyO0zykiF-F8TA68zmH1XpbLF57u5eHCK0OK6ClguXIBnCjLbPDdyG5MIiXF7ugig6Dn-ftrLfYAjyQzXXcVjGmTQ8515QfJKa_g3YKLj3OlP-flSlVbpX27Uzo/s320/R-1336621-1513368598-3166.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizQMh6aHGb2kFvY7cDipJLY_KqstUBF_U_TDV0sktLlzfwz6OdsLLnnUtcvTES65ZCiyO0zykiF-F8TA68zmH1XpbLF57u5eHCK0OK6ClguXIBnCjLbPDdyG5MIiXF7ugig6Dn-ftrLfYAjyQzXXcVjGmTQ8515QfJKa_g3YKLj3OlP-flSlVbpX27Uzo/s480/R-1336621-1513368598-3166.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 79 - Recordando a The Magnificent Bastards"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -180,8 +177,7 @@
         <a class="related-bottom-card" href="b90-programa-76-nirvana-in-utero-20th-anniversary.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 - Programa 76 - Nirvana - In Utero 20th Anniversary "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -192,8 +188,7 @@
           </a><a class="related-bottom-card" href="b90-programa-78-tibetan-freedon-concert.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s480/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s640/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s480/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s640/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 - Programa 78 - Tibetan Freedon Concert"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -204,8 +199,7 @@
           </a><a class="related-bottom-card" href="b90-programa-75.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 - Programa 75"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

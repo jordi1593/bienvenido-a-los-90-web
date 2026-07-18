@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.960 - El último concierto de NIRVANA — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -128,8 +128,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOJXd3BIMonbsPCHjU8ON5uSrUU_QpcJokcjoj3XOpfmqNA46RQEJ05Pw9UXjZQeEs3utPVo2nK4pi_mkFtsLhUIMdYxFOAQISUUkilHvKvZAUj2qHyg5XbQw4zP5I2bnt2RckqQNYd1qYvkIscB8EVLWHJ4-u5Oy5AHfUstj156iIAXx1xJgbXr1OH4/s320/IMG-20231001-WA0034.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOJXd3BIMonbsPCHjU8ON5uSrUU_QpcJokcjoj3XOpfmqNA46RQEJ05Pw9UXjZQeEs3utPVo2nK4pi_mkFtsLhUIMdYxFOAQISUUkilHvKvZAUj2qHyg5XbQw4zP5I2bnt2RckqQNYd1qYvkIscB8EVLWHJ4-u5Oy5AHfUstj156iIAXx1xJgbXr1OH4/s160/IMG-20231001-WA0034.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOJXd3BIMonbsPCHjU8ON5uSrUU_QpcJokcjoj3XOpfmqNA46RQEJ05Pw9UXjZQeEs3utPVo2nK4pi_mkFtsLhUIMdYxFOAQISUUkilHvKvZAUj2qHyg5XbQw4zP5I2bnt2RckqQNYd1qYvkIscB8EVLWHJ4-u5Oy5AHfUstj156iIAXx1xJgbXr1OH4/s320/IMG-20231001-WA0034.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOJXd3BIMonbsPCHjU8ON5uSrUU_QpcJokcjoj3XOpfmqNA46RQEJ05Pw9UXjZQeEs3utPVo2nK4pi_mkFtsLhUIMdYxFOAQISUUkilHvKvZAUj2qHyg5XbQw4zP5I2bnt2RckqQNYd1qYvkIscB8EVLWHJ4-u5Oy5AHfUstj156iIAXx1xJgbXr1OH4/s480/IMG-20231001-WA0034.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOJXd3BIMonbsPCHjU8ON5uSrUU_QpcJokcjoj3XOpfmqNA46RQEJ05Pw9UXjZQeEs3utPVo2nK4pi_mkFtsLhUIMdYxFOAQISUUkilHvKvZAUj2qHyg5XbQw4zP5I2bnt2RckqQNYd1qYvkIscB8EVLWHJ4-u5Oy5AHfUstj156iIAXx1xJgbXr1OH4/s160/IMG-20231001-WA0034.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOJXd3BIMonbsPCHjU8ON5uSrUU_QpcJokcjoj3XOpfmqNA46RQEJ05Pw9UXjZQeEs3utPVo2nK4pi_mkFtsLhUIMdYxFOAQISUUkilHvKvZAUj2qHyg5XbQw4zP5I2bnt2RckqQNYd1qYvkIscB8EVLWHJ4-u5Oy5AHfUstj156iIAXx1xJgbXr1OH4/s320/IMG-20231001-WA0034.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOJXd3BIMonbsPCHjU8ON5uSrUU_QpcJokcjoj3XOpfmqNA46RQEJ05Pw9UXjZQeEs3utPVo2nK4pi_mkFtsLhUIMdYxFOAQISUUkilHvKvZAUj2qHyg5XbQw4zP5I2bnt2RckqQNYd1qYvkIscB8EVLWHJ4-u5Oy5AHfUstj156iIAXx1xJgbXr1OH4/s480/IMG-20231001-WA0034.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 46 - El misterio de SAPPY (Nirvana)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -139,8 +138,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s320/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s160/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s320/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s480/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s160/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s320/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s480/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1047 - Especial Nirvana, su historia desde enero a junio de 1993"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -150,8 +148,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s160/nirvanaIV.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s480/nirvanaIV.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s160/nirvanaIV.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s480/nirvanaIV.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 319 – Nirvana IV"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -167,8 +164,7 @@
         <a class="related-bottom-card" href="b90-programa-76-nirvana-in-utero-20th-anniversary.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 - Programa 76 - Nirvana - In Utero 20th Anniversary "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -179,8 +175,7 @@
           </a><a class="related-bottom-card" href="p-964-especial-nirvana-desde-enero-hasta-abril-de-1994.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhtPmR8hb7UfQXPUjL5Cd_czEROjLpzKlXVeGPqzY9q2GPIPVjRDOH7aax-Q5rMNuJ2BU8oNHlfbKLLem_HxrOFunBG2VCAQugs-2aFEkGnUYbbHICrGC9UHG8dpJFLdDrsYfkJ1_MGppKDxqZFI_gcGaWnRdX4iax012M9ea5iMTPrJoN48wlPQrPdoQ/s320/230063.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhtPmR8hb7UfQXPUjL5Cd_czEROjLpzKlXVeGPqzY9q2GPIPVjRDOH7aax-Q5rMNuJ2BU8oNHlfbKLLem_HxrOFunBG2VCAQugs-2aFEkGnUYbbHICrGC9UHG8dpJFLdDrsYfkJ1_MGppKDxqZFI_gcGaWnRdX4iax012M9ea5iMTPrJoN48wlPQrPdoQ/s320/230063.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhtPmR8hb7UfQXPUjL5Cd_czEROjLpzKlXVeGPqzY9q2GPIPVjRDOH7aax-Q5rMNuJ2BU8oNHlfbKLLem_HxrOFunBG2VCAQugs-2aFEkGnUYbbHICrGC9UHG8dpJFLdDrsYfkJ1_MGppKDxqZFI_gcGaWnRdX4iax012M9ea5iMTPrJoN48wlPQrPdoQ/s480/230063.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhtPmR8hb7UfQXPUjL5Cd_czEROjLpzKlXVeGPqzY9q2GPIPVjRDOH7aax-Q5rMNuJ2BU8oNHlfbKLLem_HxrOFunBG2VCAQugs-2aFEkGnUYbbHICrGC9UHG8dpJFLdDrsYfkJ1_MGppKDxqZFI_gcGaWnRdX4iax012M9ea5iMTPrJoN48wlPQrPdoQ/s640/230063.webp 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhtPmR8hb7UfQXPUjL5Cd_czEROjLpzKlXVeGPqzY9q2GPIPVjRDOH7aax-Q5rMNuJ2BU8oNHlfbKLLem_HxrOFunBG2VCAQugs-2aFEkGnUYbbHICrGC9UHG8dpJFLdDrsYfkJ1_MGppKDxqZFI_gcGaWnRdX4iax012M9ea5iMTPrJoN48wlPQrPdoQ/s320/230063.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhtPmR8hb7UfQXPUjL5Cd_czEROjLpzKlXVeGPqzY9q2GPIPVjRDOH7aax-Q5rMNuJ2BU8oNHlfbKLLem_HxrOFunBG2VCAQugs-2aFEkGnUYbbHICrGC9UHG8dpJFLdDrsYfkJ1_MGppKDxqZFI_gcGaWnRdX4iax012M9ea5iMTPrJoN48wlPQrPdoQ/s480/230063.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhtPmR8hb7UfQXPUjL5Cd_czEROjLpzKlXVeGPqzY9q2GPIPVjRDOH7aax-Q5rMNuJ2BU8oNHlfbKLLem_HxrOFunBG2VCAQugs-2aFEkGnUYbbHICrGC9UHG8dpJFLdDrsYfkJ1_MGppKDxqZFI_gcGaWnRdX4iax012M9ea5iMTPrJoN48wlPQrPdoQ/s640/230063.webp 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.964 - Especial Nirvana: desde enero hasta abril de 1994"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -191,8 +186,7 @@
           </a><a class="related-bottom-card" href="p-1006-especial-with-the-lights-out-de-nirvana.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixSBxqwHc65cLWvEyosBPOhmBm-vYWl7zSjEJ1tRCI53NEZtKuciO4e7BDQkkTAfIz_Q1sB8d5FGE_hOpnyABrDk7JohHThT6654RY9Aw8xAa5GeikedYdqIu0U27ybOzsW6V8wXA_ii2kqlzDfizXZGOma5A-iFbekBHkKVDHiLwEq4zG9ofpIAIrRVg/s320/nirvana__with_the_lights_out-600x600.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixSBxqwHc65cLWvEyosBPOhmBm-vYWl7zSjEJ1tRCI53NEZtKuciO4e7BDQkkTAfIz_Q1sB8d5FGE_hOpnyABrDk7JohHThT6654RY9Aw8xAa5GeikedYdqIu0U27ybOzsW6V8wXA_ii2kqlzDfizXZGOma5A-iFbekBHkKVDHiLwEq4zG9ofpIAIrRVg/s320/nirvana__with_the_lights_out-600x600.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixSBxqwHc65cLWvEyosBPOhmBm-vYWl7zSjEJ1tRCI53NEZtKuciO4e7BDQkkTAfIz_Q1sB8d5FGE_hOpnyABrDk7JohHThT6654RY9Aw8xAa5GeikedYdqIu0U27ybOzsW6V8wXA_ii2kqlzDfizXZGOma5A-iFbekBHkKVDHiLwEq4zG9ofpIAIrRVg/s480/nirvana__with_the_lights_out-600x600.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixSBxqwHc65cLWvEyosBPOhmBm-vYWl7zSjEJ1tRCI53NEZtKuciO4e7BDQkkTAfIz_Q1sB8d5FGE_hOpnyABrDk7JohHThT6654RY9Aw8xAa5GeikedYdqIu0U27ybOzsW6V8wXA_ii2kqlzDfizXZGOma5A-iFbekBHkKVDHiLwEq4zG9ofpIAIrRVg/s640/nirvana__with_the_lights_out-600x600.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixSBxqwHc65cLWvEyosBPOhmBm-vYWl7zSjEJ1tRCI53NEZtKuciO4e7BDQkkTAfIz_Q1sB8d5FGE_hOpnyABrDk7JohHThT6654RY9Aw8xAa5GeikedYdqIu0U27ybOzsW6V8wXA_ii2kqlzDfizXZGOma5A-iFbekBHkKVDHiLwEq4zG9ofpIAIrRVg/s320/nirvana__with_the_lights_out-600x600.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixSBxqwHc65cLWvEyosBPOhmBm-vYWl7zSjEJ1tRCI53NEZtKuciO4e7BDQkkTAfIz_Q1sB8d5FGE_hOpnyABrDk7JohHThT6654RY9Aw8xAa5GeikedYdqIu0U27ybOzsW6V8wXA_ii2kqlzDfizXZGOma5A-iFbekBHkKVDHiLwEq4zG9ofpIAIrRVg/s480/nirvana__with_the_lights_out-600x600.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixSBxqwHc65cLWvEyosBPOhmBm-vYWl7zSjEJ1tRCI53NEZtKuciO4e7BDQkkTAfIz_Q1sB8d5FGE_hOpnyABrDk7JohHThT6654RY9Aw8xAa5GeikedYdqIu0U27ybOzsW6V8wXA_ii2kqlzDfizXZGOma5A-iFbekBHkKVDHiLwEq4zG9ofpIAIrRVg/s640/nirvana__with_the_lights_out-600x600.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.1006 - Especial &#39;With The Lights Out&#39; de Nirvana"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

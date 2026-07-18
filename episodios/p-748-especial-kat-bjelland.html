@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.748 - Especial Kat Bjelland — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk7J0DRxU_rtQOQzm_idH3YYbQJo17z_Y5tDvg12kRVK-fzPtUUj0DQbZvjMtGZRiBEeMbG2O-wX9J51tl2LxIB09p2B3YwXex5dwDkn3TXcKUtxF-5RhOvPZeS5DGp5wtihBb7u8vRhQ/s320/b90_518.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk7J0DRxU_rtQOQzm_idH3YYbQJo17z_Y5tDvg12kRVK-fzPtUUj0DQbZvjMtGZRiBEeMbG2O-wX9J51tl2LxIB09p2B3YwXex5dwDkn3TXcKUtxF-5RhOvPZeS5DGp5wtihBb7u8vRhQ/s160/b90_518.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk7J0DRxU_rtQOQzm_idH3YYbQJo17z_Y5tDvg12kRVK-fzPtUUj0DQbZvjMtGZRiBEeMbG2O-wX9J51tl2LxIB09p2B3YwXex5dwDkn3TXcKUtxF-5RhOvPZeS5DGp5wtihBb7u8vRhQ/s320/b90_518.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk7J0DRxU_rtQOQzm_idH3YYbQJo17z_Y5tDvg12kRVK-fzPtUUj0DQbZvjMtGZRiBEeMbG2O-wX9J51tl2LxIB09p2B3YwXex5dwDkn3TXcKUtxF-5RhOvPZeS5DGp5wtihBb7u8vRhQ/s480/b90_518.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk7J0DRxU_rtQOQzm_idH3YYbQJo17z_Y5tDvg12kRVK-fzPtUUj0DQbZvjMtGZRiBEeMbG2O-wX9J51tl2LxIB09p2B3YwXex5dwDkn3TXcKUtxF-5RhOvPZeS5DGp5wtihBb7u8vRhQ/s160/b90_518.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk7J0DRxU_rtQOQzm_idH3YYbQJo17z_Y5tDvg12kRVK-fzPtUUj0DQbZvjMtGZRiBEeMbG2O-wX9J51tl2LxIB09p2B3YwXex5dwDkn3TXcKUtxF-5RhOvPZeS5DGp5wtihBb7u8vRhQ/s320/b90_518.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk7J0DRxU_rtQOQzm_idH3YYbQJo17z_Y5tDvg12kRVK-fzPtUUj0DQbZvjMtGZRiBEeMbG2O-wX9J51tl2LxIB09p2B3YwXex5dwDkn3TXcKUtxF-5RhOvPZeS5DGp5wtihBb7u8vRhQ/s480/b90_518.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 518 - Sugar Baby Dolls (Hole + Babes in Toyland + L7)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa #16 - Yo soy la morsa"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s320/d9dbb49122ca7f199dfd9fc1bd704541.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s160/d9dbb49122ca7f199dfd9fc1bd704541.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s320/d9dbb49122ca7f199dfd9fc1bd704541.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s480/d9dbb49122ca7f199dfd9fc1bd704541.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s160/d9dbb49122ca7f199dfd9fc1bd704541.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s320/d9dbb49122ca7f199dfd9fc1bd704541.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s480/d9dbb49122ca7f199dfd9fc1bd704541.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 6: La primera y única vez que Kurt y Courtney actuaron juntos"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="p-741-courtney-love-renaciendo-de-las-cenizas.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWOBJZJRSSvXr6sgSag45HOZZSnRuCZlmQNm-htZuRf86HXNBG7YfKl14JlmAE2eGQU5Dpo4h04i4Jo3q-yqTYD1mm_HNP5xU6IW0GYRC7VMFJNnwllOEHcDUBV8plh35ADOVyMb6Ocxc/s320/unnamed+%25289%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWOBJZJRSSvXr6sgSag45HOZZSnRuCZlmQNm-htZuRf86HXNBG7YfKl14JlmAE2eGQU5Dpo4h04i4Jo3q-yqTYD1mm_HNP5xU6IW0GYRC7VMFJNnwllOEHcDUBV8plh35ADOVyMb6Ocxc/s320/unnamed+%25289%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWOBJZJRSSvXr6sgSag45HOZZSnRuCZlmQNm-htZuRf86HXNBG7YfKl14JlmAE2eGQU5Dpo4h04i4Jo3q-yqTYD1mm_HNP5xU6IW0GYRC7VMFJNnwllOEHcDUBV8plh35ADOVyMb6Ocxc/s480/unnamed+%25289%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWOBJZJRSSvXr6sgSag45HOZZSnRuCZlmQNm-htZuRf86HXNBG7YfKl14JlmAE2eGQU5Dpo4h04i4Jo3q-yqTYD1mm_HNP5xU6IW0GYRC7VMFJNnwllOEHcDUBV8plh35ADOVyMb6Ocxc/s640/unnamed+%25289%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWOBJZJRSSvXr6sgSag45HOZZSnRuCZlmQNm-htZuRf86HXNBG7YfKl14JlmAE2eGQU5Dpo4h04i4Jo3q-yqTYD1mm_HNP5xU6IW0GYRC7VMFJNnwllOEHcDUBV8plh35ADOVyMb6Ocxc/s320/unnamed+%25289%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWOBJZJRSSvXr6sgSag45HOZZSnRuCZlmQNm-htZuRf86HXNBG7YfKl14JlmAE2eGQU5Dpo4h04i4Jo3q-yqTYD1mm_HNP5xU6IW0GYRC7VMFJNnwllOEHcDUBV8plh35ADOVyMb6Ocxc/s480/unnamed+%25289%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWOBJZJRSSvXr6sgSag45HOZZSnRuCZlmQNm-htZuRf86HXNBG7YfKl14JlmAE2eGQU5Dpo4h04i4Jo3q-yqTYD1mm_HNP5xU6IW0GYRC7VMFJNnwllOEHcDUBV8plh35ADOVyMb6Ocxc/s640/unnamed+%25289%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.741 - Courtney Love, renaciendo de las cenizas"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="p-735-axl-rose-vs-kurt-cobain.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s320/35b95a7ac02799ef06b89c8075fc68b1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s320/35b95a7ac02799ef06b89c8075fc68b1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s480/35b95a7ac02799ef06b89c8075fc68b1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s640/35b95a7ac02799ef06b89c8075fc68b1.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s320/35b95a7ac02799ef06b89c8075fc68b1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s480/35b95a7ac02799ef06b89c8075fc68b1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s640/35b95a7ac02799ef06b89c8075fc68b1.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.735 - Axl Rose Vs. Kurt Cobain"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="p-714-homenaje-a-los-25-anos-del-mellon-collie-and-the-infinite-sadness.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s320/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s320/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s480/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s640/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s320/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s480/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s640/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.714 - Homenaje a los 25 años del Mellon Collie and the Infinite Sadness "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

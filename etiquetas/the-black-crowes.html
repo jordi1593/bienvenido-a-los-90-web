@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>The Black Crowes — 9 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1041-the-elven-nos-presentan-solstice.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL3NikWIN07Sx_s-TcFCxgVmbzONXGiAsAM7u776-sakAAiPG8RKmYynCNDohan35NzgHdCs-xV1xgGklkssq32nnm8cYHewjh0Gmq8vcTAcwyHl-MSoup2ZTZL4FFwjZnHbuc_t1tMpQPgbRsF_gxYceWXl86sz06t4cLsDqjqvfSqTKoKoJXdiGPnto/s320/a0918101011_10.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL3NikWIN07Sx_s-TcFCxgVmbzONXGiAsAM7u776-sakAAiPG8RKmYynCNDohan35NzgHdCs-xV1xgGklkssq32nnm8cYHewjh0Gmq8vcTAcwyHl-MSoup2ZTZL4FFwjZnHbuc_t1tMpQPgbRsF_gxYceWXl86sz06t4cLsDqjqvfSqTKoKoJXdiGPnto/s160/a0918101011_10.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL3NikWIN07Sx_s-TcFCxgVmbzONXGiAsAM7u776-sakAAiPG8RKmYynCNDohan35NzgHdCs-xV1xgGklkssq32nnm8cYHewjh0Gmq8vcTAcwyHl-MSoup2ZTZL4FFwjZnHbuc_t1tMpQPgbRsF_gxYceWXl86sz06t4cLsDqjqvfSqTKoKoJXdiGPnto/s320/a0918101011_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL3NikWIN07Sx_s-TcFCxgVmbzONXGiAsAM7u776-sakAAiPG8RKmYynCNDohan35NzgHdCs-xV1xgGklkssq32nnm8cYHewjh0Gmq8vcTAcwyHl-MSoup2ZTZL4FFwjZnHbuc_t1tMpQPgbRsF_gxYceWXl86sz06t4cLsDqjqvfSqTKoKoJXdiGPnto/s480/a0918101011_10.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL3NikWIN07Sx_s-TcFCxgVmbzONXGiAsAM7u776-sakAAiPG8RKmYynCNDohan35NzgHdCs-xV1xgGklkssq32nnm8cYHewjh0Gmq8vcTAcwyHl-MSoup2ZTZL4FFwjZnHbuc_t1tMpQPgbRsF_gxYceWXl86sz06t4cLsDqjqvfSqTKoKoJXdiGPnto/s160/a0918101011_10.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL3NikWIN07Sx_s-TcFCxgVmbzONXGiAsAM7u776-sakAAiPG8RKmYynCNDohan35NzgHdCs-xV1xgGklkssq32nnm8cYHewjh0Gmq8vcTAcwyHl-MSoup2ZTZL4FFwjZnHbuc_t1tMpQPgbRsF_gxYceWXl86sz06t4cLsDqjqvfSqTKoKoJXdiGPnto/s320/a0918101011_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL3NikWIN07Sx_s-TcFCxgVmbzONXGiAsAM7u776-sakAAiPG8RKmYynCNDohan35NzgHdCs-xV1xgGklkssq32nnm8cYHewjh0Gmq8vcTAcwyHl-MSoup2ZTZL4FFwjZnHbuc_t1tMpQPgbRsF_gxYceWXl86sz06t4cLsDqjqvfSqTKoKoJXdiGPnto/s480/a0918101011_10.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1041 - The Elven nos presentan &#39;Solstice&#39;"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/1026-especial-the-black-crowes-parte2.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO6PI1AbU5Aq4iAGxxG7qTaemHxl0ehRrHDlePH8l3M8SEBvfju-re6MShsNMH4l1JjbaUIFYM7J4M1Ik1p46rebXqbXR2zoP0UvfByQCyA0DpEOamdVLTruhnxPuZof9vAXyoaZ75SBm_a_b4VTmoV99uODLju4lyIDiVlFO5rw9YWylsJ9ufdbYcDKk/s320/1b762451-fa32-4d1b-bb00-406a3d52c5bb_16-9-aspect-ratio_default_0.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO6PI1AbU5Aq4iAGxxG7qTaemHxl0ehRrHDlePH8l3M8SEBvfju-re6MShsNMH4l1JjbaUIFYM7J4M1Ik1p46rebXqbXR2zoP0UvfByQCyA0DpEOamdVLTruhnxPuZof9vAXyoaZ75SBm_a_b4VTmoV99uODLju4lyIDiVlFO5rw9YWylsJ9ufdbYcDKk/s160/1b762451-fa32-4d1b-bb00-406a3d52c5bb_16-9-aspect-ratio_default_0.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO6PI1AbU5Aq4iAGxxG7qTaemHxl0ehRrHDlePH8l3M8SEBvfju-re6MShsNMH4l1JjbaUIFYM7J4M1Ik1p46rebXqbXR2zoP0UvfByQCyA0DpEOamdVLTruhnxPuZof9vAXyoaZ75SBm_a_b4VTmoV99uODLju4lyIDiVlFO5rw9YWylsJ9ufdbYcDKk/s320/1b762451-fa32-4d1b-bb00-406a3d52c5bb_16-9-aspect-ratio_default_0.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO6PI1AbU5Aq4iAGxxG7qTaemHxl0ehRrHDlePH8l3M8SEBvfju-re6MShsNMH4l1JjbaUIFYM7J4M1Ik1p46rebXqbXR2zoP0UvfByQCyA0DpEOamdVLTruhnxPuZof9vAXyoaZ75SBm_a_b4VTmoV99uODLju4lyIDiVlFO5rw9YWylsJ9ufdbYcDKk/s480/1b762451-fa32-4d1b-bb00-406a3d52c5bb_16-9-aspect-ratio_default_0.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO6PI1AbU5Aq4iAGxxG7qTaemHxl0ehRrHDlePH8l3M8SEBvfju-re6MShsNMH4l1JjbaUIFYM7J4M1Ik1p46rebXqbXR2zoP0UvfByQCyA0DpEOamdVLTruhnxPuZof9vAXyoaZ75SBm_a_b4VTmoV99uODLju4lyIDiVlFO5rw9YWylsJ9ufdbYcDKk/s160/1b762451-fa32-4d1b-bb00-406a3d52c5bb_16-9-aspect-ratio_default_0.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO6PI1AbU5Aq4iAGxxG7qTaemHxl0ehRrHDlePH8l3M8SEBvfju-re6MShsNMH4l1JjbaUIFYM7J4M1Ik1p46rebXqbXR2zoP0UvfByQCyA0DpEOamdVLTruhnxPuZof9vAXyoaZ75SBm_a_b4VTmoV99uODLju4lyIDiVlFO5rw9YWylsJ9ufdbYcDKk/s320/1b762451-fa32-4d1b-bb00-406a3d52c5bb_16-9-aspect-ratio_default_0.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO6PI1AbU5Aq4iAGxxG7qTaemHxl0ehRrHDlePH8l3M8SEBvfju-re6MShsNMH4l1JjbaUIFYM7J4M1Ik1p46rebXqbXR2zoP0UvfByQCyA0DpEOamdVLTruhnxPuZof9vAXyoaZ75SBm_a_b4VTmoV99uODLju4lyIDiVlFO5rw9YWylsJ9ufdbYcDKk/s480/1b762451-fa32-4d1b-bb00-406a3d52c5bb_16-9-aspect-ratio_default_0.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1026 - Especial The Black Crowes (Parte2)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/1025-especial-the-black-crowes-parte1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHK6PAeN7LW8B_JKEpyBVyCCcFMkGH5PBn5zigSZpEzMv4bEgnviz4JT2EMGwBu3xQ3ln4tlz1bHv_P_BtHr7lgaSrhJn88PbgeEz0Jsaq_TWkw1D7SeAAWM2CjLkfjXPc2jRGYQ0gxybuyDfSgGl5jMVSP1bzZVaqzy8W0I3S7IvgdrXzh9K1mp33Gk4/s320/adiSdRUNvuqX5Xi7Zzezv-1200-80.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHK6PAeN7LW8B_JKEpyBVyCCcFMkGH5PBn5zigSZpEzMv4bEgnviz4JT2EMGwBu3xQ3ln4tlz1bHv_P_BtHr7lgaSrhJn88PbgeEz0Jsaq_TWkw1D7SeAAWM2CjLkfjXPc2jRGYQ0gxybuyDfSgGl5jMVSP1bzZVaqzy8W0I3S7IvgdrXzh9K1mp33Gk4/s160/adiSdRUNvuqX5Xi7Zzezv-1200-80.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHK6PAeN7LW8B_JKEpyBVyCCcFMkGH5PBn5zigSZpEzMv4bEgnviz4JT2EMGwBu3xQ3ln4tlz1bHv_P_BtHr7lgaSrhJn88PbgeEz0Jsaq_TWkw1D7SeAAWM2CjLkfjXPc2jRGYQ0gxybuyDfSgGl5jMVSP1bzZVaqzy8W0I3S7IvgdrXzh9K1mp33Gk4/s320/adiSdRUNvuqX5Xi7Zzezv-1200-80.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHK6PAeN7LW8B_JKEpyBVyCCcFMkGH5PBn5zigSZpEzMv4bEgnviz4JT2EMGwBu3xQ3ln4tlz1bHv_P_BtHr7lgaSrhJn88PbgeEz0Jsaq_TWkw1D7SeAAWM2CjLkfjXPc2jRGYQ0gxybuyDfSgGl5jMVSP1bzZVaqzy8W0I3S7IvgdrXzh9K1mp33Gk4/s480/adiSdRUNvuqX5Xi7Zzezv-1200-80.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHK6PAeN7LW8B_JKEpyBVyCCcFMkGH5PBn5zigSZpEzMv4bEgnviz4JT2EMGwBu3xQ3ln4tlz1bHv_P_BtHr7lgaSrhJn88PbgeEz0Jsaq_TWkw1D7SeAAWM2CjLkfjXPc2jRGYQ0gxybuyDfSgGl5jMVSP1bzZVaqzy8W0I3S7IvgdrXzh9K1mp33Gk4/s160/adiSdRUNvuqX5Xi7Zzezv-1200-80.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHK6PAeN7LW8B_JKEpyBVyCCcFMkGH5PBn5zigSZpEzMv4bEgnviz4JT2EMGwBu3xQ3ln4tlz1bHv_P_BtHr7lgaSrhJn88PbgeEz0Jsaq_TWkw1D7SeAAWM2CjLkfjXPc2jRGYQ0gxybuyDfSgGl5jMVSP1bzZVaqzy8W0I3S7IvgdrXzh9K1mp33Gk4/s320/adiSdRUNvuqX5Xi7Zzezv-1200-80.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHK6PAeN7LW8B_JKEpyBVyCCcFMkGH5PBn5zigSZpEzMv4bEgnviz4JT2EMGwBu3xQ3ln4tlz1bHv_P_BtHr7lgaSrhJn88PbgeEz0Jsaq_TWkw1D7SeAAWM2CjLkfjXPc2jRGYQ0gxybuyDfSgGl5jMVSP1bzZVaqzy8W0I3S7IvgdrXzh9K1mp33Gk4/s480/adiSdRUNvuqX5Xi7Zzezv-1200-80.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1025 - Especial The Black Crowes (Parte1)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/1020-especial-1994-11-the-black-crowes-nirvana-tom-petty-woodstock-94.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s320/b90_parte12.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s160/b90_parte12.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s320/b90_parte12.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s480/b90_parte12.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s160/b90_parte12.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s320/b90_parte12.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s480/b90_parte12.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1020 - Especial 1994 (11) : The Black Crowes - Nirvana - Tom Petty - Woodstock 94"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/p-991-tu-antes-molabas.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd8FYZZm9hxpRee36cu0JMGFphvHcuf6Zr-UdEw3gDJwLXXb71eYqFd7LclBj910O1FpuA2VvXn62Sxl98gaKeIxz7ceHyoTfwNOJJXAvpGxTvkauPJqSsaUk6AjfpXfxWmnKbAi5CN8e4VXjGiWQDCxDL8x6F-Pq8mfnYPCEbA6V0gkNYzpxx_NG6yhM/s320/b90_tu%20molas22.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd8FYZZm9hxpRee36cu0JMGFphvHcuf6Zr-UdEw3gDJwLXXb71eYqFd7LclBj910O1FpuA2VvXn62Sxl98gaKeIxz7ceHyoTfwNOJJXAvpGxTvkauPJqSsaUk6AjfpXfxWmnKbAi5CN8e4VXjGiWQDCxDL8x6F-Pq8mfnYPCEbA6V0gkNYzpxx_NG6yhM/s160/b90_tu%20molas22.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd8FYZZm9hxpRee36cu0JMGFphvHcuf6Zr-UdEw3gDJwLXXb71eYqFd7LclBj910O1FpuA2VvXn62Sxl98gaKeIxz7ceHyoTfwNOJJXAvpGxTvkauPJqSsaUk6AjfpXfxWmnKbAi5CN8e4VXjGiWQDCxDL8x6F-Pq8mfnYPCEbA6V0gkNYzpxx_NG6yhM/s320/b90_tu%20molas22.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd8FYZZm9hxpRee36cu0JMGFphvHcuf6Zr-UdEw3gDJwLXXb71eYqFd7LclBj910O1FpuA2VvXn62Sxl98gaKeIxz7ceHyoTfwNOJJXAvpGxTvkauPJqSsaUk6AjfpXfxWmnKbAi5CN8e4VXjGiWQDCxDL8x6F-Pq8mfnYPCEbA6V0gkNYzpxx_NG6yhM/s480/b90_tu%20molas22.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd8FYZZm9hxpRee36cu0JMGFphvHcuf6Zr-UdEw3gDJwLXXb71eYqFd7LclBj910O1FpuA2VvXn62Sxl98gaKeIxz7ceHyoTfwNOJJXAvpGxTvkauPJqSsaUk6AjfpXfxWmnKbAi5CN8e4VXjGiWQDCxDL8x6F-Pq8mfnYPCEbA6V0gkNYzpxx_NG6yhM/s160/b90_tu%20molas22.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd8FYZZm9hxpRee36cu0JMGFphvHcuf6Zr-UdEw3gDJwLXXb71eYqFd7LclBj910O1FpuA2VvXn62Sxl98gaKeIxz7ceHyoTfwNOJJXAvpGxTvkauPJqSsaUk6AjfpXfxWmnKbAi5CN8e4VXjGiWQDCxDL8x6F-Pq8mfnYPCEbA6V0gkNYzpxx_NG6yhM/s320/b90_tu%20molas22.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd8FYZZm9hxpRee36cu0JMGFphvHcuf6Zr-UdEw3gDJwLXXb71eYqFd7LclBj910O1FpuA2VvXn62Sxl98gaKeIxz7ceHyoTfwNOJJXAvpGxTvkauPJqSsaUk6AjfpXfxWmnKbAi5CN8e4VXjGiWQDCxDL8x6F-Pq8mfnYPCEbA6V0gkNYzpxx_NG6yhM/s480/b90_tu%20molas22.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.991 - Tú antes molabas"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/p-910-especial-azkena-rock-festival.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s320/azkena-rock-festival-2022.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s160/azkena-rock-festival-2022.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s320/azkena-rock-festival-2022.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s480/azkena-rock-festival-2022.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s160/azkena-rock-festival-2022.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s320/azkena-rock-festival-2022.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s480/azkena-rock-festival-2022.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.910 - Especial AZKENA Rock Festival"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-524-entrevista-a-maite-moreno-janet-the-planet.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-ijD9kIBUwWLkI-Xv2JdlIMG9GSHzYo9ejCxuauYW8PJD9KWsyh4Ydh7jhHIIGpHC2ZvftA53gNioAlIeJixvb8NDKFf6Sfk0HtatEc_cu60lOM-6wt5mfiDFJ-q7dawWcXi4jHZ1Pqo/s320/IMG-20190511-WA0004.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-ijD9kIBUwWLkI-Xv2JdlIMG9GSHzYo9ejCxuauYW8PJD9KWsyh4Ydh7jhHIIGpHC2ZvftA53gNioAlIeJixvb8NDKFf6Sfk0HtatEc_cu60lOM-6wt5mfiDFJ-q7dawWcXi4jHZ1Pqo/s160/IMG-20190511-WA0004.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-ijD9kIBUwWLkI-Xv2JdlIMG9GSHzYo9ejCxuauYW8PJD9KWsyh4Ydh7jhHIIGpHC2ZvftA53gNioAlIeJixvb8NDKFf6Sfk0HtatEc_cu60lOM-6wt5mfiDFJ-q7dawWcXi4jHZ1Pqo/s320/IMG-20190511-WA0004.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-ijD9kIBUwWLkI-Xv2JdlIMG9GSHzYo9ejCxuauYW8PJD9KWsyh4Ydh7jhHIIGpHC2ZvftA53gNioAlIeJixvb8NDKFf6Sfk0HtatEc_cu60lOM-6wt5mfiDFJ-q7dawWcXi4jHZ1Pqo/s480/IMG-20190511-WA0004.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-ijD9kIBUwWLkI-Xv2JdlIMG9GSHzYo9ejCxuauYW8PJD9KWsyh4Ydh7jhHIIGpHC2ZvftA53gNioAlIeJixvb8NDKFf6Sfk0HtatEc_cu60lOM-6wt5mfiDFJ-q7dawWcXi4jHZ1Pqo/s160/IMG-20190511-WA0004.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-ijD9kIBUwWLkI-Xv2JdlIMG9GSHzYo9ejCxuauYW8PJD9KWsyh4Ydh7jhHIIGpHC2ZvftA53gNioAlIeJixvb8NDKFf6Sfk0HtatEc_cu60lOM-6wt5mfiDFJ-q7dawWcXi4jHZ1Pqo/s320/IMG-20190511-WA0004.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-ijD9kIBUwWLkI-Xv2JdlIMG9GSHzYo9ejCxuauYW8PJD9KWsyh4Ydh7jhHIIGpHC2ZvftA53gNioAlIeJixvb8NDKFf6Sfk0HtatEc_cu60lOM-6wt5mfiDFJ-q7dawWcXi4jHZ1Pqo/s480/IMG-20190511-WA0004.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 524 - Entrevista a Maite Moreno (Janet The Planet)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/programa-63-muse-beady-eye-nirvana-rhcp-standstill.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 63 - MUSE, BEADY EYE, NIRVANA, RHCP, STANDSTILL..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -180,8 +172,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-11-el-fatidico-5-de-abril.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhblmx0KAckNg_c0QR3Lgy6LaFmbJD8I1Vv3zdndz6eX67UpOFZNuKVtUzsb5fXLDTtuLmpbu0E1QhgB3-RGgPYUHg2Rqk5gytz8HTCZ-PLCXEztAzBfS9U1GJB14CdUVyF6lRDy9vIsAA/s320/c7c161a97f3b7be5eb7fec850115e088911915ba_m.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhblmx0KAckNg_c0QR3Lgy6LaFmbJD8I1Vv3zdndz6eX67UpOFZNuKVtUzsb5fXLDTtuLmpbu0E1QhgB3-RGgPYUHg2Rqk5gytz8HTCZ-PLCXEztAzBfS9U1GJB14CdUVyF6lRDy9vIsAA/s160/c7c161a97f3b7be5eb7fec850115e088911915ba_m.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhblmx0KAckNg_c0QR3Lgy6LaFmbJD8I1Vv3zdndz6eX67UpOFZNuKVtUzsb5fXLDTtuLmpbu0E1QhgB3-RGgPYUHg2Rqk5gytz8HTCZ-PLCXEztAzBfS9U1GJB14CdUVyF6lRDy9vIsAA/s320/c7c161a97f3b7be5eb7fec850115e088911915ba_m.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhblmx0KAckNg_c0QR3Lgy6LaFmbJD8I1Vv3zdndz6eX67UpOFZNuKVtUzsb5fXLDTtuLmpbu0E1QhgB3-RGgPYUHg2Rqk5gytz8HTCZ-PLCXEztAzBfS9U1GJB14CdUVyF6lRDy9vIsAA/s480/c7c161a97f3b7be5eb7fec850115e088911915ba_m.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhblmx0KAckNg_c0QR3Lgy6LaFmbJD8I1Vv3zdndz6eX67UpOFZNuKVtUzsb5fXLDTtuLmpbu0E1QhgB3-RGgPYUHg2Rqk5gytz8HTCZ-PLCXEztAzBfS9U1GJB14CdUVyF6lRDy9vIsAA/s160/c7c161a97f3b7be5eb7fec850115e088911915ba_m.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhblmx0KAckNg_c0QR3Lgy6LaFmbJD8I1Vv3zdndz6eX67UpOFZNuKVtUzsb5fXLDTtuLmpbu0E1QhgB3-RGgPYUHg2Rqk5gytz8HTCZ-PLCXEztAzBfS9U1GJB14CdUVyF6lRDy9vIsAA/s320/c7c161a97f3b7be5eb7fec850115e088911915ba_m.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhblmx0KAckNg_c0QR3Lgy6LaFmbJD8I1Vv3zdndz6eX67UpOFZNuKVtUzsb5fXLDTtuLmpbu0E1QhgB3-RGgPYUHg2Rqk5gytz8HTCZ-PLCXEztAzBfS9U1GJB14CdUVyF6lRDy9vIsAA/s480/c7c161a97f3b7be5eb7fec850115e088911915ba_m.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Bienvenido a los 90 - Programa #11 - El fatídico 5 de Abril"
                 loading="lazy" width="320" height="213" />
         </a>

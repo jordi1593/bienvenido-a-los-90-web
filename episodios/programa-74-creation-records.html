@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 74 - Creation Records — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -144,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s320/Screen-Shot-2017-03-14-at-193817.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s160/Screen-Shot-2017-03-14-at-193817.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s320/Screen-Shot-2017-03-14-at-193817.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s480/Screen-Shot-2017-03-14-at-193817.webp 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s160/Screen-Shot-2017-03-14-at-193817.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s320/Screen-Shot-2017-03-14-at-193817.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1dZKAAW4GPX3UaB8HE0Oy-f7EGbo9594OZ-49hIOUAMPXvnEGTD_gdwN_04GKnublABmAQl2GeNO_pXXYxld8uExqNhoUGnMCBKWLRcdxF2eCf1H3QNWJX5744nISuZNkzvzWOyTbdxT8cdOQ0MODIIgsSvWHGyj-HmtsK_1D0yAZI-XBeyKVkDU_Q/s480/Screen-Shot-2017-03-14-at-193817.webp 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 47 - Estar en el lugar adecuado, en el momento adecuado: OASIS"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -155,8 +154,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="B90 - Programa 75"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +164,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="B90 - Programa 83 -Pearl Jam, Moby, The Chemical Brother, Kings of Leon..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -183,8 +180,7 @@
         <a class="related-bottom-card" href="b90-programa-84-pearl-jam-lightning-bolt.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 - Programa 84 - Pearl Jam Lightning Bolt"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +191,7 @@
           </a><a class="related-bottom-card" href="programa-87-havalina-y-61-garage-half-records.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 87 - Havalina y 61 Garage (Half Records)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -207,8 +202,7 @@
           </a><a class="related-bottom-card" href="bienvenido-a-los-90-programa-21-mtv-unplugged.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Bienvenido a los 90 - Programa 21 - MTV Unplugged"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

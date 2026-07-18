@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 154 - Entrevista a Felipe Sanz de la Rosa — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -130,8 +130,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 70 - Canciones olvidadas de los 90"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -141,8 +140,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa 33 - Entrevista a Felipe Couselo"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -152,8 +150,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3yULv_Xg8Dc_JCDbh9pKY3jAqBN_dkNlyG8tcgdUIPp9VMqiObeUOl7TyIa8mqIeRedSbzWaAbF43J27jxaJ0HDBKo0KK_ANSxH7aqD598GuUWsCB52RGdlWQ4Prob_B_jnjEgq4-XIyTzK8fm-2-Lu5bzUWRAP4TNsPMo-OD6eBGMRXhB8sRvQ3VXIA/s320/A-256406-1543338995-1033.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3yULv_Xg8Dc_JCDbh9pKY3jAqBN_dkNlyG8tcgdUIPp9VMqiObeUOl7TyIa8mqIeRedSbzWaAbF43J27jxaJ0HDBKo0KK_ANSxH7aqD598GuUWsCB52RGdlWQ4Prob_B_jnjEgq4-XIyTzK8fm-2-Lu5bzUWRAP4TNsPMo-OD6eBGMRXhB8sRvQ3VXIA/s160/A-256406-1543338995-1033.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3yULv_Xg8Dc_JCDbh9pKY3jAqBN_dkNlyG8tcgdUIPp9VMqiObeUOl7TyIa8mqIeRedSbzWaAbF43J27jxaJ0HDBKo0KK_ANSxH7aqD598GuUWsCB52RGdlWQ4Prob_B_jnjEgq4-XIyTzK8fm-2-Lu5bzUWRAP4TNsPMo-OD6eBGMRXhB8sRvQ3VXIA/s320/A-256406-1543338995-1033.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3yULv_Xg8Dc_JCDbh9pKY3jAqBN_dkNlyG8tcgdUIPp9VMqiObeUOl7TyIa8mqIeRedSbzWaAbF43J27jxaJ0HDBKo0KK_ANSxH7aqD598GuUWsCB52RGdlWQ4Prob_B_jnjEgq4-XIyTzK8fm-2-Lu5bzUWRAP4TNsPMo-OD6eBGMRXhB8sRvQ3VXIA/s480/A-256406-1543338995-1033.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3yULv_Xg8Dc_JCDbh9pKY3jAqBN_dkNlyG8tcgdUIPp9VMqiObeUOl7TyIa8mqIeRedSbzWaAbF43J27jxaJ0HDBKo0KK_ANSxH7aqD598GuUWsCB52RGdlWQ4Prob_B_jnjEgq4-XIyTzK8fm-2-Lu5bzUWRAP4TNsPMo-OD6eBGMRXhB8sRvQ3VXIA/s160/A-256406-1543338995-1033.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3yULv_Xg8Dc_JCDbh9pKY3jAqBN_dkNlyG8tcgdUIPp9VMqiObeUOl7TyIa8mqIeRedSbzWaAbF43J27jxaJ0HDBKo0KK_ANSxH7aqD598GuUWsCB52RGdlWQ4Prob_B_jnjEgq4-XIyTzK8fm-2-Lu5bzUWRAP4TNsPMo-OD6eBGMRXhB8sRvQ3VXIA/s320/A-256406-1543338995-1033.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3yULv_Xg8Dc_JCDbh9pKY3jAqBN_dkNlyG8tcgdUIPp9VMqiObeUOl7TyIa8mqIeRedSbzWaAbF43J27jxaJ0HDBKo0KK_ANSxH7aqD598GuUWsCB52RGdlWQ4Prob_B_jnjEgq4-XIyTzK8fm-2-Lu5bzUWRAP4TNsPMo-OD6eBGMRXhB8sRvQ3VXIA/s480/A-256406-1543338995-1033.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.973 - Entrevista a Barret Jones"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -169,8 +166,7 @@
         <a class="related-bottom-card" href="1102-una-hora-de-grunge-sin-casi-pausas.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s320/B90_1102.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s320/B90_1102.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s480/B90_1102.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s640/B90_1102.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s320/B90_1102.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s480/B90_1102.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s640/B90_1102.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1102 - Una hora de GRUNGE sin (casi) pausas"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -181,8 +177,7 @@
           </a><a class="related-bottom-card" href="programa-152-entrevista-a-rafa-cervera.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s640/420962_355957767755206_243875636_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s640/420962_355957767755206_243875636_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 152 - Entrevista a Rafa Cervera"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -193,8 +188,7 @@
           </a><a class="related-bottom-card" href="programa-158-montage-of-heck-y-cool.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s320/fotonoticia_20150422115943_800.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s320/fotonoticia_20150422115943_800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s480/fotonoticia_20150422115943_800.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s640/fotonoticia_20150422115943_800.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s320/fotonoticia_20150422115943_800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s480/fotonoticia_20150422115943_800.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s640/fotonoticia_20150422115943_800.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 158 - Montage of Heck y Cool"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

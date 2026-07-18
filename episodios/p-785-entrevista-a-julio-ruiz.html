@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.785 - Entrevista a Julio Ruiz — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -133,8 +133,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s320/julio.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s160/julio.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s320/julio.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s480/julio.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s160/julio.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s320/julio.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s480/julio.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 361 - Entrevista a Julio Ruiz (Disco grande Radio 3)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -144,8 +143,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s320/IMG_20230722_123812.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s160/IMG_20230722_123812.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s320/IMG_20230722_123812.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s480/IMG_20230722_123812.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s160/IMG_20230722_123812.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s320/IMG_20230722_123812.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kPk6eVjGvyJbte3Rm2SWMLe85Qlcqe94CW-gsG6GzJVvOvjBvy2pvRPW4FtsIr1lwp3K11pEQJJo1OhIV_1ddsmXhQHW7C6yFjCJ61wVmQp35N5y1SRTXfellARJ84M0rrTl5ErdlxBBdG1eTuGR99_RSJ7qROgkUqEKMcf7LwFY_tkPv9v2fD0KiIw/s480/IMG_20230722_123812.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.921 - Julio Ruiz recuerda las actuaciones de Blur, Radiohead, Dover..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -155,8 +153,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifFEOhyZ1jDlqPQl43GQqnlCQ-PIIwJQp2v_JhW0zJ502Gg4oisDphdCXjozHGUDXSC2_16hyR3Lz1AQJLPakQ4gNIne43-FpBw8SOFDegNRaT9YpEzPVUoSGryexZA2PohdBQ7AZgFO-CVxAHqx2O_0mu8_kMsPFos0r-QG8MPdfL1aXiYJyXW_LrKdQ/s320/2.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifFEOhyZ1jDlqPQl43GQqnlCQ-PIIwJQp2v_JhW0zJ502Gg4oisDphdCXjozHGUDXSC2_16hyR3Lz1AQJLPakQ4gNIne43-FpBw8SOFDegNRaT9YpEzPVUoSGryexZA2PohdBQ7AZgFO-CVxAHqx2O_0mu8_kMsPFos0r-QG8MPdfL1aXiYJyXW_LrKdQ/s160/2.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifFEOhyZ1jDlqPQl43GQqnlCQ-PIIwJQp2v_JhW0zJ502Gg4oisDphdCXjozHGUDXSC2_16hyR3Lz1AQJLPakQ4gNIne43-FpBw8SOFDegNRaT9YpEzPVUoSGryexZA2PohdBQ7AZgFO-CVxAHqx2O_0mu8_kMsPFos0r-QG8MPdfL1aXiYJyXW_LrKdQ/s320/2.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifFEOhyZ1jDlqPQl43GQqnlCQ-PIIwJQp2v_JhW0zJ502Gg4oisDphdCXjozHGUDXSC2_16hyR3Lz1AQJLPakQ4gNIne43-FpBw8SOFDegNRaT9YpEzPVUoSGryexZA2PohdBQ7AZgFO-CVxAHqx2O_0mu8_kMsPFos0r-QG8MPdfL1aXiYJyXW_LrKdQ/s480/2.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifFEOhyZ1jDlqPQl43GQqnlCQ-PIIwJQp2v_JhW0zJ502Gg4oisDphdCXjozHGUDXSC2_16hyR3Lz1AQJLPakQ4gNIne43-FpBw8SOFDegNRaT9YpEzPVUoSGryexZA2PohdBQ7AZgFO-CVxAHqx2O_0mu8_kMsPFos0r-QG8MPdfL1aXiYJyXW_LrKdQ/s160/2.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifFEOhyZ1jDlqPQl43GQqnlCQ-PIIwJQp2v_JhW0zJ502Gg4oisDphdCXjozHGUDXSC2_16hyR3Lz1AQJLPakQ4gNIne43-FpBw8SOFDegNRaT9YpEzPVUoSGryexZA2PohdBQ7AZgFO-CVxAHqx2O_0mu8_kMsPFos0r-QG8MPdfL1aXiYJyXW_LrKdQ/s320/2.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifFEOhyZ1jDlqPQl43GQqnlCQ-PIIwJQp2v_JhW0zJ502Gg4oisDphdCXjozHGUDXSC2_16hyR3Lz1AQJLPakQ4gNIne43-FpBw8SOFDegNRaT9YpEzPVUoSGryexZA2PohdBQ7AZgFO-CVxAHqx2O_0mu8_kMsPFos0r-QG8MPdfL1aXiYJyXW_LrKdQ/s480/2.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.995 - Recordando las sintonías de DISCO GRANDE con Julio Ruiz"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -172,8 +169,7 @@
         <a class="related-bottom-card" href="p-844-he-vuelto-a-grabar-el-primer-programa-de-b90-kurt-tuvo-la-culpa-remastered.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s320/ni7bimcmykx01.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s320/ni7bimcmykx01.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s480/ni7bimcmykx01.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s640/ni7bimcmykx01.webp 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s320/ni7bimcmykx01.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s480/ni7bimcmykx01.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsTot3LHNDnjSAiMnAtSlIqtKyX00_iCHBQ-xHjScj05h6YGbWRKI4d5agAKjspMKomKQIl9Wz0UlOyuiqXPEecgyqchLQyHIWesn6MxqGKs-IhdTThcbCJA8TUPJP-pTUv1kW7OeUiixHaM4kXDXunHbcmTGpMvAoF6kQl2fJEgrPXADprrRyHQTG/s640/ni7bimcmykx01.webp 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.844 - He vuelto a grabar el primer programa de B90: Kurt tuvo la culpa... (Remastered)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -184,8 +180,7 @@
           </a><a class="related-bottom-card" href="p-895-angel-apricot-the-pink-sunset-over-you.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1W-H8XrxAwDFh6nmY1lrEKVhqY519Blt2A-ov77rfDwALmyaCA-PS7nUgPrutkh2S6OkeBWlIUTYsBqNKM7Yd27vpYj1G7fhowgxk0R3OdcP6aZwHuND8l8JqjgsTHqSc0MGa3XnKu4r0cjN2ygDclil3fSRnRYIIbnhAEF5YEErrDpMNAHzVAfDh/s320/a2080243944_10%20(1).jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1W-H8XrxAwDFh6nmY1lrEKVhqY519Blt2A-ov77rfDwALmyaCA-PS7nUgPrutkh2S6OkeBWlIUTYsBqNKM7Yd27vpYj1G7fhowgxk0R3OdcP6aZwHuND8l8JqjgsTHqSc0MGa3XnKu4r0cjN2ygDclil3fSRnRYIIbnhAEF5YEErrDpMNAHzVAfDh/s320/a2080243944_10%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1W-H8XrxAwDFh6nmY1lrEKVhqY519Blt2A-ov77rfDwALmyaCA-PS7nUgPrutkh2S6OkeBWlIUTYsBqNKM7Yd27vpYj1G7fhowgxk0R3OdcP6aZwHuND8l8JqjgsTHqSc0MGa3XnKu4r0cjN2ygDclil3fSRnRYIIbnhAEF5YEErrDpMNAHzVAfDh/s480/a2080243944_10%20(1).jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1W-H8XrxAwDFh6nmY1lrEKVhqY519Blt2A-ov77rfDwALmyaCA-PS7nUgPrutkh2S6OkeBWlIUTYsBqNKM7Yd27vpYj1G7fhowgxk0R3OdcP6aZwHuND8l8JqjgsTHqSc0MGa3XnKu4r0cjN2ygDclil3fSRnRYIIbnhAEF5YEErrDpMNAHzVAfDh/s640/a2080243944_10%20(1).jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1W-H8XrxAwDFh6nmY1lrEKVhqY519Blt2A-ov77rfDwALmyaCA-PS7nUgPrutkh2S6OkeBWlIUTYsBqNKM7Yd27vpYj1G7fhowgxk0R3OdcP6aZwHuND8l8JqjgsTHqSc0MGa3XnKu4r0cjN2ygDclil3fSRnRYIIbnhAEF5YEErrDpMNAHzVAfDh/s320/a2080243944_10%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1W-H8XrxAwDFh6nmY1lrEKVhqY519Blt2A-ov77rfDwALmyaCA-PS7nUgPrutkh2S6OkeBWlIUTYsBqNKM7Yd27vpYj1G7fhowgxk0R3OdcP6aZwHuND8l8JqjgsTHqSc0MGa3XnKu4r0cjN2ygDclil3fSRnRYIIbnhAEF5YEErrDpMNAHzVAfDh/s480/a2080243944_10%20(1).jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1W-H8XrxAwDFh6nmY1lrEKVhqY519Blt2A-ov77rfDwALmyaCA-PS7nUgPrutkh2S6OkeBWlIUTYsBqNKM7Yd27vpYj1G7fhowgxk0R3OdcP6aZwHuND8l8JqjgsTHqSc0MGa3XnKu4r0cjN2ygDclil3fSRnRYIIbnhAEF5YEErrDpMNAHzVAfDh/s640/a2080243944_10%20(1).jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.895 - Angel Apricot - The Pink Sunset Over You"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -196,8 +191,7 @@
           </a><a class="related-bottom-card" href="programa-496-la-ultima-entrevista-real-a-kurt-cobain.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s320/00+Kurt-01.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s320/00+Kurt-01.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s480/00+Kurt-01.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s640/00+Kurt-01.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s320/00+Kurt-01.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s480/00+Kurt-01.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s640/00+Kurt-01.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 496 - La última entrevista real a Kurt Cobain"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 307 – Incesticide cumple 25 años — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s320/B90+-+300.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s160/B90+-+300.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s320/B90+-+300.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s480/B90+-+300.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s160/B90+-+300.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s320/B90+-+300.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s480/B90+-+300.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 300 con Paco Pérez Bryan"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJzJbYLaLkyDAOJGx_QnRY4m-dUkt8qP0R4IAghq692BrAi55tTHZMJvqjCDomn_mW-IueCUkginzPqdds2Jrr7-J_wxk_2qs1Wub8oianIKLexmbLyKNVd6lH4SDA3GT4U-D2ES5V91k/s320/D1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJzJbYLaLkyDAOJGx_QnRY4m-dUkt8qP0R4IAghq692BrAi55tTHZMJvqjCDomn_mW-IueCUkginzPqdds2Jrr7-J_wxk_2qs1Wub8oianIKLexmbLyKNVd6lH4SDA3GT4U-D2ES5V91k/s160/D1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJzJbYLaLkyDAOJGx_QnRY4m-dUkt8qP0R4IAghq692BrAi55tTHZMJvqjCDomn_mW-IueCUkginzPqdds2Jrr7-J_wxk_2qs1Wub8oianIKLexmbLyKNVd6lH4SDA3GT4U-D2ES5V91k/s320/D1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJzJbYLaLkyDAOJGx_QnRY4m-dUkt8qP0R4IAghq692BrAi55tTHZMJvqjCDomn_mW-IueCUkginzPqdds2Jrr7-J_wxk_2qs1Wub8oianIKLexmbLyKNVd6lH4SDA3GT4U-D2ES5V91k/s480/D1.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJzJbYLaLkyDAOJGx_QnRY4m-dUkt8qP0R4IAghq692BrAi55tTHZMJvqjCDomn_mW-IueCUkginzPqdds2Jrr7-J_wxk_2qs1Wub8oianIKLexmbLyKNVd6lH4SDA3GT4U-D2ES5V91k/s160/D1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJzJbYLaLkyDAOJGx_QnRY4m-dUkt8qP0R4IAghq692BrAi55tTHZMJvqjCDomn_mW-IueCUkginzPqdds2Jrr7-J_wxk_2qs1Wub8oianIKLexmbLyKNVd6lH4SDA3GT4U-D2ES5V91k/s320/D1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJzJbYLaLkyDAOJGx_QnRY4m-dUkt8qP0R4IAghq692BrAi55tTHZMJvqjCDomn_mW-IueCUkginzPqdds2Jrr7-J_wxk_2qs1Wub8oianIKLexmbLyKNVd6lH4SDA3GT4U-D2ES5V91k/s480/D1.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 260 - The Beatles Sgt. Pepper&#39;s Lonely Hearts Club Band 50 años"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSlW25CramprytpSm9vb3k6LSA2y0ovacDuvY8OIO51FXFYrf6oAA3Q948166ThKUhrSN5bzPrpD6xkQhY73hf3otdGyqYBqjeym5IZAnvC8ONHAZ9PxXugMXbbfDDR2Bxtoj5mV6gZQo/s320/14265007_10153860239027747_689106018517295517_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSlW25CramprytpSm9vb3k6LSA2y0ovacDuvY8OIO51FXFYrf6oAA3Q948166ThKUhrSN5bzPrpD6xkQhY73hf3otdGyqYBqjeym5IZAnvC8ONHAZ9PxXugMXbbfDDR2Bxtoj5mV6gZQo/s160/14265007_10153860239027747_689106018517295517_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSlW25CramprytpSm9vb3k6LSA2y0ovacDuvY8OIO51FXFYrf6oAA3Q948166ThKUhrSN5bzPrpD6xkQhY73hf3otdGyqYBqjeym5IZAnvC8ONHAZ9PxXugMXbbfDDR2Bxtoj5mV6gZQo/s320/14265007_10153860239027747_689106018517295517_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSlW25CramprytpSm9vb3k6LSA2y0ovacDuvY8OIO51FXFYrf6oAA3Q948166ThKUhrSN5bzPrpD6xkQhY73hf3otdGyqYBqjeym5IZAnvC8ONHAZ9PxXugMXbbfDDR2Bxtoj5mV6gZQo/s480/14265007_10153860239027747_689106018517295517_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSlW25CramprytpSm9vb3k6LSA2y0ovacDuvY8OIO51FXFYrf6oAA3Q948166ThKUhrSN5bzPrpD6xkQhY73hf3otdGyqYBqjeym5IZAnvC8ONHAZ9PxXugMXbbfDDR2Bxtoj5mV6gZQo/s160/14265007_10153860239027747_689106018517295517_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSlW25CramprytpSm9vb3k6LSA2y0ovacDuvY8OIO51FXFYrf6oAA3Q948166ThKUhrSN5bzPrpD6xkQhY73hf3otdGyqYBqjeym5IZAnvC8ONHAZ9PxXugMXbbfDDR2Bxtoj5mV6gZQo/s320/14265007_10153860239027747_689106018517295517_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSlW25CramprytpSm9vb3k6LSA2y0ovacDuvY8OIO51FXFYrf6oAA3Q948166ThKUhrSN5bzPrpD6xkQhY73hf3otdGyqYBqjeym5IZAnvC8ONHAZ9PxXugMXbbfDDR2Bxtoj5mV6gZQo/s480/14265007_10153860239027747_689106018517295517_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 240 - De 4 a 3 cumple 25 años"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="programa-238-the-beatles-revolver-50-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_jrEbPPh6YktIZOL79A-HvzTwUDfhWEvP3eb4zk2z5S6MAd8f7BwCSA_YjVK9MwBfZmrL-Hp_cRzQ6PiXXf-iSufsD449swNEqRaLZBS_zcOHtCqSHHUygbIR2DBL2u5_JNYCuqmKt84/s320/IMG_20160805_190714.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_jrEbPPh6YktIZOL79A-HvzTwUDfhWEvP3eb4zk2z5S6MAd8f7BwCSA_YjVK9MwBfZmrL-Hp_cRzQ6PiXXf-iSufsD449swNEqRaLZBS_zcOHtCqSHHUygbIR2DBL2u5_JNYCuqmKt84/s320/IMG_20160805_190714.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_jrEbPPh6YktIZOL79A-HvzTwUDfhWEvP3eb4zk2z5S6MAd8f7BwCSA_YjVK9MwBfZmrL-Hp_cRzQ6PiXXf-iSufsD449swNEqRaLZBS_zcOHtCqSHHUygbIR2DBL2u5_JNYCuqmKt84/s480/IMG_20160805_190714.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_jrEbPPh6YktIZOL79A-HvzTwUDfhWEvP3eb4zk2z5S6MAd8f7BwCSA_YjVK9MwBfZmrL-Hp_cRzQ6PiXXf-iSufsD449swNEqRaLZBS_zcOHtCqSHHUygbIR2DBL2u5_JNYCuqmKt84/s640/IMG_20160805_190714.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_jrEbPPh6YktIZOL79A-HvzTwUDfhWEvP3eb4zk2z5S6MAd8f7BwCSA_YjVK9MwBfZmrL-Hp_cRzQ6PiXXf-iSufsD449swNEqRaLZBS_zcOHtCqSHHUygbIR2DBL2u5_JNYCuqmKt84/s320/IMG_20160805_190714.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_jrEbPPh6YktIZOL79A-HvzTwUDfhWEvP3eb4zk2z5S6MAd8f7BwCSA_YjVK9MwBfZmrL-Hp_cRzQ6PiXXf-iSufsD449swNEqRaLZBS_zcOHtCqSHHUygbIR2DBL2u5_JNYCuqmKt84/s480/IMG_20160805_190714.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_jrEbPPh6YktIZOL79A-HvzTwUDfhWEvP3eb4zk2z5S6MAd8f7BwCSA_YjVK9MwBfZmrL-Hp_cRzQ6PiXXf-iSufsD449swNEqRaLZBS_zcOHtCqSHHUygbIR2DBL2u5_JNYCuqmKt84/s640/IMG_20160805_190714.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 238 - The Beatles Revolver 50 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="programa-149-kurt-cobain-cumple-48-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s480/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s640/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s480/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s640/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 149 - Kurt Cobain cumple 48 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="programa-304-eddie-vedder-the-beatles.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s480/211e39bccf57b79c8093eea29fe06350.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s640/211e39bccf57b79c8093eea29fe06350.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s480/211e39bccf57b79c8093eea29fe06350.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s640/211e39bccf57b79c8093eea29fe06350.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 304 – Eddie Vedder + The Beatles"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

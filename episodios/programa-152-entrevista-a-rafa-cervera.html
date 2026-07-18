@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 152 - Entrevista a Rafa Cervera — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -150,8 +150,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK9DSP0kB1k6Wb9mAshN6RWsQ2YWUmGfEo1-7ulGDaKyIZDa7TMkQn17P_0e-F8X6FxiFvg7YhW4g2e-nddP9jJ3bjmkOfIqv3X5JJYItnSmOEP6oFMcTB5ACyVoN9gnXEmcKKa4j12hA/s320/10404407_1038777532806556_4290284820915191659_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK9DSP0kB1k6Wb9mAshN6RWsQ2YWUmGfEo1-7ulGDaKyIZDa7TMkQn17P_0e-F8X6FxiFvg7YhW4g2e-nddP9jJ3bjmkOfIqv3X5JJYItnSmOEP6oFMcTB5ACyVoN9gnXEmcKKa4j12hA/s160/10404407_1038777532806556_4290284820915191659_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK9DSP0kB1k6Wb9mAshN6RWsQ2YWUmGfEo1-7ulGDaKyIZDa7TMkQn17P_0e-F8X6FxiFvg7YhW4g2e-nddP9jJ3bjmkOfIqv3X5JJYItnSmOEP6oFMcTB5ACyVoN9gnXEmcKKa4j12hA/s320/10404407_1038777532806556_4290284820915191659_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK9DSP0kB1k6Wb9mAshN6RWsQ2YWUmGfEo1-7ulGDaKyIZDa7TMkQn17P_0e-F8X6FxiFvg7YhW4g2e-nddP9jJ3bjmkOfIqv3X5JJYItnSmOEP6oFMcTB5ACyVoN9gnXEmcKKa4j12hA/s480/10404407_1038777532806556_4290284820915191659_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK9DSP0kB1k6Wb9mAshN6RWsQ2YWUmGfEo1-7ulGDaKyIZDa7TMkQn17P_0e-F8X6FxiFvg7YhW4g2e-nddP9jJ3bjmkOfIqv3X5JJYItnSmOEP6oFMcTB5ACyVoN9gnXEmcKKa4j12hA/s160/10404407_1038777532806556_4290284820915191659_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK9DSP0kB1k6Wb9mAshN6RWsQ2YWUmGfEo1-7ulGDaKyIZDa7TMkQn17P_0e-F8X6FxiFvg7YhW4g2e-nddP9jJ3bjmkOfIqv3X5JJYItnSmOEP6oFMcTB5ACyVoN9gnXEmcKKa4j12hA/s320/10404407_1038777532806556_4290284820915191659_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK9DSP0kB1k6Wb9mAshN6RWsQ2YWUmGfEo1-7ulGDaKyIZDa7TMkQn17P_0e-F8X6FxiFvg7YhW4g2e-nddP9jJ3bjmkOfIqv3X5JJYItnSmOEP6oFMcTB5ACyVoN9gnXEmcKKa4j12hA/s480/10404407_1038777532806556_4290284820915191659_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 163 - Entrevista a LOSER"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -161,8 +160,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s320/rafa-cervera-e1417550151876.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s160/rafa-cervera-e1417550151876.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s320/rafa-cervera-e1417550151876.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s480/rafa-cervera-e1417550151876.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s160/rafa-cervera-e1417550151876.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s320/rafa-cervera-e1417550151876.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVvdUokTL2yzxFRs5IGjiukbdnvgy4E2NJES9RTI3nmxVugMUoGGWygE8RxMqiR-Gn_MA3lxNHZC7dgI0nrGKYrxjR-6Ee1rZOXhSWM9zdfsyleXd6J7jsiMooOEaG28JT951ahBSVgVQ/s480/rafa-cervera-e1417550151876.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 165 - Entrevista a Rafa Cervera"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -172,8 +170,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa 33 - Entrevista a Felipe Couselo"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -189,8 +186,7 @@
         <a class="related-bottom-card" href="programa-248-james-bond-en-los-90.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s320/007.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s320/007.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s480/007.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s640/007.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s320/007.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s480/007.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s640/007.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 248 - James Bond en los 90"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -201,8 +197,7 @@
           </a><a class="related-bottom-card" href="programa-281-eddie-vedder-amsterdam-2017.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s320/IMG-20170601-WA0005.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s320/IMG-20170601-WA0005.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s480/IMG-20170601-WA0005.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s640/IMG-20170601-WA0005.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s320/IMG-20170601-WA0005.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s480/IMG-20170601-WA0005.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s640/IMG-20170601-WA0005.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 281 - Eddie Vedder Amsterdam 2017"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -213,8 +208,7 @@
           </a><a class="related-bottom-card" href="programa-297-el-fenomeno-fan-2-0.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s320/bienvenido-297-b.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s320/bienvenido-297-b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s480/bienvenido-297-b.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s640/bienvenido-297-b.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s320/bienvenido-297-b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s480/bienvenido-297-b.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s640/bienvenido-297-b.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 297 – El fenómeno fan 2.0"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

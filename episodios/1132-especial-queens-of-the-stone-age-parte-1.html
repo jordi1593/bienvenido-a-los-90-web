@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>1132 - Especial Queens of the Stone Age (Parte 1) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -131,8 +131,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 66 - The DOORS, STONE TEMPLE PILOTS, QOTSA, PRIMAL SCREAM"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -142,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 59 - Bush, Nirvana, No Doubt, Pearl Jam, The Smashing Pumpkins..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -153,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s320/b90_parte12_final.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s160/b90_parte12_final.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s320/b90_parte12_final.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s480/b90_parte12_final.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s160/b90_parte12_final.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s320/b90_parte12_final.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s480/b90_parte12_final.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1021 - Especial 1994 (12) : The Beatles - The Stone Roses - Bush - Pearl Jam"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -170,8 +167,7 @@
         <a class="related-bottom-card" href="p-802-john-squire-de-the-stone-roses-a-the-seahorses.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7LDXcBG7j5F-LIHpoJqrOKz9Ho_qWSFL5F1Qw4DPH7XdkmoLE5eZhxgGCyFCXgDHttS58VH0r9GLTv2Zir0DVazvjoV5826zDH5qKNzewdCsYWnyDRuawMip8Sn8DreDEDDrfCY0QQ7E/s320/IMG_20211026_120631.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7LDXcBG7j5F-LIHpoJqrOKz9Ho_qWSFL5F1Qw4DPH7XdkmoLE5eZhxgGCyFCXgDHttS58VH0r9GLTv2Zir0DVazvjoV5826zDH5qKNzewdCsYWnyDRuawMip8Sn8DreDEDDrfCY0QQ7E/s320/IMG_20211026_120631.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7LDXcBG7j5F-LIHpoJqrOKz9Ho_qWSFL5F1Qw4DPH7XdkmoLE5eZhxgGCyFCXgDHttS58VH0r9GLTv2Zir0DVazvjoV5826zDH5qKNzewdCsYWnyDRuawMip8Sn8DreDEDDrfCY0QQ7E/s480/IMG_20211026_120631.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7LDXcBG7j5F-LIHpoJqrOKz9Ho_qWSFL5F1Qw4DPH7XdkmoLE5eZhxgGCyFCXgDHttS58VH0r9GLTv2Zir0DVazvjoV5826zDH5qKNzewdCsYWnyDRuawMip8Sn8DreDEDDrfCY0QQ7E/s640/IMG_20211026_120631.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7LDXcBG7j5F-LIHpoJqrOKz9Ho_qWSFL5F1Qw4DPH7XdkmoLE5eZhxgGCyFCXgDHttS58VH0r9GLTv2Zir0DVazvjoV5826zDH5qKNzewdCsYWnyDRuawMip8Sn8DreDEDDrfCY0QQ7E/s320/IMG_20211026_120631.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7LDXcBG7j5F-LIHpoJqrOKz9Ho_qWSFL5F1Qw4DPH7XdkmoLE5eZhxgGCyFCXgDHttS58VH0r9GLTv2Zir0DVazvjoV5826zDH5qKNzewdCsYWnyDRuawMip8Sn8DreDEDDrfCY0QQ7E/s480/IMG_20211026_120631.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7LDXcBG7j5F-LIHpoJqrOKz9Ho_qWSFL5F1Qw4DPH7XdkmoLE5eZhxgGCyFCXgDHttS58VH0r9GLTv2Zir0DVazvjoV5826zDH5qKNzewdCsYWnyDRuawMip8Sn8DreDEDDrfCY0QQ7E/s640/IMG_20211026_120631.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.802 - John Squire, de The Stone Roses a The Seahorses"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -182,8 +178,7 @@
           </a><a class="related-bottom-card" href="programa-485-chris-cornell-i-am-the-highway-concierto-tributo-los-angeles-2019.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ElKC1O7C99_2CRDjvMMcLlDDVMahJaBz6yffGjRYtCiiTEmDrMZ3qE57XQNWB6NO7x-jI6fgH7-Rcz_SxQNcHi-zTcbXHnhmPEdopeQK7Jz-2hCGtzbURvlXVOkAgK2NjBT2Dd1bvEo/s320/fotonoticia_20190117110348_800.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ElKC1O7C99_2CRDjvMMcLlDDVMahJaBz6yffGjRYtCiiTEmDrMZ3qE57XQNWB6NO7x-jI6fgH7-Rcz_SxQNcHi-zTcbXHnhmPEdopeQK7Jz-2hCGtzbURvlXVOkAgK2NjBT2Dd1bvEo/s320/fotonoticia_20190117110348_800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ElKC1O7C99_2CRDjvMMcLlDDVMahJaBz6yffGjRYtCiiTEmDrMZ3qE57XQNWB6NO7x-jI6fgH7-Rcz_SxQNcHi-zTcbXHnhmPEdopeQK7Jz-2hCGtzbURvlXVOkAgK2NjBT2Dd1bvEo/s480/fotonoticia_20190117110348_800.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ElKC1O7C99_2CRDjvMMcLlDDVMahJaBz6yffGjRYtCiiTEmDrMZ3qE57XQNWB6NO7x-jI6fgH7-Rcz_SxQNcHi-zTcbXHnhmPEdopeQK7Jz-2hCGtzbURvlXVOkAgK2NjBT2Dd1bvEo/s640/fotonoticia_20190117110348_800.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ElKC1O7C99_2CRDjvMMcLlDDVMahJaBz6yffGjRYtCiiTEmDrMZ3qE57XQNWB6NO7x-jI6fgH7-Rcz_SxQNcHi-zTcbXHnhmPEdopeQK7Jz-2hCGtzbURvlXVOkAgK2NjBT2Dd1bvEo/s320/fotonoticia_20190117110348_800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ElKC1O7C99_2CRDjvMMcLlDDVMahJaBz6yffGjRYtCiiTEmDrMZ3qE57XQNWB6NO7x-jI6fgH7-Rcz_SxQNcHi-zTcbXHnhmPEdopeQK7Jz-2hCGtzbURvlXVOkAgK2NjBT2Dd1bvEo/s480/fotonoticia_20190117110348_800.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ElKC1O7C99_2CRDjvMMcLlDDVMahJaBz6yffGjRYtCiiTEmDrMZ3qE57XQNWB6NO7x-jI6fgH7-Rcz_SxQNcHi-zTcbXHnhmPEdopeQK7Jz-2hCGtzbURvlXVOkAgK2NjBT2Dd1bvEo/s640/fotonoticia_20190117110348_800.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 485 - Chris Cornell &#39;I Am The Highway&#39; Concierto tributo Los Angeles 2019 "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -194,8 +189,7 @@
           </a><a class="related-bottom-card" href="1125-the-smashing-pumpkins-melancolia-sinfonica-el-funeral-de-zero-y-el-retorno-de-bu.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgni7BL8R1dnmpBUUswQYrxtjlkslZzcrkONaUOC1Tro6pdLgXgJPqElK1i5VV1ix7crqcF2fknHn1kf4oXB_k7ovK4Me7fextUU2Q53MkbATsydPx5MUu5Iz-G-lWrNinyx2R21KQml1Fyhkt7CUq3PekxL-cL0If198qTaQJ5pqcYfW_yKoeAWjc-F6g/s320/Billy-Nueva-fecha-PV.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgni7BL8R1dnmpBUUswQYrxtjlkslZzcrkONaUOC1Tro6pdLgXgJPqElK1i5VV1ix7crqcF2fknHn1kf4oXB_k7ovK4Me7fextUU2Q53MkbATsydPx5MUu5Iz-G-lWrNinyx2R21KQml1Fyhkt7CUq3PekxL-cL0If198qTaQJ5pqcYfW_yKoeAWjc-F6g/s320/Billy-Nueva-fecha-PV.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgni7BL8R1dnmpBUUswQYrxtjlkslZzcrkONaUOC1Tro6pdLgXgJPqElK1i5VV1ix7crqcF2fknHn1kf4oXB_k7ovK4Me7fextUU2Q53MkbATsydPx5MUu5Iz-G-lWrNinyx2R21KQml1Fyhkt7CUq3PekxL-cL0If198qTaQJ5pqcYfW_yKoeAWjc-F6g/s480/Billy-Nueva-fecha-PV.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgni7BL8R1dnmpBUUswQYrxtjlkslZzcrkONaUOC1Tro6pdLgXgJPqElK1i5VV1ix7crqcF2fknHn1kf4oXB_k7ovK4Me7fextUU2Q53MkbATsydPx5MUu5Iz-G-lWrNinyx2R21KQml1Fyhkt7CUq3PekxL-cL0If198qTaQJ5pqcYfW_yKoeAWjc-F6g/s640/Billy-Nueva-fecha-PV.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgni7BL8R1dnmpBUUswQYrxtjlkslZzcrkONaUOC1Tro6pdLgXgJPqElK1i5VV1ix7crqcF2fknHn1kf4oXB_k7ovK4Me7fextUU2Q53MkbATsydPx5MUu5Iz-G-lWrNinyx2R21KQml1Fyhkt7CUq3PekxL-cL0If198qTaQJ5pqcYfW_yKoeAWjc-F6g/s320/Billy-Nueva-fecha-PV.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgni7BL8R1dnmpBUUswQYrxtjlkslZzcrkONaUOC1Tro6pdLgXgJPqElK1i5VV1ix7crqcF2fknHn1kf4oXB_k7ovK4Me7fextUU2Q53MkbATsydPx5MUu5Iz-G-lWrNinyx2R21KQml1Fyhkt7CUq3PekxL-cL0If198qTaQJ5pqcYfW_yKoeAWjc-F6g/s480/Billy-Nueva-fecha-PV.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgni7BL8R1dnmpBUUswQYrxtjlkslZzcrkONaUOC1Tro6pdLgXgJPqElK1i5VV1ix7crqcF2fknHn1kf4oXB_k7ovK4Me7fextUU2Q53MkbATsydPx5MUu5Iz-G-lWrNinyx2R21KQml1Fyhkt7CUq3PekxL-cL0If198qTaQJ5pqcYfW_yKoeAWjc-F6g/s640/Billy-Nueva-fecha-PV.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1125 - The Smashing Pumpkins: Melancolía Sinfónica, El Funeral de Zero y el Retorno de Butch Vig"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

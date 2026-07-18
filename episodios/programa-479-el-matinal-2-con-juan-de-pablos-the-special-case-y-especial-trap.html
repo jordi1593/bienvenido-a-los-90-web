@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 479 - El Matinal #2 con Juan de Pablos, The Special Case y Especial Trap — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -129,8 +129,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s320/John_standard.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s160/John_standard.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s320/John_standard.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s480/John_standard.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s160/John_standard.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s320/John_standard.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s480/John_standard.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa especial The Beatles: John Lennon"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -140,8 +139,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_OaPlZdQpCHjMHNP2P6XOJWYy_kdV58C_BaU7IUBlvoZ7oeZo7uu1JzOPYvCUMUZ57IH4DsxibuJfvJSg8waWEiQmXuJa5Vsp-ffNCNr2AFxSiv0uU_GqDTHk0D5COChkC1FW_RjMAjs/s320/b90_481_2.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_OaPlZdQpCHjMHNP2P6XOJWYy_kdV58C_BaU7IUBlvoZ7oeZo7uu1JzOPYvCUMUZ57IH4DsxibuJfvJSg8waWEiQmXuJa5Vsp-ffNCNr2AFxSiv0uU_GqDTHk0D5COChkC1FW_RjMAjs/s160/b90_481_2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_OaPlZdQpCHjMHNP2P6XOJWYy_kdV58C_BaU7IUBlvoZ7oeZo7uu1JzOPYvCUMUZ57IH4DsxibuJfvJSg8waWEiQmXuJa5Vsp-ffNCNr2AFxSiv0uU_GqDTHk0D5COChkC1FW_RjMAjs/s320/b90_481_2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_OaPlZdQpCHjMHNP2P6XOJWYy_kdV58C_BaU7IUBlvoZ7oeZo7uu1JzOPYvCUMUZ57IH4DsxibuJfvJSg8waWEiQmXuJa5Vsp-ffNCNr2AFxSiv0uU_GqDTHk0D5COChkC1FW_RjMAjs/s480/b90_481_2.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_OaPlZdQpCHjMHNP2P6XOJWYy_kdV58C_BaU7IUBlvoZ7oeZo7uu1JzOPYvCUMUZ57IH4DsxibuJfvJSg8waWEiQmXuJa5Vsp-ffNCNr2AFxSiv0uU_GqDTHk0D5COChkC1FW_RjMAjs/s160/b90_481_2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_OaPlZdQpCHjMHNP2P6XOJWYy_kdV58C_BaU7IUBlvoZ7oeZo7uu1JzOPYvCUMUZ57IH4DsxibuJfvJSg8waWEiQmXuJa5Vsp-ffNCNr2AFxSiv0uU_GqDTHk0D5COChkC1FW_RjMAjs/s320/b90_481_2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_OaPlZdQpCHjMHNP2P6XOJWYy_kdV58C_BaU7IUBlvoZ7oeZo7uu1JzOPYvCUMUZ57IH4DsxibuJfvJSg8waWEiQmXuJa5Vsp-ffNCNr2AFxSiv0uU_GqDTHk0D5COChkC1FW_RjMAjs/s480/b90_481_2.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Prograna 481 - The Last Internationale &#39;Soul on Fire&#39; (2018)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -151,8 +149,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbJDjYMd5IXipmVy0PH8qEUSeCdgtc_qFICqMUucKS9yvfeFdaNNb_Zh8WqHL3srh314HmPR744hOz6geCs59mJMUrmkoT68zNAUrfMlbMnejfks450ATQu6MuuA8qwy8pcDud-hs-lpM/s320/b90_482.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbJDjYMd5IXipmVy0PH8qEUSeCdgtc_qFICqMUucKS9yvfeFdaNNb_Zh8WqHL3srh314HmPR744hOz6geCs59mJMUrmkoT68zNAUrfMlbMnejfks450ATQu6MuuA8qwy8pcDud-hs-lpM/s160/b90_482.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbJDjYMd5IXipmVy0PH8qEUSeCdgtc_qFICqMUucKS9yvfeFdaNNb_Zh8WqHL3srh314HmPR744hOz6geCs59mJMUrmkoT68zNAUrfMlbMnejfks450ATQu6MuuA8qwy8pcDud-hs-lpM/s320/b90_482.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbJDjYMd5IXipmVy0PH8qEUSeCdgtc_qFICqMUucKS9yvfeFdaNNb_Zh8WqHL3srh314HmPR744hOz6geCs59mJMUrmkoT68zNAUrfMlbMnejfks450ATQu6MuuA8qwy8pcDud-hs-lpM/s480/b90_482.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbJDjYMd5IXipmVy0PH8qEUSeCdgtc_qFICqMUucKS9yvfeFdaNNb_Zh8WqHL3srh314HmPR744hOz6geCs59mJMUrmkoT68zNAUrfMlbMnejfks450ATQu6MuuA8qwy8pcDud-hs-lpM/s160/b90_482.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbJDjYMd5IXipmVy0PH8qEUSeCdgtc_qFICqMUucKS9yvfeFdaNNb_Zh8WqHL3srh314HmPR744hOz6geCs59mJMUrmkoT68zNAUrfMlbMnejfks450ATQu6MuuA8qwy8pcDud-hs-lpM/s320/b90_482.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbJDjYMd5IXipmVy0PH8qEUSeCdgtc_qFICqMUucKS9yvfeFdaNNb_Zh8WqHL3srh314HmPR744hOz6geCs59mJMUrmkoT68zNAUrfMlbMnejfks450ATQu6MuuA8qwy8pcDud-hs-lpM/s480/b90_482.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 482 - Wild Dog - The Last Days (2018)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -168,8 +165,7 @@
         <a class="related-bottom-card" href="programa-473-el-matinal-1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjs8u72q6tOzNfeEVQ_3nlt78g9fKzjmAKhPHPz-nk9aFqrm2OmZvZJKmZUcVPnnPCUeNyr1CayAmpoNfdx_9pzHEeTAxlP-9I9P7_GMJVMkc2Fu1-oxOtNZqVBjdD6I7d5rmxW9HYdEe4/s320/b90_matinal1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjs8u72q6tOzNfeEVQ_3nlt78g9fKzjmAKhPHPz-nk9aFqrm2OmZvZJKmZUcVPnnPCUeNyr1CayAmpoNfdx_9pzHEeTAxlP-9I9P7_GMJVMkc2Fu1-oxOtNZqVBjdD6I7d5rmxW9HYdEe4/s320/b90_matinal1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjs8u72q6tOzNfeEVQ_3nlt78g9fKzjmAKhPHPz-nk9aFqrm2OmZvZJKmZUcVPnnPCUeNyr1CayAmpoNfdx_9pzHEeTAxlP-9I9P7_GMJVMkc2Fu1-oxOtNZqVBjdD6I7d5rmxW9HYdEe4/s480/b90_matinal1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjs8u72q6tOzNfeEVQ_3nlt78g9fKzjmAKhPHPz-nk9aFqrm2OmZvZJKmZUcVPnnPCUeNyr1CayAmpoNfdx_9pzHEeTAxlP-9I9P7_GMJVMkc2Fu1-oxOtNZqVBjdD6I7d5rmxW9HYdEe4/s640/b90_matinal1.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjs8u72q6tOzNfeEVQ_3nlt78g9fKzjmAKhPHPz-nk9aFqrm2OmZvZJKmZUcVPnnPCUeNyr1CayAmpoNfdx_9pzHEeTAxlP-9I9P7_GMJVMkc2Fu1-oxOtNZqVBjdD6I7d5rmxW9HYdEe4/s320/b90_matinal1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjs8u72q6tOzNfeEVQ_3nlt78g9fKzjmAKhPHPz-nk9aFqrm2OmZvZJKmZUcVPnnPCUeNyr1CayAmpoNfdx_9pzHEeTAxlP-9I9P7_GMJVMkc2Fu1-oxOtNZqVBjdD6I7d5rmxW9HYdEe4/s480/b90_matinal1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjs8u72q6tOzNfeEVQ_3nlt78g9fKzjmAKhPHPz-nk9aFqrm2OmZvZJKmZUcVPnnPCUeNyr1CayAmpoNfdx_9pzHEeTAxlP-9I9P7_GMJVMkc2Fu1-oxOtNZqVBjdD6I7d5rmxW9HYdEe4/s640/b90_matinal1.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 473 - El Matinal #1"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -180,8 +176,7 @@
           </a><a class="related-bottom-card" href="programa-485-chris-cornell-i-am-the-highway-concierto-tributo-los-angeles-2019.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ElKC1O7C99_2CRDjvMMcLlDDVMahJaBz6yffGjRYtCiiTEmDrMZ3qE57XQNWB6NO7x-jI6fgH7-Rcz_SxQNcHi-zTcbXHnhmPEdopeQK7Jz-2hCGtzbURvlXVOkAgK2NjBT2Dd1bvEo/s320/fotonoticia_20190117110348_800.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ElKC1O7C99_2CRDjvMMcLlDDVMahJaBz6yffGjRYtCiiTEmDrMZ3qE57XQNWB6NO7x-jI6fgH7-Rcz_SxQNcHi-zTcbXHnhmPEdopeQK7Jz-2hCGtzbURvlXVOkAgK2NjBT2Dd1bvEo/s320/fotonoticia_20190117110348_800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ElKC1O7C99_2CRDjvMMcLlDDVMahJaBz6yffGjRYtCiiTEmDrMZ3qE57XQNWB6NO7x-jI6fgH7-Rcz_SxQNcHi-zTcbXHnhmPEdopeQK7Jz-2hCGtzbURvlXVOkAgK2NjBT2Dd1bvEo/s480/fotonoticia_20190117110348_800.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ElKC1O7C99_2CRDjvMMcLlDDVMahJaBz6yffGjRYtCiiTEmDrMZ3qE57XQNWB6NO7x-jI6fgH7-Rcz_SxQNcHi-zTcbXHnhmPEdopeQK7Jz-2hCGtzbURvlXVOkAgK2NjBT2Dd1bvEo/s640/fotonoticia_20190117110348_800.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ElKC1O7C99_2CRDjvMMcLlDDVMahJaBz6yffGjRYtCiiTEmDrMZ3qE57XQNWB6NO7x-jI6fgH7-Rcz_SxQNcHi-zTcbXHnhmPEdopeQK7Jz-2hCGtzbURvlXVOkAgK2NjBT2Dd1bvEo/s320/fotonoticia_20190117110348_800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ElKC1O7C99_2CRDjvMMcLlDDVMahJaBz6yffGjRYtCiiTEmDrMZ3qE57XQNWB6NO7x-jI6fgH7-Rcz_SxQNcHi-zTcbXHnhmPEdopeQK7Jz-2hCGtzbURvlXVOkAgK2NjBT2Dd1bvEo/s480/fotonoticia_20190117110348_800.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ElKC1O7C99_2CRDjvMMcLlDDVMahJaBz6yffGjRYtCiiTEmDrMZ3qE57XQNWB6NO7x-jI6fgH7-Rcz_SxQNcHi-zTcbXHnhmPEdopeQK7Jz-2hCGtzbURvlXVOkAgK2NjBT2Dd1bvEo/s640/fotonoticia_20190117110348_800.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 485 - Chris Cornell &#39;I Am The Highway&#39; Concierto tributo Los Angeles 2019 "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -192,8 +187,7 @@
           </a><a class="related-bottom-card" href="programa-486-entrevista-a-driive-y-the-crazy-nineties.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNUncrFVKq_B3lwSlITfgW9R_88wDke16pr3XA6rurtpFptrScYeWUASK6Sk2JBh02W0ZpB34FUb9OhZmGnWDOIi5l55bzw_TPEH6xm5H6WFSgUM_xYFOUl90i0wlqbiC06-1A6upx4CU/s320/b90_486.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNUncrFVKq_B3lwSlITfgW9R_88wDke16pr3XA6rurtpFptrScYeWUASK6Sk2JBh02W0ZpB34FUb9OhZmGnWDOIi5l55bzw_TPEH6xm5H6WFSgUM_xYFOUl90i0wlqbiC06-1A6upx4CU/s320/b90_486.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNUncrFVKq_B3lwSlITfgW9R_88wDke16pr3XA6rurtpFptrScYeWUASK6Sk2JBh02W0ZpB34FUb9OhZmGnWDOIi5l55bzw_TPEH6xm5H6WFSgUM_xYFOUl90i0wlqbiC06-1A6upx4CU/s480/b90_486.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNUncrFVKq_B3lwSlITfgW9R_88wDke16pr3XA6rurtpFptrScYeWUASK6Sk2JBh02W0ZpB34FUb9OhZmGnWDOIi5l55bzw_TPEH6xm5H6WFSgUM_xYFOUl90i0wlqbiC06-1A6upx4CU/s640/b90_486.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNUncrFVKq_B3lwSlITfgW9R_88wDke16pr3XA6rurtpFptrScYeWUASK6Sk2JBh02W0ZpB34FUb9OhZmGnWDOIi5l55bzw_TPEH6xm5H6WFSgUM_xYFOUl90i0wlqbiC06-1A6upx4CU/s320/b90_486.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNUncrFVKq_B3lwSlITfgW9R_88wDke16pr3XA6rurtpFptrScYeWUASK6Sk2JBh02W0ZpB34FUb9OhZmGnWDOIi5l55bzw_TPEH6xm5H6WFSgUM_xYFOUl90i0wlqbiC06-1A6upx4CU/s480/b90_486.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNUncrFVKq_B3lwSlITfgW9R_88wDke16pr3XA6rurtpFptrScYeWUASK6Sk2JBh02W0ZpB34FUb9OhZmGnWDOIi5l55bzw_TPEH6xm5H6WFSgUM_xYFOUl90i0wlqbiC06-1A6upx4CU/s640/b90_486.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 486 - Entrevista a Driive y The Crazy Nineties"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

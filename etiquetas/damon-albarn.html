@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Damon Albarn — 8 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-90-la-historia-detras-de-parklife-de-blur-y-la-voz-de-phil-daniels.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA7gSvHaTSoszwSYjWAfrB6GyxlgoV7AFiAtiv6CL6x2lA5AwHMiEIbv0s7LE2aKPeq83zq4BqfMzsVyCfSKHU0jNEPspO3Aq6iJzTSqfSD5K-3wy1hlvIo3CfGxF9zMpaRshnzvirX5uTVyOZe1NQ1XEgShgHsqkv91SWIXspwYbf8XVk4u_2oM139cA/s320/71OOqMriOQL._SL1280_.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA7gSvHaTSoszwSYjWAfrB6GyxlgoV7AFiAtiv6CL6x2lA5AwHMiEIbv0s7LE2aKPeq83zq4BqfMzsVyCfSKHU0jNEPspO3Aq6iJzTSqfSD5K-3wy1hlvIo3CfGxF9zMpaRshnzvirX5uTVyOZe1NQ1XEgShgHsqkv91SWIXspwYbf8XVk4u_2oM139cA/s160/71OOqMriOQL._SL1280_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA7gSvHaTSoszwSYjWAfrB6GyxlgoV7AFiAtiv6CL6x2lA5AwHMiEIbv0s7LE2aKPeq83zq4BqfMzsVyCfSKHU0jNEPspO3Aq6iJzTSqfSD5K-3wy1hlvIo3CfGxF9zMpaRshnzvirX5uTVyOZe1NQ1XEgShgHsqkv91SWIXspwYbf8XVk4u_2oM139cA/s320/71OOqMriOQL._SL1280_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA7gSvHaTSoszwSYjWAfrB6GyxlgoV7AFiAtiv6CL6x2lA5AwHMiEIbv0s7LE2aKPeq83zq4BqfMzsVyCfSKHU0jNEPspO3Aq6iJzTSqfSD5K-3wy1hlvIo3CfGxF9zMpaRshnzvirX5uTVyOZe1NQ1XEgShgHsqkv91SWIXspwYbf8XVk4u_2oM139cA/s480/71OOqMriOQL._SL1280_.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA7gSvHaTSoszwSYjWAfrB6GyxlgoV7AFiAtiv6CL6x2lA5AwHMiEIbv0s7LE2aKPeq83zq4BqfMzsVyCfSKHU0jNEPspO3Aq6iJzTSqfSD5K-3wy1hlvIo3CfGxF9zMpaRshnzvirX5uTVyOZe1NQ1XEgShgHsqkv91SWIXspwYbf8XVk4u_2oM139cA/s160/71OOqMriOQL._SL1280_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA7gSvHaTSoszwSYjWAfrB6GyxlgoV7AFiAtiv6CL6x2lA5AwHMiEIbv0s7LE2aKPeq83zq4BqfMzsVyCfSKHU0jNEPspO3Aq6iJzTSqfSD5K-3wy1hlvIo3CfGxF9zMpaRshnzvirX5uTVyOZe1NQ1XEgShgHsqkv91SWIXspwYbf8XVk4u_2oM139cA/s320/71OOqMriOQL._SL1280_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA7gSvHaTSoszwSYjWAfrB6GyxlgoV7AFiAtiv6CL6x2lA5AwHMiEIbv0s7LE2aKPeq83zq4BqfMzsVyCfSKHU0jNEPspO3Aq6iJzTSqfSD5K-3wy1hlvIo3CfGxF9zMpaRshnzvirX5uTVyOZe1NQ1XEgShgHsqkv91SWIXspwYbf8XVk4u_2oM139cA/s480/71OOqMriOQL._SL1280_.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 90 - La historia detrás de &quot;Parklife&quot; de Blur y la voz de Phil Daniels"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-39-nos-colamos-en-el-concierto-de-blur-del-primavera-sound.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s320/346653033_3774654446007990_1178888865460395925_n.webp"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s160/346653033_3774654446007990_1178888865460395925_n.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s320/346653033_3774654446007990_1178888865460395925_n.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s480/346653033_3774654446007990_1178888865460395925_n.webp 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s160/346653033_3774654446007990_1178888865460395925_n.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s320/346653033_3774654446007990_1178888865460395925_n.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s480/346653033_3774654446007990_1178888865460395925_n.webp 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 39 - Nos colamos en el concierto de Blur del Primavera Sound"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-824-blur-1997-el-adios-al-britpop.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/a/AVvXsEiHJmMkYHf59C9pceX6kqLsjHqr2learqWngmlo3jynpshtAimU7ShVbFD4Q69yQ4qIQnWJTDuNWtBCEpLA-eG71HP_jH4kE9yhUYyw7_k8wFQuJdvdsgE_3rzpsvfYMsXnyj-NvylfrMG0CpFQLp3HMGSp9FNLyesItwXi0kLZ5OAKG97LP6sMsZV5=s72-c"
-                srcset="https://blogger.googleusercontent.com/img/a/AVvXsEiHJmMkYHf59C9pceX6kqLsjHqr2learqWngmlo3jynpshtAimU7ShVbFD4Q69yQ4qIQnWJTDuNWtBCEpLA-eG71HP_jH4kE9yhUYyw7_k8wFQuJdvdsgE_3rzpsvfYMsXnyj-NvylfrMG0CpFQLp3HMGSp9FNLyesItwXi0kLZ5OAKG97LP6sMsZV5=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEiHJmMkYHf59C9pceX6kqLsjHqr2learqWngmlo3jynpshtAimU7ShVbFD4Q69yQ4qIQnWJTDuNWtBCEpLA-eG71HP_jH4kE9yhUYyw7_k8wFQuJdvdsgE_3rzpsvfYMsXnyj-NvylfrMG0CpFQLp3HMGSp9FNLyesItwXi0kLZ5OAKG97LP6sMsZV5=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEiHJmMkYHf59C9pceX6kqLsjHqr2learqWngmlo3jynpshtAimU7ShVbFD4Q69yQ4qIQnWJTDuNWtBCEpLA-eG71HP_jH4kE9yhUYyw7_k8wFQuJdvdsgE_3rzpsvfYMsXnyj-NvylfrMG0CpFQLp3HMGSp9FNLyesItwXi0kLZ5OAKG97LP6sMsZV5=s72-c 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="P.824 - Blur (1997), el adiós al Britpop"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-782-el-magnetismo-de-damon-albarn.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s320/90fe1fb3912ea7c5614943139fb6850b.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s160/90fe1fb3912ea7c5614943139fb6850b.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s320/90fe1fb3912ea7c5614943139fb6850b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s480/90fe1fb3912ea7c5614943139fb6850b.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s160/90fe1fb3912ea7c5614943139fb6850b.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s320/90fe1fb3912ea7c5614943139fb6850b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AH7xaOSGFqBboAI9h9X_pzYGAEpEqFz1wxQc3jlYUBXia17xHnO-T3pJsWGeIWsHdgg-q0jC3DHYZ5eRyuXx5QkR7obtV1NvMqAVirw0DV30phCRuUsWIAy1p7AyvxaotRznQ-EEfpc/s480/90fe1fb3912ea7c5614943139fb6850b.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.782 - El magnetismo de Damon Albarn"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-435-the-best-of-blur.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s320/thebestof_blur.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s160/thebestof_blur.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s320/thebestof_blur.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s480/thebestof_blur.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s160/thebestof_blur.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s320/thebestof_blur.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDE5fVHIg7u_CacGJyO0mMiyakWQdyEqdDV0ag-l9UWeX8Nd6aR6xZqJ2r32C6uHVRObWgAxUu4uvjPb48BfrDQpTiWSglGXhu_HZeQVm1C3ZVC_MuL7WZ2EeZREHwcopTwi5dk6n7lfY/s480/thebestof_blur.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 435 - The Best Of: BLUR"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-174-blur-en-benicassim-2015.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIoc1-HJEXUGNOpAnzzjQHtJpEd-zeheswvGyH_cfQa6hStdsCrwAi9LKI-PINKbvA87yTSJmH8esnyPPX_Thal51w8qtk8puGOD9k6fBNyXS8FIS3vQcb2NL_0MV1UXFOWKbxPjPk05c/s320/imagen197849g.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIoc1-HJEXUGNOpAnzzjQHtJpEd-zeheswvGyH_cfQa6hStdsCrwAi9LKI-PINKbvA87yTSJmH8esnyPPX_Thal51w8qtk8puGOD9k6fBNyXS8FIS3vQcb2NL_0MV1UXFOWKbxPjPk05c/s160/imagen197849g.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIoc1-HJEXUGNOpAnzzjQHtJpEd-zeheswvGyH_cfQa6hStdsCrwAi9LKI-PINKbvA87yTSJmH8esnyPPX_Thal51w8qtk8puGOD9k6fBNyXS8FIS3vQcb2NL_0MV1UXFOWKbxPjPk05c/s320/imagen197849g.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIoc1-HJEXUGNOpAnzzjQHtJpEd-zeheswvGyH_cfQa6hStdsCrwAi9LKI-PINKbvA87yTSJmH8esnyPPX_Thal51w8qtk8puGOD9k6fBNyXS8FIS3vQcb2NL_0MV1UXFOWKbxPjPk05c/s480/imagen197849g.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIoc1-HJEXUGNOpAnzzjQHtJpEd-zeheswvGyH_cfQa6hStdsCrwAi9LKI-PINKbvA87yTSJmH8esnyPPX_Thal51w8qtk8puGOD9k6fBNyXS8FIS3vQcb2NL_0MV1UXFOWKbxPjPk05c/s160/imagen197849g.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIoc1-HJEXUGNOpAnzzjQHtJpEd-zeheswvGyH_cfQa6hStdsCrwAi9LKI-PINKbvA87yTSJmH8esnyPPX_Thal51w8qtk8puGOD9k6fBNyXS8FIS3vQcb2NL_0MV1UXFOWKbxPjPk05c/s320/imagen197849g.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIoc1-HJEXUGNOpAnzzjQHtJpEd-zeheswvGyH_cfQa6hStdsCrwAi9LKI-PINKbvA87yTSJmH8esnyPPX_Thal51w8qtk8puGOD9k6fBNyXS8FIS3vQcb2NL_0MV1UXFOWKbxPjPk05c/s480/imagen197849g.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 174 - Blur en Benicassim 2015"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-113-entrevista-con-parker.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc-l99BbRowAopBjzUszvsd2TAKrUUAXY_RCPWYYN_4bt8i1picqKruguWQ8LHUGGxCINRQtSg1rCpemfk0KKwClLn8_srQTs5Vn9PfEM38B2P9ok8Tiu-1e9gJkbE5dTZ2klYUzACstw/s320/1382992_617608878328799_2069234565_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc-l99BbRowAopBjzUszvsd2TAKrUUAXY_RCPWYYN_4bt8i1picqKruguWQ8LHUGGxCINRQtSg1rCpemfk0KKwClLn8_srQTs5Vn9PfEM38B2P9ok8Tiu-1e9gJkbE5dTZ2klYUzACstw/s160/1382992_617608878328799_2069234565_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc-l99BbRowAopBjzUszvsd2TAKrUUAXY_RCPWYYN_4bt8i1picqKruguWQ8LHUGGxCINRQtSg1rCpemfk0KKwClLn8_srQTs5Vn9PfEM38B2P9ok8Tiu-1e9gJkbE5dTZ2klYUzACstw/s320/1382992_617608878328799_2069234565_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc-l99BbRowAopBjzUszvsd2TAKrUUAXY_RCPWYYN_4bt8i1picqKruguWQ8LHUGGxCINRQtSg1rCpemfk0KKwClLn8_srQTs5Vn9PfEM38B2P9ok8Tiu-1e9gJkbE5dTZ2klYUzACstw/s480/1382992_617608878328799_2069234565_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc-l99BbRowAopBjzUszvsd2TAKrUUAXY_RCPWYYN_4bt8i1picqKruguWQ8LHUGGxCINRQtSg1rCpemfk0KKwClLn8_srQTs5Vn9PfEM38B2P9ok8Tiu-1e9gJkbE5dTZ2klYUzACstw/s160/1382992_617608878328799_2069234565_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc-l99BbRowAopBjzUszvsd2TAKrUUAXY_RCPWYYN_4bt8i1picqKruguWQ8LHUGGxCINRQtSg1rCpemfk0KKwClLn8_srQTs5Vn9PfEM38B2P9ok8Tiu-1e9gJkbE5dTZ2klYUzACstw/s320/1382992_617608878328799_2069234565_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc-l99BbRowAopBjzUszvsd2TAKrUUAXY_RCPWYYN_4bt8i1picqKruguWQ8LHUGGxCINRQtSg1rCpemfk0KKwClLn8_srQTs5Vn9PfEM38B2P9ok8Tiu-1e9gJkbE5dTZ2klYUzACstw/s480/1382992_617608878328799_2069234565_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 113 - Entrevista con Parker!"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/programa-99-no-dogs-beck-damon-albarn-foo-fighteres-eels-dewolff-mad-season-ocs-.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 99 - No Dogs, Beck, Damon Albarn, Foo Fighteres, Eels, Dewolff, Mad Season, OCS, Love Division y Carbono14"
                 loading="lazy" width="320" height="213" />
         </a>

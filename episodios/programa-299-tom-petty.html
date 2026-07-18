@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 299 – Tom Petty — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s320/B90+-+300.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s160/B90+-+300.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s320/B90+-+300.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s480/B90+-+300.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s160/B90+-+300.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s320/B90+-+300.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKhv-PXGnes9Jb9IokWEn1_de6r2H27LW74VQky2D0og-ti1Ld7HaU5MmxaznY7dk_LlFEkRxYm1zgyAPS0RUmyP8S2nH1VC3aICWwYlRvDo9Nfv-tcG4RCmCWScRS3OcYJGDE97XHiTU/s480/B90+-+300.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 300 con Paco Pérez Bryan"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s320/IMG-20170601-WA0005.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s160/IMG-20170601-WA0005.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s320/IMG-20170601-WA0005.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s480/IMG-20170601-WA0005.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s160/IMG-20170601-WA0005.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s320/IMG-20170601-WA0005.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s480/IMG-20170601-WA0005.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 281 - Eddie Vedder Amsterdam 2017"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji0JsFA2JOPpL1bjWLSOJR1ChoxOgoX-NzQVa58V_jtd7EVvUbiH3LFp3k_ZUUOuz2Uh33wca_umFicabmTHHIQnshMjFm7jqREDQFFtMEdPPNkIpliS47RENCLQsQ3bJD9uT2tmEP6Tg/s320/b90_620.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji0JsFA2JOPpL1bjWLSOJR1ChoxOgoX-NzQVa58V_jtd7EVvUbiH3LFp3k_ZUUOuz2Uh33wca_umFicabmTHHIQnshMjFm7jqREDQFFtMEdPPNkIpliS47RENCLQsQ3bJD9uT2tmEP6Tg/s160/b90_620.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji0JsFA2JOPpL1bjWLSOJR1ChoxOgoX-NzQVa58V_jtd7EVvUbiH3LFp3k_ZUUOuz2Uh33wca_umFicabmTHHIQnshMjFm7jqREDQFFtMEdPPNkIpliS47RENCLQsQ3bJD9uT2tmEP6Tg/s320/b90_620.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji0JsFA2JOPpL1bjWLSOJR1ChoxOgoX-NzQVa58V_jtd7EVvUbiH3LFp3k_ZUUOuz2Uh33wca_umFicabmTHHIQnshMjFm7jqREDQFFtMEdPPNkIpliS47RENCLQsQ3bJD9uT2tmEP6Tg/s480/b90_620.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji0JsFA2JOPpL1bjWLSOJR1ChoxOgoX-NzQVa58V_jtd7EVvUbiH3LFp3k_ZUUOuz2Uh33wca_umFicabmTHHIQnshMjFm7jqREDQFFtMEdPPNkIpliS47RENCLQsQ3bJD9uT2tmEP6Tg/s160/b90_620.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji0JsFA2JOPpL1bjWLSOJR1ChoxOgoX-NzQVa58V_jtd7EVvUbiH3LFp3k_ZUUOuz2Uh33wca_umFicabmTHHIQnshMjFm7jqREDQFFtMEdPPNkIpliS47RENCLQsQ3bJD9uT2tmEP6Tg/s320/b90_620.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji0JsFA2JOPpL1bjWLSOJR1ChoxOgoX-NzQVa58V_jtd7EVvUbiH3LFp3k_ZUUOuz2Uh33wca_umFicabmTHHIQnshMjFm7jqREDQFFtMEdPPNkIpliS47RENCLQsQ3bJD9uT2tmEP6Tg/s480/b90_620.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.619 Discos tributo de los años 90"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="1020-especial-1994-11-the-black-crowes-nirvana-tom-petty-woodstock-94.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s320/b90_parte12.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s320/b90_parte12.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s480/b90_parte12.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s640/b90_parte12.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s320/b90_parte12.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s480/b90_parte12.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s640/b90_parte12.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1020 - Especial 1994 (11) : The Black Crowes - Nirvana - Tom Petty - Woodstock 94"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="programa-304-eddie-vedder-the-beatles.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s480/211e39bccf57b79c8093eea29fe06350.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s640/211e39bccf57b79c8093eea29fe06350.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s480/211e39bccf57b79c8093eea29fe06350.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s640/211e39bccf57b79c8093eea29fe06350.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 304 – Eddie Vedder + The Beatles"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="programa-311-gallagher-vs-gallagher.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s480/noel-liam-gallagher.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s640/noel-liam-gallagher.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s480/noel-liam-gallagher.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s640/noel-liam-gallagher.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 311 - Gallagher vs. Gallagher"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

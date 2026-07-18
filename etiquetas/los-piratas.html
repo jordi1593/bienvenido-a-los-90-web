@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Los Piratas — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-727-sintiendo-caer-la-mierda-sobre-mi-canciones-para-el-blue-monday-vol-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s160/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s480/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s160/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s480/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.727 - Sintiendo caer la mierda sobre mí: canciones para el Blue Monday Vol.1"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-704-canciones-que-vivieron-una-segunda-juventud-en-los-anos-90-parte-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s320/b90_704.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s160/b90_704.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s320/b90_704.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s480/b90_704.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s160/b90_704.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s320/b90_704.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s480/b90_704.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.704 - Canciones que vivieron una segunda juventud en los años 90 (Parte 1)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-347-los-piratas-vigo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn74JG7c31vp277Bvw4luQECrCPlLLSz0RITfWrqv6QUgc7oTL3bbuwusGmob2aYz7TrbPzcjEGal0252JRyzlBeaU557TXkMgsICczzmv9Me2hkB-x-PW60Tqa7aE-8tJGPlBX1hgJ5U/s320/IMG_20180227_221608.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn74JG7c31vp277Bvw4luQECrCPlLLSz0RITfWrqv6QUgc7oTL3bbuwusGmob2aYz7TrbPzcjEGal0252JRyzlBeaU557TXkMgsICczzmv9Me2hkB-x-PW60Tqa7aE-8tJGPlBX1hgJ5U/s160/IMG_20180227_221608.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn74JG7c31vp277Bvw4luQECrCPlLLSz0RITfWrqv6QUgc7oTL3bbuwusGmob2aYz7TrbPzcjEGal0252JRyzlBeaU557TXkMgsICczzmv9Me2hkB-x-PW60Tqa7aE-8tJGPlBX1hgJ5U/s320/IMG_20180227_221608.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn74JG7c31vp277Bvw4luQECrCPlLLSz0RITfWrqv6QUgc7oTL3bbuwusGmob2aYz7TrbPzcjEGal0252JRyzlBeaU557TXkMgsICczzmv9Me2hkB-x-PW60Tqa7aE-8tJGPlBX1hgJ5U/s480/IMG_20180227_221608.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn74JG7c31vp277Bvw4luQECrCPlLLSz0RITfWrqv6QUgc7oTL3bbuwusGmob2aYz7TrbPzcjEGal0252JRyzlBeaU557TXkMgsICczzmv9Me2hkB-x-PW60Tqa7aE-8tJGPlBX1hgJ5U/s160/IMG_20180227_221608.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn74JG7c31vp277Bvw4luQECrCPlLLSz0RITfWrqv6QUgc7oTL3bbuwusGmob2aYz7TrbPzcjEGal0252JRyzlBeaU557TXkMgsICczzmv9Me2hkB-x-PW60Tqa7aE-8tJGPlBX1hgJ5U/s320/IMG_20180227_221608.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn74JG7c31vp277Bvw4luQECrCPlLLSz0RITfWrqv6QUgc7oTL3bbuwusGmob2aYz7TrbPzcjEGal0252JRyzlBeaU557TXkMgsICczzmv9Me2hkB-x-PW60Tqa7aE-8tJGPlBX1hgJ5U/s480/IMG_20180227_221608.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 347 - Los Piratas (Vigo)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-50-la-cocina-de-los-90.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 50 - La cocina de los 90"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-26-indie-nacional.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa 26 - Indie nacional"
                 loading="lazy" width="320" height="213" />
         </a>

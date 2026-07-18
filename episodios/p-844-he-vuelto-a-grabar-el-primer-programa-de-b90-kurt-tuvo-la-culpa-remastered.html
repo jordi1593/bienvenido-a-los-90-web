@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.844 - He vuelto a grabar el primer programa de B90: Kurt tuvo la culpa... (Remastered) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -144,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbMFk3efuVAELeifgA2CtihLiAwAG95mgHTfMZVQ07xl7GSpDXsCujoPDVS1gLFXUhX4N7Qr9mgPJejhBj8K3un8OnbVVVrfM33ZSvlc1gzUxquhm96etDN0Dwf8-xIsvB0O3zUFvFWQw/s320/Cool+Retro+Photos+%252864%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbMFk3efuVAELeifgA2CtihLiAwAG95mgHTfMZVQ07xl7GSpDXsCujoPDVS1gLFXUhX4N7Qr9mgPJejhBj8K3un8OnbVVVrfM33ZSvlc1gzUxquhm96etDN0Dwf8-xIsvB0O3zUFvFWQw/s160/Cool+Retro+Photos+%252864%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbMFk3efuVAELeifgA2CtihLiAwAG95mgHTfMZVQ07xl7GSpDXsCujoPDVS1gLFXUhX4N7Qr9mgPJejhBj8K3un8OnbVVVrfM33ZSvlc1gzUxquhm96etDN0Dwf8-xIsvB0O3zUFvFWQw/s320/Cool+Retro+Photos+%252864%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbMFk3efuVAELeifgA2CtihLiAwAG95mgHTfMZVQ07xl7GSpDXsCujoPDVS1gLFXUhX4N7Qr9mgPJejhBj8K3un8OnbVVVrfM33ZSvlc1gzUxquhm96etDN0Dwf8-xIsvB0O3zUFvFWQw/s480/Cool+Retro+Photos+%252864%2529.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbMFk3efuVAELeifgA2CtihLiAwAG95mgHTfMZVQ07xl7GSpDXsCujoPDVS1gLFXUhX4N7Qr9mgPJejhBj8K3un8OnbVVVrfM33ZSvlc1gzUxquhm96etDN0Dwf8-xIsvB0O3zUFvFWQw/s160/Cool+Retro+Photos+%252864%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbMFk3efuVAELeifgA2CtihLiAwAG95mgHTfMZVQ07xl7GSpDXsCujoPDVS1gLFXUhX4N7Qr9mgPJejhBj8K3un8OnbVVVrfM33ZSvlc1gzUxquhm96etDN0Dwf8-xIsvB0O3zUFvFWQw/s320/Cool+Retro+Photos+%252864%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbMFk3efuVAELeifgA2CtihLiAwAG95mgHTfMZVQ07xl7GSpDXsCujoPDVS1gLFXUhX4N7Qr9mgPJejhBj8K3un8OnbVVVrfM33ZSvlc1gzUxquhm96etDN0Dwf8-xIsvB0O3zUFvFWQw/s480/Cool+Retro+Photos+%252864%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Bienvenido a los 90 - Programa #1 - Kurt tuvo la culpa..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -155,8 +154,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s160/b90_478.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s480/b90_478.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s160/b90_478.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s480/b90_478.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 478 - Los mejores solos de guitarra de los años 90"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +164,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s320/L-370558-1571805648-9408.jpeg.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s160/L-370558-1571805648-9408.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s320/L-370558-1571805648-9408.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s480/L-370558-1571805648-9408.jpeg.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s160/L-370558-1571805648-9408.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s320/L-370558-1571805648-9408.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s480/L-370558-1571805648-9408.jpeg.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.765 - La cara B de los 90 (Parte 1)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -183,8 +180,7 @@
         <a class="related-bottom-card" href="p-970-diez-canciones-que-me-cambiaron-la-vida.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s320/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s320/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s480/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s640/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s320/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s480/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI46O3x0A3tbz_wUSk-hU-Kkv7Mi1oDPbvWWAsWSn9GtPO7kYLMcTV1904gzkFZYIGzH-TVm_gUwDjX7BRNZ-ZdiYoibiRYJkftm40vGo2JSu4BN0N73RVrS6AxkzYg6XZzxAy-o8yumg3IqawqeQrw3TmYgNS3A_9tRieecg-LNUPH1GLd4QatchI3xk/s640/90-s-mixed-tape-843884278-b255e45f04bc4ea19a9c0e3a32481724.webp 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.970 - Diez canciones que me cambiaron la vida"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +191,7 @@
           </a><a class="related-bottom-card" href="b90-programa-78-tibetan-freedon-concert.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s480/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s640/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s480/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s640/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 - Programa 78 - Tibetan Freedon Concert"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -207,8 +202,7 @@
           </a><a class="related-bottom-card" href="programa-70-canciones-olvidadas-de-los-90.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 70 - Canciones olvidadas de los 90"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

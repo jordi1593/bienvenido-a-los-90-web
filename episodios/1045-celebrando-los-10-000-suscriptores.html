@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>1045 - Celebrando los 10,000 suscriptores — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -132,8 +132,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0Ekae838DxAc4KV-VpmRtHNqwo1zDnOwhXYyLcwvnWB7dbS55vTAKQVll_4RpoBvNZXCzrR1gcpfpSB6b6TWdUOyPNUoLz5QnHW7BPC7Y8vJ6htQ2dwWlCm3neJkSIu1L_rgvt5XB4ihaxu2_ELUWto4A1wqp4Lu7Z1A30R6JSoVOLI46JJJfgHBEcSg/s320/468502927_1142938680820085_6000610658188924455_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0Ekae838DxAc4KV-VpmRtHNqwo1zDnOwhXYyLcwvnWB7dbS55vTAKQVll_4RpoBvNZXCzrR1gcpfpSB6b6TWdUOyPNUoLz5QnHW7BPC7Y8vJ6htQ2dwWlCm3neJkSIu1L_rgvt5XB4ihaxu2_ELUWto4A1wqp4Lu7Z1A30R6JSoVOLI46JJJfgHBEcSg/s160/468502927_1142938680820085_6000610658188924455_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0Ekae838DxAc4KV-VpmRtHNqwo1zDnOwhXYyLcwvnWB7dbS55vTAKQVll_4RpoBvNZXCzrR1gcpfpSB6b6TWdUOyPNUoLz5QnHW7BPC7Y8vJ6htQ2dwWlCm3neJkSIu1L_rgvt5XB4ihaxu2_ELUWto4A1wqp4Lu7Z1A30R6JSoVOLI46JJJfgHBEcSg/s320/468502927_1142938680820085_6000610658188924455_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0Ekae838DxAc4KV-VpmRtHNqwo1zDnOwhXYyLcwvnWB7dbS55vTAKQVll_4RpoBvNZXCzrR1gcpfpSB6b6TWdUOyPNUoLz5QnHW7BPC7Y8vJ6htQ2dwWlCm3neJkSIu1L_rgvt5XB4ihaxu2_ELUWto4A1wqp4Lu7Z1A30R6JSoVOLI46JJJfgHBEcSg/s480/468502927_1142938680820085_6000610658188924455_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0Ekae838DxAc4KV-VpmRtHNqwo1zDnOwhXYyLcwvnWB7dbS55vTAKQVll_4RpoBvNZXCzrR1gcpfpSB6b6TWdUOyPNUoLz5QnHW7BPC7Y8vJ6htQ2dwWlCm3neJkSIu1L_rgvt5XB4ihaxu2_ELUWto4A1wqp4Lu7Z1A30R6JSoVOLI46JJJfgHBEcSg/s160/468502927_1142938680820085_6000610658188924455_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0Ekae838DxAc4KV-VpmRtHNqwo1zDnOwhXYyLcwvnWB7dbS55vTAKQVll_4RpoBvNZXCzrR1gcpfpSB6b6TWdUOyPNUoLz5QnHW7BPC7Y8vJ6htQ2dwWlCm3neJkSIu1L_rgvt5XB4ihaxu2_ELUWto4A1wqp4Lu7Z1A30R6JSoVOLI46JJJfgHBEcSg/s320/468502927_1142938680820085_6000610658188924455_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0Ekae838DxAc4KV-VpmRtHNqwo1zDnOwhXYyLcwvnWB7dbS55vTAKQVll_4RpoBvNZXCzrR1gcpfpSB6b6TWdUOyPNUoLz5QnHW7BPC7Y8vJ6htQ2dwWlCm3neJkSIu1L_rgvt5XB4ihaxu2_ELUWto4A1wqp4Lu7Z1A30R6JSoVOLI46JJJfgHBEcSg/s480/468502927_1142938680820085_6000610658188924455_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.1009 - Celebrando los Premios iVoox 2024"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -143,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzijVCII9FfVgqPdW75ZhGuSbmUT5eR8_ixcqOoJ9GTIzoe4YNiGmlki1bu7QwiMRct84jLNCh7tr9b-oXzpy8it0h89AKUVhCXf0fBCXvMLxT53MCvakzRfXekY0108iula82JYPDr2rxFTY8Kq_VkpK_MJcwF0xcqecLR_LpB44IWLj03xL7ilNpSNE/s320/347258383_959768291885627_266528560302297840_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzijVCII9FfVgqPdW75ZhGuSbmUT5eR8_ixcqOoJ9GTIzoe4YNiGmlki1bu7QwiMRct84jLNCh7tr9b-oXzpy8it0h89AKUVhCXf0fBCXvMLxT53MCvakzRfXekY0108iula82JYPDr2rxFTY8Kq_VkpK_MJcwF0xcqecLR_LpB44IWLj03xL7ilNpSNE/s160/347258383_959768291885627_266528560302297840_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzijVCII9FfVgqPdW75ZhGuSbmUT5eR8_ixcqOoJ9GTIzoe4YNiGmlki1bu7QwiMRct84jLNCh7tr9b-oXzpy8it0h89AKUVhCXf0fBCXvMLxT53MCvakzRfXekY0108iula82JYPDr2rxFTY8Kq_VkpK_MJcwF0xcqecLR_LpB44IWLj03xL7ilNpSNE/s320/347258383_959768291885627_266528560302297840_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzijVCII9FfVgqPdW75ZhGuSbmUT5eR8_ixcqOoJ9GTIzoe4YNiGmlki1bu7QwiMRct84jLNCh7tr9b-oXzpy8it0h89AKUVhCXf0fBCXvMLxT53MCvakzRfXekY0108iula82JYPDr2rxFTY8Kq_VkpK_MJcwF0xcqecLR_LpB44IWLj03xL7ilNpSNE/s480/347258383_959768291885627_266528560302297840_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzijVCII9FfVgqPdW75ZhGuSbmUT5eR8_ixcqOoJ9GTIzoe4YNiGmlki1bu7QwiMRct84jLNCh7tr9b-oXzpy8it0h89AKUVhCXf0fBCXvMLxT53MCvakzRfXekY0108iula82JYPDr2rxFTY8Kq_VkpK_MJcwF0xcqecLR_LpB44IWLj03xL7ilNpSNE/s160/347258383_959768291885627_266528560302297840_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzijVCII9FfVgqPdW75ZhGuSbmUT5eR8_ixcqOoJ9GTIzoe4YNiGmlki1bu7QwiMRct84jLNCh7tr9b-oXzpy8it0h89AKUVhCXf0fBCXvMLxT53MCvakzRfXekY0108iula82JYPDr2rxFTY8Kq_VkpK_MJcwF0xcqecLR_LpB44IWLj03xL7ilNpSNE/s320/347258383_959768291885627_266528560302297840_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzijVCII9FfVgqPdW75ZhGuSbmUT5eR8_ixcqOoJ9GTIzoe4YNiGmlki1bu7QwiMRct84jLNCh7tr9b-oXzpy8it0h89AKUVhCXf0fBCXvMLxT53MCvakzRfXekY0108iula82JYPDr2rxFTY8Kq_VkpK_MJcwF0xcqecLR_LpB44IWLj03xL7ilNpSNE/s480/347258383_959768291885627_266528560302297840_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.925 - Pearl Jam, celebrando los 30 años de Vs."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP4Zq0PkG1m_6tCcWVworz2AeK_LhiePdXe2QeHKI7zfRmzvDNdAELXfpjSP6DS9UH1kmZ22Ka28vzYaR9XKzcR7821YawmZmZmev2-0Pcp3r7tdfmLckxSQqM6LTIOP8f5bRfPXsZ3Sxvni449YxmHGdKWhGZA9f2y5TdJK81Df9zwmUO2drLAZ7a/s320/IMG_20220730_150358.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP4Zq0PkG1m_6tCcWVworz2AeK_LhiePdXe2QeHKI7zfRmzvDNdAELXfpjSP6DS9UH1kmZ22Ka28vzYaR9XKzcR7821YawmZmZmev2-0Pcp3r7tdfmLckxSQqM6LTIOP8f5bRfPXsZ3Sxvni449YxmHGdKWhGZA9f2y5TdJK81Df9zwmUO2drLAZ7a/s160/IMG_20220730_150358.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP4Zq0PkG1m_6tCcWVworz2AeK_LhiePdXe2QeHKI7zfRmzvDNdAELXfpjSP6DS9UH1kmZ22Ka28vzYaR9XKzcR7821YawmZmZmev2-0Pcp3r7tdfmLckxSQqM6LTIOP8f5bRfPXsZ3Sxvni449YxmHGdKWhGZA9f2y5TdJK81Df9zwmUO2drLAZ7a/s320/IMG_20220730_150358.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP4Zq0PkG1m_6tCcWVworz2AeK_LhiePdXe2QeHKI7zfRmzvDNdAELXfpjSP6DS9UH1kmZ22Ka28vzYaR9XKzcR7821YawmZmZmev2-0Pcp3r7tdfmLckxSQqM6LTIOP8f5bRfPXsZ3Sxvni449YxmHGdKWhGZA9f2y5TdJK81Df9zwmUO2drLAZ7a/s480/IMG_20220730_150358.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP4Zq0PkG1m_6tCcWVworz2AeK_LhiePdXe2QeHKI7zfRmzvDNdAELXfpjSP6DS9UH1kmZ22Ka28vzYaR9XKzcR7821YawmZmZmev2-0Pcp3r7tdfmLckxSQqM6LTIOP8f5bRfPXsZ3Sxvni449YxmHGdKWhGZA9f2y5TdJK81Df9zwmUO2drLAZ7a/s160/IMG_20220730_150358.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP4Zq0PkG1m_6tCcWVworz2AeK_LhiePdXe2QeHKI7zfRmzvDNdAELXfpjSP6DS9UH1kmZ22Ka28vzYaR9XKzcR7821YawmZmZmev2-0Pcp3r7tdfmLckxSQqM6LTIOP8f5bRfPXsZ3Sxvni449YxmHGdKWhGZA9f2y5TdJK81Df9zwmUO2drLAZ7a/s320/IMG_20220730_150358.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP4Zq0PkG1m_6tCcWVworz2AeK_LhiePdXe2QeHKI7zfRmzvDNdAELXfpjSP6DS9UH1kmZ22Ka28vzYaR9XKzcR7821YawmZmZmev2-0Pcp3r7tdfmLckxSQqM6LTIOP8f5bRfPXsZ3Sxvni449YxmHGdKWhGZA9f2y5TdJK81Df9zwmUO2drLAZ7a/s480/IMG_20220730_150358.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.863 - Celebrando los 10 años de DELIA RECORDS"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +168,7 @@
         <a class="related-bottom-card" href="p-800-en-directo-desde-siroco-celebrando-los-30-anos-de-nevermind.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s320/242494530_244509814350378_3513229620045245238_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s320/242494530_244509814350378_3513229620045245238_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s480/242494530_244509814350378_3513229620045245238_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s640/242494530_244509814350378_3513229620045245238_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s320/242494530_244509814350378_3513229620045245238_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s480/242494530_244509814350378_3513229620045245238_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s640/242494530_244509814350378_3513229620045245238_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.800 - En directo desde Siroco celebrando los 30 años de Nevermind"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -183,8 +179,7 @@
           </a><a class="related-bottom-card" href="p-773-diez-temazos-de-maika-makovski.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s320/Maika-Makovski-portada.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s320/Maika-Makovski-portada.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s480/Maika-Makovski-portada.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s640/Maika-Makovski-portada.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s320/Maika-Makovski-portada.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s480/Maika-Makovski-portada.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdoac2ARbtS9SZ2mJ1Bxw-buwBRUDGss1HAVkgDL4DCjqieDxbRaplz74OdHK5TWGVyEyRTX1i5-qX-5PvJV0oFZ49WHrPnJU090DzpnKB9FCdwnFoUQ_SiIQrVGXKSrt6nz1MgWUr4UU/s640/Maika-Makovski-portada.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.773 - DIEZ temazos de Maika Makovski "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +190,7 @@
           </a><a class="related-bottom-card" href="p-769-extremoduro-agila-1996.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWc1Gr8aDiD-IA6VVq7XfypTJuWI8w99kkpS5c292OLr6iGb5aMuyu01AzaNezWApwDWZyhB8815KkTx67iLOW-kJrdXdqA9xMSYsb78hX8q_S4mjX0VHnaQGyUYTd8gOSSkNbvIu2NQw/s320/51SKPaoXspL._SY355_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWc1Gr8aDiD-IA6VVq7XfypTJuWI8w99kkpS5c292OLr6iGb5aMuyu01AzaNezWApwDWZyhB8815KkTx67iLOW-kJrdXdqA9xMSYsb78hX8q_S4mjX0VHnaQGyUYTd8gOSSkNbvIu2NQw/s320/51SKPaoXspL._SY355_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWc1Gr8aDiD-IA6VVq7XfypTJuWI8w99kkpS5c292OLr6iGb5aMuyu01AzaNezWApwDWZyhB8815KkTx67iLOW-kJrdXdqA9xMSYsb78hX8q_S4mjX0VHnaQGyUYTd8gOSSkNbvIu2NQw/s480/51SKPaoXspL._SY355_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWc1Gr8aDiD-IA6VVq7XfypTJuWI8w99kkpS5c292OLr6iGb5aMuyu01AzaNezWApwDWZyhB8815KkTx67iLOW-kJrdXdqA9xMSYsb78hX8q_S4mjX0VHnaQGyUYTd8gOSSkNbvIu2NQw/s640/51SKPaoXspL._SY355_.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWc1Gr8aDiD-IA6VVq7XfypTJuWI8w99kkpS5c292OLr6iGb5aMuyu01AzaNezWApwDWZyhB8815KkTx67iLOW-kJrdXdqA9xMSYsb78hX8q_S4mjX0VHnaQGyUYTd8gOSSkNbvIu2NQw/s320/51SKPaoXspL._SY355_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWc1Gr8aDiD-IA6VVq7XfypTJuWI8w99kkpS5c292OLr6iGb5aMuyu01AzaNezWApwDWZyhB8815KkTx67iLOW-kJrdXdqA9xMSYsb78hX8q_S4mjX0VHnaQGyUYTd8gOSSkNbvIu2NQw/s480/51SKPaoXspL._SY355_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWc1Gr8aDiD-IA6VVq7XfypTJuWI8w99kkpS5c292OLr6iGb5aMuyu01AzaNezWApwDWZyhB8815KkTx67iLOW-kJrdXdqA9xMSYsb78hX8q_S4mjX0VHnaQGyUYTd8gOSSkNbvIu2NQw/s640/51SKPaoXspL._SY355_.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.769 - Extremoduro - Agíla (1996) "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

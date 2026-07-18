@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>1110 - Programa en directo con The Wasted Garage en Valencia — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -144,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiThMLqAUqcjvvGt2Aa3inG3JhKrHPJI7V-mVf6kitZgf5nHXZGVEtk_H6_-x2C38IOe2_bAXcxHG7Q043S_dXXM818v9LfoWox_nNoVtIDMzGfknmys_bYSN6YWJ8kx0RTa4-v1hmWlXUXrdgzti3yJJ6te8stFH527wSTnOIp32kLkllkgPCgl3eg0/s320/B90_1064.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiThMLqAUqcjvvGt2Aa3inG3JhKrHPJI7V-mVf6kitZgf5nHXZGVEtk_H6_-x2C38IOe2_bAXcxHG7Q043S_dXXM818v9LfoWox_nNoVtIDMzGfknmys_bYSN6YWJ8kx0RTa4-v1hmWlXUXrdgzti3yJJ6te8stFH527wSTnOIp32kLkllkgPCgl3eg0/s160/B90_1064.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiThMLqAUqcjvvGt2Aa3inG3JhKrHPJI7V-mVf6kitZgf5nHXZGVEtk_H6_-x2C38IOe2_bAXcxHG7Q043S_dXXM818v9LfoWox_nNoVtIDMzGfknmys_bYSN6YWJ8kx0RTa4-v1hmWlXUXrdgzti3yJJ6te8stFH527wSTnOIp32kLkllkgPCgl3eg0/s320/B90_1064.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiThMLqAUqcjvvGt2Aa3inG3JhKrHPJI7V-mVf6kitZgf5nHXZGVEtk_H6_-x2C38IOe2_bAXcxHG7Q043S_dXXM818v9LfoWox_nNoVtIDMzGfknmys_bYSN6YWJ8kx0RTa4-v1hmWlXUXrdgzti3yJJ6te8stFH527wSTnOIp32kLkllkgPCgl3eg0/s480/B90_1064.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiThMLqAUqcjvvGt2Aa3inG3JhKrHPJI7V-mVf6kitZgf5nHXZGVEtk_H6_-x2C38IOe2_bAXcxHG7Q043S_dXXM818v9LfoWox_nNoVtIDMzGfknmys_bYSN6YWJ8kx0RTa4-v1hmWlXUXrdgzti3yJJ6te8stFH527wSTnOIp32kLkllkgPCgl3eg0/s160/B90_1064.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiThMLqAUqcjvvGt2Aa3inG3JhKrHPJI7V-mVf6kitZgf5nHXZGVEtk_H6_-x2C38IOe2_bAXcxHG7Q043S_dXXM818v9LfoWox_nNoVtIDMzGfknmys_bYSN6YWJ8kx0RTa4-v1hmWlXUXrdgzti3yJJ6te8stFH527wSTnOIp32kLkllkgPCgl3eg0/s320/B90_1064.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiThMLqAUqcjvvGt2Aa3inG3JhKrHPJI7V-mVf6kitZgf5nHXZGVEtk_H6_-x2C38IOe2_bAXcxHG7Q043S_dXXM818v9LfoWox_nNoVtIDMzGfknmys_bYSN6YWJ8kx0RTa4-v1hmWlXUXrdgzti3yJJ6te8stFH527wSTnOIp32kLkllkgPCgl3eg0/s480/B90_1064.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1064 - Entrevista a The Wasted Garage"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -155,8 +154,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgak4COo_akbc2NTBIli7cO9JBiLzztkOtucEFIGgdGcOX_H4gMiKcK6xIAaG8w_37KBRBVxg9s9h8Sj9PY-maK3uk4Kww7ro73UY41nEPH_Yyut7n1UIGD9tuNWNxjTEg7UclZ5LplFo1fX6cHHLCK315Pn0k8bbSyvu85PKQPElnN29bN2VUxWrrI-lI/s320/image.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgak4COo_akbc2NTBIli7cO9JBiLzztkOtucEFIGgdGcOX_H4gMiKcK6xIAaG8w_37KBRBVxg9s9h8Sj9PY-maK3uk4Kww7ro73UY41nEPH_Yyut7n1UIGD9tuNWNxjTEg7UclZ5LplFo1fX6cHHLCK315Pn0k8bbSyvu85PKQPElnN29bN2VUxWrrI-lI/s160/image.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgak4COo_akbc2NTBIli7cO9JBiLzztkOtucEFIGgdGcOX_H4gMiKcK6xIAaG8w_37KBRBVxg9s9h8Sj9PY-maK3uk4Kww7ro73UY41nEPH_Yyut7n1UIGD9tuNWNxjTEg7UclZ5LplFo1fX6cHHLCK315Pn0k8bbSyvu85PKQPElnN29bN2VUxWrrI-lI/s320/image.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgak4COo_akbc2NTBIli7cO9JBiLzztkOtucEFIGgdGcOX_H4gMiKcK6xIAaG8w_37KBRBVxg9s9h8Sj9PY-maK3uk4Kww7ro73UY41nEPH_Yyut7n1UIGD9tuNWNxjTEg7UclZ5LplFo1fX6cHHLCK315Pn0k8bbSyvu85PKQPElnN29bN2VUxWrrI-lI/s480/image.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgak4COo_akbc2NTBIli7cO9JBiLzztkOtucEFIGgdGcOX_H4gMiKcK6xIAaG8w_37KBRBVxg9s9h8Sj9PY-maK3uk4Kww7ro73UY41nEPH_Yyut7n1UIGD9tuNWNxjTEg7UclZ5LplFo1fX6cHHLCK315Pn0k8bbSyvu85PKQPElnN29bN2VUxWrrI-lI/s160/image.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgak4COo_akbc2NTBIli7cO9JBiLzztkOtucEFIGgdGcOX_H4gMiKcK6xIAaG8w_37KBRBVxg9s9h8Sj9PY-maK3uk4Kww7ro73UY41nEPH_Yyut7n1UIGD9tuNWNxjTEg7UclZ5LplFo1fX6cHHLCK315Pn0k8bbSyvu85PKQPElnN29bN2VUxWrrI-lI/s320/image.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgak4COo_akbc2NTBIli7cO9JBiLzztkOtucEFIGgdGcOX_H4gMiKcK6xIAaG8w_37KBRBVxg9s9h8Sj9PY-maK3uk4Kww7ro73UY41nEPH_Yyut7n1UIGD9tuNWNxjTEg7UclZ5LplFo1fX6cHHLCK315Pn0k8bbSyvu85PKQPElnN29bN2VUxWrrI-lI/s480/image.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1122 - Programa en directo desde Valencia el próximo 16 de mayo"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +164,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyH-J6tg4eD_c4TloE9dFpRUZKz8Dqa4oPUXM3r7XRT4zuTQCFbcj24Gk0ry9-pdo6y49tIjj5bpPjjHgNlhpy32UTP9QvXx7z17VNTKJkCHDS-dXian4qIiAwmQLqvS-9Uko4sc95uLYfsOxrsaXFfS_4nDFzaBQM0JR8XhiYaC110UZ7V78HpcruQM4/s320/b90_Valencia.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyH-J6tg4eD_c4TloE9dFpRUZKz8Dqa4oPUXM3r7XRT4zuTQCFbcj24Gk0ry9-pdo6y49tIjj5bpPjjHgNlhpy32UTP9QvXx7z17VNTKJkCHDS-dXian4qIiAwmQLqvS-9Uko4sc95uLYfsOxrsaXFfS_4nDFzaBQM0JR8XhiYaC110UZ7V78HpcruQM4/s160/b90_Valencia.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyH-J6tg4eD_c4TloE9dFpRUZKz8Dqa4oPUXM3r7XRT4zuTQCFbcj24Gk0ry9-pdo6y49tIjj5bpPjjHgNlhpy32UTP9QvXx7z17VNTKJkCHDS-dXian4qIiAwmQLqvS-9Uko4sc95uLYfsOxrsaXFfS_4nDFzaBQM0JR8XhiYaC110UZ7V78HpcruQM4/s320/b90_Valencia.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyH-J6tg4eD_c4TloE9dFpRUZKz8Dqa4oPUXM3r7XRT4zuTQCFbcj24Gk0ry9-pdo6y49tIjj5bpPjjHgNlhpy32UTP9QvXx7z17VNTKJkCHDS-dXian4qIiAwmQLqvS-9Uko4sc95uLYfsOxrsaXFfS_4nDFzaBQM0JR8XhiYaC110UZ7V78HpcruQM4/s480/b90_Valencia.jpeg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyH-J6tg4eD_c4TloE9dFpRUZKz8Dqa4oPUXM3r7XRT4zuTQCFbcj24Gk0ry9-pdo6y49tIjj5bpPjjHgNlhpy32UTP9QvXx7z17VNTKJkCHDS-dXian4qIiAwmQLqvS-9Uko4sc95uLYfsOxrsaXFfS_4nDFzaBQM0JR8XhiYaC110UZ7V78HpcruQM4/s160/b90_Valencia.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyH-J6tg4eD_c4TloE9dFpRUZKz8Dqa4oPUXM3r7XRT4zuTQCFbcj24Gk0ry9-pdo6y49tIjj5bpPjjHgNlhpy32UTP9QvXx7z17VNTKJkCHDS-dXian4qIiAwmQLqvS-9Uko4sc95uLYfsOxrsaXFfS_4nDFzaBQM0JR8XhiYaC110UZ7V78HpcruQM4/s320/b90_Valencia.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyH-J6tg4eD_c4TloE9dFpRUZKz8Dqa4oPUXM3r7XRT4zuTQCFbcj24Gk0ry9-pdo6y49tIjj5bpPjjHgNlhpy32UTP9QvXx7z17VNTKJkCHDS-dXian4qIiAwmQLqvS-9Uko4sc95uLYfsOxrsaXFfS_4nDFzaBQM0JR8XhiYaC110UZ7V78HpcruQM4/s480/b90_Valencia.jpeg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1124 - Especial escena alternativa de Valencia"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -183,8 +180,7 @@
         <a class="related-bottom-card" href="p-836-maud-the-moth-en-directo-aula-de-musica-uah-19-03-2022.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4QOsWQ8_0qtRhZipo3lMxEh0CGb0zCve8r9eoTcRiNUCCf7sfW7LbMYVwNJdMuStUft7gkT5bVDeja3nsBIyEHXGT6BmFkEe75NhWCqjZLzX2UfX2Lve1vqTgG7G1K145Iohpvowc1vlE35DJh3PalZE2BonNWNdheWUX-Z5pgSBdu5ZXQR-zAGIr/s320/275658235_10228790046920050_473055842035707082_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4QOsWQ8_0qtRhZipo3lMxEh0CGb0zCve8r9eoTcRiNUCCf7sfW7LbMYVwNJdMuStUft7gkT5bVDeja3nsBIyEHXGT6BmFkEe75NhWCqjZLzX2UfX2Lve1vqTgG7G1K145Iohpvowc1vlE35DJh3PalZE2BonNWNdheWUX-Z5pgSBdu5ZXQR-zAGIr/s320/275658235_10228790046920050_473055842035707082_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4QOsWQ8_0qtRhZipo3lMxEh0CGb0zCve8r9eoTcRiNUCCf7sfW7LbMYVwNJdMuStUft7gkT5bVDeja3nsBIyEHXGT6BmFkEe75NhWCqjZLzX2UfX2Lve1vqTgG7G1K145Iohpvowc1vlE35DJh3PalZE2BonNWNdheWUX-Z5pgSBdu5ZXQR-zAGIr/s480/275658235_10228790046920050_473055842035707082_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4QOsWQ8_0qtRhZipo3lMxEh0CGb0zCve8r9eoTcRiNUCCf7sfW7LbMYVwNJdMuStUft7gkT5bVDeja3nsBIyEHXGT6BmFkEe75NhWCqjZLzX2UfX2Lve1vqTgG7G1K145Iohpvowc1vlE35DJh3PalZE2BonNWNdheWUX-Z5pgSBdu5ZXQR-zAGIr/s640/275658235_10228790046920050_473055842035707082_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4QOsWQ8_0qtRhZipo3lMxEh0CGb0zCve8r9eoTcRiNUCCf7sfW7LbMYVwNJdMuStUft7gkT5bVDeja3nsBIyEHXGT6BmFkEe75NhWCqjZLzX2UfX2Lve1vqTgG7G1K145Iohpvowc1vlE35DJh3PalZE2BonNWNdheWUX-Z5pgSBdu5ZXQR-zAGIr/s320/275658235_10228790046920050_473055842035707082_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4QOsWQ8_0qtRhZipo3lMxEh0CGb0zCve8r9eoTcRiNUCCf7sfW7LbMYVwNJdMuStUft7gkT5bVDeja3nsBIyEHXGT6BmFkEe75NhWCqjZLzX2UfX2Lve1vqTgG7G1K145Iohpvowc1vlE35DJh3PalZE2BonNWNdheWUX-Z5pgSBdu5ZXQR-zAGIr/s480/275658235_10228790046920050_473055842035707082_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4QOsWQ8_0qtRhZipo3lMxEh0CGb0zCve8r9eoTcRiNUCCf7sfW7LbMYVwNJdMuStUft7gkT5bVDeja3nsBIyEHXGT6BmFkEe75NhWCqjZLzX2UfX2Lve1vqTgG7G1K145Iohpvowc1vlE35DJh3PalZE2BonNWNdheWUX-Z5pgSBdu5ZXQR-zAGIr/s640/275658235_10228790046920050_473055842035707082_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.836 - Maud the Moth en directo (Aula de música UAH, 19/03/2022)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +191,7 @@
           </a><a class="related-bottom-card" href="b90-classic-17-asi-suenan-the-smile-en-directo.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 Classic 17: Así suenan THE SMILE en directo"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -207,8 +202,7 @@
           </a><a class="related-bottom-card" href="programa-272-pearl-jam-61-garage-mikelvas-the-hipsbreakers.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX5A6INETyHbK9ZP1pr-DehxcvRUN-J8dynmk06bN6ybd3Bnbagcil9OsGAT7eDEupIYqMDWWHB83wgvOpl7UkXfyPCWOCvqnaBpxJEsDQw8WFYKDeNFcCLZ5ZGXSdVJO85hpUquzXm4U/s320/17097282_1561405443889377_3615080110459961351_o.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX5A6INETyHbK9ZP1pr-DehxcvRUN-J8dynmk06bN6ybd3Bnbagcil9OsGAT7eDEupIYqMDWWHB83wgvOpl7UkXfyPCWOCvqnaBpxJEsDQw8WFYKDeNFcCLZ5ZGXSdVJO85hpUquzXm4U/s320/17097282_1561405443889377_3615080110459961351_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX5A6INETyHbK9ZP1pr-DehxcvRUN-J8dynmk06bN6ybd3Bnbagcil9OsGAT7eDEupIYqMDWWHB83wgvOpl7UkXfyPCWOCvqnaBpxJEsDQw8WFYKDeNFcCLZ5ZGXSdVJO85hpUquzXm4U/s480/17097282_1561405443889377_3615080110459961351_o.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX5A6INETyHbK9ZP1pr-DehxcvRUN-J8dynmk06bN6ybd3Bnbagcil9OsGAT7eDEupIYqMDWWHB83wgvOpl7UkXfyPCWOCvqnaBpxJEsDQw8WFYKDeNFcCLZ5ZGXSdVJO85hpUquzXm4U/s640/17097282_1561405443889377_3615080110459961351_o.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX5A6INETyHbK9ZP1pr-DehxcvRUN-J8dynmk06bN6ybd3Bnbagcil9OsGAT7eDEupIYqMDWWHB83wgvOpl7UkXfyPCWOCvqnaBpxJEsDQw8WFYKDeNFcCLZ5ZGXSdVJO85hpUquzXm4U/s320/17097282_1561405443889377_3615080110459961351_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX5A6INETyHbK9ZP1pr-DehxcvRUN-J8dynmk06bN6ybd3Bnbagcil9OsGAT7eDEupIYqMDWWHB83wgvOpl7UkXfyPCWOCvqnaBpxJEsDQw8WFYKDeNFcCLZ5ZGXSdVJO85hpUquzXm4U/s480/17097282_1561405443889377_3615080110459961351_o.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX5A6INETyHbK9ZP1pr-DehxcvRUN-J8dynmk06bN6ybd3Bnbagcil9OsGAT7eDEupIYqMDWWHB83wgvOpl7UkXfyPCWOCvqnaBpxJEsDQw8WFYKDeNFcCLZ5ZGXSdVJO85hpUquzXm4U/s640/17097282_1561405443889377_3615080110459961351_o.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 272 - Pearl Jam + 61 Garage + Mikelvas + The Hipsbreakers"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

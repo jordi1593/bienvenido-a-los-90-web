@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.588 - 20 años de MUZIKALIA y el regreso de IDIOTERNE — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -139,8 +139,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaJV6P3uzGlpTiWYThHx4Q0ekH_K7N8v6-Fb668mnwcRYO5Z5Lgs8HgR6A-HKpuOEyRX6_TlZq_RzUCWt_fD0cxHJqnEJmDqFLnGQLYbhHcA2asecCB6z0VIC-KDeTQOSPPbJj_qDnNr6kwMASOgCp2JQPT8oHccsyT8V2jA3swlsXNV6bLW-nv9KFSTI/s320/B90_1071.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaJV6P3uzGlpTiWYThHx4Q0ekH_K7N8v6-Fb668mnwcRYO5Z5Lgs8HgR6A-HKpuOEyRX6_TlZq_RzUCWt_fD0cxHJqnEJmDqFLnGQLYbhHcA2asecCB6z0VIC-KDeTQOSPPbJj_qDnNr6kwMASOgCp2JQPT8oHccsyT8V2jA3swlsXNV6bLW-nv9KFSTI/s160/B90_1071.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaJV6P3uzGlpTiWYThHx4Q0ekH_K7N8v6-Fb668mnwcRYO5Z5Lgs8HgR6A-HKpuOEyRX6_TlZq_RzUCWt_fD0cxHJqnEJmDqFLnGQLYbhHcA2asecCB6z0VIC-KDeTQOSPPbJj_qDnNr6kwMASOgCp2JQPT8oHccsyT8V2jA3swlsXNV6bLW-nv9KFSTI/s320/B90_1071.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaJV6P3uzGlpTiWYThHx4Q0ekH_K7N8v6-Fb668mnwcRYO5Z5Lgs8HgR6A-HKpuOEyRX6_TlZq_RzUCWt_fD0cxHJqnEJmDqFLnGQLYbhHcA2asecCB6z0VIC-KDeTQOSPPbJj_qDnNr6kwMASOgCp2JQPT8oHccsyT8V2jA3swlsXNV6bLW-nv9KFSTI/s480/B90_1071.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaJV6P3uzGlpTiWYThHx4Q0ekH_K7N8v6-Fb668mnwcRYO5Z5Lgs8HgR6A-HKpuOEyRX6_TlZq_RzUCWt_fD0cxHJqnEJmDqFLnGQLYbhHcA2asecCB6z0VIC-KDeTQOSPPbJj_qDnNr6kwMASOgCp2JQPT8oHccsyT8V2jA3swlsXNV6bLW-nv9KFSTI/s160/B90_1071.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaJV6P3uzGlpTiWYThHx4Q0ekH_K7N8v6-Fb668mnwcRYO5Z5Lgs8HgR6A-HKpuOEyRX6_TlZq_RzUCWt_fD0cxHJqnEJmDqFLnGQLYbhHcA2asecCB6z0VIC-KDeTQOSPPbJj_qDnNr6kwMASOgCp2JQPT8oHccsyT8V2jA3swlsXNV6bLW-nv9KFSTI/s320/B90_1071.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaJV6P3uzGlpTiWYThHx4Q0ekH_K7N8v6-Fb668mnwcRYO5Z5Lgs8HgR6A-HKpuOEyRX6_TlZq_RzUCWt_fD0cxHJqnEJmDqFLnGQLYbhHcA2asecCB6z0VIC-KDeTQOSPPbJj_qDnNr6kwMASOgCp2JQPT8oHccsyT8V2jA3swlsXNV6bLW-nv9KFSTI/s480/B90_1071.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1071 - Hablando con Manuel Pinazo de Muzikalia (Final de Temporada)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -150,8 +149,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s320/242494530_244509814350378_3513229620045245238_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s160/242494530_244509814350378_3513229620045245238_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s320/242494530_244509814350378_3513229620045245238_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s480/242494530_244509814350378_3513229620045245238_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s160/242494530_244509814350378_3513229620045245238_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s320/242494530_244509814350378_3513229620045245238_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s480/242494530_244509814350378_3513229620045245238_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.800 - En directo desde Siroco celebrando los 30 años de Nevermind"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -161,8 +159,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE-kakaH0RMrXgIHZne__GVdsojAXzXh9iTIOAUQlEUF5dFj5faRUnvQVZL2jgSe81dt4SmM850uPV1RF1XEdE3tSBILgylf9JCoqJ_jUruTfwH6WikOeAtU7PJ8n8zN7HXKCjwT2eFRL-wFC9n6388ms7EIvRlSff2Z9XXZwo0qMc7RlcehST-Dckz3I/s320/IMG-20230716-WA0007.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE-kakaH0RMrXgIHZne__GVdsojAXzXh9iTIOAUQlEUF5dFj5faRUnvQVZL2jgSe81dt4SmM850uPV1RF1XEdE3tSBILgylf9JCoqJ_jUruTfwH6WikOeAtU7PJ8n8zN7HXKCjwT2eFRL-wFC9n6388ms7EIvRlSff2Z9XXZwo0qMc7RlcehST-Dckz3I/s160/IMG-20230716-WA0007.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE-kakaH0RMrXgIHZne__GVdsojAXzXh9iTIOAUQlEUF5dFj5faRUnvQVZL2jgSe81dt4SmM850uPV1RF1XEdE3tSBILgylf9JCoqJ_jUruTfwH6WikOeAtU7PJ8n8zN7HXKCjwT2eFRL-wFC9n6388ms7EIvRlSff2Z9XXZwo0qMc7RlcehST-Dckz3I/s320/IMG-20230716-WA0007.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE-kakaH0RMrXgIHZne__GVdsojAXzXh9iTIOAUQlEUF5dFj5faRUnvQVZL2jgSe81dt4SmM850uPV1RF1XEdE3tSBILgylf9JCoqJ_jUruTfwH6WikOeAtU7PJ8n8zN7HXKCjwT2eFRL-wFC9n6388ms7EIvRlSff2Z9XXZwo0qMc7RlcehST-Dckz3I/s480/IMG-20230716-WA0007.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE-kakaH0RMrXgIHZne__GVdsojAXzXh9iTIOAUQlEUF5dFj5faRUnvQVZL2jgSe81dt4SmM850uPV1RF1XEdE3tSBILgylf9JCoqJ_jUruTfwH6WikOeAtU7PJ8n8zN7HXKCjwT2eFRL-wFC9n6388ms7EIvRlSff2Z9XXZwo0qMc7RlcehST-Dckz3I/s160/IMG-20230716-WA0007.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE-kakaH0RMrXgIHZne__GVdsojAXzXh9iTIOAUQlEUF5dFj5faRUnvQVZL2jgSe81dt4SmM850uPV1RF1XEdE3tSBILgylf9JCoqJ_jUruTfwH6WikOeAtU7PJ8n8zN7HXKCjwT2eFRL-wFC9n6388ms7EIvRlSff2Z9XXZwo0qMc7RlcehST-Dckz3I/s320/IMG-20230716-WA0007.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE-kakaH0RMrXgIHZne__GVdsojAXzXh9iTIOAUQlEUF5dFj5faRUnvQVZL2jgSe81dt4SmM850uPV1RF1XEdE3tSBILgylf9JCoqJ_jUruTfwH6WikOeAtU7PJ8n8zN7HXKCjwT2eFRL-wFC9n6388ms7EIvRlSff2Z9XXZwo0qMc7RlcehST-Dckz3I/s480/IMG-20230716-WA0007.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.913 - Especial libros y música"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -178,8 +175,7 @@
         <a class="related-bottom-card" href="p-593-the-power-of-dolores-cumple-20-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s320/b90_593.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s320/b90_593.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s480/b90_593.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s640/b90_593.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s320/b90_593.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s480/b90_593.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLom20y7MYtFm2zSsu9gShTDNPir_0fK9V6sq7X96peKJiIfK0KJRAx5SFE2kVQR1dJ_gLpe5xOaJnvsd5PZV5bUPhEwecflHkPq3QKi1wtN3Nne5lOHN63PPpX3jXDj-nJWKRmkCHvUc/s640/b90_593.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.593 - The Power of Dolores cumple 20 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +186,7 @@
           </a><a class="related-bottom-card" href="p-581-r-e-m-monster-cumple-25-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiUvRcgd5nGUywvtJ2ZoL_5mKHxxEPd_G-nHxfg_m3dHasvCbkp5gfniX4CbJlQdMkAfrezRJ_IO4sUNS8P-LwentBMvh9mDTbnJrGu6kyWF9csdMQfUlGBJnypWn3EQ-yti9BWFt2qgI/s320/b90_581.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiUvRcgd5nGUywvtJ2ZoL_5mKHxxEPd_G-nHxfg_m3dHasvCbkp5gfniX4CbJlQdMkAfrezRJ_IO4sUNS8P-LwentBMvh9mDTbnJrGu6kyWF9csdMQfUlGBJnypWn3EQ-yti9BWFt2qgI/s320/b90_581.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiUvRcgd5nGUywvtJ2ZoL_5mKHxxEPd_G-nHxfg_m3dHasvCbkp5gfniX4CbJlQdMkAfrezRJ_IO4sUNS8P-LwentBMvh9mDTbnJrGu6kyWF9csdMQfUlGBJnypWn3EQ-yti9BWFt2qgI/s480/b90_581.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiUvRcgd5nGUywvtJ2ZoL_5mKHxxEPd_G-nHxfg_m3dHasvCbkp5gfniX4CbJlQdMkAfrezRJ_IO4sUNS8P-LwentBMvh9mDTbnJrGu6kyWF9csdMQfUlGBJnypWn3EQ-yti9BWFt2qgI/s640/b90_581.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiUvRcgd5nGUywvtJ2ZoL_5mKHxxEPd_G-nHxfg_m3dHasvCbkp5gfniX4CbJlQdMkAfrezRJ_IO4sUNS8P-LwentBMvh9mDTbnJrGu6kyWF9csdMQfUlGBJnypWn3EQ-yti9BWFt2qgI/s320/b90_581.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiUvRcgd5nGUywvtJ2ZoL_5mKHxxEPd_G-nHxfg_m3dHasvCbkp5gfniX4CbJlQdMkAfrezRJ_IO4sUNS8P-LwentBMvh9mDTbnJrGu6kyWF9csdMQfUlGBJnypWn3EQ-yti9BWFt2qgI/s480/b90_581.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiUvRcgd5nGUywvtJ2ZoL_5mKHxxEPd_G-nHxfg_m3dHasvCbkp5gfniX4CbJlQdMkAfrezRJ_IO4sUNS8P-LwentBMvh9mDTbnJrGu6kyWF9csdMQfUlGBJnypWn3EQ-yti9BWFt2qgI/s640/b90_581.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.581 - R.E.M. - Monster cumple 25 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -202,8 +197,7 @@
           </a><a class="related-bottom-card" href="programa-570-la-sala-el-sol-cumple-40-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s320/b90_570.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s320/b90_570.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s480/b90_570.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s640/b90_570.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s320/b90_570.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s480/b90_570.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s640/b90_570.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 570 - La sala EL SOL cumple 40 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

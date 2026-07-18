@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Prozack — 11 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-881-el-disco-del-decimo-aniversario-del-programa.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0eF83kHJ0kMEU93Aog07MMQAevdreak1C3fsqLaVQt5gkWLCX0iU2LGLaQTFs0Buqdgqc0B7vyttIQni5qJTheYaSeB0A1PlWxd3allsOb71aplfkGxEQJTb91Lzf5YOrZ904JDDNYGIiaj_NMBAsGbZnTMTAdR_edZ6WPtuQoyyZijl7APZdiYkX/s320/16%20enero%202021.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0eF83kHJ0kMEU93Aog07MMQAevdreak1C3fsqLaVQt5gkWLCX0iU2LGLaQTFs0Buqdgqc0B7vyttIQni5qJTheYaSeB0A1PlWxd3allsOb71aplfkGxEQJTb91Lzf5YOrZ904JDDNYGIiaj_NMBAsGbZnTMTAdR_edZ6WPtuQoyyZijl7APZdiYkX/s160/16%20enero%202021.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0eF83kHJ0kMEU93Aog07MMQAevdreak1C3fsqLaVQt5gkWLCX0iU2LGLaQTFs0Buqdgqc0B7vyttIQni5qJTheYaSeB0A1PlWxd3allsOb71aplfkGxEQJTb91Lzf5YOrZ904JDDNYGIiaj_NMBAsGbZnTMTAdR_edZ6WPtuQoyyZijl7APZdiYkX/s320/16%20enero%202021.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0eF83kHJ0kMEU93Aog07MMQAevdreak1C3fsqLaVQt5gkWLCX0iU2LGLaQTFs0Buqdgqc0B7vyttIQni5qJTheYaSeB0A1PlWxd3allsOb71aplfkGxEQJTb91Lzf5YOrZ904JDDNYGIiaj_NMBAsGbZnTMTAdR_edZ6WPtuQoyyZijl7APZdiYkX/s480/16%20enero%202021.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0eF83kHJ0kMEU93Aog07MMQAevdreak1C3fsqLaVQt5gkWLCX0iU2LGLaQTFs0Buqdgqc0B7vyttIQni5qJTheYaSeB0A1PlWxd3allsOb71aplfkGxEQJTb91Lzf5YOrZ904JDDNYGIiaj_NMBAsGbZnTMTAdR_edZ6WPtuQoyyZijl7APZdiYkX/s160/16%20enero%202021.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0eF83kHJ0kMEU93Aog07MMQAevdreak1C3fsqLaVQt5gkWLCX0iU2LGLaQTFs0Buqdgqc0B7vyttIQni5qJTheYaSeB0A1PlWxd3allsOb71aplfkGxEQJTb91Lzf5YOrZ904JDDNYGIiaj_NMBAsGbZnTMTAdR_edZ6WPtuQoyyZijl7APZdiYkX/s320/16%20enero%202021.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0eF83kHJ0kMEU93Aog07MMQAevdreak1C3fsqLaVQt5gkWLCX0iU2LGLaQTFs0Buqdgqc0B7vyttIQni5qJTheYaSeB0A1PlWxd3allsOb71aplfkGxEQJTb91Lzf5YOrZ904JDDNYGIiaj_NMBAsGbZnTMTAdR_edZ6WPtuQoyyZijl7APZdiYkX/s480/16%20enero%202021.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.881 - El disco del DÉCIMO aniversario del programa"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/que-significa-bienvenido-a-los-90-para-ti.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s320/53012096_666655617086037_624432951429431296_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s160/53012096_666655617086037_624432951429431296_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s320/53012096_666655617086037_624432951429431296_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s480/53012096_666655617086037_624432951429431296_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s160/53012096_666655617086037_624432951429431296_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s320/53012096_666655617086037_624432951429431296_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s480/53012096_666655617086037_624432951429431296_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="¿Qué significa &#39;Bienvenido a los 90 para ti?"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-431-in-utero-25.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw01IsQuBZbiWpFYGIHHk-1sBIpmGt6H-oFThegM8o3nzPvxJXnULt-I7nWOTDiTm14bOm3scPf7GlLpb1JCVFwilgJfdN1S1bttHoSA_OWJwQu1EtHWr4UUOVdwuM5-Qgibo2su-Wskg/s320/inutero25coverlittle.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw01IsQuBZbiWpFYGIHHk-1sBIpmGt6H-oFThegM8o3nzPvxJXnULt-I7nWOTDiTm14bOm3scPf7GlLpb1JCVFwilgJfdN1S1bttHoSA_OWJwQu1EtHWr4UUOVdwuM5-Qgibo2su-Wskg/s160/inutero25coverlittle.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw01IsQuBZbiWpFYGIHHk-1sBIpmGt6H-oFThegM8o3nzPvxJXnULt-I7nWOTDiTm14bOm3scPf7GlLpb1JCVFwilgJfdN1S1bttHoSA_OWJwQu1EtHWr4UUOVdwuM5-Qgibo2su-Wskg/s320/inutero25coverlittle.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw01IsQuBZbiWpFYGIHHk-1sBIpmGt6H-oFThegM8o3nzPvxJXnULt-I7nWOTDiTm14bOm3scPf7GlLpb1JCVFwilgJfdN1S1bttHoSA_OWJwQu1EtHWr4UUOVdwuM5-Qgibo2su-Wskg/s480/inutero25coverlittle.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw01IsQuBZbiWpFYGIHHk-1sBIpmGt6H-oFThegM8o3nzPvxJXnULt-I7nWOTDiTm14bOm3scPf7GlLpb1JCVFwilgJfdN1S1bttHoSA_OWJwQu1EtHWr4UUOVdwuM5-Qgibo2su-Wskg/s160/inutero25coverlittle.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw01IsQuBZbiWpFYGIHHk-1sBIpmGt6H-oFThegM8o3nzPvxJXnULt-I7nWOTDiTm14bOm3scPf7GlLpb1JCVFwilgJfdN1S1bttHoSA_OWJwQu1EtHWr4UUOVdwuM5-Qgibo2su-Wskg/s320/inutero25coverlittle.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw01IsQuBZbiWpFYGIHHk-1sBIpmGt6H-oFThegM8o3nzPvxJXnULt-I7nWOTDiTm14bOm3scPf7GlLpb1JCVFwilgJfdN1S1bttHoSA_OWJwQu1EtHWr4UUOVdwuM5-Qgibo2su-Wskg/s480/inutero25coverlittle.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 431 - IN UTERO 25"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-395-furinyaki-records-studio.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT9aXIOrQ6HeN7YOLYwewkYU9owsEN3-vbzre80ncRiTMyK4W7LfkHWhgD7ZmMDpXJOYlu5iM0x-wRHMeraMM4nNwSm500gqUafu6STC3mLYliNmwPoG2vOuGcboqmBhq94Qg9pJexrSI/s320/20992987_916800398471843_174227685960757078_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT9aXIOrQ6HeN7YOLYwewkYU9owsEN3-vbzre80ncRiTMyK4W7LfkHWhgD7ZmMDpXJOYlu5iM0x-wRHMeraMM4nNwSm500gqUafu6STC3mLYliNmwPoG2vOuGcboqmBhq94Qg9pJexrSI/s160/20992987_916800398471843_174227685960757078_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT9aXIOrQ6HeN7YOLYwewkYU9owsEN3-vbzre80ncRiTMyK4W7LfkHWhgD7ZmMDpXJOYlu5iM0x-wRHMeraMM4nNwSm500gqUafu6STC3mLYliNmwPoG2vOuGcboqmBhq94Qg9pJexrSI/s320/20992987_916800398471843_174227685960757078_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT9aXIOrQ6HeN7YOLYwewkYU9owsEN3-vbzre80ncRiTMyK4W7LfkHWhgD7ZmMDpXJOYlu5iM0x-wRHMeraMM4nNwSm500gqUafu6STC3mLYliNmwPoG2vOuGcboqmBhq94Qg9pJexrSI/s480/20992987_916800398471843_174227685960757078_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT9aXIOrQ6HeN7YOLYwewkYU9owsEN3-vbzre80ncRiTMyK4W7LfkHWhgD7ZmMDpXJOYlu5iM0x-wRHMeraMM4nNwSm500gqUafu6STC3mLYliNmwPoG2vOuGcboqmBhq94Qg9pJexrSI/s160/20992987_916800398471843_174227685960757078_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT9aXIOrQ6HeN7YOLYwewkYU9owsEN3-vbzre80ncRiTMyK4W7LfkHWhgD7ZmMDpXJOYlu5iM0x-wRHMeraMM4nNwSm500gqUafu6STC3mLYliNmwPoG2vOuGcboqmBhq94Qg9pJexrSI/s320/20992987_916800398471843_174227685960757078_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT9aXIOrQ6HeN7YOLYwewkYU9owsEN3-vbzre80ncRiTMyK4W7LfkHWhgD7ZmMDpXJOYlu5iM0x-wRHMeraMM4nNwSm500gqUafu6STC3mLYliNmwPoG2vOuGcboqmBhq94Qg9pJexrSI/s480/20992987_916800398471843_174227685960757078_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 395 - Furinyaki Records Studio"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-298-paco-soto.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s320/P1040063.JPG"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s160/P1040063.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s320/P1040063.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s480/P1040063.JPG 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s160/P1040063.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s320/P1040063.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s480/P1040063.JPG 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 298 – Paco Soto"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-296-dali-y-la-musica.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmidS_yc9YbrLBoMIct8Eoy__fRa6hpcIFXk1w0h9t5TEmrx9F_EUEVtt9wIHQq1RRBfGxoEeO1ZduBef8wm5iUps61gMgciJ5UMWOrlnykQLvHFgD9-h7zEo_bfIbYNGyBCnTrfupqhk/s320/bienvenido-296.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmidS_yc9YbrLBoMIct8Eoy__fRa6hpcIFXk1w0h9t5TEmrx9F_EUEVtt9wIHQq1RRBfGxoEeO1ZduBef8wm5iUps61gMgciJ5UMWOrlnykQLvHFgD9-h7zEo_bfIbYNGyBCnTrfupqhk/s160/bienvenido-296.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmidS_yc9YbrLBoMIct8Eoy__fRa6hpcIFXk1w0h9t5TEmrx9F_EUEVtt9wIHQq1RRBfGxoEeO1ZduBef8wm5iUps61gMgciJ5UMWOrlnykQLvHFgD9-h7zEo_bfIbYNGyBCnTrfupqhk/s320/bienvenido-296.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmidS_yc9YbrLBoMIct8Eoy__fRa6hpcIFXk1w0h9t5TEmrx9F_EUEVtt9wIHQq1RRBfGxoEeO1ZduBef8wm5iUps61gMgciJ5UMWOrlnykQLvHFgD9-h7zEo_bfIbYNGyBCnTrfupqhk/s480/bienvenido-296.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmidS_yc9YbrLBoMIct8Eoy__fRa6hpcIFXk1w0h9t5TEmrx9F_EUEVtt9wIHQq1RRBfGxoEeO1ZduBef8wm5iUps61gMgciJ5UMWOrlnykQLvHFgD9-h7zEo_bfIbYNGyBCnTrfupqhk/s160/bienvenido-296.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmidS_yc9YbrLBoMIct8Eoy__fRa6hpcIFXk1w0h9t5TEmrx9F_EUEVtt9wIHQq1RRBfGxoEeO1ZduBef8wm5iUps61gMgciJ5UMWOrlnykQLvHFgD9-h7zEo_bfIbYNGyBCnTrfupqhk/s320/bienvenido-296.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmidS_yc9YbrLBoMIct8Eoy__fRa6hpcIFXk1w0h9t5TEmrx9F_EUEVtt9wIHQq1RRBfGxoEeO1ZduBef8wm5iUps61gMgciJ5UMWOrlnykQLvHFgD9-h7zEo_bfIbYNGyBCnTrfupqhk/s480/bienvenido-296.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 296 - Dalí y la música"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-287-ok-computer-revisited.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s320/ok-computer-revisited-120x120.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s160/ok-computer-revisited-120x120.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s320/ok-computer-revisited-120x120.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s480/ok-computer-revisited-120x120.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s160/ok-computer-revisited-120x120.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s320/ok-computer-revisited-120x120.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_44nj5fgSjmjTAAaM67_pzQLiHEDGDgXXxLyy6MF34W-ThqXWnWsfnCXmFWtfdFYpRcAZwUYGJIhILVFvGWLbwB5sJHf_1XhtxJAGqVsT3MEIjvS7BmzuxrbxQMG-7PDx4HsQ1VhUGAo/s480/ok-computer-revisited-120x120.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 287 - Ok Computer Revisited"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/programa-285-el-grunge-en-2017.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJIt_vSTlEEXDKd91AtIk2OdXctGH1LAljXD-MrUhbraKkX9WU06Wb6RnXgure6bRlxvOElONboBrXS5IaigSum1Cfs9QsnzXJXQTbdyNmZq3rPRJ5VxkMhEE9HqqjawZM6i6J0pDvXAk/s320/grunge_wallpaper_1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJIt_vSTlEEXDKd91AtIk2OdXctGH1LAljXD-MrUhbraKkX9WU06Wb6RnXgure6bRlxvOElONboBrXS5IaigSum1Cfs9QsnzXJXQTbdyNmZq3rPRJ5VxkMhEE9HqqjawZM6i6J0pDvXAk/s160/grunge_wallpaper_1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJIt_vSTlEEXDKd91AtIk2OdXctGH1LAljXD-MrUhbraKkX9WU06Wb6RnXgure6bRlxvOElONboBrXS5IaigSum1Cfs9QsnzXJXQTbdyNmZq3rPRJ5VxkMhEE9HqqjawZM6i6J0pDvXAk/s320/grunge_wallpaper_1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJIt_vSTlEEXDKd91AtIk2OdXctGH1LAljXD-MrUhbraKkX9WU06Wb6RnXgure6bRlxvOElONboBrXS5IaigSum1Cfs9QsnzXJXQTbdyNmZq3rPRJ5VxkMhEE9HqqjawZM6i6J0pDvXAk/s480/grunge_wallpaper_1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJIt_vSTlEEXDKd91AtIk2OdXctGH1LAljXD-MrUhbraKkX9WU06Wb6RnXgure6bRlxvOElONboBrXS5IaigSum1Cfs9QsnzXJXQTbdyNmZq3rPRJ5VxkMhEE9HqqjawZM6i6J0pDvXAk/s160/grunge_wallpaper_1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJIt_vSTlEEXDKd91AtIk2OdXctGH1LAljXD-MrUhbraKkX9WU06Wb6RnXgure6bRlxvOElONboBrXS5IaigSum1Cfs9QsnzXJXQTbdyNmZq3rPRJ5VxkMhEE9HqqjawZM6i6J0pDvXAk/s320/grunge_wallpaper_1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJIt_vSTlEEXDKd91AtIk2OdXctGH1LAljXD-MrUhbraKkX9WU06Wb6RnXgure6bRlxvOElONboBrXS5IaigSum1Cfs9QsnzXJXQTbdyNmZq3rPRJ5VxkMhEE9HqqjawZM6i6J0pDvXAk/s480/grunge_wallpaper_1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 285 - El grunge en 2017"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -180,8 +172,7 @@
         <a class="episode-cover-link" href="../episodios/programa-256-arida-61-garage.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEildtjca5I8QNReeMph0f5KeCW6ZjCMpP6boxHFbuMuX1UiEKcYWEk3vBK5puof5ytSoG6hJH7GRiSEv4kIdABDNigzKn6LrHzMGOAAkXc-CGCfBGF4i0nb6bFEJzTlnKN_rxYy2vD8gU4/s320/Captura+de+pantalla+2016-12-22+a+las+20.46.47.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEildtjca5I8QNReeMph0f5KeCW6ZjCMpP6boxHFbuMuX1UiEKcYWEk3vBK5puof5ytSoG6hJH7GRiSEv4kIdABDNigzKn6LrHzMGOAAkXc-CGCfBGF4i0nb6bFEJzTlnKN_rxYy2vD8gU4/s160/Captura+de+pantalla+2016-12-22+a+las+20.46.47.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEildtjca5I8QNReeMph0f5KeCW6ZjCMpP6boxHFbuMuX1UiEKcYWEk3vBK5puof5ytSoG6hJH7GRiSEv4kIdABDNigzKn6LrHzMGOAAkXc-CGCfBGF4i0nb6bFEJzTlnKN_rxYy2vD8gU4/s320/Captura+de+pantalla+2016-12-22+a+las+20.46.47.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEildtjca5I8QNReeMph0f5KeCW6ZjCMpP6boxHFbuMuX1UiEKcYWEk3vBK5puof5ytSoG6hJH7GRiSEv4kIdABDNigzKn6LrHzMGOAAkXc-CGCfBGF4i0nb6bFEJzTlnKN_rxYy2vD8gU4/s480/Captura+de+pantalla+2016-12-22+a+las+20.46.47.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEildtjca5I8QNReeMph0f5KeCW6ZjCMpP6boxHFbuMuX1UiEKcYWEk3vBK5puof5ytSoG6hJH7GRiSEv4kIdABDNigzKn6LrHzMGOAAkXc-CGCfBGF4i0nb6bFEJzTlnKN_rxYy2vD8gU4/s160/Captura+de+pantalla+2016-12-22+a+las+20.46.47.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEildtjca5I8QNReeMph0f5KeCW6ZjCMpP6boxHFbuMuX1UiEKcYWEk3vBK5puof5ytSoG6hJH7GRiSEv4kIdABDNigzKn6LrHzMGOAAkXc-CGCfBGF4i0nb6bFEJzTlnKN_rxYy2vD8gU4/s320/Captura+de+pantalla+2016-12-22+a+las+20.46.47.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEildtjca5I8QNReeMph0f5KeCW6ZjCMpP6boxHFbuMuX1UiEKcYWEk3vBK5puof5ytSoG6hJH7GRiSEv4kIdABDNigzKn6LrHzMGOAAkXc-CGCfBGF4i0nb6bFEJzTlnKN_rxYy2vD8gU4/s480/Captura+de+pantalla+2016-12-22+a+las+20.46.47.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 256 - Árida + 61 Garage"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -194,8 +185,7 @@
         <a class="episode-cover-link" href="../episodios/programa-248-james-bond-en-los-90.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s320/007.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s160/007.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s320/007.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s480/007.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s160/007.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s320/007.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s480/007.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 248 - James Bond en los 90"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -208,8 +198,7 @@
         <a class="episode-cover-link" href="../episodios/programa-203-ruido-nacional.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVgm89Dr0LWxvcXT6Zb0m5M_xbDYwc9tDKJBR8HcSvJl47bllwOH_yXFDQXwkygmRkeMbdeF8UkNjNOKPkZcJQh3adBfBukckUNag3VZB1ItrIXzOHVbudBOBVUoKARnunQcmYEhbdKBg/s320/12316152_622612921210074_621997089929135530_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVgm89Dr0LWxvcXT6Zb0m5M_xbDYwc9tDKJBR8HcSvJl47bllwOH_yXFDQXwkygmRkeMbdeF8UkNjNOKPkZcJQh3adBfBukckUNag3VZB1ItrIXzOHVbudBOBVUoKARnunQcmYEhbdKBg/s160/12316152_622612921210074_621997089929135530_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVgm89Dr0LWxvcXT6Zb0m5M_xbDYwc9tDKJBR8HcSvJl47bllwOH_yXFDQXwkygmRkeMbdeF8UkNjNOKPkZcJQh3adBfBukckUNag3VZB1ItrIXzOHVbudBOBVUoKARnunQcmYEhbdKBg/s320/12316152_622612921210074_621997089929135530_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVgm89Dr0LWxvcXT6Zb0m5M_xbDYwc9tDKJBR8HcSvJl47bllwOH_yXFDQXwkygmRkeMbdeF8UkNjNOKPkZcJQh3adBfBukckUNag3VZB1ItrIXzOHVbudBOBVUoKARnunQcmYEhbdKBg/s480/12316152_622612921210074_621997089929135530_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVgm89Dr0LWxvcXT6Zb0m5M_xbDYwc9tDKJBR8HcSvJl47bllwOH_yXFDQXwkygmRkeMbdeF8UkNjNOKPkZcJQh3adBfBukckUNag3VZB1ItrIXzOHVbudBOBVUoKARnunQcmYEhbdKBg/s160/12316152_622612921210074_621997089929135530_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVgm89Dr0LWxvcXT6Zb0m5M_xbDYwc9tDKJBR8HcSvJl47bllwOH_yXFDQXwkygmRkeMbdeF8UkNjNOKPkZcJQh3adBfBukckUNag3VZB1ItrIXzOHVbudBOBVUoKARnunQcmYEhbdKBg/s320/12316152_622612921210074_621997089929135530_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVgm89Dr0LWxvcXT6Zb0m5M_xbDYwc9tDKJBR8HcSvJl47bllwOH_yXFDQXwkygmRkeMbdeF8UkNjNOKPkZcJQh3adBfBukckUNag3VZB1ItrIXzOHVbudBOBVUoKARnunQcmYEhbdKBg/s480/12316152_622612921210074_621997089929135530_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 203 - Ruido nacional"
                 loading="lazy" width="320" height="213" />
         </a>

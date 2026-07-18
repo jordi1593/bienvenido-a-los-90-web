@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 260 - The Beatles Sgt. Pepper&#39;s Lonely Hearts Club Band 50 años — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -131,8 +131,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_jrEbPPh6YktIZOL79A-HvzTwUDfhWEvP3eb4zk2z5S6MAd8f7BwCSA_YjVK9MwBfZmrL-Hp_cRzQ6PiXXf-iSufsD449swNEqRaLZBS_zcOHtCqSHHUygbIR2DBL2u5_JNYCuqmKt84/s320/IMG_20160805_190714.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_jrEbPPh6YktIZOL79A-HvzTwUDfhWEvP3eb4zk2z5S6MAd8f7BwCSA_YjVK9MwBfZmrL-Hp_cRzQ6PiXXf-iSufsD449swNEqRaLZBS_zcOHtCqSHHUygbIR2DBL2u5_JNYCuqmKt84/s160/IMG_20160805_190714.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_jrEbPPh6YktIZOL79A-HvzTwUDfhWEvP3eb4zk2z5S6MAd8f7BwCSA_YjVK9MwBfZmrL-Hp_cRzQ6PiXXf-iSufsD449swNEqRaLZBS_zcOHtCqSHHUygbIR2DBL2u5_JNYCuqmKt84/s320/IMG_20160805_190714.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_jrEbPPh6YktIZOL79A-HvzTwUDfhWEvP3eb4zk2z5S6MAd8f7BwCSA_YjVK9MwBfZmrL-Hp_cRzQ6PiXXf-iSufsD449swNEqRaLZBS_zcOHtCqSHHUygbIR2DBL2u5_JNYCuqmKt84/s480/IMG_20160805_190714.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_jrEbPPh6YktIZOL79A-HvzTwUDfhWEvP3eb4zk2z5S6MAd8f7BwCSA_YjVK9MwBfZmrL-Hp_cRzQ6PiXXf-iSufsD449swNEqRaLZBS_zcOHtCqSHHUygbIR2DBL2u5_JNYCuqmKt84/s160/IMG_20160805_190714.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_jrEbPPh6YktIZOL79A-HvzTwUDfhWEvP3eb4zk2z5S6MAd8f7BwCSA_YjVK9MwBfZmrL-Hp_cRzQ6PiXXf-iSufsD449swNEqRaLZBS_zcOHtCqSHHUygbIR2DBL2u5_JNYCuqmKt84/s320/IMG_20160805_190714.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_jrEbPPh6YktIZOL79A-HvzTwUDfhWEvP3eb4zk2z5S6MAd8f7BwCSA_YjVK9MwBfZmrL-Hp_cRzQ6PiXXf-iSufsD449swNEqRaLZBS_zcOHtCqSHHUygbIR2DBL2u5_JNYCuqmKt84/s480/IMG_20160805_190714.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 238 - The Beatles Revolver 50 años"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -142,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s160/211e39bccf57b79c8093eea29fe06350.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s480/211e39bccf57b79c8093eea29fe06350.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s160/211e39bccf57b79c8093eea29fe06350.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s480/211e39bccf57b79c8093eea29fe06350.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 304 – Eddie Vedder + The Beatles"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -153,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht2JNZM61fddDt74okzrSowHHTvwpyaLPH-boxm3kfl2eUAjVSfFypB8HS-ZzhNiBLLUmnWNud2cp7HlHiYfZ3MhZtwNtOwHOc5wfgh96H_8AbEXbdWp2JcoHk_hOXt0guIoar7t0F3Mo/s320/11138069_1059842500700059_1600822914568625168_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht2JNZM61fddDt74okzrSowHHTvwpyaLPH-boxm3kfl2eUAjVSfFypB8HS-ZzhNiBLLUmnWNud2cp7HlHiYfZ3MhZtwNtOwHOc5wfgh96H_8AbEXbdWp2JcoHk_hOXt0guIoar7t0F3Mo/s160/11138069_1059842500700059_1600822914568625168_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht2JNZM61fddDt74okzrSowHHTvwpyaLPH-boxm3kfl2eUAjVSfFypB8HS-ZzhNiBLLUmnWNud2cp7HlHiYfZ3MhZtwNtOwHOc5wfgh96H_8AbEXbdWp2JcoHk_hOXt0guIoar7t0F3Mo/s320/11138069_1059842500700059_1600822914568625168_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht2JNZM61fddDt74okzrSowHHTvwpyaLPH-boxm3kfl2eUAjVSfFypB8HS-ZzhNiBLLUmnWNud2cp7HlHiYfZ3MhZtwNtOwHOc5wfgh96H_8AbEXbdWp2JcoHk_hOXt0guIoar7t0F3Mo/s480/11138069_1059842500700059_1600822914568625168_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht2JNZM61fddDt74okzrSowHHTvwpyaLPH-boxm3kfl2eUAjVSfFypB8HS-ZzhNiBLLUmnWNud2cp7HlHiYfZ3MhZtwNtOwHOc5wfgh96H_8AbEXbdWp2JcoHk_hOXt0guIoar7t0F3Mo/s160/11138069_1059842500700059_1600822914568625168_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht2JNZM61fddDt74okzrSowHHTvwpyaLPH-boxm3kfl2eUAjVSfFypB8HS-ZzhNiBLLUmnWNud2cp7HlHiYfZ3MhZtwNtOwHOc5wfgh96H_8AbEXbdWp2JcoHk_hOXt0guIoar7t0F3Mo/s320/11138069_1059842500700059_1600822914568625168_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht2JNZM61fddDt74okzrSowHHTvwpyaLPH-boxm3kfl2eUAjVSfFypB8HS-ZzhNiBLLUmnWNud2cp7HlHiYfZ3MhZtwNtOwHOc5wfgh96H_8AbEXbdWp2JcoHk_hOXt0guIoar7t0F3Mo/s480/11138069_1059842500700059_1600822914568625168_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 171 - The Beatles en Madrid"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -170,8 +167,7 @@
         <a class="related-bottom-card" href="programa-167-the-beatles-white-album-parte-1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9F_t3l1WbYx-lsdvRp-dRg3UruORHbG6RQ9zNhnv8wn2oqD8YSQj1CzdSALB_XWvCADDIR92v8Ci-QokdvVGv5VzfkMZ6Qpw4nW9nMEJHgrSJxi0CFPOCDOF_3BQ8PIWMaaRoBCzPjIs/s320/11062311_10152896666352747_4221624368018851863_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9F_t3l1WbYx-lsdvRp-dRg3UruORHbG6RQ9zNhnv8wn2oqD8YSQj1CzdSALB_XWvCADDIR92v8Ci-QokdvVGv5VzfkMZ6Qpw4nW9nMEJHgrSJxi0CFPOCDOF_3BQ8PIWMaaRoBCzPjIs/s320/11062311_10152896666352747_4221624368018851863_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9F_t3l1WbYx-lsdvRp-dRg3UruORHbG6RQ9zNhnv8wn2oqD8YSQj1CzdSALB_XWvCADDIR92v8Ci-QokdvVGv5VzfkMZ6Qpw4nW9nMEJHgrSJxi0CFPOCDOF_3BQ8PIWMaaRoBCzPjIs/s480/11062311_10152896666352747_4221624368018851863_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9F_t3l1WbYx-lsdvRp-dRg3UruORHbG6RQ9zNhnv8wn2oqD8YSQj1CzdSALB_XWvCADDIR92v8Ci-QokdvVGv5VzfkMZ6Qpw4nW9nMEJHgrSJxi0CFPOCDOF_3BQ8PIWMaaRoBCzPjIs/s640/11062311_10152896666352747_4221624368018851863_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9F_t3l1WbYx-lsdvRp-dRg3UruORHbG6RQ9zNhnv8wn2oqD8YSQj1CzdSALB_XWvCADDIR92v8Ci-QokdvVGv5VzfkMZ6Qpw4nW9nMEJHgrSJxi0CFPOCDOF_3BQ8PIWMaaRoBCzPjIs/s320/11062311_10152896666352747_4221624368018851863_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9F_t3l1WbYx-lsdvRp-dRg3UruORHbG6RQ9zNhnv8wn2oqD8YSQj1CzdSALB_XWvCADDIR92v8Ci-QokdvVGv5VzfkMZ6Qpw4nW9nMEJHgrSJxi0CFPOCDOF_3BQ8PIWMaaRoBCzPjIs/s480/11062311_10152896666352747_4221624368018851863_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9F_t3l1WbYx-lsdvRp-dRg3UruORHbG6RQ9zNhnv8wn2oqD8YSQj1CzdSALB_XWvCADDIR92v8Ci-QokdvVGv5VzfkMZ6Qpw4nW9nMEJHgrSJxi0CFPOCDOF_3BQ8PIWMaaRoBCzPjIs/s640/11062311_10152896666352747_4221624368018851863_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 167 - The Beatles White Album (Parte 1)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -182,8 +178,7 @@
           </a><a class="related-bottom-card" href="programa-457-the-beatles-the-white-album-cumple-50.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ2j3oPbDvLAP6JxdEHZ8T0cxqkwlcTYwZCCgswwHLmjI64Z1H5RP2nC_mxEW_UBr9XzsW1v82qKg2IhlwMFkHHC4ULdphWu-lEDHX888jEqxf3sb2Grb80G8B5QkW2UFHfrIChorx9UA/s320/b90457.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ2j3oPbDvLAP6JxdEHZ8T0cxqkwlcTYwZCCgswwHLmjI64Z1H5RP2nC_mxEW_UBr9XzsW1v82qKg2IhlwMFkHHC4ULdphWu-lEDHX888jEqxf3sb2Grb80G8B5QkW2UFHfrIChorx9UA/s320/b90457.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ2j3oPbDvLAP6JxdEHZ8T0cxqkwlcTYwZCCgswwHLmjI64Z1H5RP2nC_mxEW_UBr9XzsW1v82qKg2IhlwMFkHHC4ULdphWu-lEDHX888jEqxf3sb2Grb80G8B5QkW2UFHfrIChorx9UA/s480/b90457.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ2j3oPbDvLAP6JxdEHZ8T0cxqkwlcTYwZCCgswwHLmjI64Z1H5RP2nC_mxEW_UBr9XzsW1v82qKg2IhlwMFkHHC4ULdphWu-lEDHX888jEqxf3sb2Grb80G8B5QkW2UFHfrIChorx9UA/s640/b90457.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ2j3oPbDvLAP6JxdEHZ8T0cxqkwlcTYwZCCgswwHLmjI64Z1H5RP2nC_mxEW_UBr9XzsW1v82qKg2IhlwMFkHHC4ULdphWu-lEDHX888jEqxf3sb2Grb80G8B5QkW2UFHfrIChorx9UA/s320/b90457.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ2j3oPbDvLAP6JxdEHZ8T0cxqkwlcTYwZCCgswwHLmjI64Z1H5RP2nC_mxEW_UBr9XzsW1v82qKg2IhlwMFkHHC4ULdphWu-lEDHX888jEqxf3sb2Grb80G8B5QkW2UFHfrIChorx9UA/s480/b90457.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ2j3oPbDvLAP6JxdEHZ8T0cxqkwlcTYwZCCgswwHLmjI64Z1H5RP2nC_mxEW_UBr9XzsW1v82qKg2IhlwMFkHHC4ULdphWu-lEDHX888jEqxf3sb2Grb80G8B5QkW2UFHfrIChorx9UA/s640/b90457.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 457 - The Beatles - The White Album cumple 50"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -194,8 +189,7 @@
           </a><a class="related-bottom-card" href="p-811-especial-the-beatles-los-inicios-y-sus-influencias-cap-1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEj_gl8uqJxyrUeRCFPGurTF8kXjG1xTRjfwAWDYkZH9GgICTNxdEqqdv5ddMwCFcUI41gKFjZ2gvFWUyaFFoK6SLMOjZViKPuIjcXhEdTbvzkPWT4r4PvspfjTA0QelFxCTU4CKWoPNfyl9LaNgGFXNRfIk-7cf-pnBkZEdeQC4tPvdUQtoUtjVFiL9=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEj_gl8uqJxyrUeRCFPGurTF8kXjG1xTRjfwAWDYkZH9GgICTNxdEqqdv5ddMwCFcUI41gKFjZ2gvFWUyaFFoK6SLMOjZViKPuIjcXhEdTbvzkPWT4r4PvspfjTA0QelFxCTU4CKWoPNfyl9LaNgGFXNRfIk-7cf-pnBkZEdeQC4tPvdUQtoUtjVFiL9=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEj_gl8uqJxyrUeRCFPGurTF8kXjG1xTRjfwAWDYkZH9GgICTNxdEqqdv5ddMwCFcUI41gKFjZ2gvFWUyaFFoK6SLMOjZViKPuIjcXhEdTbvzkPWT4r4PvspfjTA0QelFxCTU4CKWoPNfyl9LaNgGFXNRfIk-7cf-pnBkZEdeQC4tPvdUQtoUtjVFiL9=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEj_gl8uqJxyrUeRCFPGurTF8kXjG1xTRjfwAWDYkZH9GgICTNxdEqqdv5ddMwCFcUI41gKFjZ2gvFWUyaFFoK6SLMOjZViKPuIjcXhEdTbvzkPWT4r4PvspfjTA0QelFxCTU4CKWoPNfyl9LaNgGFXNRfIk-7cf-pnBkZEdeQC4tPvdUQtoUtjVFiL9=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="P.811 - Especial The Beatles: los inicios y sus influencias (Cap.1)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

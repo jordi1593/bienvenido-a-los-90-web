@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Mudhoney — 20 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1128-el-recopilatorio-de-mark-arm-you-re-no-big-deal-1984-1994.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmjvf8j-dNkZ5uFFyJyusAzfrtC6FNg2uRpEn47SabgXJ6nVeBGnK0FjkvBsUu25_N4tzDxji8PC5K11ldQ780RE94i9e0RI5wnoprapOIzepA9IbNxWti3cKDimPS0zmN8uzwLp7B1plZ49_lT_JR5grtG3h_h5k9NvIrVq_6OCCA1Tvj6VOA39io26s/s320/B90_1128.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmjvf8j-dNkZ5uFFyJyusAzfrtC6FNg2uRpEn47SabgXJ6nVeBGnK0FjkvBsUu25_N4tzDxji8PC5K11ldQ780RE94i9e0RI5wnoprapOIzepA9IbNxWti3cKDimPS0zmN8uzwLp7B1plZ49_lT_JR5grtG3h_h5k9NvIrVq_6OCCA1Tvj6VOA39io26s/s160/B90_1128.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmjvf8j-dNkZ5uFFyJyusAzfrtC6FNg2uRpEn47SabgXJ6nVeBGnK0FjkvBsUu25_N4tzDxji8PC5K11ldQ780RE94i9e0RI5wnoprapOIzepA9IbNxWti3cKDimPS0zmN8uzwLp7B1plZ49_lT_JR5grtG3h_h5k9NvIrVq_6OCCA1Tvj6VOA39io26s/s320/B90_1128.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmjvf8j-dNkZ5uFFyJyusAzfrtC6FNg2uRpEn47SabgXJ6nVeBGnK0FjkvBsUu25_N4tzDxji8PC5K11ldQ780RE94i9e0RI5wnoprapOIzepA9IbNxWti3cKDimPS0zmN8uzwLp7B1plZ49_lT_JR5grtG3h_h5k9NvIrVq_6OCCA1Tvj6VOA39io26s/s480/B90_1128.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmjvf8j-dNkZ5uFFyJyusAzfrtC6FNg2uRpEn47SabgXJ6nVeBGnK0FjkvBsUu25_N4tzDxji8PC5K11ldQ780RE94i9e0RI5wnoprapOIzepA9IbNxWti3cKDimPS0zmN8uzwLp7B1plZ49_lT_JR5grtG3h_h5k9NvIrVq_6OCCA1Tvj6VOA39io26s/s160/B90_1128.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmjvf8j-dNkZ5uFFyJyusAzfrtC6FNg2uRpEn47SabgXJ6nVeBGnK0FjkvBsUu25_N4tzDxji8PC5K11ldQ780RE94i9e0RI5wnoprapOIzepA9IbNxWti3cKDimPS0zmN8uzwLp7B1plZ49_lT_JR5grtG3h_h5k9NvIrVq_6OCCA1Tvj6VOA39io26s/s320/B90_1128.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmjvf8j-dNkZ5uFFyJyusAzfrtC6FNg2uRpEn47SabgXJ6nVeBGnK0FjkvBsUu25_N4tzDxji8PC5K11ldQ780RE94i9e0RI5wnoprapOIzepA9IbNxWti3cKDimPS0zmN8uzwLp7B1plZ49_lT_JR5grtG3h_h5k9NvIrVq_6OCCA1Tvj6VOA39io26s/s480/B90_1128.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1128 - El recopilatorio de Mark Arm: You’re No Big Deal (1984-1994)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/1102-una-hora-de-grunge-sin-casi-pausas.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s320/B90_1102.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s160/B90_1102.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s320/B90_1102.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s480/B90_1102.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s160/B90_1102.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s320/B90_1102.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s480/B90_1102.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1102 - Una hora de GRUNGE sin (casi) pausas"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-993-entrevista-a-mark-arm.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdINsG9rdx99uoPnnAxNpUTW-hEPYdicQDeI4QogC7AOAa7lDgNmLhzejFfTRvyqlKjevLb8x9tIHlbYXfMrYE6yl93dnpDnP9rTHXfIvrWKI9Nqf0o899OLqKBWA6WH-Ibqpo1m7m5geoPiDJJGj4w7wRPd_R5HnIKrA51A4-echsNLsgM87UXsJ9cCo/s320/2.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdINsG9rdx99uoPnnAxNpUTW-hEPYdicQDeI4QogC7AOAa7lDgNmLhzejFfTRvyqlKjevLb8x9tIHlbYXfMrYE6yl93dnpDnP9rTHXfIvrWKI9Nqf0o899OLqKBWA6WH-Ibqpo1m7m5geoPiDJJGj4w7wRPd_R5HnIKrA51A4-echsNLsgM87UXsJ9cCo/s160/2.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdINsG9rdx99uoPnnAxNpUTW-hEPYdicQDeI4QogC7AOAa7lDgNmLhzejFfTRvyqlKjevLb8x9tIHlbYXfMrYE6yl93dnpDnP9rTHXfIvrWKI9Nqf0o899OLqKBWA6WH-Ibqpo1m7m5geoPiDJJGj4w7wRPd_R5HnIKrA51A4-echsNLsgM87UXsJ9cCo/s320/2.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdINsG9rdx99uoPnnAxNpUTW-hEPYdicQDeI4QogC7AOAa7lDgNmLhzejFfTRvyqlKjevLb8x9tIHlbYXfMrYE6yl93dnpDnP9rTHXfIvrWKI9Nqf0o899OLqKBWA6WH-Ibqpo1m7m5geoPiDJJGj4w7wRPd_R5HnIKrA51A4-echsNLsgM87UXsJ9cCo/s480/2.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdINsG9rdx99uoPnnAxNpUTW-hEPYdicQDeI4QogC7AOAa7lDgNmLhzejFfTRvyqlKjevLb8x9tIHlbYXfMrYE6yl93dnpDnP9rTHXfIvrWKI9Nqf0o899OLqKBWA6WH-Ibqpo1m7m5geoPiDJJGj4w7wRPd_R5HnIKrA51A4-echsNLsgM87UXsJ9cCo/s160/2.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdINsG9rdx99uoPnnAxNpUTW-hEPYdicQDeI4QogC7AOAa7lDgNmLhzejFfTRvyqlKjevLb8x9tIHlbYXfMrYE6yl93dnpDnP9rTHXfIvrWKI9Nqf0o899OLqKBWA6WH-Ibqpo1m7m5geoPiDJJGj4w7wRPd_R5HnIKrA51A4-echsNLsgM87UXsJ9cCo/s320/2.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdINsG9rdx99uoPnnAxNpUTW-hEPYdicQDeI4QogC7AOAa7lDgNmLhzejFfTRvyqlKjevLb8x9tIHlbYXfMrYE6yl93dnpDnP9rTHXfIvrWKI9Nqf0o899OLqKBWA6WH-Ibqpo1m7m5geoPiDJJGj4w7wRPd_R5HnIKrA51A4-echsNLsgM87UXsJ9cCo/s480/2.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.993 - Entrevista a Mark Arm"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-961-entrevista-con-charles-peterson-el-fotografo-del-grunge.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s320/book_600x600.webp"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s160/book_600x600.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s320/book_600x600.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s480/book_600x600.webp 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s160/book_600x600.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s320/book_600x600.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s480/book_600x600.webp 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.961 - Entrevista con Charles Peterson, el fotógrafo del grunge"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/p-867-megan-jasper-de-recepcionista-a-jefa-de-sub-pop.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMJfcRlZWLBq9Pyx7FSm9f7Faohd_O5iojIv7hAVbsTNA4hEUD4zrv5VHxJHmo0YwU--vByBP8Etm8CbAyp0C_Pb2d_oqMi1nJ3-Wv3pRA-fxIB27pBUjxn4jp0XsKI-mksNIgsWO_uln2YP6PSXmq5VDgUK7pjqIQIZwwBrB4OQrxtqvNIgU95a_A/s320/megan_jasper_3_of_4.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMJfcRlZWLBq9Pyx7FSm9f7Faohd_O5iojIv7hAVbsTNA4hEUD4zrv5VHxJHmo0YwU--vByBP8Etm8CbAyp0C_Pb2d_oqMi1nJ3-Wv3pRA-fxIB27pBUjxn4jp0XsKI-mksNIgsWO_uln2YP6PSXmq5VDgUK7pjqIQIZwwBrB4OQrxtqvNIgU95a_A/s160/megan_jasper_3_of_4.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMJfcRlZWLBq9Pyx7FSm9f7Faohd_O5iojIv7hAVbsTNA4hEUD4zrv5VHxJHmo0YwU--vByBP8Etm8CbAyp0C_Pb2d_oqMi1nJ3-Wv3pRA-fxIB27pBUjxn4jp0XsKI-mksNIgsWO_uln2YP6PSXmq5VDgUK7pjqIQIZwwBrB4OQrxtqvNIgU95a_A/s320/megan_jasper_3_of_4.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMJfcRlZWLBq9Pyx7FSm9f7Faohd_O5iojIv7hAVbsTNA4hEUD4zrv5VHxJHmo0YwU--vByBP8Etm8CbAyp0C_Pb2d_oqMi1nJ3-Wv3pRA-fxIB27pBUjxn4jp0XsKI-mksNIgsWO_uln2YP6PSXmq5VDgUK7pjqIQIZwwBrB4OQrxtqvNIgU95a_A/s480/megan_jasper_3_of_4.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMJfcRlZWLBq9Pyx7FSm9f7Faohd_O5iojIv7hAVbsTNA4hEUD4zrv5VHxJHmo0YwU--vByBP8Etm8CbAyp0C_Pb2d_oqMi1nJ3-Wv3pRA-fxIB27pBUjxn4jp0XsKI-mksNIgsWO_uln2YP6PSXmq5VDgUK7pjqIQIZwwBrB4OQrxtqvNIgU95a_A/s160/megan_jasper_3_of_4.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMJfcRlZWLBq9Pyx7FSm9f7Faohd_O5iojIv7hAVbsTNA4hEUD4zrv5VHxJHmo0YwU--vByBP8Etm8CbAyp0C_Pb2d_oqMi1nJ3-Wv3pRA-fxIB27pBUjxn4jp0XsKI-mksNIgsWO_uln2YP6PSXmq5VDgUK7pjqIQIZwwBrB4OQrxtqvNIgU95a_A/s320/megan_jasper_3_of_4.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMJfcRlZWLBq9Pyx7FSm9f7Faohd_O5iojIv7hAVbsTNA4hEUD4zrv5VHxJHmo0YwU--vByBP8Etm8CbAyp0C_Pb2d_oqMi1nJ3-Wv3pRA-fxIB27pBUjxn4jp0XsKI-mksNIgsWO_uln2YP6PSXmq5VDgUK7pjqIQIZwwBrB4OQrxtqvNIgU95a_A/s480/megan_jasper_3_of_4.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.867 - Megan Jasper, de recepcionista a jefa de Sub Pop"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/p-862-la-historia-de-mudhoney-en-los-90-s.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRyM_9nvawqj_K-uEC4596irwCgZqKDiwkXbEQldEOZ7m8p2heXFymbs1sQQPHPFA3qiwFgu5LtItdQyhe_ocSmNidhAfPXXqG2EM_IrVyXRzKlF1izkDnG9osR414ZNc61o32TPKJWTkMsyeRNYGkQbXi9f5MR-VTqBOAGVfvSUsW8OBM6uyLNPpd/s320/EVBYmqaWAAEjNfa.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRyM_9nvawqj_K-uEC4596irwCgZqKDiwkXbEQldEOZ7m8p2heXFymbs1sQQPHPFA3qiwFgu5LtItdQyhe_ocSmNidhAfPXXqG2EM_IrVyXRzKlF1izkDnG9osR414ZNc61o32TPKJWTkMsyeRNYGkQbXi9f5MR-VTqBOAGVfvSUsW8OBM6uyLNPpd/s160/EVBYmqaWAAEjNfa.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRyM_9nvawqj_K-uEC4596irwCgZqKDiwkXbEQldEOZ7m8p2heXFymbs1sQQPHPFA3qiwFgu5LtItdQyhe_ocSmNidhAfPXXqG2EM_IrVyXRzKlF1izkDnG9osR414ZNc61o32TPKJWTkMsyeRNYGkQbXi9f5MR-VTqBOAGVfvSUsW8OBM6uyLNPpd/s320/EVBYmqaWAAEjNfa.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRyM_9nvawqj_K-uEC4596irwCgZqKDiwkXbEQldEOZ7m8p2heXFymbs1sQQPHPFA3qiwFgu5LtItdQyhe_ocSmNidhAfPXXqG2EM_IrVyXRzKlF1izkDnG9osR414ZNc61o32TPKJWTkMsyeRNYGkQbXi9f5MR-VTqBOAGVfvSUsW8OBM6uyLNPpd/s480/EVBYmqaWAAEjNfa.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRyM_9nvawqj_K-uEC4596irwCgZqKDiwkXbEQldEOZ7m8p2heXFymbs1sQQPHPFA3qiwFgu5LtItdQyhe_ocSmNidhAfPXXqG2EM_IrVyXRzKlF1izkDnG9osR414ZNc61o32TPKJWTkMsyeRNYGkQbXi9f5MR-VTqBOAGVfvSUsW8OBM6uyLNPpd/s160/EVBYmqaWAAEjNfa.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRyM_9nvawqj_K-uEC4596irwCgZqKDiwkXbEQldEOZ7m8p2heXFymbs1sQQPHPFA3qiwFgu5LtItdQyhe_ocSmNidhAfPXXqG2EM_IrVyXRzKlF1izkDnG9osR414ZNc61o32TPKJWTkMsyeRNYGkQbXi9f5MR-VTqBOAGVfvSUsW8OBM6uyLNPpd/s320/EVBYmqaWAAEjNfa.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRyM_9nvawqj_K-uEC4596irwCgZqKDiwkXbEQldEOZ7m8p2heXFymbs1sQQPHPFA3qiwFgu5LtItdQyhe_ocSmNidhAfPXXqG2EM_IrVyXRzKlF1izkDnG9osR414ZNc61o32TPKJWTkMsyeRNYGkQbXi9f5MR-VTqBOAGVfvSUsW8OBM6uyLNPpd/s480/EVBYmqaWAAEjNfa.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.862 - La historia de Mudhoney en los 90&#39;s"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/p-732-visitamos-el-crocodile-de-seattle.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnDFmdMF3a1Gn1EPjMGfBhiT0rGYl5IBpO08XOc15A9-HNO72xtV1gqdLS2ZuxWkZEKxSrxO89v90W-OhdhL0UXuYM6uhv29eLoKihFiN2-bxHmag6U3aJenj18DJFKbfHoztNL-W1YV8/s320/R-1977493-1261615112.jpeg.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnDFmdMF3a1Gn1EPjMGfBhiT0rGYl5IBpO08XOc15A9-HNO72xtV1gqdLS2ZuxWkZEKxSrxO89v90W-OhdhL0UXuYM6uhv29eLoKihFiN2-bxHmag6U3aJenj18DJFKbfHoztNL-W1YV8/s160/R-1977493-1261615112.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnDFmdMF3a1Gn1EPjMGfBhiT0rGYl5IBpO08XOc15A9-HNO72xtV1gqdLS2ZuxWkZEKxSrxO89v90W-OhdhL0UXuYM6uhv29eLoKihFiN2-bxHmag6U3aJenj18DJFKbfHoztNL-W1YV8/s320/R-1977493-1261615112.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnDFmdMF3a1Gn1EPjMGfBhiT0rGYl5IBpO08XOc15A9-HNO72xtV1gqdLS2ZuxWkZEKxSrxO89v90W-OhdhL0UXuYM6uhv29eLoKihFiN2-bxHmag6U3aJenj18DJFKbfHoztNL-W1YV8/s480/R-1977493-1261615112.jpeg.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnDFmdMF3a1Gn1EPjMGfBhiT0rGYl5IBpO08XOc15A9-HNO72xtV1gqdLS2ZuxWkZEKxSrxO89v90W-OhdhL0UXuYM6uhv29eLoKihFiN2-bxHmag6U3aJenj18DJFKbfHoztNL-W1YV8/s160/R-1977493-1261615112.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnDFmdMF3a1Gn1EPjMGfBhiT0rGYl5IBpO08XOc15A9-HNO72xtV1gqdLS2ZuxWkZEKxSrxO89v90W-OhdhL0UXuYM6uhv29eLoKihFiN2-bxHmag6U3aJenj18DJFKbfHoztNL-W1YV8/s320/R-1977493-1261615112.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnDFmdMF3a1Gn1EPjMGfBhiT0rGYl5IBpO08XOc15A9-HNO72xtV1gqdLS2ZuxWkZEKxSrxO89v90W-OhdhL0UXuYM6uhv29eLoKihFiN2-bxHmag6U3aJenj18DJFKbfHoztNL-W1YV8/s480/R-1977493-1261615112.jpeg.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.732 - Visitamos el &#39;Crocodile&#39; de Seattle"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/p-697-la-historia-de-sub-pop-en-10-canciones.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s160/3201.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s480/3201.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s160/3201.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s480/3201.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.697 - La historia de SUB POP en 10 canciones"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -180,8 +172,7 @@
         <a class="episode-cover-link" href="../episodios/p-631-los-discos-favoritos-de-mark-arm-de-mudhoney.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg39Xn_G6wLjhev0dAzYYbZDodBQkF1ceb8SE8TaeVjNi4tw-0jM6tx_hZNYdHlrFnLlTZtBupcZMw9_kkaxH8A14u0wT7T45P4VsfcgtDP5sroDqCK-_vIIpAO1fyLA9b7w5mxEN4qNn8/s320/mark_arm1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg39Xn_G6wLjhev0dAzYYbZDodBQkF1ceb8SE8TaeVjNi4tw-0jM6tx_hZNYdHlrFnLlTZtBupcZMw9_kkaxH8A14u0wT7T45P4VsfcgtDP5sroDqCK-_vIIpAO1fyLA9b7w5mxEN4qNn8/s160/mark_arm1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg39Xn_G6wLjhev0dAzYYbZDodBQkF1ceb8SE8TaeVjNi4tw-0jM6tx_hZNYdHlrFnLlTZtBupcZMw9_kkaxH8A14u0wT7T45P4VsfcgtDP5sroDqCK-_vIIpAO1fyLA9b7w5mxEN4qNn8/s320/mark_arm1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg39Xn_G6wLjhev0dAzYYbZDodBQkF1ceb8SE8TaeVjNi4tw-0jM6tx_hZNYdHlrFnLlTZtBupcZMw9_kkaxH8A14u0wT7T45P4VsfcgtDP5sroDqCK-_vIIpAO1fyLA9b7w5mxEN4qNn8/s480/mark_arm1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg39Xn_G6wLjhev0dAzYYbZDodBQkF1ceb8SE8TaeVjNi4tw-0jM6tx_hZNYdHlrFnLlTZtBupcZMw9_kkaxH8A14u0wT7T45P4VsfcgtDP5sroDqCK-_vIIpAO1fyLA9b7w5mxEN4qNn8/s160/mark_arm1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg39Xn_G6wLjhev0dAzYYbZDodBQkF1ceb8SE8TaeVjNi4tw-0jM6tx_hZNYdHlrFnLlTZtBupcZMw9_kkaxH8A14u0wT7T45P4VsfcgtDP5sroDqCK-_vIIpAO1fyLA9b7w5mxEN4qNn8/s320/mark_arm1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg39Xn_G6wLjhev0dAzYYbZDodBQkF1ceb8SE8TaeVjNi4tw-0jM6tx_hZNYdHlrFnLlTZtBupcZMw9_kkaxH8A14u0wT7T45P4VsfcgtDP5sroDqCK-_vIIpAO1fyLA9b7w5mxEN4qNn8/s480/mark_arm1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.631 Los discos favoritos de Mark Arm de Mudhoney"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -194,8 +185,7 @@
         <a class="episode-cover-link" href="../episodios/p-630-kim-thayil-de-soundgarden-habla-de-sus-discos-favoritos-del-grunge.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s160/kimthayil.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s480/kimthayil.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s160/kimthayil.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s480/kimthayil.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.630 - Kim Thayil de Soundgarden habla de sus discos favoritos del grunge"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -208,8 +198,7 @@
         <a class="episode-cover-link" href="../episodios/p621-los-discos-solidarios-de-los-90.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl-ohoDC_eedGc0QpupPvt1HyZu_eisUucitq4fOoYP4eKqXJt3Z3iSeV6nafg5SHbScpAyzqNZUNcw71IbIDIGmHfiZ8qY9HjhEorBc1m7Qtt41Qe2uGrNw96RG9CfQus2XtDThk20Sw/s320/b90_621_2.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl-ohoDC_eedGc0QpupPvt1HyZu_eisUucitq4fOoYP4eKqXJt3Z3iSeV6nafg5SHbScpAyzqNZUNcw71IbIDIGmHfiZ8qY9HjhEorBc1m7Qtt41Qe2uGrNw96RG9CfQus2XtDThk20Sw/s160/b90_621_2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl-ohoDC_eedGc0QpupPvt1HyZu_eisUucitq4fOoYP4eKqXJt3Z3iSeV6nafg5SHbScpAyzqNZUNcw71IbIDIGmHfiZ8qY9HjhEorBc1m7Qtt41Qe2uGrNw96RG9CfQus2XtDThk20Sw/s320/b90_621_2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl-ohoDC_eedGc0QpupPvt1HyZu_eisUucitq4fOoYP4eKqXJt3Z3iSeV6nafg5SHbScpAyzqNZUNcw71IbIDIGmHfiZ8qY9HjhEorBc1m7Qtt41Qe2uGrNw96RG9CfQus2XtDThk20Sw/s480/b90_621_2.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl-ohoDC_eedGc0QpupPvt1HyZu_eisUucitq4fOoYP4eKqXJt3Z3iSeV6nafg5SHbScpAyzqNZUNcw71IbIDIGmHfiZ8qY9HjhEorBc1m7Qtt41Qe2uGrNw96RG9CfQus2XtDThk20Sw/s160/b90_621_2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl-ohoDC_eedGc0QpupPvt1HyZu_eisUucitq4fOoYP4eKqXJt3Z3iSeV6nafg5SHbScpAyzqNZUNcw71IbIDIGmHfiZ8qY9HjhEorBc1m7Qtt41Qe2uGrNw96RG9CfQus2XtDThk20Sw/s320/b90_621_2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl-ohoDC_eedGc0QpupPvt1HyZu_eisUucitq4fOoYP4eKqXJt3Z3iSeV6nafg5SHbScpAyzqNZUNcw71IbIDIGmHfiZ8qY9HjhEorBc1m7Qtt41Qe2uGrNw96RG9CfQus2XtDThk20Sw/s480/b90_621_2.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P621 - Los discos solidarios de los 90"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -222,8 +211,7 @@
         <a class="episode-cover-link" href="../episodios/programa-434-mudhoney-digital-garbage.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHsY6XRU1TaxonvGM-IwgAC_7XJ2w2Gtx2cBnYbsI-0VC8lmzijnCsOBk49gJeFnMEx-NDqFKEokAp6miksL_uboM7Gyl5UtzwCzMkjYeVxtGM0_MmYNjEjcrrl0WhGAy-QPfkz3I0yo/s320/b90-434.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHsY6XRU1TaxonvGM-IwgAC_7XJ2w2Gtx2cBnYbsI-0VC8lmzijnCsOBk49gJeFnMEx-NDqFKEokAp6miksL_uboM7Gyl5UtzwCzMkjYeVxtGM0_MmYNjEjcrrl0WhGAy-QPfkz3I0yo/s160/b90-434.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHsY6XRU1TaxonvGM-IwgAC_7XJ2w2Gtx2cBnYbsI-0VC8lmzijnCsOBk49gJeFnMEx-NDqFKEokAp6miksL_uboM7Gyl5UtzwCzMkjYeVxtGM0_MmYNjEjcrrl0WhGAy-QPfkz3I0yo/s320/b90-434.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHsY6XRU1TaxonvGM-IwgAC_7XJ2w2Gtx2cBnYbsI-0VC8lmzijnCsOBk49gJeFnMEx-NDqFKEokAp6miksL_uboM7Gyl5UtzwCzMkjYeVxtGM0_MmYNjEjcrrl0WhGAy-QPfkz3I0yo/s480/b90-434.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHsY6XRU1TaxonvGM-IwgAC_7XJ2w2Gtx2cBnYbsI-0VC8lmzijnCsOBk49gJeFnMEx-NDqFKEokAp6miksL_uboM7Gyl5UtzwCzMkjYeVxtGM0_MmYNjEjcrrl0WhGAy-QPfkz3I0yo/s160/b90-434.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHsY6XRU1TaxonvGM-IwgAC_7XJ2w2Gtx2cBnYbsI-0VC8lmzijnCsOBk49gJeFnMEx-NDqFKEokAp6miksL_uboM7Gyl5UtzwCzMkjYeVxtGM0_MmYNjEjcrrl0WhGAy-QPfkz3I0yo/s320/b90-434.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHsY6XRU1TaxonvGM-IwgAC_7XJ2w2Gtx2cBnYbsI-0VC8lmzijnCsOBk49gJeFnMEx-NDqFKEokAp6miksL_uboM7Gyl5UtzwCzMkjYeVxtGM0_MmYNjEjcrrl0WhGAy-QPfkz3I0yo/s480/b90-434.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 434 - Mudhoney - Digital Garbage"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -236,8 +224,7 @@
         <a class="episode-cover-link" href="../episodios/programa-338-singles-deluxe.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimacYP1Zzen9GMmQsJYfufVudeUJOueJKaxVOl_5pRn5y1rbtHcy9JEKO6X-MEB5akFXL2bevK0HoFFIsJ_Dq_L3hbhqXnXkE1fH3NvSB98mUY0ROgBWe5m_Vln-zGwzT4hAgArfcTsGM/s320/51MbbkxFxL._SX466_.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimacYP1Zzen9GMmQsJYfufVudeUJOueJKaxVOl_5pRn5y1rbtHcy9JEKO6X-MEB5akFXL2bevK0HoFFIsJ_Dq_L3hbhqXnXkE1fH3NvSB98mUY0ROgBWe5m_Vln-zGwzT4hAgArfcTsGM/s160/51MbbkxFxL._SX466_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimacYP1Zzen9GMmQsJYfufVudeUJOueJKaxVOl_5pRn5y1rbtHcy9JEKO6X-MEB5akFXL2bevK0HoFFIsJ_Dq_L3hbhqXnXkE1fH3NvSB98mUY0ROgBWe5m_Vln-zGwzT4hAgArfcTsGM/s320/51MbbkxFxL._SX466_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimacYP1Zzen9GMmQsJYfufVudeUJOueJKaxVOl_5pRn5y1rbtHcy9JEKO6X-MEB5akFXL2bevK0HoFFIsJ_Dq_L3hbhqXnXkE1fH3NvSB98mUY0ROgBWe5m_Vln-zGwzT4hAgArfcTsGM/s480/51MbbkxFxL._SX466_.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimacYP1Zzen9GMmQsJYfufVudeUJOueJKaxVOl_5pRn5y1rbtHcy9JEKO6X-MEB5akFXL2bevK0HoFFIsJ_Dq_L3hbhqXnXkE1fH3NvSB98mUY0ROgBWe5m_Vln-zGwzT4hAgArfcTsGM/s160/51MbbkxFxL._SX466_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimacYP1Zzen9GMmQsJYfufVudeUJOueJKaxVOl_5pRn5y1rbtHcy9JEKO6X-MEB5akFXL2bevK0HoFFIsJ_Dq_L3hbhqXnXkE1fH3NvSB98mUY0ROgBWe5m_Vln-zGwzT4hAgArfcTsGM/s320/51MbbkxFxL._SX466_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimacYP1Zzen9GMmQsJYfufVudeUJOueJKaxVOl_5pRn5y1rbtHcy9JEKO6X-MEB5akFXL2bevK0HoFFIsJ_Dq_L3hbhqXnXkE1fH3NvSB98mUY0ROgBWe5m_Vln-zGwzT4hAgArfcTsGM/s480/51MbbkxFxL._SX466_.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 338 - Singles Deluxe"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -250,8 +237,7 @@
         <a class="episode-cover-link" href="../episodios/programa-327-actualidad-musical-enero-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s320/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s160/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s320/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s480/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s160/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s320/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s480/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 327 – Actualidad musical (Enero 2018)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -264,8 +250,7 @@
         <a class="episode-cover-link" href="../episodios/programa-251-y-el-grunge-llego-a-europa-1989.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA86uY8QsteqG2XOaqvp1QzJenIoPThTM91GFG0lDsT50cEC6IU8OqwI-56T66A_G3hLjcuZak23FHBCiOnK3_VS-78xvPdLYBLRoc-VcAMIR1NbNO9iaRioySjQoD8Q3Of6mXjC8jOjY/s320/tadnirvana.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA86uY8QsteqG2XOaqvp1QzJenIoPThTM91GFG0lDsT50cEC6IU8OqwI-56T66A_G3hLjcuZak23FHBCiOnK3_VS-78xvPdLYBLRoc-VcAMIR1NbNO9iaRioySjQoD8Q3Of6mXjC8jOjY/s160/tadnirvana.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA86uY8QsteqG2XOaqvp1QzJenIoPThTM91GFG0lDsT50cEC6IU8OqwI-56T66A_G3hLjcuZak23FHBCiOnK3_VS-78xvPdLYBLRoc-VcAMIR1NbNO9iaRioySjQoD8Q3Of6mXjC8jOjY/s320/tadnirvana.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA86uY8QsteqG2XOaqvp1QzJenIoPThTM91GFG0lDsT50cEC6IU8OqwI-56T66A_G3hLjcuZak23FHBCiOnK3_VS-78xvPdLYBLRoc-VcAMIR1NbNO9iaRioySjQoD8Q3Of6mXjC8jOjY/s480/tadnirvana.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA86uY8QsteqG2XOaqvp1QzJenIoPThTM91GFG0lDsT50cEC6IU8OqwI-56T66A_G3hLjcuZak23FHBCiOnK3_VS-78xvPdLYBLRoc-VcAMIR1NbNO9iaRioySjQoD8Q3Of6mXjC8jOjY/s160/tadnirvana.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA86uY8QsteqG2XOaqvp1QzJenIoPThTM91GFG0lDsT50cEC6IU8OqwI-56T66A_G3hLjcuZak23FHBCiOnK3_VS-78xvPdLYBLRoc-VcAMIR1NbNO9iaRioySjQoD8Q3Of6mXjC8jOjY/s320/tadnirvana.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA86uY8QsteqG2XOaqvp1QzJenIoPThTM91GFG0lDsT50cEC6IU8OqwI-56T66A_G3hLjcuZak23FHBCiOnK3_VS-78xvPdLYBLRoc-VcAMIR1NbNO9iaRioySjQoD8Q3Of6mXjC8jOjY/s480/tadnirvana.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 251 - Y el grunge llegó a Europa (1989)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -278,8 +263,7 @@
         <a class="episode-cover-link" href="../episodios/programa-160-asesinos-natos-sweet-home-y-singles-con-angel-agudo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 160 - Asesinos Natos, Sweet Home y Singles con Ángel Agudo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -292,8 +276,7 @@
         <a class="episode-cover-link" href="../episodios/programa-146-pearl-jam-self-pollution-radio-1995.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNT3Ns_3oAjghJsedukU1OJff20cmtMqG57HlU57p8IqbSS_se_B2raN5SsJRJ5WNMjJn2rSMadmdPtoTxhXvziOEqwWNN8qA5KjFCxnRj1m_kQ6HfSQqK9BGIAjBkGw0OQnzj3_Mkqn0/s320/4935704732_a14f6d5623_b.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNT3Ns_3oAjghJsedukU1OJff20cmtMqG57HlU57p8IqbSS_se_B2raN5SsJRJ5WNMjJn2rSMadmdPtoTxhXvziOEqwWNN8qA5KjFCxnRj1m_kQ6HfSQqK9BGIAjBkGw0OQnzj3_Mkqn0/s160/4935704732_a14f6d5623_b.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNT3Ns_3oAjghJsedukU1OJff20cmtMqG57HlU57p8IqbSS_se_B2raN5SsJRJ5WNMjJn2rSMadmdPtoTxhXvziOEqwWNN8qA5KjFCxnRj1m_kQ6HfSQqK9BGIAjBkGw0OQnzj3_Mkqn0/s320/4935704732_a14f6d5623_b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNT3Ns_3oAjghJsedukU1OJff20cmtMqG57HlU57p8IqbSS_se_B2raN5SsJRJ5WNMjJn2rSMadmdPtoTxhXvziOEqwWNN8qA5KjFCxnRj1m_kQ6HfSQqK9BGIAjBkGw0OQnzj3_Mkqn0/s480/4935704732_a14f6d5623_b.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNT3Ns_3oAjghJsedukU1OJff20cmtMqG57HlU57p8IqbSS_se_B2raN5SsJRJ5WNMjJn2rSMadmdPtoTxhXvziOEqwWNN8qA5KjFCxnRj1m_kQ6HfSQqK9BGIAjBkGw0OQnzj3_Mkqn0/s160/4935704732_a14f6d5623_b.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNT3Ns_3oAjghJsedukU1OJff20cmtMqG57HlU57p8IqbSS_se_B2raN5SsJRJ5WNMjJn2rSMadmdPtoTxhXvziOEqwWNN8qA5KjFCxnRj1m_kQ6HfSQqK9BGIAjBkGw0OQnzj3_Mkqn0/s320/4935704732_a14f6d5623_b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNT3Ns_3oAjghJsedukU1OJff20cmtMqG57HlU57p8IqbSS_se_B2raN5SsJRJ5WNMjJn2rSMadmdPtoTxhXvziOEqwWNN8qA5KjFCxnRj1m_kQ6HfSQqK9BGIAjBkGw0OQnzj3_Mkqn0/s480/4935704732_a14f6d5623_b.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 146 - Pearl Jam Self Pollution Radio (1995)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -306,8 +289,7 @@
         <a class="episode-cover-link" href="../episodios/programa-127-seattle-en-los-90.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s320/band-map-v1_1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s160/band-map-v1_1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s320/band-map-v1_1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s480/band-map-v1_1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s160/band-map-v1_1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s320/band-map-v1_1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdKi00QXiFeSfEE1Ri4P-WTzSHfBlKbxkBgGHf9kU-evfzU0HkmQt-HL_x57xGwGQNoivZhJlVjNUSktu_LPn4U6XfPK5M2b_wAn6UP0uk1K9gqyaZssJyXnnbOaMOstPu5A2mzmbWEU/s480/band-map-v1_1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 127 - Seattle en los 90"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -320,8 +302,7 @@
         <a class="episode-cover-link" href="../episodios/programa-98-sucio-y-rapido-nirvana-sub-pop-sessions.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 98: Sucio y rápido... Nirvana Sub Pop sessions"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -334,8 +315,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-36-sub-pop-200.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa 36 - SUB POP 200"
                 loading="lazy" width="320" height="213" />
         </a>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Gut Derby — 7 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1024-homenaje-a-dover.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8jPH9pAM6snKfm4ezZE5IPfW6DXJ8DcOBzEkhAvQmqID_GWKUciOz-3GX07msP5dznBnpgqGlf4r08Q-umZQNKQzVMsUVVyWXPPUWLqM3ITffVN4xYVBD7O9UTT40KlIA1pG9bG3iZ-q9M5V1I0t6p2J1ed7UcYfZBP8ZGYd3SGAcGhnHehNqTAgqoIs/s320/Imagen%20de%20WhatsApp%202024-09-24%20a%20las%2008.25.41_146010dd.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8jPH9pAM6snKfm4ezZE5IPfW6DXJ8DcOBzEkhAvQmqID_GWKUciOz-3GX07msP5dznBnpgqGlf4r08Q-umZQNKQzVMsUVVyWXPPUWLqM3ITffVN4xYVBD7O9UTT40KlIA1pG9bG3iZ-q9M5V1I0t6p2J1ed7UcYfZBP8ZGYd3SGAcGhnHehNqTAgqoIs/s160/Imagen%20de%20WhatsApp%202024-09-24%20a%20las%2008.25.41_146010dd.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8jPH9pAM6snKfm4ezZE5IPfW6DXJ8DcOBzEkhAvQmqID_GWKUciOz-3GX07msP5dznBnpgqGlf4r08Q-umZQNKQzVMsUVVyWXPPUWLqM3ITffVN4xYVBD7O9UTT40KlIA1pG9bG3iZ-q9M5V1I0t6p2J1ed7UcYfZBP8ZGYd3SGAcGhnHehNqTAgqoIs/s320/Imagen%20de%20WhatsApp%202024-09-24%20a%20las%2008.25.41_146010dd.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8jPH9pAM6snKfm4ezZE5IPfW6DXJ8DcOBzEkhAvQmqID_GWKUciOz-3GX07msP5dznBnpgqGlf4r08Q-umZQNKQzVMsUVVyWXPPUWLqM3ITffVN4xYVBD7O9UTT40KlIA1pG9bG3iZ-q9M5V1I0t6p2J1ed7UcYfZBP8ZGYd3SGAcGhnHehNqTAgqoIs/s480/Imagen%20de%20WhatsApp%202024-09-24%20a%20las%2008.25.41_146010dd.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8jPH9pAM6snKfm4ezZE5IPfW6DXJ8DcOBzEkhAvQmqID_GWKUciOz-3GX07msP5dznBnpgqGlf4r08Q-umZQNKQzVMsUVVyWXPPUWLqM3ITffVN4xYVBD7O9UTT40KlIA1pG9bG3iZ-q9M5V1I0t6p2J1ed7UcYfZBP8ZGYd3SGAcGhnHehNqTAgqoIs/s160/Imagen%20de%20WhatsApp%202024-09-24%20a%20las%2008.25.41_146010dd.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8jPH9pAM6snKfm4ezZE5IPfW6DXJ8DcOBzEkhAvQmqID_GWKUciOz-3GX07msP5dznBnpgqGlf4r08Q-umZQNKQzVMsUVVyWXPPUWLqM3ITffVN4xYVBD7O9UTT40KlIA1pG9bG3iZ-q9M5V1I0t6p2J1ed7UcYfZBP8ZGYd3SGAcGhnHehNqTAgqoIs/s320/Imagen%20de%20WhatsApp%202024-09-24%20a%20las%2008.25.41_146010dd.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8jPH9pAM6snKfm4ezZE5IPfW6DXJ8DcOBzEkhAvQmqID_GWKUciOz-3GX07msP5dznBnpgqGlf4r08Q-umZQNKQzVMsUVVyWXPPUWLqM3ITffVN4xYVBD7O9UTT40KlIA1pG9bG3iZ-q9M5V1I0t6p2J1ed7UcYfZBP8ZGYd3SGAcGhnHehNqTAgqoIs/s480/Imagen%20de%20WhatsApp%202024-09-24%20a%20las%2008.25.41_146010dd.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1024 - Homenaje a DOVER"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/programa-563-live-vol-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s320/IMG_20190821_193538.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s160/IMG_20190821_193538.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s320/IMG_20190821_193538.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s480/IMG_20190821_193538.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s160/IMG_20190821_193538.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s320/IMG_20190821_193538.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s480/IMG_20190821_193538.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 563: Live! Vol.1 "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-550-homenaje-a-dylan-desde-la-sala-siroco-madrid-20-07-2019.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHPO6Zy04pU-djhgj4TMduZgOU0vEGW-iadiubbynK_R4ygRntjP6I7P1wTwiEVh4zHFIurXJNpms0xbmnSf0UE85Bb_f-tHAoJgiFffVhO1hrUaZr9BNhxhY24ykNVwwKIiiKjCHH49o/s320/IMG-20190711-WA0011.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHPO6Zy04pU-djhgj4TMduZgOU0vEGW-iadiubbynK_R4ygRntjP6I7P1wTwiEVh4zHFIurXJNpms0xbmnSf0UE85Bb_f-tHAoJgiFffVhO1hrUaZr9BNhxhY24ykNVwwKIiiKjCHH49o/s160/IMG-20190711-WA0011.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHPO6Zy04pU-djhgj4TMduZgOU0vEGW-iadiubbynK_R4ygRntjP6I7P1wTwiEVh4zHFIurXJNpms0xbmnSf0UE85Bb_f-tHAoJgiFffVhO1hrUaZr9BNhxhY24ykNVwwKIiiKjCHH49o/s320/IMG-20190711-WA0011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHPO6Zy04pU-djhgj4TMduZgOU0vEGW-iadiubbynK_R4ygRntjP6I7P1wTwiEVh4zHFIurXJNpms0xbmnSf0UE85Bb_f-tHAoJgiFffVhO1hrUaZr9BNhxhY24ykNVwwKIiiKjCHH49o/s480/IMG-20190711-WA0011.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHPO6Zy04pU-djhgj4TMduZgOU0vEGW-iadiubbynK_R4ygRntjP6I7P1wTwiEVh4zHFIurXJNpms0xbmnSf0UE85Bb_f-tHAoJgiFffVhO1hrUaZr9BNhxhY24ykNVwwKIiiKjCHH49o/s160/IMG-20190711-WA0011.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHPO6Zy04pU-djhgj4TMduZgOU0vEGW-iadiubbynK_R4ygRntjP6I7P1wTwiEVh4zHFIurXJNpms0xbmnSf0UE85Bb_f-tHAoJgiFffVhO1hrUaZr9BNhxhY24ykNVwwKIiiKjCHH49o/s320/IMG-20190711-WA0011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHPO6Zy04pU-djhgj4TMduZgOU0vEGW-iadiubbynK_R4ygRntjP6I7P1wTwiEVh4zHFIurXJNpms0xbmnSf0UE85Bb_f-tHAoJgiFffVhO1hrUaZr9BNhxhY24ykNVwwKIiiKjCHH49o/s480/IMG-20190711-WA0011.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 550 - Homenaje a DYLAN desde la Sala Siroco (Madrid, 20/07/2019)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-465-lo-que-nadie-dice-del-ultimo-disco-de-smashing-pumpkins.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDOAqTx_e49JFLHwFdj52-1X1s9icb73pNEJ6rbwE7rCDqQCDjhE6putA2r6pdBojfP4b8rhN3d8wWePkpvhI0cWVTilGlUDvs_2HCz2ofdx29oQjcv7xQSzFsxrTleeULUG_4QHP9qBE/s320/IMG_20181202_200455.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDOAqTx_e49JFLHwFdj52-1X1s9icb73pNEJ6rbwE7rCDqQCDjhE6putA2r6pdBojfP4b8rhN3d8wWePkpvhI0cWVTilGlUDvs_2HCz2ofdx29oQjcv7xQSzFsxrTleeULUG_4QHP9qBE/s160/IMG_20181202_200455.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDOAqTx_e49JFLHwFdj52-1X1s9icb73pNEJ6rbwE7rCDqQCDjhE6putA2r6pdBojfP4b8rhN3d8wWePkpvhI0cWVTilGlUDvs_2HCz2ofdx29oQjcv7xQSzFsxrTleeULUG_4QHP9qBE/s320/IMG_20181202_200455.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDOAqTx_e49JFLHwFdj52-1X1s9icb73pNEJ6rbwE7rCDqQCDjhE6putA2r6pdBojfP4b8rhN3d8wWePkpvhI0cWVTilGlUDvs_2HCz2ofdx29oQjcv7xQSzFsxrTleeULUG_4QHP9qBE/s480/IMG_20181202_200455.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDOAqTx_e49JFLHwFdj52-1X1s9icb73pNEJ6rbwE7rCDqQCDjhE6putA2r6pdBojfP4b8rhN3d8wWePkpvhI0cWVTilGlUDvs_2HCz2ofdx29oQjcv7xQSzFsxrTleeULUG_4QHP9qBE/s160/IMG_20181202_200455.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDOAqTx_e49JFLHwFdj52-1X1s9icb73pNEJ6rbwE7rCDqQCDjhE6putA2r6pdBojfP4b8rhN3d8wWePkpvhI0cWVTilGlUDvs_2HCz2ofdx29oQjcv7xQSzFsxrTleeULUG_4QHP9qBE/s320/IMG_20181202_200455.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDOAqTx_e49JFLHwFdj52-1X1s9icb73pNEJ6rbwE7rCDqQCDjhE6putA2r6pdBojfP4b8rhN3d8wWePkpvhI0cWVTilGlUDvs_2HCz2ofdx29oQjcv7xQSzFsxrTleeULUG_4QHP9qBE/s480/IMG_20181202_200455.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 465 - Lo que nadie dice del último disco de Smashing Pumpkins"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-381-kerouac-gut-derby.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s320/381.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s160/381.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s320/381.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s480/381.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s160/381.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s320/381.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s480/381.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 381 - Kerouac + Gut Derby"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-333-cronica-new-day-madrid-6-enero-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s320/b90P333.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s160/b90P333.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s320/b90P333.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s480/b90P333.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s160/b90P333.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s320/b90P333.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s480/b90P333.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 333 - Crónica NEW DAY (Madrid 6 enero 2018) "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-328-manu-cabezali-producciones-2017.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s320/bienvenido-328.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s160/bienvenido-328.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s320/bienvenido-328.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s480/bienvenido-328.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s160/bienvenido-328.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s320/bienvenido-328.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s480/bienvenido-328.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 328 – Manu Cabezalí (Producciones 2017)"
                 loading="lazy" width="320" height="213" />
         </a>

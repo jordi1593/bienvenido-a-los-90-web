@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>1049 - Maud The Moth presenta &#39;The Distaff&#39; — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -132,8 +132,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4QOsWQ8_0qtRhZipo3lMxEh0CGb0zCve8r9eoTcRiNUCCf7sfW7LbMYVwNJdMuStUft7gkT5bVDeja3nsBIyEHXGT6BmFkEe75NhWCqjZLzX2UfX2Lve1vqTgG7G1K145Iohpvowc1vlE35DJh3PalZE2BonNWNdheWUX-Z5pgSBdu5ZXQR-zAGIr/s320/275658235_10228790046920050_473055842035707082_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4QOsWQ8_0qtRhZipo3lMxEh0CGb0zCve8r9eoTcRiNUCCf7sfW7LbMYVwNJdMuStUft7gkT5bVDeja3nsBIyEHXGT6BmFkEe75NhWCqjZLzX2UfX2Lve1vqTgG7G1K145Iohpvowc1vlE35DJh3PalZE2BonNWNdheWUX-Z5pgSBdu5ZXQR-zAGIr/s160/275658235_10228790046920050_473055842035707082_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4QOsWQ8_0qtRhZipo3lMxEh0CGb0zCve8r9eoTcRiNUCCf7sfW7LbMYVwNJdMuStUft7gkT5bVDeja3nsBIyEHXGT6BmFkEe75NhWCqjZLzX2UfX2Lve1vqTgG7G1K145Iohpvowc1vlE35DJh3PalZE2BonNWNdheWUX-Z5pgSBdu5ZXQR-zAGIr/s320/275658235_10228790046920050_473055842035707082_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4QOsWQ8_0qtRhZipo3lMxEh0CGb0zCve8r9eoTcRiNUCCf7sfW7LbMYVwNJdMuStUft7gkT5bVDeja3nsBIyEHXGT6BmFkEe75NhWCqjZLzX2UfX2Lve1vqTgG7G1K145Iohpvowc1vlE35DJh3PalZE2BonNWNdheWUX-Z5pgSBdu5ZXQR-zAGIr/s480/275658235_10228790046920050_473055842035707082_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4QOsWQ8_0qtRhZipo3lMxEh0CGb0zCve8r9eoTcRiNUCCf7sfW7LbMYVwNJdMuStUft7gkT5bVDeja3nsBIyEHXGT6BmFkEe75NhWCqjZLzX2UfX2Lve1vqTgG7G1K145Iohpvowc1vlE35DJh3PalZE2BonNWNdheWUX-Z5pgSBdu5ZXQR-zAGIr/s160/275658235_10228790046920050_473055842035707082_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4QOsWQ8_0qtRhZipo3lMxEh0CGb0zCve8r9eoTcRiNUCCf7sfW7LbMYVwNJdMuStUft7gkT5bVDeja3nsBIyEHXGT6BmFkEe75NhWCqjZLzX2UfX2Lve1vqTgG7G1K145Iohpvowc1vlE35DJh3PalZE2BonNWNdheWUX-Z5pgSBdu5ZXQR-zAGIr/s320/275658235_10228790046920050_473055842035707082_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4QOsWQ8_0qtRhZipo3lMxEh0CGb0zCve8r9eoTcRiNUCCf7sfW7LbMYVwNJdMuStUft7gkT5bVDeja3nsBIyEHXGT6BmFkEe75NhWCqjZLzX2UfX2Lve1vqTgG7G1K145Iohpvowc1vlE35DJh3PalZE2BonNWNdheWUX-Z5pgSBdu5ZXQR-zAGIr/s480/275658235_10228790046920050_473055842035707082_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.836 - Maud the Moth en directo (Aula de música UAH, 19/03/2022)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -143,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJZN42ljb-aqGJXO-aHcmoIqqwcQMj1QBugF6AC4YKIBBaPhE4SulWfH5PpFV6FnyWd96tLNrbq4-kJpXfY8PN39uZAzHLPPYLOFj-vFHVPM_VdMbN2EZCf1pprBsITB30ahvFUxWouuY/s320/maud+the+morh-v2.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJZN42ljb-aqGJXO-aHcmoIqqwcQMj1QBugF6AC4YKIBBaPhE4SulWfH5PpFV6FnyWd96tLNrbq4-kJpXfY8PN39uZAzHLPPYLOFj-vFHVPM_VdMbN2EZCf1pprBsITB30ahvFUxWouuY/s160/maud+the+morh-v2.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJZN42ljb-aqGJXO-aHcmoIqqwcQMj1QBugF6AC4YKIBBaPhE4SulWfH5PpFV6FnyWd96tLNrbq4-kJpXfY8PN39uZAzHLPPYLOFj-vFHVPM_VdMbN2EZCf1pprBsITB30ahvFUxWouuY/s320/maud+the+morh-v2.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJZN42ljb-aqGJXO-aHcmoIqqwcQMj1QBugF6AC4YKIBBaPhE4SulWfH5PpFV6FnyWd96tLNrbq4-kJpXfY8PN39uZAzHLPPYLOFj-vFHVPM_VdMbN2EZCf1pprBsITB30ahvFUxWouuY/s480/maud+the+morh-v2.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJZN42ljb-aqGJXO-aHcmoIqqwcQMj1QBugF6AC4YKIBBaPhE4SulWfH5PpFV6FnyWd96tLNrbq4-kJpXfY8PN39uZAzHLPPYLOFj-vFHVPM_VdMbN2EZCf1pprBsITB30ahvFUxWouuY/s160/maud+the+morh-v2.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJZN42ljb-aqGJXO-aHcmoIqqwcQMj1QBugF6AC4YKIBBaPhE4SulWfH5PpFV6FnyWd96tLNrbq4-kJpXfY8PN39uZAzHLPPYLOFj-vFHVPM_VdMbN2EZCf1pprBsITB30ahvFUxWouuY/s320/maud+the+morh-v2.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJZN42ljb-aqGJXO-aHcmoIqqwcQMj1QBugF6AC4YKIBBaPhE4SulWfH5PpFV6FnyWd96tLNrbq4-kJpXfY8PN39uZAzHLPPYLOFj-vFHVPM_VdMbN2EZCf1pprBsITB30ahvFUxWouuY/s480/maud+the+morh-v2.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.781 - Maud the Moth, al filo del abismo."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ7m35xVr0oLCU-I2wUEJhzeWFby_67SRluP4mbqDDqsNkW6k2-eTGECrFIbl5FuEocKh_YaW9HnVqim0Mjl8G4Bcmt8kWr_tFw4DkJFa7iBvDECQr_kONjaLo5DLKVY-mCbxf9yL9njA/s320/71298612_2431050573835396_1126693264611606528_n.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ7m35xVr0oLCU-I2wUEJhzeWFby_67SRluP4mbqDDqsNkW6k2-eTGECrFIbl5FuEocKh_YaW9HnVqim0Mjl8G4Bcmt8kWr_tFw4DkJFa7iBvDECQr_kONjaLo5DLKVY-mCbxf9yL9njA/s160/71298612_2431050573835396_1126693264611606528_n.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ7m35xVr0oLCU-I2wUEJhzeWFby_67SRluP4mbqDDqsNkW6k2-eTGECrFIbl5FuEocKh_YaW9HnVqim0Mjl8G4Bcmt8kWr_tFw4DkJFa7iBvDECQr_kONjaLo5DLKVY-mCbxf9yL9njA/s320/71298612_2431050573835396_1126693264611606528_n.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ7m35xVr0oLCU-I2wUEJhzeWFby_67SRluP4mbqDDqsNkW6k2-eTGECrFIbl5FuEocKh_YaW9HnVqim0Mjl8G4Bcmt8kWr_tFw4DkJFa7iBvDECQr_kONjaLo5DLKVY-mCbxf9yL9njA/s480/71298612_2431050573835396_1126693264611606528_n.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ7m35xVr0oLCU-I2wUEJhzeWFby_67SRluP4mbqDDqsNkW6k2-eTGECrFIbl5FuEocKh_YaW9HnVqim0Mjl8G4Bcmt8kWr_tFw4DkJFa7iBvDECQr_kONjaLo5DLKVY-mCbxf9yL9njA/s160/71298612_2431050573835396_1126693264611606528_n.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ7m35xVr0oLCU-I2wUEJhzeWFby_67SRluP4mbqDDqsNkW6k2-eTGECrFIbl5FuEocKh_YaW9HnVqim0Mjl8G4Bcmt8kWr_tFw4DkJFa7iBvDECQr_kONjaLo5DLKVY-mCbxf9yL9njA/s320/71298612_2431050573835396_1126693264611606528_n.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ7m35xVr0oLCU-I2wUEJhzeWFby_67SRluP4mbqDDqsNkW6k2-eTGECrFIbl5FuEocKh_YaW9HnVqim0Mjl8G4Bcmt8kWr_tFw4DkJFa7iBvDECQr_kONjaLo5DLKVY-mCbxf9yL9njA/s480/71298612_2431050573835396_1126693264611606528_n.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.661 - Musgö nos presenta &#39;Open the Gate&#39;"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +168,7 @@
         <a class="related-bottom-card" href="programa-372-eels-presenta-the-deconstruction.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBbFvsCw0V4wstmTOv9E_ZclrH472VvEI0IuSZaLdEY0-X3jJ8iz-Eae361lE3_sGdaMlIg794U3LCEN_rkYvGVkSoFyC3HOZ3HAy0C5DtxSOzNp_2x4k9WFGLC12t3PRWqVJzJ_Q7icg/s320/eels-the-deconstruction.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBbFvsCw0V4wstmTOv9E_ZclrH472VvEI0IuSZaLdEY0-X3jJ8iz-Eae361lE3_sGdaMlIg794U3LCEN_rkYvGVkSoFyC3HOZ3HAy0C5DtxSOzNp_2x4k9WFGLC12t3PRWqVJzJ_Q7icg/s320/eels-the-deconstruction.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBbFvsCw0V4wstmTOv9E_ZclrH472VvEI0IuSZaLdEY0-X3jJ8iz-Eae361lE3_sGdaMlIg794U3LCEN_rkYvGVkSoFyC3HOZ3HAy0C5DtxSOzNp_2x4k9WFGLC12t3PRWqVJzJ_Q7icg/s480/eels-the-deconstruction.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBbFvsCw0V4wstmTOv9E_ZclrH472VvEI0IuSZaLdEY0-X3jJ8iz-Eae361lE3_sGdaMlIg794U3LCEN_rkYvGVkSoFyC3HOZ3HAy0C5DtxSOzNp_2x4k9WFGLC12t3PRWqVJzJ_Q7icg/s640/eels-the-deconstruction.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBbFvsCw0V4wstmTOv9E_ZclrH472VvEI0IuSZaLdEY0-X3jJ8iz-Eae361lE3_sGdaMlIg794U3LCEN_rkYvGVkSoFyC3HOZ3HAy0C5DtxSOzNp_2x4k9WFGLC12t3PRWqVJzJ_Q7icg/s320/eels-the-deconstruction.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBbFvsCw0V4wstmTOv9E_ZclrH472VvEI0IuSZaLdEY0-X3jJ8iz-Eae361lE3_sGdaMlIg794U3LCEN_rkYvGVkSoFyC3HOZ3HAy0C5DtxSOzNp_2x4k9WFGLC12t3PRWqVJzJ_Q7icg/s480/eels-the-deconstruction.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBbFvsCw0V4wstmTOv9E_ZclrH472VvEI0IuSZaLdEY0-X3jJ8iz-Eae361lE3_sGdaMlIg794U3LCEN_rkYvGVkSoFyC3HOZ3HAy0C5DtxSOzNp_2x4k9WFGLC12t3PRWqVJzJ_Q7icg/s640/eels-the-deconstruction.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 372 - EELS presenta The Deconstruction"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -183,8 +179,7 @@
           </a><a class="related-bottom-card" href="1050-recordando-a-the-beatles-con-julio-ruiz.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVrLYTL-rGw2dXXqWgtnDlRlCpDGXRWlIdcPbQWRUOQf3TegftHD3GBaa3sjYdQHJci7gR8W46aiWZFp1zfjlarRRJfZhc6Oz9J3FBVeV5HGqtXl3j8iRHXViGfzCJv9LtZCVbt3um8Y6ZcO7zcXcPC5Xr0weCeME145A1TxzNWvfQw152BTMnSmzbx5Q/s320/B90_1050.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVrLYTL-rGw2dXXqWgtnDlRlCpDGXRWlIdcPbQWRUOQf3TegftHD3GBaa3sjYdQHJci7gR8W46aiWZFp1zfjlarRRJfZhc6Oz9J3FBVeV5HGqtXl3j8iRHXViGfzCJv9LtZCVbt3um8Y6ZcO7zcXcPC5Xr0weCeME145A1TxzNWvfQw152BTMnSmzbx5Q/s320/B90_1050.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVrLYTL-rGw2dXXqWgtnDlRlCpDGXRWlIdcPbQWRUOQf3TegftHD3GBaa3sjYdQHJci7gR8W46aiWZFp1zfjlarRRJfZhc6Oz9J3FBVeV5HGqtXl3j8iRHXViGfzCJv9LtZCVbt3um8Y6ZcO7zcXcPC5Xr0weCeME145A1TxzNWvfQw152BTMnSmzbx5Q/s480/B90_1050.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVrLYTL-rGw2dXXqWgtnDlRlCpDGXRWlIdcPbQWRUOQf3TegftHD3GBaa3sjYdQHJci7gR8W46aiWZFp1zfjlarRRJfZhc6Oz9J3FBVeV5HGqtXl3j8iRHXViGfzCJv9LtZCVbt3um8Y6ZcO7zcXcPC5Xr0weCeME145A1TxzNWvfQw152BTMnSmzbx5Q/s640/B90_1050.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVrLYTL-rGw2dXXqWgtnDlRlCpDGXRWlIdcPbQWRUOQf3TegftHD3GBaa3sjYdQHJci7gR8W46aiWZFp1zfjlarRRJfZhc6Oz9J3FBVeV5HGqtXl3j8iRHXViGfzCJv9LtZCVbt3um8Y6ZcO7zcXcPC5Xr0weCeME145A1TxzNWvfQw152BTMnSmzbx5Q/s320/B90_1050.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVrLYTL-rGw2dXXqWgtnDlRlCpDGXRWlIdcPbQWRUOQf3TegftHD3GBaa3sjYdQHJci7gR8W46aiWZFp1zfjlarRRJfZhc6Oz9J3FBVeV5HGqtXl3j8iRHXViGfzCJv9LtZCVbt3um8Y6ZcO7zcXcPC5Xr0weCeME145A1TxzNWvfQw152BTMnSmzbx5Q/s480/B90_1050.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVrLYTL-rGw2dXXqWgtnDlRlCpDGXRWlIdcPbQWRUOQf3TegftHD3GBaa3sjYdQHJci7gR8W46aiWZFp1zfjlarRRJfZhc6Oz9J3FBVeV5HGqtXl3j8iRHXViGfzCJv9LtZCVbt3um8Y6ZcO7zcXcPC5Xr0weCeME145A1TxzNWvfQw152BTMnSmzbx5Q/s640/B90_1050.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1050 - Recordando a The Beatles con Julio Ruiz"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +190,7 @@
           </a><a class="related-bottom-card" href="1046-break-the-senses-nos-presentan-the-rebels.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYDMVAORO-8Ne6IlT1yekZxTkvv39xEIsvZyj-JOMhXKNdhkxx8M88cTdzgeisDwkGT7ADVSg4NXmewGRJkD_cZXElLWWe_TFTfCWa6LOPq7ZD3Uh1iwMf7-vHDQt-rixfFSo98O_28VvLnOuo_FA9uHuWK7zcMawoHfP0DBwVptuevrrCBLwX127abkk/s320/B90_1046.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYDMVAORO-8Ne6IlT1yekZxTkvv39xEIsvZyj-JOMhXKNdhkxx8M88cTdzgeisDwkGT7ADVSg4NXmewGRJkD_cZXElLWWe_TFTfCWa6LOPq7ZD3Uh1iwMf7-vHDQt-rixfFSo98O_28VvLnOuo_FA9uHuWK7zcMawoHfP0DBwVptuevrrCBLwX127abkk/s320/B90_1046.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYDMVAORO-8Ne6IlT1yekZxTkvv39xEIsvZyj-JOMhXKNdhkxx8M88cTdzgeisDwkGT7ADVSg4NXmewGRJkD_cZXElLWWe_TFTfCWa6LOPq7ZD3Uh1iwMf7-vHDQt-rixfFSo98O_28VvLnOuo_FA9uHuWK7zcMawoHfP0DBwVptuevrrCBLwX127abkk/s480/B90_1046.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYDMVAORO-8Ne6IlT1yekZxTkvv39xEIsvZyj-JOMhXKNdhkxx8M88cTdzgeisDwkGT7ADVSg4NXmewGRJkD_cZXElLWWe_TFTfCWa6LOPq7ZD3Uh1iwMf7-vHDQt-rixfFSo98O_28VvLnOuo_FA9uHuWK7zcMawoHfP0DBwVptuevrrCBLwX127abkk/s640/B90_1046.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYDMVAORO-8Ne6IlT1yekZxTkvv39xEIsvZyj-JOMhXKNdhkxx8M88cTdzgeisDwkGT7ADVSg4NXmewGRJkD_cZXElLWWe_TFTfCWa6LOPq7ZD3Uh1iwMf7-vHDQt-rixfFSo98O_28VvLnOuo_FA9uHuWK7zcMawoHfP0DBwVptuevrrCBLwX127abkk/s320/B90_1046.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYDMVAORO-8Ne6IlT1yekZxTkvv39xEIsvZyj-JOMhXKNdhkxx8M88cTdzgeisDwkGT7ADVSg4NXmewGRJkD_cZXElLWWe_TFTfCWa6LOPq7ZD3Uh1iwMf7-vHDQt-rixfFSo98O_28VvLnOuo_FA9uHuWK7zcMawoHfP0DBwVptuevrrCBLwX127abkk/s480/B90_1046.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYDMVAORO-8Ne6IlT1yekZxTkvv39xEIsvZyj-JOMhXKNdhkxx8M88cTdzgeisDwkGT7ADVSg4NXmewGRJkD_cZXElLWWe_TFTfCWa6LOPq7ZD3Uh1iwMf7-vHDQt-rixfFSo98O_28VvLnOuo_FA9uHuWK7zcMawoHfP0DBwVptuevrrCBLwX127abkk/s640/B90_1046.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1046 - Break the Senses nos presentan &#39;The Rebels&#39;"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

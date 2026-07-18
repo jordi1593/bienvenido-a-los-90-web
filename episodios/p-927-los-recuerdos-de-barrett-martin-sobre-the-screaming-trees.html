@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.927 - Los recuerdos de Barrett Martin sobre The Screaming Trees — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s320/unnamed+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s160/unnamed+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s320/unnamed+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s480/unnamed+%25281%2529.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s160/unnamed+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s320/unnamed+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s480/unnamed+%25281%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.611 - Susan Silver, la manager del grunge (Soundgarden, Alice in Chains, Screaming Trees...)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisMFFPF3fadnK0Sl1J-9wZnJ8sDXY3D8klGSbzh8G0Z9aXpqXTk5PZpfmrKkmds72kV1Dm5wA2qK10CAIMNg5l4Y-J4U-n4EdBcTNs-BC36eKNiEKaeuiGS3gDGqFFchXuXTImKOBT7LQ/s320/b90_464.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisMFFPF3fadnK0Sl1J-9wZnJ8sDXY3D8klGSbzh8G0Z9aXpqXTk5PZpfmrKkmds72kV1Dm5wA2qK10CAIMNg5l4Y-J4U-n4EdBcTNs-BC36eKNiEKaeuiGS3gDGqFFchXuXTImKOBT7LQ/s160/b90_464.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisMFFPF3fadnK0Sl1J-9wZnJ8sDXY3D8klGSbzh8G0Z9aXpqXTk5PZpfmrKkmds72kV1Dm5wA2qK10CAIMNg5l4Y-J4U-n4EdBcTNs-BC36eKNiEKaeuiGS3gDGqFFchXuXTImKOBT7LQ/s320/b90_464.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisMFFPF3fadnK0Sl1J-9wZnJ8sDXY3D8klGSbzh8G0Z9aXpqXTk5PZpfmrKkmds72kV1Dm5wA2qK10CAIMNg5l4Y-J4U-n4EdBcTNs-BC36eKNiEKaeuiGS3gDGqFFchXuXTImKOBT7LQ/s480/b90_464.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisMFFPF3fadnK0Sl1J-9wZnJ8sDXY3D8klGSbzh8G0Z9aXpqXTk5PZpfmrKkmds72kV1Dm5wA2qK10CAIMNg5l4Y-J4U-n4EdBcTNs-BC36eKNiEKaeuiGS3gDGqFFchXuXTImKOBT7LQ/s160/b90_464.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisMFFPF3fadnK0Sl1J-9wZnJ8sDXY3D8klGSbzh8G0Z9aXpqXTk5PZpfmrKkmds72kV1Dm5wA2qK10CAIMNg5l4Y-J4U-n4EdBcTNs-BC36eKNiEKaeuiGS3gDGqFFchXuXTImKOBT7LQ/s320/b90_464.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisMFFPF3fadnK0Sl1J-9wZnJ8sDXY3D8klGSbzh8G0Z9aXpqXTk5PZpfmrKkmds72kV1Dm5wA2qK10CAIMNg5l4Y-J4U-n4EdBcTNs-BC36eKNiEKaeuiGS3gDGqFFchXuXTImKOBT7LQ/s480/b90_464.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 464 - Gary Lee Conner"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx91IyfadVPnYNPEmoA3aWE7HFMsGXvXHOLv1Y_OewCcfy-U1AXdTWyKTm853IdjjQQzryD_G_kG3KvZv0NMBk7Wc01C1Mzq1xlMffzof4yeAlsnXgIZ6pHIXea_K5ydcrAoWEOW7f0mc/s320/20294545_1817103734973928_1744155759449455562_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx91IyfadVPnYNPEmoA3aWE7HFMsGXvXHOLv1Y_OewCcfy-U1AXdTWyKTm853IdjjQQzryD_G_kG3KvZv0NMBk7Wc01C1Mzq1xlMffzof4yeAlsnXgIZ6pHIXea_K5ydcrAoWEOW7f0mc/s160/20294545_1817103734973928_1744155759449455562_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx91IyfadVPnYNPEmoA3aWE7HFMsGXvXHOLv1Y_OewCcfy-U1AXdTWyKTm853IdjjQQzryD_G_kG3KvZv0NMBk7Wc01C1Mzq1xlMffzof4yeAlsnXgIZ6pHIXea_K5ydcrAoWEOW7f0mc/s320/20294545_1817103734973928_1744155759449455562_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx91IyfadVPnYNPEmoA3aWE7HFMsGXvXHOLv1Y_OewCcfy-U1AXdTWyKTm853IdjjQQzryD_G_kG3KvZv0NMBk7Wc01C1Mzq1xlMffzof4yeAlsnXgIZ6pHIXea_K5ydcrAoWEOW7f0mc/s480/20294545_1817103734973928_1744155759449455562_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx91IyfadVPnYNPEmoA3aWE7HFMsGXvXHOLv1Y_OewCcfy-U1AXdTWyKTm853IdjjQQzryD_G_kG3KvZv0NMBk7Wc01C1Mzq1xlMffzof4yeAlsnXgIZ6pHIXea_K5ydcrAoWEOW7f0mc/s160/20294545_1817103734973928_1744155759449455562_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx91IyfadVPnYNPEmoA3aWE7HFMsGXvXHOLv1Y_OewCcfy-U1AXdTWyKTm853IdjjQQzryD_G_kG3KvZv0NMBk7Wc01C1Mzq1xlMffzof4yeAlsnXgIZ6pHIXea_K5ydcrAoWEOW7f0mc/s320/20294545_1817103734973928_1744155759449455562_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx91IyfadVPnYNPEmoA3aWE7HFMsGXvXHOLv1Y_OewCcfy-U1AXdTWyKTm853IdjjQQzryD_G_kG3KvZv0NMBk7Wc01C1Mzq1xlMffzof4yeAlsnXgIZ6pHIXea_K5ydcrAoWEOW7f0mc/s480/20294545_1817103734973928_1744155759449455562_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 293 - Screaming Trees - Mark Lanegan"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="p-893-recordando-a-mark-lanegan-vol-1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo40ahBmGpVcNB30MAF4uvcSpNBWyPdiy2cSyCutQuQEviNGlXZK87Lznhsyk-UfEvVIkyyZfe25dJupUbGfum_pFasziwgMUBkBkZ1ocz90n3d1ki4Vk_95DoxFDHijPx5baNgP1D-sdXPO4wpPrPb9m2X_23daYdUQFqQ1zKIb0Pc5mrb7U3KKJK/s320/b90_893.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo40ahBmGpVcNB30MAF4uvcSpNBWyPdiy2cSyCutQuQEviNGlXZK87Lznhsyk-UfEvVIkyyZfe25dJupUbGfum_pFasziwgMUBkBkZ1ocz90n3d1ki4Vk_95DoxFDHijPx5baNgP1D-sdXPO4wpPrPb9m2X_23daYdUQFqQ1zKIb0Pc5mrb7U3KKJK/s320/b90_893.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo40ahBmGpVcNB30MAF4uvcSpNBWyPdiy2cSyCutQuQEviNGlXZK87Lznhsyk-UfEvVIkyyZfe25dJupUbGfum_pFasziwgMUBkBkZ1ocz90n3d1ki4Vk_95DoxFDHijPx5baNgP1D-sdXPO4wpPrPb9m2X_23daYdUQFqQ1zKIb0Pc5mrb7U3KKJK/s480/b90_893.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo40ahBmGpVcNB30MAF4uvcSpNBWyPdiy2cSyCutQuQEviNGlXZK87Lznhsyk-UfEvVIkyyZfe25dJupUbGfum_pFasziwgMUBkBkZ1ocz90n3d1ki4Vk_95DoxFDHijPx5baNgP1D-sdXPO4wpPrPb9m2X_23daYdUQFqQ1zKIb0Pc5mrb7U3KKJK/s640/b90_893.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo40ahBmGpVcNB30MAF4uvcSpNBWyPdiy2cSyCutQuQEviNGlXZK87Lznhsyk-UfEvVIkyyZfe25dJupUbGfum_pFasziwgMUBkBkZ1ocz90n3d1ki4Vk_95DoxFDHijPx5baNgP1D-sdXPO4wpPrPb9m2X_23daYdUQFqQ1zKIb0Pc5mrb7U3KKJK/s320/b90_893.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo40ahBmGpVcNB30MAF4uvcSpNBWyPdiy2cSyCutQuQEviNGlXZK87Lznhsyk-UfEvVIkyyZfe25dJupUbGfum_pFasziwgMUBkBkZ1ocz90n3d1ki4Vk_95DoxFDHijPx5baNgP1D-sdXPO4wpPrPb9m2X_23daYdUQFqQ1zKIb0Pc5mrb7U3KKJK/s480/b90_893.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo40ahBmGpVcNB30MAF4uvcSpNBWyPdiy2cSyCutQuQEviNGlXZK87Lznhsyk-UfEvVIkyyZfe25dJupUbGfum_pFasziwgMUBkBkZ1ocz90n3d1ki4Vk_95DoxFDHijPx5baNgP1D-sdXPO4wpPrPb9m2X_23daYdUQFqQ1zKIb0Pc5mrb7U3KKJK/s640/b90_893.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.893 - Recordando a Mark Lanegan Vol.1"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="p-872-recordando-a-mark-lanegan-con-elvira-asensi.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYStCcHpWE-vDZemERFgRdGzHmv-FdTObIsx6wpK7YZuVQicOsMXACx33sXMSybRDaLiMeICbqGhfT8wT03wFw7NAFvN0OFGxzWQOwED5FqM9fJvlr1huY7-tSmPoC7M6fNTZpBF3UyutbhxVXuMzIQUYM9HnGBedGA8SLjPREreGmKtbiA7SRjgr3/s320/312132389_8042102565831100_8648339350223429995_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYStCcHpWE-vDZemERFgRdGzHmv-FdTObIsx6wpK7YZuVQicOsMXACx33sXMSybRDaLiMeICbqGhfT8wT03wFw7NAFvN0OFGxzWQOwED5FqM9fJvlr1huY7-tSmPoC7M6fNTZpBF3UyutbhxVXuMzIQUYM9HnGBedGA8SLjPREreGmKtbiA7SRjgr3/s320/312132389_8042102565831100_8648339350223429995_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYStCcHpWE-vDZemERFgRdGzHmv-FdTObIsx6wpK7YZuVQicOsMXACx33sXMSybRDaLiMeICbqGhfT8wT03wFw7NAFvN0OFGxzWQOwED5FqM9fJvlr1huY7-tSmPoC7M6fNTZpBF3UyutbhxVXuMzIQUYM9HnGBedGA8SLjPREreGmKtbiA7SRjgr3/s480/312132389_8042102565831100_8648339350223429995_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYStCcHpWE-vDZemERFgRdGzHmv-FdTObIsx6wpK7YZuVQicOsMXACx33sXMSybRDaLiMeICbqGhfT8wT03wFw7NAFvN0OFGxzWQOwED5FqM9fJvlr1huY7-tSmPoC7M6fNTZpBF3UyutbhxVXuMzIQUYM9HnGBedGA8SLjPREreGmKtbiA7SRjgr3/s640/312132389_8042102565831100_8648339350223429995_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYStCcHpWE-vDZemERFgRdGzHmv-FdTObIsx6wpK7YZuVQicOsMXACx33sXMSybRDaLiMeICbqGhfT8wT03wFw7NAFvN0OFGxzWQOwED5FqM9fJvlr1huY7-tSmPoC7M6fNTZpBF3UyutbhxVXuMzIQUYM9HnGBedGA8SLjPREreGmKtbiA7SRjgr3/s320/312132389_8042102565831100_8648339350223429995_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYStCcHpWE-vDZemERFgRdGzHmv-FdTObIsx6wpK7YZuVQicOsMXACx33sXMSybRDaLiMeICbqGhfT8wT03wFw7NAFvN0OFGxzWQOwED5FqM9fJvlr1huY7-tSmPoC7M6fNTZpBF3UyutbhxVXuMzIQUYM9HnGBedGA8SLjPREreGmKtbiA7SRjgr3/s480/312132389_8042102565831100_8648339350223429995_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYStCcHpWE-vDZemERFgRdGzHmv-FdTObIsx6wpK7YZuVQicOsMXACx33sXMSybRDaLiMeICbqGhfT8wT03wFw7NAFvN0OFGxzWQOwED5FqM9fJvlr1huY7-tSmPoC7M6fNTZpBF3UyutbhxVXuMzIQUYM9HnGBedGA8SLjPREreGmKtbiA7SRjgr3/s640/312132389_8042102565831100_8648339350223429995_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.872 - Recordando a Mark Lanegan con Elvira Asensi"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="b90-classic-19-la-ultima-conversacion-entre-mark-lanegan-y-gary-lee-conner.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEhtS6l7YIrmU2qaRG3T9xsXjVd8ny30txWsvchUqIvUCMbCSewIDb2cK2GlRnTcyUsrZPEVmTMnMpK8CRrlkNSQ0G1yAqXz_-v1TB0JN-GVC76JY3-7YkQ32ovblkQ01eqQWs8g4kNx1DSu5lGbu6B1pspkvL7DqTPMYLAXPXsK3QxTkIx8g1l7RPOR=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEhtS6l7YIrmU2qaRG3T9xsXjVd8ny30txWsvchUqIvUCMbCSewIDb2cK2GlRnTcyUsrZPEVmTMnMpK8CRrlkNSQ0G1yAqXz_-v1TB0JN-GVC76JY3-7YkQ32ovblkQ01eqQWs8g4kNx1DSu5lGbu6B1pspkvL7DqTPMYLAXPXsK3QxTkIx8g1l7RPOR=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEhtS6l7YIrmU2qaRG3T9xsXjVd8ny30txWsvchUqIvUCMbCSewIDb2cK2GlRnTcyUsrZPEVmTMnMpK8CRrlkNSQ0G1yAqXz_-v1TB0JN-GVC76JY3-7YkQ32ovblkQ01eqQWs8g4kNx1DSu5lGbu6B1pspkvL7DqTPMYLAXPXsK3QxTkIx8g1l7RPOR=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEhtS6l7YIrmU2qaRG3T9xsXjVd8ny30txWsvchUqIvUCMbCSewIDb2cK2GlRnTcyUsrZPEVmTMnMpK8CRrlkNSQ0G1yAqXz_-v1TB0JN-GVC76JY3-7YkQ32ovblkQ01eqQWs8g4kNx1DSu5lGbu6B1pspkvL7DqTPMYLAXPXsK3QxTkIx8g1l7RPOR=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 Classic 19: La última conversación entre Mark Lanegan y Gary Lee Conner"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

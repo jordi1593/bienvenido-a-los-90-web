@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Dewolff — 7 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-788-novedades-tom-morello-surfer-comadreja-birds-of-maya-dieaway-pretty-sick.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3FeUkfNc0EhJZsfMpZZmUCGZeGE2QIYWizpF9ieXRYIFyM7tR9W8iXLpdQJhOBvutxlm734e9xXWb45j-usKZE4-mMpUhzWE2EGZkGp68dhkYxMP7hyphenhyphenl7W9N_vURg0L5S2vsqXZKaZHc/s320/b90_788.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3FeUkfNc0EhJZsfMpZZmUCGZeGE2QIYWizpF9ieXRYIFyM7tR9W8iXLpdQJhOBvutxlm734e9xXWb45j-usKZE4-mMpUhzWE2EGZkGp68dhkYxMP7hyphenhyphenl7W9N_vURg0L5S2vsqXZKaZHc/s160/b90_788.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3FeUkfNc0EhJZsfMpZZmUCGZeGE2QIYWizpF9ieXRYIFyM7tR9W8iXLpdQJhOBvutxlm734e9xXWb45j-usKZE4-mMpUhzWE2EGZkGp68dhkYxMP7hyphenhyphenl7W9N_vURg0L5S2vsqXZKaZHc/s320/b90_788.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3FeUkfNc0EhJZsfMpZZmUCGZeGE2QIYWizpF9ieXRYIFyM7tR9W8iXLpdQJhOBvutxlm734e9xXWb45j-usKZE4-mMpUhzWE2EGZkGp68dhkYxMP7hyphenhyphenl7W9N_vURg0L5S2vsqXZKaZHc/s480/b90_788.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3FeUkfNc0EhJZsfMpZZmUCGZeGE2QIYWizpF9ieXRYIFyM7tR9W8iXLpdQJhOBvutxlm734e9xXWb45j-usKZE4-mMpUhzWE2EGZkGp68dhkYxMP7hyphenhyphenl7W9N_vURg0L5S2vsqXZKaZHc/s160/b90_788.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3FeUkfNc0EhJZsfMpZZmUCGZeGE2QIYWizpF9ieXRYIFyM7tR9W8iXLpdQJhOBvutxlm734e9xXWb45j-usKZE4-mMpUhzWE2EGZkGp68dhkYxMP7hyphenhyphenl7W9N_vURg0L5S2vsqXZKaZHc/s320/b90_788.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3FeUkfNc0EhJZsfMpZZmUCGZeGE2QIYWizpF9ieXRYIFyM7tR9W8iXLpdQJhOBvutxlm734e9xXWb45j-usKZE4-mMpUhzWE2EGZkGp68dhkYxMP7hyphenhyphenl7W9N_vURg0L5S2vsqXZKaZHc/s480/b90_788.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.788 - Novedades: Tom Morello, Surfer Comadreja, Birds of Maya, Dieaway, Pretty Sick... "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-598-especial-dewolff.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKBAyxiOhIYJyEMP4ATSkO1tq-7fFpCcrOsaF5jSvZSOP3Z1ffdNlpbN_tjofz61j3S2-ii_igGy01KlDcjbvZPYm5pxMsvj_JQ5kfVfcE7WURaEF8tX9FeGyG_-EAw5uQjKaPWZ2Ob8c/s320/DeWolff-publican-nuevo-disco-Thrust.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKBAyxiOhIYJyEMP4ATSkO1tq-7fFpCcrOsaF5jSvZSOP3Z1ffdNlpbN_tjofz61j3S2-ii_igGy01KlDcjbvZPYm5pxMsvj_JQ5kfVfcE7WURaEF8tX9FeGyG_-EAw5uQjKaPWZ2Ob8c/s160/DeWolff-publican-nuevo-disco-Thrust.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKBAyxiOhIYJyEMP4ATSkO1tq-7fFpCcrOsaF5jSvZSOP3Z1ffdNlpbN_tjofz61j3S2-ii_igGy01KlDcjbvZPYm5pxMsvj_JQ5kfVfcE7WURaEF8tX9FeGyG_-EAw5uQjKaPWZ2Ob8c/s320/DeWolff-publican-nuevo-disco-Thrust.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKBAyxiOhIYJyEMP4ATSkO1tq-7fFpCcrOsaF5jSvZSOP3Z1ffdNlpbN_tjofz61j3S2-ii_igGy01KlDcjbvZPYm5pxMsvj_JQ5kfVfcE7WURaEF8tX9FeGyG_-EAw5uQjKaPWZ2Ob8c/s480/DeWolff-publican-nuevo-disco-Thrust.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKBAyxiOhIYJyEMP4ATSkO1tq-7fFpCcrOsaF5jSvZSOP3Z1ffdNlpbN_tjofz61j3S2-ii_igGy01KlDcjbvZPYm5pxMsvj_JQ5kfVfcE7WURaEF8tX9FeGyG_-EAw5uQjKaPWZ2Ob8c/s160/DeWolff-publican-nuevo-disco-Thrust.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKBAyxiOhIYJyEMP4ATSkO1tq-7fFpCcrOsaF5jSvZSOP3Z1ffdNlpbN_tjofz61j3S2-ii_igGy01KlDcjbvZPYm5pxMsvj_JQ5kfVfcE7WURaEF8tX9FeGyG_-EAw5uQjKaPWZ2Ob8c/s320/DeWolff-publican-nuevo-disco-Thrust.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKBAyxiOhIYJyEMP4ATSkO1tq-7fFpCcrOsaF5jSvZSOP3Z1ffdNlpbN_tjofz61j3S2-ii_igGy01KlDcjbvZPYm5pxMsvj_JQ5kfVfcE7WURaEF8tX9FeGyG_-EAw5uQjKaPWZ2Ob8c/s480/DeWolff-publican-nuevo-disco-Thrust.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.598 - Especial DeWolff"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-384-novedades-de-jeff-ament-reef-th-booty-hunters.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-9uhMBNPlQfl81MIIdYlVHB_qaS5HqC5vMAdzarOCXAsLNURNQxfLJjBnK-V6_vc1Ihy0qa_INe21OFu9BSwGZMt3_Sh6U4e63XUQhPIF0axR-No62n3HtqJgU7i9PlwsFLKaN46eag/s320/384-1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-9uhMBNPlQfl81MIIdYlVHB_qaS5HqC5vMAdzarOCXAsLNURNQxfLJjBnK-V6_vc1Ihy0qa_INe21OFu9BSwGZMt3_Sh6U4e63XUQhPIF0axR-No62n3HtqJgU7i9PlwsFLKaN46eag/s160/384-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-9uhMBNPlQfl81MIIdYlVHB_qaS5HqC5vMAdzarOCXAsLNURNQxfLJjBnK-V6_vc1Ihy0qa_INe21OFu9BSwGZMt3_Sh6U4e63XUQhPIF0axR-No62n3HtqJgU7i9PlwsFLKaN46eag/s320/384-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-9uhMBNPlQfl81MIIdYlVHB_qaS5HqC5vMAdzarOCXAsLNURNQxfLJjBnK-V6_vc1Ihy0qa_INe21OFu9BSwGZMt3_Sh6U4e63XUQhPIF0axR-No62n3HtqJgU7i9PlwsFLKaN46eag/s480/384-1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-9uhMBNPlQfl81MIIdYlVHB_qaS5HqC5vMAdzarOCXAsLNURNQxfLJjBnK-V6_vc1Ihy0qa_INe21OFu9BSwGZMt3_Sh6U4e63XUQhPIF0axR-No62n3HtqJgU7i9PlwsFLKaN46eag/s160/384-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-9uhMBNPlQfl81MIIdYlVHB_qaS5HqC5vMAdzarOCXAsLNURNQxfLJjBnK-V6_vc1Ihy0qa_INe21OFu9BSwGZMt3_Sh6U4e63XUQhPIF0axR-No62n3HtqJgU7i9PlwsFLKaN46eag/s320/384-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-9uhMBNPlQfl81MIIdYlVHB_qaS5HqC5vMAdzarOCXAsLNURNQxfLJjBnK-V6_vc1Ihy0qa_INe21OFu9BSwGZMt3_Sh6U4e63XUQhPIF0axR-No62n3HtqJgU7i9PlwsFLKaN46eag/s480/384-1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 384 - Novedades de Jeff Ament, Reef, Th’ Booty Hunters "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-373-isaac-gracie-melancolia-infinita.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s320/Dap1yj2W4AE2MVd.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s160/Dap1yj2W4AE2MVd.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s320/Dap1yj2W4AE2MVd.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s480/Dap1yj2W4AE2MVd.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s160/Dap1yj2W4AE2MVd.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s320/Dap1yj2W4AE2MVd.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s480/Dap1yj2W4AE2MVd.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 373 - Isaac Gracie, melancolía infinita"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-220-veronica-underluxe.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s320/13082777_10153537137482747_793937129574110212_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s160/13082777_10153537137482747_793937129574110212_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s320/13082777_10153537137482747_793937129574110212_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s480/13082777_10153537137482747_793937129574110212_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s160/13082777_10153537137482747_793937129574110212_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s320/13082777_10153537137482747_793937129574110212_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s480/13082777_10153537137482747_793937129574110212_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 220 - Veronica Underluxe"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-219-ratm-pj-harvey-richard-ashcroft-prince-candlebox-dewolff.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s320/prince-performs-at-the-garden-2-2011.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s160/prince-performs-at-the-garden-2-2011.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s320/prince-performs-at-the-garden-2-2011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s480/prince-performs-at-the-garden-2-2011.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s160/prince-performs-at-the-garden-2-2011.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s320/prince-performs-at-the-garden-2-2011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s480/prince-performs-at-the-garden-2-2011.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 219 - RATM PJ Harvey Richard Ashcroft Prince Candlebox Dewolff "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-99-no-dogs-beck-damon-albarn-foo-fighteres-eels-dewolff-mad-season-ocs-.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 99 - No Dogs, Beck, Damon Albarn, Foo Fighteres, Eels, Dewolff, Mad Season, OCS, Love Division y Carbono14"
                 loading="lazy" width="320" height="213" />
         </a>

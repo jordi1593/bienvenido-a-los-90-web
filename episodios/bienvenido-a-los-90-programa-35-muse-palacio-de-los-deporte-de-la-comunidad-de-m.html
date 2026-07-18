@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Bienvenido a los 90 - Programa 35 - Muse - Palacio de los Deporte de la Comunidad de Madrid 2012 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -142,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s320/1550662537_945128_1550663698_rrss_normal.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s160/1550662537_945128_1550663698_rrss_normal.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s320/1550662537_945128_1550663698_rrss_normal.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s480/1550662537_945128_1550663698_rrss_normal.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s160/1550662537_945128_1550663698_rrss_normal.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s320/1550662537_945128_1550663698_rrss_normal.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0yrcsTJTvxOy920vEG0_hiT0aj6NoN14Bq6jO7caE4n169NhoDUz30xgwtNK3URTZOea_6sQRExEmFDBPAqMxBQZ0UsmncQweMzEhA5rwBseB3wsFpUu0uu4ERp0Xrk9pVw5UAcKXD1M/s480/1550662537_945128_1550663698_rrss_normal.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Nirvana - Palacio de los Deportes de la Comunidad de Madrid (03/07/1992)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -153,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 63 - MUSE, BEADY EYE, NIRVANA, RHCP, STANDSTILL..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -164,8 +162,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s320/13151904_10153416486066682_8229543257137880107_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s160/13151904_10153416486066682_8229543257137880107_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s320/13151904_10153416486066682_8229543257137880107_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s480/13151904_10153416486066682_8229543257137880107_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s160/13151904_10153416486066682_8229543257137880107_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s320/13151904_10153416486066682_8229543257137880107_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVC2_qa8C8rn-nsvmxmig6zkT7MKwfu1hibyEPPHpigRlIS5D5WAAKtaS4EHkimuUmTEGrJ5xSGTEaeb0OxdknJxBUYNm0X03xLlk5_tf0vLymh9DxXgHnMuCoFEfUrH3yp3TEmPE_9jY/s480/13151904_10153416486066682_8229543257137880107_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 222 - Muse conquista España "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -181,8 +178,7 @@
         <a class="related-bottom-card" href="programa-397-en-que-andan-metidos-muse.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcuyICRfA7mFMjD9dPQzRUPkJIcKJfuan4H-ISG4-lvQX6jfrORCBXIeODdm__QfyXwcuLXy3W2Qr0tDnpBpHU1vODu3d5Zp7i-4FlmC5f6syeD1Jw67-8LA_xDcIy97vYqYOswfx2UDs/s320/GettyImages-889335436_muse_plug_in_baby_1000-920x584.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcuyICRfA7mFMjD9dPQzRUPkJIcKJfuan4H-ISG4-lvQX6jfrORCBXIeODdm__QfyXwcuLXy3W2Qr0tDnpBpHU1vODu3d5Zp7i-4FlmC5f6syeD1Jw67-8LA_xDcIy97vYqYOswfx2UDs/s320/GettyImages-889335436_muse_plug_in_baby_1000-920x584.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcuyICRfA7mFMjD9dPQzRUPkJIcKJfuan4H-ISG4-lvQX6jfrORCBXIeODdm__QfyXwcuLXy3W2Qr0tDnpBpHU1vODu3d5Zp7i-4FlmC5f6syeD1Jw67-8LA_xDcIy97vYqYOswfx2UDs/s480/GettyImages-889335436_muse_plug_in_baby_1000-920x584.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcuyICRfA7mFMjD9dPQzRUPkJIcKJfuan4H-ISG4-lvQX6jfrORCBXIeODdm__QfyXwcuLXy3W2Qr0tDnpBpHU1vODu3d5Zp7i-4FlmC5f6syeD1Jw67-8LA_xDcIy97vYqYOswfx2UDs/s640/GettyImages-889335436_muse_plug_in_baby_1000-920x584.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcuyICRfA7mFMjD9dPQzRUPkJIcKJfuan4H-ISG4-lvQX6jfrORCBXIeODdm__QfyXwcuLXy3W2Qr0tDnpBpHU1vODu3d5Zp7i-4FlmC5f6syeD1Jw67-8LA_xDcIy97vYqYOswfx2UDs/s320/GettyImages-889335436_muse_plug_in_baby_1000-920x584.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcuyICRfA7mFMjD9dPQzRUPkJIcKJfuan4H-ISG4-lvQX6jfrORCBXIeODdm__QfyXwcuLXy3W2Qr0tDnpBpHU1vODu3d5Zp7i-4FlmC5f6syeD1Jw67-8LA_xDcIy97vYqYOswfx2UDs/s480/GettyImages-889335436_muse_plug_in_baby_1000-920x584.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcuyICRfA7mFMjD9dPQzRUPkJIcKJfuan4H-ISG4-lvQX6jfrORCBXIeODdm__QfyXwcuLXy3W2Qr0tDnpBpHU1vODu3d5Zp7i-4FlmC5f6syeD1Jw67-8LA_xDcIy97vYqYOswfx2UDs/s640/GettyImages-889335436_muse_plug_in_baby_1000-920x584.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 397 - ¿En qué andan metidos MUSE?"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -193,8 +189,7 @@
           </a><a class="related-bottom-card" href="programa-453-muse-simulation-theory-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s320/b90453.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s320/b90453.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s480/b90453.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s640/b90453.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s320/b90453.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s480/b90453.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoAzhy0EFAQtpTgkSg-XdJzatFfwy2fHTz2YqPAx8rKIq4-udtw-AdbqdMb2ZLfhA9M3MSEJKkQbIcgsxiFZfBtAGp2yOBNLFYWQPUSjXAwOL2ZwDpqpE1BZBavmKEUaVWh29eGyqymk/s640/b90453.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 453 - MUSE - Simulation Theory (2018)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -205,8 +200,7 @@
           </a><a class="related-bottom-card" href="programa-552-muse-destroza-en-wanda-metropolitano-26-07-2019.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s480/67728307_10158901432243066_812912656296968192_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s640/67728307_10158901432243066_812912656296968192_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s480/67728307_10158901432243066_812912656296968192_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s640/67728307_10158901432243066_812912656296968192_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 552 - Muse destroza en Wanda Metropolitano (26/07/2019)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

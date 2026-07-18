@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Mtv — 7 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-806-recordando-el-unplugged-de-pearl-jam-alice-in-chains-y-nirvana.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s320/b90-805+%25281%2529.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s160/b90-805+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s320/b90-805+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s480/b90-805+%25281%2529.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s160/b90-805+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s320/b90-805+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s480/b90-805+%25281%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.806 - Recordando el Unplugged de Pearl Jam, Alice in Chains y Nirvana"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-572-especial-beavis-and-butt-head.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUq6qWvDkj06U75hX60Q7tn6p7V8yM57gVq-U1VJH9xj8Am7kk9VRdFLuJGeuYwYE7vjsGV8aiYDfpUzuTp2YtN7Y46bFoJbX3eLAsNVuxk161TFG1tqCgrNM020pthxmVhuxPhNtJMJo/s320/b90_572.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUq6qWvDkj06U75hX60Q7tn6p7V8yM57gVq-U1VJH9xj8Am7kk9VRdFLuJGeuYwYE7vjsGV8aiYDfpUzuTp2YtN7Y46bFoJbX3eLAsNVuxk161TFG1tqCgrNM020pthxmVhuxPhNtJMJo/s160/b90_572.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUq6qWvDkj06U75hX60Q7tn6p7V8yM57gVq-U1VJH9xj8Am7kk9VRdFLuJGeuYwYE7vjsGV8aiYDfpUzuTp2YtN7Y46bFoJbX3eLAsNVuxk161TFG1tqCgrNM020pthxmVhuxPhNtJMJo/s320/b90_572.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUq6qWvDkj06U75hX60Q7tn6p7V8yM57gVq-U1VJH9xj8Am7kk9VRdFLuJGeuYwYE7vjsGV8aiYDfpUzuTp2YtN7Y46bFoJbX3eLAsNVuxk161TFG1tqCgrNM020pthxmVhuxPhNtJMJo/s480/b90_572.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUq6qWvDkj06U75hX60Q7tn6p7V8yM57gVq-U1VJH9xj8Am7kk9VRdFLuJGeuYwYE7vjsGV8aiYDfpUzuTp2YtN7Y46bFoJbX3eLAsNVuxk161TFG1tqCgrNM020pthxmVhuxPhNtJMJo/s160/b90_572.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUq6qWvDkj06U75hX60Q7tn6p7V8yM57gVq-U1VJH9xj8Am7kk9VRdFLuJGeuYwYE7vjsGV8aiYDfpUzuTp2YtN7Y46bFoJbX3eLAsNVuxk161TFG1tqCgrNM020pthxmVhuxPhNtJMJo/s320/b90_572.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUq6qWvDkj06U75hX60Q7tn6p7V8yM57gVq-U1VJH9xj8Am7kk9VRdFLuJGeuYwYE7vjsGV8aiYDfpUzuTp2YtN7Y46bFoJbX3eLAsNVuxk161TFG1tqCgrNM020pthxmVhuxPhNtJMJo/s480/b90_572.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.572 - Especial Beavis and Butt-Head"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-470-nirvana-live-and-loud-pier-48.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuO48hgSWpMEzZfCZfvsx_4D_PAc1NVmoRMKHKHe-kE0T8cziomDP_b0s1EsXNlj4-3V8KkRoiKJSd2vW72g9OCePYhvoQO80dffl1UU9-yrKPMvoXHjI97_W85x9UGhaG6T8Ckv-dWUE/s320/b90_470.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuO48hgSWpMEzZfCZfvsx_4D_PAc1NVmoRMKHKHe-kE0T8cziomDP_b0s1EsXNlj4-3V8KkRoiKJSd2vW72g9OCePYhvoQO80dffl1UU9-yrKPMvoXHjI97_W85x9UGhaG6T8Ckv-dWUE/s160/b90_470.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuO48hgSWpMEzZfCZfvsx_4D_PAc1NVmoRMKHKHe-kE0T8cziomDP_b0s1EsXNlj4-3V8KkRoiKJSd2vW72g9OCePYhvoQO80dffl1UU9-yrKPMvoXHjI97_W85x9UGhaG6T8Ckv-dWUE/s320/b90_470.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuO48hgSWpMEzZfCZfvsx_4D_PAc1NVmoRMKHKHe-kE0T8cziomDP_b0s1EsXNlj4-3V8KkRoiKJSd2vW72g9OCePYhvoQO80dffl1UU9-yrKPMvoXHjI97_W85x9UGhaG6T8Ckv-dWUE/s480/b90_470.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuO48hgSWpMEzZfCZfvsx_4D_PAc1NVmoRMKHKHe-kE0T8cziomDP_b0s1EsXNlj4-3V8KkRoiKJSd2vW72g9OCePYhvoQO80dffl1UU9-yrKPMvoXHjI97_W85x9UGhaG6T8Ckv-dWUE/s160/b90_470.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuO48hgSWpMEzZfCZfvsx_4D_PAc1NVmoRMKHKHe-kE0T8cziomDP_b0s1EsXNlj4-3V8KkRoiKJSd2vW72g9OCePYhvoQO80dffl1UU9-yrKPMvoXHjI97_W85x9UGhaG6T8Ckv-dWUE/s320/b90_470.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuO48hgSWpMEzZfCZfvsx_4D_PAc1NVmoRMKHKHe-kE0T8cziomDP_b0s1EsXNlj4-3V8KkRoiKJSd2vW72g9OCePYhvoQO80dffl1UU9-yrKPMvoXHjI97_W85x9UGhaG6T8Ckv-dWUE/s480/b90_470.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 470 - Nirvana Live and Loud (Pier 48)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-216-nirvana-vs-guns-n-roses.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s320/kurtaxl_a_l.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s160/kurtaxl_a_l.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s320/kurtaxl_a_l.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s480/kurtaxl_a_l.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s160/kurtaxl_a_l.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s320/kurtaxl_a_l.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VdxAvVbMyv9UK5GYznVkE_-EKiCufnPDQjlJZr_X8Q4FiXIGNcHuETwksl9-axzBZWO16aQ_SOYPKax6IhuA4PYkw5mgnQ9GM4LKHfHHM-LbLklo-FFmaVFo9QkHvGOZl8ijl2d_9DM/s480/kurtaxl_a_l.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 216 - Nirvana vs Guns N&#39; Roses"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-131-neil-young-pearl-jam-mirror-ball.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp3XV_bR8RDt8f4wxa2SgkFLwPWnl5d79Gsg-4WfVEfT5rZv0gpNMJi7QhIH13Ryz9W4-7wcSLRbpi0foFAsCKbOEPIKvCMJRJvnME6F4UzQNc8gOhY3Obhb_O-SmiLOhnf4uzi7YtfQ8/s320/A0AA69E056434744B5135E8458A052C8.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp3XV_bR8RDt8f4wxa2SgkFLwPWnl5d79Gsg-4WfVEfT5rZv0gpNMJi7QhIH13Ryz9W4-7wcSLRbpi0foFAsCKbOEPIKvCMJRJvnME6F4UzQNc8gOhY3Obhb_O-SmiLOhnf4uzi7YtfQ8/s160/A0AA69E056434744B5135E8458A052C8.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp3XV_bR8RDt8f4wxa2SgkFLwPWnl5d79Gsg-4WfVEfT5rZv0gpNMJi7QhIH13Ryz9W4-7wcSLRbpi0foFAsCKbOEPIKvCMJRJvnME6F4UzQNc8gOhY3Obhb_O-SmiLOhnf4uzi7YtfQ8/s320/A0AA69E056434744B5135E8458A052C8.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp3XV_bR8RDt8f4wxa2SgkFLwPWnl5d79Gsg-4WfVEfT5rZv0gpNMJi7QhIH13Ryz9W4-7wcSLRbpi0foFAsCKbOEPIKvCMJRJvnME6F4UzQNc8gOhY3Obhb_O-SmiLOhnf4uzi7YtfQ8/s480/A0AA69E056434744B5135E8458A052C8.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp3XV_bR8RDt8f4wxa2SgkFLwPWnl5d79Gsg-4WfVEfT5rZv0gpNMJi7QhIH13Ryz9W4-7wcSLRbpi0foFAsCKbOEPIKvCMJRJvnME6F4UzQNc8gOhY3Obhb_O-SmiLOhnf4uzi7YtfQ8/s160/A0AA69E056434744B5135E8458A052C8.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp3XV_bR8RDt8f4wxa2SgkFLwPWnl5d79Gsg-4WfVEfT5rZv0gpNMJi7QhIH13Ryz9W4-7wcSLRbpi0foFAsCKbOEPIKvCMJRJvnME6F4UzQNc8gOhY3Obhb_O-SmiLOhnf4uzi7YtfQ8/s320/A0AA69E056434744B5135E8458A052C8.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp3XV_bR8RDt8f4wxa2SgkFLwPWnl5d79Gsg-4WfVEfT5rZv0gpNMJi7QhIH13Ryz9W4-7wcSLRbpi0foFAsCKbOEPIKvCMJRJvnME6F4UzQNc8gOhY3Obhb_O-SmiLOhnf4uzi7YtfQ8/s480/A0AA69E056434744B5135E8458A052C8.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 131 - Neil Young/Pearl Jam - Mirror Ball"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-37-nirvana-mtv-unplugged-19-anos-despues.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa 37 - Nirvana MTV Unplugged, 19 años después"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-21-mtv-unplugged.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa 21 - MTV Unplugged"
                 loading="lazy" width="320" height="213" />
         </a>

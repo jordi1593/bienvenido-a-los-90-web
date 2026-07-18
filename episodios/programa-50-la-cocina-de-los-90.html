@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 50 - La cocina de los 90 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -139,8 +139,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHQtKKd8yvMmDFw6e1lBM1PAKNLnN1Vlp3GQ8urxP7zzizLb5Pgh3u-cjMixOUnFpnMZC_as09WA-Is7qajEvss7aLgcTaTbuH6VLPHh6JCFf_j_jwvfAI2Gw50D-LqqyMBDNvwQn_uS8/s320/Cena+Espacio+Ser-1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHQtKKd8yvMmDFw6e1lBM1PAKNLnN1Vlp3GQ8urxP7zzizLb5Pgh3u-cjMixOUnFpnMZC_as09WA-Is7qajEvss7aLgcTaTbuH6VLPHh6JCFf_j_jwvfAI2Gw50D-LqqyMBDNvwQn_uS8/s160/Cena+Espacio+Ser-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHQtKKd8yvMmDFw6e1lBM1PAKNLnN1Vlp3GQ8urxP7zzizLb5Pgh3u-cjMixOUnFpnMZC_as09WA-Is7qajEvss7aLgcTaTbuH6VLPHh6JCFf_j_jwvfAI2Gw50D-LqqyMBDNvwQn_uS8/s320/Cena+Espacio+Ser-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHQtKKd8yvMmDFw6e1lBM1PAKNLnN1Vlp3GQ8urxP7zzizLb5Pgh3u-cjMixOUnFpnMZC_as09WA-Is7qajEvss7aLgcTaTbuH6VLPHh6JCFf_j_jwvfAI2Gw50D-LqqyMBDNvwQn_uS8/s480/Cena+Espacio+Ser-1.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHQtKKd8yvMmDFw6e1lBM1PAKNLnN1Vlp3GQ8urxP7zzizLb5Pgh3u-cjMixOUnFpnMZC_as09WA-Is7qajEvss7aLgcTaTbuH6VLPHh6JCFf_j_jwvfAI2Gw50D-LqqyMBDNvwQn_uS8/s160/Cena+Espacio+Ser-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHQtKKd8yvMmDFw6e1lBM1PAKNLnN1Vlp3GQ8urxP7zzizLb5Pgh3u-cjMixOUnFpnMZC_as09WA-Is7qajEvss7aLgcTaTbuH6VLPHh6JCFf_j_jwvfAI2Gw50D-LqqyMBDNvwQn_uS8/s320/Cena+Espacio+Ser-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHQtKKd8yvMmDFw6e1lBM1PAKNLnN1Vlp3GQ8urxP7zzizLb5Pgh3u-cjMixOUnFpnMZC_as09WA-Is7qajEvss7aLgcTaTbuH6VLPHh6JCFf_j_jwvfAI2Gw50D-LqqyMBDNvwQn_uS8/s480/Cena+Espacio+Ser-1.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 43 - El sonido de la cocina saludable"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -150,8 +149,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s160/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s480/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s160/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s480/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.727 - Sintiendo caer la mierda sobre mí: canciones para el Blue Monday Vol.1"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -161,8 +159,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa 29 - Fin de fiesta con Rkdrano"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -178,8 +175,7 @@
         <a class="related-bottom-card" href="programa-56-la-musica-de-juanjo.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 56 - La música de Juanjo"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +186,7 @@
           </a><a class="related-bottom-card" href="programa-245-canciones-ocultas.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s320/cancion.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s320/cancion.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s480/cancion.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s640/cancion.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s320/cancion.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s480/cancion.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvOGJLAxW86H9qRaSRWTJWxZIlEdSj9otgRdK2K5qH615Tz3P0Rn5LLl725eHEqlWQO3p4QiiEgSEMQv2ak51TazmBUruKJlj3N5Wo-mD47D_eJI_NekKZEiePaeO97VVDJpAaY56-iA/s640/cancion.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 245 - Canciones ocultas"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -202,8 +197,7 @@
           </a><a class="related-bottom-card" href="programa-398-lounge-grunge-music.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s320/Weird-Al-Yankovic.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s320/Weird-Al-Yankovic.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s480/Weird-Al-Yankovic.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s640/Weird-Al-Yankovic.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s320/Weird-Al-Yankovic.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s480/Weird-Al-Yankovic.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s640/Weird-Al-Yankovic.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 398 - Lounge grunge music"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

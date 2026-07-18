@@ -23,14 +23,21 @@
   if (!randomBtn) return;
 
   const inEpisode = location.pathname.includes("/episodios/");
-  const dataUrl = inEpisode ? "../data/episode-slugs.json" : "data/episode-slugs.json";
+  const inEtiqueta = location.pathname.includes("/etiquetas/");
+  const dataUrl = (inEpisode || inEtiqueta) ? "../data/episode-slugs.json" : "data/episode-slugs.json";
 
   randomBtn.addEventListener("click", async (e) => {
     e.preventDefault();
     try {
       const slugs = await (await fetch(dataUrl)).json();
       const slug = slugs[Math.floor(Math.random() * slugs.length)];
-      location.href = inEpisode ? `${slug}.html` : `episodios/${slug}.html`;
+      if (inEpisode) {
+        location.href = `${slug}.html`;
+      } else if (inEtiqueta) {
+        location.href = `../episodios/${slug}.html`;
+      } else {
+        location.href = `episodios/${slug}.html`;
+      }
     } catch (err) {
       console.error("No se pudo cargar un episodio aleatorio", err);
     }

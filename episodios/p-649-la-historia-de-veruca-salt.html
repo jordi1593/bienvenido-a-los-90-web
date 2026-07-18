@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.649 - La historia de Veruca Salt — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -125,8 +125,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjokPNGk5iMP0mh0krqZNUTd05o2dUxANQZlxFEt_YetQjfVtWMQbWEejToHWlcyNVUgVcJ-tLP4T8CyTyzSoW5WnCS8Dj5mjdWy-C2_mJ5lM2nvOQBEAcE9s-hzO3kRA8sd6Ms61OK3woWDoGIfpvQxs8gIvaRQFRpSLc3pzFyeJsdHRk-YmJ2bEd-/s320/IMG_20230217_193957.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjokPNGk5iMP0mh0krqZNUTd05o2dUxANQZlxFEt_YetQjfVtWMQbWEejToHWlcyNVUgVcJ-tLP4T8CyTyzSoW5WnCS8Dj5mjdWy-C2_mJ5lM2nvOQBEAcE9s-hzO3kRA8sd6Ms61OK3woWDoGIfpvQxs8gIvaRQFRpSLc3pzFyeJsdHRk-YmJ2bEd-/s160/IMG_20230217_193957.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjokPNGk5iMP0mh0krqZNUTd05o2dUxANQZlxFEt_YetQjfVtWMQbWEejToHWlcyNVUgVcJ-tLP4T8CyTyzSoW5WnCS8Dj5mjdWy-C2_mJ5lM2nvOQBEAcE9s-hzO3kRA8sd6Ms61OK3woWDoGIfpvQxs8gIvaRQFRpSLc3pzFyeJsdHRk-YmJ2bEd-/s320/IMG_20230217_193957.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjokPNGk5iMP0mh0krqZNUTd05o2dUxANQZlxFEt_YetQjfVtWMQbWEejToHWlcyNVUgVcJ-tLP4T8CyTyzSoW5WnCS8Dj5mjdWy-C2_mJ5lM2nvOQBEAcE9s-hzO3kRA8sd6Ms61OK3woWDoGIfpvQxs8gIvaRQFRpSLc3pzFyeJsdHRk-YmJ2bEd-/s480/IMG_20230217_193957.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjokPNGk5iMP0mh0krqZNUTd05o2dUxANQZlxFEt_YetQjfVtWMQbWEejToHWlcyNVUgVcJ-tLP4T8CyTyzSoW5WnCS8Dj5mjdWy-C2_mJ5lM2nvOQBEAcE9s-hzO3kRA8sd6Ms61OK3woWDoGIfpvQxs8gIvaRQFRpSLc3pzFyeJsdHRk-YmJ2bEd-/s160/IMG_20230217_193957.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjokPNGk5iMP0mh0krqZNUTd05o2dUxANQZlxFEt_YetQjfVtWMQbWEejToHWlcyNVUgVcJ-tLP4T8CyTyzSoW5WnCS8Dj5mjdWy-C2_mJ5lM2nvOQBEAcE9s-hzO3kRA8sd6Ms61OK3woWDoGIfpvQxs8gIvaRQFRpSLc3pzFyeJsdHRk-YmJ2bEd-/s320/IMG_20230217_193957.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjokPNGk5iMP0mh0krqZNUTd05o2dUxANQZlxFEt_YetQjfVtWMQbWEejToHWlcyNVUgVcJ-tLP4T8CyTyzSoW5WnCS8Dj5mjdWy-C2_mJ5lM2nvOQBEAcE9s-hzO3kRA8sd6Ms61OK3woWDoGIfpvQxs8gIvaRQFRpSLc3pzFyeJsdHRk-YmJ2bEd-/s480/IMG_20230217_193957.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.891 - El regreso de Louise Post (Veruca Salt)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -136,8 +135,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRRQNg13A1eB6d3Klx2kfgDUA9wD-h-O9TxTKRHfBtMu6WQSLVHllJ_c3BVmlB780bFglDYzSQyryFIu4YyP2ao1VVKR_PJ70ftNLlZJ99kMpsNex0R0GLn_nRlQoBDgDDPVCK7UC0iJ7guPddhJJhXiSJQjLP-0s0ug1MISq246-1A3uIpJhK-HyT1Ig/s320/Louise-Post-photo-by-Alison-Dyer.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRRQNg13A1eB6d3Klx2kfgDUA9wD-h-O9TxTKRHfBtMu6WQSLVHllJ_c3BVmlB780bFglDYzSQyryFIu4YyP2ao1VVKR_PJ70ftNLlZJ99kMpsNex0R0GLn_nRlQoBDgDDPVCK7UC0iJ7guPddhJJhXiSJQjLP-0s0ug1MISq246-1A3uIpJhK-HyT1Ig/s160/Louise-Post-photo-by-Alison-Dyer.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRRQNg13A1eB6d3Klx2kfgDUA9wD-h-O9TxTKRHfBtMu6WQSLVHllJ_c3BVmlB780bFglDYzSQyryFIu4YyP2ao1VVKR_PJ70ftNLlZJ99kMpsNex0R0GLn_nRlQoBDgDDPVCK7UC0iJ7guPddhJJhXiSJQjLP-0s0ug1MISq246-1A3uIpJhK-HyT1Ig/s320/Louise-Post-photo-by-Alison-Dyer.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRRQNg13A1eB6d3Klx2kfgDUA9wD-h-O9TxTKRHfBtMu6WQSLVHllJ_c3BVmlB780bFglDYzSQyryFIu4YyP2ao1VVKR_PJ70ftNLlZJ99kMpsNex0R0GLn_nRlQoBDgDDPVCK7UC0iJ7guPddhJJhXiSJQjLP-0s0ug1MISq246-1A3uIpJhK-HyT1Ig/s480/Louise-Post-photo-by-Alison-Dyer.webp 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRRQNg13A1eB6d3Klx2kfgDUA9wD-h-O9TxTKRHfBtMu6WQSLVHllJ_c3BVmlB780bFglDYzSQyryFIu4YyP2ao1VVKR_PJ70ftNLlZJ99kMpsNex0R0GLn_nRlQoBDgDDPVCK7UC0iJ7guPddhJJhXiSJQjLP-0s0ug1MISq246-1A3uIpJhK-HyT1Ig/s160/Louise-Post-photo-by-Alison-Dyer.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRRQNg13A1eB6d3Klx2kfgDUA9wD-h-O9TxTKRHfBtMu6WQSLVHllJ_c3BVmlB780bFglDYzSQyryFIu4YyP2ao1VVKR_PJ70ftNLlZJ99kMpsNex0R0GLn_nRlQoBDgDDPVCK7UC0iJ7guPddhJJhXiSJQjLP-0s0ug1MISq246-1A3uIpJhK-HyT1Ig/s320/Louise-Post-photo-by-Alison-Dyer.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRRQNg13A1eB6d3Klx2kfgDUA9wD-h-O9TxTKRHfBtMu6WQSLVHllJ_c3BVmlB780bFglDYzSQyryFIu4YyP2ao1VVKR_PJ70ftNLlZJ99kMpsNex0R0GLn_nRlQoBDgDDPVCK7UC0iJ7guPddhJJhXiSJQjLP-0s0ug1MISq246-1A3uIpJhK-HyT1Ig/s480/Louise-Post-photo-by-Alison-Dyer.webp 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.966 - Entrevista a Louise Post (Veruca Salt)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -147,8 +145,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYkoa_uqsG0x3niqHCF3JNno_fkWPRp1m-tmZTFVbR18GdR3l9G2sAeomL4T2N3jOCdIuWRMp2X1KUzLxS0BJs_R5pFDWkJG28KJlVAXx0c9d0unumWU4KDhpGMa1FpYdCybKzXmgoYxuN7R2XcoeZw3lRXVwqZwEfPr80bIlj1AmUbU6ayKAdBY8eihQ/s320/b90_parte9.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYkoa_uqsG0x3niqHCF3JNno_fkWPRp1m-tmZTFVbR18GdR3l9G2sAeomL4T2N3jOCdIuWRMp2X1KUzLxS0BJs_R5pFDWkJG28KJlVAXx0c9d0unumWU4KDhpGMa1FpYdCybKzXmgoYxuN7R2XcoeZw3lRXVwqZwEfPr80bIlj1AmUbU6ayKAdBY8eihQ/s160/b90_parte9.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYkoa_uqsG0x3niqHCF3JNno_fkWPRp1m-tmZTFVbR18GdR3l9G2sAeomL4T2N3jOCdIuWRMp2X1KUzLxS0BJs_R5pFDWkJG28KJlVAXx0c9d0unumWU4KDhpGMa1FpYdCybKzXmgoYxuN7R2XcoeZw3lRXVwqZwEfPr80bIlj1AmUbU6ayKAdBY8eihQ/s320/b90_parte9.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYkoa_uqsG0x3niqHCF3JNno_fkWPRp1m-tmZTFVbR18GdR3l9G2sAeomL4T2N3jOCdIuWRMp2X1KUzLxS0BJs_R5pFDWkJG28KJlVAXx0c9d0unumWU4KDhpGMa1FpYdCybKzXmgoYxuN7R2XcoeZw3lRXVwqZwEfPr80bIlj1AmUbU6ayKAdBY8eihQ/s480/b90_parte9.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYkoa_uqsG0x3niqHCF3JNno_fkWPRp1m-tmZTFVbR18GdR3l9G2sAeomL4T2N3jOCdIuWRMp2X1KUzLxS0BJs_R5pFDWkJG28KJlVAXx0c9d0unumWU4KDhpGMa1FpYdCybKzXmgoYxuN7R2XcoeZw3lRXVwqZwEfPr80bIlj1AmUbU6ayKAdBY8eihQ/s160/b90_parte9.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYkoa_uqsG0x3niqHCF3JNno_fkWPRp1m-tmZTFVbR18GdR3l9G2sAeomL4T2N3jOCdIuWRMp2X1KUzLxS0BJs_R5pFDWkJG28KJlVAXx0c9d0unumWU4KDhpGMa1FpYdCybKzXmgoYxuN7R2XcoeZw3lRXVwqZwEfPr80bIlj1AmUbU6ayKAdBY8eihQ/s320/b90_parte9.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYkoa_uqsG0x3niqHCF3JNno_fkWPRp1m-tmZTFVbR18GdR3l9G2sAeomL4T2N3jOCdIuWRMp2X1KUzLxS0BJs_R5pFDWkJG28KJlVAXx0c9d0unumWU4KDhpGMa1FpYdCybKzXmgoYxuN7R2XcoeZw3lRXVwqZwEfPr80bIlj1AmUbU6ayKAdBY8eihQ/s480/b90_parte9.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.1018 - Especial 1994, Parte 9: REM - Radiohead - Veruca Salt - Pulp Fiction - Grant Lee Buffalo - Blues Traveler"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -164,8 +161,7 @@
         <a class="related-bottom-card" href="p-656-la-historia-de-mark-sandman-y-morphine.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s320/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s320/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s480/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s640/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s320/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s480/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3cjoXP89KA0CRlzmZeU73VipKznHaZbYza7urLB8Vi0_ykX-ZsMmL1mRdFOTo6el8rQtcu0brHvYSpAapX1KwcLLBb-LMdXwKwIDOXo0P638IN6yvbp2OGki67FIvX4xK8liryPRdOY/s640/tumblr_muvhvtZ31o1sh6poqo1_1280.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.656 - La historia de Mark Sandman y Morphine"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -176,8 +172,7 @@
           </a><a class="related-bottom-card" href="p-633-la-historia-de-dave-abbruzzese-pearl-jam.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirY4rFtAKPrHmMjj0AO6sqKd9D3irXv2Sh5cqAVvQTMiWq88hc7H5ztb6BD-KH-aEP4SMBrL7IBbkAmOzetyyLUukLB5MXJ5ywu8APV71Kp8525F5i5F2Qphiv6kzZQt3z200N_yYczAo/s320/abbruzzese-dave-image.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirY4rFtAKPrHmMjj0AO6sqKd9D3irXv2Sh5cqAVvQTMiWq88hc7H5ztb6BD-KH-aEP4SMBrL7IBbkAmOzetyyLUukLB5MXJ5ywu8APV71Kp8525F5i5F2Qphiv6kzZQt3z200N_yYczAo/s320/abbruzzese-dave-image.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirY4rFtAKPrHmMjj0AO6sqKd9D3irXv2Sh5cqAVvQTMiWq88hc7H5ztb6BD-KH-aEP4SMBrL7IBbkAmOzetyyLUukLB5MXJ5ywu8APV71Kp8525F5i5F2Qphiv6kzZQt3z200N_yYczAo/s480/abbruzzese-dave-image.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirY4rFtAKPrHmMjj0AO6sqKd9D3irXv2Sh5cqAVvQTMiWq88hc7H5ztb6BD-KH-aEP4SMBrL7IBbkAmOzetyyLUukLB5MXJ5ywu8APV71Kp8525F5i5F2Qphiv6kzZQt3z200N_yYczAo/s640/abbruzzese-dave-image.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirY4rFtAKPrHmMjj0AO6sqKd9D3irXv2Sh5cqAVvQTMiWq88hc7H5ztb6BD-KH-aEP4SMBrL7IBbkAmOzetyyLUukLB5MXJ5ywu8APV71Kp8525F5i5F2Qphiv6kzZQt3z200N_yYczAo/s320/abbruzzese-dave-image.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirY4rFtAKPrHmMjj0AO6sqKd9D3irXv2Sh5cqAVvQTMiWq88hc7H5ztb6BD-KH-aEP4SMBrL7IBbkAmOzetyyLUukLB5MXJ5ywu8APV71Kp8525F5i5F2Qphiv6kzZQt3z200N_yYczAo/s480/abbruzzese-dave-image.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirY4rFtAKPrHmMjj0AO6sqKd9D3irXv2Sh5cqAVvQTMiWq88hc7H5ztb6BD-KH-aEP4SMBrL7IBbkAmOzetyyLUukLB5MXJ5ywu8APV71Kp8525F5i5F2Qphiv6kzZQt3z200N_yYczAo/s640/abbruzzese-dave-image.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.633 La historia de Dave Abbruzzese (Pearl Jam)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -188,8 +183,7 @@
           </a><a class="related-bottom-card" href="p-629-donita-sparks-de-l7-habla-de-sus-discos-favoritos-del-grunge.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6RaFkOf3S-T62tygvAN3ANfDoqV8BBcJb_3ij06wUJO1j3OjHfp3hCkLv9W5X9TlrfrJ3JAMdsxr5OJWqX-zQbNWMdOwfWRflOoBT_cmYkNonZ4RgRKzshHViHcNYsjkiAf-38mL7hq0/s320/Donita%252BSparks%252BLWlHxIE_jEQm.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6RaFkOf3S-T62tygvAN3ANfDoqV8BBcJb_3ij06wUJO1j3OjHfp3hCkLv9W5X9TlrfrJ3JAMdsxr5OJWqX-zQbNWMdOwfWRflOoBT_cmYkNonZ4RgRKzshHViHcNYsjkiAf-38mL7hq0/s320/Donita%252BSparks%252BLWlHxIE_jEQm.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6RaFkOf3S-T62tygvAN3ANfDoqV8BBcJb_3ij06wUJO1j3OjHfp3hCkLv9W5X9TlrfrJ3JAMdsxr5OJWqX-zQbNWMdOwfWRflOoBT_cmYkNonZ4RgRKzshHViHcNYsjkiAf-38mL7hq0/s480/Donita%252BSparks%252BLWlHxIE_jEQm.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6RaFkOf3S-T62tygvAN3ANfDoqV8BBcJb_3ij06wUJO1j3OjHfp3hCkLv9W5X9TlrfrJ3JAMdsxr5OJWqX-zQbNWMdOwfWRflOoBT_cmYkNonZ4RgRKzshHViHcNYsjkiAf-38mL7hq0/s640/Donita%252BSparks%252BLWlHxIE_jEQm.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6RaFkOf3S-T62tygvAN3ANfDoqV8BBcJb_3ij06wUJO1j3OjHfp3hCkLv9W5X9TlrfrJ3JAMdsxr5OJWqX-zQbNWMdOwfWRflOoBT_cmYkNonZ4RgRKzshHViHcNYsjkiAf-38mL7hq0/s320/Donita%252BSparks%252BLWlHxIE_jEQm.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6RaFkOf3S-T62tygvAN3ANfDoqV8BBcJb_3ij06wUJO1j3OjHfp3hCkLv9W5X9TlrfrJ3JAMdsxr5OJWqX-zQbNWMdOwfWRflOoBT_cmYkNonZ4RgRKzshHViHcNYsjkiAf-38mL7hq0/s480/Donita%252BSparks%252BLWlHxIE_jEQm.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6RaFkOf3S-T62tygvAN3ANfDoqV8BBcJb_3ij06wUJO1j3OjHfp3hCkLv9W5X9TlrfrJ3JAMdsxr5OJWqX-zQbNWMdOwfWRflOoBT_cmYkNonZ4RgRKzshHViHcNYsjkiAf-38mL7hq0/s640/Donita%252BSparks%252BLWlHxIE_jEQm.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.629 Donita Sparks de L7 habla de sus discos favoritos del grunge"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

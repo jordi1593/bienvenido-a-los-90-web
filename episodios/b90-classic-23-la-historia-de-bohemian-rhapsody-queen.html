@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>B90 Classic 23: La historia de &#39;Bohemian Rhapsody&#39; (Queen) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -133,8 +133,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLArcYIH1ey1VOp8dhRv0egHUV9_vVFJVpsHq6Dfg7QtyW1EYal9E-7hsjOt5jYGytHSEYIT1hMYQn89g_uQJzndVPf8Om4UF-_ufg47TjdSZ4si10wLZzHLnHaIUYeGl97whQr4inFTg/s320/b90_463.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLArcYIH1ey1VOp8dhRv0egHUV9_vVFJVpsHq6Dfg7QtyW1EYal9E-7hsjOt5jYGytHSEYIT1hMYQn89g_uQJzndVPf8Om4UF-_ufg47TjdSZ4si10wLZzHLnHaIUYeGl97whQr4inFTg/s160/b90_463.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLArcYIH1ey1VOp8dhRv0egHUV9_vVFJVpsHq6Dfg7QtyW1EYal9E-7hsjOt5jYGytHSEYIT1hMYQn89g_uQJzndVPf8Om4UF-_ufg47TjdSZ4si10wLZzHLnHaIUYeGl97whQr4inFTg/s320/b90_463.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLArcYIH1ey1VOp8dhRv0egHUV9_vVFJVpsHq6Dfg7QtyW1EYal9E-7hsjOt5jYGytHSEYIT1hMYQn89g_uQJzndVPf8Om4UF-_ufg47TjdSZ4si10wLZzHLnHaIUYeGl97whQr4inFTg/s480/b90_463.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLArcYIH1ey1VOp8dhRv0egHUV9_vVFJVpsHq6Dfg7QtyW1EYal9E-7hsjOt5jYGytHSEYIT1hMYQn89g_uQJzndVPf8Om4UF-_ufg47TjdSZ4si10wLZzHLnHaIUYeGl97whQr4inFTg/s160/b90_463.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLArcYIH1ey1VOp8dhRv0egHUV9_vVFJVpsHq6Dfg7QtyW1EYal9E-7hsjOt5jYGytHSEYIT1hMYQn89g_uQJzndVPf8Om4UF-_ufg47TjdSZ4si10wLZzHLnHaIUYeGl97whQr4inFTg/s320/b90_463.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLArcYIH1ey1VOp8dhRv0egHUV9_vVFJVpsHq6Dfg7QtyW1EYal9E-7hsjOt5jYGytHSEYIT1hMYQn89g_uQJzndVPf8Om4UF-_ufg47TjdSZ4si10wLZzHLnHaIUYeGl97whQr4inFTg/s480/b90_463.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 463 - Especial Queen - Parte 1"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -144,8 +143,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s320/The-Verve.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s160/The-Verve.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s320/The-Verve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s480/The-Verve.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s160/The-Verve.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s320/The-Verve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s480/The-Verve.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 12: La historia completa de Bittersweet Symphony"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -155,8 +153,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzBVr1DzOm2dtJKvVb1p1zg4oezRxvM_THHSMDtEEQOQXs5m7nFxD2cqvr8JlA0welW5zl_BDK5X4g6iCR2VpBbiHO1XWufve5zUAsY9zM2bnUnd9d-cfOk2npHM03OqDPufnDBxB-4v8/s320/b90_463.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzBVr1DzOm2dtJKvVb1p1zg4oezRxvM_THHSMDtEEQOQXs5m7nFxD2cqvr8JlA0welW5zl_BDK5X4g6iCR2VpBbiHO1XWufve5zUAsY9zM2bnUnd9d-cfOk2npHM03OqDPufnDBxB-4v8/s160/b90_463.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzBVr1DzOm2dtJKvVb1p1zg4oezRxvM_THHSMDtEEQOQXs5m7nFxD2cqvr8JlA0welW5zl_BDK5X4g6iCR2VpBbiHO1XWufve5zUAsY9zM2bnUnd9d-cfOk2npHM03OqDPufnDBxB-4v8/s320/b90_463.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzBVr1DzOm2dtJKvVb1p1zg4oezRxvM_THHSMDtEEQOQXs5m7nFxD2cqvr8JlA0welW5zl_BDK5X4g6iCR2VpBbiHO1XWufve5zUAsY9zM2bnUnd9d-cfOk2npHM03OqDPufnDBxB-4v8/s480/b90_463.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzBVr1DzOm2dtJKvVb1p1zg4oezRxvM_THHSMDtEEQOQXs5m7nFxD2cqvr8JlA0welW5zl_BDK5X4g6iCR2VpBbiHO1XWufve5zUAsY9zM2bnUnd9d-cfOk2npHM03OqDPufnDBxB-4v8/s160/b90_463.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzBVr1DzOm2dtJKvVb1p1zg4oezRxvM_THHSMDtEEQOQXs5m7nFxD2cqvr8JlA0welW5zl_BDK5X4g6iCR2VpBbiHO1XWufve5zUAsY9zM2bnUnd9d-cfOk2npHM03OqDPufnDBxB-4v8/s320/b90_463.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzBVr1DzOm2dtJKvVb1p1zg4oezRxvM_THHSMDtEEQOQXs5m7nFxD2cqvr8JlA0welW5zl_BDK5X4g6iCR2VpBbiHO1XWufve5zUAsY9zM2bnUnd9d-cfOk2npHM03OqDPufnDBxB-4v8/s480/b90_463.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 466 - Especial Queen - Parte 2"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -172,8 +169,7 @@
         <a class="related-bottom-card" href="b90-classic-24-paul-mccartney-glastonbury-2022.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s320/16562580925225.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s320/16562580925225.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s480/16562580925225.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s640/16562580925225.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s320/16562580925225.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s480/16562580925225.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s640/16562580925225.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 24: Paul McCartney - Glastonbury 2022"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -184,8 +180,7 @@
           </a><a class="related-bottom-card" href="b90-classic-22-cuando-kurt-cobain-conocio-a-william-burroughs.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s480/B1gPDmmc+PS._SS500_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s640/B1gPDmmc+PS._SS500_.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s480/B1gPDmmc+PS._SS500_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s640/B1gPDmmc+PS._SS500_.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 22: Cuando Kurt Cobain conoció a William Burroughs"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -196,8 +191,7 @@
           </a><a class="related-bottom-card" href="b90-classic-25-the-last-internationale-hellfest-2022.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgF5L01Nb0IAXmroFhgnxQRXDWLPj56EeOMWNS5DLb0n2zhfPii9RaAexqbCT7keQVmtcX3IlGzGYpKue719aFUbrec8aAmiKd7ETDb_a99SEH3iCONzXXR-gtSHhVaF9Zxgir-mE5CBeFs6v62l1xtzE_69v7XSso9jGJ1mQq-XQaMwKeBW3Tcz5d9/s320/1656700758.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgF5L01Nb0IAXmroFhgnxQRXDWLPj56EeOMWNS5DLb0n2zhfPii9RaAexqbCT7keQVmtcX3IlGzGYpKue719aFUbrec8aAmiKd7ETDb_a99SEH3iCONzXXR-gtSHhVaF9Zxgir-mE5CBeFs6v62l1xtzE_69v7XSso9jGJ1mQq-XQaMwKeBW3Tcz5d9/s320/1656700758.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgF5L01Nb0IAXmroFhgnxQRXDWLPj56EeOMWNS5DLb0n2zhfPii9RaAexqbCT7keQVmtcX3IlGzGYpKue719aFUbrec8aAmiKd7ETDb_a99SEH3iCONzXXR-gtSHhVaF9Zxgir-mE5CBeFs6v62l1xtzE_69v7XSso9jGJ1mQq-XQaMwKeBW3Tcz5d9/s480/1656700758.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgF5L01Nb0IAXmroFhgnxQRXDWLPj56EeOMWNS5DLb0n2zhfPii9RaAexqbCT7keQVmtcX3IlGzGYpKue719aFUbrec8aAmiKd7ETDb_a99SEH3iCONzXXR-gtSHhVaF9Zxgir-mE5CBeFs6v62l1xtzE_69v7XSso9jGJ1mQq-XQaMwKeBW3Tcz5d9/s640/1656700758.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgF5L01Nb0IAXmroFhgnxQRXDWLPj56EeOMWNS5DLb0n2zhfPii9RaAexqbCT7keQVmtcX3IlGzGYpKue719aFUbrec8aAmiKd7ETDb_a99SEH3iCONzXXR-gtSHhVaF9Zxgir-mE5CBeFs6v62l1xtzE_69v7XSso9jGJ1mQq-XQaMwKeBW3Tcz5d9/s320/1656700758.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgF5L01Nb0IAXmroFhgnxQRXDWLPj56EeOMWNS5DLb0n2zhfPii9RaAexqbCT7keQVmtcX3IlGzGYpKue719aFUbrec8aAmiKd7ETDb_a99SEH3iCONzXXR-gtSHhVaF9Zxgir-mE5CBeFs6v62l1xtzE_69v7XSso9jGJ1mQq-XQaMwKeBW3Tcz5d9/s480/1656700758.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgF5L01Nb0IAXmroFhgnxQRXDWLPj56EeOMWNS5DLb0n2zhfPii9RaAexqbCT7keQVmtcX3IlGzGYpKue719aFUbrec8aAmiKd7ETDb_a99SEH3iCONzXXR-gtSHhVaF9Zxgir-mE5CBeFs6v62l1xtzE_69v7XSso9jGJ1mQq-XQaMwKeBW3Tcz5d9/s640/1656700758.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 25: The Last Internationale Hellfest 2022"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 185 - Ocean Colour Scene — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -130,8 +130,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeZNAuu0KppWhmdKU8-MrhP7NwHzpm9qnzfcZmroPTmgXO0ROYZCAu-heYmF-5czKh0T3mJ4_cpMmpH5UnSQT7lSBUBwfkFVPFIrDudlzX0T6JpkY9SvSxJYoixMI7L4q71MVOOERUmH2VMlMP6cAtT38x_PJonoE6MYCMvAXXFMGpXry2OElUPF9a5lE/s320/B90_1115.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeZNAuu0KppWhmdKU8-MrhP7NwHzpm9qnzfcZmroPTmgXO0ROYZCAu-heYmF-5czKh0T3mJ4_cpMmpH5UnSQT7lSBUBwfkFVPFIrDudlzX0T6JpkY9SvSxJYoixMI7L4q71MVOOERUmH2VMlMP6cAtT38x_PJonoE6MYCMvAXXFMGpXry2OElUPF9a5lE/s160/B90_1115.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeZNAuu0KppWhmdKU8-MrhP7NwHzpm9qnzfcZmroPTmgXO0ROYZCAu-heYmF-5czKh0T3mJ4_cpMmpH5UnSQT7lSBUBwfkFVPFIrDudlzX0T6JpkY9SvSxJYoixMI7L4q71MVOOERUmH2VMlMP6cAtT38x_PJonoE6MYCMvAXXFMGpXry2OElUPF9a5lE/s320/B90_1115.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeZNAuu0KppWhmdKU8-MrhP7NwHzpm9qnzfcZmroPTmgXO0ROYZCAu-heYmF-5czKh0T3mJ4_cpMmpH5UnSQT7lSBUBwfkFVPFIrDudlzX0T6JpkY9SvSxJYoixMI7L4q71MVOOERUmH2VMlMP6cAtT38x_PJonoE6MYCMvAXXFMGpXry2OElUPF9a5lE/s480/B90_1115.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeZNAuu0KppWhmdKU8-MrhP7NwHzpm9qnzfcZmroPTmgXO0ROYZCAu-heYmF-5czKh0T3mJ4_cpMmpH5UnSQT7lSBUBwfkFVPFIrDudlzX0T6JpkY9SvSxJYoixMI7L4q71MVOOERUmH2VMlMP6cAtT38x_PJonoE6MYCMvAXXFMGpXry2OElUPF9a5lE/s160/B90_1115.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeZNAuu0KppWhmdKU8-MrhP7NwHzpm9qnzfcZmroPTmgXO0ROYZCAu-heYmF-5czKh0T3mJ4_cpMmpH5UnSQT7lSBUBwfkFVPFIrDudlzX0T6JpkY9SvSxJYoixMI7L4q71MVOOERUmH2VMlMP6cAtT38x_PJonoE6MYCMvAXXFMGpXry2OElUPF9a5lE/s320/B90_1115.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeZNAuu0KppWhmdKU8-MrhP7NwHzpm9qnzfcZmroPTmgXO0ROYZCAu-heYmF-5czKh0T3mJ4_cpMmpH5UnSQT7lSBUBwfkFVPFIrDudlzX0T6JpkY9SvSxJYoixMI7L4q71MVOOERUmH2VMlMP6cAtT38x_PJonoE6MYCMvAXXFMGpXry2OElUPF9a5lE/s480/B90_1115.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1115 - Especial: 30 años del Moseley Shoals - Ocean Colour Scene"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -141,8 +140,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s320/12508847_1171351242882517_303927544139429384_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s160/12508847_1171351242882517_303927544139429384_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s320/12508847_1171351242882517_303927544139429384_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s480/12508847_1171351242882517_303927544139429384_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s160/12508847_1171351242882517_303927544139429384_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s320/12508847_1171351242882517_303927544139429384_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s480/12508847_1171351242882517_303927544139429384_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 201 - Oasis This is history 2 - Glastonbury (1995) - Be Here Now (1997)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -152,8 +150,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgocfkrgBau-prMDK_kBvYlAfhUAmroXz0j17POfUknXx0W_jgN08QaTBRoLKh0CAQqzn0ynlFOSvIb_vcLj0EzmAV4e4BIoMcNdsEF2txbuwOklserK1fGKk_5Y-WQvUgrEhWb6bWfxgc/s320/12803013_1202891293061845_8533925873096678801_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgocfkrgBau-prMDK_kBvYlAfhUAmroXz0j17POfUknXx0W_jgN08QaTBRoLKh0CAQqzn0ynlFOSvIb_vcLj0EzmAV4e4BIoMcNdsEF2txbuwOklserK1fGKk_5Y-WQvUgrEhWb6bWfxgc/s160/12803013_1202891293061845_8533925873096678801_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgocfkrgBau-prMDK_kBvYlAfhUAmroXz0j17POfUknXx0W_jgN08QaTBRoLKh0CAQqzn0ynlFOSvIb_vcLj0EzmAV4e4BIoMcNdsEF2txbuwOklserK1fGKk_5Y-WQvUgrEhWb6bWfxgc/s320/12803013_1202891293061845_8533925873096678801_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgocfkrgBau-prMDK_kBvYlAfhUAmroXz0j17POfUknXx0W_jgN08QaTBRoLKh0CAQqzn0ynlFOSvIb_vcLj0EzmAV4e4BIoMcNdsEF2txbuwOklserK1fGKk_5Y-WQvUgrEhWb6bWfxgc/s480/12803013_1202891293061845_8533925873096678801_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgocfkrgBau-prMDK_kBvYlAfhUAmroXz0j17POfUknXx0W_jgN08QaTBRoLKh0CAQqzn0ynlFOSvIb_vcLj0EzmAV4e4BIoMcNdsEF2txbuwOklserK1fGKk_5Y-WQvUgrEhWb6bWfxgc/s160/12803013_1202891293061845_8533925873096678801_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgocfkrgBau-prMDK_kBvYlAfhUAmroXz0j17POfUknXx0W_jgN08QaTBRoLKh0CAQqzn0ynlFOSvIb_vcLj0EzmAV4e4BIoMcNdsEF2txbuwOklserK1fGKk_5Y-WQvUgrEhWb6bWfxgc/s320/12803013_1202891293061845_8533925873096678801_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgocfkrgBau-prMDK_kBvYlAfhUAmroXz0j17POfUknXx0W_jgN08QaTBRoLKh0CAQqzn0ynlFOSvIb_vcLj0EzmAV4e4BIoMcNdsEF2txbuwOklserK1fGKk_5Y-WQvUgrEhWb6bWfxgc/s480/12803013_1202891293061845_8533925873096678801_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 210 - Oasis &#39;This is history&#39; Capítulo 3: Be Here Now (1997) - Standing on the Shoulder of Giants (2000)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -169,8 +166,7 @@
         <a class="related-bottom-card" href="programa-246-reedicion-be-here-now-oasis.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvOb6dWklPvjItoHhOVmYzbN1tcH9qVBqUMuLM_RuKobfJ0wK81_1HhEvUZ0dwKlzfT6oqo683XOgN45eX1ohTx8hqX2A0HTWv_VIJk7sd30gJANvgbpcpnE6JgoEazj9Irsj_SOfydIQ/s320/oasis_rolls_royce_swimming_pool_be_here_now_05.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvOb6dWklPvjItoHhOVmYzbN1tcH9qVBqUMuLM_RuKobfJ0wK81_1HhEvUZ0dwKlzfT6oqo683XOgN45eX1ohTx8hqX2A0HTWv_VIJk7sd30gJANvgbpcpnE6JgoEazj9Irsj_SOfydIQ/s320/oasis_rolls_royce_swimming_pool_be_here_now_05.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvOb6dWklPvjItoHhOVmYzbN1tcH9qVBqUMuLM_RuKobfJ0wK81_1HhEvUZ0dwKlzfT6oqo683XOgN45eX1ohTx8hqX2A0HTWv_VIJk7sd30gJANvgbpcpnE6JgoEazj9Irsj_SOfydIQ/s480/oasis_rolls_royce_swimming_pool_be_here_now_05.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvOb6dWklPvjItoHhOVmYzbN1tcH9qVBqUMuLM_RuKobfJ0wK81_1HhEvUZ0dwKlzfT6oqo683XOgN45eX1ohTx8hqX2A0HTWv_VIJk7sd30gJANvgbpcpnE6JgoEazj9Irsj_SOfydIQ/s640/oasis_rolls_royce_swimming_pool_be_here_now_05.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvOb6dWklPvjItoHhOVmYzbN1tcH9qVBqUMuLM_RuKobfJ0wK81_1HhEvUZ0dwKlzfT6oqo683XOgN45eX1ohTx8hqX2A0HTWv_VIJk7sd30gJANvgbpcpnE6JgoEazj9Irsj_SOfydIQ/s320/oasis_rolls_royce_swimming_pool_be_here_now_05.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvOb6dWklPvjItoHhOVmYzbN1tcH9qVBqUMuLM_RuKobfJ0wK81_1HhEvUZ0dwKlzfT6oqo683XOgN45eX1ohTx8hqX2A0HTWv_VIJk7sd30gJANvgbpcpnE6JgoEazj9Irsj_SOfydIQ/s480/oasis_rolls_royce_swimming_pool_be_here_now_05.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvOb6dWklPvjItoHhOVmYzbN1tcH9qVBqUMuLM_RuKobfJ0wK81_1HhEvUZ0dwKlzfT6oqo683XOgN45eX1ohTx8hqX2A0HTWv_VIJk7sd30gJANvgbpcpnE6JgoEazj9Irsj_SOfydIQ/s640/oasis_rolls_royce_swimming_pool_be_here_now_05.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 246 - Reedición Be Here Now (Oasis)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -181,8 +177,7 @@
           </a><a class="related-bottom-card" href="programa-74-creation-records.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 74 - Creation Records"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -193,8 +188,7 @@
           </a><a class="related-bottom-card" href="bienvenido-a-los-90-programa-28-oasis-be-here-now-cumple-15-anos.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Bienvenido a los 90 - Programa 28 - Oasis Be Here Now cumple 15 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

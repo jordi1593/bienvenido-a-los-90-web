@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 371 - Rufus T. Firefly y Havalina Presentan: Bandada — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyW7yrSfKXCL1oJSS93tVoiwJwmcK9NPH9lJlE70SU19_9DQjZmlO3ElVoe0NWuvche5q8ezfZGMSuu8bhwtxHahHTPVnDNXgTsBOztCavf9X7eMmHAQEOZeuVizSTZ9O1N00p2ZaPv9Q/s320/17884384_1314735405271852_3670028682219140927_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyW7yrSfKXCL1oJSS93tVoiwJwmcK9NPH9lJlE70SU19_9DQjZmlO3ElVoe0NWuvche5q8ezfZGMSuu8bhwtxHahHTPVnDNXgTsBOztCavf9X7eMmHAQEOZeuVizSTZ9O1N00p2ZaPv9Q/s160/17884384_1314735405271852_3670028682219140927_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyW7yrSfKXCL1oJSS93tVoiwJwmcK9NPH9lJlE70SU19_9DQjZmlO3ElVoe0NWuvche5q8ezfZGMSuu8bhwtxHahHTPVnDNXgTsBOztCavf9X7eMmHAQEOZeuVizSTZ9O1N00p2ZaPv9Q/s320/17884384_1314735405271852_3670028682219140927_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyW7yrSfKXCL1oJSS93tVoiwJwmcK9NPH9lJlE70SU19_9DQjZmlO3ElVoe0NWuvche5q8ezfZGMSuu8bhwtxHahHTPVnDNXgTsBOztCavf9X7eMmHAQEOZeuVizSTZ9O1N00p2ZaPv9Q/s480/17884384_1314735405271852_3670028682219140927_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyW7yrSfKXCL1oJSS93tVoiwJwmcK9NPH9lJlE70SU19_9DQjZmlO3ElVoe0NWuvche5q8ezfZGMSuu8bhwtxHahHTPVnDNXgTsBOztCavf9X7eMmHAQEOZeuVizSTZ9O1N00p2ZaPv9Q/s160/17884384_1314735405271852_3670028682219140927_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyW7yrSfKXCL1oJSS93tVoiwJwmcK9NPH9lJlE70SU19_9DQjZmlO3ElVoe0NWuvche5q8ezfZGMSuu8bhwtxHahHTPVnDNXgTsBOztCavf9X7eMmHAQEOZeuVizSTZ9O1N00p2ZaPv9Q/s320/17884384_1314735405271852_3670028682219140927_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyW7yrSfKXCL1oJSS93tVoiwJwmcK9NPH9lJlE70SU19_9DQjZmlO3ElVoe0NWuvche5q8ezfZGMSuu8bhwtxHahHTPVnDNXgTsBOztCavf9X7eMmHAQEOZeuVizSTZ9O1N00p2ZaPv9Q/s480/17884384_1314735405271852_3670028682219140927_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 274 - Rufus T. Firefly - Greatest Hits"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s320/b90_555.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s160/b90_555.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s320/b90_555.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s480/b90_555.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s160/b90_555.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s320/b90_555.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s480/b90_555.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 555 - Rufus T. Firefly en directo desde Noches del Botánico (31/07/2019)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZAABJPzu_xlIfykA2TeZbBddRg0hgAJYAJxvFGowME9COOYAl0mB3u6V2BejotLXKo_bmNLLe_GR__aN4ZJynJfA05Q0h451KzVquaSmMMqWCxRoXVgjGTXT1fuV5VHlfI9iTVGx4mSU/s320/0010004304_10.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZAABJPzu_xlIfykA2TeZbBddRg0hgAJYAJxvFGowME9COOYAl0mB3u6V2BejotLXKo_bmNLLe_GR__aN4ZJynJfA05Q0h451KzVquaSmMMqWCxRoXVgjGTXT1fuV5VHlfI9iTVGx4mSU/s160/0010004304_10.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZAABJPzu_xlIfykA2TeZbBddRg0hgAJYAJxvFGowME9COOYAl0mB3u6V2BejotLXKo_bmNLLe_GR__aN4ZJynJfA05Q0h451KzVquaSmMMqWCxRoXVgjGTXT1fuV5VHlfI9iTVGx4mSU/s320/0010004304_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZAABJPzu_xlIfykA2TeZbBddRg0hgAJYAJxvFGowME9COOYAl0mB3u6V2BejotLXKo_bmNLLe_GR__aN4ZJynJfA05Q0h451KzVquaSmMMqWCxRoXVgjGTXT1fuV5VHlfI9iTVGx4mSU/s480/0010004304_10.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZAABJPzu_xlIfykA2TeZbBddRg0hgAJYAJxvFGowME9COOYAl0mB3u6V2BejotLXKo_bmNLLe_GR__aN4ZJynJfA05Q0h451KzVquaSmMMqWCxRoXVgjGTXT1fuV5VHlfI9iTVGx4mSU/s160/0010004304_10.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZAABJPzu_xlIfykA2TeZbBddRg0hgAJYAJxvFGowME9COOYAl0mB3u6V2BejotLXKo_bmNLLe_GR__aN4ZJynJfA05Q0h451KzVquaSmMMqWCxRoXVgjGTXT1fuV5VHlfI9iTVGx4mSU/s320/0010004304_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZAABJPzu_xlIfykA2TeZbBddRg0hgAJYAJxvFGowME9COOYAl0mB3u6V2BejotLXKo_bmNLLe_GR__aN4ZJynJfA05Q0h451KzVquaSmMMqWCxRoXVgjGTXT1fuV5VHlfI9iTVGx4mSU/s480/0010004304_10.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.730 - Recordamos &#39;Magnolia/Loto&#39; de Rufus T. Firefly"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="programa-379-el-regreso-de-belly-melvins-y-rufus-t-firefly.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix5IewIggrvaZVXC3rcoyS2NUACCrLTGjCVMicnnzPorb6IqP0WxPm0txC5kbE7rVrCRqfxuoUOlYkE3cTg0JOvRmlm8uOfiC2hYx7CUMMwO6vVCIU3VJ2VVW3iRTE8tHvc3Ec1bDm7Qw/s320/a3788272129_10.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix5IewIggrvaZVXC3rcoyS2NUACCrLTGjCVMicnnzPorb6IqP0WxPm0txC5kbE7rVrCRqfxuoUOlYkE3cTg0JOvRmlm8uOfiC2hYx7CUMMwO6vVCIU3VJ2VVW3iRTE8tHvc3Ec1bDm7Qw/s320/a3788272129_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix5IewIggrvaZVXC3rcoyS2NUACCrLTGjCVMicnnzPorb6IqP0WxPm0txC5kbE7rVrCRqfxuoUOlYkE3cTg0JOvRmlm8uOfiC2hYx7CUMMwO6vVCIU3VJ2VVW3iRTE8tHvc3Ec1bDm7Qw/s480/a3788272129_10.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix5IewIggrvaZVXC3rcoyS2NUACCrLTGjCVMicnnzPorb6IqP0WxPm0txC5kbE7rVrCRqfxuoUOlYkE3cTg0JOvRmlm8uOfiC2hYx7CUMMwO6vVCIU3VJ2VVW3iRTE8tHvc3Ec1bDm7Qw/s640/a3788272129_10.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix5IewIggrvaZVXC3rcoyS2NUACCrLTGjCVMicnnzPorb6IqP0WxPm0txC5kbE7rVrCRqfxuoUOlYkE3cTg0JOvRmlm8uOfiC2hYx7CUMMwO6vVCIU3VJ2VVW3iRTE8tHvc3Ec1bDm7Qw/s320/a3788272129_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix5IewIggrvaZVXC3rcoyS2NUACCrLTGjCVMicnnzPorb6IqP0WxPm0txC5kbE7rVrCRqfxuoUOlYkE3cTg0JOvRmlm8uOfiC2hYx7CUMMwO6vVCIU3VJ2VVW3iRTE8tHvc3Ec1bDm7Qw/s480/a3788272129_10.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix5IewIggrvaZVXC3rcoyS2NUACCrLTGjCVMicnnzPorb6IqP0WxPm0txC5kbE7rVrCRqfxuoUOlYkE3cTg0JOvRmlm8uOfiC2hYx7CUMMwO6vVCIU3VJ2VVW3iRTE8tHvc3Ec1bDm7Qw/s640/a3788272129_10.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 379 -  El regreso de Belly, Melvins y Rufus T. Firefly"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="programa-328-manu-cabezali-producciones-2017.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s320/bienvenido-328.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s320/bienvenido-328.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s480/bienvenido-328.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s640/bienvenido-328.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s320/bienvenido-328.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s480/bienvenido-328.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKyAOSLw2TLXx3WvLiD33e8zuQeiUMltZV4WJYGiALXNoc1zF1KUAnnSik4uZz6NlyO_tceT5OsE0gSVwP7GFDSqw1KsjI3s39dIcKYhvQjs4yTOE8aU37VpACk1yTT_eElg326jtoXcg/s640/bienvenido-328.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 328 – Manu Cabezalí (Producciones 2017)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="programa-476-manuel-cabezali-producciones-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s320/IMG_20181226_134431.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s320/IMG_20181226_134431.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s480/IMG_20181226_134431.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s640/IMG_20181226_134431.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s320/IMG_20181226_134431.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s480/IMG_20181226_134431.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s640/IMG_20181226_134431.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 476 - Manuel Cabezalí - Producciones 2018"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

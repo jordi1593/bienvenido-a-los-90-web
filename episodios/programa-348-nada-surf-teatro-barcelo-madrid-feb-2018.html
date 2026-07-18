@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 348 - Nada Surf - Teatro Barceló (Madrid Feb 2018) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -124,8 +124,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s320/fotonoticia_20170316103002_800.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s160/fotonoticia_20170316103002_800.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s320/fotonoticia_20170316103002_800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s480/fotonoticia_20170316103002_800.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s160/fotonoticia_20170316103002_800.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s320/fotonoticia_20170316103002_800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s480/fotonoticia_20170316103002_800.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 354 - Metallica en España (2018)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -135,8 +134,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgM_7YdhEoWCPJ_aRIOW5OFsJFmtPf1ijQhlL5Ud-xRQGsNhc6d20X6zy7fK1lQmvRlALnjUH9_EaqPMwrbt29wVyIKicUe_PhF8P5TRtovst_OlnAdrMnTH0zWy7PEslxhxxM1RX1FPbU/s320/metallica+madrid.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgM_7YdhEoWCPJ_aRIOW5OFsJFmtPf1ijQhlL5Ud-xRQGsNhc6d20X6zy7fK1lQmvRlALnjUH9_EaqPMwrbt29wVyIKicUe_PhF8P5TRtovst_OlnAdrMnTH0zWy7PEslxhxxM1RX1FPbU/s160/metallica+madrid.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgM_7YdhEoWCPJ_aRIOW5OFsJFmtPf1ijQhlL5Ud-xRQGsNhc6d20X6zy7fK1lQmvRlALnjUH9_EaqPMwrbt29wVyIKicUe_PhF8P5TRtovst_OlnAdrMnTH0zWy7PEslxhxxM1RX1FPbU/s320/metallica+madrid.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgM_7YdhEoWCPJ_aRIOW5OFsJFmtPf1ijQhlL5Ud-xRQGsNhc6d20X6zy7fK1lQmvRlALnjUH9_EaqPMwrbt29wVyIKicUe_PhF8P5TRtovst_OlnAdrMnTH0zWy7PEslxhxxM1RX1FPbU/s480/metallica+madrid.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgM_7YdhEoWCPJ_aRIOW5OFsJFmtPf1ijQhlL5Ud-xRQGsNhc6d20X6zy7fK1lQmvRlALnjUH9_EaqPMwrbt29wVyIKicUe_PhF8P5TRtovst_OlnAdrMnTH0zWy7PEslxhxxM1RX1FPbU/s160/metallica+madrid.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgM_7YdhEoWCPJ_aRIOW5OFsJFmtPf1ijQhlL5Ud-xRQGsNhc6d20X6zy7fK1lQmvRlALnjUH9_EaqPMwrbt29wVyIKicUe_PhF8P5TRtovst_OlnAdrMnTH0zWy7PEslxhxxM1RX1FPbU/s320/metallica+madrid.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgM_7YdhEoWCPJ_aRIOW5OFsJFmtPf1ijQhlL5Ud-xRQGsNhc6d20X6zy7fK1lQmvRlALnjUH9_EaqPMwrbt29wVyIKicUe_PhF8P5TRtovst_OlnAdrMnTH0zWy7PEslxhxxM1RX1FPbU/s480/metallica+madrid.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 339 - Metallica (Wizink Center - Madrid 3 febrero 2018)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -146,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s320/b90P333.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s160/b90P333.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s320/b90P333.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s480/b90P333.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s160/b90P333.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s320/b90P333.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s480/b90P333.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 333 - Crónica NEW DAY (Madrid 6 enero 2018) "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -163,8 +160,7 @@
         <a class="related-bottom-card" href="programa-542-eddie-vedder-madrid-2019.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s320/542B+Vedder.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s320/542B+Vedder.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s480/542B+Vedder.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s640/542B+Vedder.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s320/542B+Vedder.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s480/542B+Vedder.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s640/542B+Vedder.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 542 - Eddie Vedder Madrid 2019"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -175,8 +171,7 @@
           </a><a class="related-bottom-card" href="programa-350-the-breeders-all-nerve-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDW329XkvPH6aM22T5KbDOfsZYlxWh4CXQC5gdQhHc65jwYfpCccXXqGX2KQrsEcewVxIVv0Nd1-xjwxQGX4tt5HZBJ8BsUkQvm7Khcbeq5_MmdvpYizX0ND0NHn2KxiHDAh7qKFi7P2U/s320/thebreeders-allnerve.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDW329XkvPH6aM22T5KbDOfsZYlxWh4CXQC5gdQhHc65jwYfpCccXXqGX2KQrsEcewVxIVv0Nd1-xjwxQGX4tt5HZBJ8BsUkQvm7Khcbeq5_MmdvpYizX0ND0NHn2KxiHDAh7qKFi7P2U/s320/thebreeders-allnerve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDW329XkvPH6aM22T5KbDOfsZYlxWh4CXQC5gdQhHc65jwYfpCccXXqGX2KQrsEcewVxIVv0Nd1-xjwxQGX4tt5HZBJ8BsUkQvm7Khcbeq5_MmdvpYizX0ND0NHn2KxiHDAh7qKFi7P2U/s480/thebreeders-allnerve.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDW329XkvPH6aM22T5KbDOfsZYlxWh4CXQC5gdQhHc65jwYfpCccXXqGX2KQrsEcewVxIVv0Nd1-xjwxQGX4tt5HZBJ8BsUkQvm7Khcbeq5_MmdvpYizX0ND0NHn2KxiHDAh7qKFi7P2U/s640/thebreeders-allnerve.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDW329XkvPH6aM22T5KbDOfsZYlxWh4CXQC5gdQhHc65jwYfpCccXXqGX2KQrsEcewVxIVv0Nd1-xjwxQGX4tt5HZBJ8BsUkQvm7Khcbeq5_MmdvpYizX0ND0NHn2KxiHDAh7qKFi7P2U/s320/thebreeders-allnerve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDW329XkvPH6aM22T5KbDOfsZYlxWh4CXQC5gdQhHc65jwYfpCccXXqGX2KQrsEcewVxIVv0Nd1-xjwxQGX4tt5HZBJ8BsUkQvm7Khcbeq5_MmdvpYizX0ND0NHn2KxiHDAh7qKFi7P2U/s480/thebreeders-allnerve.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDW329XkvPH6aM22T5KbDOfsZYlxWh4CXQC5gdQhHc65jwYfpCccXXqGX2KQrsEcewVxIVv0Nd1-xjwxQGX4tt5HZBJ8BsUkQvm7Khcbeq5_MmdvpYizX0ND0NHn2KxiHDAh7qKFi7P2U/s640/thebreeders-allnerve.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 350 - The Breeders &#39;All Nerve&#39; (2018)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -187,8 +182,7 @@
           </a><a class="related-bottom-card" href="programa-352-the-sonics-22-feb-joy-eslava.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg4OQjdc7MqnVomFVKg15dbpk2h2a9JkUTiuklCtDVOpYkcxDA6dqsxZcfcknD5wdtWilrs21eGjyD29VejjTwipdrRKRs6c68xGN7KjcdoU-3LsFpEo5NRY8r4qbV7mUT9pza1jr-jmU/s320/Screenshot_20180306-202738.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg4OQjdc7MqnVomFVKg15dbpk2h2a9JkUTiuklCtDVOpYkcxDA6dqsxZcfcknD5wdtWilrs21eGjyD29VejjTwipdrRKRs6c68xGN7KjcdoU-3LsFpEo5NRY8r4qbV7mUT9pza1jr-jmU/s320/Screenshot_20180306-202738.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg4OQjdc7MqnVomFVKg15dbpk2h2a9JkUTiuklCtDVOpYkcxDA6dqsxZcfcknD5wdtWilrs21eGjyD29VejjTwipdrRKRs6c68xGN7KjcdoU-3LsFpEo5NRY8r4qbV7mUT9pza1jr-jmU/s480/Screenshot_20180306-202738.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg4OQjdc7MqnVomFVKg15dbpk2h2a9JkUTiuklCtDVOpYkcxDA6dqsxZcfcknD5wdtWilrs21eGjyD29VejjTwipdrRKRs6c68xGN7KjcdoU-3LsFpEo5NRY8r4qbV7mUT9pza1jr-jmU/s640/Screenshot_20180306-202738.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg4OQjdc7MqnVomFVKg15dbpk2h2a9JkUTiuklCtDVOpYkcxDA6dqsxZcfcknD5wdtWilrs21eGjyD29VejjTwipdrRKRs6c68xGN7KjcdoU-3LsFpEo5NRY8r4qbV7mUT9pza1jr-jmU/s320/Screenshot_20180306-202738.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg4OQjdc7MqnVomFVKg15dbpk2h2a9JkUTiuklCtDVOpYkcxDA6dqsxZcfcknD5wdtWilrs21eGjyD29VejjTwipdrRKRs6c68xGN7KjcdoU-3LsFpEo5NRY8r4qbV7mUT9pza1jr-jmU/s480/Screenshot_20180306-202738.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg4OQjdc7MqnVomFVKg15dbpk2h2a9JkUTiuklCtDVOpYkcxDA6dqsxZcfcknD5wdtWilrs21eGjyD29VejjTwipdrRKRs6c68xGN7KjcdoU-3LsFpEo5NRY8r4qbV7mUT9pza1jr-jmU/s640/Screenshot_20180306-202738.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 352 - The Sonics (22 Feb Joy Eslava)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

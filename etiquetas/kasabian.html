@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Kasabian — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-857-novedades-louise-post-3rd-secret-paralyzed-fuzz-forward-kasabian-tunnel-ku.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ50_gFSS90VU9CB533kGzSiaZldsuDKwWPuYkdBie0ZHkWitu-GoWrZhZaVCzCdpY29txs7qUhH5ogpn86GsB6AdaOaESlSbFGtLoKDO4uDTJ0i15Fx2g5s0t-xwMOOfrnmOJBfPuS32GHSqp3V5aQLoQl78ELxzeJFkgGfYjUR60FKa8aRoMCvxw/s320/b90_860.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ50_gFSS90VU9CB533kGzSiaZldsuDKwWPuYkdBie0ZHkWitu-GoWrZhZaVCzCdpY29txs7qUhH5ogpn86GsB6AdaOaESlSbFGtLoKDO4uDTJ0i15Fx2g5s0t-xwMOOfrnmOJBfPuS32GHSqp3V5aQLoQl78ELxzeJFkgGfYjUR60FKa8aRoMCvxw/s160/b90_860.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ50_gFSS90VU9CB533kGzSiaZldsuDKwWPuYkdBie0ZHkWitu-GoWrZhZaVCzCdpY29txs7qUhH5ogpn86GsB6AdaOaESlSbFGtLoKDO4uDTJ0i15Fx2g5s0t-xwMOOfrnmOJBfPuS32GHSqp3V5aQLoQl78ELxzeJFkgGfYjUR60FKa8aRoMCvxw/s320/b90_860.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ50_gFSS90VU9CB533kGzSiaZldsuDKwWPuYkdBie0ZHkWitu-GoWrZhZaVCzCdpY29txs7qUhH5ogpn86GsB6AdaOaESlSbFGtLoKDO4uDTJ0i15Fx2g5s0t-xwMOOfrnmOJBfPuS32GHSqp3V5aQLoQl78ELxzeJFkgGfYjUR60FKa8aRoMCvxw/s480/b90_860.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ50_gFSS90VU9CB533kGzSiaZldsuDKwWPuYkdBie0ZHkWitu-GoWrZhZaVCzCdpY29txs7qUhH5ogpn86GsB6AdaOaESlSbFGtLoKDO4uDTJ0i15Fx2g5s0t-xwMOOfrnmOJBfPuS32GHSqp3V5aQLoQl78ELxzeJFkgGfYjUR60FKa8aRoMCvxw/s160/b90_860.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ50_gFSS90VU9CB533kGzSiaZldsuDKwWPuYkdBie0ZHkWitu-GoWrZhZaVCzCdpY29txs7qUhH5ogpn86GsB6AdaOaESlSbFGtLoKDO4uDTJ0i15Fx2g5s0t-xwMOOfrnmOJBfPuS32GHSqp3V5aQLoQl78ELxzeJFkgGfYjUR60FKa8aRoMCvxw/s320/b90_860.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ50_gFSS90VU9CB533kGzSiaZldsuDKwWPuYkdBie0ZHkWitu-GoWrZhZaVCzCdpY29txs7qUhH5ogpn86GsB6AdaOaESlSbFGtLoKDO4uDTJ0i15Fx2g5s0t-xwMOOfrnmOJBfPuS32GHSqp3V5aQLoQl78ELxzeJFkgGfYjUR60FKa8aRoMCvxw/s480/b90_860.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.857 - Novedades: Louise Post, 3rd Secret , Paralyzed, Fuzz Forward, Kasabian, Tunnel, Kula Shaker..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/programa-297-el-fenomeno-fan-2-0.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s320/bienvenido-297-b.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s160/bienvenido-297-b.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s320/bienvenido-297-b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s480/bienvenido-297-b.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s160/bienvenido-297-b.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s320/bienvenido-297-b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucZw5RuoxscmL_t-TOIc6rAlpU_VW3Zf2NUueP4g5tOE3HSKXUt_mAKIeHytHMvIoyJhlHpqBlzk3UhDiLBOfLBF8fNOLfXOCEjo474fLqokgiqrr1_R3HvL6V2AWA06cKXm7Y8uhE5I/s480/bienvenido-297-b.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 297 – El fenómeno fan 2.0"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-122-eels-en-madrid-y-glastonbury-2014.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 122 - Eels en Madrid y Glastonbury 2014"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-117-entrevista-con-arida-jack-white-kasabian-nirvana.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjclBH0wbbpAMe7LZyD6SOw8hrjXAXq46aLQtBhFAQHmiQ1OGLgf0lU1oLG9RnxqocH7ctN4qKFm4ANUQrBs_fdmRrLDGyBz-05uwD_pfKrQ8dUBPLwpQPbLc9LiyvT8u4rtiKNUOhIGdY/s320/unnamed.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjclBH0wbbpAMe7LZyD6SOw8hrjXAXq46aLQtBhFAQHmiQ1OGLgf0lU1oLG9RnxqocH7ctN4qKFm4ANUQrBs_fdmRrLDGyBz-05uwD_pfKrQ8dUBPLwpQPbLc9LiyvT8u4rtiKNUOhIGdY/s160/unnamed.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjclBH0wbbpAMe7LZyD6SOw8hrjXAXq46aLQtBhFAQHmiQ1OGLgf0lU1oLG9RnxqocH7ctN4qKFm4ANUQrBs_fdmRrLDGyBz-05uwD_pfKrQ8dUBPLwpQPbLc9LiyvT8u4rtiKNUOhIGdY/s320/unnamed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjclBH0wbbpAMe7LZyD6SOw8hrjXAXq46aLQtBhFAQHmiQ1OGLgf0lU1oLG9RnxqocH7ctN4qKFm4ANUQrBs_fdmRrLDGyBz-05uwD_pfKrQ8dUBPLwpQPbLc9LiyvT8u4rtiKNUOhIGdY/s480/unnamed.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjclBH0wbbpAMe7LZyD6SOw8hrjXAXq46aLQtBhFAQHmiQ1OGLgf0lU1oLG9RnxqocH7ctN4qKFm4ANUQrBs_fdmRrLDGyBz-05uwD_pfKrQ8dUBPLwpQPbLc9LiyvT8u4rtiKNUOhIGdY/s160/unnamed.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjclBH0wbbpAMe7LZyD6SOw8hrjXAXq46aLQtBhFAQHmiQ1OGLgf0lU1oLG9RnxqocH7ctN4qKFm4ANUQrBs_fdmRrLDGyBz-05uwD_pfKrQ8dUBPLwpQPbLc9LiyvT8u4rtiKNUOhIGdY/s320/unnamed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjclBH0wbbpAMe7LZyD6SOw8hrjXAXq46aLQtBhFAQHmiQ1OGLgf0lU1oLG9RnxqocH7ctN4qKFm4ANUQrBs_fdmRrLDGyBz-05uwD_pfKrQ8dUBPLwpQPbLc9LiyvT8u4rtiKNUOhIGdY/s480/unnamed.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 117 - Entrevista con ÁRIDA + Jack White, Kasabian, Nirvana..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-66-the-doors-stone-temple-pilots-qotsa-primal-scream.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 66 - The DOORS, STONE TEMPLE PILOTS, QOTSA, PRIMAL SCREAM"
                 loading="lazy" width="320" height="213" />
         </a>

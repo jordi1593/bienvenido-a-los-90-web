@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Pan — 7 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-886-homenaje-a-havalina.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhye0kVrsM1E87gNiDaSFOJ8qf5gSEl36UiTKXg2z1cIkQH-4OYJ6if0eac7sTGv75EC4j6orXBCOQoqT_ZXpg5cgKs36h9bK-7Zl2HvyaQMBe2LoDtdvbTqteSYt05dBTauXKJ8YPL-T54pS89cnWsX9ZSKtRvDaMVUhkbukxtYd_lt950FbLW1t_a/s320/homenaje_havalina_cover_LQ.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhye0kVrsM1E87gNiDaSFOJ8qf5gSEl36UiTKXg2z1cIkQH-4OYJ6if0eac7sTGv75EC4j6orXBCOQoqT_ZXpg5cgKs36h9bK-7Zl2HvyaQMBe2LoDtdvbTqteSYt05dBTauXKJ8YPL-T54pS89cnWsX9ZSKtRvDaMVUhkbukxtYd_lt950FbLW1t_a/s160/homenaje_havalina_cover_LQ.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhye0kVrsM1E87gNiDaSFOJ8qf5gSEl36UiTKXg2z1cIkQH-4OYJ6if0eac7sTGv75EC4j6orXBCOQoqT_ZXpg5cgKs36h9bK-7Zl2HvyaQMBe2LoDtdvbTqteSYt05dBTauXKJ8YPL-T54pS89cnWsX9ZSKtRvDaMVUhkbukxtYd_lt950FbLW1t_a/s320/homenaje_havalina_cover_LQ.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhye0kVrsM1E87gNiDaSFOJ8qf5gSEl36UiTKXg2z1cIkQH-4OYJ6if0eac7sTGv75EC4j6orXBCOQoqT_ZXpg5cgKs36h9bK-7Zl2HvyaQMBe2LoDtdvbTqteSYt05dBTauXKJ8YPL-T54pS89cnWsX9ZSKtRvDaMVUhkbukxtYd_lt950FbLW1t_a/s480/homenaje_havalina_cover_LQ.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhye0kVrsM1E87gNiDaSFOJ8qf5gSEl36UiTKXg2z1cIkQH-4OYJ6if0eac7sTGv75EC4j6orXBCOQoqT_ZXpg5cgKs36h9bK-7Zl2HvyaQMBe2LoDtdvbTqteSYt05dBTauXKJ8YPL-T54pS89cnWsX9ZSKtRvDaMVUhkbukxtYd_lt950FbLW1t_a/s160/homenaje_havalina_cover_LQ.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhye0kVrsM1E87gNiDaSFOJ8qf5gSEl36UiTKXg2z1cIkQH-4OYJ6if0eac7sTGv75EC4j6orXBCOQoqT_ZXpg5cgKs36h9bK-7Zl2HvyaQMBe2LoDtdvbTqteSYt05dBTauXKJ8YPL-T54pS89cnWsX9ZSKtRvDaMVUhkbukxtYd_lt950FbLW1t_a/s320/homenaje_havalina_cover_LQ.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhye0kVrsM1E87gNiDaSFOJ8qf5gSEl36UiTKXg2z1cIkQH-4OYJ6if0eac7sTGv75EC4j6orXBCOQoqT_ZXpg5cgKs36h9bK-7Zl2HvyaQMBe2LoDtdvbTqteSYt05dBTauXKJ8YPL-T54pS89cnWsX9ZSKtRvDaMVUhkbukxtYd_lt950FbLW1t_a/s480/homenaje_havalina_cover_LQ.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.886 - Homenaje a HAVALINA"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-745-manuel-cabezali-producciones-2020.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpNJ_o_w7-3b2GF8yfVtd7AZ3OmGRKUxgk-jlJKfZQFmLC6EoJ3Pngbde1JIbkdesLXNdaRmOVSYw05apvuhM8VrS3ZqQlzru38FZi1X_thgCYyxyoeHYYvigLOiJWb75hKWBCBaYdTAo/s320/b90_744_final.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpNJ_o_w7-3b2GF8yfVtd7AZ3OmGRKUxgk-jlJKfZQFmLC6EoJ3Pngbde1JIbkdesLXNdaRmOVSYw05apvuhM8VrS3ZqQlzru38FZi1X_thgCYyxyoeHYYvigLOiJWb75hKWBCBaYdTAo/s160/b90_744_final.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpNJ_o_w7-3b2GF8yfVtd7AZ3OmGRKUxgk-jlJKfZQFmLC6EoJ3Pngbde1JIbkdesLXNdaRmOVSYw05apvuhM8VrS3ZqQlzru38FZi1X_thgCYyxyoeHYYvigLOiJWb75hKWBCBaYdTAo/s320/b90_744_final.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpNJ_o_w7-3b2GF8yfVtd7AZ3OmGRKUxgk-jlJKfZQFmLC6EoJ3Pngbde1JIbkdesLXNdaRmOVSYw05apvuhM8VrS3ZqQlzru38FZi1X_thgCYyxyoeHYYvigLOiJWb75hKWBCBaYdTAo/s480/b90_744_final.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpNJ_o_w7-3b2GF8yfVtd7AZ3OmGRKUxgk-jlJKfZQFmLC6EoJ3Pngbde1JIbkdesLXNdaRmOVSYw05apvuhM8VrS3ZqQlzru38FZi1X_thgCYyxyoeHYYvigLOiJWb75hKWBCBaYdTAo/s160/b90_744_final.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpNJ_o_w7-3b2GF8yfVtd7AZ3OmGRKUxgk-jlJKfZQFmLC6EoJ3Pngbde1JIbkdesLXNdaRmOVSYw05apvuhM8VrS3ZqQlzru38FZi1X_thgCYyxyoeHYYvigLOiJWb75hKWBCBaYdTAo/s320/b90_744_final.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpNJ_o_w7-3b2GF8yfVtd7AZ3OmGRKUxgk-jlJKfZQFmLC6EoJ3Pngbde1JIbkdesLXNdaRmOVSYw05apvuhM8VrS3ZqQlzru38FZi1X_thgCYyxyoeHYYvigLOiJWb75hKWBCBaYdTAo/s480/b90_744_final.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.745 - Manuel Cabezalí - Producciones 2020"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-563-live-vol-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s320/IMG_20190821_193538.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s160/IMG_20190821_193538.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s320/IMG_20190821_193538.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s480/IMG_20190821_193538.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s160/IMG_20190821_193538.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s320/IMG_20190821_193538.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s480/IMG_20190821_193538.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 563: Live! Vol.1 "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-503-las-b90-sessions-vol-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s320/b90_503+%25283%2529.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s160/b90_503+%25283%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s320/b90_503+%25283%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s480/b90_503+%25283%2529.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s160/b90_503+%25283%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s320/b90_503+%25283%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s480/b90_503+%25283%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 503 - Las b90 Sessions Vol.1"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/que-significa-bienvenido-a-los-90-para-ti.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s320/53012096_666655617086037_624432951429431296_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s160/53012096_666655617086037_624432951429431296_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s320/53012096_666655617086037_624432951429431296_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s480/53012096_666655617086037_624432951429431296_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s160/53012096_666655617086037_624432951429431296_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s320/53012096_666655617086037_624432951429431296_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUm82rPbHRybcQBihvma9sLgHyh33t1sAOkm_vJbeXyJYU3vrEWNFSBG5Y6Q4KRqA3pK1hBD4QaOUFSAiTX1LZ6m2RENiqjaWGixM9Tp71lxFPBZizN6HoGZYE3M4dP8_wDGN8-gJ1ZgE/s480/53012096_666655617086037_624432951429431296_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="¿Qué significa &#39;Bienvenido a los 90 para ti?"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-493-actualidad-y-entrevista-a-pan.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s320/b90_493+%25282%2529.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s160/b90_493+%25282%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s320/b90_493+%25282%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s480/b90_493+%25282%2529.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s160/b90_493+%25282%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s320/b90_493+%25282%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-LNAxJCZEVIW_NGZTVa2N36DSrMdPJxXCaFi4icRtan78W3m6yOMhoJDoUxZIFsK5H9b6CuB4bXnpxOysmmEagdMCjUpUitNGbPtyAf_2YLfl0zcOqiPfyjSr6xFR-_5NGVSMiyCmlY/s480/b90_493+%25282%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 493 - Actualidad y entrevista a PAN"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-476-manuel-cabezali-producciones-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s320/IMG_20181226_134431.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s160/IMG_20181226_134431.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s320/IMG_20181226_134431.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s480/IMG_20181226_134431.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s160/IMG_20181226_134431.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s320/IMG_20181226_134431.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia53xI2IPXyt9qpiVL40oNhYF6A5DAKdaIoCCi_vFi35Fy8PUG9qahATzkG0rC3VLK3j7a9c69KdPrqFqO_EDbzaNWT8eeKQO0FTIzL290fmykAQUHC_EEDuDEv7Z3PJkD9fgisoOHgE8/s480/IMG_20181226_134431.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 476 - Manuel Cabezalí - Producciones 2018"
                 loading="lazy" width="320" height="213" />
         </a>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.604 - Hablamos de lo último de Green Day, Stone Temple Pilots, Pearl Jam... — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -137,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJhun0vgzTpuIjd8eaq8ZCI2t7o8D4pgnCAY7riCy9WAQy8bLyfIPLVpcaY7P07akNUX7kF-jaIEpqD6U9Ghqi3TMYVV8RLSUiok_FhJKp45Hh0hGQ00LV8-dDU__Nwk2rETEEMhuY1oY/s320/535+-+STP+-+Purple+A.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJhun0vgzTpuIjd8eaq8ZCI2t7o8D4pgnCAY7riCy9WAQy8bLyfIPLVpcaY7P07akNUX7kF-jaIEpqD6U9Ghqi3TMYVV8RLSUiok_FhJKp45Hh0hGQ00LV8-dDU__Nwk2rETEEMhuY1oY/s160/535+-+STP+-+Purple+A.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJhun0vgzTpuIjd8eaq8ZCI2t7o8D4pgnCAY7riCy9WAQy8bLyfIPLVpcaY7P07akNUX7kF-jaIEpqD6U9Ghqi3TMYVV8RLSUiok_FhJKp45Hh0hGQ00LV8-dDU__Nwk2rETEEMhuY1oY/s320/535+-+STP+-+Purple+A.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJhun0vgzTpuIjd8eaq8ZCI2t7o8D4pgnCAY7riCy9WAQy8bLyfIPLVpcaY7P07akNUX7kF-jaIEpqD6U9Ghqi3TMYVV8RLSUiok_FhJKp45Hh0hGQ00LV8-dDU__Nwk2rETEEMhuY1oY/s480/535+-+STP+-+Purple+A.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJhun0vgzTpuIjd8eaq8ZCI2t7o8D4pgnCAY7riCy9WAQy8bLyfIPLVpcaY7P07akNUX7kF-jaIEpqD6U9Ghqi3TMYVV8RLSUiok_FhJKp45Hh0hGQ00LV8-dDU__Nwk2rETEEMhuY1oY/s160/535+-+STP+-+Purple+A.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJhun0vgzTpuIjd8eaq8ZCI2t7o8D4pgnCAY7riCy9WAQy8bLyfIPLVpcaY7P07akNUX7kF-jaIEpqD6U9Ghqi3TMYVV8RLSUiok_FhJKp45Hh0hGQ00LV8-dDU__Nwk2rETEEMhuY1oY/s320/535+-+STP+-+Purple+A.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJhun0vgzTpuIjd8eaq8ZCI2t7o8D4pgnCAY7riCy9WAQy8bLyfIPLVpcaY7P07akNUX7kF-jaIEpqD6U9Ghqi3TMYVV8RLSUiok_FhJKp45Hh0hGQ00LV8-dDU__Nwk2rETEEMhuY1oY/s480/535+-+STP+-+Purple+A.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 535 - &#39;Purple&#39; de Stone Temple Pilots cumple 25 años"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s320/Maraton%20b90%202024%20blue%206.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s160/Maraton%20b90%202024%20blue%206.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s320/Maraton%20b90%202024%20blue%206.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s480/Maraton%20b90%202024%20blue%206.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s160/Maraton%20b90%202024%20blue%206.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s320/Maraton%20b90%202024%20blue%206.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s480/Maraton%20b90%202024%20blue%206.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.1013 - Especial 1994, Parte 6: Nirvana, Stone Temple Pilots, Massive Attack, Sonic Youth, Weezer..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -159,8 +157,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s320/b90_parte12_final.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s160/b90_parte12_final.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s320/b90_parte12_final.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s480/b90_parte12_final.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s160/b90_parte12_final.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s320/b90_parte12_final.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s480/b90_parte12_final.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1021 - Especial 1994 (12) : The Beatles - The Stone Roses - Bush - Pearl Jam"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -176,8 +173,7 @@
         <a class="related-bottom-card" href="programa-66-the-doors-stone-temple-pilots-qotsa-primal-scream.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 66 - The DOORS, STONE TEMPLE PILOTS, QOTSA, PRIMAL SCREAM"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -188,8 +184,7 @@
           </a><a class="related-bottom-card" href="p-620-escuchamos-lo-nuevo-de-pearl-jam.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB5WTrGopQvHNnWPVwyouw1W_gXabzbsx4Adq5f3hye8GwqYveygb8h5el2U3uypo5F89ZPkLa8RNJL5YdqNYAsLbocDzlBYlkZCDJY6Sn0QCgfHxoCXFSxZRFeM7bcVY53uRktGxi5nQ/s320/pearl-jam.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB5WTrGopQvHNnWPVwyouw1W_gXabzbsx4Adq5f3hye8GwqYveygb8h5el2U3uypo5F89ZPkLa8RNJL5YdqNYAsLbocDzlBYlkZCDJY6Sn0QCgfHxoCXFSxZRFeM7bcVY53uRktGxi5nQ/s320/pearl-jam.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB5WTrGopQvHNnWPVwyouw1W_gXabzbsx4Adq5f3hye8GwqYveygb8h5el2U3uypo5F89ZPkLa8RNJL5YdqNYAsLbocDzlBYlkZCDJY6Sn0QCgfHxoCXFSxZRFeM7bcVY53uRktGxi5nQ/s480/pearl-jam.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB5WTrGopQvHNnWPVwyouw1W_gXabzbsx4Adq5f3hye8GwqYveygb8h5el2U3uypo5F89ZPkLa8RNJL5YdqNYAsLbocDzlBYlkZCDJY6Sn0QCgfHxoCXFSxZRFeM7bcVY53uRktGxi5nQ/s640/pearl-jam.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB5WTrGopQvHNnWPVwyouw1W_gXabzbsx4Adq5f3hye8GwqYveygb8h5el2U3uypo5F89ZPkLa8RNJL5YdqNYAsLbocDzlBYlkZCDJY6Sn0QCgfHxoCXFSxZRFeM7bcVY53uRktGxi5nQ/s320/pearl-jam.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB5WTrGopQvHNnWPVwyouw1W_gXabzbsx4Adq5f3hye8GwqYveygb8h5el2U3uypo5F89ZPkLa8RNJL5YdqNYAsLbocDzlBYlkZCDJY6Sn0QCgfHxoCXFSxZRFeM7bcVY53uRktGxi5nQ/s480/pearl-jam.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB5WTrGopQvHNnWPVwyouw1W_gXabzbsx4Adq5f3hye8GwqYveygb8h5el2U3uypo5F89ZPkLa8RNJL5YdqNYAsLbocDzlBYlkZCDJY6Sn0QCgfHxoCXFSxZRFeM7bcVY53uRktGxi5nQ/s640/pearl-jam.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.620 - Escuchamos lo nuevo de PEARL JAM"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -200,8 +195,7 @@
           </a><a class="related-bottom-card" href="p-622-pearl-jam-interpretan-ten-en-directo-philadelphia-2016.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWz2mbeYhM0373aGIoIHHHClLlr3DSMxKL4TjpaT6UUEqW4lfPpM-9WWcfg9Nn5GnCGKbtY0rmgbzEc_fkFlTXdATjn8g1Rj8yompd8be0-kbFHS4A04fuqkoZDO19Szjjphq5OyfvMRY/s320/philly2.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWz2mbeYhM0373aGIoIHHHClLlr3DSMxKL4TjpaT6UUEqW4lfPpM-9WWcfg9Nn5GnCGKbtY0rmgbzEc_fkFlTXdATjn8g1Rj8yompd8be0-kbFHS4A04fuqkoZDO19Szjjphq5OyfvMRY/s320/philly2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWz2mbeYhM0373aGIoIHHHClLlr3DSMxKL4TjpaT6UUEqW4lfPpM-9WWcfg9Nn5GnCGKbtY0rmgbzEc_fkFlTXdATjn8g1Rj8yompd8be0-kbFHS4A04fuqkoZDO19Szjjphq5OyfvMRY/s480/philly2.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWz2mbeYhM0373aGIoIHHHClLlr3DSMxKL4TjpaT6UUEqW4lfPpM-9WWcfg9Nn5GnCGKbtY0rmgbzEc_fkFlTXdATjn8g1Rj8yompd8be0-kbFHS4A04fuqkoZDO19Szjjphq5OyfvMRY/s640/philly2.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWz2mbeYhM0373aGIoIHHHClLlr3DSMxKL4TjpaT6UUEqW4lfPpM-9WWcfg9Nn5GnCGKbtY0rmgbzEc_fkFlTXdATjn8g1Rj8yompd8be0-kbFHS4A04fuqkoZDO19Szjjphq5OyfvMRY/s320/philly2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWz2mbeYhM0373aGIoIHHHClLlr3DSMxKL4TjpaT6UUEqW4lfPpM-9WWcfg9Nn5GnCGKbtY0rmgbzEc_fkFlTXdATjn8g1Rj8yompd8be0-kbFHS4A04fuqkoZDO19Szjjphq5OyfvMRY/s480/philly2.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWz2mbeYhM0373aGIoIHHHClLlr3DSMxKL4TjpaT6UUEqW4lfPpM-9WWcfg9Nn5GnCGKbtY0rmgbzEc_fkFlTXdATjn8g1Rj8yompd8be0-kbFHS4A04fuqkoZDO19Szjjphq5OyfvMRY/s640/philly2.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.622 - Pearl Jam interpretan TEN en directo (Philadelphia 2016)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

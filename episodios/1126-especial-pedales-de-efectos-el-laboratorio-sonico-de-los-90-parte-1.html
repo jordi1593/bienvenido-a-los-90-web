@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>1126 - Especial Pedales de Efectos: El Laboratorio Sónico de los 90 (Parte 1) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -150,8 +150,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqNmJfJZOiFYLJhQ_PtimRECsnK_a05K6CQlYwrt9KSUZQhRDjlK0TZuO-TbHbWNOVyfGWPhsIjw5Ue_cPCg3Cm1dIt22nl-rxN9fO8OhWg7PIvF1T436dtAtM5N8haNcMuUS8vUHwEl_4ub1Hove5uQ7XbdSj5a58JAlqk43VJHLRlY72-6r0jYYJ8lg/s320/B90_1127.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqNmJfJZOiFYLJhQ_PtimRECsnK_a05K6CQlYwrt9KSUZQhRDjlK0TZuO-TbHbWNOVyfGWPhsIjw5Ue_cPCg3Cm1dIt22nl-rxN9fO8OhWg7PIvF1T436dtAtM5N8haNcMuUS8vUHwEl_4ub1Hove5uQ7XbdSj5a58JAlqk43VJHLRlY72-6r0jYYJ8lg/s160/B90_1127.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqNmJfJZOiFYLJhQ_PtimRECsnK_a05K6CQlYwrt9KSUZQhRDjlK0TZuO-TbHbWNOVyfGWPhsIjw5Ue_cPCg3Cm1dIt22nl-rxN9fO8OhWg7PIvF1T436dtAtM5N8haNcMuUS8vUHwEl_4ub1Hove5uQ7XbdSj5a58JAlqk43VJHLRlY72-6r0jYYJ8lg/s320/B90_1127.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqNmJfJZOiFYLJhQ_PtimRECsnK_a05K6CQlYwrt9KSUZQhRDjlK0TZuO-TbHbWNOVyfGWPhsIjw5Ue_cPCg3Cm1dIt22nl-rxN9fO8OhWg7PIvF1T436dtAtM5N8haNcMuUS8vUHwEl_4ub1Hove5uQ7XbdSj5a58JAlqk43VJHLRlY72-6r0jYYJ8lg/s480/B90_1127.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqNmJfJZOiFYLJhQ_PtimRECsnK_a05K6CQlYwrt9KSUZQhRDjlK0TZuO-TbHbWNOVyfGWPhsIjw5Ue_cPCg3Cm1dIt22nl-rxN9fO8OhWg7PIvF1T436dtAtM5N8haNcMuUS8vUHwEl_4ub1Hove5uQ7XbdSj5a58JAlqk43VJHLRlY72-6r0jYYJ8lg/s160/B90_1127.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqNmJfJZOiFYLJhQ_PtimRECsnK_a05K6CQlYwrt9KSUZQhRDjlK0TZuO-TbHbWNOVyfGWPhsIjw5Ue_cPCg3Cm1dIt22nl-rxN9fO8OhWg7PIvF1T436dtAtM5N8haNcMuUS8vUHwEl_4ub1Hove5uQ7XbdSj5a58JAlqk43VJHLRlY72-6r0jYYJ8lg/s320/B90_1127.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqNmJfJZOiFYLJhQ_PtimRECsnK_a05K6CQlYwrt9KSUZQhRDjlK0TZuO-TbHbWNOVyfGWPhsIjw5Ue_cPCg3Cm1dIt22nl-rxN9fO8OhWg7PIvF1T436dtAtM5N8haNcMuUS8vUHwEl_4ub1Hove5uQ7XbdSj5a58JAlqk43VJHLRlY72-6r0jYYJ8lg/s480/B90_1127.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1127 - Especial Pedales de Efectos: El Laboratorio Sónico de los 90 (Parte 2)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -161,8 +160,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s320/b90_555.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s160/b90_555.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s320/b90_555.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s480/b90_555.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s160/b90_555.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s320/b90_555.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s480/b90_555.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 555 - Rufus T. Firefly en directo desde Noches del Botánico (31/07/2019)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -172,8 +170,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s320/b90_505.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s160/b90_505.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s320/b90_505.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s480/b90_505.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s160/b90_505.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s320/b90_505.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s480/b90_505.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 505 - Mis 10 documentales musicales favoritos de los 90"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -189,8 +186,7 @@
         <a class="related-bottom-card" href="1125-the-smashing-pumpkins-melancolia-sinfonica-el-funeral-de-zero-y-el-retorno-de-bu.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgni7BL8R1dnmpBUUswQYrxtjlkslZzcrkONaUOC1Tro6pdLgXgJPqElK1i5VV1ix7crqcF2fknHn1kf4oXB_k7ovK4Me7fextUU2Q53MkbATsydPx5MUu5Iz-G-lWrNinyx2R21KQml1Fyhkt7CUq3PekxL-cL0If198qTaQJ5pqcYfW_yKoeAWjc-F6g/s320/Billy-Nueva-fecha-PV.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgni7BL8R1dnmpBUUswQYrxtjlkslZzcrkONaUOC1Tro6pdLgXgJPqElK1i5VV1ix7crqcF2fknHn1kf4oXB_k7ovK4Me7fextUU2Q53MkbATsydPx5MUu5Iz-G-lWrNinyx2R21KQml1Fyhkt7CUq3PekxL-cL0If198qTaQJ5pqcYfW_yKoeAWjc-F6g/s320/Billy-Nueva-fecha-PV.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgni7BL8R1dnmpBUUswQYrxtjlkslZzcrkONaUOC1Tro6pdLgXgJPqElK1i5VV1ix7crqcF2fknHn1kf4oXB_k7ovK4Me7fextUU2Q53MkbATsydPx5MUu5Iz-G-lWrNinyx2R21KQml1Fyhkt7CUq3PekxL-cL0If198qTaQJ5pqcYfW_yKoeAWjc-F6g/s480/Billy-Nueva-fecha-PV.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgni7BL8R1dnmpBUUswQYrxtjlkslZzcrkONaUOC1Tro6pdLgXgJPqElK1i5VV1ix7crqcF2fknHn1kf4oXB_k7ovK4Me7fextUU2Q53MkbATsydPx5MUu5Iz-G-lWrNinyx2R21KQml1Fyhkt7CUq3PekxL-cL0If198qTaQJ5pqcYfW_yKoeAWjc-F6g/s640/Billy-Nueva-fecha-PV.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgni7BL8R1dnmpBUUswQYrxtjlkslZzcrkONaUOC1Tro6pdLgXgJPqElK1i5VV1ix7crqcF2fknHn1kf4oXB_k7ovK4Me7fextUU2Q53MkbATsydPx5MUu5Iz-G-lWrNinyx2R21KQml1Fyhkt7CUq3PekxL-cL0If198qTaQJ5pqcYfW_yKoeAWjc-F6g/s320/Billy-Nueva-fecha-PV.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgni7BL8R1dnmpBUUswQYrxtjlkslZzcrkONaUOC1Tro6pdLgXgJPqElK1i5VV1ix7crqcF2fknHn1kf4oXB_k7ovK4Me7fextUU2Q53MkbATsydPx5MUu5Iz-G-lWrNinyx2R21KQml1Fyhkt7CUq3PekxL-cL0If198qTaQJ5pqcYfW_yKoeAWjc-F6g/s480/Billy-Nueva-fecha-PV.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgni7BL8R1dnmpBUUswQYrxtjlkslZzcrkONaUOC1Tro6pdLgXgJPqElK1i5VV1ix7crqcF2fknHn1kf4oXB_k7ovK4Me7fextUU2Q53MkbATsydPx5MUu5Iz-G-lWrNinyx2R21KQml1Fyhkt7CUq3PekxL-cL0If198qTaQJ5pqcYfW_yKoeAWjc-F6g/s640/Billy-Nueva-fecha-PV.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1125 - The Smashing Pumpkins: Melancolía Sinfónica, El Funeral de Zero y el Retorno de Butch Vig"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -201,8 +197,7 @@
           </a><a class="related-bottom-card" href="1112-me-he-vuelto-a-comprar-el-mellon-collie-and-the-infinite-sadness-30-anos-despues.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu6-jbQLtmmGD45Qi1CwiCixkghEpIokTTCImpK6KifAlX3-aLYQSq7qTFUctj_PD1zAsxjWfHvnQZ0gpIK9a3w5XJVV_rv82FlFQlUfgTLD4gKoy4CuLzAbax86LK0r2L31n48SPTlnhyrXOXfPdtZlt-0YDnnROMfbWL3eRP-e56MnjmkeAVC_WmT1s/s320/B90_1112.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu6-jbQLtmmGD45Qi1CwiCixkghEpIokTTCImpK6KifAlX3-aLYQSq7qTFUctj_PD1zAsxjWfHvnQZ0gpIK9a3w5XJVV_rv82FlFQlUfgTLD4gKoy4CuLzAbax86LK0r2L31n48SPTlnhyrXOXfPdtZlt-0YDnnROMfbWL3eRP-e56MnjmkeAVC_WmT1s/s320/B90_1112.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu6-jbQLtmmGD45Qi1CwiCixkghEpIokTTCImpK6KifAlX3-aLYQSq7qTFUctj_PD1zAsxjWfHvnQZ0gpIK9a3w5XJVV_rv82FlFQlUfgTLD4gKoy4CuLzAbax86LK0r2L31n48SPTlnhyrXOXfPdtZlt-0YDnnROMfbWL3eRP-e56MnjmkeAVC_WmT1s/s480/B90_1112.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu6-jbQLtmmGD45Qi1CwiCixkghEpIokTTCImpK6KifAlX3-aLYQSq7qTFUctj_PD1zAsxjWfHvnQZ0gpIK9a3w5XJVV_rv82FlFQlUfgTLD4gKoy4CuLzAbax86LK0r2L31n48SPTlnhyrXOXfPdtZlt-0YDnnROMfbWL3eRP-e56MnjmkeAVC_WmT1s/s640/B90_1112.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu6-jbQLtmmGD45Qi1CwiCixkghEpIokTTCImpK6KifAlX3-aLYQSq7qTFUctj_PD1zAsxjWfHvnQZ0gpIK9a3w5XJVV_rv82FlFQlUfgTLD4gKoy4CuLzAbax86LK0r2L31n48SPTlnhyrXOXfPdtZlt-0YDnnROMfbWL3eRP-e56MnjmkeAVC_WmT1s/s320/B90_1112.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu6-jbQLtmmGD45Qi1CwiCixkghEpIokTTCImpK6KifAlX3-aLYQSq7qTFUctj_PD1zAsxjWfHvnQZ0gpIK9a3w5XJVV_rv82FlFQlUfgTLD4gKoy4CuLzAbax86LK0r2L31n48SPTlnhyrXOXfPdtZlt-0YDnnROMfbWL3eRP-e56MnjmkeAVC_WmT1s/s480/B90_1112.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu6-jbQLtmmGD45Qi1CwiCixkghEpIokTTCImpK6KifAlX3-aLYQSq7qTFUctj_PD1zAsxjWfHvnQZ0gpIK9a3w5XJVV_rv82FlFQlUfgTLD4gKoy4CuLzAbax86LK0r2L31n48SPTlnhyrXOXfPdtZlt-0YDnnROMfbWL3eRP-e56MnjmkeAVC_WmT1s/s640/B90_1112.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1112 - Me he vuelto a comprar el Mellon Collie And The Infinite Sadness 30 años después"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -213,8 +208,7 @@
           </a><a class="related-bottom-card" href="b90-supernova-89-el-ultimo-single-de-smashing-pumpkins-untitled.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgePhOQJaGzKinjzShvk6hFP0zrFaJZy6_Zc-Wk4cdeIds8B9O4IPyNe-d0_hBxVh1DwUsVnPKucgIxcPWrPIWmYmMEHfs5GhJssJcUqiN9QaIkUboZeQh1Uf68yOmzb5mR30fM-CeB0XGen-RmlIoUzXNXt7FDGEDqw85U4JmbH0dpq-BFZh5TIrMN6Mg/s320/R-916841-1172530308.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgePhOQJaGzKinjzShvk6hFP0zrFaJZy6_Zc-Wk4cdeIds8B9O4IPyNe-d0_hBxVh1DwUsVnPKucgIxcPWrPIWmYmMEHfs5GhJssJcUqiN9QaIkUboZeQh1Uf68yOmzb5mR30fM-CeB0XGen-RmlIoUzXNXt7FDGEDqw85U4JmbH0dpq-BFZh5TIrMN6Mg/s320/R-916841-1172530308.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgePhOQJaGzKinjzShvk6hFP0zrFaJZy6_Zc-Wk4cdeIds8B9O4IPyNe-d0_hBxVh1DwUsVnPKucgIxcPWrPIWmYmMEHfs5GhJssJcUqiN9QaIkUboZeQh1Uf68yOmzb5mR30fM-CeB0XGen-RmlIoUzXNXt7FDGEDqw85U4JmbH0dpq-BFZh5TIrMN6Mg/s480/R-916841-1172530308.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgePhOQJaGzKinjzShvk6hFP0zrFaJZy6_Zc-Wk4cdeIds8B9O4IPyNe-d0_hBxVh1DwUsVnPKucgIxcPWrPIWmYmMEHfs5GhJssJcUqiN9QaIkUboZeQh1Uf68yOmzb5mR30fM-CeB0XGen-RmlIoUzXNXt7FDGEDqw85U4JmbH0dpq-BFZh5TIrMN6Mg/s640/R-916841-1172530308.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgePhOQJaGzKinjzShvk6hFP0zrFaJZy6_Zc-Wk4cdeIds8B9O4IPyNe-d0_hBxVh1DwUsVnPKucgIxcPWrPIWmYmMEHfs5GhJssJcUqiN9QaIkUboZeQh1Uf68yOmzb5mR30fM-CeB0XGen-RmlIoUzXNXt7FDGEDqw85U4JmbH0dpq-BFZh5TIrMN6Mg/s320/R-916841-1172530308.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgePhOQJaGzKinjzShvk6hFP0zrFaJZy6_Zc-Wk4cdeIds8B9O4IPyNe-d0_hBxVh1DwUsVnPKucgIxcPWrPIWmYmMEHfs5GhJssJcUqiN9QaIkUboZeQh1Uf68yOmzb5mR30fM-CeB0XGen-RmlIoUzXNXt7FDGEDqw85U4JmbH0dpq-BFZh5TIrMN6Mg/s480/R-916841-1172530308.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgePhOQJaGzKinjzShvk6hFP0zrFaJZy6_Zc-Wk4cdeIds8B9O4IPyNe-d0_hBxVh1DwUsVnPKucgIxcPWrPIWmYmMEHfs5GhJssJcUqiN9QaIkUboZeQh1Uf68yOmzb5mR30fM-CeB0XGen-RmlIoUzXNXt7FDGEDqw85U4JmbH0dpq-BFZh5TIrMN6Mg/s640/R-916841-1172530308.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Supernova 89 - El último single de Smashing Pumpkins &quot;Untitled&quot;"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

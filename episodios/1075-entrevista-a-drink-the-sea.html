@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>1075 - Entrevista a Drink The Sea — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -133,8 +133,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s320/DRINK-THE-SEA_1920x1080.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s160/DRINK-THE-SEA_1920x1080.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s320/DRINK-THE-SEA_1920x1080.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s480/DRINK-THE-SEA_1920x1080.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s160/DRINK-THE-SEA_1920x1080.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s320/DRINK-THE-SEA_1920x1080.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZfB-VwRwPkEr6chl7AZSJxhCraUGoMjWa5tsWAqb-U9o6nQrFpUL7mmx58xDIayAYXFyEFLf6HxvqzwmG1qsQfBV6-9Gqk69aEJrwpxwXDI6MFu7QeRIMvRE8cFI2NZy0Cb9DqCSszIEfFthweg6_L6NQZcwBNhu30UdgdpZGl9u_G-xEcnYeOV8qzA/s480/DRINK-THE-SEA_1920x1080.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 87 - Drink the Sea Madrid 06/12/2025"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -144,8 +143,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCBoVNLpA9V6mUkMwLs6jxbTlDw0MHhzEaGSxHpvXt4n8NK6Ha2GOzM8G95BlmlclC-HzNZCen34FNvjpK8hoWOiG62VlX_xDtXdsrKi8kbU6uiIHNefWNssO9fuUQZlZLJZN5JvzLeDsPaYvbKSdTuP79yC7Vmd_threoq3RSMfAHy4h5IOz7jgvyKt4/s320/b90_1058.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCBoVNLpA9V6mUkMwLs6jxbTlDw0MHhzEaGSxHpvXt4n8NK6Ha2GOzM8G95BlmlclC-HzNZCen34FNvjpK8hoWOiG62VlX_xDtXdsrKi8kbU6uiIHNefWNssO9fuUQZlZLJZN5JvzLeDsPaYvbKSdTuP79yC7Vmd_threoq3RSMfAHy4h5IOz7jgvyKt4/s160/b90_1058.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCBoVNLpA9V6mUkMwLs6jxbTlDw0MHhzEaGSxHpvXt4n8NK6Ha2GOzM8G95BlmlclC-HzNZCen34FNvjpK8hoWOiG62VlX_xDtXdsrKi8kbU6uiIHNefWNssO9fuUQZlZLJZN5JvzLeDsPaYvbKSdTuP79yC7Vmd_threoq3RSMfAHy4h5IOz7jgvyKt4/s320/b90_1058.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCBoVNLpA9V6mUkMwLs6jxbTlDw0MHhzEaGSxHpvXt4n8NK6Ha2GOzM8G95BlmlclC-HzNZCen34FNvjpK8hoWOiG62VlX_xDtXdsrKi8kbU6uiIHNefWNssO9fuUQZlZLJZN5JvzLeDsPaYvbKSdTuP79yC7Vmd_threoq3RSMfAHy4h5IOz7jgvyKt4/s480/b90_1058.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCBoVNLpA9V6mUkMwLs6jxbTlDw0MHhzEaGSxHpvXt4n8NK6Ha2GOzM8G95BlmlclC-HzNZCen34FNvjpK8hoWOiG62VlX_xDtXdsrKi8kbU6uiIHNefWNssO9fuUQZlZLJZN5JvzLeDsPaYvbKSdTuP79yC7Vmd_threoq3RSMfAHy4h5IOz7jgvyKt4/s160/b90_1058.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCBoVNLpA9V6mUkMwLs6jxbTlDw0MHhzEaGSxHpvXt4n8NK6Ha2GOzM8G95BlmlclC-HzNZCen34FNvjpK8hoWOiG62VlX_xDtXdsrKi8kbU6uiIHNefWNssO9fuUQZlZLJZN5JvzLeDsPaYvbKSdTuP79yC7Vmd_threoq3RSMfAHy4h5IOz7jgvyKt4/s320/b90_1058.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCBoVNLpA9V6mUkMwLs6jxbTlDw0MHhzEaGSxHpvXt4n8NK6Ha2GOzM8G95BlmlclC-HzNZCen34FNvjpK8hoWOiG62VlX_xDtXdsrKi8kbU6uiIHNefWNssO9fuUQZlZLJZN5JvzLeDsPaYvbKSdTuP79yC7Vmd_threoq3RSMfAHy4h5IOz7jgvyKt4/s480/b90_1058.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1058 - Novedades de Ava Adore, Tracy Bonham, Drink The Sea, Ruth Lorenzo"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -155,8 +153,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhgYQ6tJtY2AOSagHvNWBazcawQJfIsRE4ecl_eTJciVsBBuQPoNqvmdijS_Uqy-PdbwKB5LXgLBjKj96ucrxnLRhY27PcrXBnsGxYr5HKdphxUL1JOLdeUpaW3vmKHNk54-iymfZDKSdZvckSDZFD1hsH355yuxZJKzpgwpnS0NXOAoy3XVyuGYIv49U/s320/Barrett-Screaming-Trees-1992.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhgYQ6tJtY2AOSagHvNWBazcawQJfIsRE4ecl_eTJciVsBBuQPoNqvmdijS_Uqy-PdbwKB5LXgLBjKj96ucrxnLRhY27PcrXBnsGxYr5HKdphxUL1JOLdeUpaW3vmKHNk54-iymfZDKSdZvckSDZFD1hsH355yuxZJKzpgwpnS0NXOAoy3XVyuGYIv49U/s160/Barrett-Screaming-Trees-1992.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhgYQ6tJtY2AOSagHvNWBazcawQJfIsRE4ecl_eTJciVsBBuQPoNqvmdijS_Uqy-PdbwKB5LXgLBjKj96ucrxnLRhY27PcrXBnsGxYr5HKdphxUL1JOLdeUpaW3vmKHNk54-iymfZDKSdZvckSDZFD1hsH355yuxZJKzpgwpnS0NXOAoy3XVyuGYIv49U/s320/Barrett-Screaming-Trees-1992.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhgYQ6tJtY2AOSagHvNWBazcawQJfIsRE4ecl_eTJciVsBBuQPoNqvmdijS_Uqy-PdbwKB5LXgLBjKj96ucrxnLRhY27PcrXBnsGxYr5HKdphxUL1JOLdeUpaW3vmKHNk54-iymfZDKSdZvckSDZFD1hsH355yuxZJKzpgwpnS0NXOAoy3XVyuGYIv49U/s480/Barrett-Screaming-Trees-1992.jpeg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhgYQ6tJtY2AOSagHvNWBazcawQJfIsRE4ecl_eTJciVsBBuQPoNqvmdijS_Uqy-PdbwKB5LXgLBjKj96ucrxnLRhY27PcrXBnsGxYr5HKdphxUL1JOLdeUpaW3vmKHNk54-iymfZDKSdZvckSDZFD1hsH355yuxZJKzpgwpnS0NXOAoy3XVyuGYIv49U/s160/Barrett-Screaming-Trees-1992.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhgYQ6tJtY2AOSagHvNWBazcawQJfIsRE4ecl_eTJciVsBBuQPoNqvmdijS_Uqy-PdbwKB5LXgLBjKj96ucrxnLRhY27PcrXBnsGxYr5HKdphxUL1JOLdeUpaW3vmKHNk54-iymfZDKSdZvckSDZFD1hsH355yuxZJKzpgwpnS0NXOAoy3XVyuGYIv49U/s320/Barrett-Screaming-Trees-1992.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhgYQ6tJtY2AOSagHvNWBazcawQJfIsRE4ecl_eTJciVsBBuQPoNqvmdijS_Uqy-PdbwKB5LXgLBjKj96ucrxnLRhY27PcrXBnsGxYr5HKdphxUL1JOLdeUpaW3vmKHNk54-iymfZDKSdZvckSDZFD1hsH355yuxZJKzpgwpnS0NXOAoy3XVyuGYIv49U/s480/Barrett-Screaming-Trees-1992.jpeg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.927 - Los recuerdos de Barrett Martin sobre The Screaming Trees"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -172,8 +169,7 @@
         <a class="related-bottom-card" href="p-903-entrevista-alain-johannes-lost-satellite-en-sevilla.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPg5A8b3KqFb92WL-rJuPf4oTRyQzwKBlVQiXN8x_Ge882uT1PediqfV0kySGui1Ok-3OEzhYUw4QsWAYIAN17jYddHn00BZHO3pYJRN2i1U_EidG922wF5V3GIGdziyxtPwsxgBxu_JIIMqNBI_vfBlL4t-_8V6CBiVbPj7NTYd3tx9Yr1OZkaP1c/s320/IMG_0027.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPg5A8b3KqFb92WL-rJuPf4oTRyQzwKBlVQiXN8x_Ge882uT1PediqfV0kySGui1Ok-3OEzhYUw4QsWAYIAN17jYddHn00BZHO3pYJRN2i1U_EidG922wF5V3GIGdziyxtPwsxgBxu_JIIMqNBI_vfBlL4t-_8V6CBiVbPj7NTYd3tx9Yr1OZkaP1c/s320/IMG_0027.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPg5A8b3KqFb92WL-rJuPf4oTRyQzwKBlVQiXN8x_Ge882uT1PediqfV0kySGui1Ok-3OEzhYUw4QsWAYIAN17jYddHn00BZHO3pYJRN2i1U_EidG922wF5V3GIGdziyxtPwsxgBxu_JIIMqNBI_vfBlL4t-_8V6CBiVbPj7NTYd3tx9Yr1OZkaP1c/s480/IMG_0027.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPg5A8b3KqFb92WL-rJuPf4oTRyQzwKBlVQiXN8x_Ge882uT1PediqfV0kySGui1Ok-3OEzhYUw4QsWAYIAN17jYddHn00BZHO3pYJRN2i1U_EidG922wF5V3GIGdziyxtPwsxgBxu_JIIMqNBI_vfBlL4t-_8V6CBiVbPj7NTYd3tx9Yr1OZkaP1c/s640/IMG_0027.JPG 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPg5A8b3KqFb92WL-rJuPf4oTRyQzwKBlVQiXN8x_Ge882uT1PediqfV0kySGui1Ok-3OEzhYUw4QsWAYIAN17jYddHn00BZHO3pYJRN2i1U_EidG922wF5V3GIGdziyxtPwsxgBxu_JIIMqNBI_vfBlL4t-_8V6CBiVbPj7NTYd3tx9Yr1OZkaP1c/s320/IMG_0027.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPg5A8b3KqFb92WL-rJuPf4oTRyQzwKBlVQiXN8x_Ge882uT1PediqfV0kySGui1Ok-3OEzhYUw4QsWAYIAN17jYddHn00BZHO3pYJRN2i1U_EidG922wF5V3GIGdziyxtPwsxgBxu_JIIMqNBI_vfBlL4t-_8V6CBiVbPj7NTYd3tx9Yr1OZkaP1c/s480/IMG_0027.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPg5A8b3KqFb92WL-rJuPf4oTRyQzwKBlVQiXN8x_Ge882uT1PediqfV0kySGui1Ok-3OEzhYUw4QsWAYIAN17jYddHn00BZHO3pYJRN2i1U_EidG922wF5V3GIGdziyxtPwsxgBxu_JIIMqNBI_vfBlL4t-_8V6CBiVbPj7NTYd3tx9Yr1OZkaP1c/s640/IMG_0027.JPG 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.903 - Entrevista ALAIN JOHANNES + LOST SATELLITE en Sevilla"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -184,8 +180,7 @@
           </a><a class="related-bottom-card" href="p-601-entrevista-a-ken-stringfellow-the-posies-r-e-m.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAwwkNVOgGnlQThKzs-3s_ky9uvhwmz3WWhWpqhkonowq709Y8_Vyk6aQLWQKC1dY1WlSQ7WQ6NhipdvC3JZzf1dxrowBipdUYFigqxhPWP3SnBa3rZVhwtMnVK3zHvSR4vuXph-YX0fA/s320/23012020-DSC00929.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAwwkNVOgGnlQThKzs-3s_ky9uvhwmz3WWhWpqhkonowq709Y8_Vyk6aQLWQKC1dY1WlSQ7WQ6NhipdvC3JZzf1dxrowBipdUYFigqxhPWP3SnBa3rZVhwtMnVK3zHvSR4vuXph-YX0fA/s320/23012020-DSC00929.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAwwkNVOgGnlQThKzs-3s_ky9uvhwmz3WWhWpqhkonowq709Y8_Vyk6aQLWQKC1dY1WlSQ7WQ6NhipdvC3JZzf1dxrowBipdUYFigqxhPWP3SnBa3rZVhwtMnVK3zHvSR4vuXph-YX0fA/s480/23012020-DSC00929.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAwwkNVOgGnlQThKzs-3s_ky9uvhwmz3WWhWpqhkonowq709Y8_Vyk6aQLWQKC1dY1WlSQ7WQ6NhipdvC3JZzf1dxrowBipdUYFigqxhPWP3SnBa3rZVhwtMnVK3zHvSR4vuXph-YX0fA/s640/23012020-DSC00929.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAwwkNVOgGnlQThKzs-3s_ky9uvhwmz3WWhWpqhkonowq709Y8_Vyk6aQLWQKC1dY1WlSQ7WQ6NhipdvC3JZzf1dxrowBipdUYFigqxhPWP3SnBa3rZVhwtMnVK3zHvSR4vuXph-YX0fA/s320/23012020-DSC00929.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAwwkNVOgGnlQThKzs-3s_ky9uvhwmz3WWhWpqhkonowq709Y8_Vyk6aQLWQKC1dY1WlSQ7WQ6NhipdvC3JZzf1dxrowBipdUYFigqxhPWP3SnBa3rZVhwtMnVK3zHvSR4vuXph-YX0fA/s480/23012020-DSC00929.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAwwkNVOgGnlQThKzs-3s_ky9uvhwmz3WWhWpqhkonowq709Y8_Vyk6aQLWQKC1dY1WlSQ7WQ6NhipdvC3JZzf1dxrowBipdUYFigqxhPWP3SnBa3rZVhwtMnVK3zHvSR4vuXph-YX0fA/s640/23012020-DSC00929.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.601 - Entrevista a Ken Stringfellow (The Posies, R.E.M.)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -196,8 +191,7 @@
           </a><a class="related-bottom-card" href="1064-entrevista-a-the-wasted-garage.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiThMLqAUqcjvvGt2Aa3inG3JhKrHPJI7V-mVf6kitZgf5nHXZGVEtk_H6_-x2C38IOe2_bAXcxHG7Q043S_dXXM818v9LfoWox_nNoVtIDMzGfknmys_bYSN6YWJ8kx0RTa4-v1hmWlXUXrdgzti3yJJ6te8stFH527wSTnOIp32kLkllkgPCgl3eg0/s320/B90_1064.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiThMLqAUqcjvvGt2Aa3inG3JhKrHPJI7V-mVf6kitZgf5nHXZGVEtk_H6_-x2C38IOe2_bAXcxHG7Q043S_dXXM818v9LfoWox_nNoVtIDMzGfknmys_bYSN6YWJ8kx0RTa4-v1hmWlXUXrdgzti3yJJ6te8stFH527wSTnOIp32kLkllkgPCgl3eg0/s320/B90_1064.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiThMLqAUqcjvvGt2Aa3inG3JhKrHPJI7V-mVf6kitZgf5nHXZGVEtk_H6_-x2C38IOe2_bAXcxHG7Q043S_dXXM818v9LfoWox_nNoVtIDMzGfknmys_bYSN6YWJ8kx0RTa4-v1hmWlXUXrdgzti3yJJ6te8stFH527wSTnOIp32kLkllkgPCgl3eg0/s480/B90_1064.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiThMLqAUqcjvvGt2Aa3inG3JhKrHPJI7V-mVf6kitZgf5nHXZGVEtk_H6_-x2C38IOe2_bAXcxHG7Q043S_dXXM818v9LfoWox_nNoVtIDMzGfknmys_bYSN6YWJ8kx0RTa4-v1hmWlXUXrdgzti3yJJ6te8stFH527wSTnOIp32kLkllkgPCgl3eg0/s640/B90_1064.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiThMLqAUqcjvvGt2Aa3inG3JhKrHPJI7V-mVf6kitZgf5nHXZGVEtk_H6_-x2C38IOe2_bAXcxHG7Q043S_dXXM818v9LfoWox_nNoVtIDMzGfknmys_bYSN6YWJ8kx0RTa4-v1hmWlXUXrdgzti3yJJ6te8stFH527wSTnOIp32kLkllkgPCgl3eg0/s320/B90_1064.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiThMLqAUqcjvvGt2Aa3inG3JhKrHPJI7V-mVf6kitZgf5nHXZGVEtk_H6_-x2C38IOe2_bAXcxHG7Q043S_dXXM818v9LfoWox_nNoVtIDMzGfknmys_bYSN6YWJ8kx0RTa4-v1hmWlXUXrdgzti3yJJ6te8stFH527wSTnOIp32kLkllkgPCgl3eg0/s480/B90_1064.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiThMLqAUqcjvvGt2Aa3inG3JhKrHPJI7V-mVf6kitZgf5nHXZGVEtk_H6_-x2C38IOe2_bAXcxHG7Q043S_dXXM818v9LfoWox_nNoVtIDMzGfknmys_bYSN6YWJ8kx0RTa4-v1hmWlXUXrdgzti3yJJ6te8stFH527wSTnOIp32kLkllkgPCgl3eg0/s640/B90_1064.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1064 - Entrevista a The Wasted Garage"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

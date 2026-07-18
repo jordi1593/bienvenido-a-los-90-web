@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.717 - Spain - The Blue Moods of Spain (1995) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -125,8 +125,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcJnl1pPlDi_J3OMhRQeezRUQOgzm9bNwcguuKV7VfSKHpslaxecxZ63IarvIHrhwdiMJdTC-LLYQnwA3AppZ8RH1zkWpa8TlGUv55tvymzcm2fDiooRf6MqoRZ3_WATbIX3cWgVGp3YM/s320/A1Y%252Bv9doJML._SL1500_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcJnl1pPlDi_J3OMhRQeezRUQOgzm9bNwcguuKV7VfSKHpslaxecxZ63IarvIHrhwdiMJdTC-LLYQnwA3AppZ8RH1zkWpa8TlGUv55tvymzcm2fDiooRf6MqoRZ3_WATbIX3cWgVGp3YM/s160/A1Y%252Bv9doJML._SL1500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcJnl1pPlDi_J3OMhRQeezRUQOgzm9bNwcguuKV7VfSKHpslaxecxZ63IarvIHrhwdiMJdTC-LLYQnwA3AppZ8RH1zkWpa8TlGUv55tvymzcm2fDiooRf6MqoRZ3_WATbIX3cWgVGp3YM/s320/A1Y%252Bv9doJML._SL1500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcJnl1pPlDi_J3OMhRQeezRUQOgzm9bNwcguuKV7VfSKHpslaxecxZ63IarvIHrhwdiMJdTC-LLYQnwA3AppZ8RH1zkWpa8TlGUv55tvymzcm2fDiooRf6MqoRZ3_WATbIX3cWgVGp3YM/s480/A1Y%252Bv9doJML._SL1500_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcJnl1pPlDi_J3OMhRQeezRUQOgzm9bNwcguuKV7VfSKHpslaxecxZ63IarvIHrhwdiMJdTC-LLYQnwA3AppZ8RH1zkWpa8TlGUv55tvymzcm2fDiooRf6MqoRZ3_WATbIX3cWgVGp3YM/s160/A1Y%252Bv9doJML._SL1500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcJnl1pPlDi_J3OMhRQeezRUQOgzm9bNwcguuKV7VfSKHpslaxecxZ63IarvIHrhwdiMJdTC-LLYQnwA3AppZ8RH1zkWpa8TlGUv55tvymzcm2fDiooRf6MqoRZ3_WATbIX3cWgVGp3YM/s320/A1Y%252Bv9doJML._SL1500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcJnl1pPlDi_J3OMhRQeezRUQOgzm9bNwcguuKV7VfSKHpslaxecxZ63IarvIHrhwdiMJdTC-LLYQnwA3AppZ8RH1zkWpa8TlGUv55tvymzcm2fDiooRf6MqoRZ3_WATbIX3cWgVGp3YM/s480/A1Y%252Bv9doJML._SL1500_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.703 - No Doubt - Tragic Kingdom (1995)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -136,8 +135,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPOvWBEGAv76IJE1tYqvKPRnmbxg0KTxQpOP9BwDao9YgeU1WDieLzxwOU40HZ51hFPCKQeFq_FeGhaQhlQcirsV_2g4xMT-2c7X85Pb7pKoki7Apnu26ocFbgT-Ffg5aY6Mg138xNg48/s320/b90_492+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPOvWBEGAv76IJE1tYqvKPRnmbxg0KTxQpOP9BwDao9YgeU1WDieLzxwOU40HZ51hFPCKQeFq_FeGhaQhlQcirsV_2g4xMT-2c7X85Pb7pKoki7Apnu26ocFbgT-Ffg5aY6Mg138xNg48/s160/b90_492+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPOvWBEGAv76IJE1tYqvKPRnmbxg0KTxQpOP9BwDao9YgeU1WDieLzxwOU40HZ51hFPCKQeFq_FeGhaQhlQcirsV_2g4xMT-2c7X85Pb7pKoki7Apnu26ocFbgT-Ffg5aY6Mg138xNg48/s320/b90_492+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPOvWBEGAv76IJE1tYqvKPRnmbxg0KTxQpOP9BwDao9YgeU1WDieLzxwOU40HZ51hFPCKQeFq_FeGhaQhlQcirsV_2g4xMT-2c7X85Pb7pKoki7Apnu26ocFbgT-Ffg5aY6Mg138xNg48/s480/b90_492+%25281%2529.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPOvWBEGAv76IJE1tYqvKPRnmbxg0KTxQpOP9BwDao9YgeU1WDieLzxwOU40HZ51hFPCKQeFq_FeGhaQhlQcirsV_2g4xMT-2c7X85Pb7pKoki7Apnu26ocFbgT-Ffg5aY6Mg138xNg48/s160/b90_492+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPOvWBEGAv76IJE1tYqvKPRnmbxg0KTxQpOP9BwDao9YgeU1WDieLzxwOU40HZ51hFPCKQeFq_FeGhaQhlQcirsV_2g4xMT-2c7X85Pb7pKoki7Apnu26ocFbgT-Ffg5aY6Mg138xNg48/s320/b90_492+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPOvWBEGAv76IJE1tYqvKPRnmbxg0KTxQpOP9BwDao9YgeU1WDieLzxwOU40HZ51hFPCKQeFq_FeGhaQhlQcirsV_2g4xMT-2c7X85Pb7pKoki7Apnu26ocFbgT-Ffg5aY6Mg138xNg48/s480/b90_492+%25281%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 492 - The Smashing Pumpkins - Live at Double Door ( Feb. 1995)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -147,8 +145,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLH9he9SkItLZhGCS1UgOiPEA97mGXP7VswndyfyTxZUWyO8SNdiJ9HlEhwzdn992eY2frojg76Z2mqfQ-N1ZZCvI_j_X0qigjfsfen3S5rHHg6By9VFtfAJXRKdZBWQa-kIEz4KGIMCi7MJmRT-YS1PIYeFzJ13ecS5TGRst8u24zcweemRMB5gbcn1A/s320/b90_1086.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLH9he9SkItLZhGCS1UgOiPEA97mGXP7VswndyfyTxZUWyO8SNdiJ9HlEhwzdn992eY2frojg76Z2mqfQ-N1ZZCvI_j_X0qigjfsfen3S5rHHg6By9VFtfAJXRKdZBWQa-kIEz4KGIMCi7MJmRT-YS1PIYeFzJ13ecS5TGRst8u24zcweemRMB5gbcn1A/s160/b90_1086.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLH9he9SkItLZhGCS1UgOiPEA97mGXP7VswndyfyTxZUWyO8SNdiJ9HlEhwzdn992eY2frojg76Z2mqfQ-N1ZZCvI_j_X0qigjfsfen3S5rHHg6By9VFtfAJXRKdZBWQa-kIEz4KGIMCi7MJmRT-YS1PIYeFzJ13ecS5TGRst8u24zcweemRMB5gbcn1A/s320/b90_1086.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLH9he9SkItLZhGCS1UgOiPEA97mGXP7VswndyfyTxZUWyO8SNdiJ9HlEhwzdn992eY2frojg76Z2mqfQ-N1ZZCvI_j_X0qigjfsfen3S5rHHg6By9VFtfAJXRKdZBWQa-kIEz4KGIMCi7MJmRT-YS1PIYeFzJ13ecS5TGRst8u24zcweemRMB5gbcn1A/s480/b90_1086.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLH9he9SkItLZhGCS1UgOiPEA97mGXP7VswndyfyTxZUWyO8SNdiJ9HlEhwzdn992eY2frojg76Z2mqfQ-N1ZZCvI_j_X0qigjfsfen3S5rHHg6By9VFtfAJXRKdZBWQa-kIEz4KGIMCi7MJmRT-YS1PIYeFzJ13ecS5TGRst8u24zcweemRMB5gbcn1A/s160/b90_1086.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLH9he9SkItLZhGCS1UgOiPEA97mGXP7VswndyfyTxZUWyO8SNdiJ9HlEhwzdn992eY2frojg76Z2mqfQ-N1ZZCvI_j_X0qigjfsfen3S5rHHg6By9VFtfAJXRKdZBWQa-kIEz4KGIMCi7MJmRT-YS1PIYeFzJ13ecS5TGRst8u24zcweemRMB5gbcn1A/s320/b90_1086.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLH9he9SkItLZhGCS1UgOiPEA97mGXP7VswndyfyTxZUWyO8SNdiJ9HlEhwzdn992eY2frojg76Z2mqfQ-N1ZZCvI_j_X0qigjfsfen3S5rHHg6By9VFtfAJXRKdZBWQa-kIEz4KGIMCi7MJmRT-YS1PIYeFzJ13ecS5TGRst8u24zcweemRMB5gbcn1A/s480/b90_1086.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1086 - Especial 1995 (1/5) Radiohead, PJ Harvey, Mad Season, The Jayhawks, Tricky..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -164,8 +161,7 @@
         <a class="related-bottom-card" href="1095-especial-1995-5-5-rocket-from-the-crypt-alice-in-chains-pulp-queen-sunny-day-rea.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWb_jMvvcOjdBPs2UZ27EUqJQuuC3A5N2mOcmVN3fiefcRG4Dve7MFIEfjVBHTE1MU50yldd45Im_45I0T8fSgCQV-GxA41uwCuCZWiIKnkVnEzCxJTUdZUxQNzrlWe-FRPi198LPqnx3GlCHrUtQfkHmwp9G4BbnmGi1jaIkS0NfWsVSaBP6tOqpFzAU/s320/b90_1095.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWb_jMvvcOjdBPs2UZ27EUqJQuuC3A5N2mOcmVN3fiefcRG4Dve7MFIEfjVBHTE1MU50yldd45Im_45I0T8fSgCQV-GxA41uwCuCZWiIKnkVnEzCxJTUdZUxQNzrlWe-FRPi198LPqnx3GlCHrUtQfkHmwp9G4BbnmGi1jaIkS0NfWsVSaBP6tOqpFzAU/s320/b90_1095.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWb_jMvvcOjdBPs2UZ27EUqJQuuC3A5N2mOcmVN3fiefcRG4Dve7MFIEfjVBHTE1MU50yldd45Im_45I0T8fSgCQV-GxA41uwCuCZWiIKnkVnEzCxJTUdZUxQNzrlWe-FRPi198LPqnx3GlCHrUtQfkHmwp9G4BbnmGi1jaIkS0NfWsVSaBP6tOqpFzAU/s480/b90_1095.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWb_jMvvcOjdBPs2UZ27EUqJQuuC3A5N2mOcmVN3fiefcRG4Dve7MFIEfjVBHTE1MU50yldd45Im_45I0T8fSgCQV-GxA41uwCuCZWiIKnkVnEzCxJTUdZUxQNzrlWe-FRPi198LPqnx3GlCHrUtQfkHmwp9G4BbnmGi1jaIkS0NfWsVSaBP6tOqpFzAU/s640/b90_1095.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWb_jMvvcOjdBPs2UZ27EUqJQuuC3A5N2mOcmVN3fiefcRG4Dve7MFIEfjVBHTE1MU50yldd45Im_45I0T8fSgCQV-GxA41uwCuCZWiIKnkVnEzCxJTUdZUxQNzrlWe-FRPi198LPqnx3GlCHrUtQfkHmwp9G4BbnmGi1jaIkS0NfWsVSaBP6tOqpFzAU/s320/b90_1095.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWb_jMvvcOjdBPs2UZ27EUqJQuuC3A5N2mOcmVN3fiefcRG4Dve7MFIEfjVBHTE1MU50yldd45Im_45I0T8fSgCQV-GxA41uwCuCZWiIKnkVnEzCxJTUdZUxQNzrlWe-FRPi198LPqnx3GlCHrUtQfkHmwp9G4BbnmGi1jaIkS0NfWsVSaBP6tOqpFzAU/s480/b90_1095.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWb_jMvvcOjdBPs2UZ27EUqJQuuC3A5N2mOcmVN3fiefcRG4Dve7MFIEfjVBHTE1MU50yldd45Im_45I0T8fSgCQV-GxA41uwCuCZWiIKnkVnEzCxJTUdZUxQNzrlWe-FRPi198LPqnx3GlCHrUtQfkHmwp9G4BbnmGi1jaIkS0NfWsVSaBP6tOqpFzAU/s640/b90_1095.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1095 - Especial 1995 (5/5) Rocket from the Crypt, Alice in Chains, Pulp, Queen, Sunny Day Real Estate..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -176,8 +172,7 @@
           </a><a class="related-bottom-card" href="programa-188-oasis-this-is-history-capitulo-1-the-rain-1990-glastonbury-1995.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-IVg9_ylWJg0itnpG0p4qh0Qi6js13_qZSNAxZ__rz0C9EgIq8U5rAXk_1-3zs2RaGRcOgkhLCHhuMPFxheLXMnyudmkP854u1wbZnElX7M71GuSjJzKHr3gp7t43j3sElq-H3wsh-Jo/s320/tumblr_ln1lj7V2HW1qkbmcjo1_500.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-IVg9_ylWJg0itnpG0p4qh0Qi6js13_qZSNAxZ__rz0C9EgIq8U5rAXk_1-3zs2RaGRcOgkhLCHhuMPFxheLXMnyudmkP854u1wbZnElX7M71GuSjJzKHr3gp7t43j3sElq-H3wsh-Jo/s320/tumblr_ln1lj7V2HW1qkbmcjo1_500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-IVg9_ylWJg0itnpG0p4qh0Qi6js13_qZSNAxZ__rz0C9EgIq8U5rAXk_1-3zs2RaGRcOgkhLCHhuMPFxheLXMnyudmkP854u1wbZnElX7M71GuSjJzKHr3gp7t43j3sElq-H3wsh-Jo/s480/tumblr_ln1lj7V2HW1qkbmcjo1_500.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-IVg9_ylWJg0itnpG0p4qh0Qi6js13_qZSNAxZ__rz0C9EgIq8U5rAXk_1-3zs2RaGRcOgkhLCHhuMPFxheLXMnyudmkP854u1wbZnElX7M71GuSjJzKHr3gp7t43j3sElq-H3wsh-Jo/s640/tumblr_ln1lj7V2HW1qkbmcjo1_500.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-IVg9_ylWJg0itnpG0p4qh0Qi6js13_qZSNAxZ__rz0C9EgIq8U5rAXk_1-3zs2RaGRcOgkhLCHhuMPFxheLXMnyudmkP854u1wbZnElX7M71GuSjJzKHr3gp7t43j3sElq-H3wsh-Jo/s320/tumblr_ln1lj7V2HW1qkbmcjo1_500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-IVg9_ylWJg0itnpG0p4qh0Qi6js13_qZSNAxZ__rz0C9EgIq8U5rAXk_1-3zs2RaGRcOgkhLCHhuMPFxheLXMnyudmkP854u1wbZnElX7M71GuSjJzKHr3gp7t43j3sElq-H3wsh-Jo/s480/tumblr_ln1lj7V2HW1qkbmcjo1_500.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-IVg9_ylWJg0itnpG0p4qh0Qi6js13_qZSNAxZ__rz0C9EgIq8U5rAXk_1-3zs2RaGRcOgkhLCHhuMPFxheLXMnyudmkP854u1wbZnElX7M71GuSjJzKHr3gp7t43j3sElq-H3wsh-Jo/s640/tumblr_ln1lj7V2HW1qkbmcjo1_500.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 188 - Oasis &quot;This is history&quot;  Capítulo 1: The Rain (1990) - Glastonbury (1995)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -188,8 +183,7 @@
           </a><a class="related-bottom-card" href="p-714-homenaje-a-los-25-anos-del-mellon-collie-and-the-infinite-sadness.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s320/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s320/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s480/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s640/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s320/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s480/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN0gCg94KRQSujJTlqa8ntxEUHpnc2tnGFA1cwAWVROi9jpVVkk0_abrpFiMxjxFB2sbo-FBeByJaN7-N_iDFhEVgEXMOTA0EZ-rdPB1sAGzdY28TbNyKmQ_D58f4DBseWpPinnidsws/s640/Mellon_Collie+%2526+Infinite+Woman_Final+%25282%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.714 - Homenaje a los 25 años del Mellon Collie and the Infinite Sadness "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

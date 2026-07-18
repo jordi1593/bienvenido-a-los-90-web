@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 336 - Entrevista a Lejoule — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgq4gjjaAzPO7gSRW5HZT_KzusLElv3mvjbtabnVAcXZFTgSj9U0v1wOcH3VVsLFBDl8YzJfklRiipSCFj450mVgMqKQMSuRn7uOB-NNZ4rwTeifVqgzcOP1GNeedOE25YGqUZK72Pr2M/s320/IMG_20180126_155005.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgq4gjjaAzPO7gSRW5HZT_KzusLElv3mvjbtabnVAcXZFTgSj9U0v1wOcH3VVsLFBDl8YzJfklRiipSCFj450mVgMqKQMSuRn7uOB-NNZ4rwTeifVqgzcOP1GNeedOE25YGqUZK72Pr2M/s160/IMG_20180126_155005.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgq4gjjaAzPO7gSRW5HZT_KzusLElv3mvjbtabnVAcXZFTgSj9U0v1wOcH3VVsLFBDl8YzJfklRiipSCFj450mVgMqKQMSuRn7uOB-NNZ4rwTeifVqgzcOP1GNeedOE25YGqUZK72Pr2M/s320/IMG_20180126_155005.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgq4gjjaAzPO7gSRW5HZT_KzusLElv3mvjbtabnVAcXZFTgSj9U0v1wOcH3VVsLFBDl8YzJfklRiipSCFj450mVgMqKQMSuRn7uOB-NNZ4rwTeifVqgzcOP1GNeedOE25YGqUZK72Pr2M/s480/IMG_20180126_155005.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgq4gjjaAzPO7gSRW5HZT_KzusLElv3mvjbtabnVAcXZFTgSj9U0v1wOcH3VVsLFBDl8YzJfklRiipSCFj450mVgMqKQMSuRn7uOB-NNZ4rwTeifVqgzcOP1GNeedOE25YGqUZK72Pr2M/s160/IMG_20180126_155005.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgq4gjjaAzPO7gSRW5HZT_KzusLElv3mvjbtabnVAcXZFTgSj9U0v1wOcH3VVsLFBDl8YzJfklRiipSCFj450mVgMqKQMSuRn7uOB-NNZ4rwTeifVqgzcOP1GNeedOE25YGqUZK72Pr2M/s320/IMG_20180126_155005.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgq4gjjaAzPO7gSRW5HZT_KzusLElv3mvjbtabnVAcXZFTgSj9U0v1wOcH3VVsLFBDl8YzJfklRiipSCFj450mVgMqKQMSuRn7uOB-NNZ4rwTeifVqgzcOP1GNeedOE25YGqUZK72Pr2M/s480/IMG_20180126_155005.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 334 - Entrevista a Psychodrome"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s320/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s160/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s320/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s480/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s160/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s320/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s480/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 327 – Actualidad musical (Enero 2018)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjbDWo4_WFVgmseoXQ1rZkdcjNq2rrW8Kvi8J1SF98O-JJKHV2UKsqPfAE_xxsShI0rMsM3LEWvVC0gU-OsmjyYjD61lkDjn9W9CnvSrpObAJofoZym514TEANAEhlvZR9FzvpK8MMW5U/s320/IMG_20180308_160842-1198x899.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjbDWo4_WFVgmseoXQ1rZkdcjNq2rrW8Kvi8J1SF98O-JJKHV2UKsqPfAE_xxsShI0rMsM3LEWvVC0gU-OsmjyYjD61lkDjn9W9CnvSrpObAJofoZym514TEANAEhlvZR9FzvpK8MMW5U/s160/IMG_20180308_160842-1198x899.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjbDWo4_WFVgmseoXQ1rZkdcjNq2rrW8Kvi8J1SF98O-JJKHV2UKsqPfAE_xxsShI0rMsM3LEWvVC0gU-OsmjyYjD61lkDjn9W9CnvSrpObAJofoZym514TEANAEhlvZR9FzvpK8MMW5U/s320/IMG_20180308_160842-1198x899.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjbDWo4_WFVgmseoXQ1rZkdcjNq2rrW8Kvi8J1SF98O-JJKHV2UKsqPfAE_xxsShI0rMsM3LEWvVC0gU-OsmjyYjD61lkDjn9W9CnvSrpObAJofoZym514TEANAEhlvZR9FzvpK8MMW5U/s480/IMG_20180308_160842-1198x899.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjbDWo4_WFVgmseoXQ1rZkdcjNq2rrW8Kvi8J1SF98O-JJKHV2UKsqPfAE_xxsShI0rMsM3LEWvVC0gU-OsmjyYjD61lkDjn9W9CnvSrpObAJofoZym514TEANAEhlvZR9FzvpK8MMW5U/s160/IMG_20180308_160842-1198x899.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjbDWo4_WFVgmseoXQ1rZkdcjNq2rrW8Kvi8J1SF98O-JJKHV2UKsqPfAE_xxsShI0rMsM3LEWvVC0gU-OsmjyYjD61lkDjn9W9CnvSrpObAJofoZym514TEANAEhlvZR9FzvpK8MMW5U/s320/IMG_20180308_160842-1198x899.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjbDWo4_WFVgmseoXQ1rZkdcjNq2rrW8Kvi8J1SF98O-JJKHV2UKsqPfAE_xxsShI0rMsM3LEWvVC0gU-OsmjyYjD61lkDjn9W9CnvSrpObAJofoZym514TEANAEhlvZR9FzvpK8MMW5U/s480/IMG_20180308_160842-1198x899.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 353 - Entrevista a Lázaro"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="programa-355-entrevista-a-mordem.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQuASQbdukzAKpBJMJdt6PkC6DSwQOshsU4JAAe6ZE8tH71_Pv5AoH33g_m2DbJH480vpNvL5Z2yKNPe6Rsi3Jn-agiCsZxtf-mNR38uoz92x4Jx7LyZdz_OqkJnBBwvOPEt-uthJopUc/s320/22008276_1617722581582762_670284202465261901_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQuASQbdukzAKpBJMJdt6PkC6DSwQOshsU4JAAe6ZE8tH71_Pv5AoH33g_m2DbJH480vpNvL5Z2yKNPe6Rsi3Jn-agiCsZxtf-mNR38uoz92x4Jx7LyZdz_OqkJnBBwvOPEt-uthJopUc/s320/22008276_1617722581582762_670284202465261901_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQuASQbdukzAKpBJMJdt6PkC6DSwQOshsU4JAAe6ZE8tH71_Pv5AoH33g_m2DbJH480vpNvL5Z2yKNPe6Rsi3Jn-agiCsZxtf-mNR38uoz92x4Jx7LyZdz_OqkJnBBwvOPEt-uthJopUc/s480/22008276_1617722581582762_670284202465261901_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQuASQbdukzAKpBJMJdt6PkC6DSwQOshsU4JAAe6ZE8tH71_Pv5AoH33g_m2DbJH480vpNvL5Z2yKNPe6Rsi3Jn-agiCsZxtf-mNR38uoz92x4Jx7LyZdz_OqkJnBBwvOPEt-uthJopUc/s640/22008276_1617722581582762_670284202465261901_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQuASQbdukzAKpBJMJdt6PkC6DSwQOshsU4JAAe6ZE8tH71_Pv5AoH33g_m2DbJH480vpNvL5Z2yKNPe6Rsi3Jn-agiCsZxtf-mNR38uoz92x4Jx7LyZdz_OqkJnBBwvOPEt-uthJopUc/s320/22008276_1617722581582762_670284202465261901_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQuASQbdukzAKpBJMJdt6PkC6DSwQOshsU4JAAe6ZE8tH71_Pv5AoH33g_m2DbJH480vpNvL5Z2yKNPe6Rsi3Jn-agiCsZxtf-mNR38uoz92x4Jx7LyZdz_OqkJnBBwvOPEt-uthJopUc/s480/22008276_1617722581582762_670284202465261901_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQuASQbdukzAKpBJMJdt6PkC6DSwQOshsU4JAAe6ZE8tH71_Pv5AoH33g_m2DbJH480vpNvL5Z2yKNPe6Rsi3Jn-agiCsZxtf-mNR38uoz92x4Jx7LyZdz_OqkJnBBwvOPEt-uthJopUc/s640/22008276_1617722581582762_670284202465261901_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 355 - Entrevista a Mordem"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="programa-361-entrevista-a-julio-ruiz-disco-grande-radio-3.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s320/julio.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s320/julio.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s480/julio.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s640/julio.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s320/julio.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s480/julio.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Ad88Jh9CZnCT1zzgdg8jzrRlZ9PjwSeiaFzD6lOEG2T8H5RgBnqqOqgGwgPl7Efiz-ziU_x_qH5UapOsEQOQbUWz-GzO6D4GPUYuKDLD8eiW5ZN2j_k5fgJePLhe_-X1eOVXFSeBH3Y/s640/julio.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 361 - Entrevista a Julio Ruiz (Disco grande Radio 3)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="programa-362-entrevista-a-pasajero.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIrEp0mGKKov_Pz5t2rObQtNpudH02AAsLQ1iMKZ_x1qrABOB2xehXBPoo0yW86mHoRRIexUuqkPe0lfTE1jMsAVulhMo0QKOFN8zi6ccuHTu_O0ljsTRfgi-vxOxvg_rKCgHRBERSxy0/s320/pasajero2.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIrEp0mGKKov_Pz5t2rObQtNpudH02AAsLQ1iMKZ_x1qrABOB2xehXBPoo0yW86mHoRRIexUuqkPe0lfTE1jMsAVulhMo0QKOFN8zi6ccuHTu_O0ljsTRfgi-vxOxvg_rKCgHRBERSxy0/s320/pasajero2.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIrEp0mGKKov_Pz5t2rObQtNpudH02AAsLQ1iMKZ_x1qrABOB2xehXBPoo0yW86mHoRRIexUuqkPe0lfTE1jMsAVulhMo0QKOFN8zi6ccuHTu_O0ljsTRfgi-vxOxvg_rKCgHRBERSxy0/s480/pasajero2.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIrEp0mGKKov_Pz5t2rObQtNpudH02AAsLQ1iMKZ_x1qrABOB2xehXBPoo0yW86mHoRRIexUuqkPe0lfTE1jMsAVulhMo0QKOFN8zi6ccuHTu_O0ljsTRfgi-vxOxvg_rKCgHRBERSxy0/s640/pasajero2.JPG 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIrEp0mGKKov_Pz5t2rObQtNpudH02AAsLQ1iMKZ_x1qrABOB2xehXBPoo0yW86mHoRRIexUuqkPe0lfTE1jMsAVulhMo0QKOFN8zi6ccuHTu_O0ljsTRfgi-vxOxvg_rKCgHRBERSxy0/s320/pasajero2.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIrEp0mGKKov_Pz5t2rObQtNpudH02AAsLQ1iMKZ_x1qrABOB2xehXBPoo0yW86mHoRRIexUuqkPe0lfTE1jMsAVulhMo0QKOFN8zi6ccuHTu_O0ljsTRfgi-vxOxvg_rKCgHRBERSxy0/s480/pasajero2.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIrEp0mGKKov_Pz5t2rObQtNpudH02AAsLQ1iMKZ_x1qrABOB2xehXBPoo0yW86mHoRRIexUuqkPe0lfTE1jMsAVulhMo0QKOFN8zi6ccuHTu_O0ljsTRfgi-vxOxvg_rKCgHRBERSxy0/s640/pasajero2.JPG 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 362 - Entrevista a Pasajero "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

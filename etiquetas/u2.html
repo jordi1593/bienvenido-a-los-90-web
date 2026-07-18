@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>U2 — 8 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1031-portadas-iconicas-de-los-90-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicUr7hisVhiO1dpN_q0fyb0O2cVKWggufEzPiDyF_hx16Huexs37Ld8Iof_crD0lAVEpDbzebnDfDHVkaJIwXT5BcVpkyP3RmmQl_J73Une0aznvAbWhoAIs_EaJef4ErkxeWLq7of-7PqZz5a-9CKvVu9HePpCtpx-gb9hUeAtF0WWc2F9VtWB8WINX8/s320/Imagen%20de%20WhatsApp%202025-02-04%20a%20las%2011.23.45_7863dd3e.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicUr7hisVhiO1dpN_q0fyb0O2cVKWggufEzPiDyF_hx16Huexs37Ld8Iof_crD0lAVEpDbzebnDfDHVkaJIwXT5BcVpkyP3RmmQl_J73Une0aznvAbWhoAIs_EaJef4ErkxeWLq7of-7PqZz5a-9CKvVu9HePpCtpx-gb9hUeAtF0WWc2F9VtWB8WINX8/s160/Imagen%20de%20WhatsApp%202025-02-04%20a%20las%2011.23.45_7863dd3e.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicUr7hisVhiO1dpN_q0fyb0O2cVKWggufEzPiDyF_hx16Huexs37Ld8Iof_crD0lAVEpDbzebnDfDHVkaJIwXT5BcVpkyP3RmmQl_J73Une0aznvAbWhoAIs_EaJef4ErkxeWLq7of-7PqZz5a-9CKvVu9HePpCtpx-gb9hUeAtF0WWc2F9VtWB8WINX8/s320/Imagen%20de%20WhatsApp%202025-02-04%20a%20las%2011.23.45_7863dd3e.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicUr7hisVhiO1dpN_q0fyb0O2cVKWggufEzPiDyF_hx16Huexs37Ld8Iof_crD0lAVEpDbzebnDfDHVkaJIwXT5BcVpkyP3RmmQl_J73Une0aznvAbWhoAIs_EaJef4ErkxeWLq7of-7PqZz5a-9CKvVu9HePpCtpx-gb9hUeAtF0WWc2F9VtWB8WINX8/s480/Imagen%20de%20WhatsApp%202025-02-04%20a%20las%2011.23.45_7863dd3e.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicUr7hisVhiO1dpN_q0fyb0O2cVKWggufEzPiDyF_hx16Huexs37Ld8Iof_crD0lAVEpDbzebnDfDHVkaJIwXT5BcVpkyP3RmmQl_J73Une0aznvAbWhoAIs_EaJef4ErkxeWLq7of-7PqZz5a-9CKvVu9HePpCtpx-gb9hUeAtF0WWc2F9VtWB8WINX8/s160/Imagen%20de%20WhatsApp%202025-02-04%20a%20las%2011.23.45_7863dd3e.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicUr7hisVhiO1dpN_q0fyb0O2cVKWggufEzPiDyF_hx16Huexs37Ld8Iof_crD0lAVEpDbzebnDfDHVkaJIwXT5BcVpkyP3RmmQl_J73Une0aznvAbWhoAIs_EaJef4ErkxeWLq7of-7PqZz5a-9CKvVu9HePpCtpx-gb9hUeAtF0WWc2F9VtWB8WINX8/s320/Imagen%20de%20WhatsApp%202025-02-04%20a%20las%2011.23.45_7863dd3e.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicUr7hisVhiO1dpN_q0fyb0O2cVKWggufEzPiDyF_hx16Huexs37Ld8Iof_crD0lAVEpDbzebnDfDHVkaJIwXT5BcVpkyP3RmmQl_J73Une0aznvAbWhoAIs_EaJef4ErkxeWLq7of-7PqZz5a-9CKvVu9HePpCtpx-gb9hUeAtF0WWc2F9VtWB8WINX8/s480/Imagen%20de%20WhatsApp%202025-02-04%20a%20las%2011.23.45_7863dd3e.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1031 - Portadas icónicas de los 90 (1)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-885-canciones-divertidas-para-una-navidad-alternativa.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s320/We-Are-The-World%20(1).jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s160/We-Are-The-World%20(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s320/We-Are-The-World%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s480/We-Are-The-World%20(1).jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s160/We-Are-The-World%20(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s320/We-Are-The-World%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s480/We-Are-The-World%20(1).jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.885 - Canciones divertidas para una Navidad alternativa"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-632-los-discos-esenciales-de-noel-gallagher-oasis.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdngk9OtDuIrvZ_-6Ie1kCYPwoaUAFFZUZfxHp0bxNOxXXPOYX6HcV5cLkQTQEVF6ewlaZJogdJOy0bpNeZdWZjGSiF_T6k6xWIfAnb3xSRDuFe0kYUxXKW0Z77dFmdb1dxfupDLOoPDs/s320/Noel-Gallagher-canta-en-el-camar%25C3%25ADn-del-manchester-city-768x645.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdngk9OtDuIrvZ_-6Ie1kCYPwoaUAFFZUZfxHp0bxNOxXXPOYX6HcV5cLkQTQEVF6ewlaZJogdJOy0bpNeZdWZjGSiF_T6k6xWIfAnb3xSRDuFe0kYUxXKW0Z77dFmdb1dxfupDLOoPDs/s160/Noel-Gallagher-canta-en-el-camar%25C3%25ADn-del-manchester-city-768x645.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdngk9OtDuIrvZ_-6Ie1kCYPwoaUAFFZUZfxHp0bxNOxXXPOYX6HcV5cLkQTQEVF6ewlaZJogdJOy0bpNeZdWZjGSiF_T6k6xWIfAnb3xSRDuFe0kYUxXKW0Z77dFmdb1dxfupDLOoPDs/s320/Noel-Gallagher-canta-en-el-camar%25C3%25ADn-del-manchester-city-768x645.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdngk9OtDuIrvZ_-6Ie1kCYPwoaUAFFZUZfxHp0bxNOxXXPOYX6HcV5cLkQTQEVF6ewlaZJogdJOy0bpNeZdWZjGSiF_T6k6xWIfAnb3xSRDuFe0kYUxXKW0Z77dFmdb1dxfupDLOoPDs/s480/Noel-Gallagher-canta-en-el-camar%25C3%25ADn-del-manchester-city-768x645.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdngk9OtDuIrvZ_-6Ie1kCYPwoaUAFFZUZfxHp0bxNOxXXPOYX6HcV5cLkQTQEVF6ewlaZJogdJOy0bpNeZdWZjGSiF_T6k6xWIfAnb3xSRDuFe0kYUxXKW0Z77dFmdb1dxfupDLOoPDs/s160/Noel-Gallagher-canta-en-el-camar%25C3%25ADn-del-manchester-city-768x645.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdngk9OtDuIrvZ_-6Ie1kCYPwoaUAFFZUZfxHp0bxNOxXXPOYX6HcV5cLkQTQEVF6ewlaZJogdJOy0bpNeZdWZjGSiF_T6k6xWIfAnb3xSRDuFe0kYUxXKW0Z77dFmdb1dxfupDLOoPDs/s320/Noel-Gallagher-canta-en-el-camar%25C3%25ADn-del-manchester-city-768x645.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdngk9OtDuIrvZ_-6Ie1kCYPwoaUAFFZUZfxHp0bxNOxXXPOYX6HcV5cLkQTQEVF6ewlaZJogdJOy0bpNeZdWZjGSiF_T6k6xWIfAnb3xSRDuFe0kYUxXKW0Z77dFmdb1dxfupDLOoPDs/s480/Noel-Gallagher-canta-en-el-camar%25C3%25ADn-del-manchester-city-768x645.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.632 Los discos esenciales de Noel Gallagher (Oasis)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-544-el-origen-del-nombre-de-algunas-de-mis-bandas-favoritas.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s320/b90_544.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s160/b90_544.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s320/b90_544.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s480/b90_544.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s160/b90_544.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s320/b90_544.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiFC4Nd6GFxHEadRIpqoNdoFr-3mQnl-B5Rb8VL2sxzjfuLlkPIjlvOYbFQtAVisaeuZa5jmMHrM2fvW-xwPa0r9s7kIOG2YLMCjC5o2W8CnaYANyHkqW3Twgi57gwt123MbGpCi0eZM/s480/b90_544.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 544 - El origen del nombre de algunas de mis bandas favoritas"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-510-radio-75-presentan-songs-for-celine.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUAYd0O0XhrjuKdTeUvghJSxU8dGCsLDzIrjAP-jAHawMQw1-rKSQRsv2TqFmxyynf00A4sMoapiqXcod2lOF9Fef2HbYNEi6lp2dcS3b04aoLOw1MhEo67QUSkcVYo0J7BwA3vkGup8I/s320/b90_510.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUAYd0O0XhrjuKdTeUvghJSxU8dGCsLDzIrjAP-jAHawMQw1-rKSQRsv2TqFmxyynf00A4sMoapiqXcod2lOF9Fef2HbYNEi6lp2dcS3b04aoLOw1MhEo67QUSkcVYo0J7BwA3vkGup8I/s160/b90_510.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUAYd0O0XhrjuKdTeUvghJSxU8dGCsLDzIrjAP-jAHawMQw1-rKSQRsv2TqFmxyynf00A4sMoapiqXcod2lOF9Fef2HbYNEi6lp2dcS3b04aoLOw1MhEo67QUSkcVYo0J7BwA3vkGup8I/s320/b90_510.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUAYd0O0XhrjuKdTeUvghJSxU8dGCsLDzIrjAP-jAHawMQw1-rKSQRsv2TqFmxyynf00A4sMoapiqXcod2lOF9Fef2HbYNEi6lp2dcS3b04aoLOw1MhEo67QUSkcVYo0J7BwA3vkGup8I/s480/b90_510.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUAYd0O0XhrjuKdTeUvghJSxU8dGCsLDzIrjAP-jAHawMQw1-rKSQRsv2TqFmxyynf00A4sMoapiqXcod2lOF9Fef2HbYNEi6lp2dcS3b04aoLOw1MhEo67QUSkcVYo0J7BwA3vkGup8I/s160/b90_510.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUAYd0O0XhrjuKdTeUvghJSxU8dGCsLDzIrjAP-jAHawMQw1-rKSQRsv2TqFmxyynf00A4sMoapiqXcod2lOF9Fef2HbYNEi6lp2dcS3b04aoLOw1MhEo67QUSkcVYo0J7BwA3vkGup8I/s320/b90_510.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUAYd0O0XhrjuKdTeUvghJSxU8dGCsLDzIrjAP-jAHawMQw1-rKSQRsv2TqFmxyynf00A4sMoapiqXcod2lOF9Fef2HbYNEi6lp2dcS3b04aoLOw1MhEo67QUSkcVYo0J7BwA3vkGup8I/s480/b90_510.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 510 - RADIO 75 presentan &#39;Songs for Celine&#39;"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-292-blind-melon-u2-the-gits-afghan-whigs-nin.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s160/imagen-sin-titulo.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s480/imagen-sin-titulo.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s160/imagen-sin-titulo.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s480/imagen-sin-titulo.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 292 - Blind Melon, U2, The Gits, Afghan Whigs, NIN. "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-56-la-musica-de-juanjo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 56 - La música de Juanjo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-10-la-cancion-protesta.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa #10 - La canción protesta"
                 loading="lazy" width="320" height="213" />
         </a>

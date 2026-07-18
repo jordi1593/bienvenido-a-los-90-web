@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.632 Los discos esenciales de Noel Gallagher (Oasis) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -140,8 +140,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa #10 - La canción protesta"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -151,8 +150,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRLuUUUiFR7XAE4oI5d8sFnrp2LAoKjZ2PKwaG6Mfyo141cMJRg4V6wHlAw2hAJZpVfCKhCTvr4UE4UfayhtdfM9iqMtXYsnBazplBn4ufuRtX1MqBAeCG0OLcECtSmwTSGYo2RCPmzIk/s320/1973246_296496580515906_3887298394066856231_o.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRLuUUUiFR7XAE4oI5d8sFnrp2LAoKjZ2PKwaG6Mfyo141cMJRg4V6wHlAw2hAJZpVfCKhCTvr4UE4UfayhtdfM9iqMtXYsnBazplBn4ufuRtX1MqBAeCG0OLcECtSmwTSGYo2RCPmzIk/s160/1973246_296496580515906_3887298394066856231_o.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRLuUUUiFR7XAE4oI5d8sFnrp2LAoKjZ2PKwaG6Mfyo141cMJRg4V6wHlAw2hAJZpVfCKhCTvr4UE4UfayhtdfM9iqMtXYsnBazplBn4ufuRtX1MqBAeCG0OLcECtSmwTSGYo2RCPmzIk/s320/1973246_296496580515906_3887298394066856231_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRLuUUUiFR7XAE4oI5d8sFnrp2LAoKjZ2PKwaG6Mfyo141cMJRg4V6wHlAw2hAJZpVfCKhCTvr4UE4UfayhtdfM9iqMtXYsnBazplBn4ufuRtX1MqBAeCG0OLcECtSmwTSGYo2RCPmzIk/s480/1973246_296496580515906_3887298394066856231_o.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRLuUUUiFR7XAE4oI5d8sFnrp2LAoKjZ2PKwaG6Mfyo141cMJRg4V6wHlAw2hAJZpVfCKhCTvr4UE4UfayhtdfM9iqMtXYsnBazplBn4ufuRtX1MqBAeCG0OLcECtSmwTSGYo2RCPmzIk/s160/1973246_296496580515906_3887298394066856231_o.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRLuUUUiFR7XAE4oI5d8sFnrp2LAoKjZ2PKwaG6Mfyo141cMJRg4V6wHlAw2hAJZpVfCKhCTvr4UE4UfayhtdfM9iqMtXYsnBazplBn4ufuRtX1MqBAeCG0OLcECtSmwTSGYo2RCPmzIk/s320/1973246_296496580515906_3887298394066856231_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRLuUUUiFR7XAE4oI5d8sFnrp2LAoKjZ2PKwaG6Mfyo141cMJRg4V6wHlAw2hAJZpVfCKhCTvr4UE4UfayhtdfM9iqMtXYsnBazplBn4ufuRtX1MqBAeCG0OLcECtSmwTSGYo2RCPmzIk/s480/1973246_296496580515906_3887298394066856231_o.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.736 - La entrevista perdida a Noel Gallagher (1997)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -162,8 +160,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSh2lEU6EGgMaXoXW52uu0yKPIpDnMrtCtJBq-w8LQhCAA5WbtZ1SqaBlX15Y_r9KUgHd_3MnhvjLq33n-sTx99vO085SrAOzXQQcYkpUs9_QgE_8VkuVKrKuMBFvjfHBOIRq1Ys4RE0/s320/75016484aabc717837ee10e187f40a11.1000x1000x1.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSh2lEU6EGgMaXoXW52uu0yKPIpDnMrtCtJBq-w8LQhCAA5WbtZ1SqaBlX15Y_r9KUgHd_3MnhvjLq33n-sTx99vO085SrAOzXQQcYkpUs9_QgE_8VkuVKrKuMBFvjfHBOIRq1Ys4RE0/s160/75016484aabc717837ee10e187f40a11.1000x1000x1.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSh2lEU6EGgMaXoXW52uu0yKPIpDnMrtCtJBq-w8LQhCAA5WbtZ1SqaBlX15Y_r9KUgHd_3MnhvjLq33n-sTx99vO085SrAOzXQQcYkpUs9_QgE_8VkuVKrKuMBFvjfHBOIRq1Ys4RE0/s320/75016484aabc717837ee10e187f40a11.1000x1000x1.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSh2lEU6EGgMaXoXW52uu0yKPIpDnMrtCtJBq-w8LQhCAA5WbtZ1SqaBlX15Y_r9KUgHd_3MnhvjLq33n-sTx99vO085SrAOzXQQcYkpUs9_QgE_8VkuVKrKuMBFvjfHBOIRq1Ys4RE0/s480/75016484aabc717837ee10e187f40a11.1000x1000x1.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSh2lEU6EGgMaXoXW52uu0yKPIpDnMrtCtJBq-w8LQhCAA5WbtZ1SqaBlX15Y_r9KUgHd_3MnhvjLq33n-sTx99vO085SrAOzXQQcYkpUs9_QgE_8VkuVKrKuMBFvjfHBOIRq1Ys4RE0/s160/75016484aabc717837ee10e187f40a11.1000x1000x1.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSh2lEU6EGgMaXoXW52uu0yKPIpDnMrtCtJBq-w8LQhCAA5WbtZ1SqaBlX15Y_r9KUgHd_3MnhvjLq33n-sTx99vO085SrAOzXQQcYkpUs9_QgE_8VkuVKrKuMBFvjfHBOIRq1Ys4RE0/s320/75016484aabc717837ee10e187f40a11.1000x1000x1.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSh2lEU6EGgMaXoXW52uu0yKPIpDnMrtCtJBq-w8LQhCAA5WbtZ1SqaBlX15Y_r9KUgHd_3MnhvjLq33n-sTx99vO085SrAOzXQQcYkpUs9_QgE_8VkuVKrKuMBFvjfHBOIRq1Ys4RE0/s480/75016484aabc717837ee10e187f40a11.1000x1000x1.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.776 - Noel Gallagher&#39;s High Flying Birds - Back The Way We Came Vol. 1"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -179,8 +176,7 @@
         <a class="related-bottom-card" href="p-790-noel-gallagher-todos-los-caminos-son-buenos-si-no-sabes-hacia-donde-vas.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihsStJh4EzBZ6btlr0gM5hpuQt7szS_VfgmP4Dbr12SPPLcFqXURr6BM5g8JOBBH-cU6FKlZf89pSmE_mUPHtNAdYdRBOXDWdPPcGgnifHQXrga_IVPUVrB5jHEn7_O_3G8ERvXDNz9VA/s320/noel-gallagher.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihsStJh4EzBZ6btlr0gM5hpuQt7szS_VfgmP4Dbr12SPPLcFqXURr6BM5g8JOBBH-cU6FKlZf89pSmE_mUPHtNAdYdRBOXDWdPPcGgnifHQXrga_IVPUVrB5jHEn7_O_3G8ERvXDNz9VA/s320/noel-gallagher.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihsStJh4EzBZ6btlr0gM5hpuQt7szS_VfgmP4Dbr12SPPLcFqXURr6BM5g8JOBBH-cU6FKlZf89pSmE_mUPHtNAdYdRBOXDWdPPcGgnifHQXrga_IVPUVrB5jHEn7_O_3G8ERvXDNz9VA/s480/noel-gallagher.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihsStJh4EzBZ6btlr0gM5hpuQt7szS_VfgmP4Dbr12SPPLcFqXURr6BM5g8JOBBH-cU6FKlZf89pSmE_mUPHtNAdYdRBOXDWdPPcGgnifHQXrga_IVPUVrB5jHEn7_O_3G8ERvXDNz9VA/s640/noel-gallagher.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihsStJh4EzBZ6btlr0gM5hpuQt7szS_VfgmP4Dbr12SPPLcFqXURr6BM5g8JOBBH-cU6FKlZf89pSmE_mUPHtNAdYdRBOXDWdPPcGgnifHQXrga_IVPUVrB5jHEn7_O_3G8ERvXDNz9VA/s320/noel-gallagher.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihsStJh4EzBZ6btlr0gM5hpuQt7szS_VfgmP4Dbr12SPPLcFqXURr6BM5g8JOBBH-cU6FKlZf89pSmE_mUPHtNAdYdRBOXDWdPPcGgnifHQXrga_IVPUVrB5jHEn7_O_3G8ERvXDNz9VA/s480/noel-gallagher.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihsStJh4EzBZ6btlr0gM5hpuQt7szS_VfgmP4Dbr12SPPLcFqXURr6BM5g8JOBBH-cU6FKlZf89pSmE_mUPHtNAdYdRBOXDWdPPcGgnifHQXrga_IVPUVrB5jHEn7_O_3G8ERvXDNz9VA/s640/noel-gallagher.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.790 - Noel Gallagher : Todos los caminos son buenos si no sabes hacia donde vas"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -191,8 +187,7 @@
           </a><a class="related-bottom-card" href="p-854-noel-gallagher-glastonbury-2022.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfrSQPKWziXHN0sepqmL3XRInZcsmCGFL6TXBExigWSCRRgBMd2472Oo3YjxEc9_TeZTAn39_kRzgPIALXOXovx1KN6g3adQMIEbXEPCTh1JmfWVFMnmSKQzWXBVYcca9qAYf5lUVjoEwuLkXj9o9wlpFmgXYTTZf15KIfvvR0GiDjdT0nn_giZmp4/s320/Cover%20by%20supertronic.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfrSQPKWziXHN0sepqmL3XRInZcsmCGFL6TXBExigWSCRRgBMd2472Oo3YjxEc9_TeZTAn39_kRzgPIALXOXovx1KN6g3adQMIEbXEPCTh1JmfWVFMnmSKQzWXBVYcca9qAYf5lUVjoEwuLkXj9o9wlpFmgXYTTZf15KIfvvR0GiDjdT0nn_giZmp4/s320/Cover%20by%20supertronic.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfrSQPKWziXHN0sepqmL3XRInZcsmCGFL6TXBExigWSCRRgBMd2472Oo3YjxEc9_TeZTAn39_kRzgPIALXOXovx1KN6g3adQMIEbXEPCTh1JmfWVFMnmSKQzWXBVYcca9qAYf5lUVjoEwuLkXj9o9wlpFmgXYTTZf15KIfvvR0GiDjdT0nn_giZmp4/s480/Cover%20by%20supertronic.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfrSQPKWziXHN0sepqmL3XRInZcsmCGFL6TXBExigWSCRRgBMd2472Oo3YjxEc9_TeZTAn39_kRzgPIALXOXovx1KN6g3adQMIEbXEPCTh1JmfWVFMnmSKQzWXBVYcca9qAYf5lUVjoEwuLkXj9o9wlpFmgXYTTZf15KIfvvR0GiDjdT0nn_giZmp4/s640/Cover%20by%20supertronic.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfrSQPKWziXHN0sepqmL3XRInZcsmCGFL6TXBExigWSCRRgBMd2472Oo3YjxEc9_TeZTAn39_kRzgPIALXOXovx1KN6g3adQMIEbXEPCTh1JmfWVFMnmSKQzWXBVYcca9qAYf5lUVjoEwuLkXj9o9wlpFmgXYTTZf15KIfvvR0GiDjdT0nn_giZmp4/s320/Cover%20by%20supertronic.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfrSQPKWziXHN0sepqmL3XRInZcsmCGFL6TXBExigWSCRRgBMd2472Oo3YjxEc9_TeZTAn39_kRzgPIALXOXovx1KN6g3adQMIEbXEPCTh1JmfWVFMnmSKQzWXBVYcca9qAYf5lUVjoEwuLkXj9o9wlpFmgXYTTZf15KIfvvR0GiDjdT0nn_giZmp4/s480/Cover%20by%20supertronic.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfrSQPKWziXHN0sepqmL3XRInZcsmCGFL6TXBExigWSCRRgBMd2472Oo3YjxEc9_TeZTAn39_kRzgPIALXOXovx1KN6g3adQMIEbXEPCTh1JmfWVFMnmSKQzWXBVYcca9qAYf5lUVjoEwuLkXj9o9wlpFmgXYTTZf15KIfvvR0GiDjdT0nn_giZmp4/s640/Cover%20by%20supertronic.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.854 - Noel Gallagher, Glastonbury 2022"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -203,8 +198,7 @@
           </a><a class="related-bottom-card" href="programa-309-noel-gallagher-who-built-the-moon.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8EH9AUiZd2sA7yLiYOu6-6XDl-LTwTZMrFTk3EoMUPJMGc3-D84-_bS3IXYsr5uXG4diUbh-Ysb2PEWJN82Iay3FubtV6OmQdO_gTyHC_JUVeKUd1FvPZqHIfWW5I1jtvWE0fWmVSRBg/s320/nghfb---packshot---who-built-the-moon-acc528a5-944c-442d-be89-2cb546fea1b6.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8EH9AUiZd2sA7yLiYOu6-6XDl-LTwTZMrFTk3EoMUPJMGc3-D84-_bS3IXYsr5uXG4diUbh-Ysb2PEWJN82Iay3FubtV6OmQdO_gTyHC_JUVeKUd1FvPZqHIfWW5I1jtvWE0fWmVSRBg/s320/nghfb---packshot---who-built-the-moon-acc528a5-944c-442d-be89-2cb546fea1b6.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8EH9AUiZd2sA7yLiYOu6-6XDl-LTwTZMrFTk3EoMUPJMGc3-D84-_bS3IXYsr5uXG4diUbh-Ysb2PEWJN82Iay3FubtV6OmQdO_gTyHC_JUVeKUd1FvPZqHIfWW5I1jtvWE0fWmVSRBg/s480/nghfb---packshot---who-built-the-moon-acc528a5-944c-442d-be89-2cb546fea1b6.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8EH9AUiZd2sA7yLiYOu6-6XDl-LTwTZMrFTk3EoMUPJMGc3-D84-_bS3IXYsr5uXG4diUbh-Ysb2PEWJN82Iay3FubtV6OmQdO_gTyHC_JUVeKUd1FvPZqHIfWW5I1jtvWE0fWmVSRBg/s640/nghfb---packshot---who-built-the-moon-acc528a5-944c-442d-be89-2cb546fea1b6.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8EH9AUiZd2sA7yLiYOu6-6XDl-LTwTZMrFTk3EoMUPJMGc3-D84-_bS3IXYsr5uXG4diUbh-Ysb2PEWJN82Iay3FubtV6OmQdO_gTyHC_JUVeKUd1FvPZqHIfWW5I1jtvWE0fWmVSRBg/s320/nghfb---packshot---who-built-the-moon-acc528a5-944c-442d-be89-2cb546fea1b6.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8EH9AUiZd2sA7yLiYOu6-6XDl-LTwTZMrFTk3EoMUPJMGc3-D84-_bS3IXYsr5uXG4diUbh-Ysb2PEWJN82Iay3FubtV6OmQdO_gTyHC_JUVeKUd1FvPZqHIfWW5I1jtvWE0fWmVSRBg/s480/nghfb---packshot---who-built-the-moon-acc528a5-944c-442d-be89-2cb546fea1b6.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8EH9AUiZd2sA7yLiYOu6-6XDl-LTwTZMrFTk3EoMUPJMGc3-D84-_bS3IXYsr5uXG4diUbh-Ysb2PEWJN82Iay3FubtV6OmQdO_gTyHC_JUVeKUd1FvPZqHIfWW5I1jtvWE0fWmVSRBg/s640/nghfb---packshot---who-built-the-moon-acc528a5-944c-442d-be89-2cb546fea1b6.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 309 - Noel Gallagher - Who Built the Moon"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

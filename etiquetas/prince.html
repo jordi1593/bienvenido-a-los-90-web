@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Prince — 7 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1076-os-presento-a-la-persona-que-me-descubrio-otra-musica.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s320/B90_1076.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s160/B90_1076.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s320/B90_1076.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s480/B90_1076.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s160/B90_1076.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s320/B90_1076.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s480/B90_1076.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1076 - Os presento a la persona que me descubrió otra música"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-715-chris-cornell-no-one-sings-like-you-anymore.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi14XeuzN2GL48-3snhOWM7CwByMbk2w7ntu84RKNKUvrFfEum4_IsjnI1S8_Na1haFesu1r4CAFFpESiEEBQOWQCbt0FfR1e9KRIpcppFoO6trWieawzHk2uV7EdlM9sL1Q70ykPf5q24/s320/cover.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi14XeuzN2GL48-3snhOWM7CwByMbk2w7ntu84RKNKUvrFfEum4_IsjnI1S8_Na1haFesu1r4CAFFpESiEEBQOWQCbt0FfR1e9KRIpcppFoO6trWieawzHk2uV7EdlM9sL1Q70ykPf5q24/s160/cover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi14XeuzN2GL48-3snhOWM7CwByMbk2w7ntu84RKNKUvrFfEum4_IsjnI1S8_Na1haFesu1r4CAFFpESiEEBQOWQCbt0FfR1e9KRIpcppFoO6trWieawzHk2uV7EdlM9sL1Q70ykPf5q24/s320/cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi14XeuzN2GL48-3snhOWM7CwByMbk2w7ntu84RKNKUvrFfEum4_IsjnI1S8_Na1haFesu1r4CAFFpESiEEBQOWQCbt0FfR1e9KRIpcppFoO6trWieawzHk2uV7EdlM9sL1Q70ykPf5q24/s480/cover.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi14XeuzN2GL48-3snhOWM7CwByMbk2w7ntu84RKNKUvrFfEum4_IsjnI1S8_Na1haFesu1r4CAFFpESiEEBQOWQCbt0FfR1e9KRIpcppFoO6trWieawzHk2uV7EdlM9sL1Q70ykPf5q24/s160/cover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi14XeuzN2GL48-3snhOWM7CwByMbk2w7ntu84RKNKUvrFfEum4_IsjnI1S8_Na1haFesu1r4CAFFpESiEEBQOWQCbt0FfR1e9KRIpcppFoO6trWieawzHk2uV7EdlM9sL1Q70ykPf5q24/s320/cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi14XeuzN2GL48-3snhOWM7CwByMbk2w7ntu84RKNKUvrFfEum4_IsjnI1S8_Na1haFesu1r4CAFFpESiEEBQOWQCbt0FfR1e9KRIpcppFoO6trWieawzHk2uV7EdlM9sL1Q70ykPf5q24/s480/cover.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.715 - Chris Cornell - No One Sings Like You Anymore"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-706-mark-oliver-everett-eels-pincha-sus-canciones-favoritas.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s320/malcolm450.1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s160/malcolm450.1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s320/malcolm450.1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s480/malcolm450.1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s160/malcolm450.1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s320/malcolm450.1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIjSGjgxS_X5cB7Y5XELgEOs_1N7hm9jHCnS-Phoku9I7P8gDgX_Xoj9MlMTzLSbGEVUFsZD5rVEbsHaLwuYkNraNZNEEDpvYb6mTfB56Fgclt0ajOKOBaGyyLCdntHtpbhlod8Q27DOE/s480/malcolm450.1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.706 - Mark Oliver Everett (Eels) pincha sus canciones favoritas"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-554-la-seleccion-musical-de-layne-staley.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s320/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s160/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s320/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s480/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s160/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s320/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg-lI7j_ubQnRj_4rObUaERPmf_hP0En-TzJFFe2G3djwOlZqHGyHW4_AscGj3TsSazVbJeAF9xoh3xZh4qDgLgpVEAg2cJASphX32fogalNKORCVCskjK2wwU1en9fnrWk0-z_FD637M/s480/9352b032-6b3f-48ed-84c5-e98628fc741c-900x600.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 554: La selección musical de Layne Staley"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-543-amparo-llanos.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s320/543OK+Amparo+Llanos.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s160/543OK+Amparo+Llanos.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s320/543OK+Amparo+Llanos.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s480/543OK+Amparo+Llanos.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s160/543OK+Amparo+Llanos.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s320/543OK+Amparo+Llanos.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s480/543OK+Amparo+Llanos.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 543 - Amparo Llanos"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-219-ratm-pj-harvey-richard-ashcroft-prince-candlebox-dewolff.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s320/prince-performs-at-the-garden-2-2011.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s160/prince-performs-at-the-garden-2-2011.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s320/prince-performs-at-the-garden-2-2011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s480/prince-performs-at-the-garden-2-2011.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s160/prince-performs-at-the-garden-2-2011.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s320/prince-performs-at-the-garden-2-2011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s480/prince-performs-at-the-garden-2-2011.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 219 - RATM PJ Harvey Richard Ashcroft Prince Candlebox Dewolff "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-56-la-musica-de-juanjo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 56 - La música de Juanjo"
                 loading="lazy" width="320" height="213" />
         </a>

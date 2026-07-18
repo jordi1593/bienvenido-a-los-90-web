@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>1080 - CHULA presentan &quot;Cassette Sessions Vol. 2&quot;: — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -128,8 +128,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwqKYOPu52gwiukFZRCoO5aNI2x2HVcBiMzeSSl51hrfhlwAyUbb8AcID5mSMsSPoEwj_r4_hqhDohH7JzwqLgneubIfg-t_ZUJrVsmibab8bJZFjjI-m1yLOnqYBpCoOb9AsiQ1hD5yCJut36PXs5v3-Qd2oPD9FJbkm-Q0ZmSO_4aYO_7qIlxjelFu8/s320/420048807_7896211600395224_5236507224458807747_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwqKYOPu52gwiukFZRCoO5aNI2x2HVcBiMzeSSl51hrfhlwAyUbb8AcID5mSMsSPoEwj_r4_hqhDohH7JzwqLgneubIfg-t_ZUJrVsmibab8bJZFjjI-m1yLOnqYBpCoOb9AsiQ1hD5yCJut36PXs5v3-Qd2oPD9FJbkm-Q0ZmSO_4aYO_7qIlxjelFu8/s160/420048807_7896211600395224_5236507224458807747_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwqKYOPu52gwiukFZRCoO5aNI2x2HVcBiMzeSSl51hrfhlwAyUbb8AcID5mSMsSPoEwj_r4_hqhDohH7JzwqLgneubIfg-t_ZUJrVsmibab8bJZFjjI-m1yLOnqYBpCoOb9AsiQ1hD5yCJut36PXs5v3-Qd2oPD9FJbkm-Q0ZmSO_4aYO_7qIlxjelFu8/s320/420048807_7896211600395224_5236507224458807747_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwqKYOPu52gwiukFZRCoO5aNI2x2HVcBiMzeSSl51hrfhlwAyUbb8AcID5mSMsSPoEwj_r4_hqhDohH7JzwqLgneubIfg-t_ZUJrVsmibab8bJZFjjI-m1yLOnqYBpCoOb9AsiQ1hD5yCJut36PXs5v3-Qd2oPD9FJbkm-Q0ZmSO_4aYO_7qIlxjelFu8/s480/420048807_7896211600395224_5236507224458807747_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwqKYOPu52gwiukFZRCoO5aNI2x2HVcBiMzeSSl51hrfhlwAyUbb8AcID5mSMsSPoEwj_r4_hqhDohH7JzwqLgneubIfg-t_ZUJrVsmibab8bJZFjjI-m1yLOnqYBpCoOb9AsiQ1hD5yCJut36PXs5v3-Qd2oPD9FJbkm-Q0ZmSO_4aYO_7qIlxjelFu8/s160/420048807_7896211600395224_5236507224458807747_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwqKYOPu52gwiukFZRCoO5aNI2x2HVcBiMzeSSl51hrfhlwAyUbb8AcID5mSMsSPoEwj_r4_hqhDohH7JzwqLgneubIfg-t_ZUJrVsmibab8bJZFjjI-m1yLOnqYBpCoOb9AsiQ1hD5yCJut36PXs5v3-Qd2oPD9FJbkm-Q0ZmSO_4aYO_7qIlxjelFu8/s320/420048807_7896211600395224_5236507224458807747_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwqKYOPu52gwiukFZRCoO5aNI2x2HVcBiMzeSSl51hrfhlwAyUbb8AcID5mSMsSPoEwj_r4_hqhDohH7JzwqLgneubIfg-t_ZUJrVsmibab8bJZFjjI-m1yLOnqYBpCoOb9AsiQ1hD5yCJut36PXs5v3-Qd2oPD9FJbkm-Q0ZmSO_4aYO_7qIlxjelFu8/s480/420048807_7896211600395224_5236507224458807747_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1029 - CHULA, nostalgia futurista"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -139,8 +138,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYQgEyZe85bYX45xdhemSrOM9lUPBWhqyDrAMrYR4Tvhs6nvWwhHQcsGBj9UsmAbETmqEqVJHCxxEBpl6_fmUTXCK2KlJqgjU-e-caZuRON_CD8228zj5OcW8ATsuzy4SPrr24sFO7lYqo0M12OJQo1GC3Yj1yJR-pr_niwdKinpn2DgPnAQz_bcY9pcY/s320/sddefault.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYQgEyZe85bYX45xdhemSrOM9lUPBWhqyDrAMrYR4Tvhs6nvWwhHQcsGBj9UsmAbETmqEqVJHCxxEBpl6_fmUTXCK2KlJqgjU-e-caZuRON_CD8228zj5OcW8ATsuzy4SPrr24sFO7lYqo0M12OJQo1GC3Yj1yJR-pr_niwdKinpn2DgPnAQz_bcY9pcY/s160/sddefault.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYQgEyZe85bYX45xdhemSrOM9lUPBWhqyDrAMrYR4Tvhs6nvWwhHQcsGBj9UsmAbETmqEqVJHCxxEBpl6_fmUTXCK2KlJqgjU-e-caZuRON_CD8228zj5OcW8ATsuzy4SPrr24sFO7lYqo0M12OJQo1GC3Yj1yJR-pr_niwdKinpn2DgPnAQz_bcY9pcY/s320/sddefault.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYQgEyZe85bYX45xdhemSrOM9lUPBWhqyDrAMrYR4Tvhs6nvWwhHQcsGBj9UsmAbETmqEqVJHCxxEBpl6_fmUTXCK2KlJqgjU-e-caZuRON_CD8228zj5OcW8ATsuzy4SPrr24sFO7lYqo0M12OJQo1GC3Yj1yJR-pr_niwdKinpn2DgPnAQz_bcY9pcY/s480/sddefault.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYQgEyZe85bYX45xdhemSrOM9lUPBWhqyDrAMrYR4Tvhs6nvWwhHQcsGBj9UsmAbETmqEqVJHCxxEBpl6_fmUTXCK2KlJqgjU-e-caZuRON_CD8228zj5OcW8ATsuzy4SPrr24sFO7lYqo0M12OJQo1GC3Yj1yJR-pr_niwdKinpn2DgPnAQz_bcY9pcY/s160/sddefault.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYQgEyZe85bYX45xdhemSrOM9lUPBWhqyDrAMrYR4Tvhs6nvWwhHQcsGBj9UsmAbETmqEqVJHCxxEBpl6_fmUTXCK2KlJqgjU-e-caZuRON_CD8228zj5OcW8ATsuzy4SPrr24sFO7lYqo0M12OJQo1GC3Yj1yJR-pr_niwdKinpn2DgPnAQz_bcY9pcY/s320/sddefault.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYQgEyZe85bYX45xdhemSrOM9lUPBWhqyDrAMrYR4Tvhs6nvWwhHQcsGBj9UsmAbETmqEqVJHCxxEBpl6_fmUTXCK2KlJqgjU-e-caZuRON_CD8228zj5OcW8ATsuzy4SPrr24sFO7lYqo0M12OJQo1GC3Yj1yJR-pr_niwdKinpn2DgPnAQz_bcY9pcY/s480/sddefault.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.969 - STONE GIANT - Desert Live Sessions Vol 1"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -150,8 +148,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s320/a3942977190_10.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s160/a3942977190_10.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s320/a3942977190_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s480/a3942977190_10.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s160/a3942977190_10.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s320/a3942977190_10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdsmKp4hUUtWU1I4psckxcosgLFqv9B9uvzYucc9gJe2kwQ4hMY8ulqy598RdvqRfun5lH0CmTP58S3ef-sLZmuI6u-TdLBO0R-226PXP7ORBhYY8cvc1tPHQGopxxzNsLthzIWPZrnXU/s480/a3942977190_10.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.719 - Le Traste presentan Cuadratura vol. 2: Para sembrar lo incierto"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -167,8 +164,7 @@
         <a class="related-bottom-card" href="programa-503-las-b90-sessions-vol-1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s320/b90_503+%25283%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s320/b90_503+%25283%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s480/b90_503+%25283%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s640/b90_503+%25283%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s320/b90_503+%25283%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s480/b90_503+%25283%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s640/b90_503+%25283%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 503 - Las b90 Sessions Vol.1"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -179,8 +175,7 @@
           </a><a class="related-bottom-card" href="1087-sarajevo-84-presentan-the-after-party.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWWW9LRA6dLaPMq9_yXh2SSkj3_iig0ZNP9f5c_lcUa7TDx7EM45IZ6B5I8o6LbLJSAHAp0sfNOA7Expy8XFkpAgR_ZLkTGbcyeNgr07ckvr6fuDNJAFdBs7J2p8EC8pg5GtQrRKQt26StmLtK_jEW5JePls7BIpswTMMHvkvYWan7WdffUnb-cx8F4ak/s320/B90_1087.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWWW9LRA6dLaPMq9_yXh2SSkj3_iig0ZNP9f5c_lcUa7TDx7EM45IZ6B5I8o6LbLJSAHAp0sfNOA7Expy8XFkpAgR_ZLkTGbcyeNgr07ckvr6fuDNJAFdBs7J2p8EC8pg5GtQrRKQt26StmLtK_jEW5JePls7BIpswTMMHvkvYWan7WdffUnb-cx8F4ak/s320/B90_1087.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWWW9LRA6dLaPMq9_yXh2SSkj3_iig0ZNP9f5c_lcUa7TDx7EM45IZ6B5I8o6LbLJSAHAp0sfNOA7Expy8XFkpAgR_ZLkTGbcyeNgr07ckvr6fuDNJAFdBs7J2p8EC8pg5GtQrRKQt26StmLtK_jEW5JePls7BIpswTMMHvkvYWan7WdffUnb-cx8F4ak/s480/B90_1087.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWWW9LRA6dLaPMq9_yXh2SSkj3_iig0ZNP9f5c_lcUa7TDx7EM45IZ6B5I8o6LbLJSAHAp0sfNOA7Expy8XFkpAgR_ZLkTGbcyeNgr07ckvr6fuDNJAFdBs7J2p8EC8pg5GtQrRKQt26StmLtK_jEW5JePls7BIpswTMMHvkvYWan7WdffUnb-cx8F4ak/s640/B90_1087.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWWW9LRA6dLaPMq9_yXh2SSkj3_iig0ZNP9f5c_lcUa7TDx7EM45IZ6B5I8o6LbLJSAHAp0sfNOA7Expy8XFkpAgR_ZLkTGbcyeNgr07ckvr6fuDNJAFdBs7J2p8EC8pg5GtQrRKQt26StmLtK_jEW5JePls7BIpswTMMHvkvYWan7WdffUnb-cx8F4ak/s320/B90_1087.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWWW9LRA6dLaPMq9_yXh2SSkj3_iig0ZNP9f5c_lcUa7TDx7EM45IZ6B5I8o6LbLJSAHAp0sfNOA7Expy8XFkpAgR_ZLkTGbcyeNgr07ckvr6fuDNJAFdBs7J2p8EC8pg5GtQrRKQt26StmLtK_jEW5JePls7BIpswTMMHvkvYWan7WdffUnb-cx8F4ak/s480/B90_1087.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWWW9LRA6dLaPMq9_yXh2SSkj3_iig0ZNP9f5c_lcUa7TDx7EM45IZ6B5I8o6LbLJSAHAp0sfNOA7Expy8XFkpAgR_ZLkTGbcyeNgr07ckvr6fuDNJAFdBs7J2p8EC8pg5GtQrRKQt26StmLtK_jEW5JePls7BIpswTMMHvkvYWan7WdffUnb-cx8F4ak/s640/B90_1087.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1087 - Sarajevo &#39;84 presentan &#39;The After Party&#39;"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -191,8 +186,7 @@
           </a><a class="related-bottom-card" href="1094-una-seleccion-musical-exquisita-vol-3.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkaSahrX8FEK4qR_mmwNvHc2rqYbqOrQ_Nbi91_jN_Hmy8kiUmPxL1QITD0ktIyVJGJz-o_RKnICTlzSvJt7Mk8yTa6YxnkXSsCROcsUSNPKfnT-xm9l_Ne5BRoMALpEfjWH3U_VFud9bjWfnPWR2ioEYJV0PYDrTNO9ko88WTF-wsKkcm4VZ8psQS5KI/s320/Gemini_Generated_Image_rfsbhsrfsbhsrfsb.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkaSahrX8FEK4qR_mmwNvHc2rqYbqOrQ_Nbi91_jN_Hmy8kiUmPxL1QITD0ktIyVJGJz-o_RKnICTlzSvJt7Mk8yTa6YxnkXSsCROcsUSNPKfnT-xm9l_Ne5BRoMALpEfjWH3U_VFud9bjWfnPWR2ioEYJV0PYDrTNO9ko88WTF-wsKkcm4VZ8psQS5KI/s320/Gemini_Generated_Image_rfsbhsrfsbhsrfsb.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkaSahrX8FEK4qR_mmwNvHc2rqYbqOrQ_Nbi91_jN_Hmy8kiUmPxL1QITD0ktIyVJGJz-o_RKnICTlzSvJt7Mk8yTa6YxnkXSsCROcsUSNPKfnT-xm9l_Ne5BRoMALpEfjWH3U_VFud9bjWfnPWR2ioEYJV0PYDrTNO9ko88WTF-wsKkcm4VZ8psQS5KI/s480/Gemini_Generated_Image_rfsbhsrfsbhsrfsb.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkaSahrX8FEK4qR_mmwNvHc2rqYbqOrQ_Nbi91_jN_Hmy8kiUmPxL1QITD0ktIyVJGJz-o_RKnICTlzSvJt7Mk8yTa6YxnkXSsCROcsUSNPKfnT-xm9l_Ne5BRoMALpEfjWH3U_VFud9bjWfnPWR2ioEYJV0PYDrTNO9ko88WTF-wsKkcm4VZ8psQS5KI/s640/Gemini_Generated_Image_rfsbhsrfsbhsrfsb.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkaSahrX8FEK4qR_mmwNvHc2rqYbqOrQ_Nbi91_jN_Hmy8kiUmPxL1QITD0ktIyVJGJz-o_RKnICTlzSvJt7Mk8yTa6YxnkXSsCROcsUSNPKfnT-xm9l_Ne5BRoMALpEfjWH3U_VFud9bjWfnPWR2ioEYJV0PYDrTNO9ko88WTF-wsKkcm4VZ8psQS5KI/s320/Gemini_Generated_Image_rfsbhsrfsbhsrfsb.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkaSahrX8FEK4qR_mmwNvHc2rqYbqOrQ_Nbi91_jN_Hmy8kiUmPxL1QITD0ktIyVJGJz-o_RKnICTlzSvJt7Mk8yTa6YxnkXSsCROcsUSNPKfnT-xm9l_Ne5BRoMALpEfjWH3U_VFud9bjWfnPWR2ioEYJV0PYDrTNO9ko88WTF-wsKkcm4VZ8psQS5KI/s480/Gemini_Generated_Image_rfsbhsrfsbhsrfsb.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkaSahrX8FEK4qR_mmwNvHc2rqYbqOrQ_Nbi91_jN_Hmy8kiUmPxL1QITD0ktIyVJGJz-o_RKnICTlzSvJt7Mk8yTa6YxnkXSsCROcsUSNPKfnT-xm9l_Ne5BRoMALpEfjWH3U_VFud9bjWfnPWR2ioEYJV0PYDrTNO9ko88WTF-wsKkcm4VZ8psQS5KI/s640/Gemini_Generated_Image_rfsbhsrfsbhsrfsb.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1094 - Una selección musical exquisita Vol.3"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

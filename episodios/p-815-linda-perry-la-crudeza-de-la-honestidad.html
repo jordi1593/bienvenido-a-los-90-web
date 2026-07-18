@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.815 - Linda Perry, la crudeza de la honestidad — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -133,8 +133,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEhEZwcV9CI06_Y7DPC7IaiNL6MlWJRFaxKh5HvQhLEAG5_C6HB9BhFHhTRiXvaG-V2AWxfmYnQrJk0AzOFoXH6m_caYlkDBVsr0JRJsYA8qQ8-NKldgtQzvWQmzkDupd0CVWKoKadZBryiXVbRmeSNoA_FDETLFGm6zqXrVQn3rbLhS5hhFeMP0Ofmp=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEhEZwcV9CI06_Y7DPC7IaiNL6MlWJRFaxKh5HvQhLEAG5_C6HB9BhFHhTRiXvaG-V2AWxfmYnQrJk0AzOFoXH6m_caYlkDBVsr0JRJsYA8qQ8-NKldgtQzvWQmzkDupd0CVWKoKadZBryiXVbRmeSNoA_FDETLFGm6zqXrVQn3rbLhS5hhFeMP0Ofmp=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEhEZwcV9CI06_Y7DPC7IaiNL6MlWJRFaxKh5HvQhLEAG5_C6HB9BhFHhTRiXvaG-V2AWxfmYnQrJk0AzOFoXH6m_caYlkDBVsr0JRJsYA8qQ8-NKldgtQzvWQmzkDupd0CVWKoKadZBryiXVbRmeSNoA_FDETLFGm6zqXrVQn3rbLhS5hhFeMP0Ofmp=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEhEZwcV9CI06_Y7DPC7IaiNL6MlWJRFaxKh5HvQhLEAG5_C6HB9BhFHhTRiXvaG-V2AWxfmYnQrJk0AzOFoXH6m_caYlkDBVsr0JRJsYA8qQ8-NKldgtQzvWQmzkDupd0CVWKoKadZBryiXVbRmeSNoA_FDETLFGm6zqXrVQn3rbLhS5hhFeMP0Ofmp=s72-c 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="B90 Classic 15: Cuando Decca rechazó a los Beatles"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -144,8 +143,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEjsXBWNrhlJyn4VjqzV-VJ-JEVu78yaD1ADt20sStxUdqYYhc7-35NUhzzFb3UJLnV0Rdy3mKHal2ewN_ReeituIw_UFmn5n0QdET90ppk4C8_MvRqSDHxdKEney5-ed512zOQEztZnFqIKYQz0PsLSqdJNDH6TvDr2Emd1qO5t7_3yh3i1sSdlLnrn=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEjsXBWNrhlJyn4VjqzV-VJ-JEVu78yaD1ADt20sStxUdqYYhc7-35NUhzzFb3UJLnV0Rdy3mKHal2ewN_ReeituIw_UFmn5n0QdET90ppk4C8_MvRqSDHxdKEney5-ed512zOQEztZnFqIKYQz0PsLSqdJNDH6TvDr2Emd1qO5t7_3yh3i1sSdlLnrn=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEjsXBWNrhlJyn4VjqzV-VJ-JEVu78yaD1ADt20sStxUdqYYhc7-35NUhzzFb3UJLnV0Rdy3mKHal2ewN_ReeituIw_UFmn5n0QdET90ppk4C8_MvRqSDHxdKEney5-ed512zOQEztZnFqIKYQz0PsLSqdJNDH6TvDr2Emd1qO5t7_3yh3i1sSdlLnrn=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEjsXBWNrhlJyn4VjqzV-VJ-JEVu78yaD1ADt20sStxUdqYYhc7-35NUhzzFb3UJLnV0Rdy3mKHal2ewN_ReeituIw_UFmn5n0QdET90ppk4C8_MvRqSDHxdKEney5-ed512zOQEztZnFqIKYQz0PsLSqdJNDH6TvDr2Emd1qO5t7_3yh3i1sSdlLnrn=s72-c 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="P.816 - Mesa redonda sobre el podcast musical en España"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -155,8 +153,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="P.814 - Homenaje a 1991, el año que cambió la música"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -172,8 +169,7 @@
         <a class="related-bottom-card" href="p-817-especial-brad-en-memoria-de-shawn-smith.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEjWx8isE0N44w25w1Iti_viBAY_T4XADFCE_d-7ZhYvsVZMuhj4aebg245jFM1psitJO1zfJa4czAcGcgjww2BPHtYTi0LnNRjSicUmdBB2cLA8CvpKJ_WZm61Lb2GCl3eaIissYoEjfrYIMOWkbFfWWfK6GgAiIz9ZzvOOLhgbGHhyKEbGdQq1-mAK=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEjWx8isE0N44w25w1Iti_viBAY_T4XADFCE_d-7ZhYvsVZMuhj4aebg245jFM1psitJO1zfJa4czAcGcgjww2BPHtYTi0LnNRjSicUmdBB2cLA8CvpKJ_WZm61Lb2GCl3eaIissYoEjfrYIMOWkbFfWWfK6GgAiIz9ZzvOOLhgbGHhyKEbGdQq1-mAK=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEjWx8isE0N44w25w1Iti_viBAY_T4XADFCE_d-7ZhYvsVZMuhj4aebg245jFM1psitJO1zfJa4czAcGcgjww2BPHtYTi0LnNRjSicUmdBB2cLA8CvpKJ_WZm61Lb2GCl3eaIissYoEjfrYIMOWkbFfWWfK6GgAiIz9ZzvOOLhgbGHhyKEbGdQq1-mAK=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEjWx8isE0N44w25w1Iti_viBAY_T4XADFCE_d-7ZhYvsVZMuhj4aebg245jFM1psitJO1zfJa4czAcGcgjww2BPHtYTi0LnNRjSicUmdBB2cLA8CvpKJ_WZm61Lb2GCl3eaIissYoEjfrYIMOWkbFfWWfK6GgAiIz9ZzvOOLhgbGHhyKEbGdQq1-mAK=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="P.817 - Especial BRAD (en memoria de Shawn Smith)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -184,8 +180,7 @@
           </a><a class="related-bottom-card" href="p-813-especial-vanity-rose-acustico.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEhi2CpzfI0Hv2t5rIoYAvOQxHRui_wa2hdZiPF2gJJQT7QBVh8cpgyAgbu43ljgMyxVbt5psOd-MrIzr_05KZ0qsYON4vBSwpjajDzTbD6SfckxhDXTaHqmzgUSNxglqFRk7PFsXeUvjvQXuNd7uQBk2Iiw7D_n8yc6cmziObHIG3aLXY4pNIll4HnM=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEhi2CpzfI0Hv2t5rIoYAvOQxHRui_wa2hdZiPF2gJJQT7QBVh8cpgyAgbu43ljgMyxVbt5psOd-MrIzr_05KZ0qsYON4vBSwpjajDzTbD6SfckxhDXTaHqmzgUSNxglqFRk7PFsXeUvjvQXuNd7uQBk2Iiw7D_n8yc6cmziObHIG3aLXY4pNIll4HnM=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEhi2CpzfI0Hv2t5rIoYAvOQxHRui_wa2hdZiPF2gJJQT7QBVh8cpgyAgbu43ljgMyxVbt5psOd-MrIzr_05KZ0qsYON4vBSwpjajDzTbD6SfckxhDXTaHqmzgUSNxglqFRk7PFsXeUvjvQXuNd7uQBk2Iiw7D_n8yc6cmziObHIG3aLXY4pNIll4HnM=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEhi2CpzfI0Hv2t5rIoYAvOQxHRui_wa2hdZiPF2gJJQT7QBVh8cpgyAgbu43ljgMyxVbt5psOd-MrIzr_05KZ0qsYON4vBSwpjajDzTbD6SfckxhDXTaHqmzgUSNxglqFRk7PFsXeUvjvQXuNd7uQBk2Iiw7D_n8yc6cmziObHIG3aLXY4pNIll4HnM=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="P.813 - Especial VANITY ROSE + acústico"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -196,8 +191,7 @@
           </a><a class="related-bottom-card" href="p-812-los-recuerdos-de-paul-mccartney-en-the-lyrics-parte-1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEh89Tj85J6Bu6EDGzQeVFkPHnfXj4s2sels5ti_mb0LapOjRFAKDa-M9d-zUz6fU1uu29OqwwrHhGcW1aiTQv8KtYoxV60gqHBE3FhBCX32I-BXJPYZsjlL72kcJQMBcvYEsraSRSYY4_dEVGJHwC9cn_JEhNs5BGbgLP1yj9rJul7dUVfhXLAgRU_U=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEh89Tj85J6Bu6EDGzQeVFkPHnfXj4s2sels5ti_mb0LapOjRFAKDa-M9d-zUz6fU1uu29OqwwrHhGcW1aiTQv8KtYoxV60gqHBE3FhBCX32I-BXJPYZsjlL72kcJQMBcvYEsraSRSYY4_dEVGJHwC9cn_JEhNs5BGbgLP1yj9rJul7dUVfhXLAgRU_U=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEh89Tj85J6Bu6EDGzQeVFkPHnfXj4s2sels5ti_mb0LapOjRFAKDa-M9d-zUz6fU1uu29OqwwrHhGcW1aiTQv8KtYoxV60gqHBE3FhBCX32I-BXJPYZsjlL72kcJQMBcvYEsraSRSYY4_dEVGJHwC9cn_JEhNs5BGbgLP1yj9rJul7dUVfhXLAgRU_U=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEh89Tj85J6Bu6EDGzQeVFkPHnfXj4s2sels5ti_mb0LapOjRFAKDa-M9d-zUz6fU1uu29OqwwrHhGcW1aiTQv8KtYoxV60gqHBE3FhBCX32I-BXJPYZsjlL72kcJQMBcvYEsraSRSYY4_dEVGJHwC9cn_JEhNs5BGbgLP1yj9rJul7dUVfhXLAgRU_U=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="P.812 - Los recuerdos de Paul McCartney en The Lyrics (Parte 1)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

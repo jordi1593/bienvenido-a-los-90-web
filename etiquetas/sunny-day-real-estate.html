@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Sunny Day Real Estate — 7 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1133-tres-tristes-tipos-haciendo-emo-hablamos-con-un-lugar-tranquilo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3pTbtS_VHlvsTHL3ht6_cbPnblQ67dXtr82CzgwbtS5UgOt0RHKQ26DZcEsEHZf6SQQPtPqEbchTJBc1damBemQvl9fTmiq9kIOM7D5hgQ8wQJPYRA47YKYevQ4NJo6ePt9yNa1x1FwZzbI9HnPJsOX_yeL50TdoAwKZ8qdwmq8xCNNXd3xGz4lVlVtI/s320/B90_1133.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3pTbtS_VHlvsTHL3ht6_cbPnblQ67dXtr82CzgwbtS5UgOt0RHKQ26DZcEsEHZf6SQQPtPqEbchTJBc1damBemQvl9fTmiq9kIOM7D5hgQ8wQJPYRA47YKYevQ4NJo6ePt9yNa1x1FwZzbI9HnPJsOX_yeL50TdoAwKZ8qdwmq8xCNNXd3xGz4lVlVtI/s160/B90_1133.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3pTbtS_VHlvsTHL3ht6_cbPnblQ67dXtr82CzgwbtS5UgOt0RHKQ26DZcEsEHZf6SQQPtPqEbchTJBc1damBemQvl9fTmiq9kIOM7D5hgQ8wQJPYRA47YKYevQ4NJo6ePt9yNa1x1FwZzbI9HnPJsOX_yeL50TdoAwKZ8qdwmq8xCNNXd3xGz4lVlVtI/s320/B90_1133.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3pTbtS_VHlvsTHL3ht6_cbPnblQ67dXtr82CzgwbtS5UgOt0RHKQ26DZcEsEHZf6SQQPtPqEbchTJBc1damBemQvl9fTmiq9kIOM7D5hgQ8wQJPYRA47YKYevQ4NJo6ePt9yNa1x1FwZzbI9HnPJsOX_yeL50TdoAwKZ8qdwmq8xCNNXd3xGz4lVlVtI/s480/B90_1133.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3pTbtS_VHlvsTHL3ht6_cbPnblQ67dXtr82CzgwbtS5UgOt0RHKQ26DZcEsEHZf6SQQPtPqEbchTJBc1damBemQvl9fTmiq9kIOM7D5hgQ8wQJPYRA47YKYevQ4NJo6ePt9yNa1x1FwZzbI9HnPJsOX_yeL50TdoAwKZ8qdwmq8xCNNXd3xGz4lVlVtI/s160/B90_1133.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3pTbtS_VHlvsTHL3ht6_cbPnblQ67dXtr82CzgwbtS5UgOt0RHKQ26DZcEsEHZf6SQQPtPqEbchTJBc1damBemQvl9fTmiq9kIOM7D5hgQ8wQJPYRA47YKYevQ4NJo6ePt9yNa1x1FwZzbI9HnPJsOX_yeL50TdoAwKZ8qdwmq8xCNNXd3xGz4lVlVtI/s320/B90_1133.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3pTbtS_VHlvsTHL3ht6_cbPnblQ67dXtr82CzgwbtS5UgOt0RHKQ26DZcEsEHZf6SQQPtPqEbchTJBc1damBemQvl9fTmiq9kIOM7D5hgQ8wQJPYRA47YKYevQ4NJo6ePt9yNa1x1FwZzbI9HnPJsOX_yeL50TdoAwKZ8qdwmq8xCNNXd3xGz4lVlVtI/s480/B90_1133.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1133 - Tres tristes tipos haciendo emo: Hablamos con Un Lugar Tranquilo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/1095-especial-1995-5-5-rocket-from-the-crypt-alice-in-chains-pulp-queen-sunny-day-rea.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWb_jMvvcOjdBPs2UZ27EUqJQuuC3A5N2mOcmVN3fiefcRG4Dve7MFIEfjVBHTE1MU50yldd45Im_45I0T8fSgCQV-GxA41uwCuCZWiIKnkVnEzCxJTUdZUxQNzrlWe-FRPi198LPqnx3GlCHrUtQfkHmwp9G4BbnmGi1jaIkS0NfWsVSaBP6tOqpFzAU/s320/b90_1095.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWb_jMvvcOjdBPs2UZ27EUqJQuuC3A5N2mOcmVN3fiefcRG4Dve7MFIEfjVBHTE1MU50yldd45Im_45I0T8fSgCQV-GxA41uwCuCZWiIKnkVnEzCxJTUdZUxQNzrlWe-FRPi198LPqnx3GlCHrUtQfkHmwp9G4BbnmGi1jaIkS0NfWsVSaBP6tOqpFzAU/s160/b90_1095.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWb_jMvvcOjdBPs2UZ27EUqJQuuC3A5N2mOcmVN3fiefcRG4Dve7MFIEfjVBHTE1MU50yldd45Im_45I0T8fSgCQV-GxA41uwCuCZWiIKnkVnEzCxJTUdZUxQNzrlWe-FRPi198LPqnx3GlCHrUtQfkHmwp9G4BbnmGi1jaIkS0NfWsVSaBP6tOqpFzAU/s320/b90_1095.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWb_jMvvcOjdBPs2UZ27EUqJQuuC3A5N2mOcmVN3fiefcRG4Dve7MFIEfjVBHTE1MU50yldd45Im_45I0T8fSgCQV-GxA41uwCuCZWiIKnkVnEzCxJTUdZUxQNzrlWe-FRPi198LPqnx3GlCHrUtQfkHmwp9G4BbnmGi1jaIkS0NfWsVSaBP6tOqpFzAU/s480/b90_1095.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWb_jMvvcOjdBPs2UZ27EUqJQuuC3A5N2mOcmVN3fiefcRG4Dve7MFIEfjVBHTE1MU50yldd45Im_45I0T8fSgCQV-GxA41uwCuCZWiIKnkVnEzCxJTUdZUxQNzrlWe-FRPi198LPqnx3GlCHrUtQfkHmwp9G4BbnmGi1jaIkS0NfWsVSaBP6tOqpFzAU/s160/b90_1095.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWb_jMvvcOjdBPs2UZ27EUqJQuuC3A5N2mOcmVN3fiefcRG4Dve7MFIEfjVBHTE1MU50yldd45Im_45I0T8fSgCQV-GxA41uwCuCZWiIKnkVnEzCxJTUdZUxQNzrlWe-FRPi198LPqnx3GlCHrUtQfkHmwp9G4BbnmGi1jaIkS0NfWsVSaBP6tOqpFzAU/s320/b90_1095.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWb_jMvvcOjdBPs2UZ27EUqJQuuC3A5N2mOcmVN3fiefcRG4Dve7MFIEfjVBHTE1MU50yldd45Im_45I0T8fSgCQV-GxA41uwCuCZWiIKnkVnEzCxJTUdZUxQNzrlWe-FRPi198LPqnx3GlCHrUtQfkHmwp9G4BbnmGi1jaIkS0NfWsVSaBP6tOqpFzAU/s480/b90_1095.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1095 - Especial 1995 (5/5) Rocket from the Crypt, Alice in Chains, Pulp, Queen, Sunny Day Real Estate..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-975-especial-diary-sunny-day-real-estate.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUAutj4RY5wBydUSu39YACbL9naGtCxp7lbfkAzO8pLGOSgEiwo2ZUMungBmAbu94U_a5nDrQVj-zLXSYQRMt2DLwQ54ue4i35cnUqsqWwKiAcAPTS0hQ7_lYsxmBVcp-pjBL8LjwULmHzAr7Ke85i5HSKp_pywwHom9V7y_DIW3k0bWCg3KVTtnv3TrQ/s320/81EO0h4HCQL._SL1440_.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUAutj4RY5wBydUSu39YACbL9naGtCxp7lbfkAzO8pLGOSgEiwo2ZUMungBmAbu94U_a5nDrQVj-zLXSYQRMt2DLwQ54ue4i35cnUqsqWwKiAcAPTS0hQ7_lYsxmBVcp-pjBL8LjwULmHzAr7Ke85i5HSKp_pywwHom9V7y_DIW3k0bWCg3KVTtnv3TrQ/s160/81EO0h4HCQL._SL1440_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUAutj4RY5wBydUSu39YACbL9naGtCxp7lbfkAzO8pLGOSgEiwo2ZUMungBmAbu94U_a5nDrQVj-zLXSYQRMt2DLwQ54ue4i35cnUqsqWwKiAcAPTS0hQ7_lYsxmBVcp-pjBL8LjwULmHzAr7Ke85i5HSKp_pywwHom9V7y_DIW3k0bWCg3KVTtnv3TrQ/s320/81EO0h4HCQL._SL1440_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUAutj4RY5wBydUSu39YACbL9naGtCxp7lbfkAzO8pLGOSgEiwo2ZUMungBmAbu94U_a5nDrQVj-zLXSYQRMt2DLwQ54ue4i35cnUqsqWwKiAcAPTS0hQ7_lYsxmBVcp-pjBL8LjwULmHzAr7Ke85i5HSKp_pywwHom9V7y_DIW3k0bWCg3KVTtnv3TrQ/s480/81EO0h4HCQL._SL1440_.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUAutj4RY5wBydUSu39YACbL9naGtCxp7lbfkAzO8pLGOSgEiwo2ZUMungBmAbu94U_a5nDrQVj-zLXSYQRMt2DLwQ54ue4i35cnUqsqWwKiAcAPTS0hQ7_lYsxmBVcp-pjBL8LjwULmHzAr7Ke85i5HSKp_pywwHom9V7y_DIW3k0bWCg3KVTtnv3TrQ/s160/81EO0h4HCQL._SL1440_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUAutj4RY5wBydUSu39YACbL9naGtCxp7lbfkAzO8pLGOSgEiwo2ZUMungBmAbu94U_a5nDrQVj-zLXSYQRMt2DLwQ54ue4i35cnUqsqWwKiAcAPTS0hQ7_lYsxmBVcp-pjBL8LjwULmHzAr7Ke85i5HSKp_pywwHom9V7y_DIW3k0bWCg3KVTtnv3TrQ/s320/81EO0h4HCQL._SL1440_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUAutj4RY5wBydUSu39YACbL9naGtCxp7lbfkAzO8pLGOSgEiwo2ZUMungBmAbu94U_a5nDrQVj-zLXSYQRMt2DLwQ54ue4i35cnUqsqWwKiAcAPTS0hQ7_lYsxmBVcp-pjBL8LjwULmHzAr7Ke85i5HSKp_pywwHom9V7y_DIW3k0bWCg3KVTtnv3TrQ/s480/81EO0h4HCQL._SL1440_.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.975 - Especial Diary - Sunny Day Real Estate"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-837-homenaje-a-felipe-couselo-cap-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s320/IMG_20220130_163810.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s160/IMG_20220130_163810.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s320/IMG_20220130_163810.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s480/IMG_20220130_163810.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s160/IMG_20220130_163810.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s320/IMG_20220130_163810.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s480/IMG_20220130_163810.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.837 - Homenaje a Felipe Couselo (Cap.1)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/p-697-la-historia-de-sub-pop-en-10-canciones.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s160/3201.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s480/3201.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s160/3201.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s480/3201.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.697 - La historia de SUB POP en 10 canciones"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-112-especial-coachella-2014.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9oM6dCpfItcKxmoRPLybFnCMuPQPLYClXewFowe4BXP81aQiFfy29YiiPfaajayp_6YZbtn_ktpGdS9raPcikzO63a9N96BvElvDfdwlSxFmTmPsfOIk4L5h9hL-WzRkqzWdJTyKoyDk/s320/Coachella-2014_NRF.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9oM6dCpfItcKxmoRPLybFnCMuPQPLYClXewFowe4BXP81aQiFfy29YiiPfaajayp_6YZbtn_ktpGdS9raPcikzO63a9N96BvElvDfdwlSxFmTmPsfOIk4L5h9hL-WzRkqzWdJTyKoyDk/s160/Coachella-2014_NRF.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9oM6dCpfItcKxmoRPLybFnCMuPQPLYClXewFowe4BXP81aQiFfy29YiiPfaajayp_6YZbtn_ktpGdS9raPcikzO63a9N96BvElvDfdwlSxFmTmPsfOIk4L5h9hL-WzRkqzWdJTyKoyDk/s320/Coachella-2014_NRF.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9oM6dCpfItcKxmoRPLybFnCMuPQPLYClXewFowe4BXP81aQiFfy29YiiPfaajayp_6YZbtn_ktpGdS9raPcikzO63a9N96BvElvDfdwlSxFmTmPsfOIk4L5h9hL-WzRkqzWdJTyKoyDk/s480/Coachella-2014_NRF.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9oM6dCpfItcKxmoRPLybFnCMuPQPLYClXewFowe4BXP81aQiFfy29YiiPfaajayp_6YZbtn_ktpGdS9raPcikzO63a9N96BvElvDfdwlSxFmTmPsfOIk4L5h9hL-WzRkqzWdJTyKoyDk/s160/Coachella-2014_NRF.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9oM6dCpfItcKxmoRPLybFnCMuPQPLYClXewFowe4BXP81aQiFfy29YiiPfaajayp_6YZbtn_ktpGdS9raPcikzO63a9N96BvElvDfdwlSxFmTmPsfOIk4L5h9hL-WzRkqzWdJTyKoyDk/s320/Coachella-2014_NRF.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9oM6dCpfItcKxmoRPLybFnCMuPQPLYClXewFowe4BXP81aQiFfy29YiiPfaajayp_6YZbtn_ktpGdS9raPcikzO63a9N96BvElvDfdwlSxFmTmPsfOIk4L5h9hL-WzRkqzWdJTyKoyDk/s480/Coachella-2014_NRF.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 112 - Especial Coachella 2014"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/b90-programa-90-foo-fighters-the-colour-and-the-shape.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 90 - Foo Fighters The Colour and the shape "
                 loading="lazy" width="320" height="213" />
         </a>

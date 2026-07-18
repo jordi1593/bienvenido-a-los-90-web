@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 545 - Lo mejor del Glastonbury 2019 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -135,8 +135,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s320/13528906_1296510453699928_874557075224996922_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s160/13528906_1296510453699928_874557075224996922_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s320/13528906_1296510453699928_874557075224996922_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s480/13528906_1296510453699928_874557075224996922_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s160/13528906_1296510453699928_874557075224996922_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s320/13528906_1296510453699928_874557075224996922_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s480/13528906_1296510453699928_874557075224996922_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 232 - Glastonbury 2016"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -146,8 +145,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggQLLAv1FeQMk-tr91VFSt7uTl6MKmOURKNsJC7O1ezTo3Pc6VCDPKMFzC7Uxr7DjXoWO9m0EKxkOi0Wy2oINhXUW3PiH9vQ7Qup3U82yBVQXbWAWE0VhsbeZk6suMkFxXxMQKPUxrYiA/s320/MadCool2019_P.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggQLLAv1FeQMk-tr91VFSt7uTl6MKmOURKNsJC7O1ezTo3Pc6VCDPKMFzC7Uxr7DjXoWO9m0EKxkOi0Wy2oINhXUW3PiH9vQ7Qup3U82yBVQXbWAWE0VhsbeZk6suMkFxXxMQKPUxrYiA/s160/MadCool2019_P.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggQLLAv1FeQMk-tr91VFSt7uTl6MKmOURKNsJC7O1ezTo3Pc6VCDPKMFzC7Uxr7DjXoWO9m0EKxkOi0Wy2oINhXUW3PiH9vQ7Qup3U82yBVQXbWAWE0VhsbeZk6suMkFxXxMQKPUxrYiA/s320/MadCool2019_P.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggQLLAv1FeQMk-tr91VFSt7uTl6MKmOURKNsJC7O1ezTo3Pc6VCDPKMFzC7Uxr7DjXoWO9m0EKxkOi0Wy2oINhXUW3PiH9vQ7Qup3U82yBVQXbWAWE0VhsbeZk6suMkFxXxMQKPUxrYiA/s480/MadCool2019_P.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggQLLAv1FeQMk-tr91VFSt7uTl6MKmOURKNsJC7O1ezTo3Pc6VCDPKMFzC7Uxr7DjXoWO9m0EKxkOi0Wy2oINhXUW3PiH9vQ7Qup3U82yBVQXbWAWE0VhsbeZk6suMkFxXxMQKPUxrYiA/s160/MadCool2019_P.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggQLLAv1FeQMk-tr91VFSt7uTl6MKmOURKNsJC7O1ezTo3Pc6VCDPKMFzC7Uxr7DjXoWO9m0EKxkOi0Wy2oINhXUW3PiH9vQ7Qup3U82yBVQXbWAWE0VhsbeZk6suMkFxXxMQKPUxrYiA/s320/MadCool2019_P.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggQLLAv1FeQMk-tr91VFSt7uTl6MKmOURKNsJC7O1ezTo3Pc6VCDPKMFzC7Uxr7DjXoWO9m0EKxkOi0Wy2oINhXUW3PiH9vQ7Qup3U82yBVQXbWAWE0VhsbeZk6suMkFxXxMQKPUxrYiA/s480/MadCool2019_P.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 541 - Las 10 joyitas escondidas del MAD COOL 2019"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -157,8 +155,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s320/IMG_20170705_185643.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s160/IMG_20170705_185643.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s320/IMG_20170705_185643.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s480/IMG_20170705_185643.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s160/IMG_20170705_185643.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s320/IMG_20170705_185643.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkfw6Bi5BTVpLjfsI-u3q4cVI6EhYwnFq1uMEZYDMZv15_IEhjpTImgTJaKgH6ke9tl5O2Si7u8O6YCHs_g_if-pKZRjzCqC98vV5YT1nWulsHJzkXEMmMZK9WN9cTS-ndHkYJOaPnIew/s480/IMG_20170705_185643.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 288 - Moses Rubin + Glastonbury 2017"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -174,8 +171,7 @@
         <a class="related-bottom-card" href="b90-classic-24-paul-mccartney-glastonbury-2022.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s320/16562580925225.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s320/16562580925225.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s480/16562580925225.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s640/16562580925225.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s320/16562580925225.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s480/16562580925225.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BSy81Y26O2YTsHliWHFRBbnFPR8ChQjJ0lDn4uNgCkwsePvSu35N5bwLmkcB8T8yKtR0PI4rZTDztCwknnc3iCPGRoEv6d74TCOr5uJqjXewKo4HBCv0qvkVASmh4f-xAbvOGX3ePuSrRmt3DPfCX3__cVkI77VTby1rqAU9k0bgBcwGbKpWdltq/s640/16562580925225.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 24: Paul McCartney - Glastonbury 2022"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -186,8 +182,7 @@
           </a><a class="related-bottom-card" href="p-854-noel-gallagher-glastonbury-2022.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfrSQPKWziXHN0sepqmL3XRInZcsmCGFL6TXBExigWSCRRgBMd2472Oo3YjxEc9_TeZTAn39_kRzgPIALXOXovx1KN6g3adQMIEbXEPCTh1JmfWVFMnmSKQzWXBVYcca9qAYf5lUVjoEwuLkXj9o9wlpFmgXYTTZf15KIfvvR0GiDjdT0nn_giZmp4/s320/Cover%20by%20supertronic.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfrSQPKWziXHN0sepqmL3XRInZcsmCGFL6TXBExigWSCRRgBMd2472Oo3YjxEc9_TeZTAn39_kRzgPIALXOXovx1KN6g3adQMIEbXEPCTh1JmfWVFMnmSKQzWXBVYcca9qAYf5lUVjoEwuLkXj9o9wlpFmgXYTTZf15KIfvvR0GiDjdT0nn_giZmp4/s320/Cover%20by%20supertronic.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfrSQPKWziXHN0sepqmL3XRInZcsmCGFL6TXBExigWSCRRgBMd2472Oo3YjxEc9_TeZTAn39_kRzgPIALXOXovx1KN6g3adQMIEbXEPCTh1JmfWVFMnmSKQzWXBVYcca9qAYf5lUVjoEwuLkXj9o9wlpFmgXYTTZf15KIfvvR0GiDjdT0nn_giZmp4/s480/Cover%20by%20supertronic.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfrSQPKWziXHN0sepqmL3XRInZcsmCGFL6TXBExigWSCRRgBMd2472Oo3YjxEc9_TeZTAn39_kRzgPIALXOXovx1KN6g3adQMIEbXEPCTh1JmfWVFMnmSKQzWXBVYcca9qAYf5lUVjoEwuLkXj9o9wlpFmgXYTTZf15KIfvvR0GiDjdT0nn_giZmp4/s640/Cover%20by%20supertronic.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfrSQPKWziXHN0sepqmL3XRInZcsmCGFL6TXBExigWSCRRgBMd2472Oo3YjxEc9_TeZTAn39_kRzgPIALXOXovx1KN6g3adQMIEbXEPCTh1JmfWVFMnmSKQzWXBVYcca9qAYf5lUVjoEwuLkXj9o9wlpFmgXYTTZf15KIfvvR0GiDjdT0nn_giZmp4/s320/Cover%20by%20supertronic.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfrSQPKWziXHN0sepqmL3XRInZcsmCGFL6TXBExigWSCRRgBMd2472Oo3YjxEc9_TeZTAn39_kRzgPIALXOXovx1KN6g3adQMIEbXEPCTh1JmfWVFMnmSKQzWXBVYcca9qAYf5lUVjoEwuLkXj9o9wlpFmgXYTTZf15KIfvvR0GiDjdT0nn_giZmp4/s480/Cover%20by%20supertronic.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfrSQPKWziXHN0sepqmL3XRInZcsmCGFL6TXBExigWSCRRgBMd2472Oo3YjxEc9_TeZTAn39_kRzgPIALXOXovx1KN6g3adQMIEbXEPCTh1JmfWVFMnmSKQzWXBVYcca9qAYf5lUVjoEwuLkXj9o9wlpFmgXYTTZf15KIfvvR0GiDjdT0nn_giZmp4/s640/Cover%20by%20supertronic.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.854 - Noel Gallagher, Glastonbury 2022"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -198,8 +193,7 @@
           </a><a class="related-bottom-card" href="programa-201-oasis-this-is-history-2-glastonbury-1995-be-here-now-1997.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s320/12508847_1171351242882517_303927544139429384_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s320/12508847_1171351242882517_303927544139429384_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s480/12508847_1171351242882517_303927544139429384_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s640/12508847_1171351242882517_303927544139429384_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s320/12508847_1171351242882517_303927544139429384_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s480/12508847_1171351242882517_303927544139429384_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s640/12508847_1171351242882517_303927544139429384_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 201 - Oasis This is history 2 - Glastonbury (1995) - Be Here Now (1997)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

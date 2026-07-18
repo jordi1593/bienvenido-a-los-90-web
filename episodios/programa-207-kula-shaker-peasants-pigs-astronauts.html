@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 207 - Kula Shaker &quot;Peasants, Pigs &amp; Astronauts&quot; — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -134,8 +134,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx1oON5AUA7MZb95ZZhUxzhQqudp4WZo3tTmxIVv9jKS_I_zhQyO8qWKPLcEwm8omphMWiUw_kM11nubEncHyko2ErjjMzlANKShxjLeWiC_CDKJhqEtLFUSLyR0SOFEjj1JeA4RP4nGQ/s320/kula_2_copy.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx1oON5AUA7MZb95ZZhUxzhQqudp4WZo3tTmxIVv9jKS_I_zhQyO8qWKPLcEwm8omphMWiUw_kM11nubEncHyko2ErjjMzlANKShxjLeWiC_CDKJhqEtLFUSLyR0SOFEjj1JeA4RP4nGQ/s160/kula_2_copy.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx1oON5AUA7MZb95ZZhUxzhQqudp4WZo3tTmxIVv9jKS_I_zhQyO8qWKPLcEwm8omphMWiUw_kM11nubEncHyko2ErjjMzlANKShxjLeWiC_CDKJhqEtLFUSLyR0SOFEjj1JeA4RP4nGQ/s320/kula_2_copy.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx1oON5AUA7MZb95ZZhUxzhQqudp4WZo3tTmxIVv9jKS_I_zhQyO8qWKPLcEwm8omphMWiUw_kM11nubEncHyko2ErjjMzlANKShxjLeWiC_CDKJhqEtLFUSLyR0SOFEjj1JeA4RP4nGQ/s480/kula_2_copy.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx1oON5AUA7MZb95ZZhUxzhQqudp4WZo3tTmxIVv9jKS_I_zhQyO8qWKPLcEwm8omphMWiUw_kM11nubEncHyko2ErjjMzlANKShxjLeWiC_CDKJhqEtLFUSLyR0SOFEjj1JeA4RP4nGQ/s160/kula_2_copy.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx1oON5AUA7MZb95ZZhUxzhQqudp4WZo3tTmxIVv9jKS_I_zhQyO8qWKPLcEwm8omphMWiUw_kM11nubEncHyko2ErjjMzlANKShxjLeWiC_CDKJhqEtLFUSLyR0SOFEjj1JeA4RP4nGQ/s320/kula_2_copy.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx1oON5AUA7MZb95ZZhUxzhQqudp4WZo3tTmxIVv9jKS_I_zhQyO8qWKPLcEwm8omphMWiUw_kM11nubEncHyko2ErjjMzlANKShxjLeWiC_CDKJhqEtLFUSLyR0SOFEjj1JeA4RP4nGQ/s480/kula_2_copy.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 206 - Kula Shaker &quot;K 2.0&quot;"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -145,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEm9NWAIJtCIu6RRFcTNAgGFuR9-xGfE1wbAHe9dFGeWlrVc-PMt0KPvWAbqVgSE6snM8vIMpdKSYoQk_uOECJXrRO9YYlx-fAzMpkFaAp9Yll2pxa3aBKffya5QUjcAX4xKao2fW2eOI/s320/12654350_1187684987915809_6392295640972299145_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEm9NWAIJtCIu6RRFcTNAgGFuR9-xGfE1wbAHe9dFGeWlrVc-PMt0KPvWAbqVgSE6snM8vIMpdKSYoQk_uOECJXrRO9YYlx-fAzMpkFaAp9Yll2pxa3aBKffya5QUjcAX4xKao2fW2eOI/s160/12654350_1187684987915809_6392295640972299145_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEm9NWAIJtCIu6RRFcTNAgGFuR9-xGfE1wbAHe9dFGeWlrVc-PMt0KPvWAbqVgSE6snM8vIMpdKSYoQk_uOECJXrRO9YYlx-fAzMpkFaAp9Yll2pxa3aBKffya5QUjcAX4xKao2fW2eOI/s320/12654350_1187684987915809_6392295640972299145_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEm9NWAIJtCIu6RRFcTNAgGFuR9-xGfE1wbAHe9dFGeWlrVc-PMt0KPvWAbqVgSE6snM8vIMpdKSYoQk_uOECJXrRO9YYlx-fAzMpkFaAp9Yll2pxa3aBKffya5QUjcAX4xKao2fW2eOI/s480/12654350_1187684987915809_6392295640972299145_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEm9NWAIJtCIu6RRFcTNAgGFuR9-xGfE1wbAHe9dFGeWlrVc-PMt0KPvWAbqVgSE6snM8vIMpdKSYoQk_uOECJXrRO9YYlx-fAzMpkFaAp9Yll2pxa3aBKffya5QUjcAX4xKao2fW2eOI/s160/12654350_1187684987915809_6392295640972299145_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEm9NWAIJtCIu6RRFcTNAgGFuR9-xGfE1wbAHe9dFGeWlrVc-PMt0KPvWAbqVgSE6snM8vIMpdKSYoQk_uOECJXrRO9YYlx-fAzMpkFaAp9Yll2pxa3aBKffya5QUjcAX4xKao2fW2eOI/s320/12654350_1187684987915809_6392295640972299145_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEm9NWAIJtCIu6RRFcTNAgGFuR9-xGfE1wbAHe9dFGeWlrVc-PMt0KPvWAbqVgSE6snM8vIMpdKSYoQk_uOECJXrRO9YYlx-fAzMpkFaAp9Yll2pxa3aBKffya5QUjcAX4xKao2fW2eOI/s480/12654350_1187684987915809_6392295640972299145_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 205 - Kula Shaker, los inicios hasta K"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -156,8 +154,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWD8wMwFiwwxptFBmsE4Id1jo6y1Xm3SnokemsNBiFLsYZkDzEKtJc1T2HPEqx0ThlgOjQebwS_Eaw5Rc-z2U4dVQg-rMYCQ5dlycmj1BBLjPC8mzzJlFXpM2UleECslRjI4pYDoF61ZI/s320/tumblr_o2m85mLgCJ1u4unozo1_1280.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWD8wMwFiwwxptFBmsE4Id1jo6y1Xm3SnokemsNBiFLsYZkDzEKtJc1T2HPEqx0ThlgOjQebwS_Eaw5Rc-z2U4dVQg-rMYCQ5dlycmj1BBLjPC8mzzJlFXpM2UleECslRjI4pYDoF61ZI/s160/tumblr_o2m85mLgCJ1u4unozo1_1280.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWD8wMwFiwwxptFBmsE4Id1jo6y1Xm3SnokemsNBiFLsYZkDzEKtJc1T2HPEqx0ThlgOjQebwS_Eaw5Rc-z2U4dVQg-rMYCQ5dlycmj1BBLjPC8mzzJlFXpM2UleECslRjI4pYDoF61ZI/s320/tumblr_o2m85mLgCJ1u4unozo1_1280.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWD8wMwFiwwxptFBmsE4Id1jo6y1Xm3SnokemsNBiFLsYZkDzEKtJc1T2HPEqx0ThlgOjQebwS_Eaw5Rc-z2U4dVQg-rMYCQ5dlycmj1BBLjPC8mzzJlFXpM2UleECslRjI4pYDoF61ZI/s480/tumblr_o2m85mLgCJ1u4unozo1_1280.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWD8wMwFiwwxptFBmsE4Id1jo6y1Xm3SnokemsNBiFLsYZkDzEKtJc1T2HPEqx0ThlgOjQebwS_Eaw5Rc-z2U4dVQg-rMYCQ5dlycmj1BBLjPC8mzzJlFXpM2UleECslRjI4pYDoF61ZI/s160/tumblr_o2m85mLgCJ1u4unozo1_1280.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWD8wMwFiwwxptFBmsE4Id1jo6y1Xm3SnokemsNBiFLsYZkDzEKtJc1T2HPEqx0ThlgOjQebwS_Eaw5Rc-z2U4dVQg-rMYCQ5dlycmj1BBLjPC8mzzJlFXpM2UleECslRjI4pYDoF61ZI/s320/tumblr_o2m85mLgCJ1u4unozo1_1280.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWD8wMwFiwwxptFBmsE4Id1jo6y1Xm3SnokemsNBiFLsYZkDzEKtJc1T2HPEqx0ThlgOjQebwS_Eaw5Rc-z2U4dVQg-rMYCQ5dlycmj1BBLjPC8mzzJlFXpM2UleECslRjI4pYDoF61ZI/s480/tumblr_o2m85mLgCJ1u4unozo1_1280.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 208 - Kula Shaker  Worthing 2016"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -173,8 +170,7 @@
         <a class="related-bottom-card" href="programa-209-kula-shaker-paradiso-2016.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIJUy6LiCT6DHeYbQeMwYKqvAu56dSzjMaJnmzl0hvwWHJeFiMPY2RJA_4MZN6ejAxesKOByGldzrJ9OM_TneafuVkNCylZBuJ_APLCj7PQBkxCMJmsZ0aA8FucmZDlaH2oNYUgegsUo4/s320/12705647_10153380077837747_380297482495608863_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIJUy6LiCT6DHeYbQeMwYKqvAu56dSzjMaJnmzl0hvwWHJeFiMPY2RJA_4MZN6ejAxesKOByGldzrJ9OM_TneafuVkNCylZBuJ_APLCj7PQBkxCMJmsZ0aA8FucmZDlaH2oNYUgegsUo4/s320/12705647_10153380077837747_380297482495608863_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIJUy6LiCT6DHeYbQeMwYKqvAu56dSzjMaJnmzl0hvwWHJeFiMPY2RJA_4MZN6ejAxesKOByGldzrJ9OM_TneafuVkNCylZBuJ_APLCj7PQBkxCMJmsZ0aA8FucmZDlaH2oNYUgegsUo4/s480/12705647_10153380077837747_380297482495608863_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIJUy6LiCT6DHeYbQeMwYKqvAu56dSzjMaJnmzl0hvwWHJeFiMPY2RJA_4MZN6ejAxesKOByGldzrJ9OM_TneafuVkNCylZBuJ_APLCj7PQBkxCMJmsZ0aA8FucmZDlaH2oNYUgegsUo4/s640/12705647_10153380077837747_380297482495608863_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIJUy6LiCT6DHeYbQeMwYKqvAu56dSzjMaJnmzl0hvwWHJeFiMPY2RJA_4MZN6ejAxesKOByGldzrJ9OM_TneafuVkNCylZBuJ_APLCj7PQBkxCMJmsZ0aA8FucmZDlaH2oNYUgegsUo4/s320/12705647_10153380077837747_380297482495608863_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIJUy6LiCT6DHeYbQeMwYKqvAu56dSzjMaJnmzl0hvwWHJeFiMPY2RJA_4MZN6ejAxesKOByGldzrJ9OM_TneafuVkNCylZBuJ_APLCj7PQBkxCMJmsZ0aA8FucmZDlaH2oNYUgegsUo4/s480/12705647_10153380077837747_380297482495608863_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIJUy6LiCT6DHeYbQeMwYKqvAu56dSzjMaJnmzl0hvwWHJeFiMPY2RJA_4MZN6ejAxesKOByGldzrJ9OM_TneafuVkNCylZBuJ_APLCj7PQBkxCMJmsZ0aA8FucmZDlaH2oNYUgegsUo4/s640/12705647_10153380077837747_380297482495608863_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 209 - Kula Shaker Paradiso 2016"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -185,8 +181,7 @@
           </a><a class="related-bottom-card" href="p-762-el-disco-perdido-de-crispian-mills-kula-shaker-the-jeevas.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX23gTEeNNXFvKKgrJqRG1eK9Wn9cx3vF1q4GH6pnMBZLtztNKhDRIIM0Yq4jAMdJtNIfstuThT8XsWQ5MTI2d_hN3qmFzNeyHKfbexTlJj1Pj7_JG70qceafiA9T5AW1YI6s-DKaS5c0/s320/0_WU3WoR6uOHTLMGLG.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX23gTEeNNXFvKKgrJqRG1eK9Wn9cx3vF1q4GH6pnMBZLtztNKhDRIIM0Yq4jAMdJtNIfstuThT8XsWQ5MTI2d_hN3qmFzNeyHKfbexTlJj1Pj7_JG70qceafiA9T5AW1YI6s-DKaS5c0/s320/0_WU3WoR6uOHTLMGLG.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX23gTEeNNXFvKKgrJqRG1eK9Wn9cx3vF1q4GH6pnMBZLtztNKhDRIIM0Yq4jAMdJtNIfstuThT8XsWQ5MTI2d_hN3qmFzNeyHKfbexTlJj1Pj7_JG70qceafiA9T5AW1YI6s-DKaS5c0/s480/0_WU3WoR6uOHTLMGLG.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX23gTEeNNXFvKKgrJqRG1eK9Wn9cx3vF1q4GH6pnMBZLtztNKhDRIIM0Yq4jAMdJtNIfstuThT8XsWQ5MTI2d_hN3qmFzNeyHKfbexTlJj1Pj7_JG70qceafiA9T5AW1YI6s-DKaS5c0/s640/0_WU3WoR6uOHTLMGLG.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX23gTEeNNXFvKKgrJqRG1eK9Wn9cx3vF1q4GH6pnMBZLtztNKhDRIIM0Yq4jAMdJtNIfstuThT8XsWQ5MTI2d_hN3qmFzNeyHKfbexTlJj1Pj7_JG70qceafiA9T5AW1YI6s-DKaS5c0/s320/0_WU3WoR6uOHTLMGLG.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX23gTEeNNXFvKKgrJqRG1eK9Wn9cx3vF1q4GH6pnMBZLtztNKhDRIIM0Yq4jAMdJtNIfstuThT8XsWQ5MTI2d_hN3qmFzNeyHKfbexTlJj1Pj7_JG70qceafiA9T5AW1YI6s-DKaS5c0/s480/0_WU3WoR6uOHTLMGLG.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX23gTEeNNXFvKKgrJqRG1eK9Wn9cx3vF1q4GH6pnMBZLtztNKhDRIIM0Yq4jAMdJtNIfstuThT8XsWQ5MTI2d_hN3qmFzNeyHKfbexTlJj1Pj7_JG70qceafiA9T5AW1YI6s-DKaS5c0/s640/0_WU3WoR6uOHTLMGLG.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.762 - El disco perdido de Crispian Mills (Kula Shaker-The Jeevas)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -197,8 +192,7 @@
           </a><a class="related-bottom-card" href="p-857-novedades-louise-post-3rd-secret-paralyzed-fuzz-forward-kasabian-tunnel-ku.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ50_gFSS90VU9CB533kGzSiaZldsuDKwWPuYkdBie0ZHkWitu-GoWrZhZaVCzCdpY29txs7qUhH5ogpn86GsB6AdaOaESlSbFGtLoKDO4uDTJ0i15Fx2g5s0t-xwMOOfrnmOJBfPuS32GHSqp3V5aQLoQl78ELxzeJFkgGfYjUR60FKa8aRoMCvxw/s320/b90_860.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ50_gFSS90VU9CB533kGzSiaZldsuDKwWPuYkdBie0ZHkWitu-GoWrZhZaVCzCdpY29txs7qUhH5ogpn86GsB6AdaOaESlSbFGtLoKDO4uDTJ0i15Fx2g5s0t-xwMOOfrnmOJBfPuS32GHSqp3V5aQLoQl78ELxzeJFkgGfYjUR60FKa8aRoMCvxw/s320/b90_860.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ50_gFSS90VU9CB533kGzSiaZldsuDKwWPuYkdBie0ZHkWitu-GoWrZhZaVCzCdpY29txs7qUhH5ogpn86GsB6AdaOaESlSbFGtLoKDO4uDTJ0i15Fx2g5s0t-xwMOOfrnmOJBfPuS32GHSqp3V5aQLoQl78ELxzeJFkgGfYjUR60FKa8aRoMCvxw/s480/b90_860.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ50_gFSS90VU9CB533kGzSiaZldsuDKwWPuYkdBie0ZHkWitu-GoWrZhZaVCzCdpY29txs7qUhH5ogpn86GsB6AdaOaESlSbFGtLoKDO4uDTJ0i15Fx2g5s0t-xwMOOfrnmOJBfPuS32GHSqp3V5aQLoQl78ELxzeJFkgGfYjUR60FKa8aRoMCvxw/s640/b90_860.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ50_gFSS90VU9CB533kGzSiaZldsuDKwWPuYkdBie0ZHkWitu-GoWrZhZaVCzCdpY29txs7qUhH5ogpn86GsB6AdaOaESlSbFGtLoKDO4uDTJ0i15Fx2g5s0t-xwMOOfrnmOJBfPuS32GHSqp3V5aQLoQl78ELxzeJFkgGfYjUR60FKa8aRoMCvxw/s320/b90_860.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ50_gFSS90VU9CB533kGzSiaZldsuDKwWPuYkdBie0ZHkWitu-GoWrZhZaVCzCdpY29txs7qUhH5ogpn86GsB6AdaOaESlSbFGtLoKDO4uDTJ0i15Fx2g5s0t-xwMOOfrnmOJBfPuS32GHSqp3V5aQLoQl78ELxzeJFkgGfYjUR60FKa8aRoMCvxw/s480/b90_860.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ50_gFSS90VU9CB533kGzSiaZldsuDKwWPuYkdBie0ZHkWitu-GoWrZhZaVCzCdpY29txs7qUhH5ogpn86GsB6AdaOaESlSbFGtLoKDO4uDTJ0i15Fx2g5s0t-xwMOOfrnmOJBfPuS32GHSqp3V5aQLoQl78ELxzeJFkgGfYjUR60FKa8aRoMCvxw/s640/b90_860.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.857 - Novedades: Louise Post, 3rd Secret , Paralyzed, Fuzz Forward, Kasabian, Tunnel, Kula Shaker..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

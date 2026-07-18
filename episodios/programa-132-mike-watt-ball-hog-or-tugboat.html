@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 132 - Mike Watt - Ball-Hog or Tugboat?  — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -128,8 +128,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5DhId0OHnpYR_ZD6Of2CUm7ICKDAL1vugxE3-ZLOmpVUNzh52uowZPjU9FYhCuzwU5qjTcxDCkT1lrj_jh8T-7GltWuoTKPgIGZUuES2vyONDL5hwpYXTn8CQyWXc0owy83w2osYKjA/s320/krist_novoselic___teen_spirit_by_cobain1337-d49tir7.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5DhId0OHnpYR_ZD6Of2CUm7ICKDAL1vugxE3-ZLOmpVUNzh52uowZPjU9FYhCuzwU5qjTcxDCkT1lrj_jh8T-7GltWuoTKPgIGZUuES2vyONDL5hwpYXTn8CQyWXc0owy83w2osYKjA/s160/krist_novoselic___teen_spirit_by_cobain1337-d49tir7.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5DhId0OHnpYR_ZD6Of2CUm7ICKDAL1vugxE3-ZLOmpVUNzh52uowZPjU9FYhCuzwU5qjTcxDCkT1lrj_jh8T-7GltWuoTKPgIGZUuES2vyONDL5hwpYXTn8CQyWXc0owy83w2osYKjA/s320/krist_novoselic___teen_spirit_by_cobain1337-d49tir7.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5DhId0OHnpYR_ZD6Of2CUm7ICKDAL1vugxE3-ZLOmpVUNzh52uowZPjU9FYhCuzwU5qjTcxDCkT1lrj_jh8T-7GltWuoTKPgIGZUuES2vyONDL5hwpYXTn8CQyWXc0owy83w2osYKjA/s480/krist_novoselic___teen_spirit_by_cobain1337-d49tir7.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5DhId0OHnpYR_ZD6Of2CUm7ICKDAL1vugxE3-ZLOmpVUNzh52uowZPjU9FYhCuzwU5qjTcxDCkT1lrj_jh8T-7GltWuoTKPgIGZUuES2vyONDL5hwpYXTn8CQyWXc0owy83w2osYKjA/s160/krist_novoselic___teen_spirit_by_cobain1337-d49tir7.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5DhId0OHnpYR_ZD6Of2CUm7ICKDAL1vugxE3-ZLOmpVUNzh52uowZPjU9FYhCuzwU5qjTcxDCkT1lrj_jh8T-7GltWuoTKPgIGZUuES2vyONDL5hwpYXTn8CQyWXc0owy83w2osYKjA/s320/krist_novoselic___teen_spirit_by_cobain1337-d49tir7.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5DhId0OHnpYR_ZD6Of2CUm7ICKDAL1vugxE3-ZLOmpVUNzh52uowZPjU9FYhCuzwU5qjTcxDCkT1lrj_jh8T-7GltWuoTKPgIGZUuES2vyONDL5hwpYXTn8CQyWXc0owy83w2osYKjA/s480/krist_novoselic___teen_spirit_by_cobain1337-d49tir7.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 133 - Krist Novoselic"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -139,8 +138,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s320/DavidBowie_50th_with_BC.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s160/DavidBowie_50th_with_BC.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s320/DavidBowie_50th_with_BC.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s480/DavidBowie_50th_with_BC.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s160/DavidBowie_50th_with_BC.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s320/DavidBowie_50th_with_BC.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s480/DavidBowie_50th_with_BC.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 45 - Cuando Bowie cumplió los 50"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -150,8 +148,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s320/album.gitt_.self-titled.cd_.signed.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s160/album.gitt_.self-titled.cd_.signed.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s320/album.gitt_.self-titled.cd_.signed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s480/album.gitt_.self-titled.cd_.signed.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s160/album.gitt_.self-titled.cd_.signed.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s320/album.gitt_.self-titled.cd_.signed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s480/album.gitt_.self-titled.cd_.signed.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 424 - Giants in the Trees (Krist Novoselic)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -167,8 +164,7 @@
         <a class="related-bottom-card" href="programa-131-neil-young-pearl-jam-mirror-ball.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp3XV_bR8RDt8f4wxa2SgkFLwPWnl5d79Gsg-4WfVEfT5rZv0gpNMJi7QhIH13Ryz9W4-7wcSLRbpi0foFAsCKbOEPIKvCMJRJvnME6F4UzQNc8gOhY3Obhb_O-SmiLOhnf4uzi7YtfQ8/s320/A0AA69E056434744B5135E8458A052C8.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp3XV_bR8RDt8f4wxa2SgkFLwPWnl5d79Gsg-4WfVEfT5rZv0gpNMJi7QhIH13Ryz9W4-7wcSLRbpi0foFAsCKbOEPIKvCMJRJvnME6F4UzQNc8gOhY3Obhb_O-SmiLOhnf4uzi7YtfQ8/s320/A0AA69E056434744B5135E8458A052C8.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp3XV_bR8RDt8f4wxa2SgkFLwPWnl5d79Gsg-4WfVEfT5rZv0gpNMJi7QhIH13Ryz9W4-7wcSLRbpi0foFAsCKbOEPIKvCMJRJvnME6F4UzQNc8gOhY3Obhb_O-SmiLOhnf4uzi7YtfQ8/s480/A0AA69E056434744B5135E8458A052C8.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp3XV_bR8RDt8f4wxa2SgkFLwPWnl5d79Gsg-4WfVEfT5rZv0gpNMJi7QhIH13Ryz9W4-7wcSLRbpi0foFAsCKbOEPIKvCMJRJvnME6F4UzQNc8gOhY3Obhb_O-SmiLOhnf4uzi7YtfQ8/s640/A0AA69E056434744B5135E8458A052C8.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp3XV_bR8RDt8f4wxa2SgkFLwPWnl5d79Gsg-4WfVEfT5rZv0gpNMJi7QhIH13Ryz9W4-7wcSLRbpi0foFAsCKbOEPIKvCMJRJvnME6F4UzQNc8gOhY3Obhb_O-SmiLOhnf4uzi7YtfQ8/s320/A0AA69E056434744B5135E8458A052C8.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp3XV_bR8RDt8f4wxa2SgkFLwPWnl5d79Gsg-4WfVEfT5rZv0gpNMJi7QhIH13Ryz9W4-7wcSLRbpi0foFAsCKbOEPIKvCMJRJvnME6F4UzQNc8gOhY3Obhb_O-SmiLOhnf4uzi7YtfQ8/s480/A0AA69E056434744B5135E8458A052C8.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp3XV_bR8RDt8f4wxa2SgkFLwPWnl5d79Gsg-4WfVEfT5rZv0gpNMJi7QhIH13Ryz9W4-7wcSLRbpi0foFAsCKbOEPIKvCMJRJvnME6F4UzQNc8gOhY3Obhb_O-SmiLOhnf4uzi7YtfQ8/s640/A0AA69E056434744B5135E8458A052C8.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 131 - Neil Young/Pearl Jam - Mirror Ball"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -179,8 +175,7 @@
           </a><a class="related-bottom-card" href="programa-163-entrevista-a-loser.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK9DSP0kB1k6Wb9mAshN6RWsQ2YWUmGfEo1-7ulGDaKyIZDa7TMkQn17P_0e-F8X6FxiFvg7YhW4g2e-nddP9jJ3bjmkOfIqv3X5JJYItnSmOEP6oFMcTB5ACyVoN9gnXEmcKKa4j12hA/s320/10404407_1038777532806556_4290284820915191659_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK9DSP0kB1k6Wb9mAshN6RWsQ2YWUmGfEo1-7ulGDaKyIZDa7TMkQn17P_0e-F8X6FxiFvg7YhW4g2e-nddP9jJ3bjmkOfIqv3X5JJYItnSmOEP6oFMcTB5ACyVoN9gnXEmcKKa4j12hA/s320/10404407_1038777532806556_4290284820915191659_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK9DSP0kB1k6Wb9mAshN6RWsQ2YWUmGfEo1-7ulGDaKyIZDa7TMkQn17P_0e-F8X6FxiFvg7YhW4g2e-nddP9jJ3bjmkOfIqv3X5JJYItnSmOEP6oFMcTB5ACyVoN9gnXEmcKKa4j12hA/s480/10404407_1038777532806556_4290284820915191659_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK9DSP0kB1k6Wb9mAshN6RWsQ2YWUmGfEo1-7ulGDaKyIZDa7TMkQn17P_0e-F8X6FxiFvg7YhW4g2e-nddP9jJ3bjmkOfIqv3X5JJYItnSmOEP6oFMcTB5ACyVoN9gnXEmcKKa4j12hA/s640/10404407_1038777532806556_4290284820915191659_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK9DSP0kB1k6Wb9mAshN6RWsQ2YWUmGfEo1-7ulGDaKyIZDa7TMkQn17P_0e-F8X6FxiFvg7YhW4g2e-nddP9jJ3bjmkOfIqv3X5JJYItnSmOEP6oFMcTB5ACyVoN9gnXEmcKKa4j12hA/s320/10404407_1038777532806556_4290284820915191659_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK9DSP0kB1k6Wb9mAshN6RWsQ2YWUmGfEo1-7ulGDaKyIZDa7TMkQn17P_0e-F8X6FxiFvg7YhW4g2e-nddP9jJ3bjmkOfIqv3X5JJYItnSmOEP6oFMcTB5ACyVoN9gnXEmcKKa4j12hA/s480/10404407_1038777532806556_4290284820915191659_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK9DSP0kB1k6Wb9mAshN6RWsQ2YWUmGfEo1-7ulGDaKyIZDa7TMkQn17P_0e-F8X6FxiFvg7YhW4g2e-nddP9jJ3bjmkOfIqv3X5JJYItnSmOEP6oFMcTB5ACyVoN9gnXEmcKKa4j12hA/s640/10404407_1038777532806556_4290284820915191659_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 163 - Entrevista a LOSER"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -191,8 +186,7 @@
           </a><a class="related-bottom-card" href="programa-189-especial-foo-fighters.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLq9-aMuFoyhOfma_1Wsum_u1yMYuJahCFbiqk0yJkotkGucTi6kz0QDO14B6ajXexQjkGu047pCz_e3yPWyVl6UynA7K1NDGGXtMf_Qo7A-Yspn-QTNTsyqZlU8-J8705ZOFb_nXFrmw/s320/12118864_10153173098882747_5073175791221350506_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLq9-aMuFoyhOfma_1Wsum_u1yMYuJahCFbiqk0yJkotkGucTi6kz0QDO14B6ajXexQjkGu047pCz_e3yPWyVl6UynA7K1NDGGXtMf_Qo7A-Yspn-QTNTsyqZlU8-J8705ZOFb_nXFrmw/s320/12118864_10153173098882747_5073175791221350506_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLq9-aMuFoyhOfma_1Wsum_u1yMYuJahCFbiqk0yJkotkGucTi6kz0QDO14B6ajXexQjkGu047pCz_e3yPWyVl6UynA7K1NDGGXtMf_Qo7A-Yspn-QTNTsyqZlU8-J8705ZOFb_nXFrmw/s480/12118864_10153173098882747_5073175791221350506_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLq9-aMuFoyhOfma_1Wsum_u1yMYuJahCFbiqk0yJkotkGucTi6kz0QDO14B6ajXexQjkGu047pCz_e3yPWyVl6UynA7K1NDGGXtMf_Qo7A-Yspn-QTNTsyqZlU8-J8705ZOFb_nXFrmw/s640/12118864_10153173098882747_5073175791221350506_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLq9-aMuFoyhOfma_1Wsum_u1yMYuJahCFbiqk0yJkotkGucTi6kz0QDO14B6ajXexQjkGu047pCz_e3yPWyVl6UynA7K1NDGGXtMf_Qo7A-Yspn-QTNTsyqZlU8-J8705ZOFb_nXFrmw/s320/12118864_10153173098882747_5073175791221350506_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLq9-aMuFoyhOfma_1Wsum_u1yMYuJahCFbiqk0yJkotkGucTi6kz0QDO14B6ajXexQjkGu047pCz_e3yPWyVl6UynA7K1NDGGXtMf_Qo7A-Yspn-QTNTsyqZlU8-J8705ZOFb_nXFrmw/s480/12118864_10153173098882747_5073175791221350506_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLq9-aMuFoyhOfma_1Wsum_u1yMYuJahCFbiqk0yJkotkGucTi6kz0QDO14B6ajXexQjkGu047pCz_e3yPWyVl6UynA7K1NDGGXtMf_Qo7A-Yspn-QTNTsyqZlU8-J8705ZOFb_nXFrmw/s640/12118864_10153173098882747_5073175791221350506_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 189 - Especial Foo Fighters"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

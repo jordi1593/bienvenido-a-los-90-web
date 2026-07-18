@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>1038 - Me voy al Gent Jazz Festival para ver a AIR — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -132,8 +132,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjkgrnNh8El4qUExEEtNAUNBnvC2k6UAfT6AJaM3n8eh6w1vT2jx8DqAW7ItI-dr-GognXCGaVC9jkTMygfkb8BgFpBPVLwKmzrvkpxOxn40fWcwe4AA2c_1snWP2LqaF9_faC_WKncKmV_sgJ1Sa68mz1GJkIdb5V18z2p-r8ZCU7YphYu7xWYbH0oME/s320/AIR-NdB-640x800.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjkgrnNh8El4qUExEEtNAUNBnvC2k6UAfT6AJaM3n8eh6w1vT2jx8DqAW7ItI-dr-GognXCGaVC9jkTMygfkb8BgFpBPVLwKmzrvkpxOxn40fWcwe4AA2c_1snWP2LqaF9_faC_WKncKmV_sgJ1Sa68mz1GJkIdb5V18z2p-r8ZCU7YphYu7xWYbH0oME/s160/AIR-NdB-640x800.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjkgrnNh8El4qUExEEtNAUNBnvC2k6UAfT6AJaM3n8eh6w1vT2jx8DqAW7ItI-dr-GognXCGaVC9jkTMygfkb8BgFpBPVLwKmzrvkpxOxn40fWcwe4AA2c_1snWP2LqaF9_faC_WKncKmV_sgJ1Sa68mz1GJkIdb5V18z2p-r8ZCU7YphYu7xWYbH0oME/s320/AIR-NdB-640x800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjkgrnNh8El4qUExEEtNAUNBnvC2k6UAfT6AJaM3n8eh6w1vT2jx8DqAW7ItI-dr-GognXCGaVC9jkTMygfkb8BgFpBPVLwKmzrvkpxOxn40fWcwe4AA2c_1snWP2LqaF9_faC_WKncKmV_sgJ1Sa68mz1GJkIdb5V18z2p-r8ZCU7YphYu7xWYbH0oME/s480/AIR-NdB-640x800.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjkgrnNh8El4qUExEEtNAUNBnvC2k6UAfT6AJaM3n8eh6w1vT2jx8DqAW7ItI-dr-GognXCGaVC9jkTMygfkb8BgFpBPVLwKmzrvkpxOxn40fWcwe4AA2c_1snWP2LqaF9_faC_WKncKmV_sgJ1Sa68mz1GJkIdb5V18z2p-r8ZCU7YphYu7xWYbH0oME/s160/AIR-NdB-640x800.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjkgrnNh8El4qUExEEtNAUNBnvC2k6UAfT6AJaM3n8eh6w1vT2jx8DqAW7ItI-dr-GognXCGaVC9jkTMygfkb8BgFpBPVLwKmzrvkpxOxn40fWcwe4AA2c_1snWP2LqaF9_faC_WKncKmV_sgJ1Sa68mz1GJkIdb5V18z2p-r8ZCU7YphYu7xWYbH0oME/s320/AIR-NdB-640x800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjkgrnNh8El4qUExEEtNAUNBnvC2k6UAfT6AJaM3n8eh6w1vT2jx8DqAW7ItI-dr-GognXCGaVC9jkTMygfkb8BgFpBPVLwKmzrvkpxOxn40fWcwe4AA2c_1snWP2LqaF9_faC_WKncKmV_sgJ1Sa68mz1GJkIdb5V18z2p-r8ZCU7YphYu7xWYbH0oME/s480/AIR-NdB-640x800.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 81 - AIR – Noches del Botánico (Madrid)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -143,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7ou2l4KB1bFQq_7H2EUTmEZSBpPijxjKnSumcbe0BZoAVsXZt-3R5Y4bwlG17AWuG2AOubg6ErXIAlMCjjydvWRvbB96zuMFHxXf3GXbNdEd4Tew2Tt0jStjpDC90OStw14ryRoR5qzI/s320/R-11713194-1521116695-6625.jpeg.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7ou2l4KB1bFQq_7H2EUTmEZSBpPijxjKnSumcbe0BZoAVsXZt-3R5Y4bwlG17AWuG2AOubg6ErXIAlMCjjydvWRvbB96zuMFHxXf3GXbNdEd4Tew2Tt0jStjpDC90OStw14ryRoR5qzI/s160/R-11713194-1521116695-6625.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7ou2l4KB1bFQq_7H2EUTmEZSBpPijxjKnSumcbe0BZoAVsXZt-3R5Y4bwlG17AWuG2AOubg6ErXIAlMCjjydvWRvbB96zuMFHxXf3GXbNdEd4Tew2Tt0jStjpDC90OStw14ryRoR5qzI/s320/R-11713194-1521116695-6625.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7ou2l4KB1bFQq_7H2EUTmEZSBpPijxjKnSumcbe0BZoAVsXZt-3R5Y4bwlG17AWuG2AOubg6ErXIAlMCjjydvWRvbB96zuMFHxXf3GXbNdEd4Tew2Tt0jStjpDC90OStw14ryRoR5qzI/s480/R-11713194-1521116695-6625.jpeg.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7ou2l4KB1bFQq_7H2EUTmEZSBpPijxjKnSumcbe0BZoAVsXZt-3R5Y4bwlG17AWuG2AOubg6ErXIAlMCjjydvWRvbB96zuMFHxXf3GXbNdEd4Tew2Tt0jStjpDC90OStw14ryRoR5qzI/s160/R-11713194-1521116695-6625.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7ou2l4KB1bFQq_7H2EUTmEZSBpPijxjKnSumcbe0BZoAVsXZt-3R5Y4bwlG17AWuG2AOubg6ErXIAlMCjjydvWRvbB96zuMFHxXf3GXbNdEd4Tew2Tt0jStjpDC90OStw14ryRoR5qzI/s320/R-11713194-1521116695-6625.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7ou2l4KB1bFQq_7H2EUTmEZSBpPijxjKnSumcbe0BZoAVsXZt-3R5Y4bwlG17AWuG2AOubg6ErXIAlMCjjydvWRvbB96zuMFHxXf3GXbNdEd4Tew2Tt0jStjpDC90OStw14ryRoR5qzI/s480/R-11713194-1521116695-6625.jpeg.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 369 - Jean Benoit Dunckel (AIR) "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoGZEHF6dkxNbhcS_8a5SBdjudlIETaC00JOIsGgkrNuDr6G8Fpy635iK-oUyqo82CJqGdSuQnEUcB_ocgRMGiomyO7spHrwa-F3RnBArteCBBOjJgnHt1Y2O9yGFfwOpjYv4RXkjM_N8/s320/10649611_1006510816033228_5398492406481138117_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoGZEHF6dkxNbhcS_8a5SBdjudlIETaC00JOIsGgkrNuDr6G8Fpy635iK-oUyqo82CJqGdSuQnEUcB_ocgRMGiomyO7spHrwa-F3RnBArteCBBOjJgnHt1Y2O9yGFfwOpjYv4RXkjM_N8/s160/10649611_1006510816033228_5398492406481138117_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoGZEHF6dkxNbhcS_8a5SBdjudlIETaC00JOIsGgkrNuDr6G8Fpy635iK-oUyqo82CJqGdSuQnEUcB_ocgRMGiomyO7spHrwa-F3RnBArteCBBOjJgnHt1Y2O9yGFfwOpjYv4RXkjM_N8/s320/10649611_1006510816033228_5398492406481138117_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoGZEHF6dkxNbhcS_8a5SBdjudlIETaC00JOIsGgkrNuDr6G8Fpy635iK-oUyqo82CJqGdSuQnEUcB_ocgRMGiomyO7spHrwa-F3RnBArteCBBOjJgnHt1Y2O9yGFfwOpjYv4RXkjM_N8/s480/10649611_1006510816033228_5398492406481138117_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoGZEHF6dkxNbhcS_8a5SBdjudlIETaC00JOIsGgkrNuDr6G8Fpy635iK-oUyqo82CJqGdSuQnEUcB_ocgRMGiomyO7spHrwa-F3RnBArteCBBOjJgnHt1Y2O9yGFfwOpjYv4RXkjM_N8/s160/10649611_1006510816033228_5398492406481138117_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoGZEHF6dkxNbhcS_8a5SBdjudlIETaC00JOIsGgkrNuDr6G8Fpy635iK-oUyqo82CJqGdSuQnEUcB_ocgRMGiomyO7spHrwa-F3RnBArteCBBOjJgnHt1Y2O9yGFfwOpjYv4RXkjM_N8/s320/10649611_1006510816033228_5398492406481138117_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoGZEHF6dkxNbhcS_8a5SBdjudlIETaC00JOIsGgkrNuDr6G8Fpy635iK-oUyqo82CJqGdSuQnEUcB_ocgRMGiomyO7spHrwa-F3RnBArteCBBOjJgnHt1Y2O9yGFfwOpjYv4RXkjM_N8/s480/10649611_1006510816033228_5398492406481138117_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 155 - Air Moon Safari"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +168,7 @@
         <a class="related-bottom-card" href="1042-mi-viaje-a-manchester-para-ver-a-noel-gallagher.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZA7yF11yrzyRYLzds7SldwNWz9xIm69i9T4Y8y_eRVHkG9ppNXYPdHA-3RP9DGm-Aswa05xrqbwmPwlFZ69Oc7Im7KXgNquzu-rAwEY9FPe61Qdn4sLanm0EvJgQqMy7W5EDG7xYiI8iBsoTufdsZakA4wk3rXlqDxxovqBunOli78Px6L_zVuVVtBfk/s320/NG-2023-1x1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZA7yF11yrzyRYLzds7SldwNWz9xIm69i9T4Y8y_eRVHkG9ppNXYPdHA-3RP9DGm-Aswa05xrqbwmPwlFZ69Oc7Im7KXgNquzu-rAwEY9FPe61Qdn4sLanm0EvJgQqMy7W5EDG7xYiI8iBsoTufdsZakA4wk3rXlqDxxovqBunOli78Px6L_zVuVVtBfk/s320/NG-2023-1x1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZA7yF11yrzyRYLzds7SldwNWz9xIm69i9T4Y8y_eRVHkG9ppNXYPdHA-3RP9DGm-Aswa05xrqbwmPwlFZ69Oc7Im7KXgNquzu-rAwEY9FPe61Qdn4sLanm0EvJgQqMy7W5EDG7xYiI8iBsoTufdsZakA4wk3rXlqDxxovqBunOli78Px6L_zVuVVtBfk/s480/NG-2023-1x1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZA7yF11yrzyRYLzds7SldwNWz9xIm69i9T4Y8y_eRVHkG9ppNXYPdHA-3RP9DGm-Aswa05xrqbwmPwlFZ69Oc7Im7KXgNquzu-rAwEY9FPe61Qdn4sLanm0EvJgQqMy7W5EDG7xYiI8iBsoTufdsZakA4wk3rXlqDxxovqBunOli78Px6L_zVuVVtBfk/s640/NG-2023-1x1.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZA7yF11yrzyRYLzds7SldwNWz9xIm69i9T4Y8y_eRVHkG9ppNXYPdHA-3RP9DGm-Aswa05xrqbwmPwlFZ69Oc7Im7KXgNquzu-rAwEY9FPe61Qdn4sLanm0EvJgQqMy7W5EDG7xYiI8iBsoTufdsZakA4wk3rXlqDxxovqBunOli78Px6L_zVuVVtBfk/s320/NG-2023-1x1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZA7yF11yrzyRYLzds7SldwNWz9xIm69i9T4Y8y_eRVHkG9ppNXYPdHA-3RP9DGm-Aswa05xrqbwmPwlFZ69Oc7Im7KXgNquzu-rAwEY9FPe61Qdn4sLanm0EvJgQqMy7W5EDG7xYiI8iBsoTufdsZakA4wk3rXlqDxxovqBunOli78Px6L_zVuVVtBfk/s480/NG-2023-1x1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZA7yF11yrzyRYLzds7SldwNWz9xIm69i9T4Y8y_eRVHkG9ppNXYPdHA-3RP9DGm-Aswa05xrqbwmPwlFZ69Oc7Im7KXgNquzu-rAwEY9FPe61Qdn4sLanm0EvJgQqMy7W5EDG7xYiI8iBsoTufdsZakA4wk3rXlqDxxovqBunOli78Px6L_zVuVVtBfk/s640/NG-2023-1x1.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1042 - Mi viaje a Manchester para ver a Noel Gallagher"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -183,8 +179,7 @@
           </a><a class="related-bottom-card" href="1067-especial-soul-jazz-funk-con-pedro-garcia-de-radio-callao.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFOluhbVPjjqLpM5EKPsUeB1bGCPjAD2jxNpGGkTWrhhMnsLpwP_CyYUSHMuPAmSmBtrr2874jGJOxubEnIB92rU4JPT8Q0s5jzEcBSpoya4vvKKWAvS2UrVhzjI1El_y1HRg-p0o0BBaUHeL7BFcrMZMDI0UZQ_wcp_sD0FFoNRxgcbkGiY-nRqLSVvY/s320/B90_1067.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFOluhbVPjjqLpM5EKPsUeB1bGCPjAD2jxNpGGkTWrhhMnsLpwP_CyYUSHMuPAmSmBtrr2874jGJOxubEnIB92rU4JPT8Q0s5jzEcBSpoya4vvKKWAvS2UrVhzjI1El_y1HRg-p0o0BBaUHeL7BFcrMZMDI0UZQ_wcp_sD0FFoNRxgcbkGiY-nRqLSVvY/s320/B90_1067.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFOluhbVPjjqLpM5EKPsUeB1bGCPjAD2jxNpGGkTWrhhMnsLpwP_CyYUSHMuPAmSmBtrr2874jGJOxubEnIB92rU4JPT8Q0s5jzEcBSpoya4vvKKWAvS2UrVhzjI1El_y1HRg-p0o0BBaUHeL7BFcrMZMDI0UZQ_wcp_sD0FFoNRxgcbkGiY-nRqLSVvY/s480/B90_1067.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFOluhbVPjjqLpM5EKPsUeB1bGCPjAD2jxNpGGkTWrhhMnsLpwP_CyYUSHMuPAmSmBtrr2874jGJOxubEnIB92rU4JPT8Q0s5jzEcBSpoya4vvKKWAvS2UrVhzjI1El_y1HRg-p0o0BBaUHeL7BFcrMZMDI0UZQ_wcp_sD0FFoNRxgcbkGiY-nRqLSVvY/s640/B90_1067.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFOluhbVPjjqLpM5EKPsUeB1bGCPjAD2jxNpGGkTWrhhMnsLpwP_CyYUSHMuPAmSmBtrr2874jGJOxubEnIB92rU4JPT8Q0s5jzEcBSpoya4vvKKWAvS2UrVhzjI1El_y1HRg-p0o0BBaUHeL7BFcrMZMDI0UZQ_wcp_sD0FFoNRxgcbkGiY-nRqLSVvY/s320/B90_1067.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFOluhbVPjjqLpM5EKPsUeB1bGCPjAD2jxNpGGkTWrhhMnsLpwP_CyYUSHMuPAmSmBtrr2874jGJOxubEnIB92rU4JPT8Q0s5jzEcBSpoya4vvKKWAvS2UrVhzjI1El_y1HRg-p0o0BBaUHeL7BFcrMZMDI0UZQ_wcp_sD0FFoNRxgcbkGiY-nRqLSVvY/s480/B90_1067.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFOluhbVPjjqLpM5EKPsUeB1bGCPjAD2jxNpGGkTWrhhMnsLpwP_CyYUSHMuPAmSmBtrr2874jGJOxubEnIB92rU4JPT8Q0s5jzEcBSpoya4vvKKWAvS2UrVhzjI1El_y1HRg-p0o0BBaUHeL7BFcrMZMDI0UZQ_wcp_sD0FFoNRxgcbkGiY-nRqLSVvY/s640/B90_1067.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1067 - Especial Soul, Jazz, Funk con Pedro García de Radio Callao"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +190,7 @@
           </a><a class="related-bottom-card" href="p-910-especial-azkena-rock-festival.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s320/azkena-rock-festival-2022.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s320/azkena-rock-festival-2022.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s480/azkena-rock-festival-2022.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s640/azkena-rock-festival-2022.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s320/azkena-rock-festival-2022.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s480/azkena-rock-festival-2022.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s640/azkena-rock-festival-2022.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.910 - Especial AZKENA Rock Festival"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

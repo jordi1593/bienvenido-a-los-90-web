@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Primavera Sound — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-39-nos-colamos-en-el-concierto-de-blur-del-primavera-sound.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s320/346653033_3774654446007990_1178888865460395925_n.webp"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s160/346653033_3774654446007990_1178888865460395925_n.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s320/346653033_3774654446007990_1178888865460395925_n.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s480/346653033_3774654446007990_1178888865460395925_n.webp 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s160/346653033_3774654446007990_1178888865460395925_n.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s320/346653033_3774654446007990_1178888865460395925_n.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv8BLCOsH4FXWCgJjya60e318trTbjOqNThWOtEJwQAaw70veGcUgC4YCIWJJtnc9gCTm7_ZpOu7aFgoRtf88dEExTLZACtj0ruiHCtkHBJLANqm9jBDqiucZZHvngRNktqnedFmUruA2blbtbdp-YRLIztXfmZNd0IBjSJHvzISIxyNMZ5Q9HVrDM/s480/346653033_3774654446007990_1178888865460395925_n.webp 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 39 - Nos colamos en el concierto de Blur del Primavera Sound"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-34-un-repaso-a-los-festivales-del-2023.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAzHAwgk1fR4vbTthxb9vwK_G_KppaEoJVpeofvK26ZQc6-HIoGxz4z_BtkwBMZp3Xl9NvBr5ufO4m5ntrXUcjMhW4xoYzL5zbXKnnj3g5NmKmxpc2LHCi0ioe9jESNlXUtJeTxM3ED4rQT-r4oSpVnZxXkhswRAYU4By9XsqCKvHEtdVOwZ3pnw98/s320/festivales-2020.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAzHAwgk1fR4vbTthxb9vwK_G_KppaEoJVpeofvK26ZQc6-HIoGxz4z_BtkwBMZp3Xl9NvBr5ufO4m5ntrXUcjMhW4xoYzL5zbXKnnj3g5NmKmxpc2LHCi0ioe9jESNlXUtJeTxM3ED4rQT-r4oSpVnZxXkhswRAYU4By9XsqCKvHEtdVOwZ3pnw98/s160/festivales-2020.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAzHAwgk1fR4vbTthxb9vwK_G_KppaEoJVpeofvK26ZQc6-HIoGxz4z_BtkwBMZp3Xl9NvBr5ufO4m5ntrXUcjMhW4xoYzL5zbXKnnj3g5NmKmxpc2LHCi0ioe9jESNlXUtJeTxM3ED4rQT-r4oSpVnZxXkhswRAYU4By9XsqCKvHEtdVOwZ3pnw98/s320/festivales-2020.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAzHAwgk1fR4vbTthxb9vwK_G_KppaEoJVpeofvK26ZQc6-HIoGxz4z_BtkwBMZp3Xl9NvBr5ufO4m5ntrXUcjMhW4xoYzL5zbXKnnj3g5NmKmxpc2LHCi0ioe9jESNlXUtJeTxM3ED4rQT-r4oSpVnZxXkhswRAYU4By9XsqCKvHEtdVOwZ3pnw98/s480/festivales-2020.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAzHAwgk1fR4vbTthxb9vwK_G_KppaEoJVpeofvK26ZQc6-HIoGxz4z_BtkwBMZp3Xl9NvBr5ufO4m5ntrXUcjMhW4xoYzL5zbXKnnj3g5NmKmxpc2LHCi0ioe9jESNlXUtJeTxM3ED4rQT-r4oSpVnZxXkhswRAYU4By9XsqCKvHEtdVOwZ3pnw98/s160/festivales-2020.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAzHAwgk1fR4vbTthxb9vwK_G_KppaEoJVpeofvK26ZQc6-HIoGxz4z_BtkwBMZp3Xl9NvBr5ufO4m5ntrXUcjMhW4xoYzL5zbXKnnj3g5NmKmxpc2LHCi0ioe9jESNlXUtJeTxM3ED4rQT-r4oSpVnZxXkhswRAYU4By9XsqCKvHEtdVOwZ3pnw98/s320/festivales-2020.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAzHAwgk1fR4vbTthxb9vwK_G_KppaEoJVpeofvK26ZQc6-HIoGxz4z_BtkwBMZp3Xl9NvBr5ufO4m5ntrXUcjMhW4xoYzL5zbXKnnj3g5NmKmxpc2LHCi0ioe9jESNlXUtJeTxM3ED4rQT-r4oSpVnZxXkhswRAYU4By9XsqCKvHEtdVOwZ3pnw98/s480/festivales-2020.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 34: Un repaso a los festivales del 2023"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-343-holy-bouncer.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN9DcKpEQi4_TcZHEQMS2Ca8yDb7IOWX3HFFPZZfxikUasS2Xpsw9hxf9tY8vMOfl2Ird7NHvA5pJ_cH47ymZ2gGC6JvQ5O8Pj9_oVPrZ2XLa_tlFT3u5x_c7yW5oj_uztOJKwqOqzhtM/s320/IMG-20180215-WA0009.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN9DcKpEQi4_TcZHEQMS2Ca8yDb7IOWX3HFFPZZfxikUasS2Xpsw9hxf9tY8vMOfl2Ird7NHvA5pJ_cH47ymZ2gGC6JvQ5O8Pj9_oVPrZ2XLa_tlFT3u5x_c7yW5oj_uztOJKwqOqzhtM/s160/IMG-20180215-WA0009.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN9DcKpEQi4_TcZHEQMS2Ca8yDb7IOWX3HFFPZZfxikUasS2Xpsw9hxf9tY8vMOfl2Ird7NHvA5pJ_cH47ymZ2gGC6JvQ5O8Pj9_oVPrZ2XLa_tlFT3u5x_c7yW5oj_uztOJKwqOqzhtM/s320/IMG-20180215-WA0009.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN9DcKpEQi4_TcZHEQMS2Ca8yDb7IOWX3HFFPZZfxikUasS2Xpsw9hxf9tY8vMOfl2Ird7NHvA5pJ_cH47ymZ2gGC6JvQ5O8Pj9_oVPrZ2XLa_tlFT3u5x_c7yW5oj_uztOJKwqOqzhtM/s480/IMG-20180215-WA0009.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN9DcKpEQi4_TcZHEQMS2Ca8yDb7IOWX3HFFPZZfxikUasS2Xpsw9hxf9tY8vMOfl2Ird7NHvA5pJ_cH47ymZ2gGC6JvQ5O8Pj9_oVPrZ2XLa_tlFT3u5x_c7yW5oj_uztOJKwqOqzhtM/s160/IMG-20180215-WA0009.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN9DcKpEQi4_TcZHEQMS2Ca8yDb7IOWX3HFFPZZfxikUasS2Xpsw9hxf9tY8vMOfl2Ird7NHvA5pJ_cH47ymZ2gGC6JvQ5O8Pj9_oVPrZ2XLa_tlFT3u5x_c7yW5oj_uztOJKwqOqzhtM/s320/IMG-20180215-WA0009.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN9DcKpEQi4_TcZHEQMS2Ca8yDb7IOWX3HFFPZZfxikUasS2Xpsw9hxf9tY8vMOfl2Ird7NHvA5pJ_cH47ymZ2gGC6JvQ5O8Pj9_oVPrZ2XLa_tlFT3u5x_c7yW5oj_uztOJKwqOqzhtM/s480/IMG-20180215-WA0009.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 343 - Holy Bouncer"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-119-primavera-sound-2014-con-felipe-couselo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s320/primavera.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s160/primavera.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s320/primavera.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s480/primavera.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s160/primavera.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s320/primavera.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo258NSixDpVdw3OUxTRrQBSqDOFFXrEh5YgLpvrPwtbypZ8G2SHz219mfSMqFibK2_QFQnfhvORrzhG5vsnSAJZxYRY6EAai8M-30LwpfK5kleLse2Ma-jBS6rxKdyX6IiHsz0uVr7RM/s480/primavera.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 119 - Primavera Sound 2014 con Felipe Couselo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/b90-programa-68-optimus-primavera-sound-2013.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 68 - Optimus Primavera Sound 2013"
                 loading="lazy" width="320" height="213" />
         </a>

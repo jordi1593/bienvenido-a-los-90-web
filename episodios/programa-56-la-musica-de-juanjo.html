@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 56 - La música de Juanjo — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -139,8 +139,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 50 - La cocina de los 90"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -150,8 +149,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHQtKKd8yvMmDFw6e1lBM1PAKNLnN1Vlp3GQ8urxP7zzizLb5Pgh3u-cjMixOUnFpnMZC_as09WA-Is7qajEvss7aLgcTaTbuH6VLPHh6JCFf_j_jwvfAI2Gw50D-LqqyMBDNvwQn_uS8/s320/Cena+Espacio+Ser-1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHQtKKd8yvMmDFw6e1lBM1PAKNLnN1Vlp3GQ8urxP7zzizLb5Pgh3u-cjMixOUnFpnMZC_as09WA-Is7qajEvss7aLgcTaTbuH6VLPHh6JCFf_j_jwvfAI2Gw50D-LqqyMBDNvwQn_uS8/s160/Cena+Espacio+Ser-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHQtKKd8yvMmDFw6e1lBM1PAKNLnN1Vlp3GQ8urxP7zzizLb5Pgh3u-cjMixOUnFpnMZC_as09WA-Is7qajEvss7aLgcTaTbuH6VLPHh6JCFf_j_jwvfAI2Gw50D-LqqyMBDNvwQn_uS8/s320/Cena+Espacio+Ser-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHQtKKd8yvMmDFw6e1lBM1PAKNLnN1Vlp3GQ8urxP7zzizLb5Pgh3u-cjMixOUnFpnMZC_as09WA-Is7qajEvss7aLgcTaTbuH6VLPHh6JCFf_j_jwvfAI2Gw50D-LqqyMBDNvwQn_uS8/s480/Cena+Espacio+Ser-1.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHQtKKd8yvMmDFw6e1lBM1PAKNLnN1Vlp3GQ8urxP7zzizLb5Pgh3u-cjMixOUnFpnMZC_as09WA-Is7qajEvss7aLgcTaTbuH6VLPHh6JCFf_j_jwvfAI2Gw50D-LqqyMBDNvwQn_uS8/s160/Cena+Espacio+Ser-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHQtKKd8yvMmDFw6e1lBM1PAKNLnN1Vlp3GQ8urxP7zzizLb5Pgh3u-cjMixOUnFpnMZC_as09WA-Is7qajEvss7aLgcTaTbuH6VLPHh6JCFf_j_jwvfAI2Gw50D-LqqyMBDNvwQn_uS8/s320/Cena+Espacio+Ser-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHQtKKd8yvMmDFw6e1lBM1PAKNLnN1Vlp3GQ8urxP7zzizLb5Pgh3u-cjMixOUnFpnMZC_as09WA-Is7qajEvss7aLgcTaTbuH6VLPHh6JCFf_j_jwvfAI2Gw50D-LqqyMBDNvwQn_uS8/s480/Cena+Espacio+Ser-1.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 43 - El sonido de la cocina saludable"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -161,8 +159,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s320/11214256_10153202170607747_1111774229671122726_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s160/11214256_10153202170607747_1111774229671122726_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s320/11214256_10153202170607747_1111774229671122726_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s480/11214256_10153202170607747_1111774229671122726_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s160/11214256_10153202170607747_1111774229671122726_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s320/11214256_10153202170607747_1111774229671122726_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s480/11214256_10153202170607747_1111774229671122726_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 192 - La música es un arma de conciliación masiva"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -178,8 +175,7 @@
         <a class="related-bottom-card" href="1076-os-presento-a-la-persona-que-me-descubrio-otra-musica.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s320/B90_1076.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s320/B90_1076.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s480/B90_1076.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s640/B90_1076.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s320/B90_1076.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s480/B90_1076.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsE47NWXau0baadPN8QK32wL8ajHRq7kKsZbygKEISO3KGlb_9Zk2IaxFtNDEeF9XNdUDat0YNmgV9NSB_1RBL7myttwNXQdPeh8K1Kt4o5Tvwrdh-h94csdkX62hhPdKSb_Dzscef4uO3OgvDEbqm1EgFfGCF09qhHt7bDxE7B1akoftMH6ingFxkljQ/s640/B90_1076.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1076 - Os presento a la persona que me descubrió otra música"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +186,7 @@
           </a><a class="related-bottom-card" href="programa-64-rem-standstill-rodriguez-blur-dead-can-dance.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 64 - REM, STANDSTILL, RODRIGUEZ, BLUR, DEAD CAN DANCE..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -202,8 +197,7 @@
           </a><a class="related-bottom-card" href="bienvenido-a-los-90-programa-38-soundgarden-king-animal.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Bienvenido a los 90 - Programa 38 - Soundgarden &quot;King Animal&quot;"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

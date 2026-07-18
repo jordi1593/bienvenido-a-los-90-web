@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Bienvenido a los 90 - Programa 21 - MTV Unplugged — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -138,8 +138,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s320/b90-805+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s160/b90-805+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s320/b90-805+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s480/b90-805+%25281%2529.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s160/b90-805+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s320/b90-805+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBZGq9glEuBai77XE4FWRO-im4dsRKrcEVN1tCuNCy704eUY4h0fhhLwa2w0Gg8X2pIcCohnxCBn_7BneQji87AiKVUAb1UmX5ri3M71qzeUv7Qfae9Vw-GfQQR63a9BcKq6OZUNVNKQ/s480/b90-805+%25281%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.806 - Recordando el Unplugged de Pearl Jam, Alice in Chains y Nirvana"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +148,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa 37 - Nirvana MTV Unplugged, 19 años después"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -160,8 +158,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s160/b90_478.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s480/b90_478.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s160/b90_478.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s480/b90_478.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 478 - Los mejores solos de guitarra de los años 90"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -177,8 +174,7 @@
         <a class="related-bottom-card" href="p-934-remasterizaciones-2023-valen-la-pena.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s480/b90_934_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s640/b90_934_.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s480/b90_934_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s640/b90_934_.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.934 - Remasterizaciones 2023, ¿valen la pena?"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +185,7 @@
           </a><a class="related-bottom-card" href="bienvenido-a-los-90-programa-1-kurt-tuvo-la-culpa.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbMFk3efuVAELeifgA2CtihLiAwAG95mgHTfMZVQ07xl7GSpDXsCujoPDVS1gLFXUhX4N7Qr9mgPJejhBj8K3un8OnbVVVrfM33ZSvlc1gzUxquhm96etDN0Dwf8-xIsvB0O3zUFvFWQw/s320/Cool+Retro+Photos+%252864%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbMFk3efuVAELeifgA2CtihLiAwAG95mgHTfMZVQ07xl7GSpDXsCujoPDVS1gLFXUhX4N7Qr9mgPJejhBj8K3un8OnbVVVrfM33ZSvlc1gzUxquhm96etDN0Dwf8-xIsvB0O3zUFvFWQw/s320/Cool+Retro+Photos+%252864%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbMFk3efuVAELeifgA2CtihLiAwAG95mgHTfMZVQ07xl7GSpDXsCujoPDVS1gLFXUhX4N7Qr9mgPJejhBj8K3un8OnbVVVrfM33ZSvlc1gzUxquhm96etDN0Dwf8-xIsvB0O3zUFvFWQw/s480/Cool+Retro+Photos+%252864%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbMFk3efuVAELeifgA2CtihLiAwAG95mgHTfMZVQ07xl7GSpDXsCujoPDVS1gLFXUhX4N7Qr9mgPJejhBj8K3un8OnbVVVrfM33ZSvlc1gzUxquhm96etDN0Dwf8-xIsvB0O3zUFvFWQw/s640/Cool+Retro+Photos+%252864%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbMFk3efuVAELeifgA2CtihLiAwAG95mgHTfMZVQ07xl7GSpDXsCujoPDVS1gLFXUhX4N7Qr9mgPJejhBj8K3un8OnbVVVrfM33ZSvlc1gzUxquhm96etDN0Dwf8-xIsvB0O3zUFvFWQw/s320/Cool+Retro+Photos+%252864%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbMFk3efuVAELeifgA2CtihLiAwAG95mgHTfMZVQ07xl7GSpDXsCujoPDVS1gLFXUhX4N7Qr9mgPJejhBj8K3un8OnbVVVrfM33ZSvlc1gzUxquhm96etDN0Dwf8-xIsvB0O3zUFvFWQw/s480/Cool+Retro+Photos+%252864%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbMFk3efuVAELeifgA2CtihLiAwAG95mgHTfMZVQ07xl7GSpDXsCujoPDVS1gLFXUhX4N7Qr9mgPJejhBj8K3un8OnbVVVrfM33ZSvlc1gzUxquhm96etDN0Dwf8-xIsvB0O3zUFvFWQw/s640/Cool+Retro+Photos+%252864%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Bienvenido a los 90 - Programa #1 - Kurt tuvo la culpa..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -201,8 +196,7 @@
           </a><a class="related-bottom-card" href="programa-44-ultimo-programa-del-2012.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwPKqy-80NTnd2VjNiNcLCO1mJMyP4xbqwmtURlbUWfvd2qk8kYqgr-3O7C36fEBA5BgkSKKYa-djtTHgvko2IpChua8vO5kAjYFqiVFf7pqQquiWiZf2M-MNo7NntID-cdXzM0iWuCg0/s320/P1020657.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwPKqy-80NTnd2VjNiNcLCO1mJMyP4xbqwmtURlbUWfvd2qk8kYqgr-3O7C36fEBA5BgkSKKYa-djtTHgvko2IpChua8vO5kAjYFqiVFf7pqQquiWiZf2M-MNo7NntID-cdXzM0iWuCg0/s320/P1020657.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwPKqy-80NTnd2VjNiNcLCO1mJMyP4xbqwmtURlbUWfvd2qk8kYqgr-3O7C36fEBA5BgkSKKYa-djtTHgvko2IpChua8vO5kAjYFqiVFf7pqQquiWiZf2M-MNo7NntID-cdXzM0iWuCg0/s480/P1020657.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwPKqy-80NTnd2VjNiNcLCO1mJMyP4xbqwmtURlbUWfvd2qk8kYqgr-3O7C36fEBA5BgkSKKYa-djtTHgvko2IpChua8vO5kAjYFqiVFf7pqQquiWiZf2M-MNo7NntID-cdXzM0iWuCg0/s640/P1020657.JPG 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwPKqy-80NTnd2VjNiNcLCO1mJMyP4xbqwmtURlbUWfvd2qk8kYqgr-3O7C36fEBA5BgkSKKYa-djtTHgvko2IpChua8vO5kAjYFqiVFf7pqQquiWiZf2M-MNo7NntID-cdXzM0iWuCg0/s320/P1020657.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwPKqy-80NTnd2VjNiNcLCO1mJMyP4xbqwmtURlbUWfvd2qk8kYqgr-3O7C36fEBA5BgkSKKYa-djtTHgvko2IpChua8vO5kAjYFqiVFf7pqQquiWiZf2M-MNo7NntID-cdXzM0iWuCg0/s480/P1020657.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwPKqy-80NTnd2VjNiNcLCO1mJMyP4xbqwmtURlbUWfvd2qk8kYqgr-3O7C36fEBA5BgkSKKYa-djtTHgvko2IpChua8vO5kAjYFqiVFf7pqQquiWiZf2M-MNo7NntID-cdXzM0iWuCg0/s640/P1020657.JPG 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 44 - Último programa del 2012"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

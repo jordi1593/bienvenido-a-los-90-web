@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Offspring — 11 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-86-the-offspring-madrid-26-09-2025.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjylErW_aUjsjCQ0gUstF__trt8kQncK9_sczXh4O8A9lrTC2KidRJX-ZvxN96wUbPk0BT-3MBbKJR57qyRSHIzzkxFrY2tunLbDmVpS9ST8XzEylNYl4-dLMRSIuTuIvyhCAg5Dfu4JNjgYe9BBXvRORpGroq9W4l4AZ2KghB2fA4BMc4jWnnDKGuEShQ/s320/The-Offspring-poster-gira-2025-500x500.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjylErW_aUjsjCQ0gUstF__trt8kQncK9_sczXh4O8A9lrTC2KidRJX-ZvxN96wUbPk0BT-3MBbKJR57qyRSHIzzkxFrY2tunLbDmVpS9ST8XzEylNYl4-dLMRSIuTuIvyhCAg5Dfu4JNjgYe9BBXvRORpGroq9W4l4AZ2KghB2fA4BMc4jWnnDKGuEShQ/s160/The-Offspring-poster-gira-2025-500x500.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjylErW_aUjsjCQ0gUstF__trt8kQncK9_sczXh4O8A9lrTC2KidRJX-ZvxN96wUbPk0BT-3MBbKJR57qyRSHIzzkxFrY2tunLbDmVpS9ST8XzEylNYl4-dLMRSIuTuIvyhCAg5Dfu4JNjgYe9BBXvRORpGroq9W4l4AZ2KghB2fA4BMc4jWnnDKGuEShQ/s320/The-Offspring-poster-gira-2025-500x500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjylErW_aUjsjCQ0gUstF__trt8kQncK9_sczXh4O8A9lrTC2KidRJX-ZvxN96wUbPk0BT-3MBbKJR57qyRSHIzzkxFrY2tunLbDmVpS9ST8XzEylNYl4-dLMRSIuTuIvyhCAg5Dfu4JNjgYe9BBXvRORpGroq9W4l4AZ2KghB2fA4BMc4jWnnDKGuEShQ/s480/The-Offspring-poster-gira-2025-500x500.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjylErW_aUjsjCQ0gUstF__trt8kQncK9_sczXh4O8A9lrTC2KidRJX-ZvxN96wUbPk0BT-3MBbKJR57qyRSHIzzkxFrY2tunLbDmVpS9ST8XzEylNYl4-dLMRSIuTuIvyhCAg5Dfu4JNjgYe9BBXvRORpGroq9W4l4AZ2KghB2fA4BMc4jWnnDKGuEShQ/s160/The-Offspring-poster-gira-2025-500x500.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjylErW_aUjsjCQ0gUstF__trt8kQncK9_sczXh4O8A9lrTC2KidRJX-ZvxN96wUbPk0BT-3MBbKJR57qyRSHIzzkxFrY2tunLbDmVpS9ST8XzEylNYl4-dLMRSIuTuIvyhCAg5Dfu4JNjgYe9BBXvRORpGroq9W4l4AZ2KghB2fA4BMc4jWnnDKGuEShQ/s320/The-Offspring-poster-gira-2025-500x500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjylErW_aUjsjCQ0gUstF__trt8kQncK9_sczXh4O8A9lrTC2KidRJX-ZvxN96wUbPk0BT-3MBbKJR57qyRSHIzzkxFrY2tunLbDmVpS9ST8XzEylNYl4-dLMRSIuTuIvyhCAg5Dfu4JNjgYe9BBXvRORpGroq9W4l4AZ2KghB2fA4BMc4jWnnDKGuEShQ/s480/The-Offspring-poster-gira-2025-500x500.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 86 - The Offspring Madrid 26/09/2025"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-987-especial-1994-parte-3-nine-inch-nails-soundgarden-offspring-the-crow.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2ecXBKWt-O5MgiROEVoMaBnfu5o6SNRvHCDt2bVg-oSNMUuxBBWpughanBOXVlbtnMRy_lQqfatHnHHqhI5fvkQkRPuJqtc5jEz_3VVri-dgP-PQv4hd2b-2wH7Hxv2bi8a-0T4KmU7v6KZEBIcCNCgFCZeOJwzMVumyS68hQ0kul1SqpQSoGjce__2Y/s320/Maraton%20b90%202024%20parte3%20(1).jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2ecXBKWt-O5MgiROEVoMaBnfu5o6SNRvHCDt2bVg-oSNMUuxBBWpughanBOXVlbtnMRy_lQqfatHnHHqhI5fvkQkRPuJqtc5jEz_3VVri-dgP-PQv4hd2b-2wH7Hxv2bi8a-0T4KmU7v6KZEBIcCNCgFCZeOJwzMVumyS68hQ0kul1SqpQSoGjce__2Y/s160/Maraton%20b90%202024%20parte3%20(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2ecXBKWt-O5MgiROEVoMaBnfu5o6SNRvHCDt2bVg-oSNMUuxBBWpughanBOXVlbtnMRy_lQqfatHnHHqhI5fvkQkRPuJqtc5jEz_3VVri-dgP-PQv4hd2b-2wH7Hxv2bi8a-0T4KmU7v6KZEBIcCNCgFCZeOJwzMVumyS68hQ0kul1SqpQSoGjce__2Y/s320/Maraton%20b90%202024%20parte3%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2ecXBKWt-O5MgiROEVoMaBnfu5o6SNRvHCDt2bVg-oSNMUuxBBWpughanBOXVlbtnMRy_lQqfatHnHHqhI5fvkQkRPuJqtc5jEz_3VVri-dgP-PQv4hd2b-2wH7Hxv2bi8a-0T4KmU7v6KZEBIcCNCgFCZeOJwzMVumyS68hQ0kul1SqpQSoGjce__2Y/s480/Maraton%20b90%202024%20parte3%20(1).jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2ecXBKWt-O5MgiROEVoMaBnfu5o6SNRvHCDt2bVg-oSNMUuxBBWpughanBOXVlbtnMRy_lQqfatHnHHqhI5fvkQkRPuJqtc5jEz_3VVri-dgP-PQv4hd2b-2wH7Hxv2bi8a-0T4KmU7v6KZEBIcCNCgFCZeOJwzMVumyS68hQ0kul1SqpQSoGjce__2Y/s160/Maraton%20b90%202024%20parte3%20(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2ecXBKWt-O5MgiROEVoMaBnfu5o6SNRvHCDt2bVg-oSNMUuxBBWpughanBOXVlbtnMRy_lQqfatHnHHqhI5fvkQkRPuJqtc5jEz_3VVri-dgP-PQv4hd2b-2wH7Hxv2bi8a-0T4KmU7v6KZEBIcCNCgFCZeOJwzMVumyS68hQ0kul1SqpQSoGjce__2Y/s320/Maraton%20b90%202024%20parte3%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2ecXBKWt-O5MgiROEVoMaBnfu5o6SNRvHCDt2bVg-oSNMUuxBBWpughanBOXVlbtnMRy_lQqfatHnHHqhI5fvkQkRPuJqtc5jEz_3VVri-dgP-PQv4hd2b-2wH7Hxv2bi8a-0T4KmU7v6KZEBIcCNCgFCZeOJwzMVumyS68hQ0kul1SqpQSoGjce__2Y/s480/Maraton%20b90%202024%20parte3%20(1).jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.987 - Especial 1994, Parte 3: Nine inch Nails, Soundgarden, Offspring, The Crow"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-767-novedades-sprints-warish-keloidrop-giant-love-black-pistol-fire-inertia.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Vjtmf4SoN72bTxg6OJhidr2RbVTRAWEmyFbAogf_OEH7pRpXDNv_ggNY436pdDxAlSBGsQOirRPotRPWQK7dvISn9AST_wrqxsk0MHNKTMDpg3M9kwMwcnMLuUA5KEGuij3ob4px82w/s320/b90767.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Vjtmf4SoN72bTxg6OJhidr2RbVTRAWEmyFbAogf_OEH7pRpXDNv_ggNY436pdDxAlSBGsQOirRPotRPWQK7dvISn9AST_wrqxsk0MHNKTMDpg3M9kwMwcnMLuUA5KEGuij3ob4px82w/s160/b90767.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Vjtmf4SoN72bTxg6OJhidr2RbVTRAWEmyFbAogf_OEH7pRpXDNv_ggNY436pdDxAlSBGsQOirRPotRPWQK7dvISn9AST_wrqxsk0MHNKTMDpg3M9kwMwcnMLuUA5KEGuij3ob4px82w/s320/b90767.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Vjtmf4SoN72bTxg6OJhidr2RbVTRAWEmyFbAogf_OEH7pRpXDNv_ggNY436pdDxAlSBGsQOirRPotRPWQK7dvISn9AST_wrqxsk0MHNKTMDpg3M9kwMwcnMLuUA5KEGuij3ob4px82w/s480/b90767.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Vjtmf4SoN72bTxg6OJhidr2RbVTRAWEmyFbAogf_OEH7pRpXDNv_ggNY436pdDxAlSBGsQOirRPotRPWQK7dvISn9AST_wrqxsk0MHNKTMDpg3M9kwMwcnMLuUA5KEGuij3ob4px82w/s160/b90767.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Vjtmf4SoN72bTxg6OJhidr2RbVTRAWEmyFbAogf_OEH7pRpXDNv_ggNY436pdDxAlSBGsQOirRPotRPWQK7dvISn9AST_wrqxsk0MHNKTMDpg3M9kwMwcnMLuUA5KEGuij3ob4px82w/s320/b90767.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Vjtmf4SoN72bTxg6OJhidr2RbVTRAWEmyFbAogf_OEH7pRpXDNv_ggNY436pdDxAlSBGsQOirRPotRPWQK7dvISn9AST_wrqxsk0MHNKTMDpg3M9kwMwcnMLuUA5KEGuij3ob4px82w/s480/b90767.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.767 - Novedades: Sprints, Warish, Keloidrop, Giant Love, Black Pistol Fire, Inertia..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-765-la-cara-b-de-los-90-parte-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s320/L-370558-1571805648-9408.jpeg.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s160/L-370558-1571805648-9408.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s320/L-370558-1571805648-9408.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s480/L-370558-1571805648-9408.jpeg.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s160/L-370558-1571805648-9408.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s320/L-370558-1571805648-9408.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s480/L-370558-1571805648-9408.jpeg.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.765 - La cara B de los 90 (Parte 1)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/p-675-offspring-smash-el-disco-independiente-mas-vendido-de-la-historia.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s320/7a2806b36599681118bdf58136438e3b.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s160/7a2806b36599681118bdf58136438e3b.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s320/7a2806b36599681118bdf58136438e3b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s480/7a2806b36599681118bdf58136438e3b.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s160/7a2806b36599681118bdf58136438e3b.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s320/7a2806b36599681118bdf58136438e3b.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh18EsPHGs9_cw6G9tTyTh6_RitmmfMowvV4eOEoOnFCWGcMiIORktZFA3Tg0pUJAHgHq0H65cExbT4Q9RFM-_yfgZgtLSolNT4jK72IdkhnqP__ThztaSa97KWqn4SAHViKe_wCk4fOrY/s480/7a2806b36599681118bdf58136438e3b.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.675 - Offspring &#39;Smash&#39;, el disco independiente más vendido de la historia"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-416-pinkpop-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s320/4796764187_443628a460.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s160/4796764187_443628a460.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s320/4796764187_443628a460.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s480/4796764187_443628a460.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s160/4796764187_443628a460.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s320/4796764187_443628a460.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD67-ab52H3p4Tz-wo4KPt-WFUlOjIm5XudlaKNHtikY73jG6Og0msaJL_mRFCiED3aG1Bm_hcoL0754BZgmBAJDDfmzrkVKl1L_zVuoMSrKGkQDzwHcXKwIZhcgbVj0spWUsLe14YHGE/s480/4796764187_443628a460.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 416 - PinkPop 2018"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-398-lounge-grunge-music.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s320/Weird-Al-Yankovic.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s160/Weird-Al-Yankovic.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s320/Weird-Al-Yankovic.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s480/Weird-Al-Yankovic.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s160/Weird-Al-Yankovic.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s320/Weird-Al-Yankovic.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s480/Weird-Al-Yankovic.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 398 - Lounge grunge music"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/programa-275-dookie-vs-smash.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJLN1StDtz-5gYVQ07l4kYuqFdHE20kbIDkRv-xv9RFeGyfIGSWsPzubwvV95TF9o7FtRy21csHMpoXhBYGPPo12vrleCK3cLdQOIlvmi2GGbazUbjfqffnAA6IHqv3aftJSUqPgfhYik/s320/18118510_1689590421058594_7781613603976268512_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJLN1StDtz-5gYVQ07l4kYuqFdHE20kbIDkRv-xv9RFeGyfIGSWsPzubwvV95TF9o7FtRy21csHMpoXhBYGPPo12vrleCK3cLdQOIlvmi2GGbazUbjfqffnAA6IHqv3aftJSUqPgfhYik/s160/18118510_1689590421058594_7781613603976268512_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJLN1StDtz-5gYVQ07l4kYuqFdHE20kbIDkRv-xv9RFeGyfIGSWsPzubwvV95TF9o7FtRy21csHMpoXhBYGPPo12vrleCK3cLdQOIlvmi2GGbazUbjfqffnAA6IHqv3aftJSUqPgfhYik/s320/18118510_1689590421058594_7781613603976268512_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJLN1StDtz-5gYVQ07l4kYuqFdHE20kbIDkRv-xv9RFeGyfIGSWsPzubwvV95TF9o7FtRy21csHMpoXhBYGPPo12vrleCK3cLdQOIlvmi2GGbazUbjfqffnAA6IHqv3aftJSUqPgfhYik/s480/18118510_1689590421058594_7781613603976268512_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJLN1StDtz-5gYVQ07l4kYuqFdHE20kbIDkRv-xv9RFeGyfIGSWsPzubwvV95TF9o7FtRy21csHMpoXhBYGPPo12vrleCK3cLdQOIlvmi2GGbazUbjfqffnAA6IHqv3aftJSUqPgfhYik/s160/18118510_1689590421058594_7781613603976268512_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJLN1StDtz-5gYVQ07l4kYuqFdHE20kbIDkRv-xv9RFeGyfIGSWsPzubwvV95TF9o7FtRy21csHMpoXhBYGPPo12vrleCK3cLdQOIlvmi2GGbazUbjfqffnAA6IHqv3aftJSUqPgfhYik/s320/18118510_1689590421058594_7781613603976268512_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJLN1StDtz-5gYVQ07l4kYuqFdHE20kbIDkRv-xv9RFeGyfIGSWsPzubwvV95TF9o7FtRy21csHMpoXhBYGPPo12vrleCK3cLdQOIlvmi2GGbazUbjfqffnAA6IHqv3aftJSUqPgfhYik/s480/18118510_1689590421058594_7781613603976268512_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 275 - Dookie Vs. Smash"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -180,8 +172,7 @@
         <a class="episode-cover-link" href="../episodios/programa-271-entrevista-new-day-los-planetas.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy-MVzEYUtlQmadhYEBw5aS1_HE59b-nAFXCfLgbU47GF7czMsIvoLawLDL9zEsK-d4A7eZr6f1gjiubQP4NrbxVSQuVHjRGCCjy0Pv3uK70lM209duMPJcs-LxF-2i1ND598TUWvqSfI/s320/17629603_1433748156656434_731169475815696269_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy-MVzEYUtlQmadhYEBw5aS1_HE59b-nAFXCfLgbU47GF7czMsIvoLawLDL9zEsK-d4A7eZr6f1gjiubQP4NrbxVSQuVHjRGCCjy0Pv3uK70lM209duMPJcs-LxF-2i1ND598TUWvqSfI/s160/17629603_1433748156656434_731169475815696269_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy-MVzEYUtlQmadhYEBw5aS1_HE59b-nAFXCfLgbU47GF7czMsIvoLawLDL9zEsK-d4A7eZr6f1gjiubQP4NrbxVSQuVHjRGCCjy0Pv3uK70lM209duMPJcs-LxF-2i1ND598TUWvqSfI/s320/17629603_1433748156656434_731169475815696269_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy-MVzEYUtlQmadhYEBw5aS1_HE59b-nAFXCfLgbU47GF7czMsIvoLawLDL9zEsK-d4A7eZr6f1gjiubQP4NrbxVSQuVHjRGCCjy0Pv3uK70lM209duMPJcs-LxF-2i1ND598TUWvqSfI/s480/17629603_1433748156656434_731169475815696269_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy-MVzEYUtlQmadhYEBw5aS1_HE59b-nAFXCfLgbU47GF7czMsIvoLawLDL9zEsK-d4A7eZr6f1gjiubQP4NrbxVSQuVHjRGCCjy0Pv3uK70lM209duMPJcs-LxF-2i1ND598TUWvqSfI/s160/17629603_1433748156656434_731169475815696269_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy-MVzEYUtlQmadhYEBw5aS1_HE59b-nAFXCfLgbU47GF7czMsIvoLawLDL9zEsK-d4A7eZr6f1gjiubQP4NrbxVSQuVHjRGCCjy0Pv3uK70lM209duMPJcs-LxF-2i1ND598TUWvqSfI/s320/17629603_1433748156656434_731169475815696269_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy-MVzEYUtlQmadhYEBw5aS1_HE59b-nAFXCfLgbU47GF7czMsIvoLawLDL9zEsK-d4A7eZr6f1gjiubQP4NrbxVSQuVHjRGCCjy0Pv3uK70lM209duMPJcs-LxF-2i1ND598TUWvqSfI/s480/17629603_1433748156656434_731169475815696269_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 271 - Entrevista NEW DAY + Los Planetas"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -194,8 +185,7 @@
         <a class="episode-cover-link" href="../episodios/programa-69-green-day-offspring-weezer-fugazi-alice-in-chains.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 69 - GREEN DAY, OFFSPRING, WEEZER, FUGAZI, ALICE IN CHAINS..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -208,8 +198,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-2-richard-ashcroft-el-gentleman-depresivo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWodzRi_72aD_-wmLvvu3TQnyIUIxBBPqmXANpEF3eNzSVlnQ0Zh7zmJjoLTh7Ny_lGTPY0AB5Up_Eybgdii314bgEL-omg2F2aiD7ASjkGruPykiAOD2oRoAIdq03ZnITKPz_1GzDHho/s320/9d0a271fbf8b5acf52e5bb8cf830d285840e8c2b_m.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWodzRi_72aD_-wmLvvu3TQnyIUIxBBPqmXANpEF3eNzSVlnQ0Zh7zmJjoLTh7Ny_lGTPY0AB5Up_Eybgdii314bgEL-omg2F2aiD7ASjkGruPykiAOD2oRoAIdq03ZnITKPz_1GzDHho/s160/9d0a271fbf8b5acf52e5bb8cf830d285840e8c2b_m.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWodzRi_72aD_-wmLvvu3TQnyIUIxBBPqmXANpEF3eNzSVlnQ0Zh7zmJjoLTh7Ny_lGTPY0AB5Up_Eybgdii314bgEL-omg2F2aiD7ASjkGruPykiAOD2oRoAIdq03ZnITKPz_1GzDHho/s320/9d0a271fbf8b5acf52e5bb8cf830d285840e8c2b_m.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWodzRi_72aD_-wmLvvu3TQnyIUIxBBPqmXANpEF3eNzSVlnQ0Zh7zmJjoLTh7Ny_lGTPY0AB5Up_Eybgdii314bgEL-omg2F2aiD7ASjkGruPykiAOD2oRoAIdq03ZnITKPz_1GzDHho/s480/9d0a271fbf8b5acf52e5bb8cf830d285840e8c2b_m.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWodzRi_72aD_-wmLvvu3TQnyIUIxBBPqmXANpEF3eNzSVlnQ0Zh7zmJjoLTh7Ny_lGTPY0AB5Up_Eybgdii314bgEL-omg2F2aiD7ASjkGruPykiAOD2oRoAIdq03ZnITKPz_1GzDHho/s160/9d0a271fbf8b5acf52e5bb8cf830d285840e8c2b_m.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWodzRi_72aD_-wmLvvu3TQnyIUIxBBPqmXANpEF3eNzSVlnQ0Zh7zmJjoLTh7Ny_lGTPY0AB5Up_Eybgdii314bgEL-omg2F2aiD7ASjkGruPykiAOD2oRoAIdq03ZnITKPz_1GzDHho/s320/9d0a271fbf8b5acf52e5bb8cf830d285840e8c2b_m.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWodzRi_72aD_-wmLvvu3TQnyIUIxBBPqmXANpEF3eNzSVlnQ0Zh7zmJjoLTh7Ny_lGTPY0AB5Up_Eybgdii314bgEL-omg2F2aiD7ASjkGruPykiAOD2oRoAIdq03ZnITKPz_1GzDHho/s480/9d0a271fbf8b5acf52e5bb8cf830d285840e8c2b_m.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Bienvenido a los 90 - Programa #2 - Richard Ashcroft, el gentleman depresivo"
                 loading="lazy" width="320" height="213" />
         </a>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 349 - Alice Wonder, Veronica Underluxe — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw0otz5iXJuausOwfqQg-cZmaqt-f6_fcz6E79LPSOx3XAcue4lWO8gvbHJ8IXvEcCjLTSX_KmQrmGkTNF1bh55bjZWRgHxtxO-bReQnXBJKZRnb4pS5zkBSjTvszAT-H-buP_PSb1P44/s320/b90_468.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw0otz5iXJuausOwfqQg-cZmaqt-f6_fcz6E79LPSOx3XAcue4lWO8gvbHJ8IXvEcCjLTSX_KmQrmGkTNF1bh55bjZWRgHxtxO-bReQnXBJKZRnb4pS5zkBSjTvszAT-H-buP_PSb1P44/s160/b90_468.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw0otz5iXJuausOwfqQg-cZmaqt-f6_fcz6E79LPSOx3XAcue4lWO8gvbHJ8IXvEcCjLTSX_KmQrmGkTNF1bh55bjZWRgHxtxO-bReQnXBJKZRnb4pS5zkBSjTvszAT-H-buP_PSb1P44/s320/b90_468.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw0otz5iXJuausOwfqQg-cZmaqt-f6_fcz6E79LPSOx3XAcue4lWO8gvbHJ8IXvEcCjLTSX_KmQrmGkTNF1bh55bjZWRgHxtxO-bReQnXBJKZRnb4pS5zkBSjTvszAT-H-buP_PSb1P44/s480/b90_468.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw0otz5iXJuausOwfqQg-cZmaqt-f6_fcz6E79LPSOx3XAcue4lWO8gvbHJ8IXvEcCjLTSX_KmQrmGkTNF1bh55bjZWRgHxtxO-bReQnXBJKZRnb4pS5zkBSjTvszAT-H-buP_PSb1P44/s160/b90_468.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw0otz5iXJuausOwfqQg-cZmaqt-f6_fcz6E79LPSOx3XAcue4lWO8gvbHJ8IXvEcCjLTSX_KmQrmGkTNF1bh55bjZWRgHxtxO-bReQnXBJKZRnb4pS5zkBSjTvszAT-H-buP_PSb1P44/s320/b90_468.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw0otz5iXJuausOwfqQg-cZmaqt-f6_fcz6E79LPSOx3XAcue4lWO8gvbHJ8IXvEcCjLTSX_KmQrmGkTNF1bh55bjZWRgHxtxO-bReQnXBJKZRnb4pS5zkBSjTvszAT-H-buP_PSb1P44/s480/b90_468.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 468 - Veronica Underluxe presentan &#39;Radio Terror&#39;"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s320/b90_475.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s160/b90_475.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s320/b90_475.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s480/b90_475.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s160/b90_475.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s320/b90_475.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s480/b90_475.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 475 - La Navidad y el Rock &amp; Roll"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCohgiJ5_gUimpvcn6iaYP5GmyqcyyB9DTGtQIXbxiS9q6cwv7_yS_uIVi9jjPZ0Leqtsrdy1c9AOknATlewzDH6mXFFocNBHck09OAakqAtN1tHwqOnnUItOj4C9CSl3nsdDcfR2dL8A/s320/maxresdefault.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCohgiJ5_gUimpvcn6iaYP5GmyqcyyB9DTGtQIXbxiS9q6cwv7_yS_uIVi9jjPZ0Leqtsrdy1c9AOknATlewzDH6mXFFocNBHck09OAakqAtN1tHwqOnnUItOj4C9CSl3nsdDcfR2dL8A/s160/maxresdefault.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCohgiJ5_gUimpvcn6iaYP5GmyqcyyB9DTGtQIXbxiS9q6cwv7_yS_uIVi9jjPZ0Leqtsrdy1c9AOknATlewzDH6mXFFocNBHck09OAakqAtN1tHwqOnnUItOj4C9CSl3nsdDcfR2dL8A/s320/maxresdefault.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCohgiJ5_gUimpvcn6iaYP5GmyqcyyB9DTGtQIXbxiS9q6cwv7_yS_uIVi9jjPZ0Leqtsrdy1c9AOknATlewzDH6mXFFocNBHck09OAakqAtN1tHwqOnnUItOj4C9CSl3nsdDcfR2dL8A/s480/maxresdefault.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCohgiJ5_gUimpvcn6iaYP5GmyqcyyB9DTGtQIXbxiS9q6cwv7_yS_uIVi9jjPZ0Leqtsrdy1c9AOknATlewzDH6mXFFocNBHck09OAakqAtN1tHwqOnnUItOj4C9CSl3nsdDcfR2dL8A/s160/maxresdefault.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCohgiJ5_gUimpvcn6iaYP5GmyqcyyB9DTGtQIXbxiS9q6cwv7_yS_uIVi9jjPZ0Leqtsrdy1c9AOknATlewzDH6mXFFocNBHck09OAakqAtN1tHwqOnnUItOj4C9CSl3nsdDcfR2dL8A/s320/maxresdefault.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCohgiJ5_gUimpvcn6iaYP5GmyqcyyB9DTGtQIXbxiS9q6cwv7_yS_uIVi9jjPZ0Leqtsrdy1c9AOknATlewzDH6mXFFocNBHck09OAakqAtN1tHwqOnnUItOj4C9CSl3nsdDcfR2dL8A/s480/maxresdefault.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 255 - Navidades Rock"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="programa-556-veronica-underluxe-en-gruta-77-28-06-2019.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s320/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s320/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s480/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s640/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s320/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s480/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s640/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 556: VERONICA UNDERLUXE en GRUTA 77 (28/06/2019)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="programa-220-veronica-underluxe.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s320/13082777_10153537137482747_793937129574110212_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s320/13082777_10153537137482747_793937129574110212_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s480/13082777_10153537137482747_793937129574110212_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s640/13082777_10153537137482747_793937129574110212_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s320/13082777_10153537137482747_793937129574110212_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s480/13082777_10153537137482747_793937129574110212_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s640/13082777_10153537137482747_793937129574110212_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 220 - Veronica Underluxe"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="p-809-novedades-lost-satellite-vanity-rose-yoko-factor-radio75-veronica-underlux.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s320/BeFunky-collage.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s320/BeFunky-collage.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s480/BeFunky-collage.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s640/BeFunky-collage.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s320/BeFunky-collage.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s480/BeFunky-collage.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s640/BeFunky-collage.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.809 - Novedades: Lost Satellite,Vanity Rose,Yoko Factor,Radio75,Veronica Underluxe,Efecto Lucifer,Marc Rockenberg..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>1071 - Hablando con Manuel Pinazo de Muzikalia (Final de Temporada) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -132,8 +132,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheOmEkQgCeOZRciN93StkjpyuKiL5vtp185EyDKvBvJ9_hL1Xn0R9ItT_Eyd0oDG5_-6LR6xJjb3ac35mWzO3GTUzLLuCg9FQ9ZrBw47u27ocuYEPUOWAExbQXjS0Kigs5JLpwti1QwKU/s320/b90_588_2.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheOmEkQgCeOZRciN93StkjpyuKiL5vtp185EyDKvBvJ9_hL1Xn0R9ItT_Eyd0oDG5_-6LR6xJjb3ac35mWzO3GTUzLLuCg9FQ9ZrBw47u27ocuYEPUOWAExbQXjS0Kigs5JLpwti1QwKU/s160/b90_588_2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheOmEkQgCeOZRciN93StkjpyuKiL5vtp185EyDKvBvJ9_hL1Xn0R9ItT_Eyd0oDG5_-6LR6xJjb3ac35mWzO3GTUzLLuCg9FQ9ZrBw47u27ocuYEPUOWAExbQXjS0Kigs5JLpwti1QwKU/s320/b90_588_2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheOmEkQgCeOZRciN93StkjpyuKiL5vtp185EyDKvBvJ9_hL1Xn0R9ItT_Eyd0oDG5_-6LR6xJjb3ac35mWzO3GTUzLLuCg9FQ9ZrBw47u27ocuYEPUOWAExbQXjS0Kigs5JLpwti1QwKU/s480/b90_588_2.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheOmEkQgCeOZRciN93StkjpyuKiL5vtp185EyDKvBvJ9_hL1Xn0R9ItT_Eyd0oDG5_-6LR6xJjb3ac35mWzO3GTUzLLuCg9FQ9ZrBw47u27ocuYEPUOWAExbQXjS0Kigs5JLpwti1QwKU/s160/b90_588_2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheOmEkQgCeOZRciN93StkjpyuKiL5vtp185EyDKvBvJ9_hL1Xn0R9ItT_Eyd0oDG5_-6LR6xJjb3ac35mWzO3GTUzLLuCg9FQ9ZrBw47u27ocuYEPUOWAExbQXjS0Kigs5JLpwti1QwKU/s320/b90_588_2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheOmEkQgCeOZRciN93StkjpyuKiL5vtp185EyDKvBvJ9_hL1Xn0R9ItT_Eyd0oDG5_-6LR6xJjb3ac35mWzO3GTUzLLuCg9FQ9ZrBw47u27ocuYEPUOWAExbQXjS0Kigs5JLpwti1QwKU/s480/b90_588_2.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.588 - 20 años de MUZIKALIA y el regreso de IDIOTERNE"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -143,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE-kakaH0RMrXgIHZne__GVdsojAXzXh9iTIOAUQlEUF5dFj5faRUnvQVZL2jgSe81dt4SmM850uPV1RF1XEdE3tSBILgylf9JCoqJ_jUruTfwH6WikOeAtU7PJ8n8zN7HXKCjwT2eFRL-wFC9n6388ms7EIvRlSff2Z9XXZwo0qMc7RlcehST-Dckz3I/s320/IMG-20230716-WA0007.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE-kakaH0RMrXgIHZne__GVdsojAXzXh9iTIOAUQlEUF5dFj5faRUnvQVZL2jgSe81dt4SmM850uPV1RF1XEdE3tSBILgylf9JCoqJ_jUruTfwH6WikOeAtU7PJ8n8zN7HXKCjwT2eFRL-wFC9n6388ms7EIvRlSff2Z9XXZwo0qMc7RlcehST-Dckz3I/s160/IMG-20230716-WA0007.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE-kakaH0RMrXgIHZne__GVdsojAXzXh9iTIOAUQlEUF5dFj5faRUnvQVZL2jgSe81dt4SmM850uPV1RF1XEdE3tSBILgylf9JCoqJ_jUruTfwH6WikOeAtU7PJ8n8zN7HXKCjwT2eFRL-wFC9n6388ms7EIvRlSff2Z9XXZwo0qMc7RlcehST-Dckz3I/s320/IMG-20230716-WA0007.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE-kakaH0RMrXgIHZne__GVdsojAXzXh9iTIOAUQlEUF5dFj5faRUnvQVZL2jgSe81dt4SmM850uPV1RF1XEdE3tSBILgylf9JCoqJ_jUruTfwH6WikOeAtU7PJ8n8zN7HXKCjwT2eFRL-wFC9n6388ms7EIvRlSff2Z9XXZwo0qMc7RlcehST-Dckz3I/s480/IMG-20230716-WA0007.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE-kakaH0RMrXgIHZne__GVdsojAXzXh9iTIOAUQlEUF5dFj5faRUnvQVZL2jgSe81dt4SmM850uPV1RF1XEdE3tSBILgylf9JCoqJ_jUruTfwH6WikOeAtU7PJ8n8zN7HXKCjwT2eFRL-wFC9n6388ms7EIvRlSff2Z9XXZwo0qMc7RlcehST-Dckz3I/s160/IMG-20230716-WA0007.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE-kakaH0RMrXgIHZne__GVdsojAXzXh9iTIOAUQlEUF5dFj5faRUnvQVZL2jgSe81dt4SmM850uPV1RF1XEdE3tSBILgylf9JCoqJ_jUruTfwH6WikOeAtU7PJ8n8zN7HXKCjwT2eFRL-wFC9n6388ms7EIvRlSff2Z9XXZwo0qMc7RlcehST-Dckz3I/s320/IMG-20230716-WA0007.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE-kakaH0RMrXgIHZne__GVdsojAXzXh9iTIOAUQlEUF5dFj5faRUnvQVZL2jgSe81dt4SmM850uPV1RF1XEdE3tSBILgylf9JCoqJ_jUruTfwH6WikOeAtU7PJ8n8zN7HXKCjwT2eFRL-wFC9n6388ms7EIvRlSff2Z9XXZwo0qMc7RlcehST-Dckz3I/s480/IMG-20230716-WA0007.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.913 - Especial libros y música"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="B90 - Programa 80 - Final de temporada 2 "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +168,7 @@
         <a class="related-bottom-card" href="1072-inicio-de-la-nueva-temporada.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhTCzXpu_G0bJ_v1eB_eL7uYj-0NFfvNkfyj7BcvMSSa-jJ5fGCHRs1xLpLlZI5kfRspdemAFjxxGqTets9C0L1FNcJZuyH-e6YcgfIaNh80sgGGPJQbwEYHjpYuoiojnjv1Ht8WoVg4wifZNIAly1k76kAXgam2CgKfAcvhjGlDRsD13EQxCq54kp7ZA/s320/B90_1072.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhTCzXpu_G0bJ_v1eB_eL7uYj-0NFfvNkfyj7BcvMSSa-jJ5fGCHRs1xLpLlZI5kfRspdemAFjxxGqTets9C0L1FNcJZuyH-e6YcgfIaNh80sgGGPJQbwEYHjpYuoiojnjv1Ht8WoVg4wifZNIAly1k76kAXgam2CgKfAcvhjGlDRsD13EQxCq54kp7ZA/s320/B90_1072.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhTCzXpu_G0bJ_v1eB_eL7uYj-0NFfvNkfyj7BcvMSSa-jJ5fGCHRs1xLpLlZI5kfRspdemAFjxxGqTets9C0L1FNcJZuyH-e6YcgfIaNh80sgGGPJQbwEYHjpYuoiojnjv1Ht8WoVg4wifZNIAly1k76kAXgam2CgKfAcvhjGlDRsD13EQxCq54kp7ZA/s480/B90_1072.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhTCzXpu_G0bJ_v1eB_eL7uYj-0NFfvNkfyj7BcvMSSa-jJ5fGCHRs1xLpLlZI5kfRspdemAFjxxGqTets9C0L1FNcJZuyH-e6YcgfIaNh80sgGGPJQbwEYHjpYuoiojnjv1Ht8WoVg4wifZNIAly1k76kAXgam2CgKfAcvhjGlDRsD13EQxCq54kp7ZA/s640/B90_1072.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhTCzXpu_G0bJ_v1eB_eL7uYj-0NFfvNkfyj7BcvMSSa-jJ5fGCHRs1xLpLlZI5kfRspdemAFjxxGqTets9C0L1FNcJZuyH-e6YcgfIaNh80sgGGPJQbwEYHjpYuoiojnjv1Ht8WoVg4wifZNIAly1k76kAXgam2CgKfAcvhjGlDRsD13EQxCq54kp7ZA/s320/B90_1072.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhTCzXpu_G0bJ_v1eB_eL7uYj-0NFfvNkfyj7BcvMSSa-jJ5fGCHRs1xLpLlZI5kfRspdemAFjxxGqTets9C0L1FNcJZuyH-e6YcgfIaNh80sgGGPJQbwEYHjpYuoiojnjv1Ht8WoVg4wifZNIAly1k76kAXgam2CgKfAcvhjGlDRsD13EQxCq54kp7ZA/s480/B90_1072.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhTCzXpu_G0bJ_v1eB_eL7uYj-0NFfvNkfyj7BcvMSSa-jJ5fGCHRs1xLpLlZI5kfRspdemAFjxxGqTets9C0L1FNcJZuyH-e6YcgfIaNh80sgGGPJQbwEYHjpYuoiojnjv1Ht8WoVg4wifZNIAly1k76kAXgam2CgKfAcvhjGlDRsD13EQxCq54kp7ZA/s640/B90_1072.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1072 - Inicio de la nueva temporada"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -183,8 +179,7 @@
           </a><a class="related-bottom-card" href="1105-manuel-cabezali-producciones-2025.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSoFBI_eC8R2RW4D8XF3lDVMsLffpLMmCvapHiZEe9OIEWhUabjZGa7Nn2Wo8Jhbf-sfCYL1p_VHzCjXQtRpBWJg8jbNY49tLBpIto8ZN_KE7kzeqeSBRgte1F-3nOhjBr5DijenogiXvpm1-uzP8MVt8jOfNAw6MVGgM7fqW-A5AnHAJScebbRSSRbtU/s320/b90_1105.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSoFBI_eC8R2RW4D8XF3lDVMsLffpLMmCvapHiZEe9OIEWhUabjZGa7Nn2Wo8Jhbf-sfCYL1p_VHzCjXQtRpBWJg8jbNY49tLBpIto8ZN_KE7kzeqeSBRgte1F-3nOhjBr5DijenogiXvpm1-uzP8MVt8jOfNAw6MVGgM7fqW-A5AnHAJScebbRSSRbtU/s320/b90_1105.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSoFBI_eC8R2RW4D8XF3lDVMsLffpLMmCvapHiZEe9OIEWhUabjZGa7Nn2Wo8Jhbf-sfCYL1p_VHzCjXQtRpBWJg8jbNY49tLBpIto8ZN_KE7kzeqeSBRgte1F-3nOhjBr5DijenogiXvpm1-uzP8MVt8jOfNAw6MVGgM7fqW-A5AnHAJScebbRSSRbtU/s480/b90_1105.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSoFBI_eC8R2RW4D8XF3lDVMsLffpLMmCvapHiZEe9OIEWhUabjZGa7Nn2Wo8Jhbf-sfCYL1p_VHzCjXQtRpBWJg8jbNY49tLBpIto8ZN_KE7kzeqeSBRgte1F-3nOhjBr5DijenogiXvpm1-uzP8MVt8jOfNAw6MVGgM7fqW-A5AnHAJScebbRSSRbtU/s640/b90_1105.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSoFBI_eC8R2RW4D8XF3lDVMsLffpLMmCvapHiZEe9OIEWhUabjZGa7Nn2Wo8Jhbf-sfCYL1p_VHzCjXQtRpBWJg8jbNY49tLBpIto8ZN_KE7kzeqeSBRgte1F-3nOhjBr5DijenogiXvpm1-uzP8MVt8jOfNAw6MVGgM7fqW-A5AnHAJScebbRSSRbtU/s320/b90_1105.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSoFBI_eC8R2RW4D8XF3lDVMsLffpLMmCvapHiZEe9OIEWhUabjZGa7Nn2Wo8Jhbf-sfCYL1p_VHzCjXQtRpBWJg8jbNY49tLBpIto8ZN_KE7kzeqeSBRgte1F-3nOhjBr5DijenogiXvpm1-uzP8MVt8jOfNAw6MVGgM7fqW-A5AnHAJScebbRSSRbtU/s480/b90_1105.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSoFBI_eC8R2RW4D8XF3lDVMsLffpLMmCvapHiZEe9OIEWhUabjZGa7Nn2Wo8Jhbf-sfCYL1p_VHzCjXQtRpBWJg8jbNY49tLBpIto8ZN_KE7kzeqeSBRgte1F-3nOhjBr5DijenogiXvpm1-uzP8MVt8jOfNAw6MVGgM7fqW-A5AnHAJScebbRSSRbtU/s640/b90_1105.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1105 - Manuel Cabezalí - Producciones 2025"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +190,7 @@
           </a><a class="related-bottom-card" href="p-1005-hablando-de-nirvana-con-the-buzz-lovers.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s320/459666122_1063316375799658_2900147133997114676_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s320/459666122_1063316375799658_2900147133997114676_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s480/459666122_1063316375799658_2900147133997114676_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s640/459666122_1063316375799658_2900147133997114676_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s320/459666122_1063316375799658_2900147133997114676_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s480/459666122_1063316375799658_2900147133997114676_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s640/459666122_1063316375799658_2900147133997114676_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.1005 - Hablando de Nirvana con The Buzz Lovers"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

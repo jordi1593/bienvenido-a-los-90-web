@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Joan Queralt — 6 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/programa-528-homenaje-a-bob-dylan.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw97KTCamFC9Opr8wvL2ZyKkraQjgbqTiZNXkEkDjzOFfdcM1Mp0THAVh6go8pMxPDrTB_bnxvJQo4K9CqrpCwoX_ow12Zp6BA7MeGvMqWFv8m77ZdVpC_81jt2qjaK7EU6U-r5DrzwLU/s320/Portada_ruido+%25281%2529.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw97KTCamFC9Opr8wvL2ZyKkraQjgbqTiZNXkEkDjzOFfdcM1Mp0THAVh6go8pMxPDrTB_bnxvJQo4K9CqrpCwoX_ow12Zp6BA7MeGvMqWFv8m77ZdVpC_81jt2qjaK7EU6U-r5DrzwLU/s160/Portada_ruido+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw97KTCamFC9Opr8wvL2ZyKkraQjgbqTiZNXkEkDjzOFfdcM1Mp0THAVh6go8pMxPDrTB_bnxvJQo4K9CqrpCwoX_ow12Zp6BA7MeGvMqWFv8m77ZdVpC_81jt2qjaK7EU6U-r5DrzwLU/s320/Portada_ruido+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw97KTCamFC9Opr8wvL2ZyKkraQjgbqTiZNXkEkDjzOFfdcM1Mp0THAVh6go8pMxPDrTB_bnxvJQo4K9CqrpCwoX_ow12Zp6BA7MeGvMqWFv8m77ZdVpC_81jt2qjaK7EU6U-r5DrzwLU/s480/Portada_ruido+%25281%2529.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw97KTCamFC9Opr8wvL2ZyKkraQjgbqTiZNXkEkDjzOFfdcM1Mp0THAVh6go8pMxPDrTB_bnxvJQo4K9CqrpCwoX_ow12Zp6BA7MeGvMqWFv8m77ZdVpC_81jt2qjaK7EU6U-r5DrzwLU/s160/Portada_ruido+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw97KTCamFC9Opr8wvL2ZyKkraQjgbqTiZNXkEkDjzOFfdcM1Mp0THAVh6go8pMxPDrTB_bnxvJQo4K9CqrpCwoX_ow12Zp6BA7MeGvMqWFv8m77ZdVpC_81jt2qjaK7EU6U-r5DrzwLU/s320/Portada_ruido+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw97KTCamFC9Opr8wvL2ZyKkraQjgbqTiZNXkEkDjzOFfdcM1Mp0THAVh6go8pMxPDrTB_bnxvJQo4K9CqrpCwoX_ow12Zp6BA7MeGvMqWFv8m77ZdVpC_81jt2qjaK7EU6U-r5DrzwLU/s480/Portada_ruido+%25281%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 528 - Homenaje a BOB DYLAN"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/programa-503-las-b90-sessions-vol-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s320/b90_503+%25283%2529.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s160/b90_503+%25283%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s320/b90_503+%25283%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s480/b90_503+%25283%2529.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s160/b90_503+%25283%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s320/b90_503+%25283%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s480/b90_503+%25283%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 503 - Las b90 Sessions Vol.1"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-373-isaac-gracie-melancolia-infinita.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s320/Dap1yj2W4AE2MVd.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s160/Dap1yj2W4AE2MVd.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s320/Dap1yj2W4AE2MVd.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s480/Dap1yj2W4AE2MVd.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s160/Dap1yj2W4AE2MVd.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s320/Dap1yj2W4AE2MVd.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwG35afrPURbSrRZqqDSgIZzkDZk3woyiNhlbQ5H5iYsoYl-PU0V0xRaQMDM3gNNLP4WAuAJfNm7YPGOXqXYJn9pG46iggvl2_Z532GB5MAYBqcDKSgBhDvaidffa8owwbxUPFcGBfTw/s480/Dap1yj2W4AE2MVd.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 373 - Isaac Gracie, melancolía infinita"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-270-javier-alvarez-joan-queralt-the-seasicks.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLmCqNQ6KEIfyshb6VataiRLOgIQT9HIudxcLRpancEMwpuDubWVzAvq7LlLm8v4JwTWFc2433iWQPO7pvEHVf-UlUXmdL51F6EDydT7XkDYNxNUbs7qFYj5DK958JQzGg16l_PCCwy-8/s320/IMG_20170323_193037.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLmCqNQ6KEIfyshb6VataiRLOgIQT9HIudxcLRpancEMwpuDubWVzAvq7LlLm8v4JwTWFc2433iWQPO7pvEHVf-UlUXmdL51F6EDydT7XkDYNxNUbs7qFYj5DK958JQzGg16l_PCCwy-8/s160/IMG_20170323_193037.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLmCqNQ6KEIfyshb6VataiRLOgIQT9HIudxcLRpancEMwpuDubWVzAvq7LlLm8v4JwTWFc2433iWQPO7pvEHVf-UlUXmdL51F6EDydT7XkDYNxNUbs7qFYj5DK958JQzGg16l_PCCwy-8/s320/IMG_20170323_193037.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLmCqNQ6KEIfyshb6VataiRLOgIQT9HIudxcLRpancEMwpuDubWVzAvq7LlLm8v4JwTWFc2433iWQPO7pvEHVf-UlUXmdL51F6EDydT7XkDYNxNUbs7qFYj5DK958JQzGg16l_PCCwy-8/s480/IMG_20170323_193037.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLmCqNQ6KEIfyshb6VataiRLOgIQT9HIudxcLRpancEMwpuDubWVzAvq7LlLm8v4JwTWFc2433iWQPO7pvEHVf-UlUXmdL51F6EDydT7XkDYNxNUbs7qFYj5DK958JQzGg16l_PCCwy-8/s160/IMG_20170323_193037.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLmCqNQ6KEIfyshb6VataiRLOgIQT9HIudxcLRpancEMwpuDubWVzAvq7LlLm8v4JwTWFc2433iWQPO7pvEHVf-UlUXmdL51F6EDydT7XkDYNxNUbs7qFYj5DK958JQzGg16l_PCCwy-8/s320/IMG_20170323_193037.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLmCqNQ6KEIfyshb6VataiRLOgIQT9HIudxcLRpancEMwpuDubWVzAvq7LlLm8v4JwTWFc2433iWQPO7pvEHVf-UlUXmdL51F6EDydT7XkDYNxNUbs7qFYj5DK958JQzGg16l_PCCwy-8/s480/IMG_20170323_193037.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 270 - Javier Álvarez + Joan Queralt &amp; The Seasicks"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-203-ruido-nacional.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVgm89Dr0LWxvcXT6Zb0m5M_xbDYwc9tDKJBR8HcSvJl47bllwOH_yXFDQXwkygmRkeMbdeF8UkNjNOKPkZcJQh3adBfBukckUNag3VZB1ItrIXzOHVbudBOBVUoKARnunQcmYEhbdKBg/s320/12316152_622612921210074_621997089929135530_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVgm89Dr0LWxvcXT6Zb0m5M_xbDYwc9tDKJBR8HcSvJl47bllwOH_yXFDQXwkygmRkeMbdeF8UkNjNOKPkZcJQh3adBfBukckUNag3VZB1ItrIXzOHVbudBOBVUoKARnunQcmYEhbdKBg/s160/12316152_622612921210074_621997089929135530_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVgm89Dr0LWxvcXT6Zb0m5M_xbDYwc9tDKJBR8HcSvJl47bllwOH_yXFDQXwkygmRkeMbdeF8UkNjNOKPkZcJQh3adBfBukckUNag3VZB1ItrIXzOHVbudBOBVUoKARnunQcmYEhbdKBg/s320/12316152_622612921210074_621997089929135530_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVgm89Dr0LWxvcXT6Zb0m5M_xbDYwc9tDKJBR8HcSvJl47bllwOH_yXFDQXwkygmRkeMbdeF8UkNjNOKPkZcJQh3adBfBukckUNag3VZB1ItrIXzOHVbudBOBVUoKARnunQcmYEhbdKBg/s480/12316152_622612921210074_621997089929135530_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVgm89Dr0LWxvcXT6Zb0m5M_xbDYwc9tDKJBR8HcSvJl47bllwOH_yXFDQXwkygmRkeMbdeF8UkNjNOKPkZcJQh3adBfBukckUNag3VZB1ItrIXzOHVbudBOBVUoKARnunQcmYEhbdKBg/s160/12316152_622612921210074_621997089929135530_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVgm89Dr0LWxvcXT6Zb0m5M_xbDYwc9tDKJBR8HcSvJl47bllwOH_yXFDQXwkygmRkeMbdeF8UkNjNOKPkZcJQh3adBfBukckUNag3VZB1ItrIXzOHVbudBOBVUoKARnunQcmYEhbdKBg/s320/12316152_622612921210074_621997089929135530_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVgm89Dr0LWxvcXT6Zb0m5M_xbDYwc9tDKJBR8HcSvJl47bllwOH_yXFDQXwkygmRkeMbdeF8UkNjNOKPkZcJQh3adBfBukckUNag3VZB1ItrIXzOHVbudBOBVUoKARnunQcmYEhbdKBg/s480/12316152_622612921210074_621997089929135530_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 203 - Ruido nacional"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-190-joan-queralt-virgen.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw5ha3z7G90ZINnHewqRQrYWIOEUTr5VTUIlja6fcwhAZyluW5vFmj4vClGEvPuBBldBcbg4dXYZ87fCPuipMivqFRjJzha6Dlp_m26EXAL3gkAD9z4fyMfJijMocZy4S_Ft0PtH2gG94/s320/Captura.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw5ha3z7G90ZINnHewqRQrYWIOEUTr5VTUIlja6fcwhAZyluW5vFmj4vClGEvPuBBldBcbg4dXYZ87fCPuipMivqFRjJzha6Dlp_m26EXAL3gkAD9z4fyMfJijMocZy4S_Ft0PtH2gG94/s160/Captura.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw5ha3z7G90ZINnHewqRQrYWIOEUTr5VTUIlja6fcwhAZyluW5vFmj4vClGEvPuBBldBcbg4dXYZ87fCPuipMivqFRjJzha6Dlp_m26EXAL3gkAD9z4fyMfJijMocZy4S_Ft0PtH2gG94/s320/Captura.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw5ha3z7G90ZINnHewqRQrYWIOEUTr5VTUIlja6fcwhAZyluW5vFmj4vClGEvPuBBldBcbg4dXYZ87fCPuipMivqFRjJzha6Dlp_m26EXAL3gkAD9z4fyMfJijMocZy4S_Ft0PtH2gG94/s480/Captura.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw5ha3z7G90ZINnHewqRQrYWIOEUTr5VTUIlja6fcwhAZyluW5vFmj4vClGEvPuBBldBcbg4dXYZ87fCPuipMivqFRjJzha6Dlp_m26EXAL3gkAD9z4fyMfJijMocZy4S_Ft0PtH2gG94/s160/Captura.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw5ha3z7G90ZINnHewqRQrYWIOEUTr5VTUIlja6fcwhAZyluW5vFmj4vClGEvPuBBldBcbg4dXYZ87fCPuipMivqFRjJzha6Dlp_m26EXAL3gkAD9z4fyMfJijMocZy4S_Ft0PtH2gG94/s320/Captura.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw5ha3z7G90ZINnHewqRQrYWIOEUTr5VTUIlja6fcwhAZyluW5vFmj4vClGEvPuBBldBcbg4dXYZ87fCPuipMivqFRjJzha6Dlp_m26EXAL3gkAD9z4fyMfJijMocZy4S_Ft0PtH2gG94/s480/Captura.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 190 - Joan Queralt + Virgen"
                 loading="lazy" width="320" height="213" />
         </a>

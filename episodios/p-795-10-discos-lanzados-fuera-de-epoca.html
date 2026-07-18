@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.795 - 10 discos lanzados fuera de época  — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -134,8 +134,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-r0rtaMhlNum2iQ64nkSjo53ENEygZ7Dc0pBpzd-SuaeHm13PYKhVK55LwDz8nuj5z81R9ZOTsSVpPnfhDIyxZBWcHl6_W4fVDnZKqcPCqo4tb_dn1WLyyz3NdbACk-qY4J8SR3FBcgI/s320/51hpVuoC5CL._SX425_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-r0rtaMhlNum2iQ64nkSjo53ENEygZ7Dc0pBpzd-SuaeHm13PYKhVK55LwDz8nuj5z81R9ZOTsSVpPnfhDIyxZBWcHl6_W4fVDnZKqcPCqo4tb_dn1WLyyz3NdbACk-qY4J8SR3FBcgI/s160/51hpVuoC5CL._SX425_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-r0rtaMhlNum2iQ64nkSjo53ENEygZ7Dc0pBpzd-SuaeHm13PYKhVK55LwDz8nuj5z81R9ZOTsSVpPnfhDIyxZBWcHl6_W4fVDnZKqcPCqo4tb_dn1WLyyz3NdbACk-qY4J8SR3FBcgI/s320/51hpVuoC5CL._SX425_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-r0rtaMhlNum2iQ64nkSjo53ENEygZ7Dc0pBpzd-SuaeHm13PYKhVK55LwDz8nuj5z81R9ZOTsSVpPnfhDIyxZBWcHl6_W4fVDnZKqcPCqo4tb_dn1WLyyz3NdbACk-qY4J8SR3FBcgI/s480/51hpVuoC5CL._SX425_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-r0rtaMhlNum2iQ64nkSjo53ENEygZ7Dc0pBpzd-SuaeHm13PYKhVK55LwDz8nuj5z81R9ZOTsSVpPnfhDIyxZBWcHl6_W4fVDnZKqcPCqo4tb_dn1WLyyz3NdbACk-qY4J8SR3FBcgI/s160/51hpVuoC5CL._SX425_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-r0rtaMhlNum2iQ64nkSjo53ENEygZ7Dc0pBpzd-SuaeHm13PYKhVK55LwDz8nuj5z81R9ZOTsSVpPnfhDIyxZBWcHl6_W4fVDnZKqcPCqo4tb_dn1WLyyz3NdbACk-qY4J8SR3FBcgI/s320/51hpVuoC5CL._SX425_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-r0rtaMhlNum2iQ64nkSjo53ENEygZ7Dc0pBpzd-SuaeHm13PYKhVK55LwDz8nuj5z81R9ZOTsSVpPnfhDIyxZBWcHl6_W4fVDnZKqcPCqo4tb_dn1WLyyz3NdbACk-qY4J8SR3FBcgI/s480/51hpVuoC5CL._SX425_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.787 - The Strokes &#39;Is This It&#39;"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -145,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s320/ideas_inspiradoras_20190901.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s160/ideas_inspiradoras_20190901.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s320/ideas_inspiradoras_20190901.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s480/ideas_inspiradoras_20190901.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s160/ideas_inspiradoras_20190901.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s320/ideas_inspiradoras_20190901.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3Eat4ZldgBrR6J_u-tUqEIbhDe_TeWku0wL27RO1TTFpDA9pa7vZU9j2nbiSHlFCfq_EBqdnYk3d51-f_TlHBSMBYV6b7fkSWCdjEi0bjm4SqcQVFGaVTGbwyADRvr8KLxvsbXcuJAA/s480/ideas_inspiradoras_20190901.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.764 - Canciones que harán mejorar tu día"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -156,8 +154,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s320/rayloriga_heroes-1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s160/rayloriga_heroes-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s320/rayloriga_heroes-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s480/rayloriga_heroes-1.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s160/rayloriga_heroes-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s320/rayloriga_heroes-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s480/rayloriga_heroes-1.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.749 - Ray Loriga - Héroes"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -173,8 +170,7 @@
         <a class="related-bottom-card" href="p-722-recordando-el-get-born-de-jet.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s320/R-648655-1399308965-6680.jpeg.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s320/R-648655-1399308965-6680.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s480/R-648655-1399308965-6680.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s640/R-648655-1399308965-6680.jpeg.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s320/R-648655-1399308965-6680.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s480/R-648655-1399308965-6680.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigMa85u__qmiZgJCd9V_v5O3WL01rOgUsoaaYqFBg73-2ohrql2TDmhQOx6x66O8Cvgz-q-fY3BmyiZRxBxIuYbUKo5Rhk9wDzHtTLuJ8RLyZhzws3LMN_54MhCtOif7VTaufe6WjKqdU/s640/R-648655-1399308965-6680.jpeg.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.722 - Recordando el &#39;Get Born&#39; de JET"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -185,8 +181,7 @@
           </a><a class="related-bottom-card" href="p-710-mis-canciones-favoritas-de-radiohead-que-no-estan-en-sus-discos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s320/151498347775.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s320/151498347775.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s480/151498347775.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s640/151498347775.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s320/151498347775.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s480/151498347775.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s640/151498347775.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.710 - Mis canciones favoritas de Radiohead (que no están en sus discos)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -197,8 +192,7 @@
           </a><a class="related-bottom-card" href="p-851-asi-vivi-el-mad-cool-2022.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s320/P_0tB-z8.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s320/P_0tB-z8.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s480/P_0tB-z8.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s640/P_0tB-z8.jpeg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s320/P_0tB-z8.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s480/P_0tB-z8.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44rZxkJa4lnDZ4D9Kx2a_nvSVtBOTgxdrg48BTavLxYw2RpT37mIm4bZ8y4Kxp46Vl_NdzRp6nfCGJeo7ZwsEm8TlHxIq5cHcS-ypuYgr42Lcl6lN7uiW62nO1uFmAfTof5iG_juhbg4/s640/P_0tB-z8.jpeg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.851 - Así viví el Mad Cool 2022"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

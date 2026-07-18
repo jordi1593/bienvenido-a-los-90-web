@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Lennon — 7 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-723-visitamos-la-unica-fabrica-de-vinilos-de-madrid-mad-vinyl-music.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDH9VXUEGXbJsQ7orfdH1JW9LMil-lIRTradLRwPPjaYlcjZN5tbYe8yYRBUp_6iNFJSF1H359yle02axQyAUWQyPb1ZrIXWzyODh4dApYWR4tZyHjRn6fHp1bBcrYCL91As3Fqnc6fJ8/s320/133565136_221286339482742_4522802672505549138_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDH9VXUEGXbJsQ7orfdH1JW9LMil-lIRTradLRwPPjaYlcjZN5tbYe8yYRBUp_6iNFJSF1H359yle02axQyAUWQyPb1ZrIXWzyODh4dApYWR4tZyHjRn6fHp1bBcrYCL91As3Fqnc6fJ8/s160/133565136_221286339482742_4522802672505549138_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDH9VXUEGXbJsQ7orfdH1JW9LMil-lIRTradLRwPPjaYlcjZN5tbYe8yYRBUp_6iNFJSF1H359yle02axQyAUWQyPb1ZrIXWzyODh4dApYWR4tZyHjRn6fHp1bBcrYCL91As3Fqnc6fJ8/s320/133565136_221286339482742_4522802672505549138_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDH9VXUEGXbJsQ7orfdH1JW9LMil-lIRTradLRwPPjaYlcjZN5tbYe8yYRBUp_6iNFJSF1H359yle02axQyAUWQyPb1ZrIXWzyODh4dApYWR4tZyHjRn6fHp1bBcrYCL91As3Fqnc6fJ8/s480/133565136_221286339482742_4522802672505549138_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDH9VXUEGXbJsQ7orfdH1JW9LMil-lIRTradLRwPPjaYlcjZN5tbYe8yYRBUp_6iNFJSF1H359yle02axQyAUWQyPb1ZrIXWzyODh4dApYWR4tZyHjRn6fHp1bBcrYCL91As3Fqnc6fJ8/s160/133565136_221286339482742_4522802672505549138_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDH9VXUEGXbJsQ7orfdH1JW9LMil-lIRTradLRwPPjaYlcjZN5tbYe8yYRBUp_6iNFJSF1H359yle02axQyAUWQyPb1ZrIXWzyODh4dApYWR4tZyHjRn6fHp1bBcrYCL91As3Fqnc6fJ8/s320/133565136_221286339482742_4522802672505549138_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDH9VXUEGXbJsQ7orfdH1JW9LMil-lIRTradLRwPPjaYlcjZN5tbYe8yYRBUp_6iNFJSF1H359yle02axQyAUWQyPb1ZrIXWzyODh4dApYWR4tZyHjRn6fHp1bBcrYCL91As3Fqnc6fJ8/s480/133565136_221286339482742_4522802672505549138_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.723 - Visitamos la única fábrica de vinilos de Madrid: Mad Vinyl Music"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/programa-552-muse-destroza-en-wanda-metropolitano-26-07-2019.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s160/67728307_10158901432243066_812912656296968192_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s480/67728307_10158901432243066_812912656296968192_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s160/67728307_10158901432243066_812912656296968192_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s480/67728307_10158901432243066_812912656296968192_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 552 - Muse destroza en Wanda Metropolitano (26/07/2019)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-479-el-matinal-2-con-juan-de-pablos-the-special-case-y-especial-trap.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0930SFWohg4naBFLHp_qWMAW6HDhc-kWgB4oiYrXCJdV7Er_49mfoPRl31dVWZqZ0YXeA7DwkIVQmRBIgV5g7qwKvpEEsOrn6jFN90wkYWwEaHR1byIypwJQEetLXDwbNo3Z87BLepXw/s320/IMG_20190105_133643.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0930SFWohg4naBFLHp_qWMAW6HDhc-kWgB4oiYrXCJdV7Er_49mfoPRl31dVWZqZ0YXeA7DwkIVQmRBIgV5g7qwKvpEEsOrn6jFN90wkYWwEaHR1byIypwJQEetLXDwbNo3Z87BLepXw/s160/IMG_20190105_133643.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0930SFWohg4naBFLHp_qWMAW6HDhc-kWgB4oiYrXCJdV7Er_49mfoPRl31dVWZqZ0YXeA7DwkIVQmRBIgV5g7qwKvpEEsOrn6jFN90wkYWwEaHR1byIypwJQEetLXDwbNo3Z87BLepXw/s320/IMG_20190105_133643.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0930SFWohg4naBFLHp_qWMAW6HDhc-kWgB4oiYrXCJdV7Er_49mfoPRl31dVWZqZ0YXeA7DwkIVQmRBIgV5g7qwKvpEEsOrn6jFN90wkYWwEaHR1byIypwJQEetLXDwbNo3Z87BLepXw/s480/IMG_20190105_133643.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0930SFWohg4naBFLHp_qWMAW6HDhc-kWgB4oiYrXCJdV7Er_49mfoPRl31dVWZqZ0YXeA7DwkIVQmRBIgV5g7qwKvpEEsOrn6jFN90wkYWwEaHR1byIypwJQEetLXDwbNo3Z87BLepXw/s160/IMG_20190105_133643.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0930SFWohg4naBFLHp_qWMAW6HDhc-kWgB4oiYrXCJdV7Er_49mfoPRl31dVWZqZ0YXeA7DwkIVQmRBIgV5g7qwKvpEEsOrn6jFN90wkYWwEaHR1byIypwJQEetLXDwbNo3Z87BLepXw/s320/IMG_20190105_133643.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0930SFWohg4naBFLHp_qWMAW6HDhc-kWgB4oiYrXCJdV7Er_49mfoPRl31dVWZqZ0YXeA7DwkIVQmRBIgV5g7qwKvpEEsOrn6jFN90wkYWwEaHR1byIypwJQEetLXDwbNo3Z87BLepXw/s480/IMG_20190105_133643.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 479 - El Matinal #2 con Juan de Pablos, The Special Case y Especial Trap"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-399-simone.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvGntnHCww8lT-xhknJildw5EJGyoy_9DfT22RZNnkjdWKYaPAOFmYhPJu3vDiDA5F9IIHYiyy5CsPacUOXWUrlaUI5Km7HjPJWqOS6cSD6l-iTtocQwlOSImDPpEaHs6RCczkUOWzDLk/s320/Simone-portfolio-cover.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvGntnHCww8lT-xhknJildw5EJGyoy_9DfT22RZNnkjdWKYaPAOFmYhPJu3vDiDA5F9IIHYiyy5CsPacUOXWUrlaUI5Km7HjPJWqOS6cSD6l-iTtocQwlOSImDPpEaHs6RCczkUOWzDLk/s160/Simone-portfolio-cover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvGntnHCww8lT-xhknJildw5EJGyoy_9DfT22RZNnkjdWKYaPAOFmYhPJu3vDiDA5F9IIHYiyy5CsPacUOXWUrlaUI5Km7HjPJWqOS6cSD6l-iTtocQwlOSImDPpEaHs6RCczkUOWzDLk/s320/Simone-portfolio-cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvGntnHCww8lT-xhknJildw5EJGyoy_9DfT22RZNnkjdWKYaPAOFmYhPJu3vDiDA5F9IIHYiyy5CsPacUOXWUrlaUI5Km7HjPJWqOS6cSD6l-iTtocQwlOSImDPpEaHs6RCczkUOWzDLk/s480/Simone-portfolio-cover.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvGntnHCww8lT-xhknJildw5EJGyoy_9DfT22RZNnkjdWKYaPAOFmYhPJu3vDiDA5F9IIHYiyy5CsPacUOXWUrlaUI5Km7HjPJWqOS6cSD6l-iTtocQwlOSImDPpEaHs6RCczkUOWzDLk/s160/Simone-portfolio-cover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvGntnHCww8lT-xhknJildw5EJGyoy_9DfT22RZNnkjdWKYaPAOFmYhPJu3vDiDA5F9IIHYiyy5CsPacUOXWUrlaUI5Km7HjPJWqOS6cSD6l-iTtocQwlOSImDPpEaHs6RCczkUOWzDLk/s320/Simone-portfolio-cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvGntnHCww8lT-xhknJildw5EJGyoy_9DfT22RZNnkjdWKYaPAOFmYhPJu3vDiDA5F9IIHYiyy5CsPacUOXWUrlaUI5Km7HjPJWqOS6cSD6l-iTtocQwlOSImDPpEaHs6RCczkUOWzDLk/s480/Simone-portfolio-cover.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 399 - SIMONE"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-254-john-lennon.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkhgp7UiCXH6LpxsmBs6q-A_CbUIWF_0Nm_oHmrEF5UZtg59_wUVQCa1Y-06qBq3HcIkUtBWQMVUvyzDHJs4PHfZBvhRBbedNzURuXwgqsuWS4BYIQPrD5mOgi6p-dR2pAYh8P_PM567Q/s320/Lennon_and_Chapman.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkhgp7UiCXH6LpxsmBs6q-A_CbUIWF_0Nm_oHmrEF5UZtg59_wUVQCa1Y-06qBq3HcIkUtBWQMVUvyzDHJs4PHfZBvhRBbedNzURuXwgqsuWS4BYIQPrD5mOgi6p-dR2pAYh8P_PM567Q/s160/Lennon_and_Chapman.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkhgp7UiCXH6LpxsmBs6q-A_CbUIWF_0Nm_oHmrEF5UZtg59_wUVQCa1Y-06qBq3HcIkUtBWQMVUvyzDHJs4PHfZBvhRBbedNzURuXwgqsuWS4BYIQPrD5mOgi6p-dR2pAYh8P_PM567Q/s320/Lennon_and_Chapman.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkhgp7UiCXH6LpxsmBs6q-A_CbUIWF_0Nm_oHmrEF5UZtg59_wUVQCa1Y-06qBq3HcIkUtBWQMVUvyzDHJs4PHfZBvhRBbedNzURuXwgqsuWS4BYIQPrD5mOgi6p-dR2pAYh8P_PM567Q/s480/Lennon_and_Chapman.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkhgp7UiCXH6LpxsmBs6q-A_CbUIWF_0Nm_oHmrEF5UZtg59_wUVQCa1Y-06qBq3HcIkUtBWQMVUvyzDHJs4PHfZBvhRBbedNzURuXwgqsuWS4BYIQPrD5mOgi6p-dR2pAYh8P_PM567Q/s160/Lennon_and_Chapman.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkhgp7UiCXH6LpxsmBs6q-A_CbUIWF_0Nm_oHmrEF5UZtg59_wUVQCa1Y-06qBq3HcIkUtBWQMVUvyzDHJs4PHfZBvhRBbedNzURuXwgqsuWS4BYIQPrD5mOgi6p-dR2pAYh8P_PM567Q/s320/Lennon_and_Chapman.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkhgp7UiCXH6LpxsmBs6q-A_CbUIWF_0Nm_oHmrEF5UZtg59_wUVQCa1Y-06qBq3HcIkUtBWQMVUvyzDHJs4PHfZBvhRBbedNzURuXwgqsuWS4BYIQPrD5mOgi6p-dR2pAYh8P_PM567Q/s480/Lennon_and_Chapman.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 254 - John Lennon"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-especial-the-beatles-john-lennon.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s320/John_standard.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s160/John_standard.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s320/John_standard.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s480/John_standard.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s160/John_standard.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s320/John_standard.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdVR3KQDmtsDkY0xH1ADRBR_BJPifrccMo6sanjpFhObd9wv7c3YTdcU-h0uFtxcF-IaCUzJnlycb-xk6T0UtXhph8SvDu5Vsc-O13pP_5W4TsIk-EOO1SmWhdBzCFkt-sheZcUYSMOkw/s480/John_standard.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa especial The Beatles: John Lennon"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-10-la-cancion-protesta.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa #10 - La canción protesta"
                 loading="lazy" width="320" height="213" />
         </a>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Silverchair — 6 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1088-especial-1995-2-5-monster-magnet-morphine-silverchair-wilco-faith-no-more-chris-.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s320/b90_1088.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s160/b90_1088.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s320/b90_1088.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s480/b90_1088.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s160/b90_1088.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s320/b90_1088.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqVBl8uaRivJV59wfn6-7wuurdBiTdxdVEt4LPRRfGu22vlRhcYIHhStvOaXByg-uE87vb-hp4E9SnCsLHoKgzIj1yyJjlDzKnWfVF7L3rKT2KEZUv1W_8AlDoG1O1w_EFG7LPAsb5C07mK4yO51SwINAl9s99TOsu51rA_GCq94x1a6unqjYMp7sZ-g/s480/b90_1088.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1088 - Especial 1995 (2/5) Monster Magnet, Morphine, Silverchair, Wilco, Faith No More, Chris Isaak,..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-580-especial-silverchair.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimQaUcZWb9ekbdLZtTnZAabtsT-hqGH2mrw5bb8Ks5GxsPw21dN-M8is3P6OVA0ZkHzracUAPdZ8xFHK1SVmxOyiWqswKrluIJbL8nzUggTpEK2kcVK7XnIotyFXqXnAAyWov4muQApSU/s320/b90_580.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimQaUcZWb9ekbdLZtTnZAabtsT-hqGH2mrw5bb8Ks5GxsPw21dN-M8is3P6OVA0ZkHzracUAPdZ8xFHK1SVmxOyiWqswKrluIJbL8nzUggTpEK2kcVK7XnIotyFXqXnAAyWov4muQApSU/s160/b90_580.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimQaUcZWb9ekbdLZtTnZAabtsT-hqGH2mrw5bb8Ks5GxsPw21dN-M8is3P6OVA0ZkHzracUAPdZ8xFHK1SVmxOyiWqswKrluIJbL8nzUggTpEK2kcVK7XnIotyFXqXnAAyWov4muQApSU/s320/b90_580.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimQaUcZWb9ekbdLZtTnZAabtsT-hqGH2mrw5bb8Ks5GxsPw21dN-M8is3P6OVA0ZkHzracUAPdZ8xFHK1SVmxOyiWqswKrluIJbL8nzUggTpEK2kcVK7XnIotyFXqXnAAyWov4muQApSU/s480/b90_580.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimQaUcZWb9ekbdLZtTnZAabtsT-hqGH2mrw5bb8Ks5GxsPw21dN-M8is3P6OVA0ZkHzracUAPdZ8xFHK1SVmxOyiWqswKrluIJbL8nzUggTpEK2kcVK7XnIotyFXqXnAAyWov4muQApSU/s160/b90_580.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimQaUcZWb9ekbdLZtTnZAabtsT-hqGH2mrw5bb8Ks5GxsPw21dN-M8is3P6OVA0ZkHzracUAPdZ8xFHK1SVmxOyiWqswKrluIJbL8nzUggTpEK2kcVK7XnIotyFXqXnAAyWov4muQApSU/s320/b90_580.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimQaUcZWb9ekbdLZtTnZAabtsT-hqGH2mrw5bb8Ks5GxsPw21dN-M8is3P6OVA0ZkHzracUAPdZ8xFHK1SVmxOyiWqswKrluIJbL8nzUggTpEK2kcVK7XnIotyFXqXnAAyWov4muQApSU/s480/b90_580.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.580: Especial SILVERCHAIR"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-376-post-grunge.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKaZTLsndIRTN9eqBaQT8-dtozvK7nxJsXvEHnco5Dlcj1_LjP3UyMytS8K7NiAMS-q8ixozGgB9xXb7AkbnkYLxQm_KUgJGKk2pzMcZa9mtwnRJCxuw9kiBAZYERkeVvN1YVeF4ll_i8/s320/268x0w.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKaZTLsndIRTN9eqBaQT8-dtozvK7nxJsXvEHnco5Dlcj1_LjP3UyMytS8K7NiAMS-q8ixozGgB9xXb7AkbnkYLxQm_KUgJGKk2pzMcZa9mtwnRJCxuw9kiBAZYERkeVvN1YVeF4ll_i8/s160/268x0w.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKaZTLsndIRTN9eqBaQT8-dtozvK7nxJsXvEHnco5Dlcj1_LjP3UyMytS8K7NiAMS-q8ixozGgB9xXb7AkbnkYLxQm_KUgJGKk2pzMcZa9mtwnRJCxuw9kiBAZYERkeVvN1YVeF4ll_i8/s320/268x0w.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKaZTLsndIRTN9eqBaQT8-dtozvK7nxJsXvEHnco5Dlcj1_LjP3UyMytS8K7NiAMS-q8ixozGgB9xXb7AkbnkYLxQm_KUgJGKk2pzMcZa9mtwnRJCxuw9kiBAZYERkeVvN1YVeF4ll_i8/s480/268x0w.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKaZTLsndIRTN9eqBaQT8-dtozvK7nxJsXvEHnco5Dlcj1_LjP3UyMytS8K7NiAMS-q8ixozGgB9xXb7AkbnkYLxQm_KUgJGKk2pzMcZa9mtwnRJCxuw9kiBAZYERkeVvN1YVeF4ll_i8/s160/268x0w.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKaZTLsndIRTN9eqBaQT8-dtozvK7nxJsXvEHnco5Dlcj1_LjP3UyMytS8K7NiAMS-q8ixozGgB9xXb7AkbnkYLxQm_KUgJGKk2pzMcZa9mtwnRJCxuw9kiBAZYERkeVvN1YVeF4ll_i8/s320/268x0w.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKaZTLsndIRTN9eqBaQT8-dtozvK7nxJsXvEHnco5Dlcj1_LjP3UyMytS8K7NiAMS-q8ixozGgB9xXb7AkbnkYLxQm_KUgJGKk2pzMcZa9mtwnRJCxuw9kiBAZYERkeVvN1YVeF4ll_i8/s480/268x0w.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 376 - Post-grunge"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-258-discos-que-en-2017-cumpliran-20-anos.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge1YBvmE0WxRuIS7OyOz8sdmysF-9b7o5iLjVP-GW2X-KX4ZGmxS59Awbgxi7bMSgvcfSK8Q7xnE_Hiz1HZbTGcEl8Z41ppdRODmWIYRMzyc015FkHVqhlY9uO05djJjs_P7_b1ytltSI/s320/1997_Logo.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge1YBvmE0WxRuIS7OyOz8sdmysF-9b7o5iLjVP-GW2X-KX4ZGmxS59Awbgxi7bMSgvcfSK8Q7xnE_Hiz1HZbTGcEl8Z41ppdRODmWIYRMzyc015FkHVqhlY9uO05djJjs_P7_b1ytltSI/s160/1997_Logo.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge1YBvmE0WxRuIS7OyOz8sdmysF-9b7o5iLjVP-GW2X-KX4ZGmxS59Awbgxi7bMSgvcfSK8Q7xnE_Hiz1HZbTGcEl8Z41ppdRODmWIYRMzyc015FkHVqhlY9uO05djJjs_P7_b1ytltSI/s320/1997_Logo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge1YBvmE0WxRuIS7OyOz8sdmysF-9b7o5iLjVP-GW2X-KX4ZGmxS59Awbgxi7bMSgvcfSK8Q7xnE_Hiz1HZbTGcEl8Z41ppdRODmWIYRMzyc015FkHVqhlY9uO05djJjs_P7_b1ytltSI/s480/1997_Logo.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge1YBvmE0WxRuIS7OyOz8sdmysF-9b7o5iLjVP-GW2X-KX4ZGmxS59Awbgxi7bMSgvcfSK8Q7xnE_Hiz1HZbTGcEl8Z41ppdRODmWIYRMzyc015FkHVqhlY9uO05djJjs_P7_b1ytltSI/s160/1997_Logo.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge1YBvmE0WxRuIS7OyOz8sdmysF-9b7o5iLjVP-GW2X-KX4ZGmxS59Awbgxi7bMSgvcfSK8Q7xnE_Hiz1HZbTGcEl8Z41ppdRODmWIYRMzyc015FkHVqhlY9uO05djJjs_P7_b1ytltSI/s320/1997_Logo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge1YBvmE0WxRuIS7OyOz8sdmysF-9b7o5iLjVP-GW2X-KX4ZGmxS59Awbgxi7bMSgvcfSK8Q7xnE_Hiz1HZbTGcEl8Z41ppdRODmWIYRMzyc015FkHVqhlY9uO05djJjs_P7_b1ytltSI/s480/1997_Logo.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 258 - Discos que en 2017 cumplirán 20 años"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/b90-programa-75.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 75"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-29-fin-de-fiesta-con-rkdrano.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa 29 - Fin de fiesta con Rkdrano"
                 loading="lazy" width="320" height="213" />
         </a>

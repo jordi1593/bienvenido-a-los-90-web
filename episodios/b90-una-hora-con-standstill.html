@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>B90 - Una hora con Standstill — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -147,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s320/11393179_10152880824657747_5216406057049803366_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s160/11393179_10152880824657747_5216406057049803366_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s320/11393179_10152880824657747_5216406057049803366_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s480/11393179_10152880824657747_5216406057049803366_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s160/11393179_10152880824657747_5216406057049803366_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s320/11393179_10152880824657747_5216406057049803366_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAlx1BuFnTqa07OH6IFck93DMpgcRtJMtLIjHMgMbPrco4dRsvMm6RJZBQV53Fdv-2A9tKp5Tx6rIx8wHReZ3_f0Xed7ThWvYlsNzTss-At-Fu9L_uimZaR9tNBcALXlVooeTryfm09dU/s480/11393179_10152880824657747_5216406057049803366_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 166 - Adiós Standstill"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -158,8 +157,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 63 - MUSE, BEADY EYE, NIRVANA, RHCP, STANDSTILL..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -169,8 +167,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 66 - The DOORS, STONE TEMPLE PILOTS, QOTSA, PRIMAL SCREAM"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -186,8 +183,7 @@
         <a class="related-bottom-card" href="b90-programa-68-optimus-primavera-sound-2013.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 - Programa 68 - Optimus Primavera Sound 2013"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -198,8 +194,7 @@
           </a><a class="related-bottom-card" href="programa-64-rem-standstill-rodriguez-blur-dead-can-dance.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 64 - REM, STANDSTILL, RODRIGUEZ, BLUR, DEAD CAN DANCE..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -210,8 +205,7 @@
           </a><a class="related-bottom-card" href="b90-programa-75.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 - Programa 75"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

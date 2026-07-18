@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.685 - Necesitamos música en directo — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEghOENOLt8qN4C_6wWnrSC2bfKElLhL-Yq9ridxoS5KX4kjsCgXlryWtP8dY5QRyhf44eVJ9AZhFjTsK91N9CKj1O2DKYcC1kg4trimy9mGOaBuxE_EyR93LW0-eVNIY1sIt9JNrXjIn2P3MDxKe1-zXj3dk4h06cPcGLxuPsXZEt5-QJaMgy9FNYQp=s72-c 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="P.814 - Homenaje a 1991, el año que cambió la música"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s160/b90_934_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s480/b90_934_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s160/b90_934_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s320/b90_934_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJmP6RHt02FcLXc_Rz1nAGhhIU9NG9zDGZRR-Iv-0u3X91MV3TwN1JQqY5o03J7BzQFea8RL6705KI5FjJk7GJMf3lTNG2A_7czSERP27VXKVRanhdwYXjkKtYXx2SYgUrZwRkvpFTzGzIvrhWSq4Sqo_JG3OgcmVMMFzgFK4bPpMqCMYANviHhWNU2U/s480/b90_934_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.934 - Remasterizaciones 2023, ¿valen la pena?"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1f8X-fHxDj2Qwb_gbGGmLBonAK9hkJKGJcGLbaH4e_1n-hYtaX6_PEFZG9EaL8OpDO7YhcdIkZhMBEjugDY2pTxZTjULNGfnqLqBoMOrcpntMqD8wTjExcdwjbCgHyFI7ALCW2mscLlteJCGkBhk9SXlVniVqzovXFPo-oJJviNVi-9SrDzM3ESULe54/s320/000_Par7836834.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1f8X-fHxDj2Qwb_gbGGmLBonAK9hkJKGJcGLbaH4e_1n-hYtaX6_PEFZG9EaL8OpDO7YhcdIkZhMBEjugDY2pTxZTjULNGfnqLqBoMOrcpntMqD8wTjExcdwjbCgHyFI7ALCW2mscLlteJCGkBhk9SXlVniVqzovXFPo-oJJviNVi-9SrDzM3ESULe54/s160/000_Par7836834.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1f8X-fHxDj2Qwb_gbGGmLBonAK9hkJKGJcGLbaH4e_1n-hYtaX6_PEFZG9EaL8OpDO7YhcdIkZhMBEjugDY2pTxZTjULNGfnqLqBoMOrcpntMqD8wTjExcdwjbCgHyFI7ALCW2mscLlteJCGkBhk9SXlVniVqzovXFPo-oJJviNVi-9SrDzM3ESULe54/s320/000_Par7836834.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1f8X-fHxDj2Qwb_gbGGmLBonAK9hkJKGJcGLbaH4e_1n-hYtaX6_PEFZG9EaL8OpDO7YhcdIkZhMBEjugDY2pTxZTjULNGfnqLqBoMOrcpntMqD8wTjExcdwjbCgHyFI7ALCW2mscLlteJCGkBhk9SXlVniVqzovXFPo-oJJviNVi-9SrDzM3ESULe54/s480/000_Par7836834.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1f8X-fHxDj2Qwb_gbGGmLBonAK9hkJKGJcGLbaH4e_1n-hYtaX6_PEFZG9EaL8OpDO7YhcdIkZhMBEjugDY2pTxZTjULNGfnqLqBoMOrcpntMqD8wTjExcdwjbCgHyFI7ALCW2mscLlteJCGkBhk9SXlVniVqzovXFPo-oJJviNVi-9SrDzM3ESULe54/s160/000_Par7836834.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1f8X-fHxDj2Qwb_gbGGmLBonAK9hkJKGJcGLbaH4e_1n-hYtaX6_PEFZG9EaL8OpDO7YhcdIkZhMBEjugDY2pTxZTjULNGfnqLqBoMOrcpntMqD8wTjExcdwjbCgHyFI7ALCW2mscLlteJCGkBhk9SXlVniVqzovXFPo-oJJviNVi-9SrDzM3ESULe54/s320/000_Par7836834.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1f8X-fHxDj2Qwb_gbGGmLBonAK9hkJKGJcGLbaH4e_1n-hYtaX6_PEFZG9EaL8OpDO7YhcdIkZhMBEjugDY2pTxZTjULNGfnqLqBoMOrcpntMqD8wTjExcdwjbCgHyFI7ALCW2mscLlteJCGkBhk9SXlVniVqzovXFPo-oJJviNVi-9SrDzM3ESULe54/s480/000_Par7836834.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.967 - Hablando con Youri Lenquette de Nirvana, Mano Negra, Pixies..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="p-780-the-best-of-pixies-vol-1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s320/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s320/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s480/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s640/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s320/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s480/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeD9eTubU-CfzUeeTmiQUxa7uL_5Udt-l_lnpI5lbk5R8XxCk2QdndcwSXUP5-dJ5rbnksQxZpZpnwXb-uK_EbzFcrg-KGno-WKY0WocY2fPCregCjSe2ykeYlaLEyrKz1LyQFw96wAkM/s640/8cafbdf04eb549c84f8bc424c1dfa750_original.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.780 - The Best Of : PIXIES (Vol.1)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="p-792-el-repaso-definitivo-a-1991.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s320/1991-in-music.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s320/1991-in-music.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s480/1991-in-music.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s640/1991-in-music.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s320/1991-in-music.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s480/1991-in-music.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s640/1991-in-music.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.792 - El repaso definitivo a 1991 "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="p-800-en-directo-desde-siroco-celebrando-los-30-anos-de-nevermind.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s320/242494530_244509814350378_3513229620045245238_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s320/242494530_244509814350378_3513229620045245238_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s480/242494530_244509814350378_3513229620045245238_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s640/242494530_244509814350378_3513229620045245238_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s320/242494530_244509814350378_3513229620045245238_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s480/242494530_244509814350378_3513229620045245238_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s640/242494530_244509814350378_3513229620045245238_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.800 - En directo desde Siroco celebrando los 30 años de Nevermind"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

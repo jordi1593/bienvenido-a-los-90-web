@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>B90 Classic 28: Sonic Youth en el SantiRock 2000 — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -143,8 +143,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2gUkST0u6p5tBEGEy8R4tGwv4jQXQyDS8iAwd8yqkHU_oYe7Eqky2Eh5Gs7O4NOT3PavXikEHWCAPQP7lqmTm6E-Hx5p3BoSsPOn8u2Ld7LwvbczaV1KGSnpDZKguH70o8R7mEfSFxoOUMFXoPYyeE42ZeYIaIJRwBFAt9a74eDQXRTtK2mjwhWGH/s320/120452532504.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2gUkST0u6p5tBEGEy8R4tGwv4jQXQyDS8iAwd8yqkHU_oYe7Eqky2Eh5Gs7O4NOT3PavXikEHWCAPQP7lqmTm6E-Hx5p3BoSsPOn8u2Ld7LwvbczaV1KGSnpDZKguH70o8R7mEfSFxoOUMFXoPYyeE42ZeYIaIJRwBFAt9a74eDQXRTtK2mjwhWGH/s160/120452532504.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2gUkST0u6p5tBEGEy8R4tGwv4jQXQyDS8iAwd8yqkHU_oYe7Eqky2Eh5Gs7O4NOT3PavXikEHWCAPQP7lqmTm6E-Hx5p3BoSsPOn8u2Ld7LwvbczaV1KGSnpDZKguH70o8R7mEfSFxoOUMFXoPYyeE42ZeYIaIJRwBFAt9a74eDQXRTtK2mjwhWGH/s320/120452532504.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2gUkST0u6p5tBEGEy8R4tGwv4jQXQyDS8iAwd8yqkHU_oYe7Eqky2Eh5Gs7O4NOT3PavXikEHWCAPQP7lqmTm6E-Hx5p3BoSsPOn8u2Ld7LwvbczaV1KGSnpDZKguH70o8R7mEfSFxoOUMFXoPYyeE42ZeYIaIJRwBFAt9a74eDQXRTtK2mjwhWGH/s480/120452532504.webp 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2gUkST0u6p5tBEGEy8R4tGwv4jQXQyDS8iAwd8yqkHU_oYe7Eqky2Eh5Gs7O4NOT3PavXikEHWCAPQP7lqmTm6E-Hx5p3BoSsPOn8u2Ld7LwvbczaV1KGSnpDZKguH70o8R7mEfSFxoOUMFXoPYyeE42ZeYIaIJRwBFAt9a74eDQXRTtK2mjwhWGH/s160/120452532504.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2gUkST0u6p5tBEGEy8R4tGwv4jQXQyDS8iAwd8yqkHU_oYe7Eqky2Eh5Gs7O4NOT3PavXikEHWCAPQP7lqmTm6E-Hx5p3BoSsPOn8u2Ld7LwvbczaV1KGSnpDZKguH70o8R7mEfSFxoOUMFXoPYyeE42ZeYIaIJRwBFAt9a74eDQXRTtK2mjwhWGH/s320/120452532504.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2gUkST0u6p5tBEGEy8R4tGwv4jQXQyDS8iAwd8yqkHU_oYe7Eqky2Eh5Gs7O4NOT3PavXikEHWCAPQP7lqmTm6E-Hx5p3BoSsPOn8u2Ld7LwvbczaV1KGSnpDZKguH70o8R7mEfSFxoOUMFXoPYyeE42ZeYIaIJRwBFAt9a74eDQXRTtK2mjwhWGH/s480/120452532504.webp 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.865 - Especial DIRTY de Sonic Youth"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +153,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s320/Sonic-Youth-Goo-1990-770x511.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s160/Sonic-Youth-Goo-1990-770x511.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s320/Sonic-Youth-Goo-1990-770x511.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s480/Sonic-Youth-Goo-1990-770x511.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s160/Sonic-Youth-Goo-1990-770x511.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s320/Sonic-Youth-Goo-1990-770x511.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s480/Sonic-Youth-Goo-1990-770x511.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Sonic Youth - La Riviera (Madrid 27/03/1996)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +163,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimljceBQSFPRXj6METSk86iC_5LQ4-CGCmuRb9k7E3fH4YPX7B3I1vAhrxZelmM_vUN58klHRIMsqu5d6epqQjCc63b4nFSQpT7uq3YGNtsUt9iY4L-Idko2Jt9Zc-lC2qyVEzRQyDaIg/s320/b90_483.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimljceBQSFPRXj6METSk86iC_5LQ4-CGCmuRb9k7E3fH4YPX7B3I1vAhrxZelmM_vUN58klHRIMsqu5d6epqQjCc63b4nFSQpT7uq3YGNtsUt9iY4L-Idko2Jt9Zc-lC2qyVEzRQyDaIg/s160/b90_483.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimljceBQSFPRXj6METSk86iC_5LQ4-CGCmuRb9k7E3fH4YPX7B3I1vAhrxZelmM_vUN58klHRIMsqu5d6epqQjCc63b4nFSQpT7uq3YGNtsUt9iY4L-Idko2Jt9Zc-lC2qyVEzRQyDaIg/s320/b90_483.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimljceBQSFPRXj6METSk86iC_5LQ4-CGCmuRb9k7E3fH4YPX7B3I1vAhrxZelmM_vUN58klHRIMsqu5d6epqQjCc63b4nFSQpT7uq3YGNtsUt9iY4L-Idko2Jt9Zc-lC2qyVEzRQyDaIg/s480/b90_483.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimljceBQSFPRXj6METSk86iC_5LQ4-CGCmuRb9k7E3fH4YPX7B3I1vAhrxZelmM_vUN58klHRIMsqu5d6epqQjCc63b4nFSQpT7uq3YGNtsUt9iY4L-Idko2Jt9Zc-lC2qyVEzRQyDaIg/s160/b90_483.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimljceBQSFPRXj6METSk86iC_5LQ4-CGCmuRb9k7E3fH4YPX7B3I1vAhrxZelmM_vUN58klHRIMsqu5d6epqQjCc63b4nFSQpT7uq3YGNtsUt9iY4L-Idko2Jt9Zc-lC2qyVEzRQyDaIg/s320/b90_483.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimljceBQSFPRXj6METSk86iC_5LQ4-CGCmuRb9k7E3fH4YPX7B3I1vAhrxZelmM_vUN58klHRIMsqu5d6epqQjCc63b4nFSQpT7uq3YGNtsUt9iY4L-Idko2Jt9Zc-lC2qyVEzRQyDaIg/s480/b90_483.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 483 - Sonic Youth, su último concierto en Nueva York "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -182,8 +179,7 @@
         <a class="related-bottom-card" href="programa-442-sonic-youth-daydream-nation.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHVTRKPgfCggxSlrU4BSLNE_tvLw1dDbX7QB3OUxIMhgTOvQ1nNlhz9DPrJ1fMWy6Tu9A5T_fnK6l7LLdi5NrP0-bfXeiUM32PwwFfFtw73uLPnfBGDfbXOkMlm03yO3K1slUrcF0W-LI/s320/b90442portada.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHVTRKPgfCggxSlrU4BSLNE_tvLw1dDbX7QB3OUxIMhgTOvQ1nNlhz9DPrJ1fMWy6Tu9A5T_fnK6l7LLdi5NrP0-bfXeiUM32PwwFfFtw73uLPnfBGDfbXOkMlm03yO3K1slUrcF0W-LI/s320/b90442portada.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHVTRKPgfCggxSlrU4BSLNE_tvLw1dDbX7QB3OUxIMhgTOvQ1nNlhz9DPrJ1fMWy6Tu9A5T_fnK6l7LLdi5NrP0-bfXeiUM32PwwFfFtw73uLPnfBGDfbXOkMlm03yO3K1slUrcF0W-LI/s480/b90442portada.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHVTRKPgfCggxSlrU4BSLNE_tvLw1dDbX7QB3OUxIMhgTOvQ1nNlhz9DPrJ1fMWy6Tu9A5T_fnK6l7LLdi5NrP0-bfXeiUM32PwwFfFtw73uLPnfBGDfbXOkMlm03yO3K1slUrcF0W-LI/s640/b90442portada.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHVTRKPgfCggxSlrU4BSLNE_tvLw1dDbX7QB3OUxIMhgTOvQ1nNlhz9DPrJ1fMWy6Tu9A5T_fnK6l7LLdi5NrP0-bfXeiUM32PwwFfFtw73uLPnfBGDfbXOkMlm03yO3K1slUrcF0W-LI/s320/b90442portada.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHVTRKPgfCggxSlrU4BSLNE_tvLw1dDbX7QB3OUxIMhgTOvQ1nNlhz9DPrJ1fMWy6Tu9A5T_fnK6l7LLdi5NrP0-bfXeiUM32PwwFfFtw73uLPnfBGDfbXOkMlm03yO3K1slUrcF0W-LI/s480/b90442portada.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHVTRKPgfCggxSlrU4BSLNE_tvLw1dDbX7QB3OUxIMhgTOvQ1nNlhz9DPrJ1fMWy6Tu9A5T_fnK6l7LLdi5NrP0-bfXeiUM32PwwFfFtw73uLPnfBGDfbXOkMlm03yO3K1slUrcF0W-LI/s640/b90442portada.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 442 - Sonic Youth - Daydream Nation"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -194,8 +190,7 @@
           </a><a class="related-bottom-card" href="programa-196-sonic-youth-sao-paulo-14-nov-2011.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s320/swu2011_mh_marcoshermes_195234-3.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s320/swu2011_mh_marcoshermes_195234-3.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s480/swu2011_mh_marcoshermes_195234-3.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s640/swu2011_mh_marcoshermes_195234-3.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s320/swu2011_mh_marcoshermes_195234-3.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s480/swu2011_mh_marcoshermes_195234-3.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl_VH6nG8WcEN5k41rRLeVWoCNuDLRBuvX-xa8UdKrXM3lzHWiQOliwuhRWBsvTxsYm93ax1U8DkmdVtIQM3027JsfDvo8YDmmGuHB8kxTAkPyynIZte9LiVMA6chRf7GSvKulPkI4aM/s640/swu2011_mh_marcoshermes_195234-3.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 196 - Sonic Youth São Paulo 14 Nov. 2011"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -206,8 +201,7 @@
           </a><a class="related-bottom-card" href="p-1013-especial-1994-parte-6-nirvana-stone-temple-pilots-massive-attack-sonic-yo.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s320/Maraton%20b90%202024%20blue%206.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s320/Maraton%20b90%202024%20blue%206.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s480/Maraton%20b90%202024%20blue%206.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s640/Maraton%20b90%202024%20blue%206.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s320/Maraton%20b90%202024%20blue%206.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s480/Maraton%20b90%202024%20blue%206.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s640/Maraton%20b90%202024%20blue%206.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.1013 - Especial 1994, Parte 6: Nirvana, Stone Temple Pilots, Massive Attack, Sonic Youth, Weezer..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

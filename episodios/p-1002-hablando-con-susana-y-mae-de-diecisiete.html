@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.1002 - Hablando con Susana y Mae de DIECISIETE — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTJMwiVYW7da-tML3AvkUdIzHhxmIOrJIo0qp-dzJMKN0nCn_-8zczuvYVf6l0L1BdWEac2_T5QdWHZZ1wgT6laVOE3feNwRoKvbroxmXHWFtROiFUCyEUXW1AgB3ELvUEAQybj6ydYbM/s320/P1020858.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTJMwiVYW7da-tML3AvkUdIzHhxmIOrJIo0qp-dzJMKN0nCn_-8zczuvYVf6l0L1BdWEac2_T5QdWHZZ1wgT6laVOE3feNwRoKvbroxmXHWFtROiFUCyEUXW1AgB3ELvUEAQybj6ydYbM/s160/P1020858.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTJMwiVYW7da-tML3AvkUdIzHhxmIOrJIo0qp-dzJMKN0nCn_-8zczuvYVf6l0L1BdWEac2_T5QdWHZZ1wgT6laVOE3feNwRoKvbroxmXHWFtROiFUCyEUXW1AgB3ELvUEAQybj6ydYbM/s320/P1020858.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTJMwiVYW7da-tML3AvkUdIzHhxmIOrJIo0qp-dzJMKN0nCn_-8zczuvYVf6l0L1BdWEac2_T5QdWHZZ1wgT6laVOE3feNwRoKvbroxmXHWFtROiFUCyEUXW1AgB3ELvUEAQybj6ydYbM/s480/P1020858.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTJMwiVYW7da-tML3AvkUdIzHhxmIOrJIo0qp-dzJMKN0nCn_-8zczuvYVf6l0L1BdWEac2_T5QdWHZZ1wgT6laVOE3feNwRoKvbroxmXHWFtROiFUCyEUXW1AgB3ELvUEAQybj6ydYbM/s160/P1020858.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTJMwiVYW7da-tML3AvkUdIzHhxmIOrJIo0qp-dzJMKN0nCn_-8zczuvYVf6l0L1BdWEac2_T5QdWHZZ1wgT6laVOE3feNwRoKvbroxmXHWFtROiFUCyEUXW1AgB3ELvUEAQybj6ydYbM/s320/P1020858.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTJMwiVYW7da-tML3AvkUdIzHhxmIOrJIo0qp-dzJMKN0nCn_-8zczuvYVf6l0L1BdWEac2_T5QdWHZZ1wgT6laVOE3feNwRoKvbroxmXHWFtROiFUCyEUXW1AgB3ELvUEAQybj6ydYbM/s480/P1020858.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 106 - MAE"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZyDLmPfgwVvmRHNQwisg3Q6dKm9RMzTODxvzCYQAnfOg9NpZSJ_62nznX-olOET0Uhjcoa-RhItAYrPtLfIMzhSKb_DhHMj-eigU1gKj1hFrQYUmcWKbJhT3UzZF6mwzlPd0ORM9ffZI/s320/IMG_8342.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZyDLmPfgwVvmRHNQwisg3Q6dKm9RMzTODxvzCYQAnfOg9NpZSJ_62nznX-olOET0Uhjcoa-RhItAYrPtLfIMzhSKb_DhHMj-eigU1gKj1hFrQYUmcWKbJhT3UzZF6mwzlPd0ORM9ffZI/s160/IMG_8342.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZyDLmPfgwVvmRHNQwisg3Q6dKm9RMzTODxvzCYQAnfOg9NpZSJ_62nznX-olOET0Uhjcoa-RhItAYrPtLfIMzhSKb_DhHMj-eigU1gKj1hFrQYUmcWKbJhT3UzZF6mwzlPd0ORM9ffZI/s320/IMG_8342.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZyDLmPfgwVvmRHNQwisg3Q6dKm9RMzTODxvzCYQAnfOg9NpZSJ_62nznX-olOET0Uhjcoa-RhItAYrPtLfIMzhSKb_DhHMj-eigU1gKj1hFrQYUmcWKbJhT3UzZF6mwzlPd0ORM9ffZI/s480/IMG_8342.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZyDLmPfgwVvmRHNQwisg3Q6dKm9RMzTODxvzCYQAnfOg9NpZSJ_62nznX-olOET0Uhjcoa-RhItAYrPtLfIMzhSKb_DhHMj-eigU1gKj1hFrQYUmcWKbJhT3UzZF6mwzlPd0ORM9ffZI/s160/IMG_8342.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZyDLmPfgwVvmRHNQwisg3Q6dKm9RMzTODxvzCYQAnfOg9NpZSJ_62nznX-olOET0Uhjcoa-RhItAYrPtLfIMzhSKb_DhHMj-eigU1gKj1hFrQYUmcWKbJhT3UzZF6mwzlPd0ORM9ffZI/s320/IMG_8342.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZyDLmPfgwVvmRHNQwisg3Q6dKm9RMzTODxvzCYQAnfOg9NpZSJ_62nznX-olOET0Uhjcoa-RhItAYrPtLfIMzhSKb_DhHMj-eigU1gKj1hFrQYUmcWKbJhT3UzZF6mwzlPd0ORM9ffZI/s480/IMG_8342.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 - Programa 82 - DIECISIETE"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEgzeULF1F4At1td55AkwUHLPjjkPDfMDPJCXeux6zSRqZYYRHu80aOZtf9pm-0KfnD7vOrOkmDL_BYyWlhTrmpIzKyGr9Udx6hzA_1EF6Pqqwh3__zK75kvcoLogEXj6Hiv7n0a2oM4yXJclFB7IvQfyWnWo0hifdvsbD_7tCPlovSBOZqfEyoIm-34=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEgzeULF1F4At1td55AkwUHLPjjkPDfMDPJCXeux6zSRqZYYRHu80aOZtf9pm-0KfnD7vOrOkmDL_BYyWlhTrmpIzKyGr9Udx6hzA_1EF6Pqqwh3__zK75kvcoLogEXj6Hiv7n0a2oM4yXJclFB7IvQfyWnWo0hifdvsbD_7tCPlovSBOZqfEyoIm-34=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEgzeULF1F4At1td55AkwUHLPjjkPDfMDPJCXeux6zSRqZYYRHu80aOZtf9pm-0KfnD7vOrOkmDL_BYyWlhTrmpIzKyGr9Udx6hzA_1EF6Pqqwh3__zK75kvcoLogEXj6Hiv7n0a2oM4yXJclFB7IvQfyWnWo0hifdvsbD_7tCPlovSBOZqfEyoIm-34=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEgzeULF1F4At1td55AkwUHLPjjkPDfMDPJCXeux6zSRqZYYRHu80aOZtf9pm-0KfnD7vOrOkmDL_BYyWlhTrmpIzKyGr9Udx6hzA_1EF6Pqqwh3__zK75kvcoLogEXj6Hiv7n0a2oM4yXJclFB7IvQfyWnWo0hifdvsbD_7tCPlovSBOZqfEyoIm-34=s72-c 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="P.823 - Novedade: Madrugada, Pinpilinpussies, Andy Bell, DIECISIETE, Yo No Se, METZ..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="programa-96-lo-mejor-del-2013.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s320/420962_355957767755206_243875636_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s480/420962_355957767755206_243875636_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s640/420962_355957767755206_243875636_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s480/420962_355957767755206_243875636_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s640/420962_355957767755206_243875636_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 96 - Lo mejor del 2013"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="p-1005-hablando-de-nirvana-con-the-buzz-lovers.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s320/459666122_1063316375799658_2900147133997114676_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s320/459666122_1063316375799658_2900147133997114676_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s480/459666122_1063316375799658_2900147133997114676_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s640/459666122_1063316375799658_2900147133997114676_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s320/459666122_1063316375799658_2900147133997114676_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s480/459666122_1063316375799658_2900147133997114676_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s640/459666122_1063316375799658_2900147133997114676_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.1005 - Hablando de Nirvana con The Buzz Lovers"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="p-988-hablando-de-los-beatles-y-las-bandas-tributo-con-hey-bulldogs.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCyRjbADnKFnlJGBhW3sWERVM6l-lOb16e-8hO1F-rWC1gEaVpkt6ZGTaSuD-1501jzNZ4-GXMjbOusqiJj1hGkjlNGQKoL1mjcX1l30-f5IrXB6R0UHHjwItfw25rb7PrBfRXw6vltRlUX_Yc8XuNbXqWEWUn1171hWPzGd2h72-SJV5w5Bwpbj4pQlY/s320/miniatura%20de%20youtube%20tecnologia%20nuevo%20celeste%20(5).png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCyRjbADnKFnlJGBhW3sWERVM6l-lOb16e-8hO1F-rWC1gEaVpkt6ZGTaSuD-1501jzNZ4-GXMjbOusqiJj1hGkjlNGQKoL1mjcX1l30-f5IrXB6R0UHHjwItfw25rb7PrBfRXw6vltRlUX_Yc8XuNbXqWEWUn1171hWPzGd2h72-SJV5w5Bwpbj4pQlY/s320/miniatura%20de%20youtube%20tecnologia%20nuevo%20celeste%20(5).png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCyRjbADnKFnlJGBhW3sWERVM6l-lOb16e-8hO1F-rWC1gEaVpkt6ZGTaSuD-1501jzNZ4-GXMjbOusqiJj1hGkjlNGQKoL1mjcX1l30-f5IrXB6R0UHHjwItfw25rb7PrBfRXw6vltRlUX_Yc8XuNbXqWEWUn1171hWPzGd2h72-SJV5w5Bwpbj4pQlY/s480/miniatura%20de%20youtube%20tecnologia%20nuevo%20celeste%20(5).png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCyRjbADnKFnlJGBhW3sWERVM6l-lOb16e-8hO1F-rWC1gEaVpkt6ZGTaSuD-1501jzNZ4-GXMjbOusqiJj1hGkjlNGQKoL1mjcX1l30-f5IrXB6R0UHHjwItfw25rb7PrBfRXw6vltRlUX_Yc8XuNbXqWEWUn1171hWPzGd2h72-SJV5w5Bwpbj4pQlY/s640/miniatura%20de%20youtube%20tecnologia%20nuevo%20celeste%20(5).png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCyRjbADnKFnlJGBhW3sWERVM6l-lOb16e-8hO1F-rWC1gEaVpkt6ZGTaSuD-1501jzNZ4-GXMjbOusqiJj1hGkjlNGQKoL1mjcX1l30-f5IrXB6R0UHHjwItfw25rb7PrBfRXw6vltRlUX_Yc8XuNbXqWEWUn1171hWPzGd2h72-SJV5w5Bwpbj4pQlY/s320/miniatura%20de%20youtube%20tecnologia%20nuevo%20celeste%20(5).png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCyRjbADnKFnlJGBhW3sWERVM6l-lOb16e-8hO1F-rWC1gEaVpkt6ZGTaSuD-1501jzNZ4-GXMjbOusqiJj1hGkjlNGQKoL1mjcX1l30-f5IrXB6R0UHHjwItfw25rb7PrBfRXw6vltRlUX_Yc8XuNbXqWEWUn1171hWPzGd2h72-SJV5w5Bwpbj4pQlY/s480/miniatura%20de%20youtube%20tecnologia%20nuevo%20celeste%20(5).png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCyRjbADnKFnlJGBhW3sWERVM6l-lOb16e-8hO1F-rWC1gEaVpkt6ZGTaSuD-1501jzNZ4-GXMjbOusqiJj1hGkjlNGQKoL1mjcX1l30-f5IrXB6R0UHHjwItfw25rb7PrBfRXw6vltRlUX_Yc8XuNbXqWEWUn1171hWPzGd2h72-SJV5w5Bwpbj4pQlY/s640/miniatura%20de%20youtube%20tecnologia%20nuevo%20celeste%20(5).png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.988 - Hablando de los Beatles y las bandas tributo con Hey Bulldogs"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

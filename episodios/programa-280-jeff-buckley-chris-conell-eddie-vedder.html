@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 280 - Jeff Buckley - Chris Conell - Eddie Vedder — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -132,8 +132,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg1sNJYEt6_hzvcxFgK-4v_XtZa8z5hUXDus86wpl9zDw0djkiPVbtRYviqtt0pQnAf8QoGBGYjn1nG4dPF8zU-ZcMenTU3DvTzpwePK4WNycZ9IpRAWZ-stHuQHGSDmU7MnfQ9sk9MHE/s320/Lily-Cornell-Silver-Ed-Vedder-2020-2-1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg1sNJYEt6_hzvcxFgK-4v_XtZa8z5hUXDus86wpl9zDw0djkiPVbtRYviqtt0pQnAf8QoGBGYjn1nG4dPF8zU-ZcMenTU3DvTzpwePK4WNycZ9IpRAWZ-stHuQHGSDmU7MnfQ9sk9MHE/s160/Lily-Cornell-Silver-Ed-Vedder-2020-2-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg1sNJYEt6_hzvcxFgK-4v_XtZa8z5hUXDus86wpl9zDw0djkiPVbtRYviqtt0pQnAf8QoGBGYjn1nG4dPF8zU-ZcMenTU3DvTzpwePK4WNycZ9IpRAWZ-stHuQHGSDmU7MnfQ9sk9MHE/s320/Lily-Cornell-Silver-Ed-Vedder-2020-2-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg1sNJYEt6_hzvcxFgK-4v_XtZa8z5hUXDus86wpl9zDw0djkiPVbtRYviqtt0pQnAf8QoGBGYjn1nG4dPF8zU-ZcMenTU3DvTzpwePK4WNycZ9IpRAWZ-stHuQHGSDmU7MnfQ9sk9MHE/s480/Lily-Cornell-Silver-Ed-Vedder-2020-2-1.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg1sNJYEt6_hzvcxFgK-4v_XtZa8z5hUXDus86wpl9zDw0djkiPVbtRYviqtt0pQnAf8QoGBGYjn1nG4dPF8zU-ZcMenTU3DvTzpwePK4WNycZ9IpRAWZ-stHuQHGSDmU7MnfQ9sk9MHE/s160/Lily-Cornell-Silver-Ed-Vedder-2020-2-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg1sNJYEt6_hzvcxFgK-4v_XtZa8z5hUXDus86wpl9zDw0djkiPVbtRYviqtt0pQnAf8QoGBGYjn1nG4dPF8zU-ZcMenTU3DvTzpwePK4WNycZ9IpRAWZ-stHuQHGSDmU7MnfQ9sk9MHE/s320/Lily-Cornell-Silver-Ed-Vedder-2020-2-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg1sNJYEt6_hzvcxFgK-4v_XtZa8z5hUXDus86wpl9zDw0djkiPVbtRYviqtt0pQnAf8QoGBGYjn1nG4dPF8zU-ZcMenTU3DvTzpwePK4WNycZ9IpRAWZ-stHuQHGSDmU7MnfQ9sk9MHE/s480/Lily-Cornell-Silver-Ed-Vedder-2020-2-1.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.688 - Lily Cornell Silver entrevista a Eddie Vedder"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -143,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s320/IMG-20170601-WA0005.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s160/IMG-20170601-WA0005.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s320/IMG-20170601-WA0005.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s480/IMG-20170601-WA0005.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s160/IMG-20170601-WA0005.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s320/IMG-20170601-WA0005.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s480/IMG-20170601-WA0005.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 281 - Eddie Vedder Amsterdam 2017"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s320/19225808_1760878623929773_4620285124997754232_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s160/19225808_1760878623929773_4620285124997754232_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s320/19225808_1760878623929773_4620285124997754232_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s480/19225808_1760878623929773_4620285124997754232_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s160/19225808_1760878623929773_4620285124997754232_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s320/19225808_1760878623929773_4620285124997754232_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s480/19225808_1760878623929773_4620285124997754232_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 284 - Un mes sin Chris Cornell"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +168,7 @@
         <a class="related-bottom-card" href="programa-386-un-ano-sin-chris-cornell.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhe1gcAL2b5U4VaaI26DU-NcY4S09jNAVX-jHOog4JWYqFqQSKrHAo9orq6tbAzhmBDFGk-emVJ0dXCHNL7R-qcT1R0OT3ecI4QNr9eiU7H1d3nXmNrp-S_Z2OS9w62c7H8yqC0mbPCn40/s320/CCRIP.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhe1gcAL2b5U4VaaI26DU-NcY4S09jNAVX-jHOog4JWYqFqQSKrHAo9orq6tbAzhmBDFGk-emVJ0dXCHNL7R-qcT1R0OT3ecI4QNr9eiU7H1d3nXmNrp-S_Z2OS9w62c7H8yqC0mbPCn40/s320/CCRIP.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhe1gcAL2b5U4VaaI26DU-NcY4S09jNAVX-jHOog4JWYqFqQSKrHAo9orq6tbAzhmBDFGk-emVJ0dXCHNL7R-qcT1R0OT3ecI4QNr9eiU7H1d3nXmNrp-S_Z2OS9w62c7H8yqC0mbPCn40/s480/CCRIP.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhe1gcAL2b5U4VaaI26DU-NcY4S09jNAVX-jHOog4JWYqFqQSKrHAo9orq6tbAzhmBDFGk-emVJ0dXCHNL7R-qcT1R0OT3ecI4QNr9eiU7H1d3nXmNrp-S_Z2OS9w62c7H8yqC0mbPCn40/s640/CCRIP.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhe1gcAL2b5U4VaaI26DU-NcY4S09jNAVX-jHOog4JWYqFqQSKrHAo9orq6tbAzhmBDFGk-emVJ0dXCHNL7R-qcT1R0OT3ecI4QNr9eiU7H1d3nXmNrp-S_Z2OS9w62c7H8yqC0mbPCn40/s320/CCRIP.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhe1gcAL2b5U4VaaI26DU-NcY4S09jNAVX-jHOog4JWYqFqQSKrHAo9orq6tbAzhmBDFGk-emVJ0dXCHNL7R-qcT1R0OT3ecI4QNr9eiU7H1d3nXmNrp-S_Z2OS9w62c7H8yqC0mbPCn40/s480/CCRIP.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhe1gcAL2b5U4VaaI26DU-NcY4S09jNAVX-jHOog4JWYqFqQSKrHAo9orq6tbAzhmBDFGk-emVJ0dXCHNL7R-qcT1R0OT3ecI4QNr9eiU7H1d3nXmNrp-S_Z2OS9w62c7H8yqC0mbPCn40/s640/CCRIP.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 386 - Un año sin Chris Cornell "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -183,8 +179,7 @@
           </a><a class="related-bottom-card" href="b90-supernova-66-pearl-jam-recuerda-a-chris-cornell.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGnl2VPzfA7j1blN81UlfllV7qd0U-CcR6DRMn8rRmuD0MHy-n7JQA8-gk-pJ09BGzqW2IfGHTwlv5VU2HMJXJNd6ZpfPcXyGD6VWvQoJj1nsBDF-aZyV2wdJ931VY_eW85TVh0NPwkuB97lAMdjZgn1jNPvDvchwIU5XZmv3-ZaZZ4DbJeRiprDvjD8o/s320/pearl-jam-hunted-down-missing-Cover-Art.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGnl2VPzfA7j1blN81UlfllV7qd0U-CcR6DRMn8rRmuD0MHy-n7JQA8-gk-pJ09BGzqW2IfGHTwlv5VU2HMJXJNd6ZpfPcXyGD6VWvQoJj1nsBDF-aZyV2wdJ931VY_eW85TVh0NPwkuB97lAMdjZgn1jNPvDvchwIU5XZmv3-ZaZZ4DbJeRiprDvjD8o/s320/pearl-jam-hunted-down-missing-Cover-Art.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGnl2VPzfA7j1blN81UlfllV7qd0U-CcR6DRMn8rRmuD0MHy-n7JQA8-gk-pJ09BGzqW2IfGHTwlv5VU2HMJXJNd6ZpfPcXyGD6VWvQoJj1nsBDF-aZyV2wdJ931VY_eW85TVh0NPwkuB97lAMdjZgn1jNPvDvchwIU5XZmv3-ZaZZ4DbJeRiprDvjD8o/s480/pearl-jam-hunted-down-missing-Cover-Art.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGnl2VPzfA7j1blN81UlfllV7qd0U-CcR6DRMn8rRmuD0MHy-n7JQA8-gk-pJ09BGzqW2IfGHTwlv5VU2HMJXJNd6ZpfPcXyGD6VWvQoJj1nsBDF-aZyV2wdJ931VY_eW85TVh0NPwkuB97lAMdjZgn1jNPvDvchwIU5XZmv3-ZaZZ4DbJeRiprDvjD8o/s640/pearl-jam-hunted-down-missing-Cover-Art.webp 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGnl2VPzfA7j1blN81UlfllV7qd0U-CcR6DRMn8rRmuD0MHy-n7JQA8-gk-pJ09BGzqW2IfGHTwlv5VU2HMJXJNd6ZpfPcXyGD6VWvQoJj1nsBDF-aZyV2wdJ931VY_eW85TVh0NPwkuB97lAMdjZgn1jNPvDvchwIU5XZmv3-ZaZZ4DbJeRiprDvjD8o/s320/pearl-jam-hunted-down-missing-Cover-Art.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGnl2VPzfA7j1blN81UlfllV7qd0U-CcR6DRMn8rRmuD0MHy-n7JQA8-gk-pJ09BGzqW2IfGHTwlv5VU2HMJXJNd6ZpfPcXyGD6VWvQoJj1nsBDF-aZyV2wdJ931VY_eW85TVh0NPwkuB97lAMdjZgn1jNPvDvchwIU5XZmv3-ZaZZ4DbJeRiprDvjD8o/s480/pearl-jam-hunted-down-missing-Cover-Art.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGnl2VPzfA7j1blN81UlfllV7qd0U-CcR6DRMn8rRmuD0MHy-n7JQA8-gk-pJ09BGzqW2IfGHTwlv5VU2HMJXJNd6ZpfPcXyGD6VWvQoJj1nsBDF-aZyV2wdJ931VY_eW85TVh0NPwkuB97lAMdjZgn1jNPvDvchwIU5XZmv3-ZaZZ4DbJeRiprDvjD8o/s640/pearl-jam-hunted-down-missing-Cover-Art.webp 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Supernova 66 - Pearl Jam recuerda a Chris Cornell"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +190,7 @@
           </a><a class="related-bottom-card" href="programa-279-especial-chris-cornell.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtLMcW1I9V7TVcNjK_8Wk4GJDgH4X7FBvmiZacIyCxRHS3avh1Pt_eRUDGpxRQOo-MfFkrX2Wae_EooBPkEYX9umcoSJzEgd9-5V1yjZMKrc-o7yHYy7c7gFXqxzL9neh-uR97xVXfFb8/s320/18519624_1721307674553535_8535095113033537457_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtLMcW1I9V7TVcNjK_8Wk4GJDgH4X7FBvmiZacIyCxRHS3avh1Pt_eRUDGpxRQOo-MfFkrX2Wae_EooBPkEYX9umcoSJzEgd9-5V1yjZMKrc-o7yHYy7c7gFXqxzL9neh-uR97xVXfFb8/s320/18519624_1721307674553535_8535095113033537457_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtLMcW1I9V7TVcNjK_8Wk4GJDgH4X7FBvmiZacIyCxRHS3avh1Pt_eRUDGpxRQOo-MfFkrX2Wae_EooBPkEYX9umcoSJzEgd9-5V1yjZMKrc-o7yHYy7c7gFXqxzL9neh-uR97xVXfFb8/s480/18519624_1721307674553535_8535095113033537457_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtLMcW1I9V7TVcNjK_8Wk4GJDgH4X7FBvmiZacIyCxRHS3avh1Pt_eRUDGpxRQOo-MfFkrX2Wae_EooBPkEYX9umcoSJzEgd9-5V1yjZMKrc-o7yHYy7c7gFXqxzL9neh-uR97xVXfFb8/s640/18519624_1721307674553535_8535095113033537457_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtLMcW1I9V7TVcNjK_8Wk4GJDgH4X7FBvmiZacIyCxRHS3avh1Pt_eRUDGpxRQOo-MfFkrX2Wae_EooBPkEYX9umcoSJzEgd9-5V1yjZMKrc-o7yHYy7c7gFXqxzL9neh-uR97xVXfFb8/s320/18519624_1721307674553535_8535095113033537457_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtLMcW1I9V7TVcNjK_8Wk4GJDgH4X7FBvmiZacIyCxRHS3avh1Pt_eRUDGpxRQOo-MfFkrX2Wae_EooBPkEYX9umcoSJzEgd9-5V1yjZMKrc-o7yHYy7c7gFXqxzL9neh-uR97xVXfFb8/s480/18519624_1721307674553535_8535095113033537457_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtLMcW1I9V7TVcNjK_8Wk4GJDgH4X7FBvmiZacIyCxRHS3avh1Pt_eRUDGpxRQOo-MfFkrX2Wae_EooBPkEYX9umcoSJzEgd9-5V1yjZMKrc-o7yHYy7c7gFXqxzL9neh-uR97xVXfFb8/s640/18519624_1721307674553535_8535095113033537457_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 279 - Especial Chris Cornell"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

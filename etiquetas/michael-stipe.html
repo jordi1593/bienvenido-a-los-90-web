@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Michael Stipe — 7 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-901-rem-especial-new-adventures-in-hi-fi.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb1CKjWOccLk6Der9gXbksCIIejgvWhdwxJFHQsa_rq3FnRwPvRUQ4zCno4MZQshyvwwUqh_uC3GBx3NQsf8Ws19_kCM08WsEeX2Xlz4zVfdqrNv3Oul-VVUt7eUhRL6EE3kLiSjn0BAtas1DpNHEfDeOTB2PKyUplaCFR40YN4PEzsVvkkhJ-jSjX/s320/rem-1.webp"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb1CKjWOccLk6Der9gXbksCIIejgvWhdwxJFHQsa_rq3FnRwPvRUQ4zCno4MZQshyvwwUqh_uC3GBx3NQsf8Ws19_kCM08WsEeX2Xlz4zVfdqrNv3Oul-VVUt7eUhRL6EE3kLiSjn0BAtas1DpNHEfDeOTB2PKyUplaCFR40YN4PEzsVvkkhJ-jSjX/s160/rem-1.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb1CKjWOccLk6Der9gXbksCIIejgvWhdwxJFHQsa_rq3FnRwPvRUQ4zCno4MZQshyvwwUqh_uC3GBx3NQsf8Ws19_kCM08WsEeX2Xlz4zVfdqrNv3Oul-VVUt7eUhRL6EE3kLiSjn0BAtas1DpNHEfDeOTB2PKyUplaCFR40YN4PEzsVvkkhJ-jSjX/s320/rem-1.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb1CKjWOccLk6Der9gXbksCIIejgvWhdwxJFHQsa_rq3FnRwPvRUQ4zCno4MZQshyvwwUqh_uC3GBx3NQsf8Ws19_kCM08WsEeX2Xlz4zVfdqrNv3Oul-VVUt7eUhRL6EE3kLiSjn0BAtas1DpNHEfDeOTB2PKyUplaCFR40YN4PEzsVvkkhJ-jSjX/s480/rem-1.webp 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb1CKjWOccLk6Der9gXbksCIIejgvWhdwxJFHQsa_rq3FnRwPvRUQ4zCno4MZQshyvwwUqh_uC3GBx3NQsf8Ws19_kCM08WsEeX2Xlz4zVfdqrNv3Oul-VVUt7eUhRL6EE3kLiSjn0BAtas1DpNHEfDeOTB2PKyUplaCFR40YN4PEzsVvkkhJ-jSjX/s160/rem-1.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb1CKjWOccLk6Der9gXbksCIIejgvWhdwxJFHQsa_rq3FnRwPvRUQ4zCno4MZQshyvwwUqh_uC3GBx3NQsf8Ws19_kCM08WsEeX2Xlz4zVfdqrNv3Oul-VVUt7eUhRL6EE3kLiSjn0BAtas1DpNHEfDeOTB2PKyUplaCFR40YN4PEzsVvkkhJ-jSjX/s320/rem-1.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb1CKjWOccLk6Der9gXbksCIIejgvWhdwxJFHQsa_rq3FnRwPvRUQ4zCno4MZQshyvwwUqh_uC3GBx3NQsf8Ws19_kCM08WsEeX2Xlz4zVfdqrNv3Oul-VVUt7eUhRL6EE3kLiSjn0BAtas1DpNHEfDeOTB2PKyUplaCFR40YN4PEzsVvkkhJ-jSjX/s480/rem-1.webp 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.901 - REM, especial New Adventures In Hi-Fi"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-775-r-e-m-up-1998.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s320/R.E.M..jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s160/R.E.M..jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s320/R.E.M..jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s480/R.E.M..jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s160/R.E.M..jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s320/R.E.M..jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfXYFPQr9YwIJuzhLSLv3OmT2YYJy_IE0hhq6gU3el9Yk9y7atGeW_pluMqC25sMOa5xZT56qSNF07wruriywGp0SP9i67IsKd9oPc3LaZ8FmDcRzG_47TVzXy9EBvsXOnavAZTHQ8wnU/s480/R.E.M..jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.775 - R.E.M. Up (1998)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-581-r-e-m-monster-cumple-25-anos.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiUvRcgd5nGUywvtJ2ZoL_5mKHxxEPd_G-nHxfg_m3dHasvCbkp5gfniX4CbJlQdMkAfrezRJ_IO4sUNS8P-LwentBMvh9mDTbnJrGu6kyWF9csdMQfUlGBJnypWn3EQ-yti9BWFt2qgI/s320/b90_581.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiUvRcgd5nGUywvtJ2ZoL_5mKHxxEPd_G-nHxfg_m3dHasvCbkp5gfniX4CbJlQdMkAfrezRJ_IO4sUNS8P-LwentBMvh9mDTbnJrGu6kyWF9csdMQfUlGBJnypWn3EQ-yti9BWFt2qgI/s160/b90_581.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiUvRcgd5nGUywvtJ2ZoL_5mKHxxEPd_G-nHxfg_m3dHasvCbkp5gfniX4CbJlQdMkAfrezRJ_IO4sUNS8P-LwentBMvh9mDTbnJrGu6kyWF9csdMQfUlGBJnypWn3EQ-yti9BWFt2qgI/s320/b90_581.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiUvRcgd5nGUywvtJ2ZoL_5mKHxxEPd_G-nHxfg_m3dHasvCbkp5gfniX4CbJlQdMkAfrezRJ_IO4sUNS8P-LwentBMvh9mDTbnJrGu6kyWF9csdMQfUlGBJnypWn3EQ-yti9BWFt2qgI/s480/b90_581.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiUvRcgd5nGUywvtJ2ZoL_5mKHxxEPd_G-nHxfg_m3dHasvCbkp5gfniX4CbJlQdMkAfrezRJ_IO4sUNS8P-LwentBMvh9mDTbnJrGu6kyWF9csdMQfUlGBJnypWn3EQ-yti9BWFt2qgI/s160/b90_581.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiUvRcgd5nGUywvtJ2ZoL_5mKHxxEPd_G-nHxfg_m3dHasvCbkp5gfniX4CbJlQdMkAfrezRJ_IO4sUNS8P-LwentBMvh9mDTbnJrGu6kyWF9csdMQfUlGBJnypWn3EQ-yti9BWFt2qgI/s320/b90_581.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiUvRcgd5nGUywvtJ2ZoL_5mKHxxEPd_G-nHxfg_m3dHasvCbkp5gfniX4CbJlQdMkAfrezRJ_IO4sUNS8P-LwentBMvh9mDTbnJrGu6kyWF9csdMQfUlGBJnypWn3EQ-yti9BWFt2qgI/s480/b90_581.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.581 - R.E.M. - Monster cumple 25 años"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-381-kerouac-gut-derby.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s320/381.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s160/381.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s320/381.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s480/381.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s160/381.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s320/381.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s480/381.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 381 - Kerouac + Gut Derby"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-218-noel-gallagher-david-bowie.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s320/Screenshot_20160410-123235-2.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s160/Screenshot_20160410-123235-2.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s320/Screenshot_20160410-123235-2.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s480/Screenshot_20160410-123235-2.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s160/Screenshot_20160410-123235-2.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s320/Screenshot_20160410-123235-2.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s480/Screenshot_20160410-123235-2.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 218 - Noel Gallagher - David Bowie"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/b90-programa-78-tibetan-freedon-concert.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s160/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s480/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s160/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s480/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 78 - Tibetan Freedon Concert"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-46-12-12-12-concierto-para-los-afectados-de-sandy.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 46 - 12-12-12 Concierto para los afectados de Sandy "
                 loading="lazy" width="320" height="213" />
         </a>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Ramones — 7 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1093-especial-1995-4-5-ramones-garbage-blind-melon-rancid-oasis-no-doubt.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s320/b90_1093.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s160/b90_1093.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s320/b90_1093.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s480/b90_1093.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s160/b90_1093.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s320/b90_1093.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TCXtYihWrkWtYYvOR8k8ib2_rhMJw_yOk024qXV5BRpAmWv6cPp9wdm5BUNJ2kFtVTeglEVAFCbS4qrqv0wVLLsoHJGmxp7i-pybV6zUF0zkf1giSXAf_xc1BXI6oJgPhg8VQVNFkwrnmcsSvWDxqJUI_rvK3giCoAmcJ3eMktfuXFePkJMm1UyYIiE/s480/b90_1093.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1093 - Especial 1995 (4/5) Ramones, Garbage, Blind Melon, Rancid, Oasis, No Doubt..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-885-canciones-divertidas-para-una-navidad-alternativa.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s320/We-Are-The-World%20(1).jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s160/We-Are-The-World%20(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s320/We-Are-The-World%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s480/We-Are-The-World%20(1).jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s160/We-Are-The-World%20(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s320/We-Are-The-World%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8_AEayrdp27Af_0Kqp0U4-efH9S-E8DDc7nKwiqAANeFz_Dl2WeQDKp2fFA5c85pFOSIv1HxUXm4tozPuiyEejpOA4F0RZYxptNXooupfM-779y4z2zx-Z8J1A0feYALE9j47iJNgCcRQrshiOUU4_OpprmoFhfzNCKb8GhXuyM9Z7CFcTH-J4YPN/s480/We-Are-The-World%20(1).jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.885 - Canciones divertidas para una Navidad alternativa"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-351-mike-mccready-of-potato-heads-and-polaroids.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKOBxdLgUtc-WnL0_kCUcxUA6VgfLMhVFrYlMCEM4sose2yBvVPMxrXqGPphtHn9hh2Jh6DymAwvC6c1ed_eKTSIzXOXtAPZQdUZUQHh2Fm2wS_6W6lA0SS_NDV5wToqrkXRjph0LpSkY/s320/tumblr_odchoyLRR01qctvzro1_1280.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKOBxdLgUtc-WnL0_kCUcxUA6VgfLMhVFrYlMCEM4sose2yBvVPMxrXqGPphtHn9hh2Jh6DymAwvC6c1ed_eKTSIzXOXtAPZQdUZUQHh2Fm2wS_6W6lA0SS_NDV5wToqrkXRjph0LpSkY/s160/tumblr_odchoyLRR01qctvzro1_1280.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKOBxdLgUtc-WnL0_kCUcxUA6VgfLMhVFrYlMCEM4sose2yBvVPMxrXqGPphtHn9hh2Jh6DymAwvC6c1ed_eKTSIzXOXtAPZQdUZUQHh2Fm2wS_6W6lA0SS_NDV5wToqrkXRjph0LpSkY/s320/tumblr_odchoyLRR01qctvzro1_1280.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKOBxdLgUtc-WnL0_kCUcxUA6VgfLMhVFrYlMCEM4sose2yBvVPMxrXqGPphtHn9hh2Jh6DymAwvC6c1ed_eKTSIzXOXtAPZQdUZUQHh2Fm2wS_6W6lA0SS_NDV5wToqrkXRjph0LpSkY/s480/tumblr_odchoyLRR01qctvzro1_1280.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKOBxdLgUtc-WnL0_kCUcxUA6VgfLMhVFrYlMCEM4sose2yBvVPMxrXqGPphtHn9hh2Jh6DymAwvC6c1ed_eKTSIzXOXtAPZQdUZUQHh2Fm2wS_6W6lA0SS_NDV5wToqrkXRjph0LpSkY/s160/tumblr_odchoyLRR01qctvzro1_1280.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKOBxdLgUtc-WnL0_kCUcxUA6VgfLMhVFrYlMCEM4sose2yBvVPMxrXqGPphtHn9hh2Jh6DymAwvC6c1ed_eKTSIzXOXtAPZQdUZUQHh2Fm2wS_6W6lA0SS_NDV5wToqrkXRjph0LpSkY/s320/tumblr_odchoyLRR01qctvzro1_1280.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKOBxdLgUtc-WnL0_kCUcxUA6VgfLMhVFrYlMCEM4sose2yBvVPMxrXqGPphtHn9hh2Jh6DymAwvC6c1ed_eKTSIzXOXtAPZQdUZUQHh2Fm2wS_6W6lA0SS_NDV5wToqrkXRjph0LpSkY/s480/tumblr_odchoyLRR01qctvzro1_1280.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 351 - Mike McCready - OF POTATO HEADS AND POLAROIDS"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-253-1991-the-year-punk-broke.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA41DWIKvyTE5Uk1g5cL71mi5mBI5iOUc7p84J_71fu6GzOECQQSUs09dcHdYJNhbpdnydLINdHhbrRHrzj_w7HhCSOarJ0XLx9UetujrIcLy62l-_J9UK66e0Uhc1u9slCM9C79KY91o/s320/CynD9t1XEAEnpUh.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA41DWIKvyTE5Uk1g5cL71mi5mBI5iOUc7p84J_71fu6GzOECQQSUs09dcHdYJNhbpdnydLINdHhbrRHrzj_w7HhCSOarJ0XLx9UetujrIcLy62l-_J9UK66e0Uhc1u9slCM9C79KY91o/s160/CynD9t1XEAEnpUh.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA41DWIKvyTE5Uk1g5cL71mi5mBI5iOUc7p84J_71fu6GzOECQQSUs09dcHdYJNhbpdnydLINdHhbrRHrzj_w7HhCSOarJ0XLx9UetujrIcLy62l-_J9UK66e0Uhc1u9slCM9C79KY91o/s320/CynD9t1XEAEnpUh.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA41DWIKvyTE5Uk1g5cL71mi5mBI5iOUc7p84J_71fu6GzOECQQSUs09dcHdYJNhbpdnydLINdHhbrRHrzj_w7HhCSOarJ0XLx9UetujrIcLy62l-_J9UK66e0Uhc1u9slCM9C79KY91o/s480/CynD9t1XEAEnpUh.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA41DWIKvyTE5Uk1g5cL71mi5mBI5iOUc7p84J_71fu6GzOECQQSUs09dcHdYJNhbpdnydLINdHhbrRHrzj_w7HhCSOarJ0XLx9UetujrIcLy62l-_J9UK66e0Uhc1u9slCM9C79KY91o/s160/CynD9t1XEAEnpUh.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA41DWIKvyTE5Uk1g5cL71mi5mBI5iOUc7p84J_71fu6GzOECQQSUs09dcHdYJNhbpdnydLINdHhbrRHrzj_w7HhCSOarJ0XLx9UetujrIcLy62l-_J9UK66e0Uhc1u9slCM9C79KY91o/s320/CynD9t1XEAEnpUh.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA41DWIKvyTE5Uk1g5cL71mi5mBI5iOUc7p84J_71fu6GzOECQQSUs09dcHdYJNhbpdnydLINdHhbrRHrzj_w7HhCSOarJ0XLx9UetujrIcLy62l-_J9UK66e0Uhc1u9slCM9C79KY91o/s480/CynD9t1XEAEnpUh.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 253 - 1991 The Year Punk Broke"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-220-veronica-underluxe.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s320/13082777_10153537137482747_793937129574110212_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s160/13082777_10153537137482747_793937129574110212_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s320/13082777_10153537137482747_793937129574110212_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s480/13082777_10153537137482747_793937129574110212_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s160/13082777_10153537137482747_793937129574110212_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s320/13082777_10153537137482747_793937129574110212_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeaFW-1t9JdvjIxRlDO2L7MI0r3oVfXs3bMZL14zAOi_igDraoxvrbz_qnt1y3vz0gsK0kXxPWeTIM3yoa3VgKI0xZSEARWSNyLdZabnYZgHF1UV4jAuMkbLPCBSMiDTb6sq4uA7AJdsM/s480/13082777_10153537137482747_793937129574110212_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 220 - Veronica Underluxe"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-173-edi-clavo-electricidad-revisitada.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU3SnTf9ltP9MvSFMSPUvG_gyOBqFsQeaVqQZwc3hyED_YdvjI36aw1ka42mfbOA1XRfZF0sMJMWkImFiN18zWAyvpqYJMl-ZFY0dWELRviH8m3VIpxAt_gSYwo2mzGmWgut3aKXIOns0/s320/11140244_10152967340137747_4560636244148808906_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU3SnTf9ltP9MvSFMSPUvG_gyOBqFsQeaVqQZwc3hyED_YdvjI36aw1ka42mfbOA1XRfZF0sMJMWkImFiN18zWAyvpqYJMl-ZFY0dWELRviH8m3VIpxAt_gSYwo2mzGmWgut3aKXIOns0/s160/11140244_10152967340137747_4560636244148808906_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU3SnTf9ltP9MvSFMSPUvG_gyOBqFsQeaVqQZwc3hyED_YdvjI36aw1ka42mfbOA1XRfZF0sMJMWkImFiN18zWAyvpqYJMl-ZFY0dWELRviH8m3VIpxAt_gSYwo2mzGmWgut3aKXIOns0/s320/11140244_10152967340137747_4560636244148808906_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU3SnTf9ltP9MvSFMSPUvG_gyOBqFsQeaVqQZwc3hyED_YdvjI36aw1ka42mfbOA1XRfZF0sMJMWkImFiN18zWAyvpqYJMl-ZFY0dWELRviH8m3VIpxAt_gSYwo2mzGmWgut3aKXIOns0/s480/11140244_10152967340137747_4560636244148808906_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU3SnTf9ltP9MvSFMSPUvG_gyOBqFsQeaVqQZwc3hyED_YdvjI36aw1ka42mfbOA1XRfZF0sMJMWkImFiN18zWAyvpqYJMl-ZFY0dWELRviH8m3VIpxAt_gSYwo2mzGmWgut3aKXIOns0/s160/11140244_10152967340137747_4560636244148808906_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU3SnTf9ltP9MvSFMSPUvG_gyOBqFsQeaVqQZwc3hyED_YdvjI36aw1ka42mfbOA1XRfZF0sMJMWkImFiN18zWAyvpqYJMl-ZFY0dWELRviH8m3VIpxAt_gSYwo2mzGmWgut3aKXIOns0/s320/11140244_10152967340137747_4560636244148808906_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU3SnTf9ltP9MvSFMSPUvG_gyOBqFsQeaVqQZwc3hyED_YdvjI36aw1ka42mfbOA1XRfZF0sMJMWkImFiN18zWAyvpqYJMl-ZFY0dWELRviH8m3VIpxAt_gSYwo2mzGmWgut3aKXIOns0/s480/11140244_10152967340137747_4560636244148808906_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 173 - Edi Clavo - Electricidad revisitada"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-69-green-day-offspring-weezer-fugazi-alice-in-chains.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 69 - GREEN DAY, OFFSPRING, WEEZER, FUGAZI, ALICE IN CHAINS..."
                 loading="lazy" width="320" height="213" />
         </a>

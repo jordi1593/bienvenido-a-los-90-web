@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.627 - Especial The Gits, Mia Zapata — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -143,8 +143,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s160/imagen-sin-titulo.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s480/imagen-sin-titulo.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s160/imagen-sin-titulo.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s320/imagen-sin-titulo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YY0bUHSMBJ0oYDuHqA9ENtuxOQ3t-72zJjGIkbzmLkRYXdR5ILoHMwOcgg5_Oc3Mh658OF535X1x16jL5N7Le6SGGBqUFI5r5b-WMMhxvWlXugWxQw17ZvGn00Jmm4FkrZv6hdrZx0U/s480/imagen-sin-titulo.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 292 - Blind Melon, U2, The Gits, Afghan Whigs, NIN. "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +153,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s160/TheRocket_May1988.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s480/TheRocket_May1988.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s160/TheRocket_May1988.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s480/TheRocket_May1988.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.644 - The Rocket , la revista local de Seattle"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +163,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqQ8UUYIgx74i-d5dzIPrVrhJT3d7d_WObdAxddHFDcNrfbZz8d_ywjD1KP0BfsluCVzjIYagXtJin5XKZ_N6iA1ciRIMY6cGGN5J__PYnjZ01YSvdKz8bGQKrpm6mlBiCBiTLmuLbEns/s320/b90-SP.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqQ8UUYIgx74i-d5dzIPrVrhJT3d7d_WObdAxddHFDcNrfbZz8d_ywjD1KP0BfsluCVzjIYagXtJin5XKZ_N6iA1ciRIMY6cGGN5J__PYnjZ01YSvdKz8bGQKrpm6mlBiCBiTLmuLbEns/s160/b90-SP.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqQ8UUYIgx74i-d5dzIPrVrhJT3d7d_WObdAxddHFDcNrfbZz8d_ywjD1KP0BfsluCVzjIYagXtJin5XKZ_N6iA1ciRIMY6cGGN5J__PYnjZ01YSvdKz8bGQKrpm6mlBiCBiTLmuLbEns/s320/b90-SP.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqQ8UUYIgx74i-d5dzIPrVrhJT3d7d_WObdAxddHFDcNrfbZz8d_ywjD1KP0BfsluCVzjIYagXtJin5XKZ_N6iA1ciRIMY6cGGN5J__PYnjZ01YSvdKz8bGQKrpm6mlBiCBiTLmuLbEns/s480/b90-SP.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqQ8UUYIgx74i-d5dzIPrVrhJT3d7d_WObdAxddHFDcNrfbZz8d_ywjD1KP0BfsluCVzjIYagXtJin5XKZ_N6iA1ciRIMY6cGGN5J__PYnjZ01YSvdKz8bGQKrpm6mlBiCBiTLmuLbEns/s160/b90-SP.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqQ8UUYIgx74i-d5dzIPrVrhJT3d7d_WObdAxddHFDcNrfbZz8d_ywjD1KP0BfsluCVzjIYagXtJin5XKZ_N6iA1ciRIMY6cGGN5J__PYnjZ01YSvdKz8bGQKrpm6mlBiCBiTLmuLbEns/s320/b90-SP.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqQ8UUYIgx74i-d5dzIPrVrhJT3d7d_WObdAxddHFDcNrfbZz8d_ywjD1KP0BfsluCVzjIYagXtJin5XKZ_N6iA1ciRIMY6cGGN5J__PYnjZ01YSvdKz8bGQKrpm6mlBiCBiTLmuLbEns/s480/b90-SP.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 433 - The Smashing Pumpkins -Seattle - 24-08-2018"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -182,8 +179,7 @@
         <a class="related-bottom-card" href="programa-424-giants-in-the-trees-krist-novoselic.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s320/album.gitt_.self-titled.cd_.signed.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s320/album.gitt_.self-titled.cd_.signed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s480/album.gitt_.self-titled.cd_.signed.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s640/album.gitt_.self-titled.cd_.signed.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s320/album.gitt_.self-titled.cd_.signed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s480/album.gitt_.self-titled.cd_.signed.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOLuiu4_yNo5QAPLncR8PKnVW00NCxFJuwbI9nJc_djgDwIVOo2m4uDU8jT7RYTA1HeReC69L0Y2c6L0O5bXCjLbS0MbOL8zFXjMRDGp6RIc5-MiShi4DfWdDltfImSNsEtvleOC7bKh0/s640/album.gitt_.self-titled.cd_.signed.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 424 - Giants in the Trees (Krist Novoselic)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -194,8 +190,7 @@
           </a><a class="related-bottom-card" href="p-838-soundgarden-especial-down-on-the-upside.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzlQTqMnkDu8gv-oyVm2QuG0iOf6w89rMhBYRvpqqK3Mwb2MLLmlzw0NMCqomwn-wnKjRt-oUjuAwNTK3WoAOfdXpCLKdJSsJuGJDVx6p74yCR8VDqX2qGwVwqco6c7pK1BzrdoQj8KQuHH-1ZM9ejnWllm78x16nXYZqBNmW6F04vyXIzLJLXAqtC/s320/61dw6WOZlHL._SL1200_.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzlQTqMnkDu8gv-oyVm2QuG0iOf6w89rMhBYRvpqqK3Mwb2MLLmlzw0NMCqomwn-wnKjRt-oUjuAwNTK3WoAOfdXpCLKdJSsJuGJDVx6p74yCR8VDqX2qGwVwqco6c7pK1BzrdoQj8KQuHH-1ZM9ejnWllm78x16nXYZqBNmW6F04vyXIzLJLXAqtC/s320/61dw6WOZlHL._SL1200_.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzlQTqMnkDu8gv-oyVm2QuG0iOf6w89rMhBYRvpqqK3Mwb2MLLmlzw0NMCqomwn-wnKjRt-oUjuAwNTK3WoAOfdXpCLKdJSsJuGJDVx6p74yCR8VDqX2qGwVwqco6c7pK1BzrdoQj8KQuHH-1ZM9ejnWllm78x16nXYZqBNmW6F04vyXIzLJLXAqtC/s480/61dw6WOZlHL._SL1200_.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzlQTqMnkDu8gv-oyVm2QuG0iOf6w89rMhBYRvpqqK3Mwb2MLLmlzw0NMCqomwn-wnKjRt-oUjuAwNTK3WoAOfdXpCLKdJSsJuGJDVx6p74yCR8VDqX2qGwVwqco6c7pK1BzrdoQj8KQuHH-1ZM9ejnWllm78x16nXYZqBNmW6F04vyXIzLJLXAqtC/s640/61dw6WOZlHL._SL1200_.webp 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzlQTqMnkDu8gv-oyVm2QuG0iOf6w89rMhBYRvpqqK3Mwb2MLLmlzw0NMCqomwn-wnKjRt-oUjuAwNTK3WoAOfdXpCLKdJSsJuGJDVx6p74yCR8VDqX2qGwVwqco6c7pK1BzrdoQj8KQuHH-1ZM9ejnWllm78x16nXYZqBNmW6F04vyXIzLJLXAqtC/s320/61dw6WOZlHL._SL1200_.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzlQTqMnkDu8gv-oyVm2QuG0iOf6w89rMhBYRvpqqK3Mwb2MLLmlzw0NMCqomwn-wnKjRt-oUjuAwNTK3WoAOfdXpCLKdJSsJuGJDVx6p74yCR8VDqX2qGwVwqco6c7pK1BzrdoQj8KQuHH-1ZM9ejnWllm78x16nXYZqBNmW6F04vyXIzLJLXAqtC/s480/61dw6WOZlHL._SL1200_.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzlQTqMnkDu8gv-oyVm2QuG0iOf6w89rMhBYRvpqqK3Mwb2MLLmlzw0NMCqomwn-wnKjRt-oUjuAwNTK3WoAOfdXpCLKdJSsJuGJDVx6p74yCR8VDqX2qGwVwqco6c7pK1BzrdoQj8KQuHH-1ZM9ejnWllm78x16nXYZqBNmW6F04vyXIzLJLXAqtC/s640/61dw6WOZlHL._SL1200_.webp 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.838 - Soundgarden, especial &#39;Down on the Upside&#39;"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -206,8 +201,7 @@
           </a><a class="related-bottom-card" href="programa-243-temple-of-the-dog-25-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s320/temple1-1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s320/temple1-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s480/temple1-1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s640/temple1-1.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s320/temple1-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s480/temple1-1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s640/temple1-1.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 243 - Temple of the Dog (25 años)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

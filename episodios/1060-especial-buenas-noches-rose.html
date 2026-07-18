@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>1060 - Especial Buenas Noches Rose — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -132,8 +132,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY5e6-4Hh7NCikv4Gx5KZ6o4CpspoWi5wjLNBUBcrtisq4de2rOWTbURD6AMNEfUBEAOHrvKD-9uWG55Z4MZm-EaXrYJqKAGsZiuVNWByJ2l_PbiAgzd7B71bHbiqJSOqrt1fIMVb3Fo3uCgGtVXplm2sXO5IpFWVlLd3tUkPcQvJ-0BVc3SW58GLp_ek/s320/250715_BETH_GIBBONS_400X504-696x877.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY5e6-4Hh7NCikv4Gx5KZ6o4CpspoWi5wjLNBUBcrtisq4de2rOWTbURD6AMNEfUBEAOHrvKD-9uWG55Z4MZm-EaXrYJqKAGsZiuVNWByJ2l_PbiAgzd7B71bHbiqJSOqrt1fIMVb3Fo3uCgGtVXplm2sXO5IpFWVlLd3tUkPcQvJ-0BVc3SW58GLp_ek/s160/250715_BETH_GIBBONS_400X504-696x877.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY5e6-4Hh7NCikv4Gx5KZ6o4CpspoWi5wjLNBUBcrtisq4de2rOWTbURD6AMNEfUBEAOHrvKD-9uWG55Z4MZm-EaXrYJqKAGsZiuVNWByJ2l_PbiAgzd7B71bHbiqJSOqrt1fIMVb3Fo3uCgGtVXplm2sXO5IpFWVlLd3tUkPcQvJ-0BVc3SW58GLp_ek/s320/250715_BETH_GIBBONS_400X504-696x877.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY5e6-4Hh7NCikv4Gx5KZ6o4CpspoWi5wjLNBUBcrtisq4de2rOWTbURD6AMNEfUBEAOHrvKD-9uWG55Z4MZm-EaXrYJqKAGsZiuVNWByJ2l_PbiAgzd7B71bHbiqJSOqrt1fIMVb3Fo3uCgGtVXplm2sXO5IpFWVlLd3tUkPcQvJ-0BVc3SW58GLp_ek/s480/250715_BETH_GIBBONS_400X504-696x877.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY5e6-4Hh7NCikv4Gx5KZ6o4CpspoWi5wjLNBUBcrtisq4de2rOWTbURD6AMNEfUBEAOHrvKD-9uWG55Z4MZm-EaXrYJqKAGsZiuVNWByJ2l_PbiAgzd7B71bHbiqJSOqrt1fIMVb3Fo3uCgGtVXplm2sXO5IpFWVlLd3tUkPcQvJ-0BVc3SW58GLp_ek/s160/250715_BETH_GIBBONS_400X504-696x877.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY5e6-4Hh7NCikv4Gx5KZ6o4CpspoWi5wjLNBUBcrtisq4de2rOWTbURD6AMNEfUBEAOHrvKD-9uWG55Z4MZm-EaXrYJqKAGsZiuVNWByJ2l_PbiAgzd7B71bHbiqJSOqrt1fIMVb3Fo3uCgGtVXplm2sXO5IpFWVlLd3tUkPcQvJ-0BVc3SW58GLp_ek/s320/250715_BETH_GIBBONS_400X504-696x877.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY5e6-4Hh7NCikv4Gx5KZ6o4CpspoWi5wjLNBUBcrtisq4de2rOWTbURD6AMNEfUBEAOHrvKD-9uWG55Z4MZm-EaXrYJqKAGsZiuVNWByJ2l_PbiAgzd7B71bHbiqJSOqrt1fIMVb3Fo3uCgGtVXplm2sXO5IpFWVlLd3tUkPcQvJ-0BVc3SW58GLp_ek/s480/250715_BETH_GIBBONS_400X504-696x877.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 82 - Beth Gibbons – Noches del Botánico (Madrid)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -143,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjkgrnNh8El4qUExEEtNAUNBnvC2k6UAfT6AJaM3n8eh6w1vT2jx8DqAW7ItI-dr-GognXCGaVC9jkTMygfkb8BgFpBPVLwKmzrvkpxOxn40fWcwe4AA2c_1snWP2LqaF9_faC_WKncKmV_sgJ1Sa68mz1GJkIdb5V18z2p-r8ZCU7YphYu7xWYbH0oME/s320/AIR-NdB-640x800.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjkgrnNh8El4qUExEEtNAUNBnvC2k6UAfT6AJaM3n8eh6w1vT2jx8DqAW7ItI-dr-GognXCGaVC9jkTMygfkb8BgFpBPVLwKmzrvkpxOxn40fWcwe4AA2c_1snWP2LqaF9_faC_WKncKmV_sgJ1Sa68mz1GJkIdb5V18z2p-r8ZCU7YphYu7xWYbH0oME/s160/AIR-NdB-640x800.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjkgrnNh8El4qUExEEtNAUNBnvC2k6UAfT6AJaM3n8eh6w1vT2jx8DqAW7ItI-dr-GognXCGaVC9jkTMygfkb8BgFpBPVLwKmzrvkpxOxn40fWcwe4AA2c_1snWP2LqaF9_faC_WKncKmV_sgJ1Sa68mz1GJkIdb5V18z2p-r8ZCU7YphYu7xWYbH0oME/s320/AIR-NdB-640x800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjkgrnNh8El4qUExEEtNAUNBnvC2k6UAfT6AJaM3n8eh6w1vT2jx8DqAW7ItI-dr-GognXCGaVC9jkTMygfkb8BgFpBPVLwKmzrvkpxOxn40fWcwe4AA2c_1snWP2LqaF9_faC_WKncKmV_sgJ1Sa68mz1GJkIdb5V18z2p-r8ZCU7YphYu7xWYbH0oME/s480/AIR-NdB-640x800.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjkgrnNh8El4qUExEEtNAUNBnvC2k6UAfT6AJaM3n8eh6w1vT2jx8DqAW7ItI-dr-GognXCGaVC9jkTMygfkb8BgFpBPVLwKmzrvkpxOxn40fWcwe4AA2c_1snWP2LqaF9_faC_WKncKmV_sgJ1Sa68mz1GJkIdb5V18z2p-r8ZCU7YphYu7xWYbH0oME/s160/AIR-NdB-640x800.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjkgrnNh8El4qUExEEtNAUNBnvC2k6UAfT6AJaM3n8eh6w1vT2jx8DqAW7ItI-dr-GognXCGaVC9jkTMygfkb8BgFpBPVLwKmzrvkpxOxn40fWcwe4AA2c_1snWP2LqaF9_faC_WKncKmV_sgJ1Sa68mz1GJkIdb5V18z2p-r8ZCU7YphYu7xWYbH0oME/s320/AIR-NdB-640x800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjkgrnNh8El4qUExEEtNAUNBnvC2k6UAfT6AJaM3n8eh6w1vT2jx8DqAW7ItI-dr-GognXCGaVC9jkTMygfkb8BgFpBPVLwKmzrvkpxOxn40fWcwe4AA2c_1snWP2LqaF9_faC_WKncKmV_sgJ1Sa68mz1GJkIdb5V18z2p-r8ZCU7YphYu7xWYbH0oME/s480/AIR-NdB-640x800.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 81 - AIR – Noches del Botánico (Madrid)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEhi2CpzfI0Hv2t5rIoYAvOQxHRui_wa2hdZiPF2gJJQT7QBVh8cpgyAgbu43ljgMyxVbt5psOd-MrIzr_05KZ0qsYON4vBSwpjajDzTbD6SfckxhDXTaHqmzgUSNxglqFRk7PFsXeUvjvQXuNd7uQBk2Iiw7D_n8yc6cmziObHIG3aLXY4pNIll4HnM=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEhi2CpzfI0Hv2t5rIoYAvOQxHRui_wa2hdZiPF2gJJQT7QBVh8cpgyAgbu43ljgMyxVbt5psOd-MrIzr_05KZ0qsYON4vBSwpjajDzTbD6SfckxhDXTaHqmzgUSNxglqFRk7PFsXeUvjvQXuNd7uQBk2Iiw7D_n8yc6cmziObHIG3aLXY4pNIll4HnM=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEhi2CpzfI0Hv2t5rIoYAvOQxHRui_wa2hdZiPF2gJJQT7QBVh8cpgyAgbu43ljgMyxVbt5psOd-MrIzr_05KZ0qsYON4vBSwpjajDzTbD6SfckxhDXTaHqmzgUSNxglqFRk7PFsXeUvjvQXuNd7uQBk2Iiw7D_n8yc6cmziObHIG3aLXY4pNIll4HnM=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEhi2CpzfI0Hv2t5rIoYAvOQxHRui_wa2hdZiPF2gJJQT7QBVh8cpgyAgbu43ljgMyxVbt5psOd-MrIzr_05KZ0qsYON4vBSwpjajDzTbD6SfckxhDXTaHqmzgUSNxglqFRk7PFsXeUvjvQXuNd7uQBk2Iiw7D_n8yc6cmziObHIG3aLXY4pNIll4HnM=s72-c 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="P.813 - Especial VANITY ROSE + acústico"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +168,7 @@
         <a class="related-bottom-card" href="p-809-novedades-lost-satellite-vanity-rose-yoko-factor-radio75-veronica-underlux.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s320/BeFunky-collage.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s320/BeFunky-collage.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s480/BeFunky-collage.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s640/BeFunky-collage.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s320/BeFunky-collage.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s480/BeFunky-collage.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNRAsBzgULK7dI-5RJofY6x5PnNkYwptt-0zyd3PN47LSkLVVAqJrG2t5bsuNEy7XCAGTRv9L88TZbde1HwsYpL4FVJxIrKvo5YgzsmAgv3PFKMxJXqPFuxG7wZdZ-m3RvU4d9k8fO1s0/s640/BeFunky-collage.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.809 - Novedades: Lost Satellite,Vanity Rose,Yoko Factor,Radio75,Veronica Underluxe,Efecto Lucifer,Marc Rockenberg..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -183,8 +179,7 @@
           </a><a class="related-bottom-card" href="p-735-axl-rose-vs-kurt-cobain.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s320/35b95a7ac02799ef06b89c8075fc68b1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s320/35b95a7ac02799ef06b89c8075fc68b1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s480/35b95a7ac02799ef06b89c8075fc68b1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s640/35b95a7ac02799ef06b89c8075fc68b1.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s320/35b95a7ac02799ef06b89c8075fc68b1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s480/35b95a7ac02799ef06b89c8075fc68b1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s640/35b95a7ac02799ef06b89c8075fc68b1.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.735 - Axl Rose Vs. Kurt Cobain"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +190,7 @@
           </a><a class="related-bottom-card" href="programa-555-rufus-t-firefly-en-directo-desde-noches-del-botanico-31-07-2019.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s320/b90_555.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s320/b90_555.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s480/b90_555.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s640/b90_555.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s320/b90_555.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s480/b90_555.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1XU3z27zvYteXP2je2hMsknSIHk4QHKTbFopOpMb4h2uy0TNZ9S3RCokp-4OuG3OraJlHWEoGz9CPZT-oL9mDIk_bAHU4s6_zRyxkkQQjTOqnyjXYCGC72OSR47GVtmeJ0dtG3ca6Kw/s640/b90_555.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 555 - Rufus T. Firefly en directo desde Noches del Botánico (31/07/2019)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

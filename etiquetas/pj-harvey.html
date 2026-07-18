@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Pj Harvey — 10 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1102-una-hora-de-grunge-sin-casi-pausas.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s320/B90_1102.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s160/B90_1102.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s320/B90_1102.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s480/B90_1102.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s160/B90_1102.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s320/B90_1102.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgklLTO30eAfQZh22UQA0-ZtNduMly3saS4vXFYo4ziichl-QJVeZyEMiIkymVVdB1fZh8n3Bqy31HzIaAO-LrcTCYKSguzKiv6gANPacFuFVWAkDXFgiOxzKJdhI3pFBCa9Y9RdbcMvMwR3Qc8eyt57MpdxDYYIIHeCyfzI_db3vnSR6NX7Hu6bJU0yyU/s480/B90_1102.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1102 - Una hora de GRUNGE sin (casi) pausas"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/1086-especial-1995-1-5-radiohead-pj-harvey-mad-season-the-jayhawks-tricky.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLH9he9SkItLZhGCS1UgOiPEA97mGXP7VswndyfyTxZUWyO8SNdiJ9HlEhwzdn992eY2frojg76Z2mqfQ-N1ZZCvI_j_X0qigjfsfen3S5rHHg6By9VFtfAJXRKdZBWQa-kIEz4KGIMCi7MJmRT-YS1PIYeFzJ13ecS5TGRst8u24zcweemRMB5gbcn1A/s320/b90_1086.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLH9he9SkItLZhGCS1UgOiPEA97mGXP7VswndyfyTxZUWyO8SNdiJ9HlEhwzdn992eY2frojg76Z2mqfQ-N1ZZCvI_j_X0qigjfsfen3S5rHHg6By9VFtfAJXRKdZBWQa-kIEz4KGIMCi7MJmRT-YS1PIYeFzJ13ecS5TGRst8u24zcweemRMB5gbcn1A/s160/b90_1086.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLH9he9SkItLZhGCS1UgOiPEA97mGXP7VswndyfyTxZUWyO8SNdiJ9HlEhwzdn992eY2frojg76Z2mqfQ-N1ZZCvI_j_X0qigjfsfen3S5rHHg6By9VFtfAJXRKdZBWQa-kIEz4KGIMCi7MJmRT-YS1PIYeFzJ13ecS5TGRst8u24zcweemRMB5gbcn1A/s320/b90_1086.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLH9he9SkItLZhGCS1UgOiPEA97mGXP7VswndyfyTxZUWyO8SNdiJ9HlEhwzdn992eY2frojg76Z2mqfQ-N1ZZCvI_j_X0qigjfsfen3S5rHHg6By9VFtfAJXRKdZBWQa-kIEz4KGIMCi7MJmRT-YS1PIYeFzJ13ecS5TGRst8u24zcweemRMB5gbcn1A/s480/b90_1086.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLH9he9SkItLZhGCS1UgOiPEA97mGXP7VswndyfyTxZUWyO8SNdiJ9HlEhwzdn992eY2frojg76Z2mqfQ-N1ZZCvI_j_X0qigjfsfen3S5rHHg6By9VFtfAJXRKdZBWQa-kIEz4KGIMCi7MJmRT-YS1PIYeFzJ13ecS5TGRst8u24zcweemRMB5gbcn1A/s160/b90_1086.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLH9he9SkItLZhGCS1UgOiPEA97mGXP7VswndyfyTxZUWyO8SNdiJ9HlEhwzdn992eY2frojg76Z2mqfQ-N1ZZCvI_j_X0qigjfsfen3S5rHHg6By9VFtfAJXRKdZBWQa-kIEz4KGIMCi7MJmRT-YS1PIYeFzJ13ecS5TGRst8u24zcweemRMB5gbcn1A/s320/b90_1086.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLH9he9SkItLZhGCS1UgOiPEA97mGXP7VswndyfyTxZUWyO8SNdiJ9HlEhwzdn992eY2frojg76Z2mqfQ-N1ZZCvI_j_X0qigjfsfen3S5rHHg6By9VFtfAJXRKdZBWQa-kIEz4KGIMCi7MJmRT-YS1PIYeFzJ13ecS5TGRst8u24zcweemRMB5gbcn1A/s480/b90_1086.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1086 - Especial 1995 (1/5) Radiohead, PJ Harvey, Mad Season, The Jayhawks, Tricky..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-974-recordando-a-steve-albini.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvOm3LeInCgOU7-EjtuHP5-9qeFj5pxp6dM1wUN1WXitFIcer0kgeF-J25vtc24wUqfXAx4fTSIkuHMnW0OdYTwxv_xmMNhFJC_UZfcnp0EqXAYil2xpDbSMClnzV1MsPyxxD8kPUNdtkBEewT9wRnkteOsa-dU00KmJuD-42rhoEVJadQFcMkl_TPT5s/s320/Imagen%20de%20WhatsApp%202024-05-22%20a%20las%2023.53.36_4b010ae3.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvOm3LeInCgOU7-EjtuHP5-9qeFj5pxp6dM1wUN1WXitFIcer0kgeF-J25vtc24wUqfXAx4fTSIkuHMnW0OdYTwxv_xmMNhFJC_UZfcnp0EqXAYil2xpDbSMClnzV1MsPyxxD8kPUNdtkBEewT9wRnkteOsa-dU00KmJuD-42rhoEVJadQFcMkl_TPT5s/s160/Imagen%20de%20WhatsApp%202024-05-22%20a%20las%2023.53.36_4b010ae3.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvOm3LeInCgOU7-EjtuHP5-9qeFj5pxp6dM1wUN1WXitFIcer0kgeF-J25vtc24wUqfXAx4fTSIkuHMnW0OdYTwxv_xmMNhFJC_UZfcnp0EqXAYil2xpDbSMClnzV1MsPyxxD8kPUNdtkBEewT9wRnkteOsa-dU00KmJuD-42rhoEVJadQFcMkl_TPT5s/s320/Imagen%20de%20WhatsApp%202024-05-22%20a%20las%2023.53.36_4b010ae3.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvOm3LeInCgOU7-EjtuHP5-9qeFj5pxp6dM1wUN1WXitFIcer0kgeF-J25vtc24wUqfXAx4fTSIkuHMnW0OdYTwxv_xmMNhFJC_UZfcnp0EqXAYil2xpDbSMClnzV1MsPyxxD8kPUNdtkBEewT9wRnkteOsa-dU00KmJuD-42rhoEVJadQFcMkl_TPT5s/s480/Imagen%20de%20WhatsApp%202024-05-22%20a%20las%2023.53.36_4b010ae3.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvOm3LeInCgOU7-EjtuHP5-9qeFj5pxp6dM1wUN1WXitFIcer0kgeF-J25vtc24wUqfXAx4fTSIkuHMnW0OdYTwxv_xmMNhFJC_UZfcnp0EqXAYil2xpDbSMClnzV1MsPyxxD8kPUNdtkBEewT9wRnkteOsa-dU00KmJuD-42rhoEVJadQFcMkl_TPT5s/s160/Imagen%20de%20WhatsApp%202024-05-22%20a%20las%2023.53.36_4b010ae3.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvOm3LeInCgOU7-EjtuHP5-9qeFj5pxp6dM1wUN1WXitFIcer0kgeF-J25vtc24wUqfXAx4fTSIkuHMnW0OdYTwxv_xmMNhFJC_UZfcnp0EqXAYil2xpDbSMClnzV1MsPyxxD8kPUNdtkBEewT9wRnkteOsa-dU00KmJuD-42rhoEVJadQFcMkl_TPT5s/s320/Imagen%20de%20WhatsApp%202024-05-22%20a%20las%2023.53.36_4b010ae3.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvOm3LeInCgOU7-EjtuHP5-9qeFj5pxp6dM1wUN1WXitFIcer0kgeF-J25vtc24wUqfXAx4fTSIkuHMnW0OdYTwxv_xmMNhFJC_UZfcnp0EqXAYil2xpDbSMClnzV1MsPyxxD8kPUNdtkBEewT9wRnkteOsa-dU00KmJuD-42rhoEVJadQFcMkl_TPT5s/s480/Imagen%20de%20WhatsApp%202024-05-22%20a%20las%2023.53.36_4b010ae3.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.974 - Recordando a Steve Albini"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-766-especial-later-with-jools-holland.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBGaN-4saGVGek6mrxkCvHFijXzhjEQbmo0A2fdc0d1H1wkZOkdPYc86FbX742h1Bsfpr0SGLZt8ro1hYelLLexmWdDJMAKbwkpBXn6Ty6nNNJg3ovqXSBgd2XDkQj2ZeFA1woFYskCZA/s320/v1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBGaN-4saGVGek6mrxkCvHFijXzhjEQbmo0A2fdc0d1H1wkZOkdPYc86FbX742h1Bsfpr0SGLZt8ro1hYelLLexmWdDJMAKbwkpBXn6Ty6nNNJg3ovqXSBgd2XDkQj2ZeFA1woFYskCZA/s160/v1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBGaN-4saGVGek6mrxkCvHFijXzhjEQbmo0A2fdc0d1H1wkZOkdPYc86FbX742h1Bsfpr0SGLZt8ro1hYelLLexmWdDJMAKbwkpBXn6Ty6nNNJg3ovqXSBgd2XDkQj2ZeFA1woFYskCZA/s320/v1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBGaN-4saGVGek6mrxkCvHFijXzhjEQbmo0A2fdc0d1H1wkZOkdPYc86FbX742h1Bsfpr0SGLZt8ro1hYelLLexmWdDJMAKbwkpBXn6Ty6nNNJg3ovqXSBgd2XDkQj2ZeFA1woFYskCZA/s480/v1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBGaN-4saGVGek6mrxkCvHFijXzhjEQbmo0A2fdc0d1H1wkZOkdPYc86FbX742h1Bsfpr0SGLZt8ro1hYelLLexmWdDJMAKbwkpBXn6Ty6nNNJg3ovqXSBgd2XDkQj2ZeFA1woFYskCZA/s160/v1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBGaN-4saGVGek6mrxkCvHFijXzhjEQbmo0A2fdc0d1H1wkZOkdPYc86FbX742h1Bsfpr0SGLZt8ro1hYelLLexmWdDJMAKbwkpBXn6Ty6nNNJg3ovqXSBgd2XDkQj2ZeFA1woFYskCZA/s320/v1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBGaN-4saGVGek6mrxkCvHFijXzhjEQbmo0A2fdc0d1H1wkZOkdPYc86FbX742h1Bsfpr0SGLZt8ro1hYelLLexmWdDJMAKbwkpBXn6Ty6nNNJg3ovqXSBgd2XDkQj2ZeFA1woFYskCZA/s480/v1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.766 - Especial Later with Jools Holland"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/p-702-especial-pj-harvey-parte-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHOlwLhJYPrr_6XvrYQ7d8vOzihKmGEsyWHq8dVG2P1FEFNP_d9MX9Umr0BOsOdK0SfuankFguAG9Kdf7evCgqaSFqYLjc_cFxnPhroAF6XmlknYKOos3ADCGgbOcd8w7laAydxjhAKI/s320/PJ-HARVEY-1992-1000x600.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHOlwLhJYPrr_6XvrYQ7d8vOzihKmGEsyWHq8dVG2P1FEFNP_d9MX9Umr0BOsOdK0SfuankFguAG9Kdf7evCgqaSFqYLjc_cFxnPhroAF6XmlknYKOos3ADCGgbOcd8w7laAydxjhAKI/s160/PJ-HARVEY-1992-1000x600.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHOlwLhJYPrr_6XvrYQ7d8vOzihKmGEsyWHq8dVG2P1FEFNP_d9MX9Umr0BOsOdK0SfuankFguAG9Kdf7evCgqaSFqYLjc_cFxnPhroAF6XmlknYKOos3ADCGgbOcd8w7laAydxjhAKI/s320/PJ-HARVEY-1992-1000x600.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHOlwLhJYPrr_6XvrYQ7d8vOzihKmGEsyWHq8dVG2P1FEFNP_d9MX9Umr0BOsOdK0SfuankFguAG9Kdf7evCgqaSFqYLjc_cFxnPhroAF6XmlknYKOos3ADCGgbOcd8w7laAydxjhAKI/s480/PJ-HARVEY-1992-1000x600.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHOlwLhJYPrr_6XvrYQ7d8vOzihKmGEsyWHq8dVG2P1FEFNP_d9MX9Umr0BOsOdK0SfuankFguAG9Kdf7evCgqaSFqYLjc_cFxnPhroAF6XmlknYKOos3ADCGgbOcd8w7laAydxjhAKI/s160/PJ-HARVEY-1992-1000x600.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHOlwLhJYPrr_6XvrYQ7d8vOzihKmGEsyWHq8dVG2P1FEFNP_d9MX9Umr0BOsOdK0SfuankFguAG9Kdf7evCgqaSFqYLjc_cFxnPhroAF6XmlknYKOos3ADCGgbOcd8w7laAydxjhAKI/s320/PJ-HARVEY-1992-1000x600.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHOlwLhJYPrr_6XvrYQ7d8vOzihKmGEsyWHq8dVG2P1FEFNP_d9MX9Umr0BOsOdK0SfuankFguAG9Kdf7evCgqaSFqYLjc_cFxnPhroAF6XmlknYKOos3ADCGgbOcd8w7laAydxjhAKI/s480/PJ-HARVEY-1992-1000x600.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.702 - Especial PJ Harvey (Parte 1)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/p-699-novedades-blues-pills-clt-drp-lucidvox-naked-giants-aua.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2vAfcN1vxo-vtvsUxrcHaRCk1el_Iq1Ha2KzOTVaxci0_AeUjgcnmdG7J9aaVnmbdz_AQraLF5cS1Z8oyLWnTrNnBuBJc__AI_VNsoGWQDEgUIX41CclAYwBV3wS24tgqz4WbU1Kz4fU/s320/b90_699.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2vAfcN1vxo-vtvsUxrcHaRCk1el_Iq1Ha2KzOTVaxci0_AeUjgcnmdG7J9aaVnmbdz_AQraLF5cS1Z8oyLWnTrNnBuBJc__AI_VNsoGWQDEgUIX41CclAYwBV3wS24tgqz4WbU1Kz4fU/s160/b90_699.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2vAfcN1vxo-vtvsUxrcHaRCk1el_Iq1Ha2KzOTVaxci0_AeUjgcnmdG7J9aaVnmbdz_AQraLF5cS1Z8oyLWnTrNnBuBJc__AI_VNsoGWQDEgUIX41CclAYwBV3wS24tgqz4WbU1Kz4fU/s320/b90_699.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2vAfcN1vxo-vtvsUxrcHaRCk1el_Iq1Ha2KzOTVaxci0_AeUjgcnmdG7J9aaVnmbdz_AQraLF5cS1Z8oyLWnTrNnBuBJc__AI_VNsoGWQDEgUIX41CclAYwBV3wS24tgqz4WbU1Kz4fU/s480/b90_699.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2vAfcN1vxo-vtvsUxrcHaRCk1el_Iq1Ha2KzOTVaxci0_AeUjgcnmdG7J9aaVnmbdz_AQraLF5cS1Z8oyLWnTrNnBuBJc__AI_VNsoGWQDEgUIX41CclAYwBV3wS24tgqz4WbU1Kz4fU/s160/b90_699.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2vAfcN1vxo-vtvsUxrcHaRCk1el_Iq1Ha2KzOTVaxci0_AeUjgcnmdG7J9aaVnmbdz_AQraLF5cS1Z8oyLWnTrNnBuBJc__AI_VNsoGWQDEgUIX41CclAYwBV3wS24tgqz4WbU1Kz4fU/s320/b90_699.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2vAfcN1vxo-vtvsUxrcHaRCk1el_Iq1Ha2KzOTVaxci0_AeUjgcnmdG7J9aaVnmbdz_AQraLF5cS1Z8oyLWnTrNnBuBJc__AI_VNsoGWQDEgUIX41CclAYwBV3wS24tgqz4WbU1Kz4fU/s480/b90_699.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.699 - Novedades: Blues Pills, Clt Drp, Lucidvox, Naked Giants, Aua..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-232-glastonbury-2016.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s320/13528906_1296510453699928_874557075224996922_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s160/13528906_1296510453699928_874557075224996922_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s320/13528906_1296510453699928_874557075224996922_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s480/13528906_1296510453699928_874557075224996922_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s160/13528906_1296510453699928_874557075224996922_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s320/13528906_1296510453699928_874557075224996922_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_e2zkAzgTqm4ngD5krLy3p1j66b4fUwftDEZeL7gHM7KInGA0TXu8M78KFM-1Pafz7DEzz4-wcU8yeCP1ksmkOmcM0DlI5De38ktQ2vxFDnogG3Tz6e0vXBfsLOX9j684QjASCP36aVE/s480/13528906_1296510453699928_874557075224996922_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 232 - Glastonbury 2016"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/programa-219-ratm-pj-harvey-richard-ashcroft-prince-candlebox-dewolff.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s320/prince-performs-at-the-garden-2-2011.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s160/prince-performs-at-the-garden-2-2011.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s320/prince-performs-at-the-garden-2-2011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s480/prince-performs-at-the-garden-2-2011.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s160/prince-performs-at-the-garden-2-2011.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s320/prince-performs-at-the-garden-2-2011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWQcUca5HA6zB7GVY34hV2jxEsWZ2vhXhV7xFPNPfTkbXIYED1kL0d3X3wBrX54-rtvUdu06BUVVes_b3_qOVuIxqJy7FozjyVEAvB1L4KG6lp7j0XbriiW-BhcHm0XtCFMDXi8Bsz2qE/s480/prince-performs-at-the-garden-2-2011.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 219 - RATM PJ Harvey Richard Ashcroft Prince Candlebox Dewolff "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -180,8 +172,7 @@
         <a class="episode-cover-link" href="../episodios/programa-154-entrevista-a-felipe-sanz-de-la-rosa.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8MQDjfudwWEXPkT-n_aCroRTqvz1zc9YWX3jBHiYZ9VhoMg9-vX9vJNWph3b7Ja2I_j7g7UAPP5jJWC1J1dJBQv7jjPBfB3yAAKFY-_Le6wF5t9onIir4S_V3oIQ16iMCat0vxo_EmrA/s320/10432507_1001300726554237_4703616405740899365_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8MQDjfudwWEXPkT-n_aCroRTqvz1zc9YWX3jBHiYZ9VhoMg9-vX9vJNWph3b7Ja2I_j7g7UAPP5jJWC1J1dJBQv7jjPBfB3yAAKFY-_Le6wF5t9onIir4S_V3oIQ16iMCat0vxo_EmrA/s160/10432507_1001300726554237_4703616405740899365_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8MQDjfudwWEXPkT-n_aCroRTqvz1zc9YWX3jBHiYZ9VhoMg9-vX9vJNWph3b7Ja2I_j7g7UAPP5jJWC1J1dJBQv7jjPBfB3yAAKFY-_Le6wF5t9onIir4S_V3oIQ16iMCat0vxo_EmrA/s320/10432507_1001300726554237_4703616405740899365_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8MQDjfudwWEXPkT-n_aCroRTqvz1zc9YWX3jBHiYZ9VhoMg9-vX9vJNWph3b7Ja2I_j7g7UAPP5jJWC1J1dJBQv7jjPBfB3yAAKFY-_Le6wF5t9onIir4S_V3oIQ16iMCat0vxo_EmrA/s480/10432507_1001300726554237_4703616405740899365_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8MQDjfudwWEXPkT-n_aCroRTqvz1zc9YWX3jBHiYZ9VhoMg9-vX9vJNWph3b7Ja2I_j7g7UAPP5jJWC1J1dJBQv7jjPBfB3yAAKFY-_Le6wF5t9onIir4S_V3oIQ16iMCat0vxo_EmrA/s160/10432507_1001300726554237_4703616405740899365_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8MQDjfudwWEXPkT-n_aCroRTqvz1zc9YWX3jBHiYZ9VhoMg9-vX9vJNWph3b7Ja2I_j7g7UAPP5jJWC1J1dJBQv7jjPBfB3yAAKFY-_Le6wF5t9onIir4S_V3oIQ16iMCat0vxo_EmrA/s320/10432507_1001300726554237_4703616405740899365_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8MQDjfudwWEXPkT-n_aCroRTqvz1zc9YWX3jBHiYZ9VhoMg9-vX9vJNWph3b7Ja2I_j7g7UAPP5jJWC1J1dJBQv7jjPBfB3yAAKFY-_Le6wF5t9onIir4S_V3oIQ16iMCat0vxo_EmrA/s480/10432507_1001300726554237_4703616405740899365_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 154 - Entrevista a Felipe Sanz de la Rosa"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -194,8 +185,7 @@
         <a class="episode-cover-link" href="../episodios/b90-programa-77-el-cuervo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 77 - El Cuervo"
                 loading="lazy" width="320" height="213" />
         </a>

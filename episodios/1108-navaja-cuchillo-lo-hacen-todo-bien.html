@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>1108 - Navaja Cuchillo lo hacen todo bien — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -128,8 +128,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfW4zo8dFlQr4vE31Ea7WA_Xb7uZA5SMeW0ZyUUWZItiJh3kKaugIN-ZlQ_e8vV8tVmAnysOoHVK4QRbujwPJLmYWpUGqsH1ITUDeMWWp_tIgQyAJ26Hk4QSHp3OUgpc_6plK5oNIF0UQT5Azci4mWaGso_oE-9bKo9jNhSmqPbuG870AUIfwoqHhkrUc/s320/mcupload_65ca899a9a161.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfW4zo8dFlQr4vE31Ea7WA_Xb7uZA5SMeW0ZyUUWZItiJh3kKaugIN-ZlQ_e8vV8tVmAnysOoHVK4QRbujwPJLmYWpUGqsH1ITUDeMWWp_tIgQyAJ26Hk4QSHp3OUgpc_6plK5oNIF0UQT5Azci4mWaGso_oE-9bKo9jNhSmqPbuG870AUIfwoqHhkrUc/s160/mcupload_65ca899a9a161.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfW4zo8dFlQr4vE31Ea7WA_Xb7uZA5SMeW0ZyUUWZItiJh3kKaugIN-ZlQ_e8vV8tVmAnysOoHVK4QRbujwPJLmYWpUGqsH1ITUDeMWWp_tIgQyAJ26Hk4QSHp3OUgpc_6plK5oNIF0UQT5Azci4mWaGso_oE-9bKo9jNhSmqPbuG870AUIfwoqHhkrUc/s320/mcupload_65ca899a9a161.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfW4zo8dFlQr4vE31Ea7WA_Xb7uZA5SMeW0ZyUUWZItiJh3kKaugIN-ZlQ_e8vV8tVmAnysOoHVK4QRbujwPJLmYWpUGqsH1ITUDeMWWp_tIgQyAJ26Hk4QSHp3OUgpc_6plK5oNIF0UQT5Azci4mWaGso_oE-9bKo9jNhSmqPbuG870AUIfwoqHhkrUc/s480/mcupload_65ca899a9a161.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfW4zo8dFlQr4vE31Ea7WA_Xb7uZA5SMeW0ZyUUWZItiJh3kKaugIN-ZlQ_e8vV8tVmAnysOoHVK4QRbujwPJLmYWpUGqsH1ITUDeMWWp_tIgQyAJ26Hk4QSHp3OUgpc_6plK5oNIF0UQT5Azci4mWaGso_oE-9bKo9jNhSmqPbuG870AUIfwoqHhkrUc/s160/mcupload_65ca899a9a161.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfW4zo8dFlQr4vE31Ea7WA_Xb7uZA5SMeW0ZyUUWZItiJh3kKaugIN-ZlQ_e8vV8tVmAnysOoHVK4QRbujwPJLmYWpUGqsH1ITUDeMWWp_tIgQyAJ26Hk4QSHp3OUgpc_6plK5oNIF0UQT5Azci4mWaGso_oE-9bKo9jNhSmqPbuG870AUIfwoqHhkrUc/s320/mcupload_65ca899a9a161.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfW4zo8dFlQr4vE31Ea7WA_Xb7uZA5SMeW0ZyUUWZItiJh3kKaugIN-ZlQ_e8vV8tVmAnysOoHVK4QRbujwPJLmYWpUGqsH1ITUDeMWWp_tIgQyAJ26Hk4QSHp3OUgpc_6plK5oNIF0UQT5Azci4mWaGso_oE-9bKo9jNhSmqPbuG870AUIfwoqHhkrUc/s480/mcupload_65ca899a9a161.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.953 - Todo lo que necesitas saber sobre Dark Matter de Pearl Jam"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -139,8 +138,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiggVEeYblriaG9FuQZzVnetncqqZbTs6VweBGMdKLUCqB8A4ALNAxktDBL_1kZnsxsFTd2GtjkIYNcL82EJywuCKCFL6aELLbWRR5QPv27yJhclEa-asLtvce5eaUKGKjxdYNKUmDcfW0/s320/0162_053091_08_04.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiggVEeYblriaG9FuQZzVnetncqqZbTs6VweBGMdKLUCqB8A4ALNAxktDBL_1kZnsxsFTd2GtjkIYNcL82EJywuCKCFL6aELLbWRR5QPv27yJhclEa-asLtvce5eaUKGKjxdYNKUmDcfW0/s160/0162_053091_08_04.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiggVEeYblriaG9FuQZzVnetncqqZbTs6VweBGMdKLUCqB8A4ALNAxktDBL_1kZnsxsFTd2GtjkIYNcL82EJywuCKCFL6aELLbWRR5QPv27yJhclEa-asLtvce5eaUKGKjxdYNKUmDcfW0/s320/0162_053091_08_04.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiggVEeYblriaG9FuQZzVnetncqqZbTs6VweBGMdKLUCqB8A4ALNAxktDBL_1kZnsxsFTd2GtjkIYNcL82EJywuCKCFL6aELLbWRR5QPv27yJhclEa-asLtvce5eaUKGKjxdYNKUmDcfW0/s480/0162_053091_08_04.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiggVEeYblriaG9FuQZzVnetncqqZbTs6VweBGMdKLUCqB8A4ALNAxktDBL_1kZnsxsFTd2GtjkIYNcL82EJywuCKCFL6aELLbWRR5QPv27yJhclEa-asLtvce5eaUKGKjxdYNKUmDcfW0/s160/0162_053091_08_04.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiggVEeYblriaG9FuQZzVnetncqqZbTs6VweBGMdKLUCqB8A4ALNAxktDBL_1kZnsxsFTd2GtjkIYNcL82EJywuCKCFL6aELLbWRR5QPv27yJhclEa-asLtvce5eaUKGKjxdYNKUmDcfW0/s320/0162_053091_08_04.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiggVEeYblriaG9FuQZzVnetncqqZbTs6VweBGMdKLUCqB8A4ALNAxktDBL_1kZnsxsFTd2GtjkIYNcL82EJywuCKCFL6aELLbWRR5QPv27yJhclEa-asLtvce5eaUKGKjxdYNKUmDcfW0/s480/0162_053091_08_04.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.798 - Con Jane&#39;s Addiction empezó todo"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -150,8 +148,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu1td9E-jqItAocsCb1G7Db_J8ELkLRz1UiGOBMinaIiWfumSXC8ExFCxQQpq7H00Le7RyaDipXT9HZ9zSMn7WBpmibhbAkR2nDMiYefTG304oedEsJ6MaCoWUyGrtucb7jeewLnY34Po56q8sGeJHoOQIHoWt5PvH2xEsdbWe-ahmPteCWYXYACemeFk/s320/B90_1107.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu1td9E-jqItAocsCb1G7Db_J8ELkLRz1UiGOBMinaIiWfumSXC8ExFCxQQpq7H00Le7RyaDipXT9HZ9zSMn7WBpmibhbAkR2nDMiYefTG304oedEsJ6MaCoWUyGrtucb7jeewLnY34Po56q8sGeJHoOQIHoWt5PvH2xEsdbWe-ahmPteCWYXYACemeFk/s160/B90_1107.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu1td9E-jqItAocsCb1G7Db_J8ELkLRz1UiGOBMinaIiWfumSXC8ExFCxQQpq7H00Le7RyaDipXT9HZ9zSMn7WBpmibhbAkR2nDMiYefTG304oedEsJ6MaCoWUyGrtucb7jeewLnY34Po56q8sGeJHoOQIHoWt5PvH2xEsdbWe-ahmPteCWYXYACemeFk/s320/B90_1107.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu1td9E-jqItAocsCb1G7Db_J8ELkLRz1UiGOBMinaIiWfumSXC8ExFCxQQpq7H00Le7RyaDipXT9HZ9zSMn7WBpmibhbAkR2nDMiYefTG304oedEsJ6MaCoWUyGrtucb7jeewLnY34Po56q8sGeJHoOQIHoWt5PvH2xEsdbWe-ahmPteCWYXYACemeFk/s480/B90_1107.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu1td9E-jqItAocsCb1G7Db_J8ELkLRz1UiGOBMinaIiWfumSXC8ExFCxQQpq7H00Le7RyaDipXT9HZ9zSMn7WBpmibhbAkR2nDMiYefTG304oedEsJ6MaCoWUyGrtucb7jeewLnY34Po56q8sGeJHoOQIHoWt5PvH2xEsdbWe-ahmPteCWYXYACemeFk/s160/B90_1107.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu1td9E-jqItAocsCb1G7Db_J8ELkLRz1UiGOBMinaIiWfumSXC8ExFCxQQpq7H00Le7RyaDipXT9HZ9zSMn7WBpmibhbAkR2nDMiYefTG304oedEsJ6MaCoWUyGrtucb7jeewLnY34Po56q8sGeJHoOQIHoWt5PvH2xEsdbWe-ahmPteCWYXYACemeFk/s320/B90_1107.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu1td9E-jqItAocsCb1G7Db_J8ELkLRz1UiGOBMinaIiWfumSXC8ExFCxQQpq7H00Le7RyaDipXT9HZ9zSMn7WBpmibhbAkR2nDMiYefTG304oedEsJ6MaCoWUyGrtucb7jeewLnY34Po56q8sGeJHoOQIHoWt5PvH2xEsdbWe-ahmPteCWYXYACemeFk/s480/B90_1107.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1107 - Especial Megadeth &quot;Countdown to Extinction&quot; (Parte 3)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -167,8 +164,7 @@
         <a class="related-bottom-card" href="1109-noel-gallagher-mejor-compositor-en-los-brit-2026.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNEC4R1F1IS7pBbKKnAKXMo8-oFS2yIST0B3NWKbLbNJsfU1OoCmLLpdyLPtrxayzaWYsOuvrtOXZBW6tgfrI5w0MG8P12LXo84OZ_DZ0cCMlanMxGZ1iaOVB922RhtvkEc2nmtgaEnlt_oVaSNxD3cXbOoFc7Y2cprw8I6AAuUWoF5XXy_yLrtpEpbEU/s320/B90_1109.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNEC4R1F1IS7pBbKKnAKXMo8-oFS2yIST0B3NWKbLbNJsfU1OoCmLLpdyLPtrxayzaWYsOuvrtOXZBW6tgfrI5w0MG8P12LXo84OZ_DZ0cCMlanMxGZ1iaOVB922RhtvkEc2nmtgaEnlt_oVaSNxD3cXbOoFc7Y2cprw8I6AAuUWoF5XXy_yLrtpEpbEU/s320/B90_1109.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNEC4R1F1IS7pBbKKnAKXMo8-oFS2yIST0B3NWKbLbNJsfU1OoCmLLpdyLPtrxayzaWYsOuvrtOXZBW6tgfrI5w0MG8P12LXo84OZ_DZ0cCMlanMxGZ1iaOVB922RhtvkEc2nmtgaEnlt_oVaSNxD3cXbOoFc7Y2cprw8I6AAuUWoF5XXy_yLrtpEpbEU/s480/B90_1109.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNEC4R1F1IS7pBbKKnAKXMo8-oFS2yIST0B3NWKbLbNJsfU1OoCmLLpdyLPtrxayzaWYsOuvrtOXZBW6tgfrI5w0MG8P12LXo84OZ_DZ0cCMlanMxGZ1iaOVB922RhtvkEc2nmtgaEnlt_oVaSNxD3cXbOoFc7Y2cprw8I6AAuUWoF5XXy_yLrtpEpbEU/s640/B90_1109.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNEC4R1F1IS7pBbKKnAKXMo8-oFS2yIST0B3NWKbLbNJsfU1OoCmLLpdyLPtrxayzaWYsOuvrtOXZBW6tgfrI5w0MG8P12LXo84OZ_DZ0cCMlanMxGZ1iaOVB922RhtvkEc2nmtgaEnlt_oVaSNxD3cXbOoFc7Y2cprw8I6AAuUWoF5XXy_yLrtpEpbEU/s320/B90_1109.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNEC4R1F1IS7pBbKKnAKXMo8-oFS2yIST0B3NWKbLbNJsfU1OoCmLLpdyLPtrxayzaWYsOuvrtOXZBW6tgfrI5w0MG8P12LXo84OZ_DZ0cCMlanMxGZ1iaOVB922RhtvkEc2nmtgaEnlt_oVaSNxD3cXbOoFc7Y2cprw8I6AAuUWoF5XXy_yLrtpEpbEU/s480/B90_1109.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNEC4R1F1IS7pBbKKnAKXMo8-oFS2yIST0B3NWKbLbNJsfU1OoCmLLpdyLPtrxayzaWYsOuvrtOXZBW6tgfrI5w0MG8P12LXo84OZ_DZ0cCMlanMxGZ1iaOVB922RhtvkEc2nmtgaEnlt_oVaSNxD3cXbOoFc7Y2cprw8I6AAuUWoF5XXy_yLrtpEpbEU/s640/B90_1109.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1109 - Noel Gallagher, mejor compositor en los BRIT 2026"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -179,8 +175,7 @@
           </a><a class="related-bottom-card" href="1106-20-anos-de-trayectoria-la-historia-de-red-apple.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp9QFvE6Im13Ry5Yo24NvX7vK-myfF5YepPTUQPgsT-Y0aPDp6nB_pK_0e6-vNjjxJ3HjKjZFvaBnZwAoeh7gm-7BwfFOLzQ3ky8ujvDWxIF4XbW0W_bcI7jpAb5fPMRoWNnpzFwV0vOWmfvy9zzMnledQFvfo6VO9WFlhdprMHTyhIWwEt8Gk2GtE0gU/s320/B90_1106.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp9QFvE6Im13Ry5Yo24NvX7vK-myfF5YepPTUQPgsT-Y0aPDp6nB_pK_0e6-vNjjxJ3HjKjZFvaBnZwAoeh7gm-7BwfFOLzQ3ky8ujvDWxIF4XbW0W_bcI7jpAb5fPMRoWNnpzFwV0vOWmfvy9zzMnledQFvfo6VO9WFlhdprMHTyhIWwEt8Gk2GtE0gU/s320/B90_1106.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp9QFvE6Im13Ry5Yo24NvX7vK-myfF5YepPTUQPgsT-Y0aPDp6nB_pK_0e6-vNjjxJ3HjKjZFvaBnZwAoeh7gm-7BwfFOLzQ3ky8ujvDWxIF4XbW0W_bcI7jpAb5fPMRoWNnpzFwV0vOWmfvy9zzMnledQFvfo6VO9WFlhdprMHTyhIWwEt8Gk2GtE0gU/s480/B90_1106.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp9QFvE6Im13Ry5Yo24NvX7vK-myfF5YepPTUQPgsT-Y0aPDp6nB_pK_0e6-vNjjxJ3HjKjZFvaBnZwAoeh7gm-7BwfFOLzQ3ky8ujvDWxIF4XbW0W_bcI7jpAb5fPMRoWNnpzFwV0vOWmfvy9zzMnledQFvfo6VO9WFlhdprMHTyhIWwEt8Gk2GtE0gU/s640/B90_1106.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp9QFvE6Im13Ry5Yo24NvX7vK-myfF5YepPTUQPgsT-Y0aPDp6nB_pK_0e6-vNjjxJ3HjKjZFvaBnZwAoeh7gm-7BwfFOLzQ3ky8ujvDWxIF4XbW0W_bcI7jpAb5fPMRoWNnpzFwV0vOWmfvy9zzMnledQFvfo6VO9WFlhdprMHTyhIWwEt8Gk2GtE0gU/s320/B90_1106.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp9QFvE6Im13Ry5Yo24NvX7vK-myfF5YepPTUQPgsT-Y0aPDp6nB_pK_0e6-vNjjxJ3HjKjZFvaBnZwAoeh7gm-7BwfFOLzQ3ky8ujvDWxIF4XbW0W_bcI7jpAb5fPMRoWNnpzFwV0vOWmfvy9zzMnledQFvfo6VO9WFlhdprMHTyhIWwEt8Gk2GtE0gU/s480/B90_1106.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp9QFvE6Im13Ry5Yo24NvX7vK-myfF5YepPTUQPgsT-Y0aPDp6nB_pK_0e6-vNjjxJ3HjKjZFvaBnZwAoeh7gm-7BwfFOLzQ3ky8ujvDWxIF4XbW0W_bcI7jpAb5fPMRoWNnpzFwV0vOWmfvy9zzMnledQFvfo6VO9WFlhdprMHTyhIWwEt8Gk2GtE0gU/s640/B90_1106.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1106 - 20 años de trayectoria: La historia de Red Apple"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -191,8 +186,7 @@
           </a><a class="related-bottom-card" href="1110-programa-en-directo-con-the-wasted-garage-en-valencia.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYWDBrrC5dfmrWcb77a2w46axpB9R2AY_h6Yz_O0r263wb7gTj_xx0WD85TshajEejdmQv87dYYJzv1N2qrjYwlVyMqRpXXROCdjca56eQtyEUuryqBKPZ-GiYKZwxulOhvStPQwxqYFCjupVfzkSE7yRlTxZ4nu0_0PVZGFE8DwD2kzimaqMAy7x-X0E/s320/B90_1110.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYWDBrrC5dfmrWcb77a2w46axpB9R2AY_h6Yz_O0r263wb7gTj_xx0WD85TshajEejdmQv87dYYJzv1N2qrjYwlVyMqRpXXROCdjca56eQtyEUuryqBKPZ-GiYKZwxulOhvStPQwxqYFCjupVfzkSE7yRlTxZ4nu0_0PVZGFE8DwD2kzimaqMAy7x-X0E/s320/B90_1110.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYWDBrrC5dfmrWcb77a2w46axpB9R2AY_h6Yz_O0r263wb7gTj_xx0WD85TshajEejdmQv87dYYJzv1N2qrjYwlVyMqRpXXROCdjca56eQtyEUuryqBKPZ-GiYKZwxulOhvStPQwxqYFCjupVfzkSE7yRlTxZ4nu0_0PVZGFE8DwD2kzimaqMAy7x-X0E/s480/B90_1110.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYWDBrrC5dfmrWcb77a2w46axpB9R2AY_h6Yz_O0r263wb7gTj_xx0WD85TshajEejdmQv87dYYJzv1N2qrjYwlVyMqRpXXROCdjca56eQtyEUuryqBKPZ-GiYKZwxulOhvStPQwxqYFCjupVfzkSE7yRlTxZ4nu0_0PVZGFE8DwD2kzimaqMAy7x-X0E/s640/B90_1110.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYWDBrrC5dfmrWcb77a2w46axpB9R2AY_h6Yz_O0r263wb7gTj_xx0WD85TshajEejdmQv87dYYJzv1N2qrjYwlVyMqRpXXROCdjca56eQtyEUuryqBKPZ-GiYKZwxulOhvStPQwxqYFCjupVfzkSE7yRlTxZ4nu0_0PVZGFE8DwD2kzimaqMAy7x-X0E/s320/B90_1110.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYWDBrrC5dfmrWcb77a2w46axpB9R2AY_h6Yz_O0r263wb7gTj_xx0WD85TshajEejdmQv87dYYJzv1N2qrjYwlVyMqRpXXROCdjca56eQtyEUuryqBKPZ-GiYKZwxulOhvStPQwxqYFCjupVfzkSE7yRlTxZ4nu0_0PVZGFE8DwD2kzimaqMAy7x-X0E/s480/B90_1110.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYWDBrrC5dfmrWcb77a2w46axpB9R2AY_h6Yz_O0r263wb7gTj_xx0WD85TshajEejdmQv87dYYJzv1N2qrjYwlVyMqRpXXROCdjca56eQtyEUuryqBKPZ-GiYKZwxulOhvStPQwxqYFCjupVfzkSE7yRlTxZ4nu0_0PVZGFE8DwD2kzimaqMAy7x-X0E/s640/B90_1110.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1110 - Programa en directo con The Wasted Garage en Valencia"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

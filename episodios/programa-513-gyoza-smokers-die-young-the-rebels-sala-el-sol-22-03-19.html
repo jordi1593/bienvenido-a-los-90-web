@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 513 - GYOZA + SMOKERS DIE YOUNG + THE REBELS (SALA EL SOL 22/03/19) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -161,8 +161,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisXXTqHiNarGONv3euZGJoiqO9djYtN0XzPlrWjxMo4E-Onky9GYmuIXEJ0Lr2KBS52vbeVaRNEOKxPYSZ-dIeo0Di2LMwKADuN6dv1OLljZc-DsF1GO_xkvXCnCAmZRacpaWOUO4tBPE/s320/18813605_1931483377069895_5947448029030916208_n.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisXXTqHiNarGONv3euZGJoiqO9djYtN0XzPlrWjxMo4E-Onky9GYmuIXEJ0Lr2KBS52vbeVaRNEOKxPYSZ-dIeo0Di2LMwKADuN6dv1OLljZc-DsF1GO_xkvXCnCAmZRacpaWOUO4tBPE/s160/18813605_1931483377069895_5947448029030916208_n.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisXXTqHiNarGONv3euZGJoiqO9djYtN0XzPlrWjxMo4E-Onky9GYmuIXEJ0Lr2KBS52vbeVaRNEOKxPYSZ-dIeo0Di2LMwKADuN6dv1OLljZc-DsF1GO_xkvXCnCAmZRacpaWOUO4tBPE/s320/18813605_1931483377069895_5947448029030916208_n.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisXXTqHiNarGONv3euZGJoiqO9djYtN0XzPlrWjxMo4E-Onky9GYmuIXEJ0Lr2KBS52vbeVaRNEOKxPYSZ-dIeo0Di2LMwKADuN6dv1OLljZc-DsF1GO_xkvXCnCAmZRacpaWOUO4tBPE/s480/18813605_1931483377069895_5947448029030916208_n.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisXXTqHiNarGONv3euZGJoiqO9djYtN0XzPlrWjxMo4E-Onky9GYmuIXEJ0Lr2KBS52vbeVaRNEOKxPYSZ-dIeo0Di2LMwKADuN6dv1OLljZc-DsF1GO_xkvXCnCAmZRacpaWOUO4tBPE/s160/18813605_1931483377069895_5947448029030916208_n.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisXXTqHiNarGONv3euZGJoiqO9djYtN0XzPlrWjxMo4E-Onky9GYmuIXEJ0Lr2KBS52vbeVaRNEOKxPYSZ-dIeo0Di2LMwKADuN6dv1OLljZc-DsF1GO_xkvXCnCAmZRacpaWOUO4tBPE/s320/18813605_1931483377069895_5947448029030916208_n.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisXXTqHiNarGONv3euZGJoiqO9djYtN0XzPlrWjxMo4E-Onky9GYmuIXEJ0Lr2KBS52vbeVaRNEOKxPYSZ-dIeo0Di2LMwKADuN6dv1OLljZc-DsF1GO_xkvXCnCAmZRacpaWOUO4tBPE/s480/18813605_1931483377069895_5947448029030916208_n.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 402 - The Rebels, Red Fox Music y el underground"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -172,8 +171,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyWpw2ZY0EpSdvK0oDBDU1SqKYn3HuQ6wXkwR1ljT_wUf5I4Hnni4MfN9m1coW53D8YrL6BHxVfA2DUSS40iVoXTX4knYg2CFutuEjWv2vLjpwHn7nh1R3639atBM2bEgzBGoOnzDbQ7I/s320/22894076_2011204395764459_6524780996408785058_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyWpw2ZY0EpSdvK0oDBDU1SqKYn3HuQ6wXkwR1ljT_wUf5I4Hnni4MfN9m1coW53D8YrL6BHxVfA2DUSS40iVoXTX4knYg2CFutuEjWv2vLjpwHn7nh1R3639atBM2bEgzBGoOnzDbQ7I/s160/22894076_2011204395764459_6524780996408785058_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyWpw2ZY0EpSdvK0oDBDU1SqKYn3HuQ6wXkwR1ljT_wUf5I4Hnni4MfN9m1coW53D8YrL6BHxVfA2DUSS40iVoXTX4knYg2CFutuEjWv2vLjpwHn7nh1R3639atBM2bEgzBGoOnzDbQ7I/s320/22894076_2011204395764459_6524780996408785058_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyWpw2ZY0EpSdvK0oDBDU1SqKYn3HuQ6wXkwR1ljT_wUf5I4Hnni4MfN9m1coW53D8YrL6BHxVfA2DUSS40iVoXTX4knYg2CFutuEjWv2vLjpwHn7nh1R3639atBM2bEgzBGoOnzDbQ7I/s480/22894076_2011204395764459_6524780996408785058_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyWpw2ZY0EpSdvK0oDBDU1SqKYn3HuQ6wXkwR1ljT_wUf5I4Hnni4MfN9m1coW53D8YrL6BHxVfA2DUSS40iVoXTX4knYg2CFutuEjWv2vLjpwHn7nh1R3639atBM2bEgzBGoOnzDbQ7I/s160/22894076_2011204395764459_6524780996408785058_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyWpw2ZY0EpSdvK0oDBDU1SqKYn3HuQ6wXkwR1ljT_wUf5I4Hnni4MfN9m1coW53D8YrL6BHxVfA2DUSS40iVoXTX4knYg2CFutuEjWv2vLjpwHn7nh1R3639atBM2bEgzBGoOnzDbQ7I/s320/22894076_2011204395764459_6524780996408785058_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyWpw2ZY0EpSdvK0oDBDU1SqKYn3HuQ6wXkwR1ljT_wUf5I4Hnni4MfN9m1coW53D8YrL6BHxVfA2DUSS40iVoXTX4knYg2CFutuEjWv2vLjpwHn7nh1R3639atBM2bEgzBGoOnzDbQ7I/s480/22894076_2011204395764459_6524780996408785058_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 303 - Smokers Die Young + The Rebels + Bluestain"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -183,8 +181,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s320/572A+Havalina.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s160/572A+Havalina.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s320/572A+Havalina.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s480/572A+Havalina.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s160/572A+Havalina.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s320/572A+Havalina.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s480/572A+Havalina.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.578 - Havalina en directo (Sala El Sol 6/11/2019)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -200,8 +197,7 @@
         <a class="related-bottom-card" href="programa-508-pasajero-en-directo-el-sol-14-02-2019.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s320/b90_508.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s320/b90_508.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s480/b90_508.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s640/b90_508.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s320/b90_508.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s480/b90_508.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s640/b90_508.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 508 - Pasajero en directo (El Sol 14/02/2019)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -212,8 +208,7 @@
           </a><a class="related-bottom-card" href="programa-570-la-sala-el-sol-cumple-40-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s320/b90_570.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s320/b90_570.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s480/b90_570.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s640/b90_570.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s320/b90_570.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s480/b90_570.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s640/b90_570.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 570 - La sala EL SOL cumple 40 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -224,8 +219,7 @@
           </a><a class="related-bottom-card" href="p-615-hablamos-con-el-meister-manuel-cabezali-sala-el-sol-ecos-del-vinilo-y-tuch.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgSDX2bbkivr3MgHoHxZ1NnhT9xMMz6Lob-I2j_VpO3jSNrR-xSe_7t2vK1kaLS6TWbkt0NNOM3N4w6BkMLy5ANtVc_uh8zsI5PR-0UorHddAf1nq07qIHjeWt-79WpNGNxtPC9GwYd54/s320/12374912_10153904092293939_3661651486922871011_o.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgSDX2bbkivr3MgHoHxZ1NnhT9xMMz6Lob-I2j_VpO3jSNrR-xSe_7t2vK1kaLS6TWbkt0NNOM3N4w6BkMLy5ANtVc_uh8zsI5PR-0UorHddAf1nq07qIHjeWt-79WpNGNxtPC9GwYd54/s320/12374912_10153904092293939_3661651486922871011_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgSDX2bbkivr3MgHoHxZ1NnhT9xMMz6Lob-I2j_VpO3jSNrR-xSe_7t2vK1kaLS6TWbkt0NNOM3N4w6BkMLy5ANtVc_uh8zsI5PR-0UorHddAf1nq07qIHjeWt-79WpNGNxtPC9GwYd54/s480/12374912_10153904092293939_3661651486922871011_o.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgSDX2bbkivr3MgHoHxZ1NnhT9xMMz6Lob-I2j_VpO3jSNrR-xSe_7t2vK1kaLS6TWbkt0NNOM3N4w6BkMLy5ANtVc_uh8zsI5PR-0UorHddAf1nq07qIHjeWt-79WpNGNxtPC9GwYd54/s640/12374912_10153904092293939_3661651486922871011_o.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgSDX2bbkivr3MgHoHxZ1NnhT9xMMz6Lob-I2j_VpO3jSNrR-xSe_7t2vK1kaLS6TWbkt0NNOM3N4w6BkMLy5ANtVc_uh8zsI5PR-0UorHddAf1nq07qIHjeWt-79WpNGNxtPC9GwYd54/s320/12374912_10153904092293939_3661651486922871011_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgSDX2bbkivr3MgHoHxZ1NnhT9xMMz6Lob-I2j_VpO3jSNrR-xSe_7t2vK1kaLS6TWbkt0NNOM3N4w6BkMLy5ANtVc_uh8zsI5PR-0UorHddAf1nq07qIHjeWt-79WpNGNxtPC9GwYd54/s480/12374912_10153904092293939_3661651486922871011_o.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgSDX2bbkivr3MgHoHxZ1NnhT9xMMz6Lob-I2j_VpO3jSNrR-xSe_7t2vK1kaLS6TWbkt0NNOM3N4w6BkMLy5ANtVc_uh8zsI5PR-0UorHddAf1nq07qIHjeWt-79WpNGNxtPC9GwYd54/s640/12374912_10153904092293939_3661651486922871011_o.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.615 - Hablamos con El Meister, Manuel Cabezalí, Sala El Sol, Ecos del Vinilo y Tucho sobre el COVID-19"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

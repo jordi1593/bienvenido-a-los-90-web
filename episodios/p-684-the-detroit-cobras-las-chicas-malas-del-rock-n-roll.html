@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.684 - The Detroit Cobras, las chicas malas del rock &#39;n&#39; roll — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s320/b90_475.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s160/b90_475.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s320/b90_475.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s480/b90_475.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s160/b90_475.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s320/b90_475.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s480/b90_475.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 475 - La Navidad y el Rock &amp; Roll"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEine3fxoUIa-CFdd3KfQ6BhAovZdkv0FRPvHcgdwCdsbKInjiTMg5yHDY3oXoxk-bywMUEvS4FkRrk6hsfLf9MYeoodugo3hQltCx4zoDTMJTF0rrrjFtCI7E-WQmgErNu5vDWxeBr7e5U/s320/GettyImages-666022010-Pearl-Jam-Hall-of-fame-920x598.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEine3fxoUIa-CFdd3KfQ6BhAovZdkv0FRPvHcgdwCdsbKInjiTMg5yHDY3oXoxk-bywMUEvS4FkRrk6hsfLf9MYeoodugo3hQltCx4zoDTMJTF0rrrjFtCI7E-WQmgErNu5vDWxeBr7e5U/s160/GettyImages-666022010-Pearl-Jam-Hall-of-fame-920x598.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEine3fxoUIa-CFdd3KfQ6BhAovZdkv0FRPvHcgdwCdsbKInjiTMg5yHDY3oXoxk-bywMUEvS4FkRrk6hsfLf9MYeoodugo3hQltCx4zoDTMJTF0rrrjFtCI7E-WQmgErNu5vDWxeBr7e5U/s320/GettyImages-666022010-Pearl-Jam-Hall-of-fame-920x598.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEine3fxoUIa-CFdd3KfQ6BhAovZdkv0FRPvHcgdwCdsbKInjiTMg5yHDY3oXoxk-bywMUEvS4FkRrk6hsfLf9MYeoodugo3hQltCx4zoDTMJTF0rrrjFtCI7E-WQmgErNu5vDWxeBr7e5U/s480/GettyImages-666022010-Pearl-Jam-Hall-of-fame-920x598.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEine3fxoUIa-CFdd3KfQ6BhAovZdkv0FRPvHcgdwCdsbKInjiTMg5yHDY3oXoxk-bywMUEvS4FkRrk6hsfLf9MYeoodugo3hQltCx4zoDTMJTF0rrrjFtCI7E-WQmgErNu5vDWxeBr7e5U/s160/GettyImages-666022010-Pearl-Jam-Hall-of-fame-920x598.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEine3fxoUIa-CFdd3KfQ6BhAovZdkv0FRPvHcgdwCdsbKInjiTMg5yHDY3oXoxk-bywMUEvS4FkRrk6hsfLf9MYeoodugo3hQltCx4zoDTMJTF0rrrjFtCI7E-WQmgErNu5vDWxeBr7e5U/s320/GettyImages-666022010-Pearl-Jam-Hall-of-fame-920x598.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEine3fxoUIa-CFdd3KfQ6BhAovZdkv0FRPvHcgdwCdsbKInjiTMg5yHDY3oXoxk-bywMUEvS4FkRrk6hsfLf9MYeoodugo3hQltCx4zoDTMJTF0rrrjFtCI7E-WQmgErNu5vDWxeBr7e5U/s480/GettyImages-666022010-Pearl-Jam-Hall-of-fame-920x598.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 273 - Pearl Jam entran en el Rock &amp; Roll Hall of Fame"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihR-mdZamx9jZOZbxImUaMc4RwrztYSk_HVzkV0zhPeGVVYQ2GfBG1NG0As2RtZ4iqTUZse3V7_MdsKGZ6g-0GIJeJ5Tnv5QphnBD6PW663Lx2qPDiBtehLGBALJU3UIWjX0-XLwtcSoY/s320/IMG_20160929_205925.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihR-mdZamx9jZOZbxImUaMc4RwrztYSk_HVzkV0zhPeGVVYQ2GfBG1NG0As2RtZ4iqTUZse3V7_MdsKGZ6g-0GIJeJ5Tnv5QphnBD6PW663Lx2qPDiBtehLGBALJU3UIWjX0-XLwtcSoY/s160/IMG_20160929_205925.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihR-mdZamx9jZOZbxImUaMc4RwrztYSk_HVzkV0zhPeGVVYQ2GfBG1NG0As2RtZ4iqTUZse3V7_MdsKGZ6g-0GIJeJ5Tnv5QphnBD6PW663Lx2qPDiBtehLGBALJU3UIWjX0-XLwtcSoY/s320/IMG_20160929_205925.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihR-mdZamx9jZOZbxImUaMc4RwrztYSk_HVzkV0zhPeGVVYQ2GfBG1NG0As2RtZ4iqTUZse3V7_MdsKGZ6g-0GIJeJ5Tnv5QphnBD6PW663Lx2qPDiBtehLGBALJU3UIWjX0-XLwtcSoY/s480/IMG_20160929_205925.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihR-mdZamx9jZOZbxImUaMc4RwrztYSk_HVzkV0zhPeGVVYQ2GfBG1NG0As2RtZ4iqTUZse3V7_MdsKGZ6g-0GIJeJ5Tnv5QphnBD6PW663Lx2qPDiBtehLGBALJU3UIWjX0-XLwtcSoY/s160/IMG_20160929_205925.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihR-mdZamx9jZOZbxImUaMc4RwrztYSk_HVzkV0zhPeGVVYQ2GfBG1NG0As2RtZ4iqTUZse3V7_MdsKGZ6g-0GIJeJ5Tnv5QphnBD6PW663Lx2qPDiBtehLGBALJU3UIWjX0-XLwtcSoY/s320/IMG_20160929_205925.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihR-mdZamx9jZOZbxImUaMc4RwrztYSk_HVzkV0zhPeGVVYQ2GfBG1NG0As2RtZ4iqTUZse3V7_MdsKGZ6g-0GIJeJ5Tnv5QphnBD6PW663Lx2qPDiBtehLGBALJU3UIWjX0-XLwtcSoY/s480/IMG_20160929_205925.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 242 - Drogas y Rock &amp; Roll"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="1082-soundgarden-ingresan-en-el-rock-roll-hall-of-fame.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMdiPqIRc55IEjFYM_f6OKJbLwiO9nK_mdI7ANpIMhvBcH3e1HpJE6zJ5iRHjkaD6RMdWtqIOfApYvvfhlPIiSHnJoGgRYelsG-ArL415O2aHj1xSgYkDt0pZDIksqMATwK9MPQwGGVcNnE-rZAswzTcKEoQRUAOxG8NmBLi286C7GI-2okTJIuL18E1o/s320/B90_1082.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMdiPqIRc55IEjFYM_f6OKJbLwiO9nK_mdI7ANpIMhvBcH3e1HpJE6zJ5iRHjkaD6RMdWtqIOfApYvvfhlPIiSHnJoGgRYelsG-ArL415O2aHj1xSgYkDt0pZDIksqMATwK9MPQwGGVcNnE-rZAswzTcKEoQRUAOxG8NmBLi286C7GI-2okTJIuL18E1o/s320/B90_1082.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMdiPqIRc55IEjFYM_f6OKJbLwiO9nK_mdI7ANpIMhvBcH3e1HpJE6zJ5iRHjkaD6RMdWtqIOfApYvvfhlPIiSHnJoGgRYelsG-ArL415O2aHj1xSgYkDt0pZDIksqMATwK9MPQwGGVcNnE-rZAswzTcKEoQRUAOxG8NmBLi286C7GI-2okTJIuL18E1o/s480/B90_1082.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMdiPqIRc55IEjFYM_f6OKJbLwiO9nK_mdI7ANpIMhvBcH3e1HpJE6zJ5iRHjkaD6RMdWtqIOfApYvvfhlPIiSHnJoGgRYelsG-ArL415O2aHj1xSgYkDt0pZDIksqMATwK9MPQwGGVcNnE-rZAswzTcKEoQRUAOxG8NmBLi286C7GI-2okTJIuL18E1o/s640/B90_1082.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMdiPqIRc55IEjFYM_f6OKJbLwiO9nK_mdI7ANpIMhvBcH3e1HpJE6zJ5iRHjkaD6RMdWtqIOfApYvvfhlPIiSHnJoGgRYelsG-ArL415O2aHj1xSgYkDt0pZDIksqMATwK9MPQwGGVcNnE-rZAswzTcKEoQRUAOxG8NmBLi286C7GI-2okTJIuL18E1o/s320/B90_1082.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMdiPqIRc55IEjFYM_f6OKJbLwiO9nK_mdI7ANpIMhvBcH3e1HpJE6zJ5iRHjkaD6RMdWtqIOfApYvvfhlPIiSHnJoGgRYelsG-ArL415O2aHj1xSgYkDt0pZDIksqMATwK9MPQwGGVcNnE-rZAswzTcKEoQRUAOxG8NmBLi286C7GI-2okTJIuL18E1o/s480/B90_1082.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMdiPqIRc55IEjFYM_f6OKJbLwiO9nK_mdI7ANpIMhvBcH3e1HpJE6zJ5iRHjkaD6RMdWtqIOfApYvvfhlPIiSHnJoGgRYelsG-ArL415O2aHj1xSgYkDt0pZDIksqMATwK9MPQwGGVcNnE-rZAswzTcKEoQRUAOxG8NmBLi286C7GI-2okTJIuL18E1o/s640/B90_1082.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1082 - Soundgarden ingresan en el Rock &amp; Roll Hall of Fame"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="p-686-l7-smell-the-magic-cumple-30-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbcL_5_3tJwySFJpiqdNUP4kdMowBxrwJpj8ln0d6YUhb51YbCzWVbu841S8pKkYHi3_JV0eT0Sk_9yGEFkGpElC1P1nYqU6bFtcFQDNIZDL1ebr_QROv4sKo4apUx98vilaDiqXke3T0/s320/R-419846-1150544748.jpeg.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbcL_5_3tJwySFJpiqdNUP4kdMowBxrwJpj8ln0d6YUhb51YbCzWVbu841S8pKkYHi3_JV0eT0Sk_9yGEFkGpElC1P1nYqU6bFtcFQDNIZDL1ebr_QROv4sKo4apUx98vilaDiqXke3T0/s320/R-419846-1150544748.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbcL_5_3tJwySFJpiqdNUP4kdMowBxrwJpj8ln0d6YUhb51YbCzWVbu841S8pKkYHi3_JV0eT0Sk_9yGEFkGpElC1P1nYqU6bFtcFQDNIZDL1ebr_QROv4sKo4apUx98vilaDiqXke3T0/s480/R-419846-1150544748.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbcL_5_3tJwySFJpiqdNUP4kdMowBxrwJpj8ln0d6YUhb51YbCzWVbu841S8pKkYHi3_JV0eT0Sk_9yGEFkGpElC1P1nYqU6bFtcFQDNIZDL1ebr_QROv4sKo4apUx98vilaDiqXke3T0/s640/R-419846-1150544748.jpeg.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbcL_5_3tJwySFJpiqdNUP4kdMowBxrwJpj8ln0d6YUhb51YbCzWVbu841S8pKkYHi3_JV0eT0Sk_9yGEFkGpElC1P1nYqU6bFtcFQDNIZDL1ebr_QROv4sKo4apUx98vilaDiqXke3T0/s320/R-419846-1150544748.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbcL_5_3tJwySFJpiqdNUP4kdMowBxrwJpj8ln0d6YUhb51YbCzWVbu841S8pKkYHi3_JV0eT0Sk_9yGEFkGpElC1P1nYqU6bFtcFQDNIZDL1ebr_QROv4sKo4apUx98vilaDiqXke3T0/s480/R-419846-1150544748.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbcL_5_3tJwySFJpiqdNUP4kdMowBxrwJpj8ln0d6YUhb51YbCzWVbu841S8pKkYHi3_JV0eT0Sk_9yGEFkGpElC1P1nYqU6bFtcFQDNIZDL1ebr_QROv4sKo4apUx98vilaDiqXke3T0/s640/R-419846-1150544748.jpeg.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.686 - L7 - Smell The Magic cumple 30 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="p-689-oasis-25-anos-de-what-s-the-story-morning-glory.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s320/-hnDCirw.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s320/-hnDCirw.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s480/-hnDCirw.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s640/-hnDCirw.jpeg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s320/-hnDCirw.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s480/-hnDCirw.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s640/-hnDCirw.jpeg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.689 - Oasis, 25 años de (What&#39;s the story) Morning Glory?"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

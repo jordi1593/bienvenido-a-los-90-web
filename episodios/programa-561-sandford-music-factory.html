@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 561: SANDFORD MUSIC FACTORY  — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -135,8 +135,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmrQeOlfpBAvlZfkOTyZVh-dsnBhVZRtD8cSsDbehV0ORXQtOXBiHSDjvYHcFfSK8DHTtmEe2KJY6a_cffSQkMPFydmaZTLZ9e75qjCVgaFOJfXZWyftM-jfVVch3AnuAdyDf5UooTJfM/s320/b90_497.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmrQeOlfpBAvlZfkOTyZVh-dsnBhVZRtD8cSsDbehV0ORXQtOXBiHSDjvYHcFfSK8DHTtmEe2KJY6a_cffSQkMPFydmaZTLZ9e75qjCVgaFOJfXZWyftM-jfVVch3AnuAdyDf5UooTJfM/s160/b90_497.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmrQeOlfpBAvlZfkOTyZVh-dsnBhVZRtD8cSsDbehV0ORXQtOXBiHSDjvYHcFfSK8DHTtmEe2KJY6a_cffSQkMPFydmaZTLZ9e75qjCVgaFOJfXZWyftM-jfVVch3AnuAdyDf5UooTJfM/s320/b90_497.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmrQeOlfpBAvlZfkOTyZVh-dsnBhVZRtD8cSsDbehV0ORXQtOXBiHSDjvYHcFfSK8DHTtmEe2KJY6a_cffSQkMPFydmaZTLZ9e75qjCVgaFOJfXZWyftM-jfVVch3AnuAdyDf5UooTJfM/s480/b90_497.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmrQeOlfpBAvlZfkOTyZVh-dsnBhVZRtD8cSsDbehV0ORXQtOXBiHSDjvYHcFfSK8DHTtmEe2KJY6a_cffSQkMPFydmaZTLZ9e75qjCVgaFOJfXZWyftM-jfVVch3AnuAdyDf5UooTJfM/s160/b90_497.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmrQeOlfpBAvlZfkOTyZVh-dsnBhVZRtD8cSsDbehV0ORXQtOXBiHSDjvYHcFfSK8DHTtmEe2KJY6a_cffSQkMPFydmaZTLZ9e75qjCVgaFOJfXZWyftM-jfVVch3AnuAdyDf5UooTJfM/s320/b90_497.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmrQeOlfpBAvlZfkOTyZVh-dsnBhVZRtD8cSsDbehV0ORXQtOXBiHSDjvYHcFfSK8DHTtmEe2KJY6a_cffSQkMPFydmaZTLZ9e75qjCVgaFOJfXZWyftM-jfVVch3AnuAdyDf5UooTJfM/s480/b90_497.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 497 - SANDFORD MUSIC FACTORY"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -146,8 +145,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhrmOnRgxkrE-85LgOb3IvRQXWJHTLKp74Z1F3TeIky-6-Wgio7dlmi3wKCQxnYVvIenbJxUBvxqHc7PBJJRcxdnXaK4Rs_LXgw5qapvrD17FtpEk0_jxcRhqCFPYwNIZqbDQzOGLbmz4VxgSY3j6bIdv9VJ7DTgX3KR5njNPPh9UygCTy30yOYinTGfU/s320/bienvenido90%20(2).jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhrmOnRgxkrE-85LgOb3IvRQXWJHTLKp74Z1F3TeIky-6-Wgio7dlmi3wKCQxnYVvIenbJxUBvxqHc7PBJJRcxdnXaK4Rs_LXgw5qapvrD17FtpEk0_jxcRhqCFPYwNIZqbDQzOGLbmz4VxgSY3j6bIdv9VJ7DTgX3KR5njNPPh9UygCTy30yOYinTGfU/s160/bienvenido90%20(2).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhrmOnRgxkrE-85LgOb3IvRQXWJHTLKp74Z1F3TeIky-6-Wgio7dlmi3wKCQxnYVvIenbJxUBvxqHc7PBJJRcxdnXaK4Rs_LXgw5qapvrD17FtpEk0_jxcRhqCFPYwNIZqbDQzOGLbmz4VxgSY3j6bIdv9VJ7DTgX3KR5njNPPh9UygCTy30yOYinTGfU/s320/bienvenido90%20(2).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhrmOnRgxkrE-85LgOb3IvRQXWJHTLKp74Z1F3TeIky-6-Wgio7dlmi3wKCQxnYVvIenbJxUBvxqHc7PBJJRcxdnXaK4Rs_LXgw5qapvrD17FtpEk0_jxcRhqCFPYwNIZqbDQzOGLbmz4VxgSY3j6bIdv9VJ7DTgX3KR5njNPPh9UygCTy30yOYinTGfU/s480/bienvenido90%20(2).jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhrmOnRgxkrE-85LgOb3IvRQXWJHTLKp74Z1F3TeIky-6-Wgio7dlmi3wKCQxnYVvIenbJxUBvxqHc7PBJJRcxdnXaK4Rs_LXgw5qapvrD17FtpEk0_jxcRhqCFPYwNIZqbDQzOGLbmz4VxgSY3j6bIdv9VJ7DTgX3KR5njNPPh9UygCTy30yOYinTGfU/s160/bienvenido90%20(2).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhrmOnRgxkrE-85LgOb3IvRQXWJHTLKp74Z1F3TeIky-6-Wgio7dlmi3wKCQxnYVvIenbJxUBvxqHc7PBJJRcxdnXaK4Rs_LXgw5qapvrD17FtpEk0_jxcRhqCFPYwNIZqbDQzOGLbmz4VxgSY3j6bIdv9VJ7DTgX3KR5njNPPh9UygCTy30yOYinTGfU/s320/bienvenido90%20(2).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhrmOnRgxkrE-85LgOb3IvRQXWJHTLKp74Z1F3TeIky-6-Wgio7dlmi3wKCQxnYVvIenbJxUBvxqHc7PBJJRcxdnXaK4Rs_LXgw5qapvrD17FtpEk0_jxcRhqCFPYwNIZqbDQzOGLbmz4VxgSY3j6bIdv9VJ7DTgX3KR5njNPPh9UygCTy30yOYinTGfU/s480/bienvenido90%20(2).jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 458 - Music Radar Clan"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -157,8 +155,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s320/b90452.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s160/b90452.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s320/b90452.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s480/b90452.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s160/b90452.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s320/b90452.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl5PtcWqMu_lTbr1Br2oySJmjz7yc-WzMMPkJLZQXoFF3FVQn-NCaNCmlzIZk9wNw-pmrG_4PkUfxJDvrcITDcnydmf13i3ifGw3-2X5-1cCsGUjVPxRDz7lICadUIiCW1Spzr_2Ult-o/s480/b90452.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 452 - Paul McCartney - Austin City Limits Music Festival 2018"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -174,8 +171,7 @@
         <a class="related-bottom-card" href="programa-402-the-rebels-red-fox-music-y-el-underground.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisXXTqHiNarGONv3euZGJoiqO9djYtN0XzPlrWjxMo4E-Onky9GYmuIXEJ0Lr2KBS52vbeVaRNEOKxPYSZ-dIeo0Di2LMwKADuN6dv1OLljZc-DsF1GO_xkvXCnCAmZRacpaWOUO4tBPE/s320/18813605_1931483377069895_5947448029030916208_n.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisXXTqHiNarGONv3euZGJoiqO9djYtN0XzPlrWjxMo4E-Onky9GYmuIXEJ0Lr2KBS52vbeVaRNEOKxPYSZ-dIeo0Di2LMwKADuN6dv1OLljZc-DsF1GO_xkvXCnCAmZRacpaWOUO4tBPE/s320/18813605_1931483377069895_5947448029030916208_n.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisXXTqHiNarGONv3euZGJoiqO9djYtN0XzPlrWjxMo4E-Onky9GYmuIXEJ0Lr2KBS52vbeVaRNEOKxPYSZ-dIeo0Di2LMwKADuN6dv1OLljZc-DsF1GO_xkvXCnCAmZRacpaWOUO4tBPE/s480/18813605_1931483377069895_5947448029030916208_n.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisXXTqHiNarGONv3euZGJoiqO9djYtN0XzPlrWjxMo4E-Onky9GYmuIXEJ0Lr2KBS52vbeVaRNEOKxPYSZ-dIeo0Di2LMwKADuN6dv1OLljZc-DsF1GO_xkvXCnCAmZRacpaWOUO4tBPE/s640/18813605_1931483377069895_5947448029030916208_n.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisXXTqHiNarGONv3euZGJoiqO9djYtN0XzPlrWjxMo4E-Onky9GYmuIXEJ0Lr2KBS52vbeVaRNEOKxPYSZ-dIeo0Di2LMwKADuN6dv1OLljZc-DsF1GO_xkvXCnCAmZRacpaWOUO4tBPE/s320/18813605_1931483377069895_5947448029030916208_n.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisXXTqHiNarGONv3euZGJoiqO9djYtN0XzPlrWjxMo4E-Onky9GYmuIXEJ0Lr2KBS52vbeVaRNEOKxPYSZ-dIeo0Di2LMwKADuN6dv1OLljZc-DsF1GO_xkvXCnCAmZRacpaWOUO4tBPE/s480/18813605_1931483377069895_5947448029030916208_n.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisXXTqHiNarGONv3euZGJoiqO9djYtN0XzPlrWjxMo4E-Onky9GYmuIXEJ0Lr2KBS52vbeVaRNEOKxPYSZ-dIeo0Di2LMwKADuN6dv1OLljZc-DsF1GO_xkvXCnCAmZRacpaWOUO4tBPE/s640/18813605_1931483377069895_5947448029030916208_n.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 402 - The Rebels, Red Fox Music y el underground"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -186,8 +182,7 @@
           </a><a class="related-bottom-card" href="p-690-placebo-black-market-music-cumple-20-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVZSYg5qSvjHr6eXaDSIQQM0oicu_NjxoZDi0NAKrTQrv2l1rM2eZF-obXoq5PPBdA1V_lb4iGEpZBt76ARjhRg9eMv_-RwWxrc6hY4vVZppvDACHOS1cUQT5haT5nU2fC8Yv-jiwsn0M/s320/R-4903895-1378987819-6552.jpeg.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVZSYg5qSvjHr6eXaDSIQQM0oicu_NjxoZDi0NAKrTQrv2l1rM2eZF-obXoq5PPBdA1V_lb4iGEpZBt76ARjhRg9eMv_-RwWxrc6hY4vVZppvDACHOS1cUQT5haT5nU2fC8Yv-jiwsn0M/s320/R-4903895-1378987819-6552.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVZSYg5qSvjHr6eXaDSIQQM0oicu_NjxoZDi0NAKrTQrv2l1rM2eZF-obXoq5PPBdA1V_lb4iGEpZBt76ARjhRg9eMv_-RwWxrc6hY4vVZppvDACHOS1cUQT5haT5nU2fC8Yv-jiwsn0M/s480/R-4903895-1378987819-6552.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVZSYg5qSvjHr6eXaDSIQQM0oicu_NjxoZDi0NAKrTQrv2l1rM2eZF-obXoq5PPBdA1V_lb4iGEpZBt76ARjhRg9eMv_-RwWxrc6hY4vVZppvDACHOS1cUQT5haT5nU2fC8Yv-jiwsn0M/s640/R-4903895-1378987819-6552.jpeg.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVZSYg5qSvjHr6eXaDSIQQM0oicu_NjxoZDi0NAKrTQrv2l1rM2eZF-obXoq5PPBdA1V_lb4iGEpZBt76ARjhRg9eMv_-RwWxrc6hY4vVZppvDACHOS1cUQT5haT5nU2fC8Yv-jiwsn0M/s320/R-4903895-1378987819-6552.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVZSYg5qSvjHr6eXaDSIQQM0oicu_NjxoZDi0NAKrTQrv2l1rM2eZF-obXoq5PPBdA1V_lb4iGEpZBt76ARjhRg9eMv_-RwWxrc6hY4vVZppvDACHOS1cUQT5haT5nU2fC8Yv-jiwsn0M/s480/R-4903895-1378987819-6552.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVZSYg5qSvjHr6eXaDSIQQM0oicu_NjxoZDi0NAKrTQrv2l1rM2eZF-obXoq5PPBdA1V_lb4iGEpZBt76ARjhRg9eMv_-RwWxrc6hY4vVZppvDACHOS1cUQT5haT5nU2fC8Yv-jiwsn0M/s640/R-4903895-1378987819-6552.jpeg.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.690 - Placebo - Black Market Music cumple 20 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -198,8 +193,7 @@
           </a><a class="related-bottom-card" href="programa-398-lounge-grunge-music.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s320/Weird-Al-Yankovic.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s320/Weird-Al-Yankovic.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s480/Weird-Al-Yankovic.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s640/Weird-Al-Yankovic.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s320/Weird-Al-Yankovic.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s480/Weird-Al-Yankovic.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO0XDMqf_BWuUoNfCSosEL755Hm906LC50quW4W760_5PA6Vosmypl4rwqqREgaecVMkx2pYQDOu32XAegYNZaqs0BzB0o7wlLHJhaIaYVkyt6VT-iF4zqmp0B1O2yTroWqsstmvF71j0/s640/Weird-Al-Yankovic.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 398 - Lounge grunge music"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

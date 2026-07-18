@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>The Cure — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1034-especial-libros-musicales-desde-barcelona.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwdCjEgBgJoUxyIz-7fbIq3nXrvfN9BpCQpDB6FE1uHnI7_UcJ4vUCVP4e1HYNYtFumhojlNiVCacrgjWq1d6C8zuHtoRrsnzLK9UMrrzBFfiPCMx1U2BRNv0HOXkBLQV0dpQaVkuTlQYUUTO2QB4VPAG0uDpRIseZq11KZRxWaRkNMYVeG3liWOI-RHs/s320/Imagen%20de%20WhatsApp%202025-02-19%20a%20las%2013.09.45_07154e6c.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwdCjEgBgJoUxyIz-7fbIq3nXrvfN9BpCQpDB6FE1uHnI7_UcJ4vUCVP4e1HYNYtFumhojlNiVCacrgjWq1d6C8zuHtoRrsnzLK9UMrrzBFfiPCMx1U2BRNv0HOXkBLQV0dpQaVkuTlQYUUTO2QB4VPAG0uDpRIseZq11KZRxWaRkNMYVeG3liWOI-RHs/s160/Imagen%20de%20WhatsApp%202025-02-19%20a%20las%2013.09.45_07154e6c.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwdCjEgBgJoUxyIz-7fbIq3nXrvfN9BpCQpDB6FE1uHnI7_UcJ4vUCVP4e1HYNYtFumhojlNiVCacrgjWq1d6C8zuHtoRrsnzLK9UMrrzBFfiPCMx1U2BRNv0HOXkBLQV0dpQaVkuTlQYUUTO2QB4VPAG0uDpRIseZq11KZRxWaRkNMYVeG3liWOI-RHs/s320/Imagen%20de%20WhatsApp%202025-02-19%20a%20las%2013.09.45_07154e6c.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwdCjEgBgJoUxyIz-7fbIq3nXrvfN9BpCQpDB6FE1uHnI7_UcJ4vUCVP4e1HYNYtFumhojlNiVCacrgjWq1d6C8zuHtoRrsnzLK9UMrrzBFfiPCMx1U2BRNv0HOXkBLQV0dpQaVkuTlQYUUTO2QB4VPAG0uDpRIseZq11KZRxWaRkNMYVeG3liWOI-RHs/s480/Imagen%20de%20WhatsApp%202025-02-19%20a%20las%2013.09.45_07154e6c.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwdCjEgBgJoUxyIz-7fbIq3nXrvfN9BpCQpDB6FE1uHnI7_UcJ4vUCVP4e1HYNYtFumhojlNiVCacrgjWq1d6C8zuHtoRrsnzLK9UMrrzBFfiPCMx1U2BRNv0HOXkBLQV0dpQaVkuTlQYUUTO2QB4VPAG0uDpRIseZq11KZRxWaRkNMYVeG3liWOI-RHs/s160/Imagen%20de%20WhatsApp%202025-02-19%20a%20las%2013.09.45_07154e6c.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwdCjEgBgJoUxyIz-7fbIq3nXrvfN9BpCQpDB6FE1uHnI7_UcJ4vUCVP4e1HYNYtFumhojlNiVCacrgjWq1d6C8zuHtoRrsnzLK9UMrrzBFfiPCMx1U2BRNv0HOXkBLQV0dpQaVkuTlQYUUTO2QB4VPAG0uDpRIseZq11KZRxWaRkNMYVeG3liWOI-RHs/s320/Imagen%20de%20WhatsApp%202025-02-19%20a%20las%2013.09.45_07154e6c.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwdCjEgBgJoUxyIz-7fbIq3nXrvfN9BpCQpDB6FE1uHnI7_UcJ4vUCVP4e1HYNYtFumhojlNiVCacrgjWq1d6C8zuHtoRrsnzLK9UMrrzBFfiPCMx1U2BRNv0HOXkBLQV0dpQaVkuTlQYUUTO2QB4VPAG0uDpRIseZq11KZRxWaRkNMYVeG3liWOI-RHs/s480/Imagen%20de%20WhatsApp%202025-02-19%20a%20las%2013.09.45_07154e6c.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1034 - Especial libros musicales desde Barcelona"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/programa-545-lo-mejor-del-glastonbury-2019.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5eV0njXPKKtf3AgShhcrY5w-I2072WQF9pIAsJ2tV5DXqg10zEbFaYJvMYe8azPNQlMZoYd7NtV9Kt0s2ncGxpgoPoKBgmSQPsVsIA3Tz0UjUZjKGkeQivEU_L1JxgAAfB08jtwAvnTU/s320/545+Glastenbury.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5eV0njXPKKtf3AgShhcrY5w-I2072WQF9pIAsJ2tV5DXqg10zEbFaYJvMYe8azPNQlMZoYd7NtV9Kt0s2ncGxpgoPoKBgmSQPsVsIA3Tz0UjUZjKGkeQivEU_L1JxgAAfB08jtwAvnTU/s160/545+Glastenbury.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5eV0njXPKKtf3AgShhcrY5w-I2072WQF9pIAsJ2tV5DXqg10zEbFaYJvMYe8azPNQlMZoYd7NtV9Kt0s2ncGxpgoPoKBgmSQPsVsIA3Tz0UjUZjKGkeQivEU_L1JxgAAfB08jtwAvnTU/s320/545+Glastenbury.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5eV0njXPKKtf3AgShhcrY5w-I2072WQF9pIAsJ2tV5DXqg10zEbFaYJvMYe8azPNQlMZoYd7NtV9Kt0s2ncGxpgoPoKBgmSQPsVsIA3Tz0UjUZjKGkeQivEU_L1JxgAAfB08jtwAvnTU/s480/545+Glastenbury.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5eV0njXPKKtf3AgShhcrY5w-I2072WQF9pIAsJ2tV5DXqg10zEbFaYJvMYe8azPNQlMZoYd7NtV9Kt0s2ncGxpgoPoKBgmSQPsVsIA3Tz0UjUZjKGkeQivEU_L1JxgAAfB08jtwAvnTU/s160/545+Glastenbury.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5eV0njXPKKtf3AgShhcrY5w-I2072WQF9pIAsJ2tV5DXqg10zEbFaYJvMYe8azPNQlMZoYd7NtV9Kt0s2ncGxpgoPoKBgmSQPsVsIA3Tz0UjUZjKGkeQivEU_L1JxgAAfB08jtwAvnTU/s320/545+Glastenbury.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5eV0njXPKKtf3AgShhcrY5w-I2072WQF9pIAsJ2tV5DXqg10zEbFaYJvMYe8azPNQlMZoYd7NtV9Kt0s2ncGxpgoPoKBgmSQPsVsIA3Tz0UjUZjKGkeQivEU_L1JxgAAfB08jtwAvnTU/s480/545+Glastenbury.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 545 - Lo mejor del Glastonbury 2019"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-494-the-smashing-pumpkins-bullet-with-butterfly-wings.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s320/b90_494.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s160/b90_494.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s320/b90_494.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s480/b90_494.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s160/b90_494.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s320/b90_494.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s480/b90_494.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 494 - The Smashing Pumpkins - Bullet with Butterfly Wings"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/b90-programa-77-el-cuervo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 77 - El Cuervo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-45-cuando-bowie-cumplio-los-50.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s320/DavidBowie_50th_with_BC.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s160/DavidBowie_50th_with_BC.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s320/DavidBowie_50th_with_BC.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s480/DavidBowie_50th_with_BC.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s160/DavidBowie_50th_with_BC.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s320/DavidBowie_50th_with_BC.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdGLPb8uHEHuDG0H0UHsdzekptX0QlDvSQ106yGnqVXN6zPiR5iM4-OBx8T2P1jIbwr05UhPUfSQYk9vCnG50kCjUr7K6_jLnbQecvd3WDFiIP12xWZHdhuZfZzje1XzIBSlBZTki2vL8/s480/DavidBowie_50th_with_BC.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 45 - Cuando Bowie cumplió los 50"
                 loading="lazy" width="320" height="213" />
         </a>

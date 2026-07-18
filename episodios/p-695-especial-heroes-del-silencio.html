@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.695 - Especial Héroes del Silencio — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -125,8 +125,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s320/concert-crowd.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s160/concert-crowd.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s320/concert-crowd.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s480/concert-crowd.jpeg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s160/concert-crowd.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s320/concert-crowd.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s480/concert-crowd.jpeg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.685 - Necesitamos música en directo"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -136,8 +135,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s320/rayloriga_heroes-1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s160/rayloriga_heroes-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s320/rayloriga_heroes-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s480/rayloriga_heroes-1.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s160/rayloriga_heroes-1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s320/rayloriga_heroes-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPL7UVCM_kbDppVAyRoCBbwpkByYCZnvOp674ZAhrkqfgBME_hVxgQfcOtoo05subYf874pIRHxOmttdmqxIjXDTxGI3sLnnvdPtt5zoLWhfROZWcTHdYmEs2QmUJpfr3nLYvw3k5-sw/s480/rayloriga_heroes-1.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.749 - Ray Loriga - Héroes"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -147,8 +145,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhw9GpuO1Q7Knlkq1nFA1h06HB2-cK7jLUBKZLCqlQVQSBDy6OushRJI61kJweNbEXurqviNOO575oYLKfkO29V81LXXFLz_CXEImDK2GkubYO0Y7bBEf5_AtgcVpE0V1gG_KjT2Bd3WSM/s320/p.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhw9GpuO1Q7Knlkq1nFA1h06HB2-cK7jLUBKZLCqlQVQSBDy6OushRJI61kJweNbEXurqviNOO575oYLKfkO29V81LXXFLz_CXEImDK2GkubYO0Y7bBEf5_AtgcVpE0V1gG_KjT2Bd3WSM/s160/p.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhw9GpuO1Q7Knlkq1nFA1h06HB2-cK7jLUBKZLCqlQVQSBDy6OushRJI61kJweNbEXurqviNOO575oYLKfkO29V81LXXFLz_CXEImDK2GkubYO0Y7bBEf5_AtgcVpE0V1gG_KjT2Bd3WSM/s320/p.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhw9GpuO1Q7Knlkq1nFA1h06HB2-cK7jLUBKZLCqlQVQSBDy6OushRJI61kJweNbEXurqviNOO575oYLKfkO29V81LXXFLz_CXEImDK2GkubYO0Y7bBEf5_AtgcVpE0V1gG_KjT2Bd3WSM/s480/p.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhw9GpuO1Q7Knlkq1nFA1h06HB2-cK7jLUBKZLCqlQVQSBDy6OushRJI61kJweNbEXurqviNOO575oYLKfkO29V81LXXFLz_CXEImDK2GkubYO0Y7bBEf5_AtgcVpE0V1gG_KjT2Bd3WSM/s160/p.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhw9GpuO1Q7Knlkq1nFA1h06HB2-cK7jLUBKZLCqlQVQSBDy6OushRJI61kJweNbEXurqviNOO575oYLKfkO29V81LXXFLz_CXEImDK2GkubYO0Y7bBEf5_AtgcVpE0V1gG_KjT2Bd3WSM/s320/p.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhw9GpuO1Q7Knlkq1nFA1h06HB2-cK7jLUBKZLCqlQVQSBDy6OushRJI61kJweNbEXurqviNOO575oYLKfkO29V81LXXFLz_CXEImDK2GkubYO0Y7bBEf5_AtgcVpE0V1gG_KjT2Bd3WSM/s480/p.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.694 - El latido de Portishead"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -164,8 +161,7 @@
         <a class="related-bottom-card" href="p-693-the-smashing-pumpkins-pisces-iscariot.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s320/R-3773608-1347544231-3798.jpeg.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s320/R-3773608-1347544231-3798.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s480/R-3773608-1347544231-3798.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s640/R-3773608-1347544231-3798.jpeg.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s320/R-3773608-1347544231-3798.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s480/R-3773608-1347544231-3798.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMhhgjosCuYDZhTUaQRY2WkEFiSum_oEkUU1HXsqz4wBIk4_NuSzqLOrY9di_nj1wljcNaeWRbZoPGXyvJGSjqLjD09ujexSefkRf0biXW8mUskiYAblTKowILXHBGMo5QSHYH7AWjiF8/s640/R-3773608-1347544231-3798.jpeg.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.693 - The Smashing Pumpkins - Pisces Iscariot"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -176,8 +172,7 @@
           </a><a class="related-bottom-card" href="p-696-celebramos-el-premio-audiencia-al-mejor-programa-de-radio-musical.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj82YSpsmZeBA2h3dtlodHKXtxDZbH2WSQZFlzHMFIxPpoOi-gd2dOEhWM3Qhnm05z5BWhydJH_Mbk1-WyeCO_BIeLVtz7qDbVeZh3yXNvQRlvr5elnyNxhzrupY2tQx1EQhEJpBHsDcQs/s320/B90+-+Banner+Instagram.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj82YSpsmZeBA2h3dtlodHKXtxDZbH2WSQZFlzHMFIxPpoOi-gd2dOEhWM3Qhnm05z5BWhydJH_Mbk1-WyeCO_BIeLVtz7qDbVeZh3yXNvQRlvr5elnyNxhzrupY2tQx1EQhEJpBHsDcQs/s320/B90+-+Banner+Instagram.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj82YSpsmZeBA2h3dtlodHKXtxDZbH2WSQZFlzHMFIxPpoOi-gd2dOEhWM3Qhnm05z5BWhydJH_Mbk1-WyeCO_BIeLVtz7qDbVeZh3yXNvQRlvr5elnyNxhzrupY2tQx1EQhEJpBHsDcQs/s480/B90+-+Banner+Instagram.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj82YSpsmZeBA2h3dtlodHKXtxDZbH2WSQZFlzHMFIxPpoOi-gd2dOEhWM3Qhnm05z5BWhydJH_Mbk1-WyeCO_BIeLVtz7qDbVeZh3yXNvQRlvr5elnyNxhzrupY2tQx1EQhEJpBHsDcQs/s640/B90+-+Banner+Instagram.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj82YSpsmZeBA2h3dtlodHKXtxDZbH2WSQZFlzHMFIxPpoOi-gd2dOEhWM3Qhnm05z5BWhydJH_Mbk1-WyeCO_BIeLVtz7qDbVeZh3yXNvQRlvr5elnyNxhzrupY2tQx1EQhEJpBHsDcQs/s320/B90+-+Banner+Instagram.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj82YSpsmZeBA2h3dtlodHKXtxDZbH2WSQZFlzHMFIxPpoOi-gd2dOEhWM3Qhnm05z5BWhydJH_Mbk1-WyeCO_BIeLVtz7qDbVeZh3yXNvQRlvr5elnyNxhzrupY2tQx1EQhEJpBHsDcQs/s480/B90+-+Banner+Instagram.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj82YSpsmZeBA2h3dtlodHKXtxDZbH2WSQZFlzHMFIxPpoOi-gd2dOEhWM3Qhnm05z5BWhydJH_Mbk1-WyeCO_BIeLVtz7qDbVeZh3yXNvQRlvr5elnyNxhzrupY2tQx1EQhEJpBHsDcQs/s640/B90+-+Banner+Instagram.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.696 - Celebramos el Premio Audiencia al mejor programa de radio musical"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -188,8 +183,7 @@
           </a><a class="related-bottom-card" href="p-697-la-historia-de-sub-pop-en-10-canciones.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s480/3201.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s640/3201.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s480/3201.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s640/3201.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.697 - La historia de SUB POP en 10 canciones"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

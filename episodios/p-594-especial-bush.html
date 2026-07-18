@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.594 - Especial BUSH — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -141,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKaZTLsndIRTN9eqBaQT8-dtozvK7nxJsXvEHnco5Dlcj1_LjP3UyMytS8K7NiAMS-q8ixozGgB9xXb7AkbnkYLxQm_KUgJGKk2pzMcZa9mtwnRJCxuw9kiBAZYERkeVvN1YVeF4ll_i8/s320/268x0w.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKaZTLsndIRTN9eqBaQT8-dtozvK7nxJsXvEHnco5Dlcj1_LjP3UyMytS8K7NiAMS-q8ixozGgB9xXb7AkbnkYLxQm_KUgJGKk2pzMcZa9mtwnRJCxuw9kiBAZYERkeVvN1YVeF4ll_i8/s160/268x0w.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKaZTLsndIRTN9eqBaQT8-dtozvK7nxJsXvEHnco5Dlcj1_LjP3UyMytS8K7NiAMS-q8ixozGgB9xXb7AkbnkYLxQm_KUgJGKk2pzMcZa9mtwnRJCxuw9kiBAZYERkeVvN1YVeF4ll_i8/s320/268x0w.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKaZTLsndIRTN9eqBaQT8-dtozvK7nxJsXvEHnco5Dlcj1_LjP3UyMytS8K7NiAMS-q8ixozGgB9xXb7AkbnkYLxQm_KUgJGKk2pzMcZa9mtwnRJCxuw9kiBAZYERkeVvN1YVeF4ll_i8/s480/268x0w.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKaZTLsndIRTN9eqBaQT8-dtozvK7nxJsXvEHnco5Dlcj1_LjP3UyMytS8K7NiAMS-q8ixozGgB9xXb7AkbnkYLxQm_KUgJGKk2pzMcZa9mtwnRJCxuw9kiBAZYERkeVvN1YVeF4ll_i8/s160/268x0w.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKaZTLsndIRTN9eqBaQT8-dtozvK7nxJsXvEHnco5Dlcj1_LjP3UyMytS8K7NiAMS-q8ixozGgB9xXb7AkbnkYLxQm_KUgJGKk2pzMcZa9mtwnRJCxuw9kiBAZYERkeVvN1YVeF4ll_i8/s320/268x0w.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKaZTLsndIRTN9eqBaQT8-dtozvK7nxJsXvEHnco5Dlcj1_LjP3UyMytS8K7NiAMS-q8ixozGgB9xXb7AkbnkYLxQm_KUgJGKk2pzMcZa9mtwnRJCxuw9kiBAZYERkeVvN1YVeF4ll_i8/s480/268x0w.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 376 - Post-grunge"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -152,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s320/b90_parte12_final.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s160/b90_parte12_final.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s320/b90_parte12_final.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s480/b90_parte12_final.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s160/b90_parte12_final.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s320/b90_parte12_final.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s480/b90_parte12_final.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1021 - Especial 1994 (12) : The Beatles - The Stone Roses - Bush - Pearl Jam"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -163,8 +161,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 110 - Layne Staley, Jonathan Wilson, Bush, The Birds of Satan..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -180,8 +177,7 @@
         <a class="related-bottom-card" href="programa-59-bush-nirvana-no-doubt-pearl-jam-the-smashing-pumpkins.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 59 - Bush, Nirvana, No Doubt, Pearl Jam, The Smashing Pumpkins..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -192,8 +188,7 @@
           </a><a class="related-bottom-card" href="p-597-especial-sperm.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0up4TI8weqNGgGYELyvUvLWuQdBV2D4g7aEcup6G2NW8f7ZVcf-XILdmXIB74MAiX5CLxaq0KI7e5N39lJZYx2tlN6vk6CbBPN531MpK1iqt1vjRunTZHYmYuppDAPjKLrUKzQ6Lv1xs/s320/b90_597.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0up4TI8weqNGgGYELyvUvLWuQdBV2D4g7aEcup6G2NW8f7ZVcf-XILdmXIB74MAiX5CLxaq0KI7e5N39lJZYx2tlN6vk6CbBPN531MpK1iqt1vjRunTZHYmYuppDAPjKLrUKzQ6Lv1xs/s320/b90_597.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0up4TI8weqNGgGYELyvUvLWuQdBV2D4g7aEcup6G2NW8f7ZVcf-XILdmXIB74MAiX5CLxaq0KI7e5N39lJZYx2tlN6vk6CbBPN531MpK1iqt1vjRunTZHYmYuppDAPjKLrUKzQ6Lv1xs/s480/b90_597.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0up4TI8weqNGgGYELyvUvLWuQdBV2D4g7aEcup6G2NW8f7ZVcf-XILdmXIB74MAiX5CLxaq0KI7e5N39lJZYx2tlN6vk6CbBPN531MpK1iqt1vjRunTZHYmYuppDAPjKLrUKzQ6Lv1xs/s640/b90_597.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0up4TI8weqNGgGYELyvUvLWuQdBV2D4g7aEcup6G2NW8f7ZVcf-XILdmXIB74MAiX5CLxaq0KI7e5N39lJZYx2tlN6vk6CbBPN531MpK1iqt1vjRunTZHYmYuppDAPjKLrUKzQ6Lv1xs/s320/b90_597.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0up4TI8weqNGgGYELyvUvLWuQdBV2D4g7aEcup6G2NW8f7ZVcf-XILdmXIB74MAiX5CLxaq0KI7e5N39lJZYx2tlN6vk6CbBPN531MpK1iqt1vjRunTZHYmYuppDAPjKLrUKzQ6Lv1xs/s480/b90_597.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0up4TI8weqNGgGYELyvUvLWuQdBV2D4g7aEcup6G2NW8f7ZVcf-XILdmXIB74MAiX5CLxaq0KI7e5N39lJZYx2tlN6vk6CbBPN531MpK1iqt1vjRunTZHYmYuppDAPjKLrUKzQ6Lv1xs/s640/b90_597.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.597 - Especial SPERM"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -204,8 +199,7 @@
           </a><a class="related-bottom-card" href="p-608-chris-cornell-poncier.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdqVQZk7CfZCk04-eKsapzwmLZNCisNRfpfI6KqMZ_opxSXkrsRKfGDSuwiFen-3QqlSjaPRfDQO78_AqMn8LoFLtn8jCzY53lJ27wy42mwIm8YcJbPHXayfJG_w8ErigpQFWCR56xKk4/s320/b90_608.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdqVQZk7CfZCk04-eKsapzwmLZNCisNRfpfI6KqMZ_opxSXkrsRKfGDSuwiFen-3QqlSjaPRfDQO78_AqMn8LoFLtn8jCzY53lJ27wy42mwIm8YcJbPHXayfJG_w8ErigpQFWCR56xKk4/s320/b90_608.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdqVQZk7CfZCk04-eKsapzwmLZNCisNRfpfI6KqMZ_opxSXkrsRKfGDSuwiFen-3QqlSjaPRfDQO78_AqMn8LoFLtn8jCzY53lJ27wy42mwIm8YcJbPHXayfJG_w8ErigpQFWCR56xKk4/s480/b90_608.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdqVQZk7CfZCk04-eKsapzwmLZNCisNRfpfI6KqMZ_opxSXkrsRKfGDSuwiFen-3QqlSjaPRfDQO78_AqMn8LoFLtn8jCzY53lJ27wy42mwIm8YcJbPHXayfJG_w8ErigpQFWCR56xKk4/s640/b90_608.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdqVQZk7CfZCk04-eKsapzwmLZNCisNRfpfI6KqMZ_opxSXkrsRKfGDSuwiFen-3QqlSjaPRfDQO78_AqMn8LoFLtn8jCzY53lJ27wy42mwIm8YcJbPHXayfJG_w8ErigpQFWCR56xKk4/s320/b90_608.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdqVQZk7CfZCk04-eKsapzwmLZNCisNRfpfI6KqMZ_opxSXkrsRKfGDSuwiFen-3QqlSjaPRfDQO78_AqMn8LoFLtn8jCzY53lJ27wy42mwIm8YcJbPHXayfJG_w8ErigpQFWCR56xKk4/s480/b90_608.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdqVQZk7CfZCk04-eKsapzwmLZNCisNRfpfI6KqMZ_opxSXkrsRKfGDSuwiFen-3QqlSjaPRfDQO78_AqMn8LoFLtn8jCzY53lJ27wy42mwIm8YcJbPHXayfJG_w8ErigpQFWCR56xKk4/s640/b90_608.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.608 - Chris Cornell &quot;Poncier&quot;"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

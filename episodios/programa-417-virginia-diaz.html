@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 417 - Virginia Díaz — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsOlhdjCENJFTVWzdQRCqkH9b0Rao0OWg4nMrkSgoqnh3Zr1pXa8QlOxKx6GOEkxeUQBYkrlbfVAuKN3tqujvnBygfU-0GaimP6p22vWLHUXmqt8HjAe47CmDyOze_-ymW0pzMLuEhs98/s320/3.+Virginia+Di%CC%81az+en+Bienvenido+a+los+90+BW.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsOlhdjCENJFTVWzdQRCqkH9b0Rao0OWg4nMrkSgoqnh3Zr1pXa8QlOxKx6GOEkxeUQBYkrlbfVAuKN3tqujvnBygfU-0GaimP6p22vWLHUXmqt8HjAe47CmDyOze_-ymW0pzMLuEhs98/s160/3.+Virginia+Di%CC%81az+en+Bienvenido+a+los+90+BW.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsOlhdjCENJFTVWzdQRCqkH9b0Rao0OWg4nMrkSgoqnh3Zr1pXa8QlOxKx6GOEkxeUQBYkrlbfVAuKN3tqujvnBygfU-0GaimP6p22vWLHUXmqt8HjAe47CmDyOze_-ymW0pzMLuEhs98/s320/3.+Virginia+Di%CC%81az+en+Bienvenido+a+los+90+BW.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsOlhdjCENJFTVWzdQRCqkH9b0Rao0OWg4nMrkSgoqnh3Zr1pXa8QlOxKx6GOEkxeUQBYkrlbfVAuKN3tqujvnBygfU-0GaimP6p22vWLHUXmqt8HjAe47CmDyOze_-ymW0pzMLuEhs98/s480/3.+Virginia+Di%CC%81az+en+Bienvenido+a+los+90+BW.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsOlhdjCENJFTVWzdQRCqkH9b0Rao0OWg4nMrkSgoqnh3Zr1pXa8QlOxKx6GOEkxeUQBYkrlbfVAuKN3tqujvnBygfU-0GaimP6p22vWLHUXmqt8HjAe47CmDyOze_-ymW0pzMLuEhs98/s160/3.+Virginia+Di%CC%81az+en+Bienvenido+a+los+90+BW.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsOlhdjCENJFTVWzdQRCqkH9b0Rao0OWg4nMrkSgoqnh3Zr1pXa8QlOxKx6GOEkxeUQBYkrlbfVAuKN3tqujvnBygfU-0GaimP6p22vWLHUXmqt8HjAe47CmDyOze_-ymW0pzMLuEhs98/s320/3.+Virginia+Di%CC%81az+en+Bienvenido+a+los+90+BW.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsOlhdjCENJFTVWzdQRCqkH9b0Rao0OWg4nMrkSgoqnh3Zr1pXa8QlOxKx6GOEkxeUQBYkrlbfVAuKN3tqujvnBygfU-0GaimP6p22vWLHUXmqt8HjAe47CmDyOze_-ymW0pzMLuEhs98/s480/3.+Virginia+Di%CC%81az+en+Bienvenido+a+los+90+BW.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 143 - Entrevista a Virginia Díaz"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-BQTxtUqZSqvRkMi4J7nQuafRQZoH3jUAD11dcH2-iG1VKaXXj0eUiT62Myk-WM4U5_K1H-P2d74i3YdFjeMB17x5E-EORs6dplePWUnsI8at6FcbucPPdZKQ8-XPR-Df3Z73pX4z0E/s320/Captura+de+pantalla+2016-12-29+a+las+19.06.52.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-BQTxtUqZSqvRkMi4J7nQuafRQZoH3jUAD11dcH2-iG1VKaXXj0eUiT62Myk-WM4U5_K1H-P2d74i3YdFjeMB17x5E-EORs6dplePWUnsI8at6FcbucPPdZKQ8-XPR-Df3Z73pX4z0E/s160/Captura+de+pantalla+2016-12-29+a+las+19.06.52.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-BQTxtUqZSqvRkMi4J7nQuafRQZoH3jUAD11dcH2-iG1VKaXXj0eUiT62Myk-WM4U5_K1H-P2d74i3YdFjeMB17x5E-EORs6dplePWUnsI8at6FcbucPPdZKQ8-XPR-Df3Z73pX4z0E/s320/Captura+de+pantalla+2016-12-29+a+las+19.06.52.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-BQTxtUqZSqvRkMi4J7nQuafRQZoH3jUAD11dcH2-iG1VKaXXj0eUiT62Myk-WM4U5_K1H-P2d74i3YdFjeMB17x5E-EORs6dplePWUnsI8at6FcbucPPdZKQ8-XPR-Df3Z73pX4z0E/s480/Captura+de+pantalla+2016-12-29+a+las+19.06.52.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-BQTxtUqZSqvRkMi4J7nQuafRQZoH3jUAD11dcH2-iG1VKaXXj0eUiT62Myk-WM4U5_K1H-P2d74i3YdFjeMB17x5E-EORs6dplePWUnsI8at6FcbucPPdZKQ8-XPR-Df3Z73pX4z0E/s160/Captura+de+pantalla+2016-12-29+a+las+19.06.52.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-BQTxtUqZSqvRkMi4J7nQuafRQZoH3jUAD11dcH2-iG1VKaXXj0eUiT62Myk-WM4U5_K1H-P2d74i3YdFjeMB17x5E-EORs6dplePWUnsI8at6FcbucPPdZKQ8-XPR-Df3Z73pX4z0E/s320/Captura+de+pantalla+2016-12-29+a+las+19.06.52.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-BQTxtUqZSqvRkMi4J7nQuafRQZoH3jUAD11dcH2-iG1VKaXXj0eUiT62Myk-WM4U5_K1H-P2d74i3YdFjeMB17x5E-EORs6dplePWUnsI8at6FcbucPPdZKQ8-XPR-Df3Z73pX4z0E/s480/Captura+de+pantalla+2016-12-29+a+las+19.06.52.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 257 - Virginia Díaz y Paco Pérez Bryan"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTqJoowX131J752aY394Rv-4D6YNo6Pokc3461wNm95_4Ih9j0pvTUWsUSdf7GcCKVBiB4x0_y3L6QROrEsV2vom14nrB3d980_GIBq5fclnZKcxkrPbKPuO8AVsM9NAK9FJIFyGIVs7ylbdFGBeH7WrEhdNioOn2DT3lo0WEv8HuphdpGoUOTUCV5TL4/s320/1705838903693.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTqJoowX131J752aY394Rv-4D6YNo6Pokc3461wNm95_4Ih9j0pvTUWsUSdf7GcCKVBiB4x0_y3L6QROrEsV2vom14nrB3d980_GIBq5fclnZKcxkrPbKPuO8AVsM9NAK9FJIFyGIVs7ylbdFGBeH7WrEhdNioOn2DT3lo0WEv8HuphdpGoUOTUCV5TL4/s160/1705838903693.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTqJoowX131J752aY394Rv-4D6YNo6Pokc3461wNm95_4Ih9j0pvTUWsUSdf7GcCKVBiB4x0_y3L6QROrEsV2vom14nrB3d980_GIBq5fclnZKcxkrPbKPuO8AVsM9NAK9FJIFyGIVs7ylbdFGBeH7WrEhdNioOn2DT3lo0WEv8HuphdpGoUOTUCV5TL4/s320/1705838903693.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTqJoowX131J752aY394Rv-4D6YNo6Pokc3461wNm95_4Ih9j0pvTUWsUSdf7GcCKVBiB4x0_y3L6QROrEsV2vom14nrB3d980_GIBq5fclnZKcxkrPbKPuO8AVsM9NAK9FJIFyGIVs7ylbdFGBeH7WrEhdNioOn2DT3lo0WEv8HuphdpGoUOTUCV5TL4/s480/1705838903693.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTqJoowX131J752aY394Rv-4D6YNo6Pokc3461wNm95_4Ih9j0pvTUWsUSdf7GcCKVBiB4x0_y3L6QROrEsV2vom14nrB3d980_GIBq5fclnZKcxkrPbKPuO8AVsM9NAK9FJIFyGIVs7ylbdFGBeH7WrEhdNioOn2DT3lo0WEv8HuphdpGoUOTUCV5TL4/s160/1705838903693.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTqJoowX131J752aY394Rv-4D6YNo6Pokc3461wNm95_4Ih9j0pvTUWsUSdf7GcCKVBiB4x0_y3L6QROrEsV2vom14nrB3d980_GIBq5fclnZKcxkrPbKPuO8AVsM9NAK9FJIFyGIVs7ylbdFGBeH7WrEhdNioOn2DT3lo0WEv8HuphdpGoUOTUCV5TL4/s320/1705838903693.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTqJoowX131J752aY394Rv-4D6YNo6Pokc3461wNm95_4Ih9j0pvTUWsUSdf7GcCKVBiB4x0_y3L6QROrEsV2vom14nrB3d980_GIBq5fclnZKcxkrPbKPuO8AVsM9NAK9FJIFyGIVs7ylbdFGBeH7WrEhdNioOn2DT3lo0WEv8HuphdpGoUOTUCV5TL4/s480/1705838903693.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.947 - La típica entrevista a Virginia Díaz y Julio Ródenas"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="programa-284-un-mes-sin-chris-cornell.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s320/19225808_1760878623929773_4620285124997754232_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s320/19225808_1760878623929773_4620285124997754232_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s480/19225808_1760878623929773_4620285124997754232_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s640/19225808_1760878623929773_4620285124997754232_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s320/19225808_1760878623929773_4620285124997754232_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s480/19225808_1760878623929773_4620285124997754232_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu_H_uaYTesSbpa29_cfa9hXe3V3AH1j6v3CijqUBb9zYmCnbift_vT0DexUn_FehJKwKk9IZ-XDFPhilOm9xTxdG3Q_aVlVkblUbRadD6cCmYLTb74-STA4XJ4jZ4bREbkEkuYsXBUdg/s640/19225808_1760878623929773_4620285124997754232_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 284 - Un mes sin Chris Cornell"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="programa-281-eddie-vedder-amsterdam-2017.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s320/IMG-20170601-WA0005.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s320/IMG-20170601-WA0005.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s480/IMG-20170601-WA0005.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s640/IMG-20170601-WA0005.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s320/IMG-20170601-WA0005.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s480/IMG-20170601-WA0005.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWmcWgvxh9zooBpeDOkd1m779fV4XyOZF-uItBLlhbiPBsvfutb3CyRAohgCtW9iJ9UEbzHGtZshQpnLOOpbo0p8XC_jh_oKUWr-rzZPQPshu9bLa-xt35rCLVeAXhVGw0j4hSlnTq5aU/s640/IMG-20170601-WA0005.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 281 - Eddie Vedder Amsterdam 2017"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="programa-157-the-sunday-drivers-little-heart-attacks-con-virginia-diaz.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP3ZOJdi-Re8RsjHmcHkeo-swYbZQmEWFOSb85HTpykNbyEoEtYgbfiQBMWGBLot9a5cJAcwDgptg0vfbSRX12uLcknpppDkyYGC5EjykOjIFDu7ZHujoelout9HXYApMVwFt7G01mnJw/s320/11129636_10152772714607747_3885623506969505089_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP3ZOJdi-Re8RsjHmcHkeo-swYbZQmEWFOSb85HTpykNbyEoEtYgbfiQBMWGBLot9a5cJAcwDgptg0vfbSRX12uLcknpppDkyYGC5EjykOjIFDu7ZHujoelout9HXYApMVwFt7G01mnJw/s320/11129636_10152772714607747_3885623506969505089_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP3ZOJdi-Re8RsjHmcHkeo-swYbZQmEWFOSb85HTpykNbyEoEtYgbfiQBMWGBLot9a5cJAcwDgptg0vfbSRX12uLcknpppDkyYGC5EjykOjIFDu7ZHujoelout9HXYApMVwFt7G01mnJw/s480/11129636_10152772714607747_3885623506969505089_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP3ZOJdi-Re8RsjHmcHkeo-swYbZQmEWFOSb85HTpykNbyEoEtYgbfiQBMWGBLot9a5cJAcwDgptg0vfbSRX12uLcknpppDkyYGC5EjykOjIFDu7ZHujoelout9HXYApMVwFt7G01mnJw/s640/11129636_10152772714607747_3885623506969505089_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP3ZOJdi-Re8RsjHmcHkeo-swYbZQmEWFOSb85HTpykNbyEoEtYgbfiQBMWGBLot9a5cJAcwDgptg0vfbSRX12uLcknpppDkyYGC5EjykOjIFDu7ZHujoelout9HXYApMVwFt7G01mnJw/s320/11129636_10152772714607747_3885623506969505089_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP3ZOJdi-Re8RsjHmcHkeo-swYbZQmEWFOSb85HTpykNbyEoEtYgbfiQBMWGBLot9a5cJAcwDgptg0vfbSRX12uLcknpppDkyYGC5EjykOjIFDu7ZHujoelout9HXYApMVwFt7G01mnJw/s480/11129636_10152772714607747_3885623506969505089_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP3ZOJdi-Re8RsjHmcHkeo-swYbZQmEWFOSb85HTpykNbyEoEtYgbfiQBMWGBLot9a5cJAcwDgptg0vfbSRX12uLcknpppDkyYGC5EjykOjIFDu7ZHujoelout9HXYApMVwFt7G01mnJw/s640/11129636_10152772714607747_3885623506969505089_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 157 - The Sunday Drivers - Little Heart Attacks con Virginia Díaz"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

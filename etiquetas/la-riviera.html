@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>La Riviera — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/sonic-youth-la-riviera-madrid-27-03-1996.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s320/Sonic-Youth-Goo-1990-770x511.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s160/Sonic-Youth-Goo-1990-770x511.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s320/Sonic-Youth-Goo-1990-770x511.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s480/Sonic-Youth-Goo-1990-770x511.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s160/Sonic-Youth-Goo-1990-770x511.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s320/Sonic-Youth-Goo-1990-770x511.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxNpmt6g4Z-BeDzb4roP9D3hyphenhyphenr8uidtrKUAFTumXSV8iJ8CrtBsLcsayEstt0KTzNJ0ez1gInsYwsoGqXLL4E6AMuvkBYf0ebbxAQRFYKMjLuvt25we9Q3EH9lskb9u7sn1TsoBBZLfc/s480/Sonic-Youth-Goo-1990-770x511.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Sonic Youth - La Riviera (Madrid 27/03/1996)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/the-cranberries-la-riviera-madrid-22-04-1999.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s320/3771629213825_XXL.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s160/3771629213825_XXL.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s320/3771629213825_XXL.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s480/3771629213825_XXL.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s160/3771629213825_XXL.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s320/3771629213825_XXL.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCY4IJafIxx7Vkrl7RRh5D2rflozpNJ36a-B_L0SPVsYkzPHvXwzwyXdvMjIshU986csnVrvdAW71GqGQhDf9_6QZsv4xAiUTWzj4lUFwbjSHWna56w8DJE92uvJs900QwIVOGXHED3vQ/s480/3771629213825_XXL.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="The Cranberries - La Riviera (Madrid 22/04/1999)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-218-noel-gallagher-david-bowie.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s320/Screenshot_20160410-123235-2.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s160/Screenshot_20160410-123235-2.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s320/Screenshot_20160410-123235-2.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s480/Screenshot_20160410-123235-2.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s160/Screenshot_20160410-123235-2.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s320/Screenshot_20160410-123235-2.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp45gu67HFlkTYDdTMKt7mg4AFYVjPysOQJcZN_KvsrqcPrtMgIo-LzC908VcIK7bgAVIEKYP9btTxDt4hwwY315gTFs85EIPr9tne2z-u3zqAdQxuktsO7G8i9MnLUmHwB35oUjYz9JA/s480/Screenshot_20160410-123235-2.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 218 - Noel Gallagher - David Bowie"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-217-noel-gallagher-en-espana.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4_E4B3_O3On1AtPTvlpESNRB0jz0DFUifqbHufII5Jggy-HYKLELZ93ucI3glcaqY9DpxtfdpXUh33nw0abWjeCW-fgz40Wl0l0TYcHvMKQCADFd4-PAsKbP52vjpoKisqA6k-OvaUsY/s320/12963932_10153494644572747_6768744456148482814_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4_E4B3_O3On1AtPTvlpESNRB0jz0DFUifqbHufII5Jggy-HYKLELZ93ucI3glcaqY9DpxtfdpXUh33nw0abWjeCW-fgz40Wl0l0TYcHvMKQCADFd4-PAsKbP52vjpoKisqA6k-OvaUsY/s160/12963932_10153494644572747_6768744456148482814_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4_E4B3_O3On1AtPTvlpESNRB0jz0DFUifqbHufII5Jggy-HYKLELZ93ucI3glcaqY9DpxtfdpXUh33nw0abWjeCW-fgz40Wl0l0TYcHvMKQCADFd4-PAsKbP52vjpoKisqA6k-OvaUsY/s320/12963932_10153494644572747_6768744456148482814_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4_E4B3_O3On1AtPTvlpESNRB0jz0DFUifqbHufII5Jggy-HYKLELZ93ucI3glcaqY9DpxtfdpXUh33nw0abWjeCW-fgz40Wl0l0TYcHvMKQCADFd4-PAsKbP52vjpoKisqA6k-OvaUsY/s480/12963932_10153494644572747_6768744456148482814_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4_E4B3_O3On1AtPTvlpESNRB0jz0DFUifqbHufII5Jggy-HYKLELZ93ucI3glcaqY9DpxtfdpXUh33nw0abWjeCW-fgz40Wl0l0TYcHvMKQCADFd4-PAsKbP52vjpoKisqA6k-OvaUsY/s160/12963932_10153494644572747_6768744456148482814_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4_E4B3_O3On1AtPTvlpESNRB0jz0DFUifqbHufII5Jggy-HYKLELZ93ucI3glcaqY9DpxtfdpXUh33nw0abWjeCW-fgz40Wl0l0TYcHvMKQCADFd4-PAsKbP52vjpoKisqA6k-OvaUsY/s320/12963932_10153494644572747_6768744456148482814_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4_E4B3_O3On1AtPTvlpESNRB0jz0DFUifqbHufII5Jggy-HYKLELZ93ucI3glcaqY9DpxtfdpXUh33nw0abWjeCW-fgz40Wl0l0TYcHvMKQCADFd4-PAsKbP52vjpoKisqA6k-OvaUsY/s480/12963932_10153494644572747_6768744456148482814_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 217 - Noel Gallagher en España"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-62-eels-beck-radiohead-eddie-vedder.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 62 - EELS, BECK, RADIOHEAD, EDDIE VEDDER..."
                 loading="lazy" width="320" height="213" />
         </a>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>The Verve — 13 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1091-especial-1995-3-5-smashing-pumpkins-primus-bjork-alanis-morissette-foo-fighters-.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s320/b90_1091.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s160/b90_1091.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s320/b90_1091.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s480/b90_1091.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s160/b90_1091.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s320/b90_1091.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s480/b90_1091.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1091 - Especial 1995 (3/5) Smashing Pumpkins, Primus, Bjork, Alanis Morissette, Foo Fighters, Neil Young..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-897-the-verve-la-cara-oculta-de-urban-hymns.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLLhu8vdV6i7FAYQwjDpPGVV7IiEej9PjNxnvuWlQlOPLgIwYImtd4zF7YJ2sW45mzNdcvSl-Iuek2n6ioehH_92bINR8DmePnMFvNX4oIk76yOoNjpu69SRXApb0rHW6nc-lbpCwfcXSjM7xqw6OfKvponkuRO3zAX_2jz8jF4lFog3k8GY9NG3Po/s320/2020-09-08_wex_61945121_I1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLLhu8vdV6i7FAYQwjDpPGVV7IiEej9PjNxnvuWlQlOPLgIwYImtd4zF7YJ2sW45mzNdcvSl-Iuek2n6ioehH_92bINR8DmePnMFvNX4oIk76yOoNjpu69SRXApb0rHW6nc-lbpCwfcXSjM7xqw6OfKvponkuRO3zAX_2jz8jF4lFog3k8GY9NG3Po/s160/2020-09-08_wex_61945121_I1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLLhu8vdV6i7FAYQwjDpPGVV7IiEej9PjNxnvuWlQlOPLgIwYImtd4zF7YJ2sW45mzNdcvSl-Iuek2n6ioehH_92bINR8DmePnMFvNX4oIk76yOoNjpu69SRXApb0rHW6nc-lbpCwfcXSjM7xqw6OfKvponkuRO3zAX_2jz8jF4lFog3k8GY9NG3Po/s320/2020-09-08_wex_61945121_I1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLLhu8vdV6i7FAYQwjDpPGVV7IiEej9PjNxnvuWlQlOPLgIwYImtd4zF7YJ2sW45mzNdcvSl-Iuek2n6ioehH_92bINR8DmePnMFvNX4oIk76yOoNjpu69SRXApb0rHW6nc-lbpCwfcXSjM7xqw6OfKvponkuRO3zAX_2jz8jF4lFog3k8GY9NG3Po/s480/2020-09-08_wex_61945121_I1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLLhu8vdV6i7FAYQwjDpPGVV7IiEej9PjNxnvuWlQlOPLgIwYImtd4zF7YJ2sW45mzNdcvSl-Iuek2n6ioehH_92bINR8DmePnMFvNX4oIk76yOoNjpu69SRXApb0rHW6nc-lbpCwfcXSjM7xqw6OfKvponkuRO3zAX_2jz8jF4lFog3k8GY9NG3Po/s160/2020-09-08_wex_61945121_I1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLLhu8vdV6i7FAYQwjDpPGVV7IiEej9PjNxnvuWlQlOPLgIwYImtd4zF7YJ2sW45mzNdcvSl-Iuek2n6ioehH_92bINR8DmePnMFvNX4oIk76yOoNjpu69SRXApb0rHW6nc-lbpCwfcXSjM7xqw6OfKvponkuRO3zAX_2jz8jF4lFog3k8GY9NG3Po/s320/2020-09-08_wex_61945121_I1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLLhu8vdV6i7FAYQwjDpPGVV7IiEej9PjNxnvuWlQlOPLgIwYImtd4zF7YJ2sW45mzNdcvSl-Iuek2n6ioehH_92bINR8DmePnMFvNX4oIk76yOoNjpu69SRXApb0rHW6nc-lbpCwfcXSjM7xqw6OfKvponkuRO3zAX_2jz8jF4lFog3k8GY9NG3Po/s480/2020-09-08_wex_61945121_I1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.897 - The Verve, la cara oculta de Urban Hymns"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-841-the-verve-urban-hymns-el-adios-del-britpop.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJQLiFgmOFQZkYWbMk4f4aM3PZ0d6afDpdjjwEIiSzaOdFB2RVSDK-FIlXmjON1xL7zeV9i9VsYCVL0nt5vsih4bFqdGH-ziMr2nnXDJvbt_1XIg1Y06X54Vv46BFgPzyJIJl9B0SIGzQYmpzvUgV4NEaz6CN6z4VPphNHwTY03Mra4LACw5SgEsp/s320/71UpxJQy0xL._SL1418_.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJQLiFgmOFQZkYWbMk4f4aM3PZ0d6afDpdjjwEIiSzaOdFB2RVSDK-FIlXmjON1xL7zeV9i9VsYCVL0nt5vsih4bFqdGH-ziMr2nnXDJvbt_1XIg1Y06X54Vv46BFgPzyJIJl9B0SIGzQYmpzvUgV4NEaz6CN6z4VPphNHwTY03Mra4LACw5SgEsp/s160/71UpxJQy0xL._SL1418_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJQLiFgmOFQZkYWbMk4f4aM3PZ0d6afDpdjjwEIiSzaOdFB2RVSDK-FIlXmjON1xL7zeV9i9VsYCVL0nt5vsih4bFqdGH-ziMr2nnXDJvbt_1XIg1Y06X54Vv46BFgPzyJIJl9B0SIGzQYmpzvUgV4NEaz6CN6z4VPphNHwTY03Mra4LACw5SgEsp/s320/71UpxJQy0xL._SL1418_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJQLiFgmOFQZkYWbMk4f4aM3PZ0d6afDpdjjwEIiSzaOdFB2RVSDK-FIlXmjON1xL7zeV9i9VsYCVL0nt5vsih4bFqdGH-ziMr2nnXDJvbt_1XIg1Y06X54Vv46BFgPzyJIJl9B0SIGzQYmpzvUgV4NEaz6CN6z4VPphNHwTY03Mra4LACw5SgEsp/s480/71UpxJQy0xL._SL1418_.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJQLiFgmOFQZkYWbMk4f4aM3PZ0d6afDpdjjwEIiSzaOdFB2RVSDK-FIlXmjON1xL7zeV9i9VsYCVL0nt5vsih4bFqdGH-ziMr2nnXDJvbt_1XIg1Y06X54Vv46BFgPzyJIJl9B0SIGzQYmpzvUgV4NEaz6CN6z4VPphNHwTY03Mra4LACw5SgEsp/s160/71UpxJQy0xL._SL1418_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJQLiFgmOFQZkYWbMk4f4aM3PZ0d6afDpdjjwEIiSzaOdFB2RVSDK-FIlXmjON1xL7zeV9i9VsYCVL0nt5vsih4bFqdGH-ziMr2nnXDJvbt_1XIg1Y06X54Vv46BFgPzyJIJl9B0SIGzQYmpzvUgV4NEaz6CN6z4VPphNHwTY03Mra4LACw5SgEsp/s320/71UpxJQy0xL._SL1418_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJQLiFgmOFQZkYWbMk4f4aM3PZ0d6afDpdjjwEIiSzaOdFB2RVSDK-FIlXmjON1xL7zeV9i9VsYCVL0nt5vsih4bFqdGH-ziMr2nnXDJvbt_1XIg1Y06X54Vv46BFgPzyJIJl9B0SIGzQYmpzvUgV4NEaz6CN6z4VPphNHwTY03Mra4LACw5SgEsp/s480/71UpxJQy0xL._SL1418_.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.841 - The Verve - Urban Hymns, el adiós del britpop"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/b90-classic-12-la-historia-completa-de-bittersweet-symphony.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s320/The-Verve.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s160/The-Verve.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s320/The-Verve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s480/The-Verve.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s160/The-Verve.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s320/The-Verve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_XsvI6cpe28xSceKBPoaPjeHdKiLYLlHjZyeVjBMzEumO-JakX6jgDPPyrhZIPEPo3vUVzqSMnFiArscPvm1LdN1oOgEy2XuHFy48BusSqx7lEpindgQC9JyRDAwpkItQ90MlL0O_2fI/s480/The-Verve.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Classic 12: La historia completa de Bittersweet Symphony"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/p-796-canciones-imbatibles-que-abren-disco.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s320/1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s160/1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s320/1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s480/1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s160/1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s320/1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu9juOX-TsQp44wTxvGmJnwRQBPYUWHcr5xKQaMBR-sxirsMcHMh_QB7hBg0wkY8QKLqOmB4VX0lTQU4itQiM9QwH4YWSvj2viI4OAr8-08-ZbRNvaMMF7aT7xo3lysKKRdNm6y-GMXQk/s480/1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.796 - Canciones imbatibles que abren disco"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/p-765-la-cara-b-de-los-90-parte-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s320/L-370558-1571805648-9408.jpeg.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s160/L-370558-1571805648-9408.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s320/L-370558-1571805648-9408.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s480/L-370558-1571805648-9408.jpeg.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s160/L-370558-1571805648-9408.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s320/L-370558-1571805648-9408.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQWa7MrfKBbH6f7mT8GswL6Dwx7IRTo8oAYmeAzpqKL3a-KOmNVWwvQQ12Um7YFZMzrDRpTS527DpxjIa4KsYnuGIGG-5udlR4Dgt8AhgnHlixHZO1R_t63EPUQl25ImXWnd4UB0MpY2k/s480/L-370558-1571805648-9408.jpeg.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.765 - La cara B de los 90 (Parte 1)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/p-727-sintiendo-caer-la-mierda-sobre-mi-canciones-para-el-blue-monday-vol-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s160/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s480/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s160/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s320/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxXGbbr_3Fx8SUafOtHRc4uMrIVvxqXc4Zhxxkw1AvBao9T9d2uRAH1-M4SVt-2pJO7kXglJeDngnnwbEKrTk8LzjzloCA2PHXV3r7ycV3esFAwxTF0d1IxvbTYnRQriGEbX76MWBkPdU/s480/tumblr_mju7f8zCRB1s6bc87o1_500-4797.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.727 - Sintiendo caer la mierda sobre mí: canciones para el Blue Monday Vol.1"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/programa-443-richard-ashcroft-natural-rebel.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho2skhiP7YoinvJxT1b22HnaK8x4uaDrF9Eh9hqhkwk09LRMs8Pfbqpc6r_Vm0KQ8gHK5mJmmrZ7nKpup6LD4PZcH5ge_5OGSYFdqyHGvCLYqurU6Bdsvwqy90TdYo3RSAAhcwgnoThc4/s320/b90443.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho2skhiP7YoinvJxT1b22HnaK8x4uaDrF9Eh9hqhkwk09LRMs8Pfbqpc6r_Vm0KQ8gHK5mJmmrZ7nKpup6LD4PZcH5ge_5OGSYFdqyHGvCLYqurU6Bdsvwqy90TdYo3RSAAhcwgnoThc4/s160/b90443.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho2skhiP7YoinvJxT1b22HnaK8x4uaDrF9Eh9hqhkwk09LRMs8Pfbqpc6r_Vm0KQ8gHK5mJmmrZ7nKpup6LD4PZcH5ge_5OGSYFdqyHGvCLYqurU6Bdsvwqy90TdYo3RSAAhcwgnoThc4/s320/b90443.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho2skhiP7YoinvJxT1b22HnaK8x4uaDrF9Eh9hqhkwk09LRMs8Pfbqpc6r_Vm0KQ8gHK5mJmmrZ7nKpup6LD4PZcH5ge_5OGSYFdqyHGvCLYqurU6Bdsvwqy90TdYo3RSAAhcwgnoThc4/s480/b90443.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho2skhiP7YoinvJxT1b22HnaK8x4uaDrF9Eh9hqhkwk09LRMs8Pfbqpc6r_Vm0KQ8gHK5mJmmrZ7nKpup6LD4PZcH5ge_5OGSYFdqyHGvCLYqurU6Bdsvwqy90TdYo3RSAAhcwgnoThc4/s160/b90443.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho2skhiP7YoinvJxT1b22HnaK8x4uaDrF9Eh9hqhkwk09LRMs8Pfbqpc6r_Vm0KQ8gHK5mJmmrZ7nKpup6LD4PZcH5ge_5OGSYFdqyHGvCLYqurU6Bdsvwqy90TdYo3RSAAhcwgnoThc4/s320/b90443.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho2skhiP7YoinvJxT1b22HnaK8x4uaDrF9Eh9hqhkwk09LRMs8Pfbqpc6r_Vm0KQ8gHK5mJmmrZ7nKpup6LD4PZcH5ge_5OGSYFdqyHGvCLYqurU6Bdsvwqy90TdYo3RSAAhcwgnoThc4/s480/b90443.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 443 - Richard Ashcroft - Natural Rebel"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -180,8 +172,7 @@
         <a class="episode-cover-link" href="../episodios/programa-118-paco-perez-bryan-the-rolling-stones-y-glastonbury.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYoI9KW_VZmVEN4Z_wavTL3i69XwLTTZGND5ugR3u2oi548XzZHS1IoWswjh_B15aI36yUcaTW_RmqrrMgIgypR7G1U7lgncd4RoD39-QT7feJrDlwiE7z4SIUBtch6WXBlPxFLRhOGtE/s320/unnamed.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYoI9KW_VZmVEN4Z_wavTL3i69XwLTTZGND5ugR3u2oi548XzZHS1IoWswjh_B15aI36yUcaTW_RmqrrMgIgypR7G1U7lgncd4RoD39-QT7feJrDlwiE7z4SIUBtch6WXBlPxFLRhOGtE/s160/unnamed.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYoI9KW_VZmVEN4Z_wavTL3i69XwLTTZGND5ugR3u2oi548XzZHS1IoWswjh_B15aI36yUcaTW_RmqrrMgIgypR7G1U7lgncd4RoD39-QT7feJrDlwiE7z4SIUBtch6WXBlPxFLRhOGtE/s320/unnamed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYoI9KW_VZmVEN4Z_wavTL3i69XwLTTZGND5ugR3u2oi548XzZHS1IoWswjh_B15aI36yUcaTW_RmqrrMgIgypR7G1U7lgncd4RoD39-QT7feJrDlwiE7z4SIUBtch6WXBlPxFLRhOGtE/s480/unnamed.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYoI9KW_VZmVEN4Z_wavTL3i69XwLTTZGND5ugR3u2oi548XzZHS1IoWswjh_B15aI36yUcaTW_RmqrrMgIgypR7G1U7lgncd4RoD39-QT7feJrDlwiE7z4SIUBtch6WXBlPxFLRhOGtE/s160/unnamed.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYoI9KW_VZmVEN4Z_wavTL3i69XwLTTZGND5ugR3u2oi548XzZHS1IoWswjh_B15aI36yUcaTW_RmqrrMgIgypR7G1U7lgncd4RoD39-QT7feJrDlwiE7z4SIUBtch6WXBlPxFLRhOGtE/s320/unnamed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYoI9KW_VZmVEN4Z_wavTL3i69XwLTTZGND5ugR3u2oi548XzZHS1IoWswjh_B15aI36yUcaTW_RmqrrMgIgypR7G1U7lgncd4RoD39-QT7feJrDlwiE7z4SIUBtch6WXBlPxFLRhOGtE/s480/unnamed.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 118 - Paco Pérez Bryan, The Rolling Stones y Glastonbury"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -194,8 +185,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-32-especial-the-verve.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa 32 - Especial The Verve"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -208,8 +198,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-30-inicio-de-la-segunda-temporada.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s320/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s160/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s320/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s480/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s160/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s320/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtyO-YA__Hi9z6M7-aSu8KsrPP_CcMrV7lhnGapCsXP4q42iIlQRzm-7jVZDiIK2KXhMNu5-Eq2nggjxCg3H1pMhsYiX2gziSmFXgemE33RqhIsObgclyca7iVsOVBv46ALEyH62O6Vc0/s480/7195126b59cac2ae181fb5279da3bdcd9a2a4a09_m.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Bienvenido a los 90 - Programa 30 - Inicio de la segunda temporada"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -222,8 +211,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-6-especial-britpop.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 #6 - Especial Britpop"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -236,8 +224,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-2-richard-ashcroft-el-gentleman-depresivo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWodzRi_72aD_-wmLvvu3TQnyIUIxBBPqmXANpEF3eNzSVlnQ0Zh7zmJjoLTh7Ny_lGTPY0AB5Up_Eybgdii314bgEL-omg2F2aiD7ASjkGruPykiAOD2oRoAIdq03ZnITKPz_1GzDHho/s320/9d0a271fbf8b5acf52e5bb8cf830d285840e8c2b_m.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWodzRi_72aD_-wmLvvu3TQnyIUIxBBPqmXANpEF3eNzSVlnQ0Zh7zmJjoLTh7Ny_lGTPY0AB5Up_Eybgdii314bgEL-omg2F2aiD7ASjkGruPykiAOD2oRoAIdq03ZnITKPz_1GzDHho/s160/9d0a271fbf8b5acf52e5bb8cf830d285840e8c2b_m.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWodzRi_72aD_-wmLvvu3TQnyIUIxBBPqmXANpEF3eNzSVlnQ0Zh7zmJjoLTh7Ny_lGTPY0AB5Up_Eybgdii314bgEL-omg2F2aiD7ASjkGruPykiAOD2oRoAIdq03ZnITKPz_1GzDHho/s320/9d0a271fbf8b5acf52e5bb8cf830d285840e8c2b_m.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWodzRi_72aD_-wmLvvu3TQnyIUIxBBPqmXANpEF3eNzSVlnQ0Zh7zmJjoLTh7Ny_lGTPY0AB5Up_Eybgdii314bgEL-omg2F2aiD7ASjkGruPykiAOD2oRoAIdq03ZnITKPz_1GzDHho/s480/9d0a271fbf8b5acf52e5bb8cf830d285840e8c2b_m.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWodzRi_72aD_-wmLvvu3TQnyIUIxBBPqmXANpEF3eNzSVlnQ0Zh7zmJjoLTh7Ny_lGTPY0AB5Up_Eybgdii314bgEL-omg2F2aiD7ASjkGruPykiAOD2oRoAIdq03ZnITKPz_1GzDHho/s160/9d0a271fbf8b5acf52e5bb8cf830d285840e8c2b_m.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWodzRi_72aD_-wmLvvu3TQnyIUIxBBPqmXANpEF3eNzSVlnQ0Zh7zmJjoLTh7Ny_lGTPY0AB5Up_Eybgdii314bgEL-omg2F2aiD7ASjkGruPykiAOD2oRoAIdq03ZnITKPz_1GzDHho/s320/9d0a271fbf8b5acf52e5bb8cf830d285840e8c2b_m.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWodzRi_72aD_-wmLvvu3TQnyIUIxBBPqmXANpEF3eNzSVlnQ0Zh7zmJjoLTh7Ny_lGTPY0AB5Up_Eybgdii314bgEL-omg2F2aiD7ASjkGruPykiAOD2oRoAIdq03ZnITKPz_1GzDHho/s480/9d0a271fbf8b5acf52e5bb8cf830d285840e8c2b_m.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Bienvenido a los 90 - Programa #2 - Richard Ashcroft, el gentleman depresivo"
                 loading="lazy" width="320" height="213" />
         </a>

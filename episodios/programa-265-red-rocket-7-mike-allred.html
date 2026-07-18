@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 265 - Red Rocket 7 (Mike Allred) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -142,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s320/b90_P331.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s160/b90_P331.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s320/b90_P331.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s480/b90_P331.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s160/b90_P331.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s320/b90_P331.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s480/b90_P331.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 331 - Vinilos Rock: Historia subjetiva del rock"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -153,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s320/kurt50.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s160/kurt50.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s320/kurt50.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s480/kurt50.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s160/kurt50.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s320/kurt50.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s480/kurt50.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 263 - Los 50 discos favoritos de Kurt Cobain"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -164,8 +162,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s160/P1030709.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s480/P1030709.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s160/P1030709.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s480/P1030709.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 130 - Entrevista a Charles R. Cross"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -181,8 +178,7 @@
         <a class="related-bottom-card" href="programa-266-la-escena-indie-de-los-90-con-victor-calderon.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJkvBpReQ21dsRJyduQQ3rEtCC1mswTgUmzkrrD4SZW-DCBpCieZDlv_VdRdQ0QYufL1KekeIoGwwmLb4HK3eYd0-SLADh1JX0YXbWgAqzOSOzqkjo0K2LPCYSMeMzpYPbiH5AoOLvBc/s320/IMG_20170223_182913.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJkvBpReQ21dsRJyduQQ3rEtCC1mswTgUmzkrrD4SZW-DCBpCieZDlv_VdRdQ0QYufL1KekeIoGwwmLb4HK3eYd0-SLADh1JX0YXbWgAqzOSOzqkjo0K2LPCYSMeMzpYPbiH5AoOLvBc/s320/IMG_20170223_182913.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJkvBpReQ21dsRJyduQQ3rEtCC1mswTgUmzkrrD4SZW-DCBpCieZDlv_VdRdQ0QYufL1KekeIoGwwmLb4HK3eYd0-SLADh1JX0YXbWgAqzOSOzqkjo0K2LPCYSMeMzpYPbiH5AoOLvBc/s480/IMG_20170223_182913.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJkvBpReQ21dsRJyduQQ3rEtCC1mswTgUmzkrrD4SZW-DCBpCieZDlv_VdRdQ0QYufL1KekeIoGwwmLb4HK3eYd0-SLADh1JX0YXbWgAqzOSOzqkjo0K2LPCYSMeMzpYPbiH5AoOLvBc/s640/IMG_20170223_182913.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJkvBpReQ21dsRJyduQQ3rEtCC1mswTgUmzkrrD4SZW-DCBpCieZDlv_VdRdQ0QYufL1KekeIoGwwmLb4HK3eYd0-SLADh1JX0YXbWgAqzOSOzqkjo0K2LPCYSMeMzpYPbiH5AoOLvBc/s320/IMG_20170223_182913.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJkvBpReQ21dsRJyduQQ3rEtCC1mswTgUmzkrrD4SZW-DCBpCieZDlv_VdRdQ0QYufL1KekeIoGwwmLb4HK3eYd0-SLADh1JX0YXbWgAqzOSOzqkjo0K2LPCYSMeMzpYPbiH5AoOLvBc/s480/IMG_20170223_182913.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJkvBpReQ21dsRJyduQQ3rEtCC1mswTgUmzkrrD4SZW-DCBpCieZDlv_VdRdQ0QYufL1KekeIoGwwmLb4HK3eYd0-SLADh1JX0YXbWgAqzOSOzqkjo0K2LPCYSMeMzpYPbiH5AoOLvBc/s640/IMG_20170223_182913.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 266 - La escena indie de los 90 con Victor Calderón"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -193,8 +189,7 @@
           </a><a class="related-bottom-card" href="programa-239-inicio-nueva-temporada.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s320/14117701_1356893064328333_8249292549315850784_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s320/14117701_1356893064328333_8249292549315850784_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s480/14117701_1356893064328333_8249292549315850784_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s640/14117701_1356893064328333_8249292549315850784_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s320/14117701_1356893064328333_8249292549315850784_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s480/14117701_1356893064328333_8249292549315850784_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s640/14117701_1356893064328333_8249292549315850784_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 239 - Inicio nueva temporada"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -205,8 +200,7 @@
           </a><a class="related-bottom-card" href="programa-351-mike-mccready-of-potato-heads-and-polaroids.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKOBxdLgUtc-WnL0_kCUcxUA6VgfLMhVFrYlMCEM4sose2yBvVPMxrXqGPphtHn9hh2Jh6DymAwvC6c1ed_eKTSIzXOXtAPZQdUZUQHh2Fm2wS_6W6lA0SS_NDV5wToqrkXRjph0LpSkY/s320/tumblr_odchoyLRR01qctvzro1_1280.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKOBxdLgUtc-WnL0_kCUcxUA6VgfLMhVFrYlMCEM4sose2yBvVPMxrXqGPphtHn9hh2Jh6DymAwvC6c1ed_eKTSIzXOXtAPZQdUZUQHh2Fm2wS_6W6lA0SS_NDV5wToqrkXRjph0LpSkY/s320/tumblr_odchoyLRR01qctvzro1_1280.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKOBxdLgUtc-WnL0_kCUcxUA6VgfLMhVFrYlMCEM4sose2yBvVPMxrXqGPphtHn9hh2Jh6DymAwvC6c1ed_eKTSIzXOXtAPZQdUZUQHh2Fm2wS_6W6lA0SS_NDV5wToqrkXRjph0LpSkY/s480/tumblr_odchoyLRR01qctvzro1_1280.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKOBxdLgUtc-WnL0_kCUcxUA6VgfLMhVFrYlMCEM4sose2yBvVPMxrXqGPphtHn9hh2Jh6DymAwvC6c1ed_eKTSIzXOXtAPZQdUZUQHh2Fm2wS_6W6lA0SS_NDV5wToqrkXRjph0LpSkY/s640/tumblr_odchoyLRR01qctvzro1_1280.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKOBxdLgUtc-WnL0_kCUcxUA6VgfLMhVFrYlMCEM4sose2yBvVPMxrXqGPphtHn9hh2Jh6DymAwvC6c1ed_eKTSIzXOXtAPZQdUZUQHh2Fm2wS_6W6lA0SS_NDV5wToqrkXRjph0LpSkY/s320/tumblr_odchoyLRR01qctvzro1_1280.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKOBxdLgUtc-WnL0_kCUcxUA6VgfLMhVFrYlMCEM4sose2yBvVPMxrXqGPphtHn9hh2Jh6DymAwvC6c1ed_eKTSIzXOXtAPZQdUZUQHh2Fm2wS_6W6lA0SS_NDV5wToqrkXRjph0LpSkY/s480/tumblr_odchoyLRR01qctvzro1_1280.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKOBxdLgUtc-WnL0_kCUcxUA6VgfLMhVFrYlMCEM4sose2yBvVPMxrXqGPphtHn9hh2Jh6DymAwvC6c1ed_eKTSIzXOXtAPZQdUZUQHh2Fm2wS_6W6lA0SS_NDV5wToqrkXRjph0LpSkY/s640/tumblr_odchoyLRR01qctvzro1_1280.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 351 - Mike McCready - OF POTATO HEADS AND POLAROIDS"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.731 - Pagoda, Michael Pitt: tras el eco de Kurt Cobain — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -128,8 +128,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s320/35b95a7ac02799ef06b89c8075fc68b1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s160/35b95a7ac02799ef06b89c8075fc68b1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s320/35b95a7ac02799ef06b89c8075fc68b1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s480/35b95a7ac02799ef06b89c8075fc68b1.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s160/35b95a7ac02799ef06b89c8075fc68b1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s320/35b95a7ac02799ef06b89c8075fc68b1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDNVQWGHF67OQm4cpXIBoRxx4NwIZ1ogvCfCQpIKnxH8p1O-FeRviWJwa8VdsRWVPF4b7pnXXYILs1rm72KvZl3bPrd2j1wPpwdZsScw7NZjmnERIJ1N0z-jmHTS6XWRvVs6pgw8HsCg/s480/35b95a7ac02799ef06b89c8075fc68b1.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.735 - Axl Rose Vs. Kurt Cobain"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -139,8 +138,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9-pudLlZzedBk1sC4X1iy6IYUzJbRyFskTrVlFQBj4i01wQbKrYz4Oz2vAkYpUkpeZESrPnBqMrBvdVsM0cbf3Uo4t5BP3p9cPSBk-0hEpyidBlSjEdRXCHekxkKHPQGCTfnelsGqUcg/s320/b90_595.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9-pudLlZzedBk1sC4X1iy6IYUzJbRyFskTrVlFQBj4i01wQbKrYz4Oz2vAkYpUkpeZESrPnBqMrBvdVsM0cbf3Uo4t5BP3p9cPSBk-0hEpyidBlSjEdRXCHekxkKHPQGCTfnelsGqUcg/s160/b90_595.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9-pudLlZzedBk1sC4X1iy6IYUzJbRyFskTrVlFQBj4i01wQbKrYz4Oz2vAkYpUkpeZESrPnBqMrBvdVsM0cbf3Uo4t5BP3p9cPSBk-0hEpyidBlSjEdRXCHekxkKHPQGCTfnelsGqUcg/s320/b90_595.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9-pudLlZzedBk1sC4X1iy6IYUzJbRyFskTrVlFQBj4i01wQbKrYz4Oz2vAkYpUkpeZESrPnBqMrBvdVsM0cbf3Uo4t5BP3p9cPSBk-0hEpyidBlSjEdRXCHekxkKHPQGCTfnelsGqUcg/s480/b90_595.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9-pudLlZzedBk1sC4X1iy6IYUzJbRyFskTrVlFQBj4i01wQbKrYz4Oz2vAkYpUkpeZESrPnBqMrBvdVsM0cbf3Uo4t5BP3p9cPSBk-0hEpyidBlSjEdRXCHekxkKHPQGCTfnelsGqUcg/s160/b90_595.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9-pudLlZzedBk1sC4X1iy6IYUzJbRyFskTrVlFQBj4i01wQbKrYz4Oz2vAkYpUkpeZESrPnBqMrBvdVsM0cbf3Uo4t5BP3p9cPSBk-0hEpyidBlSjEdRXCHekxkKHPQGCTfnelsGqUcg/s320/b90_595.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9-pudLlZzedBk1sC4X1iy6IYUzJbRyFskTrVlFQBj4i01wQbKrYz4Oz2vAkYpUkpeZESrPnBqMrBvdVsM0cbf3Uo4t5BP3p9cPSBk-0hEpyidBlSjEdRXCHekxkKHPQGCTfnelsGqUcg/s480/b90_595.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.595  - Danny Goldberg &#39;Serving the servant&#39;, recordando a Kurt Cobain"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -150,8 +148,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s160/B1gPDmmc+PS._SS500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s480/B1gPDmmc+PS._SS500_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s160/B1gPDmmc+PS._SS500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s480/B1gPDmmc+PS._SS500_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 22: Cuando Kurt Cobain conoció a William Burroughs"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -167,8 +164,7 @@
         <a class="related-bottom-card" href="programa-509-los-ultimos-dias-de-kurt-cobain.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s320/b90_509.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s320/b90_509.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s480/b90_509.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s640/b90_509.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s320/b90_509.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s480/b90_509.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s640/b90_509.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 509 - Los últimos días de Kurt Cobain"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -179,8 +175,7 @@
           </a><a class="related-bottom-card" href="programa-496-la-ultima-entrevista-real-a-kurt-cobain.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s320/00+Kurt-01.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s320/00+Kurt-01.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s480/00+Kurt-01.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s640/00+Kurt-01.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s320/00+Kurt-01.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s480/00+Kurt-01.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s640/00+Kurt-01.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 496 - La última entrevista real a Kurt Cobain"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -191,8 +186,7 @@
           </a><a class="related-bottom-card" href="b90-supernova-35-nikolai-petrovsky-el-kurt-cobain-ruso.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2NnGXClVrBg28vjBJB5J40gUUZixr80mq9XAXoXsIWECNVS8dManoCyA1drhhwUgYeXq14TGnEsgmRqdBdxmzlr8DY0jXJJ1bJJkc2kH69T457KuctKasfSMErp_4Z82nw0iRnal9TgQ-XUO8BsTG2m3PEtSbc1forjkn_1OEBOr1uuwXA7RFocrh/s320/282740_489817397711034_2133995611_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2NnGXClVrBg28vjBJB5J40gUUZixr80mq9XAXoXsIWECNVS8dManoCyA1drhhwUgYeXq14TGnEsgmRqdBdxmzlr8DY0jXJJ1bJJkc2kH69T457KuctKasfSMErp_4Z82nw0iRnal9TgQ-XUO8BsTG2m3PEtSbc1forjkn_1OEBOr1uuwXA7RFocrh/s320/282740_489817397711034_2133995611_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2NnGXClVrBg28vjBJB5J40gUUZixr80mq9XAXoXsIWECNVS8dManoCyA1drhhwUgYeXq14TGnEsgmRqdBdxmzlr8DY0jXJJ1bJJkc2kH69T457KuctKasfSMErp_4Z82nw0iRnal9TgQ-XUO8BsTG2m3PEtSbc1forjkn_1OEBOr1uuwXA7RFocrh/s480/282740_489817397711034_2133995611_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2NnGXClVrBg28vjBJB5J40gUUZixr80mq9XAXoXsIWECNVS8dManoCyA1drhhwUgYeXq14TGnEsgmRqdBdxmzlr8DY0jXJJ1bJJkc2kH69T457KuctKasfSMErp_4Z82nw0iRnal9TgQ-XUO8BsTG2m3PEtSbc1forjkn_1OEBOr1uuwXA7RFocrh/s640/282740_489817397711034_2133995611_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2NnGXClVrBg28vjBJB5J40gUUZixr80mq9XAXoXsIWECNVS8dManoCyA1drhhwUgYeXq14TGnEsgmRqdBdxmzlr8DY0jXJJ1bJJkc2kH69T457KuctKasfSMErp_4Z82nw0iRnal9TgQ-XUO8BsTG2m3PEtSbc1forjkn_1OEBOr1uuwXA7RFocrh/s320/282740_489817397711034_2133995611_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2NnGXClVrBg28vjBJB5J40gUUZixr80mq9XAXoXsIWECNVS8dManoCyA1drhhwUgYeXq14TGnEsgmRqdBdxmzlr8DY0jXJJ1bJJkc2kH69T457KuctKasfSMErp_4Z82nw0iRnal9TgQ-XUO8BsTG2m3PEtSbc1forjkn_1OEBOr1uuwXA7RFocrh/s480/282740_489817397711034_2133995611_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2NnGXClVrBg28vjBJB5J40gUUZixr80mq9XAXoXsIWECNVS8dManoCyA1drhhwUgYeXq14TGnEsgmRqdBdxmzlr8DY0jXJJ1bJJkc2kH69T457KuctKasfSMErp_4Z82nw0iRnal9TgQ-XUO8BsTG2m3PEtSbc1forjkn_1OEBOr1uuwXA7RFocrh/s640/282740_489817397711034_2133995611_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Supernova 35: Nikolai Petrovsky, el Kurt Cobain ruso"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

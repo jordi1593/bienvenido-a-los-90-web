@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 375 - Libros musicales y Dalí — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmidS_yc9YbrLBoMIct8Eoy__fRa6hpcIFXk1w0h9t5TEmrx9F_EUEVtt9wIHQq1RRBfGxoEeO1ZduBef8wm5iUps61gMgciJ5UMWOrlnykQLvHFgD9-h7zEo_bfIbYNGyBCnTrfupqhk/s320/bienvenido-296.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmidS_yc9YbrLBoMIct8Eoy__fRa6hpcIFXk1w0h9t5TEmrx9F_EUEVtt9wIHQq1RRBfGxoEeO1ZduBef8wm5iUps61gMgciJ5UMWOrlnykQLvHFgD9-h7zEo_bfIbYNGyBCnTrfupqhk/s160/bienvenido-296.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmidS_yc9YbrLBoMIct8Eoy__fRa6hpcIFXk1w0h9t5TEmrx9F_EUEVtt9wIHQq1RRBfGxoEeO1ZduBef8wm5iUps61gMgciJ5UMWOrlnykQLvHFgD9-h7zEo_bfIbYNGyBCnTrfupqhk/s320/bienvenido-296.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmidS_yc9YbrLBoMIct8Eoy__fRa6hpcIFXk1w0h9t5TEmrx9F_EUEVtt9wIHQq1RRBfGxoEeO1ZduBef8wm5iUps61gMgciJ5UMWOrlnykQLvHFgD9-h7zEo_bfIbYNGyBCnTrfupqhk/s480/bienvenido-296.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmidS_yc9YbrLBoMIct8Eoy__fRa6hpcIFXk1w0h9t5TEmrx9F_EUEVtt9wIHQq1RRBfGxoEeO1ZduBef8wm5iUps61gMgciJ5UMWOrlnykQLvHFgD9-h7zEo_bfIbYNGyBCnTrfupqhk/s160/bienvenido-296.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmidS_yc9YbrLBoMIct8Eoy__fRa6hpcIFXk1w0h9t5TEmrx9F_EUEVtt9wIHQq1RRBfGxoEeO1ZduBef8wm5iUps61gMgciJ5UMWOrlnykQLvHFgD9-h7zEo_bfIbYNGyBCnTrfupqhk/s320/bienvenido-296.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmidS_yc9YbrLBoMIct8Eoy__fRa6hpcIFXk1w0h9t5TEmrx9F_EUEVtt9wIHQq1RRBfGxoEeO1ZduBef8wm5iUps61gMgciJ5UMWOrlnykQLvHFgD9-h7zEo_bfIbYNGyBCnTrfupqhk/s480/bienvenido-296.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 296 - Dalí y la música"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwdCjEgBgJoUxyIz-7fbIq3nXrvfN9BpCQpDB6FE1uHnI7_UcJ4vUCVP4e1HYNYtFumhojlNiVCacrgjWq1d6C8zuHtoRrsnzLK9UMrrzBFfiPCMx1U2BRNv0HOXkBLQV0dpQaVkuTlQYUUTO2QB4VPAG0uDpRIseZq11KZRxWaRkNMYVeG3liWOI-RHs/s320/Imagen%20de%20WhatsApp%202025-02-19%20a%20las%2013.09.45_07154e6c.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwdCjEgBgJoUxyIz-7fbIq3nXrvfN9BpCQpDB6FE1uHnI7_UcJ4vUCVP4e1HYNYtFumhojlNiVCacrgjWq1d6C8zuHtoRrsnzLK9UMrrzBFfiPCMx1U2BRNv0HOXkBLQV0dpQaVkuTlQYUUTO2QB4VPAG0uDpRIseZq11KZRxWaRkNMYVeG3liWOI-RHs/s160/Imagen%20de%20WhatsApp%202025-02-19%20a%20las%2013.09.45_07154e6c.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwdCjEgBgJoUxyIz-7fbIq3nXrvfN9BpCQpDB6FE1uHnI7_UcJ4vUCVP4e1HYNYtFumhojlNiVCacrgjWq1d6C8zuHtoRrsnzLK9UMrrzBFfiPCMx1U2BRNv0HOXkBLQV0dpQaVkuTlQYUUTO2QB4VPAG0uDpRIseZq11KZRxWaRkNMYVeG3liWOI-RHs/s320/Imagen%20de%20WhatsApp%202025-02-19%20a%20las%2013.09.45_07154e6c.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwdCjEgBgJoUxyIz-7fbIq3nXrvfN9BpCQpDB6FE1uHnI7_UcJ4vUCVP4e1HYNYtFumhojlNiVCacrgjWq1d6C8zuHtoRrsnzLK9UMrrzBFfiPCMx1U2BRNv0HOXkBLQV0dpQaVkuTlQYUUTO2QB4VPAG0uDpRIseZq11KZRxWaRkNMYVeG3liWOI-RHs/s480/Imagen%20de%20WhatsApp%202025-02-19%20a%20las%2013.09.45_07154e6c.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwdCjEgBgJoUxyIz-7fbIq3nXrvfN9BpCQpDB6FE1uHnI7_UcJ4vUCVP4e1HYNYtFumhojlNiVCacrgjWq1d6C8zuHtoRrsnzLK9UMrrzBFfiPCMx1U2BRNv0HOXkBLQV0dpQaVkuTlQYUUTO2QB4VPAG0uDpRIseZq11KZRxWaRkNMYVeG3liWOI-RHs/s160/Imagen%20de%20WhatsApp%202025-02-19%20a%20las%2013.09.45_07154e6c.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwdCjEgBgJoUxyIz-7fbIq3nXrvfN9BpCQpDB6FE1uHnI7_UcJ4vUCVP4e1HYNYtFumhojlNiVCacrgjWq1d6C8zuHtoRrsnzLK9UMrrzBFfiPCMx1U2BRNv0HOXkBLQV0dpQaVkuTlQYUUTO2QB4VPAG0uDpRIseZq11KZRxWaRkNMYVeG3liWOI-RHs/s320/Imagen%20de%20WhatsApp%202025-02-19%20a%20las%2013.09.45_07154e6c.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwdCjEgBgJoUxyIz-7fbIq3nXrvfN9BpCQpDB6FE1uHnI7_UcJ4vUCVP4e1HYNYtFumhojlNiVCacrgjWq1d6C8zuHtoRrsnzLK9UMrrzBFfiPCMx1U2BRNv0HOXkBLQV0dpQaVkuTlQYUUTO2QB4VPAG0uDpRIseZq11KZRxWaRkNMYVeG3liWOI-RHs/s480/Imagen%20de%20WhatsApp%202025-02-19%20a%20las%2013.09.45_07154e6c.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1034 - Especial libros musicales desde Barcelona"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s320/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s160/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s320/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s480/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s160/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s320/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9lcDVne-S_2_JpLuv_jEB7Z_8WPmMZiYu74rdGJtQDjsa-q4PED3MHLZEVeYjFvtbmmuZuEXJtJuploJiITGLOCX1qebyBcJPhGg72pDoKVqFAT868_fFFibKBOhIq4Ghk7wKvS8C0YI/s480/Programa+326+%25E2%2580%2593+Actualidad+musical+enero+2018.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 327 – Actualidad musical (Enero 2018)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="programa-415-ricky-lavado.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0V_v45FOR9htz3E4gQeDBi-zn5wtSlVZgsRXoHi8Tbrg3k-fOVOC3q1gMMgR2WWYj2ebwE_4RZ4L5ORcNKsint3_vEuvJ1OTiUR7CQzQJWufeJF2_fGzuu0e3K3hF1MNamfpgmE9iGAE/s320/b90ENDORA.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0V_v45FOR9htz3E4gQeDBi-zn5wtSlVZgsRXoHi8Tbrg3k-fOVOC3q1gMMgR2WWYj2ebwE_4RZ4L5ORcNKsint3_vEuvJ1OTiUR7CQzQJWufeJF2_fGzuu0e3K3hF1MNamfpgmE9iGAE/s320/b90ENDORA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0V_v45FOR9htz3E4gQeDBi-zn5wtSlVZgsRXoHi8Tbrg3k-fOVOC3q1gMMgR2WWYj2ebwE_4RZ4L5ORcNKsint3_vEuvJ1OTiUR7CQzQJWufeJF2_fGzuu0e3K3hF1MNamfpgmE9iGAE/s480/b90ENDORA.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0V_v45FOR9htz3E4gQeDBi-zn5wtSlVZgsRXoHi8Tbrg3k-fOVOC3q1gMMgR2WWYj2ebwE_4RZ4L5ORcNKsint3_vEuvJ1OTiUR7CQzQJWufeJF2_fGzuu0e3K3hF1MNamfpgmE9iGAE/s640/b90ENDORA.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0V_v45FOR9htz3E4gQeDBi-zn5wtSlVZgsRXoHi8Tbrg3k-fOVOC3q1gMMgR2WWYj2ebwE_4RZ4L5ORcNKsint3_vEuvJ1OTiUR7CQzQJWufeJF2_fGzuu0e3K3hF1MNamfpgmE9iGAE/s320/b90ENDORA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0V_v45FOR9htz3E4gQeDBi-zn5wtSlVZgsRXoHi8Tbrg3k-fOVOC3q1gMMgR2WWYj2ebwE_4RZ4L5ORcNKsint3_vEuvJ1OTiUR7CQzQJWufeJF2_fGzuu0e3K3hF1MNamfpgmE9iGAE/s480/b90ENDORA.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0V_v45FOR9htz3E4gQeDBi-zn5wtSlVZgsRXoHi8Tbrg3k-fOVOC3q1gMMgR2WWYj2ebwE_4RZ4L5ORcNKsint3_vEuvJ1OTiUR7CQzQJWufeJF2_fGzuu0e3K3hF1MNamfpgmE9iGAE/s640/b90ENDORA.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 415 - Ricky Lavado"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="programa-472-novedades-musicales-diciembre-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKk662BYNP12Fhh7Bil1ME0vCtn7Phs1su2CYo6-RMtNAx02NWsOqxscmMC9r8zUll5pi8USOg6BcxR6JIlYpF7RkPAx3qJ9LzYZ7temuxvnGcijO8iY_wSs5-fS1cT4pWobs0iR6dWbs/s320/b90_472.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKk662BYNP12Fhh7Bil1ME0vCtn7Phs1su2CYo6-RMtNAx02NWsOqxscmMC9r8zUll5pi8USOg6BcxR6JIlYpF7RkPAx3qJ9LzYZ7temuxvnGcijO8iY_wSs5-fS1cT4pWobs0iR6dWbs/s320/b90_472.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKk662BYNP12Fhh7Bil1ME0vCtn7Phs1su2CYo6-RMtNAx02NWsOqxscmMC9r8zUll5pi8USOg6BcxR6JIlYpF7RkPAx3qJ9LzYZ7temuxvnGcijO8iY_wSs5-fS1cT4pWobs0iR6dWbs/s480/b90_472.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKk662BYNP12Fhh7Bil1ME0vCtn7Phs1su2CYo6-RMtNAx02NWsOqxscmMC9r8zUll5pi8USOg6BcxR6JIlYpF7RkPAx3qJ9LzYZ7temuxvnGcijO8iY_wSs5-fS1cT4pWobs0iR6dWbs/s640/b90_472.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKk662BYNP12Fhh7Bil1ME0vCtn7Phs1su2CYo6-RMtNAx02NWsOqxscmMC9r8zUll5pi8USOg6BcxR6JIlYpF7RkPAx3qJ9LzYZ7temuxvnGcijO8iY_wSs5-fS1cT4pWobs0iR6dWbs/s320/b90_472.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKk662BYNP12Fhh7Bil1ME0vCtn7Phs1su2CYo6-RMtNAx02NWsOqxscmMC9r8zUll5pi8USOg6BcxR6JIlYpF7RkPAx3qJ9LzYZ7temuxvnGcijO8iY_wSs5-fS1cT4pWobs0iR6dWbs/s480/b90_472.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKk662BYNP12Fhh7Bil1ME0vCtn7Phs1su2CYo6-RMtNAx02NWsOqxscmMC9r8zUll5pi8USOg6BcxR6JIlYpF7RkPAx3qJ9LzYZ7temuxvnGcijO8iY_wSs5-fS1cT4pWobs0iR6dWbs/s640/b90_472.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 472 - Novedades musicales diciembre 2018"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="programa-505-mis-10-documentales-musicales-favoritos-de-los-90.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s320/b90_505.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s320/b90_505.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s480/b90_505.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s640/b90_505.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s320/b90_505.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s480/b90_505.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZSqAEoUrA7e8QiGmE2dNEwBS54Z08zAdjXLzSrMB_IenR0ZmB-puuZ3Eu_VRFDkLfQZv2zUZ5-ghLakR-YtDCfqKxAiUcGWB1tTFkkTlql3uqQWVSm86IUbO1Ie_gc__AI9SEblz4Yc/s640/b90_505.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 505 - Mis 10 documentales musicales favoritos de los 90"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

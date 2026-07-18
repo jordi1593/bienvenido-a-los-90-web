@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 308 – 25 años de Automatic for the People (R.E.M.) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -129,8 +129,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s160/noel-liam-gallagher.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s480/noel-liam-gallagher.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s160/noel-liam-gallagher.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s480/noel-liam-gallagher.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 311 - Gallagher vs. Gallagher"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -140,8 +139,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s160/IMG_20180608_163539.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s480/IMG_20180608_163539.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s160/IMG_20180608_163539.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s320/IMG_20180608_163539.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikZhFdPKM-INoUPQZDefOGngBSR2Wlc-Zb0Pl2Jp-pM2-AifN5NiBkkcdDM39HTg6Cu4KPt1ErLXtwaQhTEfLpmTmyNhJj54b0L9LfbzfAn9IZqQBU9-j5WWUfCzdGRFREx4itV47_uic/s480/IMG_20180608_163539.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 400 con Paco Pérez Bryan"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -151,8 +149,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6DD-r3L13YSZQtn72nub9qYFVJoKpJ-LtZ-SKO0s_dccy55Ml92sfRXYZ-T1r_N_gQs1xTEHpM-Vkcnru74JtNagAeIuCcSBnpxMmqBUT2NxC0gEThgUWXgQoec5yTeF1i_bagaszzy4/s320/escenario+b90.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6DD-r3L13YSZQtn72nub9qYFVJoKpJ-LtZ-SKO0s_dccy55Ml92sfRXYZ-T1r_N_gQs1xTEHpM-Vkcnru74JtNagAeIuCcSBnpxMmqBUT2NxC0gEThgUWXgQoec5yTeF1i_bagaszzy4/s160/escenario+b90.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6DD-r3L13YSZQtn72nub9qYFVJoKpJ-LtZ-SKO0s_dccy55Ml92sfRXYZ-T1r_N_gQs1xTEHpM-Vkcnru74JtNagAeIuCcSBnpxMmqBUT2NxC0gEThgUWXgQoec5yTeF1i_bagaszzy4/s320/escenario+b90.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6DD-r3L13YSZQtn72nub9qYFVJoKpJ-LtZ-SKO0s_dccy55Ml92sfRXYZ-T1r_N_gQs1xTEHpM-Vkcnru74JtNagAeIuCcSBnpxMmqBUT2NxC0gEThgUWXgQoec5yTeF1i_bagaszzy4/s480/escenario+b90.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6DD-r3L13YSZQtn72nub9qYFVJoKpJ-LtZ-SKO0s_dccy55Ml92sfRXYZ-T1r_N_gQs1xTEHpM-Vkcnru74JtNagAeIuCcSBnpxMmqBUT2NxC0gEThgUWXgQoec5yTeF1i_bagaszzy4/s160/escenario+b90.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6DD-r3L13YSZQtn72nub9qYFVJoKpJ-LtZ-SKO0s_dccy55Ml92sfRXYZ-T1r_N_gQs1xTEHpM-Vkcnru74JtNagAeIuCcSBnpxMmqBUT2NxC0gEThgUWXgQoec5yTeF1i_bagaszzy4/s320/escenario+b90.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6DD-r3L13YSZQtn72nub9qYFVJoKpJ-LtZ-SKO0s_dccy55Ml92sfRXYZ-T1r_N_gQs1xTEHpM-Vkcnru74JtNagAeIuCcSBnpxMmqBUT2NxC0gEThgUWXgQoec5yTeF1i_bagaszzy4/s480/escenario+b90.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 406 - Mad Cool 2018, Escenario b90"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -168,8 +165,7 @@
         <a class="related-bottom-card" href="programa-478-los-mejores-solos-de-guitarra-de-los-anos-90.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s480/b90_478.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s640/b90_478.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s320/b90_478.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s480/b90_478.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-FiquJAkmT-9wazGFJAIAdEkkmL4V2UnoioSgrR3PzykueGmuwByFRC4m8JuQO7XKa-mgLxUy-Czf6xQKS2xEV73Ldo4roIyAyoDeS5-UXeVFwVVm7IrgyngeuU_G4hdoLB0Bp-BGuI/s640/b90_478.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 478 - Los mejores solos de guitarra de los años 90"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -180,8 +176,7 @@
           </a><a class="related-bottom-card" href="programa-243-temple-of-the-dog-25-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s320/temple1-1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s320/temple1-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s480/temple1-1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s640/temple1-1.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s320/temple1-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s480/temple1-1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s640/temple1-1.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 243 - Temple of the Dog (25 años)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -192,8 +187,7 @@
           </a><a class="related-bottom-card" href="p-689-oasis-25-anos-de-what-s-the-story-morning-glory.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s320/-hnDCirw.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s320/-hnDCirw.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s480/-hnDCirw.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s640/-hnDCirw.jpeg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s320/-hnDCirw.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s480/-hnDCirw.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBfRmGwkf_eQIVgtBqSw_6hDLhJXK3s2rxc0mklmpkcZ_J1qqCrqWCsRb84uXy19SLlFsa_oTSsW86ehj3lxapG-Olr3P1HX-YchSpdLwgwNxAzH4oldWBWE24ovm0916hm8i94Gvjjs/s640/-hnDCirw.jpeg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.689 - Oasis, 25 años de (What&#39;s the story) Morning Glory?"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>The Stone Roses — 6 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1021-especial-1994-12-the-beatles-the-stone-roses-bush-pearl-jam.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s320/b90_parte12_final.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s160/b90_parte12_final.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s320/b90_parte12_final.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s480/b90_parte12_final.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s160/b90_parte12_final.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s320/b90_parte12_final.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0LnQV3fDWxzArpDOwRegS-wv8oYlCWwKv0NQuEX_E-vzYHUIFVi5WRM3vhXNff0kKjzneNcwk3QT0jfFFjnnT_xPuAl8idYq1d_gX90NMWXnVF8LtoLzkwgaUHv4J4V1iCQoZ1NS7v1bf98yK6bI4hq-ca1Yjurx_YVvmFm0AW_5m0XJGO5AA55ZN2rA/s480/b90_parte12_final.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1021 - Especial 1994 (12) : The Beatles - The Stone Roses - Bush - Pearl Jam"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-802-john-squire-de-the-stone-roses-a-the-seahorses.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7LDXcBG7j5F-LIHpoJqrOKz9Ho_qWSFL5F1Qw4DPH7XdkmoLE5eZhxgGCyFCXgDHttS58VH0r9GLTv2Zir0DVazvjoV5826zDH5qKNzewdCsYWnyDRuawMip8Sn8DreDEDDrfCY0QQ7E/s320/IMG_20211026_120631.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7LDXcBG7j5F-LIHpoJqrOKz9Ho_qWSFL5F1Qw4DPH7XdkmoLE5eZhxgGCyFCXgDHttS58VH0r9GLTv2Zir0DVazvjoV5826zDH5qKNzewdCsYWnyDRuawMip8Sn8DreDEDDrfCY0QQ7E/s160/IMG_20211026_120631.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7LDXcBG7j5F-LIHpoJqrOKz9Ho_qWSFL5F1Qw4DPH7XdkmoLE5eZhxgGCyFCXgDHttS58VH0r9GLTv2Zir0DVazvjoV5826zDH5qKNzewdCsYWnyDRuawMip8Sn8DreDEDDrfCY0QQ7E/s320/IMG_20211026_120631.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7LDXcBG7j5F-LIHpoJqrOKz9Ho_qWSFL5F1Qw4DPH7XdkmoLE5eZhxgGCyFCXgDHttS58VH0r9GLTv2Zir0DVazvjoV5826zDH5qKNzewdCsYWnyDRuawMip8Sn8DreDEDDrfCY0QQ7E/s480/IMG_20211026_120631.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7LDXcBG7j5F-LIHpoJqrOKz9Ho_qWSFL5F1Qw4DPH7XdkmoLE5eZhxgGCyFCXgDHttS58VH0r9GLTv2Zir0DVazvjoV5826zDH5qKNzewdCsYWnyDRuawMip8Sn8DreDEDDrfCY0QQ7E/s160/IMG_20211026_120631.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7LDXcBG7j5F-LIHpoJqrOKz9Ho_qWSFL5F1Qw4DPH7XdkmoLE5eZhxgGCyFCXgDHttS58VH0r9GLTv2Zir0DVazvjoV5826zDH5qKNzewdCsYWnyDRuawMip8Sn8DreDEDDrfCY0QQ7E/s320/IMG_20211026_120631.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7LDXcBG7j5F-LIHpoJqrOKz9Ho_qWSFL5F1Qw4DPH7XdkmoLE5eZhxgGCyFCXgDHttS58VH0r9GLTv2Zir0DVazvjoV5826zDH5qKNzewdCsYWnyDRuawMip8Sn8DreDEDDrfCY0QQ7E/s480/IMG_20211026_120631.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.802 - John Squire, de The Stone Roses a The Seahorses"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-632-los-discos-esenciales-de-noel-gallagher-oasis.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdngk9OtDuIrvZ_-6Ie1kCYPwoaUAFFZUZfxHp0bxNOxXXPOYX6HcV5cLkQTQEVF6ewlaZJogdJOy0bpNeZdWZjGSiF_T6k6xWIfAnb3xSRDuFe0kYUxXKW0Z77dFmdb1dxfupDLOoPDs/s320/Noel-Gallagher-canta-en-el-camar%25C3%25ADn-del-manchester-city-768x645.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdngk9OtDuIrvZ_-6Ie1kCYPwoaUAFFZUZfxHp0bxNOxXXPOYX6HcV5cLkQTQEVF6ewlaZJogdJOy0bpNeZdWZjGSiF_T6k6xWIfAnb3xSRDuFe0kYUxXKW0Z77dFmdb1dxfupDLOoPDs/s160/Noel-Gallagher-canta-en-el-camar%25C3%25ADn-del-manchester-city-768x645.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdngk9OtDuIrvZ_-6Ie1kCYPwoaUAFFZUZfxHp0bxNOxXXPOYX6HcV5cLkQTQEVF6ewlaZJogdJOy0bpNeZdWZjGSiF_T6k6xWIfAnb3xSRDuFe0kYUxXKW0Z77dFmdb1dxfupDLOoPDs/s320/Noel-Gallagher-canta-en-el-camar%25C3%25ADn-del-manchester-city-768x645.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdngk9OtDuIrvZ_-6Ie1kCYPwoaUAFFZUZfxHp0bxNOxXXPOYX6HcV5cLkQTQEVF6ewlaZJogdJOy0bpNeZdWZjGSiF_T6k6xWIfAnb3xSRDuFe0kYUxXKW0Z77dFmdb1dxfupDLOoPDs/s480/Noel-Gallagher-canta-en-el-camar%25C3%25ADn-del-manchester-city-768x645.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdngk9OtDuIrvZ_-6Ie1kCYPwoaUAFFZUZfxHp0bxNOxXXPOYX6HcV5cLkQTQEVF6ewlaZJogdJOy0bpNeZdWZjGSiF_T6k6xWIfAnb3xSRDuFe0kYUxXKW0Z77dFmdb1dxfupDLOoPDs/s160/Noel-Gallagher-canta-en-el-camar%25C3%25ADn-del-manchester-city-768x645.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdngk9OtDuIrvZ_-6Ie1kCYPwoaUAFFZUZfxHp0bxNOxXXPOYX6HcV5cLkQTQEVF6ewlaZJogdJOy0bpNeZdWZjGSiF_T6k6xWIfAnb3xSRDuFe0kYUxXKW0Z77dFmdb1dxfupDLOoPDs/s320/Noel-Gallagher-canta-en-el-camar%25C3%25ADn-del-manchester-city-768x645.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdngk9OtDuIrvZ_-6Ie1kCYPwoaUAFFZUZfxHp0bxNOxXXPOYX6HcV5cLkQTQEVF6ewlaZJogdJOy0bpNeZdWZjGSiF_T6k6xWIfAnb3xSRDuFe0kYUxXKW0Z77dFmdb1dxfupDLOoPDs/s480/Noel-Gallagher-canta-en-el-camar%25C3%25ADn-del-manchester-city-768x645.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.632 Los discos esenciales de Noel Gallagher (Oasis)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-244-antes-del-britpop-the-verve.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s320/verve.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s160/verve.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s320/verve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s480/verve.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s160/verve.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s320/verve.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-CeNrJjTOtjIECA8iwUI6BbwLjFz4javrfqqBYjwrS2DdpCrHRP-X-oWNWwo-L9SgyYBVNt3hNh7wBDSVU2Kc3XvydXcRiJf1gFile9UzWLKLmUSruw0gD49-M_zU8whvSxRK3TUChbw/s480/verve.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 244 - Antes del Britpop + The Verve"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-55-madchester.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 55 - Madchester"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-27-glastonbury.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s320/g08_RTR2O2AU.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s160/g08_RTR2O2AU.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s320/g08_RTR2O2AU.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s480/g08_RTR2O2AU.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s160/g08_RTR2O2AU.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s320/g08_RTR2O2AU.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOiQMTyP6erW-ULJ63Ai6aL8szR24FsugHgciq8ebOz8Wp8ENsX2XJVHSKL_nbSoSJzfC0t2QQSxbyd7FD1ZLdHNK0GW3DpJ2HpRQfEt1tM1qT4Za7yeXD9AJVKzVXS5SW1v4dPDX8sE/s480/g08_RTR2O2AU.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Bienvenido a los 90 - Programa 27 - Glastonbury"
                 loading="lazy" width="320" height="213" />
         </a>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Tucho — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-615-hablamos-con-el-meister-manuel-cabezali-sala-el-sol-ecos-del-vinilo-y-tuch.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgSDX2bbkivr3MgHoHxZ1NnhT9xMMz6Lob-I2j_VpO3jSNrR-xSe_7t2vK1kaLS6TWbkt0NNOM3N4w6BkMLy5ANtVc_uh8zsI5PR-0UorHddAf1nq07qIHjeWt-79WpNGNxtPC9GwYd54/s320/12374912_10153904092293939_3661651486922871011_o.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgSDX2bbkivr3MgHoHxZ1NnhT9xMMz6Lob-I2j_VpO3jSNrR-xSe_7t2vK1kaLS6TWbkt0NNOM3N4w6BkMLy5ANtVc_uh8zsI5PR-0UorHddAf1nq07qIHjeWt-79WpNGNxtPC9GwYd54/s160/12374912_10153904092293939_3661651486922871011_o.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgSDX2bbkivr3MgHoHxZ1NnhT9xMMz6Lob-I2j_VpO3jSNrR-xSe_7t2vK1kaLS6TWbkt0NNOM3N4w6BkMLy5ANtVc_uh8zsI5PR-0UorHddAf1nq07qIHjeWt-79WpNGNxtPC9GwYd54/s320/12374912_10153904092293939_3661651486922871011_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgSDX2bbkivr3MgHoHxZ1NnhT9xMMz6Lob-I2j_VpO3jSNrR-xSe_7t2vK1kaLS6TWbkt0NNOM3N4w6BkMLy5ANtVc_uh8zsI5PR-0UorHddAf1nq07qIHjeWt-79WpNGNxtPC9GwYd54/s480/12374912_10153904092293939_3661651486922871011_o.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgSDX2bbkivr3MgHoHxZ1NnhT9xMMz6Lob-I2j_VpO3jSNrR-xSe_7t2vK1kaLS6TWbkt0NNOM3N4w6BkMLy5ANtVc_uh8zsI5PR-0UorHddAf1nq07qIHjeWt-79WpNGNxtPC9GwYd54/s160/12374912_10153904092293939_3661651486922871011_o.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgSDX2bbkivr3MgHoHxZ1NnhT9xMMz6Lob-I2j_VpO3jSNrR-xSe_7t2vK1kaLS6TWbkt0NNOM3N4w6BkMLy5ANtVc_uh8zsI5PR-0UorHddAf1nq07qIHjeWt-79WpNGNxtPC9GwYd54/s320/12374912_10153904092293939_3661651486922871011_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgSDX2bbkivr3MgHoHxZ1NnhT9xMMz6Lob-I2j_VpO3jSNrR-xSe_7t2vK1kaLS6TWbkt0NNOM3N4w6BkMLy5ANtVc_uh8zsI5PR-0UorHddAf1nq07qIHjeWt-79WpNGNxtPC9GwYd54/s480/12374912_10153904092293939_3661651486922871011_o.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.615 - Hablamos con El Meister, Manuel Cabezalí, Sala El Sol, Ecos del Vinilo y Tucho sobre el COVID-19"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-590-las-bandas-locales-que-han-pasado-por-el-programa-en-2019.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKx59-FAsIcHCmzcpvac7Nj4WRp-hplBxtnwedprdd9sBSKC48t1NMWlPKnJtNTCTTFHhAw5DaZMIrsAX30NjJGQEEfR0y3k8N9-dAnEc_0XmllqBBdxc2IE6dHChLa4BRvcR4R9V0SjE/s320/b90_590.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKx59-FAsIcHCmzcpvac7Nj4WRp-hplBxtnwedprdd9sBSKC48t1NMWlPKnJtNTCTTFHhAw5DaZMIrsAX30NjJGQEEfR0y3k8N9-dAnEc_0XmllqBBdxc2IE6dHChLa4BRvcR4R9V0SjE/s160/b90_590.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKx59-FAsIcHCmzcpvac7Nj4WRp-hplBxtnwedprdd9sBSKC48t1NMWlPKnJtNTCTTFHhAw5DaZMIrsAX30NjJGQEEfR0y3k8N9-dAnEc_0XmllqBBdxc2IE6dHChLa4BRvcR4R9V0SjE/s320/b90_590.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKx59-FAsIcHCmzcpvac7Nj4WRp-hplBxtnwedprdd9sBSKC48t1NMWlPKnJtNTCTTFHhAw5DaZMIrsAX30NjJGQEEfR0y3k8N9-dAnEc_0XmllqBBdxc2IE6dHChLa4BRvcR4R9V0SjE/s480/b90_590.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKx59-FAsIcHCmzcpvac7Nj4WRp-hplBxtnwedprdd9sBSKC48t1NMWlPKnJtNTCTTFHhAw5DaZMIrsAX30NjJGQEEfR0y3k8N9-dAnEc_0XmllqBBdxc2IE6dHChLa4BRvcR4R9V0SjE/s160/b90_590.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKx59-FAsIcHCmzcpvac7Nj4WRp-hplBxtnwedprdd9sBSKC48t1NMWlPKnJtNTCTTFHhAw5DaZMIrsAX30NjJGQEEfR0y3k8N9-dAnEc_0XmllqBBdxc2IE6dHChLa4BRvcR4R9V0SjE/s320/b90_590.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKx59-FAsIcHCmzcpvac7Nj4WRp-hplBxtnwedprdd9sBSKC48t1NMWlPKnJtNTCTTFHhAw5DaZMIrsAX30NjJGQEEfR0y3k8N9-dAnEc_0XmllqBBdxc2IE6dHChLa4BRvcR4R9V0SjE/s480/b90_590.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.590 - Las bandas locales que han pasado por el programa en 2019"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-579-tucho-la-carretera-que-une-nashville-con-ratm.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAxd5uPvijbwF0yiOyhns2LMqrOSiAJYFV5nLI_qyv9bpvlKm0kxcV5ZOwDtI-2xo-kwiZzWdIz8Fk_4NMJUw3DsFpoa_lRO_uv34N50rbMiXwtuB600Wxw3TELuCMIjuSfgqEqW0FFQk/s320/b90_579.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAxd5uPvijbwF0yiOyhns2LMqrOSiAJYFV5nLI_qyv9bpvlKm0kxcV5ZOwDtI-2xo-kwiZzWdIz8Fk_4NMJUw3DsFpoa_lRO_uv34N50rbMiXwtuB600Wxw3TELuCMIjuSfgqEqW0FFQk/s160/b90_579.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAxd5uPvijbwF0yiOyhns2LMqrOSiAJYFV5nLI_qyv9bpvlKm0kxcV5ZOwDtI-2xo-kwiZzWdIz8Fk_4NMJUw3DsFpoa_lRO_uv34N50rbMiXwtuB600Wxw3TELuCMIjuSfgqEqW0FFQk/s320/b90_579.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAxd5uPvijbwF0yiOyhns2LMqrOSiAJYFV5nLI_qyv9bpvlKm0kxcV5ZOwDtI-2xo-kwiZzWdIz8Fk_4NMJUw3DsFpoa_lRO_uv34N50rbMiXwtuB600Wxw3TELuCMIjuSfgqEqW0FFQk/s480/b90_579.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAxd5uPvijbwF0yiOyhns2LMqrOSiAJYFV5nLI_qyv9bpvlKm0kxcV5ZOwDtI-2xo-kwiZzWdIz8Fk_4NMJUw3DsFpoa_lRO_uv34N50rbMiXwtuB600Wxw3TELuCMIjuSfgqEqW0FFQk/s160/b90_579.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAxd5uPvijbwF0yiOyhns2LMqrOSiAJYFV5nLI_qyv9bpvlKm0kxcV5ZOwDtI-2xo-kwiZzWdIz8Fk_4NMJUw3DsFpoa_lRO_uv34N50rbMiXwtuB600Wxw3TELuCMIjuSfgqEqW0FFQk/s320/b90_579.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAxd5uPvijbwF0yiOyhns2LMqrOSiAJYFV5nLI_qyv9bpvlKm0kxcV5ZOwDtI-2xo-kwiZzWdIz8Fk_4NMJUw3DsFpoa_lRO_uv34N50rbMiXwtuB600Wxw3TELuCMIjuSfgqEqW0FFQk/s480/b90_579.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.579 - Tucho: la carretera que une Nashville con RATM"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-550-homenaje-a-dylan-desde-la-sala-siroco-madrid-20-07-2019.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHPO6Zy04pU-djhgj4TMduZgOU0vEGW-iadiubbynK_R4ygRntjP6I7P1wTwiEVh4zHFIurXJNpms0xbmnSf0UE85Bb_f-tHAoJgiFffVhO1hrUaZr9BNhxhY24ykNVwwKIiiKjCHH49o/s320/IMG-20190711-WA0011.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHPO6Zy04pU-djhgj4TMduZgOU0vEGW-iadiubbynK_R4ygRntjP6I7P1wTwiEVh4zHFIurXJNpms0xbmnSf0UE85Bb_f-tHAoJgiFffVhO1hrUaZr9BNhxhY24ykNVwwKIiiKjCHH49o/s160/IMG-20190711-WA0011.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHPO6Zy04pU-djhgj4TMduZgOU0vEGW-iadiubbynK_R4ygRntjP6I7P1wTwiEVh4zHFIurXJNpms0xbmnSf0UE85Bb_f-tHAoJgiFffVhO1hrUaZr9BNhxhY24ykNVwwKIiiKjCHH49o/s320/IMG-20190711-WA0011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHPO6Zy04pU-djhgj4TMduZgOU0vEGW-iadiubbynK_R4ygRntjP6I7P1wTwiEVh4zHFIurXJNpms0xbmnSf0UE85Bb_f-tHAoJgiFffVhO1hrUaZr9BNhxhY24ykNVwwKIiiKjCHH49o/s480/IMG-20190711-WA0011.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHPO6Zy04pU-djhgj4TMduZgOU0vEGW-iadiubbynK_R4ygRntjP6I7P1wTwiEVh4zHFIurXJNpms0xbmnSf0UE85Bb_f-tHAoJgiFffVhO1hrUaZr9BNhxhY24ykNVwwKIiiKjCHH49o/s160/IMG-20190711-WA0011.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHPO6Zy04pU-djhgj4TMduZgOU0vEGW-iadiubbynK_R4ygRntjP6I7P1wTwiEVh4zHFIurXJNpms0xbmnSf0UE85Bb_f-tHAoJgiFffVhO1hrUaZr9BNhxhY24ykNVwwKIiiKjCHH49o/s320/IMG-20190711-WA0011.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHPO6Zy04pU-djhgj4TMduZgOU0vEGW-iadiubbynK_R4ygRntjP6I7P1wTwiEVh4zHFIurXJNpms0xbmnSf0UE85Bb_f-tHAoJgiFffVhO1hrUaZr9BNhxhY24ykNVwwKIiiKjCHH49o/s480/IMG-20190711-WA0011.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 550 - Homenaje a DYLAN desde la Sala Siroco (Madrid, 20/07/2019)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-528-homenaje-a-bob-dylan.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw97KTCamFC9Opr8wvL2ZyKkraQjgbqTiZNXkEkDjzOFfdcM1Mp0THAVh6go8pMxPDrTB_bnxvJQo4K9CqrpCwoX_ow12Zp6BA7MeGvMqWFv8m77ZdVpC_81jt2qjaK7EU6U-r5DrzwLU/s320/Portada_ruido+%25281%2529.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw97KTCamFC9Opr8wvL2ZyKkraQjgbqTiZNXkEkDjzOFfdcM1Mp0THAVh6go8pMxPDrTB_bnxvJQo4K9CqrpCwoX_ow12Zp6BA7MeGvMqWFv8m77ZdVpC_81jt2qjaK7EU6U-r5DrzwLU/s160/Portada_ruido+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw97KTCamFC9Opr8wvL2ZyKkraQjgbqTiZNXkEkDjzOFfdcM1Mp0THAVh6go8pMxPDrTB_bnxvJQo4K9CqrpCwoX_ow12Zp6BA7MeGvMqWFv8m77ZdVpC_81jt2qjaK7EU6U-r5DrzwLU/s320/Portada_ruido+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw97KTCamFC9Opr8wvL2ZyKkraQjgbqTiZNXkEkDjzOFfdcM1Mp0THAVh6go8pMxPDrTB_bnxvJQo4K9CqrpCwoX_ow12Zp6BA7MeGvMqWFv8m77ZdVpC_81jt2qjaK7EU6U-r5DrzwLU/s480/Portada_ruido+%25281%2529.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw97KTCamFC9Opr8wvL2ZyKkraQjgbqTiZNXkEkDjzOFfdcM1Mp0THAVh6go8pMxPDrTB_bnxvJQo4K9CqrpCwoX_ow12Zp6BA7MeGvMqWFv8m77ZdVpC_81jt2qjaK7EU6U-r5DrzwLU/s160/Portada_ruido+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw97KTCamFC9Opr8wvL2ZyKkraQjgbqTiZNXkEkDjzOFfdcM1Mp0THAVh6go8pMxPDrTB_bnxvJQo4K9CqrpCwoX_ow12Zp6BA7MeGvMqWFv8m77ZdVpC_81jt2qjaK7EU6U-r5DrzwLU/s320/Portada_ruido+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw97KTCamFC9Opr8wvL2ZyKkraQjgbqTiZNXkEkDjzOFfdcM1Mp0THAVh6go8pMxPDrTB_bnxvJQo4K9CqrpCwoX_ow12Zp6BA7MeGvMqWFv8m77ZdVpC_81jt2qjaK7EU6U-r5DrzwLU/s480/Portada_ruido+%25281%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 528 - Homenaje a BOB DYLAN"
                 loading="lazy" width="320" height="213" />
         </a>

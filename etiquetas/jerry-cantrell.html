@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Jerry Cantrell — 6 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-991-tu-antes-molabas.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd8FYZZm9hxpRee36cu0JMGFphvHcuf6Zr-UdEw3gDJwLXXb71eYqFd7LclBj910O1FpuA2VvXn62Sxl98gaKeIxz7ceHyoTfwNOJJXAvpGxTvkauPJqSsaUk6AjfpXfxWmnKbAi5CN8e4VXjGiWQDCxDL8x6F-Pq8mfnYPCEbA6V0gkNYzpxx_NG6yhM/s320/b90_tu%20molas22.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd8FYZZm9hxpRee36cu0JMGFphvHcuf6Zr-UdEw3gDJwLXXb71eYqFd7LclBj910O1FpuA2VvXn62Sxl98gaKeIxz7ceHyoTfwNOJJXAvpGxTvkauPJqSsaUk6AjfpXfxWmnKbAi5CN8e4VXjGiWQDCxDL8x6F-Pq8mfnYPCEbA6V0gkNYzpxx_NG6yhM/s160/b90_tu%20molas22.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd8FYZZm9hxpRee36cu0JMGFphvHcuf6Zr-UdEw3gDJwLXXb71eYqFd7LclBj910O1FpuA2VvXn62Sxl98gaKeIxz7ceHyoTfwNOJJXAvpGxTvkauPJqSsaUk6AjfpXfxWmnKbAi5CN8e4VXjGiWQDCxDL8x6F-Pq8mfnYPCEbA6V0gkNYzpxx_NG6yhM/s320/b90_tu%20molas22.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd8FYZZm9hxpRee36cu0JMGFphvHcuf6Zr-UdEw3gDJwLXXb71eYqFd7LclBj910O1FpuA2VvXn62Sxl98gaKeIxz7ceHyoTfwNOJJXAvpGxTvkauPJqSsaUk6AjfpXfxWmnKbAi5CN8e4VXjGiWQDCxDL8x6F-Pq8mfnYPCEbA6V0gkNYzpxx_NG6yhM/s480/b90_tu%20molas22.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd8FYZZm9hxpRee36cu0JMGFphvHcuf6Zr-UdEw3gDJwLXXb71eYqFd7LclBj910O1FpuA2VvXn62Sxl98gaKeIxz7ceHyoTfwNOJJXAvpGxTvkauPJqSsaUk6AjfpXfxWmnKbAi5CN8e4VXjGiWQDCxDL8x6F-Pq8mfnYPCEbA6V0gkNYzpxx_NG6yhM/s160/b90_tu%20molas22.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd8FYZZm9hxpRee36cu0JMGFphvHcuf6Zr-UdEw3gDJwLXXb71eYqFd7LclBj910O1FpuA2VvXn62Sxl98gaKeIxz7ceHyoTfwNOJJXAvpGxTvkauPJqSsaUk6AjfpXfxWmnKbAi5CN8e4VXjGiWQDCxDL8x6F-Pq8mfnYPCEbA6V0gkNYzpxx_NG6yhM/s320/b90_tu%20molas22.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd8FYZZm9hxpRee36cu0JMGFphvHcuf6Zr-UdEw3gDJwLXXb71eYqFd7LclBj910O1FpuA2VvXn62Sxl98gaKeIxz7ceHyoTfwNOJJXAvpGxTvkauPJqSsaUk6AjfpXfxWmnKbAi5CN8e4VXjGiWQDCxDL8x6F-Pq8mfnYPCEbA6V0gkNYzpxx_NG6yhM/s480/b90_tu%20molas22.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.991 - Tú antes molabas"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-794-novedades-jerry-cantrell-metz-vial-brainiac-the-blinders.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiifJclHWUZIBhmZ77nkocjlTE75G3EnGASeON7DFZ0cS6HpM3ieJxeH7EBgeFxwABW3mPQ_93NBNY7ifbuyMy-6gGxpIG599KH1V0MxXgY0XBA0AXZy74ULl7CG8Q5rFcGUl2qpz4pRkQ/s320/b90_794.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiifJclHWUZIBhmZ77nkocjlTE75G3EnGASeON7DFZ0cS6HpM3ieJxeH7EBgeFxwABW3mPQ_93NBNY7ifbuyMy-6gGxpIG599KH1V0MxXgY0XBA0AXZy74ULl7CG8Q5rFcGUl2qpz4pRkQ/s160/b90_794.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiifJclHWUZIBhmZ77nkocjlTE75G3EnGASeON7DFZ0cS6HpM3ieJxeH7EBgeFxwABW3mPQ_93NBNY7ifbuyMy-6gGxpIG599KH1V0MxXgY0XBA0AXZy74ULl7CG8Q5rFcGUl2qpz4pRkQ/s320/b90_794.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiifJclHWUZIBhmZ77nkocjlTE75G3EnGASeON7DFZ0cS6HpM3ieJxeH7EBgeFxwABW3mPQ_93NBNY7ifbuyMy-6gGxpIG599KH1V0MxXgY0XBA0AXZy74ULl7CG8Q5rFcGUl2qpz4pRkQ/s480/b90_794.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiifJclHWUZIBhmZ77nkocjlTE75G3EnGASeON7DFZ0cS6HpM3ieJxeH7EBgeFxwABW3mPQ_93NBNY7ifbuyMy-6gGxpIG599KH1V0MxXgY0XBA0AXZy74ULl7CG8Q5rFcGUl2qpz4pRkQ/s160/b90_794.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiifJclHWUZIBhmZ77nkocjlTE75G3EnGASeON7DFZ0cS6HpM3ieJxeH7EBgeFxwABW3mPQ_93NBNY7ifbuyMy-6gGxpIG599KH1V0MxXgY0XBA0AXZy74ULl7CG8Q5rFcGUl2qpz4pRkQ/s320/b90_794.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiifJclHWUZIBhmZ77nkocjlTE75G3EnGASeON7DFZ0cS6HpM3ieJxeH7EBgeFxwABW3mPQ_93NBNY7ifbuyMy-6gGxpIG599KH1V0MxXgY0XBA0AXZy74ULl7CG8Q5rFcGUl2qpz4pRkQ/s480/b90_794.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.794 - Novedades: Jerry Cantrell, Metz, Vial, Brainiac , The Blinders..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-752-jerry-cantrell.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmsS98tLsOf6ePOwPUHzLWUGDPKQBhqR_4els-YRRvNaYIOC_JsE5jhmVL4Ehui6AZEVaDhrbfZAptq6Yr1lxah-ZKHoMOOX-qMQQVY6aVYnwP6MT8KOyuzl0u1ky8ay2bn_ooA-zwjB4/s320/KARENMASONBLAIR90s129.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmsS98tLsOf6ePOwPUHzLWUGDPKQBhqR_4els-YRRvNaYIOC_JsE5jhmVL4Ehui6AZEVaDhrbfZAptq6Yr1lxah-ZKHoMOOX-qMQQVY6aVYnwP6MT8KOyuzl0u1ky8ay2bn_ooA-zwjB4/s160/KARENMASONBLAIR90s129.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmsS98tLsOf6ePOwPUHzLWUGDPKQBhqR_4els-YRRvNaYIOC_JsE5jhmVL4Ehui6AZEVaDhrbfZAptq6Yr1lxah-ZKHoMOOX-qMQQVY6aVYnwP6MT8KOyuzl0u1ky8ay2bn_ooA-zwjB4/s320/KARENMASONBLAIR90s129.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmsS98tLsOf6ePOwPUHzLWUGDPKQBhqR_4els-YRRvNaYIOC_JsE5jhmVL4Ehui6AZEVaDhrbfZAptq6Yr1lxah-ZKHoMOOX-qMQQVY6aVYnwP6MT8KOyuzl0u1ky8ay2bn_ooA-zwjB4/s480/KARENMASONBLAIR90s129.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmsS98tLsOf6ePOwPUHzLWUGDPKQBhqR_4els-YRRvNaYIOC_JsE5jhmVL4Ehui6AZEVaDhrbfZAptq6Yr1lxah-ZKHoMOOX-qMQQVY6aVYnwP6MT8KOyuzl0u1ky8ay2bn_ooA-zwjB4/s160/KARENMASONBLAIR90s129.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmsS98tLsOf6ePOwPUHzLWUGDPKQBhqR_4els-YRRvNaYIOC_JsE5jhmVL4Ehui6AZEVaDhrbfZAptq6Yr1lxah-ZKHoMOOX-qMQQVY6aVYnwP6MT8KOyuzl0u1ky8ay2bn_ooA-zwjB4/s320/KARENMASONBLAIR90s129.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmsS98tLsOf6ePOwPUHzLWUGDPKQBhqR_4els-YRRvNaYIOC_JsE5jhmVL4Ehui6AZEVaDhrbfZAptq6Yr1lxah-ZKHoMOOX-qMQQVY6aVYnwP6MT8KOyuzl0u1ky8ay2bn_ooA-zwjB4/s480/KARENMASONBLAIR90s129.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.752 - Jerry Cantrell "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-428-alice-in-chains-rainier-fog-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbOaGbfWTOki_G5M2jK-yquUweO00Nzj2Kfxavu4jrdlCUre-5VWEoar-ZAZe98ggjL7Y0y63Nqu3oQI8sqsrTplOzpWHRVrKkOmuCOswD1Z3lDjw0zTQ6bXXb3h_foIRLa9FdTF1GmOo/s320/aicrainierfogcover.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbOaGbfWTOki_G5M2jK-yquUweO00Nzj2Kfxavu4jrdlCUre-5VWEoar-ZAZe98ggjL7Y0y63Nqu3oQI8sqsrTplOzpWHRVrKkOmuCOswD1Z3lDjw0zTQ6bXXb3h_foIRLa9FdTF1GmOo/s160/aicrainierfogcover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbOaGbfWTOki_G5M2jK-yquUweO00Nzj2Kfxavu4jrdlCUre-5VWEoar-ZAZe98ggjL7Y0y63Nqu3oQI8sqsrTplOzpWHRVrKkOmuCOswD1Z3lDjw0zTQ6bXXb3h_foIRLa9FdTF1GmOo/s320/aicrainierfogcover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbOaGbfWTOki_G5M2jK-yquUweO00Nzj2Kfxavu4jrdlCUre-5VWEoar-ZAZe98ggjL7Y0y63Nqu3oQI8sqsrTplOzpWHRVrKkOmuCOswD1Z3lDjw0zTQ6bXXb3h_foIRLa9FdTF1GmOo/s480/aicrainierfogcover.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbOaGbfWTOki_G5M2jK-yquUweO00Nzj2Kfxavu4jrdlCUre-5VWEoar-ZAZe98ggjL7Y0y63Nqu3oQI8sqsrTplOzpWHRVrKkOmuCOswD1Z3lDjw0zTQ6bXXb3h_foIRLa9FdTF1GmOo/s160/aicrainierfogcover.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbOaGbfWTOki_G5M2jK-yquUweO00Nzj2Kfxavu4jrdlCUre-5VWEoar-ZAZe98ggjL7Y0y63Nqu3oQI8sqsrTplOzpWHRVrKkOmuCOswD1Z3lDjw0zTQ6bXXb3h_foIRLa9FdTF1GmOo/s320/aicrainierfogcover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbOaGbfWTOki_G5M2jK-yquUweO00Nzj2Kfxavu4jrdlCUre-5VWEoar-ZAZe98ggjL7Y0y63Nqu3oQI8sqsrTplOzpWHRVrKkOmuCOswD1Z3lDjw0zTQ6bXXb3h_foIRLa9FdTF1GmOo/s480/aicrainierfogcover.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 428 - Alice in Chains &#39;Rainier Fog&#39; (2018)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-407-alice-in-chains-en-directo-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Uu3y4Dx3CGqeJe4ZEUmTvYfBrsYEJZbrRwXHFm-AlFNkRCQBcLKQpimg-30lXkcqVZXOKTt07MZ5WsE1LGWxcxaKSjrCM-KUbCy02GdyIjtpfQOLKvbapjLV-9kVSZt3MvTAcp5pi94/s320/aictourmarch.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Uu3y4Dx3CGqeJe4ZEUmTvYfBrsYEJZbrRwXHFm-AlFNkRCQBcLKQpimg-30lXkcqVZXOKTt07MZ5WsE1LGWxcxaKSjrCM-KUbCy02GdyIjtpfQOLKvbapjLV-9kVSZt3MvTAcp5pi94/s160/aictourmarch.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Uu3y4Dx3CGqeJe4ZEUmTvYfBrsYEJZbrRwXHFm-AlFNkRCQBcLKQpimg-30lXkcqVZXOKTt07MZ5WsE1LGWxcxaKSjrCM-KUbCy02GdyIjtpfQOLKvbapjLV-9kVSZt3MvTAcp5pi94/s320/aictourmarch.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Uu3y4Dx3CGqeJe4ZEUmTvYfBrsYEJZbrRwXHFm-AlFNkRCQBcLKQpimg-30lXkcqVZXOKTt07MZ5WsE1LGWxcxaKSjrCM-KUbCy02GdyIjtpfQOLKvbapjLV-9kVSZt3MvTAcp5pi94/s480/aictourmarch.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Uu3y4Dx3CGqeJe4ZEUmTvYfBrsYEJZbrRwXHFm-AlFNkRCQBcLKQpimg-30lXkcqVZXOKTt07MZ5WsE1LGWxcxaKSjrCM-KUbCy02GdyIjtpfQOLKvbapjLV-9kVSZt3MvTAcp5pi94/s160/aictourmarch.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Uu3y4Dx3CGqeJe4ZEUmTvYfBrsYEJZbrRwXHFm-AlFNkRCQBcLKQpimg-30lXkcqVZXOKTt07MZ5WsE1LGWxcxaKSjrCM-KUbCy02GdyIjtpfQOLKvbapjLV-9kVSZt3MvTAcp5pi94/s320/aictourmarch.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Uu3y4Dx3CGqeJe4ZEUmTvYfBrsYEJZbrRwXHFm-AlFNkRCQBcLKQpimg-30lXkcqVZXOKTt07MZ5WsE1LGWxcxaKSjrCM-KUbCy02GdyIjtpfQOLKvbapjLV-9kVSZt3MvTAcp5pi94/s480/aictourmarch.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 407 - Alice in Chains en directo 2018"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/especial-alice-in-chains.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48KPqpRBuVeEPGInxN3vdtahopm138YvotxMM62SB4jI6ZI-6bwm_WnIM9WZDwZ3MY1pnHVTmcJA9LH-HHxG93EVq-EJzP4Jv4mR-t3IupTmo0JZggOoxeujYK2FxcLNxnNz9-FRp8Qg/s320/Alice-in-Chains2+(1).jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48KPqpRBuVeEPGInxN3vdtahopm138YvotxMM62SB4jI6ZI-6bwm_WnIM9WZDwZ3MY1pnHVTmcJA9LH-HHxG93EVq-EJzP4Jv4mR-t3IupTmo0JZggOoxeujYK2FxcLNxnNz9-FRp8Qg/s160/Alice-in-Chains2+(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48KPqpRBuVeEPGInxN3vdtahopm138YvotxMM62SB4jI6ZI-6bwm_WnIM9WZDwZ3MY1pnHVTmcJA9LH-HHxG93EVq-EJzP4Jv4mR-t3IupTmo0JZggOoxeujYK2FxcLNxnNz9-FRp8Qg/s320/Alice-in-Chains2+(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48KPqpRBuVeEPGInxN3vdtahopm138YvotxMM62SB4jI6ZI-6bwm_WnIM9WZDwZ3MY1pnHVTmcJA9LH-HHxG93EVq-EJzP4Jv4mR-t3IupTmo0JZggOoxeujYK2FxcLNxnNz9-FRp8Qg/s480/Alice-in-Chains2+(1).jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48KPqpRBuVeEPGInxN3vdtahopm138YvotxMM62SB4jI6ZI-6bwm_WnIM9WZDwZ3MY1pnHVTmcJA9LH-HHxG93EVq-EJzP4Jv4mR-t3IupTmo0JZggOoxeujYK2FxcLNxnNz9-FRp8Qg/s160/Alice-in-Chains2+(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48KPqpRBuVeEPGInxN3vdtahopm138YvotxMM62SB4jI6ZI-6bwm_WnIM9WZDwZ3MY1pnHVTmcJA9LH-HHxG93EVq-EJzP4Jv4mR-t3IupTmo0JZggOoxeujYK2FxcLNxnNz9-FRp8Qg/s320/Alice-in-Chains2+(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg48KPqpRBuVeEPGInxN3vdtahopm138YvotxMM62SB4jI6ZI-6bwm_WnIM9WZDwZ3MY1pnHVTmcJA9LH-HHxG93EVq-EJzP4Jv4mR-t3IupTmo0JZggOoxeujYK2FxcLNxnNz9-FRp8Qg/s480/Alice-in-Chains2+(1).jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Especial Alice in Chains"
                 loading="lazy" width="320" height="213" />
         </a>

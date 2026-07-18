@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 139 - El cine de los 90 con Ángel Agudo — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -132,8 +132,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 160 - Asesinos Natos, Sweet Home y Singles con Ángel Agudo"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -143,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s320/EspUzf_k_400x400.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s160/EspUzf_k_400x400.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s320/EspUzf_k_400x400.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s480/EspUzf_k_400x400.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s160/EspUzf_k_400x400.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s320/EspUzf_k_400x400.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMoMSO6wTAyC64krA0LypDY2Sti8SDru6HHkakW6rdpeURYvpSZFzdw69MYf6wTjQ3WprXHSuibLDI15ujbu36ijy7MhiThQGFdu2GY4PZHvuDTrfV7-sc25MrZSlBdirf7-vYcKzOjw/s480/EspUzf_k_400x400.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.571 - Especial cine: Batman, Joker y los hermanos Phoenix"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1W-H8XrxAwDFh6nmY1lrEKVhqY519Blt2A-ov77rfDwALmyaCA-PS7nUgPrutkh2S6OkeBWlIUTYsBqNKM7Yd27vpYj1G7fhowgxk0R3OdcP6aZwHuND8l8JqjgsTHqSc0MGa3XnKu4r0cjN2ygDclil3fSRnRYIIbnhAEF5YEErrDpMNAHzVAfDh/s320/a2080243944_10%20(1).jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1W-H8XrxAwDFh6nmY1lrEKVhqY519Blt2A-ov77rfDwALmyaCA-PS7nUgPrutkh2S6OkeBWlIUTYsBqNKM7Yd27vpYj1G7fhowgxk0R3OdcP6aZwHuND8l8JqjgsTHqSc0MGa3XnKu4r0cjN2ygDclil3fSRnRYIIbnhAEF5YEErrDpMNAHzVAfDh/s160/a2080243944_10%20(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1W-H8XrxAwDFh6nmY1lrEKVhqY519Blt2A-ov77rfDwALmyaCA-PS7nUgPrutkh2S6OkeBWlIUTYsBqNKM7Yd27vpYj1G7fhowgxk0R3OdcP6aZwHuND8l8JqjgsTHqSc0MGa3XnKu4r0cjN2ygDclil3fSRnRYIIbnhAEF5YEErrDpMNAHzVAfDh/s320/a2080243944_10%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1W-H8XrxAwDFh6nmY1lrEKVhqY519Blt2A-ov77rfDwALmyaCA-PS7nUgPrutkh2S6OkeBWlIUTYsBqNKM7Yd27vpYj1G7fhowgxk0R3OdcP6aZwHuND8l8JqjgsTHqSc0MGa3XnKu4r0cjN2ygDclil3fSRnRYIIbnhAEF5YEErrDpMNAHzVAfDh/s480/a2080243944_10%20(1).jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1W-H8XrxAwDFh6nmY1lrEKVhqY519Blt2A-ov77rfDwALmyaCA-PS7nUgPrutkh2S6OkeBWlIUTYsBqNKM7Yd27vpYj1G7fhowgxk0R3OdcP6aZwHuND8l8JqjgsTHqSc0MGa3XnKu4r0cjN2ygDclil3fSRnRYIIbnhAEF5YEErrDpMNAHzVAfDh/s160/a2080243944_10%20(1).jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1W-H8XrxAwDFh6nmY1lrEKVhqY519Blt2A-ov77rfDwALmyaCA-PS7nUgPrutkh2S6OkeBWlIUTYsBqNKM7Yd27vpYj1G7fhowgxk0R3OdcP6aZwHuND8l8JqjgsTHqSc0MGa3XnKu4r0cjN2ygDclil3fSRnRYIIbnhAEF5YEErrDpMNAHzVAfDh/s320/a2080243944_10%20(1).jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1W-H8XrxAwDFh6nmY1lrEKVhqY519Blt2A-ov77rfDwALmyaCA-PS7nUgPrutkh2S6OkeBWlIUTYsBqNKM7Yd27vpYj1G7fhowgxk0R3OdcP6aZwHuND8l8JqjgsTHqSc0MGa3XnKu4r0cjN2ygDclil3fSRnRYIIbnhAEF5YEErrDpMNAHzVAfDh/s480/a2080243944_10%20(1).jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.895 - Angel Apricot - The Pink Sunset Over You"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +168,7 @@
         <a class="related-bottom-card" href="programa-138-h-y-las-rocanrol-viejas.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s640/420962_355957767755206_243875636_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s640/420962_355957767755206_243875636_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 138 - H y las Rocanrol Viejas"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -183,8 +179,7 @@
           </a><a class="related-bottom-card" href="programa-140-las-navidades-de-pearl-jam.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKfqmfmdYAMq2VLUh7lNEFgqkg1ussVNZE3AFXANWYOQgkJskSCFmDd7_viYW95P3WvhYz1cV1zvuWg3DS8xJ8NAvOVszKc7pD2gCwXjKvP49cz4-F5pllFhrXHf1YTJkCr6uIaMhKqDg/s320/18717-MLM20160690056_092014-C.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKfqmfmdYAMq2VLUh7lNEFgqkg1ussVNZE3AFXANWYOQgkJskSCFmDd7_viYW95P3WvhYz1cV1zvuWg3DS8xJ8NAvOVszKc7pD2gCwXjKvP49cz4-F5pllFhrXHf1YTJkCr6uIaMhKqDg/s320/18717-MLM20160690056_092014-C.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKfqmfmdYAMq2VLUh7lNEFgqkg1ussVNZE3AFXANWYOQgkJskSCFmDd7_viYW95P3WvhYz1cV1zvuWg3DS8xJ8NAvOVszKc7pD2gCwXjKvP49cz4-F5pllFhrXHf1YTJkCr6uIaMhKqDg/s480/18717-MLM20160690056_092014-C.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKfqmfmdYAMq2VLUh7lNEFgqkg1ussVNZE3AFXANWYOQgkJskSCFmDd7_viYW95P3WvhYz1cV1zvuWg3DS8xJ8NAvOVszKc7pD2gCwXjKvP49cz4-F5pllFhrXHf1YTJkCr6uIaMhKqDg/s640/18717-MLM20160690056_092014-C.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKfqmfmdYAMq2VLUh7lNEFgqkg1ussVNZE3AFXANWYOQgkJskSCFmDd7_viYW95P3WvhYz1cV1zvuWg3DS8xJ8NAvOVszKc7pD2gCwXjKvP49cz4-F5pllFhrXHf1YTJkCr6uIaMhKqDg/s320/18717-MLM20160690056_092014-C.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKfqmfmdYAMq2VLUh7lNEFgqkg1ussVNZE3AFXANWYOQgkJskSCFmDd7_viYW95P3WvhYz1cV1zvuWg3DS8xJ8NAvOVszKc7pD2gCwXjKvP49cz4-F5pllFhrXHf1YTJkCr6uIaMhKqDg/s480/18717-MLM20160690056_092014-C.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKfqmfmdYAMq2VLUh7lNEFgqkg1ussVNZE3AFXANWYOQgkJskSCFmDd7_viYW95P3WvhYz1cV1zvuWg3DS8xJ8NAvOVszKc7pD2gCwXjKvP49cz4-F5pllFhrXHf1YTJkCr6uIaMhKqDg/s640/18717-MLM20160690056_092014-C.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 140 - Las navidades de Pearl Jam"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +190,7 @@
           </a><a class="related-bottom-card" href="programa-141-le-traste-royal-bustards.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCjhLPg24hRtdObAMTsjZkLG7BgVSDynwC5x1nO1VxnPoUW4cF47OEqODmPjMWiCs0UjRxuctvAcDoZM5SVqUMCA4KiSX_X1U9vxTxxmhJWZ79Vgiq4pVfRSbC0hC9RMSzfv6Y9BuuNrQ/s320/10665387_760644447306750_8365003578891165095_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCjhLPg24hRtdObAMTsjZkLG7BgVSDynwC5x1nO1VxnPoUW4cF47OEqODmPjMWiCs0UjRxuctvAcDoZM5SVqUMCA4KiSX_X1U9vxTxxmhJWZ79Vgiq4pVfRSbC0hC9RMSzfv6Y9BuuNrQ/s320/10665387_760644447306750_8365003578891165095_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCjhLPg24hRtdObAMTsjZkLG7BgVSDynwC5x1nO1VxnPoUW4cF47OEqODmPjMWiCs0UjRxuctvAcDoZM5SVqUMCA4KiSX_X1U9vxTxxmhJWZ79Vgiq4pVfRSbC0hC9RMSzfv6Y9BuuNrQ/s480/10665387_760644447306750_8365003578891165095_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCjhLPg24hRtdObAMTsjZkLG7BgVSDynwC5x1nO1VxnPoUW4cF47OEqODmPjMWiCs0UjRxuctvAcDoZM5SVqUMCA4KiSX_X1U9vxTxxmhJWZ79Vgiq4pVfRSbC0hC9RMSzfv6Y9BuuNrQ/s640/10665387_760644447306750_8365003578891165095_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCjhLPg24hRtdObAMTsjZkLG7BgVSDynwC5x1nO1VxnPoUW4cF47OEqODmPjMWiCs0UjRxuctvAcDoZM5SVqUMCA4KiSX_X1U9vxTxxmhJWZ79Vgiq4pVfRSbC0hC9RMSzfv6Y9BuuNrQ/s320/10665387_760644447306750_8365003578891165095_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCjhLPg24hRtdObAMTsjZkLG7BgVSDynwC5x1nO1VxnPoUW4cF47OEqODmPjMWiCs0UjRxuctvAcDoZM5SVqUMCA4KiSX_X1U9vxTxxmhJWZ79Vgiq4pVfRSbC0hC9RMSzfv6Y9BuuNrQ/s480/10665387_760644447306750_8365003578891165095_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCjhLPg24hRtdObAMTsjZkLG7BgVSDynwC5x1nO1VxnPoUW4cF47OEqODmPjMWiCs0UjRxuctvAcDoZM5SVqUMCA4KiSX_X1U9vxTxxmhJWZ79Vgiq4pVfRSbC0hC9RMSzfv6Y9BuuNrQ/s640/10665387_760644447306750_8365003578891165095_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 141 - Le Traste + Royal Bustards"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

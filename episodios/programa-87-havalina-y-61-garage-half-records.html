@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 87 - Havalina y 61 Garage (Half Records) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -128,8 +128,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX5A6INETyHbK9ZP1pr-DehxcvRUN-J8dynmk06bN6ybd3Bnbagcil9OsGAT7eDEupIYqMDWWHB83wgvOpl7UkXfyPCWOCvqnaBpxJEsDQw8WFYKDeNFcCLZ5ZGXSdVJO85hpUquzXm4U/s320/17097282_1561405443889377_3615080110459961351_o.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX5A6INETyHbK9ZP1pr-DehxcvRUN-J8dynmk06bN6ybd3Bnbagcil9OsGAT7eDEupIYqMDWWHB83wgvOpl7UkXfyPCWOCvqnaBpxJEsDQw8WFYKDeNFcCLZ5ZGXSdVJO85hpUquzXm4U/s160/17097282_1561405443889377_3615080110459961351_o.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX5A6INETyHbK9ZP1pr-DehxcvRUN-J8dynmk06bN6ybd3Bnbagcil9OsGAT7eDEupIYqMDWWHB83wgvOpl7UkXfyPCWOCvqnaBpxJEsDQw8WFYKDeNFcCLZ5ZGXSdVJO85hpUquzXm4U/s320/17097282_1561405443889377_3615080110459961351_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX5A6INETyHbK9ZP1pr-DehxcvRUN-J8dynmk06bN6ybd3Bnbagcil9OsGAT7eDEupIYqMDWWHB83wgvOpl7UkXfyPCWOCvqnaBpxJEsDQw8WFYKDeNFcCLZ5ZGXSdVJO85hpUquzXm4U/s480/17097282_1561405443889377_3615080110459961351_o.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX5A6INETyHbK9ZP1pr-DehxcvRUN-J8dynmk06bN6ybd3Bnbagcil9OsGAT7eDEupIYqMDWWHB83wgvOpl7UkXfyPCWOCvqnaBpxJEsDQw8WFYKDeNFcCLZ5ZGXSdVJO85hpUquzXm4U/s160/17097282_1561405443889377_3615080110459961351_o.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX5A6INETyHbK9ZP1pr-DehxcvRUN-J8dynmk06bN6ybd3Bnbagcil9OsGAT7eDEupIYqMDWWHB83wgvOpl7UkXfyPCWOCvqnaBpxJEsDQw8WFYKDeNFcCLZ5ZGXSdVJO85hpUquzXm4U/s320/17097282_1561405443889377_3615080110459961351_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX5A6INETyHbK9ZP1pr-DehxcvRUN-J8dynmk06bN6ybd3Bnbagcil9OsGAT7eDEupIYqMDWWHB83wgvOpl7UkXfyPCWOCvqnaBpxJEsDQw8WFYKDeNFcCLZ5ZGXSdVJO85hpUquzXm4U/s480/17097282_1561405443889377_3615080110459961351_o.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 272 - Pearl Jam + 61 Garage + Mikelvas + The Hipsbreakers"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -139,8 +138,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji_VvUsMTzMNQqt-ePnNYeKkAx6b5rApg1u7Xabq5s5cvICBY7nIlcLu3hIuiSrSKnMXSQui53B_zBaUekXiJr_m1eRjqgIECLBUZDAXXOOwcFfg-p8vBgTlpXOWRdWYqhHWYCsgU4-AA/s320/fc5f7678-7e62-4e07-82c7-cfe1a8709f95.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji_VvUsMTzMNQqt-ePnNYeKkAx6b5rApg1u7Xabq5s5cvICBY7nIlcLu3hIuiSrSKnMXSQui53B_zBaUekXiJr_m1eRjqgIECLBUZDAXXOOwcFfg-p8vBgTlpXOWRdWYqhHWYCsgU4-AA/s160/fc5f7678-7e62-4e07-82c7-cfe1a8709f95.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji_VvUsMTzMNQqt-ePnNYeKkAx6b5rApg1u7Xabq5s5cvICBY7nIlcLu3hIuiSrSKnMXSQui53B_zBaUekXiJr_m1eRjqgIECLBUZDAXXOOwcFfg-p8vBgTlpXOWRdWYqhHWYCsgU4-AA/s320/fc5f7678-7e62-4e07-82c7-cfe1a8709f95.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji_VvUsMTzMNQqt-ePnNYeKkAx6b5rApg1u7Xabq5s5cvICBY7nIlcLu3hIuiSrSKnMXSQui53B_zBaUekXiJr_m1eRjqgIECLBUZDAXXOOwcFfg-p8vBgTlpXOWRdWYqhHWYCsgU4-AA/s480/fc5f7678-7e62-4e07-82c7-cfe1a8709f95.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji_VvUsMTzMNQqt-ePnNYeKkAx6b5rApg1u7Xabq5s5cvICBY7nIlcLu3hIuiSrSKnMXSQui53B_zBaUekXiJr_m1eRjqgIECLBUZDAXXOOwcFfg-p8vBgTlpXOWRdWYqhHWYCsgU4-AA/s160/fc5f7678-7e62-4e07-82c7-cfe1a8709f95.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji_VvUsMTzMNQqt-ePnNYeKkAx6b5rApg1u7Xabq5s5cvICBY7nIlcLu3hIuiSrSKnMXSQui53B_zBaUekXiJr_m1eRjqgIECLBUZDAXXOOwcFfg-p8vBgTlpXOWRdWYqhHWYCsgU4-AA/s320/fc5f7678-7e62-4e07-82c7-cfe1a8709f95.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji_VvUsMTzMNQqt-ePnNYeKkAx6b5rApg1u7Xabq5s5cvICBY7nIlcLu3hIuiSrSKnMXSQui53B_zBaUekXiJr_m1eRjqgIECLBUZDAXXOOwcFfg-p8vBgTlpXOWRdWYqhHWYCsgU4-AA/s480/fc5f7678-7e62-4e07-82c7-cfe1a8709f95.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 - Programa 88 - Pixies en Madrid"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -150,8 +148,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKvMp8l6QL-yeosUdzEyWsr4GQyaHMijhwJzq6BQga7C9hVPUh8L36DNwOjuzmcFNx9y0rl2eoLkE73s286G9RjytVEvhGn6UrBe9sKdPyiN8IiYCcnYylQdESluhzx4jDm0FqxpCg5Gg/s320/16-jan-1993---chris-novoselic-beija-kurt-cobain-durante-show-do-nirvana-no-segundo-dia-do-hollywood-rock-1358293997213_956x500.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKvMp8l6QL-yeosUdzEyWsr4GQyaHMijhwJzq6BQga7C9hVPUh8L36DNwOjuzmcFNx9y0rl2eoLkE73s286G9RjytVEvhGn6UrBe9sKdPyiN8IiYCcnYylQdESluhzx4jDm0FqxpCg5Gg/s160/16-jan-1993---chris-novoselic-beija-kurt-cobain-durante-show-do-nirvana-no-segundo-dia-do-hollywood-rock-1358293997213_956x500.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKvMp8l6QL-yeosUdzEyWsr4GQyaHMijhwJzq6BQga7C9hVPUh8L36DNwOjuzmcFNx9y0rl2eoLkE73s286G9RjytVEvhGn6UrBe9sKdPyiN8IiYCcnYylQdESluhzx4jDm0FqxpCg5Gg/s320/16-jan-1993---chris-novoselic-beija-kurt-cobain-durante-show-do-nirvana-no-segundo-dia-do-hollywood-rock-1358293997213_956x500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKvMp8l6QL-yeosUdzEyWsr4GQyaHMijhwJzq6BQga7C9hVPUh8L36DNwOjuzmcFNx9y0rl2eoLkE73s286G9RjytVEvhGn6UrBe9sKdPyiN8IiYCcnYylQdESluhzx4jDm0FqxpCg5Gg/s480/16-jan-1993---chris-novoselic-beija-kurt-cobain-durante-show-do-nirvana-no-segundo-dia-do-hollywood-rock-1358293997213_956x500.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKvMp8l6QL-yeosUdzEyWsr4GQyaHMijhwJzq6BQga7C9hVPUh8L36DNwOjuzmcFNx9y0rl2eoLkE73s286G9RjytVEvhGn6UrBe9sKdPyiN8IiYCcnYylQdESluhzx4jDm0FqxpCg5Gg/s160/16-jan-1993---chris-novoselic-beija-kurt-cobain-durante-show-do-nirvana-no-segundo-dia-do-hollywood-rock-1358293997213_956x500.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKvMp8l6QL-yeosUdzEyWsr4GQyaHMijhwJzq6BQga7C9hVPUh8L36DNwOjuzmcFNx9y0rl2eoLkE73s286G9RjytVEvhGn6UrBe9sKdPyiN8IiYCcnYylQdESluhzx4jDm0FqxpCg5Gg/s320/16-jan-1993---chris-novoselic-beija-kurt-cobain-durante-show-do-nirvana-no-segundo-dia-do-hollywood-rock-1358293997213_956x500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKvMp8l6QL-yeosUdzEyWsr4GQyaHMijhwJzq6BQga7C9hVPUh8L36DNwOjuzmcFNx9y0rl2eoLkE73s286G9RjytVEvhGn6UrBe9sKdPyiN8IiYCcnYylQdESluhzx4jDm0FqxpCg5Gg/s480/16-jan-1993---chris-novoselic-beija-kurt-cobain-durante-show-do-nirvana-no-segundo-dia-do-hollywood-rock-1358293997213_956x500.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 101 - Nirvana Brazil 1993 "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -167,8 +164,7 @@
         <a class="related-bottom-card" href="programa-74-creation-records.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 74 - Creation Records"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -179,8 +175,7 @@
           </a><a class="related-bottom-card" href="programa-103-61-garage-maika-makovski-no-dogs.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFbKZ12sbrDSogoiXOEUj0a8kRwNGnARMURJHSsKlZXA0yxIWtbbqywBjs3_2tZNDASFdqFx9uHG39qaNeoB_ur6oIoIpofg7fU06S6zVAmO_eHzjaE9VO3yUHKeYkdjN-tzqK4OX4NhQ/s320/1901813_778882375475025_652220979_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFbKZ12sbrDSogoiXOEUj0a8kRwNGnARMURJHSsKlZXA0yxIWtbbqywBjs3_2tZNDASFdqFx9uHG39qaNeoB_ur6oIoIpofg7fU06S6zVAmO_eHzjaE9VO3yUHKeYkdjN-tzqK4OX4NhQ/s320/1901813_778882375475025_652220979_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFbKZ12sbrDSogoiXOEUj0a8kRwNGnARMURJHSsKlZXA0yxIWtbbqywBjs3_2tZNDASFdqFx9uHG39qaNeoB_ur6oIoIpofg7fU06S6zVAmO_eHzjaE9VO3yUHKeYkdjN-tzqK4OX4NhQ/s480/1901813_778882375475025_652220979_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFbKZ12sbrDSogoiXOEUj0a8kRwNGnARMURJHSsKlZXA0yxIWtbbqywBjs3_2tZNDASFdqFx9uHG39qaNeoB_ur6oIoIpofg7fU06S6zVAmO_eHzjaE9VO3yUHKeYkdjN-tzqK4OX4NhQ/s640/1901813_778882375475025_652220979_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFbKZ12sbrDSogoiXOEUj0a8kRwNGnARMURJHSsKlZXA0yxIWtbbqywBjs3_2tZNDASFdqFx9uHG39qaNeoB_ur6oIoIpofg7fU06S6zVAmO_eHzjaE9VO3yUHKeYkdjN-tzqK4OX4NhQ/s320/1901813_778882375475025_652220979_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFbKZ12sbrDSogoiXOEUj0a8kRwNGnARMURJHSsKlZXA0yxIWtbbqywBjs3_2tZNDASFdqFx9uHG39qaNeoB_ur6oIoIpofg7fU06S6zVAmO_eHzjaE9VO3yUHKeYkdjN-tzqK4OX4NhQ/s480/1901813_778882375475025_652220979_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFbKZ12sbrDSogoiXOEUj0a8kRwNGnARMURJHSsKlZXA0yxIWtbbqywBjs3_2tZNDASFdqFx9uHG39qaNeoB_ur6oIoIpofg7fU06S6zVAmO_eHzjaE9VO3yUHKeYkdjN-tzqK4OX4NhQ/s640/1901813_778882375475025_652220979_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 103 - 61 Garage + Maika Makovski + No Dogs"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -191,8 +186,7 @@
           </a><a class="related-bottom-card" href="programa-107-soundgarden-alice-in-chains-nirvana-61-garage-y-nomada.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Programa 107 - Soundgarden, Alice in Chains, Nirvana, 61 Garage y Nómada"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

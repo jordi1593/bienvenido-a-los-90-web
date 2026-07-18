@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Primal Scream — 6 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-912-especial-mad-cool-2023.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1KgY0VPZ3BURuTIb_XkvAiyX0ZbHN7fQOfmlsiidhBXtpNaUoHK2sjvkGgtCw28si1HK9_pU3MxrhN9ppoLkje0WMdkxNPOgEbQ6hb6fpInWM3146f45t4eg-HQWISWjtNyWaIlT-zXvYa2h4WUAM8la4fhRWi4coGx-CRRqfhDW_mLh3LuG-LF0uRAA/s320/mad-cool-2023.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1KgY0VPZ3BURuTIb_XkvAiyX0ZbHN7fQOfmlsiidhBXtpNaUoHK2sjvkGgtCw28si1HK9_pU3MxrhN9ppoLkje0WMdkxNPOgEbQ6hb6fpInWM3146f45t4eg-HQWISWjtNyWaIlT-zXvYa2h4WUAM8la4fhRWi4coGx-CRRqfhDW_mLh3LuG-LF0uRAA/s160/mad-cool-2023.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1KgY0VPZ3BURuTIb_XkvAiyX0ZbHN7fQOfmlsiidhBXtpNaUoHK2sjvkGgtCw28si1HK9_pU3MxrhN9ppoLkje0WMdkxNPOgEbQ6hb6fpInWM3146f45t4eg-HQWISWjtNyWaIlT-zXvYa2h4WUAM8la4fhRWi4coGx-CRRqfhDW_mLh3LuG-LF0uRAA/s320/mad-cool-2023.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1KgY0VPZ3BURuTIb_XkvAiyX0ZbHN7fQOfmlsiidhBXtpNaUoHK2sjvkGgtCw28si1HK9_pU3MxrhN9ppoLkje0WMdkxNPOgEbQ6hb6fpInWM3146f45t4eg-HQWISWjtNyWaIlT-zXvYa2h4WUAM8la4fhRWi4coGx-CRRqfhDW_mLh3LuG-LF0uRAA/s480/mad-cool-2023.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1KgY0VPZ3BURuTIb_XkvAiyX0ZbHN7fQOfmlsiidhBXtpNaUoHK2sjvkGgtCw28si1HK9_pU3MxrhN9ppoLkje0WMdkxNPOgEbQ6hb6fpInWM3146f45t4eg-HQWISWjtNyWaIlT-zXvYa2h4WUAM8la4fhRWi4coGx-CRRqfhDW_mLh3LuG-LF0uRAA/s160/mad-cool-2023.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1KgY0VPZ3BURuTIb_XkvAiyX0ZbHN7fQOfmlsiidhBXtpNaUoHK2sjvkGgtCw28si1HK9_pU3MxrhN9ppoLkje0WMdkxNPOgEbQ6hb6fpInWM3146f45t4eg-HQWISWjtNyWaIlT-zXvYa2h4WUAM8la4fhRWi4coGx-CRRqfhDW_mLh3LuG-LF0uRAA/s320/mad-cool-2023.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1KgY0VPZ3BURuTIb_XkvAiyX0ZbHN7fQOfmlsiidhBXtpNaUoHK2sjvkGgtCw28si1HK9_pU3MxrhN9ppoLkje0WMdkxNPOgEbQ6hb6fpInWM3146f45t4eg-HQWISWjtNyWaIlT-zXvYa2h4WUAM8la4fhRWi4coGx-CRRqfhDW_mLh3LuG-LF0uRAA/s480/mad-cool-2023.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.912 - Especial MAD COOL 2023"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/primal-scream-kgb-barcelona-07-02-1990.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwit6uZ3Z3Vsbztihj-7-KszA7WvR-HgMx9GqbbGU6RfMrGFKXG7rT6fg5M93jPa-csyJ1scGrLEzgiQ33bF6894c3Nu9D7zV9EWJ1EfsQ_N41vsACcgN_Cwh3KeyDTbC8qwJjOdZhHkw/s320/primalscream.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwit6uZ3Z3Vsbztihj-7-KszA7WvR-HgMx9GqbbGU6RfMrGFKXG7rT6fg5M93jPa-csyJ1scGrLEzgiQ33bF6894c3Nu9D7zV9EWJ1EfsQ_N41vsACcgN_Cwh3KeyDTbC8qwJjOdZhHkw/s160/primalscream.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwit6uZ3Z3Vsbztihj-7-KszA7WvR-HgMx9GqbbGU6RfMrGFKXG7rT6fg5M93jPa-csyJ1scGrLEzgiQ33bF6894c3Nu9D7zV9EWJ1EfsQ_N41vsACcgN_Cwh3KeyDTbC8qwJjOdZhHkw/s320/primalscream.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwit6uZ3Z3Vsbztihj-7-KszA7WvR-HgMx9GqbbGU6RfMrGFKXG7rT6fg5M93jPa-csyJ1scGrLEzgiQ33bF6894c3Nu9D7zV9EWJ1EfsQ_N41vsACcgN_Cwh3KeyDTbC8qwJjOdZhHkw/s480/primalscream.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwit6uZ3Z3Vsbztihj-7-KszA7WvR-HgMx9GqbbGU6RfMrGFKXG7rT6fg5M93jPa-csyJ1scGrLEzgiQ33bF6894c3Nu9D7zV9EWJ1EfsQ_N41vsACcgN_Cwh3KeyDTbC8qwJjOdZhHkw/s160/primalscream.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwit6uZ3Z3Vsbztihj-7-KszA7WvR-HgMx9GqbbGU6RfMrGFKXG7rT6fg5M93jPa-csyJ1scGrLEzgiQ33bF6894c3Nu9D7zV9EWJ1EfsQ_N41vsACcgN_Cwh3KeyDTbC8qwJjOdZhHkw/s320/primalscream.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwit6uZ3Z3Vsbztihj-7-KszA7WvR-HgMx9GqbbGU6RfMrGFKXG7rT6fg5M93jPa-csyJ1scGrLEzgiQ33bF6894c3Nu9D7zV9EWJ1EfsQ_N41vsACcgN_Cwh3KeyDTbC8qwJjOdZhHkw/s480/primalscream.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Primal Scream - KGB (Barcelona 07/02/1990)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-792-el-repaso-definitivo-a-1991.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s320/1991-in-music.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s160/1991-in-music.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s320/1991-in-music.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s480/1991-in-music.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s160/1991-in-music.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s320/1991-in-music.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimjeRmml_fZ-8koGO1bIqOqP0HQf5SBkbAbPPURSEnY0AYDWtH4KvpEZ7EJ49reuUZ508sZVcrxtcwdqJ1VlMDoNHtdstcCdDou7rdXIm5PI_031jWBeoCReFGYrNhrQTE79y68z7iJXw/s480/1991-in-music.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.792 - El repaso definitivo a 1991 "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-685-necesitamos-musica-en-directo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s320/concert-crowd.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s160/concert-crowd.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s320/concert-crowd.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s480/concert-crowd.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s160/concert-crowd.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s320/concert-crowd.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJQvVdE-LxyIdpxeEX_GzgnAD9A8PwSaH8AT8hKDQsAmrxiqefazOp7NJSbqiHnaui5_Ar1k1L6kUzRVnN9gkdFKaJM44M_iOTzcLNIWJg3ljQg_po1HTYFLSWJfByOJK-sKulL-RWDc/s480/concert-crowd.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.685 - Necesitamos música en directo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-74-creation-records.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 74 - Creation Records"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-66-the-doors-stone-temple-pilots-qotsa-primal-scream.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 66 - The DOORS, STONE TEMPLE PILOTS, QOTSA, PRIMAL SCREAM"
                 loading="lazy" width="320" height="213" />
         </a>

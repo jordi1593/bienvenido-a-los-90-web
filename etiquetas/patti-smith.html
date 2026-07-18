@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Patti Smith — 12 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1049-maud-the-moth-presenta-the-distaff.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvdWe_bEdXaqXFJm0TOHn0HgmxOU3ZTqZfLu498pBPx3yQ83plUJ76hSWaAcNW3ahrWEyaaTtkByVrvLz7DhxqoRjyidnv5d0iSoIS5Whk7ULCt0b2zdjx5TVFbu74OLzDBM9jq26erIiNc9GRc8jkP3c1qAOVrMjH9EgTEEtYafe_0uEgiHmOTsR_Xvs/s320/B90_1049.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvdWe_bEdXaqXFJm0TOHn0HgmxOU3ZTqZfLu498pBPx3yQ83plUJ76hSWaAcNW3ahrWEyaaTtkByVrvLz7DhxqoRjyidnv5d0iSoIS5Whk7ULCt0b2zdjx5TVFbu74OLzDBM9jq26erIiNc9GRc8jkP3c1qAOVrMjH9EgTEEtYafe_0uEgiHmOTsR_Xvs/s160/B90_1049.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvdWe_bEdXaqXFJm0TOHn0HgmxOU3ZTqZfLu498pBPx3yQ83plUJ76hSWaAcNW3ahrWEyaaTtkByVrvLz7DhxqoRjyidnv5d0iSoIS5Whk7ULCt0b2zdjx5TVFbu74OLzDBM9jq26erIiNc9GRc8jkP3c1qAOVrMjH9EgTEEtYafe_0uEgiHmOTsR_Xvs/s320/B90_1049.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvdWe_bEdXaqXFJm0TOHn0HgmxOU3ZTqZfLu498pBPx3yQ83plUJ76hSWaAcNW3ahrWEyaaTtkByVrvLz7DhxqoRjyidnv5d0iSoIS5Whk7ULCt0b2zdjx5TVFbu74OLzDBM9jq26erIiNc9GRc8jkP3c1qAOVrMjH9EgTEEtYafe_0uEgiHmOTsR_Xvs/s480/B90_1049.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvdWe_bEdXaqXFJm0TOHn0HgmxOU3ZTqZfLu498pBPx3yQ83plUJ76hSWaAcNW3ahrWEyaaTtkByVrvLz7DhxqoRjyidnv5d0iSoIS5Whk7ULCt0b2zdjx5TVFbu74OLzDBM9jq26erIiNc9GRc8jkP3c1qAOVrMjH9EgTEEtYafe_0uEgiHmOTsR_Xvs/s160/B90_1049.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvdWe_bEdXaqXFJm0TOHn0HgmxOU3ZTqZfLu498pBPx3yQ83plUJ76hSWaAcNW3ahrWEyaaTtkByVrvLz7DhxqoRjyidnv5d0iSoIS5Whk7ULCt0b2zdjx5TVFbu74OLzDBM9jq26erIiNc9GRc8jkP3c1qAOVrMjH9EgTEEtYafe_0uEgiHmOTsR_Xvs/s320/B90_1049.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvdWe_bEdXaqXFJm0TOHn0HgmxOU3ZTqZfLu498pBPx3yQ83plUJ76hSWaAcNW3ahrWEyaaTtkByVrvLz7DhxqoRjyidnv5d0iSoIS5Whk7ULCt0b2zdjx5TVFbu74OLzDBM9jq26erIiNc9GRc8jkP3c1qAOVrMjH9EgTEEtYafe_0uEgiHmOTsR_Xvs/s480/B90_1049.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1049 - Maud The Moth presenta &#39;The Distaff&#39;"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-67-cuando-patti-smith-recordo-a-kurt-cobain.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7tNODZnBR8OQ-yUO6Qy5eTC8UGNfU75ELzhnlsiAbNnsnW2LWg-LCbkAM9oGAEb40oYmnwpMrP5U7fTFxzDMFMzUQRTAMn906aWbxy4zFYZBSEf_d8UUPYfYU-tUkUAVZCMX8slPgiBXRya5atmWS1vxB5iKGs4QD83nJyrdlPRFNPwLmqv-Q-eTcxk4/s320/smith.webp"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7tNODZnBR8OQ-yUO6Qy5eTC8UGNfU75ELzhnlsiAbNnsnW2LWg-LCbkAM9oGAEb40oYmnwpMrP5U7fTFxzDMFMzUQRTAMn906aWbxy4zFYZBSEf_d8UUPYfYU-tUkUAVZCMX8slPgiBXRya5atmWS1vxB5iKGs4QD83nJyrdlPRFNPwLmqv-Q-eTcxk4/s160/smith.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7tNODZnBR8OQ-yUO6Qy5eTC8UGNfU75ELzhnlsiAbNnsnW2LWg-LCbkAM9oGAEb40oYmnwpMrP5U7fTFxzDMFMzUQRTAMn906aWbxy4zFYZBSEf_d8UUPYfYU-tUkUAVZCMX8slPgiBXRya5atmWS1vxB5iKGs4QD83nJyrdlPRFNPwLmqv-Q-eTcxk4/s320/smith.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7tNODZnBR8OQ-yUO6Qy5eTC8UGNfU75ELzhnlsiAbNnsnW2LWg-LCbkAM9oGAEb40oYmnwpMrP5U7fTFxzDMFMzUQRTAMn906aWbxy4zFYZBSEf_d8UUPYfYU-tUkUAVZCMX8slPgiBXRya5atmWS1vxB5iKGs4QD83nJyrdlPRFNPwLmqv-Q-eTcxk4/s480/smith.webp 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7tNODZnBR8OQ-yUO6Qy5eTC8UGNfU75ELzhnlsiAbNnsnW2LWg-LCbkAM9oGAEb40oYmnwpMrP5U7fTFxzDMFMzUQRTAMn906aWbxy4zFYZBSEf_d8UUPYfYU-tUkUAVZCMX8slPgiBXRya5atmWS1vxB5iKGs4QD83nJyrdlPRFNPwLmqv-Q-eTcxk4/s160/smith.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7tNODZnBR8OQ-yUO6Qy5eTC8UGNfU75ELzhnlsiAbNnsnW2LWg-LCbkAM9oGAEb40oYmnwpMrP5U7fTFxzDMFMzUQRTAMn906aWbxy4zFYZBSEf_d8UUPYfYU-tUkUAVZCMX8slPgiBXRya5atmWS1vxB5iKGs4QD83nJyrdlPRFNPwLmqv-Q-eTcxk4/s320/smith.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7tNODZnBR8OQ-yUO6Qy5eTC8UGNfU75ELzhnlsiAbNnsnW2LWg-LCbkAM9oGAEb40oYmnwpMrP5U7fTFxzDMFMzUQRTAMn906aWbxy4zFYZBSEf_d8UUPYfYU-tUkUAVZCMX8slPgiBXRya5atmWS1vxB5iKGs4QD83nJyrdlPRFNPwLmqv-Q-eTcxk4/s480/smith.webp 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 67 - Cuando Patti Smith recordó a Kurt Cobain"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-42-el-dia-que-conoci-a-patti-smith.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s320/patti-smith-2019-2.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s160/patti-smith-2019-2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s320/patti-smith-2019-2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s480/patti-smith-2019-2.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s160/patti-smith-2019-2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s320/patti-smith-2019-2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s480/patti-smith-2019-2.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 42 - El día que conocí a Patti Smith"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/p-910-especial-azkena-rock-festival.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s320/azkena-rock-festival-2022.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s160/azkena-rock-festival-2022.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s320/azkena-rock-festival-2022.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s480/azkena-rock-festival-2022.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s160/azkena-rock-festival-2022.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s320/azkena-rock-festival-2022.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Y6AX9VHqFLg5nvT5ptgEArNZ0QJ8eXlSFu0fOYJEMWXVGiHR0MC0fiWjtES15OVJhxv3Fi5gRp9t-zaZPKiNJYZf643qNrwgb4aSgJCoY8ia78Cd0RTqMmb2LWJXCpotUK7F1y8C_UGBHHrVipGYCb3kA_JuyQzaKOBpN4Zk4lZiSP4njphWzOdzh20/s480/azkena-rock-festival-2022.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.910 - Especial AZKENA Rock Festival"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-381-kerouac-gut-derby.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s320/381.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s160/381.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s320/381.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s480/381.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s160/381.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s320/381.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATnQN_Jz25LkDakGJTrI_JAaxVZQYzRZCY5zMJiHM4qlXOzDRTUTlmRdaCY0yNIbPf5-wbzWktWiIFS0t_e_ey9JGrBowk3k-upya3qMcsFOq9orNFHxXrbHOnbrCm85ea-Gyp7smL54/s480/381.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 381 - Kerouac + Gut Derby"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-236-riot-girls.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s320/13754394_1318527614831545_8016198913287522190_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s160/13754394_1318527614831545_8016198913287522190_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s320/13754394_1318527614831545_8016198913287522190_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s480/13754394_1318527614831545_8016198913287522190_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s160/13754394_1318527614831545_8016198913287522190_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s320/13754394_1318527614831545_8016198913287522190_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg75tVTD4IvGJ5hgeBtL4RPLh0YA6EnsJIvxT5maB-nWk4oh9DIPwOx0vI3JXhv5FxYB3MAuwbJrzF68QT9nIu-9DHw6nJrKajsGPRSWnksXR1pnQpe6EkvlfhBUMyjnniiNx_9mgHbfwE/s480/13754394_1318527614831545_8016198913287522190_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 236 - Riot Girls "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-234-patti-smith-en-madrid-dani-cabezas-implosiones.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5aAllzjRUNaa4QxNeqaStCTZ8zIYTBDXE1eTEqwYzWZnTLFruPUI6WkfBo4UEbmBdgz4WhtsiHRydAhJL7tqQtl4lZjknR1bqQcJQiBvhDxK7WOtQx0bkuCSPDv_xCkJxCxEB9nNI-ys/s320/13710005_10153700841257747_8829199573981149872_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5aAllzjRUNaa4QxNeqaStCTZ8zIYTBDXE1eTEqwYzWZnTLFruPUI6WkfBo4UEbmBdgz4WhtsiHRydAhJL7tqQtl4lZjknR1bqQcJQiBvhDxK7WOtQx0bkuCSPDv_xCkJxCxEB9nNI-ys/s160/13710005_10153700841257747_8829199573981149872_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5aAllzjRUNaa4QxNeqaStCTZ8zIYTBDXE1eTEqwYzWZnTLFruPUI6WkfBo4UEbmBdgz4WhtsiHRydAhJL7tqQtl4lZjknR1bqQcJQiBvhDxK7WOtQx0bkuCSPDv_xCkJxCxEB9nNI-ys/s320/13710005_10153700841257747_8829199573981149872_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5aAllzjRUNaa4QxNeqaStCTZ8zIYTBDXE1eTEqwYzWZnTLFruPUI6WkfBo4UEbmBdgz4WhtsiHRydAhJL7tqQtl4lZjknR1bqQcJQiBvhDxK7WOtQx0bkuCSPDv_xCkJxCxEB9nNI-ys/s480/13710005_10153700841257747_8829199573981149872_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5aAllzjRUNaa4QxNeqaStCTZ8zIYTBDXE1eTEqwYzWZnTLFruPUI6WkfBo4UEbmBdgz4WhtsiHRydAhJL7tqQtl4lZjknR1bqQcJQiBvhDxK7WOtQx0bkuCSPDv_xCkJxCxEB9nNI-ys/s160/13710005_10153700841257747_8829199573981149872_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5aAllzjRUNaa4QxNeqaStCTZ8zIYTBDXE1eTEqwYzWZnTLFruPUI6WkfBo4UEbmBdgz4WhtsiHRydAhJL7tqQtl4lZjknR1bqQcJQiBvhDxK7WOtQx0bkuCSPDv_xCkJxCxEB9nNI-ys/s320/13710005_10153700841257747_8829199573981149872_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5aAllzjRUNaa4QxNeqaStCTZ8zIYTBDXE1eTEqwYzWZnTLFruPUI6WkfBo4UEbmBdgz4WhtsiHRydAhJL7tqQtl4lZjknR1bqQcJQiBvhDxK7WOtQx0bkuCSPDv_xCkJxCxEB9nNI-ys/s480/13710005_10153700841257747_8829199573981149872_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 234 - Patti Smith en Madrid + Dani Cabezas &#39;Implosiones&#39;"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/programa-192-la-musica-es-un-arma-de-conciliacion-masiva.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s320/11214256_10153202170607747_1111774229671122726_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s160/11214256_10153202170607747_1111774229671122726_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s320/11214256_10153202170607747_1111774229671122726_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s480/11214256_10153202170607747_1111774229671122726_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s160/11214256_10153202170607747_1111774229671122726_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s320/11214256_10153202170607747_1111774229671122726_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc7EmktDHulH781fJhU72qlEzshvwke2AFw2ByyJOMVR8whZRIyF9S6gTW4PdhIb1zqBmCcdDweEJMP9Ms8ZKNtysmYmDxzki3Oh8Cq06L1UBaQ-K6xLiz1DGn2RonEnvRHnSxznK79Do/s480/11214256_10153202170607747_1111774229671122726_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 192 - La música es un arma de conciliación masiva"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -180,8 +172,7 @@
         <a class="episode-cover-link" href="../episodios/programa-160-asesinos-natos-sweet-home-y-singles-con-angel-agudo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 160 - Asesinos Natos, Sweet Home y Singles con Ángel Agudo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -194,8 +185,7 @@
         <a class="episode-cover-link" href="../episodios/b90-programa-78-tibetan-freedon-concert.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s160/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s480/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s160/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s320/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQRZLrPhcQlX9UKVm2rWkyFVkLo6bapiYWZ3Svi9-NOv2-LhuDDJn618DxFWtAx-azOiwAWY6dcTCqDJbheFNmkgEG54zLwa7cldxBeHjhzhJmlFyCKL457Pt9X3JoigVjhjY44F2Wc08/s480/0dd13e37-afdd-4e4f-96d7-0bcbed590c2c.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 78 - Tibetan Freedon Concert"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -208,8 +198,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-12-hay-un-medico-en-la-sala.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa #12 - ¿Hay un médico en la sala?"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -222,8 +211,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-10-la-cancion-protesta.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa #10 - La canción protesta"
                 loading="lazy" width="320" height="213" />
         </a>

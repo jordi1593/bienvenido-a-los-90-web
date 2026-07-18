@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.771 - The Smile (Thom Yorke y Jonny Grennwood) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -140,8 +140,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8sjPBgKyd1-m57G3bjqMGEEwR5sfGhM1jpFev1S-9mxQQrfw4B44nDlj5-lUFBbjnFQ2W_Z2S0nHYwK5uR26lMp5_xqN8p8HQ9zxOg2cfkqJWrX6_yYHIisvOKoyYr9dH5BkpATBxSZZLtphC7zLpGkphlD0Cxgbxzk9za5UBB2edk1brQ63T8F1M/s320/The%20Smile%20-%20A%20Light%20For%20Attracting%20Attention.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8sjPBgKyd1-m57G3bjqMGEEwR5sfGhM1jpFev1S-9mxQQrfw4B44nDlj5-lUFBbjnFQ2W_Z2S0nHYwK5uR26lMp5_xqN8p8HQ9zxOg2cfkqJWrX6_yYHIisvOKoyYr9dH5BkpATBxSZZLtphC7zLpGkphlD0Cxgbxzk9za5UBB2edk1brQ63T8F1M/s160/The%20Smile%20-%20A%20Light%20For%20Attracting%20Attention.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8sjPBgKyd1-m57G3bjqMGEEwR5sfGhM1jpFev1S-9mxQQrfw4B44nDlj5-lUFBbjnFQ2W_Z2S0nHYwK5uR26lMp5_xqN8p8HQ9zxOg2cfkqJWrX6_yYHIisvOKoyYr9dH5BkpATBxSZZLtphC7zLpGkphlD0Cxgbxzk9za5UBB2edk1brQ63T8F1M/s320/The%20Smile%20-%20A%20Light%20For%20Attracting%20Attention.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8sjPBgKyd1-m57G3bjqMGEEwR5sfGhM1jpFev1S-9mxQQrfw4B44nDlj5-lUFBbjnFQ2W_Z2S0nHYwK5uR26lMp5_xqN8p8HQ9zxOg2cfkqJWrX6_yYHIisvOKoyYr9dH5BkpATBxSZZLtphC7zLpGkphlD0Cxgbxzk9za5UBB2edk1brQ63T8F1M/s480/The%20Smile%20-%20A%20Light%20For%20Attracting%20Attention.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8sjPBgKyd1-m57G3bjqMGEEwR5sfGhM1jpFev1S-9mxQQrfw4B44nDlj5-lUFBbjnFQ2W_Z2S0nHYwK5uR26lMp5_xqN8p8HQ9zxOg2cfkqJWrX6_yYHIisvOKoyYr9dH5BkpATBxSZZLtphC7zLpGkphlD0Cxgbxzk9za5UBB2edk1brQ63T8F1M/s160/The%20Smile%20-%20A%20Light%20For%20Attracting%20Attention.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8sjPBgKyd1-m57G3bjqMGEEwR5sfGhM1jpFev1S-9mxQQrfw4B44nDlj5-lUFBbjnFQ2W_Z2S0nHYwK5uR26lMp5_xqN8p8HQ9zxOg2cfkqJWrX6_yYHIisvOKoyYr9dH5BkpATBxSZZLtphC7zLpGkphlD0Cxgbxzk9za5UBB2edk1brQ63T8F1M/s320/The%20Smile%20-%20A%20Light%20For%20Attracting%20Attention.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8sjPBgKyd1-m57G3bjqMGEEwR5sfGhM1jpFev1S-9mxQQrfw4B44nDlj5-lUFBbjnFQ2W_Z2S0nHYwK5uR26lMp5_xqN8p8HQ9zxOg2cfkqJWrX6_yYHIisvOKoyYr9dH5BkpATBxSZZLtphC7zLpGkphlD0Cxgbxzk9za5UBB2edk1brQ63T8F1M/s480/The%20Smile%20-%20A%20Light%20For%20Attracting%20Attention.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 21: The Smile - A Light For Attracting Attention (2022)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -151,8 +150,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="B90 Classic 17: Así suenan THE SMILE en directo"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -162,8 +160,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfVfcQc2BfRLjI_NRT94CXgtK257W-8ILmXZdDnxAJSbfgbf4jIBTwudLbm6FHM-XTFtyBgN6Z_lAqkekbEcjZT-s9-s1pnelAZC7eWECeRcSbr-Qz0ogfZUkN-bDhUp1heaRlbxxg7PteVuPqh9mdkDONGcw8GcghrdrFqvSlXpUcwbyf7_rbSPUHzPc/s320/the-smile.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfVfcQc2BfRLjI_NRT94CXgtK257W-8ILmXZdDnxAJSbfgbf4jIBTwudLbm6FHM-XTFtyBgN6Z_lAqkekbEcjZT-s9-s1pnelAZC7eWECeRcSbr-Qz0ogfZUkN-bDhUp1heaRlbxxg7PteVuPqh9mdkDONGcw8GcghrdrFqvSlXpUcwbyf7_rbSPUHzPc/s160/the-smile.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfVfcQc2BfRLjI_NRT94CXgtK257W-8ILmXZdDnxAJSbfgbf4jIBTwudLbm6FHM-XTFtyBgN6Z_lAqkekbEcjZT-s9-s1pnelAZC7eWECeRcSbr-Qz0ogfZUkN-bDhUp1heaRlbxxg7PteVuPqh9mdkDONGcw8GcghrdrFqvSlXpUcwbyf7_rbSPUHzPc/s320/the-smile.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfVfcQc2BfRLjI_NRT94CXgtK257W-8ILmXZdDnxAJSbfgbf4jIBTwudLbm6FHM-XTFtyBgN6Z_lAqkekbEcjZT-s9-s1pnelAZC7eWECeRcSbr-Qz0ogfZUkN-bDhUp1heaRlbxxg7PteVuPqh9mdkDONGcw8GcghrdrFqvSlXpUcwbyf7_rbSPUHzPc/s480/the-smile.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfVfcQc2BfRLjI_NRT94CXgtK257W-8ILmXZdDnxAJSbfgbf4jIBTwudLbm6FHM-XTFtyBgN6Z_lAqkekbEcjZT-s9-s1pnelAZC7eWECeRcSbr-Qz0ogfZUkN-bDhUp1heaRlbxxg7PteVuPqh9mdkDONGcw8GcghrdrFqvSlXpUcwbyf7_rbSPUHzPc/s160/the-smile.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfVfcQc2BfRLjI_NRT94CXgtK257W-8ILmXZdDnxAJSbfgbf4jIBTwudLbm6FHM-XTFtyBgN6Z_lAqkekbEcjZT-s9-s1pnelAZC7eWECeRcSbr-Qz0ogfZUkN-bDhUp1heaRlbxxg7PteVuPqh9mdkDONGcw8GcghrdrFqvSlXpUcwbyf7_rbSPUHzPc/s320/the-smile.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfVfcQc2BfRLjI_NRT94CXgtK257W-8ILmXZdDnxAJSbfgbf4jIBTwudLbm6FHM-XTFtyBgN6Z_lAqkekbEcjZT-s9-s1pnelAZC7eWECeRcSbr-Qz0ogfZUkN-bDhUp1heaRlbxxg7PteVuPqh9mdkDONGcw8GcghrdrFqvSlXpUcwbyf7_rbSPUHzPc/s480/the-smile.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.948 - De Radiohead a The Smile"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -179,8 +176,7 @@
         <a class="related-bottom-card" href="p-646-radiohead-especial-the-bends.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s320/71VJAU9IPSL._SY355_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s320/71VJAU9IPSL._SY355_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s480/71VJAU9IPSL._SY355_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s640/71VJAU9IPSL._SY355_.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s320/71VJAU9IPSL._SY355_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s480/71VJAU9IPSL._SY355_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s640/71VJAU9IPSL._SY355_.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.646 - Radiohead, especial The Bends"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -191,8 +187,7 @@
           </a><a class="related-bottom-card" href="p-972-thom-yorke-confidenza.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEje58UGWLN-85-Qy3T8zsXohGR3_KeM1Ye446xa3TxBlxmpFVUJx6A7OlYsryxxFitNZuc8OF6Gfj-pt0Zp-W0EYlIVSQsXZDBLMKwJgxH5m__2yrCOtOYOmGBSupRnjBB1bhVU8kwYQs2uj2sK9vb-0B9831WjP8qSWsj5hlwJXCGCNkdfeBO0JRUYRKY/s320/f29227e4-398f-4524-bea4-491fc1818353.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEje58UGWLN-85-Qy3T8zsXohGR3_KeM1Ye446xa3TxBlxmpFVUJx6A7OlYsryxxFitNZuc8OF6Gfj-pt0Zp-W0EYlIVSQsXZDBLMKwJgxH5m__2yrCOtOYOmGBSupRnjBB1bhVU8kwYQs2uj2sK9vb-0B9831WjP8qSWsj5hlwJXCGCNkdfeBO0JRUYRKY/s320/f29227e4-398f-4524-bea4-491fc1818353.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEje58UGWLN-85-Qy3T8zsXohGR3_KeM1Ye446xa3TxBlxmpFVUJx6A7OlYsryxxFitNZuc8OF6Gfj-pt0Zp-W0EYlIVSQsXZDBLMKwJgxH5m__2yrCOtOYOmGBSupRnjBB1bhVU8kwYQs2uj2sK9vb-0B9831WjP8qSWsj5hlwJXCGCNkdfeBO0JRUYRKY/s480/f29227e4-398f-4524-bea4-491fc1818353.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEje58UGWLN-85-Qy3T8zsXohGR3_KeM1Ye446xa3TxBlxmpFVUJx6A7OlYsryxxFitNZuc8OF6Gfj-pt0Zp-W0EYlIVSQsXZDBLMKwJgxH5m__2yrCOtOYOmGBSupRnjBB1bhVU8kwYQs2uj2sK9vb-0B9831WjP8qSWsj5hlwJXCGCNkdfeBO0JRUYRKY/s640/f29227e4-398f-4524-bea4-491fc1818353.webp 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEje58UGWLN-85-Qy3T8zsXohGR3_KeM1Ye446xa3TxBlxmpFVUJx6A7OlYsryxxFitNZuc8OF6Gfj-pt0Zp-W0EYlIVSQsXZDBLMKwJgxH5m__2yrCOtOYOmGBSupRnjBB1bhVU8kwYQs2uj2sK9vb-0B9831WjP8qSWsj5hlwJXCGCNkdfeBO0JRUYRKY/s320/f29227e4-398f-4524-bea4-491fc1818353.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEje58UGWLN-85-Qy3T8zsXohGR3_KeM1Ye446xa3TxBlxmpFVUJx6A7OlYsryxxFitNZuc8OF6Gfj-pt0Zp-W0EYlIVSQsXZDBLMKwJgxH5m__2yrCOtOYOmGBSupRnjBB1bhVU8kwYQs2uj2sK9vb-0B9831WjP8qSWsj5hlwJXCGCNkdfeBO0JRUYRKY/s480/f29227e4-398f-4524-bea4-491fc1818353.webp 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEje58UGWLN-85-Qy3T8zsXohGR3_KeM1Ye446xa3TxBlxmpFVUJx6A7OlYsryxxFitNZuc8OF6Gfj-pt0Zp-W0EYlIVSQsXZDBLMKwJgxH5m__2yrCOtOYOmGBSupRnjBB1bhVU8kwYQs2uj2sK9vb-0B9831WjP8qSWsj5hlwJXCGCNkdfeBO0JRUYRKY/s640/f29227e4-398f-4524-bea4-491fc1818353.webp 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.972 - Thom Yorke - Confidenza"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -203,8 +198,7 @@
           </a><a class="related-bottom-card" href="programa-444-thom-yorke-suspiria.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZoH6qCYK7V_YHXd6H25kzF6t0epN8WDPbByiDsHXNelozQfJwYluobm8JGUyrqdARX4jBmKZHmicLDli-zJCgjQ11WbDrmdvkFjdZ6J44T-q7xis9b3wZGcNh4SkF0K9H_tnT_wR_KCk/s320/b90444.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZoH6qCYK7V_YHXd6H25kzF6t0epN8WDPbByiDsHXNelozQfJwYluobm8JGUyrqdARX4jBmKZHmicLDli-zJCgjQ11WbDrmdvkFjdZ6J44T-q7xis9b3wZGcNh4SkF0K9H_tnT_wR_KCk/s320/b90444.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZoH6qCYK7V_YHXd6H25kzF6t0epN8WDPbByiDsHXNelozQfJwYluobm8JGUyrqdARX4jBmKZHmicLDli-zJCgjQ11WbDrmdvkFjdZ6J44T-q7xis9b3wZGcNh4SkF0K9H_tnT_wR_KCk/s480/b90444.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZoH6qCYK7V_YHXd6H25kzF6t0epN8WDPbByiDsHXNelozQfJwYluobm8JGUyrqdARX4jBmKZHmicLDli-zJCgjQ11WbDrmdvkFjdZ6J44T-q7xis9b3wZGcNh4SkF0K9H_tnT_wR_KCk/s640/b90444.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZoH6qCYK7V_YHXd6H25kzF6t0epN8WDPbByiDsHXNelozQfJwYluobm8JGUyrqdARX4jBmKZHmicLDli-zJCgjQ11WbDrmdvkFjdZ6J44T-q7xis9b3wZGcNh4SkF0K9H_tnT_wR_KCk/s320/b90444.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZoH6qCYK7V_YHXd6H25kzF6t0epN8WDPbByiDsHXNelozQfJwYluobm8JGUyrqdARX4jBmKZHmicLDli-zJCgjQ11WbDrmdvkFjdZ6J44T-q7xis9b3wZGcNh4SkF0K9H_tnT_wR_KCk/s480/b90444.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZoH6qCYK7V_YHXd6H25kzF6t0epN8WDPbByiDsHXNelozQfJwYluobm8JGUyrqdARX4jBmKZHmicLDli-zJCgjQ11WbDrmdvkFjdZ6J44T-q7xis9b3wZGcNh4SkF0K9H_tnT_wR_KCk/s640/b90444.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 444 - Thom yorke – Suspiria"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

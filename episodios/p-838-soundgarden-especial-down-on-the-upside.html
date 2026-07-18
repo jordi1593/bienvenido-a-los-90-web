@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.838 - Soundgarden, especial &#39;Down on the Upside&#39; — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -125,8 +125,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s320/unnamed+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s160/unnamed+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s320/unnamed+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s480/unnamed+%25281%2529.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s160/unnamed+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s320/unnamed+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-AV6izbRDWn-_qIvj59zJKp-T0Y0XZXnXMiHn-Dvk-ZCo4GQ1oXgQu8I-doVvmhZ1EelnH9U0FF8ol82s9Mp-h2Hkz50L-f16RfytZn-ArauLre9Eun6rrGHztLJ3O8ilcpoxw2ROTbo/s480/unnamed+%25281%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.611 - Susan Silver, la manager del grunge (Soundgarden, Alice in Chains, Screaming Trees...)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -136,8 +135,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOOSoDekqwkE1SllcqA84GUTOfQlyw-Is6GGF22DYdmrpcoAqRXuQrXizHYlV5h2zlp2koKwFrSOTjHNU2E3XSaIWl28i729hb-JJ5f_QxPFi7r6mS-gd2-WLKXqYakFAidAuf4S8B7JuWSWasJUZOIbutpl8E5h4MsMMWI4wvbwmEE9D3bqUQZrXoCVM/s320/sam_taylor_black_hole_sun_final_web.0.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOOSoDekqwkE1SllcqA84GUTOfQlyw-Is6GGF22DYdmrpcoAqRXuQrXizHYlV5h2zlp2koKwFrSOTjHNU2E3XSaIWl28i729hb-JJ5f_QxPFi7r6mS-gd2-WLKXqYakFAidAuf4S8B7JuWSWasJUZOIbutpl8E5h4MsMMWI4wvbwmEE9D3bqUQZrXoCVM/s160/sam_taylor_black_hole_sun_final_web.0.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOOSoDekqwkE1SllcqA84GUTOfQlyw-Is6GGF22DYdmrpcoAqRXuQrXizHYlV5h2zlp2koKwFrSOTjHNU2E3XSaIWl28i729hb-JJ5f_QxPFi7r6mS-gd2-WLKXqYakFAidAuf4S8B7JuWSWasJUZOIbutpl8E5h4MsMMWI4wvbwmEE9D3bqUQZrXoCVM/s320/sam_taylor_black_hole_sun_final_web.0.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOOSoDekqwkE1SllcqA84GUTOfQlyw-Is6GGF22DYdmrpcoAqRXuQrXizHYlV5h2zlp2koKwFrSOTjHNU2E3XSaIWl28i729hb-JJ5f_QxPFi7r6mS-gd2-WLKXqYakFAidAuf4S8B7JuWSWasJUZOIbutpl8E5h4MsMMWI4wvbwmEE9D3bqUQZrXoCVM/s480/sam_taylor_black_hole_sun_final_web.0.webp 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOOSoDekqwkE1SllcqA84GUTOfQlyw-Is6GGF22DYdmrpcoAqRXuQrXizHYlV5h2zlp2koKwFrSOTjHNU2E3XSaIWl28i729hb-JJ5f_QxPFi7r6mS-gd2-WLKXqYakFAidAuf4S8B7JuWSWasJUZOIbutpl8E5h4MsMMWI4wvbwmEE9D3bqUQZrXoCVM/s160/sam_taylor_black_hole_sun_final_web.0.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOOSoDekqwkE1SllcqA84GUTOfQlyw-Is6GGF22DYdmrpcoAqRXuQrXizHYlV5h2zlp2koKwFrSOTjHNU2E3XSaIWl28i729hb-JJ5f_QxPFi7r6mS-gd2-WLKXqYakFAidAuf4S8B7JuWSWasJUZOIbutpl8E5h4MsMMWI4wvbwmEE9D3bqUQZrXoCVM/s320/sam_taylor_black_hole_sun_final_web.0.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOOSoDekqwkE1SllcqA84GUTOfQlyw-Is6GGF22DYdmrpcoAqRXuQrXizHYlV5h2zlp2koKwFrSOTjHNU2E3XSaIWl28i729hb-JJ5f_QxPFi7r6mS-gd2-WLKXqYakFAidAuf4S8B7JuWSWasJUZOIbutpl8E5h4MsMMWI4wvbwmEE9D3bqUQZrXoCVM/s480/sam_taylor_black_hole_sun_final_web.0.webp 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Supernova 44 - Así se gestó &#39;Black Hole Sun&#39;"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -147,8 +145,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s160/seattle-grunge-est1990-mens-t-shirt.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s160/seattle-grunge-est1990-mens-t-shirt.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s320/seattle-grunge-est1990-mens-t-shirt.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNmbbk8CoMJA8Yw3PXSQje2Nmg4nODsW35JZzx2LFfKvnnqc9hP485JXlQW70acDpowfvOrvEiHgBUh1BK8-k3YCYXfZKsHE1kuXIBP2lQ01s8L7LT-M2JnnIORrtrNIoibkxQVURkqshnExz61Eouh8so57xUUrG42gtgBmQ00Lfjm0Z_GFgk2zTJH0I/s480/seattle-grunge-est1990-mens-t-shirt.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.971 - ¿Sigue siendo Seattle un destino atractivo para los amantes del grunge?"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -164,8 +161,7 @@
         <a class="related-bottom-card" href="p-644-the-rocket-la-revista-local-de-seattle.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s480/TheRocket_May1988.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s640/TheRocket_May1988.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s480/TheRocket_May1988.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s640/TheRocket_May1988.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.644 - The Rocket , la revista local de Seattle"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -176,8 +172,7 @@
           </a><a class="related-bottom-card" href="p-637-peter-cornell.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3dfo3veIQ_Gd0zr9VMQ5L5R4gQGRzPDpkFcp392-egiCggZL1rIJ8zHOVFCOdgQmkSxa8YjzMSrT8kZEhq_IPO0oQRR-f3tPpSSFUgU9CAo0Y6Pso6oAFvMU802imuWpzFhh_dgZN9RY/s320/10275366_667362326679323_7858991212653425035_o.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3dfo3veIQ_Gd0zr9VMQ5L5R4gQGRzPDpkFcp392-egiCggZL1rIJ8zHOVFCOdgQmkSxa8YjzMSrT8kZEhq_IPO0oQRR-f3tPpSSFUgU9CAo0Y6Pso6oAFvMU802imuWpzFhh_dgZN9RY/s320/10275366_667362326679323_7858991212653425035_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3dfo3veIQ_Gd0zr9VMQ5L5R4gQGRzPDpkFcp392-egiCggZL1rIJ8zHOVFCOdgQmkSxa8YjzMSrT8kZEhq_IPO0oQRR-f3tPpSSFUgU9CAo0Y6Pso6oAFvMU802imuWpzFhh_dgZN9RY/s480/10275366_667362326679323_7858991212653425035_o.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3dfo3veIQ_Gd0zr9VMQ5L5R4gQGRzPDpkFcp392-egiCggZL1rIJ8zHOVFCOdgQmkSxa8YjzMSrT8kZEhq_IPO0oQRR-f3tPpSSFUgU9CAo0Y6Pso6oAFvMU802imuWpzFhh_dgZN9RY/s640/10275366_667362326679323_7858991212653425035_o.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3dfo3veIQ_Gd0zr9VMQ5L5R4gQGRzPDpkFcp392-egiCggZL1rIJ8zHOVFCOdgQmkSxa8YjzMSrT8kZEhq_IPO0oQRR-f3tPpSSFUgU9CAo0Y6Pso6oAFvMU802imuWpzFhh_dgZN9RY/s320/10275366_667362326679323_7858991212653425035_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3dfo3veIQ_Gd0zr9VMQ5L5R4gQGRzPDpkFcp392-egiCggZL1rIJ8zHOVFCOdgQmkSxa8YjzMSrT8kZEhq_IPO0oQRR-f3tPpSSFUgU9CAo0Y6Pso6oAFvMU802imuWpzFhh_dgZN9RY/s480/10275366_667362326679323_7858991212653425035_o.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3dfo3veIQ_Gd0zr9VMQ5L5R4gQGRzPDpkFcp392-egiCggZL1rIJ8zHOVFCOdgQmkSxa8YjzMSrT8kZEhq_IPO0oQRR-f3tPpSSFUgU9CAo0Y6Pso6oAFvMU802imuWpzFhh_dgZN9RY/s640/10275366_667362326679323_7858991212653425035_o.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.637 Peter Cornell"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -188,8 +183,7 @@
           </a><a class="related-bottom-card" href="p-630-kim-thayil-de-soundgarden-habla-de-sus-discos-favoritos-del-grunge.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s480/kimthayil.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s640/kimthayil.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s320/kimthayil.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s480/kimthayil.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U35MUcWgsq-GGJwy5T2uZpWfTv9IC_dkwKjvNaMr-agvdIxxtoq7aS6JA1GqHJo8jAYIbJEF6nQvdQpsVxkyPRz31EndUbZP-aetUnc3IZoTVL6P2Ymv54MjaC3WQELmiBVBmvwvOY/s640/kimthayil.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.630 - Kim Thayil de Soundgarden habla de sus discos favoritos del grunge"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

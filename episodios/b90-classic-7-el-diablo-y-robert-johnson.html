@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>B90 Classic 7: El diablo y Robert Johnson — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -130,8 +130,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s320/d9dbb49122ca7f199dfd9fc1bd704541.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s160/d9dbb49122ca7f199dfd9fc1bd704541.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s320/d9dbb49122ca7f199dfd9fc1bd704541.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s480/d9dbb49122ca7f199dfd9fc1bd704541.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s160/d9dbb49122ca7f199dfd9fc1bd704541.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s320/d9dbb49122ca7f199dfd9fc1bd704541.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlfb67Sve2GSxo2VPeLbw-cp2iznLhkRvWN6D0LxFkVkCIJNiUzF9oS2oupeVzS7X9Dwzd2Xj3FbF3c5NXDdIS-VgO7whPEo47yRQmqy4-AI-YQFnePXlLMszcZL0wIwn6XBz3QdmHNto/s480/d9dbb49122ca7f199dfd9fc1bd704541.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 6: La primera y única vez que Kurt y Courtney actuaron juntos"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -141,8 +140,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHFGNEotfoLeWXyHeHVIc6PUXHOSl0VWuMxFWzrk2f7ZixpvLpfdTnfeURc2h3F1SlvSA732GhI1k_D9vti9q6bynit7mXiuvxrV9wUqwpZ06PQ5BG85QtpPmkdia-Rn32M6w9sT8pqMo/s320/El-Cuervo.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHFGNEotfoLeWXyHeHVIc6PUXHOSl0VWuMxFWzrk2f7ZixpvLpfdTnfeURc2h3F1SlvSA732GhI1k_D9vti9q6bynit7mXiuvxrV9wUqwpZ06PQ5BG85QtpPmkdia-Rn32M6w9sT8pqMo/s160/El-Cuervo.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHFGNEotfoLeWXyHeHVIc6PUXHOSl0VWuMxFWzrk2f7ZixpvLpfdTnfeURc2h3F1SlvSA732GhI1k_D9vti9q6bynit7mXiuvxrV9wUqwpZ06PQ5BG85QtpPmkdia-Rn32M6w9sT8pqMo/s320/El-Cuervo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHFGNEotfoLeWXyHeHVIc6PUXHOSl0VWuMxFWzrk2f7ZixpvLpfdTnfeURc2h3F1SlvSA732GhI1k_D9vti9q6bynit7mXiuvxrV9wUqwpZ06PQ5BG85QtpPmkdia-Rn32M6w9sT8pqMo/s480/El-Cuervo.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHFGNEotfoLeWXyHeHVIc6PUXHOSl0VWuMxFWzrk2f7ZixpvLpfdTnfeURc2h3F1SlvSA732GhI1k_D9vti9q6bynit7mXiuvxrV9wUqwpZ06PQ5BG85QtpPmkdia-Rn32M6w9sT8pqMo/s160/El-Cuervo.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHFGNEotfoLeWXyHeHVIc6PUXHOSl0VWuMxFWzrk2f7ZixpvLpfdTnfeURc2h3F1SlvSA732GhI1k_D9vti9q6bynit7mXiuvxrV9wUqwpZ06PQ5BG85QtpPmkdia-Rn32M6w9sT8pqMo/s320/El-Cuervo.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHFGNEotfoLeWXyHeHVIc6PUXHOSl0VWuMxFWzrk2f7ZixpvLpfdTnfeURc2h3F1SlvSA732GhI1k_D9vti9q6bynit7mXiuvxrV9wUqwpZ06PQ5BG85QtpPmkdia-Rn32M6w9sT8pqMo/s480/El-Cuervo.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 8: Un disparo, una maldición, una leyenda y un cuervo: Brandon Lee"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -152,8 +150,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s320/AP17johnlid.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s160/AP17johnlid.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s320/AP17johnlid.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s480/AP17johnlid.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s160/AP17johnlid.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s320/AP17johnlid.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg896tXg9UQhhe6LxYGxqilnsc1Q1GykyhJJ0iHcVKgTcTMSPd1hSMrLlADQOLlROpUIUVm_rGHrD0jFwpbxw4ls-Bi6zAixB7AQY3eKFmvx6JJdyHTQbxijvmP5t6CBoljmyJGEF0FAnM/s480/AP17johnlid.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 9: Tomorrow Never Knows sigue siendo un misterio"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -169,8 +166,7 @@
         <a class="related-bottom-card" href="b90-classic-4-cuando-los-beatles-se-subieron-a-la-azotea.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggGLoS-4d57lYpXe1y5Va98IWzPJvZvxyDGXwp7QVI3vY-PPrE4-sR0OkRmb2cES47Ht2fCb5zedRMyACDZJucqj_03xg2zFK5VVXcSAaG5_uf0ruXXFCm_CbVCrGasqwBgzShY7O6Z2k/s320/a51609f69db1d33fd6cbffb5f8f56a97.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggGLoS-4d57lYpXe1y5Va98IWzPJvZvxyDGXwp7QVI3vY-PPrE4-sR0OkRmb2cES47Ht2fCb5zedRMyACDZJucqj_03xg2zFK5VVXcSAaG5_uf0ruXXFCm_CbVCrGasqwBgzShY7O6Z2k/s320/a51609f69db1d33fd6cbffb5f8f56a97.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggGLoS-4d57lYpXe1y5Va98IWzPJvZvxyDGXwp7QVI3vY-PPrE4-sR0OkRmb2cES47Ht2fCb5zedRMyACDZJucqj_03xg2zFK5VVXcSAaG5_uf0ruXXFCm_CbVCrGasqwBgzShY7O6Z2k/s480/a51609f69db1d33fd6cbffb5f8f56a97.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggGLoS-4d57lYpXe1y5Va98IWzPJvZvxyDGXwp7QVI3vY-PPrE4-sR0OkRmb2cES47Ht2fCb5zedRMyACDZJucqj_03xg2zFK5VVXcSAaG5_uf0ruXXFCm_CbVCrGasqwBgzShY7O6Z2k/s640/a51609f69db1d33fd6cbffb5f8f56a97.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggGLoS-4d57lYpXe1y5Va98IWzPJvZvxyDGXwp7QVI3vY-PPrE4-sR0OkRmb2cES47Ht2fCb5zedRMyACDZJucqj_03xg2zFK5VVXcSAaG5_uf0ruXXFCm_CbVCrGasqwBgzShY7O6Z2k/s320/a51609f69db1d33fd6cbffb5f8f56a97.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggGLoS-4d57lYpXe1y5Va98IWzPJvZvxyDGXwp7QVI3vY-PPrE4-sR0OkRmb2cES47Ht2fCb5zedRMyACDZJucqj_03xg2zFK5VVXcSAaG5_uf0ruXXFCm_CbVCrGasqwBgzShY7O6Z2k/s480/a51609f69db1d33fd6cbffb5f8f56a97.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggGLoS-4d57lYpXe1y5Va98IWzPJvZvxyDGXwp7QVI3vY-PPrE4-sR0OkRmb2cES47Ht2fCb5zedRMyACDZJucqj_03xg2zFK5VVXcSAaG5_uf0ruXXFCm_CbVCrGasqwBgzShY7O6Z2k/s640/a51609f69db1d33fd6cbffb5f8f56a97.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 4: Cuando los Beatles se subieron a la azotea"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -181,8 +177,7 @@
           </a><a class="related-bottom-card" href="b90-classic-10-the-jury-kurt-cobain-y-mark-lanegan.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s480/thejurysocial112514.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s640/thejurysocial112514.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s320/thejurysocial112514.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s480/thejurysocial112514.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ3uwfvxlwQ9bymgkj9kBySuMSMo02KUG3XRof5Zf_8XX5eFfUq2T_QLYKzuVe7DFaBU-AZrZFZUHppcyZDPhd_E6wTcHunIN5LuO8S0QkaoQANM24Zkp8Is4J2cZ-dkbfwq3FjcbFox4/s640/thejurysocial112514.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 10: The Jury - Kurt Cobain y Mark Lanegan"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -193,8 +188,7 @@
           </a><a class="related-bottom-card" href="b90-classic-11-el-regreso-de-saturno-y-el-club-de-los-27.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s320/saturn-return-rectangle.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s320/saturn-return-rectangle.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s480/saturn-return-rectangle.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s640/saturn-return-rectangle.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s320/saturn-return-rectangle.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s480/saturn-return-rectangle.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyfrgXXMsG8VxBoy8ftiQmlsdHcJrlGKJpVosv5UUbFrHoVIKdeT_MVW9oIc91672Yesfvi9_NlMuOS6XsDadNEYg2rbIsc8yXa1RXBHqvC7DTjO25W43eaYM2TFukUmeFQXAFd7p7jgQ/s640/saturn-return-rectangle.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="B90 Classic 11: El regreso de Saturno y el club de los 27"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

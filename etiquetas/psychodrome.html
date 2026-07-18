@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Psychodrome — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/programa-563-live-vol-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s320/IMG_20190821_193538.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s160/IMG_20190821_193538.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s320/IMG_20190821_193538.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s480/IMG_20190821_193538.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s160/IMG_20190821_193538.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s320/IMG_20190821_193538.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQzz_g2lIUQfSCfsmlUtFrWU2k6BgaFhhG5BnjCe1LN62HUlgHojQD1_Fw8mN05ktIGpB5zxSJMhaue3e6r-lagO7CtlUMvgZtPzN5n2K_tWEamDDQIODqdBe0fMjCu1z6PUBftfWZqk/s480/IMG_20190821_193538.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 563: Live! Vol.1 "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/programa-503-las-b90-sessions-vol-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s320/b90_503+%25283%2529.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s160/b90_503+%25283%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s320/b90_503+%25283%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s480/b90_503+%25283%2529.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s160/b90_503+%25283%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s320/b90_503+%25283%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHpAxG3MTaEg_nx0ntDUdm7WXKH5JuESdBt-OBy38fcdypHQP1KJw7xptgfBhDIf7KI0krmj81rWmFV4305stPmY-rz1kEbVFlHS6aNv40sVQUPFNo8M0YQ5l0nSjd0yx_o-Fbko8sAM/s480/b90_503+%25283%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 503 - Las b90 Sessions Vol.1"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-500-la-fiesta-continua.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK1jNY3X_iWBhQ8EhtEOnZZEXbQUj5q2CUu0SYcU-QXwxQuYpd0-e3yMgqEBzJsHr8XdSk098fv3sZbMq9OLN5HViyXbztU_rGLMU4RM-XRSRWVYB2Z_xDHRHzspiRCgwp0Zs2iYp6uBA/s320/b90_500+%25282%2529.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK1jNY3X_iWBhQ8EhtEOnZZEXbQUj5q2CUu0SYcU-QXwxQuYpd0-e3yMgqEBzJsHr8XdSk098fv3sZbMq9OLN5HViyXbztU_rGLMU4RM-XRSRWVYB2Z_xDHRHzspiRCgwp0Zs2iYp6uBA/s160/b90_500+%25282%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK1jNY3X_iWBhQ8EhtEOnZZEXbQUj5q2CUu0SYcU-QXwxQuYpd0-e3yMgqEBzJsHr8XdSk098fv3sZbMq9OLN5HViyXbztU_rGLMU4RM-XRSRWVYB2Z_xDHRHzspiRCgwp0Zs2iYp6uBA/s320/b90_500+%25282%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK1jNY3X_iWBhQ8EhtEOnZZEXbQUj5q2CUu0SYcU-QXwxQuYpd0-e3yMgqEBzJsHr8XdSk098fv3sZbMq9OLN5HViyXbztU_rGLMU4RM-XRSRWVYB2Z_xDHRHzspiRCgwp0Zs2iYp6uBA/s480/b90_500+%25282%2529.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK1jNY3X_iWBhQ8EhtEOnZZEXbQUj5q2CUu0SYcU-QXwxQuYpd0-e3yMgqEBzJsHr8XdSk098fv3sZbMq9OLN5HViyXbztU_rGLMU4RM-XRSRWVYB2Z_xDHRHzspiRCgwp0Zs2iYp6uBA/s160/b90_500+%25282%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK1jNY3X_iWBhQ8EhtEOnZZEXbQUj5q2CUu0SYcU-QXwxQuYpd0-e3yMgqEBzJsHr8XdSk098fv3sZbMq9OLN5HViyXbztU_rGLMU4RM-XRSRWVYB2Z_xDHRHzspiRCgwp0Zs2iYp6uBA/s320/b90_500+%25282%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK1jNY3X_iWBhQ8EhtEOnZZEXbQUj5q2CUu0SYcU-QXwxQuYpd0-e3yMgqEBzJsHr8XdSk098fv3sZbMq9OLN5HViyXbztU_rGLMU4RM-XRSRWVYB2Z_xDHRHzspiRCgwp0Zs2iYp6uBA/s480/b90_500+%25282%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 500, la fiesta continúa"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-395-furinyaki-records-studio.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT9aXIOrQ6HeN7YOLYwewkYU9owsEN3-vbzre80ncRiTMyK4W7LfkHWhgD7ZmMDpXJOYlu5iM0x-wRHMeraMM4nNwSm500gqUafu6STC3mLYliNmwPoG2vOuGcboqmBhq94Qg9pJexrSI/s320/20992987_916800398471843_174227685960757078_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT9aXIOrQ6HeN7YOLYwewkYU9owsEN3-vbzre80ncRiTMyK4W7LfkHWhgD7ZmMDpXJOYlu5iM0x-wRHMeraMM4nNwSm500gqUafu6STC3mLYliNmwPoG2vOuGcboqmBhq94Qg9pJexrSI/s160/20992987_916800398471843_174227685960757078_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT9aXIOrQ6HeN7YOLYwewkYU9owsEN3-vbzre80ncRiTMyK4W7LfkHWhgD7ZmMDpXJOYlu5iM0x-wRHMeraMM4nNwSm500gqUafu6STC3mLYliNmwPoG2vOuGcboqmBhq94Qg9pJexrSI/s320/20992987_916800398471843_174227685960757078_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT9aXIOrQ6HeN7YOLYwewkYU9owsEN3-vbzre80ncRiTMyK4W7LfkHWhgD7ZmMDpXJOYlu5iM0x-wRHMeraMM4nNwSm500gqUafu6STC3mLYliNmwPoG2vOuGcboqmBhq94Qg9pJexrSI/s480/20992987_916800398471843_174227685960757078_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT9aXIOrQ6HeN7YOLYwewkYU9owsEN3-vbzre80ncRiTMyK4W7LfkHWhgD7ZmMDpXJOYlu5iM0x-wRHMeraMM4nNwSm500gqUafu6STC3mLYliNmwPoG2vOuGcboqmBhq94Qg9pJexrSI/s160/20992987_916800398471843_174227685960757078_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT9aXIOrQ6HeN7YOLYwewkYU9owsEN3-vbzre80ncRiTMyK4W7LfkHWhgD7ZmMDpXJOYlu5iM0x-wRHMeraMM4nNwSm500gqUafu6STC3mLYliNmwPoG2vOuGcboqmBhq94Qg9pJexrSI/s320/20992987_916800398471843_174227685960757078_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT9aXIOrQ6HeN7YOLYwewkYU9owsEN3-vbzre80ncRiTMyK4W7LfkHWhgD7ZmMDpXJOYlu5iM0x-wRHMeraMM4nNwSm500gqUafu6STC3mLYliNmwPoG2vOuGcboqmBhq94Qg9pJexrSI/s480/20992987_916800398471843_174227685960757078_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 395 - Furinyaki Records Studio"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-334-entrevista-a-psychodrome.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgq4gjjaAzPO7gSRW5HZT_KzusLElv3mvjbtabnVAcXZFTgSj9U0v1wOcH3VVsLFBDl8YzJfklRiipSCFj450mVgMqKQMSuRn7uOB-NNZ4rwTeifVqgzcOP1GNeedOE25YGqUZK72Pr2M/s320/IMG_20180126_155005.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgq4gjjaAzPO7gSRW5HZT_KzusLElv3mvjbtabnVAcXZFTgSj9U0v1wOcH3VVsLFBDl8YzJfklRiipSCFj450mVgMqKQMSuRn7uOB-NNZ4rwTeifVqgzcOP1GNeedOE25YGqUZK72Pr2M/s160/IMG_20180126_155005.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgq4gjjaAzPO7gSRW5HZT_KzusLElv3mvjbtabnVAcXZFTgSj9U0v1wOcH3VVsLFBDl8YzJfklRiipSCFj450mVgMqKQMSuRn7uOB-NNZ4rwTeifVqgzcOP1GNeedOE25YGqUZK72Pr2M/s320/IMG_20180126_155005.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgq4gjjaAzPO7gSRW5HZT_KzusLElv3mvjbtabnVAcXZFTgSj9U0v1wOcH3VVsLFBDl8YzJfklRiipSCFj450mVgMqKQMSuRn7uOB-NNZ4rwTeifVqgzcOP1GNeedOE25YGqUZK72Pr2M/s480/IMG_20180126_155005.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgq4gjjaAzPO7gSRW5HZT_KzusLElv3mvjbtabnVAcXZFTgSj9U0v1wOcH3VVsLFBDl8YzJfklRiipSCFj450mVgMqKQMSuRn7uOB-NNZ4rwTeifVqgzcOP1GNeedOE25YGqUZK72Pr2M/s160/IMG_20180126_155005.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgq4gjjaAzPO7gSRW5HZT_KzusLElv3mvjbtabnVAcXZFTgSj9U0v1wOcH3VVsLFBDl8YzJfklRiipSCFj450mVgMqKQMSuRn7uOB-NNZ4rwTeifVqgzcOP1GNeedOE25YGqUZK72Pr2M/s320/IMG_20180126_155005.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgq4gjjaAzPO7gSRW5HZT_KzusLElv3mvjbtabnVAcXZFTgSj9U0v1wOcH3VVsLFBDl8YzJfklRiipSCFj450mVgMqKQMSuRn7uOB-NNZ4rwTeifVqgzcOP1GNeedOE25YGqUZK72Pr2M/s480/IMG_20180126_155005.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 334 - Entrevista a Psychodrome"
                 loading="lazy" width="320" height="213" />
         </a>

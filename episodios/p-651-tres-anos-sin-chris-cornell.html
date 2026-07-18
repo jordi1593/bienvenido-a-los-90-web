@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.651 - Tres años sin Chris Cornell  — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr8Nrx7_nAPis5gbjvjO7pu7jM3jfh8ElWjOwc6A8apK8xIOcrLatScnyxCL6SU1xdXogpiWzDg1fSCXk96WAKGh2gm_1G68OAi7pmEJTpxCpgT3wcgLj_caATAaLlOJEODb49efOJVlg/s320/IMG-20200523-WA0010.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr8Nrx7_nAPis5gbjvjO7pu7jM3jfh8ElWjOwc6A8apK8xIOcrLatScnyxCL6SU1xdXogpiWzDg1fSCXk96WAKGh2gm_1G68OAi7pmEJTpxCpgT3wcgLj_caATAaLlOJEODb49efOJVlg/s160/IMG-20200523-WA0010.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr8Nrx7_nAPis5gbjvjO7pu7jM3jfh8ElWjOwc6A8apK8xIOcrLatScnyxCL6SU1xdXogpiWzDg1fSCXk96WAKGh2gm_1G68OAi7pmEJTpxCpgT3wcgLj_caATAaLlOJEODb49efOJVlg/s320/IMG-20200523-WA0010.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr8Nrx7_nAPis5gbjvjO7pu7jM3jfh8ElWjOwc6A8apK8xIOcrLatScnyxCL6SU1xdXogpiWzDg1fSCXk96WAKGh2gm_1G68OAi7pmEJTpxCpgT3wcgLj_caATAaLlOJEODb49efOJVlg/s480/IMG-20200523-WA0010.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr8Nrx7_nAPis5gbjvjO7pu7jM3jfh8ElWjOwc6A8apK8xIOcrLatScnyxCL6SU1xdXogpiWzDg1fSCXk96WAKGh2gm_1G68OAi7pmEJTpxCpgT3wcgLj_caATAaLlOJEODb49efOJVlg/s160/IMG-20200523-WA0010.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr8Nrx7_nAPis5gbjvjO7pu7jM3jfh8ElWjOwc6A8apK8xIOcrLatScnyxCL6SU1xdXogpiWzDg1fSCXk96WAKGh2gm_1G68OAi7pmEJTpxCpgT3wcgLj_caATAaLlOJEODb49efOJVlg/s320/IMG-20200523-WA0010.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr8Nrx7_nAPis5gbjvjO7pu7jM3jfh8ElWjOwc6A8apK8xIOcrLatScnyxCL6SU1xdXogpiWzDg1fSCXk96WAKGh2gm_1G68OAi7pmEJTpxCpgT3wcgLj_caATAaLlOJEODb49efOJVlg/s480/IMG-20200523-WA0010.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.655 - James Vieco recuerda a Chris Cornell"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBuPjEJvwJk7yfRvlk7wjnuZkHF-IDCGwxoK0eWBJJSmDVW9_NTFwGhxylDVUWAtEjto7aeBVBHp1jsZOpRqM6x-qgg9kDqSC3yNvhBvMEBmVlxq3uSsIlAAXnjAQmZJbE2aXKnutpevQ/s320/1999_10_25_Chris+Cornell.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBuPjEJvwJk7yfRvlk7wjnuZkHF-IDCGwxoK0eWBJJSmDVW9_NTFwGhxylDVUWAtEjto7aeBVBHp1jsZOpRqM6x-qgg9kDqSC3yNvhBvMEBmVlxq3uSsIlAAXnjAQmZJbE2aXKnutpevQ/s160/1999_10_25_Chris+Cornell.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBuPjEJvwJk7yfRvlk7wjnuZkHF-IDCGwxoK0eWBJJSmDVW9_NTFwGhxylDVUWAtEjto7aeBVBHp1jsZOpRqM6x-qgg9kDqSC3yNvhBvMEBmVlxq3uSsIlAAXnjAQmZJbE2aXKnutpevQ/s320/1999_10_25_Chris+Cornell.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBuPjEJvwJk7yfRvlk7wjnuZkHF-IDCGwxoK0eWBJJSmDVW9_NTFwGhxylDVUWAtEjto7aeBVBHp1jsZOpRqM6x-qgg9kDqSC3yNvhBvMEBmVlxq3uSsIlAAXnjAQmZJbE2aXKnutpevQ/s480/1999_10_25_Chris+Cornell.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBuPjEJvwJk7yfRvlk7wjnuZkHF-IDCGwxoK0eWBJJSmDVW9_NTFwGhxylDVUWAtEjto7aeBVBHp1jsZOpRqM6x-qgg9kDqSC3yNvhBvMEBmVlxq3uSsIlAAXnjAQmZJbE2aXKnutpevQ/s160/1999_10_25_Chris+Cornell.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBuPjEJvwJk7yfRvlk7wjnuZkHF-IDCGwxoK0eWBJJSmDVW9_NTFwGhxylDVUWAtEjto7aeBVBHp1jsZOpRqM6x-qgg9kDqSC3yNvhBvMEBmVlxq3uSsIlAAXnjAQmZJbE2aXKnutpevQ/s320/1999_10_25_Chris+Cornell.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBuPjEJvwJk7yfRvlk7wjnuZkHF-IDCGwxoK0eWBJJSmDVW9_NTFwGhxylDVUWAtEjto7aeBVBHp1jsZOpRqM6x-qgg9kDqSC3yNvhBvMEBmVlxq3uSsIlAAXnjAQmZJbE2aXKnutpevQ/s480/1999_10_25_Chris+Cornell.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.612 - Chris Cornell en Barcelona, 25/10/1999"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdqVQZk7CfZCk04-eKsapzwmLZNCisNRfpfI6KqMZ_opxSXkrsRKfGDSuwiFen-3QqlSjaPRfDQO78_AqMn8LoFLtn8jCzY53lJ27wy42mwIm8YcJbPHXayfJG_w8ErigpQFWCR56xKk4/s320/b90_608.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdqVQZk7CfZCk04-eKsapzwmLZNCisNRfpfI6KqMZ_opxSXkrsRKfGDSuwiFen-3QqlSjaPRfDQO78_AqMn8LoFLtn8jCzY53lJ27wy42mwIm8YcJbPHXayfJG_w8ErigpQFWCR56xKk4/s160/b90_608.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdqVQZk7CfZCk04-eKsapzwmLZNCisNRfpfI6KqMZ_opxSXkrsRKfGDSuwiFen-3QqlSjaPRfDQO78_AqMn8LoFLtn8jCzY53lJ27wy42mwIm8YcJbPHXayfJG_w8ErigpQFWCR56xKk4/s320/b90_608.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdqVQZk7CfZCk04-eKsapzwmLZNCisNRfpfI6KqMZ_opxSXkrsRKfGDSuwiFen-3QqlSjaPRfDQO78_AqMn8LoFLtn8jCzY53lJ27wy42mwIm8YcJbPHXayfJG_w8ErigpQFWCR56xKk4/s480/b90_608.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdqVQZk7CfZCk04-eKsapzwmLZNCisNRfpfI6KqMZ_opxSXkrsRKfGDSuwiFen-3QqlSjaPRfDQO78_AqMn8LoFLtn8jCzY53lJ27wy42mwIm8YcJbPHXayfJG_w8ErigpQFWCR56xKk4/s160/b90_608.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdqVQZk7CfZCk04-eKsapzwmLZNCisNRfpfI6KqMZ_opxSXkrsRKfGDSuwiFen-3QqlSjaPRfDQO78_AqMn8LoFLtn8jCzY53lJ27wy42mwIm8YcJbPHXayfJG_w8ErigpQFWCR56xKk4/s320/b90_608.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdqVQZk7CfZCk04-eKsapzwmLZNCisNRfpfI6KqMZ_opxSXkrsRKfGDSuwiFen-3QqlSjaPRfDQO78_AqMn8LoFLtn8jCzY53lJ27wy42mwIm8YcJbPHXayfJG_w8ErigpQFWCR56xKk4/s480/b90_608.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.608 - Chris Cornell &quot;Poncier&quot;"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="p-715-chris-cornell-no-one-sings-like-you-anymore.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi14XeuzN2GL48-3snhOWM7CwByMbk2w7ntu84RKNKUvrFfEum4_IsjnI1S8_Na1haFesu1r4CAFFpESiEEBQOWQCbt0FfR1e9KRIpcppFoO6trWieawzHk2uV7EdlM9sL1Q70ykPf5q24/s320/cover.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi14XeuzN2GL48-3snhOWM7CwByMbk2w7ntu84RKNKUvrFfEum4_IsjnI1S8_Na1haFesu1r4CAFFpESiEEBQOWQCbt0FfR1e9KRIpcppFoO6trWieawzHk2uV7EdlM9sL1Q70ykPf5q24/s320/cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi14XeuzN2GL48-3snhOWM7CwByMbk2w7ntu84RKNKUvrFfEum4_IsjnI1S8_Na1haFesu1r4CAFFpESiEEBQOWQCbt0FfR1e9KRIpcppFoO6trWieawzHk2uV7EdlM9sL1Q70ykPf5q24/s480/cover.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi14XeuzN2GL48-3snhOWM7CwByMbk2w7ntu84RKNKUvrFfEum4_IsjnI1S8_Na1haFesu1r4CAFFpESiEEBQOWQCbt0FfR1e9KRIpcppFoO6trWieawzHk2uV7EdlM9sL1Q70ykPf5q24/s640/cover.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi14XeuzN2GL48-3snhOWM7CwByMbk2w7ntu84RKNKUvrFfEum4_IsjnI1S8_Na1haFesu1r4CAFFpESiEEBQOWQCbt0FfR1e9KRIpcppFoO6trWieawzHk2uV7EdlM9sL1Q70ykPf5q24/s320/cover.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi14XeuzN2GL48-3snhOWM7CwByMbk2w7ntu84RKNKUvrFfEum4_IsjnI1S8_Na1haFesu1r4CAFFpESiEEBQOWQCbt0FfR1e9KRIpcppFoO6trWieawzHk2uV7EdlM9sL1Q70ykPf5q24/s480/cover.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi14XeuzN2GL48-3snhOWM7CwByMbk2w7ntu84RKNKUvrFfEum4_IsjnI1S8_Na1haFesu1r4CAFFpESiEEBQOWQCbt0FfR1e9KRIpcppFoO6trWieawzHk2uV7EdlM9sL1Q70ykPf5q24/s640/cover.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.715 - Chris Cornell - No One Sings Like You Anymore"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="programa-514-homenaje-a-chris-cornell-en-caracol.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYYhb75C-ATY7D-Lj9VtO0dlMiOh37imC0kVKk4lCXaEeUzUI8sdoNeqC9an6KNyBkj_q87hB8vnYa8fvR-7NXWiSLUuFyVu7bsAHsZBKxOjQ9LV8LRfEBLc8l9OpfSdVw1yFc5QwErDc/s320/7301550329976_XXL.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYYhb75C-ATY7D-Lj9VtO0dlMiOh37imC0kVKk4lCXaEeUzUI8sdoNeqC9an6KNyBkj_q87hB8vnYa8fvR-7NXWiSLUuFyVu7bsAHsZBKxOjQ9LV8LRfEBLc8l9OpfSdVw1yFc5QwErDc/s320/7301550329976_XXL.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYYhb75C-ATY7D-Lj9VtO0dlMiOh37imC0kVKk4lCXaEeUzUI8sdoNeqC9an6KNyBkj_q87hB8vnYa8fvR-7NXWiSLUuFyVu7bsAHsZBKxOjQ9LV8LRfEBLc8l9OpfSdVw1yFc5QwErDc/s480/7301550329976_XXL.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYYhb75C-ATY7D-Lj9VtO0dlMiOh37imC0kVKk4lCXaEeUzUI8sdoNeqC9an6KNyBkj_q87hB8vnYa8fvR-7NXWiSLUuFyVu7bsAHsZBKxOjQ9LV8LRfEBLc8l9OpfSdVw1yFc5QwErDc/s640/7301550329976_XXL.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYYhb75C-ATY7D-Lj9VtO0dlMiOh37imC0kVKk4lCXaEeUzUI8sdoNeqC9an6KNyBkj_q87hB8vnYa8fvR-7NXWiSLUuFyVu7bsAHsZBKxOjQ9LV8LRfEBLc8l9OpfSdVw1yFc5QwErDc/s320/7301550329976_XXL.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYYhb75C-ATY7D-Lj9VtO0dlMiOh37imC0kVKk4lCXaEeUzUI8sdoNeqC9an6KNyBkj_q87hB8vnYa8fvR-7NXWiSLUuFyVu7bsAHsZBKxOjQ9LV8LRfEBLc8l9OpfSdVw1yFc5QwErDc/s480/7301550329976_XXL.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYYhb75C-ATY7D-Lj9VtO0dlMiOh37imC0kVKk4lCXaEeUzUI8sdoNeqC9an6KNyBkj_q87hB8vnYa8fvR-7NXWiSLUuFyVu7bsAHsZBKxOjQ9LV8LRfEBLc8l9OpfSdVw1yFc5QwErDc/s640/7301550329976_XXL.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 514 - Homenaje a CHRIS CORNELL en Caracol "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="programa-495-homenaje-a-chris-cornell-en-madrid-9-de-marzo-2019.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUTf8oHLqKAFRP64D6xq04cU-c6enQH5_duWZlANE0dSueJcghnzUBk2jY3PRA4vZYSjaf8NZ5k_ItZEmg2N_4mAtp8XOfjh4obT2-wVTWCRucNtrgs_3-7CkXzd4oS6Prbp3wM-uYLRQ/s320/b90_495.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUTf8oHLqKAFRP64D6xq04cU-c6enQH5_duWZlANE0dSueJcghnzUBk2jY3PRA4vZYSjaf8NZ5k_ItZEmg2N_4mAtp8XOfjh4obT2-wVTWCRucNtrgs_3-7CkXzd4oS6Prbp3wM-uYLRQ/s320/b90_495.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUTf8oHLqKAFRP64D6xq04cU-c6enQH5_duWZlANE0dSueJcghnzUBk2jY3PRA4vZYSjaf8NZ5k_ItZEmg2N_4mAtp8XOfjh4obT2-wVTWCRucNtrgs_3-7CkXzd4oS6Prbp3wM-uYLRQ/s480/b90_495.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUTf8oHLqKAFRP64D6xq04cU-c6enQH5_duWZlANE0dSueJcghnzUBk2jY3PRA4vZYSjaf8NZ5k_ItZEmg2N_4mAtp8XOfjh4obT2-wVTWCRucNtrgs_3-7CkXzd4oS6Prbp3wM-uYLRQ/s640/b90_495.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUTf8oHLqKAFRP64D6xq04cU-c6enQH5_duWZlANE0dSueJcghnzUBk2jY3PRA4vZYSjaf8NZ5k_ItZEmg2N_4mAtp8XOfjh4obT2-wVTWCRucNtrgs_3-7CkXzd4oS6Prbp3wM-uYLRQ/s320/b90_495.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUTf8oHLqKAFRP64D6xq04cU-c6enQH5_duWZlANE0dSueJcghnzUBk2jY3PRA4vZYSjaf8NZ5k_ItZEmg2N_4mAtp8XOfjh4obT2-wVTWCRucNtrgs_3-7CkXzd4oS6Prbp3wM-uYLRQ/s480/b90_495.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUTf8oHLqKAFRP64D6xq04cU-c6enQH5_duWZlANE0dSueJcghnzUBk2jY3PRA4vZYSjaf8NZ5k_ItZEmg2N_4mAtp8XOfjh4obT2-wVTWCRucNtrgs_3-7CkXzd4oS6Prbp3wM-uYLRQ/s640/b90_495.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 495 - Homenaje a Chris Cornell en Madrid 9 de Marzo 2019"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>1021 - Especial 1994 (12) : The Beatles - The Stone Roses - Bush - Pearl Jam — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -132,8 +132,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 59 - Bush, Nirvana, No Doubt, Pearl Jam, The Smashing Pumpkins..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -143,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s320/b90_parte12.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s160/b90_parte12.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s320/b90_parte12.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s480/b90_parte12.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s160/b90_parte12.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s320/b90_parte12.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlgoIYENdPl6eeL5iCEwuQC_k8Hjmfpxfv0YV_jMnPr-8N2pTAKukY7IUigEBxWkU1X-D8o-qfNs_fJtqafFa_ckD8CrqDJnInk76U_kwKUTEtmbxkyjTLRU_1jMz46h7RWxkir943GrLxKcqRAzPZhbus_Os9ZBjhrDvn2QZAI5bIQ1ReruLVg4gKAWA/s480/b90_parte12.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1020 - Especial 1994 (11) : The Black Crowes - Nirvana - Tom Petty - Woodstock 94"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh56MRcU03K6cQemVMJLf1D8_k6H3XlWXfCR9T5JS8KHi6Na9P73Jsvx7FAT2oE-fiocuJ0I7kPtBH0w3-u89i4JehAJuMYZdhjUXZ8-zsFjVF0YzCZ4spwVoldpbOgYEUeLQalZhgKwlY22ban516KACC6gG2oEMGHShhZN_dtYot190FIoI3EGyFi-8I/s320/b90_parte7_1994.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh56MRcU03K6cQemVMJLf1D8_k6H3XlWXfCR9T5JS8KHi6Na9P73Jsvx7FAT2oE-fiocuJ0I7kPtBH0w3-u89i4JehAJuMYZdhjUXZ8-zsFjVF0YzCZ4spwVoldpbOgYEUeLQalZhgKwlY22ban516KACC6gG2oEMGHShhZN_dtYot190FIoI3EGyFi-8I/s160/b90_parte7_1994.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh56MRcU03K6cQemVMJLf1D8_k6H3XlWXfCR9T5JS8KHi6Na9P73Jsvx7FAT2oE-fiocuJ0I7kPtBH0w3-u89i4JehAJuMYZdhjUXZ8-zsFjVF0YzCZ4spwVoldpbOgYEUeLQalZhgKwlY22ban516KACC6gG2oEMGHShhZN_dtYot190FIoI3EGyFi-8I/s320/b90_parte7_1994.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh56MRcU03K6cQemVMJLf1D8_k6H3XlWXfCR9T5JS8KHi6Na9P73Jsvx7FAT2oE-fiocuJ0I7kPtBH0w3-u89i4JehAJuMYZdhjUXZ8-zsFjVF0YzCZ4spwVoldpbOgYEUeLQalZhgKwlY22ban516KACC6gG2oEMGHShhZN_dtYot190FIoI3EGyFi-8I/s480/b90_parte7_1994.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh56MRcU03K6cQemVMJLf1D8_k6H3XlWXfCR9T5JS8KHi6Na9P73Jsvx7FAT2oE-fiocuJ0I7kPtBH0w3-u89i4JehAJuMYZdhjUXZ8-zsFjVF0YzCZ4spwVoldpbOgYEUeLQalZhgKwlY22ban516KACC6gG2oEMGHShhZN_dtYot190FIoI3EGyFi-8I/s160/b90_parte7_1994.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh56MRcU03K6cQemVMJLf1D8_k6H3XlWXfCR9T5JS8KHi6Na9P73Jsvx7FAT2oE-fiocuJ0I7kPtBH0w3-u89i4JehAJuMYZdhjUXZ8-zsFjVF0YzCZ4spwVoldpbOgYEUeLQalZhgKwlY22ban516KACC6gG2oEMGHShhZN_dtYot190FIoI3EGyFi-8I/s320/b90_parte7_1994.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh56MRcU03K6cQemVMJLf1D8_k6H3XlWXfCR9T5JS8KHi6Na9P73Jsvx7FAT2oE-fiocuJ0I7kPtBH0w3-u89i4JehAJuMYZdhjUXZ8-zsFjVF0YzCZ4spwVoldpbOgYEUeLQalZhgKwlY22ban516KACC6gG2oEMGHShhZN_dtYot190FIoI3EGyFi-8I/s480/b90_parte7_1994.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.1015 - Especial 1994, Parte 7: Prodigy, Neil Young, L7, Rolling Stones, Marilyn Manson,The Reverend Horton Heat"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +168,7 @@
         <a class="related-bottom-card" href="programa-211-pearl-jam-vitalogy-1994.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJNO2rzukParG-LaO8YeAYbdNm5c3Bn6NLhL7wSYD8vJezJIsj7Nc2IaQgiGSide8AnS3Z6HogXl6izN4wBps6wafN2rL-VWR1rV6uxs3nU4QzbPm_Y5NDlneAETgTEef-5cA004m0aDw/s320/12794412_10153394180172747_7868860481573039592_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJNO2rzukParG-LaO8YeAYbdNm5c3Bn6NLhL7wSYD8vJezJIsj7Nc2IaQgiGSide8AnS3Z6HogXl6izN4wBps6wafN2rL-VWR1rV6uxs3nU4QzbPm_Y5NDlneAETgTEef-5cA004m0aDw/s320/12794412_10153394180172747_7868860481573039592_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJNO2rzukParG-LaO8YeAYbdNm5c3Bn6NLhL7wSYD8vJezJIsj7Nc2IaQgiGSide8AnS3Z6HogXl6izN4wBps6wafN2rL-VWR1rV6uxs3nU4QzbPm_Y5NDlneAETgTEef-5cA004m0aDw/s480/12794412_10153394180172747_7868860481573039592_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJNO2rzukParG-LaO8YeAYbdNm5c3Bn6NLhL7wSYD8vJezJIsj7Nc2IaQgiGSide8AnS3Z6HogXl6izN4wBps6wafN2rL-VWR1rV6uxs3nU4QzbPm_Y5NDlneAETgTEef-5cA004m0aDw/s640/12794412_10153394180172747_7868860481573039592_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJNO2rzukParG-LaO8YeAYbdNm5c3Bn6NLhL7wSYD8vJezJIsj7Nc2IaQgiGSide8AnS3Z6HogXl6izN4wBps6wafN2rL-VWR1rV6uxs3nU4QzbPm_Y5NDlneAETgTEef-5cA004m0aDw/s320/12794412_10153394180172747_7868860481573039592_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJNO2rzukParG-LaO8YeAYbdNm5c3Bn6NLhL7wSYD8vJezJIsj7Nc2IaQgiGSide8AnS3Z6HogXl6izN4wBps6wafN2rL-VWR1rV6uxs3nU4QzbPm_Y5NDlneAETgTEef-5cA004m0aDw/s480/12794412_10153394180172747_7868860481573039592_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJNO2rzukParG-LaO8YeAYbdNm5c3Bn6NLhL7wSYD8vJezJIsj7Nc2IaQgiGSide8AnS3Z6HogXl6izN4wBps6wafN2rL-VWR1rV6uxs3nU4QzbPm_Y5NDlneAETgTEef-5cA004m0aDw/s640/12794412_10153394180172747_7868860481573039592_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 211 - Pearl Jam - Vitalogy (1994)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -183,8 +179,7 @@
           </a><a class="related-bottom-card" href="1019-especial-1994-10-the-cranberries-the-smashing-pumpkins-suede-the-cult-korn-jamir.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiespoG8pMK0Kf6UWg_c759u9L4ys7TK8G21Jj_QPkpHZk-TSvYdEo9NRCVZCT_gzqmX26-h38aY6ODo2XVmH4zy-Ex09mZ5uLc5y0zVf1miqYIaYcLvh3-y5aYVeK6qKDcpmuCS72_y7cUXUtAx9YdZepg14P45f54WrpvwR8VXkCdZ5AtbVEeafAwBTY/s320/b90_parte10.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiespoG8pMK0Kf6UWg_c759u9L4ys7TK8G21Jj_QPkpHZk-TSvYdEo9NRCVZCT_gzqmX26-h38aY6ODo2XVmH4zy-Ex09mZ5uLc5y0zVf1miqYIaYcLvh3-y5aYVeK6qKDcpmuCS72_y7cUXUtAx9YdZepg14P45f54WrpvwR8VXkCdZ5AtbVEeafAwBTY/s320/b90_parte10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiespoG8pMK0Kf6UWg_c759u9L4ys7TK8G21Jj_QPkpHZk-TSvYdEo9NRCVZCT_gzqmX26-h38aY6ODo2XVmH4zy-Ex09mZ5uLc5y0zVf1miqYIaYcLvh3-y5aYVeK6qKDcpmuCS72_y7cUXUtAx9YdZepg14P45f54WrpvwR8VXkCdZ5AtbVEeafAwBTY/s480/b90_parte10.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiespoG8pMK0Kf6UWg_c759u9L4ys7TK8G21Jj_QPkpHZk-TSvYdEo9NRCVZCT_gzqmX26-h38aY6ODo2XVmH4zy-Ex09mZ5uLc5y0zVf1miqYIaYcLvh3-y5aYVeK6qKDcpmuCS72_y7cUXUtAx9YdZepg14P45f54WrpvwR8VXkCdZ5AtbVEeafAwBTY/s640/b90_parte10.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiespoG8pMK0Kf6UWg_c759u9L4ys7TK8G21Jj_QPkpHZk-TSvYdEo9NRCVZCT_gzqmX26-h38aY6ODo2XVmH4zy-Ex09mZ5uLc5y0zVf1miqYIaYcLvh3-y5aYVeK6qKDcpmuCS72_y7cUXUtAx9YdZepg14P45f54WrpvwR8VXkCdZ5AtbVEeafAwBTY/s320/b90_parte10.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiespoG8pMK0Kf6UWg_c759u9L4ys7TK8G21Jj_QPkpHZk-TSvYdEo9NRCVZCT_gzqmX26-h38aY6ODo2XVmH4zy-Ex09mZ5uLc5y0zVf1miqYIaYcLvh3-y5aYVeK6qKDcpmuCS72_y7cUXUtAx9YdZepg14P45f54WrpvwR8VXkCdZ5AtbVEeafAwBTY/s480/b90_parte10.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiespoG8pMK0Kf6UWg_c759u9L4ys7TK8G21Jj_QPkpHZk-TSvYdEo9NRCVZCT_gzqmX26-h38aY6ODo2XVmH4zy-Ex09mZ5uLc5y0zVf1miqYIaYcLvh3-y5aYVeK6qKDcpmuCS72_y7cUXUtAx9YdZepg14P45f54WrpvwR8VXkCdZ5AtbVEeafAwBTY/s640/b90_parte10.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1019 - Especial 1994 (10) : The Cranberries, The Smashing Pumpkins, Suede, The Cult, Korn, Jamiroquai"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +190,7 @@
           </a><a class="related-bottom-card" href="p-1004-especial-1994-parte-5-johnny-cash-mark-lanegan-kyuss-bad-religion-live.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy9vUvjvrn1ye_1Rpgp5dCO5LZ86bcO34BK5myNfMcrWwisQOH3pMoTuqSG1N2GMe75t1JWx1rsMfzbraj6p3xmPYfY2-2MwlEMpgh1h71BDPuB9b4XYH6i9Ak6tI6kmn1UzJtYXlOb2q0n0IfIqQtUpSWlEYdPeBQtIbEtCJmUwUmiPIzGlP9l8PNC3Y/s320/Maraton%20b90%202024%205.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy9vUvjvrn1ye_1Rpgp5dCO5LZ86bcO34BK5myNfMcrWwisQOH3pMoTuqSG1N2GMe75t1JWx1rsMfzbraj6p3xmPYfY2-2MwlEMpgh1h71BDPuB9b4XYH6i9Ak6tI6kmn1UzJtYXlOb2q0n0IfIqQtUpSWlEYdPeBQtIbEtCJmUwUmiPIzGlP9l8PNC3Y/s320/Maraton%20b90%202024%205.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy9vUvjvrn1ye_1Rpgp5dCO5LZ86bcO34BK5myNfMcrWwisQOH3pMoTuqSG1N2GMe75t1JWx1rsMfzbraj6p3xmPYfY2-2MwlEMpgh1h71BDPuB9b4XYH6i9Ak6tI6kmn1UzJtYXlOb2q0n0IfIqQtUpSWlEYdPeBQtIbEtCJmUwUmiPIzGlP9l8PNC3Y/s480/Maraton%20b90%202024%205.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy9vUvjvrn1ye_1Rpgp5dCO5LZ86bcO34BK5myNfMcrWwisQOH3pMoTuqSG1N2GMe75t1JWx1rsMfzbraj6p3xmPYfY2-2MwlEMpgh1h71BDPuB9b4XYH6i9Ak6tI6kmn1UzJtYXlOb2q0n0IfIqQtUpSWlEYdPeBQtIbEtCJmUwUmiPIzGlP9l8PNC3Y/s640/Maraton%20b90%202024%205.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy9vUvjvrn1ye_1Rpgp5dCO5LZ86bcO34BK5myNfMcrWwisQOH3pMoTuqSG1N2GMe75t1JWx1rsMfzbraj6p3xmPYfY2-2MwlEMpgh1h71BDPuB9b4XYH6i9Ak6tI6kmn1UzJtYXlOb2q0n0IfIqQtUpSWlEYdPeBQtIbEtCJmUwUmiPIzGlP9l8PNC3Y/s320/Maraton%20b90%202024%205.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy9vUvjvrn1ye_1Rpgp5dCO5LZ86bcO34BK5myNfMcrWwisQOH3pMoTuqSG1N2GMe75t1JWx1rsMfzbraj6p3xmPYfY2-2MwlEMpgh1h71BDPuB9b4XYH6i9Ak6tI6kmn1UzJtYXlOb2q0n0IfIqQtUpSWlEYdPeBQtIbEtCJmUwUmiPIzGlP9l8PNC3Y/s480/Maraton%20b90%202024%205.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy9vUvjvrn1ye_1Rpgp5dCO5LZ86bcO34BK5myNfMcrWwisQOH3pMoTuqSG1N2GMe75t1JWx1rsMfzbraj6p3xmPYfY2-2MwlEMpgh1h71BDPuB9b4XYH6i9Ak6tI6kmn1UzJtYXlOb2q0n0IfIqQtUpSWlEYdPeBQtIbEtCJmUwUmiPIzGlP9l8PNC3Y/s640/Maraton%20b90%202024%205.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.1004 - Especial 1994, Parte 5: Johnny Cash, Mark Lanegan, Kyuss, Bad Religion, Live"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

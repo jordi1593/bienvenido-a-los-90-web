@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 316 - Especial Magical Mystery Tour con Paco Pérez Bryan — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -128,8 +128,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ2j3oPbDvLAP6JxdEHZ8T0cxqkwlcTYwZCCgswwHLmjI64Z1H5RP2nC_mxEW_UBr9XzsW1v82qKg2IhlwMFkHHC4ULdphWu-lEDHX888jEqxf3sb2Grb80G8B5QkW2UFHfrIChorx9UA/s320/b90457.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ2j3oPbDvLAP6JxdEHZ8T0cxqkwlcTYwZCCgswwHLmjI64Z1H5RP2nC_mxEW_UBr9XzsW1v82qKg2IhlwMFkHHC4ULdphWu-lEDHX888jEqxf3sb2Grb80G8B5QkW2UFHfrIChorx9UA/s160/b90457.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ2j3oPbDvLAP6JxdEHZ8T0cxqkwlcTYwZCCgswwHLmjI64Z1H5RP2nC_mxEW_UBr9XzsW1v82qKg2IhlwMFkHHC4ULdphWu-lEDHX888jEqxf3sb2Grb80G8B5QkW2UFHfrIChorx9UA/s320/b90457.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ2j3oPbDvLAP6JxdEHZ8T0cxqkwlcTYwZCCgswwHLmjI64Z1H5RP2nC_mxEW_UBr9XzsW1v82qKg2IhlwMFkHHC4ULdphWu-lEDHX888jEqxf3sb2Grb80G8B5QkW2UFHfrIChorx9UA/s480/b90457.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ2j3oPbDvLAP6JxdEHZ8T0cxqkwlcTYwZCCgswwHLmjI64Z1H5RP2nC_mxEW_UBr9XzsW1v82qKg2IhlwMFkHHC4ULdphWu-lEDHX888jEqxf3sb2Grb80G8B5QkW2UFHfrIChorx9UA/s160/b90457.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ2j3oPbDvLAP6JxdEHZ8T0cxqkwlcTYwZCCgswwHLmjI64Z1H5RP2nC_mxEW_UBr9XzsW1v82qKg2IhlwMFkHHC4ULdphWu-lEDHX888jEqxf3sb2Grb80G8B5QkW2UFHfrIChorx9UA/s320/b90457.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ2j3oPbDvLAP6JxdEHZ8T0cxqkwlcTYwZCCgswwHLmjI64Z1H5RP2nC_mxEW_UBr9XzsW1v82qKg2IhlwMFkHHC4ULdphWu-lEDHX888jEqxf3sb2Grb80G8B5QkW2UFHfrIChorx9UA/s480/b90457.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 457 - The Beatles - The White Album cumple 50"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -139,8 +138,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEj_gl8uqJxyrUeRCFPGurTF8kXjG1xTRjfwAWDYkZH9GgICTNxdEqqdv5ddMwCFcUI41gKFjZ2gvFWUyaFFoK6SLMOjZViKPuIjcXhEdTbvzkPWT4r4PvspfjTA0QelFxCTU4CKWoPNfyl9LaNgGFXNRfIk-7cf-pnBkZEdeQC4tPvdUQtoUtjVFiL9=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEj_gl8uqJxyrUeRCFPGurTF8kXjG1xTRjfwAWDYkZH9GgICTNxdEqqdv5ddMwCFcUI41gKFjZ2gvFWUyaFFoK6SLMOjZViKPuIjcXhEdTbvzkPWT4r4PvspfjTA0QelFxCTU4CKWoPNfyl9LaNgGFXNRfIk-7cf-pnBkZEdeQC4tPvdUQtoUtjVFiL9=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEj_gl8uqJxyrUeRCFPGurTF8kXjG1xTRjfwAWDYkZH9GgICTNxdEqqdv5ddMwCFcUI41gKFjZ2gvFWUyaFFoK6SLMOjZViKPuIjcXhEdTbvzkPWT4r4PvspfjTA0QelFxCTU4CKWoPNfyl9LaNgGFXNRfIk-7cf-pnBkZEdeQC4tPvdUQtoUtjVFiL9=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEj_gl8uqJxyrUeRCFPGurTF8kXjG1xTRjfwAWDYkZH9GgICTNxdEqqdv5ddMwCFcUI41gKFjZ2gvFWUyaFFoK6SLMOjZViKPuIjcXhEdTbvzkPWT4r4PvspfjTA0QelFxCTU4CKWoPNfyl9LaNgGFXNRfIk-7cf-pnBkZEdeQC4tPvdUQtoUtjVFiL9=s72-c 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="P.811 - Especial The Beatles: los inicios y sus influencias (Cap.1)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -150,8 +148,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEh89Tj85J6Bu6EDGzQeVFkPHnfXj4s2sels5ti_mb0LapOjRFAKDa-M9d-zUz6fU1uu29OqwwrHhGcW1aiTQv8KtYoxV60gqHBE3FhBCX32I-BXJPYZsjlL72kcJQMBcvYEsraSRSYY4_dEVGJHwC9cn_JEhNs5BGbgLP1yj9rJul7dUVfhXLAgRU_U=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEh89Tj85J6Bu6EDGzQeVFkPHnfXj4s2sels5ti_mb0LapOjRFAKDa-M9d-zUz6fU1uu29OqwwrHhGcW1aiTQv8KtYoxV60gqHBE3FhBCX32I-BXJPYZsjlL72kcJQMBcvYEsraSRSYY4_dEVGJHwC9cn_JEhNs5BGbgLP1yj9rJul7dUVfhXLAgRU_U=s72-c 160w, https://blogger.googleusercontent.com/img/a/AVvXsEh89Tj85J6Bu6EDGzQeVFkPHnfXj4s2sels5ti_mb0LapOjRFAKDa-M9d-zUz6fU1uu29OqwwrHhGcW1aiTQv8KtYoxV60gqHBE3FhBCX32I-BXJPYZsjlL72kcJQMBcvYEsraSRSYY4_dEVGJHwC9cn_JEhNs5BGbgLP1yj9rJul7dUVfhXLAgRU_U=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEh89Tj85J6Bu6EDGzQeVFkPHnfXj4s2sels5ti_mb0LapOjRFAKDa-M9d-zUz6fU1uu29OqwwrHhGcW1aiTQv8KtYoxV60gqHBE3FhBCX32I-BXJPYZsjlL72kcJQMBcvYEsraSRSYY4_dEVGJHwC9cn_JEhNs5BGbgLP1yj9rJul7dUVfhXLAgRU_U=s72-c 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="P.812 - Los recuerdos de Paul McCartney en The Lyrics (Parte 1)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -167,8 +164,7 @@
         <a class="related-bottom-card" href="b90-classic-15-cuando-decca-rechazo-a-los-beatles.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEhEZwcV9CI06_Y7DPC7IaiNL6MlWJRFaxKh5HvQhLEAG5_C6HB9BhFHhTRiXvaG-V2AWxfmYnQrJk0AzOFoXH6m_caYlkDBVsr0JRJsYA8qQ8-NKldgtQzvWQmzkDupd0CVWKoKadZBryiXVbRmeSNoA_FDETLFGm6zqXrVQn3rbLhS5hhFeMP0Ofmp=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEhEZwcV9CI06_Y7DPC7IaiNL6MlWJRFaxKh5HvQhLEAG5_C6HB9BhFHhTRiXvaG-V2AWxfmYnQrJk0AzOFoXH6m_caYlkDBVsr0JRJsYA8qQ8-NKldgtQzvWQmzkDupd0CVWKoKadZBryiXVbRmeSNoA_FDETLFGm6zqXrVQn3rbLhS5hhFeMP0Ofmp=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEhEZwcV9CI06_Y7DPC7IaiNL6MlWJRFaxKh5HvQhLEAG5_C6HB9BhFHhTRiXvaG-V2AWxfmYnQrJk0AzOFoXH6m_caYlkDBVsr0JRJsYA8qQ8-NKldgtQzvWQmzkDupd0CVWKoKadZBryiXVbRmeSNoA_FDETLFGm6zqXrVQn3rbLhS5hhFeMP0Ofmp=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEhEZwcV9CI06_Y7DPC7IaiNL6MlWJRFaxKh5HvQhLEAG5_C6HB9BhFHhTRiXvaG-V2AWxfmYnQrJk0AzOFoXH6m_caYlkDBVsr0JRJsYA8qQ8-NKldgtQzvWQmzkDupd0CVWKoKadZBryiXVbRmeSNoA_FDETLFGm6zqXrVQn3rbLhS5hhFeMP0Ofmp=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 Classic 15: Cuando Decca rechazó a los Beatles"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -179,8 +175,7 @@
           </a><a class="related-bottom-card" href="p-826-especial-the-beatles-su-primer-disco-please-please-me-1963-cap-2.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEg_JT2ZDMWZhw86MLJkObaYFJawGETUWYXr_OD8XhDxngwQaH9XOPUcDyY7EQJz0B6FmzrQjjkN5BVlWwae6Ey7RRHa7wVIWbNKRMq-ZDEJMWseb_9_Yolgd-KflcQoHK3_bgu16sh0B6-lmD9x8yu698UckCcQWbOZm8SNIb1HusgAzbq-TFaMgkpy=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEg_JT2ZDMWZhw86MLJkObaYFJawGETUWYXr_OD8XhDxngwQaH9XOPUcDyY7EQJz0B6FmzrQjjkN5BVlWwae6Ey7RRHa7wVIWbNKRMq-ZDEJMWseb_9_Yolgd-KflcQoHK3_bgu16sh0B6-lmD9x8yu698UckCcQWbOZm8SNIb1HusgAzbq-TFaMgkpy=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEg_JT2ZDMWZhw86MLJkObaYFJawGETUWYXr_OD8XhDxngwQaH9XOPUcDyY7EQJz0B6FmzrQjjkN5BVlWwae6Ey7RRHa7wVIWbNKRMq-ZDEJMWseb_9_Yolgd-KflcQoHK3_bgu16sh0B6-lmD9x8yu698UckCcQWbOZm8SNIb1HusgAzbq-TFaMgkpy=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEg_JT2ZDMWZhw86MLJkObaYFJawGETUWYXr_OD8XhDxngwQaH9XOPUcDyY7EQJz0B6FmzrQjjkN5BVlWwae6Ey7RRHa7wVIWbNKRMq-ZDEJMWseb_9_Yolgd-KflcQoHK3_bgu16sh0B6-lmD9x8yu698UckCcQWbOZm8SNIb1HusgAzbq-TFaMgkpy=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="P.826 - Especial The Beatles, su primer disco &quot;Please Please Me&quot; 1963 (Cap.2)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -191,8 +186,7 @@
           </a><a class="related-bottom-card" href="p-853-the-beatles-with-the-beatles-1963-cap-3.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-ecs580EHrDc568SvAx6Ppuhe3S1PT-kjv3MCjYCBfC1X7H_OZJVvN4RbiKwM2w-2bxeY1QJ2Qm4SlVn6fD6lCr3Rlst2PjDdYZF9DbsqCoX4uVhDE4evLfZYRNm3FuDn1e9eVzUuBit4AFH87yt0STIdG4rp3SJ2GOASwnRH7GfRoQ_EtQ-k_Qe/s320/IMG_20220716_120705.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-ecs580EHrDc568SvAx6Ppuhe3S1PT-kjv3MCjYCBfC1X7H_OZJVvN4RbiKwM2w-2bxeY1QJ2Qm4SlVn6fD6lCr3Rlst2PjDdYZF9DbsqCoX4uVhDE4evLfZYRNm3FuDn1e9eVzUuBit4AFH87yt0STIdG4rp3SJ2GOASwnRH7GfRoQ_EtQ-k_Qe/s320/IMG_20220716_120705.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-ecs580EHrDc568SvAx6Ppuhe3S1PT-kjv3MCjYCBfC1X7H_OZJVvN4RbiKwM2w-2bxeY1QJ2Qm4SlVn6fD6lCr3Rlst2PjDdYZF9DbsqCoX4uVhDE4evLfZYRNm3FuDn1e9eVzUuBit4AFH87yt0STIdG4rp3SJ2GOASwnRH7GfRoQ_EtQ-k_Qe/s480/IMG_20220716_120705.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-ecs580EHrDc568SvAx6Ppuhe3S1PT-kjv3MCjYCBfC1X7H_OZJVvN4RbiKwM2w-2bxeY1QJ2Qm4SlVn6fD6lCr3Rlst2PjDdYZF9DbsqCoX4uVhDE4evLfZYRNm3FuDn1e9eVzUuBit4AFH87yt0STIdG4rp3SJ2GOASwnRH7GfRoQ_EtQ-k_Qe/s640/IMG_20220716_120705.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-ecs580EHrDc568SvAx6Ppuhe3S1PT-kjv3MCjYCBfC1X7H_OZJVvN4RbiKwM2w-2bxeY1QJ2Qm4SlVn6fD6lCr3Rlst2PjDdYZF9DbsqCoX4uVhDE4evLfZYRNm3FuDn1e9eVzUuBit4AFH87yt0STIdG4rp3SJ2GOASwnRH7GfRoQ_EtQ-k_Qe/s320/IMG_20220716_120705.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-ecs580EHrDc568SvAx6Ppuhe3S1PT-kjv3MCjYCBfC1X7H_OZJVvN4RbiKwM2w-2bxeY1QJ2Qm4SlVn6fD6lCr3Rlst2PjDdYZF9DbsqCoX4uVhDE4evLfZYRNm3FuDn1e9eVzUuBit4AFH87yt0STIdG4rp3SJ2GOASwnRH7GfRoQ_EtQ-k_Qe/s480/IMG_20220716_120705.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-ecs580EHrDc568SvAx6Ppuhe3S1PT-kjv3MCjYCBfC1X7H_OZJVvN4RbiKwM2w-2bxeY1QJ2Qm4SlVn6fD6lCr3Rlst2PjDdYZF9DbsqCoX4uVhDE4evLfZYRNm3FuDn1e9eVzUuBit4AFH87yt0STIdG4rp3SJ2GOASwnRH7GfRoQ_EtQ-k_Qe/s640/IMG_20220716_120705.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.853 - The Beatles, &quot;With the Beatles&quot; 1963 (Cap.3)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

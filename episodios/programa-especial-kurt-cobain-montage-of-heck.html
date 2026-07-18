@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa Especial - Kurt Cobain Montage of Heck — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -130,8 +130,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtHB2oczybaruHqY1bkMYbgt7nzOUFAjEfrEL7JXcSDXm_yDsH41FUFnm5_wwaLaSxwghkg_wIcqHDWlCRUeunenGkNn87XdGLR7cdDlcfHQdp0k_fCt83gK_yvAfn6Prq9xA9DhnS9k4/s320/nirvana-nombre-animado-web.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtHB2oczybaruHqY1bkMYbgt7nzOUFAjEfrEL7JXcSDXm_yDsH41FUFnm5_wwaLaSxwghkg_wIcqHDWlCRUeunenGkNn87XdGLR7cdDlcfHQdp0k_fCt83gK_yvAfn6Prq9xA9DhnS9k4/s160/nirvana-nombre-animado-web.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtHB2oczybaruHqY1bkMYbgt7nzOUFAjEfrEL7JXcSDXm_yDsH41FUFnm5_wwaLaSxwghkg_wIcqHDWlCRUeunenGkNn87XdGLR7cdDlcfHQdp0k_fCt83gK_yvAfn6Prq9xA9DhnS9k4/s320/nirvana-nombre-animado-web.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtHB2oczybaruHqY1bkMYbgt7nzOUFAjEfrEL7JXcSDXm_yDsH41FUFnm5_wwaLaSxwghkg_wIcqHDWlCRUeunenGkNn87XdGLR7cdDlcfHQdp0k_fCt83gK_yvAfn6Prq9xA9DhnS9k4/s480/nirvana-nombre-animado-web.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtHB2oczybaruHqY1bkMYbgt7nzOUFAjEfrEL7JXcSDXm_yDsH41FUFnm5_wwaLaSxwghkg_wIcqHDWlCRUeunenGkNn87XdGLR7cdDlcfHQdp0k_fCt83gK_yvAfn6Prq9xA9DhnS9k4/s160/nirvana-nombre-animado-web.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtHB2oczybaruHqY1bkMYbgt7nzOUFAjEfrEL7JXcSDXm_yDsH41FUFnm5_wwaLaSxwghkg_wIcqHDWlCRUeunenGkNn87XdGLR7cdDlcfHQdp0k_fCt83gK_yvAfn6Prq9xA9DhnS9k4/s320/nirvana-nombre-animado-web.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtHB2oczybaruHqY1bkMYbgt7nzOUFAjEfrEL7JXcSDXm_yDsH41FUFnm5_wwaLaSxwghkg_wIcqHDWlCRUeunenGkNn87XdGLR7cdDlcfHQdp0k_fCt83gK_yvAfn6Prq9xA9DhnS9k4/s480/nirvana-nombre-animado-web.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 156 - Kurt Cobain"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -141,8 +140,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s160/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s480/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s160/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s480/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 149 - Kurt Cobain cumple 48 años"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -152,8 +150,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s160/B1gPDmmc+PS._SS500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s480/B1gPDmmc+PS._SS500_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s160/B1gPDmmc+PS._SS500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s320/B1gPDmmc+PS._SS500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhARAp4TgfGnICXFUu5XYsQYxiDKivWHvBJMOjRKdVVmpwc-dqNwaFfq7XPpHJ6qC4Q9B-lhrwftrFhrPlM55rgEEWGO2WYI0nwgVXLK4VCvO2F6jx6z1fhh88qmk0qXnpCXW46QKkd4yqwgCdWnNwsUJdfvuRqGY5CWyIKBw_wzprltkvpjFfFIVAD/s480/B1gPDmmc+PS._SS500_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 22: Cuando Kurt Cobain conoció a William Burroughs"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -169,8 +166,7 @@
         <a class="related-bottom-card" href="programa-158-montage-of-heck-y-cool.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s320/fotonoticia_20150422115943_800.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s320/fotonoticia_20150422115943_800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s480/fotonoticia_20150422115943_800.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s640/fotonoticia_20150422115943_800.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s320/fotonoticia_20150422115943_800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s480/fotonoticia_20150422115943_800.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiuf1vQkzh8s9mRuS00cY0R6oYw2xWiMvgU133tC9pGpGr_GIeu8hdvCtxN2EtmxRQD_HI5W5kXBoOAMRAuHJlyflgPsX_HYOoCsE9aIOODk_bUUQwFeE3CGUJ1TvKNIZ00IpU5SRmNFE/s640/fotonoticia_20150422115943_800.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 158 - Montage of Heck y Cool"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -181,8 +177,7 @@
           </a><a class="related-bottom-card" href="programa-191-kurt-cobain-montage-of-heck-the-home-recordings.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3tCPJI9eQbRTny07mZF1BcIL30JWfN1yI554RO5nrR4Zi6GIjj5QC8CZEkDbU1zfk9Zfm5k9IT4fipTerGZG-9ugMVPt0_dfap3n2blHiAmq7sUzpNK1gIryeNMh5MELvWzUYfnZicXs/s320/12196020_1079865422024353_2654656110979789148_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3tCPJI9eQbRTny07mZF1BcIL30JWfN1yI554RO5nrR4Zi6GIjj5QC8CZEkDbU1zfk9Zfm5k9IT4fipTerGZG-9ugMVPt0_dfap3n2blHiAmq7sUzpNK1gIryeNMh5MELvWzUYfnZicXs/s320/12196020_1079865422024353_2654656110979789148_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3tCPJI9eQbRTny07mZF1BcIL30JWfN1yI554RO5nrR4Zi6GIjj5QC8CZEkDbU1zfk9Zfm5k9IT4fipTerGZG-9ugMVPt0_dfap3n2blHiAmq7sUzpNK1gIryeNMh5MELvWzUYfnZicXs/s480/12196020_1079865422024353_2654656110979789148_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3tCPJI9eQbRTny07mZF1BcIL30JWfN1yI554RO5nrR4Zi6GIjj5QC8CZEkDbU1zfk9Zfm5k9IT4fipTerGZG-9ugMVPt0_dfap3n2blHiAmq7sUzpNK1gIryeNMh5MELvWzUYfnZicXs/s640/12196020_1079865422024353_2654656110979789148_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3tCPJI9eQbRTny07mZF1BcIL30JWfN1yI554RO5nrR4Zi6GIjj5QC8CZEkDbU1zfk9Zfm5k9IT4fipTerGZG-9ugMVPt0_dfap3n2blHiAmq7sUzpNK1gIryeNMh5MELvWzUYfnZicXs/s320/12196020_1079865422024353_2654656110979789148_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3tCPJI9eQbRTny07mZF1BcIL30JWfN1yI554RO5nrR4Zi6GIjj5QC8CZEkDbU1zfk9Zfm5k9IT4fipTerGZG-9ugMVPt0_dfap3n2blHiAmq7sUzpNK1gIryeNMh5MELvWzUYfnZicXs/s480/12196020_1079865422024353_2654656110979789148_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3tCPJI9eQbRTny07mZF1BcIL30JWfN1yI554RO5nrR4Zi6GIjj5QC8CZEkDbU1zfk9Zfm5k9IT4fipTerGZG-9ugMVPt0_dfap3n2blHiAmq7sUzpNK1gIryeNMh5MELvWzUYfnZicXs/s640/12196020_1079865422024353_2654656110979789148_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 191 - Kurt Cobain - Montage of Heck – The Home Recordings "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -193,8 +188,7 @@
           </a><a class="related-bottom-card" href="programa-263-los-50-discos-favoritos-de-kurt-cobain.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s320/kurt50.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s320/kurt50.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s480/kurt50.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s640/kurt50.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s320/kurt50.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s480/kurt50.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoOXHBel0KI3fmKr-J5QJv5XOkA7dVsqyxzwCbItK0wvUnnWJfOmbMJAQzfBDYkM1pqYPYpSFxUG_Y3HjWZJBfky_RzDciVK-S4fxcRv1VcRQLmKR5PrikLLyF78nubfqG8Z1TfunLWVQ/s640/kurt50.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 263 - Los 50 discos favoritos de Kurt Cobain"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 305 - KIDS (1995) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -128,8 +128,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s160/211e39bccf57b79c8093eea29fe06350.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s480/211e39bccf57b79c8093eea29fe06350.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s160/211e39bccf57b79c8093eea29fe06350.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s320/211e39bccf57b79c8093eea29fe06350.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyFg9pcvoVNIjC3eEOKw3mB5cmNtdrGRBZp4l1AySy2AVSgtdxgaovpfIa57z9fZMrmsecsFSCzW-6bCXOBUSqcEpJxlACnf8wsoAXMobfdbpE19y14YfVxb0dW_E_nsvc-rU8nlfHcM/s480/211e39bccf57b79c8093eea29fe06350.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 304 – Eddie Vedder + The Beatles"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -139,8 +138,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s160/noel-liam-gallagher.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s480/noel-liam-gallagher.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s160/noel-liam-gallagher.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s320/noel-liam-gallagher.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYTxIs3IHnn96FVNjr3ZAiLW76NmZPbsugN9RtTy8bb-pWIt53DEAdrYB_BreDhLIjJpY55D6Hz-pgrZfSwblk84w5a3k8wAla6XlKf2Y7iUCmOLPVWUn-TqwzSlt_PrCUS7xv-zBgv8/s480/noel-liam-gallagher.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 311 - Gallagher vs. Gallagher"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -150,8 +148,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s320/P1040063.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s160/P1040063.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s320/P1040063.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s480/P1040063.JPG 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s160/P1040063.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s320/P1040063.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJwmKjD00l1VaRElOx2MzmRHRIIVcqnVdkRuNfyTtyFQjSKCsePHhJnQ_jj9nTsJbBtgzVj4J-AlepfvoUmocPKFbOfu7hyphenhyphenzG4o3LGNdgyNuORzHChsmKG7_AO-IPmLPetWonsoGZ4hs/s480/P1040063.JPG 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 298 – Paco Soto"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -167,8 +164,7 @@
         <a class="related-bottom-card" href="programa-201-oasis-this-is-history-2-glastonbury-1995-be-here-now-1997.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s320/12508847_1171351242882517_303927544139429384_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s320/12508847_1171351242882517_303927544139429384_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s480/12508847_1171351242882517_303927544139429384_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s640/12508847_1171351242882517_303927544139429384_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s320/12508847_1171351242882517_303927544139429384_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s480/12508847_1171351242882517_303927544139429384_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGduXvP7deDJQK0FUnQnphXb2YI6P63RevuvXG9kKDY5tYRlC1sQG4erEfmvOpfgrWA43UaN0FEA8zu9XiDrBlT_NOzYgjCrs2MZvdNdcdsgYA8XrCL7iWAXf1DVitW3tEk90AFpNOQ/s640/12508847_1171351242882517_303927544139429384_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 201 - Oasis This is history 2 - Glastonbury (1995) - Be Here Now (1997)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -179,8 +175,7 @@
           </a><a class="related-bottom-card" href="programa-188-oasis-this-is-history-capitulo-1-the-rain-1990-glastonbury-1995.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-IVg9_ylWJg0itnpG0p4qh0Qi6js13_qZSNAxZ__rz0C9EgIq8U5rAXk_1-3zs2RaGRcOgkhLCHhuMPFxheLXMnyudmkP854u1wbZnElX7M71GuSjJzKHr3gp7t43j3sElq-H3wsh-Jo/s320/tumblr_ln1lj7V2HW1qkbmcjo1_500.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-IVg9_ylWJg0itnpG0p4qh0Qi6js13_qZSNAxZ__rz0C9EgIq8U5rAXk_1-3zs2RaGRcOgkhLCHhuMPFxheLXMnyudmkP854u1wbZnElX7M71GuSjJzKHr3gp7t43j3sElq-H3wsh-Jo/s320/tumblr_ln1lj7V2HW1qkbmcjo1_500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-IVg9_ylWJg0itnpG0p4qh0Qi6js13_qZSNAxZ__rz0C9EgIq8U5rAXk_1-3zs2RaGRcOgkhLCHhuMPFxheLXMnyudmkP854u1wbZnElX7M71GuSjJzKHr3gp7t43j3sElq-H3wsh-Jo/s480/tumblr_ln1lj7V2HW1qkbmcjo1_500.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-IVg9_ylWJg0itnpG0p4qh0Qi6js13_qZSNAxZ__rz0C9EgIq8U5rAXk_1-3zs2RaGRcOgkhLCHhuMPFxheLXMnyudmkP854u1wbZnElX7M71GuSjJzKHr3gp7t43j3sElq-H3wsh-Jo/s640/tumblr_ln1lj7V2HW1qkbmcjo1_500.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-IVg9_ylWJg0itnpG0p4qh0Qi6js13_qZSNAxZ__rz0C9EgIq8U5rAXk_1-3zs2RaGRcOgkhLCHhuMPFxheLXMnyudmkP854u1wbZnElX7M71GuSjJzKHr3gp7t43j3sElq-H3wsh-Jo/s320/tumblr_ln1lj7V2HW1qkbmcjo1_500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-IVg9_ylWJg0itnpG0p4qh0Qi6js13_qZSNAxZ__rz0C9EgIq8U5rAXk_1-3zs2RaGRcOgkhLCHhuMPFxheLXMnyudmkP854u1wbZnElX7M71GuSjJzKHr3gp7t43j3sElq-H3wsh-Jo/s480/tumblr_ln1lj7V2HW1qkbmcjo1_500.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-IVg9_ylWJg0itnpG0p4qh0Qi6js13_qZSNAxZ__rz0C9EgIq8U5rAXk_1-3zs2RaGRcOgkhLCHhuMPFxheLXMnyudmkP854u1wbZnElX7M71GuSjJzKHr3gp7t43j3sElq-H3wsh-Jo/s640/tumblr_ln1lj7V2HW1qkbmcjo1_500.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 188 - Oasis &quot;This is history&quot;  Capítulo 1: The Rain (1990) - Glastonbury (1995)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -191,8 +186,7 @@
           </a><a class="related-bottom-card" href="1091-especial-1995-3-5-smashing-pumpkins-primus-bjork-alanis-morissette-foo-fighters-.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s320/b90_1091.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s320/b90_1091.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s480/b90_1091.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s640/b90_1091.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s320/b90_1091.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s480/b90_1091.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgATOlaqLJ-A_GLtuWfT2mGurvuCtE5xjfSYz6nNAUra_E8eyJzmtvglsS5mjsK10FAUKAJwTWY1Dza-bzwrUxEFQR0M7lA4bSWIgjZqACHbn673jY7j-boBXPTHD2FQ8pvqyUhi33p5wPeoyAc7YnFVcg8Oewn-LDbHPzuQc1f62SgxL5o9VTCLwa87Rk/s640/b90_1091.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1091 - Especial 1995 (3/5) Smashing Pumpkins, Primus, Bjork, Alanis Morissette, Foo Fighters, Neil Young..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Jimi Hendrix — 8 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-793-buscando-versiones-de-los-beatles-con-felipe-couselo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjy-JedLAyisZ-z9NPriqy_TvL9MYalCXGRmZt8oONRp-z5s4DOTCoLL65fLS4VAoEuV17JkGYEtTqmci85g_KXQr8r8ACU9cNQs-iFp7Odrcb7MCFCwz0sCphFKoxksA-1nuPtcDLewxA/s320/beatles_ringo_blog.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjy-JedLAyisZ-z9NPriqy_TvL9MYalCXGRmZt8oONRp-z5s4DOTCoLL65fLS4VAoEuV17JkGYEtTqmci85g_KXQr8r8ACU9cNQs-iFp7Odrcb7MCFCwz0sCphFKoxksA-1nuPtcDLewxA/s160/beatles_ringo_blog.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjy-JedLAyisZ-z9NPriqy_TvL9MYalCXGRmZt8oONRp-z5s4DOTCoLL65fLS4VAoEuV17JkGYEtTqmci85g_KXQr8r8ACU9cNQs-iFp7Odrcb7MCFCwz0sCphFKoxksA-1nuPtcDLewxA/s320/beatles_ringo_blog.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjy-JedLAyisZ-z9NPriqy_TvL9MYalCXGRmZt8oONRp-z5s4DOTCoLL65fLS4VAoEuV17JkGYEtTqmci85g_KXQr8r8ACU9cNQs-iFp7Odrcb7MCFCwz0sCphFKoxksA-1nuPtcDLewxA/s480/beatles_ringo_blog.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjy-JedLAyisZ-z9NPriqy_TvL9MYalCXGRmZt8oONRp-z5s4DOTCoLL65fLS4VAoEuV17JkGYEtTqmci85g_KXQr8r8ACU9cNQs-iFp7Odrcb7MCFCwz0sCphFKoxksA-1nuPtcDLewxA/s160/beatles_ringo_blog.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjy-JedLAyisZ-z9NPriqy_TvL9MYalCXGRmZt8oONRp-z5s4DOTCoLL65fLS4VAoEuV17JkGYEtTqmci85g_KXQr8r8ACU9cNQs-iFp7Odrcb7MCFCwz0sCphFKoxksA-1nuPtcDLewxA/s320/beatles_ringo_blog.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjy-JedLAyisZ-z9NPriqy_TvL9MYalCXGRmZt8oONRp-z5s4DOTCoLL65fLS4VAoEuV17JkGYEtTqmci85g_KXQr8r8ACU9cNQs-iFp7Odrcb7MCFCwz0sCphFKoxksA-1nuPtcDLewxA/s480/beatles_ringo_blog.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.793 - Buscando versiones de los Beatles con Felipe Couselo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/programa-408-el-unico-concierto-de-jimi-hendrix-en-espana.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidGZD8CWXiFkUN5d4k16b_vQVYKnF8NwLfG8OtaupbZ__kDfBN2OScFL_xDzDn7_9TeeFiu0CM2C6Nlh05aGrIpi7zfd4TVg0LOEW0D4yUy8Zh5CjYq6KnAbKeLEZVAaHkSFa0JSt6HSE/s320/356.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidGZD8CWXiFkUN5d4k16b_vQVYKnF8NwLfG8OtaupbZ__kDfBN2OScFL_xDzDn7_9TeeFiu0CM2C6Nlh05aGrIpi7zfd4TVg0LOEW0D4yUy8Zh5CjYq6KnAbKeLEZVAaHkSFa0JSt6HSE/s160/356.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidGZD8CWXiFkUN5d4k16b_vQVYKnF8NwLfG8OtaupbZ__kDfBN2OScFL_xDzDn7_9TeeFiu0CM2C6Nlh05aGrIpi7zfd4TVg0LOEW0D4yUy8Zh5CjYq6KnAbKeLEZVAaHkSFa0JSt6HSE/s320/356.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidGZD8CWXiFkUN5d4k16b_vQVYKnF8NwLfG8OtaupbZ__kDfBN2OScFL_xDzDn7_9TeeFiu0CM2C6Nlh05aGrIpi7zfd4TVg0LOEW0D4yUy8Zh5CjYq6KnAbKeLEZVAaHkSFa0JSt6HSE/s480/356.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidGZD8CWXiFkUN5d4k16b_vQVYKnF8NwLfG8OtaupbZ__kDfBN2OScFL_xDzDn7_9TeeFiu0CM2C6Nlh05aGrIpi7zfd4TVg0LOEW0D4yUy8Zh5CjYq6KnAbKeLEZVAaHkSFa0JSt6HSE/s160/356.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidGZD8CWXiFkUN5d4k16b_vQVYKnF8NwLfG8OtaupbZ__kDfBN2OScFL_xDzDn7_9TeeFiu0CM2C6Nlh05aGrIpi7zfd4TVg0LOEW0D4yUy8Zh5CjYq6KnAbKeLEZVAaHkSFa0JSt6HSE/s320/356.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidGZD8CWXiFkUN5d4k16b_vQVYKnF8NwLfG8OtaupbZ__kDfBN2OScFL_xDzDn7_9TeeFiu0CM2C6Nlh05aGrIpi7zfd4TVg0LOEW0D4yUy8Zh5CjYq6KnAbKeLEZVAaHkSFa0JSt6HSE/s480/356.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 408 - El único concierto de Jimi Hendrix en España "
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-374-eric-gales.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl0FaEkp7b9vsd82o11VmPWb9YwKnzGnZwdI8P38b4hsPHRKbrkbXxWZ8zv5Ktf1fbaNqr2MGtG3bdmCrkM1b3aHHxMKYzjtpqpZ-jFMBAgmTQWctab4TMFHvY7sV6SwXMtKWoI77mgDM/s320/Eric-gales-4.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl0FaEkp7b9vsd82o11VmPWb9YwKnzGnZwdI8P38b4hsPHRKbrkbXxWZ8zv5Ktf1fbaNqr2MGtG3bdmCrkM1b3aHHxMKYzjtpqpZ-jFMBAgmTQWctab4TMFHvY7sV6SwXMtKWoI77mgDM/s160/Eric-gales-4.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl0FaEkp7b9vsd82o11VmPWb9YwKnzGnZwdI8P38b4hsPHRKbrkbXxWZ8zv5Ktf1fbaNqr2MGtG3bdmCrkM1b3aHHxMKYzjtpqpZ-jFMBAgmTQWctab4TMFHvY7sV6SwXMtKWoI77mgDM/s320/Eric-gales-4.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl0FaEkp7b9vsd82o11VmPWb9YwKnzGnZwdI8P38b4hsPHRKbrkbXxWZ8zv5Ktf1fbaNqr2MGtG3bdmCrkM1b3aHHxMKYzjtpqpZ-jFMBAgmTQWctab4TMFHvY7sV6SwXMtKWoI77mgDM/s480/Eric-gales-4.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl0FaEkp7b9vsd82o11VmPWb9YwKnzGnZwdI8P38b4hsPHRKbrkbXxWZ8zv5Ktf1fbaNqr2MGtG3bdmCrkM1b3aHHxMKYzjtpqpZ-jFMBAgmTQWctab4TMFHvY7sV6SwXMtKWoI77mgDM/s160/Eric-gales-4.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl0FaEkp7b9vsd82o11VmPWb9YwKnzGnZwdI8P38b4hsPHRKbrkbXxWZ8zv5Ktf1fbaNqr2MGtG3bdmCrkM1b3aHHxMKYzjtpqpZ-jFMBAgmTQWctab4TMFHvY7sV6SwXMtKWoI77mgDM/s320/Eric-gales-4.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl0FaEkp7b9vsd82o11VmPWb9YwKnzGnZwdI8P38b4hsPHRKbrkbXxWZ8zv5Ktf1fbaNqr2MGtG3bdmCrkM1b3aHHxMKYzjtpqpZ-jFMBAgmTQWctab4TMFHvY7sV6SwXMtKWoI77mgDM/s480/Eric-gales-4.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 374 - Eric Gales"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-265-red-rocket-7-mike-allred.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s320/red-rocket-7.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s160/red-rocket-7.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s320/red-rocket-7.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s480/red-rocket-7.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s160/red-rocket-7.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s320/red-rocket-7.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s480/red-rocket-7.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 265 - Red Rocket 7 (Mike Allred)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-161-un-paseo-por-seattle.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s320/P1030752.JPG"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s160/P1030752.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s320/P1030752.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s480/P1030752.JPG 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s160/P1030752.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s320/P1030752.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s480/P1030752.JPG 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 161 - Un paseo por Seattle"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-160-asesinos-natos-sweet-home-y-singles-con-angel-agudo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 160 - Asesinos Natos, Sweet Home y Singles con Ángel Agudo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/programa-130-entrevista-a-charles-r-cross.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s160/P1030709.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s480/P1030709.JPG 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s160/P1030709.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s480/P1030709.JPG 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 130 - Entrevista a Charles R. Cross"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -166,8 +159,7 @@
         <a class="episode-cover-link" href="../episodios/programa-125-morir-a-los-27.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 125 - Morir a los 27"
                 loading="lazy" width="320" height="213" />
         </a>

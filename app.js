@@ -185,6 +185,7 @@ async function loadEsencialesSlugs() {
   } catch {
     esencialesSlugs = new Set();
   }
+  if (state.specialFilters.has("__esenciales__")) applyFilters();
 }
 
 // Episodios del maratón "Especial 1995" listado en
@@ -387,11 +388,10 @@ function renderNextPage() {
     : "Cargando episodios…";
   const remaining = state.filtered.length - state.shown;
   if (remaining > 0) {
-    const toLoad = Math.min(PAGE_SIZE(), remaining);
     els.loadMore.textContent = 'Cargar más episodios';
   }
   els.loadMoreWrap.style.display = remaining > 0 ? "block" : "none";
-  els.clearFilters.hidden = !state.search;
+  els.clearFilters.hidden = !state.search && state.labels.size === 0 && state.specialFilters.size === 0;
 }
 
 function populateLabelFilter(episodes) {

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Bienvenido a los 90 - Programa 18 - Tarantino en los 90 (Parte1) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -139,8 +139,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa 23 - Tarantino en los 90 (Parte2)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -150,8 +149,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBRv5LMoQnsT57XugaWUY1pijyWzMjwAWRdwPQWrcHZpGJRxXbHsCQzJmBJQwasYB7VpJO2cHtNIh2v7Wd4I_DlGjudFWLNFVhRmOFbPV79g_mvkqRCb5bSvnt40zwFUPc1mMe9W8zfcE/s320/16473359_1585321944818776_670269990572494350_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBRv5LMoQnsT57XugaWUY1pijyWzMjwAWRdwPQWrcHZpGJRxXbHsCQzJmBJQwasYB7VpJO2cHtNIh2v7Wd4I_DlGjudFWLNFVhRmOFbPV79g_mvkqRCb5bSvnt40zwFUPc1mMe9W8zfcE/s160/16473359_1585321944818776_670269990572494350_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBRv5LMoQnsT57XugaWUY1pijyWzMjwAWRdwPQWrcHZpGJRxXbHsCQzJmBJQwasYB7VpJO2cHtNIh2v7Wd4I_DlGjudFWLNFVhRmOFbPV79g_mvkqRCb5bSvnt40zwFUPc1mMe9W8zfcE/s320/16473359_1585321944818776_670269990572494350_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBRv5LMoQnsT57XugaWUY1pijyWzMjwAWRdwPQWrcHZpGJRxXbHsCQzJmBJQwasYB7VpJO2cHtNIh2v7Wd4I_DlGjudFWLNFVhRmOFbPV79g_mvkqRCb5bSvnt40zwFUPc1mMe9W8zfcE/s480/16473359_1585321944818776_670269990572494350_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBRv5LMoQnsT57XugaWUY1pijyWzMjwAWRdwPQWrcHZpGJRxXbHsCQzJmBJQwasYB7VpJO2cHtNIh2v7Wd4I_DlGjudFWLNFVhRmOFbPV79g_mvkqRCb5bSvnt40zwFUPc1mMe9W8zfcE/s160/16473359_1585321944818776_670269990572494350_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBRv5LMoQnsT57XugaWUY1pijyWzMjwAWRdwPQWrcHZpGJRxXbHsCQzJmBJQwasYB7VpJO2cHtNIh2v7Wd4I_DlGjudFWLNFVhRmOFbPV79g_mvkqRCb5bSvnt40zwFUPc1mMe9W8zfcE/s320/16473359_1585321944818776_670269990572494350_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBRv5LMoQnsT57XugaWUY1pijyWzMjwAWRdwPQWrcHZpGJRxXbHsCQzJmBJQwasYB7VpJO2cHtNIh2v7Wd4I_DlGjudFWLNFVhRmOFbPV79g_mvkqRCb5bSvnt40zwFUPc1mMe9W8zfcE/s480/16473359_1585321944818776_670269990572494350_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 264 - Pulp Fiction (B.S.O.)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -161,8 +159,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZgL3rzNFkDAHUccdQrWtvIvdXbGjz9R7Wi6gFRQSnTmTmEcNa101wjCb9uVh5Cj6240LajoV5jLFXcSAXlzD_1rKFkswgLMZ_9GKyyDqjsqIPNC1HW8_IjC4sci0cuLw5r7hlK52ZPxc/s320/2020killbill_WEB.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZgL3rzNFkDAHUccdQrWtvIvdXbGjz9R7Wi6gFRQSnTmTmEcNa101wjCb9uVh5Cj6240LajoV5jLFXcSAXlzD_1rKFkswgLMZ_9GKyyDqjsqIPNC1HW8_IjC4sci0cuLw5r7hlK52ZPxc/s160/2020killbill_WEB.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZgL3rzNFkDAHUccdQrWtvIvdXbGjz9R7Wi6gFRQSnTmTmEcNa101wjCb9uVh5Cj6240LajoV5jLFXcSAXlzD_1rKFkswgLMZ_9GKyyDqjsqIPNC1HW8_IjC4sci0cuLw5r7hlK52ZPxc/s320/2020killbill_WEB.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZgL3rzNFkDAHUccdQrWtvIvdXbGjz9R7Wi6gFRQSnTmTmEcNa101wjCb9uVh5Cj6240LajoV5jLFXcSAXlzD_1rKFkswgLMZ_9GKyyDqjsqIPNC1HW8_IjC4sci0cuLw5r7hlK52ZPxc/s480/2020killbill_WEB.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZgL3rzNFkDAHUccdQrWtvIvdXbGjz9R7Wi6gFRQSnTmTmEcNa101wjCb9uVh5Cj6240LajoV5jLFXcSAXlzD_1rKFkswgLMZ_9GKyyDqjsqIPNC1HW8_IjC4sci0cuLw5r7hlK52ZPxc/s160/2020killbill_WEB.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZgL3rzNFkDAHUccdQrWtvIvdXbGjz9R7Wi6gFRQSnTmTmEcNa101wjCb9uVh5Cj6240LajoV5jLFXcSAXlzD_1rKFkswgLMZ_9GKyyDqjsqIPNC1HW8_IjC4sci0cuLw5r7hlK52ZPxc/s320/2020killbill_WEB.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZgL3rzNFkDAHUccdQrWtvIvdXbGjz9R7Wi6gFRQSnTmTmEcNa101wjCb9uVh5Cj6240LajoV5jLFXcSAXlzD_1rKFkswgLMZ_9GKyyDqjsqIPNC1HW8_IjC4sci0cuLw5r7hlK52ZPxc/s480/2020killbill_WEB.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.726 - The 5.6.7.8&#39;s, la banda que enamoró a Tarantino"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -178,8 +175,7 @@
         <a class="related-bottom-card" href="programa-41-john-lennon-parte1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2pDGAwc6ptuGvMBvUUjHRxpewwGxQRDi4imeMBhyMxgfsCstu2_GiVegZlfmxu43EfNf6ziewruiS9cl4KB47qfkLGZG2wT_VMQoaM9txWRun7U-HRCaLSABBWC5UyMxyXarnfuPtt5E/s320/John_naranja.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2pDGAwc6ptuGvMBvUUjHRxpewwGxQRDi4imeMBhyMxgfsCstu2_GiVegZlfmxu43EfNf6ziewruiS9cl4KB47qfkLGZG2wT_VMQoaM9txWRun7U-HRCaLSABBWC5UyMxyXarnfuPtt5E/s320/John_naranja.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2pDGAwc6ptuGvMBvUUjHRxpewwGxQRDi4imeMBhyMxgfsCstu2_GiVegZlfmxu43EfNf6ziewruiS9cl4KB47qfkLGZG2wT_VMQoaM9txWRun7U-HRCaLSABBWC5UyMxyXarnfuPtt5E/s480/John_naranja.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2pDGAwc6ptuGvMBvUUjHRxpewwGxQRDi4imeMBhyMxgfsCstu2_GiVegZlfmxu43EfNf6ziewruiS9cl4KB47qfkLGZG2wT_VMQoaM9txWRun7U-HRCaLSABBWC5UyMxyXarnfuPtt5E/s640/John_naranja.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2pDGAwc6ptuGvMBvUUjHRxpewwGxQRDi4imeMBhyMxgfsCstu2_GiVegZlfmxu43EfNf6ziewruiS9cl4KB47qfkLGZG2wT_VMQoaM9txWRun7U-HRCaLSABBWC5UyMxyXarnfuPtt5E/s320/John_naranja.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2pDGAwc6ptuGvMBvUUjHRxpewwGxQRDi4imeMBhyMxgfsCstu2_GiVegZlfmxu43EfNf6ziewruiS9cl4KB47qfkLGZG2wT_VMQoaM9txWRun7U-HRCaLSABBWC5UyMxyXarnfuPtt5E/s480/John_naranja.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2pDGAwc6ptuGvMBvUUjHRxpewwGxQRDi4imeMBhyMxgfsCstu2_GiVegZlfmxu43EfNf6ziewruiS9cl4KB47qfkLGZG2wT_VMQoaM9txWRun7U-HRCaLSABBWC5UyMxyXarnfuPtt5E/s640/John_naranja.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 41 - John Lennon (parte1)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +186,7 @@
           </a><a class="related-bottom-card" href="programa-159-bruce-springsteen-en-los-90-parte1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigAsFUmq0jlTs7BXuo1hgPQRqFWecE4-GqyS1zy85CpP1A43mmucLcrD5eilkznoiLvhyCN7V7TuDOKnLMfbCX0oPFyCs25FJrTlRcWd8-duZZrlh2KD_S89OZBPUpdRIYmRNnhJiIPRE/s320/Bruce-Springsteen-1992_650x435.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigAsFUmq0jlTs7BXuo1hgPQRqFWecE4-GqyS1zy85CpP1A43mmucLcrD5eilkznoiLvhyCN7V7TuDOKnLMfbCX0oPFyCs25FJrTlRcWd8-duZZrlh2KD_S89OZBPUpdRIYmRNnhJiIPRE/s320/Bruce-Springsteen-1992_650x435.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigAsFUmq0jlTs7BXuo1hgPQRqFWecE4-GqyS1zy85CpP1A43mmucLcrD5eilkznoiLvhyCN7V7TuDOKnLMfbCX0oPFyCs25FJrTlRcWd8-duZZrlh2KD_S89OZBPUpdRIYmRNnhJiIPRE/s480/Bruce-Springsteen-1992_650x435.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigAsFUmq0jlTs7BXuo1hgPQRqFWecE4-GqyS1zy85CpP1A43mmucLcrD5eilkznoiLvhyCN7V7TuDOKnLMfbCX0oPFyCs25FJrTlRcWd8-duZZrlh2KD_S89OZBPUpdRIYmRNnhJiIPRE/s640/Bruce-Springsteen-1992_650x435.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigAsFUmq0jlTs7BXuo1hgPQRqFWecE4-GqyS1zy85CpP1A43mmucLcrD5eilkznoiLvhyCN7V7TuDOKnLMfbCX0oPFyCs25FJrTlRcWd8-duZZrlh2KD_S89OZBPUpdRIYmRNnhJiIPRE/s320/Bruce-Springsteen-1992_650x435.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigAsFUmq0jlTs7BXuo1hgPQRqFWecE4-GqyS1zy85CpP1A43mmucLcrD5eilkznoiLvhyCN7V7TuDOKnLMfbCX0oPFyCs25FJrTlRcWd8-duZZrlh2KD_S89OZBPUpdRIYmRNnhJiIPRE/s480/Bruce-Springsteen-1992_650x435.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigAsFUmq0jlTs7BXuo1hgPQRqFWecE4-GqyS1zy85CpP1A43mmucLcrD5eilkznoiLvhyCN7V7TuDOKnLMfbCX0oPFyCs25FJrTlRcWd8-duZZrlh2KD_S89OZBPUpdRIYmRNnhJiIPRE/s640/Bruce-Springsteen-1992_650x435.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 159 - Bruce Springsteen en los 90 (parte1)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -202,8 +197,7 @@
           </a><a class="related-bottom-card" href="p-1018-especial-1994-parte-9-rem-radiohead-veruca-salt-pulp-fiction-grant-lee-bu.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYkoa_uqsG0x3niqHCF3JNno_fkWPRp1m-tmZTFVbR18GdR3l9G2sAeomL4T2N3jOCdIuWRMp2X1KUzLxS0BJs_R5pFDWkJG28KJlVAXx0c9d0unumWU4KDhpGMa1FpYdCybKzXmgoYxuN7R2XcoeZw3lRXVwqZwEfPr80bIlj1AmUbU6ayKAdBY8eihQ/s320/b90_parte9.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYkoa_uqsG0x3niqHCF3JNno_fkWPRp1m-tmZTFVbR18GdR3l9G2sAeomL4T2N3jOCdIuWRMp2X1KUzLxS0BJs_R5pFDWkJG28KJlVAXx0c9d0unumWU4KDhpGMa1FpYdCybKzXmgoYxuN7R2XcoeZw3lRXVwqZwEfPr80bIlj1AmUbU6ayKAdBY8eihQ/s320/b90_parte9.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYkoa_uqsG0x3niqHCF3JNno_fkWPRp1m-tmZTFVbR18GdR3l9G2sAeomL4T2N3jOCdIuWRMp2X1KUzLxS0BJs_R5pFDWkJG28KJlVAXx0c9d0unumWU4KDhpGMa1FpYdCybKzXmgoYxuN7R2XcoeZw3lRXVwqZwEfPr80bIlj1AmUbU6ayKAdBY8eihQ/s480/b90_parte9.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYkoa_uqsG0x3niqHCF3JNno_fkWPRp1m-tmZTFVbR18GdR3l9G2sAeomL4T2N3jOCdIuWRMp2X1KUzLxS0BJs_R5pFDWkJG28KJlVAXx0c9d0unumWU4KDhpGMa1FpYdCybKzXmgoYxuN7R2XcoeZw3lRXVwqZwEfPr80bIlj1AmUbU6ayKAdBY8eihQ/s640/b90_parte9.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYkoa_uqsG0x3niqHCF3JNno_fkWPRp1m-tmZTFVbR18GdR3l9G2sAeomL4T2N3jOCdIuWRMp2X1KUzLxS0BJs_R5pFDWkJG28KJlVAXx0c9d0unumWU4KDhpGMa1FpYdCybKzXmgoYxuN7R2XcoeZw3lRXVwqZwEfPr80bIlj1AmUbU6ayKAdBY8eihQ/s320/b90_parte9.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYkoa_uqsG0x3niqHCF3JNno_fkWPRp1m-tmZTFVbR18GdR3l9G2sAeomL4T2N3jOCdIuWRMp2X1KUzLxS0BJs_R5pFDWkJG28KJlVAXx0c9d0unumWU4KDhpGMa1FpYdCybKzXmgoYxuN7R2XcoeZw3lRXVwqZwEfPr80bIlj1AmUbU6ayKAdBY8eihQ/s480/b90_parte9.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYkoa_uqsG0x3niqHCF3JNno_fkWPRp1m-tmZTFVbR18GdR3l9G2sAeomL4T2N3jOCdIuWRMp2X1KUzLxS0BJs_R5pFDWkJG28KJlVAXx0c9d0unumWU4KDhpGMa1FpYdCybKzXmgoYxuN7R2XcoeZw3lRXVwqZwEfPr80bIlj1AmUbU6ayKAdBY8eihQ/s640/b90_parte9.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.1018 - Especial 1994, Parte 9: REM - Radiohead - Veruca Salt - Pulp Fiction - Grant Lee Buffalo - Blues Traveler"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

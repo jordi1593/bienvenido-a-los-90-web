@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.753 - Novedades: Dale Crover, Ghost of Vroom, Painted Shield, Red Moskito — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s320/67508534_2427049850696115_2106468557159137280_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s160/67508534_2427049850696115_2106468557159137280_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s320/67508534_2427049850696115_2106468557159137280_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s480/67508534_2427049850696115_2106468557159137280_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s160/67508534_2427049850696115_2106468557159137280_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s320/67508534_2427049850696115_2106468557159137280_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s480/67508534_2427049850696115_2106468557159137280_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.755 - Red Moskito, una de las mejores bandas tributo a Pearl Jam"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3FeUkfNc0EhJZsfMpZZmUCGZeGE2QIYWizpF9ieXRYIFyM7tR9W8iXLpdQJhOBvutxlm734e9xXWb45j-usKZE4-mMpUhzWE2EGZkGp68dhkYxMP7hyphenhyphenl7W9N_vURg0L5S2vsqXZKaZHc/s320/b90_788.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3FeUkfNc0EhJZsfMpZZmUCGZeGE2QIYWizpF9ieXRYIFyM7tR9W8iXLpdQJhOBvutxlm734e9xXWb45j-usKZE4-mMpUhzWE2EGZkGp68dhkYxMP7hyphenhyphenl7W9N_vURg0L5S2vsqXZKaZHc/s160/b90_788.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3FeUkfNc0EhJZsfMpZZmUCGZeGE2QIYWizpF9ieXRYIFyM7tR9W8iXLpdQJhOBvutxlm734e9xXWb45j-usKZE4-mMpUhzWE2EGZkGp68dhkYxMP7hyphenhyphenl7W9N_vURg0L5S2vsqXZKaZHc/s320/b90_788.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3FeUkfNc0EhJZsfMpZZmUCGZeGE2QIYWizpF9ieXRYIFyM7tR9W8iXLpdQJhOBvutxlm734e9xXWb45j-usKZE4-mMpUhzWE2EGZkGp68dhkYxMP7hyphenhyphenl7W9N_vURg0L5S2vsqXZKaZHc/s480/b90_788.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3FeUkfNc0EhJZsfMpZZmUCGZeGE2QIYWizpF9ieXRYIFyM7tR9W8iXLpdQJhOBvutxlm734e9xXWb45j-usKZE4-mMpUhzWE2EGZkGp68dhkYxMP7hyphenhyphenl7W9N_vURg0L5S2vsqXZKaZHc/s160/b90_788.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3FeUkfNc0EhJZsfMpZZmUCGZeGE2QIYWizpF9ieXRYIFyM7tR9W8iXLpdQJhOBvutxlm734e9xXWb45j-usKZE4-mMpUhzWE2EGZkGp68dhkYxMP7hyphenhyphenl7W9N_vURg0L5S2vsqXZKaZHc/s320/b90_788.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3FeUkfNc0EhJZsfMpZZmUCGZeGE2QIYWizpF9ieXRYIFyM7tR9W8iXLpdQJhOBvutxlm734e9xXWb45j-usKZE4-mMpUhzWE2EGZkGp68dhkYxMP7hyphenhyphenl7W9N_vURg0L5S2vsqXZKaZHc/s480/b90_788.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.788 - Novedades: Tom Morello, Surfer Comadreja, Birds of Maya, Dieaway, Pretty Sick... "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4ODHcFN1X4rTBr7o6CAlC7RCbCP3X23OitS980-biC4zOwvpmKAaGvQGkCaizCPhV_nAvAy_KkU2KXQra5x63VucvpLup7DhnPQgQ8JXAOO6Br1hP7xLj-ZZGFMG8H5VH0YEO_YQmHDvDyoGk8giq6cMb-g5Nf-VuOom160NqT6HoXAUrhYnTM_LSljU/s320/b90_1012.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4ODHcFN1X4rTBr7o6CAlC7RCbCP3X23OitS980-biC4zOwvpmKAaGvQGkCaizCPhV_nAvAy_KkU2KXQra5x63VucvpLup7DhnPQgQ8JXAOO6Br1hP7xLj-ZZGFMG8H5VH0YEO_YQmHDvDyoGk8giq6cMb-g5Nf-VuOom160NqT6HoXAUrhYnTM_LSljU/s160/b90_1012.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4ODHcFN1X4rTBr7o6CAlC7RCbCP3X23OitS980-biC4zOwvpmKAaGvQGkCaizCPhV_nAvAy_KkU2KXQra5x63VucvpLup7DhnPQgQ8JXAOO6Br1hP7xLj-ZZGFMG8H5VH0YEO_YQmHDvDyoGk8giq6cMb-g5Nf-VuOom160NqT6HoXAUrhYnTM_LSljU/s320/b90_1012.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4ODHcFN1X4rTBr7o6CAlC7RCbCP3X23OitS980-biC4zOwvpmKAaGvQGkCaizCPhV_nAvAy_KkU2KXQra5x63VucvpLup7DhnPQgQ8JXAOO6Br1hP7xLj-ZZGFMG8H5VH0YEO_YQmHDvDyoGk8giq6cMb-g5Nf-VuOom160NqT6HoXAUrhYnTM_LSljU/s480/b90_1012.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4ODHcFN1X4rTBr7o6CAlC7RCbCP3X23OitS980-biC4zOwvpmKAaGvQGkCaizCPhV_nAvAy_KkU2KXQra5x63VucvpLup7DhnPQgQ8JXAOO6Br1hP7xLj-ZZGFMG8H5VH0YEO_YQmHDvDyoGk8giq6cMb-g5Nf-VuOom160NqT6HoXAUrhYnTM_LSljU/s160/b90_1012.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4ODHcFN1X4rTBr7o6CAlC7RCbCP3X23OitS980-biC4zOwvpmKAaGvQGkCaizCPhV_nAvAy_KkU2KXQra5x63VucvpLup7DhnPQgQ8JXAOO6Br1hP7xLj-ZZGFMG8H5VH0YEO_YQmHDvDyoGk8giq6cMb-g5Nf-VuOom160NqT6HoXAUrhYnTM_LSljU/s320/b90_1012.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4ODHcFN1X4rTBr7o6CAlC7RCbCP3X23OitS980-biC4zOwvpmKAaGvQGkCaizCPhV_nAvAy_KkU2KXQra5x63VucvpLup7DhnPQgQ8JXAOO6Br1hP7xLj-ZZGFMG8H5VH0YEO_YQmHDvDyoGk8giq6cMb-g5Nf-VuOom160NqT6HoXAUrhYnTM_LSljU/s480/b90_1012.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.1011 - Novedades: Hermana Furia, Kim Deal, Birdmask, 8AD, Julie..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="p-767-novedades-sprints-warish-keloidrop-giant-love-black-pistol-fire-inertia.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Vjtmf4SoN72bTxg6OJhidr2RbVTRAWEmyFbAogf_OEH7pRpXDNv_ggNY436pdDxAlSBGsQOirRPotRPWQK7dvISn9AST_wrqxsk0MHNKTMDpg3M9kwMwcnMLuUA5KEGuij3ob4px82w/s320/b90767.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Vjtmf4SoN72bTxg6OJhidr2RbVTRAWEmyFbAogf_OEH7pRpXDNv_ggNY436pdDxAlSBGsQOirRPotRPWQK7dvISn9AST_wrqxsk0MHNKTMDpg3M9kwMwcnMLuUA5KEGuij3ob4px82w/s320/b90767.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Vjtmf4SoN72bTxg6OJhidr2RbVTRAWEmyFbAogf_OEH7pRpXDNv_ggNY436pdDxAlSBGsQOirRPotRPWQK7dvISn9AST_wrqxsk0MHNKTMDpg3M9kwMwcnMLuUA5KEGuij3ob4px82w/s480/b90767.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Vjtmf4SoN72bTxg6OJhidr2RbVTRAWEmyFbAogf_OEH7pRpXDNv_ggNY436pdDxAlSBGsQOirRPotRPWQK7dvISn9AST_wrqxsk0MHNKTMDpg3M9kwMwcnMLuUA5KEGuij3ob4px82w/s640/b90767.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Vjtmf4SoN72bTxg6OJhidr2RbVTRAWEmyFbAogf_OEH7pRpXDNv_ggNY436pdDxAlSBGsQOirRPotRPWQK7dvISn9AST_wrqxsk0MHNKTMDpg3M9kwMwcnMLuUA5KEGuij3ob4px82w/s320/b90767.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Vjtmf4SoN72bTxg6OJhidr2RbVTRAWEmyFbAogf_OEH7pRpXDNv_ggNY436pdDxAlSBGsQOirRPotRPWQK7dvISn9AST_wrqxsk0MHNKTMDpg3M9kwMwcnMLuUA5KEGuij3ob4px82w/s480/b90767.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Vjtmf4SoN72bTxg6OJhidr2RbVTRAWEmyFbAogf_OEH7pRpXDNv_ggNY436pdDxAlSBGsQOirRPotRPWQK7dvISn9AST_wrqxsk0MHNKTMDpg3M9kwMwcnMLuUA5KEGuij3ob4px82w/s640/b90767.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.767 - Novedades: Sprints, Warish, Keloidrop, Giant Love, Black Pistol Fire, Inertia..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="p-740-novedades-hermana-furia-bala-rheia-gorecki-astrobahn-balate.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6wVsccvlxrbcmshH-b_S9DpfKq3hPg90zQGcTF9-LCyqQW6S2KyPJKDdRMzFO05-PAq2waGd5AAjiLW0cm4cXho8m0gm78Xa7assloeOwdqKkETJfPzLeRqcFHIaA0HqvAPOPmby_nAU/s320/b90_740+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6wVsccvlxrbcmshH-b_S9DpfKq3hPg90zQGcTF9-LCyqQW6S2KyPJKDdRMzFO05-PAq2waGd5AAjiLW0cm4cXho8m0gm78Xa7assloeOwdqKkETJfPzLeRqcFHIaA0HqvAPOPmby_nAU/s320/b90_740+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6wVsccvlxrbcmshH-b_S9DpfKq3hPg90zQGcTF9-LCyqQW6S2KyPJKDdRMzFO05-PAq2waGd5AAjiLW0cm4cXho8m0gm78Xa7assloeOwdqKkETJfPzLeRqcFHIaA0HqvAPOPmby_nAU/s480/b90_740+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6wVsccvlxrbcmshH-b_S9DpfKq3hPg90zQGcTF9-LCyqQW6S2KyPJKDdRMzFO05-PAq2waGd5AAjiLW0cm4cXho8m0gm78Xa7assloeOwdqKkETJfPzLeRqcFHIaA0HqvAPOPmby_nAU/s640/b90_740+%25281%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6wVsccvlxrbcmshH-b_S9DpfKq3hPg90zQGcTF9-LCyqQW6S2KyPJKDdRMzFO05-PAq2waGd5AAjiLW0cm4cXho8m0gm78Xa7assloeOwdqKkETJfPzLeRqcFHIaA0HqvAPOPmby_nAU/s320/b90_740+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6wVsccvlxrbcmshH-b_S9DpfKq3hPg90zQGcTF9-LCyqQW6S2KyPJKDdRMzFO05-PAq2waGd5AAjiLW0cm4cXho8m0gm78Xa7assloeOwdqKkETJfPzLeRqcFHIaA0HqvAPOPmby_nAU/s480/b90_740+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6wVsccvlxrbcmshH-b_S9DpfKq3hPg90zQGcTF9-LCyqQW6S2KyPJKDdRMzFO05-PAq2waGd5AAjiLW0cm4cXho8m0gm78Xa7assloeOwdqKkETJfPzLeRqcFHIaA0HqvAPOPmby_nAU/s640/b90_740+%25281%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.740 - Novedades: Hermana Furia, Bala, Rheia Gorecki, Astrobahn, Baläte..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="p-772-novedades-el-docu-de-dover-radio75-hickeys-musgo-the-crab-apples-moura.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmNbAEL2Ux8l9_nnV-ld_l1Pwqbq2jB83tDDzttdzi1rU1n2lFeZWR0ZQrjqPLU-QwZqhAviupivwaga0roznHvDATPmg0i43xovoPBiiWz5rgL0AXLxodFNEJc_gxJI1or9rFgtfBhto/s320/b90772.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmNbAEL2Ux8l9_nnV-ld_l1Pwqbq2jB83tDDzttdzi1rU1n2lFeZWR0ZQrjqPLU-QwZqhAviupivwaga0roznHvDATPmg0i43xovoPBiiWz5rgL0AXLxodFNEJc_gxJI1or9rFgtfBhto/s320/b90772.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmNbAEL2Ux8l9_nnV-ld_l1Pwqbq2jB83tDDzttdzi1rU1n2lFeZWR0ZQrjqPLU-QwZqhAviupivwaga0roznHvDATPmg0i43xovoPBiiWz5rgL0AXLxodFNEJc_gxJI1or9rFgtfBhto/s480/b90772.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmNbAEL2Ux8l9_nnV-ld_l1Pwqbq2jB83tDDzttdzi1rU1n2lFeZWR0ZQrjqPLU-QwZqhAviupivwaga0roznHvDATPmg0i43xovoPBiiWz5rgL0AXLxodFNEJc_gxJI1or9rFgtfBhto/s640/b90772.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmNbAEL2Ux8l9_nnV-ld_l1Pwqbq2jB83tDDzttdzi1rU1n2lFeZWR0ZQrjqPLU-QwZqhAviupivwaga0roznHvDATPmg0i43xovoPBiiWz5rgL0AXLxodFNEJc_gxJI1or9rFgtfBhto/s320/b90772.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmNbAEL2Ux8l9_nnV-ld_l1Pwqbq2jB83tDDzttdzi1rU1n2lFeZWR0ZQrjqPLU-QwZqhAviupivwaga0roznHvDATPmg0i43xovoPBiiWz5rgL0AXLxodFNEJc_gxJI1or9rFgtfBhto/s480/b90772.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmNbAEL2Ux8l9_nnV-ld_l1Pwqbq2jB83tDDzttdzi1rU1n2lFeZWR0ZQrjqPLU-QwZqhAviupivwaga0roznHvDATPmg0i43xovoPBiiWz5rgL0AXLxodFNEJc_gxJI1or9rFgtfBhto/s640/b90772.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.772 - Novedades: El docu de Dover, Radio75, Hickeys, Musgö, The Crab Apples, Moura..."
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

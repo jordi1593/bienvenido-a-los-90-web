@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 424 - Giants in the Trees (Krist Novoselic) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -125,8 +125,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq-dYmK4sftDCrlc7UAcctXcNpYn4BhZysBxrHHR3ru-SMZbLKRSCAOvhOD2gX4vF7QibHNo5K07ARqmtgoGpeVMoo9T-p0amKO-gvWfObv7xjfSNZ7K1bkKkADVONw4Tan2ASXvwDvlU/s320/b90_517.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq-dYmK4sftDCrlc7UAcctXcNpYn4BhZysBxrHHR3ru-SMZbLKRSCAOvhOD2gX4vF7QibHNo5K07ARqmtgoGpeVMoo9T-p0amKO-gvWfObv7xjfSNZ7K1bkKkADVONw4Tan2ASXvwDvlU/s160/b90_517.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq-dYmK4sftDCrlc7UAcctXcNpYn4BhZysBxrHHR3ru-SMZbLKRSCAOvhOD2gX4vF7QibHNo5K07ARqmtgoGpeVMoo9T-p0amKO-gvWfObv7xjfSNZ7K1bkKkADVONw4Tan2ASXvwDvlU/s320/b90_517.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq-dYmK4sftDCrlc7UAcctXcNpYn4BhZysBxrHHR3ru-SMZbLKRSCAOvhOD2gX4vF7QibHNo5K07ARqmtgoGpeVMoo9T-p0amKO-gvWfObv7xjfSNZ7K1bkKkADVONw4Tan2ASXvwDvlU/s480/b90_517.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq-dYmK4sftDCrlc7UAcctXcNpYn4BhZysBxrHHR3ru-SMZbLKRSCAOvhOD2gX4vF7QibHNo5K07ARqmtgoGpeVMoo9T-p0amKO-gvWfObv7xjfSNZ7K1bkKkADVONw4Tan2ASXvwDvlU/s160/b90_517.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq-dYmK4sftDCrlc7UAcctXcNpYn4BhZysBxrHHR3ru-SMZbLKRSCAOvhOD2gX4vF7QibHNo5K07ARqmtgoGpeVMoo9T-p0amKO-gvWfObv7xjfSNZ7K1bkKkADVONw4Tan2ASXvwDvlU/s320/b90_517.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq-dYmK4sftDCrlc7UAcctXcNpYn4BhZysBxrHHR3ru-SMZbLKRSCAOvhOD2gX4vF7QibHNo5K07ARqmtgoGpeVMoo9T-p0amKO-gvWfObv7xjfSNZ7K1bkKkADVONw4Tan2ASXvwDvlU/s480/b90_517.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 517 - Giants In The Trees presentan &#39;Volumen 2&#39;"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -136,8 +135,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5DhId0OHnpYR_ZD6Of2CUm7ICKDAL1vugxE3-ZLOmpVUNzh52uowZPjU9FYhCuzwU5qjTcxDCkT1lrj_jh8T-7GltWuoTKPgIGZUuES2vyONDL5hwpYXTn8CQyWXc0owy83w2osYKjA/s320/krist_novoselic___teen_spirit_by_cobain1337-d49tir7.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5DhId0OHnpYR_ZD6Of2CUm7ICKDAL1vugxE3-ZLOmpVUNzh52uowZPjU9FYhCuzwU5qjTcxDCkT1lrj_jh8T-7GltWuoTKPgIGZUuES2vyONDL5hwpYXTn8CQyWXc0owy83w2osYKjA/s160/krist_novoselic___teen_spirit_by_cobain1337-d49tir7.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5DhId0OHnpYR_ZD6Of2CUm7ICKDAL1vugxE3-ZLOmpVUNzh52uowZPjU9FYhCuzwU5qjTcxDCkT1lrj_jh8T-7GltWuoTKPgIGZUuES2vyONDL5hwpYXTn8CQyWXc0owy83w2osYKjA/s320/krist_novoselic___teen_spirit_by_cobain1337-d49tir7.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5DhId0OHnpYR_ZD6Of2CUm7ICKDAL1vugxE3-ZLOmpVUNzh52uowZPjU9FYhCuzwU5qjTcxDCkT1lrj_jh8T-7GltWuoTKPgIGZUuES2vyONDL5hwpYXTn8CQyWXc0owy83w2osYKjA/s480/krist_novoselic___teen_spirit_by_cobain1337-d49tir7.png 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5DhId0OHnpYR_ZD6Of2CUm7ICKDAL1vugxE3-ZLOmpVUNzh52uowZPjU9FYhCuzwU5qjTcxDCkT1lrj_jh8T-7GltWuoTKPgIGZUuES2vyONDL5hwpYXTn8CQyWXc0owy83w2osYKjA/s160/krist_novoselic___teen_spirit_by_cobain1337-d49tir7.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5DhId0OHnpYR_ZD6Of2CUm7ICKDAL1vugxE3-ZLOmpVUNzh52uowZPjU9FYhCuzwU5qjTcxDCkT1lrj_jh8T-7GltWuoTKPgIGZUuES2vyONDL5hwpYXTn8CQyWXc0owy83w2osYKjA/s320/krist_novoselic___teen_spirit_by_cobain1337-d49tir7.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5DhId0OHnpYR_ZD6Of2CUm7ICKDAL1vugxE3-ZLOmpVUNzh52uowZPjU9FYhCuzwU5qjTcxDCkT1lrj_jh8T-7GltWuoTKPgIGZUuES2vyONDL5hwpYXTn8CQyWXc0owy83w2osYKjA/s480/krist_novoselic___teen_spirit_by_cobain1337-d49tir7.png 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 133 - Krist Novoselic"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -147,8 +145,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s160/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s480/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s160/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s480/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 359 - Nirvana, en busca del Nevermind "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -164,8 +161,7 @@
         <a class="related-bottom-card" href="programa-319-nirvana-iv.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s480/nirvanaIV.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s640/nirvanaIV.JPG 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s480/nirvanaIV.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s640/nirvanaIV.JPG 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 319 – Nirvana IV"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -176,8 +172,7 @@
           </a><a class="related-bottom-card" href="p-644-the-rocket-la-revista-local-de-seattle.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s480/TheRocket_May1988.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s640/TheRocket_May1988.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s480/TheRocket_May1988.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s640/TheRocket_May1988.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.644 - The Rocket , la revista local de Seattle"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -188,8 +183,7 @@
           </a><a class="related-bottom-card" href="p-800-en-directo-desde-siroco-celebrando-los-30-anos-de-nevermind.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s320/242494530_244509814350378_3513229620045245238_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s320/242494530_244509814350378_3513229620045245238_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s480/242494530_244509814350378_3513229620045245238_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s640/242494530_244509814350378_3513229620045245238_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s320/242494530_244509814350378_3513229620045245238_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s480/242494530_244509814350378_3513229620045245238_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-NnfGkdThqrWBQlNzlNBlVjEDjR-XwEnh9UMlW920isUgoTAB4Gdf24F8uXfV4MsCJwqIX-GfWN5TGKvgvKW8lZdqp4LxK44XEYw3TLINqqwW5z4tZzeUeYJ804S8Y0mkvvpCqooNPtU/s640/242494530_244509814350378_3513229620045245238_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.800 - En directo desde Siroco celebrando los 30 años de Nevermind"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

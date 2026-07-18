@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Nada Surf — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-1011-novedades-hermana-furia-kim-deal-birdmask-8ad-julie.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4ODHcFN1X4rTBr7o6CAlC7RCbCP3X23OitS980-biC4zOwvpmKAaGvQGkCaizCPhV_nAvAy_KkU2KXQra5x63VucvpLup7DhnPQgQ8JXAOO6Br1hP7xLj-ZZGFMG8H5VH0YEO_YQmHDvDyoGk8giq6cMb-g5Nf-VuOom160NqT6HoXAUrhYnTM_LSljU/s320/b90_1012.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4ODHcFN1X4rTBr7o6CAlC7RCbCP3X23OitS980-biC4zOwvpmKAaGvQGkCaizCPhV_nAvAy_KkU2KXQra5x63VucvpLup7DhnPQgQ8JXAOO6Br1hP7xLj-ZZGFMG8H5VH0YEO_YQmHDvDyoGk8giq6cMb-g5Nf-VuOom160NqT6HoXAUrhYnTM_LSljU/s160/b90_1012.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4ODHcFN1X4rTBr7o6CAlC7RCbCP3X23OitS980-biC4zOwvpmKAaGvQGkCaizCPhV_nAvAy_KkU2KXQra5x63VucvpLup7DhnPQgQ8JXAOO6Br1hP7xLj-ZZGFMG8H5VH0YEO_YQmHDvDyoGk8giq6cMb-g5Nf-VuOom160NqT6HoXAUrhYnTM_LSljU/s320/b90_1012.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4ODHcFN1X4rTBr7o6CAlC7RCbCP3X23OitS980-biC4zOwvpmKAaGvQGkCaizCPhV_nAvAy_KkU2KXQra5x63VucvpLup7DhnPQgQ8JXAOO6Br1hP7xLj-ZZGFMG8H5VH0YEO_YQmHDvDyoGk8giq6cMb-g5Nf-VuOom160NqT6HoXAUrhYnTM_LSljU/s480/b90_1012.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4ODHcFN1X4rTBr7o6CAlC7RCbCP3X23OitS980-biC4zOwvpmKAaGvQGkCaizCPhV_nAvAy_KkU2KXQra5x63VucvpLup7DhnPQgQ8JXAOO6Br1hP7xLj-ZZGFMG8H5VH0YEO_YQmHDvDyoGk8giq6cMb-g5Nf-VuOom160NqT6HoXAUrhYnTM_LSljU/s160/b90_1012.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4ODHcFN1X4rTBr7o6CAlC7RCbCP3X23OitS980-biC4zOwvpmKAaGvQGkCaizCPhV_nAvAy_KkU2KXQra5x63VucvpLup7DhnPQgQ8JXAOO6Br1hP7xLj-ZZGFMG8H5VH0YEO_YQmHDvDyoGk8giq6cMb-g5Nf-VuOom160NqT6HoXAUrhYnTM_LSljU/s320/b90_1012.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4ODHcFN1X4rTBr7o6CAlC7RCbCP3X23OitS980-biC4zOwvpmKAaGvQGkCaizCPhV_nAvAy_KkU2KXQra5x63VucvpLup7DhnPQgQ8JXAOO6Br1hP7xLj-ZZGFMG8H5VH0YEO_YQmHDvDyoGk8giq6cMb-g5Nf-VuOom160NqT6HoXAUrhYnTM_LSljU/s480/b90_1012.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.1011 - Novedades: Hermana Furia, Kim Deal, Birdmask, 8AD, Julie..."
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/programa-378-asi-conoci-a-las-estrellas-de-rock-malparaiso.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiokey8h5Iz_pAUyQZA8dY5f_XVZyesorh_J7Lf1bJb-DCHhFQ3WLvrygAUU_I48urrCRYvh-CvGVArTLWBO76Ih85ACSOopp0OMxvXeuHifwmF3nbgP4bv6r0LkcOC8ZnayMPtQW4EoEk/s320/IMG-20180427-WA0012.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiokey8h5Iz_pAUyQZA8dY5f_XVZyesorh_J7Lf1bJb-DCHhFQ3WLvrygAUU_I48urrCRYvh-CvGVArTLWBO76Ih85ACSOopp0OMxvXeuHifwmF3nbgP4bv6r0LkcOC8ZnayMPtQW4EoEk/s160/IMG-20180427-WA0012.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiokey8h5Iz_pAUyQZA8dY5f_XVZyesorh_J7Lf1bJb-DCHhFQ3WLvrygAUU_I48urrCRYvh-CvGVArTLWBO76Ih85ACSOopp0OMxvXeuHifwmF3nbgP4bv6r0LkcOC8ZnayMPtQW4EoEk/s320/IMG-20180427-WA0012.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiokey8h5Iz_pAUyQZA8dY5f_XVZyesorh_J7Lf1bJb-DCHhFQ3WLvrygAUU_I48urrCRYvh-CvGVArTLWBO76Ih85ACSOopp0OMxvXeuHifwmF3nbgP4bv6r0LkcOC8ZnayMPtQW4EoEk/s480/IMG-20180427-WA0012.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiokey8h5Iz_pAUyQZA8dY5f_XVZyesorh_J7Lf1bJb-DCHhFQ3WLvrygAUU_I48urrCRYvh-CvGVArTLWBO76Ih85ACSOopp0OMxvXeuHifwmF3nbgP4bv6r0LkcOC8ZnayMPtQW4EoEk/s160/IMG-20180427-WA0012.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiokey8h5Iz_pAUyQZA8dY5f_XVZyesorh_J7Lf1bJb-DCHhFQ3WLvrygAUU_I48urrCRYvh-CvGVArTLWBO76Ih85ACSOopp0OMxvXeuHifwmF3nbgP4bv6r0LkcOC8ZnayMPtQW4EoEk/s320/IMG-20180427-WA0012.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiokey8h5Iz_pAUyQZA8dY5f_XVZyesorh_J7Lf1bJb-DCHhFQ3WLvrygAUU_I48urrCRYvh-CvGVArTLWBO76Ih85ACSOopp0OMxvXeuHifwmF3nbgP4bv6r0LkcOC8ZnayMPtQW4EoEk/s480/IMG-20180427-WA0012.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 378 - Así conocí a las estrellas de rock + Malparaiso"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-348-nada-surf-teatro-barcelo-madrid-feb-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s320/Screenshot_20180228-202853.png"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s160/Screenshot_20180228-202853.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s320/Screenshot_20180228-202853.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s480/Screenshot_20180228-202853.png 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s160/Screenshot_20180228-202853.png 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s320/Screenshot_20180228-202853.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s480/Screenshot_20180228-202853.png 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 348 - Nada Surf - Teatro Barceló (Madrid Feb 2018)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-239-inicio-nueva-temporada.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s320/14117701_1356893064328333_8249292549315850784_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s160/14117701_1356893064328333_8249292549315850784_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s320/14117701_1356893064328333_8249292549315850784_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s480/14117701_1356893064328333_8249292549315850784_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s160/14117701_1356893064328333_8249292549315850784_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s320/14117701_1356893064328333_8249292549315850784_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiHgZdG-HKRB6Fd_tAokA0Ab8tPqWfAjgARjWLzuEdw5xyCqGtCVhq9Zm5Ti54lmKrLMjsDrFBDgc5JEP8b2jeXWfoKjZNERbu5NJgaIWWkl-BH-VrVkIwWYzGuNepyMqvdkvgDBX43M/s480/14117701_1356893064328333_8249292549315850784_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 239 - Inicio nueva temporada"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-183-mercromina.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s320/mercromina.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s160/mercromina.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s320/mercromina.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s480/mercromina.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s160/mercromina.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s320/mercromina.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKIts5rAndRuTZUGCQlgNZ8vdhyphenhyphengngjPM7mPP9dDp4ypfYJtVeGsnOW8RvhhgSUV82vXW3sC1MVH_SfXziwlw3qcVM7jmeDuwrsFxOasj8Jhf1DY5OXeggqdfnCAhypf1xwG6tfNsmgQ8/s480/mercromina.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 183 - Mercromina"
                 loading="lazy" width="320" height="213" />
         </a>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Charles Cross — 6 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-644-the-rocket-la-revista-local-de-seattle.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s160/TheRocket_May1988.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s480/TheRocket_May1988.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s160/TheRocket_May1988.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s480/TheRocket_May1988.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.644 - The Rocket , la revista local de Seattle"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/programa-511-nirvana-heavier-than-heaven-charles-cross-2019.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s320/b90_511.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s160/b90_511.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s320/b90_511.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s480/b90_511.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s160/b90_511.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s320/b90_511.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s480/b90_511.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 511 - Nirvana &quot;Heavier than Heaven&quot; (Charles Cross 2019)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-509-los-ultimos-dias-de-kurt-cobain.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s320/b90_509.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s160/b90_509.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s320/b90_509.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s480/b90_509.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s160/b90_509.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s320/b90_509.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEipgcHsVbyf7ZqCfqoP0uKEt9U3hAhP_2fTGCudjL14y4U3canNoEvFOXUrcrO91GtxP4YEP3PDYxROJUp8rM2hCyIvUWjpdi11O-o7zvw8_b5KVwJSltJ7dobTE_HEPk6mFiBD-x6o0/s480/b90_509.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 509 - Los últimos días de Kurt Cobain"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-180-entrevista-charles-cross.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s320/12006280_10153085749307747_5891161989028975656_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s160/12006280_10153085749307747_5891161989028975656_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s320/12006280_10153085749307747_5891161989028975656_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s480/12006280_10153085749307747_5891161989028975656_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s160/12006280_10153085749307747_5891161989028975656_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s320/12006280_10153085749307747_5891161989028975656_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s480/12006280_10153085749307747_5891161989028975656_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 180 - Entrevista Charles Cross"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-149-kurt-cobain-cumple-48-anos.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s160/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s480/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s160/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s480/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 149 - Kurt Cobain cumple 48 años"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-130-entrevista-a-charles-r-cross.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s160/P1030709.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s480/P1030709.JPG 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s160/P1030709.JPG 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s320/P1030709.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyt5-5PUOBnURPtmzNIAK4L9zhvKc2gZ3yVLckwZ48eAY_Rg8p-osyvO55r2fqG31u9x0LhUX47oYRxJZtoy_i_nHNn4WK0zIV0wQWVeZsZ419OOGEZZeUw9Js8Hnvrar3-kBfp2p6IlU/s480/P1030709.JPG 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 130 - Entrevista a Charles R. Cross"
                 loading="lazy" width="320" height="213" />
         </a>

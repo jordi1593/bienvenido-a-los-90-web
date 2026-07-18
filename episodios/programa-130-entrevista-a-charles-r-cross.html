@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 130 - Entrevista a Charles R. Cross — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -146,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s320/12006280_10153085749307747_5891161989028975656_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s160/12006280_10153085749307747_5891161989028975656_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s320/12006280_10153085749307747_5891161989028975656_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s480/12006280_10153085749307747_5891161989028975656_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s160/12006280_10153085749307747_5891161989028975656_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s320/12006280_10153085749307747_5891161989028975656_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsdgG28s2y9-fL0NVxcsyzs3hQnYf7_5LBn3LtdEgQdCliCd7ZYaD9YwF-VTrLHPORAGqaQx0dxocz5_OqKyquWXHuFXIdICSBw_DiWiQCeOfx6ZkXD4V8ygYVcHVaK9xt2TMYwKYzEaM/s480/12006280_10153085749307747_5891161989028975656_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 180 - Entrevista Charles Cross"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -157,8 +156,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s320/b90_511.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s160/b90_511.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s320/b90_511.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s480/b90_511.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s160/b90_511.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s320/b90_511.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0oWujM8Y8R4jfefd7Me3jOURE35iyEngiffVRGcSktwgn_EAjrFP0_GWOAwRpq8sVDNQm7S1jxxZcd-RHnGS0C3bSs0y45vsIL1PjWkk71D-dIdkwyp-RozqTaS-Zh56WyoeZcIoDek/s480/b90_511.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 511 - Nirvana &quot;Heavier than Heaven&quot; (Charles Cross 2019)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -168,8 +166,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s320/book_600x600.webp"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s160/book_600x600.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s320/book_600x600.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s480/book_600x600.webp 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s160/book_600x600.webp 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s320/book_600x600.webp 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EMct2pVUsAcNZMXFo6HpBaLj8lARPWnIWI20WhWHyb6ijDNYYk4ch-ixcS010ugXMFTmFXia9tI9LN6ZQIEMCCXwKZfiBNx5YXzSh2KjDr5lv2QcCsZ95ZFwRppsmL4v9Os9KHpkkW40eUxL6nyBbSjZqHWTRG2TMLvL1JK0jlTqmkw0R_hARpcCo84/s480/book_600x600.webp 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.961 - Entrevista con Charles Peterson, el fotógrafo del grunge"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -185,8 +182,7 @@
         <a class="related-bottom-card" href="programa-149-kurt-cobain-cumple-48-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s480/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s640/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s320/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s480/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzQpDciBvLmjpXXsHWIPv1ZM8DagkvBbIAJW9HUN0Zf0vuwTPLrDwuyf3RPsJbJj3M8n-ICc2x5PUKR58Fy0HhioMjQVj1JW5GbpApMFpwf6dCaCo15YEctTyEy6-iki9XyM_2j8pUhg/s640/tumblr_mwjfygtr3q1sogxpbo3_500.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 149 - Kurt Cobain cumple 48 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -197,8 +193,7 @@
           </a><a class="related-bottom-card" href="programa-161-un-paseo-por-seattle.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s320/P1030752.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s320/P1030752.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s480/P1030752.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s640/P1030752.JPG 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s320/P1030752.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s480/P1030752.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ymBaMwMxkvy_GUVk7EziykCi9mzNvuP_rYd5-XTdjoV7GGy7S6Qu6PIFxfXfr95d7Fi6C9qr1I4vCo_8D04tjG4whHsxoUZUdlg4qBYhjNCi42URQ1u5OE_ZlnUOR7bOXqdHemOu0DM/s640/P1030752.JPG 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 161 - Un paseo por Seattle"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -209,8 +204,7 @@
           </a><a class="related-bottom-card" href="programa-265-red-rocket-7-mike-allred.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s320/red-rocket-7.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s320/red-rocket-7.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s480/red-rocket-7.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s640/red-rocket-7.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s320/red-rocket-7.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s480/red-rocket-7.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDNLEq2Jh2gtsVS9sErTmN7dOwVV7jnHj44joxydNZo3YNKCvWQrPwqsTaGY6FqSmjY0Qo67P_NHfYsRayc4SRUy0XS3yiHRzaKtEkSZApJP89bvMBTwC1hZUhyphenhyphenjngZGpklz33iNIH8EI/s640/red-rocket-7.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 265 - Red Rocket 7 (Mike Allred)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

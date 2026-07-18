@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>In Utero — 7 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1047-especial-nirvana-su-historia-desde-enero-a-junio-de-1993.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s320/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s160/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s320/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s480/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s160/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s320/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s480/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1047 - Especial Nirvana, su historia desde enero a junio de 1993"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/p-960-el-ultimo-concierto-de-nirvana.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXwdhNY0uoMtu7iG7-HfA7NLMQtX29R6JX2Fc-QXUNN66Gk4nebt8etJmvxGp2pB1bTUZPaJH8psRGFO-x50lrN4I_wPOkunHqFz41BP8lF9tI2ReubWb9CCeDrD7kgFOTOeFdhLF1lHDUB4Hjh-66DmFaz3ZFddMBRqUVs5R0UcVE2uzkPwjXy-Blyys/s320/R-24908915-1667063094-9914.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXwdhNY0uoMtu7iG7-HfA7NLMQtX29R6JX2Fc-QXUNN66Gk4nebt8etJmvxGp2pB1bTUZPaJH8psRGFO-x50lrN4I_wPOkunHqFz41BP8lF9tI2ReubWb9CCeDrD7kgFOTOeFdhLF1lHDUB4Hjh-66DmFaz3ZFddMBRqUVs5R0UcVE2uzkPwjXy-Blyys/s160/R-24908915-1667063094-9914.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXwdhNY0uoMtu7iG7-HfA7NLMQtX29R6JX2Fc-QXUNN66Gk4nebt8etJmvxGp2pB1bTUZPaJH8psRGFO-x50lrN4I_wPOkunHqFz41BP8lF9tI2ReubWb9CCeDrD7kgFOTOeFdhLF1lHDUB4Hjh-66DmFaz3ZFddMBRqUVs5R0UcVE2uzkPwjXy-Blyys/s320/R-24908915-1667063094-9914.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXwdhNY0uoMtu7iG7-HfA7NLMQtX29R6JX2Fc-QXUNN66Gk4nebt8etJmvxGp2pB1bTUZPaJH8psRGFO-x50lrN4I_wPOkunHqFz41BP8lF9tI2ReubWb9CCeDrD7kgFOTOeFdhLF1lHDUB4Hjh-66DmFaz3ZFddMBRqUVs5R0UcVE2uzkPwjXy-Blyys/s480/R-24908915-1667063094-9914.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXwdhNY0uoMtu7iG7-HfA7NLMQtX29R6JX2Fc-QXUNN66Gk4nebt8etJmvxGp2pB1bTUZPaJH8psRGFO-x50lrN4I_wPOkunHqFz41BP8lF9tI2ReubWb9CCeDrD7kgFOTOeFdhLF1lHDUB4Hjh-66DmFaz3ZFddMBRqUVs5R0UcVE2uzkPwjXy-Blyys/s160/R-24908915-1667063094-9914.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXwdhNY0uoMtu7iG7-HfA7NLMQtX29R6JX2Fc-QXUNN66Gk4nebt8etJmvxGp2pB1bTUZPaJH8psRGFO-x50lrN4I_wPOkunHqFz41BP8lF9tI2ReubWb9CCeDrD7kgFOTOeFdhLF1lHDUB4Hjh-66DmFaz3ZFddMBRqUVs5R0UcVE2uzkPwjXy-Blyys/s320/R-24908915-1667063094-9914.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXwdhNY0uoMtu7iG7-HfA7NLMQtX29R6JX2Fc-QXUNN66Gk4nebt8etJmvxGp2pB1bTUZPaJH8psRGFO-x50lrN4I_wPOkunHqFz41BP8lF9tI2ReubWb9CCeDrD7kgFOTOeFdhLF1lHDUB4Hjh-66DmFaz3ZFddMBRqUVs5R0UcVE2uzkPwjXy-Blyys/s480/R-24908915-1667063094-9914.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.960 - El último concierto de NIRVANA"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-946-in-utero-el-sonido-que-kurt-cobain-oia-en-su-cabeza.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieZdNBym8XT3tHvgEaMBripecROsyVq7mu3zE71eFvbl9kzYznadodfGEdQz_uBoUg1EnmtTZyypw34MhzPhNfVGmcbTsWEByR9vL-R7jYU3pgycBw_qQCDPJZ6OjV92zj00KQcgtB7GD6jET7P-9LPypQh_g3u-bRzj0T-vWTanC1eBydie-3zkYyF04/s320/3467273_1.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieZdNBym8XT3tHvgEaMBripecROsyVq7mu3zE71eFvbl9kzYznadodfGEdQz_uBoUg1EnmtTZyypw34MhzPhNfVGmcbTsWEByR9vL-R7jYU3pgycBw_qQCDPJZ6OjV92zj00KQcgtB7GD6jET7P-9LPypQh_g3u-bRzj0T-vWTanC1eBydie-3zkYyF04/s160/3467273_1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieZdNBym8XT3tHvgEaMBripecROsyVq7mu3zE71eFvbl9kzYznadodfGEdQz_uBoUg1EnmtTZyypw34MhzPhNfVGmcbTsWEByR9vL-R7jYU3pgycBw_qQCDPJZ6OjV92zj00KQcgtB7GD6jET7P-9LPypQh_g3u-bRzj0T-vWTanC1eBydie-3zkYyF04/s320/3467273_1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieZdNBym8XT3tHvgEaMBripecROsyVq7mu3zE71eFvbl9kzYznadodfGEdQz_uBoUg1EnmtTZyypw34MhzPhNfVGmcbTsWEByR9vL-R7jYU3pgycBw_qQCDPJZ6OjV92zj00KQcgtB7GD6jET7P-9LPypQh_g3u-bRzj0T-vWTanC1eBydie-3zkYyF04/s480/3467273_1.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieZdNBym8XT3tHvgEaMBripecROsyVq7mu3zE71eFvbl9kzYznadodfGEdQz_uBoUg1EnmtTZyypw34MhzPhNfVGmcbTsWEByR9vL-R7jYU3pgycBw_qQCDPJZ6OjV92zj00KQcgtB7GD6jET7P-9LPypQh_g3u-bRzj0T-vWTanC1eBydie-3zkYyF04/s160/3467273_1.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieZdNBym8XT3tHvgEaMBripecROsyVq7mu3zE71eFvbl9kzYznadodfGEdQz_uBoUg1EnmtTZyypw34MhzPhNfVGmcbTsWEByR9vL-R7jYU3pgycBw_qQCDPJZ6OjV92zj00KQcgtB7GD6jET7P-9LPypQh_g3u-bRzj0T-vWTanC1eBydie-3zkYyF04/s320/3467273_1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieZdNBym8XT3tHvgEaMBripecROsyVq7mu3zE71eFvbl9kzYznadodfGEdQz_uBoUg1EnmtTZyypw34MhzPhNfVGmcbTsWEByR9vL-R7jYU3pgycBw_qQCDPJZ6OjV92zj00KQcgtB7GD6jET7P-9LPypQh_g3u-bRzj0T-vWTanC1eBydie-3zkYyF04/s480/3467273_1.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.946 - In Utero, el sonido que Kurt Cobain oía en su cabeza"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-46-el-misterio-de-sappy-nirvana.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOJXd3BIMonbsPCHjU8ON5uSrUU_QpcJokcjoj3XOpfmqNA46RQEJ05Pw9UXjZQeEs3utPVo2nK4pi_mkFtsLhUIMdYxFOAQISUUkilHvKvZAUj2qHyg5XbQw4zP5I2bnt2RckqQNYd1qYvkIscB8EVLWHJ4-u5Oy5AHfUstj156iIAXx1xJgbXr1OH4/s320/IMG-20231001-WA0034.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOJXd3BIMonbsPCHjU8ON5uSrUU_QpcJokcjoj3XOpfmqNA46RQEJ05Pw9UXjZQeEs3utPVo2nK4pi_mkFtsLhUIMdYxFOAQISUUkilHvKvZAUj2qHyg5XbQw4zP5I2bnt2RckqQNYd1qYvkIscB8EVLWHJ4-u5Oy5AHfUstj156iIAXx1xJgbXr1OH4/s160/IMG-20231001-WA0034.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOJXd3BIMonbsPCHjU8ON5uSrUU_QpcJokcjoj3XOpfmqNA46RQEJ05Pw9UXjZQeEs3utPVo2nK4pi_mkFtsLhUIMdYxFOAQISUUkilHvKvZAUj2qHyg5XbQw4zP5I2bnt2RckqQNYd1qYvkIscB8EVLWHJ4-u5Oy5AHfUstj156iIAXx1xJgbXr1OH4/s320/IMG-20231001-WA0034.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOJXd3BIMonbsPCHjU8ON5uSrUU_QpcJokcjoj3XOpfmqNA46RQEJ05Pw9UXjZQeEs3utPVo2nK4pi_mkFtsLhUIMdYxFOAQISUUkilHvKvZAUj2qHyg5XbQw4zP5I2bnt2RckqQNYd1qYvkIscB8EVLWHJ4-u5Oy5AHfUstj156iIAXx1xJgbXr1OH4/s480/IMG-20231001-WA0034.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOJXd3BIMonbsPCHjU8ON5uSrUU_QpcJokcjoj3XOpfmqNA46RQEJ05Pw9UXjZQeEs3utPVo2nK4pi_mkFtsLhUIMdYxFOAQISUUkilHvKvZAUj2qHyg5XbQw4zP5I2bnt2RckqQNYd1qYvkIscB8EVLWHJ4-u5Oy5AHfUstj156iIAXx1xJgbXr1OH4/s160/IMG-20231001-WA0034.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOJXd3BIMonbsPCHjU8ON5uSrUU_QpcJokcjoj3XOpfmqNA46RQEJ05Pw9UXjZQeEs3utPVo2nK4pi_mkFtsLhUIMdYxFOAQISUUkilHvKvZAUj2qHyg5XbQw4zP5I2bnt2RckqQNYd1qYvkIscB8EVLWHJ4-u5Oy5AHfUstj156iIAXx1xJgbXr1OH4/s320/IMG-20231001-WA0034.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOJXd3BIMonbsPCHjU8ON5uSrUU_QpcJokcjoj3XOpfmqNA46RQEJ05Pw9UXjZQeEs3utPVo2nK4pi_mkFtsLhUIMdYxFOAQISUUkilHvKvZAUj2qHyg5XbQw4zP5I2bnt2RckqQNYd1qYvkIscB8EVLWHJ4-u5Oy5AHfUstj156iIAXx1xJgbXr1OH4/s480/IMG-20231001-WA0034.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 46 - El misterio de SAPPY (Nirvana)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-431-in-utero-25.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw01IsQuBZbiWpFYGIHHk-1sBIpmGt6H-oFThegM8o3nzPvxJXnULt-I7nWOTDiTm14bOm3scPf7GlLpb1JCVFwilgJfdN1S1bttHoSA_OWJwQu1EtHWr4UUOVdwuM5-Qgibo2su-Wskg/s320/inutero25coverlittle.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw01IsQuBZbiWpFYGIHHk-1sBIpmGt6H-oFThegM8o3nzPvxJXnULt-I7nWOTDiTm14bOm3scPf7GlLpb1JCVFwilgJfdN1S1bttHoSA_OWJwQu1EtHWr4UUOVdwuM5-Qgibo2su-Wskg/s160/inutero25coverlittle.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw01IsQuBZbiWpFYGIHHk-1sBIpmGt6H-oFThegM8o3nzPvxJXnULt-I7nWOTDiTm14bOm3scPf7GlLpb1JCVFwilgJfdN1S1bttHoSA_OWJwQu1EtHWr4UUOVdwuM5-Qgibo2su-Wskg/s320/inutero25coverlittle.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw01IsQuBZbiWpFYGIHHk-1sBIpmGt6H-oFThegM8o3nzPvxJXnULt-I7nWOTDiTm14bOm3scPf7GlLpb1JCVFwilgJfdN1S1bttHoSA_OWJwQu1EtHWr4UUOVdwuM5-Qgibo2su-Wskg/s480/inutero25coverlittle.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw01IsQuBZbiWpFYGIHHk-1sBIpmGt6H-oFThegM8o3nzPvxJXnULt-I7nWOTDiTm14bOm3scPf7GlLpb1JCVFwilgJfdN1S1bttHoSA_OWJwQu1EtHWr4UUOVdwuM5-Qgibo2su-Wskg/s160/inutero25coverlittle.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw01IsQuBZbiWpFYGIHHk-1sBIpmGt6H-oFThegM8o3nzPvxJXnULt-I7nWOTDiTm14bOm3scPf7GlLpb1JCVFwilgJfdN1S1bttHoSA_OWJwQu1EtHWr4UUOVdwuM5-Qgibo2su-Wskg/s320/inutero25coverlittle.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw01IsQuBZbiWpFYGIHHk-1sBIpmGt6H-oFThegM8o3nzPvxJXnULt-I7nWOTDiTm14bOm3scPf7GlLpb1JCVFwilgJfdN1S1bttHoSA_OWJwQu1EtHWr4UUOVdwuM5-Qgibo2su-Wskg/s480/inutero25coverlittle.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 431 - IN UTERO 25"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/programa-176-nirvana-mixes-demos-2015.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnZ3RpuKDYarRKcVpLQcpK4gn8ZD5BDQwb0iGMtBWbSgqWVKX0yFZIEPKbSvz_LeLI17h4ZD9T_Q5ukcpoATjDcMUmcn3hh1z3xnTSmbtL9CjHEYAT4Hfp4ZADpatz_oHL4yg405q2IiU/s320/11800082_1036423006368595_7349121891611549252_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnZ3RpuKDYarRKcVpLQcpK4gn8ZD5BDQwb0iGMtBWbSgqWVKX0yFZIEPKbSvz_LeLI17h4ZD9T_Q5ukcpoATjDcMUmcn3hh1z3xnTSmbtL9CjHEYAT4Hfp4ZADpatz_oHL4yg405q2IiU/s160/11800082_1036423006368595_7349121891611549252_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnZ3RpuKDYarRKcVpLQcpK4gn8ZD5BDQwb0iGMtBWbSgqWVKX0yFZIEPKbSvz_LeLI17h4ZD9T_Q5ukcpoATjDcMUmcn3hh1z3xnTSmbtL9CjHEYAT4Hfp4ZADpatz_oHL4yg405q2IiU/s320/11800082_1036423006368595_7349121891611549252_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnZ3RpuKDYarRKcVpLQcpK4gn8ZD5BDQwb0iGMtBWbSgqWVKX0yFZIEPKbSvz_LeLI17h4ZD9T_Q5ukcpoATjDcMUmcn3hh1z3xnTSmbtL9CjHEYAT4Hfp4ZADpatz_oHL4yg405q2IiU/s480/11800082_1036423006368595_7349121891611549252_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnZ3RpuKDYarRKcVpLQcpK4gn8ZD5BDQwb0iGMtBWbSgqWVKX0yFZIEPKbSvz_LeLI17h4ZD9T_Q5ukcpoATjDcMUmcn3hh1z3xnTSmbtL9CjHEYAT4Hfp4ZADpatz_oHL4yg405q2IiU/s160/11800082_1036423006368595_7349121891611549252_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnZ3RpuKDYarRKcVpLQcpK4gn8ZD5BDQwb0iGMtBWbSgqWVKX0yFZIEPKbSvz_LeLI17h4ZD9T_Q5ukcpoATjDcMUmcn3hh1z3xnTSmbtL9CjHEYAT4Hfp4ZADpatz_oHL4yg405q2IiU/s320/11800082_1036423006368595_7349121891611549252_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnZ3RpuKDYarRKcVpLQcpK4gn8ZD5BDQwb0iGMtBWbSgqWVKX0yFZIEPKbSvz_LeLI17h4ZD9T_Q5ukcpoATjDcMUmcn3hh1z3xnTSmbtL9CjHEYAT4Hfp4ZADpatz_oHL4yg405q2IiU/s480/11800082_1036423006368595_7349121891611549252_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 176 - Nirvana - Mixes + Demos 2015"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/b90-programa-76-nirvana-in-utero-20th-anniversary.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 76 - Nirvana - In Utero 20th Anniversary "
                 loading="lazy" width="320" height="213" />
         </a>

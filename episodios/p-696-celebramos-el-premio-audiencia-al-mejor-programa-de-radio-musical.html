@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.696 - Celebramos el Premio Audiencia al mejor programa de radio musical — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRVjn3UnPT0z9OaeDmrPC6JkOcGpTKEVi7-3Prm0sxC8KR10AF4OmkF-fULcSx5ZIYCOI23NeLPVJEeoqdFjo8aqQm7ZvqMG91UBZQtlhwK8X1h6SUxehn25P2wp6LlxG_0geWuL5o1-Q/s320/Oasis-Liam-y-Noel-Gallagher-1200x800.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRVjn3UnPT0z9OaeDmrPC6JkOcGpTKEVi7-3Prm0sxC8KR10AF4OmkF-fULcSx5ZIYCOI23NeLPVJEeoqdFjo8aqQm7ZvqMG91UBZQtlhwK8X1h6SUxehn25P2wp6LlxG_0geWuL5o1-Q/s160/Oasis-Liam-y-Noel-Gallagher-1200x800.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRVjn3UnPT0z9OaeDmrPC6JkOcGpTKEVi7-3Prm0sxC8KR10AF4OmkF-fULcSx5ZIYCOI23NeLPVJEeoqdFjo8aqQm7ZvqMG91UBZQtlhwK8X1h6SUxehn25P2wp6LlxG_0geWuL5o1-Q/s320/Oasis-Liam-y-Noel-Gallagher-1200x800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRVjn3UnPT0z9OaeDmrPC6JkOcGpTKEVi7-3Prm0sxC8KR10AF4OmkF-fULcSx5ZIYCOI23NeLPVJEeoqdFjo8aqQm7ZvqMG91UBZQtlhwK8X1h6SUxehn25P2wp6LlxG_0geWuL5o1-Q/s480/Oasis-Liam-y-Noel-Gallagher-1200x800.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRVjn3UnPT0z9OaeDmrPC6JkOcGpTKEVi7-3Prm0sxC8KR10AF4OmkF-fULcSx5ZIYCOI23NeLPVJEeoqdFjo8aqQm7ZvqMG91UBZQtlhwK8X1h6SUxehn25P2wp6LlxG_0geWuL5o1-Q/s160/Oasis-Liam-y-Noel-Gallagher-1200x800.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRVjn3UnPT0z9OaeDmrPC6JkOcGpTKEVi7-3Prm0sxC8KR10AF4OmkF-fULcSx5ZIYCOI23NeLPVJEeoqdFjo8aqQm7ZvqMG91UBZQtlhwK8X1h6SUxehn25P2wp6LlxG_0geWuL5o1-Q/s320/Oasis-Liam-y-Noel-Gallagher-1200x800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRVjn3UnPT0z9OaeDmrPC6JkOcGpTKEVi7-3Prm0sxC8KR10AF4OmkF-fULcSx5ZIYCOI23NeLPVJEeoqdFjo8aqQm7ZvqMG91UBZQtlhwK8X1h6SUxehn25P2wp6LlxG_0geWuL5o1-Q/s480/Oasis-Liam-y-Noel-Gallagher-1200x800.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.744 - El fenómeno Oasis en la radio musical española de los 90"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfzWgaoLD5nbP_7iQs5FLOWWyS3LPK1SbBxKsbqY7TOgHmbMeYk95P9pg37Gq5LlAhY87xAXS9mNWAZrJtrjcWQW-fCxi7l604N9B0tzy9oCG9GMHeQ3pxWHYSM1JZDTOGaNL4wC1goFS8L_3HSHMSFIo8WFT3ORXp2dkJEP4GdwSsjqBecu-tV_Eg/s320/el%20maquinista.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfzWgaoLD5nbP_7iQs5FLOWWyS3LPK1SbBxKsbqY7TOgHmbMeYk95P9pg37Gq5LlAhY87xAXS9mNWAZrJtrjcWQW-fCxi7l604N9B0tzy9oCG9GMHeQ3pxWHYSM1JZDTOGaNL4wC1goFS8L_3HSHMSFIo8WFT3ORXp2dkJEP4GdwSsjqBecu-tV_Eg/s160/el%20maquinista.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfzWgaoLD5nbP_7iQs5FLOWWyS3LPK1SbBxKsbqY7TOgHmbMeYk95P9pg37Gq5LlAhY87xAXS9mNWAZrJtrjcWQW-fCxi7l604N9B0tzy9oCG9GMHeQ3pxWHYSM1JZDTOGaNL4wC1goFS8L_3HSHMSFIo8WFT3ORXp2dkJEP4GdwSsjqBecu-tV_Eg/s320/el%20maquinista.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfzWgaoLD5nbP_7iQs5FLOWWyS3LPK1SbBxKsbqY7TOgHmbMeYk95P9pg37Gq5LlAhY87xAXS9mNWAZrJtrjcWQW-fCxi7l604N9B0tzy9oCG9GMHeQ3pxWHYSM1JZDTOGaNL4wC1goFS8L_3HSHMSFIo8WFT3ORXp2dkJEP4GdwSsjqBecu-tV_Eg/s480/el%20maquinista.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfzWgaoLD5nbP_7iQs5FLOWWyS3LPK1SbBxKsbqY7TOgHmbMeYk95P9pg37Gq5LlAhY87xAXS9mNWAZrJtrjcWQW-fCxi7l604N9B0tzy9oCG9GMHeQ3pxWHYSM1JZDTOGaNL4wC1goFS8L_3HSHMSFIo8WFT3ORXp2dkJEP4GdwSsjqBecu-tV_Eg/s160/el%20maquinista.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfzWgaoLD5nbP_7iQs5FLOWWyS3LPK1SbBxKsbqY7TOgHmbMeYk95P9pg37Gq5LlAhY87xAXS9mNWAZrJtrjcWQW-fCxi7l604N9B0tzy9oCG9GMHeQ3pxWHYSM1JZDTOGaNL4wC1goFS8L_3HSHMSFIo8WFT3ORXp2dkJEP4GdwSsjqBecu-tV_Eg/s320/el%20maquinista.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfzWgaoLD5nbP_7iQs5FLOWWyS3LPK1SbBxKsbqY7TOgHmbMeYk95P9pg37Gq5LlAhY87xAXS9mNWAZrJtrjcWQW-fCxi7l604N9B0tzy9oCG9GMHeQ3pxWHYSM1JZDTOGaNL4wC1goFS8L_3HSHMSFIo8WFT3ORXp2dkJEP4GdwSsjqBecu-tV_Eg/s480/el%20maquinista.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.896 - La RADIO MUSICAL tal y como nos gusta"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn-3yBCYjJdt-7Qb3HkYBHia2x8oZiAzl4Che0qoRvD9Xnok9xS8L2hWUu0hCDV_PGzUy8L7caQ4BccBAg5ZcZCeRYxG8ikN1iz_xGWgaLanUEuMFbJql9zMHbqBBxM0_G43ZHBeChLLQ/s72-w328-h246-c/bienvenido90.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn-3yBCYjJdt-7Qb3HkYBHia2x8oZiAzl4Che0qoRvD9Xnok9xS8L2hWUu0hCDV_PGzUy8L7caQ4BccBAg5ZcZCeRYxG8ikN1iz_xGWgaLanUEuMFbJql9zMHbqBBxM0_G43ZHBeChLLQ/s72-w328-h246-c/bienvenido90.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn-3yBCYjJdt-7Qb3HkYBHia2x8oZiAzl4Che0qoRvD9Xnok9xS8L2hWUu0hCDV_PGzUy8L7caQ4BccBAg5ZcZCeRYxG8ikN1iz_xGWgaLanUEuMFbJql9zMHbqBBxM0_G43ZHBeChLLQ/s72-w328-h246-c/bienvenido90.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn-3yBCYjJdt-7Qb3HkYBHia2x8oZiAzl4Che0qoRvD9Xnok9xS8L2hWUu0hCDV_PGzUy8L7caQ4BccBAg5ZcZCeRYxG8ikN1iz_xGWgaLanUEuMFbJql9zMHbqBBxM0_G43ZHBeChLLQ/s72-w328-h246-c/bienvenido90.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="P.680 - Resumen de lo mejor de la temporada"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="p-671-flea-el-mejor-bajista-de-los-90.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT90KKJEANYgFBotfYItjtBPKGSmUOGaEpc2UcJzPvKPjKjMWprwdtfnQWttc1BEd8k2zBsR7FPfDUGzoRqV9RqADO3Z612YJc3jfXnE0sTagWlhiepjvEe6KkZAXTehJM_aEZPMDH8ls/s320/Flea-Michael-Balzary-red-hot-chili-peppers-31202530-500-637.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT90KKJEANYgFBotfYItjtBPKGSmUOGaEpc2UcJzPvKPjKjMWprwdtfnQWttc1BEd8k2zBsR7FPfDUGzoRqV9RqADO3Z612YJc3jfXnE0sTagWlhiepjvEe6KkZAXTehJM_aEZPMDH8ls/s320/Flea-Michael-Balzary-red-hot-chili-peppers-31202530-500-637.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT90KKJEANYgFBotfYItjtBPKGSmUOGaEpc2UcJzPvKPjKjMWprwdtfnQWttc1BEd8k2zBsR7FPfDUGzoRqV9RqADO3Z612YJc3jfXnE0sTagWlhiepjvEe6KkZAXTehJM_aEZPMDH8ls/s480/Flea-Michael-Balzary-red-hot-chili-peppers-31202530-500-637.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT90KKJEANYgFBotfYItjtBPKGSmUOGaEpc2UcJzPvKPjKjMWprwdtfnQWttc1BEd8k2zBsR7FPfDUGzoRqV9RqADO3Z612YJc3jfXnE0sTagWlhiepjvEe6KkZAXTehJM_aEZPMDH8ls/s640/Flea-Michael-Balzary-red-hot-chili-peppers-31202530-500-637.jpeg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT90KKJEANYgFBotfYItjtBPKGSmUOGaEpc2UcJzPvKPjKjMWprwdtfnQWttc1BEd8k2zBsR7FPfDUGzoRqV9RqADO3Z612YJc3jfXnE0sTagWlhiepjvEe6KkZAXTehJM_aEZPMDH8ls/s320/Flea-Michael-Balzary-red-hot-chili-peppers-31202530-500-637.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT90KKJEANYgFBotfYItjtBPKGSmUOGaEpc2UcJzPvKPjKjMWprwdtfnQWttc1BEd8k2zBsR7FPfDUGzoRqV9RqADO3Z612YJc3jfXnE0sTagWlhiepjvEe6KkZAXTehJM_aEZPMDH8ls/s480/Flea-Michael-Balzary-red-hot-chili-peppers-31202530-500-637.jpeg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT90KKJEANYgFBotfYItjtBPKGSmUOGaEpc2UcJzPvKPjKjMWprwdtfnQWttc1BEd8k2zBsR7FPfDUGzoRqV9RqADO3Z612YJc3jfXnE0sTagWlhiepjvEe6KkZAXTehJM_aEZPMDH8ls/s640/Flea-Michael-Balzary-red-hot-chili-peppers-31202530-500-637.jpeg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.671 - Flea, ¿el mejor bajista de los 90?"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="p-733-especial-radio-3-parte-1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kt_r3TjNTVJBhfllDF7n5banKAymuFxir_WhANa1agm1I3SsmYcj6mp_VBBTfLiSwCu9DRbIftvn32wV88m6qjqXt_ecijEztbg96wtDmmRzxkraf74iOt9ON-VZNfTPWoVDbaPvBaM/s320/r3+old2.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kt_r3TjNTVJBhfllDF7n5banKAymuFxir_WhANa1agm1I3SsmYcj6mp_VBBTfLiSwCu9DRbIftvn32wV88m6qjqXt_ecijEztbg96wtDmmRzxkraf74iOt9ON-VZNfTPWoVDbaPvBaM/s320/r3+old2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kt_r3TjNTVJBhfllDF7n5banKAymuFxir_WhANa1agm1I3SsmYcj6mp_VBBTfLiSwCu9DRbIftvn32wV88m6qjqXt_ecijEztbg96wtDmmRzxkraf74iOt9ON-VZNfTPWoVDbaPvBaM/s480/r3+old2.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kt_r3TjNTVJBhfllDF7n5banKAymuFxir_WhANa1agm1I3SsmYcj6mp_VBBTfLiSwCu9DRbIftvn32wV88m6qjqXt_ecijEztbg96wtDmmRzxkraf74iOt9ON-VZNfTPWoVDbaPvBaM/s640/r3+old2.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kt_r3TjNTVJBhfllDF7n5banKAymuFxir_WhANa1agm1I3SsmYcj6mp_VBBTfLiSwCu9DRbIftvn32wV88m6qjqXt_ecijEztbg96wtDmmRzxkraf74iOt9ON-VZNfTPWoVDbaPvBaM/s320/r3+old2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kt_r3TjNTVJBhfllDF7n5banKAymuFxir_WhANa1agm1I3SsmYcj6mp_VBBTfLiSwCu9DRbIftvn32wV88m6qjqXt_ecijEztbg96wtDmmRzxkraf74iOt9ON-VZNfTPWoVDbaPvBaM/s480/r3+old2.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3kt_r3TjNTVJBhfllDF7n5banKAymuFxir_WhANa1agm1I3SsmYcj6mp_VBBTfLiSwCu9DRbIftvn32wV88m6qjqXt_ecijEztbg96wtDmmRzxkraf74iOt9ON-VZNfTPWoVDbaPvBaM/s640/r3+old2.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.733 - Especial Radio 3 (Parte 1)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="p-738-especial-radio-3-parte-2.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-3SkjfohyphenhyphenQEQCtPiFUV6NxBmUwlqpqGfKZ1HmcgD9yL5QK5JCkZNzRedmsTmPfbX7Oen_oS2COQKdyeeNTm4unofQ6BU1DePnOBW2mlRkmAB0QcwsovHUuBR7HS0UW1Yxq7q0OGKE3c/s320/145225905_5359932007357732_8061310345148791492_o.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-3SkjfohyphenhyphenQEQCtPiFUV6NxBmUwlqpqGfKZ1HmcgD9yL5QK5JCkZNzRedmsTmPfbX7Oen_oS2COQKdyeeNTm4unofQ6BU1DePnOBW2mlRkmAB0QcwsovHUuBR7HS0UW1Yxq7q0OGKE3c/s320/145225905_5359932007357732_8061310345148791492_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-3SkjfohyphenhyphenQEQCtPiFUV6NxBmUwlqpqGfKZ1HmcgD9yL5QK5JCkZNzRedmsTmPfbX7Oen_oS2COQKdyeeNTm4unofQ6BU1DePnOBW2mlRkmAB0QcwsovHUuBR7HS0UW1Yxq7q0OGKE3c/s480/145225905_5359932007357732_8061310345148791492_o.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-3SkjfohyphenhyphenQEQCtPiFUV6NxBmUwlqpqGfKZ1HmcgD9yL5QK5JCkZNzRedmsTmPfbX7Oen_oS2COQKdyeeNTm4unofQ6BU1DePnOBW2mlRkmAB0QcwsovHUuBR7HS0UW1Yxq7q0OGKE3c/s640/145225905_5359932007357732_8061310345148791492_o.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-3SkjfohyphenhyphenQEQCtPiFUV6NxBmUwlqpqGfKZ1HmcgD9yL5QK5JCkZNzRedmsTmPfbX7Oen_oS2COQKdyeeNTm4unofQ6BU1DePnOBW2mlRkmAB0QcwsovHUuBR7HS0UW1Yxq7q0OGKE3c/s320/145225905_5359932007357732_8061310345148791492_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-3SkjfohyphenhyphenQEQCtPiFUV6NxBmUwlqpqGfKZ1HmcgD9yL5QK5JCkZNzRedmsTmPfbX7Oen_oS2COQKdyeeNTm4unofQ6BU1DePnOBW2mlRkmAB0QcwsovHUuBR7HS0UW1Yxq7q0OGKE3c/s480/145225905_5359932007357732_8061310345148791492_o.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix-3SkjfohyphenhyphenQEQCtPiFUV6NxBmUwlqpqGfKZ1HmcgD9yL5QK5JCkZNzRedmsTmPfbX7Oen_oS2COQKdyeeNTm4unofQ6BU1DePnOBW2mlRkmAB0QcwsovHUuBR7HS0UW1Yxq7q0OGKE3c/s640/145225905_5359932007357732_8061310345148791492_o.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.738 - Especial Radio 3 (Parte 2)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.718 - Viajamos hasta Seattle para hablar con TRES LECHES — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -124,8 +124,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNajXe8yRJyrUbYeIUpo-zjXP0jcc5fRZ7Lg_JrJWaCSFJQCXnxumIxUygbEHVbhuqvvH6GPMH6-0GfoYl1aLN9i5IN3nRcdC_iGyiqHXJCwoIlfEV4bLntIc8TAj_4jsz-2ZHT5TfsK4/s320/b90_Classsic+2.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNajXe8yRJyrUbYeIUpo-zjXP0jcc5fRZ7Lg_JrJWaCSFJQCXnxumIxUygbEHVbhuqvvH6GPMH6-0GfoYl1aLN9i5IN3nRcdC_iGyiqHXJCwoIlfEV4bLntIc8TAj_4jsz-2ZHT5TfsK4/s160/b90_Classsic+2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNajXe8yRJyrUbYeIUpo-zjXP0jcc5fRZ7Lg_JrJWaCSFJQCXnxumIxUygbEHVbhuqvvH6GPMH6-0GfoYl1aLN9i5IN3nRcdC_iGyiqHXJCwoIlfEV4bLntIc8TAj_4jsz-2ZHT5TfsK4/s320/b90_Classsic+2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNajXe8yRJyrUbYeIUpo-zjXP0jcc5fRZ7Lg_JrJWaCSFJQCXnxumIxUygbEHVbhuqvvH6GPMH6-0GfoYl1aLN9i5IN3nRcdC_iGyiqHXJCwoIlfEV4bLntIc8TAj_4jsz-2ZHT5TfsK4/s480/b90_Classsic+2.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNajXe8yRJyrUbYeIUpo-zjXP0jcc5fRZ7Lg_JrJWaCSFJQCXnxumIxUygbEHVbhuqvvH6GPMH6-0GfoYl1aLN9i5IN3nRcdC_iGyiqHXJCwoIlfEV4bLntIc8TAj_4jsz-2ZHT5TfsK4/s160/b90_Classsic+2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNajXe8yRJyrUbYeIUpo-zjXP0jcc5fRZ7Lg_JrJWaCSFJQCXnxumIxUygbEHVbhuqvvH6GPMH6-0GfoYl1aLN9i5IN3nRcdC_iGyiqHXJCwoIlfEV4bLntIc8TAj_4jsz-2ZHT5TfsK4/s320/b90_Classsic+2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNajXe8yRJyrUbYeIUpo-zjXP0jcc5fRZ7Lg_JrJWaCSFJQCXnxumIxUygbEHVbhuqvvH6GPMH6-0GfoYl1aLN9i5IN3nRcdC_iGyiqHXJCwoIlfEV4bLntIc8TAj_4jsz-2ZHT5TfsK4/s480/b90_Classsic+2.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 2: El nuevo &#39;GRUNGE&#39;"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -135,8 +134,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s320/e4c620f2a967d3906f46bc3bafbcefc2.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s160/e4c620f2a967d3906f46bc3bafbcefc2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s320/e4c620f2a967d3906f46bc3bafbcefc2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s480/e4c620f2a967d3906f46bc3bafbcefc2.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s160/e4c620f2a967d3906f46bc3bafbcefc2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s320/e4c620f2a967d3906f46bc3bafbcefc2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFmQ424m44YEvmdYrq24DkuToEhjW5WovmZGbmyfdUyl_G-We9Ryb2nQ5KHU1f4HZjRGn8fLCbD_t9RSeDsrf0pxQgS8Ml24XrR5XgzUNXPWEI1Cd2p0agBag5s65DO_n-xlxfw_c571M/s480/e4c620f2a967d3906f46bc3bafbcefc2.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 340 - Jeff Ament, de Montana a Seattle"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -146,8 +144,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s320/151498347775.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s160/151498347775.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s320/151498347775.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s480/151498347775.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s160/151498347775.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s320/151498347775.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiciDGprsCZbnthx-qat7Q8hXb-79yu9KyGKwy5SaLCh9ZdQOf1XUjhgBMF09Qi8BedhiqS3d8-cD8YcwoUoTFxFa7JHPSQB9T4m6114GiSff61-I6W1kKuQqcUJflP17VXroXj-3ttZgM/s480/151498347775.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.710 - Mis canciones favoritas de Radiohead (que no están en sus discos)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -163,8 +160,7 @@
         <a class="related-bottom-card" href="p-732-visitamos-el-crocodile-de-seattle.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnDFmdMF3a1Gn1EPjMGfBhiT0rGYl5IBpO08XOc15A9-HNO72xtV1gqdLS2ZuxWkZEKxSrxO89v90W-OhdhL0UXuYM6uhv29eLoKihFiN2-bxHmag6U3aJenj18DJFKbfHoztNL-W1YV8/s320/R-1977493-1261615112.jpeg.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnDFmdMF3a1Gn1EPjMGfBhiT0rGYl5IBpO08XOc15A9-HNO72xtV1gqdLS2ZuxWkZEKxSrxO89v90W-OhdhL0UXuYM6uhv29eLoKihFiN2-bxHmag6U3aJenj18DJFKbfHoztNL-W1YV8/s320/R-1977493-1261615112.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnDFmdMF3a1Gn1EPjMGfBhiT0rGYl5IBpO08XOc15A9-HNO72xtV1gqdLS2ZuxWkZEKxSrxO89v90W-OhdhL0UXuYM6uhv29eLoKihFiN2-bxHmag6U3aJenj18DJFKbfHoztNL-W1YV8/s480/R-1977493-1261615112.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnDFmdMF3a1Gn1EPjMGfBhiT0rGYl5IBpO08XOc15A9-HNO72xtV1gqdLS2ZuxWkZEKxSrxO89v90W-OhdhL0UXuYM6uhv29eLoKihFiN2-bxHmag6U3aJenj18DJFKbfHoztNL-W1YV8/s640/R-1977493-1261615112.jpeg.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnDFmdMF3a1Gn1EPjMGfBhiT0rGYl5IBpO08XOc15A9-HNO72xtV1gqdLS2ZuxWkZEKxSrxO89v90W-OhdhL0UXuYM6uhv29eLoKihFiN2-bxHmag6U3aJenj18DJFKbfHoztNL-W1YV8/s320/R-1977493-1261615112.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnDFmdMF3a1Gn1EPjMGfBhiT0rGYl5IBpO08XOc15A9-HNO72xtV1gqdLS2ZuxWkZEKxSrxO89v90W-OhdhL0UXuYM6uhv29eLoKihFiN2-bxHmag6U3aJenj18DJFKbfHoztNL-W1YV8/s480/R-1977493-1261615112.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnDFmdMF3a1Gn1EPjMGfBhiT0rGYl5IBpO08XOc15A9-HNO72xtV1gqdLS2ZuxWkZEKxSrxO89v90W-OhdhL0UXuYM6uhv29eLoKihFiN2-bxHmag6U3aJenj18DJFKbfHoztNL-W1YV8/s640/R-1977493-1261615112.jpeg.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.732 - Visitamos el &#39;Crocodile&#39; de Seattle"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -175,8 +171,7 @@
           </a><a class="related-bottom-card" href="p-755-red-moskito-una-de-las-mejores-bandas-tributo-a-pearl-jam.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s320/67508534_2427049850696115_2106468557159137280_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s320/67508534_2427049850696115_2106468557159137280_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s480/67508534_2427049850696115_2106468557159137280_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s640/67508534_2427049850696115_2106468557159137280_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s320/67508534_2427049850696115_2106468557159137280_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s480/67508534_2427049850696115_2106468557159137280_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgteFIUhlnz6u-3y9tcH_xh7_OLSySGgy5KdzbKmlCtp38K7IkJbx0GyRI-ko0XKPRfPGiLHMO1UdHQG_3OlrQylg5co_UNqyCTGNy0mCYb-m06nqLurarRJNyXmkGJ2riGn5kDVCBPOEs/s640/67508534_2427049850696115_2106468557159137280_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.755 - Red Moskito, una de las mejores bandas tributo a Pearl Jam"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -187,8 +182,7 @@
           </a><a class="related-bottom-card" href="p-644-the-rocket-la-revista-local-de-seattle.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s480/TheRocket_May1988.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s640/TheRocket_May1988.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s320/TheRocket_May1988.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s480/TheRocket_May1988.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNG2CtFBDcAh6QYrBqJ1dsB-97x10FhEdb0KEjkvRTVyj3Lr6EG1LmepckaA9Cn8PQwGiHC1G24_7a6CFF1Z-TmBsSSeph8R2wDkNDCDW6i1bAFNZ-8bI9w4xoBvWwerRI4ZGduciQcU/s640/TheRocket_May1988.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.644 - The Rocket , la revista local de Seattle"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

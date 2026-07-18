@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Cara B — 7 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/p-837-homenaje-a-felipe-couselo-cap-1.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s320/IMG_20220130_163810.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s160/IMG_20220130_163810.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s320/IMG_20220130_163810.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s480/IMG_20220130_163810.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s160/IMG_20220130_163810.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s320/IMG_20220130_163810.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjffgIaAAX_JzCedUbNxzOYQrxW3gnrPxPlmflM7QGhOtKD8nCKdMWvQ0M00UMK66W8s6MAVAGgYKuC__BKNPoVSBcPcoBCed8Ah67ujP7o-gBB1nI0uvx8wUmV3Doqv_u1v_YPDN_4RoGkGGKvYBaSLWWqFbj6Yo05s3HfB4yUfL5kpI0yTGqYaQpU/s480/IMG_20220130_163810.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P.837 - Homenaje a Felipe Couselo (Cap.1)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/programa-185-ocean-colour-scene.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s320/unnamed.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s160/unnamed.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s320/unnamed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s480/unnamed.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s160/unnamed.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s320/unnamed.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCtB7IJl21gUTylLYyFjTm9VmyDBs5mE12aSF4bRKbvI1Di0_G34XWZIzs7lgKzf0z9-Bb6EjQTpsA7dCHfDlNIPqVBDpVyQYi39HaDIafJTAtQnU-M9JLYbTE5AFptjfilz4NOT9E98/s480/unnamed.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 185 - Ocean Colour Scene"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-96-lo-mejor-del-2013.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s320/420962_355957767755206_243875636_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s480/420962_355957767755206_243875636_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgCYrHH14bbVdqGFYHzutFULXNWsPEuY8ku_JFrzk7axM3Hldi891xoEENJ3BGz1M9mpii5nf9z7qV29T_dC2k7EremroQ2awaPtTZLuQew0GwsRm4cnwBcykxVwomKrrZbAPT5vxyjQ/s480/420962_355957767755206_243875636_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 96 - Lo mejor del 2013"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-74-creation-records.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Programa 74 - Creation Records"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-58-especial-cara-b.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWG9GhVi1fMhN2-Xc1PBAEDAiwZQ-oDDpUzSRM1y43gwtCkYTXFhTIb5N_shx_E_OUi_romQL7fzlr_L3XeSEzhbPi3IXtjbNjRd0jxPXqFM8KlH405_Zw68pZb-TfkJA3A8XYETmTAKQ/s320/be35d349-169d-4ea9-9fc6-c2f0e0a4b98e.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWG9GhVi1fMhN2-Xc1PBAEDAiwZQ-oDDpUzSRM1y43gwtCkYTXFhTIb5N_shx_E_OUi_romQL7fzlr_L3XeSEzhbPi3IXtjbNjRd0jxPXqFM8KlH405_Zw68pZb-TfkJA3A8XYETmTAKQ/s160/be35d349-169d-4ea9-9fc6-c2f0e0a4b98e.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWG9GhVi1fMhN2-Xc1PBAEDAiwZQ-oDDpUzSRM1y43gwtCkYTXFhTIb5N_shx_E_OUi_romQL7fzlr_L3XeSEzhbPi3IXtjbNjRd0jxPXqFM8KlH405_Zw68pZb-TfkJA3A8XYETmTAKQ/s320/be35d349-169d-4ea9-9fc6-c2f0e0a4b98e.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWG9GhVi1fMhN2-Xc1PBAEDAiwZQ-oDDpUzSRM1y43gwtCkYTXFhTIb5N_shx_E_OUi_romQL7fzlr_L3XeSEzhbPi3IXtjbNjRd0jxPXqFM8KlH405_Zw68pZb-TfkJA3A8XYETmTAKQ/s480/be35d349-169d-4ea9-9fc6-c2f0e0a4b98e.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWG9GhVi1fMhN2-Xc1PBAEDAiwZQ-oDDpUzSRM1y43gwtCkYTXFhTIb5N_shx_E_OUi_romQL7fzlr_L3XeSEzhbPi3IXtjbNjRd0jxPXqFM8KlH405_Zw68pZb-TfkJA3A8XYETmTAKQ/s160/be35d349-169d-4ea9-9fc6-c2f0e0a4b98e.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWG9GhVi1fMhN2-Xc1PBAEDAiwZQ-oDDpUzSRM1y43gwtCkYTXFhTIb5N_shx_E_OUi_romQL7fzlr_L3XeSEzhbPi3IXtjbNjRd0jxPXqFM8KlH405_Zw68pZb-TfkJA3A8XYETmTAKQ/s320/be35d349-169d-4ea9-9fc6-c2f0e0a4b98e.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWG9GhVi1fMhN2-Xc1PBAEDAiwZQ-oDDpUzSRM1y43gwtCkYTXFhTIb5N_shx_E_OUi_romQL7fzlr_L3XeSEzhbPi3IXtjbNjRd0jxPXqFM8KlH405_Zw68pZb-TfkJA3A8XYETmTAKQ/s480/be35d349-169d-4ea9-9fc6-c2f0e0a4b98e.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 58 - Especial CARA B"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -138,8 +133,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-39-coldplay-live-2012.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa 39 - Coldplay Live 2012"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -152,8 +146,7 @@
         <a class="episode-cover-link" href="../episodios/bienvenido-a-los-90-programa-33-entrevista-a-felipe-couselo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                
                 alt="Bienvenido a los 90 - Programa 33 - Entrevista a Felipe Couselo"
                 loading="lazy" width="320" height="213" />
         </a>

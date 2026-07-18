@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 471 - Jorge Vileilla nos explica el fenómeno &#39;Rock FM&#39; — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -135,8 +135,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s320/b90_P331.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s160/b90_P331.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s320/b90_P331.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s480/b90_P331.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s160/b90_P331.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s320/b90_P331.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0-rrO7ZbfkP19Mkib3XI1ydB3BDL8Smh6nwPy7-xYTD9ItlptokauOBYqO_MgsXg5LzkaL1_jz9YuNlSJn7XXYCScfzCSdjwrxN757e_PJNEI6uVrxArSSs4oNVqedPmuZ70VRohRo8/s480/b90_P331.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 331 - Vinilos Rock: Historia subjetiva del rock"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -146,8 +145,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS4mV88vMNvstRxZ8eaUz5DyU87wN0y0gINjbS4P6Q7jloNpfibTl8U7QwSm3hcoEQYEWACfLmGNt44ZaBrQUgr21Pn41dytBhA0X3VCjb16neqeGL2SAuy8ULZXCIv8Uf_-5CwoV8Bng/s320/b90_700+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS4mV88vMNvstRxZ8eaUz5DyU87wN0y0gINjbS4P6Q7jloNpfibTl8U7QwSm3hcoEQYEWACfLmGNt44ZaBrQUgr21Pn41dytBhA0X3VCjb16neqeGL2SAuy8ULZXCIv8Uf_-5CwoV8Bng/s160/b90_700+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS4mV88vMNvstRxZ8eaUz5DyU87wN0y0gINjbS4P6Q7jloNpfibTl8U7QwSm3hcoEQYEWACfLmGNt44ZaBrQUgr21Pn41dytBhA0X3VCjb16neqeGL2SAuy8ULZXCIv8Uf_-5CwoV8Bng/s320/b90_700+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS4mV88vMNvstRxZ8eaUz5DyU87wN0y0gINjbS4P6Q7jloNpfibTl8U7QwSm3hcoEQYEWACfLmGNt44ZaBrQUgr21Pn41dytBhA0X3VCjb16neqeGL2SAuy8ULZXCIv8Uf_-5CwoV8Bng/s480/b90_700+%25281%2529.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS4mV88vMNvstRxZ8eaUz5DyU87wN0y0gINjbS4P6Q7jloNpfibTl8U7QwSm3hcoEQYEWACfLmGNt44ZaBrQUgr21Pn41dytBhA0X3VCjb16neqeGL2SAuy8ULZXCIv8Uf_-5CwoV8Bng/s160/b90_700+%25281%2529.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS4mV88vMNvstRxZ8eaUz5DyU87wN0y0gINjbS4P6Q7jloNpfibTl8U7QwSm3hcoEQYEWACfLmGNt44ZaBrQUgr21Pn41dytBhA0X3VCjb16neqeGL2SAuy8ULZXCIv8Uf_-5CwoV8Bng/s320/b90_700+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS4mV88vMNvstRxZ8eaUz5DyU87wN0y0gINjbS4P6Q7jloNpfibTl8U7QwSm3hcoEQYEWACfLmGNt44ZaBrQUgr21Pn41dytBhA0X3VCjb16neqeGL2SAuy8ULZXCIv8Uf_-5CwoV8Bng/s480/b90_700+%25281%2529.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.700 - Una radiografía al fenómeno Podcast"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -157,8 +155,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s320/b90_475.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s160/b90_475.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s320/b90_475.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s480/b90_475.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s160/b90_475.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s320/b90_475.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjo5Gd-cZ56-0VLF0tA3zfBCwCJS3UnwwY1dBx8hpebb_c0C83Xd1cIBqWT0Ta6P1sc9118Sd_loXPsdKmkZmr7k641uqdL3hNGwSu54qdH9My1FWiwnJJ8N3vnTAhtnhcEQk2d7O6mGU/s480/b90_475.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 475 - La Navidad y el Rock &amp; Roll"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -174,8 +171,7 @@
         <a class="related-bottom-card" href="programa-496-la-ultima-entrevista-real-a-kurt-cobain.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s320/00+Kurt-01.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s320/00+Kurt-01.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s480/00+Kurt-01.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s640/00+Kurt-01.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s320/00+Kurt-01.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s480/00+Kurt-01.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii9JCi9etENcZq6nNhfz5Lm2pESqm6ZOXrap9gHjNd9jMg7wVV94Plajjo3jKzxPuxwCg0X9z2l0finVnRBPsJ8dKlZrGEAvlLTOzfc8lqnMYgPDWPpNnmQhbMBCFhAfrdoqjNfkzsDjM/s640/00+Kurt-01.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 496 - La última entrevista real a Kurt Cobain"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -186,8 +182,7 @@
           </a><a class="related-bottom-card" href="programa-519-gyoza-nos-cuentan-los-secretos-de-su-primer-disco.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ0hCnjG0gT6lw3qiVmaKGWR8lrdcJ-dQNmoFAmbDMT-xv4qWXLYFGnNYM6cMhnjfTmIPrVXPZgassOPHplv7MXkkExLZtAHjyaQGwCKysFsmIjhA3NX3PJdL8Nu-QsfXvAm3UX-VXY14/s320/b90_519.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ0hCnjG0gT6lw3qiVmaKGWR8lrdcJ-dQNmoFAmbDMT-xv4qWXLYFGnNYM6cMhnjfTmIPrVXPZgassOPHplv7MXkkExLZtAHjyaQGwCKysFsmIjhA3NX3PJdL8Nu-QsfXvAm3UX-VXY14/s320/b90_519.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ0hCnjG0gT6lw3qiVmaKGWR8lrdcJ-dQNmoFAmbDMT-xv4qWXLYFGnNYM6cMhnjfTmIPrVXPZgassOPHplv7MXkkExLZtAHjyaQGwCKysFsmIjhA3NX3PJdL8Nu-QsfXvAm3UX-VXY14/s480/b90_519.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ0hCnjG0gT6lw3qiVmaKGWR8lrdcJ-dQNmoFAmbDMT-xv4qWXLYFGnNYM6cMhnjfTmIPrVXPZgassOPHplv7MXkkExLZtAHjyaQGwCKysFsmIjhA3NX3PJdL8Nu-QsfXvAm3UX-VXY14/s640/b90_519.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ0hCnjG0gT6lw3qiVmaKGWR8lrdcJ-dQNmoFAmbDMT-xv4qWXLYFGnNYM6cMhnjfTmIPrVXPZgassOPHplv7MXkkExLZtAHjyaQGwCKysFsmIjhA3NX3PJdL8Nu-QsfXvAm3UX-VXY14/s320/b90_519.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ0hCnjG0gT6lw3qiVmaKGWR8lrdcJ-dQNmoFAmbDMT-xv4qWXLYFGnNYM6cMhnjfTmIPrVXPZgassOPHplv7MXkkExLZtAHjyaQGwCKysFsmIjhA3NX3PJdL8Nu-QsfXvAm3UX-VXY14/s480/b90_519.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ0hCnjG0gT6lw3qiVmaKGWR8lrdcJ-dQNmoFAmbDMT-xv4qWXLYFGnNYM6cMhnjfTmIPrVXPZgassOPHplv7MXkkExLZtAHjyaQGwCKysFsmIjhA3NX3PJdL8Nu-QsfXvAm3UX-VXY14/s640/b90_519.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 519 - GYOZA nos cuentan los secretos de su primer disco"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -198,8 +193,7 @@
           </a><a class="related-bottom-card" href="programa-543-amparo-llanos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s320/543OK+Amparo+Llanos.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s320/543OK+Amparo+Llanos.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s480/543OK+Amparo+Llanos.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s640/543OK+Amparo+Llanos.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s320/543OK+Amparo+Llanos.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s480/543OK+Amparo+Llanos.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMt0w3fHKie8dl2rinVjYHEbuhfpr68hRJuQWw8o_-_gIAyMt4P7JyatArb3nC_D9s0MiMTTYwZXIqcLNjK3iu-ShjosMykbOhYJ6ZUA5lhgfCPD8Knu23MMGCIfLzqqkjXpbp8yXNd9c/s640/543OK+Amparo+Llanos.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 543 - Amparo Llanos"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

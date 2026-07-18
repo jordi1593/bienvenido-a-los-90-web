@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.640 Star Wars para no iniciados (Disney incluído) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -126,8 +126,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQing3vVIk0TP1rDWj_t_QtYZCOHLECXqaPkV6SYaJVItukGddsG4Ol_s6R_sJv1V1KdYDYPRQ8vtBIaf5gwp8r2UaDlYjG1TzWHvW3KOZoy1ffArI0Qj2TGleHSVbfYhFLTVO0mCoq0U/s320/la-fuerza-los-acompana.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQing3vVIk0TP1rDWj_t_QtYZCOHLECXqaPkV6SYaJVItukGddsG4Ol_s6R_sJv1V1KdYDYPRQ8vtBIaf5gwp8r2UaDlYjG1TzWHvW3KOZoy1ffArI0Qj2TGleHSVbfYhFLTVO0mCoq0U/s160/la-fuerza-los-acompana.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQing3vVIk0TP1rDWj_t_QtYZCOHLECXqaPkV6SYaJVItukGddsG4Ol_s6R_sJv1V1KdYDYPRQ8vtBIaf5gwp8r2UaDlYjG1TzWHvW3KOZoy1ffArI0Qj2TGleHSVbfYhFLTVO0mCoq0U/s320/la-fuerza-los-acompana.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQing3vVIk0TP1rDWj_t_QtYZCOHLECXqaPkV6SYaJVItukGddsG4Ol_s6R_sJv1V1KdYDYPRQ8vtBIaf5gwp8r2UaDlYjG1TzWHvW3KOZoy1ffArI0Qj2TGleHSVbfYhFLTVO0mCoq0U/s480/la-fuerza-los-acompana.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQing3vVIk0TP1rDWj_t_QtYZCOHLECXqaPkV6SYaJVItukGddsG4Ol_s6R_sJv1V1KdYDYPRQ8vtBIaf5gwp8r2UaDlYjG1TzWHvW3KOZoy1ffArI0Qj2TGleHSVbfYhFLTVO0mCoq0U/s160/la-fuerza-los-acompana.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQing3vVIk0TP1rDWj_t_QtYZCOHLECXqaPkV6SYaJVItukGddsG4Ol_s6R_sJv1V1KdYDYPRQ8vtBIaf5gwp8r2UaDlYjG1TzWHvW3KOZoy1ffArI0Qj2TGleHSVbfYhFLTVO0mCoq0U/s320/la-fuerza-los-acompana.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQing3vVIk0TP1rDWj_t_QtYZCOHLECXqaPkV6SYaJVItukGddsG4Ol_s6R_sJv1V1KdYDYPRQ8vtBIaf5gwp8r2UaDlYjG1TzWHvW3KOZoy1ffArI0Qj2TGleHSVbfYhFLTVO0mCoq0U/s480/la-fuerza-los-acompana.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 276 - Star Wars 40 años"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -137,8 +136,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0wKpzj7qvy_QapBLdj88oMtm-T8fBHdoO5HUxa0bRgTxUfGVdn0ry6NJJ4LH-JGR1wyjCOveRoICz8Otq4dNqcRHE4WbLPlD5aCIhH3FIk-tXMYzjIvbJhFzzNLL76-mRP_wGjtjRKjc/s320/71od0Ktt2HL._SL1500_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0wKpzj7qvy_QapBLdj88oMtm-T8fBHdoO5HUxa0bRgTxUfGVdn0ry6NJJ4LH-JGR1wyjCOveRoICz8Otq4dNqcRHE4WbLPlD5aCIhH3FIk-tXMYzjIvbJhFzzNLL76-mRP_wGjtjRKjc/s160/71od0Ktt2HL._SL1500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0wKpzj7qvy_QapBLdj88oMtm-T8fBHdoO5HUxa0bRgTxUfGVdn0ry6NJJ4LH-JGR1wyjCOveRoICz8Otq4dNqcRHE4WbLPlD5aCIhH3FIk-tXMYzjIvbJhFzzNLL76-mRP_wGjtjRKjc/s320/71od0Ktt2HL._SL1500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0wKpzj7qvy_QapBLdj88oMtm-T8fBHdoO5HUxa0bRgTxUfGVdn0ry6NJJ4LH-JGR1wyjCOveRoICz8Otq4dNqcRHE4WbLPlD5aCIhH3FIk-tXMYzjIvbJhFzzNLL76-mRP_wGjtjRKjc/s480/71od0Ktt2HL._SL1500_.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0wKpzj7qvy_QapBLdj88oMtm-T8fBHdoO5HUxa0bRgTxUfGVdn0ry6NJJ4LH-JGR1wyjCOveRoICz8Otq4dNqcRHE4WbLPlD5aCIhH3FIk-tXMYzjIvbJhFzzNLL76-mRP_wGjtjRKjc/s160/71od0Ktt2HL._SL1500_.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0wKpzj7qvy_QapBLdj88oMtm-T8fBHdoO5HUxa0bRgTxUfGVdn0ry6NJJ4LH-JGR1wyjCOveRoICz8Otq4dNqcRHE4WbLPlD5aCIhH3FIk-tXMYzjIvbJhFzzNLL76-mRP_wGjtjRKjc/s320/71od0Ktt2HL._SL1500_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0wKpzj7qvy_QapBLdj88oMtm-T8fBHdoO5HUxa0bRgTxUfGVdn0ry6NJJ4LH-JGR1wyjCOveRoICz8Otq4dNqcRHE4WbLPlD5aCIhH3FIk-tXMYzjIvbJhFzzNLL76-mRP_wGjtjRKjc/s480/71od0Ktt2HL._SL1500_.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.639 Smashing Pumpkins - Especial Siamese Dream (Parte 2)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -148,8 +146,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s320/Postie-and-Travis-Barker-768x412.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s160/Postie-and-Travis-Barker-768x412.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s320/Postie-and-Travis-Barker-768x412.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s480/Postie-and-Travis-Barker-768x412.jpeg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s160/Postie-and-Travis-Barker-768x412.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s320/Postie-and-Travis-Barker-768x412.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s480/Postie-and-Travis-Barker-768x412.jpeg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.641 Post Malone y Travis Barker recuerdan a Nirvana"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -165,8 +162,7 @@
         <a class="related-bottom-card" href="p-638-smashing-pumpkins-especial-siamese-dream-parte-1.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivl7H7jNPiKpJaKQ4H2LGwqzWN4Jy4hOFWHimF8-ZPRlAZUW4ahHJdidjbxAu6SOVBLDWKbJA7NeanzXzTqNdMNPGxoCg8WxZ_vx0RPH2AAX6k0_kR4i9clPKevqTs3MJHdpq1k7h0ppE/s320/siamese.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivl7H7jNPiKpJaKQ4H2LGwqzWN4Jy4hOFWHimF8-ZPRlAZUW4ahHJdidjbxAu6SOVBLDWKbJA7NeanzXzTqNdMNPGxoCg8WxZ_vx0RPH2AAX6k0_kR4i9clPKevqTs3MJHdpq1k7h0ppE/s320/siamese.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivl7H7jNPiKpJaKQ4H2LGwqzWN4Jy4hOFWHimF8-ZPRlAZUW4ahHJdidjbxAu6SOVBLDWKbJA7NeanzXzTqNdMNPGxoCg8WxZ_vx0RPH2AAX6k0_kR4i9clPKevqTs3MJHdpq1k7h0ppE/s480/siamese.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivl7H7jNPiKpJaKQ4H2LGwqzWN4Jy4hOFWHimF8-ZPRlAZUW4ahHJdidjbxAu6SOVBLDWKbJA7NeanzXzTqNdMNPGxoCg8WxZ_vx0RPH2AAX6k0_kR4i9clPKevqTs3MJHdpq1k7h0ppE/s640/siamese.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivl7H7jNPiKpJaKQ4H2LGwqzWN4Jy4hOFWHimF8-ZPRlAZUW4ahHJdidjbxAu6SOVBLDWKbJA7NeanzXzTqNdMNPGxoCg8WxZ_vx0RPH2AAX6k0_kR4i9clPKevqTs3MJHdpq1k7h0ppE/s320/siamese.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivl7H7jNPiKpJaKQ4H2LGwqzWN4Jy4hOFWHimF8-ZPRlAZUW4ahHJdidjbxAu6SOVBLDWKbJA7NeanzXzTqNdMNPGxoCg8WxZ_vx0RPH2AAX6k0_kR4i9clPKevqTs3MJHdpq1k7h0ppE/s480/siamese.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivl7H7jNPiKpJaKQ4H2LGwqzWN4Jy4hOFWHimF8-ZPRlAZUW4ahHJdidjbxAu6SOVBLDWKbJA7NeanzXzTqNdMNPGxoCg8WxZ_vx0RPH2AAX6k0_kR4i9clPKevqTs3MJHdpq1k7h0ppE/s640/siamese.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.638 Smashing Pumpkins - Especial Siamese Dream Parte 1"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -177,8 +173,7 @@
           </a><a class="related-bottom-card" href="p-642-canciones-que-si-pero-discos-que-no.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVwFx868S5FBR0SmjL6_i2OWnODMOIfLcLDtOXPYOgIJXbfDLUr1LcMUKPqD-POhYItTFUHLPxNdr0JowdRIB2aY6EkUL8UqkAQ8pvhmYMr8Yc6mQ-7IkjJh9G2Jaa9URRCckOeMqKrZk/s320/b90_642+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVwFx868S5FBR0SmjL6_i2OWnODMOIfLcLDtOXPYOgIJXbfDLUr1LcMUKPqD-POhYItTFUHLPxNdr0JowdRIB2aY6EkUL8UqkAQ8pvhmYMr8Yc6mQ-7IkjJh9G2Jaa9URRCckOeMqKrZk/s320/b90_642+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVwFx868S5FBR0SmjL6_i2OWnODMOIfLcLDtOXPYOgIJXbfDLUr1LcMUKPqD-POhYItTFUHLPxNdr0JowdRIB2aY6EkUL8UqkAQ8pvhmYMr8Yc6mQ-7IkjJh9G2Jaa9URRCckOeMqKrZk/s480/b90_642+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVwFx868S5FBR0SmjL6_i2OWnODMOIfLcLDtOXPYOgIJXbfDLUr1LcMUKPqD-POhYItTFUHLPxNdr0JowdRIB2aY6EkUL8UqkAQ8pvhmYMr8Yc6mQ-7IkjJh9G2Jaa9URRCckOeMqKrZk/s640/b90_642+%25281%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVwFx868S5FBR0SmjL6_i2OWnODMOIfLcLDtOXPYOgIJXbfDLUr1LcMUKPqD-POhYItTFUHLPxNdr0JowdRIB2aY6EkUL8UqkAQ8pvhmYMr8Yc6mQ-7IkjJh9G2Jaa9URRCckOeMqKrZk/s320/b90_642+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVwFx868S5FBR0SmjL6_i2OWnODMOIfLcLDtOXPYOgIJXbfDLUr1LcMUKPqD-POhYItTFUHLPxNdr0JowdRIB2aY6EkUL8UqkAQ8pvhmYMr8Yc6mQ-7IkjJh9G2Jaa9URRCckOeMqKrZk/s480/b90_642+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVwFx868S5FBR0SmjL6_i2OWnODMOIfLcLDtOXPYOgIJXbfDLUr1LcMUKPqD-POhYItTFUHLPxNdr0JowdRIB2aY6EkUL8UqkAQ8pvhmYMr8Yc6mQ-7IkjJh9G2Jaa9URRCckOeMqKrZk/s640/b90_642+%25281%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.642 - Canciones que SÍ pero discos que NO"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +184,7 @@
           </a><a class="related-bottom-card" href="p-637-peter-cornell.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3dfo3veIQ_Gd0zr9VMQ5L5R4gQGRzPDpkFcp392-egiCggZL1rIJ8zHOVFCOdgQmkSxa8YjzMSrT8kZEhq_IPO0oQRR-f3tPpSSFUgU9CAo0Y6Pso6oAFvMU802imuWpzFhh_dgZN9RY/s320/10275366_667362326679323_7858991212653425035_o.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3dfo3veIQ_Gd0zr9VMQ5L5R4gQGRzPDpkFcp392-egiCggZL1rIJ8zHOVFCOdgQmkSxa8YjzMSrT8kZEhq_IPO0oQRR-f3tPpSSFUgU9CAo0Y6Pso6oAFvMU802imuWpzFhh_dgZN9RY/s320/10275366_667362326679323_7858991212653425035_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3dfo3veIQ_Gd0zr9VMQ5L5R4gQGRzPDpkFcp392-egiCggZL1rIJ8zHOVFCOdgQmkSxa8YjzMSrT8kZEhq_IPO0oQRR-f3tPpSSFUgU9CAo0Y6Pso6oAFvMU802imuWpzFhh_dgZN9RY/s480/10275366_667362326679323_7858991212653425035_o.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3dfo3veIQ_Gd0zr9VMQ5L5R4gQGRzPDpkFcp392-egiCggZL1rIJ8zHOVFCOdgQmkSxa8YjzMSrT8kZEhq_IPO0oQRR-f3tPpSSFUgU9CAo0Y6Pso6oAFvMU802imuWpzFhh_dgZN9RY/s640/10275366_667362326679323_7858991212653425035_o.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3dfo3veIQ_Gd0zr9VMQ5L5R4gQGRzPDpkFcp392-egiCggZL1rIJ8zHOVFCOdgQmkSxa8YjzMSrT8kZEhq_IPO0oQRR-f3tPpSSFUgU9CAo0Y6Pso6oAFvMU802imuWpzFhh_dgZN9RY/s320/10275366_667362326679323_7858991212653425035_o.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3dfo3veIQ_Gd0zr9VMQ5L5R4gQGRzPDpkFcp392-egiCggZL1rIJ8zHOVFCOdgQmkSxa8YjzMSrT8kZEhq_IPO0oQRR-f3tPpSSFUgU9CAo0Y6Pso6oAFvMU802imuWpzFhh_dgZN9RY/s480/10275366_667362326679323_7858991212653425035_o.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3dfo3veIQ_Gd0zr9VMQ5L5R4gQGRzPDpkFcp392-egiCggZL1rIJ8zHOVFCOdgQmkSxa8YjzMSrT8kZEhq_IPO0oQRR-f3tPpSSFUgU9CAo0Y6Pso6oAFvMU802imuWpzFhh_dgZN9RY/s640/10275366_667362326679323_7858991212653425035_o.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.637 Peter Cornell"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

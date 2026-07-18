@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Valencia — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/1124-especial-escena-alternativa-de-valencia.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyH-J6tg4eD_c4TloE9dFpRUZKz8Dqa4oPUXM3r7XRT4zuTQCFbcj24Gk0ry9-pdo6y49tIjj5bpPjjHgNlhpy32UTP9QvXx7z17VNTKJkCHDS-dXian4qIiAwmQLqvS-9Uko4sc95uLYfsOxrsaXFfS_4nDFzaBQM0JR8XhiYaC110UZ7V78HpcruQM4/s320/b90_Valencia.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyH-J6tg4eD_c4TloE9dFpRUZKz8Dqa4oPUXM3r7XRT4zuTQCFbcj24Gk0ry9-pdo6y49tIjj5bpPjjHgNlhpy32UTP9QvXx7z17VNTKJkCHDS-dXian4qIiAwmQLqvS-9Uko4sc95uLYfsOxrsaXFfS_4nDFzaBQM0JR8XhiYaC110UZ7V78HpcruQM4/s160/b90_Valencia.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyH-J6tg4eD_c4TloE9dFpRUZKz8Dqa4oPUXM3r7XRT4zuTQCFbcj24Gk0ry9-pdo6y49tIjj5bpPjjHgNlhpy32UTP9QvXx7z17VNTKJkCHDS-dXian4qIiAwmQLqvS-9Uko4sc95uLYfsOxrsaXFfS_4nDFzaBQM0JR8XhiYaC110UZ7V78HpcruQM4/s320/b90_Valencia.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyH-J6tg4eD_c4TloE9dFpRUZKz8Dqa4oPUXM3r7XRT4zuTQCFbcj24Gk0ry9-pdo6y49tIjj5bpPjjHgNlhpy32UTP9QvXx7z17VNTKJkCHDS-dXian4qIiAwmQLqvS-9Uko4sc95uLYfsOxrsaXFfS_4nDFzaBQM0JR8XhiYaC110UZ7V78HpcruQM4/s480/b90_Valencia.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyH-J6tg4eD_c4TloE9dFpRUZKz8Dqa4oPUXM3r7XRT4zuTQCFbcj24Gk0ry9-pdo6y49tIjj5bpPjjHgNlhpy32UTP9QvXx7z17VNTKJkCHDS-dXian4qIiAwmQLqvS-9Uko4sc95uLYfsOxrsaXFfS_4nDFzaBQM0JR8XhiYaC110UZ7V78HpcruQM4/s160/b90_Valencia.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyH-J6tg4eD_c4TloE9dFpRUZKz8Dqa4oPUXM3r7XRT4zuTQCFbcj24Gk0ry9-pdo6y49tIjj5bpPjjHgNlhpy32UTP9QvXx7z17VNTKJkCHDS-dXian4qIiAwmQLqvS-9Uko4sc95uLYfsOxrsaXFfS_4nDFzaBQM0JR8XhiYaC110UZ7V78HpcruQM4/s320/b90_Valencia.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyH-J6tg4eD_c4TloE9dFpRUZKz8Dqa4oPUXM3r7XRT4zuTQCFbcj24Gk0ry9-pdo6y49tIjj5bpPjjHgNlhpy32UTP9QvXx7z17VNTKJkCHDS-dXian4qIiAwmQLqvS-9Uko4sc95uLYfsOxrsaXFfS_4nDFzaBQM0JR8XhiYaC110UZ7V78HpcruQM4/s480/b90_Valencia.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1124 - Especial escena alternativa de Valencia"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/1122-programa-en-directo-desde-valencia-el-proximo-16-de-mayo.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgak4COo_akbc2NTBIli7cO9JBiLzztkOtucEFIGgdGcOX_H4gMiKcK6xIAaG8w_37KBRBVxg9s9h8Sj9PY-maK3uk4Kww7ro73UY41nEPH_Yyut7n1UIGD9tuNWNxjTEg7UclZ5LplFo1fX6cHHLCK315Pn0k8bbSyvu85PKQPElnN29bN2VUxWrrI-lI/s320/image.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgak4COo_akbc2NTBIli7cO9JBiLzztkOtucEFIGgdGcOX_H4gMiKcK6xIAaG8w_37KBRBVxg9s9h8Sj9PY-maK3uk4Kww7ro73UY41nEPH_Yyut7n1UIGD9tuNWNxjTEg7UclZ5LplFo1fX6cHHLCK315Pn0k8bbSyvu85PKQPElnN29bN2VUxWrrI-lI/s160/image.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgak4COo_akbc2NTBIli7cO9JBiLzztkOtucEFIGgdGcOX_H4gMiKcK6xIAaG8w_37KBRBVxg9s9h8Sj9PY-maK3uk4Kww7ro73UY41nEPH_Yyut7n1UIGD9tuNWNxjTEg7UclZ5LplFo1fX6cHHLCK315Pn0k8bbSyvu85PKQPElnN29bN2VUxWrrI-lI/s320/image.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgak4COo_akbc2NTBIli7cO9JBiLzztkOtucEFIGgdGcOX_H4gMiKcK6xIAaG8w_37KBRBVxg9s9h8Sj9PY-maK3uk4Kww7ro73UY41nEPH_Yyut7n1UIGD9tuNWNxjTEg7UclZ5LplFo1fX6cHHLCK315Pn0k8bbSyvu85PKQPElnN29bN2VUxWrrI-lI/s480/image.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgak4COo_akbc2NTBIli7cO9JBiLzztkOtucEFIGgdGcOX_H4gMiKcK6xIAaG8w_37KBRBVxg9s9h8Sj9PY-maK3uk4Kww7ro73UY41nEPH_Yyut7n1UIGD9tuNWNxjTEg7UclZ5LplFo1fX6cHHLCK315Pn0k8bbSyvu85PKQPElnN29bN2VUxWrrI-lI/s160/image.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgak4COo_akbc2NTBIli7cO9JBiLzztkOtucEFIGgdGcOX_H4gMiKcK6xIAaG8w_37KBRBVxg9s9h8Sj9PY-maK3uk4Kww7ro73UY41nEPH_Yyut7n1UIGD9tuNWNxjTEg7UclZ5LplFo1fX6cHHLCK315Pn0k8bbSyvu85PKQPElnN29bN2VUxWrrI-lI/s320/image.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgak4COo_akbc2NTBIli7cO9JBiLzztkOtucEFIGgdGcOX_H4gMiKcK6xIAaG8w_37KBRBVxg9s9h8Sj9PY-maK3uk4Kww7ro73UY41nEPH_Yyut7n1UIGD9tuNWNxjTEg7UclZ5LplFo1fX6cHHLCK315Pn0k8bbSyvu85PKQPElnN29bN2VUxWrrI-lI/s480/image.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="1122 - Programa en directo desde Valencia el próximo 16 de mayo"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/p-575-road-trip-podcast-en-busca-de-mark-lanegan-primera-parte.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjasKNiaf_C6sPDXAZkohZ-nHDePZ0C-kK_r2NDvEf9z6wWJQAZAPVh6rkMFaoX7UoOpYreMnQPMkHgE0L-ecKAE3zxCSpqPSGhm-I3JVAwc6r6AWU-Zs6VY8IEyZtrc1XewHDuXTtsVkA/s320/b90_575.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjasKNiaf_C6sPDXAZkohZ-nHDePZ0C-kK_r2NDvEf9z6wWJQAZAPVh6rkMFaoX7UoOpYreMnQPMkHgE0L-ecKAE3zxCSpqPSGhm-I3JVAwc6r6AWU-Zs6VY8IEyZtrc1XewHDuXTtsVkA/s160/b90_575.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjasKNiaf_C6sPDXAZkohZ-nHDePZ0C-kK_r2NDvEf9z6wWJQAZAPVh6rkMFaoX7UoOpYreMnQPMkHgE0L-ecKAE3zxCSpqPSGhm-I3JVAwc6r6AWU-Zs6VY8IEyZtrc1XewHDuXTtsVkA/s320/b90_575.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjasKNiaf_C6sPDXAZkohZ-nHDePZ0C-kK_r2NDvEf9z6wWJQAZAPVh6rkMFaoX7UoOpYreMnQPMkHgE0L-ecKAE3zxCSpqPSGhm-I3JVAwc6r6AWU-Zs6VY8IEyZtrc1XewHDuXTtsVkA/s480/b90_575.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjasKNiaf_C6sPDXAZkohZ-nHDePZ0C-kK_r2NDvEf9z6wWJQAZAPVh6rkMFaoX7UoOpYreMnQPMkHgE0L-ecKAE3zxCSpqPSGhm-I3JVAwc6r6AWU-Zs6VY8IEyZtrc1XewHDuXTtsVkA/s160/b90_575.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjasKNiaf_C6sPDXAZkohZ-nHDePZ0C-kK_r2NDvEf9z6wWJQAZAPVh6rkMFaoX7UoOpYreMnQPMkHgE0L-ecKAE3zxCSpqPSGhm-I3JVAwc6r6AWU-Zs6VY8IEyZtrc1XewHDuXTtsVkA/s320/b90_575.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjasKNiaf_C6sPDXAZkohZ-nHDePZ0C-kK_r2NDvEf9z6wWJQAZAPVh6rkMFaoX7UoOpYreMnQPMkHgE0L-ecKAE3zxCSpqPSGhm-I3JVAwc6r6AWU-Zs6VY8IEyZtrc1XewHDuXTtsVkA/s480/b90_575.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="P. 575 - Road Trip Podcast &quot;En busca de Mark Lanegan&quot; (Primera parte)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-291-nirvana-visita-espana-1992.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s320/nirvana_35a_7a.jpeg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s160/nirvana_35a_7a.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s320/nirvana_35a_7a.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s480/nirvana_35a_7a.jpeg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s160/nirvana_35a_7a.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s320/nirvana_35a_7a.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyx2nTzroNdeEzOCl-W3XkrT4AXDLeLKz0u24UzfqFAU8V-CM5kMXjpEG7MyBB3czWXJSr67sPq3J9w7CwFQYRGcYm1DpZcXUfsrdmZKB8NDNlH1L6uOWJkYV8tEMAsXfeR4sqqFEOjEY/s480/nirvana_35a_7a.jpeg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 291 - Nirvana visita España 1992"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-148-metropol-sorry-all-over-the-place.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s160/420962_355957767755206_243875636_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s320/420962_355957767755206_243875636_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhbDu3OLx8XvTuCxlap7Hlf3TRCx0Jj9txM3D-10xobC9jWd_kpQXIKAODjfsVwt9KoqLeEFWulSemEJMDLSE1dPmclenNfQyN1LxyNKCUq3Uo2QoUOfoeUBG4LR1AgjGwi0oG7qg6R3c/s480/420962_355957767755206_243875636_n.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 148 - Metropol &quot;Sorry all over the place&quot;"
                 loading="lazy" width="320" height="213" />
         </a>

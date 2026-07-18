@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 339 - Metallica (Wizink Center - Madrid 3 febrero 2018) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s320/fotonoticia_20170316103002_800.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s160/fotonoticia_20170316103002_800.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s320/fotonoticia_20170316103002_800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s480/fotonoticia_20170316103002_800.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s160/fotonoticia_20170316103002_800.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s320/fotonoticia_20170316103002_800.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwkc4b1NVdHmsI6CqjJ4-M7x5q_v1WnhyphenhyphenOhUhySS6cSmSDTBGQ9lGRtTquUWTS22ClW6hZUvIDt7Bt5uxqPW8MOhGbnxJ57iTUmVYhkSIdvZWrEs-8OuztU_eaxMCytS28OA_wT3uNa8/s480/fotonoticia_20170316103002_800.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 354 - Metallica en España (2018)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAo7GC8MrjNAssxIRq0TgGKWvnmItbAFPyTjiyNp7DcXHWgRcCYGAyzReqSyyqBhzoRAMM8uhOUT_skPFJA8n73AQGviTRK7JJP6AdYxhBho9cbwjN5bjei_La1Lcz-BRRstCgASGoJW8/s320/metallica-96.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAo7GC8MrjNAssxIRq0TgGKWvnmItbAFPyTjiyNp7DcXHWgRcCYGAyzReqSyyqBhzoRAMM8uhOUT_skPFJA8n73AQGviTRK7JJP6AdYxhBho9cbwjN5bjei_La1Lcz-BRRstCgASGoJW8/s160/metallica-96.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAo7GC8MrjNAssxIRq0TgGKWvnmItbAFPyTjiyNp7DcXHWgRcCYGAyzReqSyyqBhzoRAMM8uhOUT_skPFJA8n73AQGviTRK7JJP6AdYxhBho9cbwjN5bjei_La1Lcz-BRRstCgASGoJW8/s320/metallica-96.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAo7GC8MrjNAssxIRq0TgGKWvnmItbAFPyTjiyNp7DcXHWgRcCYGAyzReqSyyqBhzoRAMM8uhOUT_skPFJA8n73AQGviTRK7JJP6AdYxhBho9cbwjN5bjei_La1Lcz-BRRstCgASGoJW8/s480/metallica-96.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAo7GC8MrjNAssxIRq0TgGKWvnmItbAFPyTjiyNp7DcXHWgRcCYGAyzReqSyyqBhzoRAMM8uhOUT_skPFJA8n73AQGviTRK7JJP6AdYxhBho9cbwjN5bjei_La1Lcz-BRRstCgASGoJW8/s160/metallica-96.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAo7GC8MrjNAssxIRq0TgGKWvnmItbAFPyTjiyNp7DcXHWgRcCYGAyzReqSyyqBhzoRAMM8uhOUT_skPFJA8n73AQGviTRK7JJP6AdYxhBho9cbwjN5bjei_La1Lcz-BRRstCgASGoJW8/s320/metallica-96.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAo7GC8MrjNAssxIRq0TgGKWvnmItbAFPyTjiyNp7DcXHWgRcCYGAyzReqSyyqBhzoRAMM8uhOUT_skPFJA8n73AQGviTRK7JJP6AdYxhBho9cbwjN5bjei_La1Lcz-BRRstCgASGoJW8/s480/metallica-96.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 335 - Metallica en los 90"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s320/b90P333.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s160/b90P333.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s320/b90P333.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s480/b90P333.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s160/b90P333.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s320/b90P333.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinfPHk-Lxgl9MpRBpta5Mwc_sFfM2plPs4f152f2QcdrWdd2tIccbyub3-rPggCZnGB30FakuSzz5aOkP5MlmoJX1zvDfkrgWd1qkkkfMdy628vcgmlVcCc8fYgJzYF84PxX1ZyVLiZvo/s480/b90P333.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 333 - Crónica NEW DAY (Madrid 6 enero 2018) "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="programa-348-nada-surf-teatro-barcelo-madrid-feb-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s320/Screenshot_20180228-202853.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s320/Screenshot_20180228-202853.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s480/Screenshot_20180228-202853.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s640/Screenshot_20180228-202853.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s320/Screenshot_20180228-202853.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s480/Screenshot_20180228-202853.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpi6ywv8g2p9DbNNIcQcJIBOmv9rg9Wa9WBrz2Rko9EOFA_2uEIpbV9hna1qLEUxUDN9QWpmvvn93_iVx1AlojeLHm-V6-YQZ4QJnoBqZ4fjuAVh5ekYfZdO_XQhwhddJl9NxksJO0_Co/s640/Screenshot_20180228-202853.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 348 - Nada Surf - Teatro Barceló (Madrid Feb 2018)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="programa-363-jack-white-live-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilZcgzU6P56Qq4h3c-b5r65KztcOMRTUI9aR7_H6f0OA2YSYFhngHMrga7-AJeRwEvne_AxCmEoAqgKXj_oSELmlxOHJJ68dcNg2xUJZ3Q_a2vHenyxXAa6cX1sin5rtu2imnWys4rBrM/s320/maxresdefault.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilZcgzU6P56Qq4h3c-b5r65KztcOMRTUI9aR7_H6f0OA2YSYFhngHMrga7-AJeRwEvne_AxCmEoAqgKXj_oSELmlxOHJJ68dcNg2xUJZ3Q_a2vHenyxXAa6cX1sin5rtu2imnWys4rBrM/s320/maxresdefault.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilZcgzU6P56Qq4h3c-b5r65KztcOMRTUI9aR7_H6f0OA2YSYFhngHMrga7-AJeRwEvne_AxCmEoAqgKXj_oSELmlxOHJJ68dcNg2xUJZ3Q_a2vHenyxXAa6cX1sin5rtu2imnWys4rBrM/s480/maxresdefault.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilZcgzU6P56Qq4h3c-b5r65KztcOMRTUI9aR7_H6f0OA2YSYFhngHMrga7-AJeRwEvne_AxCmEoAqgKXj_oSELmlxOHJJ68dcNg2xUJZ3Q_a2vHenyxXAa6cX1sin5rtu2imnWys4rBrM/s640/maxresdefault.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilZcgzU6P56Qq4h3c-b5r65KztcOMRTUI9aR7_H6f0OA2YSYFhngHMrga7-AJeRwEvne_AxCmEoAqgKXj_oSELmlxOHJJ68dcNg2xUJZ3Q_a2vHenyxXAa6cX1sin5rtu2imnWys4rBrM/s320/maxresdefault.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilZcgzU6P56Qq4h3c-b5r65KztcOMRTUI9aR7_H6f0OA2YSYFhngHMrga7-AJeRwEvne_AxCmEoAqgKXj_oSELmlxOHJJ68dcNg2xUJZ3Q_a2vHenyxXAa6cX1sin5rtu2imnWys4rBrM/s480/maxresdefault.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilZcgzU6P56Qq4h3c-b5r65KztcOMRTUI9aR7_H6f0OA2YSYFhngHMrga7-AJeRwEvne_AxCmEoAqgKXj_oSELmlxOHJJ68dcNg2xUJZ3Q_a2vHenyxXAa6cX1sin5rtu2imnWys4rBrM/s640/maxresdefault.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 363 - Jack White live 2018 "
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="programa-412-pearl-jam-en-espana-2018.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s320/PearlJam-MadCool18-Thurs-DB-9570.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s320/PearlJam-MadCool18-Thurs-DB-9570.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s480/PearlJam-MadCool18-Thurs-DB-9570.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s640/PearlJam-MadCool18-Thurs-DB-9570.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s320/PearlJam-MadCool18-Thurs-DB-9570.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s480/PearlJam-MadCool18-Thurs-DB-9570.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s640/PearlJam-MadCool18-Thurs-DB-9570.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 412 - Pearl Jam en España (2018)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

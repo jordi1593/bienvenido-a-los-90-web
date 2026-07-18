@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.948 - De Radiohead a The Smile — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -131,8 +131,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8sjPBgKyd1-m57G3bjqMGEEwR5sfGhM1jpFev1S-9mxQQrfw4B44nDlj5-lUFBbjnFQ2W_Z2S0nHYwK5uR26lMp5_xqN8p8HQ9zxOg2cfkqJWrX6_yYHIisvOKoyYr9dH5BkpATBxSZZLtphC7zLpGkphlD0Cxgbxzk9za5UBB2edk1brQ63T8F1M/s320/The%20Smile%20-%20A%20Light%20For%20Attracting%20Attention.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8sjPBgKyd1-m57G3bjqMGEEwR5sfGhM1jpFev1S-9mxQQrfw4B44nDlj5-lUFBbjnFQ2W_Z2S0nHYwK5uR26lMp5_xqN8p8HQ9zxOg2cfkqJWrX6_yYHIisvOKoyYr9dH5BkpATBxSZZLtphC7zLpGkphlD0Cxgbxzk9za5UBB2edk1brQ63T8F1M/s160/The%20Smile%20-%20A%20Light%20For%20Attracting%20Attention.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8sjPBgKyd1-m57G3bjqMGEEwR5sfGhM1jpFev1S-9mxQQrfw4B44nDlj5-lUFBbjnFQ2W_Z2S0nHYwK5uR26lMp5_xqN8p8HQ9zxOg2cfkqJWrX6_yYHIisvOKoyYr9dH5BkpATBxSZZLtphC7zLpGkphlD0Cxgbxzk9za5UBB2edk1brQ63T8F1M/s320/The%20Smile%20-%20A%20Light%20For%20Attracting%20Attention.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8sjPBgKyd1-m57G3bjqMGEEwR5sfGhM1jpFev1S-9mxQQrfw4B44nDlj5-lUFBbjnFQ2W_Z2S0nHYwK5uR26lMp5_xqN8p8HQ9zxOg2cfkqJWrX6_yYHIisvOKoyYr9dH5BkpATBxSZZLtphC7zLpGkphlD0Cxgbxzk9za5UBB2edk1brQ63T8F1M/s480/The%20Smile%20-%20A%20Light%20For%20Attracting%20Attention.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8sjPBgKyd1-m57G3bjqMGEEwR5sfGhM1jpFev1S-9mxQQrfw4B44nDlj5-lUFBbjnFQ2W_Z2S0nHYwK5uR26lMp5_xqN8p8HQ9zxOg2cfkqJWrX6_yYHIisvOKoyYr9dH5BkpATBxSZZLtphC7zLpGkphlD0Cxgbxzk9za5UBB2edk1brQ63T8F1M/s160/The%20Smile%20-%20A%20Light%20For%20Attracting%20Attention.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8sjPBgKyd1-m57G3bjqMGEEwR5sfGhM1jpFev1S-9mxQQrfw4B44nDlj5-lUFBbjnFQ2W_Z2S0nHYwK5uR26lMp5_xqN8p8HQ9zxOg2cfkqJWrX6_yYHIisvOKoyYr9dH5BkpATBxSZZLtphC7zLpGkphlD0Cxgbxzk9za5UBB2edk1brQ63T8F1M/s320/The%20Smile%20-%20A%20Light%20For%20Attracting%20Attention.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8sjPBgKyd1-m57G3bjqMGEEwR5sfGhM1jpFev1S-9mxQQrfw4B44nDlj5-lUFBbjnFQ2W_Z2S0nHYwK5uR26lMp5_xqN8p8HQ9zxOg2cfkqJWrX6_yYHIisvOKoyYr9dH5BkpATBxSZZLtphC7zLpGkphlD0Cxgbxzk9za5UBB2edk1brQ63T8F1M/s480/The%20Smile%20-%20A%20Light%20For%20Attracting%20Attention.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 Classic 21: The Smile - A Light For Attracting Attention (2022)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -142,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVvYQU0movi28OoY-jQHHPrLlTxc9Qe8zcuXZoslp2VXcxHBrm86alutq6pz-J0ARLFyrDwdP-sCNT5MNLIVq63wn4m42638lVQO6QE0tBF79sFH7pn2EzImK5uFTjzWhm4KXcmprxzKI/s320/the-smile-thom-yorke.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVvYQU0movi28OoY-jQHHPrLlTxc9Qe8zcuXZoslp2VXcxHBrm86alutq6pz-J0ARLFyrDwdP-sCNT5MNLIVq63wn4m42638lVQO6QE0tBF79sFH7pn2EzImK5uFTjzWhm4KXcmprxzKI/s160/the-smile-thom-yorke.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVvYQU0movi28OoY-jQHHPrLlTxc9Qe8zcuXZoslp2VXcxHBrm86alutq6pz-J0ARLFyrDwdP-sCNT5MNLIVq63wn4m42638lVQO6QE0tBF79sFH7pn2EzImK5uFTjzWhm4KXcmprxzKI/s320/the-smile-thom-yorke.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVvYQU0movi28OoY-jQHHPrLlTxc9Qe8zcuXZoslp2VXcxHBrm86alutq6pz-J0ARLFyrDwdP-sCNT5MNLIVq63wn4m42638lVQO6QE0tBF79sFH7pn2EzImK5uFTjzWhm4KXcmprxzKI/s480/the-smile-thom-yorke.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVvYQU0movi28OoY-jQHHPrLlTxc9Qe8zcuXZoslp2VXcxHBrm86alutq6pz-J0ARLFyrDwdP-sCNT5MNLIVq63wn4m42638lVQO6QE0tBF79sFH7pn2EzImK5uFTjzWhm4KXcmprxzKI/s160/the-smile-thom-yorke.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVvYQU0movi28OoY-jQHHPrLlTxc9Qe8zcuXZoslp2VXcxHBrm86alutq6pz-J0ARLFyrDwdP-sCNT5MNLIVq63wn4m42638lVQO6QE0tBF79sFH7pn2EzImK5uFTjzWhm4KXcmprxzKI/s320/the-smile-thom-yorke.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVvYQU0movi28OoY-jQHHPrLlTxc9Qe8zcuXZoslp2VXcxHBrm86alutq6pz-J0ARLFyrDwdP-sCNT5MNLIVq63wn4m42638lVQO6QE0tBF79sFH7pn2EzImK5uFTjzWhm4KXcmprxzKI/s480/the-smile-thom-yorke.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.771 - The Smile (Thom Yorke y Jonny Grennwood)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -153,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNrK7HdlAjIHaM3-KP0veyGf2AiZZwG17DLCRnbEfSGy5KgROEBm8NuxXv-Dw8tc8knc7k1gyJ5UOPxqVE3HEH0k1wtM5v0bLMsq9ayUiKfQ1b1ITxU47ss9tVdqrhUtS9lWxsNELfxINDg_n3-9BwWaQcdahJU8amBEe8MinvK3u1T3L4rLJ315INtRk/s320/Imagen%20de%20WhatsApp%202025-03-12%20a%20las%2013.20.46_c1c6d3da.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNrK7HdlAjIHaM3-KP0veyGf2AiZZwG17DLCRnbEfSGy5KgROEBm8NuxXv-Dw8tc8knc7k1gyJ5UOPxqVE3HEH0k1wtM5v0bLMsq9ayUiKfQ1b1ITxU47ss9tVdqrhUtS9lWxsNELfxINDg_n3-9BwWaQcdahJU8amBEe8MinvK3u1T3L4rLJ315INtRk/s160/Imagen%20de%20WhatsApp%202025-03-12%20a%20las%2013.20.46_c1c6d3da.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNrK7HdlAjIHaM3-KP0veyGf2AiZZwG17DLCRnbEfSGy5KgROEBm8NuxXv-Dw8tc8knc7k1gyJ5UOPxqVE3HEH0k1wtM5v0bLMsq9ayUiKfQ1b1ITxU47ss9tVdqrhUtS9lWxsNELfxINDg_n3-9BwWaQcdahJU8amBEe8MinvK3u1T3L4rLJ315INtRk/s320/Imagen%20de%20WhatsApp%202025-03-12%20a%20las%2013.20.46_c1c6d3da.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNrK7HdlAjIHaM3-KP0veyGf2AiZZwG17DLCRnbEfSGy5KgROEBm8NuxXv-Dw8tc8knc7k1gyJ5UOPxqVE3HEH0k1wtM5v0bLMsq9ayUiKfQ1b1ITxU47ss9tVdqrhUtS9lWxsNELfxINDg_n3-9BwWaQcdahJU8amBEe8MinvK3u1T3L4rLJ315INtRk/s480/Imagen%20de%20WhatsApp%202025-03-12%20a%20las%2013.20.46_c1c6d3da.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNrK7HdlAjIHaM3-KP0veyGf2AiZZwG17DLCRnbEfSGy5KgROEBm8NuxXv-Dw8tc8knc7k1gyJ5UOPxqVE3HEH0k1wtM5v0bLMsq9ayUiKfQ1b1ITxU47ss9tVdqrhUtS9lWxsNELfxINDg_n3-9BwWaQcdahJU8amBEe8MinvK3u1T3L4rLJ315INtRk/s160/Imagen%20de%20WhatsApp%202025-03-12%20a%20las%2013.20.46_c1c6d3da.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNrK7HdlAjIHaM3-KP0veyGf2AiZZwG17DLCRnbEfSGy5KgROEBm8NuxXv-Dw8tc8knc7k1gyJ5UOPxqVE3HEH0k1wtM5v0bLMsq9ayUiKfQ1b1ITxU47ss9tVdqrhUtS9lWxsNELfxINDg_n3-9BwWaQcdahJU8amBEe8MinvK3u1T3L4rLJ315INtRk/s320/Imagen%20de%20WhatsApp%202025-03-12%20a%20las%2013.20.46_c1c6d3da.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNrK7HdlAjIHaM3-KP0veyGf2AiZZwG17DLCRnbEfSGy5KgROEBm8NuxXv-Dw8tc8knc7k1gyJ5UOPxqVE3HEH0k1wtM5v0bLMsq9ayUiKfQ1b1ITxU47ss9tVdqrhUtS9lWxsNELfxINDg_n3-9BwWaQcdahJU8amBEe8MinvK3u1T3L4rLJ315INtRk/s480/Imagen%20de%20WhatsApp%202025-03-12%20a%20las%2013.20.46_c1c6d3da.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1035 - Especial RADIOHEAD en directo desde Madrid"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -170,8 +167,7 @@
         <a class="related-bottom-card" href="b90-classic-17-asi-suenan-the-smile-en-directo.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c"
-                  srcset="https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c 320w, https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c 480w, https://blogger.googleusercontent.com/img/a/AVvXsEgb2EX75drxXqXGfgt6CT_KG5kn0_UaP8CmfbvG40LMEk0SJYvR6QESWvBXDskg_-451TvvamE7hIWoCXAhyS0cDSErLqebhijRiGRYmgd7zmsIhXkELtyRL9ORvXKqKFZViUMluhbpcSDZzorDkObvy99jV7ji8hhonc_fbRxR4MCDOYbxhdOCruz6=s72-c 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="B90 Classic 17: Así suenan THE SMILE en directo"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -182,8 +178,7 @@
           </a><a class="related-bottom-card" href="p-646-radiohead-especial-the-bends.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s320/71VJAU9IPSL._SY355_.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s320/71VJAU9IPSL._SY355_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s480/71VJAU9IPSL._SY355_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s640/71VJAU9IPSL._SY355_.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s320/71VJAU9IPSL._SY355_.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s480/71VJAU9IPSL._SY355_.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBKwhazQsvJC1fnMVZ4TaNjbka2p1f1PIF9KqnMyLqTN_Ug7qjwAaTYopdWDnyocwVrvLwOtkrxEt5EhR3Is3_cLAuLkoLGIg-zzUL9BrJofUAbrWtFpUqB3HJHbtyma45hv_A4UnRdJk/s640/71VJAU9IPSL._SY355_.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.646 - Radiohead, especial The Bends"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -194,8 +189,7 @@
           </a><a class="related-bottom-card" href="1081-radiohead-se-reinician-en-madrid.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpyxuc3Eaj-ufmSzpVZwsvzkkgMwoMOPVzPrZeLmhTZTLJRDIeSt6nLL5q3wefQ3kwwIoqP4_6mN1x-8ldIcUN2JIwD_GIECmbxxxgTeLY8VA_UfqfLpI_pl1syE3UNGLGooFG_Yu9xV0YXmraYcoj7w7umSLysFfR5QwqNvLCe4NRi7yIaMQRLHNGIOU/s320/B90_1081.png"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpyxuc3Eaj-ufmSzpVZwsvzkkgMwoMOPVzPrZeLmhTZTLJRDIeSt6nLL5q3wefQ3kwwIoqP4_6mN1x-8ldIcUN2JIwD_GIECmbxxxgTeLY8VA_UfqfLpI_pl1syE3UNGLGooFG_Yu9xV0YXmraYcoj7w7umSLysFfR5QwqNvLCe4NRi7yIaMQRLHNGIOU/s320/B90_1081.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpyxuc3Eaj-ufmSzpVZwsvzkkgMwoMOPVzPrZeLmhTZTLJRDIeSt6nLL5q3wefQ3kwwIoqP4_6mN1x-8ldIcUN2JIwD_GIECmbxxxgTeLY8VA_UfqfLpI_pl1syE3UNGLGooFG_Yu9xV0YXmraYcoj7w7umSLysFfR5QwqNvLCe4NRi7yIaMQRLHNGIOU/s480/B90_1081.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpyxuc3Eaj-ufmSzpVZwsvzkkgMwoMOPVzPrZeLmhTZTLJRDIeSt6nLL5q3wefQ3kwwIoqP4_6mN1x-8ldIcUN2JIwD_GIECmbxxxgTeLY8VA_UfqfLpI_pl1syE3UNGLGooFG_Yu9xV0YXmraYcoj7w7umSLysFfR5QwqNvLCe4NRi7yIaMQRLHNGIOU/s640/B90_1081.png 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpyxuc3Eaj-ufmSzpVZwsvzkkgMwoMOPVzPrZeLmhTZTLJRDIeSt6nLL5q3wefQ3kwwIoqP4_6mN1x-8ldIcUN2JIwD_GIECmbxxxgTeLY8VA_UfqfLpI_pl1syE3UNGLGooFG_Yu9xV0YXmraYcoj7w7umSLysFfR5QwqNvLCe4NRi7yIaMQRLHNGIOU/s320/B90_1081.png 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpyxuc3Eaj-ufmSzpVZwsvzkkgMwoMOPVzPrZeLmhTZTLJRDIeSt6nLL5q3wefQ3kwwIoqP4_6mN1x-8ldIcUN2JIwD_GIECmbxxxgTeLY8VA_UfqfLpI_pl1syE3UNGLGooFG_Yu9xV0YXmraYcoj7w7umSLysFfR5QwqNvLCe4NRi7yIaMQRLHNGIOU/s480/B90_1081.png 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpyxuc3Eaj-ufmSzpVZwsvzkkgMwoMOPVzPrZeLmhTZTLJRDIeSt6nLL5q3wefQ3kwwIoqP4_6mN1x-8ldIcUN2JIwD_GIECmbxxxgTeLY8VA_UfqfLpI_pl1syE3UNGLGooFG_Yu9xV0YXmraYcoj7w7umSLysFfR5QwqNvLCe4NRi7yIaMQRLHNGIOU/s640/B90_1081.png 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="1081 - Radiohead se reinician en Madrid"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 558: MUNTZ en GRUTA 77 (28/06/2019) — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -131,8 +131,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj4LcWTgAB6A03WSld33qwEzjKaKQRlQrgYO_1-3qRAIvCdlF5TJWkesnis0gxGx3TRdJfSBgwuCkesNgvtXg2u2MJm6bIJlh0AoGu7CePPmxld48r8M98fIAZVUxVkioBy335whFBfG8/s320/TWIN+HANDS+WTF+MUSIC+PARTY+PORTADA.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj4LcWTgAB6A03WSld33qwEzjKaKQRlQrgYO_1-3qRAIvCdlF5TJWkesnis0gxGx3TRdJfSBgwuCkesNgvtXg2u2MJm6bIJlh0AoGu7CePPmxld48r8M98fIAZVUxVkioBy335whFBfG8/s160/TWIN+HANDS+WTF+MUSIC+PARTY+PORTADA.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj4LcWTgAB6A03WSld33qwEzjKaKQRlQrgYO_1-3qRAIvCdlF5TJWkesnis0gxGx3TRdJfSBgwuCkesNgvtXg2u2MJm6bIJlh0AoGu7CePPmxld48r8M98fIAZVUxVkioBy335whFBfG8/s320/TWIN+HANDS+WTF+MUSIC+PARTY+PORTADA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj4LcWTgAB6A03WSld33qwEzjKaKQRlQrgYO_1-3qRAIvCdlF5TJWkesnis0gxGx3TRdJfSBgwuCkesNgvtXg2u2MJm6bIJlh0AoGu7CePPmxld48r8M98fIAZVUxVkioBy335whFBfG8/s480/TWIN+HANDS+WTF+MUSIC+PARTY+PORTADA.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj4LcWTgAB6A03WSld33qwEzjKaKQRlQrgYO_1-3qRAIvCdlF5TJWkesnis0gxGx3TRdJfSBgwuCkesNgvtXg2u2MJm6bIJlh0AoGu7CePPmxld48r8M98fIAZVUxVkioBy335whFBfG8/s160/TWIN+HANDS+WTF+MUSIC+PARTY+PORTADA.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj4LcWTgAB6A03WSld33qwEzjKaKQRlQrgYO_1-3qRAIvCdlF5TJWkesnis0gxGx3TRdJfSBgwuCkesNgvtXg2u2MJm6bIJlh0AoGu7CePPmxld48r8M98fIAZVUxVkioBy335whFBfG8/s320/TWIN+HANDS+WTF+MUSIC+PARTY+PORTADA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj4LcWTgAB6A03WSld33qwEzjKaKQRlQrgYO_1-3qRAIvCdlF5TJWkesnis0gxGx3TRdJfSBgwuCkesNgvtXg2u2MJm6bIJlh0AoGu7CePPmxld48r8M98fIAZVUxVkioBy335whFBfG8/s480/TWIN+HANDS+WTF+MUSIC+PARTY+PORTADA.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 557: TWIN HANDS en GRUTA 77 (28/06/2019)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -142,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s320/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s160/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s320/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s480/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s160/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s320/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir3Ji70qqvsnxoMXaLf4MNO7iEmmOZ4ZMDRERydRFNHBb20dK1wo5CoD7p73rtk0C21LkhFihG78c-DRNZbJ2MFEHwXRYjAUy15E8Iv6HApuyIRvhh87najxbEfKoiHgXOjHM8G5fxB-s/s480/VERONICA+WTF+MUSIC+PARTY+PORTADA.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 556: VERONICA UNDERLUXE en GRUTA 77 (28/06/2019)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -153,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s320/542B+Vedder.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s160/542B+Vedder.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s320/542B+Vedder.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s480/542B+Vedder.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s160/542B+Vedder.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s320/542B+Vedder.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk4zgObofDLUsj07LGAfouzhw9lAccSCs_9kY-E_9h7tVj4BDE2Swm-uAgZAV5AhYuTqoG0GcuEniewn-9nTZ5LOqdG1SIQ5ZnTMDVC0URrXIzotd9itWyE7Y41_8-qDOXSd-KbU71kQQ/s480/542B+Vedder.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 542 - Eddie Vedder Madrid 2019"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -170,8 +167,7 @@
         <a class="related-bottom-card" href="programa-508-pasajero-en-directo-el-sol-14-02-2019.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s320/b90_508.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s320/b90_508.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s480/b90_508.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s640/b90_508.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s320/b90_508.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s480/b90_508.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Dja6BXOCe1li-6XegR4LFuVCK0aZOVNiiLjRddKGWdleHtbcoLJLgY-V0uilmEFm0qRLWopGRQXuSHy_Sw6QZuuv1TF4fZRotHHG9kXqzwsCnKN7ZumbzdZ2GYlSCs9OfIc2yMgN9cc/s640/b90_508.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 508 - Pasajero en directo (El Sol 14/02/2019)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -182,8 +178,7 @@
           </a><a class="related-bottom-card" href="programa-552-muse-destroza-en-wanda-metropolitano-26-07-2019.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s480/67728307_10158901432243066_812912656296968192_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s640/67728307_10158901432243066_812912656296968192_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s320/67728307_10158901432243066_812912656296968192_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s480/67728307_10158901432243066_812912656296968192_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj-7S2V49O2B2VmNRb7vcLltQmNaz3s4rQZeHdxc9MKWvwjPIUP8bWsH1SYzsY7m51AQ30Y1-P-Cpg4dNh8sjoW4lBa6ozjzs2cwx0S3WfwtSm10s3hnxWcd6lwX__VAf1AJDBJu-wV-M/s640/67728307_10158901432243066_812912656296968192_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 552 - Muse destroza en Wanda Metropolitano (26/07/2019)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -194,8 +189,7 @@
           </a><a class="related-bottom-card" href="p-578-havalina-en-directo-sala-el-sol-6-11-2019.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s320/572A+Havalina.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s320/572A+Havalina.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s480/572A+Havalina.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s640/572A+Havalina.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s320/572A+Havalina.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s480/572A+Havalina.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7llStFPA39y4rXnR7aB5U17FqDBZVx4-gX3ZIiIB9_gHkUfTtqo5mdeBq4UGK0HQopfR-rT_mqA9R2-FWfRnh4indaZclueoJ2f_YMVI7dpUhBgwGYgCjDJjwPQyqPmA61Taywfqs2w/s640/572A+Havalina.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.578 - Havalina en directo (Sala El Sol 6/11/2019)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

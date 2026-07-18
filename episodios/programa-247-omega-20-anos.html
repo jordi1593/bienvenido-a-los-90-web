@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 247 - OMEGA 20 Años — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -133,8 +133,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg89YSPQey6ZyVqS0-zRUqMeqVYX2T9suH9jt_EPf7RVKa21gppiuFFDcbuQLZwGMmQyTI-n2Izkcck2RJaYPx_qB6kkbC0X5SOjmXGANqszUwa-Q-AgRkxu4myc6S-K0e1GzUZUB76EGY/s320/b90_5temp.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg89YSPQey6ZyVqS0-zRUqMeqVYX2T9suH9jt_EPf7RVKa21gppiuFFDcbuQLZwGMmQyTI-n2Izkcck2RJaYPx_qB6kkbC0X5SOjmXGANqszUwa-Q-AgRkxu4myc6S-K0e1GzUZUB76EGY/s160/b90_5temp.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg89YSPQey6ZyVqS0-zRUqMeqVYX2T9suH9jt_EPf7RVKa21gppiuFFDcbuQLZwGMmQyTI-n2Izkcck2RJaYPx_qB6kkbC0X5SOjmXGANqszUwa-Q-AgRkxu4myc6S-K0e1GzUZUB76EGY/s320/b90_5temp.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg89YSPQey6ZyVqS0-zRUqMeqVYX2T9suH9jt_EPf7RVKa21gppiuFFDcbuQLZwGMmQyTI-n2Izkcck2RJaYPx_qB6kkbC0X5SOjmXGANqszUwa-Q-AgRkxu4myc6S-K0e1GzUZUB76EGY/s480/b90_5temp.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg89YSPQey6ZyVqS0-zRUqMeqVYX2T9suH9jt_EPf7RVKa21gppiuFFDcbuQLZwGMmQyTI-n2Izkcck2RJaYPx_qB6kkbC0X5SOjmXGANqszUwa-Q-AgRkxu4myc6S-K0e1GzUZUB76EGY/s160/b90_5temp.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg89YSPQey6ZyVqS0-zRUqMeqVYX2T9suH9jt_EPf7RVKa21gppiuFFDcbuQLZwGMmQyTI-n2Izkcck2RJaYPx_qB6kkbC0X5SOjmXGANqszUwa-Q-AgRkxu4myc6S-K0e1GzUZUB76EGY/s320/b90_5temp.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg89YSPQey6ZyVqS0-zRUqMeqVYX2T9suH9jt_EPf7RVKa21gppiuFFDcbuQLZwGMmQyTI-n2Izkcck2RJaYPx_qB6kkbC0X5SOjmXGANqszUwa-Q-AgRkxu4myc6S-K0e1GzUZUB76EGY/s480/b90_5temp.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 261 - 5 años de emisiones"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -144,8 +143,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQing3vVIk0TP1rDWj_t_QtYZCOHLECXqaPkV6SYaJVItukGddsG4Ol_s6R_sJv1V1KdYDYPRQ8vtBIaf5gwp8r2UaDlYjG1TzWHvW3KOZoy1ffArI0Qj2TGleHSVbfYhFLTVO0mCoq0U/s320/la-fuerza-los-acompana.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQing3vVIk0TP1rDWj_t_QtYZCOHLECXqaPkV6SYaJVItukGddsG4Ol_s6R_sJv1V1KdYDYPRQ8vtBIaf5gwp8r2UaDlYjG1TzWHvW3KOZoy1ffArI0Qj2TGleHSVbfYhFLTVO0mCoq0U/s160/la-fuerza-los-acompana.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQing3vVIk0TP1rDWj_t_QtYZCOHLECXqaPkV6SYaJVItukGddsG4Ol_s6R_sJv1V1KdYDYPRQ8vtBIaf5gwp8r2UaDlYjG1TzWHvW3KOZoy1ffArI0Qj2TGleHSVbfYhFLTVO0mCoq0U/s320/la-fuerza-los-acompana.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQing3vVIk0TP1rDWj_t_QtYZCOHLECXqaPkV6SYaJVItukGddsG4Ol_s6R_sJv1V1KdYDYPRQ8vtBIaf5gwp8r2UaDlYjG1TzWHvW3KOZoy1ffArI0Qj2TGleHSVbfYhFLTVO0mCoq0U/s480/la-fuerza-los-acompana.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQing3vVIk0TP1rDWj_t_QtYZCOHLECXqaPkV6SYaJVItukGddsG4Ol_s6R_sJv1V1KdYDYPRQ8vtBIaf5gwp8r2UaDlYjG1TzWHvW3KOZoy1ffArI0Qj2TGleHSVbfYhFLTVO0mCoq0U/s160/la-fuerza-los-acompana.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQing3vVIk0TP1rDWj_t_QtYZCOHLECXqaPkV6SYaJVItukGddsG4Ol_s6R_sJv1V1KdYDYPRQ8vtBIaf5gwp8r2UaDlYjG1TzWHvW3KOZoy1ffArI0Qj2TGleHSVbfYhFLTVO0mCoq0U/s320/la-fuerza-los-acompana.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQing3vVIk0TP1rDWj_t_QtYZCOHLECXqaPkV6SYaJVItukGddsG4Ol_s6R_sJv1V1KdYDYPRQ8vtBIaf5gwp8r2UaDlYjG1TzWHvW3KOZoy1ffArI0Qj2TGleHSVbfYhFLTVO0mCoq0U/s480/la-fuerza-los-acompana.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 276 - Star Wars 40 años"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -155,8 +153,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s320/b90_704.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s160/b90_704.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s320/b90_704.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s480/b90_704.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s160/b90_704.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s320/b90_704.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgS8PvOPy-DtSvXaoxhFE-93LjpWpEkPXnY7757VJrG3WxvWOfAjNXDeQ5z6XbAKxDXc6O6KtGxHHIvARflKBGGP_wmS_Pssiolla4xCapMPiFIr6h_bIj3Opln_yfj1Zv6HGJbpz2ORk/s480/b90_704.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.704 - Canciones que vivieron una segunda juventud en los años 90 (Parte 1)"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -172,8 +169,7 @@
         <a class="related-bottom-card" href="programa-248-james-bond-en-los-90.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s320/007.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s320/007.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s480/007.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s640/007.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s320/007.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s480/007.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbB4vD2kmXKPtIa3GJx79LgQXRyDlbmNs3duB1c9tJLMKFILUeMZm-3DsO0HTmQsFR-1UG8KqkCu5-GPjEIMLtU9VoqYD85F65y4H8ZPlYjzDzb1oivkW0KHS1PGyRJ-1b1v9v5-3-U4s/s640/007.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 248 - James Bond en los 90"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -184,8 +180,7 @@
           </a><a class="related-bottom-card" href="programa-250-eterno-leonard-cohen.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPzZc3By5RNLvORbAawGRjF0hzzw-6Z0krEEZJOI-cdwAtKTm4eK6LlVSQ5tU1ufEBW0mOc9scHPj8lxG0ejKAeAWCue5onQ0NuFVgqBg5UyM8-xXvUj9L4VnP3wsnJ9xwRJxGO4dWEUo/s320/140620_tp2kz_cohen_sn635.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPzZc3By5RNLvORbAawGRjF0hzzw-6Z0krEEZJOI-cdwAtKTm4eK6LlVSQ5tU1ufEBW0mOc9scHPj8lxG0ejKAeAWCue5onQ0NuFVgqBg5UyM8-xXvUj9L4VnP3wsnJ9xwRJxGO4dWEUo/s320/140620_tp2kz_cohen_sn635.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPzZc3By5RNLvORbAawGRjF0hzzw-6Z0krEEZJOI-cdwAtKTm4eK6LlVSQ5tU1ufEBW0mOc9scHPj8lxG0ejKAeAWCue5onQ0NuFVgqBg5UyM8-xXvUj9L4VnP3wsnJ9xwRJxGO4dWEUo/s480/140620_tp2kz_cohen_sn635.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPzZc3By5RNLvORbAawGRjF0hzzw-6Z0krEEZJOI-cdwAtKTm4eK6LlVSQ5tU1ufEBW0mOc9scHPj8lxG0ejKAeAWCue5onQ0NuFVgqBg5UyM8-xXvUj9L4VnP3wsnJ9xwRJxGO4dWEUo/s640/140620_tp2kz_cohen_sn635.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPzZc3By5RNLvORbAawGRjF0hzzw-6Z0krEEZJOI-cdwAtKTm4eK6LlVSQ5tU1ufEBW0mOc9scHPj8lxG0ejKAeAWCue5onQ0NuFVgqBg5UyM8-xXvUj9L4VnP3wsnJ9xwRJxGO4dWEUo/s320/140620_tp2kz_cohen_sn635.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPzZc3By5RNLvORbAawGRjF0hzzw-6Z0krEEZJOI-cdwAtKTm4eK6LlVSQ5tU1ufEBW0mOc9scHPj8lxG0ejKAeAWCue5onQ0NuFVgqBg5UyM8-xXvUj9L4VnP3wsnJ9xwRJxGO4dWEUo/s480/140620_tp2kz_cohen_sn635.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPzZc3By5RNLvORbAawGRjF0hzzw-6Z0krEEZJOI-cdwAtKTm4eK6LlVSQ5tU1ufEBW0mOc9scHPj8lxG0ejKAeAWCue5onQ0NuFVgqBg5UyM8-xXvUj9L4VnP3wsnJ9xwRJxGO4dWEUo/s640/140620_tp2kz_cohen_sn635.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 250 - Eterno Leonard Cohen"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -196,8 +191,7 @@
           </a><a class="related-bottom-card" href="programa-243-temple-of-the-dog-25-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s320/temple1-1.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s320/temple1-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s480/temple1-1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s640/temple1-1.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s320/temple1-1.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s480/temple1-1.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhspQ0qTajODYwDnsLdwM0Mtuyy6Hg5UC7kLw5LNfri_XJQPM6j9oJ9foDLKgkPZQASDttMLKVGdTIeVJKoxtGudjbOskD7Py4rhZxVIYSq0w_EsjFPI26LxJOm6R_3yj6WEasB0Fvympg/s640/temple1-1.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 243 - Temple of the Dog (25 años)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

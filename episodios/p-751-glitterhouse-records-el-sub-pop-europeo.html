@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.751 - Glitterhouse Records, el SUB POP europeo — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -132,8 +132,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s160/3201.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s480/3201.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s160/3201.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s320/3201.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUVTxWNzuIT5xWt3qBSX8bI3Yvzr1vyJddm5ea2Uv6jCMKM4ogl5twtjc_h4F8DNBca_NBNd2Dn08wkvkl0hynVDoz9Wr_U5nAW1cBqqdnPm2ZQjcf5F1zIA-U_IPvbUxPM0NHIWhhUo/s480/3201.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.697 - La historia de SUB POP en 10 canciones"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -143,8 +142,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmEfBkrQgAuIZV00MD-k5rP9bXSfB7Evp3T6GJPN8GVKtev6slOsGiirLVr8GOnsxpAx_CmbKIDB8UAop1vRF_ttPnX-oh0wp1OYmYjj4j8YgKxIFPAZNYCk3_sk0WLo53jnvfVcBquk5e-N1wLynpwsRB9qZO_i-ROQd1k5KSksM31tJOW14qiVys/s320/og_image.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmEfBkrQgAuIZV00MD-k5rP9bXSfB7Evp3T6GJPN8GVKtev6slOsGiirLVr8GOnsxpAx_CmbKIDB8UAop1vRF_ttPnX-oh0wp1OYmYjj4j8YgKxIFPAZNYCk3_sk0WLo53jnvfVcBquk5e-N1wLynpwsRB9qZO_i-ROQd1k5KSksM31tJOW14qiVys/s160/og_image.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmEfBkrQgAuIZV00MD-k5rP9bXSfB7Evp3T6GJPN8GVKtev6slOsGiirLVr8GOnsxpAx_CmbKIDB8UAop1vRF_ttPnX-oh0wp1OYmYjj4j8YgKxIFPAZNYCk3_sk0WLo53jnvfVcBquk5e-N1wLynpwsRB9qZO_i-ROQd1k5KSksM31tJOW14qiVys/s320/og_image.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmEfBkrQgAuIZV00MD-k5rP9bXSfB7Evp3T6GJPN8GVKtev6slOsGiirLVr8GOnsxpAx_CmbKIDB8UAop1vRF_ttPnX-oh0wp1OYmYjj4j8YgKxIFPAZNYCk3_sk0WLo53jnvfVcBquk5e-N1wLynpwsRB9qZO_i-ROQd1k5KSksM31tJOW14qiVys/s480/og_image.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmEfBkrQgAuIZV00MD-k5rP9bXSfB7Evp3T6GJPN8GVKtev6slOsGiirLVr8GOnsxpAx_CmbKIDB8UAop1vRF_ttPnX-oh0wp1OYmYjj4j8YgKxIFPAZNYCk3_sk0WLo53jnvfVcBquk5e-N1wLynpwsRB9qZO_i-ROQd1k5KSksM31tJOW14qiVys/s160/og_image.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmEfBkrQgAuIZV00MD-k5rP9bXSfB7Evp3T6GJPN8GVKtev6slOsGiirLVr8GOnsxpAx_CmbKIDB8UAop1vRF_ttPnX-oh0wp1OYmYjj4j8YgKxIFPAZNYCk3_sk0WLo53jnvfVcBquk5e-N1wLynpwsRB9qZO_i-ROQd1k5KSksM31tJOW14qiVys/s320/og_image.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmEfBkrQgAuIZV00MD-k5rP9bXSfB7Evp3T6GJPN8GVKtev6slOsGiirLVr8GOnsxpAx_CmbKIDB8UAop1vRF_ttPnX-oh0wp1OYmYjj4j8YgKxIFPAZNYCk3_sk0WLo53jnvfVcBquk5e-N1wLynpwsRB9qZO_i-ROQd1k5KSksM31tJOW14qiVys/s480/og_image.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.870 - Os cuento mi viaje a Berlín"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -154,8 +152,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Bienvenido a los 90 - Programa 36 - SUB POP 200"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -171,8 +168,7 @@
         <a class="related-bottom-card" href="p-754-la-amargura-sonora-de-codeine.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOukT9dI2tlQJwKSWP_L12Bx4oh3USPd38zsmoqBbYEWjSWurMIBz5Bh1kwqKax-wfdZeHcYVUsB2_IaooQ00hSGQSRYYM4a3ttjm3PjcN-Ju5PMh0WpUJng5hYOqPJwBjwoXvJDWH7Rk/s320/A-30585-1265827831.jpeg.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOukT9dI2tlQJwKSWP_L12Bx4oh3USPd38zsmoqBbYEWjSWurMIBz5Bh1kwqKax-wfdZeHcYVUsB2_IaooQ00hSGQSRYYM4a3ttjm3PjcN-Ju5PMh0WpUJng5hYOqPJwBjwoXvJDWH7Rk/s320/A-30585-1265827831.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOukT9dI2tlQJwKSWP_L12Bx4oh3USPd38zsmoqBbYEWjSWurMIBz5Bh1kwqKax-wfdZeHcYVUsB2_IaooQ00hSGQSRYYM4a3ttjm3PjcN-Ju5PMh0WpUJng5hYOqPJwBjwoXvJDWH7Rk/s480/A-30585-1265827831.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOukT9dI2tlQJwKSWP_L12Bx4oh3USPd38zsmoqBbYEWjSWurMIBz5Bh1kwqKax-wfdZeHcYVUsB2_IaooQ00hSGQSRYYM4a3ttjm3PjcN-Ju5PMh0WpUJng5hYOqPJwBjwoXvJDWH7Rk/s640/A-30585-1265827831.jpeg.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOukT9dI2tlQJwKSWP_L12Bx4oh3USPd38zsmoqBbYEWjSWurMIBz5Bh1kwqKax-wfdZeHcYVUsB2_IaooQ00hSGQSRYYM4a3ttjm3PjcN-Ju5PMh0WpUJng5hYOqPJwBjwoXvJDWH7Rk/s320/A-30585-1265827831.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOukT9dI2tlQJwKSWP_L12Bx4oh3USPd38zsmoqBbYEWjSWurMIBz5Bh1kwqKax-wfdZeHcYVUsB2_IaooQ00hSGQSRYYM4a3ttjm3PjcN-Ju5PMh0WpUJng5hYOqPJwBjwoXvJDWH7Rk/s480/A-30585-1265827831.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOukT9dI2tlQJwKSWP_L12Bx4oh3USPd38zsmoqBbYEWjSWurMIBz5Bh1kwqKax-wfdZeHcYVUsB2_IaooQ00hSGQSRYYM4a3ttjm3PjcN-Ju5PMh0WpUJng5hYOqPJwBjwoXvJDWH7Rk/s640/A-30585-1265827831.jpeg.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.754 - La amargura sonora de CODEINE"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -183,8 +179,7 @@
           </a><a class="related-bottom-card" href="p-867-megan-jasper-de-recepcionista-a-jefa-de-sub-pop.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMJfcRlZWLBq9Pyx7FSm9f7Faohd_O5iojIv7hAVbsTNA4hEUD4zrv5VHxJHmo0YwU--vByBP8Etm8CbAyp0C_Pb2d_oqMi1nJ3-Wv3pRA-fxIB27pBUjxn4jp0XsKI-mksNIgsWO_uln2YP6PSXmq5VDgUK7pjqIQIZwwBrB4OQrxtqvNIgU95a_A/s320/megan_jasper_3_of_4.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMJfcRlZWLBq9Pyx7FSm9f7Faohd_O5iojIv7hAVbsTNA4hEUD4zrv5VHxJHmo0YwU--vByBP8Etm8CbAyp0C_Pb2d_oqMi1nJ3-Wv3pRA-fxIB27pBUjxn4jp0XsKI-mksNIgsWO_uln2YP6PSXmq5VDgUK7pjqIQIZwwBrB4OQrxtqvNIgU95a_A/s320/megan_jasper_3_of_4.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMJfcRlZWLBq9Pyx7FSm9f7Faohd_O5iojIv7hAVbsTNA4hEUD4zrv5VHxJHmo0YwU--vByBP8Etm8CbAyp0C_Pb2d_oqMi1nJ3-Wv3pRA-fxIB27pBUjxn4jp0XsKI-mksNIgsWO_uln2YP6PSXmq5VDgUK7pjqIQIZwwBrB4OQrxtqvNIgU95a_A/s480/megan_jasper_3_of_4.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMJfcRlZWLBq9Pyx7FSm9f7Faohd_O5iojIv7hAVbsTNA4hEUD4zrv5VHxJHmo0YwU--vByBP8Etm8CbAyp0C_Pb2d_oqMi1nJ3-Wv3pRA-fxIB27pBUjxn4jp0XsKI-mksNIgsWO_uln2YP6PSXmq5VDgUK7pjqIQIZwwBrB4OQrxtqvNIgU95a_A/s640/megan_jasper_3_of_4.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMJfcRlZWLBq9Pyx7FSm9f7Faohd_O5iojIv7hAVbsTNA4hEUD4zrv5VHxJHmo0YwU--vByBP8Etm8CbAyp0C_Pb2d_oqMi1nJ3-Wv3pRA-fxIB27pBUjxn4jp0XsKI-mksNIgsWO_uln2YP6PSXmq5VDgUK7pjqIQIZwwBrB4OQrxtqvNIgU95a_A/s320/megan_jasper_3_of_4.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMJfcRlZWLBq9Pyx7FSm9f7Faohd_O5iojIv7hAVbsTNA4hEUD4zrv5VHxJHmo0YwU--vByBP8Etm8CbAyp0C_Pb2d_oqMi1nJ3-Wv3pRA-fxIB27pBUjxn4jp0XsKI-mksNIgsWO_uln2YP6PSXmq5VDgUK7pjqIQIZwwBrB4OQrxtqvNIgU95a_A/s480/megan_jasper_3_of_4.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMJfcRlZWLBq9Pyx7FSm9f7Faohd_O5iojIv7hAVbsTNA4hEUD4zrv5VHxJHmo0YwU--vByBP8Etm8CbAyp0C_Pb2d_oqMi1nJ3-Wv3pRA-fxIB27pBUjxn4jp0XsKI-mksNIgsWO_uln2YP6PSXmq5VDgUK7pjqIQIZwwBrB4OQrxtqvNIgU95a_A/s640/megan_jasper_3_of_4.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.867 - Megan Jasper, de recepcionista a jefa de Sub Pop"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -195,8 +190,7 @@
           </a><a class="related-bottom-card" href="p-709-teriyaki-asthma-c-z-records-la-otra-cara-del-grunge.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s320/s-l400+%25281%2529.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s320/s-l400+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s480/s-l400+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s640/s-l400+%25281%2529.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s320/s-l400+%25281%2529.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s480/s-l400+%25281%2529.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQybphuOdgkVdh2iYxpeprB1qI2vONG9gF8qfP_vBH6rstUHcsyyND7hpISoppsjYOWdMWb1qtdOy9VC8r2B-c6WLAIs0YxOKuiAd3N7GpoyWnGSezLzl5Xu4j3qoeyhXcXSg1w8wXlg/s640/s-l400+%25281%2529.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.709 - Teriyaki Asthma - C/Z Records (La otra cara del grunge)"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

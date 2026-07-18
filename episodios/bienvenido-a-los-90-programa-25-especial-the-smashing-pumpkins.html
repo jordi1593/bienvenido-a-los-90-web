@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Bienvenido a los 90 - Programa 25 - Especial The Smashing Pumpkins — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -138,8 +138,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2kSVbSa0viDipSLbOs6tWUK7kBPFlUfcB2KykV82yYGrDtEt6FSaH2xtV7ljWcc3NCEVuKpgUMYiwphpIeAdqOKQmDlACfPFfHwQRUl9dyXpHBCMlSabdmGjScK4iYKLurNtcz37VZPI/s320/conciradio3.5.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2kSVbSa0viDipSLbOs6tWUK7kBPFlUfcB2KykV82yYGrDtEt6FSaH2xtV7ljWcc3NCEVuKpgUMYiwphpIeAdqOKQmDlACfPFfHwQRUl9dyXpHBCMlSabdmGjScK4iYKLurNtcz37VZPI/s160/conciradio3.5.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2kSVbSa0viDipSLbOs6tWUK7kBPFlUfcB2KykV82yYGrDtEt6FSaH2xtV7ljWcc3NCEVuKpgUMYiwphpIeAdqOKQmDlACfPFfHwQRUl9dyXpHBCMlSabdmGjScK4iYKLurNtcz37VZPI/s320/conciradio3.5.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2kSVbSa0viDipSLbOs6tWUK7kBPFlUfcB2KykV82yYGrDtEt6FSaH2xtV7ljWcc3NCEVuKpgUMYiwphpIeAdqOKQmDlACfPFfHwQRUl9dyXpHBCMlSabdmGjScK4iYKLurNtcz37VZPI/s480/conciradio3.5.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2kSVbSa0viDipSLbOs6tWUK7kBPFlUfcB2KykV82yYGrDtEt6FSaH2xtV7ljWcc3NCEVuKpgUMYiwphpIeAdqOKQmDlACfPFfHwQRUl9dyXpHBCMlSabdmGjScK4iYKLurNtcz37VZPI/s160/conciradio3.5.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2kSVbSa0viDipSLbOs6tWUK7kBPFlUfcB2KykV82yYGrDtEt6FSaH2xtV7ljWcc3NCEVuKpgUMYiwphpIeAdqOKQmDlACfPFfHwQRUl9dyXpHBCMlSabdmGjScK4iYKLurNtcz37VZPI/s320/conciradio3.5.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2kSVbSa0viDipSLbOs6tWUK7kBPFlUfcB2KykV82yYGrDtEt6FSaH2xtV7ljWcc3NCEVuKpgUMYiwphpIeAdqOKQmDlACfPFfHwQRUl9dyXpHBCMlSabdmGjScK4iYKLurNtcz37VZPI/s480/conciradio3.5.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.739 - The Smashing Pumpkins - Madrid 1998, la intrahistoria. "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +148,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigts1IGaPFWtSMy0BejLIj6gh4vamVi9R02KPpOUiqyN0tcm_W2sIu29X8Nc3WbdEW6CdGA2i1uiCn2v5c5zT1f_b32f5pi0TiejRLz-wjyukHsNuLMSFGw-45j6KG2ZGVqhg7bXwk5BU/s320/733809_10151843195757747_624743692_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigts1IGaPFWtSMy0BejLIj6gh4vamVi9R02KPpOUiqyN0tcm_W2sIu29X8Nc3WbdEW6CdGA2i1uiCn2v5c5zT1f_b32f5pi0TiejRLz-wjyukHsNuLMSFGw-45j6KG2ZGVqhg7bXwk5BU/s160/733809_10151843195757747_624743692_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigts1IGaPFWtSMy0BejLIj6gh4vamVi9R02KPpOUiqyN0tcm_W2sIu29X8Nc3WbdEW6CdGA2i1uiCn2v5c5zT1f_b32f5pi0TiejRLz-wjyukHsNuLMSFGw-45j6KG2ZGVqhg7bXwk5BU/s320/733809_10151843195757747_624743692_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigts1IGaPFWtSMy0BejLIj6gh4vamVi9R02KPpOUiqyN0tcm_W2sIu29X8Nc3WbdEW6CdGA2i1uiCn2v5c5zT1f_b32f5pi0TiejRLz-wjyukHsNuLMSFGw-45j6KG2ZGVqhg7bXwk5BU/s480/733809_10151843195757747_624743692_n.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigts1IGaPFWtSMy0BejLIj6gh4vamVi9R02KPpOUiqyN0tcm_W2sIu29X8Nc3WbdEW6CdGA2i1uiCn2v5c5zT1f_b32f5pi0TiejRLz-wjyukHsNuLMSFGw-45j6KG2ZGVqhg7bXwk5BU/s160/733809_10151843195757747_624743692_n.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigts1IGaPFWtSMy0BejLIj6gh4vamVi9R02KPpOUiqyN0tcm_W2sIu29X8Nc3WbdEW6CdGA2i1uiCn2v5c5zT1f_b32f5pi0TiejRLz-wjyukHsNuLMSFGw-45j6KG2ZGVqhg7bXwk5BU/s320/733809_10151843195757747_624743692_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigts1IGaPFWtSMy0BejLIj6gh4vamVi9R02KPpOUiqyN0tcm_W2sIu29X8Nc3WbdEW6CdGA2i1uiCn2v5c5zT1f_b32f5pi0TiejRLz-wjyukHsNuLMSFGw-45j6KG2ZGVqhg7bXwk5BU/s480/733809_10151843195757747_624743692_n.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="B90 - Programa 95 - The Smashing Pumpkins - Mellon Collie and the Infinite Sadness"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -160,8 +158,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAGb8W1OwCPJ7CtMh7YvCPS2eO00t8czHGE5O-jmRdM7MAB1BBvJvh40l22VWsP7787eo7PajjsBEyGR84Ff20KkEWe8Ohd4UVPHqs8VTgXlxYkNgKTGXk-zmKOx9u4p5ra7fwJMZySa4/s320/The+Smashing+Pumpkins+-+Adore+-+CD.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAGb8W1OwCPJ7CtMh7YvCPS2eO00t8czHGE5O-jmRdM7MAB1BBvJvh40l22VWsP7787eo7PajjsBEyGR84Ff20KkEWe8Ohd4UVPHqs8VTgXlxYkNgKTGXk-zmKOx9u4p5ra7fwJMZySa4/s160/The+Smashing+Pumpkins+-+Adore+-+CD.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAGb8W1OwCPJ7CtMh7YvCPS2eO00t8czHGE5O-jmRdM7MAB1BBvJvh40l22VWsP7787eo7PajjsBEyGR84Ff20KkEWe8Ohd4UVPHqs8VTgXlxYkNgKTGXk-zmKOx9u4p5ra7fwJMZySa4/s320/The+Smashing+Pumpkins+-+Adore+-+CD.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAGb8W1OwCPJ7CtMh7YvCPS2eO00t8czHGE5O-jmRdM7MAB1BBvJvh40l22VWsP7787eo7PajjsBEyGR84Ff20KkEWe8Ohd4UVPHqs8VTgXlxYkNgKTGXk-zmKOx9u4p5ra7fwJMZySa4/s480/The+Smashing+Pumpkins+-+Adore+-+CD.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAGb8W1OwCPJ7CtMh7YvCPS2eO00t8czHGE5O-jmRdM7MAB1BBvJvh40l22VWsP7787eo7PajjsBEyGR84Ff20KkEWe8Ohd4UVPHqs8VTgXlxYkNgKTGXk-zmKOx9u4p5ra7fwJMZySa4/s160/The+Smashing+Pumpkins+-+Adore+-+CD.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAGb8W1OwCPJ7CtMh7YvCPS2eO00t8czHGE5O-jmRdM7MAB1BBvJvh40l22VWsP7787eo7PajjsBEyGR84Ff20KkEWe8Ohd4UVPHqs8VTgXlxYkNgKTGXk-zmKOx9u4p5ra7fwJMZySa4/s320/The+Smashing+Pumpkins+-+Adore+-+CD.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAGb8W1OwCPJ7CtMh7YvCPS2eO00t8czHGE5O-jmRdM7MAB1BBvJvh40l22VWsP7787eo7PajjsBEyGR84Ff20KkEWe8Ohd4UVPHqs8VTgXlxYkNgKTGXk-zmKOx9u4p5ra7fwJMZySa4/s480/The+Smashing+Pumpkins+-+Adore+-+CD.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 145 - Especial ADORE - The Smashing Pumpkins"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -177,8 +174,7 @@
         <a class="related-bottom-card" href="programa-489-the-smashing-pumpkins-dawn-to-dusk.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZKiToRBMfvbMtMjlofZAMur0_w2zCgqeH4hLzxDtxyiJ326nyZ4aJ-_JxP8EfIsAn4IgMv1mKcUj9-FslnYbVIPLhxbPW66UKpEKajJUlWVscSr3AjI7MjgqZKO7kCHgu5visecUvRu8/s320/b90_489.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZKiToRBMfvbMtMjlofZAMur0_w2zCgqeH4hLzxDtxyiJ326nyZ4aJ-_JxP8EfIsAn4IgMv1mKcUj9-FslnYbVIPLhxbPW66UKpEKajJUlWVscSr3AjI7MjgqZKO7kCHgu5visecUvRu8/s320/b90_489.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZKiToRBMfvbMtMjlofZAMur0_w2zCgqeH4hLzxDtxyiJ326nyZ4aJ-_JxP8EfIsAn4IgMv1mKcUj9-FslnYbVIPLhxbPW66UKpEKajJUlWVscSr3AjI7MjgqZKO7kCHgu5visecUvRu8/s480/b90_489.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZKiToRBMfvbMtMjlofZAMur0_w2zCgqeH4hLzxDtxyiJ326nyZ4aJ-_JxP8EfIsAn4IgMv1mKcUj9-FslnYbVIPLhxbPW66UKpEKajJUlWVscSr3AjI7MjgqZKO7kCHgu5visecUvRu8/s640/b90_489.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZKiToRBMfvbMtMjlofZAMur0_w2zCgqeH4hLzxDtxyiJ326nyZ4aJ-_JxP8EfIsAn4IgMv1mKcUj9-FslnYbVIPLhxbPW66UKpEKajJUlWVscSr3AjI7MjgqZKO7kCHgu5visecUvRu8/s320/b90_489.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZKiToRBMfvbMtMjlofZAMur0_w2zCgqeH4hLzxDtxyiJ326nyZ4aJ-_JxP8EfIsAn4IgMv1mKcUj9-FslnYbVIPLhxbPW66UKpEKajJUlWVscSr3AjI7MjgqZKO7kCHgu5visecUvRu8/s480/b90_489.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZKiToRBMfvbMtMjlofZAMur0_w2zCgqeH4hLzxDtxyiJ326nyZ4aJ-_JxP8EfIsAn4IgMv1mKcUj9-FslnYbVIPLhxbPW66UKpEKajJUlWVscSr3AjI7MjgqZKO7kCHgu5visecUvRu8/s640/b90_489.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 489 - The Smashing Pumpkins - Dawn to Dusk"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -189,8 +185,7 @@
           </a><a class="related-bottom-card" href="programa-490-the-smashing-pumpkins-twilight-to-starlight.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjG24CMuZMR5FxIAEBOPtiPXGb7ixUpNRBiOE0bgLH_8g3Md80AtR5prRInIKCfz_IbtyfPIpkw0s7e59kElYBxcxSy4Oa3y0_5LbnVOtTnKmSJyw68Oz2hhupgtjLGPr28z_hxbEpofsM/s320/b90_490.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjG24CMuZMR5FxIAEBOPtiPXGb7ixUpNRBiOE0bgLH_8g3Md80AtR5prRInIKCfz_IbtyfPIpkw0s7e59kElYBxcxSy4Oa3y0_5LbnVOtTnKmSJyw68Oz2hhupgtjLGPr28z_hxbEpofsM/s320/b90_490.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjG24CMuZMR5FxIAEBOPtiPXGb7ixUpNRBiOE0bgLH_8g3Md80AtR5prRInIKCfz_IbtyfPIpkw0s7e59kElYBxcxSy4Oa3y0_5LbnVOtTnKmSJyw68Oz2hhupgtjLGPr28z_hxbEpofsM/s480/b90_490.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjG24CMuZMR5FxIAEBOPtiPXGb7ixUpNRBiOE0bgLH_8g3Md80AtR5prRInIKCfz_IbtyfPIpkw0s7e59kElYBxcxSy4Oa3y0_5LbnVOtTnKmSJyw68Oz2hhupgtjLGPr28z_hxbEpofsM/s640/b90_490.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjG24CMuZMR5FxIAEBOPtiPXGb7ixUpNRBiOE0bgLH_8g3Md80AtR5prRInIKCfz_IbtyfPIpkw0s7e59kElYBxcxSy4Oa3y0_5LbnVOtTnKmSJyw68Oz2hhupgtjLGPr28z_hxbEpofsM/s320/b90_490.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjG24CMuZMR5FxIAEBOPtiPXGb7ixUpNRBiOE0bgLH_8g3Md80AtR5prRInIKCfz_IbtyfPIpkw0s7e59kElYBxcxSy4Oa3y0_5LbnVOtTnKmSJyw68Oz2hhupgtjLGPr28z_hxbEpofsM/s480/b90_490.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjG24CMuZMR5FxIAEBOPtiPXGb7ixUpNRBiOE0bgLH_8g3Md80AtR5prRInIKCfz_IbtyfPIpkw0s7e59kElYBxcxSy4Oa3y0_5LbnVOtTnKmSJyw68Oz2hhupgtjLGPr28z_hxbEpofsM/s640/b90_490.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 490 - The Smashing Pumpkins - Twilight to Starlight"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -201,8 +196,7 @@
           </a><a class="related-bottom-card" href="programa-494-the-smashing-pumpkins-bullet-with-butterfly-wings.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s320/b90_494.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s320/b90_494.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s480/b90_494.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s640/b90_494.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s320/b90_494.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s480/b90_494.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWiAwDwMRAWWMDjyTU6BeuDkwOMRWsTOQHTO8Xl9PoWujyu7B70nKku5hg1ao9OHEtWqE8jRorRFyJ4BO0WNjeliXh9KNDrAuEr_QJhxyG4ZdMm5hAcSGluIeLNwpIZOHpMYtE06mmkEA/s640/b90_494.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 494 - The Smashing Pumpkins - Bullet with Butterfly Wings"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

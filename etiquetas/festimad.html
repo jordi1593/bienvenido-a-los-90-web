@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Festimad — 5 episodios | Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -30,8 +30,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="/" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="128" height="128" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="128" height="128" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -68,8 +68,7 @@
         <a class="episode-cover-link" href="../episodios/b90-supernova-42-el-dia-que-conoci-a-patti-smith.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s320/patti-smith-2019-2.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s160/patti-smith-2019-2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s320/patti-smith-2019-2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s480/patti-smith-2019-2.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s160/patti-smith-2019-2.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s320/patti-smith-2019-2.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Smc8QuzwsdSMzrOtCse8NTaKkJY1bjn7iaeBp8b58OBWmztuLLYt4jn7SSUQDOQXOV8pTIT-DE5xp-ruyqGfp5bqN6mXkK7uvY6PU7vCL5vKwDdWgb_ZdNggL1-i7zW88Sd2_CS4m0mHCMK2fu_4RyNo7d3WhPPjdy-62bJS9nvTyHqUXtF97mjKd4Q/s480/patti-smith-2019-2.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="B90 Supernova 42 - El día que conocí a Patti Smith"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -82,8 +81,7 @@
         <a class="episode-cover-link" href="../episodios/morphine-festimad-madrid-03-05-1997.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFu5sjKj9nJVGr3WliBk6PGkCdYbUkNgYI7IEijNWlqioiJNxYF4dmpwUpFZ1NoYHOKWfNErajNvkx9ZhCLgiKnDsJQmfnnGU9G0uvdoYgIk2jInZ9rgFltz5WrRIgJh_F76iCnhhyphenhyphenwZQ/s320/A-256216-1369070408-5027.jpeg.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFu5sjKj9nJVGr3WliBk6PGkCdYbUkNgYI7IEijNWlqioiJNxYF4dmpwUpFZ1NoYHOKWfNErajNvkx9ZhCLgiKnDsJQmfnnGU9G0uvdoYgIk2jInZ9rgFltz5WrRIgJh_F76iCnhhyphenhyphenwZQ/s160/A-256216-1369070408-5027.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFu5sjKj9nJVGr3WliBk6PGkCdYbUkNgYI7IEijNWlqioiJNxYF4dmpwUpFZ1NoYHOKWfNErajNvkx9ZhCLgiKnDsJQmfnnGU9G0uvdoYgIk2jInZ9rgFltz5WrRIgJh_F76iCnhhyphenhyphenwZQ/s320/A-256216-1369070408-5027.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFu5sjKj9nJVGr3WliBk6PGkCdYbUkNgYI7IEijNWlqioiJNxYF4dmpwUpFZ1NoYHOKWfNErajNvkx9ZhCLgiKnDsJQmfnnGU9G0uvdoYgIk2jInZ9rgFltz5WrRIgJh_F76iCnhhyphenhyphenwZQ/s480/A-256216-1369070408-5027.jpeg.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFu5sjKj9nJVGr3WliBk6PGkCdYbUkNgYI7IEijNWlqioiJNxYF4dmpwUpFZ1NoYHOKWfNErajNvkx9ZhCLgiKnDsJQmfnnGU9G0uvdoYgIk2jInZ9rgFltz5WrRIgJh_F76iCnhhyphenhyphenwZQ/s160/A-256216-1369070408-5027.jpeg.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFu5sjKj9nJVGr3WliBk6PGkCdYbUkNgYI7IEijNWlqioiJNxYF4dmpwUpFZ1NoYHOKWfNErajNvkx9ZhCLgiKnDsJQmfnnGU9G0uvdoYgIk2jInZ9rgFltz5WrRIgJh_F76iCnhhyphenhyphenwZQ/s320/A-256216-1369070408-5027.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFu5sjKj9nJVGr3WliBk6PGkCdYbUkNgYI7IEijNWlqioiJNxYF4dmpwUpFZ1NoYHOKWfNErajNvkx9ZhCLgiKnDsJQmfnnGU9G0uvdoYgIk2jInZ9rgFltz5WrRIgJh_F76iCnhhyphenhyphenwZQ/s480/A-256216-1369070408-5027.jpeg.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Morphine - Festimad (Madrid 03/05/1997)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -96,8 +94,7 @@
         <a class="episode-cover-link" href="../episodios/programa-418-sara-navarro.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqCcOkmxA5gAtE7sQp39fdedWipr31nRS-qYbXNHg3EIRLaTS8jpr4LU-rHC0fosz2jTZYNxcFnac1OVT-v1_h7I78t73t5sLELFzYohKo-fSIsAt4RUolSRzC7fXiG2p_iFYj5pujwKs/s320/IMG-20180727-WA0006.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqCcOkmxA5gAtE7sQp39fdedWipr31nRS-qYbXNHg3EIRLaTS8jpr4LU-rHC0fosz2jTZYNxcFnac1OVT-v1_h7I78t73t5sLELFzYohKo-fSIsAt4RUolSRzC7fXiG2p_iFYj5pujwKs/s160/IMG-20180727-WA0006.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqCcOkmxA5gAtE7sQp39fdedWipr31nRS-qYbXNHg3EIRLaTS8jpr4LU-rHC0fosz2jTZYNxcFnac1OVT-v1_h7I78t73t5sLELFzYohKo-fSIsAt4RUolSRzC7fXiG2p_iFYj5pujwKs/s320/IMG-20180727-WA0006.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqCcOkmxA5gAtE7sQp39fdedWipr31nRS-qYbXNHg3EIRLaTS8jpr4LU-rHC0fosz2jTZYNxcFnac1OVT-v1_h7I78t73t5sLELFzYohKo-fSIsAt4RUolSRzC7fXiG2p_iFYj5pujwKs/s480/IMG-20180727-WA0006.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqCcOkmxA5gAtE7sQp39fdedWipr31nRS-qYbXNHg3EIRLaTS8jpr4LU-rHC0fosz2jTZYNxcFnac1OVT-v1_h7I78t73t5sLELFzYohKo-fSIsAt4RUolSRzC7fXiG2p_iFYj5pujwKs/s160/IMG-20180727-WA0006.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqCcOkmxA5gAtE7sQp39fdedWipr31nRS-qYbXNHg3EIRLaTS8jpr4LU-rHC0fosz2jTZYNxcFnac1OVT-v1_h7I78t73t5sLELFzYohKo-fSIsAt4RUolSRzC7fXiG2p_iFYj5pujwKs/s320/IMG-20180727-WA0006.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqCcOkmxA5gAtE7sQp39fdedWipr31nRS-qYbXNHg3EIRLaTS8jpr4LU-rHC0fosz2jTZYNxcFnac1OVT-v1_h7I78t73t5sLELFzYohKo-fSIsAt4RUolSRzC7fXiG2p_iFYj5pujwKs/s480/IMG-20180727-WA0006.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 418 - Sara Navarro"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -110,8 +107,7 @@
         <a class="episode-cover-link" href="../episodios/programa-412-pearl-jam-en-espana-2018.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s320/PearlJam-MadCool18-Thurs-DB-9570.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s160/PearlJam-MadCool18-Thurs-DB-9570.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s320/PearlJam-MadCool18-Thurs-DB-9570.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s480/PearlJam-MadCool18-Thurs-DB-9570.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s160/PearlJam-MadCool18-Thurs-DB-9570.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s320/PearlJam-MadCool18-Thurs-DB-9570.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoaf2S3FYGuvKB-8ERx1sjD6RQLojf-yHn-eZjI17DkaKbmUOtyxOotoRHoYovhzv96B_ybQDCEdK0Oq5FOD0cFqqjnaG82WxHFn_xjbdcmbLan7kIkVyt1xgII_vZdz65VfLEjM4ro0/s480/PearlJam-MadCool18-Thurs-DB-9570.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 412 - Pearl Jam en España (2018)"
                 loading="lazy" width="320" height="213" />
         </a>
@@ -124,8 +120,7 @@
         <a class="episode-cover-link" href="../episodios/programa-252-festimad-1996.html" tabindex="-1" aria-hidden="true">
           <img class="episode-cover-img"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s320/festimad_96_cartel.jpg"
-                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s160/festimad_96_cartel.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s320/festimad_96_cartel.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s480/festimad_96_cartel.jpg 480w"
-                sizes="(max-width: 480px) 45vw, 320px"
+                srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s160/festimad_96_cartel.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s320/festimad_96_cartel.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Az-2cNqqzh9VzvukggleMgebYgb42zyHBrVXGesKREfOZEGpAG48UoQKE1qnO1HU6CLefyfW5v4xhtsLGGpP3t3fHOl3xfcoGmEmxdrM9wHBSMBBWCFwDdIVQuxh3U0QsOYETJXxCS8/s480/festimad_96_cartel.jpg 480w" sizes="(max-width: 480px) 45vw, 320px"
                 alt="Programa 252 - Festimad 1996"
                 loading="lazy" width="320" height="213" />
         </a>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>Programa 535 - &#39;Purple&#39; de Stone Temple Pilots cumple 25 años — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -141,8 +141,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbxfFORtHKZUUd4BfE6Isl34CJVEieWFwgcf1q9vKAlU7mtKVbAU2WtjKWCjigSagYfMR7qwIGw7QCy3SA2mNJN4hbf4QzZJGXC_8vg7VhYYaL8k2meG1hx6ETyiB7NXHUZiuWVDaxMpU/s320/b90_604.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbxfFORtHKZUUd4BfE6Isl34CJVEieWFwgcf1q9vKAlU7mtKVbAU2WtjKWCjigSagYfMR7qwIGw7QCy3SA2mNJN4hbf4QzZJGXC_8vg7VhYYaL8k2meG1hx6ETyiB7NXHUZiuWVDaxMpU/s160/b90_604.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbxfFORtHKZUUd4BfE6Isl34CJVEieWFwgcf1q9vKAlU7mtKVbAU2WtjKWCjigSagYfMR7qwIGw7QCy3SA2mNJN4hbf4QzZJGXC_8vg7VhYYaL8k2meG1hx6ETyiB7NXHUZiuWVDaxMpU/s320/b90_604.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbxfFORtHKZUUd4BfE6Isl34CJVEieWFwgcf1q9vKAlU7mtKVbAU2WtjKWCjigSagYfMR7qwIGw7QCy3SA2mNJN4hbf4QzZJGXC_8vg7VhYYaL8k2meG1hx6ETyiB7NXHUZiuWVDaxMpU/s480/b90_604.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbxfFORtHKZUUd4BfE6Isl34CJVEieWFwgcf1q9vKAlU7mtKVbAU2WtjKWCjigSagYfMR7qwIGw7QCy3SA2mNJN4hbf4QzZJGXC_8vg7VhYYaL8k2meG1hx6ETyiB7NXHUZiuWVDaxMpU/s160/b90_604.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbxfFORtHKZUUd4BfE6Isl34CJVEieWFwgcf1q9vKAlU7mtKVbAU2WtjKWCjigSagYfMR7qwIGw7QCy3SA2mNJN4hbf4QzZJGXC_8vg7VhYYaL8k2meG1hx6ETyiB7NXHUZiuWVDaxMpU/s320/b90_604.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbxfFORtHKZUUd4BfE6Isl34CJVEieWFwgcf1q9vKAlU7mtKVbAU2WtjKWCjigSagYfMR7qwIGw7QCy3SA2mNJN4hbf4QzZJGXC_8vg7VhYYaL8k2meG1hx6ETyiB7NXHUZiuWVDaxMpU/s480/b90_604.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.604 - Hablamos de lo último de Green Day, Stone Temple Pilots, Pearl Jam..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -152,8 +151,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s320/Maraton%20b90%202024%20blue%206.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s160/Maraton%20b90%202024%20blue%206.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s320/Maraton%20b90%202024%20blue%206.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s480/Maraton%20b90%202024%20blue%206.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s160/Maraton%20b90%202024%20blue%206.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s320/Maraton%20b90%202024%20blue%206.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-1i08psMYUL9AKbwlSMJkwxUXSwBLF8Zb24bM6-5Ru12bEtUKqAHqXtfZ27Ta-CHFFOL9IOcU85flfu6ctmeIMvnvkelyhtlK_RFOncF4FXWu8-SznVwmReXKYV4Q-DM2a7aXC7QcL245Oxp4tIe_b4a6eCu97Sa6OgJ-DdItoRfPcVTTVD8XTjnUSw/s480/Maraton%20b90%202024%20blue%206.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.1013 - Especial 1994, Parte 6: Nirvana, Stone Temple Pilots, Massive Attack, Sonic Youth, Weezer..."
                   loading="lazy" width="320" height="213" />
           </span>
@@ -163,8 +161,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 160w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  
                   alt="Programa 66 - The DOORS, STONE TEMPLE PILOTS, QOTSA, PRIMAL SCREAM"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -180,8 +177,7 @@
         <a class="related-bottom-card" href="programa-533-red-hot-chili-peppers-californication-cumple-20-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUZofM3EEDFQevP7EkBKXBZhyDteDwhE99AFfKC0MmbQ0lqOsyLAs5A_OhLlo5ApkoNKlG4ZYCTg36Y6pal88eFZGTxlJwiFFzJozzok21TjtohwUYijZ7uulDkGbGd1ZqNY_X9-7xYSs/s320/b90_533.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUZofM3EEDFQevP7EkBKXBZhyDteDwhE99AFfKC0MmbQ0lqOsyLAs5A_OhLlo5ApkoNKlG4ZYCTg36Y6pal88eFZGTxlJwiFFzJozzok21TjtohwUYijZ7uulDkGbGd1ZqNY_X9-7xYSs/s320/b90_533.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUZofM3EEDFQevP7EkBKXBZhyDteDwhE99AFfKC0MmbQ0lqOsyLAs5A_OhLlo5ApkoNKlG4ZYCTg36Y6pal88eFZGTxlJwiFFzJozzok21TjtohwUYijZ7uulDkGbGd1ZqNY_X9-7xYSs/s480/b90_533.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUZofM3EEDFQevP7EkBKXBZhyDteDwhE99AFfKC0MmbQ0lqOsyLAs5A_OhLlo5ApkoNKlG4ZYCTg36Y6pal88eFZGTxlJwiFFzJozzok21TjtohwUYijZ7uulDkGbGd1ZqNY_X9-7xYSs/s640/b90_533.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUZofM3EEDFQevP7EkBKXBZhyDteDwhE99AFfKC0MmbQ0lqOsyLAs5A_OhLlo5ApkoNKlG4ZYCTg36Y6pal88eFZGTxlJwiFFzJozzok21TjtohwUYijZ7uulDkGbGd1ZqNY_X9-7xYSs/s320/b90_533.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUZofM3EEDFQevP7EkBKXBZhyDteDwhE99AFfKC0MmbQ0lqOsyLAs5A_OhLlo5ApkoNKlG4ZYCTg36Y6pal88eFZGTxlJwiFFzJozzok21TjtohwUYijZ7uulDkGbGd1ZqNY_X9-7xYSs/s480/b90_533.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUZofM3EEDFQevP7EkBKXBZhyDteDwhE99AFfKC0MmbQ0lqOsyLAs5A_OhLlo5ApkoNKlG4ZYCTg36Y6pal88eFZGTxlJwiFFzJozzok21TjtohwUYijZ7uulDkGbGd1ZqNY_X9-7xYSs/s640/b90_533.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 533 - Red Hot Chili Peppers &#39;Californication&#39; cumple 20 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -192,8 +188,7 @@
           </a><a class="related-bottom-card" href="supersonic-de-oasis-cumple-25-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy8pfga-h9_BrGLJbanRT3s9K24bPkUkmuOmed4audwcNRrsRHC_oRFZ2T9m5S3ErjZouGVJgQXS3oHe4q97HiYPia8cMLOWvyjkQEERBVG5n3IRFwrjfcU1lpzUUGE0zHOyZ9kjW_b7I/s320/R-1194299-1199823225.jpeg.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy8pfga-h9_BrGLJbanRT3s9K24bPkUkmuOmed4audwcNRrsRHC_oRFZ2T9m5S3ErjZouGVJgQXS3oHe4q97HiYPia8cMLOWvyjkQEERBVG5n3IRFwrjfcU1lpzUUGE0zHOyZ9kjW_b7I/s320/R-1194299-1199823225.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy8pfga-h9_BrGLJbanRT3s9K24bPkUkmuOmed4audwcNRrsRHC_oRFZ2T9m5S3ErjZouGVJgQXS3oHe4q97HiYPia8cMLOWvyjkQEERBVG5n3IRFwrjfcU1lpzUUGE0zHOyZ9kjW_b7I/s480/R-1194299-1199823225.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy8pfga-h9_BrGLJbanRT3s9K24bPkUkmuOmed4audwcNRrsRHC_oRFZ2T9m5S3ErjZouGVJgQXS3oHe4q97HiYPia8cMLOWvyjkQEERBVG5n3IRFwrjfcU1lpzUUGE0zHOyZ9kjW_b7I/s640/R-1194299-1199823225.jpeg.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy8pfga-h9_BrGLJbanRT3s9K24bPkUkmuOmed4audwcNRrsRHC_oRFZ2T9m5S3ErjZouGVJgQXS3oHe4q97HiYPia8cMLOWvyjkQEERBVG5n3IRFwrjfcU1lpzUUGE0zHOyZ9kjW_b7I/s320/R-1194299-1199823225.jpeg.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy8pfga-h9_BrGLJbanRT3s9K24bPkUkmuOmed4audwcNRrsRHC_oRFZ2T9m5S3ErjZouGVJgQXS3oHe4q97HiYPia8cMLOWvyjkQEERBVG5n3IRFwrjfcU1lpzUUGE0zHOyZ9kjW_b7I/s480/R-1194299-1199823225.jpeg.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy8pfga-h9_BrGLJbanRT3s9K24bPkUkmuOmed4audwcNRrsRHC_oRFZ2T9m5S3ErjZouGVJgQXS3oHe4q97HiYPia8cMLOWvyjkQEERBVG5n3IRFwrjfcU1lpzUUGE0zHOyZ9kjW_b7I/s640/R-1194299-1199823225.jpeg.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="&#39;Supersonic&#39; de Oasis cumple 25 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -204,8 +199,7 @@
           </a><a class="related-bottom-card" href="programa-570-la-sala-el-sol-cumple-40-anos.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s320/b90_570.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s320/b90_570.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s480/b90_570.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s640/b90_570.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s320/b90_570.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s480/b90_570.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjECCQyTyfjue-2eesuliatIQS1fQZpnyHp1A2BO_-hnaygXtyovZ-WGu7hgBEyQfKd9HQXDL5L2IwAcKAtuK9w_qILaEly4s3pDa9DbfPCC5FGGWIeo7MlKSrbCe6ZA0lijSJWOlE6Uts/s640/b90_570.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 570 - La sala EL SOL cumple 40 años"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">

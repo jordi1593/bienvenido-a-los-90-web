@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>(function(){var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add("no-transition");var t=localStorage.getItem("theme");if(t==="dark")d.setAttribute("data-theme","dark");requestAnimationFrame(function(){d.classList.remove("no-transition");});})();</script>
 <title>P.1006 - Especial &#39;With The Lights Out&#39; de Nirvana — Bienvenido a los 90</title>
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Roberto Martínez" />
@@ -39,8 +39,8 @@
   <nav class="topnav">
     <div class="container topnav-inner">
       <a class="brand" href="../" aria-label="Bienvenido a los 90">
-        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="B" width="735" height="735" />
-        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="B" width="128" height="128" loading="lazy" />
+        <img class="brand-logo logo-light" src="../images/b90-logo-transparent.png" alt="" width="735" height="735" />
+        <img class="brand-logo logo-dark" src="../images/b90-logo-dark-icon.png" alt="" width="128" height="128" loading="lazy" />
         <span>ienvenido a los 90</span>
       </a>
       <ul class="topnav-links" id="navLinks" role="list">
@@ -127,8 +127,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s320/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s160/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s320/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s480/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s160/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s320/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWAzCpKD8DMWmzzr2ly_CZwZJaNpCY7lMC6WZetviDE9M2eg4oNRic9vZs9wGeipAZI6ce79eA5nmzWqznAgBh2Otd0uVqQG2E7qgZl0nrYVBpibZqgB1AF3yB6e55Cdty0yowDYtpWwGFbymVC4me7U6xnWOHjV7NhAyOE6pkfZzhA6MnAuLNbcg-L34/s480/Imagen%20de%20WhatsApp%202025-06-11%20a%20las%2021.11.40_5f2ccedc.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="1047 - Especial Nirvana, su historia desde enero a junio de 1993"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -138,8 +137,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s320/Postie-and-Travis-Barker-768x412.jpeg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s160/Postie-and-Travis-Barker-768x412.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s320/Postie-and-Travis-Barker-768x412.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s480/Postie-and-Travis-Barker-768x412.jpeg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s160/Postie-and-Travis-Barker-768x412.jpeg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s320/Postie-and-Travis-Barker-768x412.jpeg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIE8Bl9H5cmRV1GTXvSuoB12_fr-3_lry81F7_fwove1GOjIOOPQw2s-yhv9P_XmtEFTwLiCxcGtCiDyZqhGqlzMRRSD-6yYJ0_HZUZgi1bOASfrC7LMSL48of2K0FbZuh8fQ4IWgii8/s480/Postie-and-Travis-Barker-768x412.jpeg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="P.641 Post Malone y Travis Barker recuerdan a Nirvana"
                   loading="lazy" width="320" height="213" />
           </span>
@@ -149,8 +147,7 @@
           <span class="episode-cover-link related-cover-link">
             <img class="episode-cover-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s160/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s480/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 480w"
-                  sizes="(max-width: 480px) 45vw, 160px"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s160/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 160w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s320/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ZZiCt8T1EtDrhYNBGwnUwzeR_Axb9sEDdbzLjqvOEYBvSCZQeYoG_EjY32wpe88uTFLJwv9OjmELlQJyb4I1KTDgGB_Xu0fGRkeuTjUhYD72ScBCJ-C5ci9vAT9iGAyi2EtrgNt0iFI/s480/rs-nirvana-e9e22e4b-f7d9-4fc7-bd94-23c30084ce94.jpg 480w" sizes="(max-width: 480px) 45vw, 160px"
                   alt="Programa 359 - Nirvana, en busca del Nevermind "
                   loading="lazy" width="320" height="213" />
           </span>
@@ -166,8 +163,7 @@
         <a class="related-bottom-card" href="programa-319-nirvana-iv.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s480/nirvanaIV.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s640/nirvanaIV.JPG 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s320/nirvanaIV.JPG 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s480/nirvanaIV.JPG 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjko0GbUcnSHP87_bLiUsvCnlQpSPV206zlsHC2zfcUhihM1Um4YR9S0SQTt6mo52EI8dqGnNCJimSgYmpi1DtCr_g-aL_Uvyr-GMktnqcOmMk-XAq_dYt-vzAEWK14cT_Ef2JFIIXjMCI/s640/nirvanaIV.JPG 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="Programa 319 – Nirvana IV"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -178,8 +174,7 @@
           </a><a class="related-bottom-card" href="bienvenido-a-los-90-programa-13-especial-nirvana.html">
             <img class="related-bottom-card-img"
                   src="https://bienvenidoalos90.com/images/b90_logo2024.jpg"
-                  srcset="https://bienvenidoalos90.com/images/b90_logo2024.jpg 320w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 480w, https://bienvenidoalos90.com/images/b90_logo2024.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  
                   alt="Bienvenido a los 90 - Programa #13 - Especial Nirvana"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
@@ -190,8 +185,7 @@
           </a><a class="related-bottom-card" href="p-1005-hablando-de-nirvana-con-the-buzz-lovers.html">
             <img class="related-bottom-card-img"
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s320/459666122_1063316375799658_2900147133997114676_n.jpg"
-                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s320/459666122_1063316375799658_2900147133997114676_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s480/459666122_1063316375799658_2900147133997114676_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s640/459666122_1063316375799658_2900147133997114676_n.jpg 640w"
-                  sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
+                  srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s320/459666122_1063316375799658_2900147133997114676_n.jpg 320w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s480/459666122_1063316375799658_2900147133997114676_n.jpg 480w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeFMapqHoFN4g4S0bb9viaxqhNIoQvFx7vztgJVCGWQAcAG7lzIUC-JQl9zE8CDJlbE3pJnkG6sBwdgxBUBxvNujEDQ1Nez03M89qbA-gWOoxanWszktwIED4_fot9661R1WZXaSwFA65f0_-2oGH5qdMVURrIXCe56STzs2HjrosiVwfBf6Fd7Ih39aM/s640/459666122_1063316375799658_2900147133997114676_n.jpg 640w" sizes="(max-width: 640px) calc(100vw - 2rem), 33vw"
                   alt="P.1005 - Hablando de Nirvana con The Buzz Lovers"
                   loading="lazy" width="320" height="213" />
             <div class="related-bottom-card-body">
