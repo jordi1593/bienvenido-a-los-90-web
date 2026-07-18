@@ -507,31 +507,6 @@ function episodePage(ep, { prev, next, related, series, validEtiquetaLabels }) {
     itemListElement: breadcrumbItems,
   };
 
-  const faqQuestions = [
-    {
-      q: `¿De qué trata el episodio "${ep.title}"?`,
-      a: metaDescription(ep.paragraphs),
-    },
-    ...(ep.ivooxLink ? [{
-      q: `¿Dónde puedo escuchar "${ep.title}"?`,
-      a: `Puedes escuchar este episodio en iVoox: ${ep.ivooxLink}`,
-    }] : []),
-    ...(ep.published ? [{
-      q: `¿Cuándo se emitió el episodio "${ep.title}"?`,
-      a: `Este episodio se emitió el ${formatDateLong(ep.published)}.`,
-    }] : []),
-  ];
-
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqQuestions.map(({ q, a }) => ({
-      "@type": "Question",
-      name: q,
-      acceptedAnswer: { "@type": "Answer", text: a },
-    })),
-  };
-
   return `<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -568,7 +543,6 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 <link rel="preload" as="image" href="${coverImage}" />
 <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 <script type="application/ld+json">${JSON.stringify(breadcrumbJsonLd)}</script>
-<script type="application/ld+json">${JSON.stringify(faqJsonLd)}</script>
 </head>
 <body>
   <nav class="topnav">
@@ -658,7 +632,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
         <div class="transcript-text">${escapeHtml(transcriptText).replace(/\n\n/g, "</p><p>").replace(/\n/g, " ")}</div>
       </details>` : ""}
 
-      ${ep.labels.length ? `<div class="episode-tags">${ep.labels.map((l) => `<a href="../?label=${encodeURIComponent(l)}#episodios">${escapeHtml(l)}</a>`).join("")}</div>` : ""}
+      ${ep.labels.length ? `<div class="episode-tags">${ep.labels.map((l) => validEtiquetaLabels.has(l) ? `<a href="../etiquetas/${labelSlug(l)}.html">${escapeHtml(l)}</a>` : `<span>${escapeHtml(l)}</span>`).join("")}</div>` : ""}
 
       ${series ? `
       <div class="series-box">
