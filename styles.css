@@ -193,6 +193,7 @@ body {
   color: var(--text);
   text-decoration: none;
   font-family: var(--font-display);
+  white-space: nowrap;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.02em;
