@@ -107,7 +107,8 @@ jobs:
           cp -r etiquetas dist/
           cp directo.json dist/
           cp -r directo dist/
-          cp sitemap.xml robots.txt dist/
+          cp sitemap.xml sitemap-main.xml sitemap-episodes.xml robots.txt dist/
+          cp google*.html dist/ 2>/dev/null || true
 
       - uses: actions/configure-pages@v5
         if: steps.commit.outputs.pushed == 'true' || github.event_name == 'push'
