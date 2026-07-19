@@ -1,5 +1,23 @@
 [
   {
+    "image": "fotos/1034-grupo.jpg",
+    "caption": "Joan, Jordi, Luis, Richard y Roberto",
+    "episodeSlug": "1034-especial-libros-musicales-desde-barcelona",
+    "date": "06/04/2025"
+  },
+  {
+    "image": "fotos/1034-ava-adore.jpg",
+    "caption": "Ava Adore",
+    "episodeSlug": "1034-especial-libros-musicales-desde-barcelona",
+    "date": "06/04/2025"
+  },
+  {
+    "image": "fotos/1034-libreria-sonora.jpg",
+    "caption": "Librería SONORA",
+    "episodeSlug": "1034-especial-libros-musicales-desde-barcelona",
+    "date": "06/04/2025"
+  },
+  {
     "image": "fotos/1024-jesus-roberto.jpg",
     "caption": "Jesús y Roberto",
     "episodeSlug": "1024-homenaje-a-dover",
