@@ -1382,7 +1382,7 @@ function buildFotosPage(episodesBySlug) {
         <li><a href="/#escuchanos">Escúchanos</a></li>
         <li><a href="/#episodios">Episodios</a></li>
         <li><a href="etiquetas/">Etiquetas</a></li>
-        <li><a href="fotos.html" class="active">Fotos</a></li>
+        <li><a href="fotos.html">Fotos</a></li>
         <li><a href="directo.html">En Directo</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
         <li><a href="/#sobre-nosotros">Sobre nosotros</a></li>

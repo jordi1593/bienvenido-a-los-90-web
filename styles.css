@@ -251,7 +251,8 @@ body {
   flex-shrink: 0;
 }
 
-.topnav-links a:hover {
+.topnav-links a:hover,
+.topnav-links a.active {
   color: var(--accent);
 }
 
