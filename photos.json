@@ -1,5 +1,23 @@
 [
   {
+    "image": "fotos/1034-documental-bienvenidos-a-la-radio.jpg",
+    "caption": "Proyección del documental Bienvenidos a la radio",
+    "episodeSlug": "1034-especial-libros-musicales-desde-barcelona",
+    "date": "06/04/2025"
+  },
+  {
+    "image": "fotos/1034-paco-perez-bryan-pantalla.jpg",
+    "caption": "Paco Pérez Bryan en la pantalla",
+    "episodeSlug": "1034-especial-libros-musicales-desde-barcelona",
+    "date": "06/04/2025"
+  },
+  {
+    "image": "fotos/1034-marc-james-vieco-directo.jpg",
+    "caption": "Marc y James Vieco en directo",
+    "episodeSlug": "1034-especial-libros-musicales-desde-barcelona",
+    "date": "06/04/2025"
+  },
+  {
     "image": "fotos/1050-julio-ruiz-radio-utopia.jpg",
     "caption": "SIR Julio Ruiz en Radio Utopía",
     "episodeSlug": "1050-recordando-a-the-beatles-con-julio-ruiz",
