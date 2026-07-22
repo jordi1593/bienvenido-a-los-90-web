@@ -226,7 +226,7 @@ body {
 
 .topnav-links {
   display: flex;
-  gap: 1.75rem;
+  gap: 1.25rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -235,10 +235,11 @@ body {
 .topnav-links a {
   color: var(--text);
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+  white-space: nowrap;
   display: inline-flex;
   align-items: center;
   gap: 0.35em;
@@ -272,7 +273,7 @@ body {
   height: 24px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1060px) {
   .topnav-links {
     position: absolute;
     top: 64px;
@@ -289,7 +290,7 @@ body {
   }
 
   .topnav-links.open {
-    max-height: 320px;
+    max-height: 480px;
   }
 
   .topnav-links a {
@@ -305,7 +306,7 @@ body {
     display: flex;
   }
 
-  /* Reordenar menú móvil: Escúchanos → Archivo Sonoro → Fotos → Aleatorio → Sobre Nosotros → Síguenos */
+  /* Reordenar menú: Escúchanos → Episodios → Etiquetas → Fotos → En Directo → Aleatorio → Sobre Nosotros → Síguenos */
   .topnav-links li:has(a[href="#escuchanos"])    { order: 1; }
   .topnav-links li:has(a[href="#episodios"]),
   .topnav-links li:has(a[href="/#episodios"])    { order: 2; }
