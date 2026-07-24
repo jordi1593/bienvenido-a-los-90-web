@@ -1409,8 +1409,7 @@ function buildFotosPage(episodesBySlug) {
     <button class="lightbox-nav lightbox-prev" type="button" aria-label="Foto anterior">&#8249;</button>
     <img id="lightboxImg" src="" alt="" />
     <button class="lightbox-nav lightbox-next" type="button" aria-label="Foto siguiente">&#8250;</button>
-    <p id="lightboxCaption" class="lightbox-caption"></p>
-  </div>
+      </div>
 
   <footer class="site-footer">
     <div class="container">
@@ -1437,7 +1436,6 @@ function buildFotosPage(episodesBySlug) {
     (function () {
       var lightbox = document.getElementById("lightbox");
       var lightboxImg = document.getElementById("lightboxImg");
-      var lightboxCaption = document.getElementById("lightboxCaption");
       var allPhotos = Array.prototype.slice.call(document.querySelectorAll(".stack-photos img"));
       var currentIndex = -1;
       function showIndex(index) {
@@ -1445,7 +1443,6 @@ function buildFotosPage(episodesBySlug) {
         var img = allPhotos[currentIndex];
         lightboxImg.src = img.src;
         lightboxImg.alt = img.alt;
-        lightboxCaption.textContent = img.alt;
         lightbox.hidden = false;
       }
       function closeLightbox() {
