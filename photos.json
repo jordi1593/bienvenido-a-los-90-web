@@ -1,5 +1,23 @@
 [
   {
+    "image": "fotos/543-con-ampi_polaroid.jpg",
+    "caption": "Con Ampi",
+    "episodeSlug": "programa-543-amparo-llanos",
+    "date": "07/01/2020"
+  },
+  {
+    "image": "fotos/543-entrevista-subterfuge-radio_polaroid.jpg",
+    "caption": "Entrevista en Subterfuge Radio",
+    "episodeSlug": "programa-543-amparo-llanos",
+    "date": "07/01/2020"
+  },
+  {
+    "image": "fotos/543-oficinas-subterfuge_polaroid.jpg",
+    "caption": "Oficinas de Subterfuge",
+    "episodeSlug": "programa-543-amparo-llanos",
+    "date": "07/01/2020"
+  },
+  {
     "image": "fotos/929-con-lemur_polaroid.jpg",
     "caption": "Con Lemur",
     "episodeSlug": "p-929-especial-galan-fest-2023-con-havalina-le-mur-naia-living-camboya",
