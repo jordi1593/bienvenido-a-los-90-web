@@ -380,7 +380,7 @@ function applyFilters() {
     if (af?.sort) {
       state.filtered.sort(af.sort);
     } else if (!onlyLabel.startsWith("__")) {
-      state.filtered.sort((a, b) => labelScore(b, onlyLabel) - labelScore(a, onlyLabel));
+      state.filtered.sort((a, b) => new Date(b.published) - new Date(a.published));
     }
   }
   syncQuickTags();
