@@ -1143,7 +1143,7 @@ ${footer}
     <h1 class="section-title font-brand">Etiquetas</h1>
     <p style="color:var(--text-dim);margin-bottom:2rem">Explora los episodios por artista o temática.</p>
     <div style="display:flex;flex-wrap:wrap;gap:0.6rem">
-      ${qualifying.map(([label, eps]) => `<a href="/etiquetas/${labelSlug(label)}.html" class="quick-tag">${escapeHtml(label)} <span style="opacity:0.6;font-size:0.75em">${eps.length}</span></a>`).join("\n      ")}
+      ${[...qualifying].sort((a, b) => a[0].localeCompare(b[0], "es")).map(([label, eps]) => `<a href="/etiquetas/${labelSlug(label)}.html" class="quick-tag">${escapeHtml(label)} <span style="opacity:0.6;font-size:0.75em">${eps.length}</span></a>`).join("\n      ")}
     </div>
   </main>
 
