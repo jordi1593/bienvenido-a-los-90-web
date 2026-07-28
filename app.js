@@ -427,7 +427,7 @@ function populateLabelFilter(episodes) {
   // entre las más frecuentes, por petición explícita.
   const FORCED_LABELS = new Set([
     "sub pop", "portishead", "the breeders", "sexy sadie", "blind melon", "pasajero",
-    "l7", "rage against the machine", "beck", "veruca salt",
+    "l7", "rage against the machine", "beck", "veruca salt", "megadeth",
   ]);
   const counts = new Map();
   episodes.forEach((ep) => ep.labels.forEach((l) => {
