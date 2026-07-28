@@ -170,7 +170,6 @@ const LABEL_TYPO_FIXES = new Map([
   ["seatlle", "seattle"],
   ["the smashing pumkins", "the smashing pumpkins"],
   ["smashing pumkins", "smashing pumpkins"],
-  ["pegadeth", "megadeth"],
   ["dave ghrol", "dave grohl"],
   ["foo fighteres", "foo fighters"],
   ["alian johannes", "alain johannes"],
