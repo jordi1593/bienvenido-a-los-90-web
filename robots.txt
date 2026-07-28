@@ -7,10 +7,6 @@ User-agent: *
 # Página legal sin valor SEO (ya lleva <meta name="robots" content="noindex">)
 Disallow: /privacidad.html
 
-# Parámetros de filtro dinámico de la home: no son páginas independientes,
-# el canonical ya apunta a / pero bloquearlo evita desperdiciar crawl budget.
-Disallow: /?label=
-
 # Archivos de texto de transcripciones: datos internos sin estructura HTML.
 # No aportan valor como páginas independientes y desperdician crawl budget.
 Disallow: /data/transcriptions/
