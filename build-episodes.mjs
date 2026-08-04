@@ -1303,7 +1303,7 @@ function buildFotosPage(episodesBySlug) {
   });
 
   let globalPhotoIndex = 0;
-  const groupsHtml = groups.map((group) => {
+  const groupsHtml = groups.map((group, groupIndex) => {
     const { ep } = group;
     const links = ep ? platformLinks(ep) : [];
     const linksHtml = links.length
@@ -1327,7 +1327,7 @@ function buildFotosPage(episodesBySlug) {
     return `
     <article class="ep-card">
       <button class="ep-cover-btn" type="button" data-start="${startIndex}" aria-label="Ver ${countLabel} de ${escapeHtml(groupTitle)}">
-        <img src="${escapeHtml(cover.image)}" alt="${escapeHtml(cover.caption)}" loading="lazy" width="600" height="400"${cover.focalPoint ? ` style="object-position:${escapeHtml(cover.focalPoint)}"` : ""} />
+        <img src="${escapeHtml(cover.image)}" alt="${escapeHtml(cover.caption)}"${groupIndex >= 6 ? ' loading="lazy"' : ''} width="600" height="400"${cover.focalPoint ? ` style="object-position:${escapeHtml(cover.focalPoint)}"` : ""} />
         ${group.photos.length > 1 ? `<span class="ep-photo-count">${countLabel}</span>` : ""}
       </button>
       <div class="ep-body">

@@ -154,6 +154,7 @@ body {
   color: var(--text);
   line-height: 1.5;
   transition: background-color 0.2s ease, color 0.2s ease;
+  scrollbar-gutter: stable;
 }
 
 .container {
@@ -2456,7 +2457,7 @@ html:not([data-theme="dark"]) .social-btn {
 
 .lightbox-caption {
   color: #fff;
-  font-family: "Special Elite", monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 0.95rem;
   text-align: center;
   margin: 0;
