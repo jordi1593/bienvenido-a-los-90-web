@@ -1,5 +1,59 @@
 [
   {
+    "image": "fotos/975-abel-guzman-directo_polaroid.jpg",
+    "caption": "Abel Guzman en directo",
+    "episodeSlug": "p-975-especial-diary-sunny-day-real-estate",
+    "date": "04/06/2024"
+  },
+  {
+    "image": "fotos/975-abel-guzman-radio_polaroid.jpg",
+    "caption": "Abel Guzman en Radio Utopia",
+    "episodeSlug": "p-975-especial-diary-sunny-day-real-estate",
+    "date": "04/06/2024"
+  },
+  {
+    "image": "fotos/976-bocangel_polaroid.jpg",
+    "caption": "BOCANGEL",
+    "episodeSlug": "p-976-bocangel-presentan-cuatro-cuentos-de-ficcion",
+    "date": "04/06/2024"
+  },
+  {
+    "image": "fotos/976-bocangel-radio-utopia_polaroid.jpg",
+    "caption": "BOCANGEL en Radio Utopia",
+    "episodeSlug": "p-976-bocangel-presentan-cuatro-cuentos-de-ficcion",
+    "date": "04/06/2024"
+  },
+  {
+    "image": "fotos/979-javistone_polaroid.jpg",
+    "caption": "Javistone de Rock Botton Magazine",
+    "episodeSlug": "p-979-especial-anos-90-rock-botton-magazine",
+    "date": "15/06/2024"
+  },
+  {
+    "image": "fotos/980-krazark_polaroid.jpg",
+    "caption": "KrazarK",
+    "episodeSlug": "p-980-entrevista-krazark",
+    "date": "17/06/2024"
+  },
+  {
+    "image": "fotos/980-krazark-radio-utopia_polaroid.jpg",
+    "caption": "KrazarK en Radio Utopia",
+    "episodeSlug": "p-980-entrevista-krazark",
+    "date": "17/06/2024"
+  },
+  {
+    "image": "fotos/988-hey-bulldogs-directo_polaroid.jpg",
+    "caption": "Hey Bulldogs en directo",
+    "episodeSlug": "p-988-hablando-de-los-beatles-y-las-bandas-tributo-con-hey-bulldogs",
+    "date": "06/08/2024"
+  },
+  {
+    "image": "fotos/988-hey-bulldogs-radio_polaroid.jpg",
+    "caption": "Hey Bulldogs en Radio Utopia",
+    "episodeSlug": "p-988-hablando-de-los-beatles-y-las-bandas-tributo-con-hey-bulldogs",
+    "date": "06/08/2024"
+  },
+  {
     "image": "fotos/933-samuel-andrew-manana-culture_polaroid.jpg",
     "caption": "Samuel y Andrew de The Manana Culture",
     "episodeSlug": "p-933-the-manana-culture-presentan-bravado",
