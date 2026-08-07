@@ -1,5 +1,221 @@
 [
   {
+    "image": "fotos/371-bandada_polaroid.jpg",
+    "caption": "Bandada",
+    "episodeSlug": "programa-371-rufus-t-firefly-y-havalina-presentan-bandada",
+    "date": "13/04/2018"
+  },
+  {
+    "image": "fotos/371-victor-roberto-manuel_polaroid.jpg",
+    "caption": "Victor, Roberto y Manuel",
+    "episodeSlug": "programa-371-rufus-t-firefly-y-havalina-presentan-bandada",
+    "date": "13/04/2018"
+  },
+  {
+    "image": "fotos/370-carlos-galan_polaroid.jpg",
+    "caption": "Con Carlos Galan",
+    "episodeSlug": "programa-370-entrevista-carlos-galan-subterfuge-records",
+    "date": "11/04/2018"
+  },
+  {
+    "image": "fotos/361-estudio-radio3_polaroid.jpg",
+    "caption": "En el estudio de Radio 3",
+    "episodeSlug": "programa-361-entrevista-a-julio-ruiz-disco-grande-radio-3",
+    "date": "21/03/2018"
+  },
+  {
+    "image": "fotos/378-malparaiso_polaroid.jpg",
+    "caption": "Malparaiso",
+    "episodeSlug": "programa-378-asi-conoci-a-las-estrellas-de-rock-malparaiso",
+    "date": "01/05/2018"
+  },
+  {
+    "image": "fotos/378-malparaiso-directo_polaroid.jpg",
+    "caption": "Malparaiso en directo",
+    "episodeSlug": "programa-378-asi-conoci-a-las-estrellas-de-rock-malparaiso",
+    "date": "01/05/2018"
+  },
+  {
+    "image": "fotos/378-javier-pepe-malparaiso_polaroid.jpg",
+    "caption": "Con Javier y Pepe de Malparaiso",
+    "episodeSlug": "programa-378-asi-conoci-a-las-estrellas-de-rock-malparaiso",
+    "date": "01/05/2018"
+  },
+  {
+    "image": "fotos/381-gut-derby_polaroid.jpg",
+    "caption": "Gut Derby en directo",
+    "episodeSlug": "programa-381-kerouac-gut-derby",
+    "date": "08/05/2018"
+  },
+  {
+    "image": "fotos/381-angel-kerouac_polaroid.jpg",
+    "caption": "Angel Agudo y Kerouac",
+    "episodeSlug": "programa-381-kerouac-gut-derby",
+    "date": "08/05/2018"
+  },
+  {
+    "image": "fotos/315-con-carlos-pina_polaroid.jpg",
+    "caption": "Con Carlos Pina",
+    "episodeSlug": "programa-315-carlos-pina",
+    "date": "22/12/2017"
+  },
+  {
+    "image": "fotos/315-alex-gabasa_polaroid.jpg",
+    "caption": "Alex Gabasa a los mandos tecnicos",
+    "episodeSlug": "programa-315-carlos-pina",
+    "date": "22/12/2017"
+  },
+  {
+    "image": "fotos/421-armando-latigo-mantra_polaroid.jpg",
+    "caption": "Con Armando Rivero, Latigo Mantra",
+    "episodeSlug": "programa-421-musica-del-subsuelo-espanol-2",
+    "date": "06/08/2018"
+  },
+  {
+    "image": "fotos/393-maria-rodes-directo_polaroid.jpg",
+    "caption": "Maria Rodes en directo",
+    "episodeSlug": "programa-393-maria-rodes-2018",
+    "date": "04/06/2018"
+  },
+  {
+    "image": "fotos/393-con-maria-rodes_polaroid.jpg",
+    "caption": "Con Maria Rodes",
+    "episodeSlug": "programa-393-maria-rodes-2018",
+    "date": "04/06/2018"
+  },
+  {
+    "image": "fotos/395-recording_polaroid.jpg",
+    "caption": "Recording",
+    "episodeSlug": "programa-395-furinyaki-records-studio",
+    "date": "09/06/2018"
+  },
+  {
+    "image": "fotos/395-zaca-furinyaki_polaroid.jpg",
+    "caption": "Con Zaca Furinyaki",
+    "episodeSlug": "programa-395-furinyaki-records-studio",
+    "date": "09/06/2018"
+  },
+  {
+    "image": "fotos/395-furinyaki-studio_polaroid.jpg",
+    "caption": "En Furinyaki Records Studio",
+    "episodeSlug": "programa-395-furinyaki-records-studio",
+    "date": "09/06/2018"
+  },
+  {
+    "image": "fotos/399-simone-directo_polaroid.jpg",
+    "caption": "Simone en directo",
+    "episodeSlug": "programa-399-simone",
+    "date": "18/06/2018"
+  },
+  {
+    "image": "fotos/399-con-simone_polaroid.jpg",
+    "caption": "Con Simone",
+    "episodeSlug": "programa-399-simone",
+    "date": "18/06/2018"
+  },
+  {
+    "image": "fotos/402-alex-rebels-aleks_polaroid.jpg",
+    "caption": "Con Alex Rebels y Aleks Ferrero",
+    "episodeSlug": "programa-402-the-rebels-red-fox-music-y-el-underground",
+    "date": "25/06/2018"
+  },
+  {
+    "image": "fotos/409-no-dogs_polaroid.jpg",
+    "caption": "Con No Dogs",
+    "episodeSlug": "programa-409-entrevista-no-dogs",
+    "date": "09/07/2018"
+  },
+  {
+    "image": "fotos/414-raul-talk-to-him_polaroid.jpg",
+    "caption": "Con Raul de Talk to Him",
+    "episodeSlug": "programa-414-talk-to-him",
+    "date": "20/07/2018"
+  },
+  {
+    "image": "fotos/415-ricky-lavado_polaroid.jpg",
+    "caption": "Con Ricky Lavado",
+    "episodeSlug": "programa-415-ricky-lavado",
+    "date": "23/07/2018"
+  },
+  {
+    "image": "fotos/417-virginia-diaz_polaroid.jpg",
+    "caption": "Virginia Diaz",
+    "episodeSlug": "programa-417-virginia-diaz",
+    "date": "26/07/2018"
+  },
+  {
+    "image": "fotos/417-con-virginia-diaz_polaroid.jpg",
+    "caption": "Con Virginia Diaz",
+    "episodeSlug": "programa-417-virginia-diaz",
+    "date": "26/07/2018"
+  },
+  {
+    "image": "fotos/418-sara-navarro_polaroid.jpg",
+    "caption": "Sara Navarro",
+    "episodeSlug": "programa-418-sara-navarro",
+    "date": "01/08/2018"
+  },
+  {
+    "image": "fotos/418-con-sara-navarro_polaroid.jpg",
+    "caption": "Con Sara Navarro",
+    "episodeSlug": "programa-418-sara-navarro",
+    "date": "01/08/2018"
+  },
+  {
+    "image": "fotos/432-japon-gyn_polaroid.jpg",
+    "caption": "Japon Gyn",
+    "episodeSlug": "programa-432-musica-para-viajar",
+    "date": "25/09/2018"
+  },
+  {
+    "image": "fotos/432-tokio_polaroid.jpg",
+    "caption": "Tokio",
+    "episodeSlug": "programa-432-musica-para-viajar",
+    "date": "25/09/2018"
+  },
+  {
+    "image": "fotos/432-miradas_polaroid.jpg",
+    "caption": "Miradas",
+    "episodeSlug": "programa-432-musica-para-viajar",
+    "date": "25/09/2018"
+  },
+  {
+    "image": "fotos/432-comida_polaroid.jpg",
+    "caption": "Comida",
+    "episodeSlug": "programa-432-musica-para-viajar",
+    "date": "25/09/2018"
+  },
+  {
+    "image": "fotos/432-lupin_polaroid.jpg",
+    "caption": "Lupin",
+    "episodeSlug": "programa-432-musica-para-viajar",
+    "date": "25/09/2018"
+  },
+  {
+    "image": "fotos/432-liam-gallagher_polaroid.jpg",
+    "caption": "Liam Gallagher en directo",
+    "episodeSlug": "programa-432-musica-para-viajar",
+    "date": "25/09/2018"
+  },
+  {
+    "image": "fotos/432-tienda-beatles_polaroid.jpg",
+    "caption": "Tienda Beatles",
+    "episodeSlug": "programa-432-musica-para-viajar",
+    "date": "25/09/2018"
+  },
+  {
+    "image": "fotos/431-zaca-furinyaki_polaroid.jpg",
+    "caption": "Con Zaca de Furinyaki Records Studio",
+    "episodeSlug": "programa-431-in-utero-25",
+    "date": "23/09/2018"
+  },
+  {
+    "image": "fotos/431-in-utero_polaroid.jpg",
+    "caption": "In Utero",
+    "episodeSlug": "programa-431-in-utero-25",
+    "date": "23/09/2018"
+  },
+  {
     "image": "fotos/328-manuel-roberto_polaroid.jpg",
     "caption": "Manuel y Roberto",
     "episodeSlug": "programa-328-manu-cabezali-producciones-2017",
