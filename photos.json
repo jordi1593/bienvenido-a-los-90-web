@@ -1,5 +1,77 @@
 [
   {
+    "image": "fotos/1012-ivan-jose-angel_polaroid.jpg",
+    "caption": "Ivan Muniz y Jose Angel Romera",
+    "episodeSlug": "p-1012-la-historia-de-nick-cave-en-14-canciones",
+    "date": "09/12/2024"
+  },
+  {
+    "image": "fotos/1012-asno-angel_polaroid.jpg",
+    "caption": "Y el asno vio al angel",
+    "episodeSlug": "p-1012-la-historia-de-nick-cave-en-14-canciones",
+    "date": "09/12/2024"
+  },
+  {
+    "image": "fotos/1014-fundacion-club-45_polaroid.jpg",
+    "caption": "Fundacion Club 45",
+    "episodeSlug": "p-1014-desde-la-fundacion-club-45-con-alex-cooper",
+    "date": "16/12/2024"
+  },
+  {
+    "image": "fotos/1014-con-alex-cooper_polaroid.jpg",
+    "caption": "Con Alex Cooper",
+    "episodeSlug": "p-1014-desde-la-fundacion-club-45-con-alex-cooper",
+    "date": "16/12/2024"
+  },
+  {
+    "image": "fotos/1014-proyeccion-bienvenidos_polaroid.jpg",
+    "caption": "Proyeccion del Bienvenidos a la Radio",
+    "episodeSlug": "p-1014-desde-la-fundacion-club-45-con-alex-cooper",
+    "date": "16/12/2024"
+  },
+  {
+    "image": "fotos/1014-acustico-zabriskie_polaroid.jpg",
+    "caption": "Acustico de Zabriskie",
+    "episodeSlug": "p-1014-desde-la-fundacion-club-45-con-alex-cooper",
+    "date": "16/12/2024"
+  },
+  {
+    "image": "fotos/1032-jayco-jr-directo_polaroid.jpg",
+    "caption": "Jayco Jr. en directo",
+    "episodeSlug": "1032-entrevista-a-jayco-jr",
+    "date": "24/03/2025"
+  },
+  {
+    "image": "fotos/1032-jayco-jr-radio_polaroid.jpg",
+    "caption": "Jayco Jr. en Radio Utopia",
+    "episodeSlug": "1032-entrevista-a-jayco-jr",
+    "date": "24/03/2025"
+  },
+  {
+    "image": "fotos/1043-low-flying-panic-attack_polaroid.jpg",
+    "caption": "The Low Flying Panic Attack",
+    "episodeSlug": "1043-entrevista-a-the-low-flying-panic-attack",
+    "date": "26/05/2025"
+  },
+  {
+    "image": "fotos/1063-laura-pardo_polaroid.jpg",
+    "caption": "Laura Pardo",
+    "episodeSlug": "1063-especial-aerobitch-con-laura-pardo",
+    "date": "21/08/2025"
+  },
+  {
+    "image": "fotos/1065-raul-moreno_polaroid.jpg",
+    "caption": "Raul Moreno",
+    "episodeSlug": "1065-asi-fueron-mis-90-s-con-raul-moreno",
+    "date": "28/08/2025"
+  },
+  {
+    "image": "fotos/1065-raul-moreno-radio_polaroid.jpg",
+    "caption": "Raul Moreno en Radio Utopia",
+    "episodeSlug": "1065-asi-fueron-mis-90-s-con-raul-moreno",
+    "date": "28/08/2025"
+  },
+  {
     "image": "fotos/975-abel-guzman-directo_polaroid.jpg",
     "caption": "Abel Guzman en directo",
     "episodeSlug": "p-975-especial-diary-sunny-day-real-estate",
