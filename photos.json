@@ -1,5 +1,53 @@
 [
   {
+    "image": "fotos/538-miguel-fran_polaroid.jpg",
+    "caption": "Miguel y Fran",
+    "episodeSlug": "programa-538-construyendo-el-sonido-de-los-90",
+    "date": "15/06/2019"
+  },
+  {
+    "image": "fotos/539-dani-santi-le-traste_polaroid.jpg",
+    "caption": "Dani y Santi de Le Traste",
+    "episodeSlug": "programa-539-el-regreso-de-le-traste",
+    "date": "17/06/2019"
+  },
+  {
+    "image": "fotos/539-con-dani-santi_polaroid.jpg",
+    "caption": "Con Dani y Santi",
+    "episodeSlug": "programa-539-el-regreso-de-le-traste",
+    "date": "17/06/2019"
+  },
+  {
+    "image": "fotos/539-banos-subterfuge_polaroid.jpg",
+    "caption": "Los banos de Subterfuge",
+    "episodeSlug": "programa-539-el-regreso-de-le-traste",
+    "date": "17/06/2019"
+  },
+  {
+    "image": "fotos/547-con-javier-vielva_polaroid.jpg",
+    "caption": "Con Javier Vielva",
+    "episodeSlug": "programa-547-javier-vielva-sus-90-s",
+    "date": "12/07/2019"
+  },
+  {
+    "image": "fotos/547-javi-subterfuge-radio_polaroid.jpg",
+    "caption": "Javi en Subterfuge Radio",
+    "episodeSlug": "programa-547-javier-vielva-sus-90-s",
+    "date": "12/07/2019"
+  },
+  {
+    "image": "fotos/585-con-mikel-subterfuge_polaroid.jpg",
+    "caption": "Con Mikel en Subterfuge Radio",
+    "episodeSlug": "p-585-recordando-a-purr",
+    "date": "10/12/2019"
+  },
+  {
+    "image": "fotos/585-mikel-sagues_polaroid.jpg",
+    "caption": "Mikel Sagues",
+    "episodeSlug": "p-585-recordando-a-purr",
+    "date": "10/12/2019"
+  },
+  {
     "image": "fotos/491-diavlo_polaroid.jpg",
     "caption": "DIAVLO",
     "episodeSlug": "programa-491-diavlo-presentan-diferente",
