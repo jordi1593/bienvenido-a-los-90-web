@@ -1,5 +1,77 @@
 [
   {
+    "image": "fotos/1060-roberto-aracil-paco-gene_polaroid.jpg",
+    "caption": "Roberto Aracil y a Paco Gene",
+    "episodeSlug": "1060-especial-buenas-noches-rose",
+    "date": "12/08/2025"
+  },
+  {
+    "image": "fotos/1064-the-wasted-garage_polaroid.jpg",
+    "caption": "The Wasted Garage",
+    "episodeSlug": "1064-entrevista-a-the-wasted-garage",
+    "date": "25/08/2025"
+  },
+  {
+    "image": "fotos/1064-wasted-garage-dramatics_polaroid.jpg",
+    "caption": "The Wasted Garage + Dramatics",
+    "episodeSlug": "1064-entrevista-a-the-wasted-garage",
+    "date": "25/08/2025"
+  },
+  {
+    "image": "fotos/1066-dramatics-radio-utopia_polaroid.jpg",
+    "caption": "Dramatics en Radio Utopia",
+    "episodeSlug": "1066-entrevista-a-dramatics",
+    "date": "01/09/2025"
+  },
+  {
+    "image": "fotos/1067-pedro-garcia-radio-utopia_polaroid.jpg",
+    "caption": "Pedro Garcia en Radio Utopia",
+    "episodeSlug": "1067-especial-soul-jazz-funk-con-pedro-garcia-de-radio-callao",
+    "date": "04/09/2025"
+  },
+  {
+    "image": "fotos/1067-con-pedro-garcia_polaroid.jpg",
+    "caption": "Con Pedro Garcia de Radio Callao",
+    "episodeSlug": "1067-especial-soul-jazz-funk-con-pedro-garcia-de-radio-callao",
+    "date": "04/09/2025"
+  },
+  {
+    "image": "fotos/1076-alicia-juan-carlos_polaroid.jpg",
+    "caption": "Alicia y Juan Carlos",
+    "episodeSlug": "1076-os-presento-a-la-persona-que-me-descubrio-otra-musica",
+    "date": "25/10/2025"
+  },
+  {
+    "image": "fotos/1089-homenaje-foo-fighters_polaroid.jpg",
+    "caption": "Homenaje a Foo Fighters",
+    "episodeSlug": "1089-homenaje-a-foo-fighters-1995",
+    "date": "08/12/2025"
+  },
+  {
+    "image": "fotos/1089-vicent-dramatics_polaroid.jpg",
+    "caption": "Vicent de la banda Dramatics",
+    "episodeSlug": "1089-homenaje-a-foo-fighters-1995",
+    "date": "08/12/2025"
+  },
+  {
+    "image": "fotos/1114-silvia_polaroid.jpg",
+    "caption": "Silvia",
+    "episodeSlug": "1114-especial-galan-fest-2025",
+    "date": "01/04/2026"
+  },
+  {
+    "image": "fotos/1114-capitan-elefante_polaroid.jpg",
+    "caption": "El Capitan Elefante",
+    "episodeSlug": "1114-especial-galan-fest-2025",
+    "date": "01/04/2026"
+  },
+  {
+    "image": "fotos/1114-escenario-set_polaroid.jpg",
+    "caption": "Escenario + set",
+    "episodeSlug": "1114-especial-galan-fest-2025",
+    "date": "01/04/2026"
+  },
+  {
     "image": "fotos/1012-ivan-jose-angel_polaroid.jpg",
     "caption": "Ivan Muniz y Jose Angel Romera",
     "episodeSlug": "p-1012-la-historia-de-nick-cave-en-14-canciones",
