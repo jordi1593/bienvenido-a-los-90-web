@@ -1,5 +1,53 @@
 [
   {
+    "image": "fotos/1103-juanra_polaroid.jpg",
+    "caption": "JuanRa",
+    "episodeSlug": "1103-el-dia-que-mike-mccready-pearl-jam-se-paseo-por-lavapies",
+    "date": "19/02/2026"
+  },
+  {
+    "image": "fotos/1108-paula-jose-navaja-cuchillo_polaroid.jpg",
+    "caption": "Paula y Jose de Navaja Cuchillo",
+    "episodeSlug": "1108-navaja-cuchillo-lo-hacen-todo-bien",
+    "date": "09/03/2026"
+  },
+  {
+    "image": "fotos/1113-dani-ruben-sincorazon_polaroid.jpg",
+    "caption": "Dani y Ruben de SINCORAZON",
+    "episodeSlug": "1113-entrevista-a-sincorazon",
+    "date": "30/03/2026"
+  },
+  {
+    "image": "fotos/1117-jesus-felix-nordica_polaroid.jpg",
+    "caption": "Jesus Felix de la editorial Nordica",
+    "episodeSlug": "1117-repasamos-el-libro-radiohead-el-presente-es-imposible",
+    "date": "16/04/2026"
+  },
+  {
+    "image": "fotos/1119-southie-directo_polaroid.jpg",
+    "caption": "Southie en directo",
+    "episodeSlug": "1119-la-energia-cruda-de-southie-y-su-album-debut-collision",
+    "date": "29/04/2026"
+  },
+  {
+    "image": "fotos/1119-juan-teclados_polaroid.jpg",
+    "caption": "Juan a los teclados",
+    "episodeSlug": "1119-la-energia-cruda-de-southie-y-su-album-debut-collision",
+    "date": "29/04/2026"
+  },
+  {
+    "image": "fotos/1119-vir-bajo_polaroid.jpg",
+    "caption": "El flow de Vir al bajo",
+    "episodeSlug": "1119-la-energia-cruda-de-southie-y-su-album-debut-collision",
+    "date": "29/04/2026"
+  },
+  {
+    "image": "fotos/1119-southie-radio-utopia_polaroid.jpg",
+    "caption": "Southie en Radio Utopia",
+    "episodeSlug": "1119-la-energia-cruda-de-southie-y-su-album-debut-collision",
+    "date": "29/04/2026"
+  },
+  {
     "image": "fotos/1081-radiohead-en-madrid_polaroid.jpg",
     "caption": "Radiohead en Madrid",
     "episodeSlug": "1081-radiohead-se-reinician-en-madrid",
