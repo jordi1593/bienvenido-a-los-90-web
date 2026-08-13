@@ -18,9 +18,9 @@ function platformLinks(ep) {
   const links = [];
   const ivoox = ep.ivooxLink || ep.downloadLink;
   if (ivoox) links.push({ label: "iVoox", url: ivoox, exact: true, icon: "ivoox" });
-  links.push({ label: "Spotify", url: ep.spotifyLink || PLATFORM_SHOW_LINKS.spotify, exact: !!ep.spotifyLink, icon: "spotify" });
-  links.push({ label: "Apple Podcasts", url: ep.appleLink || PLATFORM_SHOW_LINKS.apple, exact: !!ep.appleLink, icon: "apple" });
-  links.push({ label: "Amazon Music", url: ep.amazonLink || PLATFORM_SHOW_LINKS.amazon, exact: !!ep.amazonLink, icon: "amazon" });
+  if (ep.spotifyLink) links.push({ label: "Spotify", url: ep.spotifyLink, exact: true, icon: "spotify" });
+  if (ep.appleLink) links.push({ label: "Apple Podcasts", url: ep.appleLink, exact: true, icon: "apple" });
+  if (ep.amazonLink) links.push({ label: "Amazon Music", url: ep.amazonLink, exact: true, icon: "amazon" });
   const youtubeLinks = Array.isArray(ep.youtubeLink) ? ep.youtubeLink : ep.youtubeLink ? [ep.youtubeLink] : [];
   youtubeLinks.forEach((url, i) => {
     links.push({ label: youtubeLinks.length > 1 ? `YouTube ${i + 1}` : "YouTube", url, exact: true, icon: "youtube" });
