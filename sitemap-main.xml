@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://bienvenidoalos90.com/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://bienvenidoalos90.com/images/b90-logo-new.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/fotos.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image><image:loc>https://bienvenidoalos90.com/images/og-home.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/directo.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
@@ -267,6 +267,13 @@
     
   </url>
   <url>
+    <loc>https://bienvenidoalos90.com/etiquetas/b90-supernova.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    
+  </url>
+  <url>
     <loc>https://bienvenidoalos90.com/etiquetas/krist-novoselic.html</loc>
     <lastmod>2025-06-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -283,13 +290,6 @@
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/screaming-trees.html</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    
-  </url>
-  <url>
-    <loc>https://bienvenidoalos90.com/etiquetas/b90-supernova.html</loc>
-    <lastmod>2026-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
@@ -554,6 +554,13 @@
     
   </url>
   <url>
+    <loc>https://bienvenidoalos90.com/etiquetas/the-verve.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    
+  </url>
+  <url>
     <loc>https://bienvenidoalos90.com/etiquetas/mellon-collie-and-the-infinite-sadness.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -640,13 +647,6 @@
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/craneon.html</loc>
     <lastmod>2026-03-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    
-  </url>
-  <url>
-    <loc>https://bienvenidoalos90.com/etiquetas/the-verve.html</loc>
-    <lastmod>2025-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
@@ -750,6 +750,13 @@
     
   </url>
   <url>
+    <loc>https://bienvenidoalos90.com/etiquetas/brit-pop.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    
+  </url>
+  <url>
     <loc>https://bienvenidoalos90.com/etiquetas/queens-of-the-stone-age.html</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -813,6 +820,13 @@
     
   </url>
   <url>
+    <loc>https://bienvenidoalos90.com/etiquetas/richard-ashcroft.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    
+  </url>
+  <url>
     <loc>https://bienvenidoalos90.com/etiquetas/subterfuge.html</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -857,13 +871,6 @@
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/tom-morello.html</loc>
     <lastmod>2025-05-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    
-  </url>
-  <url>
-    <loc>https://bienvenidoalos90.com/etiquetas/brit-pop.html</loc>
-    <lastmod>2023-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
@@ -934,13 +941,6 @@
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/the-melvins.html</loc>
     <lastmod>2024-09-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    
-  </url>
-  <url>
-    <loc>https://bienvenidoalos90.com/etiquetas/richard-ashcroft.html</loc>
-    <lastmod>2023-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
