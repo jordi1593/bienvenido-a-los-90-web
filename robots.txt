@@ -7,11 +7,6 @@ User-agent: *
 # Página legal sin valor SEO (ya lleva <meta name="robots" content="noindex">)
 Disallow: /privacidad.html
 
-# URLs de filtro dinámico (?label=...) — generadas por JS en cliente,
-# tienen canónica a la home y desperdician crawl budget (326 URLs rastreadas).
-# Las páginas de etiqueta con contenido propio están en /etiquetas/ y sí se indexan.
-Disallow: /*?label=
-
 # Archivos de texto de transcripciones: datos internos sin estructura HTML.
 # No aportan valor como páginas independientes y desperdician crawl budget.
 Disallow: /data/transcriptions/
