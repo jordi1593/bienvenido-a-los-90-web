@@ -561,6 +561,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
         <li><a href="../etiquetas/">Etiquetas</a></li>
         <li><a href="../fotos.html">Fotos</a></li>
         <li><a href="../directo.html">En Directo</a></li>
+        <li><a href="../tienda.html">Tienda</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
         <li><a href="../#sobre-nosotros">Sobre nosotros</a></li>
         <li><a href="../#sigue">Síguenos</a></li>
@@ -972,6 +973,7 @@ ${extraLd ? `<script type="application/ld+json">${extraLd}</script>` : ""}
         <li><a href="../etiquetas/">Etiquetas</a></li>
         <li><a href="../fotos.html">Fotos</a></li>
         <li><a href="../directo.html">En Directo</a></li>
+        <li><a href="../tienda.html">Tienda</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
         <li><a href="../#sobre-nosotros">Sobre nosotros</a></li>
         <li><a href="../#sigue">Síguenos</a></li>
@@ -1124,6 +1126,7 @@ ${footer}
         <li><a href="../etiquetas/">Etiquetas</a></li>
         <li><a href="../fotos.html">Fotos</a></li>
         <li><a href="../directo.html">En Directo</a></li>
+        <li><a href="../tienda.html">Tienda</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
         <li><a href="../#sobre-nosotros">Sobre nosotros</a></li>
         <li><a href="../#sigue">Síguenos</a></li>
@@ -1179,6 +1182,7 @@ function buildSitemap(episodes, etiquetas) {
     { loc: `${SITE_URL}/`, lastmod: latestEpisodeDate, changefreq: "daily", priority: "1.0", image: `${SITE_URL}/images/b90-logo-new.jpg` },
     { loc: `${SITE_URL}/fotos.html`, lastmod: today, changefreq: "monthly", priority: "0.5", image: `${SITE_URL}/images/og-home.png` },
     { loc: `${SITE_URL}/directo.html`, lastmod: today, changefreq: "monthly", priority: "0.5" },
+    { loc: `${SITE_URL}/tienda.html`, lastmod: today, changefreq: "monthly", priority: "0.5" },
     { loc: `${SITE_URL}/etiquetas/`, lastmod: latestEpisodeDate, changefreq: "weekly", priority: "0.6" },
     ...etiquetas.map(([label, eps]) => {
       const slug = labelSlug(label);
@@ -1383,6 +1387,7 @@ function buildFotosPage(episodesBySlug) {
         <li><a href="etiquetas/">Etiquetas</a></li>
         <li><a href="fotos.html">Fotos</a></li>
         <li><a href="directo.html">En Directo</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
         <li><a href="/#sobre-nosotros">Sobre nosotros</a></li>
         <li><a href="/#sigue">Síguenos</a></li>

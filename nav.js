@@ -7,6 +7,7 @@
   const pageMap = [
     { pattern: /\/fotos\.html$/, href: ["fotos.html", "../fotos.html"] },
     { pattern: /\/directo\.html$/, href: ["directo.html", "../directo.html"] },
+    { pattern: /\/tienda\.html$/, href: ["tienda.html", "../tienda.html"] },
     { pattern: /\/etiquetas(\/|$|\/index\.html)/, href: ["etiquetas/", "../etiquetas/"] },
     { pattern: /\/episodios\//, href: ["../episodios/", "#episodios", "/#episodios", "../#episodios"] },
   ];
