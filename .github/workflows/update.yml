@@ -97,7 +97,7 @@ jobs:
         if: steps.commit.outputs.pushed == 'true' || github.event_name == 'push'
         run: |
           mkdir -p dist
-          cp index.html 404.html privacidad.html fotos.html directo.html styles.css app.js nav.js dist/
+          cp index.html 404.html privacidad.html fotos.html directo.html tienda.html styles.css app.js nav.js dist/
           cp CNAME dist/ 2>/dev/null || true
           cp -r fonts dist/
           cp -r images dist/
