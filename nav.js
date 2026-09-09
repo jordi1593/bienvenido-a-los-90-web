@@ -137,7 +137,42 @@
   });
 })();
 
-// Barra de navegación inferior para móvil.
+// Barra de navegación inferior para móvil — inyecta también su propio CSS.
+(function () {
+  const style = document.createElement("style");
+  style.textContent = `
+    @media (max-width: 720px) {
+      body { padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px)); }
+      .bottom-nav {
+        position: fixed; bottom: 0; left: 0; right: 0; z-index: 100;
+        display: flex; align-items: stretch;
+        background: var(--bg-flat); border-top: 1px solid var(--border);
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+        height: calc(60px + env(safe-area-inset-bottom, 0px));
+      }
+      .bottom-nav-item {
+        flex: 1; display: flex; flex-direction: column;
+        align-items: center; justify-content: center; gap: 3px;
+        text-decoration: none; color: var(--text-dim);
+        font-size: .6rem; font-weight: 700; letter-spacing: .04em;
+        text-transform: uppercase; font-family: var(--font-body);
+        padding: 8px 4px 6px; border: none; background: none;
+        cursor: pointer; transition: color .15s ease;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .bottom-nav-item svg {
+        width: 22px; height: 22px; flex-shrink: 0;
+        stroke: currentColor; fill: none;
+        stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+      }
+      .bottom-nav-item.active, .bottom-nav-item:active { color: var(--accent); }
+      .bottom-nav-item.active svg { stroke-width: 2.2; }
+    }
+    @media (min-width: 721px) { .bottom-nav { display: none !important; } }
+  `;
+  document.head.appendChild(style);
+})();
+
 (function () {
   const path = location.pathname;
   const inEpisode = path.includes("/episodios/");
