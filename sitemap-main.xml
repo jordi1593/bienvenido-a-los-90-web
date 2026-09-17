@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://bienvenidoalos90.com/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://bienvenidoalos90.com/images/b90-logo-new.jpg</image:loc></image:image>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
@@ -981,6 +981,13 @@
     
   </url>
   <url>
+    <loc>https://bienvenidoalos90.com/etiquetas/placebo.html</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    
+  </url>
+  <url>
     <loc>https://bienvenidoalos90.com/etiquetas/faith-no-more.html</loc>
     <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -1172,13 +1179,6 @@
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/prince.html</loc>
     <lastmod>2025-10-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    
-  </url>
-  <url>
-    <loc>https://bienvenidoalos90.com/etiquetas/placebo.html</loc>
-    <lastmod>2025-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
