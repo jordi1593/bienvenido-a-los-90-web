@@ -33,37 +33,35 @@ async function fetchIvooxLink(postUrl) {
 async function main() {
   const episodes = JSON.parse(fs.readFileSync("episodes.json", "utf-8"));
 
+  const pending = episodes.filter((ep) => ep.url && !ep.ivooxLink);
+  console.log(`Episodios sin enlace iVoox: ${pending.length}`);
+
   let resolved = 0;
   let failed = 0;
 
-  for (let i = 0; i < episodes.length; i++) {
-    const ep = episodes[i];
-    if (!ep.url) continue;
+  for (let i = 0; i < pending.length; i++) {
+    const ep = pending[i];
 
     try {
       const link = await fetchIvooxLink(ep.url);
       if (link) {
         ep.ivooxLink = link;
         resolved++;
+        console.log(`[${i + 1}/${pending.length}] Resuelto: ${ep.title}`);
       } else {
         failed++;
-        console.warn(`Sin coincidencia iVoox: ${ep.title}`);
+        console.warn(`[${i + 1}/${pending.length}] Sin coincidencia: ${ep.title}`);
       }
     } catch (err) {
       failed++;
-      console.error(`Error en "${ep.title}": ${err.message}`);
-    }
-
-    if ((i + 1) % 100 === 0) {
-      console.log(`Procesados ${i + 1}/${episodes.length} (resueltos: ${resolved}, fallidos: ${failed})`);
-      fs.writeFileSync("episodes.json", JSON.stringify(episodes, null, 2), "utf-8");
+      console.error(`[${i + 1}/${pending.length}] Error en "${ep.title}": ${err.message}`);
     }
 
     await sleep(DELAY_MS);
   }
 
   fs.writeFileSync("episodes.json", JSON.stringify(episodes, null, 2), "utf-8");
-  console.log(`Listo. ${resolved}/${episodes.length} episodios con enlace exacto de iVoox.`);
+  console.log(`Listo. ${resolved} resueltos, ${failed} fallidos de ${pending.length} pendientes.`);
 }
 
 main().catch((err) => {
