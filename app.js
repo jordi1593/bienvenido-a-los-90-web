@@ -596,10 +596,12 @@ async function init() {
     if (target) target.scrollIntoView({ block: "start" });
   }
 
+  let searchDebounce;
   els.search.addEventListener("input", (e) => {
     state.search = e.target.value;
     if (els.searchClearBtn) els.searchClearBtn.hidden = !e.target.value;
-    applyFilters();
+    clearTimeout(searchDebounce);
+    searchDebounce = setTimeout(applyFilters, 200);
   });
 
   if (els.searchClearBtn) {
