@@ -381,12 +381,12 @@ body {
   font-style: normal;
   color: var(--accent);
 }
-.hero-90-logo {
-  height: 0.82em;
-  width: auto;
+.hero-headline .hero-90-logo {
+  height: 0.85em;
+  width: auto !important;
   display: inline-block;
-  vertical-align: baseline;
-  margin-bottom: -0.04em;
+  vertical-align: middle;
+  max-width: none;
 }
 
 .hero-tagline {
