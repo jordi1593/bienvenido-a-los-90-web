@@ -1414,36 +1414,6 @@ html:not([data-theme="dark"]) .platform-btn {
   gap: 1.25rem;
 }
 
-.listener-quotes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin: 2rem 0;
-}
-.listener-quote {
-  margin: 0;
-  padding: 1rem 1.25rem;
-  border-left: 3px solid var(--accent);
-  background: var(--bg-card);
-  border-radius: 0 var(--radius) var(--radius) 0;
-}
-.listener-quote p {
-  margin: 0 0 .4rem;
-  font-size: .95rem;
-  font-style: italic;
-  color: var(--text);
-  line-height: 1.5;
-}
-.listener-quote cite {
-  font-size: .78rem;
-  font-style: normal;
-  color: var(--text-dim);
-  letter-spacing: .02em;
-}
-@media (max-width: 600px) {
-  .listener-quotes { grid-template-columns: 1fr; }
-}
-
 .about-logos-label {
   margin: 0 0 1rem;
   font-size: 0.8rem;
