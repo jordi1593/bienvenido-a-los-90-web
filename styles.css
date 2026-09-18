@@ -387,15 +387,6 @@ body {
   display: inline-block;
   vertical-align: middle;
   max-width: none;
-  mix-blend-mode: multiply;
-}
-[data-theme="dark"] .hero-headline .hero-90-logo {
-  mix-blend-mode: screen;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .hero-headline .hero-90-logo {
-    mix-blend-mode: screen;
-  }
 }
 
 .hero-tagline {
