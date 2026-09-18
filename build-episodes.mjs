@@ -561,7 +561,6 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
         <li><a href="../etiquetas/">Etiquetas</a></li>
         <li><a href="../fotos.html">Fotos</a></li>
         <li><a href="../directo.html">En Directo</a></li>
-        <li><a href="../tienda.html">Tienda</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
         <li><a href="../#sobre-nosotros">Sobre nosotros</a></li>
         <li><a href="../#sigue">Síguenos</a></li>
@@ -973,7 +972,6 @@ ${extraLd ? `<script type="application/ld+json">${extraLd}</script>` : ""}
         <li><a href="../etiquetas/">Etiquetas</a></li>
         <li><a href="../fotos.html">Fotos</a></li>
         <li><a href="../directo.html">En Directo</a></li>
-        <li><a href="../tienda.html">Tienda</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
         <li><a href="../#sobre-nosotros">Sobre nosotros</a></li>
         <li><a href="../#sigue">Síguenos</a></li>
@@ -1126,7 +1124,6 @@ ${footer}
         <li><a href="../etiquetas/">Etiquetas</a></li>
         <li><a href="../fotos.html">Fotos</a></li>
         <li><a href="../directo.html">En Directo</a></li>
-        <li><a href="../tienda.html">Tienda</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
         <li><a href="../#sobre-nosotros">Sobre nosotros</a></li>
         <li><a href="../#sigue">Síguenos</a></li>
@@ -1387,7 +1384,6 @@ function buildFotosPage(episodesBySlug) {
         <li><a href="etiquetas/">Etiquetas</a></li>
         <li><a href="fotos.html">Fotos</a></li>
         <li><a href="directo.html">En Directo</a></li>
-        <li><a href="tienda.html">Tienda</a></li>
         <li><a href="#" id="randomEpisodeBtn"><span aria-hidden="true">🎲</span> Episodio aleatorio</a></li>
         <li><a href="/#sobre-nosotros">Sobre nosotros</a></li>
         <li><a href="/#sigue">Síguenos</a></li>
