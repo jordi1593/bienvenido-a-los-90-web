@@ -660,6 +660,42 @@ async function init() {
 
 init();
 
+// ── Nav: sombra al hacer scroll ───────────────────────────────
+(function () {
+  const nav = document.getElementById('topnav');
+  if (!nav) return;
+  const toggle = () => nav.classList.toggle('scrolled', window.scrollY > 80);
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+})();
+
+// ── Scroll reveal: tarjetas de episodios ──────────────────────
+(function () {
+  if (!('IntersectionObserver' in window)) {
+    document.querySelectorAll('.episode-card').forEach(c => c.classList.add('visible'));
+    return;
+  }
+  let staggerIdx = 0;
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const delay = (staggerIdx++ % 4) * 40;
+      setTimeout(() => e.target.classList.add('visible'), delay);
+      obs.unobserve(e.target);
+    });
+  }, { rootMargin: '0px 0px -40px 0px', threshold: 0.1 });
+
+  const list = document.getElementById('episodeList');
+  if (!list) return;
+  const observeNew = () =>
+    list.querySelectorAll('.episode-card:not(.visible):not([data-observed])').forEach(c => {
+      c.dataset.observed = '1';
+      obs.observe(c);
+    });
+  new MutationObserver(observeNew).observe(list, { childList: true });
+  observeNew();
+})();
+
 // ── Sticky player ─────────────────────────────────────────────
 (function () {
   const player  = document.getElementById("sticky-player");
