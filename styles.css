@@ -381,6 +381,13 @@ body {
   font-style: normal;
   color: var(--accent);
 }
+.hero-90-logo {
+  height: 0.82em;
+  width: auto;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-bottom: -0.04em;
+}
 
 .hero-tagline {
   font-size: 1rem;
