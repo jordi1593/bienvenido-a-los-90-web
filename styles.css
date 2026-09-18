@@ -382,7 +382,7 @@ body {
   color: var(--accent);
 }
 .hero-headline .hero-90-logo {
-  height: 1em;
+  height: 1.3em;
   width: auto !important;
   display: inline-block;
   vertical-align: middle;
