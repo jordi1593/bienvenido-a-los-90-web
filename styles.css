@@ -339,26 +339,6 @@ body {
   text-align: center;
 }
 
-.header-banner {
-  display: inline-block;
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 420px;
-}
-
-.header-banner.logo-dark {
-  display: none;
-}
-
-[data-theme="dark"] .header-banner.logo-light {
-  display: none;
-}
-
-[data-theme="dark"] .header-banner.logo-dark {
-  display: inline-block;
-}
-
 [data-theme="dark"] .header-banner-wrap {
   padding: 2rem 1rem;
   position: relative;
@@ -372,10 +352,6 @@ body {
   pointer-events: none;
 }
 
-[data-theme="dark"] .header-banner {
-  position: relative;
-  filter: drop-shadow(0 14px 32px rgba(0, 0, 0, 0.65)) drop-shadow(0 0 18px rgba(255, 93, 133, 0.12));
-}
 
 /* ── Animación de entrada del hero ───────────────────────── */
 @keyframes fadeRise {

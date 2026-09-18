@@ -9,12 +9,11 @@
 <meta name="author" content="Roberto Martínez" />
 <meta name="google-site-verification" content="xmmtepiMUIb6eg1HNSl_DjBckoSEm7JsmrLFav7xF44" />
 <link rel="icon" type="image/png" href="images/b90-logo-dark-icon.png" />
-<link rel="icon" type="image/png" href="images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#f7f4f0" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0f0d12" media="(prefers-color-scheme: dark)" />
 <link rel="apple-touch-icon" href="images/b90-logo-new.jpg" />
 <meta name="description" content="Podcast en español sobre música de los 90: grunge, britpop y rock alternativo. Más de 1200 episodios con entrevistas, especiales y retrospectivas." />
 <link rel="canonical" href="https://bienvenidoalos90.com/" />
-<link rel="preload" as="image" href="images/b90-header.webp" media="(prefers-color-scheme: light)" fetchpriority="high" />
-<link rel="preload" as="image" href="images/b90-header-dark.webp" media="(prefers-color-scheme: dark)" fetchpriority="high" />
 <link rel="preload" as="font" href="/fonts/sg-latin.woff2" type="font/woff2" crossorigin />
 <link rel="preload" as="font" href="/fonts/pp-800-latin.woff2" type="font/woff2" crossorigin />
 <link rel="preload" as="fetch" href="/data/episodes-0.json" crossorigin />
@@ -55,13 +54,8 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
 @media(max-width:720px){.topnav-links{position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg-flat);border-top:1px solid var(--border);border-bottom:1px solid var(--border);max-height:0;overflow:hidden;transition:max-height .2s ease}.topnav-links.open{max-height:320px}.topnav-links a{padding:.9rem 1.5rem;border-bottom:1px solid var(--border)}.topnav-links a:last-child{border-bottom:none}.nav-toggle{display:flex}.topnav-links li:has(a[href="#escuchanos"]){order:1}.topnav-links li:has(a[href="#episodios"]),.topnav-links li:has(a[href="/#episodios"]){order:2}.topnav-links li:has(a[href="fotos.html"]){order:3}.topnav-links li:has(a[id="randomEpisodeBtn"]){order:4}.topnav-links li:has(a[href="#sobre-nosotros"]),.topnav-links li:has(a[href="/#sobre-nosotros"]){order:5}.topnav-links li:has(a[href="#sigue"]),.topnav-links li:has(a[href="/#sigue"]){order:6}}
 .site-header{position:relative;background:var(--bg-flat)}
 .header-banner-wrap{padding:1.5rem 1rem;text-align:center}
-.header-banner{display:inline-block;width:auto;max-width:100%;height:auto;max-height:420px}
-.header-banner.logo-dark{display:none}
-[data-theme="dark"] .header-banner.logo-light{display:none}
-[data-theme="dark"] .header-banner.logo-dark{display:inline-block}
 [data-theme="dark"] .header-banner-wrap{padding:2rem 1rem;position:relative}
 [data-theme="dark"] .header-banner-wrap::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 55% 65% at 50% 50%,rgba(255,93,133,0.16),transparent 70%);pointer-events:none}
-[data-theme="dark"] .header-banner{position:relative;filter:drop-shadow(0 14px 32px rgba(0,0,0,0.65)) drop-shadow(0 0 18px rgba(255,93,133,0.12))}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .listen-section{background:var(--bg-card);padding:2.5rem 0;border-top:1px solid var(--border)}
 .platform-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem}
@@ -259,7 +253,7 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
   <section id="sobre-nosotros" class="about-section">
     <div class="container about-inner">
       <div class="about-text">
-        <img class="about-portrait" src="images/about-roberto-martinez.webp" alt="Roberto Martínez, presentador de Bienvenido a los 90, en el estudio de Radio Utopía" width="900" height="901" loading="lazy" />
+        <img class="about-portrait" src="images/about-roberto-martinez.webp" alt="Roberto Martínez, presentador de Bienvenido a los 90, en el estudio de Radio Utopía" width="900" height="901" loading="lazy" decoding="async" />
         <h3 class="about-subtitle font-brand">Bienvenido a los 90: la memoria sonora del rock alternativo</h3>
         <p>Hay miles de playlists de los 90. Hay rankings de mejores discos. Hay vídeos de YouTube de diez minutos sobre Nevermind.</p>
 
@@ -271,21 +265,21 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
 
         <div class="about-logos">
           <figure class="about-logo-item">
-            <img class="about-logo" src="images/b90-logo-v1.jpg" alt="Primer logotipo de Bienvenido a los 90" width="928" height="720" loading="lazy" />
+            <img class="about-logo" src="images/b90-logo-v1.jpg" alt="Primer logotipo de Bienvenido a los 90" width="928" height="720" loading="lazy" decoding="async" />
             <figcaption>Primera etapa</figcaption>
           </figure>
           <span class="about-logo-arrow" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
           <figure class="about-logo-item">
-            <img class="about-logo" src="images/b90-logo-v2.jpg" alt="Segundo logotipo de Bienvenido a los 90" width="768" height="768" loading="lazy" />
+            <img class="about-logo" src="images/b90-logo-v2.jpg" alt="Segundo logotipo de Bienvenido a los 90" width="768" height="768" loading="lazy" decoding="async" />
             <figcaption>Segunda etapa</figcaption>
           </figure>
           <span class="about-logo-arrow" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
           <figure class="about-logo-item">
-            <img class="about-logo about-logo-current" src="images/b90-logo-new.jpg" alt="Logotipo actual de Bienvenido a los 90" width="735" height="735" loading="lazy" />
+            <img class="about-logo about-logo-current" src="images/b90-logo-new.jpg" alt="Logotipo actual de Bienvenido a los 90" width="735" height="735" loading="lazy" decoding="async" />
             <figcaption>Actualidad</figcaption>
           </figure>
         </div>
