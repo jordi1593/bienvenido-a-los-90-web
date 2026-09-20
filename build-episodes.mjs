@@ -547,6 +547,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 <script type="application/ld+json">${JSON.stringify(breadcrumbJsonLd)}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJZVM17KEQ"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-WJZVM17KEQ");</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","yldnleqf0j");</script>
 </head>
 <body>
   <nav class="topnav">
@@ -958,6 +959,7 @@ function buildEtiquetasPages(episodes) {
 <script type="application/ld+json">${breadcrumbLd}</script>
 ${extraLd ? `<script type="application/ld+json">${extraLd}</script>` : ""}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJZVM17KEQ"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-WJZVM17KEQ");</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","yldnleqf0j");</script>
 </head>
 <body>
   <nav class="topnav">
@@ -1110,6 +1112,7 @@ ${footer}
 <meta name="twitter:title" content="Etiquetas — Bienvenido a los 90" />
 <meta name="twitter:description" content="Explora los episodios de Bienvenido a los 90 por artista o temática." />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJZVM17KEQ"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-WJZVM17KEQ");</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","yldnleqf0j");</script>
 </head>
 <body>
   <nav class="topnav">
@@ -1370,6 +1373,7 @@ function buildFotosPage(episodesBySlug) {
 <meta name="twitter:description" content="Galería de fotos de programas emblemáticos de Bienvenido a los 90." />
 <meta name="twitter:image" content="${SITE_URL}/images/og-home.png" />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJZVM17KEQ"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-WJZVM17KEQ");</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","yldnleqf0j");</script>
 </head>
 <body>
   <nav class="topnav">
