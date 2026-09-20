@@ -546,6 +546,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
 <link rel="preload" as="image" href="${coverImage}" />
 <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 <script type="application/ld+json">${JSON.stringify(breadcrumbJsonLd)}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJZVM17KEQ"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-WJZVM17KEQ");</script>
 </head>
 <body>
   <nav class="topnav">
@@ -956,6 +957,7 @@ function buildEtiquetasPages(episodes) {
 <script type="application/ld+json">${jsonLd}</script>
 <script type="application/ld+json">${breadcrumbLd}</script>
 ${extraLd ? `<script type="application/ld+json">${extraLd}</script>` : ""}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJZVM17KEQ"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-WJZVM17KEQ");</script>
 </head>
 <body>
   <nav class="topnav">
@@ -1107,6 +1109,7 @@ ${footer}
 <meta name="twitter:site" content="@Rockisroll" />
 <meta name="twitter:title" content="Etiquetas — Bienvenido a los 90" />
 <meta name="twitter:description" content="Explora los episodios de Bienvenido a los 90 por artista o temática." />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJZVM17KEQ"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-WJZVM17KEQ");</script>
 </head>
 <body>
   <nav class="topnav">
@@ -1366,6 +1369,7 @@ function buildFotosPage(episodesBySlug) {
 <meta name="twitter:title" content="Fotos — Bienvenido a los 90" />
 <meta name="twitter:description" content="Galería de fotos de programas emblemáticos de Bienvenido a los 90." />
 <meta name="twitter:image" content="${SITE_URL}/images/og-home.png" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJZVM17KEQ"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-WJZVM17KEQ");</script>
 </head>
 <body>
   <nav class="topnav">
