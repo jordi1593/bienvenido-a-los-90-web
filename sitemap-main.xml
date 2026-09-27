@@ -2,35 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://bienvenidoalos90.com/</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://bienvenidoalos90.com/images/b90-logo-new.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/fotos.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image><image:loc>https://bienvenidoalos90.com/images/og-home.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/directo.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/tienda.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
@@ -57,15 +57,15 @@
     
   </url>
   <url>
-    <loc>https://bienvenidoalos90.com/etiquetas/oasis.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://bienvenidoalos90.com/etiquetas/the-smashing-pumpkins.html</loc>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     
   </url>
   <url>
-    <loc>https://bienvenidoalos90.com/etiquetas/the-smashing-pumpkins.html</loc>
-    <lastmod>2026-09-12</lastmod>
+    <loc>https://bienvenidoalos90.com/etiquetas/oasis.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     
@@ -149,7 +149,7 @@
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/billy-corgan.html</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     
