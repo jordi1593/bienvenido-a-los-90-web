@@ -1,0 +1,98 @@
+name: Limpiar banner Premios iVoox
+
+# El banner de la campaña de los Premios iVoox 2026 caduca el 03/11/2026. La
+# propia página ya lo retira en el navegador desde esa fecha (ver el script de
+# caducidad en index.html), pero el bloque de HTML seguiría en el repositorio.
+# Este workflow lo elimina del código unos días después y se borra a sí mismo,
+# de modo que no queda nada pendiente cuando acaba la campaña.
+#
+# Se puede lanzar a mano desde Actions -> "Limpiar banner Premios iVoox" ->
+# "Run workflow" para adelantar la limpieza.
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # cada día a las 6:00 UTC
+  workflow_dispatch:
+    inputs:
+      simulacro:
+        description: "Probar la limpieza sin publicar cambios (simulacro)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: limpiar-banner-premios
+  cancel-in-progress: false
+
+jobs:
+  limpiar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Comprobar si ya toca limpiar
+        id: fecha
+        env:
+          SIMULACRO: ${{ github.event.inputs.simulacro }}
+        run: |
+          if [ "$SIMULACRO" = "true" ]; then
+            echo "Simulacro: se prueba la limpieza sin publicar cambios."
+            echo "toca=true" >> "$GITHUB_OUTPUT"
+          elif [ "$(date -u +%Y%m%d)" -lt 20261105 ]; then
+            echo "La campaña caduca el 03/11/2026. Todavía no toca limpiar."
+            echo "toca=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "toca=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Quitar el bloque del banner de index.html
+        if: steps.fecha.outputs.toca == 'true'
+        env:
+          SIMULACRO: ${{ github.event.inputs.simulacro }}
+        run: |
+          python3 - <<'PY'
+          import os
+          import pathlib
+          import re
+
+          pagina = pathlib.Path("index.html")
+          html = pagina.read_text(encoding="utf-8")
+          patron = re.compile(
+              r"[ \t]*<!-- banner-premios-2026:inicio.*?banner-premios-2026:fin -->\r?\n?",
+              re.S,
+          )
+          limpio, cuantos = patron.subn("", html)
+
+          if cuantos == 0:
+              print("El bloque del banner ya no está en index.html: nada que quitar.")
+              raise SystemExit(0)
+          if "banner-premios-2026" in limpio or "hero-premios" in limpio:
+              raise SystemExit("ERROR: quedan restos del banner tras la limpieza.")
+          print(
+              f"Bloque del banner localizado ({cuantos} coincidencia/s,"
+              f" {len(html.splitlines()) - len(limpio.splitlines())} líneas)."
+          )
+          if os.environ.get("SIMULACRO") == "true":
+              print("Simulacro: NO se modifica index.html.")
+          else:
+              pagina.write_text(limpio, encoding="utf-8")
+              print("index.html actualizado.")
+          PY
+
+      - name: Commit, push y retirada de este workflow
+        if: steps.fecha.outputs.toca == 'true' && github.event.inputs.simulacro != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git rm -q .github/workflows/limpiar-banner-premios.yml
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No hay cambios que publicar."
+            exit 0
+          fi
+          git commit -m "Quitar el banner caducado de los Premios iVoox 2026"
+          git pull --rebase origin main
+          git push
+          echo "Limpieza publicada. El push a main dispara el despliegue."

@@ -64,8 +64,8 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
 html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border)}
 [data-theme="dark"] .platform-btn{color:var(--text-dim);border-color:var(--border)}
 </style>
-<link rel="stylesheet" href="styles.css?v=93" media="print" onload="this.media='all'" />
-<noscript><link rel="stylesheet" href="styles.css?v=93" /></noscript>
+<link rel="stylesheet" href="styles.css?v=95" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="styles.css?v=95" /></noscript>
 
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="es_ES" />
@@ -145,8 +145,7 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
       <p class="hero-tagline">El podcast que analiza el grunge, el britpop y el rock alternativo con la profundidad que merecen. En español. Cada semana, desde 2012.</p>
       <div class="hero-stats" aria-label="Estadísticas del podcast">
         <div class="hero-stat"><strong>+1,8M</strong><span>escuchas</span></div>
-        <div class="hero-stat"><strong>+11.000</strong><span>suscriptores</span></div>
-        <div class="hero-stat"><strong>Desde 2012</strong><span>en antena</span></div>
+        <div class="hero-stat"><strong>+11.500</strong><span>suscriptores</span></div>
       </div>
       <div class="hero-actions">
         <a class="hero-cta" href="#escuchanos">Escuchar ahora
@@ -154,6 +153,19 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
         </a>
         <a class="hero-cta-secondary" href="#episodios">Busca tu banda favorita</a>
       </div>
+      <!-- banner-premios-2026:inicio (caduca el 03/11/2026; lo elimina el workflow "Limpiar banner Premios iVoox") -->
+      <a class="hero-premios" href="https://go.ivoox.com/wv/premios26?c=4801" target="_blank" rel="noopener">
+        <img src="images/premios-ivoox-2026.jpg" alt="Vota por Bienvenido a los 90 en la 9ª edición de los Premios iVoox" width="1200" height="627" decoding="async">
+      </a>
+      <script>
+        (function () {
+          // La campaña caduca el 03/11/2026 a las 00:00 (hora peninsular): desde
+          // ese instante el banner se retira del DOM antes de llegar a pintarse.
+          var b = document.querySelector(".hero-premios");
+          if (b && Date.now() >= Date.parse("2026-11-03T00:00:00+01:00")) b.remove();
+        })();
+      </script>
+      <!-- banner-premios-2026:fin -->
       <a class="hero-latest" id="heroLatest" href="#" hidden>
         <img class="hero-latest-cover" id="heroLatestCover" alt="" loading="lazy" width="160" height="160" />
         <div class="hero-latest-body">
@@ -261,7 +273,7 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
 
         <p>Lo que no había —hasta 2012— era un programa en español que tratara el grunge, el britpop y el rock alternativo como lo que son: no hits de la radio, sino una de las últimas grandes revoluciones de la música popular.</p>
 
-        <p>Roberto Martínez lleva más de 1.200 programas haciendo exactamente eso. Con datos. Con fechas. Con contexto cultural. Sin nostalgia fácil. El proyecto ha trascendido el audio. Desde 2017, catorce discos-homenaje a álbumes de Radiohead, Nirvana, Oasis y Smashing Pumpkins —el último, íntegramente cantado por voces femeninas, sin precedentes en su género. Un documental en Filmin. El Premio de la Audiencia de iVoox en varias ocasiones. Y más de 11.000 suscriptores que cada semana esperan el siguiente episodio.</p>
+        <p>Roberto Martínez lleva más de 1.200 programas haciendo exactamente eso. Con datos. Con fechas. Con contexto cultural. Sin nostalgia fácil. El proyecto ha trascendido el audio. Desde 2017, catorce discos-homenaje a álbumes de Radiohead, Nirvana, Oasis y Smashing Pumpkins —el último, íntegramente cantado por voces femeninas, sin precedentes en su género. Un documental en Filmin. El Premio de la Audiencia de iVoox en varias ocasiones. Y más de 11.500 suscriptores que cada semana esperan el siguiente episodio.</p>
 
         <p>Se emite en <a href="https://www.radioutopia.org.es/" target="_blank" rel="noopener">Radio Utopía</a> 107,8 FM (Madrid) y está disponible, gratis, en todas las plataformas de podcast.</p>
 

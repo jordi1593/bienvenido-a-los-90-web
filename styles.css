@@ -362,6 +362,7 @@ body {
 .hero-tagline  { animation: fadeRise var(--t-enter)  var(--ease-b90) 200ms backwards; }
 .hero-stats    { animation: fadeRise var(--t-enter)  var(--ease-b90) 300ms backwards; }
 .hero-actions  { animation: fadeRise var(--t-enter)  var(--ease-b90) 400ms backwards; }
+.hero-premios  { animation: fadeRise var(--t-enter)  var(--ease-b90) 460ms backwards; }
 .hero-latest   { animation: fadeRise var(--t-enter)  var(--ease-b90) 480ms backwards; }
 .hero-press    { animation: fadeRise var(--t-enter)  var(--ease-b90) 520ms backwards; }
 
@@ -407,7 +408,7 @@ body {
 }
 
 .hero-stat {
-  padding: 0 1.25rem;
+  padding: 0 2.25rem;
   border-right: 1px solid var(--border);
   text-align: center;
 }
@@ -416,17 +417,20 @@ body {
 
 .hero-stat strong {
   display: block;
-  font-size: 1.1rem;
+  font-size: clamp(1.5rem, 4.2vw, 2rem);
   font-weight: 700;
   color: var(--text);
   font-family: var(--font-brand);
+  letter-spacing: -0.01em;
 }
 
 .hero-stat span {
-  font-size: 0.75rem;
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.82rem;
   color: var(--text-dim);
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.07em;
 }
 
 .hero-press {
@@ -536,6 +540,27 @@ body {
 }
 
 
+.hero-premios {
+  display: block;
+  max-width: min(560px, 100%);
+  margin: 0 auto 1.25rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  line-height: 0;
+  transition: transform var(--t-enter) var(--ease-b90), box-shadow var(--t-enter) var(--ease-b90);
+}
+
+.hero-premios:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.22);
+}
+
+.hero-premios img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .hero-actions {
   display: flex;
   align-items: center;
@@ -579,8 +604,8 @@ body {
 
 @media (max-width: 720px) {
   .hero-tagline { font-size: 0.9rem; }
-  .hero-stat { padding: 0 0.75rem; }
-  .hero-stat strong { font-size: 1rem; }
+  .hero-stat { padding: 0 1.35rem; }
+  .hero-stat strong { font-size: clamp(1.4rem, 6.5vw, 1.7rem); }
   .hero-latest { max-width: 100%; }
   .hero-latest-title { white-space: normal; }
 }
@@ -2762,7 +2787,7 @@ html:not([data-theme="dark"]) .social-btn {
 /* ── prefers-reduced-motion ──────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.01ms !important; animation-delay: 0ms !important; }
-  .hero-cta, .hero-latest, .platform-btn {
+  .hero-cta, .hero-latest, .hero-premios, .platform-btn {
     transition: background var(--t-micro), color var(--t-micro), border-color var(--t-micro);
   }
   .episode-card { opacity: 1; transform: none; }
