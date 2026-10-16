@@ -523,9 +523,8 @@ function episodePage(ep, { prev, next, related, series, validEtiquetaLabels }) {
 <link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
 <meta name="description" content="${description}" />
 <link rel="canonical" href="${canonical}" />
-<style>:root{--bg:#ffffff;--text:#000000;--text-dim:#2b2b2b;--accent:#c41750;--border:rgba(0,0,0,0.15)}[data-theme=dark]{--bg:#16131a;--text:#f5f3f6;--text-dim:#b9b2c0;--accent:#ff5d85;--border:rgba(255,255,255,0.15)}*,*::before,*::after{box-sizing:border-box}body{background:var(--bg);color:var(--text);margin:0;font-family:system-ui,sans-serif;line-height:1.6}.topnav{background:var(--bg);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;padding:0}.container{max-width:860px;margin:0 auto;padding:0 1rem}.topnav-inner{display:flex;align-items:center;gap:1rem;height:56px}${epNum != null ? `.ep-title-wrap{position:relative;overflow:visible}.ep-num-watermark{position:absolute;font-size:clamp(7rem,22vw,16rem);font-weight:900;line-height:1;top:-0.15em;left:-0.05em;color:var(--accent);opacity:0.07;pointer-events:none;user-select:none;letter-spacing:-0.04em;z-index:0}.ep-title-wrap h1,.ep-title-wrap .episode-meta,.ep-title-wrap .episode-likes{position:relative;z-index:1}` : ""}.ep-stats{display:flex;gap:0;margin:1.5rem 0;border:1px solid var(--border);border-radius:10px;overflow:hidden}.ep-stat{flex:1;display:flex;flex-direction:column;align-items:center;padding:0.5rem 0.25rem;gap:0.2rem;border-right:1px solid var(--border)}.ep-stat:last-child{border-right:none}.ep-stat-num{font-size:1rem;font-weight:700;line-height:1;color:var(--accent);letter-spacing:-0.02em;font-variant-numeric:tabular-nums}.ep-stat-icon{color:var(--text-dim);width:16px;height:16px}.ep-stat-label{font-size:0.62rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dim)}.episode-pager{display:flex;justify-content:space-between;gap:1rem;margin:2.25rem 0 1.25rem;padding-top:1.5rem;border-top:1px solid var(--border);font-size:0.85rem}.episode-pager a{color:var(--text-dim);text-decoration:none;max-width:45%}.episode-pager span{color:var(--text-dim);opacity:0.4}</style>
-<link rel="preload" href="../styles.css?v=95" as="style" onload="this.rel='stylesheet'" />
-<noscript><link rel="stylesheet" href="../styles.css?v=95" /></noscript>
+<style>:root{--bg:#ffffff;--text:#000000;--text-dim:#2b2b2b;--accent:#e71d57;--border:rgba(0,0,0,0.15)}[data-theme=dark]{--bg:#16131a;--text:#f5f3f6;--text-dim:#b9b2c0;--accent:#e71d57;--border:rgba(255,255,255,0.15)}*,*::before,*::after{box-sizing:border-box}body{background:var(--bg);color:var(--text);margin:0;font-family:system-ui,sans-serif;line-height:1.6}.topnav{background:var(--bg);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;padding:0}.container{max-width:860px;margin:0 auto;padding:0 1rem}.topnav-inner{display:flex;align-items:center;gap:1rem;height:56px}${epNum != null ? `.ep-title-wrap{position:relative;overflow:visible}.ep-num-watermark{position:absolute;font-size:clamp(7rem,22vw,16rem);font-weight:900;line-height:1;top:-0.15em;left:-0.05em;color:var(--accent);opacity:0.07;pointer-events:none;user-select:none;letter-spacing:-0.04em;z-index:0}.ep-title-wrap h1,.ep-title-wrap .episode-meta,.ep-title-wrap .episode-likes{position:relative;z-index:1}` : ""}.ep-stats{display:flex;gap:0;margin:1.5rem 0;border:1px solid var(--border);border-radius:10px;overflow:hidden}.ep-stat{flex:1;display:flex;flex-direction:column;align-items:center;padding:0.5rem 0.25rem;gap:0.2rem;border-right:1px solid var(--border)}.ep-stat:last-child{border-right:none}.ep-stat-num{font-size:1rem;font-weight:700;line-height:1;color:var(--accent);letter-spacing:-0.02em;font-variant-numeric:tabular-nums}.ep-stat-icon{color:var(--text-dim);width:16px;height:16px}.ep-stat-label{font-size:0.62rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dim)}.episode-pager{display:flex;justify-content:space-between;gap:1rem;margin:2.25rem 0 1.25rem;padding-top:1.5rem;border-top:1px solid var(--border);font-size:0.85rem}.episode-pager a{color:var(--text-dim);text-decoration:none;max-width:45%}.episode-pager span{color:var(--text-dim);opacity:0.4}</style>
+<link rel="stylesheet" href="../styles.css?v=97" />
 
 <meta property="og:type" content="article" />
 <meta property="og:locale" content="es_ES" />
@@ -729,7 +728,7 @@ ${image ? `<meta name="twitter:image" content="${image}" />` : ""}
     </div>
   </footer>
 
-  <script src="../nav.js?v=4" defer></script>
+  <script src="../nav.js?v=5" defer></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c082acebb6434c21b4d7bc2ac95019c3"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
@@ -942,9 +941,8 @@ function buildEtiquetasPages(episodes) {
 <link rel="apple-touch-icon" href="../images/b90-logo-new.jpg" />
 <meta name="description" content="${escapeHtml(description)}" />
 <link rel="canonical" href="${pageUrl}" />
-<style>:root{--bg:#ffffff;--bg-flat:#ffffff;--text:#000000;--text-dim:#2b2b2b;--accent:#c41750;--border:rgba(0,0,0,0.15)}[data-theme=dark]{--bg:#16131a;--bg-flat:#16131a;--text:#f5f3f6;--text-dim:#b9b2c0;--accent:#ff5d85;--border:rgba(255,255,255,0.15)}*,::before,::after{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}.no-transition,.no-transition *{transition:none!important}</style>
-<link rel="preload" href="../styles.css?v=95" as="style" onload="this.rel='stylesheet'" />
-<noscript><link rel="stylesheet" href="../styles.css?v=95" /></noscript>
+<style>:root{--bg:#ffffff;--bg-flat:#ffffff;--text:#000000;--text-dim:#2b2b2b;--accent:#e71d57;--border:rgba(0,0,0,0.15)}[data-theme=dark]{--bg:#16131a;--bg-flat:#16131a;--text:#f5f3f6;--text-dim:#b9b2c0;--accent:#e71d57;--border:rgba(255,255,255,0.15)}*,::before,::after{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}.no-transition,.no-transition *{transition:none!important}</style>
+<link rel="stylesheet" href="../styles.css?v=97" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="es_ES" />
 <meta property="og:title" content="${escapeHtml(title)}" />
@@ -1079,7 +1077,7 @@ ${featuredEp ? `<a class="artist-featured" href="../episodios/${featuredEp.slug}
 
 ${footer}
 
-  <script src="../nav.js?v=4" defer></script>
+  <script src="../nav.js?v=5" defer></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c082acebb6434c21b4d7bc2ac95019c3"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>`;
@@ -1098,9 +1096,8 @@ ${footer}
 <link rel="icon" type="image/png" href="../images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
 <meta name="description" content="Explora los episodios de Bienvenido a los 90 por artista o temática: Nirvana, Oasis, Pearl Jam, grunge, britpop y mucho más." />
 <link rel="canonical" href="${SITE_URL}/etiquetas/" />
-<style>:root{--bg:#ffffff;--bg-flat:#ffffff;--text:#000000;--text-dim:#2b2b2b;--accent:#c41750;--border:rgba(0,0,0,0.15)}[data-theme=dark]{--bg:#16131a;--bg-flat:#16131a;--text:#f5f3f6;--text-dim:#b9b2c0;--accent:#ff5d85;--border:rgba(255,255,255,0.15)}*,::before,::after{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}.no-transition,.no-transition *{transition:none!important}</style>
-<link rel="preload" href="../styles.css?v=95" as="style" onload="this.rel='stylesheet'" />
-<noscript><link rel="stylesheet" href="../styles.css?v=95" /></noscript>
+<style>:root{--bg:#ffffff;--bg-flat:#ffffff;--text:#000000;--text-dim:#2b2b2b;--accent:#e71d57;--border:rgba(0,0,0,0.15)}[data-theme=dark]{--bg:#16131a;--bg-flat:#16131a;--text:#f5f3f6;--text-dim:#b9b2c0;--accent:#e71d57;--border:rgba(255,255,255,0.15)}*,::before,::after{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}.no-transition,.no-transition *{transition:none!important}</style>
+<link rel="stylesheet" href="../styles.css?v=97" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="es_ES" />
 <meta property="og:title" content="Etiquetas — Bienvenido a los 90" />
@@ -1151,7 +1148,7 @@ ${footer}
 
 ${footer}
 
-  <script src="../nav.js?v=4" defer></script>
+  <script src="../nav.js?v=5" defer></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c082acebb6434c21b4d7bc2ac95019c3"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>`;
@@ -1326,12 +1323,12 @@ function buildFotosPage(episodesBySlug) {
     const cover = group.photos[0];
     const countLabel = group.photos.length === 1 ? "1 foto" : `${group.photos.length} fotos`;
     const hiddenPhotos = group.photos.map((p) =>
-      `<img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.caption)}" width="600" height="400" loading="lazy" />`).join("");
+      `<img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.caption)}" width="600" height="450" loading="lazy" />`).join("");
 
     return `
     <article class="ep-card">
       <button class="ep-cover-btn" type="button" data-start="${startIndex}" aria-label="Ver ${countLabel} de ${escapeHtml(groupTitle)}">
-        <img src="${escapeHtml(cover.image)}" alt="${escapeHtml(cover.caption)}"${groupIndex >= 6 ? ' loading="lazy"' : ''} width="600" height="400"${cover.focalPoint ? ` style="object-position:${escapeHtml(cover.focalPoint)}"` : ""} />
+        <img src="${escapeHtml(cover.image)}" alt="${escapeHtml(cover.caption)}"${groupIndex >= 6 ? ' loading="lazy"' : ''} width="600" height="450"${cover.focalPoint ? ` style="object-position:${escapeHtml(cover.focalPoint)}"` : ""} />
         ${group.photos.length > 1 ? `<span class="ep-photo-count">${countLabel}</span>` : ""}
       </button>
       <div class="ep-body">
@@ -1355,9 +1352,8 @@ function buildFotosPage(episodesBySlug) {
 <link rel="icon" type="image/jpeg" href="images/b90-logo-new.jpg" media="(prefers-color-scheme: light)" />
 <link rel="icon" type="image/png" href="images/b90-logo-dark-icon.png" media="(prefers-color-scheme: dark)" />
 <link rel="apple-touch-icon" href="images/b90-logo-new.jpg" />
-<style>:root{--bg:#ffffff;--bg-flat:#ffffff;--text:#000000;--text-dim:#2b2b2b;--accent:#c41750;--border:rgba(0,0,0,0.15)}[data-theme=dark]{--bg:#16131a;--bg-flat:#16131a;--text:#f5f3f6;--text-dim:#b9b2c0;--accent:#ff5d85;--border:rgba(255,255,255,0.15)}*,::before,::after{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}.no-transition,.no-transition *{transition:none!important}</style>
-<link rel="preload" href="styles.css?v=95" as="style" onload="this.rel='stylesheet'" />
-<noscript><link rel="stylesheet" href="styles.css?v=95" /></noscript>
+<style>:root{--bg:#ffffff;--bg-flat:#ffffff;--text:#000000;--text-dim:#2b2b2b;--accent:#e71d57;--border:rgba(0,0,0,0.15)}[data-theme=dark]{--bg:#16131a;--bg-flat:#16131a;--text:#f5f3f6;--text-dim:#b9b2c0;--accent:#e71d57;--border:rgba(255,255,255,0.15)}*,::before,::after{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}.no-transition,.no-transition *{transition:none!important}</style>
+<link rel="stylesheet" href="styles.css?v=97" />
 
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="es_ES" />
@@ -1435,7 +1431,7 @@ function buildFotosPage(episodesBySlug) {
     </div>
   </footer>
 
-  <script src="nav.js?v=4" defer></script>
+  <script src="nav.js?v=5" defer></script>
   <script>
     (function () {
       var lightbox = document.getElementById("lightbox");

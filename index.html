@@ -16,7 +16,6 @@
 <link rel="canonical" href="https://bienvenidoalos90.com/" />
 <link rel="preload" as="font" href="/fonts/sg-latin.woff2" type="font/woff2" crossorigin />
 <link rel="preload" as="font" href="/fonts/pp-800-latin.woff2" type="font/woff2" crossorigin />
-<link rel="preload" as="fetch" href="/data/episodes-0.json" crossorigin />
 <style>
 @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:optional;src:url('/fonts/sg-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:optional;src:url('/fonts/sg-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -24,8 +23,8 @@
 @font-face{font-family:'Poppins';font-style:normal;font-weight:700;font-display:optional;src:url('/fonts/pp-700-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Poppins';font-style:normal;font-weight:800;font-display:optional;src:url('/fonts/pp-800-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:'Poppins';font-style:normal;font-weight:800;font-display:optional;src:url('/fonts/pp-800-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-:root{--bg:#ffffff;--bg-flat:#ffffff;--bg-card:#f4f2f5;--text:#000000;--text-dim:#2b2b2b;--accent:#c41750;--accent-2:#000000;--border:rgba(0,0,0,0.15);--radius:4px;--spotify:#1db954;--ivoox:#ff6a13;--youtube:#ff0000;--apple:#b150e8;--amazon:#00a8e1;--bandcamp:#1aa0c4;--instagram:#e1306c;--facebook:#1877f2;--x:#000000;--tiktok:#000000;--twitch:#9146ff;--telegram:#229ed9;--bluesky:#1185fe;--whatsapp:#25d366;--linktree:#43e660;--substack:#ff6719;--font-display:"Space Grotesk",sans-serif;--font-body:"Space Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--font-brand:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-[data-theme="dark"]{--bg:#16131a;--bg-flat:#16131a;--bg-card:#221d29;--text:#f5f3f6;--text-dim:#b9b2c0;--accent:#ff5d85;--accent-2:#ffffff;--border:rgba(255,255,255,0.15);--x:#ffffff;--tiktok:#ffffff}
+:root{--bg:#ffffff;--bg-flat:#ffffff;--bg-card:#f4f2f5;--text:#000000;--text-dim:#2b2b2b;--accent:#e71d57;--accent-2:#000000;--border:rgba(0,0,0,0.15);--radius:4px;--spotify:#1db954;--ivoox:#ff6a13;--youtube:#ff0000;--apple:#b150e8;--amazon:#00a8e1;--bandcamp:#1aa0c4;--instagram:#e1306c;--facebook:#1877f2;--x:#000000;--tiktok:#000000;--twitch:#9146ff;--telegram:#229ed9;--bluesky:#1185fe;--whatsapp:#25d366;--linktree:#43e660;--substack:#ff6719;--font-display:"Space Grotesk",sans-serif;--font-body:"Space Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--font-brand:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+[data-theme="dark"]{--bg:#16131a;--bg-flat:#16131a;--bg-card:#221d29;--text:#f5f3f6;--text-dim:#b9b2c0;--accent:#e71d57;--accent-2:#ffffff;--border:rgba(255,255,255,0.15);--x:#ffffff;--tiktok:#ffffff}
 .font-brand{font-family:var(--font-brand);font-weight:800}
 .theme-toggle{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;border:1px solid var(--border);background:none;color:var(--text);cursor:pointer;transition:border-color .15s ease,color .15s ease}
 .theme-toggle svg{width:18px;height:18px}
@@ -55,7 +54,7 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
 .site-header{position:relative;background:var(--bg-flat)}
 .header-banner-wrap{padding:1.5rem 1rem;text-align:center}
 [data-theme="dark"] .header-banner-wrap{padding:2rem 1rem;position:relative}
-[data-theme="dark"] .header-banner-wrap::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 55% 65% at 50% 50%,rgba(255,93,133,0.16),transparent 70%);pointer-events:none}
+[data-theme="dark"] .header-banner-wrap::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 55% 65% at 50% 50%,rgba(236,75,121,0.16),transparent 70%);pointer-events:none}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .listen-section{background:var(--bg-card);padding:2.5rem 0;border-top:1px solid var(--border)}
 .platform-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem}
@@ -63,9 +62,11 @@ body{margin:0;font-family:var(--font-body);background:var(--bg-flat);color:var(-
 .platform-btn svg{width:22px;height:22px}
 html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border)}
 [data-theme="dark"] .platform-btn{color:var(--text-dim);border-color:var(--border)}
+.hero-headline{font-family:var(--font-brand);font-weight:800;font-size:clamp(2.4rem,7vw,4.2rem);line-height:.96;color:var(--text);text-align:center;margin:0 auto .9rem;max-width:520px;letter-spacing:-.02em}
+.hero-headline em{font-style:normal;color:var(--accent)}
+.hero-headline .hero-90-logo{height:1.55em;width:auto;display:inline-block;vertical-align:middle;max-width:none}
 </style>
-<link rel="stylesheet" href="styles.css?v=95" media="print" onload="this.media='all'" />
-<noscript><link rel="stylesheet" href="styles.css?v=95" /></noscript>
+<link rel="stylesheet" href="styles.css?v=97" />
 
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="es_ES" />
@@ -141,7 +142,7 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
 
   <header class="site-header">
     <div class="container header-banner-wrap">
-      <h1 class="hero-headline">Los <img src="images/logo-90.png" alt="90" class="hero-90-logo"><br><em>nunca</em><br>murieron.</h1>
+      <h1 class="hero-headline">Los <img src="images/logo-90.png" alt="90" class="hero-90-logo" width="601" height="415" fetchpriority="high"><br><em>nunca</em><br>murieron.</h1>
       <p class="hero-tagline">El podcast que analiza el grunge, el britpop y el rock alternativo con la profundidad que merecen. En español. Cada semana, desde 2012.</p>
       <div class="hero-stats" aria-label="Estadísticas del podcast">
         <div class="hero-stat"><strong>+1,8M</strong><span>escuchas</span></div>
@@ -181,7 +182,7 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
 
   <section id="escuchanos" class="listen-section">
     <div class="container">
-      <h3 class="font-brand">Escúchanos desde tu plataforma favorita</h3>
+      <h2 class="font-brand">Escúchanos desde tu plataforma favorita</h2>
       <div class="platform-grid">
         <a class="platform-btn icon-ivoox" href="https://www.ivoox.com/podcast-bienvenido-a-90_sq_f132699_1.html" target="_blank" rel="noopener" title="iVoox" aria-label="iVoox"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13v-1a7 7 0 0 1 14 0v1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><rect x="3.2" y="13" width="4" height="6" rx="1.6" fill="currentColor"/><rect x="16.8" y="13" width="4" height="6" rx="1.6" fill="currentColor"/></svg></a>
         <a class="platform-btn icon-spotify" href="https://open.spotify.com/show/5c1ikDBBLMlls8ZTvcu14N?si=e546edb6a56b405f" target="_blank" rel="noopener" title="Spotify" aria-label="Spotify"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.6"/><path d="M7 10.5c3.2-1 7-.7 9.7 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M7.6 13.3c2.6-.8 5.6-.6 7.8.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8.3 16c2-.6 4.3-.5 6 .5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
@@ -357,8 +358,8 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
     <audio id="sticky-audio" preload="none"></audio>
   </div>
 
-  <script src="nav.js?v=4" defer></script>
-  <script src="app.js?v=83" defer></script>
+  <script src="nav.js?v=5" defer></script>
+  <script src="app.js?v=84" defer></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c082acebb6434c21b4d7bc2ac95019c3"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
