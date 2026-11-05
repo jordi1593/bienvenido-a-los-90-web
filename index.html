@@ -154,19 +154,6 @@ html:not([data-theme="dark"]) .platform-btn{color:#000;border-color:var(--border
         </a>
         <a class="hero-cta-secondary" href="#episodios">Busca tu banda favorita</a>
       </div>
-      <!-- banner-premios-2026:inicio (caduca el 03/11/2026; lo elimina el workflow "Limpiar banner Premios iVoox") -->
-      <a class="hero-premios" href="https://go.ivoox.com/wv/premios26?c=4801" target="_blank" rel="noopener">
-        <img src="images/premios-ivoox-2026.jpg" alt="Vota por Bienvenido a los 90 en la 9ª edición de los Premios iVoox" width="1200" height="627" decoding="async">
-      </a>
-      <script>
-        (function () {
-          // La campaña caduca el 03/11/2026 a las 00:00 (hora peninsular): desde
-          // ese instante el banner se retira del DOM antes de llegar a pintarse.
-          var b = document.querySelector(".hero-premios");
-          if (b && Date.now() >= Date.parse("2026-11-03T00:00:00+01:00")) b.remove();
-        })();
-      </script>
-      <!-- banner-premios-2026:fin -->
       <a class="hero-latest" id="heroLatest" href="#" hidden>
         <img class="hero-latest-cover" id="heroLatestCover" alt="" loading="lazy" width="160" height="160" />
         <div class="hero-latest-body">
