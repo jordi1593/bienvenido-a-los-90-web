@@ -2,35 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://bienvenidoalos90.com/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://bienvenidoalos90.com/images/b90-logo-new.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/fotos.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image><image:loc>https://bienvenidoalos90.com/images/og-home.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/directo.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/tienda.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     
   </url>
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
@@ -1135,6 +1135,13 @@
     
   </url>
   <url>
+    <loc>https://bienvenidoalos90.com/etiquetas/morphine.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    
+  </url>
+  <url>
     <loc>https://bienvenidoalos90.com/etiquetas/jf-leon.html</loc>
     <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -1452,13 +1459,6 @@
   <url>
     <loc>https://bienvenidoalos90.com/etiquetas/alanis-morissette.html</loc>
     <lastmod>2025-12-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    
-  </url>
-  <url>
-    <loc>https://bienvenidoalos90.com/etiquetas/morphine.html</loc>
-    <lastmod>2025-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     
